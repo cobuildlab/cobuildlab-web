@@ -6,6 +6,8 @@ import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import Layout from '../components/layout'
 import { rhythm } from '../utils/typography'
+import 'bulma';
+import { Container, Box  } from 'bloomer';
 
 class Index extends React.Component {
   render() {
@@ -23,6 +25,10 @@ class Index extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
         />
+        <a className="button">Button</a>
+        <Container>
+          <Box>Hello World!</Box>
+        </Container>
         <Bio />
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
