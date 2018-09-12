@@ -9,28 +9,28 @@ class Template extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
-    if (location.pathname === rootPath) {
-      header = (
-        <h1
+    /* if (location.pathname === rootPath) { */
+    header = (
+      <h1
+        style={{
+          ...scale(1.5),
+          marginBottom: rhythm(1.5),
+          marginTop: 0,
+        }}
+      >
+        <Link
           style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
+            boxShadow: 'none',
+            textDecoration: 'none',
+            color: 'inherit',
           }}
+          to={'/'}
         >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to={'/'}
-          >
-            Gatsby Starter Blog
-          </Link>
-        </h1>
-      )
-    } else {
+          Gatsby Starter Blog
+        </Link>
+      </h1>
+    )
+    /* } else {
       header = (
         <h3
           style={{
@@ -51,7 +51,7 @@ class Template extends React.Component {
           </Link>
         </h3>
       )
-    }
+    } */
     return (
       <div
         style={{

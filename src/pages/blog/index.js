@@ -3,11 +3,11 @@ import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-import Bio from '../components/Bio'
-import Layout from '../components/layout'
-import { rhythm } from '../utils/typography'
+import Bio from '../../components/Bio'
+import Layout from '../../components/layout'
+import { rhythm } from '../../utils/typography'
 
-class Index extends React.Component {
+class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteDescription = get(
@@ -47,7 +47,7 @@ class Index extends React.Component {
   }
 }
 
-export default Index
+export default BlogIndex
 
 export const pageQuery = graphql`
   query {
