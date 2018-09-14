@@ -7,7 +7,8 @@ import Bio from '../components/Bio'
 import Layout from '../components/layout'
 import { rhythm } from '../utils/typography'
 import 'bulma';
-import { Container, Box  } from 'bloomer';
+import bg from '../resources/background-1.png'
+import { Container, Title, Column, Columns, Notification  } from 'bloomer';
 
 class Index extends React.Component {
   render() {
@@ -25,12 +26,9 @@ class Index extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
         />
-        <a className="button">Button</a>
-        <Container>
-          <Box>Hello World!</Box>
-        </Container>
-        <Bio />
-        {posts.map(({ node }) => {
+        
+        
+        {/* {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
             <div key={node.fields.slug}>
@@ -47,7 +45,50 @@ class Index extends React.Component {
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
           )
-        })}
+        })} */}
+        <section className="hero is-white is-large">
+          <div className="hero-body" style={{
+                backgroundImage: `url(${bg})`,
+                width: '100%',
+                height: 'auto',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+                }}>
+            <div className="container">
+              <h1 className="title">
+                Cobuild Lab <br/>
+                Let’s Build a Great Idea
+              </h1>
+              <h2 className="subtitle">
+              We help entrepreneurs create amazing Products with our streamlined, lean and phased Software Development Process. Since day one, our technique is focused on early results and transparent communication.
+              </h2>
+              <a className="button is-primary is-medium is-rounded">READ MORE</a>
+            </div>
+          </div>
+        </section>
+
+          <section className="section">
+          <Container hasTextAlign='centered'>
+              <Title>Cobuild Process</Title>
+              <Title isSize={6}>Is the process of transforming an idea in a sustainable business, through the combination and collaboration of the areas of Lean <br/> Entrepreneurship, Business Strategy, Technological Innovation and Exponential Growth</Title>
+              <Columns isCentered>
+                <Column isSize='1/4'>
+                <Title>Validation</Title>
+                </Column>
+                <Column isSize='1/4'>
+                <Title>CoBuilding</Title>
+                </Column>
+                <Column isSize='1/4'>
+                <Title>Close the Circle</Title>
+                </Column>
+                <Column isSize='1/4'>
+                <Title>Aceleration</Title>
+                </Column>
+            </Columns>
+
+          </Container>
+          </section>
       </Layout>
     )
   }

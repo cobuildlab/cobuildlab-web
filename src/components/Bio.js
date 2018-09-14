@@ -1,5 +1,27 @@
 import React from 'react'
-
+import { Link } from 'gatsby'
+import { 
+  Container, 
+  Navbar, 
+  NavbarBrand, 
+  NavbarItem, 
+  NavbarBurger, 
+  NavbarMenu, 
+  NavbarStart, 
+  NavbarDropdown, 
+  NavbarEnd, 
+  Icon, 
+  Field, 
+  Control, 
+  Button, 
+  NavbarLink, 
+  NavbarDivider,
+  Footer,
+  Columns,
+  Column,
+  Content,
+} from 'bloomer';
+import '../assets/css/index.css'
 // Import typefaces
 import 'typeface-montserrat'
 import 'typeface-merriweather'
