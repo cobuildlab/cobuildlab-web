@@ -1,71 +1,102 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link,graphql } from 'gatsby'
-import get from 'lodash/get'
-
-import Bio from '../components/Bio'
+import { Link, graphql } from 'gatsby'
+import {
+  Hero,
+  HeroBody,
+  Container,
+  Title,
+  Columns,
+  Column,
+  Card,
+  CardContent,
+  Content,
+  Tag,
+} from 'bloomer'
 import Layout from '../components/layout'
-import { rhythm, scale } from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const siteTitle = 'Cobuild Lab'
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
 
     return (
-      <Layout location={this.props.location}>
+      <React.Fragment>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
-        <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: 'block',
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
-          {post.frontmatter.date}
-        </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
-        <Bio />
 
-        <ul
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between',
-            listStyle: 'none',
-            padding: 0,
-          }}
-        >
-          {previous && (
-            <li>
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            </li>
-          )}
+        <Hero isColor="black" isSize="medium">
+          <HeroBody>
+            <Container hasTextAlign="centered">
+              <Columns isCentered>
+                <Column>
+                  <Title isSize={1} hasTextColor="white">
+                    {post.frontmatter.title}
+                  </Title>
+                </Column>
+              </Columns>
+            </Container>
+          </HeroBody>
+        </Hero>
 
-          {next && (
-            <li>
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            </li>
-          )}
-        </ul>
-      </Layout>
+        <Container>
+          <Columns isCentered>
+            <Column
+              hasTextAlign="centered"
+              dangerouslySetInnerHTML={{ __html: post.html }}
+            />
+          </Columns>
+
+          <Columns isCentered>
+            <Column hasTextAlign="centered">
+              <Title isSize={3}>READ MORE</Title>
+            </Column>
+          </Columns>
+
+          <Columns isCentered>
+            {previous ? (
+              <Column isSize="1/3">
+                <Link to={previous.fields.slug} rel="prev">
+                  <Card>
+                    <Tag isColor="success">Success</Tag>
+                    <CardContent>
+                      ← {previous.frontmatter.title}
+                      <Content>
+                        {/* <small>{previous.frontmatter.date}</small> */}
+                      </Content>
+                    </CardContent>
+                  </Card>
+                </Link>
+              </Column>
+            ) : (
+              <div />
+            )}
+
+            {next ? (
+              <Column isSize="1/3">
+                <Link to={next.fields.slug} rel="next">
+                  <Card>
+                    <Tag isColor="success">Success</Tag>
+                    <CardContent>
+                      {next.frontmatter.title} →
+                      <Content>
+                        {/* <small>{next.frontmatter.date}</small> */}
+                      </Content>
+                    </CardContent>
+                  </Card>
+                </Link>
+              </Column>
+            ) : (
+              <div />
+            )}
+          </Columns>
+        </Container>
+      </React.Fragment>
     )
   }
 }
@@ -86,7 +117,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD MMMM, YYYY")
       }
     }
   }
