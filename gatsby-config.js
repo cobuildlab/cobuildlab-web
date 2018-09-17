@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Blog',
-    author: 'Kyle Mathews',
-    description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
+    title: 'Cobuild Lab | Software development in Miami, Florida',
+    author: '4geeks.co',
+    description: 'Software development in Miami, Florida',
+    siteUrl: 'https://cobuildlab.com/',
   },
-  pathPrefix: '/gatsby-starter-blog',
+  pathPrefix: '/cobuild-lab',
   plugins: [
     `gatsby-plugin-sass`,
     {
@@ -49,13 +49,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Cobuild Lab`,
+        short_name: `Cobuild`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#e76c29`,
         display: `minimal-ui`,
-        icon: `src/assets/gatsby-icon.png`,
+        icon: `src/resources/icocobuildlab.png`,
       },
     },
     `gatsby-plugin-offline`,
