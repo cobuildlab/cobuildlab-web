@@ -47,6 +47,36 @@ img {
   padding-top: 0;
   margin-bottom: 0 !important;
 }
+.icon-process{
+  width: 80px;
+  height: 80px;
+  background-color: #e76c29;
+  border-radius: 50%;
+  padding: 7%;
+  font-size: 25px;
+  color: #fff;
+  margin: auto;
+  margin-bottom: 25px;
+}
+.icon-link{
+  margin-left: 10px;
+  color: #000000;
+}
+.icon-link:hover{
+  margin-left: 10px;
+  color: #39c;
+  transition: all .3s ease-in-out;
+}
+hr {
+  background-color: #e76c29 !important;
+  border: none;
+  display: block;
+  height: 1.3px !important;
+  width: 10%;
+  margin: auto !important;
+  margin-top: -30px !important;
+  margin-bottom: 30px !important;
+}
 /*---- --------- ---*/
 
 /*image backgroun header*/

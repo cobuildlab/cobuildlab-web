@@ -19,6 +19,12 @@ import { logo } from '../resources/cobuildlab.png'
 import 'typeface-montserrat'
 import 'typeface-merriweather'
 
+import { Icon } from 'react-icons-kit'
+import {facebookOfficial} from 'react-icons-kit/fa/facebookOfficial'
+import {instagram} from 'react-icons-kit/fa/instagram'
+import {twitterSquare} from 'react-icons-kit/fa/twitterSquare'
+import {linkedinSquare} from 'react-icons-kit/fa/linkedinSquare'
+
 class header extends React.Component {
   constructor(props) {
     super(props)
@@ -63,6 +69,15 @@ class header extends React.Component {
               </Column>
               <Column isSize="1/3">
                 <Title hasTextColor="white">Follow Us</Title>
+                <Content>
+                <p>
+                  <br/>
+                  <a><Icon size="18" icon={instagram}/></a>
+                  <a><Icon size="18" icon={facebookOfficial}/></a>
+                  <a><Icon size="18" icon={twitterSquare}/></a>
+                  <a><Icon size="18" icon={linkedinSquare}/></a>
+                </p>
+                </Content>
               </Column>
               <Column isSize="1/3">
                 <Title hasTextColor="white">Contact Us</Title>
