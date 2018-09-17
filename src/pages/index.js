@@ -152,7 +152,7 @@ class Index extends React.Component {
                   <Column isSize="1/3">
                     <Link to={node.fields.slug}>
                       <Card className="link-card">
-                        <Tag isColor="success">General</Tag>
+                        <Tag className="tag-category">General</Tag>
                         <CardImage>
                           <Image
                             isRatio="4:3"
@@ -160,10 +160,9 @@ class Index extends React.Component {
                           />
                         </CardImage>
                         <CardContent>
-                          <Content />
+                          <Subtitle>{title}</Subtitle>
+                          <small>{node.frontmatter.date}</small>
                         </CardContent>
-                        <p>{title}</p>
-                        <small>{node.frontmatter.date}</small>
                       </Card>
                     </Link>
                   </Column>
@@ -262,7 +261,7 @@ class Index extends React.Component {
             <Columns isCentered>
               <Column isSize="1/3">
                 <Card>
-                  <a>
+                  <a href="https://www.linkedin.com/in/marcelo-ricigliano-32440379" target="_blank">
                   <CardImage>
                     <Image isRatio='4:8' src={marcelo} />
                   </CardImage>
@@ -280,7 +279,7 @@ class Index extends React.Component {
               </Column>
               <Column isSize="1/3">
                 <Card>
-                  <a>
+                  <a href="https://www.linkedin.com/in/alacret/" target="_blank">
                   <CardImage>
                     <Image isRatio='4:8' src={angel} />
                   </CardImage>
@@ -298,7 +297,7 @@ class Index extends React.Component {
               </Column>
               <Column isSize="1/3">
                 <Card>
-                  <a>
+                  <a href="https://www.linkedin.com/in/alesanchezr/" target="_blank">
                   <CardImage>
                     <Image isRatio='4:8' src={alejandro} />
                   </CardImage>
@@ -320,7 +319,7 @@ class Index extends React.Component {
         {/*Section Customer Success Stories*/}
 
           {/*Section Where we are? and Write Us! */}
-          <section className="section bg-section">
+          <section id="contact" className="section bg-section">
             <Container>
               <Columns isCentered>
                 <Column className="p-f" isSize='1/2'>
@@ -400,7 +399,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 4
+      limit: 3
     ) {
       edges {
         node {

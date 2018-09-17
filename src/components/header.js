@@ -39,12 +39,6 @@ class header extends React.Component {
             <NavbarItem>
               <img src={logo} style={{ marginRight: 5 }} />
             </NavbarItem>
-            <NavbarItem isHidden="desktop">
-              <Icon className="fa fa-github" />
-            </NavbarItem>
-            <NavbarItem isHidden="desktop">
-              <Icon className="fa fa-twitter" style={{ color: '#55acee' }} />
-            </NavbarItem>
             <NavbarBurger
               isActive={this.state.isActive}
               onClick={this.onClickNav}
@@ -53,21 +47,31 @@ class header extends React.Component {
           <NavbarMenu isActive={this.state.isActive} onClick={this.onClickNav}>
             <NavbarEnd>
               <NavbarItem>
-                <Link to="/">Home</Link>
+                <Link className="link-nav" to="/">Home</Link>
               </NavbarItem>
-              <NavbarItem href="#process">Cobuild Process</NavbarItem>
               <NavbarItem>
-                <Link to="/customer-success-stories">
+                <a className="link-nav" href="#process">
+                  Cobuild Process
+                </a>
+              </NavbarItem>
+              <NavbarItem>
+                <Link className="link-nav" to="/customer-success-stories">
                   Customer Success Stories
                 </Link>
               </NavbarItem>
               <NavbarItem>
-                <Link to="/services">Services</Link>
+                <Link className="link-nav" to="/services">Services</Link>
               </NavbarItem>
               <NavbarItem>
-                <Link to="/blog">Blog</Link>
+                <Link className="link-nav" to="/blog">
+                  Blog
+                </Link>
               </NavbarItem>
-              <NavbarItem href="#/">Contact Us</NavbarItem>
+              <NavbarItem>
+                <a href="#contact" className="link-nav">
+                  Contact Us
+                </a>
+              </NavbarItem>
             </NavbarEnd>
           </NavbarMenu>
         </Container>

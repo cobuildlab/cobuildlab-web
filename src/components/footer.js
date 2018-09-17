@@ -67,15 +67,15 @@ class header extends React.Component {
                   </Control>
                 </Field>
               </Column>
-              <Column isSize="1/3">
+              <Column  isSize="1/3">
                 <Title hasTextColor="white">Follow Us</Title>
-                <Content>
+                <Content hasTextAlign='centered'>
                 <p>
                   <br/>
-                  <a><Icon size="18" icon={instagram}/></a>
-                  <a><Icon size="18" icon={facebookOfficial}/></a>
-                  <a><Icon size="18" icon={twitterSquare}/></a>
-                  <a><Icon size="18" icon={linkedinSquare}/></a>
+                  <a className="icon-instagram" href="https://www.instagram.com/cobuildlab"><Icon size="24" icon={instagram}/></a>
+                  <a className="icon-facebook" href="https://www.facebook.com/cobuildlab"><Icon size="24" icon={facebookOfficial}/></a>
+                  <a className="icon-twitter" href="https://twitter.com/cobuildlab"><Icon size="24" icon={twitterSquare}/></a>
+                  <a className="icon-linkedin" href="https://www.linkedin.com/in/cobuildlab"><Icon size="24" icon={linkedinSquare}/></a>
                 </p>
                 </Content>
               </Column>

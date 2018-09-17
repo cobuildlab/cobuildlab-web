@@ -33,6 +33,21 @@ a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.i
   border-color: transparent;
   color: #fff;
 }
+.link-nav{
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  -webkit-transition: color .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+.link-nav:hover{
+  color: #254a61;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
 /*Link and buttom*/
 
 /*---- --------- ---*/
@@ -67,6 +82,82 @@ img {
   color: #39c;
   transition: all .3s ease-in-out;
 }
+.icon-instagram{
+  background-color: #cc29a5;
+  padding: 20px;
+  padding-top: 30px;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 15px;
+  -webkit-transition: border-radius .5s ease;
+  -moz-transition: border-radius .5s ease;
+  transition: border-radius .5s ease;
+}
+.icon-instagram:hover{
+  background-color: #cc29a5;
+  padding: 20px;
+  padding-top: 30px;
+  color: #fff;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+.icon-facebook{
+  background-color: #3b5998;
+  padding: 20px;
+  padding-top: 30px;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 15px;
+  -webkit-transition: border-radius .5s ease;
+  -moz-transition: border-radius .5s ease;
+  transition: border-radius .5s ease;
+}
+.icon-facebook:hover{
+  background-color: #3b5998;
+  padding: 20px;
+  padding-top: 30px;
+  color: #fff;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+.icon-twitter{
+  background-color: #55acee;
+  padding: 20px;
+  padding-top: 30px;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 15px;
+  -webkit-transition: border-radius .5s ease;
+  -moz-transition: border-radius .5s ease;
+  transition: border-radius .5s ease;
+}
+.icon-twitter:hover{
+  background-color: #55acee;
+  padding: 20px;
+  padding-top: 30px;
+  color: #fff;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+.icon-linkedin{
+  background-color: #0077b5;
+  padding: 20px;
+  padding-top: 30px;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 15px;
+  -webkit-transition: border-radius .5s ease;
+  -moz-transition: border-radius .5s ease;
+  transition: border-radius .5s ease;
+}
+.icon-linkedin:hover{
+  background-color: #0077b5;
+  padding: 20px;
+  padding-top: 30px;
+  color: #fff;
+  border-radius: 4px;
+  margin-right: 15px;
+}
 hr {
   background-color: #e76c29 !important;
   border: none;
@@ -76,6 +167,14 @@ hr {
   margin: auto !important;
   margin-top: -30px !important;
   margin-bottom: 30px !important;
+}
+.tag-category{
+  position: absolute;
+  z-index: 999;
+  right: 15px;
+  top: 15px;
+  color: #fff !important;
+  background-color: #e76e1a !important;
 }
 /*---- --------- ---*/
 
