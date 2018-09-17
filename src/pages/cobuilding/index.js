@@ -148,6 +148,105 @@ class CobuildingIndex extends React.Component {
                 </ul>
               </Content>
             </Column>
+
+            <Column>
+              <Content>
+                <Subtitle isSize={4}>Step 1. Prototyping</Subtitle>
+                <p>
+                  At the initial stage of transforming the product into a
+                  product we need to start with a <b>prototype</b>. A prototype,
+                  depending of the case can have none, one or some of the
+                  functionality that the final product will have, enough to been
+                  available to present and explain:{' '}
+                  <b>
+                    how the product is going to work, how it can look like and
+                    how the user is gonna use it.
+                  </b>
+                </p>
+                <Subtitle isSize={4}>Step 2: Customers Archetypes</Subtitle>
+                <p>
+                  Once we have a prototype around the table, it's time to{' '}
+                  <b>review the first version of the Customer Archetype. </b>
+                  At this point we have enough information about the market and
+                  the product to lain down the <b>2nd version</b> reviewing the
+                  initial demographic y making the necessary adjustments.
+                </p>
+                <Subtitle isSize={4}>
+                  Step 3: Minimum Viable Product (MVP)
+                </Subtitle>
+                <p>
+                  <b>It's time to build!</b>
+                  <br />
+                  In this step we start building the product using{' '}
+                  <b>agile techniques and early retrospective.</b> The average
+                  time to have the first functional version is a month, and
+                  since that moment every week new functionality is added or
+                  tested. Having an early feedback of the product is very
+                  important in this Step. It is also important to remember that,
+                  maybe not all of the features discussed in the prototype have
+                  to be include it in the MVP, as its main goal is to have
+                  enough to test the <b>Value Hypothesis</b>
+                </p>
+                <Subtitle isSize={4}>Step 4: Live testing</Subtitle>
+                <p>
+                  One the most important thing about building and idea is to
+                  have tested as soon as it's testable. This can occur even if
+                  the MVP is not fully featured. The main goal here is to find a
+                  group of{' '}
+                  <b>potential customers and start rolling out the product</b>.
+                  This can be coworkers, stakeholders, family, close friends,
+                  suppliers, so on. The most important part here is to get and
+                  honest a usable feedback by conducting interviews to this
+                  customers to really know about the impact on the product.
+                </p>
+
+                <Subtitle isSize={4}>Step 5: A/B Testing</Subtitle>
+                <p>
+                  This is a critical step that depends a lot of the result of
+                  the previous activities. You have the MVP, the results of the
+                  tests, and now what? Usually if the product is generally
+                  criticized and qualified as not satisfying the need, well it's
+                  an easy decision to make, just head back to step one, with the
+                  information and start the prototype again. Also this decision
+                  comes very easy if the product is broadly accepted, you need
+                  to move on to the next step as quickly as possible. The real
+                  challenge here is probably having around a 30-40% of
+                  acceptance, it's a critical choice to decide whether to move
+                  on with the product or head back to the prototyping step.
+                  There is no formula or rules that applies here because many
+                  things can happen, we selected the wrong audience, we didn't
+                  provide an MVP reflecting the value hypothesis, the product is
+                  slow or not complete yet. So, the best way to take here should
+                  be toreview carefully the feedback from the Live Test along
+                  with the stakeholders and all members of the group, and make
+                  the call:
+                </p>
+                <ul>
+                  <li>
+                    Get the feedback and head back to step 1 (Prototyping)
+                  </li>
+                  <li>
+                    Change the test group and re do the Live Testing to validate
+                    the current feedback
+                  </li>
+                  <li>
+                    Tweak the MVP according to the &Acirc;&nbsp;feedback and re
+                    do the Live Testing. (Minimum changes)
+                  </li>
+                  <li>
+                    Add or remove some features of the MVP according to feedback
+                    obtain. This is A/B testing
+                  </li>
+                </ul>
+                <p>
+                  A/B testing allow you to split the testing groups into
+                  subgroups for testing features that feel misused, unnecessary
+                  or that they are missing from the original MVP. There is no
+                  short way here, prepare the team for test, the customers
+                  group, and we star testing as soon as possible.
+                </p>
+              </Content>
+            </Column>
           </Columns>
         </Container>
       </Layout>

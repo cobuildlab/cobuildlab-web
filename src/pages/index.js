@@ -6,14 +6,14 @@ import Helmet from 'react-helmet'
 import Bio from '../components/Bio'
 import Layout from '../components/layout'
 import { rhythm } from '../utils/typography'
-import 'bulma';
+import 'bulma'
 import bg from '../resources/background-1.png'
-import { 
-  Container, 
-  Title, 
+import {
+  Container,
+  Title,
   Subtitle,
-  Column, 
-  Columns, 
+  Column,
+  Columns,
   Card,
   CardImage,
   Image,
@@ -33,7 +33,8 @@ import {
   Radio,
   Hero,
   HeroBody,
-  } from 'bloomer';
+  Tag,
+} from 'bloomer'
 
 class Index extends React.Component {
   render() {
@@ -51,260 +52,354 @@ class Index extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
         />
-        {/* {posts.map(({ node }) => {
-          const title = get(node, 'frontmatter.title') || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
-          )
-        })} */}
 
         {/*HEADER*/}
-        <Hero isSize='large'>
+        <Hero isSize="large">
           <HeroBody className="bg-header">
-          <Container>
-            <Title className="title-logo">Cobuild Lab</Title>
-            <Title className="subtitle-logo">Let’s Build a Great Idea</Title>
-            <Columns>
-              <Column isSize='1/2'>
-              <Title isSize={6}>
-                We help entrepreneurs create amazing Products with our streamlined, lean and phased <span style={{color: '#fff'}}>Software Development Process.</span> Since day one, our technique is focused on early results and transparent communication.
-              </Title>
-              <a className="button is-primary is-medium is-rounded">Read more</a>
-              </Column>
-            </Columns>
-          </Container>
+            <Container>
+              <Title className="title-logo">Cobuild Lab</Title>
+              <Title className="subtitle-logo">Let’s Build a Great Idea</Title>
+              <Columns>
+                <Column isSize="1/2">
+                  <Title isSize={6}>
+                    We help entrepreneurs create amazing Products with our
+                    streamlined, lean and phased{' '}
+                    <span style={{ color: '#fff' }}>
+                      Software Development Process.
+                    </span>{' '}
+                    Since day one, our technique is focused on early results and
+                    transparent communication.
+                  </Title>
+                  <a className="button is-primary is-medium is-rounded">
+                    Read more
+                  </a>
+                </Column>
+              </Columns>
+            </Container>
           </HeroBody>
         </Hero>
         {/*HEADER*/}
-        
+
         {/*Section Cobuild Process*/}
         <section id="process" className="section">
-          <Container hasTextAlign='centered'>
-            <Title isSize={2} className="title-section">Cobuild Process</Title>
-            <Subtitle isSize={6}>Is the process of transforming an idea in a sustainable business, through the combination and collaboration of the areas of Lean <br/> Entrepreneurship, Business Strategy, Technological Innovation and Exponential Growth</Subtitle>
+          <Container hasTextAlign="centered">
+            <Title isSize={2} className="title-section">
+              Cobuild Process
+            </Title>
+            <Subtitle isSize={6}>
+              Is the process of transforming an idea in a sustainable business,
+              through the combination and collaboration of the areas of Lean{' '}
+              <br /> Entrepreneurship, Business Strategy, Technological
+              Innovation and Exponential Growth
+            </Subtitle>
             <Columns isCentered className="p-2">
-              <Column isSize='1/4'>
-              <Title isSize={4}>Validation</Title>
-                <p>Plain and simple: Don't offer what people doesn't want. - Idea Validation: (Technical and Economical) - Market Validation: (Estimation and Competitors Analysis) - Value and Growth Hypothesis.</p>
+              <Column isSize="1/4">
+                <Title isSize={4}>Validation</Title>
+                <p>
+                  Plain and simple: Don't offer what people doesn't want. - Idea
+                  Validation: (Technical and Economical) - Market Validation:
+                  (Estimation and Competitors Analysis) - Value and Growth
+                  Hypothesis.
+                </p>
               </Column>
-              <Column isSize='1/4'>
-              <Title isSize={4}>CoBuilding</Title>
-                <p>It's time to build!. In this phase we combine a multidisciplinary team to actually build the idea. - Prototyping - Customers Archetypes - Minimum Viable Product (MVP) - Live testing - A/B Testing - Product Market Fit - Value and Growth Hypothesis (Again)</p>
+              <Column isSize="1/4">
+                <Title isSize={4}>CoBuilding</Title>
+                <p>
+                  It's time to build!. In this phase we combine a
+                  multidisciplinary team to actually build the idea. -
+                  Prototyping - Customers Archetypes - Minimum Viable Product
+                  (MVP) - Live testing - A/B Testing - Product Market Fit -
+                  Value and Growth Hypothesis (Again)
+                </p>
               </Column>
-              <Column isSize='1/4'>
-              <Title isSize={4}>Close the Circle</Title>
-                <p>A very important step. Here we make sure that the idea has every detail that is needed for been available to transform effectively: Identity, purpose, values, and the correct tools for launching are the main purpose of this step. - Branding - WebSite and Social Networks - Strategy</p>
+              <Column isSize="1/4">
+                <Title isSize={4}>Close the Circle</Title>
+                <p>
+                  A very important step. Here we make sure that the idea has
+                  every detail that is needed for been available to transform
+                  effectively: Identity, purpose, values, and the correct tools
+                  for launching are the main purpose of this step. - Branding -
+                  WebSite and Social Networks - Strategy
+                </p>
               </Column>
-              <Column isSize='1/4'>
-              <Title isSize={4}>Aceleration</Title>
-                <p>Congratulations! We have proved to have a sustainable business with a healthy growth rate. It's time to accelerate. At this point our business strategy and marketing strategy must be on the right track, so it's time to create High Impact. - Growth Hacking: Short-Term Exponential Growth</p>
+              <Column isSize="1/4">
+                <Title isSize={4}>Aceleration</Title>
+                <p>
+                  Congratulations! We have proved to have a sustainable business
+                  with a healthy growth rate. It's time to accelerate. At this
+                  point our business strategy and marketing strategy must be on
+                  the right track, so it's time to create High Impact. - Growth
+                  Hacking: Short-Term Exponential Growth
+                </p>
               </Column>
             </Columns>
             <Columns isCentered>
-            <Column><a className="button is-primary is-medium is-rounded"><small>Learn more</small></a></Column>
+              <Column>
+                <a className="button is-primary is-medium is-rounded">
+                  <small>Learn more</small>
+                </a>
+              </Column>
             </Columns>
           </Container>
         </section>
         {/*Section Cobuild Process*/}
 
         {/*Section Latest News*/}
-          <section className="section">
-          <Container hasTextAlign='centered'>
+        <section className="section">
+          <Container hasTextAlign="centered">
             <Title className="title-section">Latest News</Title>
             <Columns isCentered>
-              <Column isSize='1/3'>
+              {posts.map(({ node }) => {
+                const title = get(node, 'frontmatter.title') || node.fields.slug
+                return (
+                  <Column isSize="1/3">
+                    <Link to={node.fields.slug}>
+                      <Card className="link-card">
+                        <Tag isColor="success">General</Tag>
+                        <CardImage>
+                          <Image
+                            isRatio="4:3"
+                            src="https://via.placeholder.com/1280x960"
+                          />
+                        </CardImage>
+                        <CardContent>
+                          <Content />
+                        </CardContent>
+                        <p>{title}</p>
+                        <small>{node.frontmatter.date}</small>
+                      </Card>
+                    </Link>
+                  </Column>
+                )
+              })}
+
+              {/* <Column isSize="1/3">
                 <a>
-                <Card className="link-card">
-                  <CardImage>
-                      <Image isRatio='4:3' src='https://via.placeholder.com/1280x960' />
-                  </CardImage>
-                  <CardContent>
-                    <Content>
-                      <small>11:09 PM - 30 October 2014</small>
-                      <br/>
-                      <p>People Keep Asking If I’m Back, And I Haven’t Really Had An Answer, But Now, Yeah, I’m Thinking I’m Back.</p>
-                    </Content>
-                  </CardContent>
-                </Card>
+                  <Card className="link-card">
+                    <CardImage>
+                      <Image
+                        isRatio="4:3"
+                        src="https://via.placeholder.com/1280x960"
+                      />
+                    </CardImage>
+                    <CardContent>
+                      <Content>
+                        <small>11:09 PM - 30 October 2014</small>
+                        <br />
+                        <p>
+                          People Keep Asking If I’m Back, And I Haven’t Really
+                          Had An Answer, But Now, Yeah, I’m Thinking I’m Back.
+                        </p>
+                      </Content>
+                    </CardContent>
+                  </Card>
                 </a>
               </Column>
-              <Column isSize='1/3'>
+              <Column isSize="1/3">
                 <a>
-                <Card className="link-card">
-                  <CardImage>
-                    <Image isRatio='4:3' src='https://via.placeholder.com/1280x960' />
-                  </CardImage>
-                  <CardContent>
-                    <Content>
-                      <small>11:09 PM - 30 October 2014</small>
-                      <br/>
-                      <p>People Keep Asking If I’m Back, And I Haven’t Really Had An Answer, But Now, Yeah, I’m Thinking I’m Back.</p>
-                    </Content>
-                  </CardContent>
-                </Card>
+                  <Card className="link-card">
+                    <CardImage>
+                      <Image
+                        isRatio="4:3"
+                        src="https://via.placeholder.com/1280x960"
+                      />
+                    </CardImage>
+                    <CardContent>
+                      <Content>
+                        <small>11:09 PM - 30 October 2014</small>
+                        <br />
+                        <p>
+                          People Keep Asking If I’m Back, And I Haven’t Really
+                          Had An Answer, But Now, Yeah, I’m Thinking I’m Back.
+                        </p>
+                      </Content>
+                    </CardContent>
+                  </Card>
                 </a>
               </Column>
-              <Column isSize='1/3'>
+              <Column isSize="1/3">
                 <a>
-                <Card className="link-card">
-                  <CardImage>
-                    <Image isRatio='4:3' src='https://via.placeholder.com/1280x960' />
-                  </CardImage>
-                  <CardContent>
-                    <Content>
-                      <small>11:09 PM - 30 October 2014</small>
-                      <br/>
-                      <p>People Keep Asking If I’m Back, And I Haven’t Really Had An Answer, But Now, Yeah, I’m Thinking I’m Back.</p>
-                    </Content>
-                  </CardContent>
-                </Card>
+                  <Card className="link-card">
+                    <CardImage>
+                      <Image
+                        isRatio="4:3"
+                        src="https://via.placeholder.com/1280x960"
+                      />
+                    </CardImage>
+                    <CardContent>
+                      <Content>
+                        <small>11:09 PM - 30 October 2014</small>
+                        <br />
+                        <p>
+                          People Keep Asking If I’m Back, And I Haven’t Really
+                          Had An Answer, But Now, Yeah, I’m Thinking I’m Back.
+                        </p>
+                      </Content>
+                    </CardContent>
+                  </Card>
                 </a>
+              </Column> */}
+            </Columns>
+          </Container>
+        </section>
+        {/*Section Latest News*/}
+
+        {/*Section Customer Success Stories*/}
+        <section className="section bg-section">
+          <Container hasTextAlign="centered">
+            <Title className="title-section">Customer Success Stories</Title>
+            <Columns isCentered>
+              <Column isSize="1/3">
+                <Card className="link-card">
+                  <a>
+                    <CardImage>
+                      <Image
+                        isRatio="4:3"
+                        src="https://via.placeholder.com/1280x960"
+                      />
+                    </CardImage>
+                  </a>
+                </Card>
               </Column>
             </Columns>
           </Container>
-          </section>
-          {/*Section Latest News*/}
-
-          {/*Section Customer Success Stories*/}
-          <section className="section bg-section">
-            <Container hasTextAlign='centered'>
-              <Title className="title-section">Customer Success Stories</Title>
-              <Columns isCentered>
-                <Column isSize='1/3'>
-                  <Card className="link-card">
-                    <a>
-                    <CardImage>
-                      <Image isRatio='4:3' src='https://via.placeholder.com/1280x960' />
-                    </CardImage>
-                    </a>
-                  </Card>
-                </Column>
-              </Columns>
-            </Container>
-          </section>
-          <section className="section">
-          <Container hasTextAlign='centered'>
+        </section>
+        <section className="section">
+          <Container hasTextAlign="centered">
             <Title className="title-section">Our Team</Title>
             <Columns isCentered>
-              <Column isSize='1/3'>
+              <Column isSize="1/3">
                 <Card>
                   <a>
-                  <CardImage>
-                    <Image isRatio='4:3' src='https://via.placeholder.com/1280x960' />
-                  </CardImage>
+                    <CardImage>
+                      <Image
+                        isRatio="4:3"
+                        src="https://via.placeholder.com/1280x960"
+                      />
+                    </CardImage>
                   </a>
                 </Card>
                 <Content>
-                  <br/>
-                  <small>Co-founded Startups in Venezuela, Ecuador y USA: Vikua, <br/> 4Geeks Academy, Siplik, Hack, InTraffic.</small>
+                  <br />
+                  <small>
+                    Co-founded Startups in Venezuela, Ecuador y USA: Vikua,{' '}
+                    <br /> 4Geeks Academy, Siplik, Hack, InTraffic.
+                  </small>
                 </Content>
               </Column>
-              <Column isSize='1/3'>
+              <Column isSize="1/3">
                 <Card>
                   <a>
-                  <CardImage>
-                    <Image isRatio='4:3' src='https://via.placeholder.com/1280x960' />
-                  </CardImage>
+                    <CardImage>
+                      <Image
+                        isRatio="4:3"
+                        src="https://via.placeholder.com/1280x960"
+                      />
+                    </CardImage>
                   </a>
                 </Card>
                 <Content>
-                  <br/>
+                  <br />
                   <small>Technical Product Owner and Software Developer</small>
                 </Content>
               </Column>
-              <Column isSize='1/3'>
+              <Column isSize="1/3">
                 <Card>
                   <a>
-                  <CardImage>
-                    <Image isRatio='4:3' src='https://via.placeholder.com/1280x960' />
-                  </CardImage>
+                    <CardImage>
+                      <Image
+                        isRatio="4:3"
+                        src="https://via.placeholder.com/1280x960"
+                      />
+                    </CardImage>
                   </a>
                 </Card>
                 <Content>
-                  <br/>
-                  <small>I'm a computer engineer with all my life dedicated to the coding industry through several initiatives.</small>
+                  <br />
+                  <small>
+                    I'm a computer engineer with all my life dedicated to the
+                    coding industry through several initiatives.
+                  </small>
                 </Content>
               </Column>
             </Columns>
           </Container>
-          </section>
-          {/*Section Customer Success Stories*/}
+        </section>
+        {/*Section Customer Success Stories*/}
 
-          {/*Section Where we are? and Write Us! */}
-          <section className="section bg-section">
-            <Container>
-              <Columns isCentered>
-                <Column className="p-f" isSize='1/2'>
-                <Title className="title-section" hasTextAlign='left'>Where we are?</Title>
-                  <Card>
-                    <CardImage>
-                        <Image isRatio='4:3' src='https://via.placeholder.com/1280x960' />
-                    </CardImage>
-                  </Card>
-                </Column>
-                <Column className="p-f" isSize='1/2'>
-                <Title className="title-section" hasTextAlign='left'>Write Us!</Title>
-                  <Content isSize='small'>
+        {/*Section Where we are? and Write Us! */}
+        <section className="section bg-section">
+          <Container>
+            <Columns isCentered>
+              <Column className="p-f" isSize="1/2">
+                <Title className="title-section" hasTextAlign="left">
+                  Where we are?
+                </Title>
+                <Card>
+                  <CardImage>
+                    <Image
+                      isRatio="4:3"
+                      src="https://via.placeholder.com/1280x960"
+                    />
+                  </CardImage>
+                </Card>
+              </Column>
+              <Column className="p-f" isSize="1/2">
+                <Title className="title-section" hasTextAlign="left">
+                  Write Us!
+                </Title>
+                <Content isSize="small">
                   Your business takes off right now
-                  </Content>
-                  <Columns>
-                  <Column isSize='1/2'>
+                </Content>
+                <Columns>
+                  <Column isSize="1/2">
                     <Field>
                       <Label>Name</Label>
                       <Control>
-                          <Input type="text" placeholder='Name'/>
+                        <Input type="text" placeholder="Name" />
                       </Control>
                     </Field>
                   </Column>
-                  <Column isSize='1/2'>
+                  <Column isSize="1/2">
                     <Field>
                       <Label>Last Name</Label>
                       <Control>
-                          <Input type="text" placeholder='Last Name'/>
+                        <Input type="text" placeholder="Last Name" />
                       </Control>
                     </Field>
                   </Column>
-                  </Columns>
-                  <Field>
-                    <Label>Email</Label>
-                    <Control>
-                        <Input type="text" placeholder='Last Name'/>
-                    </Control>
-                  </Field>
-                  <Field>
-                    <Label>Comment or Message</Label>
-                    <Control>
-                        <TextArea placeholder={''} />
-                    </Control>
-                  </Field>
-                  <Field isGrouped>
-                    <Control>
-                      <a className="button is-primary is-medium is-rounded">Submit</a>
-                    </Control>
-                  </Field>
-                  <Content hasTextAlign='centered'>
-                    <Subtitle>
-                      Privacy Policy
-                    </Subtitle>
-                    <a>Here you can access the information about how we treat your data.</a>
-                  </Content>
-                </Column>
-              </Columns>
-            </Container>
-          </section>
-          {/*Section Where we are? and Write Us! */}
+                </Columns>
+                <Field>
+                  <Label>Email</Label>
+                  <Control>
+                    <Input type="text" placeholder="Last Name" />
+                  </Control>
+                </Field>
+                <Field>
+                  <Label>Comment or Message</Label>
+                  <Control>
+                    <TextArea placeholder={''} />
+                  </Control>
+                </Field>
+                <Field isGrouped>
+                  <Control>
+                    <a className="button is-primary is-medium is-rounded">
+                      Submit
+                    </a>
+                  </Control>
+                </Field>
+                <Content hasTextAlign="centered">
+                  <Subtitle>Privacy Policy</Subtitle>
+                  <a>
+                    Here you can access the information about how we treat your
+                    data.
+                  </a>
+                </Content>
+              </Column>
+            </Columns>
+          </Container>
+        </section>
+        {/*Section Where we are? and Write Us! */}
       </Layout>
     )
   }
@@ -320,7 +415,10 @@ export const pageQuery = graphql`
         description
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 4
+    ) {
       edges {
         node {
           excerpt
@@ -328,7 +426,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "MMMM DD, YYYY")
             title
           }
         }
