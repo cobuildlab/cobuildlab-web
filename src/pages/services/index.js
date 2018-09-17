@@ -7,21 +7,12 @@ import {
   HeroBody,
   Container,
   Title,
-  HeroFooter,
-  Tabs,
-  TabList,
-  Tab,
-  TabLink,
   Subtitle,
   Columns,
   Column,
-  Card,
-  CardContent,
-  Content,
-  Tag,
 } from 'bloomer'
 
-class BlogIndex extends React.Component {
+class ServicesIndex extends React.Component {
   render() {
     const siteTitle = 'Services | Cobuild Lab'
     const siteDescription = get(
@@ -126,7 +117,7 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex
+export default ServicesIndex
 
 export const pageQuery = graphql`
   query {
@@ -134,20 +125,6 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         description
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-          }
-        }
       }
     }
   }
