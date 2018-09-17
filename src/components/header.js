@@ -7,15 +7,8 @@ import {
   NavbarItem, 
   NavbarBurger, 
   NavbarMenu, 
-  NavbarStart, 
-  NavbarDropdown, 
-  NavbarEnd, 
-  Icon, 
-  Field, 
-  Control, 
-  Button, 
-  NavbarLink, 
-  NavbarDivider,
+  NavbarEnd,
+  Icon
 } from 'bloomer';
 import '../assets/css/index.css'
 import logo  from '../resources/cobuildlab.png' 
@@ -44,7 +37,7 @@ class header extends React.Component {
       <Container>
       <NavbarBrand>
           <NavbarItem>
-              <img src={logo} style={{ marginRight: 5 }} />
+              <img src={logo} style={{ marginRight: 5, }} />
           </NavbarItem>
           <NavbarItem isHidden='desktop'>
               <Icon className='fa fa-github' />
@@ -57,7 +50,7 @@ class header extends React.Component {
       <NavbarMenu isActive={this.state.isActive} onClick={this.onClickNav}>
           <NavbarEnd>
             <NavbarItem href='#/'>Home</NavbarItem>
-            <NavbarItem href='#/'>Cobuild Process</NavbarItem>
+            <NavbarItem href='#process'>Cobuild Process</NavbarItem>
             <NavbarItem href='#/'>Customer Success Stories </NavbarItem>
             <NavbarItem href='#/'>Services</NavbarItem>
             <NavbarItem href='#/'>Blog</NavbarItem>
