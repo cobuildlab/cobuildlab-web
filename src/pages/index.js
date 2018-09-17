@@ -24,8 +24,8 @@ import {
   Container, 
   Title, 
   Subtitle,
-  Column, 
-  Columns, 
+  Column,
+  Columns,
   Card,
   CardImage,
   Image,
@@ -45,7 +45,8 @@ import {
   Radio,
   Hero,
   HeroBody,
-  } from 'bloomer';
+  Tag,
+} from 'bloomer'
 
 class Index extends React.Component {
   render() {
@@ -65,44 +66,34 @@ class Index extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
         />
-        {/* {posts.map(({ node }) => {
-          const title = get(node, 'frontmatter.title') || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
-          )
-        })} */}
 
         {/*HEADER*/}
-        <Hero isSize='large'>
+        <Hero isSize="large">
           <HeroBody className="bg-header">
-          <Container>
-            <Title className="title-logo">Cobuild Lab</Title>
-            <Title className="subtitle-logo">Let’s Build a Great Idea</Title>
-            <Columns>
-              <Column isSize='1/2'>
-              <Title isSize={6}>
-                We help entrepreneurs create amazing Products with our streamlined, lean and phased <span style={{color: '#fff'}}>Software Development Process.</span> Since day one, our technique is focused on early results and transparent communication.
-              </Title>
-              <a className="button is-primary is-medium is-rounded">Read more</a>
-              </Column>
-            </Columns>
-          </Container>
+            <Container>
+              <Title className="title-logo">Cobuild Lab</Title>
+              <Title className="subtitle-logo">Let’s Build a Great Idea</Title>
+              <Columns>
+                <Column isSize="1/2">
+                  <Title isSize={6}>
+                    We help entrepreneurs create amazing Products with our
+                    streamlined, lean and phased{' '}
+                    <span style={{ color: '#fff' }}>
+                      Software Development Process.
+                    </span>{' '}
+                    Since day one, our technique is focused on early results and
+                    transparent communication.
+                  </Title>
+                  <a className="button is-primary is-medium is-rounded">
+                    Read more
+                  </a>
+                </Column>
+              </Columns>
+            </Container>
           </HeroBody>
         </Hero>
         {/*HEADER*/}
-        
+
         {/*Section Cobuild Process*/}
         <section id="process" className="section">
           <Container hasTextAlign='centered'>
@@ -140,69 +131,115 @@ class Index extends React.Component {
               </Column>
             </Columns>
             <Columns isCentered>
-            <Column><a className="button is-primary is-medium is-rounded"><small>Learn more</small></a></Column>
+              <Column>
+                <a className="button is-primary is-medium is-rounded">
+                  <small>Learn more</small>
+                </a>
+              </Column>
             </Columns>
           </Container>
         </section>
         {/*Section Cobuild Process*/}
 
         {/*Section Latest News*/}
-          <section className="section">
-          <Container hasTextAlign='centered'>
+        <section className="section">
+          <Container hasTextAlign="centered">
             <Title className="title-section">Latest News</Title>
             <Columns isCentered>
-              <Column isSize='1/3'>
+              {posts.map(({ node }) => {
+                const title = get(node, 'frontmatter.title') || node.fields.slug
+                return (
+                  <Column isSize="1/3">
+                    <Link to={node.fields.slug}>
+                      <Card className="link-card">
+                        <Tag isColor="success">General</Tag>
+                        <CardImage>
+                          <Image
+                            isRatio="4:3"
+                            src="https://via.placeholder.com/1280x960"
+                          />
+                        </CardImage>
+                        <CardContent>
+                          <Content />
+                        </CardContent>
+                        <p>{title}</p>
+                        <small>{node.frontmatter.date}</small>
+                      </Card>
+                    </Link>
+                  </Column>
+                )
+              })}
+
+              {/* <Column isSize="1/3">
                 <a>
-                <Card className="link-card">
-                  <CardImage>
-                      <Image isRatio='4:3' src='https://via.placeholder.com/1280x960' />
-                  </CardImage>
-                  <CardContent>
-                    <Content>
-                      <small>11:09 PM - 30 October 2014</small>
-                      <br/>
-                      <p>People Keep Asking If I’m Back, And I Haven’t Really Had An Answer, But Now, Yeah, I’m Thinking I’m Back.</p>
-                    </Content>
-                  </CardContent>
-                </Card>
+                  <Card className="link-card">
+                    <CardImage>
+                      <Image
+                        isRatio="4:3"
+                        src="https://via.placeholder.com/1280x960"
+                      />
+                    </CardImage>
+                    <CardContent>
+                      <Content>
+                        <small>11:09 PM - 30 October 2014</small>
+                        <br />
+                        <p>
+                          People Keep Asking If I’m Back, And I Haven’t Really
+                          Had An Answer, But Now, Yeah, I’m Thinking I’m Back.
+                        </p>
+                      </Content>
+                    </CardContent>
+                  </Card>
                 </a>
               </Column>
-              <Column isSize='1/3'>
+              <Column isSize="1/3">
                 <a>
-                <Card className="link-card">
-                  <CardImage>
-                    <Image isRatio='4:3' src='https://via.placeholder.com/1280x960' />
-                  </CardImage>
-                  <CardContent>
-                    <Content>
-                      <small>11:09 PM - 30 October 2014</small>
-                      <br/>
-                      <p>People Keep Asking If I’m Back, And I Haven’t Really Had An Answer, But Now, Yeah, I’m Thinking I’m Back.</p>
-                    </Content>
-                  </CardContent>
-                </Card>
+                  <Card className="link-card">
+                    <CardImage>
+                      <Image
+                        isRatio="4:3"
+                        src="https://via.placeholder.com/1280x960"
+                      />
+                    </CardImage>
+                    <CardContent>
+                      <Content>
+                        <small>11:09 PM - 30 October 2014</small>
+                        <br />
+                        <p>
+                          People Keep Asking If I’m Back, And I Haven’t Really
+                          Had An Answer, But Now, Yeah, I’m Thinking I’m Back.
+                        </p>
+                      </Content>
+                    </CardContent>
+                  </Card>
                 </a>
               </Column>
-              <Column isSize='1/3'>
+              <Column isSize="1/3">
                 <a>
-                <Card className="link-card">
-                  <CardImage>
-                    <Image isRatio='4:3' src='https://via.placeholder.com/1280x960' />
-                  </CardImage>
-                  <CardContent>
-                    <Content>
-                      <small>11:09 PM - 30 October 2014</small>
-                      <br/>
-                      <p>People Keep Asking If I’m Back, And I Haven’t Really Had An Answer, But Now, Yeah, I’m Thinking I’m Back.</p>
-                    </Content>
-                  </CardContent>
-                </Card>
+                  <Card className="link-card">
+                    <CardImage>
+                      <Image
+                        isRatio="4:3"
+                        src="https://via.placeholder.com/1280x960"
+                      />
+                    </CardImage>
+                    <CardContent>
+                      <Content>
+                        <small>11:09 PM - 30 October 2014</small>
+                        <br />
+                        <p>
+                          People Keep Asking If I’m Back, And I Haven’t Really
+                          Had An Answer, But Now, Yeah, I’m Thinking I’m Back.
+                        </p>
+                      </Content>
+                    </CardContent>
+                  </Card>
                 </a>
-              </Column>
+              </Column> */}
             </Columns>
           </Container>
-          </section>
-          {/*Section Latest News*/}
+        </section>
+        {/*Section Latest News*/}
 
           {/*Section Customer Success Stories*/}
           <section className="section bg-section">
@@ -223,7 +260,7 @@ class Index extends React.Component {
           <Container hasTextAlign='centered'>
             <Title className="title-section">Our Team</Title>
             <Columns isCentered>
-              <Column isSize='1/3'>
+              <Column isSize="1/3">
                 <Card>
                   <a>
                   <CardImage>
@@ -241,7 +278,7 @@ class Index extends React.Component {
                   </p>
                 </Content>
               </Column>
-              <Column isSize='1/3'>
+              <Column isSize="1/3">
                 <Card>
                   <a>
                   <CardImage>
@@ -250,7 +287,7 @@ class Index extends React.Component {
                   </a>
                 </Card>
                 <Content>
-                  <br/>
+                  <br />
                   <small>Technical Product Owner and Software Developer</small>
                   <p>
                     <br/>
@@ -259,7 +296,7 @@ class Index extends React.Component {
                   </p>
                 </Content>
               </Column>
-              <Column isSize='1/3'>
+              <Column isSize="1/3">
                 <Card>
                   <a>
                   <CardImage>
@@ -279,8 +316,8 @@ class Index extends React.Component {
               </Column>
             </Columns>
           </Container>
-          </section>
-          {/*Section Customer Success Stories*/}
+        </section>
+        {/*Section Customer Success Stories*/}
 
           {/*Section Where we are? and Write Us! */}
           <section className="section bg-section">
@@ -296,53 +333,56 @@ class Index extends React.Component {
                 <Title className="title-section" hasTextAlign='left'>Write Us!</Title>
                   <Content isSize='small'>
                   Your business takes off right now
-                  </Content>
-                  <Columns>
-                  <Column isSize='1/2'>
+                </Content>
+                <Columns>
+                  <Column isSize="1/2">
                     <Field>
                       <Label>Name</Label>
                       <Control>
-                          <Input type="text" placeholder='Name'/>
+                        <Input type="text" placeholder="Name" />
                       </Control>
                     </Field>
                   </Column>
-                  <Column isSize='1/2'>
+                  <Column isSize="1/2">
                     <Field>
                       <Label>Last Name</Label>
                       <Control>
-                          <Input type="text" placeholder='Last Name'/>
+                        <Input type="text" placeholder="Last Name" />
                       </Control>
                     </Field>
                   </Column>
-                  </Columns>
-                  <Field>
-                    <Label>Email</Label>
-                    <Control>
-                        <Input type="text" placeholder='Last Name'/>
-                    </Control>
-                  </Field>
-                  <Field>
-                    <Label>Comment or Message</Label>
-                    <Control>
-                        <TextArea placeholder={''} />
-                    </Control>
-                  </Field>
-                  <Field isGrouped>
-                    <Control>
-                      <a className="button is-primary is-medium is-rounded">Submit</a>
-                    </Control>
-                  </Field>
-                  <Content hasTextAlign='centered'>
-                    <Subtitle>
-                      Privacy Policy
-                    </Subtitle>
-                    <a>Here you can access the information about how we treat your data.</a>
-                  </Content>
-                </Column>
-              </Columns>
-            </Container>
-          </section>
-          {/*Section Where we are? and Write Us! */}
+                </Columns>
+                <Field>
+                  <Label>Email</Label>
+                  <Control>
+                    <Input type="text" placeholder="Last Name" />
+                  </Control>
+                </Field>
+                <Field>
+                  <Label>Comment or Message</Label>
+                  <Control>
+                    <TextArea placeholder={''} />
+                  </Control>
+                </Field>
+                <Field isGrouped>
+                  <Control>
+                    <a className="button is-primary is-medium is-rounded">
+                      Submit
+                    </a>
+                  </Control>
+                </Field>
+                <Content hasTextAlign="centered">
+                  <Subtitle>Privacy Policy</Subtitle>
+                  <a>
+                    Here you can access the information about how we treat your
+                    data.
+                  </a>
+                </Content>
+              </Column>
+            </Columns>
+          </Container>
+        </section>
+        {/*Section Where we are? and Write Us! */}
       </Layout>
     )
   }
@@ -358,7 +398,10 @@ export const pageQuery = graphql`
         description
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 4
+    ) {
       edges {
         node {
           excerpt
@@ -366,7 +409,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "MMMM DD, YYYY")
             title
           }
         }
