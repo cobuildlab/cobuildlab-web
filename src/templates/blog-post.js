@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import Layout from '../components/layout'
 import { Link, graphql } from 'gatsby'
 import {
   Hero,
@@ -13,7 +14,6 @@ import {
   Content,
   Tag,
 } from 'bloomer'
-import Layout from '../components/layout'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -23,7 +23,7 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
 
     return (
-      <React.Fragment>
+      <Layout>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
@@ -96,7 +96,7 @@ class BlogPostTemplate extends React.Component {
             )}
           </Columns>
         </Container>
-      </React.Fragment>
+      </Layout>
     )
   }
 }

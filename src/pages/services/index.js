@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
+import Layout from '../../components/layout'
 import {
   Hero,
   HeroBody,
@@ -21,7 +22,7 @@ class ServicesIndex extends React.Component {
     )
 
     return (
-      <React.Fragment>
+      <Layout>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
@@ -112,7 +113,7 @@ class ServicesIndex extends React.Component {
             </Column>
           </Columns>
         </Container>
-      </React.Fragment>
+      </Layout>
     )
   }
 }

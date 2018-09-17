@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
+import Layout from '../../components/layout'
 import {
   Hero,
   HeroBody,
@@ -16,7 +17,7 @@ import {
   Content,
 } from 'bloomer'
 
-class ServicesIndex extends React.Component {
+class CobuildingIndex extends React.Component {
   render() {
     const siteTitle = 'Cobuilding | Cobuild Lab'
     const siteDescription = get(
@@ -25,7 +26,7 @@ class ServicesIndex extends React.Component {
     )
 
     return (
-      <React.Fragment>
+      <Layout>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
@@ -149,12 +150,12 @@ class ServicesIndex extends React.Component {
             </Column>
           </Columns>
         </Container>
-      </React.Fragment>
+      </Layout>
     )
   }
 }
 
-export default ServicesIndex
+export default CobuildingIndex
 
 export const pageQuery = graphql`
   query {

@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
+import Layout from '../../components/layout'
 import {
   Hero,
   HeroBody,
@@ -39,7 +40,7 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
-      <React.Fragment>
+      <Layout>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
@@ -132,7 +133,7 @@ class BlogIndex extends React.Component {
             })}
           </Columns>
         </Container>
-      </React.Fragment>
+      </Layout>
     )
   }
 }
