@@ -130,19 +130,19 @@ class Index extends React.Component {
                 <p>Congratulations! We have proved to have a sustainable business with a healthy growth rate. It's time to accelerate. At this point our business strategy and marketing strategy must be on the right track, so it's time to create High Impact. - Growth Hacking: Short-Term Exponential Growth</p>
               </Column>
             </Columns>
-            <Columns isCentered>
+            {/* <Columns isCentered>
               <Column>
                 <a className="button is-primary is-medium is-rounded">
                   <small>Learn more</small>
                 </a>
               </Column>
-            </Columns>
+            </Columns> */}
           </Container>
         </section>
         {/*Section Cobuild Process*/}
 
         {/*Section Latest News*/}
-        <section className="section">
+        {/* <section className="section">
           <Container hasTextAlign="centered">
             <Title className="title-section">Latest News</Title>
             <Columns isCentered>
@@ -168,80 +168,13 @@ class Index extends React.Component {
                   </Column>
                 )
               })}
-
-              {/* <Column isSize="1/3">
-                <a>
-                  <Card className="link-card">
-                    <CardImage>
-                      <Image
-                        isRatio="4:3"
-                        src="https://via.placeholder.com/1280x960"
-                      />
-                    </CardImage>
-                    <CardContent>
-                      <Content>
-                        <small>11:09 PM - 30 October 2014</small>
-                        <br />
-                        <p>
-                          People Keep Asking If I’m Back, And I Haven’t Really
-                          Had An Answer, But Now, Yeah, I’m Thinking I’m Back.
-                        </p>
-                      </Content>
-                    </CardContent>
-                  </Card>
-                </a>
-              </Column>
-              <Column isSize="1/3">
-                <a>
-                  <Card className="link-card">
-                    <CardImage>
-                      <Image
-                        isRatio="4:3"
-                        src="https://via.placeholder.com/1280x960"
-                      />
-                    </CardImage>
-                    <CardContent>
-                      <Content>
-                        <small>11:09 PM - 30 October 2014</small>
-                        <br />
-                        <p>
-                          People Keep Asking If I’m Back, And I Haven’t Really
-                          Had An Answer, But Now, Yeah, I’m Thinking I’m Back.
-                        </p>
-                      </Content>
-                    </CardContent>
-                  </Card>
-                </a>
-              </Column>
-              <Column isSize="1/3">
-                <a>
-                  <Card className="link-card">
-                    <CardImage>
-                      <Image
-                        isRatio="4:3"
-                        src="https://via.placeholder.com/1280x960"
-                      />
-                    </CardImage>
-                    <CardContent>
-                      <Content>
-                        <small>11:09 PM - 30 October 2014</small>
-                        <br />
-                        <p>
-                          People Keep Asking If I’m Back, And I Haven’t Really
-                          Had An Answer, But Now, Yeah, I’m Thinking I’m Back.
-                        </p>
-                      </Content>
-                    </CardContent>
-                  </Card>
-                </a>
-              </Column> */}
             </Columns>
           </Container>
-        </section>
+        </section> */}
         {/*Section Latest News*/}
 
           {/*Section Customer Success Stories*/}
-          <section className="section bg-section">
+          {/* <section className="section bg-section">
             <Container hasTextAlign='centered'>
               <Title className="title-section">Customer Success Stories</Title>
               <Columns isCentered>
@@ -254,7 +187,10 @@ class Index extends React.Component {
                 </Column>
               </Columns>
             </Container>
-          </section>
+          </section> */}
+          {/*Section Customer Success Stories*/}
+
+
           <section className="section">
           <Container hasTextAlign='centered'>
             <Title className="title-section">Our Team</Title>
@@ -264,6 +200,7 @@ class Index extends React.Component {
                   <a href="https://www.linkedin.com/in/marcelo-ricigliano-32440379" target="_blank">
                   <CardImage>
                     <Image isRatio='4:8' src={marcelo} />
+                    <p className="name-team">Marcelo Ricigliano <br/> COO at 4Geeks Academy</p>
                   </CardImage>
                   </a>
                 </Card>
@@ -282,6 +219,7 @@ class Index extends React.Component {
                   <a href="https://www.linkedin.com/in/alacret/" target="_blank">
                   <CardImage>
                     <Image isRatio='4:8' src={angel} />
+                    <p className="name-team">Angel Lacret <br/> Chief of Product Development at Cobuild Lab</p>
                   </CardImage>
                   </a>
                 </Card>
@@ -300,6 +238,7 @@ class Index extends React.Component {
                   <a href="https://www.linkedin.com/in/alesanchezr/" target="_blank">
                   <CardImage>
                     <Image isRatio='4:8' src={alejandro} />
+                    <p className="name-team">Alejandro Sanchez <br/> CEO of 4Geeks Academy. Software Developer and Data-Oriented Marketeer</p>
                   </CardImage>
                   </a>
                 </Card>

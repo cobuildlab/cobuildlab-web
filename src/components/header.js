@@ -13,9 +13,7 @@ import {
 import '../assets/css/index.css'
 import logo from '../resources/cobuildlab.png'
 import '../assets/css/index.css'
-// Import typefaces
-import 'typeface-montserrat'
-import 'typeface-merriweather'
+
 
 class header extends React.Component {
   constructor(props) {
@@ -37,7 +35,7 @@ class header extends React.Component {
         <Container>
           <NavbarBrand>
             <NavbarItem>
-              <img src={logo} style={{ marginRight: 5 }} />
+            <Link className="link-nav" to="/"><img src={logo} style={{ marginRight: 5 }} /></Link>
             </NavbarItem>
             <NavbarBurger
               isActive={this.state.isActive}
@@ -50,15 +48,15 @@ class header extends React.Component {
                 <Link className="link-nav" to="/">Home</Link>
               </NavbarItem>
               <NavbarItem>
-                <a className="link-nav" href="#process">
+                <a className="link-nav" href="/#process">
                   Cobuild Process
                 </a>
               </NavbarItem>
-              <NavbarItem>
+              {/* <NavbarItem>
                 <Link className="link-nav" to="/customer-success-stories">
                   Customer Success Stories
                 </Link>
-              </NavbarItem>
+              </NavbarItem> */}
               <NavbarItem>
                 <Link className="link-nav" to="/services">Services</Link>
               </NavbarItem>

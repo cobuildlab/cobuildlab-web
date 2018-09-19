@@ -16,14 +16,13 @@ import {
 import '../assets/css/index.css'
 import { logo } from '../resources/cobuildlab.png'
 // Import typefaces
-import 'typeface-montserrat'
-import 'typeface-merriweather'
 
 import { Icon } from 'react-icons-kit'
 import {facebookOfficial} from 'react-icons-kit/fa/facebookOfficial'
 import {instagram} from 'react-icons-kit/fa/instagram'
 import {twitterSquare} from 'react-icons-kit/fa/twitterSquare'
 import {linkedinSquare} from 'react-icons-kit/fa/linkedinSquare'
+import { Span } from 'opentracing';
 
 class header extends React.Component {
   constructor(props) {
