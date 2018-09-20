@@ -2,10 +2,9 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
+import 'react-toastify/dist/ReactToastify.min.css'
 
-import Bio from '../components/Bio'
 import Layout from '../components/layout'
-import { rhythm } from '../utils/typography'
 import 'bulma'
 import stories from '../resources/stories.png'
 import marcelo from '../resources/marceloicigliani.jpg'
@@ -49,6 +48,23 @@ import {
 } from 'bloomer'
 
 class Index extends React.Component {
+  state = {
+    firstName: '',
+    lastName: '',
+    email: '',
+    message: '',
+  }
+
+  handleChange = e => {
+    this.setState({
+      [e.target.name]: e.target.value,
+    })
+  }
+
+  onSubmit = e => {
+    e.preventDefault()
+  }
+
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteDescription = get(
@@ -151,7 +167,7 @@ class Index extends React.Component {
                 <div className="icon-process">
                   <Icon size="24" icon={slideshare} />
                 </div>
-                <Title isSize={4}>Aceleration</Title>
+                <Title isSize={4}>Acceleration</Title>
                 <p>
                   Congratulations! We have proved to have a sustainable business
                   with a healthy growth rate. It's time to accelerate. At this
@@ -173,7 +189,7 @@ class Index extends React.Component {
         {/*Section Cobuild Process*/}
 
         {/*Section Latest News*/}
-        {/* <section className="section">
+        <section className="section">
           <Container hasTextAlign="centered">
             <Title className="title-section">Latest News</Title>
             <Columns isCentered>
@@ -201,11 +217,11 @@ class Index extends React.Component {
               })}
             </Columns>
           </Container>
-        </section> */}
+        </section>
         {/*Section Latest News*/}
 
-          {/*Section Customer Success Stories*/}
-          {/* <section className="section bg-section">
+        {/*Section Customer Success Stories*/}
+        {/* <section className="section bg-section">
             <Container hasTextAlign='centered'>
               <Title className="title-section">Customer Success Stories</Title>
               <Columns isCentered>
@@ -219,20 +235,24 @@ class Index extends React.Component {
               </Columns>
             </Container>
           </section> */}
-          {/*Section Customer Success Stories*/}
+        {/*Section Customer Success Stories*/}
 
-
-          <section className="section">
-          <Container hasTextAlign='centered'>
+        <section className="section">
+          <Container hasTextAlign="centered">
             <Title className="title-section">Our Team</Title>
             <Columns isCentered>
               <Column isSize="1/3">
                 <Card>
-                  <a href="https://www.linkedin.com/in/marcelo-ricigliano-32440379" target="_blank">
-                  <CardImage>
-                    <Image isRatio='4:8' src={marcelo} />
-                    <p className="name-team">Marcelo Ricigliano <br/> COO at 4Geeks Academy</p>
-                  </CardImage>
+                  <a
+                    href="https://www.linkedin.com/in/marcelo-ricigliano-32440379"
+                    target="_blank"
+                  >
+                    <CardImage>
+                      <Image isRatio="4:8" src={marcelo} />
+                      <p className="name-team">
+                        Marcelo Ricigliano <br /> COO at 4Geeks Academy
+                      </p>
+                    </CardImage>
                   </a>
                 </Card>
                 <Content>
@@ -241,51 +261,59 @@ class Index extends React.Component {
                     Co-founded Startups in Venezuela, Ecuador y USA: Vikua,{' '}
                     <br /> 4Geeks Academy, Siplik, Hack, InTraffic.
                   </small>
-                  <p>
-                    <br />
-                    <Icon size="18" icon={envelopeO} />
-                    <a
-                      className="icon-link"
-                      href="https://www.linkedin.com/in/marcelo-ricigliano-32440379"
-                      target="_blank"
-                    >
-                      <Icon size="18" icon={linkedinSquare} />
-                    </a>
-                  </p>
+                  <br />
+                  <Icon size="18" icon={envelopeO} />
+                  <a
+                    className="icon-link"
+                    href="https://www.linkedin.com/in/marcelo-ricigliano-32440379"
+                    target="_blank"
+                  >
+                    <Icon size="18" icon={linkedinSquare} />
+                  </a>
                 </Content>
               </Column>
               <Column isSize="1/3">
                 <Card>
-                  <a href="https://www.linkedin.com/in/alacret/" target="_blank">
-                  <CardImage>
-                    <Image isRatio='4:8' src={angel} />
-                    <p className="name-team">Angel Lacret <br/> Chief of Product Development at Cobuild Lab</p>
-                  </CardImage>
+                  <a
+                    href="https://www.linkedin.com/in/alacret/"
+                    target="_blank"
+                  >
+                    <CardImage>
+                      <Image isRatio="4:8" src={angel} />
+                      <p className="name-team">
+                        Angel Lacret <br /> Chief of Product Development at
+                        Cobuild Lab
+                      </p>
+                    </CardImage>
                   </a>
                 </Card>
                 <Content>
                   <br />
                   <small>Technical Product Owner and Software Developer</small>
-                  <p>
-                    <br />
-                    <Icon size="18" icon={envelopeO} />
-                    <a
-                      className="icon-link"
-                      href="https://www.linkedin.com/in/alacret/"
-                      target="_blank"
-                    >
-                      <Icon size="18" icon={linkedinSquare} />
-                    </a>
-                  </p>
+                  <br />
+                  <Icon size="18" icon={envelopeO} />
+                  <a
+                    className="icon-link"
+                    href="https://www.linkedin.com/in/alacret/"
+                    target="_blank"
+                  >
+                    <Icon size="18" icon={linkedinSquare} />
+                  </a>
                 </Content>
               </Column>
               <Column isSize="1/3">
                 <Card>
-                  <a href="https://www.linkedin.com/in/alesanchezr/" target="_blank">
-                  <CardImage>
-                    <Image isRatio='4:8' src={alejandro} />
-                    <p className="name-team">Alejandro Sanchez <br/> CEO of 4Geeks Academy. Software Developer and Data-Oriented Marketeer</p>
-                  </CardImage>
+                  <a
+                    href="https://www.linkedin.com/in/alesanchezr/"
+                    target="_blank"
+                  >
+                    <CardImage>
+                      <Image isRatio="4:8" src={alejandro} />
+                      <p className="name-team">
+                        Alejandro Sanchez <br /> CEO of 4Geeks Academy. Software
+                        Developer and Data-Oriented Marketeer
+                      </p>
+                    </CardImage>
                   </a>
                 </Card>
                 <Content>
@@ -294,17 +322,15 @@ class Index extends React.Component {
                     I'm a computer engineer with all my life dedicated to the
                     coding industry through several initiatives.
                   </small>
-                  <p>
-                    <br />
-                    <Icon size="18" icon={envelopeO} />
-                    <a
-                      className="icon-link"
-                      href="https://www.linkedin.com/in/alesanchezr/"
-                      target="_blank"
-                    >
-                      <Icon size="18" icon={linkedinSquare} />
-                    </a>
-                  </p>
+                  <br />
+                  <Icon size="18" icon={envelopeO} />
+                  <a
+                    className="icon-link"
+                    href="https://www.linkedin.com/in/alesanchezr/"
+                    target="_blank"
+                  >
+                    <Icon size="18" icon={linkedinSquare} />
+                  </a>
                 </Content>
               </Column>
             </Columns>
@@ -338,50 +364,78 @@ class Index extends React.Component {
                 <Content isSize="small">
                   Your business takes off right now
                 </Content>
-                <Columns>
-                  <Column isSize="1/2">
-                    <Field>
-                      <Label>Name</Label>
-                      <Control>
-                        <Input type="text" placeholder="Name" />
-                      </Control>
-                    </Field>
-                  </Column>
-                  <Column isSize="1/2">
-                    <Field>
-                      <Label>Last Name</Label>
-                      <Control>
-                        <Input type="text" placeholder="Last Name" />
-                      </Control>
-                    </Field>
-                  </Column>
-                </Columns>
-                <Field>
-                  <Label>Email</Label>
-                  <Control>
-                    <Input type="text" placeholder="Last Name" />
-                  </Control>
-                </Field>
-                <Field>
-                  <Label>Comment or Message</Label>
-                  <Control>
-                    <TextArea placeholder={''} />
-                  </Control>
-                </Field>
-                <Field isGrouped>
-                  <Control>
-                    <a className="button is-primary is-medium is-rounded">
-                      Submit
+                <form onSubmit={e => this.onSubmit(e)}>
+                  <Columns>
+                    <Column isSize="1/2">
+                      <Field>
+                        <Label>First Name</Label>
+                        <Control>
+                          <Input
+                            type="text"
+                            name="firstName"
+                            placeholder="First Name"
+                            value={this.state.firstName}
+                            onChange={e => this.handleChange(e)}
+                          />
+                        </Control>
+                      </Field>
+                    </Column>
+                    <Column isSize="1/2">
+                      <Field>
+                        <Label>Last Name</Label>
+                        <Control>
+                          <Input
+                            type="text"
+                            name="lastName"
+                            placeholder="Last Name"
+                            value={this.state.lastName}
+                            onChange={e => this.handleChange(e)}
+                          />
+                        </Control>
+                      </Field>
+                    </Column>
+                  </Columns>
+                  <Field>
+                    <Label>Email</Label>
+                    <Control>
+                      <Input
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        value={this.state.email}
+                        onChange={e => this.handleChange(e)}
+                      />
+                    </Control>
+                  </Field>
+                  <Field>
+                    <Label>Comment or Message</Label>
+                    <Control>
+                      <TextArea
+                        name="message"
+                        placeholder="Your message or comment goes here"
+                        value={this.state.message}
+                        onChange={e => this.handleChange(e)}
+                      />
+                    </Control>
+                  </Field>
+                  <Field isGrouped>
+                    <Control>
+                      <button
+                        className="button is-primary is-medium is-rounded"
+                        type="submit"
+                      >
+                        Submit
+                      </button>
+                    </Control>
+                  </Field>
+                  <Content hasTextAlign="centered">
+                    <Subtitle>Privacy Policy</Subtitle>
+                    <a href="#">
+                      Here you can access the information about how we treat
+                      your data.
                     </a>
-                  </Control>
-                </Field>
-                <Content hasTextAlign="centered">
-                  <Subtitle>Privacy Policy</Subtitle>
-                  <a>
-                    Here you can access the information about how we treat your
-                    data.
-                  </a>
-                </Content>
+                  </Content>
+                </form>
               </Column>
             </Columns>
           </Container>
@@ -415,6 +469,19 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            category
+            image {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 480) {
+                  aspectRatio
+                  base64
+                  sizes
+                  src
+                  srcSet
+                }
+              }
+            }
           }
         }
       }

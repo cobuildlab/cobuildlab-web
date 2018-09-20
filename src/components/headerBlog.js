@@ -14,7 +14,7 @@ import '../assets/css/index.css'
 import logo from '../resources/cobuildlab.png'
 import '../assets/css/index.css'
 
-class header extends React.Component {
+class headerBlog extends React.Component {
   constructor(props) {
     super(props)
 
@@ -30,7 +30,10 @@ class header extends React.Component {
   }
   render() {
     return (
-      <Navbar className="isTransparent navbar-absolute" style={{ margin: '0' }}>
+      <Navbar
+        style={{ position: 'initial !important', margin: '0' }}
+        className="isTransparent"
+      >
         <Container>
           <NavbarBrand>
             <NavbarItem>
@@ -82,4 +85,4 @@ class header extends React.Component {
     )
   }
 }
-export default header
+export default headerBlog

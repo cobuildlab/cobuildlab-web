@@ -43,8 +43,6 @@ class footer extends React.Component {
   onSubmit = e => {
     e.preventDefault()
 
-    console.log(this.state)
-
     addToMailchimp(this.state.email, {
       FNAME: this.state.fullName,
     }).then(data => {
@@ -112,35 +110,33 @@ class footer extends React.Component {
                 </form>
               </Column>
               <Column isSize="1/3">
-                <Title hasTextColor="white">Follow Us</Title>
+                <Title hasTextAlign="centered" hasTextColor="white">Follow Us</Title>
                 <Content hasTextAlign="centered">
-                  <p>
-                    <br />
-                    <a
-                      className="icon-instagram"
-                      href="https://www.instagram.com/cobuildlab"
-                    >
-                      <Icon size="24" icon={instagram} />
-                    </a>
-                    <a
-                      className="icon-facebook"
-                      href="https://www.facebook.com/cobuildlab"
-                    >
-                      <Icon size="24" icon={facebookOfficial} />
-                    </a>
-                    <a
-                      className="icon-twitter"
-                      href="https://twitter.com/cobuildlab"
-                    >
-                      <Icon size="24" icon={twitterSquare} />
-                    </a>
-                    <a
-                      className="icon-linkedin"
-                      href="https://www.linkedin.com/in/cobuildlab"
-                    >
-                      <Icon size="24" icon={linkedinSquare} />
-                    </a>
-                  </p>
+                  <br />
+                  <a
+                    className="icon-instagram"
+                    href="https://www.instagram.com/cobuildlab"
+                  >
+                    <Icon size="24" icon={instagram} />
+                  </a>
+                  <a
+                    className="icon-facebook"
+                    href="https://www.facebook.com/cobuildlab"
+                  >
+                    <Icon size="24" icon={facebookOfficial} />
+                  </a>
+                  <a
+                    className="icon-twitter"
+                    href="https://twitter.com/cobuildlab"
+                  >
+                    <Icon size="24" icon={twitterSquare} />
+                  </a>
+                  <a
+                    className="icon-linkedin"
+                    href="https://www.linkedin.com/in/cobuildlab"
+                  >
+                    <Icon size="24" icon={linkedinSquare} />
+                  </a>
                 </Content>
               </Column>
               <Column isSize="1/3">
