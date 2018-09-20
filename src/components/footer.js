@@ -110,7 +110,9 @@ class footer extends React.Component {
                 </form>
               </Column>
               <Column isSize="1/3">
-                <Title hasTextAlign="centered" hasTextColor="white">Follow Us</Title>
+                <Title hasTextAlign="centered" hasTextColor="white">
+                  Follow Us
+                </Title>
                 <Content hasTextAlign="centered">
                   <br />
                   <a

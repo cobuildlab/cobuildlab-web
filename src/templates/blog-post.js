@@ -32,8 +32,8 @@ class BlogPostTemplate extends React.Component {
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
 
-        <Hero isColor="primary" isSize="medium">
-          <HeroBody className="bg-post" style={{backgroundImage: `url(../${image})`}}>
+        <Hero isColor="black" isSize="medium">
+          <HeroBody className="bg-post" style={{backgroundImage: `url(${post.frontmatter.image.publicURL})`}}>
             <Container hasTextAlign="centered">
               <Columns isCentered>
                 <Column>
@@ -48,10 +48,11 @@ class BlogPostTemplate extends React.Component {
           </HeroBody>
         </Hero>
 
+        <section className="section">
         <Container>
           <Columns isCentered>
             <Column
-              hasTextAlign="centered"
+              hasTextAlign="left"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
           </Columns>
@@ -111,6 +112,7 @@ class BlogPostTemplate extends React.Component {
             )}
           </Columns>
         </Container>
+        </section>
       </Layout>
     )
   }

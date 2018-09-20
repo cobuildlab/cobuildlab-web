@@ -22,6 +22,8 @@ import {
   Content,
   Tag,
 } from 'bloomer'
+import { Icon } from 'react-icons-kit'
+import { clockO } from 'react-icons-kit/fa/clockO'
 
 class BlogIndex extends React.Component {
   constructor(props) {
@@ -105,19 +107,30 @@ class BlogIndex extends React.Component {
                 return (
                   <Column key={node.fields.slug} isSize="1/3">
                     <Link to={node.fields.slug}>
-                      <Card>
+                      <Card className="card-p">
+                        <CardContent
+                          className="card-post"
+                          style={{
+                            backgroundImage: `url(${
+                              node.frontmatter.image.publicURL
+                            })`,
+                          }}
+                        >
+                          <Content className="title-post">
+                            <small>
+                              {' '}
+                              <Icon
+                                icon={clockO}
+                                style={{ paddingTop: 5 }}
+                              />{' '}
+                              {node.frontmatter.date}
+                            </small>
+                            <Subtitle hasTextColor="white">{title}</Subtitle>
+                          </Content>
+                        </CardContent>
                         <Tag className="tag-category">
                           {node.frontmatter.category}
                         </Tag>
-                        <CardContent>
-                          {title}
-                          <Img
-                            sizes={node.frontmatter.image.childImageSharp.fluid}
-                          />
-                          <Content>
-                            <small>{node.frontmatter.date}</small>
-                          </Content>
-                        </CardContent>
                       </Card>
                     </Link>
                   </Column>
