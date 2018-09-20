@@ -274,6 +274,38 @@ hr {
   background-Position: center;
   background-size: cover;
 }
+.card-p{
+  background-color: #000000 !important;
+  border-radius: 5px !important;
+  height: 280px;
+  -webkit-transition: box-shadow .3s ease-in-out;
+  -moz-transition: box-shadow .3s ease-in-out;
+  transition: box-shadow .3s ease-in-out;
+}
+.card-p:hover{
+  background-color: #000000 !important;
+  -webkit-box-shadow: 0 10px 27px 0 rgba(0,0,0,0.1) !important;
+  box-shadow: 0 10px 27px 0 rgba(0,0,0,0.2) !important;
+  border-radius: 5px !important;
+  height: 280px;
+}
+.card-post{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 280px;
+  border-radius: 5px;
+  color: #fff !important;
+  font-family: Lato-Bold !important;
+  box-shadow: none !important;
+  opacity: 1;
+  -webkit-transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+}
+.card-post:hover{
+  opacity: 0.8;
+}
 /*image backgroun header*/
 
 /*Title and sections*/
@@ -289,6 +321,11 @@ hr {
   margin-bottom: 25px !important;
   font-family: 'Lato-Black';
   font-weight: bold;
+}
+.title-post{
+  position: absolute;
+  bottom: 20px;
+  color: #fff !important;
 }
 .name-team{
   position: absolute;

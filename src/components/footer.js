@@ -114,7 +114,7 @@ class footer extends React.Component {
               <Column isSize="1/3">
                 <Title hasTextColor="white">Follow Us</Title>
                 <Content hasTextAlign="centered">
-                  <p>
+                  
                     <br />
                     <a
                       className="icon-instagram"
@@ -140,7 +140,7 @@ class footer extends React.Component {
                     >
                       <Icon size="24" icon={linkedinSquare} />
                     </a>
-                  </p>
+
                 </Content>
               </Column>
               <Column isSize="1/3">
