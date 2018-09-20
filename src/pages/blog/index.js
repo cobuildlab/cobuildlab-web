@@ -53,74 +53,60 @@ class BlogIndex extends React.Component {
             <Container hasTextAlign="centered">
               <Columns isCentered>
                 <Column>
-                  <Title isSize={1} hasTextColor="info">
+                  <Title className="title-blog" isSize={1}>
                     {siteTitle}
                   </Title>
                   <Subtitle isSize={5}>
-                    Ideas, advice, value and above all, entrepreneurship. Unique
+                    Ideas, advice, value and above all, entrepreneurship. <br/> Unique
                     content made as a guide for entrepreneurs that intend to
                     offer new opportunities in the Startup World.
                   </Subtitle>
+                  <br/>
+                  <hr/>
                 </Column>
               </Columns>
             </Container>
           </HeroBody>
-
-          <HeroFooter>
-            <Tabs isBoxed isFullWidth>
-              <Container>
-                <TabList>
-                  <Tab isActive={this.state.isActive} onClick={this.onClickNav}>
-                    <TabLink>ALL</TabLink>
-                  </Tab>
-                  <Tab isActive={this.state.isActive} onClick={this.onClickNav}>
-                    <TabLink>AI</TabLink>
-                  </Tab>
-                  <Tab isActive={this.state.isActive} onClick={this.onClickNav}>
-                    <TabLink>CONCEPTS</TabLink>
-                  </Tab>
-                  <Tab isActive={this.state.isActive} onClick={this.onClickNav}>
-                    <TabLink>EDUCATION</TabLink>
-                  </Tab>
-                  <Tab isActive={this.state.isActive} onClick={this.onClickNav}>
-                    <TabLink>EVENTS</TabLink>
-                  </Tab>
-                  <Tab isActive={this.state.isActive} onClick={this.onClickNav}>
-                    <TabLink>NEWS</TabLink>
-                  </Tab>
-                  <Tab isActive={this.state.isActive} onClick={this.onClickNav}>
-                    <TabLink>SMALL BUSINESSES</TabLink>
-                  </Tab>
-                  <Tab isActive={this.state.isActive} onClick={this.onClickNav}>
-                    <TabLink>STARTUPS IN MIAMI</TabLink>
-                  </Tab>
-                  <Tab isActive={this.state.isActive} onClick={this.onClickNav}>
-                    <TabLink>TIPS</TabLink>
-                  </Tab>
-                  <Tab isActive={this.state.isActive} onClick={this.onClickNav}>
-                    <TabLink>TOOLS</TabLink>
-                  </Tab>
-                  <Tab isActive={this.state.isActive} onClick={this.onClickNav}>
-                    <TabLink>TRENDING TECHNOLOGIES</TabLink>
-                  </Tab>
-                  <Tab isActive={this.state.isActive} onClick={this.onClickNav}>
-                    <TabLink>VIRTUAL REALITY</TabLink>
-                  </Tab>
-                </TabList>
-              </Container>
-            </Tabs>
-          </HeroFooter>
         </Hero>
-
+        <section className="section">
         <Container>
-          <Columns>
+        <Tabs>
+          <TabList>
+              <Tab isActive>
+                  <TabLink>
+                      <span>Education</span>
+                  </TabLink>
+              </Tab>
+              <Tab>
+                  <TabLink>
+                      <span>News</span>
+                  </TabLink>
+              </Tab>
+              <Tab>
+                  <TabLink>
+                      <span>Small Business</span>
+                  </TabLink>
+              </Tab>
+              <Tab>
+                  <TabLink>
+                      <span>Miami</span>
+                  </TabLink>
+              </Tab>
+              <Tab>
+                  <TabLink>
+                      <span>Tools</span>
+                  </TabLink>
+              </Tab>
+          </TabList>
+        </Tabs>
+          <Columns className="is-multiline">
             {posts.map(({ node }) => {
               const title = get(node, 'frontmatter.title') || node.fields.slug
               return (
                 <Column key={node.fields.slug} isSize="1/3">
                   <Link to={node.fields.slug}>
                     <Card>
-                      <Tag isColor="success">{node.frontmatter.category}</Tag>
+                      <Tag className="tag-category">{node.frontmatter.category}</Tag>
                       <CardContent>
                         {title}
                         <Img
@@ -137,6 +123,7 @@ class BlogIndex extends React.Component {
             })}
           </Columns>
         </Container>
+        </section>
       </Layout>
     )
   }

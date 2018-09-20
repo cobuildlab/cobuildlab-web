@@ -19,6 +19,7 @@ import {
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
+    const image = '../blog/hello-world/salty_egg.jpg'
     const siteTitle = 'Cobuild Lab'
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
@@ -31,14 +32,16 @@ class BlogPostTemplate extends React.Component {
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
 
-        <Hero isColor="black" isSize="medium">
-          <HeroBody>
+        <Hero isColor="primary" isSize="medium">
+          <HeroBody className="bg-post" style={{backgroundImage: `url(../${image})`}}>
             <Container hasTextAlign="centered">
               <Columns isCentered>
                 <Column>
                   <Title isSize={1} hasTextColor="white">
                     {post.frontmatter.title}
                   </Title>
+                  <br/>
+                  <hr/>
                 </Column>
               </Columns>
             </Container>
@@ -69,7 +72,7 @@ class BlogPostTemplate extends React.Component {
               <Column isSize="1/3">
                 <Link to={previous.fields.slug} rel="prev">
                   <Card>
-                    <Tag isColor="success">{previous.frontmatter.category}</Tag>
+                    <Tag className="tag-category">{previous.frontmatter.category}</Tag>
                     <CardContent>
                       ← {previous.frontmatter.title}
                       <Content>
