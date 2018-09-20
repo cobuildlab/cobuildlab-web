@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Layout from '../components/layout'
+import LayoutPost from '../components/layoutPost'
 import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import {
@@ -25,7 +25,7 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
 
     return (
-      <Layout>
+      <LayoutPost>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
@@ -62,9 +62,9 @@ class BlogPostTemplate extends React.Component {
             </Column>
           </Columns>
 
-          <Columns isCentered>
+          <Columns style={{marginTop: 30}} isCentered>
             <Column hasTextAlign="centered">
-              <Title isSize={3}>READ MORE</Title>
+              <Title isSize={4}>READ MORE</Title>
             </Column>
           </Columns>
 
@@ -72,16 +72,17 @@ class BlogPostTemplate extends React.Component {
             {previous ? (
               <Column isSize="1/3">
                 <Link to={previous.fields.slug} rel="prev">
-                  <Card>
+                  <Card className="card-p">
                     <Tag className="tag-category">{previous.frontmatter.category}</Tag>
-                    <CardContent>
+                    <CardContent
+                          className="card-post"
+                          style={{
+                            backgroundImage: `url(${
+                              previous.frontmatter.image.publicURL
+                            })`,
+                          }}
+                      >
                       ← {previous.frontmatter.title}
-                      <Content>
-                        {/* <small>{previous.frontmatter.date}</small> */}
-                      </Content>
-                      <Img
-                        sizes={previous.frontmatter.image.childImageSharp.fluid}
-                      />
                     </CardContent>
                   </Card>
                 </Link>
@@ -93,16 +94,17 @@ class BlogPostTemplate extends React.Component {
             {next ? (
               <Column isSize="1/3">
                 <Link to={next.fields.slug} rel="next">
-                  <Card>
-                    <Tag isColor="success">{next.frontmatter.category}</Tag>
-                    <CardContent>
+                  <Card className="card-p">
+                    <Tag className="tag-category">{next.frontmatter.category}</Tag>
+                    <CardContent
+                          className="card-post"
+                          style={{
+                            backgroundImage: `url(${
+                              next.frontmatter.image.publicURL
+                            })`,
+                          }}
+                      >
                       {next.frontmatter.title} →
-                      <Content>
-                        {/* <small>{next.frontmatter.date}</small> */}
-                      </Content>
-                      <Img
-                        sizes={next.frontmatter.image.childImageSharp.fluid}
-                      />
                     </CardContent>
                   </Card>
                 </Link>
@@ -113,7 +115,7 @@ class BlogPostTemplate extends React.Component {
           </Columns>
         </Container>
         </section>
-      </Layout>
+      </LayoutPost>
     )
   }
 }

@@ -199,12 +199,14 @@ class Index extends React.Component {
                   <Column isSize="1/3" key={node.fields.slug}>
                     <Link to={node.fields.slug}>
                       <Card className="link-card">
-                        <Tag className="tag-category">General</Tag>
-                        <CardImage>
-                          <Image
-                            isRatio="4:3"
-                            src="https://via.placeholder.com/1280x960"
-                          />
+                        <Tag className="tag-category">{node.frontmatter.category}</Tag>
+                        <CardImage 
+                          className="card-post"
+                          style={{
+                            backgroundImage: `url(${
+                              node.frontmatter.image.publicURL
+                            })`,
+                          }}>
                         </CardImage>
                         <CardContent>
                           <Subtitle>{title}</Subtitle>

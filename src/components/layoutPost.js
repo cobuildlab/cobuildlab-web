@@ -1,20 +1,21 @@
 import React from 'react'
 import { Link, withPrefix } from 'gatsby'
 import '../assets/css/index.css'
-import Header from './header'
+import HeaderPost from './headerPost'
 import Footer from './footer'
 
-class Template extends React.Component {
+class LayoutPost extends React.Component {
   render() {
     const { children } = this.props
+
     return (
       <div>
-      <Header/>
+        <HeaderPost/>
         {children}
-      <Footer />
+        <Footer />
       </div>
     )
   }
 }
 
-export default Template
+export default LayoutPost
