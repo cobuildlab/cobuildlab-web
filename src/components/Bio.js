@@ -22,12 +22,9 @@ import {
   Content,
 } from 'bloomer';
 import '../assets/css/index.css'
-// Import typefaces
-import 'typeface-montserrat'
-import 'typeface-merriweather'
 
 import profilePic from './profile-pic.jpg'
-import { rhythm } from '../utils/typography'
+
 
 class Bio extends React.Component {
   render() {
@@ -35,17 +32,17 @@ class Bio extends React.Component {
       <div
         style={{
           display: 'flex',
-          marginBottom: rhythm(2.5),
+          marginBottom: '15',
         }}
       >
         <img
           src={profilePic}
           alt={`Kyle Mathews`}
           style={{
-            marginRight: rhythm(1 / 2),
+            marginRight: 15,
             marginBottom: 0,
-            width: rhythm(2),
-            height: rhythm(2),
+            width: 20,
+            height: 20,
           }}
         />
         <p>

@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
-import Layout from '../../components/layout'
+import Layout from '../../../components/layout'
 import {
   Hero,
   HeroBody,
@@ -22,8 +22,6 @@ import {
   Content,
   Tag,
 } from 'bloomer'
-import { Icon } from 'react-icons-kit'
-import { clockO } from 'react-icons-kit/fa/clockO'
 
 class BlogIndex extends React.Component {
   constructor(props) {
@@ -75,29 +73,19 @@ class BlogIndex extends React.Component {
             <Tabs isBoxed isFullWidth>
               <TabList>
                 <Tab>
-                  <TabLink>
-                    <span>Education</span>
-                  </TabLink>
+                  <Link to="blog/education">Education</Link>
                 </Tab>
                 <Tab>
-                  <TabLink>
-                    <span>News</span>
-                  </TabLink>
+                  <Link to="blog/news">News</Link>
                 </Tab>
                 <Tab>
-                  <TabLink>
-                    <span>Small Business</span>
-                  </TabLink>
+                  <Link to="blog/small-business">Small Business</Link>
                 </Tab>
                 <Tab>
-                  <TabLink>
-                    <span>Miami</span>
-                  </TabLink>
+                  <Link to="blog/miami">Miami</Link>
                 </Tab>
                 <Tab>
-                  <TabLink>
-                    <span>Tools</span>
-                  </TabLink>
+                  <Link to="blog/tools">Tools</Link>
                 </Tab>
               </TabList>
             </Tabs>
@@ -107,30 +95,19 @@ class BlogIndex extends React.Component {
                 return (
                   <Column key={node.fields.slug} isSize="1/3">
                     <Link to={node.fields.slug}>
-                      <Card className="card-p">
-                        <CardContent
-                          className="card-post"
-                          style={{
-                            backgroundImage: `url(${
-                              node.frontmatter.image.publicURL
-                            })`,
-                          }}
-                        >
-                          <Content className="title-post">
-                            <small>
-                              {' '}
-                              <Icon
-                                icon={clockO}
-                                style={{ paddingTop: 5 }}
-                              />{' '}
-                              {node.frontmatter.date}
-                            </small>
-                            <Subtitle hasTextColor="white">{title}</Subtitle>
-                          </Content>
-                        </CardContent>
+                      <Card>
                         <Tag className="tag-category">
                           {node.frontmatter.category}
                         </Tag>
+                        <CardContent>
+                          {title}
+                          <Img
+                            sizes={node.frontmatter.image.childImageSharp.fluid}
+                          />
+                          <Content>
+                            <small>{node.frontmatter.date}</small>
+                          </Content>
+                        </CardContent>
                       </Card>
                     </Link>
                   </Column>
@@ -157,6 +134,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 12
+      filter: { frontmatter: { category: { eq: "Small Business" } } }
     ) {
       edges {
         node {
