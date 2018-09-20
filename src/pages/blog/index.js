@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
+import Img from 'gatsby-image'
 import Layout from '../../components/layout'
 import {
   Hero,
@@ -119,9 +120,12 @@ class BlogIndex extends React.Component {
                 <Column key={node.fields.slug} isSize="1/3">
                   <Link to={node.fields.slug}>
                     <Card>
-                      <Tag isColor="success">Success</Tag>
+                      <Tag isColor="success">{node.frontmatter.category}</Tag>
                       <CardContent>
                         {title}
+                        <Img
+                          sizes={node.frontmatter.image.childImageSharp.fluid}
+                        />
                         <Content>
                           <small>{node.frontmatter.date}</small>
                         </Content>
@@ -161,6 +165,19 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            category
+            image {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 480) {
+                  aspectRatio
+                  base64
+                  sizes
+                  src
+                  srcSet
+                }
+              }
+            }
           }
         }
       }

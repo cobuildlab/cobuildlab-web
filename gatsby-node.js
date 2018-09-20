@@ -23,6 +23,20 @@ exports.createPages = ({ graphql, actions }) => {
                   }
                   frontmatter {
                     title
+                    date(formatString: "DD MMMM, YYYY")
+                    category
+                    image {
+                      publicURL
+                      childImageSharp {
+                        fluid(maxWidth: 480) {
+                          aspectRatio
+                          base64
+                          sizes
+                          src
+                          srcSet
+                        }
+                      }
+                    }
                   }
                 }
               }

@@ -2,6 +2,7 @@ import React from 'react'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
+import { graphql } from 'gatsby'
 
 class NotFoundPage extends React.Component {
   render() {

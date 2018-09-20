@@ -22,7 +22,8 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 1920,
+              linkImagesToOriginal: true,
             },
           },
           {
@@ -42,7 +43,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        maxWidth: 1080,
       },
     },
     `gatsby-plugin-feed`,
@@ -66,5 +67,13 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint:
+          'https://4geeks.us5.list-manage.com/subscribe/post?u=05c88e36fa1e947ec0bf94453&amp;id=02c69b216a', // see instructions section below
+      },
+    },
+    `gatsby-remark-copy-linked-files`,
   ],
 }

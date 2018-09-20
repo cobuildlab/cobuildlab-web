@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import { Link, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import {
   Hero,
   HeroBody,
@@ -51,6 +52,11 @@ class BlogPostTemplate extends React.Component {
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
           </Columns>
+          <Columns isCentered>
+            <Column>
+              <Img sizes={post.frontmatter.image.childImageSharp.fluid} />
+            </Column>
+          </Columns>
 
           <Columns isCentered>
             <Column hasTextAlign="centered">
@@ -63,12 +69,15 @@ class BlogPostTemplate extends React.Component {
               <Column isSize="1/3">
                 <Link to={previous.fields.slug} rel="prev">
                   <Card>
-                    <Tag isColor="success">Success</Tag>
+                    <Tag isColor="success">{previous.frontmatter.category}</Tag>
                     <CardContent>
                       ← {previous.frontmatter.title}
                       <Content>
                         {/* <small>{previous.frontmatter.date}</small> */}
                       </Content>
+                      <Img
+                        sizes={previous.frontmatter.image.childImageSharp.fluid}
+                      />
                     </CardContent>
                   </Card>
                 </Link>
@@ -81,12 +90,15 @@ class BlogPostTemplate extends React.Component {
               <Column isSize="1/3">
                 <Link to={next.fields.slug} rel="next">
                   <Card>
-                    <Tag isColor="success">Success</Tag>
+                    <Tag isColor="success">{next.frontmatter.category}</Tag>
                     <CardContent>
                       {next.frontmatter.title} →
                       <Content>
                         {/* <small>{next.frontmatter.date}</small> */}
                       </Content>
+                      <Img
+                        sizes={next.frontmatter.image.childImageSharp.fluid}
+                      />
                     </CardContent>
                   </Card>
                 </Link>
@@ -118,6 +130,19 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "DD MMMM, YYYY")
+        category
+        image {
+          publicURL
+          childImageSharp {
+            fluid(maxWidth: 480) {
+              aspectRatio
+              base64
+              sizes
+              src
+              srcSet
+            }
+          }
+        }
       }
     }
   }

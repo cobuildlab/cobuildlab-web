@@ -17,9 +17,9 @@ import {
   Content,
 } from 'bloomer'
 
-class CobuildingIndex extends React.Component {
+class CobuildIndex extends React.Component {
   render() {
-    const siteTitle = 'Cobuilding | Cobuild Lab'
+    const siteTitle = 'Cobuild | Cobuild Lab'
     const siteDescription = get(
       this,
       'props.data.site.siteMetadata.description'
@@ -39,7 +39,7 @@ class CobuildingIndex extends React.Component {
               <Columns isCentered>
                 <Column>
                   <Title isSize={1} hasTextColor="black">
-                    Cobuilding
+                    Cobuild
                   </Title>
                   <Subtitle tag="h3">
                     Is the process of transforming an idea in a sustainable
@@ -48,7 +48,7 @@ class CobuildingIndex extends React.Component {
                     Technological Innovation and Exponential Growth
                   </Subtitle>
                   <Subtitle tag="h3" className="has-text-weight-bold">
-                    4Geeks divides the cobuilding process in 4 phases:
+                    4Geeks divides the cobuild process in 4 phases:
                   </Subtitle>
                   <hr />
                 </Column>
@@ -69,7 +69,7 @@ class CobuildingIndex extends React.Component {
                   </li>
                   <li>
                     <MenuLink className="is-uppercase">
-                      Phase 2: Cobuilding
+                      Phase 2: Cobuild
                     </MenuLink>
                   </li>
                   <li>
@@ -254,7 +254,7 @@ class CobuildingIndex extends React.Component {
   }
 }
 
-export default CobuildingIndex
+export default CobuildIndex
 
 export const pageQuery = graphql`
   query {
