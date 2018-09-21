@@ -113,33 +113,42 @@ class footer extends React.Component {
                 <Title hasTextAlign="centered" hasTextColor="white">
                   Follow Us
                 </Title>
-                <Content hasTextAlign="centered">
-                  <br />
-                  <a
+                <br/>
+                <Columns isMobile isCentered>
+                    <Column className="pr-0" isSize={{mobile: 3}}>
+                    <a
                     className="icon-instagram"
                     href="https://www.instagram.com/cobuildlab"
-                  >
-                    <Icon size="24" icon={instagram} />
-                  </a>
-                  <a
-                    className="icon-facebook"
-                    href="https://www.facebook.com/cobuildlab"
-                  >
-                    <Icon size="24" icon={facebookOfficial} />
-                  </a>
-                  <a
-                    className="icon-twitter"
-                    href="https://twitter.com/cobuildlab"
-                  >
-                    <Icon size="24" icon={twitterSquare} />
-                  </a>
-                  <a
+                    >
+                      <Icon size="24" icon={instagram} />
+                    </a>
+                    </Column>
+                    <Column className="pr-0" isSize={{mobile: 3}}>
+                      <a
+                      className="icon-facebook"
+                      href="https://www.facebook.com/cobuildlab"
+                    >
+                      <Icon size="24" icon={facebookOfficial} />
+                    </a>
+                    </Column>
+                    <Column className="pr-0" isSize={{mobile: 3}}>
+                      <a
+                      className="icon-twitter"
+                      href="https://twitter.com/cobuildlab"
+                      >
+                      <Icon size="24" icon={twitterSquare} />
+                      </a>
+                    </Column>
+                    <Column className="pr-0" isSize={{mobile: 3}}>
+                    <a
                     className="icon-linkedin"
                     href="https://www.linkedin.com/in/cobuildlab"
-                  >
-                    <Icon size="24" icon={linkedinSquare} />
-                  </a>
-                </Content>
+                    >
+                      <Icon size="24" icon={linkedinSquare} />
+                    </a>
+                    </Column>
+                </Columns>
+                  <br />
               </Column>
               <Column isSize="1/3">
                 <Title hasTextColor="white">Contact Us</Title>
