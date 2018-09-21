@@ -4,8 +4,8 @@ module.exports = {
     author: '4geeks.co',
     description: 'Software development in Miami, Florida',
     siteUrl: 'https://cobuildlab.com/',
+    twitterHandle: '@cobuildlab',
   },
-  pathPrefix: '/cobuild-lab',
   plugins: [
     `gatsby-plugin-sass`,
     {
@@ -22,8 +22,14 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1920,
+              maxWidth: 720,
               linkImagesToOriginal: true,
+            },
+          },
+          {
+            resolve: 'gatsby-transformer-remark',
+            options: {
+              plugins: ['gatsby-remark-component'],
             },
           },
           {

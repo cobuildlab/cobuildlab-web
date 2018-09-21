@@ -51,9 +51,9 @@ class header extends React.Component {
                 </Link>
               </NavbarItem>
               <NavbarItem>
-                <a className="link-nav" href="/#process">
+                <Link className="link-nav" to="/#process">
                   Cobuild Process
-                </a>
+                </Link>
               </NavbarItem>
               {/* <NavbarItem>
                 <Link className="link-nav" to="/customer-success-stories">
@@ -71,9 +71,9 @@ class header extends React.Component {
                 </Link>
               </NavbarItem>
               <NavbarItem>
-                <a href="#contact" className="link-nav">
+                <Link className="link-nav" to="/#contact">
                   Contact Us
-                </a>
+                </Link>
               </NavbarItem>
             </NavbarEnd>
           </NavbarMenu>
