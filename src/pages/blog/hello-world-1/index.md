@@ -3,6 +3,9 @@ title: Hello World 1
 date: "2015-05-01T22:12:03.284Z"
 image: "./salty_egg.jpg"
 category: Miami
+templateKey: 'blog-post'
+path: /blog
+layout: blog-post
 ---
 
 This is my first post on my new fake blog! How exciting!

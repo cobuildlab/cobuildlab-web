@@ -3,7 +3,11 @@ title: Hello World
 date: "2015-05-01T22:12:03.284Z"
 image: "./salty_egg.jpg"
 category: Education
+templateKey: 'blog-post'
+path: /blog
+layout: blog-post
 ---
+
 <title>This is my first post on my new fake blog! How exciting!</title>
 
 <columns>
@@ -18,8 +22,6 @@ category: Education
 > wrapped in plastic, and vacuum packed. From the salt curing process, the
 > salted duck eggs have a briny aroma, a gelatin-like egg white and a
 > firm-textured, round yolk that is bright orange-red in color.
-  </column>
-</columns>
+> </column> > </columns>
+
 ### I'm sure I'll write a lot more interesting things in the future.
-
-
