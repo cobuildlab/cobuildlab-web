@@ -52,17 +52,11 @@ class BlogPostTemplate extends React.Component {
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
 
-        <Hero isColor="black" isSize="medium">
-          <HeroBody
-            className="bg-post"
-            style={{
-              backgroundImage: `url(${post.frontmatter.image.publicURL})`,
-            }}
-          >
-            <Container hasTextAlign="centered">
+        <Hero isColor="white" isSize="large">
+        <Container hasTextAlign="centered">
               <Columns isCentered>
                 <Column>
-                  <Title isSize={1} hasTextColor="white">
+                  <Title isSize={1} hasTextColor="Black">
                     {post.frontmatter.title}
                   </Title>
                   <br />
@@ -70,6 +64,12 @@ class BlogPostTemplate extends React.Component {
                 </Column>
               </Columns>
             </Container>
+          <HeroBody
+            className="bg-post"
+            style={{
+              backgroundImage: `url(${post.frontmatter.image.publicURL})`,
+            }}
+          >
           </HeroBody>
         </Hero>
 

@@ -109,18 +109,18 @@ class EducationIndex extends React.Component {
                             })`,
                           }}
                         >
-                          <Content className="title-post">
-                            <small>
-                              {' '}
-                              <Icon
-                                icon={clockO}
-                                style={{ paddingTop: 5 }}
-                              />{' '}
-                              {node.frontmatter.date}
-                            </small>
-                            <Subtitle hasTextColor="white">{title}</Subtitle>
-                          </Content>
                         </CardContent>
+                        <Content className="title-post">
+                          <small>
+                            {' '}
+                            <Icon
+                              icon={clockO}
+                              style={{ paddingTop: 5 }}
+                            />{' '}
+                            {node.frontmatter.date}
+                          </small>
+                          <Subtitle hasTextColor="white">{title}</Subtitle>
+                        </Content>
                         <Tag className="tag-category">
                           {node.frontmatter.category}
                         </Tag>

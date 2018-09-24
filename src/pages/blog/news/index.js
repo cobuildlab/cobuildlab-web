@@ -109,7 +109,8 @@ class EducationIndex extends React.Component {
                             })`,
                           }}
                         >
-                          <Content className="title-post">
+                        </CardContent>
+                        <Content className="title-post">
                             <small>
                               {' '}
                               <Icon
@@ -120,7 +121,6 @@ class EducationIndex extends React.Component {
                             </small>
                             <Subtitle hasTextColor="white">{title}</Subtitle>
                           </Content>
-                        </CardContent>
                         <Tag className="tag-category">
                           {node.frontmatter.category}
                         </Tag>

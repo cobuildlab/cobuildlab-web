@@ -119,6 +119,7 @@ class footer extends React.Component {
                     <a
                     className="icon-instagram"
                     href="https://www.instagram.com/cobuildlab"
+                    target="_blank"
                     >
                       <Icon size="24" icon={instagram} />
                     </a>
@@ -127,6 +128,7 @@ class footer extends React.Component {
                       <a
                       className="icon-facebook"
                       href="https://www.facebook.com/cobuildlab"
+                      target="_blank"
                     >
                       <Icon size="24" icon={facebookOfficial} />
                     </a>
@@ -135,6 +137,7 @@ class footer extends React.Component {
                       <a
                       className="icon-twitter"
                       href="https://twitter.com/cobuildlab"
+                      target="_blank"
                       >
                       <Icon size="24" icon={twitterSquare} />
                       </a>
@@ -143,6 +146,7 @@ class footer extends React.Component {
                     <a
                     className="icon-linkedin"
                     href="https://www.linkedin.com/in/cobuildlab"
+                    target="_blank"
                     >
                       <Icon size="24" icon={linkedinSquare} />
                     </a>
