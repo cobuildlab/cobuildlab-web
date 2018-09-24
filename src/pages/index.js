@@ -87,9 +87,30 @@ class Index extends React.Component {
         {/*HEADER*/}
         <Hero isSize="large">
           <HeroBody className="bg-header">
-            <Container>
+            <Container isFluid className="is-hidden-mobile">
               <Title className="title-logo">Cobuild Lab</Title>
               <Title className="subtitle-logo">Let’s Build a Great Idea</Title>
+              <Columns>
+                <Column isSize="1/2">
+                  <Title isSize={4}>
+                    We help entrepreneurs create amazing Products with our
+                    streamlined, lean and phased{' '}
+                    <span style={{ color: '#fff' }}>
+                      Software Development Process.
+                    </span>{' '}
+                    Since day one, our technique is focused on early results and
+                    transparent communication.
+                  </Title>
+                  <a className="button is-primary is-medium is-rounded">
+                    READ MORE
+                  </a>
+                </Column>
+              </Columns>
+            </Container>
+
+            <Container isFluid className="is-hidden-desktop">
+              <Title className="title-logo-mobile">Cobuild Lab</Title>
+              <Title className="subtitle-logo-mobile">Let’s Build a Great Idea</Title>
               <Columns>
                 <Column isSize="1/2">
                   <Title isSize={6}>
@@ -101,8 +122,8 @@ class Index extends React.Component {
                     Since day one, our technique is focused on early results and
                     transparent communication.
                   </Title>
-                  <a className="button is-primary is-medium is-rounded">
-                    Read more
+                  <a className="button is-primary is-small is-rounded">
+                    READ MORE
                   </a>
                 </Column>
               </Columns>
@@ -129,7 +150,7 @@ class Index extends React.Component {
                 <div className="icon-process">
                   <Icon size="24" icon={check} />
                 </div>
-                <Title isSize={4}>Validation</Title>
+                <Title isSize={3}>Validation</Title>
                 <p>
                   Plain and simple: Don't offer what people doesn't want. - Idea
                   Validation: (Technical and Economical) - Market Validation:
@@ -141,7 +162,7 @@ class Index extends React.Component {
                 <div className="icon-process">
                   <Icon size="24" icon={code} />
                 </div>
-                <Title isSize={4}>CoBuild</Title>
+                <Title isSize={3}>CoBuild</Title>
                 <p>
                   It's time to build!. In this phase we combine a
                   multidisciplinary team to actually build the idea. -
@@ -154,7 +175,7 @@ class Index extends React.Component {
                 <div className="icon-process">
                   <Icon size="24" icon={ic_layers} />
                 </div>
-                <Title isSize={4}>Close the Circle</Title>
+                <Title isSize={3}>Close the Circle</Title>
                 <p>
                   A very important step. Here we make sure that the idea has
                   every detail that is needed for been available to transform
@@ -167,7 +188,7 @@ class Index extends React.Component {
                 <div className="icon-process">
                   <Icon size="24" icon={slideshare} />
                 </div>
-                <Title isSize={4}>Acceleration</Title>
+                <Title isSize={3}>Acceleration</Title>
                 <p>
                   Congratulations! We have proved to have a sustainable business
                   with a healthy growth rate. It's time to accelerate. At this
@@ -191,7 +212,7 @@ class Index extends React.Component {
         {/*Section Latest News*/}
         <section className="section">
           <Container hasTextAlign="centered">
-            <Title className="title-section">Latest News</Title>
+            <Title isSize={2} className="title-section">Latest News</Title>
             <Columns isCentered>
               {posts.map(({ node }) => {
                 const title = get(node, 'frontmatter.title') || node.fields.slug
@@ -241,7 +262,7 @@ class Index extends React.Component {
 
         <section className="section">
           <Container hasTextAlign="centered">
-            <Title className="title-section">Our Team</Title>
+            <Title isSize={2} className="title-section">Our Team</Title>
             <Columns isCentered>
               <Column isSize="1/3">
                 <Card>
@@ -345,7 +366,7 @@ class Index extends React.Component {
           <Container>
             <Columns isCentered>
               <Column className="p-f" isSize="1/2">
-                <Title className="title-section" hasTextAlign="left">
+                <Title isSize={2} className="title-section" hasTextAlign="left">
                   Where we are?
                 </Title>
                 <Card>
@@ -360,7 +381,7 @@ class Index extends React.Component {
                 </Card>
               </Column>
               <Column className="p-f" isSize="1/2">
-                <Title className="title-section" hasTextAlign="left">
+                <Title isSize={2} className="title-section" hasTextAlign="left">
                   Write Us!
                 </Title>
                 <Content isSize="small">
