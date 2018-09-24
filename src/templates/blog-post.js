@@ -2,6 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import LayoutPost from '../components/layoutPost'
 import { Link, graphql } from 'gatsby'
+import { DiscussionEmbed } from 'disqus-react'
+import Share from '../components/Share'
 import Img from 'gatsby-image'
 import get from 'lodash/get'
 import rehypeReact from 'rehype-react'
@@ -18,9 +20,26 @@ import {
   Tag,
 } from 'bloomer'
 
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+  components: {
+    title: Title,
+    columns: Columns,
+    column: Column,
+  },
+}).Compiler
+
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
+    const twitterHandle = get(
+      this.props,
+      'data.site.siteMetadata.twitterHandle'
+    )
+    const disqusShortname = 'cobuildlab'
+    const disqusConfig = { identifier: post.id, title: post.frontmatter.title }
+    const slug = post.fields.slug
+    const url = get(this.props, 'data.site.siteMetadata.siteUrl')
     const siteTitle = 'Cobuild Lab'
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
@@ -126,6 +145,16 @@ class BlogPostTemplate extends React.Component {
               )}
             </Columns>
           </Container>
+          <Share
+            socialConfig={{
+              twitterHandle,
+              config: {
+                url: `${url}${slug}`,
+                title: `${siteTitle}`,
+              },
+            }}
+          />
+          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
         </section>
       </LayoutPost>
     )
@@ -139,7 +168,9 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
         author
+        twitterHandle
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -162,6 +193,9 @@ export const pageQuery = graphql`
             }
           }
         }
+      }
+      fields {
+        slug
       }
     }
   }

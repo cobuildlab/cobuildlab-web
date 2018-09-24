@@ -157,6 +157,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 12
+      filter: {fileAbsolutePath: {regex: "/(blog)/.*\\.md$/"}}
     ) {
       edges {
         node {
@@ -171,7 +172,7 @@ export const pageQuery = graphql`
             image {
               publicURL
               childImageSharp {
-                fluid(maxWidth: 480) {
+                fluid(maxWidth: 720) {
                   aspectRatio
                   base64
                   sizes
