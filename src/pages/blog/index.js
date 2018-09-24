@@ -75,29 +75,19 @@ class BlogIndex extends React.Component {
             <Tabs isBoxed isFullWidth>
               <TabList>
                 <Tab>
-                  <TabLink>
-                    <span>Education</span>
-                  </TabLink>
+                  <Link to="/blog/education">Education</Link>
                 </Tab>
                 <Tab>
-                  <TabLink>
-                    <span>News</span>
-                  </TabLink>
+                  <Link to="/blog/news">News</Link>
                 </Tab>
                 <Tab>
-                  <TabLink>
-                    <span>Small Business</span>
-                  </TabLink>
+                  <Link to="/blog/small-business">Small Business</Link>
                 </Tab>
                 <Tab>
-                  <TabLink>
-                    <span>Miami</span>
-                  </TabLink>
+                  <Link to="/blog/miami">Miami</Link>
                 </Tab>
                 <Tab>
-                  <TabLink>
-                    <span>Tools</span>
-                  </TabLink>
+                  <Link to="/blog/tools">Tools</Link>
                 </Tab>
               </TabList>
             </Tabs>
