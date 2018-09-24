@@ -115,7 +115,7 @@ class footer extends React.Component {
                 </Title>
                 <br/>
                 <Columns isMobile isCentered>
-                    <Column className="pr-0" isSize={{mobile: 3}}>
+                    <Column className="is-variable is-3" isSize={{mobile: 3, desktop:"1/4"}}>
                     <a
                     className="icon-instagram"
                     href="https://www.instagram.com/cobuildlab"
@@ -123,7 +123,7 @@ class footer extends React.Component {
                       <Icon size="24" icon={instagram} />
                     </a>
                     </Column>
-                    <Column className="pr-0" isSize={{mobile: 3}}>
+                    <Column className="is-variable is-3" isSize={{mobile: 3, desktop:"1/4"}}>
                       <a
                       className="icon-facebook"
                       href="https://www.facebook.com/cobuildlab"
@@ -131,7 +131,7 @@ class footer extends React.Component {
                       <Icon size="24" icon={facebookOfficial} />
                     </a>
                     </Column>
-                    <Column className="pr-0" isSize={{mobile: 3}}>
+                    <Column className="is-variable is-3" isSize={{mobile: 3, desktop:"1/4"}}>
                       <a
                       className="icon-twitter"
                       href="https://twitter.com/cobuildlab"
@@ -139,7 +139,7 @@ class footer extends React.Component {
                       <Icon size="24" icon={twitterSquare} />
                       </a>
                     </Column>
-                    <Column className="pr-0" isSize={{mobile: 3}}>
+                    <Column className="is-variable is-3" isSize={{mobile: 3, desktop:"1/4"}}>
                     <a
                     className="icon-linkedin"
                     href="https://www.linkedin.com/in/cobuildlab"
