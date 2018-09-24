@@ -75,29 +75,19 @@ class BlogIndex extends React.Component {
             <Tabs isBoxed isFullWidth>
               <TabList>
                 <Tab>
-                  <TabLink>
-                    <span>Education</span>
-                  </TabLink>
+                  <Link to="/blog/education">Education</Link>
                 </Tab>
                 <Tab>
-                  <TabLink>
-                    <span>News</span>
-                  </TabLink>
+                  <Link to="/blog/news">News</Link>
                 </Tab>
                 <Tab>
-                  <TabLink>
-                    <span>Small Business</span>
-                  </TabLink>
+                  <Link to="/blog/small-business">Small Business</Link>
                 </Tab>
                 <Tab>
-                  <TabLink>
-                    <span>Miami</span>
-                  </TabLink>
+                  <Link to="/blog/miami">Miami</Link>
                 </Tab>
                 <Tab>
-                  <TabLink>
-                    <span>Tools</span>
-                  </TabLink>
+                  <Link to="/blog/tools">Tools</Link>
                 </Tab>
               </TabList>
             </Tabs>
@@ -116,7 +106,8 @@ class BlogIndex extends React.Component {
                             })`,
                           }}
                         >
-                          <Content className="title-post">
+                        </CardContent>
+                        <Content className="title-post">
                             <small>
                               {' '}
                               <Icon
@@ -127,7 +118,6 @@ class BlogIndex extends React.Component {
                             </small>
                             <Subtitle hasTextColor="white">{title}</Subtitle>
                           </Content>
-                        </CardContent>
                         <Tag className="tag-category">
                           {node.frontmatter.category}
                         </Tag>
@@ -157,6 +147,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 12
+      filter: {fileAbsolutePath: {regex: "/(blog)/.*\\.md$/"}}
     ) {
       edges {
         node {
@@ -171,7 +162,7 @@ export const pageQuery = graphql`
             image {
               publicURL
               childImageSharp {
-                fluid(maxWidth: 480) {
+                fluid(maxWidth: 720) {
                   aspectRatio
                   base64
                   sizes

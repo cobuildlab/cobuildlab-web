@@ -20,8 +20,8 @@
   text-rendering: optimizeLegibility;
 }
 
-body {
-  font-family: 'Lato-Regular', sans-serif !important;
+* {
+  font-family: 'Lato-regular', sans-serif !important;
 }
 /*Link and buttom*/
 a {
@@ -118,6 +118,12 @@ a.navbar-item.is-active,
 }
 .mt-6 {
   margin-top: 60px;
+}
+.mt-25{
+  margin-top: 25px !important;
+}
+.pr-0{
+  padding-right: 0px !important;
 }
 img {
   max-width: 100%;
@@ -301,20 +307,26 @@ hr {
   color: #fff !important;
   font-family: Lato-Bold !important;
   box-shadow: none !important;
-  opacity: 1;
+  opacity: 0.6;
   -webkit-transition: opacity 0.3s ease-in-out;
   -moz-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 .card-post:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
 /*image backgroun header*/
 
 /*Title and sections*/
 .title-logo {
   color: #e76c29 !important;
-  font-size: 3rem !important;
+  font-size: 77px !important;
+  margin-bottom: 0.5rem !important;
+  font-family: 'Lato-Black', sans-serif !important;
+}
+.title-logo-mobile {
+  color: #e76c29 !important;
+  font-size: 35px !important;
   margin-bottom: 0.5rem !important;
   font-family: 'Lato-Black', sans-serif !important;
 }
@@ -327,8 +339,9 @@ hr {
 }
 .title-post {
   position: absolute;
-  bottom: 20px;
+  bottom: 0px;
   color: #fff !important;
+  left: 25px;
 }
 .name-team {
   position: absolute;
@@ -356,6 +369,11 @@ hr {
 } */
 .subtitle-logo {
   color: #264a60 !important;
+  font-size: 65px !important;
+}
+.subtitle-logo-mobile {
+  color: #264a60 !important;
+  font-size: 20px !important;
 }
 .subtitle {
   color: #000;

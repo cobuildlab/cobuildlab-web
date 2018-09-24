@@ -2,14 +2,40 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-
-import Bio from '../../components/Bio'
+import Img from 'gatsby-image'
 import Layout from '../../components/layout'
-import { rhythm } from '../../utils/typography'
+import rehypeReact from 'rehype-react'
+import {
+  Hero,
+  HeroBody,
+  Container,
+  Title,
+  HeroFooter,
+  Tabs,
+  TabList,
+  Tab,
+  TabLink,
+  Subtitle,
+  Columns,
+  Column,
+  Card,
+  CardContent,
+  Content,
+  Tag,
+} from 'bloomer'
+import { Icon } from 'react-icons-kit'
 
 class BlogIndex extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      isActive: false,
+    }
+  }
+
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    const siteTitle = 'Customer Success Stories - Miami Labs | Cobuild Lab'
     const siteDescription = get(
       this,
       'props.data.site.siteMetadata.description'
@@ -17,31 +43,65 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
-      <Layout location={this.props.location}>
+      <Layout>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
         />
-        <Bio />
-        {posts.map(({ node }) => {
-          const title = get(node, 'frontmatter.title') || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: 15,
-                }}
-              >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
-          )
-        })}
+
+        <Hero isColor="white" isSize="small">
+          <HeroBody>
+            <Container hasTextAlign="centered">
+              <Columns isCentered>
+                <Column>
+                  <Title className="title-blog" isSize={1}>
+                    New ideas, forged in 4Geeks Cobuild
+                  </Title>
+                  <Subtitle isSize={5}>
+                    Many enter, others leave. In the end, the most restless and
+                    daring to undertake the digital world have found their
+                    perfect place because they have been cared for and
+                    understood in the particularities of their local businesses.
+                    The laboratories in Miami by 4Geeks has allowed to create
+                    new and better ideas, born of other ideas
+                  </Subtitle>
+                  <br />
+                  <hr />
+                </Column>
+              </Columns>
+            </Container>
+          </HeroBody>
+        </Hero>
+        <section className="section">
+          <Container>
+            <Columns className="is-multiline">
+              {posts.map(({ node }) => {
+                const title = get(node, 'frontmatter.title') || node.fields.slug
+                return (
+                  <Column key={node.fields.slug} isSize="1/3">
+                    <Link to={node.fields.slug}>
+                      <Card className="card-p">
+                        <CardContent
+                          className="card-post"
+                          style={{
+                            backgroundImage: `url(${
+                              node.frontmatter.image.publicURL
+                            })`,
+                          }}
+                        >
+                          <Content className="title-post">
+                            <Subtitle hasTextColor="white">{title}</Subtitle>
+                          </Content>
+                        </CardContent>
+                      </Card>
+                    </Link>
+                  </Column>
+                )
+              })}
+            </Columns>
+          </Container>
+        </section>
       </Layout>
     )
   }
@@ -57,7 +117,11 @@ export const pageQuery = graphql`
         description
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 12
+      filter: {fileAbsolutePath: {regex: "/(customer-success-stories)/.*\\.md$/"}}
+    ) {
       edges {
         node {
           excerpt
@@ -65,8 +129,21 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "MMMM DD, YYYY")
             title
+            category
+            image {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 720) {
+                  aspectRatio
+                  base64
+                  sizes
+                  src
+                  srcSet
+                }
+              }
+            }
           }
         }
       }
