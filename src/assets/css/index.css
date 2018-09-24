@@ -307,13 +307,13 @@ hr {
   color: #fff !important;
   font-family: Lato-Bold !important;
   box-shadow: none !important;
-  opacity: 1;
+  opacity: 0.6;
   -webkit-transition: opacity 0.3s ease-in-out;
   -moz-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 .card-post:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
 /*image backgroun header*/
 
@@ -339,8 +339,9 @@ hr {
 }
 .title-post {
   position: absolute;
-  bottom: 20px;
+  bottom: 0px;
   color: #fff !important;
+  left: 25px;
 }
 .name-team {
   position: absolute;

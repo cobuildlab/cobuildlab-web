@@ -26,13 +26,13 @@ const Share = ({ socialConfig }) => (
     <h3>SHARE:</h3>
     <FacebookShareButton
       url={socialConfig.config.url}
-      className="button is-outlined is-rounded facebook float-left"
+      className="button is-outlined is-rounded facebook float-center"
     >
       <FacebookIcon size={32} round={true} />
     </FacebookShareButton>
     <TwitterShareButton
       url={socialConfig.config.url}
-      className="button is-outlined is-rounded twitter float-left"
+      className="button is-outlined is-rounded twitter float-center"
       title={socialConfig.config.title}
       via={socialConfig.twitterHandle.split('@').join('')}
     >
@@ -40,41 +40,41 @@ const Share = ({ socialConfig }) => (
     </TwitterShareButton>
     <GooglePlusShareButton
       url={socialConfig.config.url}
-      className="button is-outlined is-rounded googleplus float-left"
+      className="button is-outlined is-rounded googleplus float-center"
     >
       <GooglePlusIcon size={32} round={true} />
     </GooglePlusShareButton>
     <LinkedinShareButton
       url={socialConfig.config.url}
-      className="button is-outlined is-rounded linkedin float-left"
+      className="button is-outlined is-rounded linkedin float-center"
       title={socialConfig.config.title}
     >
       <LinkedinIcon size={32} round={true} />
     </LinkedinShareButton>
     <RedditShareButton
       url={socialConfig.config.url}
-      className="button is-outlined is-rounded reddit float-left"
+      className="button is-outlined is-rounded reddit float-center"
       title={socialConfig.config.title}
     >
       <RedditIcon size={32} round={true} />
     </RedditShareButton>
     <WhatsappShareButton
       url={socialConfig.config.url}
-      className="button is-outlined is-rounded whatsapp float-left"
+      className="button is-outlined is-rounded whatsapp float-center"
       title={socialConfig.config.title}
     >
       <WhatsappIcon size={32} round={true} />
     </WhatsappShareButton>
     <TelegramShareButton
       url={socialConfig.config.url}
-      className="button is-outlined is-rounded whatsapp float-left"
+      className="button is-outlined is-rounded whatsapp float-center"
       title={socialConfig.config.title}
     >
       <TelegramIcon size={32} round={true} />
     </TelegramShareButton>
     <EmailShareButton
       url={socialConfig.config.url}
-      className="button is-outlined is-rounded whatsapp float-left"
+      className="button is-outlined is-rounded whatsapp float-center"
       title={socialConfig.config.title}
     >
       <EmailIcon size={32} round={true} />

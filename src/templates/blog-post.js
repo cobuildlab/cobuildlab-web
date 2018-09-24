@@ -89,6 +89,16 @@ class BlogPostTemplate extends React.Component {
               </Column>
             </Columns>
 
+            <Share
+              socialConfig={{
+                twitterHandle,
+                config: {
+                  url: `${url}${slug}`,
+                  title: `${siteTitle}`,
+                },
+              }}
+            />
+
             <Columns style={{ marginTop: 30 }} isCentered>
               <Column hasTextAlign="centered">
                 <Title isSize={4}>READ MORE</Title>
@@ -144,17 +154,11 @@ class BlogPostTemplate extends React.Component {
                 <div />
               )}
             </Columns>
+            <Columns isCentered>
+            <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+            
+          </Columns>
           </Container>
-          <Share
-            socialConfig={{
-              twitterHandle,
-              config: {
-                url: `${url}${slug}`,
-                title: `${siteTitle}`,
-              },
-            }}
-          />
-          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
         </section>
       </LayoutPost>
     )

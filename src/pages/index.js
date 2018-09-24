@@ -18,6 +18,7 @@ import { ic_layers } from 'react-icons-kit/md/ic_layers'
 import { slideshare } from 'react-icons-kit/fa/slideshare'
 import { envelopeO } from 'react-icons-kit/fa/envelopeO'
 import { linkedinSquare } from 'react-icons-kit/fa/linkedinSquare'
+import { clockO } from 'react-icons-kit/fa/clockO'
 
 import {
   Container,
@@ -219,20 +220,30 @@ class Index extends React.Component {
                 return (
                   <Column isSize="1/3" key={node.fields.slug}>
                     <Link to={node.fields.slug}>
-                      <Card className="link-card">
-                        <Tag className="tag-category">{node.frontmatter.category}</Tag>
-                        <CardImage 
+                    <Card className="card-p">
+                        <CardContent
                           className="card-post"
                           style={{
                             backgroundImage: `url(${
                               node.frontmatter.image.publicURL
                             })`,
-                          }}>
-                        </CardImage>
-                        <CardContent>
-                          <Subtitle>{title}</Subtitle>
-                          <small>{node.frontmatter.date}</small>
+                          }}
+                        >
                         </CardContent>
+                        <Content className="title-post">
+                            <small>
+                              {' '}
+                              <Icon
+                                icon={clockO}
+                                style={{ paddingTop: 5 }}
+                              />{' '}
+                              {node.frontmatter.date}
+                            </small>
+                            <Subtitle hasTextColor="white">{title}</Subtitle>
+                          </Content>
+                        <Tag className="tag-category">
+                          {node.frontmatter.category}
+                        </Tag>
                       </Card>
                     </Link>
                   </Column>
