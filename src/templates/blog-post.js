@@ -43,6 +43,15 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = 'Cobuild Lab'
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
+    const image =
+      get(post, 'frontmatter.image.publicURL') ||
+      'https://placeimg.com/1200/600/any'
+    const previousImage =
+      get(previous, 'frontmatter.image.publicURL') ||
+      'https://placeimg.com/1200/600/any'
+    const nextImage =
+      get(next, 'frontmatter.image.publicURL') ||
+      'https://placeimg.com/1200/600/any'
 
     return (
       <LayoutPost>
@@ -56,7 +65,7 @@ class BlogPostTemplate extends React.Component {
           <HeroBody
             className="bg-post"
             style={{
-              backgroundImage: `url(${post.frontmatter.image.publicURL})`,
+              backgroundImage: `url(${image})`,
             }}
           >
             <Container hasTextAlign="centered">
@@ -83,11 +92,6 @@ class BlogPostTemplate extends React.Component {
                 {renderAst(post.htmlAst)}
               </Column>
             </Columns>
-            <Columns isCentered>
-              <Column>
-                <Img sizes={post.frontmatter.image.childImageSharp.fluid} />
-              </Column>
-            </Columns>
 
             <Share
               socialConfig={{
@@ -110,15 +114,15 @@ class BlogPostTemplate extends React.Component {
                 <Column isSize="1/3">
                   <Link to={previous.fields.slug} rel="prev">
                     <Card className="card-p">
-                      <Tag className="tag-category">
-                        {previous.frontmatter.category}
-                      </Tag>
+                      {previous.frontmatter.category ? (
+                        <Tag className="tag-category">
+                          {previous.frontmatter.category}
+                        </Tag>
+                      ) : null}
                       <CardContent
                         className="card-post"
                         style={{
-                          backgroundImage: `url(${
-                            previous.frontmatter.image.publicURL
-                          })`,
+                          backgroundImage: `url(${previousImage})`,
                         }}
                       >
                         ← {previous.frontmatter.title}
@@ -134,15 +138,15 @@ class BlogPostTemplate extends React.Component {
                 <Column isSize="1/3">
                   <Link to={next.fields.slug} rel="next">
                     <Card className="card-p">
-                      <Tag className="tag-category">
-                        {next.frontmatter.category}
-                      </Tag>
+                      {next.frontmatter.category ? (
+                        <Tag className="tag-category">
+                          {next.frontmatter.category}
+                        </Tag>
+                      ) : null}
                       <CardContent
                         className="card-post"
                         style={{
-                          backgroundImage: `url(${
-                            next.frontmatter.image.publicURL
-                          })`,
+                          backgroundImage: `url(${nextImage})`,
                         }}
                       >
                         {next.frontmatter.title} →
@@ -155,9 +159,11 @@ class BlogPostTemplate extends React.Component {
               )}
             </Columns>
             <Columns isCentered>
-            <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
-            
-          </Columns>
+              <DiscussionEmbed
+                shortname={disqusShortname}
+                config={disqusConfig}
+              />
+            </Columns>
           </Container>
         </section>
       </LayoutPost>

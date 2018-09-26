@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
+import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
 
 import Layout from '../components/layout'
@@ -31,39 +32,99 @@ import {
   Image,
   Content,
   CardContent,
-  Media,
-  MediaContent,
-  MediaLeft,
   Field,
   Label,
   Control,
-  Select,
   Input,
   TextArea,
-  Checkbox,
-  Button,
-  Radio,
   Hero,
   HeroBody,
   Tag,
 } from 'bloomer'
 
 class Index extends React.Component {
-  state = {
-    firstName: '',
-    lastName: '',
-    email: '',
-    message: '',
+  constructor(props) {
+    super(props)
+    this.state = {
+      firstName: '',
+      lastName: '',
+      email: '',
+      comment: '',
+      landingName: 'Cobuild Lab',
+    }
+
+    this.handleChange = this.handleChange.bind(this)
+    this.onSubmit = this.onSubmit.bind(this)
   }
 
-  handleChange = e => {
+  handleChange(e) {
     this.setState({
       [e.target.name]: e.target.value,
     })
   }
 
-  onSubmit = e => {
+  onSubmit(e) {
     e.preventDefault()
+
+    if (this.state.firstName.length <= 0) {
+      toast.error("First name can't be empty", {
+        position: 'bottom-right',
+      })
+      return
+    }
+
+    if (this.state.lastName.length <= 0) {
+      toast.error("Last name can't be empty", {
+        position: 'bottom-right',
+      })
+      return
+    }
+
+    if (this.state.email.length <= 0) {
+      toast.error("Email can't be empty", {
+        position: 'bottom-right',
+      })
+      return
+    }
+
+    if (this.state.comment.length <= 0) {
+      toast.error("Comment can't be empty", {
+        position: 'bottom-right',
+      })
+      return
+    }
+
+    const url = 'http://api.cobuild-lab.com/landing/contact'
+
+    const settings = {
+      method: 'POST',
+      body: JSON.stringify(this.state),
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+    }
+
+    fetch(url, settings)
+      .then(res => res.json())
+      .then(response => {
+        if (response.statusCode >= 400) {
+          toast.error(response.message, {
+            position: 'bottom-right',
+          })
+        } else {
+          toast.success(response.message, {
+            position: 'bottom-right',
+          })
+
+          this.setState({
+            firstName: '',
+            lastName: '',
+            email: '',
+            comment: '',
+          })
+        }
+      })
   }
 
   render() {
@@ -111,7 +172,9 @@ class Index extends React.Component {
 
             <Container isFluid className="is-hidden-desktop">
               <Title className="title-logo-mobile">Cobuild Lab</Title>
-              <Title className="subtitle-logo-mobile">Let’s Build a Great Idea</Title>
+              <Title className="subtitle-logo-mobile">
+                Let’s Build a Great Idea
+              </Title>
               <Columns>
                 <Column isSize="1/2">
                   <Title isSize={6}>
@@ -213,37 +276,41 @@ class Index extends React.Component {
         {/*Section Latest News*/}
         <section className="section">
           <Container hasTextAlign="centered">
-            <Title isSize={2} className="title-section">Latest News</Title>
+            <Title isSize={2} className="title-section">
+              Latest News
+            </Title>
             <Columns isCentered>
               {posts.map(({ node }) => {
                 const title = get(node, 'frontmatter.title') || node.fields.slug
+                const image =
+                  get(node, 'frontmatter.image.publicURL') ||
+                  'https://placeimg.com/1200/600/any'
                 return (
                   <Column isSize="1/3" key={node.fields.slug}>
                     <Link to={node.fields.slug}>
-                    <Card className="card-p">
+                      <Card className="card-p">
                         <CardContent
                           className="card-post"
                           style={{
-                            backgroundImage: `url(${
-                              node.frontmatter.image.publicURL
-                            })`,
+                            backgroundImage: `url(${image})`,
                           }}
-                        >
-                        </CardContent>
+                        />
                         <Content className="title-post">
-                            <small>
-                              {' '}
-                              <Icon
-                                icon={clockO}
-                                style={{ paddingTop: 5 }}
-                              />{' '}
-                              {node.frontmatter.date}
-                            </small>
-                            <Subtitle hasTextColor="white">{title}</Subtitle>
-                          </Content>
-                        <Tag className="tag-category">
-                          {node.frontmatter.category}
-                        </Tag>
+                          <small>
+                            {' '}
+                            <Icon
+                              icon={clockO}
+                              style={{ paddingTop: 5 }}
+                            />{' '}
+                            {node.frontmatter.date}
+                          </small>
+                          <Subtitle hasTextColor="white">{title}</Subtitle>
+                        </Content>
+                        {node.frontmatter.category ? (
+                          <Tag className="tag-category">
+                            {node.frontmatter.category}
+                          </Tag>
+                        ) : null}
                       </Card>
                     </Link>
                   </Column>
@@ -273,7 +340,9 @@ class Index extends React.Component {
 
         <section className="section">
           <Container hasTextAlign="centered">
-            <Title isSize={2} className="title-section">Our Team</Title>
+            <Title isSize={2} className="title-section">
+              Our Team
+            </Title>
             <Columns isCentered>
               <Column isSize="1/3">
                 <Card>
@@ -445,9 +514,9 @@ class Index extends React.Component {
                     <Label>Comment or Message</Label>
                     <Control>
                       <TextArea
-                        name="message"
+                        name="comment"
                         placeholder="Your message or comment goes here"
-                        value={this.state.message}
+                        value={this.state.comment}
                         onChange={e => this.handleChange(e)}
                       />
                     </Control>
