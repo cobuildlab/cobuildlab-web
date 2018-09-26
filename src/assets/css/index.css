@@ -281,7 +281,7 @@ hr {
 }
 .bg-post {
   width: 100%;
-  height: auto;
+  height: 320px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

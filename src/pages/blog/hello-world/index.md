@@ -8,7 +8,7 @@ path: /blog
 layout: blog-post
 ---
 
-<title>This is my first post on my new fake blog! How exciting!</title>
+<title-2>This is my first post on my new fake blog! How exciting!</title-2>
 
 <columns>
   <column>
