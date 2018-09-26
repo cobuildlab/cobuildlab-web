@@ -44,7 +44,7 @@ A user story is composed of three elements, also known as "the three Cs" of the 
 
 <br/>
 
-**What information should be in the user stories?**
+<title-3>What information should be in the user stories?</title-3>
 
 <br/>
 
@@ -68,7 +68,7 @@ While the style may be free, the user story must answer three questions:
 
 <br/>
 
-**Who benefits?**
+<title-3>Who benefits?</title-3>
 
 <br/>
 
@@ -76,7 +76,9 @@ It seeks to understand which user role will need to perform this function in the
 
 <br/>
 
-**What do you want?**
+<title-3>What do you want?</title-3>
+
+---
 
 <br/>
 
@@ -84,7 +86,7 @@ It seeks to understand what functionality the user wants to make through the use
 
 <br/>
 
-**What is the benefit?**
+<title-3>What is the benefit?</title-3>
 
 <br/>
 
@@ -138,7 +140,7 @@ As a teacher, I need to record student grades to keep track of approved and fail
 
 <br/>
 
-**What is Invest? Characteristics of a user history**
+<title-3>What is Invest? Characteristics of a user history<title-3>
 
 <br/>
 

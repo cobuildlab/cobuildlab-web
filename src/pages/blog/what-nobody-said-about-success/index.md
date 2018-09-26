@@ -13,7 +13,19 @@ If you look up the definition of **[success](https://dictionary.cambridge.org/es
 
 <br/>
 
-**Ok. Let's see. What does success look like?** As to how not to lose sight of your goals in the middle of a critical society, you must know that there are two kinds of success: **conventional success**, and **personal success**. When we talk about conventional success, we go by the perception of what people think you should achieve. When we refer to the personal success we are talking about what you are passionate about, what you enjoy, and especially, what you are learning where you are. Secondly, as entrepreneurs, we need to decide on which of these we are going to focus, on what you yearn for, or what others want for you. Sometimes conventional success can make us lose our purpose on the way. Only because someone tells you "you should do it, you are talented", what if you don't like it? Are you going to do it only because you are good at it? NO! Do what you are passionate about! Remember this: **Success looks like and means whatever you want it to**.
+<title-2>**Ok. Let's see. What does success look like?**</title-2>
+
+<br/>
+
+As to how not to lose sight of your goals in the middle of a critical society, you must know that there are two kinds of success: **conventional success**, and **personal success**. When we talk about conventional success, we go by the perception of what people think you should achieve. When we refer to the personal success we are talking about what you are passionate about, what you enjoy, and especially, what you are learning where you are.
+
+<br/>
+
+Secondly, as entrepreneurs, we need to decide on which of these we are going to focus, on what you yearn for, or what others want for you. Sometimes conventional success can make us lose our purpose on the way. Only because someone tells you "you should do it, you are talented", what if you don't like it? Are you going to do it only because you are good at it?
+
+<br/>
+
+NO! Do what you are passionate about! Remember this: **Success looks like and means whatever you want it to**.
 
 <br/>
 
@@ -21,7 +33,7 @@ If you look up the definition of **[success](https://dictionary.cambridge.org/es
 
 <br/>
 
-[**If you are fourth, it's OK!** ](https://www.forbes.com/sites/shavonlindley/2018/08/08/four-questions-to-define-real-success-at-work/#63d20f085ae7)
+<title-3>[**If you are fourth, it's OK!** ](https://www.forbes.com/sites/shavonlindley/2018/08/08/four-questions-to-define-real-success-at-work/#63d20f085ae7)</title-3>
 
 <br/>
 
@@ -37,7 +49,7 @@ First, she worked as an analyst at PWC and then transitioned into Corporate Rest
 
 <br/>
 
-**Big successes are made up of small successes**
+<title-4>**Big successes are made up of small successes**</title-4>
 
 <br/>
 

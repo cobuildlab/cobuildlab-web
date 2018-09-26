@@ -13,7 +13,7 @@ Trying to understand a little bit more of this new wave that has been growing al
 
 <br/>
 
-**Startups Beginnings**
+<title-5>Startups Beginnings</title-5>
 
 <br/>
 
@@ -29,7 +29,7 @@ Nowadays, companies are seeing as a supreme investment and growth “Crypto Star
 
 <br/>
 
-**Why is cryptocurrency one of the best startups opportunities?**
+<title-5>Why is cryptocurrency one of the best startups opportunities?</title-5>
 
 <br/>
 
@@ -37,7 +37,7 @@ Well, most people tend to argue about how expensive fees charged by any financia
 
 <br/>
 
-**Why joining a Cryptocurrency Startup?**
+<title-5>Why joining a Cryptocurrency Startup?</title-5>
 
 <br/>
 
