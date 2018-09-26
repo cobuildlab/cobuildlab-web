@@ -61,25 +61,24 @@ class BlogPostTemplate extends React.Component {
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
 
-        <Hero isColor="black" isSize="medium">
+        <Hero isColor="white" isSize="large">
+          <Container hasTextAlign="centered">
+            <Columns isCentered>
+              <Column>
+                <Title isSize={1} hasTextColor="Black">
+                  {post.frontmatter.title}
+                </Title>
+                <br />
+                <hr />
+              </Column>
+            </Columns>
+          </Container>
           <HeroBody
             className="bg-post"
             style={{
               backgroundImage: `url(${image})`,
             }}
-          >
-            <Container hasTextAlign="centered">
-              <Columns isCentered>
-                <Column>
-                  <Title isSize={1} hasTextColor="white">
-                    {post.frontmatter.title}
-                  </Title>
-                  <br />
-                  <hr />
-                </Column>
-              </Columns>
-            </Container>
-          </HeroBody>
+          />
         </Hero>
 
         <section className="section">
@@ -130,9 +129,7 @@ class BlogPostTemplate extends React.Component {
                     </Card>
                   </Link>
                 </Column>
-              ) : (
-                <div />
-              )}
+              ) : null}
 
               {next ? (
                 <Column isSize="1/3">
@@ -154,12 +151,11 @@ class BlogPostTemplate extends React.Component {
                     </Card>
                   </Link>
                 </Column>
-              ) : (
-                <div />
-              )}
+              ) : null}
             </Columns>
             <Columns isCentered>
               <DiscussionEmbed
+                style={{ width: '100% !important' }}
                 shortname={disqusShortname}
                 config={disqusConfig}
               />

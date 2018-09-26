@@ -274,7 +274,7 @@ class Index extends React.Component {
         {/*Section Cobuild Process*/}
 
         {/*Section Latest News*/}
-        <section className="section">
+        {/* <section className="section">
           <Container hasTextAlign="centered">
             <Title isSize={2} className="title-section">
               Latest News
@@ -318,7 +318,7 @@ class Index extends React.Component {
               })}
             </Columns>
           </Container>
-        </section>
+        </section> */}
         {/*Section Latest News*/}
 
         {/*Section Customer Success Stories*/}
@@ -533,10 +533,10 @@ class Index extends React.Component {
                   </Field>
                   <Content hasTextAlign="centered">
                     <Subtitle>Privacy Policy</Subtitle>
-                    <a href="#">
+                    <Link to="/privacy-policy">
                       Here you can access the information about how we treat
                       your data.
-                    </a>
+                    </Link>
                   </Content>
                 </form>
               </Column>

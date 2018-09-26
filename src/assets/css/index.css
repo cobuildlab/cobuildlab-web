@@ -125,6 +125,9 @@ a.navbar-item.is-active,
 .pr-0{
   padding-right: 0px !important;
 }
+.pt-10{
+  padding-top: 10% !important;
+}
 img {
   max-width: 100%;
   margin-left: 0;
@@ -264,7 +267,7 @@ hr {
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   background-size: cover;
 }
 .bg-services {
