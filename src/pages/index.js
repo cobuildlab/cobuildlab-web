@@ -11,6 +11,7 @@ import stories from '../resources/stories.png'
 import marcelo from '../resources/marceloicigliani.jpg'
 import angel from '../resources/anglelacret.jpg'
 import alejandro from '../resources/alejandrosanchez.jpg'
+import defaultImg from '../resources/default-post.jpg'
 
 import { Icon } from 'react-icons-kit'
 import { check } from 'react-icons-kit/fa/check'
@@ -274,7 +275,7 @@ class Index extends React.Component {
         {/*Section Cobuild Process*/}
 
         {/*Section Latest News*/}
-        {/* <section className="section">
+        <section className="section">
           <Container hasTextAlign="centered">
             <Title isSize={2} className="title-section">
               Latest News
@@ -283,8 +284,7 @@ class Index extends React.Component {
               {posts.map(({ node }) => {
                 const title = get(node, 'frontmatter.title') || node.fields.slug
                 const image =
-                  get(node, 'frontmatter.image.publicURL') ||
-                  'https://placeimg.com/1200/600/any'
+                  get(node, 'frontmatter.image.publicURL') || defaultImg
                 return (
                   <Column isSize="1/3" key={node.fields.slug}>
                     <Link to={node.fields.slug}>
@@ -318,7 +318,7 @@ class Index extends React.Component {
               })}
             </Columns>
           </Container>
-        </section> */}
+        </section>
         {/*Section Latest News*/}
 
         {/*Section Customer Success Stories*/}

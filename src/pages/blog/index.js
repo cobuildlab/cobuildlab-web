@@ -4,6 +4,7 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
 import Layout from '../../components/layout'
+import defaultImg from '../../resources/default-post.jpg'
 import {
   Hero,
   HeroBody,
@@ -95,8 +96,7 @@ class BlogIndex extends React.Component {
               {posts.map(({ node }) => {
                 const title = get(node, 'frontmatter.title') || node.fields.slug
                 const image =
-                  get(node, 'frontmatter.image.publicURL') ||
-                  'https://placeimg.com/1200/600/any'
+                  get(node, 'frontmatter.image.publicURL') || defaultImg
                 return (
                   <Column key={node.fields.slug} isSize="1/3">
                     <Link to={node.fields.slug}>

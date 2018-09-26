@@ -6,6 +6,7 @@ import { DiscussionEmbed } from 'disqus-react'
 import Share from '../components/Share'
 import Img from 'gatsby-image'
 import get from 'lodash/get'
+import defaultImg from '../resources/default-post.jpg'
 import rehypeReact from 'rehype-react'
 import {
   Hero,
@@ -23,9 +24,7 @@ import {
 const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: {
-    title: Title,
-    columns: Columns,
-    column: Column,
+    'title-1': Title,
   },
 }).Compiler
 
@@ -43,15 +42,10 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = 'Cobuild Lab'
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
-    const image =
-      get(post, 'frontmatter.image.publicURL') ||
-      'https://placeimg.com/1200/600/any'
+    const image = get(post, 'frontmatter.image.publicURL') || defaultImg
     const previousImage =
-      get(previous, 'frontmatter.image.publicURL') ||
-      'https://placeimg.com/1200/600/any'
-    const nextImage =
-      get(next, 'frontmatter.image.publicURL') ||
-      'https://placeimg.com/1200/600/any'
+      get(previous, 'frontmatter.image.publicURL') || defaultImg
+    const nextImage = get(next, 'frontmatter.image.publicURL') || defaultImg
 
     return (
       <LayoutPost>
