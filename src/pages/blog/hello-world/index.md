@@ -6,7 +6,6 @@ category: Education
 ---
 
 <title-2>This is my first post on my new fake blog! How exciting!</title-2>
-<br>
 
 Oh, and here's a great quote from this Wikipedia on
 [salted duck eggs](http://en.wikipedia.org/wiki/Salted_duck_egg).

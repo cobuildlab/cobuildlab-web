@@ -4,6 +4,12 @@ import LayoutPost from '../components/layoutPost'
 import { Link, graphql } from 'gatsby'
 import { DiscussionEmbed } from 'disqus-react'
 import Share from '../components/Share'
+import Title2 from '../components/Title2'
+import Title3 from '../components/Title3'
+import Title4 from '../components/Title4'
+import Title5 from '../components/Title5'
+import Title6 from '../components/Title6'
+import ImagePost from '../components/ImagePost'
 import Img from 'gatsby-image'
 import get from 'lodash/get'
 import defaultImg from '../resources/default-post.jpg'
@@ -24,7 +30,14 @@ import {
 const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: {
-    'title-1': Title,
+    'title-2': Title2,
+    'title-3': Title3,
+    'title-4': Title4,
+    'title-5': Title5,
+    'title-6': Title6,
+    columns: Columns,
+    column: Column,
+    'image-post': ImagePost,
   },
 }).Compiler
 
@@ -57,15 +70,11 @@ class BlogPostTemplate extends React.Component {
 
         <Hero isColor="white" isSize="large">
           <Container hasTextAlign="centered">
-            <Columns isCentered>
-              <Column>
-                <Title isSize={1} hasTextColor="Black">
-                  {post.frontmatter.title}
-                </Title>
-                <br />
-                <hr />
-              </Column>
-            </Columns>
+            <Title tag="h3" isSize={1} hasTextColor="Black">
+              {post.frontmatter.title}
+            </Title>
+            <br />
+            <hr />
           </Container>
           <HeroBody
             className="bg-post"
@@ -148,11 +157,13 @@ class BlogPostTemplate extends React.Component {
               ) : null}
             </Columns>
             <Columns isCentered>
-              <DiscussionEmbed
-                style={{ width: '100% !important' }}
-                shortname={disqusShortname}
-                config={disqusConfig}
-              />
+              <Column>
+                <DiscussionEmbed
+                  style={{ width: '100% !important' }}
+                  shortname={disqusShortname}
+                  config={disqusConfig}
+                />
+              </Column>
             </Columns>
           </Container>
         </section>
