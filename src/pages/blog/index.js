@@ -4,6 +4,7 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
 import Layout from '../../components/layout'
+import defaultImg from '../../resources/default-post.jpg'
 import {
   Hero,
   HeroBody,
@@ -94,6 +95,8 @@ class BlogIndex extends React.Component {
             <Columns className="is-multiline">
               {posts.map(({ node }) => {
                 const title = get(node, 'frontmatter.title') || node.fields.slug
+                const image =
+                  get(node, 'frontmatter.image.publicURL') || defaultImg
                 return (
                   <Column key={node.fields.slug} isSize="1/3">
                     <Link to={node.fields.slug}>
@@ -101,26 +104,25 @@ class BlogIndex extends React.Component {
                         <CardContent
                           className="card-post"
                           style={{
-                            backgroundImage: `url(${
-                              node.frontmatter.image.publicURL
-                            })`,
+                            backgroundImage: `url(${image})`,
                           }}
-                        >
-                        </CardContent>
+                        />
                         <Content className="title-post">
-                            <small>
-                              {' '}
-                              <Icon
-                                icon={clockO}
-                                style={{ paddingTop: 5 }}
-                              />{' '}
-                              {node.frontmatter.date}
-                            </small>
-                            <Subtitle hasTextColor="white">{title}</Subtitle>
-                          </Content>
-                        <Tag className="tag-category">
-                          {node.frontmatter.category}
-                        </Tag>
+                          <small>
+                            {' '}
+                            <Icon
+                              icon={clockO}
+                              style={{ paddingTop: 5 }}
+                            />{' '}
+                            {node.frontmatter.date}
+                          </small>
+                          <Subtitle hasTextColor="white">{title}</Subtitle>
+                        </Content>
+                        {node.frontmatter.category ? (
+                          <Tag className="tag-category">
+                            {node.frontmatter.category}
+                          </Tag>
+                        ) : null}
                       </Card>
                     </Link>
                   </Column>
