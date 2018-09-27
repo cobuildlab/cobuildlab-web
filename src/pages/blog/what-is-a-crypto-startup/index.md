@@ -5,6 +5,8 @@ image: "./startup2.jpg"
 category: Education
 ---
 
+<image-post src="/some-path">ANGEL</image-post>
+
 Trying to understand a little bit more of this new wave that has been growing all over the world since the last past years called “CRYPTO STARTUPS”; let´s go back to the basics and analyze the meaning of it “word by word”; Crypto: short word for “cryptography”. Generally used to cover the major features and topics of developing and using cryptography technologies: Startups: a business that is in the first stage of its set-ups.
 
 <br/>

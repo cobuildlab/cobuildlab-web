@@ -45,12 +45,12 @@ exports.createPages = ({ graphql, actions }) => {
         `
       ).then(result => {
         if (result.errors) {
-          console.log(result.errors)
+          console.log(result.errors);
           reject(result.errors)
         }
 
         // Create blog posts pages.
-        const posts = result.data.allMarkdownRemark.edges
+        const posts = result.data.allMarkdownRemark.edges;
 
         _.each(posts, (post, index) => {
           const previous =

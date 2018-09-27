@@ -9,7 +9,8 @@ import {
 // library.add(faStroopwafel, faCheck, faCode, faLayerGroup, faTachometerAlt, faEnvelope,)
 class ImagePost extends React.Component{
   render(){
-    const { children } = this.props
+    const { children } = this.props;
+    alert(JSON.stringify(this.props));
     return(
       <Container>
           <Columns isCentered>
