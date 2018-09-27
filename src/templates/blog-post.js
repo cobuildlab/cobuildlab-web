@@ -10,6 +10,7 @@ import Title4 from '../components/Title4'
 import Title5 from '../components/Title5'
 import Title6 from '../components/Title6'
 import ImagePost from '../components/ImagePost'
+import BlockQuote from '../components/BlockQuote'
 import Img from 'gatsby-image'
 import get from 'lodash/get'
 import defaultImg from '../resources/default-post.jpg'
@@ -35,9 +36,10 @@ const renderAst = new rehypeReact({
     'title-4': Title4,
     'title-5': Title5,
     'title-6': Title6,
+    'block-quote': BlockQuote,
     columns: Columns,
     column: Column,
-    'image-post': ImagePost,
+    image: ImagePost,
   },
 }).Compiler
 

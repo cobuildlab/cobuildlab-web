@@ -1,7 +1,7 @@
 ---
 title: "Why all companies should use Storytelling?"
 date: "2018-06-30T20:43:09.000Z"
-image: "./andrew-seaman-597970-unsplash.jpg"
+image: "./media/andrew-seaman-597970-unsplash.jpg"
 category: Education
 ---
 
@@ -18,8 +18,6 @@ Here is when the Storytelling becomes important in business. Recently, all the b
 <br/>
 
 According to **Kay Fabella**, a storyteller, it is the art of telling a story using sensorial language that let the audience internalize, understand and create personal meaning for it. When you tell a story for your costumer, you can connect with her/him emotions, memories, sensations in such a way that they want to buy whatever that you are offering to them.
-
-<br/>
 
 <title-4>When do we use the Storytelling?<title-4>
 
@@ -41,8 +39,6 @@ You can use the Storytelling in different scenarios. When you have to talk with 
 
 So, you have to think and create a story of your company or your beginnings with creativity, that must be credible and simple, to earn their trust, that can evoke emotions, like as happiness, sadness, enthusiasm, excitement. And finally, you have to talk about your numbers, your growth and where do you want to go. Also, you can use a storytelling to sell to your customers, but in some way that they do not realize you are selling, that is the most difficult.
 
-<br/>
-
 <title-4>How can you give form to your story?<title-4>
 
 Donna Griffit says that the startup’s stories or brands stories have 4 parts:
@@ -62,8 +58,6 @@ Donna Griffit says that the startup’s stories or brands stories have 4 parts:
 <br/>
 
 All of these things have to be related to the client’s need and not ours. We have to put our product or service in the middle of the story, but is the client the protagonist. Now, think about in all the movies, tv series, novel books, talk shows and others social media stories could catch you because they empathize with you.
-
-<br/>
 
 <title-4>Good examples of Storytelling<title-4>
 

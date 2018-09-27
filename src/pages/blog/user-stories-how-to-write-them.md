@@ -42,11 +42,7 @@ A user story is composed of three elements, also known as "the three Cs" of the 
 
 **3\. Confirmation:** All user history must be explained so that the work team knows what they want to do and what the Product Owner expects. This expected value is known as acceptance criteria.
 
-<br/>
-
 <title-3>What information should be in the user stories?</title-3>
-
-<br/>
 
 It is known that user stories must be short and precise. There is no format to perform the user stories, just take into account the components (the three Cs) and a few fields that are considered necessary to adequately describe a user history. In this way, our user history can contain the following information:
 
@@ -66,29 +62,15 @@ It is known that user stories must be short and precise. There is no format to p
 
 While the style may be free, the user story must answer three questions:
 
-<br/>
-
 <title-3>Who benefits?</title-3>
-
-<br/>
 
 It seeks to understand which user role will need to perform this function in the system. Any person who interacts with the system must fit with any of the identified user roles, and these can range from the most general to the most specific, depending on the purpose of the system. Example: assistant, team manager, salesperson, human resources technician, etc.
 
-<br/>
-
 <title-3>What do you want?</title-3>
-
----
-
-<br/>
 
 It seeks to understand what functionality the user wants to make through the use of the system. It is very important to emphasize that this part of user stories should focus on the what, and not on the how because the latter is something that the development team must respond to when seeking to provide solutions to the user story.
 
-<br/>
-
 <title-3>What is the benefit?</title-3>
-
-<br/>
 
 It seeks to understand what is the added value that this user story has for the user of the system. This is probably the most forgotten part of the user story since users often feel that they are simply being asked for a justification for their request. However, this is the part that informs the Product Owner how much-added value the system will have if this user story is prioritized
 
@@ -138,11 +120,7 @@ As a teacher, I need to record student grades to keep track of approved and fail
 
 **Illustration User History Tab.**
 
-<br/>
-
 <title-3>What is Invest? Characteristics of a user history<title-3>
-
-<br/>
 
 Bill Wake in 2003 described in his article "INVEST in Good Stories, and SMART Tasks", a way to "check" that a user story is well written. INVEST is the acronym for Independiente, Negotiable, Valuable, Estimable, Small, and Testable.
 

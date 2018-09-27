@@ -4,6 +4,7 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
 import Layout from '../../../components/layout'
+import defaultImg from '../../../resources/default-post.jpg'
 import {
   Hero,
   HeroBody,
@@ -95,22 +96,23 @@ class ToolsIndex extends React.Component {
               </TabList>
             </Tabs>
             <Columns className="is-multiline">
-              {posts.map(({ node }) => {
-                const title = get(node, 'frontmatter.title') || node.fields.slug
-                return (
-                  <Column key={node.fields.slug} isSize="1/3">
-                    <Link to={node.fields.slug}>
-                      <Card className="card-p">
-                        <CardContent
-                          className="card-post"
-                          style={{
-                            backgroundImage: `url(${
-                              node.frontmatter.image.publicURL
-                            })`,
-                          }}
-                        >
-                        </CardContent>
-                        <Content className="title-post">
+              {posts ? (
+                posts.map(({ node }) => {
+                  const title =
+                    get(node, 'frontmatter.title') || node.fields.slug
+                  const image =
+                    get(node, 'frontmatter.image.publicURL') || defaultImg
+                  return (
+                    <Column key={node.fields.slug} isSize="1/3">
+                      <Link to={node.fields.slug}>
+                        <Card className="card-p">
+                          <CardContent
+                            className="card-post"
+                            style={{
+                              backgroundImage: `url(${image})`,
+                            }}
+                          />
+                          <Content className="title-post">
                             <small>
                               {' '}
                               <Icon
@@ -121,14 +123,23 @@ class ToolsIndex extends React.Component {
                             </small>
                             <Subtitle hasTextColor="white">{title}</Subtitle>
                           </Content>
-                        <Tag className="tag-category">
-                          {node.frontmatter.category}
-                        </Tag>
-                      </Card>
-                    </Link>
-                  </Column>
-                )
-              })}
+                          {node.frontmatter.category ? (
+                            <Tag className="tag-category">
+                              {node.frontmatter.category}
+                            </Tag>
+                          ) : null}
+                        </Card>
+                      </Link>
+                    </Column>
+                  )
+                })
+              ) : (
+                <Column hasTextAlign="centered">
+                  <Title isSize={3} tag="h3">
+                    There's no posts in these category
+                  </Title>
+                </Column>
+              )}
             </Columns>
           </Container>
         </section>
@@ -149,7 +160,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 12
+      limit: 40
       filter: { frontmatter: { category: { eq: "Tools" } }, fileAbsolutePath: {regex: "/(blog)/.*\\.md$/"} }
     ) {
       edges {

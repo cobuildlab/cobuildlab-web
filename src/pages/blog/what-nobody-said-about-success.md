@@ -1,7 +1,7 @@
 ---
 title: "What nobody said about success"
 date: "2018-08-28T00:54:10.000Z"
-image: "./OGMT9F0.jpg"
+image: "./media/OGMT9F0.jpg"
 category: Education
 ---
 
@@ -11,11 +11,7 @@ If you look up the definition of **[success](https://dictionary.cambridge.org/es
 
 ![](./a4f4730e-77af-4e92-a615-336050145456.png)
 
-<br/>
-
 <title-2>**Ok. Let's see. What does success look like?**</title-2>
-
-<br/>
 
 As to how not to lose sight of your goals in the middle of a critical society, you must know that there are two kinds of success: **conventional success**, and **personal success**. When we talk about conventional success, we go by the perception of what people think you should achieve. When we refer to the personal success we are talking about what you are passionate about, what you enjoy, and especially, what you are learning where you are.
 
@@ -31,11 +27,7 @@ NO! Do what you are passionate about! Remember this: **Success looks like and me
 
 ![](./8d58419f-be97-4db2-9abe-b4f8630e4e5b.jpg)
 
-<br/>
-
 <title-3>[**If you are fourth, it's OK!** ](https://www.forbes.com/sites/shavonlindley/2018/08/08/four-questions-to-define-real-success-at-work/#63d20f085ae7)</title-3>
-
-<br/>
 
 We've always heard "be first", and so we live trying desperately to always come in first. But what would happen if we get a fourth place? and then we continue climbing until we obtain first place? It's necessary to clarify, this is not mediocrity; it's enjoying every step, step by step!
 
@@ -47,11 +39,7 @@ This happens in real life, Emma Avignon, CEO of Mentor Consulting has undergone 
 
 First, she worked as an analyst at PWC and then transitioned into Corporate Restructuring and Corporate Finance at EY. Now, she is a figure in business plus art, people, business, social enterprise.
 
-<br/>
-
 <title-4>**Big successes are made up of small successes**</title-4>
-
-<br/>
 
 The little things you achieve on the way don't disappear, they add up, and these little accomplishments are what make you a successful person. Don't be ashamed if you are a waiter and you want to start your own business.
 
