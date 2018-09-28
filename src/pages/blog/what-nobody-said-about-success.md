@@ -2,7 +2,7 @@
 title: "What nobody said about success"
 date: "2018-08-28T00:54:10.000Z"
 image: "./media/OGMT9F0.jpg"
-category: Education
+category:
 ---
 
 If you look up the definition of **[success](https://dictionary.cambridge.org/es/diccionario/ingles/success)**, you will probably see "the favorable outcome of something attempted" or "achieving an aim or objective", but when we get started, immediately, the common denominators await with expectations, and to them, the best evidence of entrepreneurship are money and luxury.
