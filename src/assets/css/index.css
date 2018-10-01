@@ -28,6 +28,12 @@ a {
   box-shadow: none !important;
   text-decoration: none;
 }
+.link-post{
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  color: #fff;
+}
 #section-post a{
   color: #e76c29;
   font-weight: bold;
