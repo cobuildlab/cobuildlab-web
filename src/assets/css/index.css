@@ -28,6 +28,18 @@ a {
   box-shadow: none !important;
   text-decoration: none;
 }
+#section-post a{
+  color: #e76c29;
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#section-post a:hover{
+  color: #264a60;
+  font-weight: bold;
+  opacity: 0.7;
+}
 p{
   margin-bottom: 15px !important;
   line-height: 1.8;
