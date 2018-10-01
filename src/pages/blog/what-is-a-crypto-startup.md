@@ -5,13 +5,12 @@ image: "./media/startup.jpg"
 category: Education
 ---
 
-<image-post src="/some-path">ANGEL</image-post>
-
 Trying to understand a little bit more of this new wave that has been growing all over the world since the last past years called “CRYPTO STARTUPS”; let´s go back to the basics and analyze the meaning of it “word by word”; Crypto: short word for “cryptography”. Generally used to cover the major features and topics of developing and using cryptography technologies: Startups: a business that is in the first stage of its set-ups.
 
 <br/>
 
-> _“A startup is a company working to solve a problem where the solution is not obvious and success is not guaranteed”_ \- Neil Blumentha
+<block-quote>“A startup is a company working to solve a problem where the solution is not obvious and success is not guaranteed"  
+Neil Blumentha</block-quote>
 
 <title-5>Startups Beginnings</title-5>
 
@@ -43,7 +42,8 @@ If you have previous experience in the field and know some of the terminologies 
 
 <br/>
 
-> _“Cryptocurrency employees are more likely to enjoy distributed working arrangements and are geographically disperse compared to traditional candidates. It’s interesting that within companies that focus on distributed technology the candidates are also so distributed”_ \- Matt at The Picks & Shovels Co
+<block-quote>“Cryptocurrency employees are more likely to enjoy distributed working arrangements and are geographically disperse compared to traditional candidates. It’s interesting that within companies that focus on distributed technology the candidates are also so distributed”  
+Matt at The Picks & Shovels Co</block-quote>
 
 <br/>
 

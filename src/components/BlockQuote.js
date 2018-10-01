@@ -8,7 +8,10 @@ class BlockQuote extends React.Component {
     const { children, align } = this.props
     return (
       <Container>
-        <Columns isCentered>
+        <Columns
+          isCentered
+          style={{ marginBottom: 20, marginTop: 10, fontStyle: 'italic' }}
+        >
           <Column hasTextAlign="centered">
             <Title
               tag="h4"

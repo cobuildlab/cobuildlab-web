@@ -3,9 +3,14 @@ import { Title } from 'bloomer'
 // library.add(faStroopwafel, faCheck, faCode, faLayerGroup, faTachometerAlt, faEnvelope,)
 class Title2 extends React.Component {
   render() {
-    const { children } = this.props
+    const { children, align } = this.props
     return (
-      <Title tag="h2" isSize={2} style={{ marginBottom: 30, marginTop: 30 }}>
+      <Title
+        tag="h2"
+        isSize={2}
+        style={{ marginBottom: 30, marginTop: 30 }}
+        hasTextAlign={align}
+      >
         {children}
       </Title>
     )
