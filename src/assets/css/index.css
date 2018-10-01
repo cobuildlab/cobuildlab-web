@@ -28,6 +28,11 @@ a {
   box-shadow: none !important;
   text-decoration: none;
 }
+p{
+  margin-bottom: 15px !important;
+  line-height: 1.8;
+  font-size: 16px;
+}
 .a.navbar-item,
 .navbar-link {
   cursor: pointer;
