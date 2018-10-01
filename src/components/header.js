@@ -31,7 +31,7 @@ class header extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Navbar className="is-hidden-desktop" style={{ margin: '0' }}>
+        <Navbar className="is-hidden-desktop is-hidden-tablet-only" style={{ margin: '0' }}>
           <Container isFluid>
             <NavbarBrand>
               <NavbarItem>

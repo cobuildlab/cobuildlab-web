@@ -171,7 +171,7 @@ class Index extends React.Component {
               </Columns>
             </Container>
 
-            <Container isFluid className="is-hidden-desktop">
+            <Container isFluid className="is-hidden-desktop is-hidden-tablet-only">
               <Title className="title-logo-mobile">Cobuild Lab</Title>
               <Title className="subtitle-logo-mobile">
                 Let’s Build a Great Idea

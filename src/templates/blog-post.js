@@ -88,7 +88,7 @@ class BlogPostTemplate extends React.Component {
           />
         </Hero>
 
-        <section className="section">
+        <section id="section-post" className="section">
           <Container>
             <Columns isCentered>
               <Column
