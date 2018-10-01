@@ -8,7 +8,7 @@ class Title4 extends React.Component {
       <Title
         tag="h4"
         isSize={4}
-        style={{ marginBottom: 15, marginTop: 15 }}
+        style={{ marginBottom: 20, marginTop: 20 }}
         hasTextAlign={align}
       >
         {children}

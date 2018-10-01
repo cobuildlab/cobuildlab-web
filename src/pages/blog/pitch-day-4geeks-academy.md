@@ -1,19 +1,17 @@
 ---
 title: "Pitch Day | 4Geeks Academy"
 date: "2018-05-30T13:22:35.000Z"
+category:
+image: "./media/cover-4geeks.jpeg"
 ---
 
 Last Thursday 24th we celebrated 4Geeks Academy's 2nd Pitch Day for the 2 new Cohorts graduating the [Full Stack Web Development Program](https://www.4geeksacademy.co/the-program/?utm_source=cobuild-blog&utm_medium=post). 
-
-<br/>
 
 On these days were Technology and Entrepreneurship are in every corner of Miami we are proud to keep adding incredibly talented Software Developers to the equation, with the best syllabus in town.
 
 <title-4>4Geeks Academy since 2015</title-4>
 
 4Geeks Academy is a Miami based coding Bootcamp with the most update full stackÂ syllabus, focused on part-time studies, graduating developers for almost 3 years now.
-
-<br/>
 
 Located in Miami Downtown, this initiative has been preparing professionals with real, job worthy coding skills, with the top and latest technologies throughout their Full Stack Software Development Program.
 
@@ -33,11 +31,7 @@ The first project was TAAP, a modern and beautiful directory for phycologist i
 
 After a really round of questions, we seat down again this time to listen to [Skarley Guerrero](https://www.linkedin.com/in/skarley-guerrero-ab933311/). 
 
-<br/>
-
 Skarley joined the program with a clear goal in his mind, to solve a recurrent problem in the Company where he works: [Affinity Managment Services](http://managedbyaffinity.com/), where they provide assistance and resources to community associations. 
-
-<br/>
 
 He explains to us how disperse is the information necessary for the members of a community and how he plans to solve this challenge with his project: Community Website.
 

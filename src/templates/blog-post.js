@@ -11,6 +11,7 @@ import Title5 from '../components/Title5'
 import Title6 from '../components/Title6'
 import ImagePost from '../components/ImagePost'
 import BlockQuote from '../components/BlockQuote'
+import Credits from '../components/Credits'
 import Img from 'gatsby-image'
 import get from 'lodash/get'
 import defaultImg from '../resources/default-post.jpg'
@@ -37,6 +38,7 @@ const renderAst = new rehypeReact({
     'title-5': Title5,
     'title-6': Title6,
     'block-quote': BlockQuote,
+    credits: Credits,
     columns: Columns,
     column: Column,
     image: ImagePost,
