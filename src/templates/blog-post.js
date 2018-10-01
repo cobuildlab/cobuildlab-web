@@ -131,8 +131,10 @@ class BlogPostTemplate extends React.Component {
                           backgroundImage: `url(${previousImage})`,
                         }}
                       >
-                        ← {previous.frontmatter.title}
                       </CardContent>
+                      <Content className="link-post">
+                      ← {previous.frontmatter.title}
+                      </Content>
                     </Card>
                   </Link>
                 </Column>
@@ -153,8 +155,10 @@ class BlogPostTemplate extends React.Component {
                           backgroundImage: `url(${nextImage})`,
                         }}
                       >
-                        {next.frontmatter.title} →
                       </CardContent>
+                      <Content className="link-post">
+                        {next.frontmatter.title} →
+                      </Content>
                     </Card>
                   </Link>
                 </Column>
