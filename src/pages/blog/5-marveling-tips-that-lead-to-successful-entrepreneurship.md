@@ -11,7 +11,7 @@ Frankly, no business can survive without hard work and perseverance whether it b
 
 Time and again, countless people have failed to realize that it takes a lot of work to make a business successful. This is why it is necessary to understand that successful business people have many traits in common with one another.   
 
-<image src="./media/pasted-image-0-4.png"></image>
+![](./media/pasted-image-0-4.png)
 <credits>By [TeroVasalainen / Pixabay](https://pixabay.com/en/users/TeroVesalainen-809550/)</credits>
 
 But clearly, research had it that confidence, courage; motivation; intelligence and creativity are all entrepreneurs need to be successful. Notwithstanding, awesome employees and successful entrepreneurs have more than a few traits in common. Meanwhile, there are a number of marveling things they do that leads to their success. Would you like to know?  
@@ -30,13 +30,12 @@ Finally, knowing your **_Threat_**; those things that are likely to pull you dow
 
 -The third marveling thing you need to know is that '**_you need to come up with a plan to achieve your capability'._** It has been said often times that he who fails to plan, plans to fail. Put up a business plan for your company. This is the blueprint showing how you want to achieve your dreams. You need to differentiate your plans from others on the market if you want to become a successful entrepreneur.
 
-<image src="./media/OGA5IQ0-01.jpg"></image>
+![](./media/OGA5IQ0-01.jpg)
 <credits>By [Creativeart / Freepik](https://www.freepik.com/creativeart)</credits>
 
 -The fourth marveling thing you need to know is that **_'you need not be afraid to take a chance'._** This was why Robert H. Schuller said, "**_Take a chance; take charge and take control."_** Starting a business is an unsafe attempt because there is always a chance that your business will fail. Nevertheless, the good thing is that you may have to take countless risks over the course of growing your business, growing it into new markets, investing capital, and hiring new employees.
 
-<image src="./media/26212312321.jpg"></image>
-
+![](./media/26212312321.jpg)
 <credits>By [Bedneyimages / Freepik](https://www.freepik.com/bedneyimages)</credits>
 
 <block-quote>_You may not be able to make your business successful if you cannot take the risk._ _You have to be passionate about what you do. Passion drives the way to success._</block-quote>

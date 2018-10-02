@@ -7,7 +7,7 @@ image: "./media/Banner-title-blogs-cobuild-01-1.jpg"
 
 When you decide to become independent and start a new business for your own, you will need some contacts to build your entrepreneurship. Is logical, the human being needs the social interaction to grow and develop, that's where the **networking** comes into place because the relationships you make in the course of your life will be very important when establishing a brand, company or startup.
 
-<image src="./media/image2-1.jpg"></image>
+![](./media/image2-1.jpg)
 
 <credits>Photo by MD Duran on [Unsplash](https://unsplash.com/)<credits>
 
@@ -17,13 +17,13 @@ When you decide to become independent and start a new business for your own, you
 
 Use social networks, mainly LinkedIn, Twitter or Facebook where there is a large community of brands and entrepreneurs who make contacts and publish information that may be useful for you. Identify them, follow them, leave a comment and show yourself interested in their publications. [Make a real connection](https://www.forbes.com/sites/susanrittscher/2012/05/31/six-keys-to-successful-networking-for-entrepreneurs/#37def232580b).  
 
-<image src="./media/image1-1.jpg"></image>
+![](./media/image1-1.jpg)
 
 <credits>Photo by rawpixel on [Pixabay](https://pixabay.com/)<credits>
 
 Events for exchange** The second step is being aware of the events in your business area and other areas that can enhance your project. A few months ago, I went to an entrepreneurship tech camp where there was no other person with a project similar to mine. However, I took all the contacts cards that I could and identified who could help me later. Several of them felt interested in my project because I was the only one that offered that kind of service, so they then contacted me to make alliances in which we both won.  
 
-<image src="./media/image3-1.jpg"></image>
+![](./media/image3-1.jpg)
 <credits>Photo by John-Mark Smith on [Pexels](https://www.pexels.com/)<credits>
 
 **Be empathetic** 

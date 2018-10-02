@@ -28,7 +28,7 @@ We used to say that **computers** were obedient, that it was strictly what we **
 *   Robots as effective weapons.
 *   Economic problems.
 
-<image src="./media/image121221sad21.jpg"></image>
+![](./media/image121221sad21.jpg)
 
 <title-4>Have you heard about the Turing test?</title-4>
 

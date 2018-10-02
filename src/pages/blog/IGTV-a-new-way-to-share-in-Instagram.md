@@ -15,7 +15,7 @@ That’s what happened this week when Kevin Systrom, co-founder & CEO of Instagr
 
 _In this application, you can see large videos of people that you already follow on Instagram. Beside it shows you content classified according to your interest and the most popular videos on this social network._
 
-<image src="./media/IGTV2-copia.jpg">
+![](IGTV2-copia.jpg)
 
 <title-3>What can companies/brands/startup/entrepreneurs do with IGTV?</title-3>
 
@@ -31,7 +31,7 @@ You can post live or edited videos. For this last option you have to manage vide
 
 Probably, Instagram understood that to upload a video of such magnitude you need a very good Internet service provider.
 
-<image src="./media/IGTV-Modo-pc.jpg">
+![](./media/IGTV-Modo-pc.jpg)
 
 <title-3>Disadvantages</title-3>
 

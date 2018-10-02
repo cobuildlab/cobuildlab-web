@@ -35,7 +35,7 @@ Allie Decker says that we can not aim for general "happiness"; it all depends on
 <a href="https://blog.hubspot.com/marketing/emotion-marketing?utm_campaign=Marketing%20Blog%20Weekly%20Email%20Sends&utm_source=hs_email&utm_medium=email&utm_content=65356979">"Another way to measure your audience's emotional response to your marketing is to decipher how their emotions manifest as actions (...) Happiness typically leads to sharing, sadness leads to giving, fear leads to loyalty, and anger leads to virality".</a>
 </block-quote>
 
-<image src="./media/alphabet-business-close-up-326642.jpg"></image>
+![](./media/alphabet-business-close-up-326642.jpg)
 
 <title-4>TALK ABOUT THEIR FEARS OR PROBLEMS</title-4>
 
@@ -49,4 +49,4 @@ At the end of your speech, conversation, video, [storytelling](https://cobuildla
 
 You do not need a super audiovisual production to make your emotional marketing plan come true. There are many applications on the Internet to create videos or designs that you can use to talk to the audience about their feelings and sell your product. Therefore, join all this information about your clients and a good format to hook them.
 
-<image src="./media/adolescent-adorable-alone-207569.jpg"></image>
+![](./media/adolescent-adorable-alone-207569.jpg)

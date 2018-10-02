@@ -39,9 +39,6 @@ const renderAst = new rehypeReact({
     'title-6': Title6,
     'block-quote': BlockQuote,
     credits: Credits,
-    columns: Columns,
-    column: Column,
-    image: ImagePost,
   },
 }).Compiler
 
@@ -130,10 +127,9 @@ class BlogPostTemplate extends React.Component {
                         style={{
                           backgroundImage: `url(${previousImage})`,
                         }}
-                      >
-                      </CardContent>
+                      />
                       <Content className="link-post">
-                      ← {previous.frontmatter.title}
+                        ← {previous.frontmatter.title}
                       </Content>
                     </Card>
                   </Link>
@@ -154,8 +150,7 @@ class BlogPostTemplate extends React.Component {
                         style={{
                           backgroundImage: `url(${nextImage})`,
                         }}
-                      >
-                      </CardContent>
+                      />
                       <Content className="link-post">
                         {next.frontmatter.title} →
                       </Content>
