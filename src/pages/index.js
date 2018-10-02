@@ -4,6 +4,7 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
+import { navigate } from "gatsby";
 
 import Layout from '../components/layout'
 import 'bulma'
@@ -65,7 +66,7 @@ class Index extends React.Component {
   }
 
   onSubmit(e) {
-    e.preventDefault()
+    e.preventDefault();
 
     if (this.state.firstName.length <= 0) {
       toast.error("First name can't be empty", {
@@ -95,7 +96,7 @@ class Index extends React.Component {
       return
     }
 
-    const url = 'http://api.cobuild-lab.com/landing/contact'
+    const url = 'https://api.cobuild-lab.com/landing/contact';
 
     const settings = {
       method: 'POST',
@@ -116,14 +117,9 @@ class Index extends React.Component {
         } else {
           toast.success(response.message, {
             position: 'bottom-right',
-          })
+          });
 
-          this.setState({
-            firstName: '',
-            lastName: '',
-            email: '',
-            comment: '',
-          })
+          navigate("/thanks-contact");
         }
       })
   }

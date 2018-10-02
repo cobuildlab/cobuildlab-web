@@ -27,6 +27,7 @@ import { facebookOfficial } from 'react-icons-kit/fa/facebookOfficial'
 import { instagram } from 'react-icons-kit/fa/instagram'
 import { twitterSquare } from 'react-icons-kit/fa/twitterSquare'
 import { linkedinSquare } from 'react-icons-kit/fa/linkedinSquare'
+import { navigate } from "gatsby";
 
 class footer extends React.Component {
   state = {
@@ -41,7 +42,7 @@ class footer extends React.Component {
   }
 
   onSubmit = e => {
-    e.preventDefault()
+    e.preventDefault();
 
     addToMailchimp(this.state.email, {
       FNAME: this.state.fullName,
@@ -49,12 +50,9 @@ class footer extends React.Component {
       if (data.result === 'success') {
         toast.success(data.msg, {
           position: 'bottom-right',
-        })
+        });
 
-        this.setState({
-          email: '',
-          fullName: '',
-        })
+        navigate("/thanks-newsletter");
       } else {
         toast.error(data.msg, {
           position: 'bottom-right',

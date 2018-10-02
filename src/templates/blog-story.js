@@ -93,7 +93,7 @@ class StoryTemplate extends React.Component {
               socialConfig={{
                 twitterHandle,
                 config: {
-                  url: `${url}${slug}`,
+                  url: `${url}/${slug}`,
                   title: `${siteTitle}`,
                 },
               }}

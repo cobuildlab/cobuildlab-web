@@ -3,10 +3,11 @@ module.exports = {
     title: 'Cobuild Lab | Software development in Miami, Florida',
     author: '4geeks.co',
     description: 'Software development in Miami, Florida',
-    siteUrl: 'https://cobuildlab.com/',
+    siteUrl: 'https://cobuildlab.com',
     twitterHandle: '@cobuildlab'
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,

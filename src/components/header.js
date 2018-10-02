@@ -12,11 +12,12 @@ import {
 } from 'bloomer'
 import '../assets/css/index.css'
 import logo from '../resources/cobuildlab.png'
-import '../assets/css/index.css'
+import '../assets/css/index.css';
+
 
 class header extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       isActive: false,
