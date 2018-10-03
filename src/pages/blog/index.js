@@ -71,7 +71,7 @@ class BlogIndex extends React.Component {
             </Container>
           </HeroBody>
         </Hero>
-        <section className="section">
+        <section className="section-blog">
           <Container>
             <Tabs isBoxed isFullWidth>
               <TabList>
