@@ -1,8 +1,9 @@
 ---
 title: "What is a Crypto Startup?"
 date: "2018-01-31T19:32:53.000Z"
+template: blog
 image: "./media/startup.jpg"
-category: Education
+tags: Education
 ---
 
 Trying to understand a little bit more of this new wave that has been growing all over the world since the last past years called “CRYPTO STARTUPS”; let´s go back to the basics and analyze the meaning of it “word by word”; Crypto: short word for “cryptography”. Generally used to cover the major features and topics of developing and using cryptography technologies: Startups: a business that is in the first stage of its set-ups.

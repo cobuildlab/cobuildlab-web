@@ -1,7 +1,8 @@
 ---
 title: "Pitch Day | 4Geeks Academy"
 date: "2018-05-30T13:22:35.000Z"
-category:
+template: blog
+tags:
 image: "./media/cover-4geeks.jpeg"
 ---
 

@@ -4,7 +4,7 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
-import { navigate } from "gatsby";
+import { navigate } from 'gatsby'
 
 import Layout from '../components/layout'
 import 'bulma'
@@ -66,7 +66,7 @@ class Index extends React.Component {
   }
 
   onSubmit(e) {
-    e.preventDefault();
+    e.preventDefault()
 
     if (this.state.firstName.length <= 0) {
       toast.error("First name can't be empty", {
@@ -96,7 +96,7 @@ class Index extends React.Component {
       return
     }
 
-    const url = 'https://api.cobuild-lab.com/landing/contact';
+    const url = 'https://api.cobuild-lab.com/landing/contact'
 
     const settings = {
       method: 'POST',
@@ -117,9 +117,9 @@ class Index extends React.Component {
         } else {
           toast.success(response.message, {
             position: 'bottom-right',
-          });
+          })
 
-          navigate("/thanks-contact");
+          navigate('/thanks-contact')
         }
       })
   }
@@ -167,7 +167,10 @@ class Index extends React.Component {
               </Columns>
             </Container>
 
-            <Container isFluid className="is-hidden-desktop is-hidden-tablet-only">
+            <Container
+              isFluid
+              className="is-hidden-desktop is-hidden-tablet-only"
+            >
               <Title className="title-logo-mobile">Cobuild Lab</Title>
               <Title className="subtitle-logo-mobile">
                 Let’s Build a Great Idea
@@ -302,9 +305,9 @@ class Index extends React.Component {
                           </small>
                           <Subtitle hasTextColor="white">{title}</Subtitle>
                         </Content>
-                        {node.frontmatter.category ? (
+                        {node.frontmatter.tags ? (
                           <Tag className="tag-category">
-                            {node.frontmatter.category}
+                            {node.frontmatter.tags}
                           </Tag>
                         ) : null}
                       </Card>
@@ -568,7 +571,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
-            category
+            tags
             image {
               publicURL
               childImageSharp {

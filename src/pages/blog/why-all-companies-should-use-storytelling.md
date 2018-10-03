@@ -1,8 +1,9 @@
 ---
 title: "Why all companies should use Storytelling?"
 date: "2018-06-30T20:43:09.000Z"
+template: blog
 image: "./media/rawpixel-567025-unsplash.jpg"
-category: Education
+tags: Education
 ---
 
 **Telling stories** is something that the journalist does all the time, since many many years ago. The writers of books and novels are experts in hooking their readers. Today, every entrepreneur wants to tell stories, but we ask when and why did Storytelling become so much desirable, so important and so effective to sell products and services.

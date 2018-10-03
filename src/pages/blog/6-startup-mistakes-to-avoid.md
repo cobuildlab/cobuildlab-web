@@ -1,7 +1,8 @@
 ---
 title: "6 Startup mistakes to avoid"
 date: "2018-05-26T03:17:18.000Z"
-category: 
+template: blog
+tags: 
 image: "./media/123213as.jpg"
 ---
 
@@ -17,14 +18,14 @@ The **Startups** are small **companies** that have very low budgets and few empl
 
 Statistically, it’s impossible that someone decides to take **entrepreneurship** and don’t make mistakes or find walls that stop them, so if you want to start and not die in the attempt you should take a check of the most common mistakes of **startups**. 
 
-![](./media/startup312321.png)
+![Creator equipment](./media/startup312321.png)
 <credits>Photo by [Brooke Lark](https://unsplash.com/photos/cqOZcjOOmRw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 </credits>
 
 
 **1.- Not think about the target market** 
 
-![](./media/asdasdas3243.png)
+![Busy Street](./media/asdasdas3243.png)
 <credits>Photo by [Redd Angelo](https://unsplash.com/photos/oqVT4J_ps0Y?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)</credits>
 
 Defining the product on your own tastes and interest is one of the most common mistakes of many startups, it is a serious mistake focus more on the product than the target market. The project can be really innovative, but should ask yourself the following questions: Will it provide a solution to any problem? Will it change the world? Why do people want to be customers? 
@@ -39,9 +40,9 @@ You should avoid copying business without doing a previous evaluation, one Start
 
 So it is always important to study the environment closely. Who is the rival? How are they growing? How can my Startup be better? These are some questions to answer in order to develop a successful Startup. 
 
-**3.- **Partners and inappropriate work team** 
+**3.- Partners and inappropriate work team** 
 
-![](./media/startup555555.png)
+![Co-working](./media/startup555555.png)
 
 <credits>Photo by [Brooke Cagle](https://unsplash.com/photos/g1Kr4Ozfoac?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)</credits>
 
@@ -71,7 +72,7 @@ _"In very large organizations it's sometimes like manning an aircraft carrier, i
 
 Don’t be in a hurry to see results and if you are seeing them, don’t be in a hurry to expand. In Startups, slow is not bad as long as you are steadily making progress. 
 
-![](./media/startup44444444.png)
+![New York Sunset](./media/startup44444444.png)
 <credits>Photo by [Matteo Catanese](https://unsplash.com/photos/ZVolF5GVmlw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)</credits>
 
 Always listen and communicate all that you have in mind to your **partners** and **co-workers**, never forget your **community**, help and provide support in any way you can to other **startups**. Remember that while you are working to get that dream, there are others that don’t know where to start. So you can create a **loyal community**.
@@ -80,8 +81,8 @@ Always listen and communicate all that you have in mind to your **partners** and
 
 **Sources:**
 
-*   The keys of successful entrepreneurs to turn a small business into a great company. Series "The secrets of the CEO". BBC. http://www.bbc.com/mundo/noticias-39271511  
+* The keys of successful entrepreneurs to turn a small business into a great company. Series "The secrets of the CEO". BBC. http://www.bbc.com/mundo/noticias-39271511  
 
-*   What qualities make a great entrepreneur? By Nastara Tavakoli-Far. BBC World Servise. [http://www.bbc.com/news/business-14032584](http://www.bbc.com/news/business-14032584)  
+* What qualities make a great entrepreneur? By Nastara Tavakoli-Far. BBC World Servise. [http://www.bbc.com/news/business-14032584](http://www.bbc.com/news/business-14032584)  
 
-*   Photographs [https://unsplash.com](https://unsplash.com)
+* Photographs [https://unsplash.com](https://unsplash.com)

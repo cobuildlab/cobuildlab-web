@@ -1,7 +1,8 @@
 ---
 title: "8 Reasons why you should be doing International Sales"
 date: "2018-08-14T17:20:27.000Z"
-category:
+template: blog
+tags:
 image: "./media/christine-roy-343235-unsplash.jpg"
 ---
 

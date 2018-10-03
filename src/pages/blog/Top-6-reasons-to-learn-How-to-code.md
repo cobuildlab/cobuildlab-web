@@ -1,7 +1,8 @@
 ---
 title: "Top 6 Reasons to Learn How To Code"
 date: "2018-07-11T17:46:01.000Z"
-category: Education
+template: blog
+tags: Education
 ---
 
 Coding is a life-changing engagement. If you are involved in online business or any web-related activity, you will find coding to be helpful. It can take you to the next level in your career and keep you in high demand from any web development company in your locality and beyond. Coding should be taught to learners in school as early as possible since they will all find it useful later in life. In this piece, you will be enlightened about six unique reasons to get involved in coding.

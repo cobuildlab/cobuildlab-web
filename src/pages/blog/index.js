@@ -118,9 +118,9 @@ class BlogIndex extends React.Component {
                           </small>
                           <Subtitle hasTextColor="white">{title}</Subtitle>
                         </Content>
-                        {node.frontmatter.category ? (
+                        {node.frontmatter.tags ? (
                           <Tag className="tag-category">
-                            {node.frontmatter.category}
+                            {node.frontmatter.tags}
                           </Tag>
                         ) : null}
                       </Card>
@@ -160,7 +160,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
-            category
+            tags
             image {
               publicURL
               childImageSharp {

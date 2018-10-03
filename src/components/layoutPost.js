@@ -9,8 +9,8 @@ class LayoutPost extends React.Component {
     const { children } = this.props
 
     return (
-      <div>
-        <HeaderPost/>
+      <div className="content">
+        <HeaderPost />
         {children}
         <Footer />
       </div>

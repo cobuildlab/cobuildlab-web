@@ -1,7 +1,8 @@
 ---
 title: "Software Development Process: a pragmatic approach"
 date: "2018-08-20T04:00:17.000Z"
-category:
+template: blog
+tags:
 image: "./media/hack-capital-568971-unsplash-1.jpg"
 ---
 

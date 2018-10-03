@@ -1,7 +1,8 @@
 ---
 title: "Artificial Intelligence, What is it?"
 date: "2018-06-06T20:29:10.000Z"
-category:
+template: blog
+tags:
 image: "./media/sphere-art-modern-art.jpg"
 ---
 
@@ -28,7 +29,7 @@ We used to say that **computers** were obedient, that it was strictly what we **
 *   Robots as effective weapons.
 *   Economic problems.
 
-![](./media/image121221sad21.jpg)
+![Artificial Intelligence Picture](./media/image121221sad21.jpg)
 
 <title-4>Have you heard about the Turing test?</title-4>
 

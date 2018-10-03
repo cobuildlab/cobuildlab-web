@@ -1,7 +1,8 @@
 ---
 title: "Startups: a new technological business model"
 date: "2017-12-26T15:26:38.000Z"
-category: Small Business
+template: blog
+tags: Small Business
 image: "./media/startup-plan-1024x273.jpg"
 ---
 

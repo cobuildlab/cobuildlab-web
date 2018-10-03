@@ -1,7 +1,8 @@
 ---
 title: "The ups and downs of Snapchat"
 date: "2018-04-12T14:59:59.000Z"
-category:
+template: blog
+tags:
 image: "./media/snapchat.jpg"
 ---
 

@@ -4,8 +4,15 @@ import LayoutPost from '../components/layoutPost'
 import { Link, graphql } from 'gatsby'
 import { DiscussionEmbed } from 'disqus-react'
 import Share from '../components/Share'
-import Img from 'gatsby-image'
+import Title2 from '../components/Title2'
+import Title3 from '../components/Title3'
+import Title4 from '../components/Title4'
+import Title5 from '../components/Title5'
+import Title6 from '../components/Title6'
+import BlockQuote from '../components/BlockQuote'
+import Credits from '../components/Credits'
 import get from 'lodash/get'
+import defaultImg from '../resources/default-post.jpg'
 import rehypeReact from 'rehype-react'
 import {
   Hero,
@@ -23,13 +30,17 @@ import {
 const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: {
-    title: Title,
-    columns: Columns,
-    column: Column,
+    'title-2': Title2,
+    'title-3': Title3,
+    'title-4': Title4,
+    'title-5': Title5,
+    'title-6': Title6,
+    'block-quote': BlockQuote,
+    credits: Credits,
   },
 }).Compiler
 
-class StoryTemplate extends React.Component {
+class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const twitterHandle = get(
@@ -43,6 +54,10 @@ class StoryTemplate extends React.Component {
     const siteTitle = 'Cobuild Lab'
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
+    const image = get(post, 'frontmatter.image.publicURL') || defaultImg
+    const previousImage =
+      get(previous, 'frontmatter.image.publicURL') || defaultImg
+    const nextImage = get(next, 'frontmatter.image.publicURL') || defaultImg
 
     return (
       <LayoutPost>
@@ -52,41 +67,26 @@ class StoryTemplate extends React.Component {
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
 
-        <Hero isColor="black" isSize="medium">
+        <Hero isColor="white" isSize="large">
+          <Container hasTextAlign="centered">
+            <Title tag="h3" isSize={1} hasTextColor="Black">
+              {post.frontmatter.title}
+            </Title>
+            <br />
+            <hr />
+          </Container>
           <HeroBody
             className="bg-post"
             style={{
-              backgroundImage: `url(${post.frontmatter.image.publicURL})`,
+              backgroundImage: `url(${image})`,
             }}
-          >
-            <Container hasTextAlign="centered">
-              <Columns isCentered>
-                <Column>
-                  <Title isSize={1} hasTextColor="white">
-                    {post.frontmatter.title}
-                  </Title>
-                  <br />
-                  <hr />
-                </Column>
-              </Columns>
-            </Container>
-          </HeroBody>
+          />
         </Hero>
 
-        <section className="section">
+        <section id="section-post" className="section">
           <Container>
             <Columns isCentered>
-              <Column
-                hasTextAlign="left"
-                // dangerouslySetInnerHTML={{ __html: post.html }}
-              >
-                {renderAst(post.htmlAst)}
-              </Column>
-            </Columns>
-            <Columns isCentered>
-              <Column>
-                <Img sizes={post.frontmatter.image.childImageSharp.fluid} />
-              </Column>
+              <Column hasTextAlign="left">{renderAst(post.htmlAst)}</Column>
             </Columns>
 
             <Share
@@ -110,54 +110,57 @@ class StoryTemplate extends React.Component {
                 <Column isSize="1/3">
                   <Link to={previous.fields.slug} rel="prev">
                     <Card className="card-p">
-                      <Tag className="tag-category">
-                        {previous.frontmatter.category}
-                      </Tag>
+                      {previous.frontmatter.tags ? (
+                        <Tag className="tag-category">
+                          {previous.frontmatter.tags}
+                        </Tag>
+                      ) : null}
                       <CardContent
                         className="card-post"
                         style={{
-                          backgroundImage: `url(${
-                            previous.frontmatter.image.publicURL
-                          })`,
+                          backgroundImage: `url(${previousImage})`,
                         }}
-                      >
+                      />
+                      <Content className="link-post">
                         ← {previous.frontmatter.title}
-                      </CardContent>
+                      </Content>
                     </Card>
                   </Link>
                 </Column>
-              ) : (
-                <div />
-              )}
+              ) : null}
 
               {next ? (
                 <Column isSize="1/3">
                   <Link to={next.fields.slug} rel="next">
                     <Card className="card-p">
-                      <Tag className="tag-category">
-                        {next.frontmatter.category}
-                      </Tag>
+                      {next.frontmatter.tags ? (
+                        <Tag className="tag-category">
+                          {next.frontmatter.tags}
+                        </Tag>
+                      ) : null}
                       <CardContent
                         className="card-post"
                         style={{
-                          backgroundImage: `url(${
-                            next.frontmatter.image.publicURL
-                          })`,
+                          backgroundImage: `url(${nextImage})`,
                         }}
-                      >
+                      />
+                      <Content className="link-post">
                         {next.frontmatter.title} →
-                      </CardContent>
+                      </Content>
                     </Card>
                   </Link>
                 </Column>
-              ) : (
-                <div />
-              )}
+              ) : null}
             </Columns>
             <Columns isCentered>
-            <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
-
-          </Columns>
+              <Column>
+                <DiscussionEmbed
+                  style={{ width: '100% !important' }}
+                  shortname={disqusShortname}
+                  config={disqusConfig}
+                />
+              </Column>
+            </Columns>
           </Container>
         </section>
       </LayoutPost>
@@ -165,17 +168,16 @@ class StoryTemplate extends React.Component {
   }
 }
 
-export default StoryTemplate
+export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query StoryBySlug($slug: String!) {
+  query BlogPostBySlug($slug: String!) {
     site {
       siteMetadata {
         title
         siteUrl
         author
         twitterHandle
-        description
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -185,7 +187,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "DD MMMM, YYYY")
-        category
+        tags
         image {
           publicURL
           childImageSharp {
@@ -204,4 +206,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

@@ -1,7 +1,8 @@
 ---
 title: "Networking for entrepreneurs, the key to growth"
 date: "2018-08-21T02:56:28.000Z"
-category:
+template: blog
+tags:
 image: "./media/Banner-title-blogs-cobuild-01-1.jpg"
 ---
 
