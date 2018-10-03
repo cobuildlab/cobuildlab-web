@@ -64,19 +64,16 @@ exports.createPages = ({ graphql, actions }) => {
             'Tools',
           ]
 
+          // If template is blog and tags are not null
           if (
             post.node.frontmatter.template === 'blog' &&
             post.node.frontmatter.tags
           ) {
-            console.log(post.node.frontmatter.tags)
-            const splitTags = post.node.frontmatter.tags.split(', ')
-            console.log(splitTags)
+            // Split the tags of the posts, if the tag is valid then create the page
+            const splitTags = post.node.frontmatter.tags.split(',')
 
             splitTags.forEach(tag => {
-              // Split the tags of the posts, if the tag is valid then create the page
-              console.log(tag)
               if (validTags.includes(tag)) {
-                // console.log('valid tag')
                 createPage({
                   path: post.node.fields.slug,
                   component: path.resolve(`src/templates/blog.js`),
@@ -87,6 +84,8 @@ exports.createPages = ({ graphql, actions }) => {
                   },
                 })
               }
+
+              // The tag is not valid
               console.log('invalid tag')
             })
           } */
