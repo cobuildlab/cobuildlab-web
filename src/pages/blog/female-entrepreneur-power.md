@@ -1,7 +1,8 @@
 ---
 title: "Female entrepreneur power"
 date: "2018-02-15T19:19:30.000Z"
-category:
+template: blog
+tags:
 image: "./media/female.jpg"
 ---
 

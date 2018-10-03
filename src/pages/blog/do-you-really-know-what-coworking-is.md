@@ -1,7 +1,8 @@
 ---
 title: "Do you really know what Coworking is?"
 date: "2017-09-06T18:20:20.000Z"
-category: Miami
+template: blog
+tags: Miami
 image: "./media/coworking3.jpg"
 ---
 

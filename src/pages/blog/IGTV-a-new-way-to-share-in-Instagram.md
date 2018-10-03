@@ -1,7 +1,8 @@
 ---
 title: "IGTV, a new way to share in Instagram"
 date: "2018-07-17T15:39:56.000Z"
-category: News
+template: blog
+tags: News
 image: "./media/jakob-owens-518866-unsplash.jpg"
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: "A blockchain way to go!"
 date: "2018-05-20T02:45:58.000Z"
-category: Education
+template: blog
+tags: Education
 image: "./media/blockchain.jpg"
 ---
 
@@ -21,7 +22,7 @@ Due to the ideology that comes up with the materialization of the bitcoin projec
 
 Peer to Peer or Network between equals is a network pattern design, in this kind of network some of the most important aspects or maybe all of them works individually and there’s no Server Based functionally between them. everything is decentralized, everyone can shared information. greater advantages of P2P are:  Fault-Tolerance, Redundancy, Shared Resources, Direct interaction between nodes, **Decentralized Management**, Self-administration. 
 
-![](./media/server21312.jpg)
+![P2P Network](./media/server21312.jpg)
 
 Here we can see how a Server Based Network needs a server in between to share information with his peers while in Peer to Peer all the nodes are connected in between with all the peers which participate in the network. 
 
@@ -33,7 +34,7 @@ Here we can see how a Server Based Network needs a server in between to share in
 
 The decentralized premise comes with the idea to create transactions with no one in between, neither an organization who could control it or put rules on it. the process controls itself just by its own conformation within (attributes) through the implementation of blocks that putting one linked to another, together conforms a chain of stored ledgers with the information of all transactions made since the beginning of the network. 
 
-![](./media/server22421.jpg)
+![Bitcoin's Blockchain Size By Year](./media/server22421.jpg)
 
 1.2.2.-  **What’s a block and how they are conformed?** 
 

@@ -7,7 +7,7 @@ class Credits extends React.Component {
     return (
       <Subtitle
         tag="h6"
-        style={{ marginBottom: 10, marginTop: 10 }}
+        style={{ marginBottom: 30, marginTop: 20 }}
         hasTextAlign="centered"
       >
         {children}

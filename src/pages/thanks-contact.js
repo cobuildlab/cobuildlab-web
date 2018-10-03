@@ -4,7 +4,7 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
-import { navigate } from "gatsby";
+import { navigate } from 'gatsby'
 
 import Layout from '../components/layout'
 import 'bulma'
@@ -46,23 +46,23 @@ import {
 
 class Index extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       firstName: '',
       lastName: '',
       email: '',
       comment: '',
       landingName: 'Cobuild Lab',
-    };
+    }
   }
 
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title');
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteDescription = get(
       this,
       'props.data.site.siteMetadata.description'
     )
-    const posts = get(this, 'props.data.allMarkdownRemark.edges');
+    const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
       <Layout location={this.props.location}>
@@ -77,9 +77,7 @@ class Index extends React.Component {
           <HeroBody className="bg-header">
             <Container isFluid className="is-hidden-mobile">
               <Title className="title-logo">Cobuild Lab</Title>
-              <Title className="subtitle-logo">
-                Thanks for contacting Us!
-              </Title>
+              <Title className="subtitle-logo">Thanks for contacting Us!</Title>
               <Columns>
                 <Column isSize="1/2">
                   <a className="button is-primary is-medium is-rounded">
@@ -89,7 +87,10 @@ class Index extends React.Component {
               </Columns>
             </Container>
 
-            <Container isFluid className="is-hidden-desktop is-hidden-tablet-only">
+            <Container
+              isFluid
+              className="is-hidden-desktop is-hidden-tablet-only"
+            >
               <Title className="title-logo-mobile">Cobuild Lab</Title>
               <Title className="subtitle-logo-mobile">
                 Thanks for contacting Us!
@@ -105,7 +106,6 @@ class Index extends React.Component {
           </HeroBody>
         </Hero>
         {/*HEADER*/}
-
 
         {/*Section Where we are? and Write Us! */}
         <section id="contact" className="section bg-section">
@@ -238,7 +238,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
-            category
+            tags
             image {
               publicURL
               childImageSharp {

@@ -1,7 +1,8 @@
 ---
 title: "Learn Software Development with Microsoft Free Courses"
 date: "2018-09-10T15:56:01.000Z"
-category: Education
+template: blog
+tags: Education
 image: "./media/image1f32d23cd.jpg"
 ---
 

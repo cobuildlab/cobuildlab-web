@@ -6,7 +6,7 @@ class ImagePost extends React.Component {
     const { src } = this.props
     return (
       <Container>
-        <Columns isCentered>
+        <Columns>
           <Column>
             <Image isRatio="1:1" src={src} />
           </Column>

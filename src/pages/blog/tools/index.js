@@ -58,8 +58,8 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 40
-      filter: { frontmatter: { category: { eq: "Tools" } }, fileAbsolutePath: {regex: "/(blog)/.*\\.md$/"} }
+      limit: 20
+      filter: { frontmatter: { tags: { regex: "/Tools/" } }, fileAbsolutePath: {regex: "/(blog)/.*\\.md$/"} }
     ) {
       edges {
         node {
@@ -70,7 +70,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
-            category
+            tags
             image {
               publicURL
               childImageSharp {

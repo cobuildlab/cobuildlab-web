@@ -1,7 +1,8 @@
 ---
 title: "User Stories: How to write them?"
 date: "2018-02-28T18:04:52.000Z"
-category: 
+template: blog
+tags: 
 image: "./media/userstories.jpg"
 ---
 

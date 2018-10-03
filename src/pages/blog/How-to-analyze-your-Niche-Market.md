@@ -1,7 +1,8 @@
 ---
 title: "How to analyze your Niche Market?"
 date: "2018-06-19T23:50:55.000Z"
-category: Education
+template: blog
+tags: Education
 image: "./media/andrew-neel-609846-unsplash.jpg"
 ---
 

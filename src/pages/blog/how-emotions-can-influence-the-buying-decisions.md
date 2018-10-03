@@ -1,7 +1,8 @@
 ---
 title: "Emotional Marketing: How emotions can influence the buying decisions"
 date: "2018-09-03T16:40:56.000Z"
-category: Education
+template: blog
+tags: Education
 image: "./media/author-classic-flatlay-938971.jpg"
 ---
 
