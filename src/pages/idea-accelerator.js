@@ -4,7 +4,7 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
-import { navigate } from "gatsby";
+import { navigate } from 'gatsby'
 
 import LayoutLanding from '../components/layoutLanding'
 import FormContact from '../components/FormContact'
@@ -12,7 +12,6 @@ import 'bulma'
 
 import { Icon } from 'react-icons-kit'
 import { check } from 'react-icons-kit/fa/check'
-
 
 import {
   Container,
@@ -37,23 +36,23 @@ import {
 
 class Index extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       firstName: '',
       lastName: '',
       email: '',
       comment: '',
       landingName: 'Cobuild Lab',
-    };
+    }
   }
 
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title');
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteDescription = get(
       this,
       'props.data.site.siteMetadata.description'
     )
-    const posts = get(this, 'props.data.allMarkdownRemark.edges');
+    const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
       <LayoutLanding location={this.props.location}>
@@ -69,33 +68,44 @@ class Index extends React.Component {
             <Container isFluid className="is-hidden-mobile">
               <Columns>
                 <Column isSize="1/2">
-                <Title className="title-logo">Cobuild Lab</Title>
-                <Title className="subtitle-logo">
-                  Thanks for contacting Us!
-                </Title>
-                  <a hasTextAlign='centered' className="button is-primary is-medium is-rounded">
+                  <Title className="title-logo">Cobuild Lab</Title>
+                  <Title className="subtitle-logo">
+                    Thanks for contacting Us!
+                  </Title>
+                  <a
+                    hasTextAlign="centered"
+                    className="button is-primary is-medium is-rounded"
+                  >
                     READ MORE
                   </a>
                 </Column>
                 <Column isSize="1/2">
-                  <FormContact/>
+                  <FormContact />
                 </Column>
               </Columns>
             </Container>
 
-            <Container isFluid className="is-hidden-desktop is-hidden-tablet-only">
+            <Container
+              isFluid
+              className="is-hidden-desktop is-hidden-tablet-only"
+            >
               <Columns>
                 <Column isSize="1/2">
-                <Title className="title-logo-mobile" hasTextAlign='centered'>Cobuild Lab</Title>
-                <Title className="subtitle-logo-mobile" hasTextAlign='centered'>
-                  Thanks for contacting Us!
-                </Title>
+                  <Title className="title-logo-mobile" hasTextAlign="centered">
+                    Cobuild Lab
+                  </Title>
+                  <Title
+                    className="subtitle-logo-mobile"
+                    hasTextAlign="centered"
+                  >
+                    Thanks for contacting Us!
+                  </Title>
                   <a className="button is-primary is-small is-rounded">
                     READ MORE
                   </a>
                 </Column>
                 <Column isSize="1/2">
-                  <FormContact/>
+                  <FormContact />
                 </Column>
               </Columns>
             </Container>
@@ -130,7 +140,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
-            category
+            tags
             image {
               publicURL
               childImageSharp {
