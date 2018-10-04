@@ -56,15 +56,15 @@ class BlogIndex extends React.Component {
               <Columns isCentered>
                 <Column>
                   <Title className="title-blog" isSize={1}>
-                    New ideas, forged in 4Geeks Cobuild
+                    New ideas, forged in Cobuild Lab
                   </Title>
                   <Subtitle isSize={5}>
                     Many enter, others leave. In the end, the most restless and
-                    daring to undertake the digital world have found their
+                    daring to undertake the digital world have found them
                     perfect place because they have been cared for and
                     understood in the particularities of their local businesses.
-                    The laboratories in Miami by 4Geeks has allowed to create
-                    new and better ideas, born of other ideas
+                    The laboratories in Miami by Cobuild Lab has allowed creating
+                    new and better ideas, born of other ideas.
                   </Subtitle>
                   <br />
                   <hr />
@@ -77,7 +77,7 @@ class BlogIndex extends React.Component {
           <Container>
             <Columns className="is-multiline">
               {posts.map(({ node }) => {
-                const title = get(node, 'frontmatter.title') || node.fields.slug
+                const title = get(node, 'frontmatter.title') || node.fields.slug;
                 return (
                   <Column key={node.fields.slug} isSize="1/3">
                     <Link to={node.fields.slug}>
