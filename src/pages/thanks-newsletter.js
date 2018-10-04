@@ -62,7 +62,6 @@ class Index extends React.Component {
       this,
       'props.data.site.siteMetadata.description'
     )
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
       <Layout location={this.props.location}>
@@ -223,36 +222,6 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         description
-      }
-    }
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: 3
-    ) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            tags
-            image {
-              publicURL
-              childImageSharp {
-                fluid(maxWidth: 480) {
-                  aspectRatio
-                  base64
-                  sizes
-                  src
-                  srcSet
-                }
-              }
-            }
-          }
-        }
       }
     }
   }

@@ -1,10 +1,9 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, navigate } from 'gatsby'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
 import {
   Container,
-  Footer,
   Columns,
   Column,
   Content,
@@ -14,26 +13,93 @@ import {
   Subtitle,
   Control,
   Input,
-  Button,
   Label,
 } from 'bloomer'
-import '../assets/css/index.css'
-import { logo } from '../resources/cobuildlab.png'
-// Import typefaces
-
-
-import { Icon } from 'react-icons-kit'
-import { facebookOfficial } from 'react-icons-kit/fa/facebookOfficial'
-import { navigate } from "gatsby";
 
 class FormContact extends React.Component {
+  state = {
+    firstName: '',
+    lastName: '',
+    email: '',
+    comment: '',
+  }
+
+  handleChange = e => {
+    console.log(this.state)
+    this.setState({
+      [e.target.name]: e.target.value,
+    })
+  }
+
+  onSubmit = (e, landingName) => {
+    e.preventDefault()
+
+    /* if (this.state.firstName.length <= 0) {
+      toast.error("First name can't be empty", {
+        position: 'bottom-right',
+      })
+      return
+    }
+
+    if (this.state.lastName.length <= 0) {
+      toast.error("Last name can't be empty", {
+        position: 'bottom-right',
+      })
+      return
+    }
+
+    if (this.state.email.length <= 0) {
+      toast.error("Email can't be empty", {
+        position: 'bottom-right',
+      })
+      return
+    }
+
+    if (this.state.comment.length <= 0) {
+      toast.error("Comment can't be empty", {
+        position: 'bottom-right',
+      })
+      return
+    }
+
+    const url = 'https://api.cobuild-lab.com/landing/contact'
+
+    const settings = {
+      method: 'POST',
+      body: JSON.stringify(this.state),
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+    }
+
+    fetch(url, settings)
+      .then(res => res.json())
+      .then(response => {
+        if (response.statusCode >= 400) {
+          toast.error(response.message, {
+            position: 'bottom-right',
+          })
+        } else {
+          toast.success(response.message, {
+            position: 'bottom-right',
+          })
+
+          navigate('/thanks-contact')
+        }
+      }) */
+  }
 
   render() {
+    const { landingName } = this.props
     return (
-        <Container>
-          <Content>
-            <Columns>
-            <Column className="p-f col-form" isSize={{mobile: 12, desktop: "1/2"}}>
+      <Container>
+        <Content>
+          <Columns>
+            <Column
+              className="p-f col-form"
+              isSize={{ mobile: 12, desktop: '1/2' }}
+            >
               <Content className="content-form">
                 <Title isSize={2} className="title-section" hasTextAlign="left">
                   Write Us!
@@ -41,7 +107,11 @@ class FormContact extends React.Component {
                 <Content isSize="small">
                   Your business takes off right now
                 </Content>
-                <form onSubmit={e => this.onSubmit(e)}>
+                <form
+                  onSubmit={e => {
+                    this.onSubmit(e, landingName)
+                  }}
+                >
                   <Columns>
                     <Column>
                       <Field>
@@ -51,8 +121,8 @@ class FormContact extends React.Component {
                             type="text"
                             name="firstName"
                             placeholder="First Name"
-                            // value={this.state.firstName}
-                            // onChange={e => this.handleChange(e)}
+                            value={this.state.firstName}
+                            onChange={e => this.handleChange(e)}
                           />
                         </Control>
                       </Field>
@@ -65,8 +135,8 @@ class FormContact extends React.Component {
                             type="text"
                             name="lastName"
                             placeholder="Last Name"
-                            // value={this.state.lastName}
-                            // onChange={e => this.handleChange(e)}
+                            value={this.state.lastName}
+                            onChange={e => this.handleChange(e)}
                           />
                         </Control>
                       </Field>
@@ -79,8 +149,8 @@ class FormContact extends React.Component {
                         type="email"
                         name="email"
                         placeholder="Email"
-                        // value={this.state.email}
-                        // onChange={e => this.handleChange(e)}
+                        value={this.state.email}
+                        onChange={e => this.handleChange(e)}
                       />
                     </Control>
                   </Field>
@@ -90,8 +160,8 @@ class FormContact extends React.Component {
                       <TextArea
                         name="comment"
                         placeholder="Your message or comment goes here"
-                        // value={this.state.comment}
-                        // onChange={e => this.handleChange(e)}
+                        value={this.state.comment}
+                        onChange={e => this.handleChange(e)}
                       />
                     </Control>
                   </Field>
@@ -113,11 +183,11 @@ class FormContact extends React.Component {
                     </Link>
                   </Content>
                 </form>
-                </Content>
-              </Column>
-            </Columns>
-          </Content>
-        </Container>
+              </Content>
+            </Column>
+          </Columns>
+        </Content>
+      </Container>
     )
   }
 }

@@ -37,13 +37,12 @@ In addition to this, it has an administration panel to report everything that ha
 
 [Propagad Pitch](https://www.youtube.com/watch?v=uh78xpIeGzc)
 
-![Propagad 1](./media/5-1280x1080p-1024x864.png)
-
-![Propagad 2](./media/2-1280x1080p.png)
-
-![Propagad 3](./media/3-1280x1080p.png)
-
-![Propagad 4](./media/4-1280x1080p.png)
+<carousel folder='customer-success-stories'>
+./media/5-1280x1080p-1024x864.png
+./media/2-1280x1080p.png
+./media/3-1280x1080p.png
+./media/4-1280x1080p.png
+</carousel>
 
 
 

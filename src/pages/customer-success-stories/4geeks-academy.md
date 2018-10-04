@@ -59,13 +59,6 @@ Review in the News Week:
 
 [A CODING CAREER AND YOU – TOP CODING SCHOOLS 2017](http://www.newsweek.com/insights/coding-career-and-you-top-coding-schools-2017/4geeks-academy)
 
-![4Geeks Academy 1](./media/2-1280x1080.png)
-
-![4Geeks Academy 2](./media/3-1280x1080.png)
-
-![4Geeks Academy 3](./media/4-1280x1080.png)
-
-
 <carousel folder='customer-success-stories'>
 ./media/2-1280x1080.png
 ./media/3-1280x1080.png

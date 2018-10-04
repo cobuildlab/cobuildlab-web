@@ -12,6 +12,8 @@ On these days were Technology and Entrepreneurship are in every corner of Miami 
 
 <title-4>4Geeks Academy since 2015</title-4>
 
+![4Geeks Academy Members](./media/4geeks-academy-300x200.jpg)
+
 4Geeks Academy is a Miami based coding Bootcamp with the most update full stackÂ syllabus, focused on part-time studies, graduating developers for almost 3 years now.
 
 Located in Miami Downtown, this initiative has been preparing professionals with real, job worthy coding skills, with the top and latest technologies throughout their Full Stack Software Development Program.
@@ -43,4 +45,15 @@ In the third place was the Octopus: A Modular Reservation Management System. Thi
 <title-4>Thanks for coming...</title-4>
 
 The presentation was close by Alejandro congratulating the new developers and once again thanking the assistants for such a great environment during the event.
+
+<carousel folder='blog'>
+./media/121321312312321.jpeg
+./media/cover-121312321.jpeg
+./media/asdasd122131.jpeg
+./media/12321szdda.jpeg
+./media/sadasd23121321.jpeg
+./media/12312321dsa.jpeg
+./media/WhatsApp-Image-2018-05-30-at-6.12.44-PM.jpeg
+./media/WhatsApp-Image-2018-05-30-at-6.13.41-PM.jpeg
+</carousel>
 

@@ -2,27 +2,9 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
-import { navigate } from 'gatsby'
-
 import Layout from '../components/layout'
 import 'bulma'
-import stories from '../resources/stories.png'
-import marcelo from '../resources/marceloicigliani.jpg'
-import angel from '../resources/anglelacret.jpg'
-import alejandro from '../resources/alejandrosanchez.jpg'
-import defaultImg from '../resources/default-post.jpg'
-
-import { Icon } from 'react-icons-kit'
-import { check } from 'react-icons-kit/fa/check'
-import { code } from 'react-icons-kit/fa/code'
-import { ic_layers } from 'react-icons-kit/md/ic_layers'
-import { slideshare } from 'react-icons-kit/fa/slideshare'
-import { envelopeO } from 'react-icons-kit/fa/envelopeO'
-import { linkedinSquare } from 'react-icons-kit/fa/linkedinSquare'
-import { clockO } from 'react-icons-kit/fa/clockO'
-
 import {
   Container,
   Title,
@@ -30,10 +12,7 @@ import {
   Column,
   Columns,
   Card,
-  CardImage,
-  Image,
   Content,
-  CardContent,
   Field,
   Label,
   Control,
@@ -41,7 +20,6 @@ import {
   TextArea,
   Hero,
   HeroBody,
-  Tag,
 } from 'bloomer'
 
 class Index extends React.Component {
@@ -62,7 +40,6 @@ class Index extends React.Component {
       this,
       'props.data.site.siteMetadata.description'
     )
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
       <Layout location={this.props.location}>
@@ -223,36 +200,6 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         description
-      }
-    }
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: 3
-    ) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            tags
-            image {
-              publicURL
-              childImageSharp {
-                fluid(maxWidth: 480) {
-                  aspectRatio
-                  base64
-                  sizes
-                  src
-                  srcSet
-                }
-              }
-            }
-          }
-        }
       }
     }
   }

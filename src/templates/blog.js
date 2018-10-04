@@ -4,6 +4,7 @@ import LayoutPost from '../components/layoutPost'
 import { Link, graphql } from 'gatsby'
 import { DiscussionEmbed } from 'disqus-react'
 import Share from '../components/Share'
+import Carousel from '../components/Carousel'
 import Title2 from '../components/Title2'
 import Title3 from '../components/Title3'
 import Title4 from '../components/Title4'
@@ -37,6 +38,7 @@ const renderAst = new rehypeReact({
     'title-6': Title6,
     'block-quote': BlockQuote,
     credits: Credits,
+    carousel: Carousel,
   },
 }).Compiler
 

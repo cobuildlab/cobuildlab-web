@@ -2,58 +2,19 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
-import { navigate } from 'gatsby'
-
 import LayoutLanding from '../components/layoutLanding'
 import FormContact from '../components/FormContact'
-import 'bulma'
-import defaultImg from '../resources/default-post.jpg'
-
-import { Icon } from 'react-icons-kit'
-import { check } from 'react-icons-kit/fa/check'
-
-import {
-  Container,
-  Title,
-  Subtitle,
-  Column,
-  Columns,
-  Card,
-  CardImage,
-  Image,
-  Content,
-  CardContent,
-  Field,
-  Label,
-  Control,
-  Input,
-  TextArea,
-  Hero,
-  HeroBody,
-  Tag,
-} from 'bloomer'
+import { Container, Title, Column, Columns, Hero, HeroBody } from 'bloomer'
 
 class Index extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      firstName: '',
-      lastName: '',
-      email: '',
-      comment: '',
-      landingName: 'Cobuild Lab',
-    }
-  }
-
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteDescription = get(
       this,
       'props.data.site.siteMetadata.description'
     )
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const landingName = 'Digital Transformation'
 
     return (
       <LayoutLanding location={this.props.location}>
@@ -70,13 +31,8 @@ class Index extends React.Component {
               <Columns>
                 <Column isSize="1/2">
                   <Title className="title-logo">Cobuild Lab</Title>
-                  <Title className="subtitle-logo">
-                    Thanks for contacting Us!
-                  </Title>
-                  <a
-                    hasTextAlign="centered"
-                    className="button is-primary is-medium is-rounded"
-                  >
+                  <Title className="subtitle-logo">{landingName}</Title>
+                  <a className="button is-primary is-medium is-rounded">
                     READ MORE
                   </a>
                 </Column>
@@ -99,14 +55,14 @@ class Index extends React.Component {
                     className="subtitle-logo-mobile"
                     hasTextAlign="centered"
                   >
-                    Thanks for contacting Us!
+                    {landingName}
                   </Title>
                   <a className="button is-primary is-small is-rounded">
                     READ MORE
                   </a>
                 </Column>
                 <Column isSize="1/2">
-                  <FormContact />
+                  <FormContact landingName={landingName} />
                 </Column>
               </Columns>
             </Container>
@@ -126,36 +82,6 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         description
-      }
-    }
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: 3
-    ) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            tags
-            image {
-              publicURL
-              childImageSharp {
-                fluid(maxWidth: 480) {
-                  aspectRatio
-                  base64
-                  sizes
-                  src
-                  srcSet
-                }
-              }
-            }
-          }
-        }
       }
     }
   }
