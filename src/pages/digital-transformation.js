@@ -27,7 +27,7 @@ class Index extends React.Component {
           <HeroBody className="bg-header">
             <Container isFluid className="is-hidden-mobile">
               <Columns>
-                <Column isSize="1/2">
+                <Column isSize="1/2" className="space-title">
                   <Title className="title-logo">Cobuild Lab</Title>
                   <Title className="subtitle-logo">{landingName}</Title>
                 </Column>

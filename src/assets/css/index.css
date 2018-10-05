@@ -418,6 +418,9 @@ hr {
   line-height: 1.4;
   font-family: inherit;
 }
+.space-title{
+  padding: 11.1% 0 !important;
+}
 .section {
   padding: 4.5rem 3rem;
 }
