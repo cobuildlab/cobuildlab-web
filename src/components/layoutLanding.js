@@ -1,18 +1,17 @@
-import React from 'react'
-import { Link, withPrefix } from 'gatsby'
-import '../assets/css/index.css'
-import HeaderLanding from './headerLanding'
+import React from 'react';
+import '../assets/css/index.css';
+import HeaderLanding from './headerLanding';
 
 class Template extends React.Component {
   render() {
-    const { children } = this.props
+    const { children } = this.props;
     return (
       <div>
-      <HeaderLanding/>
+        <HeaderLanding/>
         {children}
       </div>
-    )
+    );
   }
 }
 
-export default Template
+export default Template;

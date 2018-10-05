@@ -1,17 +1,13 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
 import {
   Container,
   Navbar,
   NavbarBrand,
   NavbarItem,
-  NavbarBurger,
-  NavbarMenu,
-  NavbarEnd,
-  Icon,
-} from 'bloomer'
-import '../assets/css/index.css'
-import logo from '../resources/cobuildlab.png'
+} from 'bloomer';
+import '../assets/css/index.css';
+import logo from '../resources/cobuildlab.png';
 import '../assets/css/index.css';
 
 
@@ -20,15 +16,10 @@ class headerLanding extends React.Component {
     super(props);
 
     this.state = {
-      isActive: false,
-    }
+      isActive: false
+    };
   }
 
-  onClickNav = () => {
-    this.setState(({ isActive }) => ({
-      isActive: !isActive,
-    }))
-  }
   render() {
     return (
       <React.Fragment>
@@ -37,51 +28,10 @@ class headerLanding extends React.Component {
             <NavbarBrand>
               <NavbarItem>
                 <Link className="link-nav" to="/">
-                  <img src={logo} style={{ marginRight: 5 }} />
+                  <img src={logo} style={{ marginRight: 5 }}/>
                 </Link>
               </NavbarItem>
-              <NavbarBurger
-                isActive={this.state.isActive}
-                onClick={this.onClickNav}
-              />
             </NavbarBrand>
-            <NavbarMenu
-              isActive={this.state.isActive}
-              onClick={this.onClickNav}
-            >
-              <NavbarEnd>
-                <NavbarItem>
-                  <Link className="link-nav" to="/">
-                    Home
-                  </Link>
-                </NavbarItem>
-                <NavbarItem>
-                  <a className="link-nav" href="/#process">
-                    Cobuild Process
-                  </a>
-                </NavbarItem>
-                {/* <NavbarItem>
-                <Link className="link-nav" to="/customer-success-stories">
-                  Customer Success Stories
-                </Link>
-              </NavbarItem> */}
-                <NavbarItem>
-                  <Link className="link-nav" to="/services">
-                    Services
-                  </Link>
-                </NavbarItem>
-                <NavbarItem>
-                  <Link className="link-nav" to="/blog">
-                    Blog
-                  </Link>
-                </NavbarItem>
-                <NavbarItem>
-                  <a href="#contact" className="link-nav">
-                    Contact Us
-                  </a>
-                </NavbarItem>
-              </NavbarEnd>
-            </NavbarMenu>
           </Container>
         </Navbar>
         <Navbar
@@ -98,53 +48,12 @@ class headerLanding extends React.Component {
                   height="49"
                 />
               </Link>
-
-              <NavbarBurger
-                isActive={this.state.isActive}
-                onClick={this.onClickNav}
-              />
             </NavbarBrand>
-            <NavbarMenu
-              isActive={this.state.isActive}
-              onClick={this.onClickNav}
-            >
-              {/* <NavbarEnd>
-                <NavbarItem>
-                  <Link className="link-nav" to="/">
-                    Home
-                  </Link>
-                </NavbarItem>
-                <NavbarItem>
-                  <Link className="link-nav" to="/#process">
-                    Cobuild Process
-                  </Link>
-                </NavbarItem>
-                <NavbarItem>
-                <Link className="link-nav" to="/customer-success-stories">
-                  Customer Success Stories
-                </Link>
-              </NavbarItem>
-                <NavbarItem>
-                  <Link className="link-nav" to="/services">
-                    Services
-                  </Link>
-                </NavbarItem>
-                <NavbarItem>
-                  <Link className="link-nav" to="/blog">
-                    Blog
-                  </Link>
-                </NavbarItem>
-                <NavbarItem>
-                  <Link className="link-nav" to="/#contact">
-                    Contact Us
-                  </Link>
-                </NavbarItem>
-              </NavbarEnd> */}
-            </NavbarMenu>
           </Container>
         </Navbar>
       </React.Fragment>
-    )
+    );
   }
 }
-export default headerLanding
+
+export default headerLanding;

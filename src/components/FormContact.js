@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link, navigate } from 'gatsby'
-import { ToastContainer, toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.min.css'
+import React from 'react';
+import { Link, navigate } from 'gatsby';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 import {
   Container,
   Columns,
@@ -13,85 +13,84 @@ import {
   Subtitle,
   Control,
   Input,
-  Label,
-} from 'bloomer'
+  Label
+} from 'bloomer';
 
 class FormContact extends React.Component {
   state = {
     firstName: '',
     lastName: '',
     email: '',
-    comment: '',
-  }
+    comment: ''
+  };
 
   handleChange = e => {
-    console.log(this.state)
     this.setState({
-      [e.target.name]: e.target.value,
-    })
-  }
+      [e.target.name]: e.target.value
+    });
+  };
 
   onSubmit = (e, landingName) => {
-    e.preventDefault()
+    e.preventDefault();
 
-    /* if (this.state.firstName.length <= 0) {
-      toast.error("First name can't be empty", {
-        position: 'bottom-right',
-      })
-      return
+    if (this.state.firstName.length <= 0) {
+      toast.error('First name can\'t be empty', {
+        position: 'bottom-right'
+      });
+      return;
     }
 
     if (this.state.lastName.length <= 0) {
-      toast.error("Last name can't be empty", {
-        position: 'bottom-right',
-      })
-      return
+      toast.error('Last name can\'t be empty', {
+        position: 'bottom-right'
+      });
+      return;
     }
 
     if (this.state.email.length <= 0) {
-      toast.error("Email can't be empty", {
-        position: 'bottom-right',
-      })
-      return
+      toast.error('Email can\'t be empty', {
+        position: 'bottom-right'
+      });
+      return;
     }
 
     if (this.state.comment.length <= 0) {
-      toast.error("Comment can't be empty", {
-        position: 'bottom-right',
-      })
-      return
+      toast.error('Comment can\'t be empty', {
+        position: 'bottom-right'
+      });
+      return;
     }
 
-    const url = 'https://api.cobuild-lab.com/landing/contact'
-
+    const url = 'https://api.cobuild-lab.com/landing/contact';
+    const data = Object.assign({ landingName }, this.state);
     const settings = {
       method: 'POST',
-      body: JSON.stringify(this.state),
+      body: JSON.stringify(data),
       headers: {
         Accept: 'application/json',
-        'Content-Type': 'application/json',
-      },
-    }
+        'Content-Type': 'application/json'
+      }
+    };
 
     fetch(url, settings)
       .then(res => res.json())
       .then(response => {
         if (response.statusCode >= 400) {
           toast.error(response.message, {
-            position: 'bottom-right',
-          })
+            position: 'bottom-right'
+          });
         } else {
           toast.success(response.message, {
-            position: 'bottom-right',
-          })
+            position: 'bottom-right'
+          });
 
-          navigate('/thanks-contact')
+          navigate('/thanks-contact');
         }
-      }) */
-  }
+      });
+  };
 
   render() {
-    const { landingName } = this.props
+    const { landingName } = this.props;
     return (
       <Container>
         <Content>
@@ -102,14 +101,11 @@ class FormContact extends React.Component {
             >
               <Content className="content-form">
                 <Title isSize={2} className="title-section" hasTextAlign="left">
-                  Write Us!
+                  Contact us for a <strong>FREE</strong> consultation!
                 </Title>
-                <Content isSize="small">
-                  Your business takes off right now
-                </Content>
                 <form
                   onSubmit={e => {
-                    this.onSubmit(e, landingName)
+                    this.onSubmit(e, landingName);
                   }}
                 >
                   <Columns>
@@ -177,10 +173,12 @@ class FormContact extends React.Component {
                   </Field>
                   <Content hasTextAlign="centered">
                     <Subtitle>Privacy Policy</Subtitle>
-                    <Link to="/privacy-policy">
-                      Here you can access the information about how we treat
-                      your data.
-                    </Link>
+                    <small>
+                      <Link target="_blank" to="/privacy-policy">
+                        Here you can access the information about how we treat
+                        your data.
+                      </Link>
+                    </small>
                   </Content>
                 </form>
               </Content>
@@ -188,7 +186,8 @@ class FormContact extends React.Component {
           </Columns>
         </Content>
       </Container>
-    )
+    );
   }
 }
-export default FormContact
+
+export default FormContact;
