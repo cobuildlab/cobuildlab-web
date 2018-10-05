@@ -46,7 +46,7 @@ class headerBlog extends React.Component {
             </Container>
           </HeroBody>
         </Hero>
-        <section className="section">
+        <section className="section-blog">
           <Container>
             <Tabs isBoxed isFullWidth>
               <TabList>
@@ -77,6 +77,8 @@ class headerBlog extends React.Component {
                     get(node, 'frontmatter.title') || node.fields.slug
                   const image =
                     get(node, 'frontmatter.image.publicURL') || defaultImg
+                  const splitTags = node.frontmatter.tags.split(', ')
+                  console.log(splitTags)
                   return (
                     <Column key={node.fields.slug} isSize="1/3">
                       <Link to={node.fields.slug}>
@@ -98,11 +100,19 @@ class headerBlog extends React.Component {
                             </small>
                             <Subtitle hasTextColor="white">{title}</Subtitle>
                           </Content>
-                          {node.frontmatter.tags ? (
-                            <Tag className="tag-category">
-                              {node.frontmatter.tags}
-                            </Tag>
-                          ) : null}
+                          <Content className="tag-content">
+                            {splitTags.length > 0
+                              ? splitTags.map((tag, index) => {
+                                  return (
+                                    <p className="p-content">
+                                      <Tag className="tag-category" key={index}>
+                                        {tag}
+                                      </Tag>
+                                    </p>
+                                  )
+                                })
+                              : null}
+                          </Content>
                         </Card>
                       </Link>
                     </Column>

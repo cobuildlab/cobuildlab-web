@@ -28,25 +28,25 @@ a {
   box-shadow: none !important;
   text-decoration: none;
 }
-.link-post{
+.link-post {
   position: absolute;
   bottom: 15px;
   left: 10px;
   color: #fff;
 }
-#section-post a{
+#section-post a {
   color: #e76c29;
   font-weight: bold;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-#section-post a:hover{
+#section-post a:hover {
   color: #264a60;
   font-weight: bold;
   opacity: 0.7;
 }
-p{
+p {
   margin-bottom: 15px !important;
   line-height: 1.8;
   font-size: 16px;
@@ -274,23 +274,29 @@ hr {
   margin-top: -30px !important;
   margin-bottom: 30px !important;
 }
-.col-form{
+.col-form {
   background-color: #ffffffcf;
   padding-top: 30px !important;
   padding-bottom: 20px !important;
   box-shadow: 0px 4px 15px 5px #0000002b;
 }
-.content-form{
+.content-form {
   padding-top: 30px;
   padding-bottom: 15px;
 }
 .tag-category {
-  position: absolute;
-  z-index: 999;
-  right: 15px;
-  top: 15px;
   color: #fff !important;
+  display: block;
   background-color: #e76e1a !important;
+}
+.tag-content {
+  position: absolute;
+  top: 5px;
+  right: 12px;
+  text-align: RIGHT;
+}
+.p-content {
+  margin-bottom: 3px !important;
 }
 /*---- --------- ---*/
 
@@ -422,7 +428,7 @@ hr {
   padding: 4.5rem 3rem;
 }
 .section-blog {
-  padding: 0 3rem;
+  padding: 0 3rem 3rem 3rem;
 }
 .title-section {
   color: #264a60 !important;

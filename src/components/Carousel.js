@@ -34,7 +34,7 @@ class Carousel extends React.Component {
                 if (imgs.includes(path) === true)
                   return (
                     <Column>
-                      <Image isRatio="1:1" src={node.node.publicURL} />
+                      <Image isRatio="4:3" src={node.node.publicURL} />
                     </Column>
                   )
                 return null
