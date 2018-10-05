@@ -97,6 +97,9 @@ class BlogIndex extends React.Component {
                 const title = get(node, 'frontmatter.title') || node.fields.slug
                 const image =
                   get(node, 'frontmatter.image.publicURL') || defaultImg
+                const splitTags = node.frontmatter.tags
+                  ? node.frontmatter.tags.split(', ')
+                  : undefined
                 return (
                   <Column key={node.fields.slug} isSize="1/3">
                     <Link to={node.fields.slug}>
@@ -118,11 +121,17 @@ class BlogIndex extends React.Component {
                           </small>
                           <Subtitle hasTextColor="white">{title}</Subtitle>
                         </Content>
-                        {node.frontmatter.tags ? (
-                          <Tag className="tag-category">
-                            {node.frontmatter.tags}
-                          </Tag>
-                        ) : null}
+                        <Content className="tag-content">
+                          {splitTags && splitTags.length > 0
+                            ? splitTags.map((tag, index) => {
+                                return (
+                                  <p className="p-content" key={index}>
+                                    <Tag className="tag-category">{tag}</Tag>
+                                  </p>
+                                )
+                              })
+                            : null}
+                        </Content>
                       </Card>
                     </Link>
                   </Column>

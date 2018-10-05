@@ -77,8 +77,9 @@ class headerBlog extends React.Component {
                     get(node, 'frontmatter.title') || node.fields.slug
                   const image =
                     get(node, 'frontmatter.image.publicURL') || defaultImg
-                  const splitTags = node.frontmatter.tags.split(', ')
-                  console.log(splitTags)
+                  const splitTags = node.frontmatter.tags
+                    ? node.frontmatter.tags.split(', ')
+                    : undefined
                   return (
                     <Column key={node.fields.slug} isSize="1/3">
                       <Link to={node.fields.slug}>
@@ -101,13 +102,11 @@ class headerBlog extends React.Component {
                             <Subtitle hasTextColor="white">{title}</Subtitle>
                           </Content>
                           <Content className="tag-content">
-                            {splitTags.length > 0
+                            {splitTags && splitTags.length > 0
                               ? splitTags.map((tag, index) => {
                                   return (
-                                    <p className="p-content">
-                                      <Tag className="tag-category" key={index}>
-                                        {tag}
-                                      </Tag>
+                                    <p className="p-content" key={index}>
+                                      <Tag className="tag-category">{tag}</Tag>
                                     </p>
                                   )
                                 })
