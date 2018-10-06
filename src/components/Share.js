@@ -1,19 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React from 'react';
+import PropTypes from 'prop-types';
 import {
   Container,
-  Footer,
   Columns,
   Column,
-  Content,
-  Title,
-  Field,
-  Control,
-  Input,
-  Button,
-  Label,
-} from 'bloomer'
+  Title
+} from 'bloomer';
 import {
   FacebookShareButton,
   GooglePlusShareButton,
@@ -30,9 +22,9 @@ import {
   GooglePlusIcon,
   LinkedinIcon,
   RedditIcon,
-  EmailIcon,
-} from 'react-share'
-import '../assets/css/share.scss'
+  EmailIcon
+} from 'react-share';
+import '../assets/css/share.scss';
 
 const Share = ({ socialConfig }) => (
   <div className="post-social">
@@ -46,7 +38,7 @@ const Share = ({ socialConfig }) => (
             url={socialConfig.config.url}
             className="button is-outlined is-rounded facebook float-center"
           >
-            <FacebookIcon size={32} round={true} />
+            <FacebookIcon size={32} round={true}/>
           </FacebookShareButton>
           <TwitterShareButton
             url={socialConfig.config.url}
@@ -54,61 +46,61 @@ const Share = ({ socialConfig }) => (
             title={socialConfig.config.title}
             via={socialConfig.twitterHandle.split('@').join('')}
           >
-            <TwitterIcon size={32} round={true} />
+            <TwitterIcon size={32} round={true}/>
           </TwitterShareButton>
           <GooglePlusShareButton
             url={socialConfig.config.url}
             className="button is-outlined is-rounded googleplus float-center"
           >
-            <GooglePlusIcon size={32} round={true} />
+            <GooglePlusIcon size={32} round={true}/>
           </GooglePlusShareButton>
           <LinkedinShareButton
             url={socialConfig.config.url}
             className="button is-outlined is-rounded linkedin float-center"
             title={socialConfig.config.title}
           >
-            <LinkedinIcon size={32} round={true} />
+            <LinkedinIcon size={32} round={true}/>
           </LinkedinShareButton>
           <RedditShareButton
             url={socialConfig.config.url}
             className="button is-outlined is-rounded reddit float-center"
             title={socialConfig.config.title}
           >
-            <RedditIcon size={32} round={true} />
+            <RedditIcon size={32} round={true}/>
           </RedditShareButton>
           <WhatsappShareButton
             url={socialConfig.config.url}
             className="button is-outlined is-rounded whatsapp float-center"
             title={socialConfig.config.title}
           >
-            <WhatsappIcon size={32} round={true} />
+            <WhatsappIcon size={32} round={true}/>
           </WhatsappShareButton>
           <TelegramShareButton
             url={socialConfig.config.url}
             className="button is-outlined is-rounded whatsapp float-center"
             title={socialConfig.config.title}
           >
-            <TelegramIcon size={32} round={true} />
+            <TelegramIcon size={32} round={true}/>
           </TelegramShareButton>
           <EmailShareButton
             url={socialConfig.config.url}
             className="button is-outlined is-rounded whatsapp float-center"
             title={socialConfig.config.title}
           >
-            <EmailIcon size={32} round={true} />
+            <EmailIcon size={32} round={true}/>
           </EmailShareButton>
         </Column>
       </Columns>
     </Container>
   </div>
-)
+);
 Share.propTypes = {
   socialConfig: PropTypes.shape({
     twitterHandle: PropTypes.string.isRequired,
     config: PropTypes.shape({
       url: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-    }),
-  }).isRequired,
-}
-export default Share
+      title: PropTypes.string.isRequired
+    })
+  }).isRequired
+};
+export default Share;

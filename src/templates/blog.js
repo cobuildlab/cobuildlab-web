@@ -1,23 +1,26 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import LayoutPost from '../components/layoutPost'
-import { Link, graphql } from 'gatsby'
-import { DiscussionEmbed } from 'disqus-react'
-import Share from '../components/Share'
-import Carousel from '../components/Carousel'
-import Title2 from '../components/Title2'
-import Title3 from '../components/Title3'
-import Title4 from '../components/Title4'
-import Title5 from '../components/Title5'
-import Title6 from '../components/Title6'
-import BlockQuote from '../components/BlockQuote'
-import Credits from '../components/Credits'
-import get from 'lodash/get'
-import defaultImg from '../resources/default-post.jpg'
-import rehypeReact from 'rehype-react'
+import React from 'react';
+import Helmet from 'react-helmet';
+import LayoutPost from '../components/layoutPost';
+import { Link, graphql } from 'gatsby';
+import { DiscussionEmbed } from 'disqus-react';
+import Share from '../components/Share';
+import Carousel from '../components/Carousel';
+import Title2 from '../components/Title2';
+import Title3 from '../components/Title3';
+import Title4 from '../components/Title4';
+import Title5 from '../components/Title5';
+import Title6 from '../components/Title6';
+import YouTubeVideo from '../components/YouTubeVideo';
+import BlockQuote from '../components/BlockQuote';
+import Banner from '../components/Banner';
+import Credits from '../components/Credits';
+import get from 'lodash/get';
+import defaultImg from '../resources/default-post.jpg';
+import rehypeReact from 'rehype-react';
 import {
   Hero,
   HeroBody,
+  Image,
   Container,
   Title,
   Columns,
@@ -25,8 +28,8 @@ import {
   Card,
   CardContent,
   Content,
-  Tag,
-} from 'bloomer'
+  Tag
+} from 'bloomer';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -37,29 +40,31 @@ const renderAst = new rehypeReact({
     'title-5': Title5,
     'title-6': Title6,
     'block-quote': BlockQuote,
+    'youtube-video': YouTubeVideo,
+    'banner': Banner,
     credits: Credits,
-    carousel: Carousel,
-  },
-}).Compiler
+    carousel: Carousel
+  }
+}).Compiler;
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
+    const post = this.props.data.markdownRemark;
     const twitterHandle = get(
       this.props,
       'data.site.siteMetadata.twitterHandle'
-    )
-    const disqusShortname = 'cobuildlab'
-    const disqusConfig = { identifier: post.id, title: post.frontmatter.title }
-    const slug = post.fields.slug
-    const url = get(this.props, 'data.site.siteMetadata.siteUrl')
-    const siteTitle = 'Cobuild Lab'
-    const siteDescription = post.excerpt
-    const { previous, next } = this.props.pageContext
-    const image = get(post, 'frontmatter.image.publicURL') || defaultImg
+    );
+    const disqusShortname = 'cobuildlab';
+    const disqusConfig = { identifier: post.id, title: post.frontmatter.title };
+    const slug = post.fields.slug;
+    const url = get(this.props, 'data.site.siteMetadata.siteUrl');
+    const siteTitle = 'Cobuild Lab';
+    const siteDescription = post.excerpt;
+    const { previous, next } = this.props.pageContext;
+    const image = get(post, 'frontmatter.image.publicURL') || defaultImg;
     const previousImage =
-      get(previous, 'frontmatter.image.publicURL') || defaultImg
-    const nextImage = get(next, 'frontmatter.image.publicURL') || defaultImg
+      get(previous, 'frontmatter.image.publicURL') || defaultImg;
+    const nextImage = get(next, 'frontmatter.image.publicURL') || defaultImg;
 
     return (
       <LayoutPost>
@@ -74,13 +79,13 @@ class BlogPostTemplate extends React.Component {
             <Title tag="h3" isSize={1} hasTextColor="Black">
               {post.frontmatter.title}
             </Title>
-            <br />
-            <hr />
+            <br/>
+            <hr/>
           </Container>
           <HeroBody
             className="bg-post"
             style={{
-              backgroundImage: `url(${image})`,
+              backgroundImage: `url(${image})`
             }}
           />
         </Hero>
@@ -96,8 +101,8 @@ class BlogPostTemplate extends React.Component {
                 twitterHandle,
                 config: {
                   url: `${url}/${slug}`,
-                  title: `${siteTitle}`,
-                },
+                  title: `${siteTitle}`
+                }
               }}
             />
 
@@ -120,7 +125,7 @@ class BlogPostTemplate extends React.Component {
                       <CardContent
                         className="card-post"
                         style={{
-                          backgroundImage: `url(${previousImage})`,
+                          backgroundImage: `url(${previousImage})`
                         }}
                       />
                       <Content className="link-post">
@@ -143,7 +148,7 @@ class BlogPostTemplate extends React.Component {
                       <CardContent
                         className="card-post"
                         style={{
-                          backgroundImage: `url(${nextImage})`,
+                          backgroundImage: `url(${nextImage})`
                         }}
                       />
                       <Content className="link-post">
@@ -166,11 +171,11 @@ class BlogPostTemplate extends React.Component {
           </Container>
         </section>
       </LayoutPost>
-    )
+    );
   }
 }
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -208,4 +213,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

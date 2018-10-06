@@ -1,25 +1,28 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import Layout from '../../components/layout'
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import get from 'lodash/get';
+import Helmet from 'react-helmet';
+import Layout from '../components/layout';
 import {
   Hero,
   HeroBody,
+  HeroHeader,
   Container,
   Title,
   Subtitle,
   Columns,
-  Column,
-} from 'bloomer'
+  Column
+} from 'bloomer';
+import { Icon } from 'react-icons-kit';
+import { checkmark } from 'react-icons-kit/icomoon/checkmark';
 
 class ServicesIndex extends React.Component {
   render() {
-    const siteTitle = 'Services | Cobuild Lab'
+    const siteTitle = 'Services | Cobuild Lab';
     const siteDescription = get(
       this,
       'props.data.site.siteMetadata.description'
-    )
+    );
 
     return (
       <Layout>
@@ -38,7 +41,7 @@ class ServicesIndex extends React.Component {
                     Our Services
                   </Title>
                   <br/>
-                  <hr />
+                  <hr/>
                 </Column>
               </Columns>
             </Container>
@@ -49,13 +52,16 @@ class ServicesIndex extends React.Component {
             <Columns>
               <Column>
                 <Title isSize={2} hasTextColor="black" className="mb-2">
+                  <Icon size={32} icon={checkmark}/>
                   Cobuild: Product Development
                 </Title>
-                <Subtitle isSize={5}>
-                  Cobuild Is the process of transforming an idea in a sustainable
-                  business, through the combination and collaboration of the areas
-                  of Lean Entrepreneurship, Business Strategy, Technological
-                  Innovation, and Exponential Growth.
+                <Subtitle isSize={4}>
+                  <strong>
+                    Cobuild Is the process of transforming an idea in a sustainable
+                    business, through the combination and collaboration of the areas
+                    of Lean Entrepreneurship, Business Strategy, Technological
+                    Innovation, and Exponential Growth.
+                  </strong>
                 </Subtitle>
                 <p>
                   In this process, we evaluate your idea and help you shape it
@@ -72,12 +78,15 @@ class ServicesIndex extends React.Component {
             <Columns>
               <Column>
                 <Title isSize={2} hasTextColor="black" className="mb-2">
+                  <Icon size={32} icon={checkmark}/>
                   Software Development
                 </Title>
                 <Subtitle isSize={5}>
-                  We transform requirements into computer programs. We specialize
-                  in building websites, web applications, and mobiles
-                  applications.
+                  <strong>
+                    We transform requirements into computer programs. We specialize
+                    in building websites, web applications, and mobiles
+                    applications.
+                  </strong>
                 </Subtitle>
                 <p>
                   Software development is the process of conceiving, specifying,
@@ -98,12 +107,14 @@ class ServicesIndex extends React.Component {
             <Columns>
               <Column>
                 <Title isSize={2} hasTextColor="black" className="mb-2">
-                  Digital Transformation
+                  <Icon size={32} icon={checkmark}/> Digital Transformation
                 </Title>
                 <Subtitle isSize={5}>
-                  Digital transformation is the process of innovative revolution
-                  driven by the rapid adoption of technologies in all aspects of
-                  our daily life.
+                  <strong>
+                    Digital transformation is the process of innovative revolution
+                    driven by the rapid adoption of technologies in all aspects of
+                    our daily life.
+                  </strong>
                 </Subtitle>
                 <p>
                   Leverage the technology to disrupt current processes could be a
@@ -113,14 +124,50 @@ class ServicesIndex extends React.Component {
                 </p>
               </Column>
             </Columns>
+
+            <Columns>
+              <Column>
+                <Title isSize={2} hasTextColor="black" className="mb-2">
+                  <Icon size={32} icon={checkmark}/> Agile Project Management
+                </Title>
+                <Subtitle isSize={5}>
+                  <strong>
+                    Let our experience drive the success of your projects.
+                  </strong>
+                </Subtitle>
+                <p>
+                  Our senior's product managers and agile coaches work with you to build and deliver software
+                  effectively. Your team would be transformed through education of the most appropriate agile techniques
+                  and best practices
+                </p>
+              </Column>
+            </Columns>
+
+            <Columns>
+              <Column>
+                <Title isSize={2} hasTextColor="black" className="mb-2">
+                  <Icon size={32} icon={checkmark}/> It Support
+                </Title>
+                <Subtitle isSize={5}>
+                  <strong>
+                    Solutions to keep your business 100% up, 24 hours a day, 7 days a week.
+                  </strong>
+                </Subtitle>
+                <p>
+                  Our broad experience in Cloud Services, TI infrastructure, Help Desks, Virtualization, Hosting, allow
+                  us to improve and maintain your operations at the best possible level.
+                </p>
+              </Column>
+            </Columns>
+
           </Container>
         </section>
       </Layout>
-    )
+    );
   }
 }
 
-export default ServicesIndex
+export default ServicesIndex;
 
 export const pageQuery = graphql`
   query {
@@ -131,4 +178,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

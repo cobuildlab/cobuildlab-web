@@ -239,7 +239,7 @@ class Index extends React.Component {
                 <div className="icon-process">
                   <Icon size="24" icon={ic_layers}/>
                 </div>
-                <Title isSize={3}>Close the Circle</Title>
+                <Title isSize={3}>Plan</Title>
                 <p>
                   A very important step. Here we make sure that the idea has
                   every detail that is needed for been available to transform
