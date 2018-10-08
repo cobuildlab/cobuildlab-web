@@ -31,7 +31,7 @@ class headerBlog extends React.Component {
       <React.Fragment>
         <Navbar
           style={{ position: 'initial !important', margin: '0' }}
-          className="isTransparent is-hidden-desktop"
+          className="isTransparent is-hidden-desktop is-hidden-tablet-only"
         >
           <Container isFluid>
             <NavbarBrand>
@@ -94,7 +94,7 @@ class headerBlog extends React.Component {
               <Link className="link-nav" to="/">
                 <img
                   src={logo}
-                  style={{ marginRight: 5 }}
+                  style={{ marginRight: 5, paddingLeft: 15 }}
                   width="229"
                   height="49"
                 />
