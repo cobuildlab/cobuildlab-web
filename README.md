@@ -17,26 +17,39 @@
 <br>
 
 4. To upload pictures go to the **media** folder: https://github.com/cobuildlab/cobuildlab-web/tree/master/src/pages/blog/media
+
 4.1 Press the **Upload files** button
+
 4.2 Drag and drop your picture or select it from your computer
+
 4.3 Select the option **Commit directly to the dev branch.**
+
 4.4 Add an optional description or press the green button **Commit changes**
 
 <br>
 
 5. Inside the **blog folder:** https://github.com/cobuildlab/cobuildlab-web/tree/master/src/pages/blog
+
 5.1 To create a new post press the **Create New File** button
+
 5.2 Press the **Upload files** button or start typing in the text box
+
 5.3 Drag and drop your file or select it from your computer
+
 5.4 Select the option **Commit directly to the dev branch.**
+
 5.5 Add an optional description or press the green button **Commit changes**
 
 <br>
 
 6. Go to **Pull Requests:** https://github.com/cobuildlab/cobuildlab-web/pulls
+
 6.1 Click on the green button **New pull request**
+
 6.2 Base must be **master**
+
 6.3 Compare must be **dev**
+
 6.4 Click on the green button **Create pull request**
 
 <br>
