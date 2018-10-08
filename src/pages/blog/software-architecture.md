@@ -3,7 +3,7 @@ title: "How it must be a good software architecture"
 date: "2018-10-08 T16:18:55.000Z"
 template: blog
 tags: Tools
-image: "./media/software architecture.jpg"
+image: "./media/software-architecture.jpg"
 ---
 
 As a building, if a software doesn’t have a good architecture or structure, the future probably won’t be hopeful. But don’t worry, we are here to solve every detail and make your software product likely to succeed, that’s why we are talking in this post about that really important step in a software development process. We refer to **software architecture. ** 
