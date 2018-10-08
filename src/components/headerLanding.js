@@ -8,7 +8,6 @@ import {
 } from 'bloomer';
 import '../assets/css/index.css';
 import logo from '../resources/cobuildlab.png';
-import '../assets/css/index.css';
 
 
 class headerLanding extends React.Component {
