@@ -218,11 +218,6 @@ class Index extends React.Component {
                           </small>
                           <Subtitle hasTextColor="white">{title}</Subtitle>
                         </Content>
-                        {node.frontmatter.tags ? (
-                          <Tag className="tag-category">
-                            {node.frontmatter.tags}
-                          </Tag>
-                        ) : null}
                       </Card>
                     </Link>
                   </Column>
@@ -234,20 +229,20 @@ class Index extends React.Component {
         {/*Section Latest News*/}
 
         {/*Section Customer Success Stories*/}
-        {/* <section className="section bg-section">
-            <Container hasTextAlign='centered'>
-              <Title className="title-section">Customer Success Stories</Title>
-              <Columns isCentered>
-                <Column isSize='1/3'>
-                  <Card className="link-card">
-                    <Content>
-                      <img src={stories} />
-                    </Content>
-                  </Card>
-                </Column>
-              </Columns>
-            </Container>
-          </section> */}
+        <section className="section bg-section">
+          <Container hasTextAlign="centered">
+            <Title className="title-section">Customer Success Stories</Title>
+            <Columns isCentered>
+              <Column isSize="1/3">
+                <Card className="link-card">
+                  <Content>
+                    <img src={stories} />
+                  </Content>
+                </Card>
+              </Column>
+            </Columns>
+          </Container>
+        </section>
         {/*Section Customer Success Stories*/}
 
         <section className="section">

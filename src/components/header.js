@@ -12,12 +12,11 @@ import {
 } from 'bloomer'
 import '../assets/css/index.css'
 import logo from '../resources/cobuildlab.png'
-import '../assets/css/index.css';
-
+import '../assets/css/index.css'
 
 class header extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       isActive: false,
@@ -32,7 +31,10 @@ class header extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Navbar className="is-hidden-desktop is-hidden-tablet-only" style={{ margin: '0' }}>
+        <Navbar
+          className="is-hidden-desktop is-hidden-tablet-only"
+          style={{ margin: '0' }}
+        >
           <Container isFluid>
             <NavbarBrand>
               <NavbarItem>
@@ -60,11 +62,11 @@ class header extends React.Component {
                     Cobuild Process
                   </a>
                 </NavbarItem>
-                {/* <NavbarItem>
-                <Link className="link-nav" to="/customer-success-stories">
-                  Customer Success Stories
-                </Link>
-              </NavbarItem> */}
+                <NavbarItem>
+                  <Link className="link-nav" to="/customer-success-stories">
+                    Customer Success Stories
+                  </Link>
+                </NavbarItem>
                 <NavbarItem>
                   <Link className="link-nav" to="/services">
                     Services
@@ -76,7 +78,7 @@ class header extends React.Component {
                   </Link>
                 </NavbarItem>
                 <NavbarItem>
-                  <a href="#contact" className="link-nav">
+                  <a href="/#contact" className="link-nav">
                     Contact Us
                   </a>
                 </NavbarItem>
@@ -119,11 +121,11 @@ class header extends React.Component {
                     Cobuild Process
                   </Link>
                 </NavbarItem>
-                {/* <NavbarItem>
-                <Link className="link-nav" to="/customer-success-stories">
-                  Customer Success Stories
-                </Link>
-              </NavbarItem> */}
+                <NavbarItem>
+                  <Link className="link-nav" to="/customer-success-stories">
+                    Customer Success Stories
+                  </Link>
+                </NavbarItem>
                 <NavbarItem>
                   <Link className="link-nav" to="/services">
                     Services
