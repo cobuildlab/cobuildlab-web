@@ -27,7 +27,7 @@ In October 2014, the startup raised over $540 million of venture funding from _G
 
 
 In 2016, **Forbes** estimated that Magic Leap was worth $4.5 billion. In October 2017, Magic Leap announced the partnership with online comic book publisher Madefire. Magic Leap unveiled its first product, the Magic Leap One, on December 20th, 2017. Magic Leap One was released to developers in 6 cities on August 8, 2018. Magic Leap, a company that hopes to break new ground in what it means to be a "computer person". Change the world's thinking and take it to the next level. CEO Abovitz promises to immerse himself in experiences through computer-generated images with the physical world.  
- 
+
 ![Magic Leap Lens](media/magic-leap-2.jpg)
 <credits>
 By [Engadget](https://www.engadget.com/2018/02/13/magic-leaps-ar-headsets-price-nba-deal/)
