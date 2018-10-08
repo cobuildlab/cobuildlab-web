@@ -26,6 +26,7 @@ If you want to develop a software because you thought an amazing business idea, 
 Both concepts are considered key characteristics. The first is related to trust, having enough security:  This point is one of the most important in the computing and technology world. A product that offers security to the customer has more chances to be bought or downloaded. So, reliability has to be present in a software architecture. 
 Meanwhile, the second one is related to evolution, the opportunity to grow through the time: This characteristic is really important, taking in consideration that the market is dynamic, and user’s necessities now won’t be the same 5 years later, for example. Or now we can have 100 users, but tomorrow we can have 1000 users and software must be functional in a good way. 
 
+
 <title-2>2. Maintainable</tittle-2>
 
 This characteristic of software architecture gives us the opportunity to change or correct a thing in the software without affecting other aspects. 
