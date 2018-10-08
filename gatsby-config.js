@@ -7,7 +7,6 @@ module.exports = {
     twitterHandle: '@cobuildlab'
   },
   plugins: [
-    `gatsby-plugin-sitemap`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -45,10 +44,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        maxWidth: 1080
+        trackingId: "UA-105326682-1",
       }
     },
-    `gatsby-plugin-feed`,
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -63,12 +62,12 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: 'gatsby-plugin-typography',
-      options: {
-        // pathToConfigModule: 'src/utils/typography',
-      }
-    },
+    // {
+    //   resolve: 'gatsby-plugin-typography',
+    //   options: {
+    //     // pathToConfigModule: 'src/utils/typography',
+    //   }
+    // },
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
@@ -76,6 +75,8 @@ module.exports = {
           'https://4geeks.us5.list-manage.com/subscribe/post?u=05c88e36fa1e947ec0bf94453&amp;id=02c69b216a' // see instructions section below
       }
     },
-    `gatsby-remark-copy-linked-files`
+    `gatsby-remark-copy-linked-files`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-feed`
   ]
 };
