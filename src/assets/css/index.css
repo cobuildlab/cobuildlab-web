@@ -364,6 +364,11 @@ hr {
     opacity: 0.8;
 }
 
+.bg-orange{
+ background-color: #e76c29 !important;
+    height: 140px !important;
+}
+
 .bg-post {
     width: 100%;
     height: 160px !important;

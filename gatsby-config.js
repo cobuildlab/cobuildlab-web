@@ -87,6 +87,12 @@ module.exports = {
     },
     `gatsby-remark-copy-linked-files`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-feed`
+    `gatsby-plugin-feed`,
+    {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: 'GTM-PFDRR5V'
+      }
+    }
   ]
 };
