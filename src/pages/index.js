@@ -1,27 +1,38 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import 'react-toastify/dist/ReactToastify.min.css'
-import { navigate } from 'gatsby'
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import get from 'lodash/get';
+import Helmet from 'react-helmet';
+import 'react-toastify/dist/ReactToastify.min.css';
 
-import Layout from '../components/layout'
-import Contact from '../components/Contact'
-import 'bulma'
-import stories from '../resources/stories.png'
-import marcelo from '../resources/marceloicigliani.jpg'
-import angel from '../resources/anglelacret.jpg'
-import alejandro from '../resources/alejandrosanchez.jpg'
-import defaultImg from '../resources/default-post.jpg'
+import Layout from '../components/layout';
+import Contact from '../components/Contact';
+import 'bulma';
+import '../assets/fonts/Lato-Black.ttf';
+import '../assets/fonts/Lato-BlackItalic.ttf';
+import '../assets/fonts/Lato-Bold.ttf';
+import '../assets/fonts/Lato-BoldItalic.ttf';
+import '../assets/fonts/Lato-Hairline.ttf';
+import '../assets/fonts/Lato-HairlineItalic.ttf';
+import '../assets/fonts/Lato-Italic.ttf';
+import '../assets/fonts/Lato-Light.ttf';
+import '../assets/fonts/Lato-LightItalic.ttf';
+import '../assets/fonts/Lato-Regular.ttf';
 
-import { Icon } from 'react-icons-kit'
-import { check } from 'react-icons-kit/fa/check'
-import { code } from 'react-icons-kit/fa/code'
-import { ic_layers } from 'react-icons-kit/md/ic_layers'
-import { slideshare } from 'react-icons-kit/fa/slideshare'
-import { envelopeO } from 'react-icons-kit/fa/envelopeO'
-import { linkedinSquare } from 'react-icons-kit/fa/linkedinSquare'
-import { clockO } from 'react-icons-kit/fa/clockO'
+import propagadImg from './customer-success-stories/media/5-1280x1080p-1024x864.png';
+import academyImg from './customer-success-stories/media/fondo-2-1024x511nuew.jpg';
+import marcelo from '../resources/marceloicigliani.jpg';
+import angel from '../resources/anglelacret.jpg';
+import alejandro from '../resources/alejandrosanchez.jpg';
+import defaultImg from '../resources/default-post.jpg';
+
+import { Icon } from 'react-icons-kit';
+import { check } from 'react-icons-kit/fa/check';
+import { code } from 'react-icons-kit/fa/code';
+import { ic_layers } from 'react-icons-kit/md/ic_layers';
+import { slideshare } from 'react-icons-kit/fa/slideshare';
+import { envelopeO } from 'react-icons-kit/fa/envelopeO';
+import { linkedinSquare } from 'react-icons-kit/fa/linkedinSquare';
+import { clockO } from 'react-icons-kit/fa/clockO';
 
 import {
   Container,
@@ -36,17 +47,17 @@ import {
   CardContent,
   Hero,
   HeroBody,
-  Tag,
-} from 'bloomer'
+  Tag
+} from 'bloomer';
 
 class Index extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title');
     const siteDescription = get(
       this,
       'props.data.site.siteMetadata.description'
-    )
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    );
+    const posts = get(this, 'props.data.allMarkdownRemark.edges');
 
     return (
       <Layout location={this.props.location}>
@@ -115,17 +126,17 @@ class Index extends React.Component {
             <Title isSize={2} className="title-section">
               Cobuild Process
             </Title>
-            <hr />
+            <hr/>
             <Subtitle isSize={6}>
               Is the process of transforming an idea in a sustainable business,
               through the combination and collaboration of the areas of Lean{' '}
-              <br /> Entrepreneurship, Business Strategy, Technological
+              <br/> Entrepreneurship, Business Strategy, Technological
               Innovation and Exponential Growth
             </Subtitle>
             <Columns isCentered className="p-2">
               <Column isSize="1/4">
                 <div className="icon-process">
-                  <Icon size="24" icon={check} />
+                  <Icon size="24" icon={check}/>
                 </div>
                 <Title isSize={3}>Validation</Title>
                 <p>
@@ -137,7 +148,7 @@ class Index extends React.Component {
               </Column>
               <Column isSize="1/4">
                 <div className="icon-process">
-                  <Icon size="24" icon={code} />
+                  <Icon size="24" icon={code}/>
                 </div>
                 <Title isSize={3}>CoBuild</Title>
                 <p>
@@ -150,7 +161,7 @@ class Index extends React.Component {
               </Column>
               <Column isSize="1/4">
                 <div className="icon-process">
-                  <Icon size="24" icon={ic_layers} />
+                  <Icon size="24" icon={ic_layers}/>
                 </div>
                 <Title isSize={3}>Plan</Title>
                 <p>
@@ -163,9 +174,9 @@ class Index extends React.Component {
               </Column>
               <Column isSize="1/4">
                 <div className="icon-process">
-                  <Icon size="24" icon={slideshare} />
+                  <Icon size="24" icon={slideshare}/>
                 </div>
-                <Title isSize={3}>Acceleration</Title>
+                <Title isSize={3}>Accelerate</Title>
                 <p>
                   Congratulations! We have proved to have a sustainable business
                   with a healthy growth rate. It's time to accelerate. At this
@@ -194,9 +205,9 @@ class Index extends React.Component {
             </Title>
             <Columns isCentered>
               {posts.map(({ node }) => {
-                const title = get(node, 'frontmatter.title') || node.fields.slug
+                const title = get(node, 'frontmatter.title') || node.fields.slug;
                 const image =
-                  get(node, 'frontmatter.image.publicURL') || defaultImg
+                  get(node, 'frontmatter.image.publicURL') || defaultImg;
                 return (
                   <Column isSize="1/3" key={node.fields.slug}>
                     <Link to={node.fields.slug}>
@@ -204,7 +215,7 @@ class Index extends React.Component {
                         <CardContent
                           className="card-post"
                           style={{
-                            backgroundImage: `url(${image})`,
+                            backgroundImage: `url(${image})`
                           }}
                         />
                         <Content className="title-post">
@@ -221,7 +232,7 @@ class Index extends React.Component {
                       </Card>
                     </Link>
                   </Column>
-                )
+                );
               })}
             </Columns>
           </Container>
@@ -231,13 +242,32 @@ class Index extends React.Component {
         {/*Section Customer Success Stories*/}
         <section className="section bg-section">
           <Container hasTextAlign="centered">
-            <Title className="title-section">Customer Success Stories</Title>
+            <Link to='/customer-success-stories'>
+              <Title className="title-section">Customer Success Stories</Title>
+            </Link>
             <Columns isCentered>
-              <Column isSize="1/3">
-                <Card className="link-card">
-                  <Content>
-                    <img src={stories} />
-                  </Content>
+              <Column isSize="1/2">
+                <Card>
+                  <Link to="/customer-success-stories/propagad">
+                    <CardImage>
+                      <Image isRatio="4:8" src={propagadImg}/>
+                      <p className="name-team">
+                        <strong>PROPAGAD</strong>
+                      </p>
+                    </CardImage>
+                  </Link>
+                </Card>
+              </Column>
+              <Column isSize="1/2">
+                <Card>
+                  <Link to="/customer-success-stories/4geeks-academy">
+                    <CardImage>
+                      <Image isRatio="4:8" src={academyImg}/>
+                      <p className="name-team">
+                        <strong>4Geeks Academy</strong>
+                      </p>
+                    </CardImage>
+                  </Link>
                 </Card>
               </Column>
             </Columns>
@@ -258,27 +288,27 @@ class Index extends React.Component {
                     target="_blank"
                   >
                     <CardImage>
-                      <Image isRatio="4:8" src={marcelo} />
+                      <Image isRatio="4:8" src={marcelo}/>
                       <p className="name-team">
-                        Marcelo Ricigliano <br /> COO at 4Geeks Academy
+                        Marcelo Ricigliano <br/> COO at 4Geeks Academy
                       </p>
                     </CardImage>
                   </a>
                 </Card>
                 <Content>
-                  <br />
+                  <br/>
                   <small>
                     Co-founded Startups in Venezuela, Ecuador y USA: Vikua,{' '}
-                    <br /> 4Geeks Academy, Siplik, Hack, InTraffic.
+                    <br/> 4Geeks Academy, Siplik, Hack, InTraffic.
                   </small>
-                  <br />
-                  <Icon size="18" icon={envelopeO} />
+                  <br/>
+                  <Icon size="18" icon={envelopeO}/>
                   <a
                     className="icon-link"
                     href="https://www.linkedin.com/in/marcelo-ricigliano-32440379"
                     target="_blank"
                   >
-                    <Icon size="18" icon={linkedinSquare} />
+                    <Icon size="18" icon={linkedinSquare}/>
                   </a>
                 </Content>
               </Column>
@@ -289,25 +319,25 @@ class Index extends React.Component {
                     target="_blank"
                   >
                     <CardImage>
-                      <Image isRatio="4:8" src={angel} />
+                      <Image isRatio="4:8" src={angel}/>
                       <p className="name-team">
-                        Angel Lacret <br /> Chief of Product Development at
+                        Angel Lacret <br/> Chief of Product Development at
                         Cobuild Lab
                       </p>
                     </CardImage>
                   </a>
                 </Card>
                 <Content>
-                  <br />
+                  <br/>
                   <small>Technical Product Owner and Software Developer</small>
-                  <br />
-                  <Icon size="18" icon={envelopeO} />
+                  <br/>
+                  <Icon size="18" icon={envelopeO}/>
                   <a
                     className="icon-link"
                     href="https://www.linkedin.com/in/alacret/"
                     target="_blank"
                   >
-                    <Icon size="18" icon={linkedinSquare} />
+                    <Icon size="18" icon={linkedinSquare}/>
                   </a>
                 </Content>
               </Column>
@@ -318,28 +348,28 @@ class Index extends React.Component {
                     target="_blank"
                   >
                     <CardImage>
-                      <Image isRatio="4:8" src={alejandro} />
+                      <Image isRatio="4:8" src={alejandro}/>
                       <p className="name-team">
-                        Alejandro Sanchez <br /> CEO of 4Geeks Academy. Software
+                        Alejandro Sanchez <br/> CEO of 4Geeks Academy. Software
                         Developer and Data-Oriented Marketeer
                       </p>
                     </CardImage>
                   </a>
                 </Card>
                 <Content>
-                  <br />
+                  <br/>
                   <small>
                     I'm a computer engineer with all my life dedicated to the
                     coding industry through several initiatives.
                   </small>
-                  <br />
-                  <Icon size="18" icon={envelopeO} />
+                  <br/>
+                  <Icon size="18" icon={envelopeO}/>
                   <a
                     className="icon-link"
                     href="https://www.linkedin.com/in/alesanchezr/"
                     target="_blank"
                   >
-                    <Icon size="18" icon={linkedinSquare} />
+                    <Icon size="18" icon={linkedinSquare}/>
                   </a>
                 </Content>
               </Column>
@@ -349,13 +379,13 @@ class Index extends React.Component {
         {/*Section Customer Success Stories*/}
 
         {/*Section Where we are? and Write Us! */}
-        <Contact />
+        <Contact/>
       </Layout>
-    )
+    );
   }
 }
 
-export default Index
+export default Index;
 
 export const pageQuery = graphql`
   query {
@@ -396,4 +426,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
