@@ -48,6 +48,7 @@
     "react-recaptcha": "^2.3.10",
     "react-share": "^2.3.1",
     "react-toastify": "^4.4.0",
+    "react-typography": "^0.16.13",
     "react-youtube": "^7.8.0",
     "rehype-react": "^3.0.3",
     "typeface-merriweather": "0.0.43",
