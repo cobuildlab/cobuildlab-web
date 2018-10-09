@@ -27,7 +27,7 @@ import { instagram } from 'react-icons-kit/fa/instagram'
 import { twitterSquare } from 'react-icons-kit/fa/twitterSquare'
 import { linkedinSquare } from 'react-icons-kit/fa/linkedinSquare'
 
-class footer extends React.Component {
+class Footer extends React.Component {
   state = {
     email: '',
     fullName: '',
@@ -91,7 +91,7 @@ class footer extends React.Component {
   onloadCallback = () => {}
 
   render() {
-    const siteKey = '6Lfd_3MUAAAAAOAlex8YpF0xyMhGym53UFNL5Y7Y'
+    const {siteKey} = this.props;
 
     return (
       <Footer id="footer" className="is-fixed-bottom">
@@ -224,4 +224,4 @@ class footer extends React.Component {
   }
 }
 
-export default footer
+export default Footer

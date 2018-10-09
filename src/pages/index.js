@@ -58,6 +58,7 @@ class Index extends React.Component {
       'props.data.site.siteMetadata.description'
     );
     const posts = get(this, 'props.data.allMarkdownRemark.edges');
+    const siteKey = process.env.RECAPTCHA_SITEKEY;
 
     return (
       <Layout location={this.props.location}>
@@ -84,7 +85,7 @@ class Index extends React.Component {
                     Since day one, our technique is focused on early results and
                     transparent communication.
                   </Title>
-                  <a className="button is-primary is-medium is-rounded">
+                  <a className="button is-primary is-medium is-rounded" target="_blank" href="/blog/cobuild-process-part-1/">
                     READ MORE
                   </a>
                 </Column>
@@ -379,7 +380,7 @@ class Index extends React.Component {
         {/*Section Customer Success Stories*/}
 
         {/*Section Where we are? and Write Us! */}
-        <Contact/>
+        <Contact siteKey={siteKey} />
       </Layout>
     );
   }
