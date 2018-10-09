@@ -1,4 +1,5 @@
 import React from 'react';
+import Recaptcha from 'react-recaptcha';
 import { Link, navigate } from 'gatsby';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
@@ -89,6 +90,21 @@ class FormContact extends React.Component {
       });
   };
 
+  recaptchaVerify = response => {
+    if (response) {
+      this.setState({
+        isVerified: true
+      });
+    } else {
+      toast.error('Error with the captcha', {
+        position: 'bottom-right'
+      });
+    }
+  };
+
+  onloadCallback = () => {
+  };
+
   render() {
     const { landingName } = this.props;
     return (
@@ -163,6 +179,15 @@ class FormContact extends React.Component {
                   </Field>
                   <Field isGrouped>
                     <Control>
+                    <br/>
+                      <Recaptcha
+                        elementID="landing"
+                        sitekey="6LcfwWoUAAAAAJstPfnQw8pAI3xIMD80dNob1igL"
+                        render="explicit"
+                        onloadCallback={this.recaptchaLoad}
+                        verifyCallback={this.recaptchaVerify}
+                      />
+                      <br/>
                       <button
                         className="button is-primary is-medium is-rounded"
                         type="submit"

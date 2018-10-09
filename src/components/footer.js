@@ -91,9 +91,7 @@ class MyFooter extends React.Component {
   onloadCallback = () => {
   };
 
-  render() {
-    const { siteKey } = "6LcfwWoUAAAAAJstPfnQw8pAI3xIMD80dNob1igL";
-
+  render() {    
     return (
       <Footer id="footer" className="is-fixed-bottom">
         <Container>
