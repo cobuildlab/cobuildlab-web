@@ -202,7 +202,7 @@ export default class Contact extends React.Component {
                   <Control>
                     <Recaptcha
                       elementID="contactForm"
-                      sitekey={siteKey}
+                      sitekey="6LcfwWoUAAAAAJstPfnQw8pAI3xIMD80dNob1igL"
                       render="explicit"
                       onloadCallback={this.recaptchaLoad}
                       verifyCallback={this.recaptchaVerify}
