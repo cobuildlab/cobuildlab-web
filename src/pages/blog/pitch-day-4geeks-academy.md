@@ -48,9 +48,11 @@ The presentation was close by Alejandro congratulating the new developers and on
 
 <carousel folder='blog'>
 ./media/121321312312321.jpeg
-./media/cover-121312321.jpeg
 ./media/asdasd122131.jpeg
-./media/12321szdda.jpeg
+</carousel>
+
+
+<carousel folder='blog'>
 ./media/sadasd23121321.jpeg
 ./media/12312321dsa.jpeg
 ./media/WhatsApp-Image-2018-05-30-at-6.12.44-PM.jpeg

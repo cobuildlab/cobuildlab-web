@@ -28,7 +28,6 @@ const renderAst = new rehypeReact({
     'block-quote': BlockQuote,
     credits: Credits,
     carousel: Carousel,
-    'image-post': ImagePost,
   },
 }).Compiler
 

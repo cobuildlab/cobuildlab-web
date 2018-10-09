@@ -1,9 +1,11 @@
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: 'Cobuild Lab | Software development in Miami, Florida',
     author: '4geeks.co',
     description: 'Software development in Miami, Florida',
-    siteUrl: 'https://cobuildlab.com',
+    siteUrl: process.env.URL,
     twitterHandle: '@cobuildlab'
   },
   plugins: [
@@ -13,6 +15,14 @@ module.exports = {
       options: {
         path: `${__dirname}/src/pages`,
         name: 'pages'
+      }
+    },
+    {
+      resolve: `gatsby-plugin-recaptcha`,
+      options: {
+        async: false,
+        defer: false,
+        args: `?onload=onloadCallback&render=explicit`
       }
     },
     {
@@ -44,7 +54,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-105326682-1",
+        trackingId: 'UA-105326682-1'
       }
     },
 
