@@ -1,8 +1,8 @@
-import React from 'react'
-import Recaptcha from 'react-recaptcha'
-import { navigate } from 'gatsby'
-import { ToastContainer, toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.min.css'
+import React from 'react';
+import Recaptcha from 'react-recaptcha';
+import { navigate } from 'gatsby';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 import {
   Container,
   Footer,
@@ -13,85 +13,86 @@ import {
   Field,
   Control,
   Input,
-  Label,
-} from 'bloomer'
-import '../assets/css/index.css'
+  Label
+} from 'bloomer';
+import '../assets/css/index.css';
 // Import typefaces
-import 'typeface-montserrat'
-import 'typeface-merriweather'
-import addToMailchimp from 'gatsby-plugin-mailchimp'
+import 'typeface-montserrat';
+import 'typeface-merriweather';
+import addToMailchimp from 'gatsby-plugin-mailchimp';
 
-import { Icon } from 'react-icons-kit'
-import { facebookOfficial } from 'react-icons-kit/fa/facebookOfficial'
-import { instagram } from 'react-icons-kit/fa/instagram'
-import { twitterSquare } from 'react-icons-kit/fa/twitterSquare'
-import { linkedinSquare } from 'react-icons-kit/fa/linkedinSquare'
+import { Icon } from 'react-icons-kit';
+import { facebookOfficial } from 'react-icons-kit/fa/facebookOfficial';
+import { instagram } from 'react-icons-kit/fa/instagram';
+import { twitterSquare } from 'react-icons-kit/fa/twitterSquare';
+import { linkedinSquare } from 'react-icons-kit/fa/linkedinSquare';
 
-class Footer extends React.Component {
+class MyFooter extends React.Component {
   state = {
     email: '',
     fullName: '',
-    isVerified: false,
-  }
+    isVerified: false
+  };
 
   handleChange = e => {
     this.setState({
-      [e.target.name]: e.target.value,
-    })
-  }
+      [e.target.name]: e.target.value
+    });
+  };
 
   onSubmit = e => {
-    e.preventDefault()
+    e.preventDefault();
 
     if (this.state.fullName.length <= 0) {
-      toast.error("Your name can't be empty", {
-        position: 'bottom-right',
-      })
-      return
+      toast.error('Your name can\'t be empty', {
+        position: 'bottom-right'
+      });
+      return;
     }
 
     if (this.state.email.length <= 0) {
-      toast.error("Email can't be empty", {
-        position: 'bottom-right',
-      })
-      return
+      toast.error('Email can\'t be empty', {
+        position: 'bottom-right'
+      });
+      return;
     }
 
     if (this.state.isVerified) {
       addToMailchimp(this.state.email, {
-        FNAME: this.state.fullName,
+        FNAME: this.state.fullName
       }).then(data => {
         if (data.result === 'success') {
-          navigate('/thanks-newsletter')
+          navigate('/thanks-newsletter');
         } else {
           toast.error(data.msg, {
-            position: 'bottom-right',
-          })
+            position: 'bottom-right'
+          });
         }
-      })
+      });
     } else {
-      toast.error("Please verify you're human", {
-        position: 'bottom-right',
-      })
+      toast.error('Please verify you\'re human', {
+        position: 'bottom-right'
+      });
     }
-  }
+  };
 
   recaptchaVerify = response => {
     if (response) {
       this.setState({
-        isVerified: true,
-      })
+        isVerified: true
+      });
     } else {
       toast.error('Error with the captcha', {
-        position: 'bottom-right',
-      })
+        position: 'bottom-right'
+      });
     }
-  }
+  };
 
-  onloadCallback = () => {}
+  onloadCallback = () => {
+  };
 
   render() {
-    const {siteKey} = this.props;
+    const { siteKey } = this.props;
 
     return (
       <Footer id="footer" className="is-fixed-bottom">
@@ -127,7 +128,7 @@ class Footer extends React.Component {
                   </Field>
                   <Field isGrouped>
                     <Control>
-                      <br />
+                      <br/>
                       <Recaptcha
                         elementID="newsLetter"
                         sitekey={siteKey}
@@ -135,14 +136,14 @@ class Footer extends React.Component {
                         onloadCallback={this.recaptchaLoad}
                         verifyCallback={this.recaptchaVerify}
                       />
-                      <br />
+                      <br/>
                       <button
                         className="button is-primary is-medium is-rounded"
                         type="submit"
                       >
                         Submit
                       </button>
-                      <ToastContainer />
+                      <ToastContainer/>
                     </Control>
                   </Field>
                 </form>
@@ -151,7 +152,7 @@ class Footer extends React.Component {
                 <Title hasTextAlign="centered" hasTextColor="white">
                   Follow Us
                 </Title>
-                <br />
+                <br/>
                 <Columns isMobile isCentered>
                   <Column
                     className="is-variable is-3"
@@ -162,7 +163,7 @@ class Footer extends React.Component {
                       href="https://www.instagram.com/cobuildlab"
                       target="_blank"
                     >
-                      <Icon size="24" icon={instagram} />
+                      <Icon size="24" icon={instagram}/>
                     </a>
                   </Column>
                   <Column
@@ -174,7 +175,7 @@ class Footer extends React.Component {
                       href="https://www.facebook.com/cobuildlab"
                       target="_blank"
                     >
-                      <Icon size="24" icon={facebookOfficial} />
+                      <Icon size="24" icon={facebookOfficial}/>
                     </a>
                   </Column>
                   <Column
@@ -186,7 +187,7 @@ class Footer extends React.Component {
                       href="https://twitter.com/cobuildlab"
                       target="_blank"
                     >
-                      <Icon size="24" icon={twitterSquare} />
+                      <Icon size="24" icon={twitterSquare}/>
                     </a>
                   </Column>
                   <Column
@@ -198,17 +199,17 @@ class Footer extends React.Component {
                       href="https://www.linkedin.com/in/cobuildlab"
                       target="_blank"
                     >
-                      <Icon size="24" icon={linkedinSquare} />
+                      <Icon size="24" icon={linkedinSquare}/>
                     </a>
                   </Column>
                 </Columns>
-                <br />
+                <br/>
               </Column>
               <Column isSize="1/3">
                 <Title hasTextColor="white">Contact Us</Title>
                 <p>
-                  Adress: 66 W Flagler St, Miami, Florida <br /> Phone: +1 (786)
-                  600-3776 <br /> Email: contact@cobuildlab.com{' '}
+                  Adress: 66 W Flagler St, Miami, Florida <br/> Phone: +1 (786)
+                  600-3776 <br/> Email: contact@cobuildlab.com{' '}
                 </p>
               </Column>
             </Columns>
@@ -220,8 +221,8 @@ class Footer extends React.Component {
           </Content>
         </Container>
       </Footer>
-    )
+    );
   }
 }
 
-export default Footer
+export default MyFooter;

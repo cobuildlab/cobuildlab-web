@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, withPrefix } from 'gatsby';
 import '../assets/css/index.css';
 import HeaderPost from './headerPost';
-import Footer from './footer';
+import MyFooter from './footer';
 
 class LayoutPost extends React.Component {
   render() {
@@ -12,7 +12,7 @@ class LayoutPost extends React.Component {
       <div className="content">
         <HeaderPost/>
         {children}
-        <Footer siteKey={siteKey} />
+        <MyFooter siteKey={siteKey} />
       </div>
     );
   }

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, withPrefix } from 'gatsby';
 import '../assets/css/index.css';
 import Header from './header';
-import Footer from './footer';
+import MyFooter from './footer';
 
 class Template extends React.Component {
   render() {
@@ -12,7 +12,7 @@ class Template extends React.Component {
       <div>
         <Header/>
         {children}
-        <Footer siteKey={siteKey} />
+        <MyFooter siteKey={siteKey} />
       </div>
     );
   }
