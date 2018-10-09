@@ -116,7 +116,7 @@ export default class Contact extends React.Component {
   };
 
   render() {
-    const {siteKey} = this.props;
+    const {siteKey} = "6LcfwWoUAAAAAJstPfnQw8pAI3xIMD80dNob1igL";
 
     return (
       <section id="contact" className="section bg-section">
