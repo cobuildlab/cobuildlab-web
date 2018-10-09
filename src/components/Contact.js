@@ -1,7 +1,7 @@
-import React from 'react'
-import Recaptcha from 'react-recaptcha'
-import { Link, navigate } from 'gatsby'
-import { ToastContainer, toast } from 'react-toastify'
+import React from 'react';
+import Recaptcha from 'react-recaptcha';
+import { Link, navigate } from 'gatsby';
+import { ToastContainer, toast } from 'react-toastify';
 import {
   Container,
   Title,
@@ -14,72 +14,72 @@ import {
   Label,
   Control,
   Input,
-  TextArea,
-} from 'bloomer'
+  TextArea
+} from 'bloomer';
 
 export default class Contact extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       firstName: '',
       lastName: '',
       email: '',
       comment: '',
       isVerified: false,
-      landingName: 'Cobuild Lab',
-    }
+      landingName: 'Cobuild Lab'
+    };
 
-    this.handleChange = this.handleChange.bind(this)
-    this.onSubmit = this.onSubmit.bind(this)
+    this.handleChange = this.handleChange.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
   }
 
   handleChange(e) {
     this.setState({
-      [e.target.name]: e.target.value,
-    })
+      [e.target.name]: e.target.value
+    });
   }
 
   onSubmit(e) {
-    e.preventDefault()
+    e.preventDefault();
 
     if (this.state.firstName.length <= 0) {
-      toast.error("First name can't be empty", {
-        position: 'bottom-right',
-      })
-      return
+      toast.error('First name can\'t be empty', {
+        position: 'bottom-right'
+      });
+      return;
     }
 
     if (this.state.lastName.length <= 0) {
-      toast.error("Last name can't be empty", {
-        position: 'bottom-right',
-      })
-      return
+      toast.error('Last name can\'t be empty', {
+        position: 'bottom-right'
+      });
+      return;
     }
 
     if (this.state.email.length <= 0) {
-      toast.error("Email can't be empty", {
-        position: 'bottom-right',
-      })
-      return
+      toast.error('Email can\'t be empty', {
+        position: 'bottom-right'
+      });
+      return;
     }
 
     if (this.state.comment.length <= 0) {
-      toast.error("Comment can't be empty", {
-        position: 'bottom-right',
-      })
-      return
+      toast.error('Comment can\'t be empty', {
+        position: 'bottom-right'
+      });
+      return;
     }
 
-    const url = 'https://api.cobuild-lab.com/landing/contact'
+    const url = 'https://api.cobuild-lab.com/landing/contact';
 
     const settings = {
       method: 'POST',
       body: JSON.stringify(this.state),
       headers: {
         Accept: 'application/json',
-        'Content-Type': 'application/json',
-      },
-    }
+        'Content-Type': 'application/json'
+      }
+    };
 
     if (this.state.isVerified) {
       fetch(url, settings)
@@ -87,35 +87,36 @@ export default class Contact extends React.Component {
         .then(response => {
           if (response.statusCode >= 400) {
             toast.error(response.message, {
-              position: 'bottom-right',
-            })
+              position: 'bottom-right'
+            });
           } else {
-            navigate('/thanks-contact')
+            navigate('/thanks-contact');
           }
-        })
+        });
     } else {
-      toast.error("Please verify you're human", {
-        position: 'bottom-right',
-      })
+      toast.error('Please verify you\'re human', {
+        position: 'bottom-right'
+      });
     }
   }
 
   recaptchaVerify = response => {
     if (response) {
       this.setState({
-        isVerified: true,
-      })
+        isVerified: true
+      });
     } else {
       toast.error('Error with the captcha', {
-        position: 'bottom-right',
-      })
+        position: 'bottom-right'
+      });
     }
-  }
+  };
 
-  onloadCallback = () => {}
+  onloadCallback = () => {
+  };
 
   render() {
-    const siteKey = '6Lfd_3MUAAAAAOAlex8YpF0xyMhGym53UFNL5Y7Y'
+    const {siteKey} = this.props;
 
     return (
       <section id="contact" className="section bg-section">
@@ -206,14 +207,14 @@ export default class Contact extends React.Component {
                       onloadCallback={this.recaptchaLoad}
                       verifyCallback={this.recaptchaVerify}
                     />
-                    <br />
+                    <br/>
                     <button
                       className="button is-primary is-medium is-rounded"
                       type="submit"
                     >
                       Submit
                     </button>
-                    <ToastContainer />
+                    <ToastContainer/>
                   </Control>
                 </Field>
                 <Content hasTextAlign="centered">
@@ -228,6 +229,6 @@ export default class Contact extends React.Component {
           </Columns>
         </Container>
       </section>
-    )
+    );
   }
 }
