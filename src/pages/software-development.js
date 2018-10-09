@@ -1,20 +1,20 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import 'react-toastify/dist/ReactToastify.min.css'
-import LayoutLanding from '../components/layoutLanding'
-import FormContact from '../components/FormContact'
-import { Container, Title, Column, Columns, Hero, HeroBody } from 'bloomer'
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import get from 'lodash/get';
+import Helmet from 'react-helmet';
+import 'react-toastify/dist/ReactToastify.min.css';
+import LayoutLanding from '../components/layoutLanding';
+import FormContact from '../components/FormContact';
+import { Container, Title, Column, Columns, Hero, HeroBody } from 'bloomer';
 
 class Index extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title');
     const siteDescription = get(
       this,
       'props.data.site.siteMetadata.description'
-    )
-    const landingName = 'Software Development'
+    );
+    const landingName = 'Software Development';
 
     return (
       <LayoutLanding location={this.props.location}>
@@ -37,7 +37,7 @@ class Index extends React.Component {
                   </a>
                 </Column>
                 <Column isSize="1/2">
-                  <FormContact />
+                  <FormContact landingName={landingName}/>
                 </Column>
               </Columns>
             </Container>
@@ -62,7 +62,7 @@ class Index extends React.Component {
                   </a>
                 </Column>
                 <Column isSize="1/2">
-                  <FormContact landingName={landingName} />
+                  <FormContact landingName={landingName}/>
                 </Column>
               </Columns>
             </Container>
@@ -70,11 +70,11 @@ class Index extends React.Component {
         </Hero>
         {/*HEADER*/}
       </LayoutLanding>
-    )
+    );
   }
 }
 
-export default Index
+export default Index;
 
 export const pageQuery = graphql`
   query {
@@ -85,4 +85,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

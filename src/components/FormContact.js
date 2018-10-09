@@ -63,6 +63,7 @@ class FormContact extends React.Component {
 
     const url = 'https://api.cobuild-lab.com/landing/contact';
     const data = Object.assign({ landingName }, this.state);
+    console.log(data);
     const settings = {
       method: 'POST',
       body: JSON.stringify(data),
