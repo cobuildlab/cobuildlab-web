@@ -1,6 +1,6 @@
 ---
 title: "How it must be a good software architecture"
-date: "2018-10-08 T16:18:55.000Z"
+date: "2018-10-08T13:22:35.000Z"
 template: blog
 tags: Tools
 image: "./media/software-architecture.jpg"
