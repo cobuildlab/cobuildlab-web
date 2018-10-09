@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 import 'react-toastify/dist/ReactToastify.min.css';
 import LayoutLanding from '../components/layoutLanding';
 import FormContact from '../components/FormContact';
-import { Container, Title, Column, Columns, Hero, HeroBody } from 'bloomer';
+import { Container, Title, Subtitle, Content, Column, Columns, Hero, HeroBody } from 'bloomer';
 import 'bulma';
 import '../assets/fonts/Lato-Black.ttf';
 import '../assets/fonts/Lato-BlackItalic.ttf';
@@ -20,11 +20,8 @@ import '../assets/fonts/Lato-Regular.ttf';
 
 class Index extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title');
-    const siteDescription = get(
-      this,
-      'props.data.site.siteMetadata.description'
-    );
+    const siteTitle = "Agile Project Management in Miami";
+    const siteDescription = "Let'us deliver your Projects";
     const landingName = 'Agile Project Management';
 
     return (
@@ -42,10 +39,18 @@ class Index extends React.Component {
               <Columns>
                 <Column isSize="1/2" className="space-title">
                   <Title className="title-logo">Cobuild Lab</Title>
-                  <Title className="subtitle-logo">{landingName}</Title>
-                  <a className="button is-primary is-medium is-rounded">
-                    READ MORE
-                  </a>
+                  <Subtitle className="subtitle-logo-landing">{landingName}</Subtitle>
+                  <Subtitle isSize={4}>
+                    <h3>Let our experience drive the success of your projects.</h3>
+                    <br/>
+                    <p>
+                      <strong>
+                        Our senior's product managers and agile coaches work with you to build and deliver software
+                        effectively. Your team would be transformed through education of the most appropriate agile
+                        techniques and best practices.
+                      </strong>
+                    </p>
+                  </Subtitle>
                 </Column>
                 <Column isSize="1/2">
                   <FormContact landingName={landingName}/>
@@ -53,24 +58,29 @@ class Index extends React.Component {
               </Columns>
             </Container>
 
-            <Container
-              isFluid
-              className="is-hidden-desktop is-hidden-tablet-only"
+            <Container isFluid className="is-hidden-desktop is-hidden-tablet-only"
+                       style={{backgroundColor:"white", padding:"5px"}}
             >
               <Columns>
                 <Column isSize="1/2">
                   <Title className="title-logo-mobile" hasTextAlign="centered">
                     Cobuild Lab
                   </Title>
-                  <Title
-                    className="subtitle-logo-mobile"
-                    hasTextAlign="centered"
-                  >
-                    {landingName}
-                  </Title>
-                  <a className="button is-primary is-small is-rounded">
-                    READ MORE
-                  </a>
+                  <Subtitle className="subtitle-logo-mobile" hasTextAlign="centered">
+                    <strong>
+                      {landingName}
+                    </strong>
+                  </Subtitle>
+                  <Subtitle isSize={4}>
+                    <h3>Let our experience drive the success of your projects.</h3>
+                    <p>
+                      <strong>
+                      Our senior's product managers and agile coaches work with you to build and deliver software
+                      effectively. Your team would be transformed through education of the most appropriate agile
+                      techniques and best practices.
+                      </strong>
+                    </p>
+                  </Subtitle>
                 </Column>
                 <Column isSize="1/2">
                   <FormContact landingName={landingName}/>

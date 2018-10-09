@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, navigate } from 'gatsby';
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import {
   Container,
@@ -63,7 +63,6 @@ class FormContact extends React.Component {
 
     const url = 'https://api.cobuild-lab.com/landing/contact';
     const data = Object.assign({ landingName }, this.state);
-    console.log(data);
     const settings = {
       method: 'POST',
       body: JSON.stringify(data),
@@ -170,6 +169,7 @@ class FormContact extends React.Component {
                       >
                         Submit
                       </button>
+                      <ToastContainer/>
                     </Control>
                   </Field>
                   <Content hasTextAlign="centered">
