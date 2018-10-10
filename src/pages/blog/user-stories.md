@@ -1,6 +1,6 @@
 ---
 title: "User stories get the software market more human: discover why?"
-date: "2018-10-10 T13:22:35.000Z"
+date: "2018-10-10T13:22:35.000Z"
 template: blog
 tags: Tools
 image: "./media/user-stories.jpeg"
@@ -28,6 +28,7 @@ User stories could have a product expectative, complete information about the cu
 <title-2>These are some benefits of user stories for your brand</tittle-2>
 
 <title-4>* Task’s direction during the software development process:</tittle-4>  
+
 Is possible because of breaking down user stories tasks are create to have done in every phase. hanks to user stories you will make clear and concise the process.
 
 
