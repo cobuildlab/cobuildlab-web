@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React from 'react'
+import { Link } from 'gatsby'
 import {
   Container,
   Navbar,
@@ -7,26 +7,26 @@ import {
   NavbarItem,
   NavbarBurger,
   NavbarMenu,
-  NavbarEnd
-} from 'bloomer';
-import '../assets/css/index.css';
-import logo from '../resources/cobuildlab.png';
-import '../assets/css/index.css';
+  NavbarEnd,
+} from 'bloomer'
+import '../assets/css/index.css'
+import logo from '../resources/cobuildlab.png'
+import '../assets/css/index.css'
 
 class header extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
-      isActive: false
-    };
+      isActive: false,
+    }
   }
 
   onClickNav = () => {
     this.setState(({ isActive }) => ({
-      isActive: !isActive
-    }));
-  };
+      isActive: !isActive,
+    }))
+  }
 
   render() {
     return (
@@ -39,7 +39,7 @@ class header extends React.Component {
             <NavbarBrand>
               <NavbarItem>
                 <Link className="link-nav" to="/">
-                  <img src={logo} style={{ marginRight: 5 }}/>
+                  <img src={logo} style={{ marginRight: 5 }} />
                 </Link>
               </NavbarItem>
               <NavbarBurger
@@ -58,9 +58,9 @@ class header extends React.Component {
                   </Link>
                 </NavbarItem>
                 <NavbarItem>
-                  <a className="link-nav" href="/#process">
+                  <Link className="link-nav" to="/#process">
                     Cobuild Process
-                  </a>
+                  </Link>
                 </NavbarItem>
                 <NavbarItem>
                   <Link className="link-nav" to="/customer-success-stories">
@@ -78,9 +78,9 @@ class header extends React.Component {
                   </Link>
                 </NavbarItem>
                 <NavbarItem>
-                  <a href="/#contact" className="link-nav">
+                  <Link to="/#contact" className="link-nav">
                     Contact Us
-                  </a>
+                  </Link>
                 </NavbarItem>
               </NavbarEnd>
             </NavbarMenu>
@@ -146,8 +146,8 @@ class header extends React.Component {
           </Container>
         </Navbar>
       </React.Fragment>
-    );
+    )
   }
 }
 
-export default header;
+export default header
