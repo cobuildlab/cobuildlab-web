@@ -87,7 +87,7 @@ class Index extends React.Component {
                     transparent communication.
                   </Title>
                   <a className="button is-primary is-medium is-rounded" target="_blank"
-                     href="/blog/cobuild-process-part-1/">
+                     href="/blog/best-software-development-process/">
                     READ MORE
                   </a>
                 </Column>
