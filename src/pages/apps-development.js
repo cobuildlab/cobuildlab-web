@@ -20,9 +20,9 @@ import '../assets/fonts/Lato-Regular.ttf';
 
 class Index extends React.Component {
   render() {
-    const siteTitle = "Software Development in Miami";
+    const siteTitle = "Apps Development in Miami";
     const siteDescription = "Let's create amazing Products";
-    const landingName = 'Software Development';
+    const landingName = 'Apps Development';
 
     return (
       <LayoutLanding location={this.props.location}>
@@ -41,9 +41,7 @@ class Index extends React.Component {
                   <Title className="title-logo">Cobuild Lab</Title>
                   <Subtitle className="subtitle-logo-landing">{landingName}</Subtitle>
                   <Subtitle isSize={4}>
-                    <h3>We transform requirements into computer programs. We specialize in building <strong>websites,
-                      ecommerce, web
-                      applications, and mobile applications.</strong></h3>
+                    <h3>We transform requirements into computer programs. We specialize in building <strong>mobile applications.</strong></h3>
                     <br/>
                     <p>
                       <strong>
@@ -80,9 +78,7 @@ class Index extends React.Component {
                     </strong>
                   </Subtitle>
                   <Subtitle isSize={4}>
-                    <h3>We transform requirements into computer programs. We specialize in building <strong>websites,
-                      ecommerce, web
-                      applications, and mobile applications.</strong></h3>
+                    <h3>We transform requirements into computer programs. We specialize in building <strong>mobile applications.</strong></h3>
                     <p>
                       <strong>
                         Software development is the process of conceiving, specifying, designing, programming,
