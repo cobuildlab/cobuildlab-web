@@ -21,8 +21,8 @@ import '../assets/fonts/Lato-Regular.ttf';
 class Index extends React.Component {
   render() {
     const siteTitle = 'Cobuild: Idea Accelerator in Miami';
-    const siteDescription = 'We accelerate Ideas in Products';
-    const landingName = 'Cobuild: Idea Accelerator';
+    const siteDescription = 'We accelerate Ideas into Products';
+    const landingName = 'Idea Accelerator in Miami';
 
     return (
       <LayoutLanding location={this.props.location}>
