@@ -1,5 +1,4 @@
 import React from 'react';
-import Recaptcha from 'react-recaptcha';
 import { navigate } from 'gatsby';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
@@ -31,7 +30,7 @@ class MyFooter extends React.Component {
   state = {
     email: '',
     fullName: '',
-    isVerified: false
+    isVerified: true
   };
 
   handleChange = e => {
@@ -57,41 +56,20 @@ class MyFooter extends React.Component {
       return;
     }
 
-    if (this.state.isVerified) {
-      addToMailchimp(this.state.email, {
-        FNAME: this.state.fullName
-      }).then(data => {
-        if (data.result === 'success') {
-          navigate('/thanks-newsletter');
-        } else {
-          toast.error(data.msg, {
-            position: 'bottom-right'
-          });
-        }
-      });
-    } else {
-      toast.error('Please verify you\'re human', {
-        position: 'bottom-right'
-      });
-    }
+    addToMailchimp(this.state.email, {
+      FNAME: this.state.fullName
+    }).then(data => {
+      if (data.result === 'success') {
+        navigate('/thanks-newsletter');
+      } else {
+        toast.error(data.msg, {
+          position: 'bottom-right'
+        });
+      }
+    });
   };
 
-  recaptchaVerify = response => {
-    if (response) {
-      this.setState({
-        isVerified: true
-      });
-    } else {
-      toast.error('Error with the captcha', {
-        position: 'bottom-right'
-      });
-    }
-  };
-
-  onloadCallback = () => {
-  };
-
-  render() {    
+  render() {
     return (
       <Footer id="footer" className="is-fixed-bottom">
         <Container>
@@ -126,14 +104,6 @@ class MyFooter extends React.Component {
                   </Field>
                   <Field isGrouped>
                     <Control>
-                      <br/>
-                      <Recaptcha
-                        elementID="newsLetter"
-                        sitekey="6LcfwWoUAAAAAJstPfnQw8pAI3xIMD80dNob1igL"
-                        render="explicit"
-                        onloadCallback={this.recaptchaLoad}
-                        verifyCallback={this.recaptchaVerify}
-                      />
                       <br/>
                       <button
                         className="button is-primary is-medium is-rounded"
