@@ -29,7 +29,7 @@ User stories could have a product expectative, complete information about the cu
 
 <title-4>* Task’s direction during the software development process:</tittle-4>  
 
-Is possible because of breaking down user stories tasks are create to have done in every phase. hanks to user stories you will make clear and concise the process.
+Is possible because of breaking down user stories tasks are create to have done in every phase. Thanks to user stories you will make clear and concise the process.
 
 
 <title-4>* Product functionality gets better every day:</tittle-4> 
@@ -40,7 +40,7 @@ User’s opinion is the best filter to all software product. Why? Because there 
 
 A user will give suggestions about how you can get better your software, the customer’s experience, even you can find errors to correct them.
 
-<title-4>* Good repitation in the market</tittle-4>
+<title-4>* Good reputation in the market</tittle-4>
 
 A good reputation is the best way to sell. But How you can create one? 
 
