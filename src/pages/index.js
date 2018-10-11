@@ -20,6 +20,7 @@ import '../assets/fonts/Lato-Regular.ttf'
 
 import propagadImg from './customer-success-stories/media/5-1280x1080p-1024x864.png'
 import academyImg from './customer-success-stories/media/fondo-2-1024x511nuew.jpg'
+import paykleverImg from './customer-success-stories/media/payklever-cover.jpg'
 import marcelo from '../resources/marceloicigliani.jpg'
 import angel from '../resources/anglelacret.jpg'
 import alejandro from '../resources/alejandrosanchez.jpg'
@@ -252,7 +253,7 @@ class Index extends React.Component {
               <Title className="title-section">Customer Success Stories</Title>
             </Link>
             <Columns isCentered>
-              <Column isSize="1/2">
+              <Column isSize="1/3">
                 <Card>
                   <Link to="/customer-success-stories/propagad">
                     <CardImage>
@@ -264,13 +265,25 @@ class Index extends React.Component {
                   </Link>
                 </Card>
               </Column>
-              <Column isSize="1/2">
+              <Column isSize="1/3">
                 <Card>
                   <Link to="/customer-success-stories/4geeks-academy">
                     <CardImage>
                       <Image isRatio="4:8" src={academyImg} />
                       <p className="name-team">
                         <strong>4Geeks Academy</strong>
+                      </p>
+                    </CardImage>
+                  </Link>
+                </Card>
+              </Column>
+              <Column isSize="1/3">
+                <Card>
+                  <Link to="/customer-success-stories/payklever-campaign-manager">
+                    <CardImage>
+                      <Image isRatio="4:8" src={paykleverImg} />
+                      <p className="name-team">
+                        <strong>Payklever Campaign Manager</strong>
                       </p>
                     </CardImage>
                   </Link>
