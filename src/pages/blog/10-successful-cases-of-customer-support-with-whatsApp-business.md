@@ -1,5 +1,5 @@
 ---
-title: "12 tips to boost your company with WhatsApp Business"
+title: "10 successful cases of customer support with WhatsApp Business"
 date: "2018-10-13T16:18:55.000Z"
 template: blog
 tags: Tools
@@ -15,6 +15,7 @@ WhatsApp Business offers a new way to meet customer requests, but we must be car
 We did an investigation and found 10 companies that implemented WhatsApp Business into their marketing plan. Let's see how their customer support works through this application that millions of people have installed on their phones.  
 
 
+
 <tittle-2>**1.- Infobip**</tittle-2>
 
 The business communication provider, Infobip, presented, in August of this year, WhatsApp Business within the range of its communication channels, which proves the reach and impact of this platform. They have more than 55 offices on 6 continents and now they will offer their customers this messaging service to interact with their audience through an application that the users know and trust.  
@@ -25,9 +26,11 @@ The business communication provider, Infobip, presented, in August of this year,
 ![InfoBip](./media/10-success-whatsapp-business-images/image4.png)
 
 
+
 <tittle-2>**2.- Meliá Hotels International.**</tittle-2>
 
 It is one the latest companies that announced the activation of WhatsApp Business to use this service to provide useful information to their clients about reservations, confirmation number, localization of the hotel, among other aspects that they need to know, all with the prior consent of the client.
+
 
 
 <tittle-2>**3.- Absa Bank**</tittle-2>
@@ -42,9 +45,11 @@ With this service, you can obtain the actual balance in your account, buy airtim
 ![Absa Example](./media/10-success-whatsapp-business-images/image3.png)
 
 
+
 <tittle-2>**4.-  Accor Hotels**</tittle-2>
 
 90 percent of Accor Hotels in the United Kingdom and Ireland also started to incorporate Whatsapp Business, so that their guests can contact the reception, restaurant or room service, instead of using the classic phone call.
+
 
 
 <tittle-2>**5.- Russsh**</tittle-2>
@@ -55,9 +60,11 @@ A relatively new company, Russsh is an on-demand delivery service in Mumbai, Ind
 ![Russsh Delivery](./media/10-success-whatsapp-business-images/image6.png)
  
 
+
 <tittle-2>**6.- Access Bank Plc**</tittle-2>
 
 One of the five largest banks in Nigeria that wants to communicate with their private and corporate clients by WhatsApp Business is Access. Through this channel, the customers can ask, check their balances and receive service requests treated promptly.
+
 
 
 <tittle-2>**7- Just Herbs**</tittle-2>
@@ -68,9 +75,11 @@ Just Herbs is a brand from India that sells Ayurvedic products online, for skin,
 ![Just Herbs](./media/10-success-whatsapp-business-images/image5.png)
  
 
+
 <tittle-2>**8.- Netflix**</tittle-2>
 
 If you are looking for a good series or movies and you do not know who to ask, you can talk with Netflix on WhatsApp Business and request a recommendation. But, this service only is available in India, for now. You can also converse with them if you have connection problems and give you the assistance you need. So easy!
+
 
 
 <tittle-2>**9.- KLM Royal Dutch Airlines**</tittle-2>
@@ -80,6 +89,7 @@ Imagine how wonderful it would be to get your booking confirmation, check-in not
 
 
 ![KLM Royal Dutch Airlines](./media/10-success-whatsapp-business-images/image1.png)
+
 
 
 <tittle-2>**10.- Burger & Relish Restaurant**</tittle-2>
