@@ -3,7 +3,7 @@ title: "From now user experience could make the difference in your business"
 date: "2018-10-17T20:24:26.000Z"
 template: blog
 tags: Miami
-image: "./src/pages/blog/media/user-experience.jpg"
+image: ".media/user-experience.jpg"
 ---
 
 
