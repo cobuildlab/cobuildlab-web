@@ -3,7 +3,7 @@ title: "From now user experience could make the difference in your business"
 date: "2018-17-10T13:22:35.000Z"
 template: blog
 tags: Tools
-image: "./media/user-experience.jpeg"
+image: "./media/cobuildlab-web/src/pages/blog/media/user-experience.jpg"
 ---
 
 For us is really normal to give opinions about everything is around. Software products, systems, apps, and services don’t escape from this. That’s why **user experience** is on the table now. To know its importance, use, and all the important things about them, don’t lose any detail we are going to talk about next.
