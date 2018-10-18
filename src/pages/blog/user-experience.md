@@ -3,7 +3,7 @@ title: "From now User Experience could make the difference in your business"
 date: "2018-10-17T20:24:26.000Z"
 template: blog
 tags: Miami
-image: ".media/user-experience.jpg"
+image: "./media/user-experience.jpg"
 ---
 
 
@@ -99,9 +99,9 @@ All good user experience has to be:
  
 <title-4>User experience and user interface are the same?</tittle-4>
 
-![user-experience](src/pages/blog/media/difference-between-ui-ux.png)
+![user-experience](./media/difference-between-ui-ux.png)
 
-<credits>fuente:Pro Web Design</credits>
+<credits>Source:Pro Web Design</credits>
 
 The short answer is no.
 
