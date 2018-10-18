@@ -1,8 +1,8 @@
 ---
-title: "From now User Experience could make the difference in your business"
+title: "From now, User Experience could make the difference in your business"
 date: "2018-10-17T20:24:26.000Z"
 template: blog
-tags: Miami
+tags: Tools
 image: "./media/user-experience.jpg"
 ---
 
