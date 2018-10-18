@@ -99,7 +99,7 @@ All good user experience has to be:
  
 <title-4>User experience and user interface are the same?</tittle-4>
 
-![user-experience](src/pages/blog/media/difference-between-ui-ux.png)
+![user-experience](media/difference-between-ui-ux.png)
 
 <credits>fuente:Pro Web Design</credits>
 
