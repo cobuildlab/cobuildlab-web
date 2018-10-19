@@ -1,5 +1,5 @@
 ---
-title: "Twitch vs Youtube: Who is the King of Games Broadcasting?"
+title: "Twitch vs Youtube: Who is the King of Videogames Broadcasting?"
 date: "2018-10-19T20:05:48.000Z"
 template: blog
 tags: News
