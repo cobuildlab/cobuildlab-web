@@ -3,7 +3,7 @@ title: "Find out the reason why Miami is the best place for idea acceleration"
 date: "2018-10-23T16:24:04.000Z"
 template: blog
 tags:
-image: "./media/idea-acceleration.jpeg"
+image: "./media/idea-acceleration.jpg"
 ---
 
 The world is accelerated. All things are changing faster than we can imagine. So, accelerating it is more than a desire, a necessity. For that reason, accelerator companies have been popularized lasts years. **Idea acceleration** comes to stay in Miami and the hall world, and next you will know why.
