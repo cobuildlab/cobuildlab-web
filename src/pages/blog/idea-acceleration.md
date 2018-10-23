@@ -3,7 +3,7 @@ title: "Find out the reason why Miami is the best place for idea acceleration"
 date: "2018-10-23T16:24:04.000Z"
 template: blog
 tags:
-image: "./media/startup21321.jpg"
+image: "./media/idea-acceleration.jpeg"
 ---
 
 The world is accelerated. All things are changing faster than we can imagine. So, accelerating it is more than a desire, a necessity. For that reason, accelerator companies have been popularized lasts years. **Idea acceleration** comes to stay in Miami and the hall world, and next you will know why.
@@ -42,31 +42,32 @@ But what happens if your idea needs to be improved? We mean, adapt it better to 
 
 All of that we can do it from your hand. Actually, we talk about idea acceleration, and not of startup acceleration, because we start from the main idea of accompanying you from the conception of the idea.  
 
-Continuously we are making meetups, and some events to create a really nice community where we can help us, and build nice things together until making of Miami, the capital of entrepreneurship.
-![Virtual Reality Painting](./media/image321321321dsaas.jpg)
-<credits>Photo by [Billetto Editorial]()<credits>
+Continuously we are making meetups, and some events to create a really nice community where we can help us, and build nice things together until making of Miami, the capital of entrepreneurship.  
+
+![idea-acceleration](./media/cobuild-lab-in-miami.jpg)
+<credits>Photo by [Cobuild Lab](https://cobuildlab.com/)<credits>  
 
 * **Venture Hive:** this a startup accelerator in Miami that bet for innovation in startups. They had founded by a woman called Susan Amat, and now, they have a team of 6 members in different areas to bring acceleration. 
 
-They think that entrepreneurship also part of educating, and we agree with them. This accelerator is one option you can use to accelerate your startup or small business in Miami. 
+They think that entrepreneurship also part of educating, and we agree with them. This accelerator is one option you can use to accelerate your startup or small business in Miami.  
 
-![Virtual Reality Painting](./media/image321321321dsaas.jpg)
-<credits>Photo by [Billetto Editorial]()<credits>
+![idea-acceleration](./media/Venture-Hive.jpg)
+<credits>Photo by [Venture Hive](https://www.venturehive.com/)<credits>  
   
 * **Rokk3r Labs:** They only want a thing, make exponential every startup or small business that goes to him. 
 They also have the cobuild concept, and their team it is shaped by strategist, creative people, and engineers.  
-If you want to know the life.cycle of your small company, here, you can find out.
+If you want to know the life.cycle of your small company, here, you can find out.    
 
-![Virtual Reality Painting](./media/image321321321dsaas.jpg)
-<credits>Photo by [Billetto Editorial]()<credits>
+![idea-acceleration](./media/rokk3rlabs.jpg)
+<credits>Photo by [Rokk3r Labs](https://www.rokk3rlabs.com/)<credits>   
   
 * **Endeavor Miami:** Entrepreneurship is changing world economies, and team members of Endeavor Miami believe that. And we agree with them. 
 But to be an entrepreneur require some things that you cannot do alone. This is another option for you in the beautiful Miami.   
 
-This accelerator also is located in other parts of the world, but the most important thing is that they are part of the startup acceleration community in Miami, and we are happy about that.
+This accelerator also is located in other parts of the world, but the most important thing is that they are part of the startup acceleration community in Miami, and we are happy about that.  
 
-![Virtual Reality Painting](./media/image321321321dsaas.jpg)
-<credits>Photo by [Billetto Editorial]()<credits>
+![idea-acceleration](./media/endeavor.jpg)
+<credits>Photo by [Endeavor](https://endeavormiami.org/)<credits>  
   
 <title-2>Idea acceleration vs Startup acceleration</title-2>
 
