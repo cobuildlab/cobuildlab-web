@@ -2,7 +2,7 @@
 title: "Find out top idea accelerators companies in Miami"
 date: "2018-10-23T16:24:04.000Z"
 template: blog
-tags:
+tags: Miami
 image: "./media/idea-acceleration.jpg"
 ---
 
