@@ -71,11 +71,11 @@ We met enough information about free and open source software. Now it is the mom
 
 <title-3>Software open source vs proprietary software: advantages and disadvantages</title-3>
 
-![idea-acceleration](./media/cobuild-lab-in-miami.jpg)
-<credits>Photo by [Cobuild Lab](https://cobuildlab.com/)<credits>  
+![software-open-source-vs-proprietary-software](./media/tabla-1-software-open-source-advantages-and-disadvantages.png)
+ 
   
-![idea-acceleration](./media/cobuild-lab-in-miami.jpg)
-<credits>Photo by [Cobuild Lab](https://cobuildlab.com/)<credits>  
+![software-open-source-vs-proprietary-software](./media/table-2-proprietary-software-advantages-and-disadvantages.png)
+
 
 <title-2>Examples of open source and proprietary software</title-2>
 
