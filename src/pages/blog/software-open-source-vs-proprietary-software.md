@@ -2,7 +2,7 @@
 title: "Open Source Software vs Proprietary Software"
 date: "2018-10-26T16:24:04.000Z"
 template: blog
-tags:Small Business
+tags: tools
 image: "./media/software-open-source-vs.-proprietary-software.jpg"
 ---
 
