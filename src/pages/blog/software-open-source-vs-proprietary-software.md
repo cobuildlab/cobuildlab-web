@@ -133,7 +133,7 @@ Read More at [React](https://reactjs.org/).
 
 4. Free Office
 
-FALTA IMAGEN
+![free-office(/media/2free-office.png)
 This is a software office package that includes a text editor, spreadsheets, and every program you need to use at your office. It is related to Microsoft Office, but open source. 
 
 Obtain it clicking here: [Free Office](https://www.libreoffice.org/download/download/)
