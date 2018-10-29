@@ -148,7 +148,7 @@ It is an antivirus software and security suite that was launched in 1990. From t
 
 2. Microsoft Window
 
-![Microsoft-Window](/media/1microsoft-window.png)
+![Microsoft-Window](/media/1microsoft-windows.png)
 
 Microsoft Windows is a group of several graphical operating system families, all of which are developed, marketed, and sold by Microsoft. 
 They are a family of software distributions for PC, smartphone, servers and embedded systems, developed and sold by Microsoft and available for multiple architectures, such as x86, x86-64 and ARM.
@@ -162,7 +162,7 @@ MacOS is a series of graphical operating systems developed and marketed by Apple
 
 4. Adobe Suite
 
-![Adobe-suite](/media/1adobe.suite.png)
+![Adobe-suite](/media/1adobe-suite.png)
 
 How its name said, it is a suite with different tools which are created for printed publication, video and photos production and mobile devices. 
 
