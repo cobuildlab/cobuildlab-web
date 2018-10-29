@@ -2,7 +2,7 @@
 title: "Open Source Software vs Proprietary Software"
 date: "2018-10-26T16:24:04.000Z"
 template: blog
-tags:
+tags:Small Business
 image: "./media/software-open-source-vs.-proprietary-software.jpg"
 ---
 
@@ -76,7 +76,7 @@ We met enough information about free and open source software. Now it is the mom
 
 <title-3>Software open source vs proprietary software: advantages and disadvantages</title-3>
 
-<title-3>Software open source Advantages</title-3>
+<title-4>Software open source Advantages</title-4>
 
 * You can adapt it to your necessities even from source code.
 * All replica or distribution it is possible although you haven’t paid it.
@@ -85,19 +85,19 @@ We met enough information about free and open source software. Now it is the mom
 * For that reason, some experts think that open source software is safer. 
 * It is universal.
 
-<title-3>Software open source Disadvantages</title-3>
+<title-4>Software open source Disadvantages</title-4>
 
 * Limited warranty. This happens because lots of people can change it. Also usually they haven’t liability or infringement indemnity protection.
 * Open source software can have compatibility issues, and solving it could cost a lot of money.
 
-<title-3>Proprietary Software Advantages</title-3>
+<title-4>Proprietary Software Advantages</title-4>
 
 * Stability. This maybe is the most important advantage. Creator gives you a software which it was probed and it is capable to do perfectly all things an actions you saw before buying it.
 * Reliability and warranty of 100% from creators.
 * Proprietary software is unique. You won’t find it in any place different from the provider. 
 * Most compatibility in some cases.
 
-<title-3>Proprietary Software Disadvantages</title-3>
+<title-4>Proprietary Software Disadvantages</title-4>
 
 * Higher cost. But if you look at how an invest, it doesn’t matter much. 
 * You cannot modify the source code.
@@ -108,7 +108,7 @@ We met enough information about free and open source software. Now it is the mom
 
 <title-2>Examples of open source and proprietary software</title-2>
 
-<title-3>Open Source:/title-3> 
+<title-3>Open Source:</title-3> 
  
  1. Linux Kernel
  
@@ -138,7 +138,7 @@ This is a software office package that includes a text editor, spreadsheets, and
 
 Obtain it clicking here: [Free Office](https://www.libreoffice.org/download/download/)
 
-<title-3>Proprietary/title-3> 
+<title-3>Proprietary</title-3> 
  
 1. Avast: 
 
@@ -162,7 +162,7 @@ MacOS is a series of graphical operating systems developed and marketed by Apple
 
 4. Adobe Suite
 
-![Adobe-suite](/media/1abobe.suite.png)
+![Adobe-suite](/media/1adobe.suite.png)
 
 How its name said, it is a suite with different tools which are created for printed publication, video and photos production and mobile devices. 
 
