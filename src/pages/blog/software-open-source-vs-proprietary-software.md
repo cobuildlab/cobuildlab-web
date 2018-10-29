@@ -148,12 +148,28 @@ It is an antivirus software and security suite that was launched in 1990. From t
 
 2. Microsoft Window
 
-![Microsoft Window](/media/1microsoft-window.png)
+![Microsoft-Window](/media/1microsoft-window.png)
 
 Microsoft Windows is a group of several graphical operating system families, all of which are developed, marketed, and sold by Microsoft. 
 They are a family of software distributions for PC, smartphone, servers and embedded systems, developed and sold by Microsoft and available for multiple architectures, such as x86, x86-64 and ARM.
 [Source](www.wikipedia.org)
 
-3. 
+3. Mac OS
 
-If we have to select a winner at the **software open source vs proprietary software** we say that there isn’t a winner. All of them give us good and bad things. Each one is useful. Everything will depend on your objectives and necessities. Do you agree with us? 
+![Mac-OS](/media/1mac-OS.png)
+
+MacOS is a series of graphical operating systems developed and marketed by Apple Inc. since 2001. It is the primary operating system for Apple's Mac family of computers. Within the market of desktop, laptop, and home computers, and by web usage, it is the second most widely used desktop OS, after Microsoft Windows. [Source](www.wikipedia.org)
+
+4. Adobe Suite
+
+![Adobe-suite](/media/1abobe.suite.png)
+
+How its name said, it is a suite with different tools which are created for printed publication, video and photos production and mobile devices. 
+
+Here you can find out more information about this [suite](https://www.adobe.com/es/products/cs6.html)
+
+If we have to select a winner at the **software open source vs proprietary software** we say that there aren’t any winner. All of them give us good and bad things; each one is useful.
+
+Everything will depend on your objectives and necessities. Do you agree with us? 
+
+
