@@ -2,8 +2,8 @@
 title: "Open Source Software vs Proprietary Software"
 date: "2018-10-26T16:24:04.000Z"
 template: blog
-tags: tools
-image: "./media/software-open-source-vs.-proprietary-software.jpg"
+tags: Education
+image: "./media/open-source-software-vs.-proprietary-software.jpg"
 ---
 
 Have you ever listened to every good thing in life has to be paid? Well, that’s not always true, especially when we talk about software. This world gives us the opportunity to get open source software that is available for everyone. And that's not all. It doesn’t mean less quality or usability comparing it with those we pay. From now on we will compare **Open Source Software vs. Proprietary Software** to know the advantages and disadvantages, examples, and how can you use them in the best way.  
