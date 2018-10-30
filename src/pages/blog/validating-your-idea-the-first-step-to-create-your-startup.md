@@ -16,57 +16,70 @@ Many different methods exist to validate your idea, from Webpages, Surveys to MV
 
 After reviewing and testing different methods in Cobuild Lab, we have choosen the [Validation Board by the Lean Startup Machine](https://www.leanstartupmachine.com/validationboard/)
 
-<title-6>Learning the hard way<title-6>
+
+
+##Learning the hard way
 
 <youtube-video id="G8Rk0c3axtI"></youtube-video>
 
-<title-6>Validation Board<title-6>
+
+
+## Validation Board
 
 The validation board is a canvas or a model built with a set of necesary elements and tools to validate an idea, based on testing, learning and pivoting.
 
-<title-6>Advantages of using the Validation Board<title-6>
+![The Validation Board](media/validation-board.png)
+
+
+
+### Advantages of using the Validation Board
 
 - It's a proven technique
 - Is based on the reality: Your idea is based mostly on assumptions
 - It's lean
 - It's easy to understand
 
-![The Validation Board](media/validation-board.png)
 
 <youtube-video id="HhoducyStMw"></youtube-video>
 
 
-<title-6>Customer Hypothesis<title-6>
+### Customer Hypothesis
 
 First we describe our audience or taget customer in terms of the problem that they are facing. Gender, income, housing, location, position, etc.
 
 Example 1:
 
-> Ad Buyer
-> Marketing Manager for a Dog Clothing store
-> High school teacher
+- Ad Buyer
+- Marketing Manager for a Dog Clothing store
+- High school teacher
 
 Example 2
 
-> Technical experts now in management (Team Leads, Supervisors, Managers). This is their first management position, likely less than one year in new role, have previously been successful in prior roles; likely to continue to be successful
+- Technical experts now in management (Team Leads, Supervisors, Managers). This is their first management position, likely less than one year in new role, have previously been successful in prior roles; likely to continue to be successful
 
-<title-6>Problem Hypothesis<title-6>
+
+
+### Problem Hypothesis
 
 This is the assumption that the Customer has that you can solve.
 
 Example:
 
-The Marketing Manager has a common problem in todays dominitad Digital Ads Market. The cost of advertising is greater than the maximimun amount of money that they can pay for customer acquisition.
+- The Marketing Manager has a common problem in todays dominitad Digital Ads Market. The cost of advertising is greater than the maximimun amount of money that they can pay for customer acquisition.
 
-<title-6>Solution Hypothesis<title-6>
+
+
+### Solution Hypothesis
 
 In this part we provide a brief description of our product and how it solves the Problem defined.
 
 Example:
 
-We are gonna create a marketplace for traditional and local mediums of advertising for small business.
+- We are gonna create a marketplace for traditional and local mediums of advertising for small business.
 
-<title-6>Assumptions<title-6>
+
+
+###  Assumptions
 
 These are all the assumptions about the customer, problem and solution hypothesis that require testing. 
 
@@ -77,12 +90,14 @@ Example:
 - There is no other platform for advertising for small business owners 
 
 
-<title-6>Riskiest Assumption<title-6>
+
+### Riskiest Assumption
 
 After we reviewed the assumptions and hypothesis, we prioritize putting as the most important one the one that represents the major amount os risks. (most amount of money or time spent)
 
 
-<title-6>Method (How we test it)<title-6>
+
+### Method (How we test it)
 
 The Lean Startup Machine proposes three possible types of Methods to validate your Riskiest Assumption: (you can use more than one)
 
@@ -95,10 +110,11 @@ We can add to that:
 4. Surveys
 5. Contradiction: If validate your assumption becomes to diffucult or to expensive, assume the opposite and use on simpler method
 
-
 Here are some of the ideas we had (geared around identifying and learning from new technology managers):
 
-<title-6>Minimun Success Criteria<title-6>
+
+
+### Minimun Success Criteria
 
 Define what's gonna probe that your Assumption was Validated or Invalidated
 
@@ -107,7 +123,7 @@ Example
 - If X amount of Marketing Managers answer 10 points or less in the survey it means that the assumption is Validated.
 
 
-<title-6>Get Out of the Building<title-6>
+### Get Out of the Building
 
 - In person surveys
 - Email forms
