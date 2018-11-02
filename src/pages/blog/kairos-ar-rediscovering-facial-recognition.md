@@ -10,7 +10,7 @@ Kairos, a startup of **artificial intelligence**, specialized in **facial recogn
 analysis technology and can recognize faces in videos, photos and even in the real world, making it easier to transform the way you
 interact with people.
 
-![Facial Recognition](./media/2 Kairos AR.jpg)
+![Facial Recognition](./media/2-Kairos-AR.jpg)
 <credits>Photo by Medium</credits>
 
 **Brian Brackeen** was the founder of Kairos, and his leadership led the Wall Street Journal to rank the startup as one of the top 25
@@ -20,7 +20,7 @@ Prior to founding Kairos, Brian worked as Senior Project Manager for Apple Inc. 
 worldwide and participates in mentoring programs for organizations such as Girls Who Code, Black Girls Code and The School District of
 Miami.
 
-![Brian Brackeen](./media/3 Kairos AR.jpg)
+![Brian Brackeen](./media/3-Kairos-AR.jpg)
 <credits>Photo by TheWorldNews</credits>
 
 <title-2>**History**</title-2>
@@ -36,7 +36,7 @@ human beings and machines.
 Historically this type of technology has always been complex and expensive, even beyond the reach of the majority. But the Miami-based
 startup wants to eliminate these challenges and make it easy.
 
-![Facial Recognition](./media/4 Kairos AR.jpg)
+![Facial Recognition](./media/4-Kairos-AR.jpg)
 <credits>Photo by Kairos</credits>
 
 They offer a cloud-based facial recognition API that lets developers generate and enhance applications with easy recognition
@@ -46,7 +46,7 @@ images or videos; and an emotional analysis API that is used to recognize facial
 Kairos also provides IMRSV, a camera-enabled crowd analysis solution for marketing professionals that gathers continuous audience
 analysis.
 
-![Kairos cloud-based](./media/5 Kairos AR.jpg)
+![Kairos cloud-based](./media/5-kairos-AR.jpg)
 <credits>Photo by Kairos</credits>
 
 In July of this year, the startup announced its "Kairos Protocol" to Blockchain Friendly ID Verification Powered by Face Recognition.
@@ -58,7 +58,7 @@ transactions," -Brian Brackeen</block-quote>
 
 <credits>Source: http://bit.ly/2Sek2qZ</credits>
 
-![Got On Prem](./media/6 Kairos AR.jpg)
+![Got On Prem](./media/6-Kairos-AR.jpg)
 <credits>Photo by Kairos</credits>
 
 In October of this year, Kairos introduced its new facial recognition API, designed to meet the most critical security needs of its
@@ -69,7 +69,7 @@ it’s a hyper-growth startup, or a Fortune 50 mega-brand.” -Alessandra, Kairo
 
 <credits>Source: http://bit.ly/2OQ11Ny</credits>
 
-![Brian Brackeen](./media/7 Kairos AR.jpg)
+![Brian Brackeen](./media/7-Kairos-AR.jpg)
 <credits>Photo by Miami Herald</credits>
 
 Also this month there were significant changes in the company, Kairos replaces Brian Brackeen as CEO.
