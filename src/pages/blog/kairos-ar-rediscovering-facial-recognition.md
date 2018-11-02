@@ -46,7 +46,7 @@ images or videos; and an emotional analysis API that is used to recognize facial
 Kairos also provides IMRSV, a camera-enabled crowd analysis solution for marketing professionals that gathers continuous audience
 analysis.
 
-![Kairos cloud-based](./media/5-kairos-AR.jpg)
+![Kairos cloud-based](./media/5-Kairos-AR.jpg)
 <credits>Photo by Kairos</credits>
 
 In July of this year, the startup announced its "Kairos Protocol" to Blockchain Friendly ID Verification Powered by Face Recognition.
