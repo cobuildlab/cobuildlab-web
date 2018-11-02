@@ -3,7 +3,7 @@ title: "Kairos AR: Rediscovering facial recognition"
 date: "2018-11-02T16:18:55.000Z"
 template: blog
 tags: Miami
-image: "./media/1 Kairos AR.jpg"
+image: "./media/1-Kairos-AR.jpg"
 ---
 
 Kairos, a startup of **artificial intelligence**, specialized in **facial recognition**. Kairos navigates through the complexities of easy
