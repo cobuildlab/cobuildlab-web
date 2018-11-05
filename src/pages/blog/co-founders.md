@@ -129,7 +129,7 @@ Can you imagine that you and your co-founder would be the next Larry Page and Se
 
 <credits>Photo by [Wired](https://www.wired.co.uk/article/server-samurai)<credits>
   
-They are three co-founders of a business created in Miami. It means about CloudFlare. A company that provides red services, web security, domain servers, and mitigation DDoS. 
+They are three co-founders of a business created in Miami: [CloudFlare](https://www.cloudflare.com/es-es/). A company that provides red services, web security, domain servers, and mitigation DDoS. 
 
 Surely you knew this company, but Did you know that comes from Miami? Now, you can be the next in the city. Are you ready? 
 
