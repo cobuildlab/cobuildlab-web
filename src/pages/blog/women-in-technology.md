@@ -1,8 +1,8 @@
 ---
-title: "The challenge of being a woman in IT, Is Miami any different?**"
+title: "The challenge of being a woman in IT: Is Miami any different?"
 date: "2018-11-12T16:24:04.000Z"
 template: blog
-tags: Education
+tags: Miami
 image: "./media/women-in-technology/image4.jpg"
 ---
 
@@ -18,7 +18,11 @@ But is the reason for this scenario a matter of preference or are they copying t
 This means that the models and examples in our homes are decisive in choosing the profession we are going to perform as adults.
 
 
+
+
 ![Professionals ](./media/women-in-technology/image3.jpg)
+
+
 
 
 However, there are also other reasons to explain this gender disparity. Access and connectivity to the web are unbalanced. According to a study of the Organization for Economic Cooperation and Development (OECD), **250 million women in the world have less Internet access than men. **
@@ -29,12 +33,14 @@ Apparently, most women still prefer professions of the social area, which are mo
 
 
 
+
 ![Professionals ](./media/women-in-technology/image2.jpg)
 
 
 
 
-**The challenge of getting a job**
+
+## **The challenge of getting a job**
 
 Once she decided on a career in the technology area, the challenge to get a job as a woman begins. Two American universities analyzed GitHub, the main collaborative software platform with more than 12 million collaborators, to confirm whether pull requests from women were more chances to be accepted or rejected than those from men.
 
@@ -48,10 +54,14 @@ According to Forbes, t**here are only 7% rich women in the world and 20% of new 
 
 
 
+
 ![Professionals ](./media/women-in-technology/image1.jpg)
 
 
-**The scenario starts to change**
+
+
+
+##**The scenario starts to change**
 
 Although the disparity has been reduced in recent years in some of these companies, many have received criticism for gender discrimination, such as Apple and Uber, which have taken care for reducing the gap between women and men.
 
@@ -59,7 +69,9 @@ Currently, **29% of leadership roles in Apple are occupied by women**. Last year
 
 **In the case of Uber, the number of women has increased by 1,9% respect to the last year.** In 2018, there are 38% women on their payroll. Like Apple, Uber hired the first woman chief of diversity, Bo Young Lee, with the objective of balancing the distribution of gender in the company.
 
-**Miami**
+
+
+##**Miami**
 
 In Miami, 4Geeks have an academy that offers tech careers to women and recently they announced that their Cohort III at downtown Miami had a 60% female enrollment. **[4Geeks Academy](https://www.4geeksacademy.co/empowering-women-tech/) promotes women participation in designing and developing high-quality tech products and services **and in that way, reduces the gender gap in technology.
 
