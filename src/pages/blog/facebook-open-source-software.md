@@ -2,7 +2,7 @@
 title: "Facebook Open Source Software is revolutionizing the world and you can be part of that"
 date: "2018-11-12T16:24:04.000Z"
 template: blog
-tags: Small Business
+tags: Education
 image: "./media/facebook-open-source-software.jpg"
 ---
 
