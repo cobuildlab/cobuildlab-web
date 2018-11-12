@@ -19,9 +19,9 @@ This means that the models and examples in our homes are decisive in choosing th
 
 
 
-
+<br>
 ![Professionals ](./media/women-in-technology/image3.jpg)
-
+<br>
 
 
 
@@ -33,9 +33,9 @@ Apparently, most women still prefer professions of the social area, which are mo
 
 
 
-
+<br>
 ![Professionals ](./media/women-in-technology/image2.jpg)
-
+<br>
 
 
 
@@ -54,9 +54,9 @@ According to Forbes, t**here are only 7% rich women in the world and 20% of new 
 
 
 
-
+<br>
 ![Professionals ](./media/women-in-technology/image1.jpg)
-
+<br>
 
 
 
