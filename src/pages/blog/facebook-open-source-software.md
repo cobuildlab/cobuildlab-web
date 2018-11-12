@@ -125,7 +125,7 @@ You can make static animations really professional using this tool.
 
 Do you want to make this? 
 
-GIF
+![facebook-animation](./media/fb-animation.gif)
 
 This is possible thanks to this software developed by Facebook. 
 
@@ -133,100 +133,94 @@ With Shimmer is possible to do animations for data loading in a UITableView, UIC
 
 The animation created by Shimmer is considered how an specific effect called Shimmer Effect. Apple is responsible for this. 
 
-You can get access to its repository here.
+You can get access to [its repository](https://github.com/facebook/Shimmer) here.
 
+Source: [Yudiz](https://www.yudiz.com/facebook-shimmer-animation-swift-4/)
 
+* Buck
 
-<title-4>Specifically, these are the co-founder functions</title-4>
+This tool also applies for Android, actually, we talked about it in the last category. In addition, we share [its repository](https://github.com/facebook/buck), and you could make a contribution there. 
 
-This topic will change depending on the co-founder input. For example, if the co-founder invests economical resources, it is usual that he or she can decide about finance and the proper way to use the money. Now, it is common that co-founders don’t contribute with money, but they contribute with knowledge. In this specific case, responsibilities and functions should be different. 
+For remember a little, we said that Buck is a software that helps you to build modules. These modules are supported in many languages, platforms, and also, they are small and reusable. 
 
-What does it mean? Co-founders functions are not always the same. They will change in every company, and you as a founder can establish it how better you think. 
+Source: [Buck Build](https://buckbuild.com/)
 
-But we want to give you some common functions of co-founders to keep in mind:
+* ComponentKit 
 
-1. Select the team’s members with you
-2. Make a distribution about economic resources
-3. Contribute to knowledge 
-4. Plan strategies of some processes
-5. Identify and take advantage of market opportunities
-6. Promote the brand
-7. Propose ideas for marketing and sales
-8. Collaborate with business documentation 
-9. Calculate financial estimates 
-10. Collaborate with internal processes when it has been necessary
+This is another framework for iOS. This view framework is inspired in React, and it will help you to build your user interface in the most functional way. 
 
-**Why is important to have one?**
+Be careful, this ComponentKit is different to React Native. 
 
-Did you know that the principal reason for startup failing it is the wrong people working on it?
+Source: [ComponentKit](https://componentkit.org/)
 
-Choosing the best partner or team during the first steps of your business makes the difference between work and evolve better than you expect or fail to try. 
+Remember: These are some of the open source software made by Facebook. The most famous at least.
 
-A co-founder even is going to take vital decisions from your hand, and it has to be a major influence on business operation.   
-  
-Some people say: to have a bad co-founder is better to be alone. 
+**Software for web made by Facebook’s team:**
 
-In effect, our best recommendation for you in this: **thinks twice before choosing.**
+* React 
 
-<title-2>Tips to choose the best co-founder</title-2>
+This library of JavaScript was though for building user interfaces.  This software has the particular characteristic of being used by single pages and mobile apps. 
 
-A really good co-founder needs to have the next skills: 
+It is one of the most important open source software of Facebook, and little by little this library has taken over developing projects in last years.
 
-* **Strategical thinking:** That’s due to decisions they have to take or defend. It is very important they have been able to anticipate market changes. 
-* **Management:** a co-founder it is a kind of boss. So, they should know to manage processes, people and everything inside the company. 
-* **Financial connoisseur:** especially if they contribute with money or they have to take important decisions about business finance.
+Obtain more information, tutorials or getting access to their in this source: (https://reactjs.org/)
 
-**Examples or stories of successful co-founders**
+* HHVM 
 
-**1. Bill Gates and Paul Allen**
+It is the acronym of 
+Hip
+Hop 
+Virtual
+Machine
 
-![bill-gates-and-paul-allen](./media/paul-allen-bill-gates.png)
+It is an open-source virtual machine based on just-in-time compilation that serves as an execution engine for the PHP and Hack programming languages.
 
-<credits>Photo by [News.culturacolestiva](https://news.culturacolectiva.com/ciencia/muere-paul-allen-cofundador-de-microsoft/)<credits>
+Source: [Wikipedia](https://en.wikipedia.org/wiki/HHVM)
 
-They are the Microsoft co-founders. Two men that joined to work, and develop one of the biggest technological empires of all time. 
+* Parse Server
 
-Although rumors said that they did have some problems as a team, they worked really good. 
+Did you think it was impossible to create the backend without code? The answer is yes! Thanks to this software. You can get host without infrastructure’s problems or scale with no technical locks.
 
-For a long time, they were listed as the top rich men in the U.S. and the world, and it was due to the company they co-found called Microsoft.
+<block-quote>They say: We help developers to create better software faster</block-quote>
 
+Source: [back4App](https://www.back4app.com/about-us)
 
-**2. Steve Jobs, Steve Wozniak y Ronald Wayne**
+* Flow 
 
-![Apple-cofounders](./media/apple-cofounders.png)
+This software bring you the opportunity to manage in the easiest, faster and more effective way a project. It is literally a workflow software made by Facebook’s team.
 
-<credits>Photo by [Iphoneros](https://iphoneros.com/52161/por-que-es-genial-el-video-conmemorativo-de-los-40-anos-de-historia-de-apple)<credits>
+Source: [Getflow](https://www.getflow.com/)
 
-Apple has been one of the most important companies in the century, and these three men are behind this. 
+* Nuclide
 
-They were Apple co-founders. Now on, the thing has changed, but at the beginning, they had to work a lot and take the best decisions to take Apple on the heights, where they continue staying. 
+You need hackability and support for an active community. For that, developers built a package from Atom to give it.
 
-If they could, for sure you can. 
+That’s how borned this open source software for web. 
 
+Source: [Nuclide](https://nuclide.io/)
 
-**3. Larry Page and Sergei Brin**
+Huxley
 
-![Google-cofounders](./media/google-cofounders.png)
+Huxley is a test that is used for web apps for catching visual regressions. 
 
-<credits>Photo by [Lifestyle.buorsorama](http://lifestyle.boursorama.com/high-tech/larry-page-et-sergey-brin-qui-sont-les-papas-de-google/)<credits>
-  
-Another tech monster. Google. 
+Go directly to its code clicking here: (https://github.com/facebookarchive/huxley)
 
-This company was founded by these two men. They are the teamwork personification. From nothing, they could develop a company together. 
+**Facebook’s Open Source Software for Backend**
 
-Can you imagine that you and your co-founder would be the next Larry Page and Sergei Brin? We bet for that and better. 
+* GraphQL
 
+It is a manipulation and consulting language built in 2012 for the Facebook’s team, but it was not until 2015 that it became on a software open source. 
 
-**4. Matthew Prince, Michelle Zatlyn, and Lee Holloway**
+It is used for consulting and change open source data, and a runtime for fulfilling queries with existing data.
 
-![cloudflare-cofounders](./media/cloudflare-cofounders.png)
+Source: [GraphQL](https://graphql.org/)
 
-<credits>Photo by [Wired](https://www.wired.co.uk/article/server-samurai)<credits>
-  
-They are three co-founders of a business created in Miami: [CloudFlare](https://www.cloudflare.com/es-es/). A company that provides red services, web security, domain servers, and mitigation DDoS. 
+Osquery
 
-Surely you knew this company, but Did you know that comes from Miami? Now, you can be the next in the city. Are you ready? 
+First of all, you need to know that this is a framework. Then it is important to know it is a database that allows you to write SQL-based queries efficiently and easily. 
 
+Source: [Code.fb](https://code.fb.com/security/introducing-osquery/)
 
-**Co-founders** would be your best or worst decision while you are creating your business. Take your time, choose the best candidate and evolve faster than you can imagine. Heaven is the limit. 
+**Facebook Open Source Software** has been on the table from 2012 approximately. So you are invited to use it and take advantage of him. We recommend you this. It is functional and easy technique that you can get better to improve your app, website, software or any tech project. 
+
 
