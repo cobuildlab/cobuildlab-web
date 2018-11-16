@@ -2,7 +2,7 @@
 title: "WhatsApp Backups Database will be erased this Monday!"
 date: "2018-11-16T16:24:04.000Z"
 template: blog
-tags: Education
+tags: News
 image: "./media/whatsapp-database.jpg"
 ---
 
