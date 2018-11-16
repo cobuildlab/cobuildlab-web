@@ -33,7 +33,7 @@ the comparison of prices of products between the platforms Amazon and Ebay. Seve
 account management (login, registration, password recovery), management for product searches through the mentioned platforms, plan and
 payment management (creation, edition, elimination) and credit card management through the stripe payment platform.
 
-Ezonseller connect entrepreneurs with business opportunities. The ideal platform to make your business grow.
+<block-quote>Ezonseller connect entrepreneurs with business opportunities. The ideal platform to make your business grow.</block-quote>
 
 ## How everything started:
 
