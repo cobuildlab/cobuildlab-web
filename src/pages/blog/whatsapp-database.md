@@ -36,7 +36,7 @@ It means that to move data, for example, when you change your smartphone, it wil
 
 First of all, making the backup on Google Drive.
 
-*For Android:* 
+**For Android:** 
 
 Let’s tap on menu bottom, settings, chats, Backups. Choose Google Drive as memory source, how often do you want a backup, even you can program this action to be executed only when you are connected for wifi.
 
@@ -44,9 +44,9 @@ Let’s tap on menu bottom, settings, chats, Backups. Choose Google Drive as mem
 
 ![whatsapp-backup-android](./media/whatsapp-backup-android-2.png)
 
-Source: [fonepaw](https://www.fonepaw.es/tutorial/copia-de-seguridad-whatsapp-iphone.html)
+Source:[fonepaw](https://www.fonepaw.es/tutorial/copia-de-seguridad-whatsapp-iphone.html)
 
-*For iOS* 
+**For iOS** 
 
 If you have an iPhone, we mean, iOS system, you only have to tap on settings, select the option “chats”, and click on “chat backup”. Immediately you will see some options, but you have to select “back up now” in case you want to save it in the cloud. But you have other options to keep in safe your database there. It is the next option called “auto backup” to make it local. 
 
@@ -55,6 +55,7 @@ In the last option, you can select how often you can do it.
 But remember,   will erase everything that’s not on the cloud. It is better to be sure.
 
 ![whatsapp-backup-iphone](./media/whatsapp-backup-iphone.png)
+
 Source: [fonepaw](https://www.fonepaw.es/tutorial/copia-de-seguridad-whatsapp-iphone.html)
 
 Another option to keep safe your data from WhatsApp it is making a local copy in file format. 
