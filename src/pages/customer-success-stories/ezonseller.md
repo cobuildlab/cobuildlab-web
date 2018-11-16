@@ -2,7 +2,7 @@
 title: "Ezonseller"
 date: "2018-16-11T17:48:35.000Z"
 template: story
-image: ""
+image: "./media/ezonseller-1.png"
 ---
 
 <title-2 align="centered">Ezonseller</title-2>
