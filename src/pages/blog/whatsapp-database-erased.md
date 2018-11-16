@@ -9,7 +9,7 @@ image: "./media/whatsapp-database.jpg"
 
 Have you made your WhatsApp backup? If not, It is time to do it. The reason is simple; WhatsApp database is going to turn it off.
 
-![whatsapp](./media/whatsApp.mp4)
+![whatsapp](./media/whatsapp.gif)
 
 At least those you didn’t save in Google Drive. So Don’t fear.
 
