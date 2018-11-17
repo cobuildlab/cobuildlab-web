@@ -46,7 +46,7 @@ We built a version 1, using the technologies available back them.
 
 Over the years Steve and I stay in contact regarding this project, and early in 2018, we have ready to create version 2.
 
-<carousel folder='media'>
+<carousel folder='customer-success-stories'>
 ./media/ezonseller-1.png
 ./media/ezonseller-2.png
 ./media/ezonseller-3.png
