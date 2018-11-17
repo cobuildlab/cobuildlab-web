@@ -5,6 +5,8 @@ template: story
 image: "./media/ezonseller-1.png"
 ---
 
+![Cesar Lang](./media/ezonseller-logo.png)
+
 <title-2 align="centered">Ezonseller</title-2>
 
 **Ezonseller** uses a simple principle that has been the basis of a profitable business for thousands of years - buy at a price and sell
@@ -44,6 +46,11 @@ We built a version 1, using the technologies available back them.
 
 Over the years Steve and I stay in contact regarding this project, and early in 2018, we have ready to create version 2.
 
+<carousel folder='customer-success-stories'>
+./media/ezonseller-1.png
+./media/ezonseller-2.png
+./media/ezonseller-3.png
+</carousel>
 
 **Contact Person:** Steve Rogers @ezonsellers
 
