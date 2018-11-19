@@ -29,7 +29,7 @@ we really do not know what it means, how those things work and what it does with
 
 **A cookie is a file that is downloaded to your browser when you open a web page and click “accept” or “ok” to collect some details about
 your connection, location, language, email, passwords, phone number or address, interests, among other data that you have entered that
-site.**
+site.** 
 
 Many pages require us to accept these cookies to continue browsing, but it is your decision to give them access to your information. All
 this process occurs without you being able to see it; it is digital totally. **Many sites have their own cookies that were created
