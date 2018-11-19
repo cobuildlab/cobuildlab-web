@@ -23,8 +23,8 @@ information or a breach of data security.
 
 <title-2>But, how do the companies capture our data?</title-2>
 
-Is has happened to you that when you access to a web page an announcement appears with a message that says “We use own cookies to improve
-our services and. If you continue to browse this page, we believe that acceptance for use under the terms…”. We all click on accept, but
+Is has happened to you that when you access to a web page an announcement appears with a message that says <block-quote>“We use own cookies to improve
+our services and. If you continue to browse this page, we believe that acceptance for use under the terms…”</block-quote>. We all click on accept, but
 we really do not know what it means, how those things work and what it does with that information that collects.
 
 **A cookie is a file that is downloaded to your browser when you open a web page and click “accept” or “ok” to collect some details about
@@ -70,7 +70,7 @@ provider Internet or your location. It is not 100% anonymous either.
 However, there are some actions you can take to remove or block cookies and the information they take. In fact, **it is advisable that you
 erase the record of your browser every few days to clean that data, on your pc, mobile phone, table, and other devices.**
 
-Google gives us some steps to erase the cookies and also the cache. Open your browser, click on Settings, then go to Privacy and Security
+Google gives us some [steps to erase the cookies and also the cache](https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=es). Open your browser, click on Settings, then go to Privacy and Security
 and click on Content Settings. Click on Cookies and delete everything.
 
 Also, **you have the option to block third-party cookies and allow the own cookies on a web page, or definitely block them all**, but
