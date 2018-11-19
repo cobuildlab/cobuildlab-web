@@ -3,7 +3,7 @@ title: "We are unprotected on the Internet?"
 date: "2018-11-19T16:24:04.000Z"
 template: blog
 tags: news
-image: "./media/idea-acceleration.jpg"
+image: "./media/cookies_1.jpg"
 ---
 
 A few months ago, we all heard about the legal battle that Mark Zuckerberg faced with European Union when Facebook was questioned for its
@@ -41,6 +41,8 @@ the name of the company that manages the diary, but in addition they deliver cer
 AdSense and DoubleClick services because they help them to understand how visitors engage with their website. Also, they have behavioral
 remarketing services from AppNexus, Quancast, Rubicon and APS.
 
+![Cookies](./media/cookies_2.jpg)
+
 There are many other pages that share your information with Facebook, Twitter, Instagram and YouTube, such as Banco Sabadell Miami, Air
 Margarita Ville Miami, El Nuevo Herald, the management consulting Llorente & Cuenca, Dow Jones Business & Financial, just for mention
 some. For that reason is that social media platforms know so much about you.
@@ -64,6 +66,8 @@ to share some of your information with third-party companies.
 In addition, Google Chrome activated some years ago an unknown mode to browse the Internet that does not save information about the pages
 that we visit, which means that it will not download files in your computer or cookies but still share some details, such as your
 provider Internet or your location. It is not 100% anonymous either.
+
+![Cookies](./media/cookies_3.jpg)
 
 <title-3>Control cookies</title-3>
 
