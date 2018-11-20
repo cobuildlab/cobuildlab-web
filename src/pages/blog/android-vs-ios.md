@@ -3,7 +3,7 @@ title: "Development for Android First vs iOS First: which is more convenient for
 date: "2018-11-20T16:24:04.000Z"
 template: blog
 tags: Education
-image: "./media/innovation.jpg"
+image: "./media/android-vs-ios.png"
 ---
 
 
