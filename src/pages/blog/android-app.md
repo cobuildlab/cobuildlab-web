@@ -34,9 +34,9 @@ This OS support apps that they created and also from others. They found a store 
 
 We think the most important thing to develop nicely an Android App it’s first to select a technology and programming language. For this reason, we will tell you some options you have when it is developing one. 
 
-* Native, hybrid or Cross-platform Apps
+* **Native App**
 
-An **App is native** when it has developed specifically for an OS taking its native programming language, framework, and technologies. 
+An App is native when it has developed specifically for an OS taking its native programming language, framework, and technologies. 
 
 For example, if we select Android how our OS, the native app need to be Java, Kotlin or C++. 
 
@@ -46,13 +46,17 @@ Native apps are amazing, but you have to know it: they are more expensive in res
 
 Let’s go back to the previous example. You achieve an app for Android, you get enough success and you decide to make a version for iOS. In this case, you will have to create it using Swift or Objective C. But remember, your app is going to have a perfect performance in each platform. 
 
-On the other hand, **hybrid apps** are a combination of technologies like HTML, Javascript, CSS, and other technologies for the web. They are not web apps, they are mobile, and they can be used in all platforms you choose because they can adapt it to every platform. 
+* **Hybrid App** 
+
+On the other hand, hybrid apps are a combination of technologies like HTML, Javascript, CSS, and other technologies for the web. They are not web apps, they are mobile, and they can be used in all platforms you choose because they can adapt it to every platform. 
 
 Most of the tools for creating hybrid apps, use something called a WebView, that is basically an embedded browser that looks like an App, where the application has access to some of the functionalities of the underlying OS.
 
 It is a fast and efficient way to build an App for both systems, a good example of this technologies, and probably the most popular is the [Ionic Framework](https://ionicframework.com/).
 
-In **Cross-Platform Apps**, we will find tools like React Native, Xamarin, and Native Script. In this kind of apps you use the same language to create one app version, we mean, iOS and Android version, but the difference with the last it is you don’t need a web view, neither HTML or CSS.
+* **Cross-platform Apps**
+
+In Cross-Platform Apps, we will find tools like React Native, Xamarin, and Native Script. In this kind of apps you use the same language to create one app version, we mean, iOS and Android version, but the difference with the last it is you don’t need a web view, neither HTML or CSS.
 
 Taking again our example, you can reuse the code for Android to create an iOS’s version of your App, but you won’t use a web view because it is on a native container and it uses native tools, but they also work for other platforms. So, this kind of app offers you the same performance of a native app but is less expensive thanks to the code reused.
 
