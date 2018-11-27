@@ -92,4 +92,9 @@ You can make many hypotheses of your business idea as you want, but here, we wil
 <title-3>Let’s see an example</title-3>
 ![VALUE-HYPOTHESIS-AND-GROWTH-HYPOTHESIS]( ./media/example-two.png)
 [Source](https://youexec.com/book-summaries/hjy7654kl/the-startup-way-by-eric-ries)
+
+<title-3>Another Example</title-3>
+
+<youtube-video id="QaoVWtLX038"></youtube-video>
+
 Now you know: the **value hypothesis and growth hypothesis** are more than necessaries to start your business idea correctly. They are in the first step of the Cobuild’s Process, and they will increase your chances of your company of satisfying customers. So we invite you to do it now. If you need assistance we are here to help you. 
