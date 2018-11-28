@@ -95,7 +95,6 @@ You can make many hypotheses of your business idea as you want, but here, we wil
 * Which is my expectative in some years?
 * Which resources will I need in the future?
 * Which I think will be the conversion percent?
- 
 3. Answer these questions an order the list depending on your priorities.
 4. Separate the answer on things you can know and make now from the things that are in the future. In that way, you will get the growth and the value hypotheses.
 5. Write them and probe them using, test, interviews, surveys, and other resources.
