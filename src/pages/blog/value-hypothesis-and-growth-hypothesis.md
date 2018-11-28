@@ -71,30 +71,29 @@ You can make many hypotheses of your business idea as you want, but here, we wil
 
 1. First, writing the  idea
 2. Make the next questions:
-* Who is the client?
-* What problems he really has?
-* How many potential clients like him are around?
-* What can I do to convert them?
-* Can they pay for my service or product?
-* How much they are willing to pay?
-* Where are they?
-* How I can access them?
-* How to attract them?
-* How my product will be known?
-* Which characteristics of my product are values for them?
-* Have they enough economical resources?
-* What are they looking for?
-* What do I need to solve the problem?
-* Which resources are involved?
-* Which is my expectative in some years?
-* Which resources will I need in the future?
-* Which I think will be the conversion percent?
- 
-3. Answer these questions an order the list depending on your priorities.
-4. Separate the answer on things you can know and make now from the things that are in the future. In that way, you will get the growth and the value hypotheses.
-5. Write them and probe them using, test, interviews, surveys, and other resources.
-6. Get a conclusion
-7. Improve your idea.
+3. Who is the client?
+4. What problems he really has?
+5. How many potential clients like him are around?
+6. What can I do to convert them?
+7. Can they pay for my service or product?
+8. How much they are willing to pay?
+9. Where are they?
+10. How I can access them?
+11. How to attract them?
+12. How my product will be known?
+13. Which characteristics of my product are values for them?
+14. Have they enough economical resources?
+15. What are they looking for?
+16. What do I need to solve the problem?
+17. Which resources are involved?
+18. Which is my expectative in some years?
+19. Which resources will I need in the future?
+20. Which I think will be the conversion percent?
+21. Answer these questions an order the list depending on your priorities.
+22. Separate the answer on things you can know and make now from the things that are in the future. In that way, you will get the growth and the value hypotheses.
+23. Write them and probe them using, test, interviews, surveys, and other resources.
+24. Get a conclusion
+25. Improve your idea.
 
 <title-3>Let’s see an example</title-3>
 ![VALUE-HYPOTHESIS-AND-GROWTH-HYPOTHESIS]( ./media/example-two.png)
