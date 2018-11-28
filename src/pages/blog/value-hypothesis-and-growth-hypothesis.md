@@ -71,24 +71,24 @@ You can make many hypotheses of your business idea as you want, but here, we wil
 
 1. First, writing the  idea
 2. Make the next questions:
--       Who is the client?
--       What problems he really has?
--       How many potential clients like him are around?
--       What can I do to convert them?
--       Can they pay for my service or product?
--       How much they are willing to pay?
--       Where are they?
--       How I can access them?
--       How to attract them?
--       How my product will be known?
--       Which characteristics of my product are values for them?
--       Have they enough economical resources?
--       What are they looking for?
--       What do I need to solve the problem?
--       Which resources are involved?
--       Which is my expectative in some years?
--       Which resources will I need in the future?
--       Which I think will be the conversion percent?
+* Who is the client?
+* What problems he really has?
+* How many potential clients like him are around?
+* What can I do to convert them?
+* Can they pay for my service or product?
+* How much they are willing to pay?
+* Where are they?
+* How I can access them?
+* How to attract them?
+* How my product will be known?
+* Which characteristics of my product are values for them?
+* Have they enough economical resources?
+* What are they looking for?
+* What do I need to solve the problem?
+* Which resources are involved?
+* Which is my expectative in some years?
+* Which resources will I need in the future?
+* Which I think will be the conversion percent?
  
 3. Answer these questions an order the list depending on your priorities.
 4. Separate the answer on things you can know and make now from the things that are in the future. In that way, you will get the growth and the value hypotheses.
