@@ -23,11 +23,13 @@ People tend to do this for everything, but when it is related to businesses we m
 * how we will increase our leads, 
 * the resources that I need, etc.
 
+
 All of these are hypotheses because we don’t have a way to be sure that they are correct, but it is necessary to think on them and keeping them in mind for many reasons before starting, to evaluate the market and to think how they can change with our product or service. 
 
 <title-3>Value Hypothesis:</title-3>
 
 A value hypothesis proposes an assumption on how a product is valuable to potential customers. Even though your “potential customers” could be an assumption as well.
+
 
 **A value hypothesis** is more on the market now. It is a hypothesis that contains the exact value you would give to potential clients. In this point you have to think how to offer something really valuable that solves client’s problems and desires, and also, they can use and buy.
 
@@ -45,6 +47,7 @@ Examples:
 
 A **growth hypothesis** is a supposition that looks like a plan about how our business will grow or evolve in a long future. This hypothesis makes the business scalable and sustainable through time.
 
+
 This kind of hypothesis allows detecting if the business we want to start it is valid and if you will have enough amount of clients converted to support the cost’s structure, even if it can cover the evolution of your processes or production.
 
 In the software world, usually, this hypothesis is used to explain how the system, app or platform it’s gonna be discovered by new users. 
@@ -55,18 +58,21 @@ In that way, you can **validate** at the beginning if it is sustainable and viab
 
 How we said some posts ago, in [part 1 of Cobuild’s Process](https://cobuildlab.com/blog/cobuild-process-part-1/) we have to validate the idea because we are getting it better, and this means that we work on that until making it more likely to succeed.
 
+
 The complete process of validation will be surrounded by hypotheses: Problem, Hypothesis (all we know of the problem they have), Product hypothesis (all we will do to solve it), Client Hypothesis (Who is the client), Solution Hypothesis, Value Hypothesis, Grow Hypothesis, etc so the purpose of this stage is to prove them to a point that a least we achieve certainty that they are not completely wrong.
 
 It doesn’t matter if we want to validate hypotheses on the future (growth hypothesis) or now (value hypothesis) the most important thing it is that you finally be confident that your idea is the solution to desires and necessities of customers.
 
 So, growth and value hypothesis are too much related with the Cobuild’s process in the first phase of validation. And as we said, this is the most important step before starting a business.
 
-A good and proven way to test a hypothesis is to use the Build-Measure-Learn feedback loop, proposed by [the Lean Startup](http://theleanstartup.com/principles).  Here the goal is to design experiments and create small tests to apply to potential customers, to acquire results, measure, and learn from them to achieve **Validated Learning**
+A good and proven way to test a hypothesis is to use the Build-Measure-Learn feedback loop, proposed by [the Lean Startup]( http://theleanstartup.com/principles).  Here the goal is to design experiments and create small tests to apply to potential customers, to acquire results, measure, and learn from them to achieve **Validated Learning**
 
 ![VALUE-HYPOTHESIS-AND-GROWTH-HYPOTHESIS]( ./media/example-one.png)
-Source: [Youexec](https://youexec.com/book-summaries/hjy7654kl/the-startup-way-by-eric-ries)
+
+[Source](https://youexec.com/book-summaries/hjy7654kl/the-startup-way-by-eric-ries)
 
 <title-2>Doing a value hypothesis and a growth hypothesis</title-2>
+
 You can make many hypotheses of your business idea as you want, but here, we will show you a bit of advice to do it:
 
 1. First, writing the  idea
@@ -97,7 +103,14 @@ You can make many hypotheses of your business idea as you want, but here, we wil
 7. Improve your idea.
 
 <title-3>Let’s see an example</title-3>
+
 ![VALUE-HYPOTHESIS-AND-GROWTH-HYPOTHESIS]( ./media/example-two.png)
-Source:[Youexec](https://youexec.com/book-summaries/hjy7654kl/the-startup-way-by-eric-ries)
+
+[Source](https://youexec.com/book-summaries/hjy7654kl/the-startup-way-by-eric-ries)
+
+
+<title-3>Another Example</title-3>
+
+<youtube-video id="QaoVWtLX038"></youtube-video>
 
 Now you know: the **value hypothesis and growth hypothesis** are more than necessaries to start your business idea correctly. They are in the first step of the Cobuild’s Process, and they will increase your chances of your company of satisfying customers. So we invite you to do it now. If you need assistance we are here to help you. 

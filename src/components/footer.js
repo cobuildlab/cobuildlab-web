@@ -164,7 +164,7 @@ class MyFooter extends React.Component {
                   >
                     <a
                       className="icon-linkedin"
-                      href="https://www.linkedin.com/in/cobuildlab"
+                      href="https://www.linkedin.com/company/cobuildlab"
                       target="_blank"
                     >
                       <Icon size="24" icon={linkedinSquare}/>
