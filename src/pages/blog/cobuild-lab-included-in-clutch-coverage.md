@@ -9,7 +9,7 @@ image: "./media/android-app.jpg"
 ![Clutch](./media/clutch_1.png)
 
 Cobuild Lab Inc. was recently included in ongoing coverage of leading software developers throughout the globe. The recognition comes from
-Clutch, a B2B ratings and reviews platform for businesses, with the mission to help buyers of services make the most informed decision
+Clutch, a B2B ratings and reviews platform for businesses, with the mission to help buyers of services make the most [informed decision](https://www.thedrum.com/news/2017/03/27/online-reviews-impact-purchasing-decisions-over-93-consumers-report-suggests)
 when selecting a service provider. Software development is one of Clutch’s strongest and most competitive segments that they cover, making
 the team at Cobuild Lab very proud to be included amongst such a distinguished crowd.
 
