@@ -2,8 +2,8 @@
 title: "Cobuild Lab Included in Clutch Coverage of Leading Product Design & Software Developers"
 date: "2018-11-29T16:24:04.000Z"
 template: blog
-tags: Education
-image: "./media/android-app.jpg"
+tags: News
+image: "./media/clutch_inicio.jpg"
 ---
 
 ![Clutch](./media/clutch_1.png)
