@@ -6,7 +6,6 @@ tags: News
 image: "./media/clutch_inicio.jpg"
 ---
 
-![Clutch](./media/clutch_1.png)
 
 Cobuild Lab Inc. was recently included in ongoing coverage of leading software developers throughout the globe. The recognition comes from
 Clutch, a B2B ratings and reviews platform for businesses, with the mission to help buyers of services make the most [informed decision](https://www.thedrum.com/news/2017/03/27/online-reviews-impact-purchasing-decisions-over-93-consumers-report-suggests)
@@ -31,3 +30,5 @@ Our first review on Clutch also qualified our team to be featured on their siste
 We’d like to thank our friends at Clutch for including us in their ongoing efforts to identify to the top firms in the development &
 design industries. We’re motivated to make sure we continue to develop our presence on both Clutch and The Manifest until we rise to the
 top.
+
+![Clutch](./media/clutch_1.png)
