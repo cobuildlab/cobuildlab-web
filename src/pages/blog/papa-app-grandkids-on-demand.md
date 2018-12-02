@@ -23,7 +23,7 @@ a business called Papa, which connects students with seniors for domestic or dri
 **Grandkids on-Demand**.
 
 ![Andrew Parker](./media/papa_2.png)
-<credits>Photo by: Join Papa</credits>
+<credits>Photo by [Join Papa]https://www.joinpapa.com/)</credits>
 
 Papa's mission is to support the elderly and their family. They have a clear objective that focuses on curing loneliness in the elderly.
 They are also expanding their business model by working with partners, including senior facilities, to offer Papa Pal's services to their
@@ -48,7 +48,7 @@ The service is currently available only in Florida, but Parker plans to expand t
 beneficiaries will be able to use it at no cost.
 
 ![Andrew Parker](./media/papa_3.png)
-<credits>Photo by @Join_papa</credits>
+<credits>Photo by [@join_papa](https://twitter.com/join_papa)</credits>
 
 <block-quote>“Humana Inc. has partnered with a startup called Papa Inc. to provide "grandkids-on-demand" for qualifying members of its
 Medicare Advantage plans.”</block-quote>
