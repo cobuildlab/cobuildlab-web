@@ -6,7 +6,7 @@ tags: Miami
 image: "./media/papa_main.png"
 ---
 
-**Papa Pals** are incredible providers of a social experience for seniors, they provide help with **transportation, daily tasks, run errands,
+[Papa Pals](https://www.joinpapa.com/become-papa-pal/) are incredible providers of a social experience for seniors, they provide help with **transportation, daily tasks, run errands,
 teach technology**, and provide an amazing day for them. The goal is to provide seniors something to look forward to.
 **Andrew Parker** graduated from Florida State University with a Bachelor of Science, Finance. He worked in different companies as an account
 manager and executive and was vice president of health systems in the telehealth company MDLIVE for five years before launching Papa.
