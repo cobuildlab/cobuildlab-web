@@ -12,7 +12,7 @@ teach technology**, and provide an amazing day for them. The goal is to provide 
 manager and executive and was vice president of health systems in the telehealth company MDLIVE for five years before launching Papa.
 
 ![Andrew Parker](./media/papa_1.png)
-<credits>Photo by miami herald</credits>
+<credits>Photo by [Miami Herald](https://www.miamiherald.com/)</credits>
 
 Parker lived close to his grandfather, who had early-onset dementia and often went to help him with his errands. As his workload grew,
 Parker posted on Facebook as an assistant. A woman named Andrea, whom her family interviewed and did a background check, began helping her
