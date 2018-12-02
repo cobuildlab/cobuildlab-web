@@ -23,7 +23,7 @@ a business called Papa, which connects students with seniors for domestic or dri
 **Grandkids on-Demand**.
 
 ![Andrew Parker](./media/papa_2.png)
-<credits>Photo by [Join Papa]https://www.joinpapa.com/)</credits>
+<credits>Photo by [Join Papa](https://www.joinpapa.com/)</credits>
 
 Papa's mission is to support the elderly and their family. They have a clear objective that focuses on curing loneliness in the elderly.
 They are also expanding their business model by working with partners, including senior facilities, to offer Papa Pal's services to their
