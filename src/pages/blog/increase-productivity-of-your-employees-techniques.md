@@ -32,4 +32,17 @@ Pilates is more dynamic than yoga; it uses the same posture but incorporates exe
 Liberty also organized and identified several places in its building to make a circuit of training, more complex and active that pilates and yoga, but equally beneficial to its workers.
 
 ![Productivity](./media/productivity_2.jpg)
+
 <credits>Photo on [Why not pilates](https://whynotpilates.net/)</credits>
+
+<title-2>3. Meditation</title-2>
+
+More than 160 institutes around the world, including universities like Harvard, UCLA, and Stanford, have shown the meditation can help to find a greater sense of serenity. Hence, **people who practice this relaxation technique improve the decision making, planning, creativity and health at higher levels.**
+
+Google, Reebok, Medtronic, Bridgewater, General Mills, BMW, and Coca-Cola are not the only ones that encourage the practice of concentration. The 2.700 employees of Oprah Winfrey communications consortium and important figures such as Juan Manuel Santos (former president of Colombia), Dilma Rousseff (former president of Brazil) and singer Paul McCartney enrich their work with meditation.
+
+**Offer your workers a comfortable and quiet space to meditate 20 minutes in the morning and afternoon and that will guarantee a decrease in the level of stres** and conflicts between employees.
+
+<title-2>4. Powernap</title-2>
+
+
