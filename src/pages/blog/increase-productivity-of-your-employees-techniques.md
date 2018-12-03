@@ -32,3 +32,4 @@ Pilates is more dynamic than yoga; it uses the same posture but incorporates exe
 Liberty also organized and identified several places in its building to make a circuit of training, more complex and active that pilates and yoga, but equally beneficial to its workers.
 
 ![Productivity](./media/productivity_2.jpg)
+<credits>Photo on [Why not pilates](https://whynotpilates.net/)</credits>
