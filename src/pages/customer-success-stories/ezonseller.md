@@ -2,7 +2,7 @@
 title: "Ezonseller"
 date: "2018-11-19T12:40:35.000Z"
 template: story
-image: "./media/ezonseller-1.png"
+image: "./media/ezonseller_1.jpg"
 ---
 
 ![Cesar Lang](./media/ezonseller-logo.png)
@@ -47,9 +47,15 @@ We built a version 1, using the technologies available back them.
 Over the years Steve and I stay in contact regarding this project, and early in 2018, we have ready to create version 2.
 
 <carousel folder='customer-success-stories'>
-./media/ezonseller-1.png
-./media/ezonseller-2.png
-./media/ezonseller-3.png
+./media/ezonseller_2.jpg
+./media/ezonseller_3.jpg
+./media/ezonseller_4.jpg
+./media/ezonseller_5.jpg
+./media/ezonseller_6.jpg
+./media/ezonseller_7.jpg
+./media/ezonseller_8.jpg
+./media/ezonseller_9.jpg
+./media/ezonseller_10.jpg
 </carousel>
 
 **Contact Person:** Steve Rogers @ezonsellers
