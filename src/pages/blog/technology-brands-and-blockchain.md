@@ -29,7 +29,7 @@ It works like magic. And that explains the success it has had. For that reason, 
 
 <title-2>The list of big Brands and Blockchain</title2>
 
-* Google
+<title-3>* Google</title3>
 
 This technology’s monster from 2012 has been interested in blockchain business. That’s the reason they associated with Digital Asset and BlackApp to work on different technologies in the area. Actually, they are the second company in the world with a higher investment in the market. Say it by [CBI Insights](https://www.cbinsights.com/research/report/blockchain-trends-opportunities/). 
 
@@ -48,7 +48,7 @@ Also, they offer ledger solutions to people who earn, buy, sell, and use commonl
 
 Google’s goal is to provide important and valuable information about blockchain to developers’ community in the world across the Google Cloud Service. In that way, they could be able to develop interesting and effective technologies.
 
-* Amazon
+<title-3>* Amazon</title3>
 
 Consesys, Tradewind, R3, and Luxoft are some of the allies of Amazon Web Services. 
 
@@ -59,7 +59,7 @@ Source: [Amazon](https://aws.amazon.com/es/partners/blockchain/#)
 
 In this way, they explain its services on the Blockchain’s market. And also, they offer with this solutions framework: flexibility, one-click deployment, and the best, a global reach. 
 
-* Walmart
+<title-3>* Walmart</title3>
 
 Walmart was one of the first big brands that use and support Blockchain in the world. 
 They think that this technology helps them increase transparency of transactions making it faster too. In that way, the food they need to transport can be followed it during the path. They use the IBM blockchain for this. 
@@ -76,7 +76,7 @@ We share this video that also explains it in a good way.
 
 <youtube-video id="SV0KXBxSoio"></youtube-video>
 
-* IBM
+<title-3>* IBM</title3>
 
 IBM is a company that provides Blockchain services and solutions to many and different companies in the world. 
 
@@ -85,7 +85,7 @@ They use this technology applied to many processes into an organization, like tr
 
 They also work on the cloud as other Blockchain’s services.
 
-* Sirin Labs
+<title-3>* Sirin Labs</title3>
 
 Sirin Labs is a company that developed officially one of the first crypto phone which is called Finney. 
 
@@ -109,14 +109,15 @@ Source: [Omicono](https://omicrono.elespanol.com/2018/04/primer-telefono-con-blo
 
 But the truth is that none of these products are on the market now, we only have promises and the information that the brand’s agent give us or people hung up on the internet.
 
-* Nasdaq
+<title-3>* Nasdaq</title3>
 
 This is an index market which used this technology for protecting its operation, and also they work with cryptocurrencies, the special product made with the blockchain technology. 
 
 Blockchain has been so good for this company that they were able to predict the performance and value of Bitcoin in some years.
 
 ![nasdaq-blockchain](./media/nasdaq-blockchain.jpg)
-Source: [Reality Shares](https://twitter.com/realityshares?lang=en)
+Source: [Reality Shares](https://twitter.com/realityshares?lang=en)  
+
 
 **What will come for the future?** 
 
