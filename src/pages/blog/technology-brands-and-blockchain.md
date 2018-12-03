@@ -116,7 +116,7 @@ This is an index market which used this technology for protecting its operation,
 Blockchain has been so good for this company that they were able to predict the performance and value of Bitcoin in some years.
 
 ![nasdaq-blockchain](./media/nasdaq-blockchain.jpg)
-Source: [Reality Shares](https://twitter.com/realityshares?lang=en)  
+Source: [Reality Shares](https://twitter.com/realityshares?lang=en)    
 
 
 **What will come for the future?** 
