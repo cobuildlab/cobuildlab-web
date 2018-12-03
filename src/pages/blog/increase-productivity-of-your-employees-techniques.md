@@ -45,4 +45,19 @@ Google, Reebok, Medtronic, Bridgewater, General Mills, BMW, and Coca-Cola are no
 
 <title-2>4. Powernap</title-2>
 
+![Productivity](./media/productivity_3.jpg)
+
+<credits>Photo on [Taringa](https://www.taringa.net/)</credits>
+
+In the United States, **Google, Deloitte, and Nike were the pioneers in introducing the “energy pods”**, **or nap chairs**, so that their employees can take a short nap in the places where they are located when they need it.
+
+It is normal that between 13.00 and 15.00 hours the body experiment a strong drowsiness and needs a little moment to take a break and later continue the workday. “In our studies, we verified that Eastern countries such as China and Japan were pioneers in applying naps in the middle of the workday, as a way to increase productivity”, says Daniel Leynaud, manager of Drom – Cronobiología.
+
+In Argentina, the radios Metro, Blue, Rock & Pop (all from the same consortium) have incorporated this practice into their work routine. In addition, Drom-Cronobiologia developed in 2009 a cabin prototype to induce a light sleep. This experimental project was baptized as “siestario” (in the Spanish language) and is being tested in several companies in that country, such as Google Argentina.  
+
+**These naps last for at least 30 minutes, which will guarantee that does not fall into a deep sleep and that the employee integrates to its work quickly**. Also, this technique compensates for a possible nighttime sleep debt.  
+ 
+There are many other options to offer the employees additional benefits to the salary, such as massages, gym, dance therapy, tai chi, aromatherapy, sports games (like a table tennis, basketball, football) or even cognitive therapy.
+
+It is obvious that a good remuneration is the main reason for the worker to be happy, but if you add any of these techniques to your staff, the results in your company will be palpable in terms of loyalty and productivity.
 
