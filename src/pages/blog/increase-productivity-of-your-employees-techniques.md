@@ -30,3 +30,5 @@ Not only technology companies are recognized for including sports activities for
 Pilates is more dynamic than yoga; it uses the same posture but incorporates exercises to tone different parts of the body. **This option is ideal for these employees who like to do something more moving than the gentle movements, flexibility, and stretching of yoga.**
 
 Liberty also organized and identified several places in its building to make a circuit of training, more complex and active that pilates and yoga, but equally beneficial to its workers.
+
+![Productivity](./media/productivity_2.jpg)
