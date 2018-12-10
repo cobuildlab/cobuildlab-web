@@ -85,7 +85,7 @@ These testing methods were chosen for us because we focus on early products, pro
 
 In a few words, it is required to do the minimum to launch the first version of the software for small audiences and probe it. Once it has been tested it, we change and improve what is necessary to test again until is ready.
 
-<title-4>Sosftware tetsing example</title-4>
+<title-4>Sosftware testing example</title-4>
 
 Suppose that we are working on a project and we need to do the software testing. 
 
