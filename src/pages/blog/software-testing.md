@@ -8,7 +8,7 @@ image: "./media/software-testing.jpg"
 
 
 
-Testing is a phase in the software development process. But how necessary is to guarantee good results? That’s the main reason for this article. And also give you facts, examples, methods, and information about **software testing** for you can use it when it has been necessary. 
+Testing is a phase in the software development process. But how necessary is to guarantee good results? That’s the main reason for this article. And also give you facts, examples, methods, and information about **software testing** you could use when it would be necessary. 
 
 <title-2>It´s time to know what is software testing?</title-2>
 
