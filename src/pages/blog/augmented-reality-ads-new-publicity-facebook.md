@@ -41,7 +41,7 @@ cosmetics virtually.
 
 ![facebook augmented reality](./media/facebookar_2.jpg)
 <credits>Photo by Zedinteractive on [Pixabay](https://pixabay.com/)</credits>
-<title-6 align="centered">You can use Augmented Reality in science or education. Its applications are endless.</title-6>
+<credits">You can use Augmented Reality in science or education. Its applications are endless.</credits>
 
 <title-2>Benefits of using AR ads on Facebook</title-2>
 
@@ -56,7 +56,7 @@ Undoubtedly, Facebook ads and Augmented Reality will revolutionize the way that 
 
 ![facebook augmented reality](./media/facebookar_3.png)
 <credits>Photo on [VRScout](https://vrscout.com/)</credits>
-<title-6 align="centered">CEO Facebook, Mark Zuckerberg, explained for first time this new technology at Facebook Inc's annual F8 developers conference.</title-6>
+<credits>CEO Facebook, Mark Zuckerberg, explained for first time this new technology at Facebook Inc's annual F8 developers conference.</credits>
 
 
 
