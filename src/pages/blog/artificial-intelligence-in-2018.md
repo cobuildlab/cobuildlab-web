@@ -63,8 +63,6 @@ By last, we wouldn’t stop talking about [Boston Dynamic](https://www.bostondyn
 
 We select some of its products to show you how amazing they are. How they say: “Changing your idea of what robots can do.”
 
-<youtube-video id="7xvqQeoA8c"></youtube-video>
-
 <youtube-video id="kgaO45SyaO4"></youtube-video>
 
 <youtube-video id="fRj34o4hN4I"></youtube-video>
