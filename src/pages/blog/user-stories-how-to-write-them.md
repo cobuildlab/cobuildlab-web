@@ -2,7 +2,7 @@
 title: "User Stories: How to write them?"
 date: "2018-02-28T18:04:52.000Z"
 template: blog
-tags: 
+tags: Tools
 image: "./media/userstories.jpg"
 ---
 

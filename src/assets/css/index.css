@@ -371,7 +371,7 @@ hr {
 
 .bg-post {
     width: 100%;
-    height: 160px !important;
+    height: 140px !important;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -428,8 +428,9 @@ hr {
 
 .title-logo-mobile {
     color: #e76c29 !important;
-    font-size: 35px !important;
-    margin-bottom: 0.5rem !important;
+    font-size: 55px !important;
+    margin-top: 0.9rem !important;
+    margin-bottom: 1.5rem !important;
     font-family: 'Lato-Black', sans-serif !important;
 }
 
@@ -476,6 +477,10 @@ hr {
 .subtitle-logo {
     color: #264a60 !important;
     font-size: 65px !important;
+}
+.subtitle-logo-landing {
+    color: #264a60 !important;
+    font-size: 55px !important;
 }
 
 .subtitle-logo-mobile {

@@ -1,5 +1,4 @@
 import React from 'react';
-import Recaptcha from 'react-recaptcha';
 import { Link, navigate } from 'gatsby';
 import { ToastContainer, toast } from 'react-toastify';
 import {
@@ -25,7 +24,7 @@ export default class Contact extends React.Component {
       lastName: '',
       email: '',
       comment: '',
-      isVerified: false,
+      isVerified: true,
       landingName: 'Cobuild Lab'
     };
 
@@ -81,43 +80,20 @@ export default class Contact extends React.Component {
       }
     };
 
-    if (this.state.isVerified) {
-      fetch(url, settings)
-        .then(res => res.json())
-        .then(response => {
-          if (response.statusCode >= 400) {
-            toast.error(response.message, {
-              position: 'bottom-right'
-            });
-          } else {
-            navigate('/thanks-contact');
-          }
-        });
-    } else {
-      toast.error('Please verify you\'re human', {
-        position: 'bottom-right'
+    fetch(url, settings)
+      .then(res => res.json())
+      .then(response => {
+        if (response.statusCode >= 400) {
+          toast.error(response.message, {
+            position: 'bottom-right'
+          });
+        } else {
+          navigate('/thanks-contact');
+        }
       });
-    }
   }
 
-  recaptchaVerify = response => {
-    if (response) {
-      this.setState({
-        isVerified: true
-      });
-    } else {
-      toast.error('Error with the captcha', {
-        position: 'bottom-right'
-      });
-    }
-  };
-
-  onloadCallback = () => {
-  };
-
   render() {
-    const {siteKey} = this.props;
-
     return (
       <section id="contact" className="section bg-section">
         <Container>
@@ -200,13 +176,6 @@ export default class Contact extends React.Component {
                 </Field>
                 <Field isGrouped>
                   <Control>
-                    <Recaptcha
-                      elementID="contactForm"
-                      sitekey={siteKey}
-                      render="explicit"
-                      onloadCallback={this.recaptchaLoad}
-                      verifyCallback={this.recaptchaVerify}
-                    />
                     <br/>
                     <button
                       className="button is-primary is-medium is-rounded"

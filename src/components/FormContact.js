@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, navigate } from 'gatsby';
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import {
   Container,
@@ -100,9 +100,13 @@ class FormContact extends React.Component {
               isSize={{ mobile: 12, desktop: '1/2' }}
             >
               <Content className="content-form">
-                <Title isSize={2} className="title-section" hasTextAlign="left">
+                <Title isSize={2} className="title-section" hasTextAlign="centered">
                   Contact us for a <strong>FREE</strong> consultation!
                 </Title>
+                <Subtitle isSize={6} className="title-section" hasTextAlign="centered">
+                  Call Us to: <strong><a href="tel:+17869913467">(786) 991-3467</a></strong>  or, fill the form and we will get in touch with you.
+                </Subtitle>
+
                 <form
                   onSubmit={e => {
                     this.onSubmit(e, landingName);
@@ -169,6 +173,7 @@ class FormContact extends React.Component {
                       >
                         Submit
                       </button>
+                      <ToastContainer/>
                     </Control>
                   </Field>
                   <Content hasTextAlign="centered">

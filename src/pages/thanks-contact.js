@@ -1,30 +1,42 @@
-import React from 'react'
-import { graphql, Link } from 'gatsby'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import 'react-toastify/dist/ReactToastify.min.css'
-import Layout from '../components/layout'
-import Contact from '../components/Contact'
-import { Container, Title, Column, Columns, Hero, HeroBody } from 'bloomer'
+import React from 'react';
+import { graphql, Link } from 'gatsby';
+import get from 'lodash/get';
+import Helmet from 'react-helmet';
+import 'react-toastify/dist/ReactToastify.min.css';
+import Layout from '../components/layout';
+import Contact from '../components/Contact';
+import { Container, Title, Column, Columns, Hero, HeroBody } from 'bloomer';
+import 'bulma';
+import '../assets/fonts/Lato-Black.ttf';
+import '../assets/fonts/Lato-BlackItalic.ttf';
+import '../assets/fonts/Lato-Bold.ttf';
+import '../assets/fonts/Lato-BoldItalic.ttf';
+import '../assets/fonts/Lato-Hairline.ttf';
+import '../assets/fonts/Lato-HairlineItalic.ttf';
+import '../assets/fonts/Lato-Italic.ttf';
+import '../assets/fonts/Lato-Light.ttf';
+import '../assets/fonts/Lato-LightItalic.ttf';
+import '../assets/fonts/Lato-Regular.ttf';
+
 
 class Index extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       firstName: '',
       lastName: '',
       email: '',
       comment: '',
-      landingName: 'Cobuild Lab',
-    }
+      landingName: 'Cobuild Lab'
+    };
   }
 
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title');
     const siteDescription = get(
       this,
       'props.data.site.siteMetadata.description'
-    )
+    );
 
     return (
       <Layout location={this.props.location}>
@@ -92,14 +104,14 @@ class Index extends React.Component {
         {/*HEADER*/}
 
         {/*Section Where we are? and Write Us! */}
-        <Contact />
+        <Contact/>
         {/*Section Where we are? and Write Us! */}
       </Layout>
-    )
+    );
   }
 }
 
-export default Index
+export default Index;
 
 export const pageQuery = graphql`
   query {
@@ -110,4 +122,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

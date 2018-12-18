@@ -8,7 +8,6 @@ import {
   NavbarBurger,
   NavbarMenu,
   NavbarEnd,
-  Icon,
 } from 'bloomer'
 import '../assets/css/index.css'
 import logo from '../resources/cobuildlab.png'
@@ -28,6 +27,7 @@ class header extends React.Component {
       isActive: !isActive,
     }))
   }
+
   render() {
     return (
       <React.Fragment>
@@ -58,9 +58,9 @@ class header extends React.Component {
                   </Link>
                 </NavbarItem>
                 <NavbarItem>
-                  <a className="link-nav" href="/#process">
+                  <Link className="link-nav" to="/#process">
                     Cobuild Process
-                  </a>
+                  </Link>
                 </NavbarItem>
                 <NavbarItem>
                   <Link className="link-nav" to="/customer-success-stories">
@@ -78,9 +78,9 @@ class header extends React.Component {
                   </Link>
                 </NavbarItem>
                 <NavbarItem>
-                  <a href="/#contact" className="link-nav">
+                  <Link to="/#contact" className="link-nav">
                     Contact Us
-                  </a>
+                  </Link>
                 </NavbarItem>
               </NavbarEnd>
             </NavbarMenu>
@@ -149,4 +149,5 @@ class header extends React.Component {
     )
   }
 }
+
 export default header

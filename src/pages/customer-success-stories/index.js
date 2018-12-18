@@ -1,10 +1,10 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import Img from 'gatsby-image'
-import Layout from '../../components/layout'
-import rehypeReact from 'rehype-react'
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import get from 'lodash/get';
+import Helmet from 'react-helmet';
+import Img from 'gatsby-image';
+import Layout from '../../components/layout';
+import rehypeReact from 'rehype-react';
 import {
   Hero,
   HeroBody,
@@ -21,26 +21,37 @@ import {
   Card,
   CardContent,
   Content,
-  Tag,
-} from 'bloomer'
-import { Icon } from 'react-icons-kit'
+  Tag
+} from 'bloomer';
+import { Icon } from 'react-icons-kit';
+import 'bulma';
+import '../../assets/fonts/Lato-Black.ttf';
+import '../../assets/fonts/Lato-BlackItalic.ttf';
+import '../../assets/fonts/Lato-Bold.ttf';
+import '../../assets/fonts/Lato-BoldItalic.ttf';
+import '../../assets/fonts/Lato-Hairline.ttf';
+import '../../assets/fonts/Lato-HairlineItalic.ttf';
+import '../../assets/fonts/Lato-Italic.ttf';
+import '../../assets/fonts/Lato-Light.ttf';
+import '../../assets/fonts/Lato-LightItalic.ttf';
+import '../../assets/fonts/Lato-Regular.ttf';
 
 class BlogIndex extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
-      isActive: false,
-    }
+      isActive: false
+    };
   }
 
   render() {
-    const siteTitle = 'Customer Success Stories - Miami Labs | Cobuild Lab'
+    const siteTitle = 'Customer Success Stories - Miami Labs | Cobuild Lab';
     const siteDescription = get(
       this,
       'props.data.site.siteMetadata.description'
-    )
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    );
+    const posts = get(this, 'props.data.allMarkdownRemark.edges');
 
     return (
       <Layout>
@@ -66,8 +77,8 @@ class BlogIndex extends React.Component {
                     The laboratories in Miami by Cobuild Lab has allowed creating
                     new and better ideas, born of other ideas.
                   </Subtitle>
-                  <br />
-                  <hr />
+                  <br/>
+                  <hr/>
                 </Column>
               </Columns>
             </Container>
@@ -87,7 +98,7 @@ class BlogIndex extends React.Component {
                           style={{
                             backgroundImage: `url(${
                               node.frontmatter.image.publicURL
-                            })`,
+                              })`
                           }}
                         >
                           <Content className="title-post">
@@ -97,17 +108,17 @@ class BlogIndex extends React.Component {
                       </Card>
                     </Link>
                   </Column>
-                )
+                );
               })}
             </Columns>
           </Container>
         </section>
       </Layout>
-    )
+    );
   }
 }
 
-export default BlogIndex
+export default BlogIndex;
 
 export const pageQuery = graphql`
   query {
@@ -148,4 +159,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

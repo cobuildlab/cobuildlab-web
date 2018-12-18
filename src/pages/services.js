@@ -15,6 +15,17 @@ import {
 } from 'bloomer';
 import { Icon } from 'react-icons-kit';
 import { checkmark } from 'react-icons-kit/icomoon/checkmark';
+import 'bulma';
+import '../assets/fonts/Lato-Black.ttf';
+import '../assets/fonts/Lato-BlackItalic.ttf';
+import '../assets/fonts/Lato-Bold.ttf';
+import '../assets/fonts/Lato-BoldItalic.ttf';
+import '../assets/fonts/Lato-Hairline.ttf';
+import '../assets/fonts/Lato-HairlineItalic.ttf';
+import '../assets/fonts/Lato-Italic.ttf';
+import '../assets/fonts/Lato-Light.ttf';
+import '../assets/fonts/Lato-LightItalic.ttf';
+import '../assets/fonts/Lato-Regular.ttf';
 
 class ServicesIndex extends React.Component {
   render() {

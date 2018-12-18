@@ -1,20 +1,28 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import 'react-toastify/dist/ReactToastify.min.css'
-import LayoutLanding from '../components/layoutLanding'
-import FormContact from '../components/FormContact'
-import { Container, Title, Column, Columns, Hero, HeroBody } from 'bloomer'
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import get from 'lodash/get';
+import Helmet from 'react-helmet';
+import 'react-toastify/dist/ReactToastify.min.css';
+import LayoutLanding from '../components/layoutLanding';
+import FormContact from '../components/FormContact';
+import { Container, Title, Column, Columns, Hero, HeroBody, Subtitle } from 'bloomer';
+import 'bulma';
+import '../assets/fonts/Lato-Black.ttf';
+import '../assets/fonts/Lato-BlackItalic.ttf';
+import '../assets/fonts/Lato-Bold.ttf';
+import '../assets/fonts/Lato-BoldItalic.ttf';
+import '../assets/fonts/Lato-Hairline.ttf';
+import '../assets/fonts/Lato-HairlineItalic.ttf';
+import '../assets/fonts/Lato-Italic.ttf';
+import '../assets/fonts/Lato-Light.ttf';
+import '../assets/fonts/Lato-LightItalic.ttf';
+import '../assets/fonts/Lato-Regular.ttf';
 
 class Index extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const siteDescription = get(
-      this,
-      'props.data.site.siteMetadata.description'
-    )
-    const landingName = 'Software Development'
+    const siteTitle = "Software Development in Miami";
+    const siteDescription = "Let's create amazing Products";
+    const landingName = 'Software Development';
 
     return (
       <LayoutLanding location={this.props.location}>
@@ -31,13 +39,27 @@ class Index extends React.Component {
               <Columns>
                 <Column isSize="1/2" className="space-title">
                   <Title className="title-logo">Cobuild Lab</Title>
-                  <Title className="subtitle-logo">{landingName}</Title>
-                  <a className="button is-primary is-medium is-rounded">
-                    READ MORE
-                  </a>
+                  <Subtitle className="subtitle-logo-landing">{landingName}</Subtitle>
+                  <Subtitle isSize={4}>
+                    <h3>We transform requirements into computer programs. We specialize in building <strong>websites,
+                      ecommerce, web
+                      applications, and mobile applications.</strong></h3>
+                    <br/>
+                    <p>
+                      <strong>
+                        Software development is the process of conceiving, specifying, designing, programming,
+                        documenting, testing, and bug fixing involved in creating and maintaining applications,
+                        frameworks, or other software components.
+                        <br/>
+                        With our streamlined, lean and phased Process we
+                        achieve incredible results. Since day one, our technique is focused on early results and
+                        transparent communication.
+                      </strong>
+                    </p>
+                  </Subtitle>
                 </Column>
                 <Column isSize="1/2">
-                  <FormContact />
+                  <FormContact landingName={landingName}/>
                 </Column>
               </Columns>
             </Container>
@@ -45,24 +67,37 @@ class Index extends React.Component {
             <Container
               isFluid
               className="is-hidden-desktop is-hidden-tablet-only"
+              style={{backgroundColor:"white", padding:"5px"}}
             >
               <Columns>
                 <Column isSize="1/2">
                   <Title className="title-logo-mobile" hasTextAlign="centered">
                     Cobuild Lab
                   </Title>
-                  <Title
-                    className="subtitle-logo-mobile"
-                    hasTextAlign="centered"
-                  >
-                    {landingName}
-                  </Title>
-                  <a className="button is-primary is-small is-rounded">
-                    READ MORE
-                  </a>
+                  <Subtitle className="subtitle-logo-mobile" hasTextAlign="centered">
+                    <strong>
+                      {landingName}
+                    </strong>
+                  </Subtitle>
+                  <Subtitle isSize={4}>
+                    <h3>We transform requirements into computer programs. We specialize in building <strong>websites,
+                      ecommerce, web
+                      applications, and mobile applications.</strong></h3>
+                    <p>
+                      <strong>
+                        Software development is the process of conceiving, specifying, designing, programming,
+                        documenting, testing, and bug fixing involved in creating and maintaining applications,
+                        frameworks, or other software components.
+                        <br/>
+                        With our streamlined, lean and phased Process we
+                        achieve incredible results. Since day one, our technique is focused on early results and
+                        transparent communication.
+                      </strong>
+                    </p>
+                  </Subtitle>
                 </Column>
                 <Column isSize="1/2">
-                  <FormContact landingName={landingName} />
+                  <FormContact landingName={landingName}/>
                 </Column>
               </Columns>
             </Container>
@@ -70,11 +105,11 @@ class Index extends React.Component {
         </Hero>
         {/*HEADER*/}
       </LayoutLanding>
-    )
+    );
   }
 }
 
-export default Index
+export default Index;
 
 export const pageQuery = graphql`
   query {
@@ -85,4 +120,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

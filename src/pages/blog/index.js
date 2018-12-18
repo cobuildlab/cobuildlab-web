@@ -2,7 +2,6 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import Img from 'gatsby-image'
 import Layout from '../../components/layout'
 import defaultImg from '../../resources/default-post.jpg'
 import {
@@ -10,11 +9,9 @@ import {
   HeroBody,
   Container,
   Title,
-  HeroFooter,
   Tabs,
   TabList,
   Tab,
-  TabLink,
   Subtitle,
   Columns,
   Column,
@@ -25,6 +22,17 @@ import {
 } from 'bloomer'
 import { Icon } from 'react-icons-kit'
 import { clockO } from 'react-icons-kit/fa/clockO'
+import 'bulma'
+import '../../assets/fonts/Lato-Black.ttf'
+import '../../assets/fonts/Lato-BlackItalic.ttf'
+import '../../assets/fonts/Lato-Bold.ttf'
+import '../../assets/fonts/Lato-BoldItalic.ttf'
+import '../../assets/fonts/Lato-Hairline.ttf'
+import '../../assets/fonts/Lato-HairlineItalic.ttf'
+import '../../assets/fonts/Lato-Italic.ttf'
+import '../../assets/fonts/Lato-Light.ttf'
+import '../../assets/fonts/Lato-LightItalic.ttf'
+import '../../assets/fonts/Lato-Regular.ttf'
 
 class BlogIndex extends React.Component {
   constructor(props) {
@@ -157,7 +165,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 50
+      limit: 100
       filter: {fileAbsolutePath: {regex: "/(blog)/.*\\.md$/"}}
     ) {
       edges {

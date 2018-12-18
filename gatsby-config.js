@@ -1,4 +1,7 @@
-require('dotenv').config();
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+console.log(process.env)
 
 module.exports = {
   siteMetadata: {
@@ -6,7 +9,7 @@ module.exports = {
     author: '4geeks.co',
     description: 'Software development in Miami, Florida',
     siteUrl: process.env.URL,
-    twitterHandle: '@cobuildlab'
+    twitterHandle: '@cobuildlab',
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -14,16 +17,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
-        name: 'pages'
-      }
-    },
-    {
-      resolve: `gatsby-plugin-recaptcha`,
-      options: {
-        async: false,
-        defer: false,
-        args: `?onload=onloadCallback&render=explicit`
-      }
+        name: 'pages',
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -33,29 +28,29 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 720,
-              linkImagesToOriginal: true
-            }
+              linkImagesToOriginal: true,
+            },
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`
-            }
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
           },
           'gatsby-remark-component',
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants'
-        ]
-      }
+          'gatsby-remark-smartypants',
+        ],
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-105326682-1'
-      }
+        trackingId: 'UA-105326682-1',
+      },
     },
 
     {
@@ -67,8 +62,8 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#e76c29`,
         display: `minimal-ui`,
-        icon: `src/resources/icocobuildlab.png`
-      }
+        icon: `src/resources/icocobuildlab.png`,
+      },
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
@@ -82,8 +77,8 @@ module.exports = {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
         endpoint:
-          'https://4geeks.us5.list-manage.com/subscribe/post?u=05c88e36fa1e947ec0bf94453&amp;id=02c69b216a' // see instructions section below
-      }
+          'https://4geeks.us5.list-manage.com/subscribe/post?u=05c88e36fa1e947ec0bf94453&amp;id=02c69b216a', // see instructions section below
+      },
     },
     `gatsby-remark-copy-linked-files`,
     `gatsby-plugin-sitemap`,
@@ -91,8 +86,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
-        id: 'GTM-PFDRR5V'
-      }
-    }
-  ]
-};
+        id: 'GTM-PFDRR5V',
+      },
+    },
+  ],
+}
