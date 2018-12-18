@@ -111,7 +111,7 @@ At this point, you know what is a video marketing campaign but the most importan
 
 This is the art of telling a story. Stories that have messages and touching emotions. This technique is used to connect with users through images, sounds, texts, and animations that tell a story. In storytelling you use characters and they are involved in a story which keeps the customer attention. That is the POWER of a good story. In that way, you will sell indirectly.
 
-<youtube-video id="N1ltwg2nTK4&list=PL7tol-2iOCrEp2GQB0K1LxjIStnbFPi1f&index=2"></youtube-video>
+<youtube-video id="N1ltwg2nTK4"></youtube-video>
 
 
 *** 360 immersive videos**
