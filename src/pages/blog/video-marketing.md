@@ -79,11 +79,19 @@ In that way, you will see that they made videos for Christmas, for the summer, i
 
 <youtube-video id="Eun0rWKpA5I"></youtube-video>
 
+<br>
+
 <youtube-video id="6W5pqlbh5sQ"></youtube-video>
+
+<br>
 
 <youtube-video id="13r_LUxWPaY"></youtube-video>
 
+<br>
+
 <youtube-video id="F411acOyIzw"></youtube-video>
+
+<br>
 
 <title-2>How to do a video marketing campaign: step by step</title-2>
 
