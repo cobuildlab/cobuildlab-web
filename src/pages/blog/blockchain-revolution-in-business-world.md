@@ -6,12 +6,12 @@ tags: News
 image: "./media/block1.jpg"
 ---
 
-The blockchain is a growing list of records, in the form of an open distributed ledger through which transactions are recorded virtually
+The **blockchain** is a growing list of records, in the form of an open distributed ledger through which transactions are recorded virtually
 and linked together through cryptography. Its ability to hold records in blocks that are linked to each other makes it well-suited for
 recording events, managing records, processing transactions, voting, and tracing assets efficiently and verifiably. 
 Each block of information contains a cryptographic hash of the previous block, transaction data and a timestamp of the recorded
 transactions between two parties. The blockchain by its original design is resistant to modification of data, which makes it a made it the
-world's most trusted financial technology.
+world's most trusted **financial technology**.
 
 ![Blockchain](./media/block2.jpg)
 
