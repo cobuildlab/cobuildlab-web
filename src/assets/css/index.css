@@ -723,7 +723,9 @@ to 	{ width:0; background:transparent; }
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 48%;
+    height: 80%;
+    -webkit-flex-direction: column; /* Safari 6.1+ */
+    flex-direction: column; 
 }
 
 @media all and (max-width: 480px) { 

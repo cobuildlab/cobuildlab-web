@@ -56,11 +56,12 @@ class Index extends React.Component {
                 <img src={badge3} className="badge"/>
                 <img src={badge4} className="badge-google"/>
               </div>
+              <div className="Aligner">
               <div className="colunm is-4">
               <Title className="has-text-centered title-form-contact">Contact us for a <span className="free">FREE</span> <br/> consultation!</Title>
               <p className="subtitle-info">Call Us to: <span className="free">(786) 991-3467</span>, or <br/> fill de from and we will get in touch with you. </p>
               </div>
-              <div className="Aligner">
+              
               <form className="has-text-centered">
                 <div className="group">      
                   <input type="text" required/>
@@ -91,11 +92,10 @@ class Index extends React.Component {
                 </div>
                 <button class="button is-primary is-medium is-rounded" type="submit">Submit</button>
               </form>
-              </div>
-
               <div>
                 <Subtitle className="has-text-centered is-marginless has-text-white">Privacy Policy</Subtitle>
                 <p className="has-text-centered has-text-white is-marginless">Here you can access the information about how we your data</p>
+              </div>
               </div>
             </div>
           </div>
