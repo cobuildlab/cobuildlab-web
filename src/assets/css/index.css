@@ -22,6 +22,10 @@
     text-rendering: optimizeLegibility;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 * {
     font-family: 'Lato-regular', sans-serif !important;
 }
@@ -32,6 +36,14 @@ a {
     text-decoration: none;
 }
 
+.h-100{
+    height: 100vh !important;
+}
+
+.bg-form-landing{
+    background-color: #254a61;
+    box-shadow: 2px 0px 35px 5px #000000b3;
+}
 .link-post {
     position: absolute;
     bottom: 15px;
@@ -353,7 +365,14 @@ hr {
     background-position: right;
     background-size: cover;
 }
-
+.bg-header-landing {
+    background-image: url(../../resources/b2.png);
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
 .bg-services {
     background-image: url(../../resources/bg-services.jpg);
     width: 100%;
@@ -568,3 +587,163 @@ hr {
     padding: 4rem 1.5rem 6rem;
     color: #fff;
 }
+
+/* New squeezing */
+.logo{
+    margin: 90px;
+    width: 400px;
+}
+.view-badge{
+    padding-top: 25px;
+}
+.badge{
+    margin: 5px;
+    width: 15%;
+}
+.badge-google{
+    margin: 5px;
+    width: 30%;
+    position: relative;
+    top: -10px;
+}
+
+.title-squeezing{
+    color: #264a60 !important;
+    font-size: 65px !important;
+    margin-top: 12%;
+    margin-left: 90px;
+}
+
+.title-form-contact{
+    color: #fff !important;
+    margin-top: 30px
+}
+.subtitle-info{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px !important;
+}
+.free{
+    color: #e76c29 !important;
+}
+.group 			  { 
+    position:relative; 
+    margin-bottom:35px; 
+}
+input 				{
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:350px;
+    border:none;
+    border-bottom:1px solid #fff;
+    background-color: transparent;
+    color: #fff
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+color: #fff; 
+font-size:18px;
+font-weight:normal;
+position:absolute;
+pointer-events:none;
+left:5px;
+top:10px;
+transition:0.2s ease all; 
+-moz-transition:0.2s ease all; 
+-webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+top:-20px;
+font-size:14px;
+color:#fff;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:350px; }
+.bar:before, .bar:after 	{
+content:'';
+height:2px; 
+width:0;
+bottom:1px; 
+position:absolute;
+background:#fff; 
+transition:0.2s ease all; 
+-moz-transition:0.2s ease all; 
+-webkit-transition:0.2s ease all;
+}
+.bar:before {
+left:50%;
+}
+.bar:after {
+right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+position:absolute;
+height:60%; 
+width:100px; 
+top:25%; 
+left:0;
+pointer-events:none;
+opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+-webkit-animation:inputHighlighter 0.3s ease;
+-moz-animation:inputHighlighter 0.3s ease;
+animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from { background:#fff; }
+to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background:#fff; }
+to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+    from { background:#fff; }
+to 	{ width:0; background:transparent; }
+}
+.Aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48%;
+}
+
+@media all and (max-width: 480px) { 
+    .h-100{
+        height: auto !important;
+    }
+    .logo{
+        width: 300px;
+        padding-top: 30px;
+        display: block;
+        margin: auto;
+    }
+    .title-squeezing {
+        color: #264a60 !important;
+        font-size: 45px !important;
+        margin-top: 12%;
+        margin-left: 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+
