@@ -727,6 +727,9 @@ to 	{ width:0; background:transparent; }
     -webkit-flex-direction: column; /* Safari 6.1+ */
     flex-direction: column; 
 }
+.m-20{
+    margin-top: 20px !important;
+}
 
 @media all and (max-width: 480px) { 
     .h-100{

@@ -93,7 +93,7 @@ class Index extends React.Component {
                 <button class="button is-primary is-medium is-rounded" type="submit">Submit</button>
               </form>
               <div>
-                <Subtitle className="has-text-centered is-marginless has-text-white">Privacy Policy</Subtitle>
+                <Subtitle className="has-text-centered is-marginless has-text-white m-20">Privacy Policy</Subtitle>
                 <p className="has-text-centered has-text-white is-marginless">Here you can access the information about how we your data</p>
               </div>
               </div>
