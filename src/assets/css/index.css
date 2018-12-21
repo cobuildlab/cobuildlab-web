@@ -200,6 +200,11 @@ img {
   margin-bottom: 0 !important;
 }
 
+.icon-center{
+    display: inline-block;
+    position: relative;
+    top: -5px;
+}
 .icon-process {
   width: 80px;
   height: 80px;
@@ -711,7 +716,9 @@ transition:0.2s ease all;
 -moz-transition:0.2s ease all; 
 -webkit-transition:0.2s ease all;
 }
-
+.label{
+    position: initial !important;
+}
 /* active state */
 input:focus ~ label, input:valid ~ label 		{
 top:-20px;
