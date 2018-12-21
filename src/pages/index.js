@@ -117,7 +117,7 @@ class Index extends React.Component {
                     Since day one, our technique is focused on early results and
                     transparent communication.
                   </Title>
-                  <Link className="button is-primary is-small is-rounded">
+                  <Link className="button is-primary is-small is-rounded" to="#">
                     READ MORE
                   </Link>
                 </Column>

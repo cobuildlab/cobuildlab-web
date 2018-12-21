@@ -20,7 +20,7 @@ class Template extends React.Component {
     return (
       <div>
         <HeaderLanding/>
-        {children}
+          {children}
       </div>
     );
   }
