@@ -15,10 +15,7 @@ const StudyCase = props => {
       </MediaLeft>
       <MediaContent>
         <p className="study-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
-          odit earum numquam voluptas modi incidunt exercitationem excepturi
-          animi, facilis vero recusandae magni reiciendis culpa neque cum vitae
-          ducimus similique minima!Voluptatibus unde repudiandae, libero totam.
+          {text}
         </p>
 
         <h2 className="study-subtitle">Outcomes</h2>
