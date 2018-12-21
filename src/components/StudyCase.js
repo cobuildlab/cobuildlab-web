@@ -5,24 +5,20 @@ import '../assets/css/index.css'
 const StudyCase = props => {
   const { logo, text } = props
   return (
-    <Media>
-      <MediaLeft>
-        <img
-          //src={logo}
-          src="https://via.placeholder.com/160x160"
-          className="study-image"
-        />
+    <Media className="component-changes">
+      <MediaLeft
+      className="study-logo"
+      style={{
+        backgroundImage: `url(${logo})`
+      }}
+      >
       </MediaLeft>
       <MediaContent>
         <p className="study-text">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
           odit earum numquam voluptas modi incidunt exercitationem excepturi
           animi, facilis vero recusandae magni reiciendis culpa neque cum vitae
-          ducimus similique minima!Voluptatibus unde repudiandae, libero totam
-          eos autem, quisquam facilis voluptates quae dolores architecto quo
-          aperiam error consectetur veritatis nesciunt reprehenderit distinctio,
-          ullam possimus doloribus corrupti sint molestiae placeat. Quibusdam,
-          natus.
+          ducimus similique minima!Voluptatibus unde repudiandae, libero totam.
         </p>
 
         <h2 className="study-subtitle">Outcomes</h2>

@@ -5,9 +5,14 @@ import '../assets/css/index.css'
 const Testimonial = props => {
   const { image, logo, text } = props
   return (
-    <Media>
-      <MediaLeft>
-        <img src={image} className="testimonial-image" />
+    <Media className="component-changes">
+      <MediaLeft
+      className="testimonial-image"
+      style={{
+        backgroundImage: `url(${image})`
+      }}
+      >
+        
       </MediaLeft>
       <MediaContent>
         <Content>
