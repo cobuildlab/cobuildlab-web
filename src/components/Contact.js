@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link, navigate } from 'gatsby';
-import { ToastContainer, toast } from 'react-toastify';
+import React from 'react'
+import { Link, navigate } from 'gatsby'
+import { ToastContainer, toast } from 'react-toastify'
 import {
   Container,
   Title,
@@ -13,84 +13,103 @@ import {
   Label,
   Control,
   Input,
-  TextArea
-} from 'bloomer';
+  TextArea,
+} from 'bloomer'
 
 export default class Contact extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       firstName: '',
       lastName: '',
       email: '',
+      phone: '',
       comment: '',
       isVerified: true,
-      landingName: 'Cobuild Lab'
-    };
+      landingName: 'Cobuild Lab',
+    }
 
-    this.handleChange = this.handleChange.bind(this);
-    this.onSubmit = this.onSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this)
+    this.onSubmit = this.onSubmit.bind(this)
   }
 
   handleChange(e) {
     this.setState({
-      [e.target.name]: e.target.value
-    });
+      [e.target.name]: e.target.value,
+    })
   }
 
   onSubmit(e) {
-    e.preventDefault();
+    e.preventDefault()
 
     if (this.state.firstName.length <= 0) {
-      toast.error('First name can\'t be empty', {
-        position: 'bottom-right'
-      });
-      return;
+      toast.error("First name can't be empty", {
+        position: 'bottom-right',
+      })
+      return
     }
 
     if (this.state.lastName.length <= 0) {
-      toast.error('Last name can\'t be empty', {
-        position: 'bottom-right'
-      });
-      return;
+      toast.error("Last name can't be empty", {
+        position: 'bottom-right',
+      })
+      return
     }
 
     if (this.state.email.length <= 0) {
-      toast.error('Email can\'t be empty', {
-        position: 'bottom-right'
-      });
-      return;
+      toast.error("Email can't be empty", {
+        position: 'bottom-right',
+      })
+      return
     }
 
     if (this.state.comment.length <= 0) {
-      toast.error('Comment can\'t be empty', {
-        position: 'bottom-right'
-      });
-      return;
+      toast.error("Comment can't be empty", {
+        position: 'bottom-right',
+      })
+      return
     }
 
-    const url = 'https://api.cobuild-lab.com/landing/contact';
+    const url = 'https://api.cobuild-lab.com/landing/contact'
+
+    const {
+      firstName,
+      lastName,
+      email,
+      phone,
+      comment,
+      landingName,
+    } = this.state
+
+    const data = {
+      firstName,
+      lastName,
+      email,
+      phone,
+      comment,
+      landingName,
+    }
 
     const settings = {
       method: 'POST',
-      body: JSON.stringify(this.state),
+      body: JSON.stringify(data),
       headers: {
         Accept: 'application/json',
-        'Content-Type': 'application/json'
-      }
-    };
+        'Content-Type': 'application/json',
+      },
+    }
 
     fetch(url, settings)
       .then(res => res.json())
       .then(response => {
         if (response.statusCode >= 400) {
           toast.error(response.message, {
-            position: 'bottom-right'
-          });
+            position: 'bottom-right',
+          })
         } else {
-          navigate('/thanks-contact');
+          navigate('/thanks-contact')
         }
-      });
+      })
   }
 
   render() {
@@ -164,6 +183,18 @@ export default class Contact extends React.Component {
                   </Control>
                 </Field>
                 <Field>
+                  <Label>Phone</Label>
+                  <Control>
+                    <Input
+                      type="number"
+                      name="phone"
+                      placeholder="Phone number is optional"
+                      value={this.state.phone}
+                      onChange={e => this.handleChange(e)}
+                    />
+                  </Control>
+                </Field>
+                <Field>
                   <Label>Comment or Message</Label>
                   <Control>
                     <TextArea
@@ -176,14 +207,14 @@ export default class Contact extends React.Component {
                 </Field>
                 <Field isGrouped>
                   <Control>
-                    <br/>
+                    <br />
                     <button
                       className="button is-primary is-medium is-rounded"
                       type="submit"
                     >
                       Submit
                     </button>
-                    <ToastContainer/>
+                    <ToastContainer />
                   </Control>
                 </Field>
                 <Content hasTextAlign="centered">
@@ -198,6 +229,6 @@ export default class Contact extends React.Component {
           </Columns>
         </Container>
       </section>
-    );
+    )
   }
 }

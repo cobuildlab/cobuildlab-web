@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link, navigate } from 'gatsby';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.min.css';
+import React from 'react'
+import { Link, navigate } from 'gatsby'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.min.css'
 import {
   Container,
   Columns,
@@ -13,84 +13,96 @@ import {
   Subtitle,
   Control,
   Input,
-  Label
-} from 'bloomer';
+  Label,
+} from 'bloomer'
 
 class FormContact extends React.Component {
   state = {
     firstName: '',
     lastName: '',
     email: '',
-    comment: ''
-  };
+    phone: '',
+    comment: '',
+  }
 
   handleChange = e => {
     this.setState({
-      [e.target.name]: e.target.value
-    });
-  };
+      [e.target.name]: e.target.value,
+    })
+  }
 
   onSubmit = (e, landingName) => {
-    e.preventDefault();
+    e.preventDefault()
 
     if (this.state.firstName.length <= 0) {
-      toast.error('First name can\'t be empty', {
-        position: 'bottom-right'
-      });
-      return;
+      toast.error("First name can't be empty", {
+        position: 'bottom-right',
+      })
+      return
     }
 
     if (this.state.lastName.length <= 0) {
-      toast.error('Last name can\'t be empty', {
-        position: 'bottom-right'
-      });
-      return;
+      toast.error("Last name can't be empty", {
+        position: 'bottom-right',
+      })
+      return
     }
 
     if (this.state.email.length <= 0) {
-      toast.error('Email can\'t be empty', {
-        position: 'bottom-right'
-      });
-      return;
+      toast.error("Email can't be empty", {
+        position: 'bottom-right',
+      })
+      return
     }
 
     if (this.state.comment.length <= 0) {
-      toast.error('Comment can\'t be empty', {
-        position: 'bottom-right'
-      });
-      return;
+      toast.error("Comment can't be empty", {
+        position: 'bottom-right',
+      })
+      return
     }
 
-    const url = 'https://api.cobuild-lab.com/landing/contact';
-    const data = Object.assign({ landingName }, this.state);
+    const url = 'https://api.cobuild-lab.com/landing/contact'
+
+    const { firstName, lastName, email, phone, comment } = this.state
+
+    const data = {
+      firstName,
+      lastName,
+      email,
+      phone,
+      comment,
+      landingName,
+    }
+
     const settings = {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
         Accept: 'application/json',
-        'Content-Type': 'application/json'
-      }
-    };
+        'Content-Type': 'application/json',
+      },
+    }
 
     fetch(url, settings)
       .then(res => res.json())
       .then(response => {
         if (response.statusCode >= 400) {
           toast.error(response.message, {
-            position: 'bottom-right'
-          });
+            position: 'bottom-right',
+          })
         } else {
           toast.success(response.message, {
-            position: 'bottom-right'
-          });
+            position: 'bottom-right',
+          })
 
-          navigate('/thanks-contact');
+          navigate('/thanks-contact')
         }
-      });
-  };
+      })
+  }
 
   render() {
-    const { landingName } = this.props;
+    const { landingName } = this.props
     return (
       <Container>
         <Content>
@@ -100,16 +112,28 @@ class FormContact extends React.Component {
               isSize={{ mobile: 12, desktop: '1/2' }}
             >
               <Content className="content-form">
-                <Title isSize={2} className="title-section" hasTextAlign="centered">
+                <Title
+                  isSize={2}
+                  className="title-section"
+                  hasTextAlign="centered"
+                >
                   Contact us for a <strong>FREE</strong> consultation!
                 </Title>
-                <Subtitle isSize={6} className="title-section" hasTextAlign="centered">
-                  Call Us to: <strong><a href="tel:+17869913467">(786) 991-3467</a></strong>  or, fill the form and we will get in touch with you.
+                <Subtitle
+                  isSize={6}
+                  className="title-section"
+                  hasTextAlign="centered"
+                >
+                  Call Us to:{' '}
+                  <strong>
+                    <a href="tel:+17869913467">(786) 991-3467</a>
+                  </strong>{' '}
+                  or, fill the form and we will get in touch with you.
                 </Subtitle>
 
                 <form
                   onSubmit={e => {
-                    this.onSubmit(e, landingName);
+                    this.onSubmit(e, landingName)
                   }}
                 >
                   <Columns>
@@ -155,6 +179,18 @@ class FormContact extends React.Component {
                     </Control>
                   </Field>
                   <Field>
+                    <Label>Phone</Label>
+                    <Control>
+                      <Input
+                        type="number"
+                        name="phone"
+                        placeholder="Phone number is optional"
+                        value={this.state.phone}
+                        onChange={e => this.handleChange(e)}
+                      />
+                    </Control>
+                  </Field>
+                  <Field>
                     <Label>Comment or Message</Label>
                     <Control>
                       <TextArea
@@ -173,7 +209,7 @@ class FormContact extends React.Component {
                       >
                         Submit
                       </button>
-                      <ToastContainer/>
+                      <ToastContainer />
                     </Control>
                   </Field>
                   <Content hasTextAlign="centered">
@@ -191,8 +227,8 @@ class FormContact extends React.Component {
           </Columns>
         </Content>
       </Container>
-    );
+    )
   }
 }
 
-export default FormContact;
+export default FormContact
