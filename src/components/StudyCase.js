@@ -5,12 +5,18 @@ import '../assets/css/index.css'
 const StudyCase = props => {
   const { logo, text } = props
   return (
-    <Media>
-      <MediaLeft>
-        <img src={logo} className="study-image" />
+    <Media className="component-changes">
+      <MediaLeft
+      className="study-logo"
+      style={{
+        backgroundImage: `url(${logo})`
+      }}
+      >
       </MediaLeft>
       <MediaContent>
-        <p className="study-text">{text}</p>
+        <p className="study-text">
+          {text}
+        </p>
 
         <h2 className="study-subtitle">Outcomes</h2>
 

@@ -145,7 +145,7 @@ class Index extends React.Component {
             <Columns isCentered className="p-2">
               <Column isSize="1/4">
                 <div className="icon-process">
-                  <Icon size="24" icon={check} />
+                  <Icon size="24" icon={check} className="icon-center"/>
                 </div>
                 <Title isSize={3}>Validation</Title>
                 <p>
@@ -157,7 +157,7 @@ class Index extends React.Component {
               </Column>
               <Column isSize="1/4">
                 <div className="icon-process">
-                  <Icon size="24" icon={code} />
+                  <Icon size="24" icon={code} className="icon-center" />
                 </div>
                 <Title isSize={3}>CoBuild</Title>
                 <p>
@@ -170,7 +170,7 @@ class Index extends React.Component {
               </Column>
               <Column isSize="1/4">
                 <div className="icon-process">
-                  <Icon size="24" icon={ic_layers} />
+                  <Icon size="24" icon={ic_layers} className="icon-center"/>
                 </div>
                 <Title isSize={3}>Plan</Title>
                 <p>
@@ -183,7 +183,7 @@ class Index extends React.Component {
               </Column>
               <Column isSize="1/4">
                 <div className="icon-process">
-                  <Icon size="24" icon={slideshare} />
+                  <Icon size="24" icon={slideshare} className="icon-center"/>
                 </div>
                 <Title isSize={3}>Accelerate</Title>
                 <p>

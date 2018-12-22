@@ -200,6 +200,11 @@ img {
   margin-bottom: 0 !important;
 }
 
+.icon-center{
+    display: inline-block;
+    position: relative;
+    top: -5px;
+}
 .icon-process {
   width: 80px;
   height: 80px;
@@ -589,26 +594,33 @@ hr {
 
 /* Testimonial */
 .testimonial-image {
-  border-radius: 160px !important;
-  height: 160px;
-  width: 160px;
+    border-radius: 160px !important;
+    height: 160px;
+    width: 160px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fff;
 }
 
 .testimonial-text {
   color: #264a60;
+  text-align: justify;
 }
 
 .testimonial-logo {
-  height: 75px;
-  width: 250px;
+  width: 150px;
 }
 
 /* Study Case */
-.study-image {
-  border-radius: 160px !important;
-  height: 160px;
-  width: 160px;
-  margin-top: 25px;
+.study-logo {
+    border-radius: 160px !important;
+    height: 160px;
+    width: 160px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
 }
 
 .study-text {
@@ -637,6 +649,11 @@ hr {
     margin: 90px;
     width: 400px;
 }
+.component-changes{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 50px;
+}
 .view-badge{
     padding-top: 25px;
 }
@@ -654,7 +671,7 @@ hr {
 .title-squeezing{
     color: #264a60 !important;
     font-size: 65px !important;
-    margin-top: 12%;
+    margin-top: 10%;
     margin-left: 90px;
 }
 
@@ -699,7 +716,9 @@ transition:0.2s ease all;
 -moz-transition:0.2s ease all; 
 -webkit-transition:0.2s ease all;
 }
-
+.label{
+    position: initial !important;
+}
 /* active state */
 input:focus ~ label, input:valid ~ label 		{
 top:-20px;
@@ -771,8 +790,15 @@ to 	{ width:0; background:transparent; }
     -webkit-flex-direction: column; /* Safari 6.1+ */
     flex-direction: column; 
 }
-.m-20{
+.mt-20{
     margin-top: 20px !important;
+    margin-bottom: 0px !important;
+}
+.no-padding-hero{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
 }
 
 @media all and (max-width: 480px) { 
@@ -793,6 +819,39 @@ to 	{ width:0; background:transparent; }
         margin-bottom: 30px;
         text-align: center;
     }
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    .logo {
+        margin: 50px;
+        width: 400px;
+    }
+    .title-squeezing {
+        color: #264a60 !important;
+        font-size: 65px !important;
+        margin-top: 35px !important;
+        margin-left: 50px;
+        margin-bottom: 0px !important;
+    }    
+}
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+    .logo {
+        margin: 90px;
+        width: 400px;
+    }
+    .title-squeezing {
+        color: #264a60 !important;
+        font-size: 65px !important;
+        margin-top: 90px !important;
+        margin-left: 90px;
+        margin-bottom: 0px !important;
+    }
+    .component-changes{
+        margin-left: 90px;
+        margin-right: 90px;
+        margin-top: 8%;
+    }  
 }
 
 

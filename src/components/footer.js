@@ -131,7 +131,7 @@ class MyFooter extends React.Component {
                       href="https://www.instagram.com/cobuildlab"
                       target="_blank"
                     >
-                      <Icon size="24" icon={instagram} />
+                      <Icon size="24" icon={instagram} className="icon-center" />
                     </a>
                   </Column>
                   <Column
@@ -143,7 +143,7 @@ class MyFooter extends React.Component {
                       href="https://www.facebook.com/cobuildlab"
                       target="_blank"
                     >
-                      <Icon size="24" icon={facebookOfficial} />
+                      <Icon size="24" icon={facebookOfficial} className="icon-center" />
                     </a>
                   </Column>
                   <Column
@@ -155,7 +155,7 @@ class MyFooter extends React.Component {
                       href="https://twitter.com/cobuildlab"
                       target="_blank"
                     >
-                      <Icon size="24" icon={twitterSquare} />
+                      <Icon size="24" icon={twitterSquare} className="icon-center"/>
                     </a>
                   </Column>
                   <Column
@@ -167,7 +167,7 @@ class MyFooter extends React.Component {
                       href="https://www.linkedin.com/company/cobuildlab"
                       target="_blank"
                     >
-                      <Icon size="24" icon={linkedinSquare} />
+                      <Icon size="24" icon={linkedinSquare} className="icon-center"/>
                     </a>
                   </Column>
                 </Columns>
