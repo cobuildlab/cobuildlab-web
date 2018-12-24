@@ -3,7 +3,8 @@ import Helmet from 'react-helmet'
 import 'react-toastify/dist/ReactToastify.min.css'
 import StudyCase from '../components/StudyCase'
 import NewLandingForm from '../components/NewLadingForm'
-import { Title } from 'bloomer'
+import BadgeIndustry from '../components/BadgeIndustry'
+import { Title, Subtitle } from 'bloomer'
 import 'bulma'
 import '../assets/fonts/Lato-Black.ttf'
 import '../assets/fonts/Lato-BlackItalic.ttf'
@@ -42,15 +43,20 @@ class Index extends React.Component {
           <div className="hero-body no-padding-hero">
             <div className="content">
               <div className="columns is-desktop">
-                <div className="column is-8 h-100 bg-header-landing">
+                <div className="column is-8 h-100 bg-header-study">
                   <div>
                     <img src={logo} className="logo" />
                   </div>
                   <Title className="title-squeezing">
                     Idea Acelerator <br /> in Miami
                   </Title>
+                  <h2 className="subtitle-squeezing">
+                    We accelerate Ideas into scalable Software Businesses
+                  </h2>
                   <StudyCase logo={weedLogo} text={text} />
+                  <BadgeIndustry/>
                 </div>
+                
                 <div className="column h-100 is-4 bg-form-landing Aligner">
                   <div className="has-text-centered view-badge">
                     <img src={badge1} className="badge" />
