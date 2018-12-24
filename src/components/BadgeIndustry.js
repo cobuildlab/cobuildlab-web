@@ -2,7 +2,6 @@ import React from 'react'
 import '../assets/css/index.css'
 
 const BadgeIndustry = props => {
-  const { logo, text } = props
   return (
     <div className="view-badge-industry">
       <div class="columns is-desktop has-text-centered">

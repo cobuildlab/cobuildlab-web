@@ -24,13 +24,13 @@ import badge3 from '../resources/badges3.png'
 import badge4 from '../resources/badges4.png'
 import weedLogo from '../resources/weedmatch.png'
 
-export default class ProductDevStudy extends React.Component {
+export default class CobuildStudy extends React.Component {
   render() {
-    const siteTitle = 'Developing new Software Products in Miami'
+    const siteTitle = 'Cobuilding Companies in Miami'
     const siteSubtitle = 'We transform ideas into Software Companies'
     const siteDescription =
-      'We help entrepreneurs create amazing Products with our streamlined, lean and phased Software Development Process. Since day one, our technique is focused on early results and transparent communication.'
-    const landingName = 'Product Development Study Case'
+      'Cobuild is the process of transforming an idea in a sustainable business, through the combination and collaboration of the areas of Lean Entrepreneurship, Business Strategy, Technological Innovation, and Exponential Growth.'
+    const landingName = 'Cobuild Companies Study Case'
     const text =
       'Lorem ipsum dolor sit amet, maecenas dictum in est, tincidunt nec suscipit vitae et et est. Justo vel lorem taciti elementum. Suspendisse et integer, aliquam nostra sollicitudin lacus, molestiae sit praesent ultrices augue arcu elit. Risus eu nulla varius, eu est morbi, lacinia elit vivamus phasellus volutpat sed mauris, nascetur vitae illo proin pulvinar, hac praesent varius.'
 
@@ -50,7 +50,7 @@ export default class ProductDevStudy extends React.Component {
                     <img src={logo} className="logo" />
                   </div>
                   <Title className="title-squeezing">
-                    Developing new Software <br /> Products in Miami
+                    Cobuilding Companies <br /> in Miami
                   </Title>
                   <h2 className="subtitle-squeezing">{siteSubtitle}</h2>
                   <StudyCase logo={weedLogo} text={text} />

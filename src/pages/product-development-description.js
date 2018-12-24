@@ -2,7 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import 'react-toastify/dist/ReactToastify.min.css'
 import NewLandingForm from '../components/NewLadingForm'
-import { Title } from 'bloomer'
+import BadgeIndustry from '../components/BadgeIndustry'
+import { Title, Subtitle } from 'bloomer'
 import 'bulma'
 import '../assets/fonts/Lato-Black.ttf'
 import '../assets/fonts/Lato-BlackItalic.ttf'
@@ -21,9 +22,10 @@ import badge2 from '../resources/badges2.png'
 import badge3 from '../resources/badges3.png'
 import badge4 from '../resources/badges4.png'
 
-class Index extends React.Component {
+export default class ProductDevDescription extends React.Component {
   render() {
-    const siteTitle = 'Cobuild: Product Development in Miami'
+    const siteTitle = 'Developing new Software Products in Miami'
+    const siteSubtitle = 'We transform ideas into Software Companies'
     const siteDescription =
       'We help entrepreneurs create amazing Products with our streamlined, lean and phased Software Development Process. Since day one, our technique is focused on early results and transparent communication.'
     const landingName = 'Product Development Description'
@@ -48,7 +50,11 @@ class Index extends React.Component {
                   <Title className="title-squeezing">
                     Developing new Software <br /> Products in Miami
                   </Title>
-                  <p>{text}</p>
+                  <Subtitle className="subtitle-squeezing">
+                    {siteSubtitle}
+                  </Subtitle>
+                  <p className="text-description">{text}</p>
+                  <BadgeIndustry />
                 </div>
                 <div className="column h-100 is-4 bg-form-landing Aligner">
                   <div className="has-text-centered view-badge">
@@ -67,5 +73,3 @@ class Index extends React.Component {
     )
   }
 }
-
-export default Index

@@ -24,13 +24,13 @@ import badge3 from '../resources/badges3.png'
 import badge4 from '../resources/badges4.png'
 import weedLogo from '../resources/weedmatch.png'
 
-export default class ProductDevStudy extends React.Component {
+export default class SoftwareDevStudy extends React.Component {
   render() {
     const siteTitle = 'Developing new Software Products in Miami'
-    const siteSubtitle = 'We transform ideas into Software Companies'
+    const siteSubtitle = 'We transform ideas into Software Products'
     const siteDescription =
-      'We help entrepreneurs create amazing Products with our streamlined, lean and phased Software Development Process. Since day one, our technique is focused on early results and transparent communication.'
-    const landingName = 'Product Development Study Case'
+      'We transform requirements into working software. We specialize in building web and mobile solutions for Small and Medium Businesses.'
+    const landingName = 'Software Development Study Case'
     const text =
       'Lorem ipsum dolor sit amet, maecenas dictum in est, tincidunt nec suscipit vitae et et est. Justo vel lorem taciti elementum. Suspendisse et integer, aliquam nostra sollicitudin lacus, molestiae sit praesent ultrices augue arcu elit. Risus eu nulla varius, eu est morbi, lacinia elit vivamus phasellus volutpat sed mauris, nascetur vitae illo proin pulvinar, hac praesent varius.'
 

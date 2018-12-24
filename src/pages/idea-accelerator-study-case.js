@@ -24,11 +24,13 @@ import badge3 from '../resources/badges3.png'
 import badge4 from '../resources/badges4.png'
 import weedLogo from '../resources/weedmatch.png'
 
-class Index extends React.Component {
+export default class IdeaStudy extends React.Component {
   render() {
-    const siteTitle = 'Cobuild: Idea Accelerator in Miami'
-    const siteDescription = 'We accelerate Ideas into Products'
-    const landingName = 'Idea Accelerator in Miami'
+    const siteTitle = 'Idea Accelerator in Miami'
+    const siteSubtitle = 'We accelerate Ideas into scalable Software Businesses'
+    const siteDescription =
+      'We help early stage and new entrepreneurs transform ideas into Scalable Software Products through education by using a collaborative and full-companion development process'
+    const landingName = 'Idea Accelerator Study Case'
     const text =
       'Lorem ipsum dolor sit amet, maecenas dictum in est, tincidunt nec suscipit vitae et et est. Justo vel lorem taciti elementum. Suspendisse et integer, aliquam nostra sollicitudin lacus, molestiae sit praesent ultrices augue arcu elit. Risus eu nulla varius, eu est morbi, lacinia elit vivamus phasellus volutpat sed mauris, nascetur vitae illo proin pulvinar, hac praesent varius.'
 
@@ -50,13 +52,11 @@ class Index extends React.Component {
                   <Title className="title-squeezing">
                     Idea Acelerator <br /> in Miami
                   </Title>
-                  <h2 className="subtitle-squeezing">
-                    We accelerate Ideas into scalable Software Businesses
-                  </h2>
+                  <h2 className="subtitle-squeezing">{siteSubtitle}</h2>
                   <StudyCase logo={weedLogo} text={text} />
-                  <BadgeIndustry/>
+                  <BadgeIndustry />
                 </div>
-                
+
                 <div className="column h-100 is-4 bg-form-landing Aligner">
                   <div className="has-text-centered view-badge">
                     <img src={badge1} className="badge" />
@@ -70,51 +70,7 @@ class Index extends React.Component {
             </div>
           </div>
         </section>
-        {/*HEADER*/}
-        {/* <Hero className="is-fullheight">
-          <HeroBody>
-            <Container isFluid className="is-hidden-mobile">
-              <Columns>
-                <Column isSize="1/2">
-                  <Title>Hola </Title>
-                </Column>
-              </Columns>
-            </Container> */}
-
-        {/* <Container
-              isFluid
-              className="is-hidden-desktop is-hidden-tablet-only"
-              style={{backgroundColor:"white", padding:"5px"}}
-            >
-              <Columns>
-                <Column isSize="1/2">
-                  <Title className="title-logo-mobile" hasTextAlign="centered">
-                    Cobuild Lab
-                  </Title>
-                  <Subtitle className="subtitle-logo-mobile" hasTextAlign="centered">
-                    <strong>
-                      {landingName}
-                    </strong>
-                  </Subtitle>
-                  <Subtitle isSize={4}>
-                    <h3>
-                      Cobuild Is the process of transforming an idea in a sustainable business, through the combination
-                      and collaboration of the areas of Lean Entrepreneurship, Business Strategy, Technological
-                      Innovation, and Exponential Growth.
-                    </h3>
-                  </Subtitle>
-                </Column>
-                <Column isSize="1/2">
-                  <FormContact landingName={landingName}/>
-                </Column>
-              </Columns>
-            </Container> */}
-        {/* </HeroBody>
-        </Hero> */}
-        {/*HEADER*/}
       </React.Fragment>
     )
   }
 }
-
-export default Index

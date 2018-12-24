@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import 'react-toastify/dist/ReactToastify.min.css'
-import StudyCase from '../components/StudyCase'
+import Testimonial from '../components/Testimonial'
 import NewLandingForm from '../components/NewLadingForm'
 import BadgeIndustry from '../components/BadgeIndustry'
 import { Title, Subtitle } from 'bloomer'
@@ -23,14 +23,15 @@ import badge2 from '../resources/badges2.png'
 import badge3 from '../resources/badges3.png'
 import badge4 from '../resources/badges4.png'
 import weedLogo from '../resources/weedmatch.png'
+import clienteImg from '../resources/oscar-weedmatch.png'
 
-export default class ProductDevStudy extends React.Component {
+export default class AppsDevTestimonial extends React.Component {
   render() {
     const siteTitle = 'Developing new Software Products in Miami'
-    const siteSubtitle = 'We transform ideas into Software Companies'
+    const siteSubtitle = 'We transform ideas into Software Products'
     const siteDescription =
-      'We help entrepreneurs create amazing Products with our streamlined, lean and phased Software Development Process. Since day one, our technique is focused on early results and transparent communication.'
-    const landingName = 'Product Development Study Case'
+      'We transform requirements into working software. We specialize in building web and mobile applications for Small and Medium Businesses.'
+    const landingName = 'Apps Development Testimonial'
     const text =
       'Lorem ipsum dolor sit amet, maecenas dictum in est, tincidunt nec suscipit vitae et et est. Justo vel lorem taciti elementum. Suspendisse et integer, aliquam nostra sollicitudin lacus, molestiae sit praesent ultrices augue arcu elit. Risus eu nulla varius, eu est morbi, lacinia elit vivamus phasellus volutpat sed mauris, nascetur vitae illo proin pulvinar, hac praesent varius.'
 
@@ -45,18 +46,19 @@ export default class ProductDevStudy extends React.Component {
           <div className="hero-body no-padding-hero">
             <div className="content">
               <div className="columns is-desktop">
-                <div className="column is-8 h-100 bg-header-study">
+                <div className="column is-8 h-100 bg-header-landing">
                   <div>
                     <img src={logo} className="logo" />
                   </div>
                   <Title className="title-squeezing">
                     Developing new Software <br /> Products in Miami
                   </Title>
-                  <h2 className="subtitle-squeezing">{siteSubtitle}</h2>
-                  <StudyCase logo={weedLogo} text={text} />
+                  <Subtitle className="subtitle-squeezing">
+                    {siteSubtitle}
+                  </Subtitle>
+                  <Testimonial image={clienteImg} logo={weedLogo} text={text} />
                   <BadgeIndustry />
                 </div>
-
                 <div className="column h-100 is-4 bg-form-landing Aligner">
                   <div className="has-text-centered view-badge">
                     <img src={badge1} className="badge" />

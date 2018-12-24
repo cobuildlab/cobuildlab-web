@@ -691,13 +691,13 @@ hr {
   margin-top: 10%;
   margin-left: 90px;
 }
-.subtitle-squeezing{
+.subtitle-squeezing {
   color: #264a60 !important;
   margin-top: 25px !important;
   margin-left: 90px;
   margin-bottom: 0px !important;
 }
-.text-description{
+.text-description {
   margin-left: 90px;
   margin-right: 30px;
   margin-top: 90px;
@@ -751,7 +751,7 @@ label {
 }
 /* active state */
 input:focus ~ label,
-input:valid  label {
+input:valid label {
   top: -20px;
   font-size: 14px;
   color: #fff;
@@ -852,15 +852,15 @@ input:focus ~ .highlight {
   padding-left: 12px !important;
   padding-right: 12px !important;
 }
-.badge-industry{
+.badge-industry {
   background-color: #244a62;
   border-radius: 10px;
   color: #fff;
   margin-left: 15px;
   margin-right: 15px;
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
-.view-badge-industry{
+.view-badge-industry {
   position: absolute;
   width: 65%;
   bottom: 20px;
@@ -884,7 +884,7 @@ input:focus ~ .highlight {
     margin-bottom: 30px;
     text-align: center;
   }
-  .subtitle-squeezing{
+  .subtitle-squeezing {
     color: #264a60 !important;
     margin-top: 25px !important;
     margin-left: 0;
@@ -899,7 +899,7 @@ input:focus ~ .highlight {
     margin-bottom: 40px !important;
     text-align: center;
   }
-  .view-form{
+  .view-form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -908,10 +908,10 @@ input:focus ~ .highlight {
     flex-direction: column;
     zoom: 1;
   }
-  .img-graphic{
+  .img-graphic {
     width: 100%;
   }
-  .view-badge-industry{
+  .view-badge-industry {
     position: relative;
     width: 100%;
     bottom: 0px;
@@ -931,19 +931,19 @@ input:focus ~ .highlight {
     margin-bottom: 0px !important;
     font-size: 1.75em;
   }
-  .subtitle-squeezing{
+  .subtitle-squeezing {
     color: #264a60 !important;
     margin-top: 25px !important;
     margin-left: 50px;
     margin-bottom: 0px !important;
     font-weight: 600 !important;
   }
-  .text-description{
+  .text-description {
     margin-left: 50px;
     margin-right: 30px;
     margin-top: 50px;
   }
-  .view-form{
+  .view-form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -952,10 +952,9 @@ input:focus ~ .highlight {
     flex-direction: column;
     zoom: 0.9;
   }
-  .img-graphic{
+  .img-graphic {
     width: 100%;
   }
-  
 }
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
@@ -970,7 +969,7 @@ input:focus ~ .highlight {
     margin-left: 90px;
     margin-bottom: 0px !important;
   }
-  .subtitle-squeezing{
+  .subtitle-squeezing {
     color: #264a60 !important;
     margin-top: 25px !important;
     margin-left: 90px;
@@ -978,7 +977,7 @@ input:focus ~ .highlight {
     font-weight: 600 !important;
     font-size: 1.75em;
   }
-  .text-description{
+  .text-description {
     margin-left: 90px;
     margin-right: 30px;
     margin-top: 90px;
@@ -988,7 +987,7 @@ input:focus ~ .highlight {
     margin-right: 90px;
     margin-top: 8%;
   }
-  .view-form{
+  .view-form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -997,7 +996,7 @@ input:focus ~ .highlight {
     flex-direction: column;
     zoom: 1;
   }
-  .img-graphic{
+  .img-graphic {
     width: 60%;
   }
 }

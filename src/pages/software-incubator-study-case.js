@@ -3,7 +3,8 @@ import Helmet from 'react-helmet'
 import 'react-toastify/dist/ReactToastify.min.css'
 import StudyCase from '../components/StudyCase'
 import NewLandingForm from '../components/NewLadingForm'
-import { Title } from 'bloomer'
+import BadgeIndustry from '../components/BadgeIndustry'
+import { Title, Subtitle } from 'bloomer'
 import 'bulma'
 import '../assets/fonts/Lato-Black.ttf'
 import '../assets/fonts/Lato-BlackItalic.ttf'
@@ -23,9 +24,10 @@ import badge3 from '../resources/badges3.png'
 import badge4 from '../resources/badges4.png'
 import weedLogo from '../resources/weedmatch.png'
 
-class Index extends React.Component {
+export default class SoftwareIncStudy extends React.Component {
   render() {
-    const siteTitle = 'Cobuild: Software Incubator in Miami'
+    const siteTitle = 'Developing new Software Products in Miami'
+    const siteSubtitle = 'We transform ideas into Software Companies'
     const siteDescription =
       'We help entrepreneurs create amazing Products with our streamlined, lean and phased Software Development Process. Since day one, our technique is focused on early results and transparent communication.'
     const landingName = 'Software Incubator Study Case'
@@ -43,15 +45,18 @@ class Index extends React.Component {
           <div className="hero-body no-padding-hero">
             <div className="content">
               <div className="columns is-desktop">
-                <div className="column is-8 h-100 bg-header-landing">
+                <div className="column is-8 h-100 bg-header-study">
                   <div>
                     <img src={logo} className="logo" />
                   </div>
                   <Title className="title-squeezing">
                     Developing new Software <br /> Products in Miami
                   </Title>
+                  <h2 className="subtitle-squeezing">{siteSubtitle}</h2>
                   <StudyCase logo={weedLogo} text={text} />
+                  <BadgeIndustry />
                 </div>
+
                 <div className="column h-100 is-4 bg-form-landing Aligner">
                   <div className="has-text-centered view-badge">
                     <img src={badge1} className="badge" />
@@ -69,5 +74,3 @@ class Index extends React.Component {
     )
   }
 }
-
-export default Index

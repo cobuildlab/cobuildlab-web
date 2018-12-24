@@ -22,11 +22,13 @@ import badge2 from '../resources/badges2.png'
 import badge3 from '../resources/badges3.png'
 import badge4 from '../resources/badges4.png'
 
-class Index extends React.Component {
+export default class IdeaDescription extends React.Component {
   render() {
-    const siteTitle = 'Cobuild: Idea Accelerator in Miami'
-    const siteDescription = 'We accelerate Ideas into Products'
-    const landingName = 'Idea Accelerator in Miami'
+    const siteTitle = 'Idea Accelerator in Miami'
+    const siteSubtitle = 'We accelerate Ideas into scalable Software Businesses'
+    const siteDescription =
+      'We help early stage and new entrepreneurs transform ideas into Scalable Software Products through education by using a collaborative and full-companion development process.'
+    const landingName = 'Idea Accelerator Description'
     const text =
       'Lorem ipsum dolor sit amet, maecenas dictum in est, tincidunt nec suscipit vitae et et est. Justo vel lorem taciti elementum. Suspendisse et integer, aliquam nostra sollicitudin lacus, molestiae sit praesent ultrices augue arcu elit. Risus eu nulla varius, eu est morbi, lacinia elit vivamus phasellus volutpat sed mauris, nascetur vitae illo proin pulvinar, hac praesent varius.'
 
@@ -49,19 +51,10 @@ class Index extends React.Component {
                     Idea Acelerator <br /> in Miami
                   </Title>
                   <Subtitle className="subtitle-squeezing">
-                    We accelerate Ideas into scalable Software Businesses
+                    {siteSubtitle}
                   </Subtitle>
-                  <p className="text-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Velit odit qui voluptatibus odio quod dignissimos,
-                    consequuntur repellendus atque ad quia voluptates at autem
-                    cumque ex dolorem, obcaecati recusandae quisquam
-                    laborum.Quo, quas esse, magnam facere ex doloribus at
-                    similique laudantium asperiores deleniti accusamus eaque,
-                    impedit veniam sed cupiditate praesentium voluptatum illo
-                    fugiat magni nihil! Facere fugiat sunt id fugit natus!
-                  </p>
-                  <BadgeIndustry/>
+                  <p className="text-description">{text}</p>
+                  <BadgeIndustry />
                 </div>
                 <div className="column h-100 is-4 bg-form-landing Aligner">
                   <div className="has-text-centered view-badge">
@@ -76,51 +69,7 @@ class Index extends React.Component {
             </div>
           </div>
         </section>
-        {/*HEADER*/}
-        {/* <Hero className="is-fullheight">
-          <HeroBody>
-            <Container isFluid className="is-hidden-mobile">
-              <Columns>
-                <Column isSize="1/2">
-                  <Title>Hola </Title>
-                </Column>
-              </Columns>
-            </Container> */}
-
-        {/* <Container
-              isFluid
-              className="is-hidden-desktop is-hidden-tablet-only"
-              style={{backgroundColor:"white", padding:"5px"}}
-            >
-              <Columns>
-                <Column isSize="1/2">
-                  <Title className="title-logo-mobile" hasTextAlign="centered">
-                    Cobuild Lab
-                  </Title>
-                  <Subtitle className="subtitle-logo-mobile" hasTextAlign="centered">
-                    <strong>
-                      {landingName}
-                    </strong>
-                  </Subtitle>
-                  <Subtitle isSize={4}>
-                    <h3>
-                      Cobuild Is the process of transforming an idea in a sustainable business, through the combination
-                      and collaboration of the areas of Lean Entrepreneurship, Business Strategy, Technological
-                      Innovation, and Exponential Growth.
-                    </h3>
-                  </Subtitle>
-                </Column>
-                <Column isSize="1/2">
-                  <FormContact landingName={landingName}/>
-                </Column>
-              </Columns>
-            </Container> */}
-        {/* </HeroBody>
-        </Hero> */}
-        {/*HEADER*/}
       </React.Fragment>
     )
   }
 }
-
-export default Index
