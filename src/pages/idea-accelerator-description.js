@@ -1,9 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import 'react-toastify/dist/ReactToastify.min.css'
-import Testimonial from '../components/Testimonial'
 import NewLandingForm from '../components/NewLadingForm'
-import { Title } from 'bloomer'
+import BadgeIndustry from '../components/BadgeIndustry'
+import { Title, Subtitle } from 'bloomer'
 import 'bulma'
 import '../assets/fonts/Lato-Black.ttf'
 import '../assets/fonts/Lato-BlackItalic.ttf'
@@ -48,7 +48,10 @@ class Index extends React.Component {
                   <Title className="title-squeezing">
                     Idea Acelerator <br /> in Miami
                   </Title>
-                  <p>
+                  <Subtitle className="subtitle-squeezing">
+                    We accelerate Ideas into scalable Software Businesses
+                  </Subtitle>
+                  <p className="text-description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Velit odit qui voluptatibus odio quod dignissimos,
                     consequuntur repellendus atque ad quia voluptates at autem
@@ -58,6 +61,7 @@ class Index extends React.Component {
                     impedit veniam sed cupiditate praesentium voluptatum illo
                     fugiat magni nihil! Facere fugiat sunt id fugit natus!
                   </p>
+                  <BadgeIndustry/>
                 </div>
                 <div className="column h-100 is-4 bg-form-landing Aligner">
                   <div className="has-text-centered view-badge">
