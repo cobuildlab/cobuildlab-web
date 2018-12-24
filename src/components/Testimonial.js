@@ -7,13 +7,11 @@ const Testimonial = props => {
   return (
     <Media className="component-changes">
       <MediaLeft
-      className="testimonial-image"
-      style={{
-        backgroundImage: `url(${image})`
-      }}
-      >
-        
-      </MediaLeft>
+        className="testimonial-image"
+        style={{
+          backgroundImage: `url(${image})`,
+        }}
+      />
       <MediaContent>
         <Content>
           <img src={logo} className="testimonial-logo" />

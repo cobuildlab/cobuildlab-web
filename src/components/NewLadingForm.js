@@ -53,8 +53,7 @@ export default class NewLadingForm extends Component {
       return
     }
 
-    // const url = 'https://api.cobuild-lab.com/landing/contact'
-    const url = 'http://localhost:3000/landing/contact'
+    const url = 'https://api.cobuild-lab.com/landing/contact'
 
     const data = {
       landingName,
@@ -90,103 +89,100 @@ export default class NewLadingForm extends Component {
   render() {
     const { landingName } = this.props
     return (
-      <div>
-        <div className="Aligner">
-          <div className="colunm is-4">
-            <Title className="has-text-centered title-form-contact">
-              Contact us for a <span className="free">FREE</span> <br />{' '}
-              consultation!
-            </Title>
-            <p className="subtitle-info">
-              Call Us to: <span className="free">(786) 991-3467</span> or <br />{' '}
-              fill out this form and we will get in touch with you.{' '}
-            </p>
+      <div className="Aligner">
+        <div className="colunm is-4">
+          <Title className="has-text-centered title-form-contact">
+            Contact us for a <span className="free">FREE</span> <br />{' '}
+            consultation!
+          </Title>
+          <p className="subtitle-info">
+            Call Us to: <span className="free">(786) 991-3467</span> or <br />{' '}
+            fill out this form and we will get in touch with you.{' '}
+          </p>
+        </div>
+
+        <form
+          className="has-text-centered"
+          onSubmit={e => {
+            this.onSubmit(e, landingName)
+          }}
+        >
+          <div className="group">
+            <input
+              type="text"
+              required
+              name="firstName"
+              value={this.state.firstName}
+              onChange={e => this.handleChange(e)}
+            />
+            <span className="highlight" />
+            <span className="bar" />
+            <label>First Name</label>
           </div>
-          <br />
-          <form
-            className="has-text-centered"
-            onSubmit={e => {
-              this.onSubmit(e, landingName)
-            }}
+
+          <div className="group">
+            <input
+              type="text"
+              required
+              name="lastName"
+              value={this.state.lastName}
+              onChange={e => this.handleChange(e)}
+            />
+            <span className="highlight" />
+            <span className="bar" />
+            <label>Last Name</label>
+          </div>
+
+          <div className="group">
+            <input
+              type="email"
+              name="email"
+              value={this.state.email}
+              onChange={e => this.handleChange(e)}
+            />
+            <span className="highlight" />
+            <span className="bar" />
+            <label>Email</label>
+          </div>
+
+          <div className="group">
+            <input
+              type="number"
+              name="phone"
+              value={this.state.phone}
+              onChange={e => this.handleChange(e)}
+            />
+            <span className="highlight" />
+            <span className="bar" />
+            <label>Phone</label>
+          </div>
+
+          <div className="group">
+            <input
+              type="text"
+              required
+              name="comment"
+              value={this.state.comment}
+              onChange={e => this.handleChange(e)}
+            />
+            <span className="highlight" />
+            <span className="bar" />
+            <label>Comment or Message</label>
+          </div>
+          <button
+            className="button is-primary is-medium is-rounded"
+            type="submit"
           >
-            <div className="group">
-              <input
-                type="text"
-                required
-                name="firstName"
-                value={this.state.firstName}
-                onChange={e => this.handleChange(e)}
-              />
-              <span className="highlight" />
-              <span className="bar" />
-              <label>First Name</label>
-            </div>
-
-            <div className="group">
-              <input
-                type="text"
-                required
-                name="lastName"
-                value={this.state.lastName}
-                onChange={e => this.handleChange(e)}
-              />
-              <span className="highlight" />
-              <span className="bar" />
-              <label>Last Name</label>
-            </div>
-
-            <div className="group">
-              <input
-                type="email"
-                name="email"
-                value={this.state.email}
-                onChange={e => this.handleChange(e)}
-              />
-              <span className="highlight" />
-              <span className="bar" />
-              <label>Email</label>
-            </div>
-
-            <div className="group">
-              <input
-                type="number"
-                name="phone"
-                value={this.state.phone}
-                onChange={e => this.handleChange(e)}
-              />
-              <span className="highlight" />
-              <span className="bar" />
-              <label>Phone</label>
-            </div>
-
-            <div className="group">
-              <input
-                type="text"
-                required
-                name="comment"
-                value={this.state.comment}
-                onChange={e => this.handleChange(e)}
-              />
-              <span className="highlight" />
-              <span className="bar" />
-              <label>Comment or Message</label>
-            </div>
-            <button
-              className="button is-primary is-medium is-rounded"
-              type="submit"
-            >
-              Submit
-            </button>
-          </form>
-          <div>
-            <br />
-            <Subtitle className="has-text-centered is-marginless has-text-white m-20">
-              Privacy Policy
-            </Subtitle>
-            <p className="has-text-centered has-text-white is-marginless">
-              Here you can access the information about how we use your data.
-            </p>
-          </div>
+            Submit
+          </button>
+        </form>
+        <div>
+          <Subtitle className="has-text-centered has-text-white mt-20">
+            Privacy Policy
+          </Subtitle>
+          <p className="has-text-centered has-text-white is-marginless">
+            Here you can access the information about how we your data
+          </p>
         </div>
       </div>
     )
