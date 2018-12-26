@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import { Title, Subtitle } from 'bloomer'
 import { navigate } from 'gatsby'
+import Loading from './Loading'
 import { toast } from 'react-toastify'
 
-export default class NewLadingForm extends Component {
+export default class NewLandingForm extends Component {
   constructor(props) {
     super(props)
 
@@ -13,6 +14,7 @@ export default class NewLadingForm extends Component {
       comment: '',
       email: '',
       phone: '',
+      isLoading: false,
     }
   }
 
@@ -53,6 +55,8 @@ export default class NewLadingForm extends Component {
       return
     }
 
+    this.setState({ isLoading: true })
+
     const url = 'https://api.cobuild-lab.com/landing/contact'
 
     const data = {
@@ -73,6 +77,9 @@ export default class NewLadingForm extends Component {
       .then(res => res.json())
       .then(response => {
         if (response.statusCode >= 400) {
+          this.setState({
+            isLoading: false,
+          })
           toast.error(response.message, {
             position: 'bottom-right',
           })
@@ -88,6 +95,7 @@ export default class NewLadingForm extends Component {
 
   render() {
     const { landingName } = this.props
+    const { isLoading } = this.state
     return (
       <div className="Aligner">
         <div className="view-form">
@@ -101,7 +109,6 @@ export default class NewLadingForm extends Component {
               fill out this form and we will get in touch with you.{' '}
             </p>
           </div>
-
           <form
             className="has-text-centered"
             onSubmit={e => {
@@ -170,13 +177,18 @@ export default class NewLadingForm extends Component {
               <span className="bar" />
               <label>Comment or Message</label>
             </div>
-            <button
-              className="button is-primary is-medium is-rounded"
-              type="submit"
-            >
-              Submit
-            </button>
+            {isLoading ? (
+              <Loading loading={isLoading} />
+            ) : (
+              <button
+                className="button is-primary is-medium is-rounded"
+                type="submit"
+              >
+                Submit
+              </button>
+            )}
           </form>
+
           <div>
             <Subtitle className="has-text-centered has-text-white mt-20">
               Privacy Policy

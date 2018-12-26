@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import 'react-toastify/dist/ReactToastify.min.css'
-import NewLandingForm from '../components/NewLadingForm'
+import NewLandingForm from '../components/NewLandingForm'
 import BadgeIndustry from '../components/BadgeIndustry'
 import { Title, Subtitle } from 'bloomer'
 import 'bulma'
