@@ -637,7 +637,7 @@ hr {
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #fff;
-  margin-top: 40px;
+  margin-top: 5px;
 }
 
 .study-text {
@@ -751,9 +751,10 @@ label {
 }
 /* active state */
 input:focus ~ label,
-input:valid label {
+input:valid ~ label,
+input[value=''] ~ label {
   top: -20px;
-  font-size: 14px;
+  font-size: 16px;
   color: #fff;
 }
 
@@ -856,10 +857,8 @@ input:focus ~ .highlight {
   background-color: #244a62;
   border-radius: 10px;
   color: #fff;
-  font-size: 15px;
+  font-size: 1vw;
   padding: 5px 10px 5px 10px;
-  margin-left: 30px;
-  margin-right: 30px;
   border-top: 3px #d7b365 solid;
 }
 .view-badge-industry {
@@ -867,7 +866,7 @@ input:focus ~ .highlight {
   width: 65%;
   bottom: 20px;
 }
-
+/* Desktops and newer mobile ----------- */
 @media all and (max-width: 480px) {
   .h-100 {
     height: auto !important;
@@ -918,32 +917,54 @@ input:focus ~ .highlight {
     width: 100%;
     bottom: 0px;
   }
+  .badge-industry {
+    background-color: #244a62;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 3vw;
+    padding: 5px 10px 5px 10px;
+    border-top: 3px #d7b365 solid;
+  }
 }
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
+/* Desktops and tablet ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .logo {
-    margin: 50px;
-    width: 400px;
+    margin: 40px;
+    width: 350px;
   }
   .title-squeezing {
     color: #264a60 !important;
-    font-size: 65px !important;
-    margin-top: 30px !important;
-    margin-left: 50px;
+    font-size: 45px !important;
+    margin-top: 25px !important;
+    margin-left: 40px;
     margin-bottom: 0px !important;
-    font-size: 1.75em;
   }
   .subtitle-squeezing {
     color: #264a60 !important;
     margin-top: 25px !important;
-    margin-left: 50px;
+    margin-left: 40px;
     margin-bottom: 0px !important;
     font-weight: 600 !important;
   }
   .text-description {
-    margin-left: 50px;
-    margin-right: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
     margin-top: 50px;
+    color: #254a61;
+    font-size: 20px;
+  }
+  .view-badge-industry {
+    position: absolute;
+    width: 97%;
+    bottom: 20px;
+  }
+  .badge-industry {
+    background-color: #244a62;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5vw;
+    padding: 5px 10px 5px 10px;
+    border-top: 3px #d7b365 solid;
   }
   .view-form {
     display: flex;
@@ -952,10 +973,78 @@ input:focus ~ .highlight {
     height: 80%;
     -webkit-flex-direction: column; /* Safari 6.1+ */
     flex-direction: column;
-    zoom: 0.9;
+    zoom: 1;
+  }
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  .logo {
+    margin: 30px;
+    width: 330px;
+  }
+
+  .title-squeezing {
+    color: #264a60 !important;
+    font-size: 45px !important;
+    margin-top: 25px !important;
+    margin-left: 30px;
+    margin-bottom: 0px !important;
+  }
+  .subtitle-squeezing {
+    color: #264a60 !important;
+    margin-top: 25px !important;
+    margin-left: 30px;
+    margin-bottom: 0px !important;
+    font-weight: 600 !important;
+  }
+  .text-description {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 50px;
+    color: #254a61;
+    font-size: 18px;
+  }
+  .study-logo {
+    border-radius: 160px !important;
+    height: 120px;
+    width: 120px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    margin-top: 0;
+  }
+  .study-text {
+    color: #264a60;
+    font-size: 18px;
+    margin-bottom: 0px !important;
+  }
+  .study-subtitle {
+    color: #264a60 !important;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px !important;
+    margin-bottom: 0px !important;
+  }
+  .view-badge-industry {
+    position: absolute;
+    width: 65%;
+    bottom: 15px;
+  }
+  .view-badge {
+    padding-top: 0;
+  }
+  .view-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    -webkit-flex-direction: column; /* Safari 6.1+ */
+    flex-direction: column;
+    zoom: 0.82;
   }
   .img-graphic {
-    width: 100%;
+    width: 58%;
   }
 }
 /* Large screens ----------- */
@@ -981,7 +1070,7 @@ input:focus ~ .highlight {
   }
   .text-description {
     margin-left: 90px;
-    margin-right: 30px;
+    margin-right: 90px;
     margin-top: 90px;
   }
   .component-changes {

@@ -1,10 +1,9 @@
 import React from 'react'
 import '../assets/css/index.css'
-
 const BadgeIndustry = props => {
   return (
     <div className="view-badge-industry">
-      <div className="columns is-desktop has-text-centered">
+      <div className="columns is-desktop is-mobile has-text-centered">
         <div className="column">
           <p className="badge-industry">Software Development SMBs</p>
         </div>
@@ -21,5 +20,4 @@ const BadgeIndustry = props => {
     </div>
   )
 }
-
 export default BadgeIndustry
