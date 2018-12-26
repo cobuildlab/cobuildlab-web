@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, navigate } from 'gatsby'
 import { ToastContainer, toast } from 'react-toastify'
+import Loading from './Loading'
 import {
   Container,
   Title,
@@ -26,6 +27,7 @@ export default class Contact extends React.Component {
       phone: '',
       comment: '',
       isVerified: true,
+      isLoading: false,
       landingName: 'Cobuild Lab',
     }
 
@@ -43,6 +45,8 @@ export default class Contact extends React.Component {
     e.preventDefault()
 
     if (this.state.firstName.length <= 0) {
+      toast.dismiss()
+
       toast.error("First name can't be empty", {
         position: 'bottom-right',
       })
@@ -50,6 +54,8 @@ export default class Contact extends React.Component {
     }
 
     if (this.state.lastName.length <= 0) {
+      toast.dismiss()
+
       toast.error("Last name can't be empty", {
         position: 'bottom-right',
       })
@@ -57,6 +63,8 @@ export default class Contact extends React.Component {
     }
 
     if (this.state.email.length <= 0) {
+      toast.dismiss()
+
       toast.error("Email can't be empty", {
         position: 'bottom-right',
       })
@@ -64,11 +72,17 @@ export default class Contact extends React.Component {
     }
 
     if (this.state.comment.length <= 0) {
+      toast.dismiss()
+
       toast.error("Comment can't be empty", {
         position: 'bottom-right',
       })
       return
     }
+
+    this.setState({
+      isLoading: true,
+    })
 
     const url = 'https://api.cobuild-lab.com/landing/contact'
 
@@ -103,10 +117,22 @@ export default class Contact extends React.Component {
       .then(res => res.json())
       .then(response => {
         if (response.statusCode >= 400) {
+          toast.dismiss()
+
           toast.error(response.message, {
             position: 'bottom-right',
           })
+
+          this.setState({
+            isLoading: false,
+          })
         } else {
+          toast.dismiss()
+
+          toast.success(response.message, {
+            position: 'bottom-right',
+          })
+
           navigate('/thanks-contact')
         }
       })
@@ -115,6 +141,7 @@ export default class Contact extends React.Component {
   render() {
     return (
       <section id="contact" className="section bg-section">
+        <ToastContainer />
         <Container>
           <Columns isCentered>
             <Column className="p-f" isSize="1/2">
@@ -208,13 +235,16 @@ export default class Contact extends React.Component {
                 <Field isGrouped>
                   <Control>
                     <br />
-                    <button
-                      className="button is-primary is-medium is-rounded"
-                      type="submit"
-                    >
-                      Submit
-                    </button>
-                    <ToastContainer />
+                    {this.state.isLoading ? (
+                      <Loading loading={this.state.isLoading} />
+                    ) : (
+                      <button
+                        className="button is-primary is-medium is-rounded"
+                        type="submit"
+                      >
+                        Submit
+                      </button>
+                    )}
                   </Control>
                 </Field>
                 <Content hasTextAlign="centered">

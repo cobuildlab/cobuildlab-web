@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, navigate } from 'gatsby'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
+import Loading from './Loading'
 import {
   Container,
   Columns,
@@ -23,6 +24,7 @@ class FormContact extends React.Component {
     email: '',
     phone: '',
     comment: '',
+    isLoading: false,
   }
 
   handleChange = e => {
@@ -35,6 +37,8 @@ class FormContact extends React.Component {
     e.preventDefault()
 
     if (this.state.firstName.length <= 0) {
+      toast.dismiss()
+
       toast.error("First name can't be empty", {
         position: 'bottom-right',
       })
@@ -42,6 +46,8 @@ class FormContact extends React.Component {
     }
 
     if (this.state.lastName.length <= 0) {
+      toast.dismiss()
+
       toast.error("Last name can't be empty", {
         position: 'bottom-right',
       })
@@ -49,6 +55,8 @@ class FormContact extends React.Component {
     }
 
     if (this.state.email.length <= 0) {
+      toast.dismiss()
+
       toast.error("Email can't be empty", {
         position: 'bottom-right',
       })
@@ -56,11 +64,17 @@ class FormContact extends React.Component {
     }
 
     if (this.state.comment.length <= 0) {
+      toast.dismiss()
+
       toast.error("Comment can't be empty", {
         position: 'bottom-right',
       })
       return
     }
+
+    this.setState({
+      isLoading: true,
+    })
 
     const url = 'https://api.cobuild-lab.com/landing/contact'
 
@@ -88,10 +102,18 @@ class FormContact extends React.Component {
       .then(res => res.json())
       .then(response => {
         if (response.statusCode >= 400) {
+          toast.dismiss()
+
           toast.error(response.message, {
             position: 'bottom-right',
           })
+
+          this.setState({
+            isLoading: false,
+          })
         } else {
+          toast.dismiss()
+
           toast.success(response.message, {
             position: 'bottom-right',
           })
@@ -105,6 +127,7 @@ class FormContact extends React.Component {
     const { landingName } = this.props
     return (
       <Container>
+        <ToastContainer />
         <Content>
           <Columns>
             <Column
@@ -203,13 +226,16 @@ class FormContact extends React.Component {
                   </Field>
                   <Field isGrouped>
                     <Control>
-                      <button
-                        className="button is-primary is-medium is-rounded"
-                        type="submit"
-                      >
-                        Submit
-                      </button>
-                      <ToastContainer />
+                      {this.state.isLoading ? (
+                        <Loading loading={this.state.isLoading} />
+                      ) : (
+                        <button
+                          className="button is-primary is-medium is-rounded"
+                          type="submit"
+                        >
+                          Submit
+                        </button>
+                      )}
                     </Control>
                   </Field>
                   <Content hasTextAlign="centered">

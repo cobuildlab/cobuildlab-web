@@ -28,6 +28,8 @@ export default class NewLandingForm extends Component {
     e.preventDefault()
 
     if (this.state.firstName.length <= 0) {
+      toast.dismiss()
+
       toast.error("First name can't be empty", {
         position: 'bottom-right',
       })
@@ -35,6 +37,8 @@ export default class NewLandingForm extends Component {
     }
 
     if (this.state.lastName.length <= 0) {
+      toast.dismiss()
+
       toast.error("Last name can't be empty", {
         position: 'bottom-right',
       })
@@ -42,6 +46,8 @@ export default class NewLandingForm extends Component {
     }
 
     if (this.state.email.length <= 0) {
+      toast.dismiss()
+
       toast.error("Email can't be empty", {
         position: 'bottom-right',
       })
@@ -49,6 +55,8 @@ export default class NewLandingForm extends Component {
     }
 
     if (this.state.comment.length <= 0) {
+      toast.dismiss()
+
       toast.error("Comment can't be empty", {
         position: 'bottom-right',
       })
@@ -77,13 +85,18 @@ export default class NewLandingForm extends Component {
       .then(res => res.json())
       .then(response => {
         if (response.statusCode >= 400) {
-          this.setState({
-            isLoading: false,
-          })
+          toast.dismiss()
+
           toast.error(response.message, {
             position: 'bottom-right',
           })
+
+          this.setState({
+            isLoading: false,
+          })
         } else {
+          toast.dismiss()
+
           toast.success(response.message, {
             position: 'bottom-right',
           })
