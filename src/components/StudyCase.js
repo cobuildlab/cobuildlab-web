@@ -22,7 +22,7 @@ const StudyCase = props => {
 
         <br />
 
-        <Columns>
+        <Columns className="is-mobile">
           <Column className="study-subtext">
             Lorem ipsum
             <br />
