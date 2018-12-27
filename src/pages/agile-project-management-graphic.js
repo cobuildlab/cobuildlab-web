@@ -31,8 +31,6 @@ export default class AgileProjectGraphic extends React.Component {
     const siteDescription =
       "Our senior's product managers and agile coaches work with you to build and deliver software effectively. Your team would be transformed through education of the most appropriate agile techniques and best practices."
     const landingName = 'Ecommerce Development Graphic'
-    const text =
-      'Lorem ipsum dolor sit amet, maecenas dictum in est, tincidunt nec suscipit vitae et et est. Justo vel lorem taciti elementum. Suspendisse et integer, aliquam nostra sollicitudin lacus, molestiae sit praesent ultrices augue arcu elit. Risus eu nulla varius, eu est morbi, lacinia elit vivamus phasellus volutpat sed mauris, nascetur vitae illo proin pulvinar, hac praesent varius.'
 
     return (
       <React.Fragment>
@@ -58,7 +56,7 @@ export default class AgileProjectGraphic extends React.Component {
                   <div className="has-text-centered">
                     <img src={graphic} className="img-graphic" />
                   </div>
-                  {/* <BadgeIndustry /> */}
+                  <BadgeIndustry />
                 </div>
                 <div className="column h-100 is-4 bg-form-landing Aligner">
                   <div className="has-text-centered view-badge">

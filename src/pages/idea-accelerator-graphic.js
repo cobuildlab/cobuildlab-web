@@ -57,7 +57,7 @@ export default class IdeaGraphic extends React.Component {
                   <div className="has-text-centered">
                     <img src={graphic} className="img-graphic" />
                   </div>
-                  {/* <BadgeIndustry /> */}
+                 <BadgeIndustry />
                 </div>
                 <div className="column h-100 is-4 bg-form-landing Aligner">
                   <div className="has-text-centered view-badge">
