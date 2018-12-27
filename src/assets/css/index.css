@@ -663,8 +663,8 @@ hr {
 
 /* New squeezing */
 .logo {
-  margin: 90px;
-  width: 400px;
+  margin: 70px;
+  width: 350px;
 }
 .component-changes {
   margin-left: 15px;
@@ -687,14 +687,14 @@ hr {
 
 .title-squeezing {
   color: #264a60 !important;
-  font-size: 65px !important;
+  font-size: 55px !important;
   margin-top: 10%;
-  margin-left: 90px;
+  margin-left: 80px;
 }
 .subtitle-squeezing {
   color: #264a60 !important;
   margin-top: 25px !important;
-  margin-left: 90px;
+  margin-left: 80px;
   margin-bottom: 0px !important;
 }
 .text-description {
@@ -910,7 +910,7 @@ input:focus ~ .highlight {
     zoom: 1;
   }
   .img-graphic {
-    width: 100%;
+    width: 70%;
   }
   .view-badge-industry {
     position: relative;
@@ -1050,33 +1050,34 @@ input:focus ~ .highlight {
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
   .logo {
-    margin: 90px;
-    width: 400px;
+    margin: 80px;
+    width: 350px;
   }
   .title-squeezing {
     color: #264a60 !important;
-    font-size: 65px !important;
+    font-size: 55px !important;
     margin-top: 50px !important;
-    margin-left: 90px;
+    margin-left: 80px;
     margin-bottom: 0px !important;
   }
   .subtitle-squeezing {
     color: #264a60 !important;
     margin-top: 25px !important;
-    margin-left: 90px;
+    margin-left: 80px;
     margin-bottom: 0px !important;
     font-weight: 600 !important;
     font-size: 1.75em;
   }
   .text-description {
-    margin-left: 90px;
-    margin-right: 90px;
-    margin-top: 90px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 80px;
+    font-size: 24px;
   }
   .component-changes {
-    margin-left: 90px;
-    margin-right: 90px;
-    margin-top: 8%;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 7%;
   }
   .view-form {
     display: flex;

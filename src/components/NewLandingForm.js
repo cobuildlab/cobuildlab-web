@@ -157,6 +157,7 @@ export default class NewLandingForm extends Component {
             <div className="group">
               <input
                 type="email"
+                required
                 name="email"
                 value={this.state.email}
                 onChange={e => this.handleChange(e)}
