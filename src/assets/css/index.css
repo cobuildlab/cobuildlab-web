@@ -910,7 +910,7 @@ input:focus ~ .highlight {
     zoom: 1;
   }
   .img-graphic {
-    width: 70%;
+    width: 50%;
   }
   .view-badge-industry {
     position: relative;
@@ -1044,7 +1044,7 @@ input:focus ~ .highlight {
     zoom: 0.82;
   }
   .img-graphic {
-    width: 58%;
+    width: 50%;
   }
 }
 /* Large screens ----------- */
@@ -1089,7 +1089,7 @@ input:focus ~ .highlight {
     zoom: 1;
   }
   .img-graphic {
-    width: 60%;
+    width: 50%;
   }
 }
 

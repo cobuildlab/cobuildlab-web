@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Title, Subtitle } from 'bloomer'
-import { navigate } from 'gatsby'
+import { navigate, Link } from 'gatsby'
 import Loading from './Loading'
 import { toast } from 'react-toastify'
 
@@ -207,9 +207,12 @@ export default class NewLandingForm extends Component {
             <Subtitle className="has-text-centered has-text-white mt-20">
               Privacy Policy
             </Subtitle>
-            <p className="has-text-centered has-text-white is-marginless">
-              Here you can access the information about how we your data
-            </p>
+            <Link
+              to="/privacy-policy"
+              className="has-text-centered has-text-white is-marginless"
+            >
+              Here you can access the information about how we treat your data.
+            </Link>
           </div>
         </div>
       </div>
