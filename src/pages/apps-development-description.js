@@ -29,8 +29,6 @@ export default class AppsDevDescription extends React.Component {
     const siteDescription =
       'We transform requirements into working software. We specialize in building web and mobile applications for Small and Medium Businesses.'
     const landingName = 'Apps Development Description'
-    const text =
-      'Lorem ipsum dolor sit amet, maecenas dictum in est, tincidunt nec suscipit vitae et et est. Justo vel lorem taciti elementum. Suspendisse et integer, aliquam nostra sollicitudin lacus, molestiae sit praesent ultrices augue arcu elit. Risus eu nulla varius, eu est morbi, lacinia elit vivamus phasellus volutpat sed mauris, nascetur vitae illo proin pulvinar, hac praesent varius.'
 
     return (
       <React.Fragment>
@@ -53,7 +51,7 @@ export default class AppsDevDescription extends React.Component {
                   <Subtitle className="subtitle-squeezing">
                     {siteSubtitle}
                   </Subtitle>
-                  <p className="text-description">{text}</p>
+                  <p className="text-description">{siteDescription}</p>
                   <BadgeIndustry />
                 </div>
                 <div className="column h-100 is-4 bg-form-landing Aligner">
