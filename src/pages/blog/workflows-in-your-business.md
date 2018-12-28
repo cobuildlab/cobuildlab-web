@@ -131,7 +131,50 @@ Source: [Financesonly](https://reviews.financesonline.com/p/kissflow/)
 
 This tool has a free plan, an two paid. The first paided is the kissFLOW plan, which has a cost of $9 per month while the second one is the enterprise, but they don't show the price. If you want you know it you have to communicate with the vendor.
 
-<youtube-video id=""></youtube-video>
+<youtube-video id="qyB7lfozSwM"></youtube-video>
+
+* **Nintex**
+
+This tool gives solutions for workflow automation. Linking cloud workflows, on-premise systems, and mobile users this software automates the processes used collaboration and content management platforms.
+
+“It enables you to easily streamline processes, integrate content, and empower employees wherever they are located. The app sports a people-driven design and offers people-friendly participation to improve processes – both simple everyday ones to complex elaborate procedures. The best part is you can work with content no matter what or where it is, and route it to the right recipients.”[Financesonly](https://financesonline.com/top-15-workflow-management-software-solutions/)
+
+The best part about this software is the flexible pricing scheme and how it helps regain control of all business processes on a price that corresponds to what the company genuinely can offer. It doesn't matter if It is a small, medium, or a large business, Nintex can help you understand and automate all operations. 
+
+It has a free trial, and two paid plans which are a little more expensive that its competition. The standard plan which has a price of $625 monthly and the enterprise plan that costs $938 per month.
+
+<youtube-video id="MXOotP1-onQ"></youtube-video>
+
+* **Wrike**
+
+There you can create a dashboard with the whole information you need for doing your work, a process, or a task. 
+
+And not only yours, also, you could see what is doing other team’s members. 
+
+Wrike simplifies project management with features such as dynamic request forms that help capture information and ensure that project teams have all the details before they start working. The interactive Gantt chart that shows dependencies and conflicts, with items that can be easily adjusted within the chart, dashboards, etc. 
+
+This tool has many plans as the last. It has a free plan where only 5 users are included and the storage is 2GB maximum. Then, we have the professional plan which costs $ 9,80 monthly and you enjoy of 5GB of storage and 5, 10 or 15 users availables. 
+
+A third plan is called business, and there you have from 5 users yo 200 users in your account, and the last plan is the enterprise where you can have unlimited users, more storage, more security and even premium tools as marketing tool specialized for creative teams.
+
+* **Monday**
+
+“Formerly known as Dapulse is one of the few tools that prides itself in ‘not being a project management tool’! They’ve done away with a lot of the trimmings of typical workflow tools and focused instead on a structure and views that help clarify the sequence of work that needs to be done. Monday’s approach is somewhat Kanban-style in that it uses boards, with rows and columns that you use to organize processes”.[The digital project manager](https://thedigitalprojectmanager.com/workflow-management-software/)
+
+The Monday’s most distinctive advantage compared to similar systems is the advanced scheduling capability, which applies both to task and project management, and helps companies get rid of arcane paperwork. This capability makes sure there will be no manual errors, and  makes the brand even more trustworthy and reliable in the eyes of buyers. 
+
+Monday has 5 plans. The first is free. Next is the basic plan, where you can have 5GB of storage, two factor authentication, and a filter for person. This plan costs $39 per month. 
+
+In the third position you have the standard plan, where you can enjoy of 50GB of storage, full API, a timeline, and also you can create your own account template. And all of that for $39 by month. 
+
+The PRO plan is the next. You can get it for $59 monthly. Herramientas you have Google authentication, private boards, unlimited storage, tags, and every we said in early plans. 
+
+The last and more expensive plan is the enterprise for $118 monthly if you pay the anuality. You might have access to all benefits from other plans plus vip support, more cybersecurity, one-on-one training, etc.
+
+<youtube-video id="ajBtOzTIhC8"></youtube-video>
+
+
+
 
 
 
