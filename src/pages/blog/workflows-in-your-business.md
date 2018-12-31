@@ -173,12 +173,38 @@ The last and more expensive plan is the enterprise for $118 monthly if you pay t
 
 <youtube-video id="ajBtOzTIhC8"></youtube-video>
 
+These are its benefits
+
+We said some of them before, but we decide to strengthen them with this video. Enjoy it!
+
+<youtube-video id="Lm0fbskHRv8"></youtube-video> 
+
+
+**How to convert everyday tasks in better, reproducibles and more efficient workflows
+
+1. Make it clear and concise
+
+Sometimes happens that we have something to do and we know it. It is only a task, but we have only descriptive information. That's not bad at all, but if we want to enhance this task in a workflow, we need to name it, and write specifications about it. In that way, everyone will know what has to be done clearly. 
+
+2.  Look for a responsible
+
+This mean that a simple task is an activity you need to do in your company or life, but if you want to convert the task in a workflow you need to determine the responsible, and if you are this person, you need to identify which people do you need to involve or search for achieve this task. This information goes together with the last point. 
+
+3.  Assign a period of time 
+
+This is so important. A workflow necessarily has a task or a group of task that need to be accomplish it in a specific period of time. You can manage a period or a due date. This is the quality that permit you to be more efficient with time.
+
+4.  Put it in your tool
+
+Once you have this information, you can introduce the task (name, specifications, responsables, time) on the app or tool you are using to manage your workflow. This app can be any of the ones that we showed in the last part. 
+
+5. Share it
+
+A common characteristic of a workflow in a team is the transparency. All people should know what the others team members are doing, so that even they can participate if they are capable to do it or it is required. 
+
+It is vital for success keeping and improving **efficient workflows in your business.** We hope this information would be useful for you and it can help you achieve this goal. 
+
+Try it and then we want to know how did it go.
 
 
 
-
-
-
-Source:[Wikipedia](https://en.wikipedia.org/wiki/IOS)
-
-<youtube-video id="bUQz9ZWjsvc"></youtube-video>
