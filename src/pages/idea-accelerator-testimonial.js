@@ -22,8 +22,6 @@ import badge1 from '../resources/badges1.png'
 import badge2 from '../resources/badges2.png'
 import badge3 from '../resources/badges3.png'
 import badge4 from '../resources/badges4.png'
-import weedLogo from '../resources/weedmatch.png'
-import clienteImg from '../resources/oscar-weedmatch.png'
 
 export default class IdeaTestimonial extends React.Component {
   render() {
@@ -32,8 +30,6 @@ export default class IdeaTestimonial extends React.Component {
     const siteDescription =
       'We help early stage and new entrepreneurs transform ideas into Scalable Software Products through education by using a collaborative and full-companion development process'
     const landingName = 'Idea Accelerator Testimonial'
-    const text =
-      'Lorem ipsum dolor sit amet, maecenas dictum in est, tincidunt nec suscipit vitae et et est. Justo vel lorem taciti elementum. Suspendisse et integer, aliquam nostra sollicitudin lacus, molestiae sit praesent ultrices augue arcu elit. Risus eu nulla varius, eu est morbi, lacinia elit vivamus phasellus volutpat sed mauris, nascetur vitae illo proin pulvinar, hac praesent varius.'
 
     return (
       <React.Fragment>
@@ -56,7 +52,7 @@ export default class IdeaTestimonial extends React.Component {
                   <Subtitle className="subtitle-squeezing">
                     {siteSubtitle}
                   </Subtitle>
-                  <Testimonial image={clienteImg} logo={weedLogo} text={text} />
+                  <Testimonial />
                   <BadgeIndustry />
                 </div>
                 <div className="column h-100 is-4 bg-form-landing Aligner">

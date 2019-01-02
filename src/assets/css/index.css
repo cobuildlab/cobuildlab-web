@@ -646,6 +646,7 @@ hr {
 
 .study-subtext {
   color: #264a60;
+  font-weight: bold;
 }
 
 .study-subtitle {
@@ -658,7 +659,6 @@ hr {
   color: #e76c29;
   font-weight: bold;
   font-size: 35px;
-  margin-left: 10px;
 }
 
 /* New squeezing */

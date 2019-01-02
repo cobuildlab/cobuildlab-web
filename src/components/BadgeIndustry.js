@@ -3,10 +3,10 @@ import '../assets/css/index.css'
 const BadgeIndustry = props => {
   return (
     <div className="view-badge-industry">
+      <p className="has-text-centered subtitle" style={{ color: '#244a62' }}>
+        <b>We specialize in these industries:</b>
+      </p>
       <div className="columns is-desktop is-mobile has-text-centered">
-        <div className="column">
-          <p className="badge-industry">Software Development SMBs</p>
-        </div>
         <div className="column">
           <p className="badge-industry">Advertising and Retailling</p>
         </div>
@@ -15,6 +15,9 @@ const BadgeIndustry = props => {
         </div>
         <div className="column">
           <p className="badge-industry">Communities and Lifestyle</p>
+        </div>
+        <div className="column">
+          <p className="badge-industry">ERP Software</p>
         </div>
       </div>
     </div>

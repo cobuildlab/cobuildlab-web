@@ -22,8 +22,6 @@ import badge1 from '../resources/badges1.png'
 import badge2 from '../resources/badges2.png'
 import badge3 from '../resources/badges3.png'
 import badge4 from '../resources/badges4.png'
-import weedLogo from '../resources/weedmatch.png'
-import clienteImg from '../resources/oscar-weedmatch.png'
 
 export default class EcommerceDevTestimonial extends React.Component {
   render() {
@@ -33,8 +31,6 @@ export default class EcommerceDevTestimonial extends React.Component {
     const siteDescription =
       'We develop the best strategy to take your Business to the next Level. We create a plan for tools, integrations, and support to enable your operations in the e-commerce market.'
     const landingName = 'Ecommerce Development Testimonial'
-    const text =
-      'Lorem ipsum dolor sit amet, maecenas dictum in est, tincidunt nec suscipit vitae et et est. Justo vel lorem taciti elementum. Suspendisse et integer, aliquam nostra sollicitudin lacus, molestiae sit praesent ultrices augue arcu elit. Risus eu nulla varius, eu est morbi, lacinia elit vivamus phasellus volutpat sed mauris, nascetur vitae illo proin pulvinar, hac praesent varius.'
 
     return (
       <React.Fragment>
@@ -57,7 +53,7 @@ export default class EcommerceDevTestimonial extends React.Component {
                   <Subtitle className="subtitle-squeezing">
                     {siteSubtitle}
                   </Subtitle>
-                  <Testimonial image={clienteImg} logo={weedLogo} text={text} />
+                  <Testimonial />
                   <BadgeIndustry />
                 </div>
                 <div className="column h-100 is-4 bg-form-landing Aligner">

@@ -29,7 +29,7 @@ export default class AgileProjectDescription extends React.Component {
       'Let our experience drive the success of your projects.'
     const siteDescription =
       "Our senior's product managers and agile coaches work with you to build and deliver software effectively. Your team would be transformed through education of the most appropriate agile techniques and best practices."
-    const landingName = 'Ecommerce Development Description'
+    const landingName = 'Agile Project Management Description'
 
     return (
       <React.Fragment>

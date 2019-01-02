@@ -27,7 +27,7 @@ export default class IdeaDescription extends React.Component {
     const siteTitle = 'Idea Accelerator in Miami'
     const siteSubtitle = 'We accelerate Ideas into scalable Software Businesses'
     const siteDescription =
-      'We help early stage and new entrepreneurs transform ideas into Scalable Software Products through education by using a collaborative and full-companion development process.'
+      'We help early stage and new entrepreneurs transform ideas into <b>Scalable Software Products</b> through education by using a collaborative and full-companion development process.'
     const landingName = 'Idea Accelerator Description'
 
     return (
@@ -51,7 +51,12 @@ export default class IdeaDescription extends React.Component {
                   <Subtitle className="subtitle-squeezing">
                     {siteSubtitle}
                   </Subtitle>
-                  <p className="text-description">{siteDescription}</p>
+                  <p className="text-description">
+                    We help early stage and new entrepreneurs transform ideas
+                    into <b>Scalable Software Products</b> through education by
+                    using a collaborative and full-companion development
+                    process.
+                  </p>
                   <BadgeIndustry />
                 </div>
                 <div className="column h-100 is-4 bg-form-landing Aligner">
