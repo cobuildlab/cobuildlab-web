@@ -49,6 +49,27 @@ That’s why the next year, chatbots will be on demand.
 
 ![chatbots](./media/1_BWZp1CB1u7QE1CAr6eewrA.jpeg)
 
+Source: [Medium](https://medium.com/botsupply/chatbot-101-everything-you-ever-wanted-to-know-about-chatbots-478c0b825dd0)
+
+If you want to be sure of this, we share this statistic and this study made for the [Chatbot Magazine's team](https://chatbotsmagazine.com/chatbot-report-2018-global-trends-and-analysis-4d8bbe4d924b) where we can see how people prefer bots for chatting than apps. And that's just the beginning.
+
+![chatbots](./media/0_9W95LgPh_6we4qNP.png)
+
+Source: [Chatsbots Magazine](https://chatbotsmagazine.com/chatbot-report-2018-global-trends-and-analysis-4d8bbe4d924b)
+
+<title-3>Lives, lives, and lives</title-3>
+
+Are you shy to talk on Live? Well, if you want to be on trend this 2019, you must do it. So, leave that fear. 
+
+Instagram and Facebook popularized too much these transmissions, and the next year it seems that they will continue doing it. 
+
+People love “lives” on social media because they bring a personal face on every brand. “Lives” are spontaneous, funny, and loved by all. So, begin to make them, and improve your position in the market. 
+
+If you don’t know what to talk about, we share these topics that people of MarketingCharts suggest for being a brand more transparent and convince everyone with that.
+
+![lives](./media/Sprout-Topics-Demostrating-Brand-Transparency-on-Social-Aug2018.png)
+Source: [Marketing Chart](https://www.marketingcharts.com)
+
 
 
 
