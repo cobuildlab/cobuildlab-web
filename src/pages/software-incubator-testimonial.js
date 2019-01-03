@@ -43,17 +43,19 @@ export default class SoftwareIncTestimonial extends React.Component {
             <div className="content">
               <div className="columns is-desktop">
                 <div className="column is-8 h-100 bg-header-landing">
-                  <div>
-                    <img src={logo} className="logo" />
+                  <div className="view-content-zoom">
+                    <div>
+                      <img src={logo} className="logo" />
+                    </div>
+                    <Title className="title-squeezing">
+                      Developing new Software <br /> Products in Miami
+                    </Title>
+                    <Subtitle className="subtitle-squeezing">
+                      {siteSubtitle}
+                    </Subtitle>
+                    <Testimonial />
+                    <BadgeIndustry />
                   </div>
-                  <Title className="title-squeezing">
-                    Developing new Software <br /> Products in Miami
-                  </Title>
-                  <Subtitle className="subtitle-squeezing">
-                    {siteSubtitle}
-                  </Subtitle>
-                  <Testimonial />
-                  <BadgeIndustry />
                 </div>
                 <div className="column h-100 is-4 bg-form-landing Aligner">
                   <div className="has-text-centered view-badge">

@@ -42,22 +42,24 @@ export default class IdeaDescription extends React.Component {
             <div className="content">
               <div className="columns is-desktop">
                 <div className="column is-8 h-100 bg-header-landing">
-                  <div>
-                    <img src={logo} className="logo" />
+                  <div className="view-content-zoom">
+                    <div>
+                      <img src={logo} className="logo" />
+                    </div>
+                    <Title className="title-squeezing">
+                      Idea Acelerator <br /> in Miami
+                    </Title>
+                    <Subtitle className="subtitle-squeezing">
+                      {siteSubtitle}
+                    </Subtitle>
+                    <p className="text-description">
+                      We help early stage and new entrepreneurs transform ideas
+                      into <b>Scalable Software Products</b> through education
+                      by using a collaborative and full-companion development
+                      process.
+                    </p>
+                    <BadgeIndustry />
                   </div>
-                  <Title className="title-squeezing">
-                    Idea Acelerator <br /> in Miami
-                  </Title>
-                  <Subtitle className="subtitle-squeezing">
-                    {siteSubtitle}
-                  </Subtitle>
-                  <p className="text-description">
-                    We help early stage and new entrepreneurs transform ideas
-                    into <b>Scalable Software Products</b> through education by
-                    using a collaborative and full-companion development
-                    process.
-                  </p>
-                  <BadgeIndustry />
                 </div>
                 <div className="column h-100 is-4 bg-form-landing Aligner">
                   <div className="has-text-centered view-badge">

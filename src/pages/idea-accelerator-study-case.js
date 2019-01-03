@@ -43,21 +43,23 @@ export default class IdeaStudy extends React.Component {
             <div className="content">
               <div className="columns is-desktop">
                 <div className="column is-8 h-100 bg-header-study">
-                  <div>
-                    <img src={logo} className="logo" />
+                  <div className="view-content-zoom">
+                    <div>
+                      <img src={logo} className="logo" />
+                    </div>
+                    <Title className="title-squeezing">
+                      Idea Acelerator <br /> in Miami
+                    </Title>
+                    <h2 className="subtitle-squeezing">{siteSubtitle}</h2>
+                    <p className="text-description-all">
+                      We help early stage and new entrepreneurs transform ideas
+                      into <b>Scalable Software Products</b> through education
+                      by using a collaborative and full-companion development
+                      process.
+                    </p>
+                    <StudyCase />
+                    <BadgeIndustry />
                   </div>
-                  <Title className="title-squeezing">
-                    Idea Acelerator <br /> in Miami
-                  </Title>
-                  <h2 className="subtitle-squeezing">{siteSubtitle}</h2>
-                  <p className="text-description-all">
-                    We help early stage and new entrepreneurs transform ideas
-                    into <b>Scalable Software Products</b> through education by
-                    using a collaborative and full-companion development
-                    process.
-                  </p>
-                  <StudyCase />
-                  <BadgeIndustry />
                 </div>
 
                 <div className="column h-100 is-4 bg-form-landing Aligner">

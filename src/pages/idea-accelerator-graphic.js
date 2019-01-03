@@ -45,25 +45,27 @@ export default class IdeaGraphic extends React.Component {
             <div className="container is-fluid is-marginless">
               <div className="columns is-desktop">
                 <div className="column is-8 h-100 bg-header-graphic">
-                  <div>
-                    <img src={logo} className="logo" />
+                  <div className="view-content-zoom">
+                    <div>
+                      <img src={logo} className="logo" />
+                    </div>
+                    <Title className="title-squeezing">
+                      Idea Acelerator <br /> in Miami
+                    </Title>
+                    <Subtitle className="subtitle-squeezing">
+                      {siteSubtitle}
+                    </Subtitle>
+                    <p className="text-description-all">
+                      We help early stage and new entrepreneurs transform ideas
+                      into <b>Scalable Software Products</b> through education
+                      by using a collaborative and full-companion development
+                      process.
+                    </p>
+                    <div className="has-text-centered">
+                      <img src={graphic} className="img-graphic" />
+                    </div>
+                    <BadgeIndustry />
                   </div>
-                  <Title className="title-squeezing">
-                    Idea Acelerator <br /> in Miami
-                  </Title>
-                  <Subtitle className="subtitle-squeezing">
-                    {siteSubtitle}
-                  </Subtitle>
-                  <p className="text-description-all">
-                    We help early stage and new entrepreneurs transform ideas
-                    into <b>Scalable Software Products</b> through education by
-                    using a collaborative and full-companion development
-                    process.
-                  </p>
-                  <div className="has-text-centered">
-                    <img src={graphic} className="img-graphic" />
-                  </div>
-                <BadgeIndustry />
                 </div>
                 <div className="column h-100 is-4 bg-form-landing Aligner">
                   <div className="has-text-centered view-badge">

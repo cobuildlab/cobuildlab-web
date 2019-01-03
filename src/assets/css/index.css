@@ -858,6 +858,7 @@ input:focus ~ .highlight {
   border-radius: 10px;
   color: #fff;
   font-size: 1vw;
+  margin: 0 !important;
   padding: 5px 10px 5px 10px;
   border-top: 3px #d7b365 solid;
 }
@@ -882,7 +883,7 @@ input:focus ~ .highlight {
     display: block;
     margin: auto;
   }
-  .center-logo-mobile{
+  .center-logo-mobile {
     text-align: center !important;
   }
   .title-squeezing {
@@ -907,6 +908,7 @@ input:focus ~ .highlight {
     margin-top: 40px;
     margin-bottom: 40px !important;
     text-align: center;
+    color: #264a60 !important;
   }
   .text-description-all {
     margin-left: 15px;
@@ -941,7 +943,7 @@ input:focus ~ .highlight {
     width: 130px;
     margin-bottom: 25px;
   }
-  .study-subtitle{
+  .study-subtitle {
     text-align: center;
   }
   .study-number {
@@ -954,10 +956,10 @@ input:focus ~ .highlight {
     font-weight: bold;
     font-size: 12px;
   }
-  .media-content{
+  .media-content {
     overflow: hidden !important;
   }
-  .mt-3{
+  .mt-3 {
     margin-top: 30px;
   }
   .view-form {
@@ -981,7 +983,9 @@ input:focus ~ .highlight {
     background-color: #244a62;
     border-radius: 10px;
     color: #fff;
-    margin-right: 5px;
+    margin-right: 5px !important;
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
     font-size: 3vw;
     padding: 5px 10px 5px 10px;
     border-top: 3px #d7b365 solid;
@@ -1054,17 +1058,19 @@ input:focus ~ .highlight {
     height: 130px;
     width: 130px;
   }
-  .media-content{
+  .media-content {
     overflow: hidden !important;
   }
 }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
+  .view-content-zoom {
+    zoom: 0.8;
+  }
   .logo {
     margin: 20px;
     width: 310px;
   }
-
   .title-squeezing {
     color: #264a60 !important;
     font-size: 35px !important;
@@ -1120,7 +1126,7 @@ input:focus ~ .highlight {
   .view-badge-industry {
     position: absolute;
     width: 65%;
-    bottom: 15px;
+    bottom: -10px;
   }
   .view-badge {
     padding-top: 0;
@@ -1132,7 +1138,7 @@ input:focus ~ .highlight {
     height: 100%;
     -webkit-flex-direction: column; /* Safari 6.1+ */
     flex-direction: column;
-    zoom: 0.82;
+    zoom: 0.7;
   }
   .img-graphic {
     width: 40%;
@@ -1142,35 +1148,36 @@ input:focus ~ .highlight {
 @media only screen and (min-width: 1824px) {
   .logo {
     margin: 80px;
-    margin-top: 60px;
+    margin-top: 50px;
     width: 350px;
   }
   .title-squeezing {
     color: #264a60 !important;
-    font-size: 55px !important;
-    margin-top: 35px !important;
-    margin-left: 80px;
+    font-size: 50px !important;
+    margin-top: 30px !important;
+    margin-left: 75px;
     margin-bottom: 0px !important;
   }
   .subtitle-squeezing {
     color: #264a60 !important;
     margin-top: 25px !important;
-    margin-left: 80px;
+    margin-left: 75px;
     margin-bottom: 15px !important;
     font-weight: 600 !important;
-    font-size: 1.75em;
+    font-size: 1.9em;
   }
   .text-description {
-    margin-left: 80px;
+    margin-left: 75px;
     margin-right: 80px;
     margin-top: 80px;
     font-size: 24px;
+    color: #264a60 !important;
   }
   .text-description-all {
     margin-left: 80px;
     margin-right: 80px;
     margin-top: 35px;
-    font-size: 22px;
+    font-size: 24px;
     color: #264a60;
     line-height: 1.4;
   }
@@ -1189,7 +1196,15 @@ input:focus ~ .highlight {
     zoom: 1;
   }
   .img-graphic {
-    width: 50%;
+    width: 40%;
+  }
+  .view-badge-industry {
+    position: absolute;
+    width: 65%;
+    bottom: 15px;
+  }
+  .view-content-zoom {
+    zoom: 0.9;
   }
 }
 

@@ -43,15 +43,17 @@ export default class CobuildStudy extends React.Component {
             <div className="content">
               <div className="columns is-desktop">
                 <div className="column is-8 h-100 bg-header-study">
-                  <div>
-                    <img src={logo} className="logo" />
+                  <div className="view-content-zoom">
+                    <div>
+                      <img src={logo} className="logo" />
+                    </div>
+                    <Title className="title-squeezing">
+                      Cobuilding Companies <br /> in Miami
+                    </Title>
+                    <h2 className="subtitle-squeezing">{siteSubtitle}</h2>
+                    <StudyCase />
+                    <BadgeIndustry />
                   </div>
-                  <Title className="title-squeezing">
-                    Cobuilding Companies <br /> in Miami
-                  </Title>
-                  <h2 className="subtitle-squeezing">{siteSubtitle}</h2>
-                  <StudyCase />
-                  <BadgeIndustry />
                 </div>
 
                 <div className="column h-100 is-4 bg-form-landing Aligner">
