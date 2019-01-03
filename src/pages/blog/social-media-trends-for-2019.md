@@ -105,6 +105,39 @@ Well, these are some statistics that show the effect of videos in 360 degrees. E
 Source: [Advrtas](https://advrtas.com/360-video-ads-better/)
 
 
+<title-2>This year on social media…</title-2>
+
+2019 will be amazing, but 2018 also was good for social media. That's the reason we take all of these trends that changed 2018 to show them here:
+
+* **Challenges everywhere**
+
+This year, challenges were on the table. That’s why we could see the #KekeChallenge, the #Xchallenge, the Icebucketchallenge, etc. For sure you participated in one, and millions of people in the world did it. 
+
+For example, in the ice bucket challenge participated 17 million of users in the world. This news was written by [USA today.](https://www.google.com/amp/s/amp.usatoday.com/amp/448006001)
+
+This trend is not only for this year. From 2017 challenges were famous on the social media. But we have to say that this year they stayed on the top.
+
+* **More humanity**
+
+Before, all people show good and beautiful things in its lives through social media. But this year happened the opposite. Breakups, weakness, insecurities, bad moments, and also good too, but social media this year was more human and real. 
+
+Even corporate brands showed its human value and feeling. Maybe with the story behind its employees or allies, etc. This trend we think will continue and it will be reinforced
+For the next year. If a social media account is humanized it will sell a lot. 
+
+Big brands as Google confirm it.
+
+![google1](./media/IMG_20190102_181017_407.jpg)
+![google2](./media/IMG_20190102_181103_580.JPG)
+![google3](./media/IMG_20190102_181130_471.JPG)
+![google4](./media/IMG_20190102_181152_422.JPG)
+
+* **Feeds super organized**
+
+This trend was on Instagram, and every expert or influencer called it according to their criteria, like CCP: creative content programmed. But the result was basically a feed on Instagram very organized, with a static pattern of publication and look. 
+
+For example, you had to choose three types of content as an image, a phrase with a lettering design, and a video, to publish it in a specific order. Suppose that you selected first the image, then the phrase, and last, the video. People followed this publication format religiously, and as a result, you could see all feeds super organized, and the content categorized by the format used.
+
+![Hilda-Besson](IMG_20181227_145548_171.JPG)
 
 
 
