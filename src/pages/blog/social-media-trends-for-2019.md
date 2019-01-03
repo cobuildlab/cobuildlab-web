@@ -67,7 +67,7 @@ People love “lives” on social media because they bring a personal face on ev
 
 If you don’t know what to talk about, we share these topics that people of MarketingCharts suggest for being a brand more transparent and convince everyone with that.
 
-![lives](./media/Sprout-Topics-Demonstrating-Brand-Transparency-On-Social-Aug2018.png)
+![lives](./media/Sprout-Topics-Demonstrating-Brand-Transparency-on-Social-Aug2018.png)
 Source: [Marketing Chart](https://www.marketingcharts.com)
 
 
