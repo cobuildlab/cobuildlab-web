@@ -137,7 +137,7 @@ This trend was on Instagram, and every expert or influencer called it according 
 
 For example, you had to choose three types of content as an image, a phrase with a lettering design, and a video, to publish it in a specific order. Suppose that you selected first the image, then the phrase, and last, the video. People followed this publication format religiously, and as a result, you could see all feeds super organized, and the content categorized by the format used.
 
-![Hilda-Besson](IMG_20181227_145548_171.jpg)
+![Hilda-Besson](IMG_20181227_145548_171.JPG)
 
 
 
