@@ -74,6 +74,22 @@ This statistic explains better why we say that video lives are the trend and It 
 
 ![lives-on-social-media](./media/Screen-Shot-2017-03-06-at-10.16.26-AM.png)
 
+Source: [livestream](https://livestream.com/blog/live-video-statistics-livestream)
+
+<title-3>More vertical videos</title3>
+
+We know, once again we talk about videos, and we are not joking when we say “they are and will be the protagonist”. 
+
+This trend for 2019 is about videos on a vertical format, as the Instagram TV (IGTV). This year we see even on Youtube and Facebook ads videos with this format. People make lots of videos like this and Instagram, the second social media platform with higher use in the world is winning this battle until now. So, Why not do some vertical videos?
+
+Statistics maybe convince you.
+
+![vertical-videos](./media/Case-Study-1170x500.jpg)
+
+Source: [Blog Animaker](https://blog.animaker.com/vertical-video-facebook-ads-case-study/)
+
+
+
 
 
 
