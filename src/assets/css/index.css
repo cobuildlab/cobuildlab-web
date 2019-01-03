@@ -658,7 +658,7 @@ hr {
 .study-number {
   color: #e76c29;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 /* New squeezing */
@@ -669,7 +669,7 @@ hr {
 .component-changes {
   margin-left: 15px;
   margin-right: 15px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .view-badge {
   padding-top: 25px;
@@ -866,6 +866,11 @@ input:focus ~ .highlight {
   width: 65%;
   bottom: 20px;
 }
+.media {
+  align-items: flex-start;
+  display: flex;
+  text-align: left;
+}
 /* Desktops and newer mobile ----------- */
 @media all and (max-width: 480px) {
   .h-100 {
@@ -876,6 +881,9 @@ input:focus ~ .highlight {
     padding-top: 30px;
     display: block;
     margin: auto;
+  }
+  .center-logo-mobile{
+    text-align: center !important;
   }
   .title-squeezing {
     color: #264a60 !important;
@@ -900,6 +908,58 @@ input:focus ~ .highlight {
     margin-bottom: 40px !important;
     text-align: center;
   }
+  .text-description-all {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #264a60;
+    line-height: 1.4;
+    text-align: justify;
+  }
+  .component-changes {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center !important;
+  }
+  .testimonial-logo {
+    width: 100px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  .testimonial-image {
+    border-radius: 160px !important;
+    height: 130px;
+    width: 130px;
+  }
+  .study-logo {
+    border-radius: 160px !important;
+    height: 130px;
+    width: 130px;
+    margin-bottom: 25px;
+  }
+  .study-subtitle{
+    text-align: center;
+  }
+  .study-number {
+    color: #e76c29;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .study-subtext {
+    color: #264a60;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  .media-content{
+    overflow: hidden !important;
+  }
+  .mt-3{
+    margin-top: 30px;
+  }
   .view-form {
     display: flex;
     align-items: center;
@@ -921,6 +981,7 @@ input:focus ~ .highlight {
     background-color: #244a62;
     border-radius: 10px;
     color: #fff;
+    margin-right: 5px;
     font-size: 3vw;
     padding: 5px 10px 5px 10px;
     border-top: 3px #d7b365 solid;
@@ -953,6 +1014,14 @@ input:focus ~ .highlight {
     color: #254a61;
     font-size: 20px;
   }
+  .text-description-all {
+    margin-left: 40px;
+    margin-right: 30px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #264a60;
+    line-height: 1.4;
+  }
   .view-badge-industry {
     position: absolute;
     width: 97%;
@@ -975,27 +1044,41 @@ input:focus ~ .highlight {
     flex-direction: column;
     zoom: 1;
   }
+  .study-logo {
+    border-radius: 160px !important;
+    height: 130px;
+    width: 130px;
+  }
+  .testimonial-image {
+    border-radius: 160px !important;
+    height: 130px;
+    width: 130px;
+  }
+  .media-content{
+    overflow: hidden !important;
+  }
 }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
   .logo {
-    margin: 30px;
-    width: 330px;
+    margin: 20px;
+    width: 310px;
   }
 
   .title-squeezing {
     color: #264a60 !important;
-    font-size: 45px !important;
-    margin-top: 25px !important;
-    margin-left: 30px;
+    font-size: 35px !important;
+    margin-top: 20px !important;
+    margin-left: 20px;
     margin-bottom: 0px !important;
   }
   .subtitle-squeezing {
     color: #264a60 !important;
-    margin-top: 25px !important;
-    margin-left: 30px;
+    margin-top: 20px !important;
+    margin-left: 20px;
     margin-bottom: 0px !important;
     font-weight: 600 !important;
+    font-size: 22px !important;
   }
   .text-description {
     margin-left: 30px;
@@ -1003,6 +1086,14 @@ input:focus ~ .highlight {
     margin-top: 50px;
     color: #254a61;
     font-size: 18px;
+  }
+  .text-description-all {
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #264a60;
+    line-height: 1.4;
   }
   .study-logo {
     border-radius: 160px !important;
@@ -1044,19 +1135,20 @@ input:focus ~ .highlight {
     zoom: 0.82;
   }
   .img-graphic {
-    width: 50%;
+    width: 40%;
   }
 }
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
   .logo {
     margin: 80px;
+    margin-top: 60px;
     width: 350px;
   }
   .title-squeezing {
     color: #264a60 !important;
     font-size: 55px !important;
-    margin-top: 50px !important;
+    margin-top: 35px !important;
     margin-left: 80px;
     margin-bottom: 0px !important;
   }
@@ -1064,7 +1156,7 @@ input:focus ~ .highlight {
     color: #264a60 !important;
     margin-top: 25px !important;
     margin-left: 80px;
-    margin-bottom: 0px !important;
+    margin-bottom: 15px !important;
     font-weight: 600 !important;
     font-size: 1.75em;
   }
@@ -1074,10 +1166,18 @@ input:focus ~ .highlight {
     margin-top: 80px;
     font-size: 24px;
   }
+  .text-description-all {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 35px;
+    font-size: 22px;
+    color: #264a60;
+    line-height: 1.4;
+  }
   .component-changes {
     margin-left: 80px;
     margin-right: 80px;
-    margin-top: 7%;
+    margin-top: 5%;
   }
   .view-form {
     display: flex;

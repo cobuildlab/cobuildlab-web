@@ -16,7 +16,9 @@ const Testimonial = () => {
       />
       <MediaContent>
         <Content>
+        <div className="center-logo-mobile">
           <img src={logo} className="testimonial-logo" />
+        </div>
           <p className="testimonial-text">{text}</p>
         </Content>
       </MediaContent>

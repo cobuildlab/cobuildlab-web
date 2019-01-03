@@ -50,6 +50,12 @@ export default class IdeaStudy extends React.Component {
                     Idea Acelerator <br /> in Miami
                   </Title>
                   <h2 className="subtitle-squeezing">{siteSubtitle}</h2>
+                  <p className="text-description-all">
+                    We help early stage and new entrepreneurs transform ideas
+                    into <b>Scalable Software Products</b> through education by
+                    using a collaborative and full-companion development
+                    process.
+                  </p>
                   <StudyCase />
                   <BadgeIndustry />
                 </div>
