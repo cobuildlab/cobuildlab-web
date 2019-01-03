@@ -70,6 +70,11 @@ If you don’t know what to talk about, we share these topics that people of Mar
 ![lives](./media/Sprout-Topics-Demonstrating-Brand-Transparency-on-Social-Aug2018.png)
 Source: [Marketing Chart](https://www.marketingcharts.com)
 
+This statistic explains better why we say that video lives are the trend and It will continue being.
+
+![lives-on-social-media](./media/screen-shot-2017-03-06-at-10.16.26-AM.png)
+
+
 
 
 
