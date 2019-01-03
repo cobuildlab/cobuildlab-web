@@ -88,6 +88,24 @@ Statistics maybe convince you.
 
 Source: [Blog Animaker](https://blog.animaker.com/vertical-video-facebook-ads-case-study/)
 
+<title-3>360 degrees video and VR</title-3>
+
+This amazing videos today only are compatible with Youtube, and special video players on websites. But we think that they will be compatible on 2019 with all social media platform. People find the way to edit this images on 360 degrees to upload them on Instagram, but they aren’t the essence of this videos. 
+
+For sure this will be a trend the next year. The market calls for it.
+
+<youtube-video id="rG4jSz_2HDY"></youtube-video>
+
+Can you imagine seeing a video like this on Instagram or Facebook?
+
+Well, these are some statistics that show the effect of videos in 360 degrees. Especially in ads.
+
+![videos-360-degree](./media/360-video-advertising-stats-part-1.png)
+
+Source: [Advrtas](https://advrtas.com/360-video-ads-better/)
+
+
+
 
 
 
