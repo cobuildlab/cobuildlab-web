@@ -18,7 +18,7 @@ Predictions for the next year show more power and more video content as the key 
 
 Statistics say that more than 80% of content on the internet will be videos. Also, brands that use videos catch better the attention of its customers. Google will continue loving them, and social media will be the first platforms to consume them.
 
-![videomarketing](./media/video-marketing-stats-2.1.768x399.jpg)
+![videomarketing](./media/video-marketing-stats-2. 1.768x399.jpg)
 
 Source: [Blue corona](https://www.bluecorona.com/blog/video-marketing-statistics-must-see/)
 
