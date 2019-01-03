@@ -140,11 +140,18 @@ For example, you had to choose three types of content as an image, a phrase with
 ![Hilda-Besson](IMG_20181227_145548_171.JPG)
 
 
+Though It is so difficult to know with precision what people will love in the future, if you study, read, and pay attention to what they are doing now on social media, and which promises make the influencers, it is a little bit easier to predict some trends that will be on fire the next year. 
+
+* **Stories in the day and at night**
+
+From Snapchat, stories got so popular than others platform of social media couldn’t resist the temptation of being part.
 
 
+Facebook, WhatsApp, and Instagram, which are the three more used social media apps in the world, incorporated stories to be on trend.
 
+As Snapchat, this feature was a success. In part thanks to the more human and authenticity on social media, and also because it is so fun, almost addictive to share what’s happening at the moment. Instantly.
 
-
+Let's see some statistics. 
 
 
 
