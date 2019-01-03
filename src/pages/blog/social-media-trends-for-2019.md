@@ -72,7 +72,7 @@ Source: [Marketing Chart](https://www.marketingcharts.com)
 
 This statistic explains better why we say that video lives are the trend and It will continue being.
 
-![lives-on-social-media](./media/screen-shot-2017-03-06-at-10.16.26-AM.png)
+![lives-on-social-media](./media/screen-Shot-2017-03-06-at-10.16.26-AM.png)
 
 
 
