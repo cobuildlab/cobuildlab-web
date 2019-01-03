@@ -126,7 +126,7 @@ For the next year. If a social media account is humanized it will sell a lot.
 
 Big brands as Google confirm it.
 
-![google1](./media/IMG_20190102_181017_407.jpg)
+![google1](./media/IMG_20190102_181017_407.JPG)
 ![google2](./media/IMG_20190102_181103_580.JPG)
 ![google3](./media/IMG_20190102_181130_471.JPG)
 ![google4](./media/IMG_20190102_181152_422.JPG)
