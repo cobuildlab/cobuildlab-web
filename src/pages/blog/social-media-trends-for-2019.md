@@ -22,6 +22,37 @@ Statistics say that more than 80% of content on the internet will be videos. Als
 
 Source: [Blue corona](https://www.bluecorona.com/blog/video-marketing-statistics-must-see/)
 
+<title-3>Influencer marketing</title-3>
+
+
+It is a collaboration between brands. This marketing strategy was called strategic alliance before, but now is more than that, and the next year will continue advancing.
+
+Even though both brands need to win something with the collaboration, on influencer marketing necessarily one brand must be an influencer, It has to have a good and strong presence on the internet, and the other should be less known. And how does work this marketing strategy? This influencer recommends your brand and his or her followers will be interested in your product or service. 
+
+The [Digital Marketing Institute](https://digitalmarketinginstitute.com/blog/20-influencer-marketing-statistics-that-will-surprise-you) made a study where it showed up that 49% of consumers depend on influencer recommendations because they feel confident about influencers. They actually think that influencers know them better than their best friends. 
+
+In the same study, they post statistics of Tomson about the money you can gain spending resources on influencers. They say you can get $6,50 for each dollar spent on influencers.
+
+![influencer-marketing](./media/influencer-marketing-open-graph.jpg)
+
+Source: [Sales Force](https://www.salesforce.com/ca/blog/2017/03/2017-state-of-influencer-marketing)
+
+<title-3>Chatbots as protagonists</title-3>
+
+It is a computer that uses artificial intelligence for talking and make a conversation with customers or people that need information. 
+
+“Such programs are often designed to convincingly simulate how a human would behave as a conversational partner, thereby passing the Turing test. Chatbots are typically used in dialog systems for various practical purposes including customer service or information acquisition”.[Wikipedia](https://en.m.wikipedia.org/wiki/Chatbot)
+
+This technology helps to reinforce and facilitate the direct and instant contact with clients that is so required nowadays. 
+
+That’s why the next year, chatbots will be on demand.
+
+![chatbots](./media/1_BWZp1CB1u7QE1CAr6eewrA.jpeg)
+
+
+
+
+
 
 
 
