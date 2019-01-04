@@ -26,7 +26,7 @@ import graphic from '../resources/phases.png'
 export default class SoftwareIncGraphic extends React.Component {
   render() {
     const siteTitle = 'Developing new Software Products in Miami'
-    const siteSubtitle = 'We transform ideas into Software Companies'
+    const siteSubtitle = 'We incubate new Software Products'
     const siteDescription =
       'We help entrepreneurs create amazing Products with our streamlined, lean and phased Software Development Process. Since day one, our technique is focused on early results and transparent communication.'
     const landingName = 'Software Incubator Graphic'
@@ -53,6 +53,7 @@ export default class SoftwareIncGraphic extends React.Component {
                     <Subtitle className="subtitle-squeezing">
                       {siteSubtitle}
                     </Subtitle>
+                    <p className="text-description-all">{siteDescription}</p>
                     <div className="has-text-centered">
                       <img src={graphic} className="img-graphic" />
                     </div>

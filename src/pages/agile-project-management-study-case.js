@@ -52,6 +52,7 @@ export default class AgileProjectStudy extends React.Component {
                       Agile Project Management <br /> in Miami
                     </Title>
                     <h2 className="subtitle-squeezing">{siteSubtitle}</h2>
+                    <p className="text-description-all">{siteDescription}</p>
                     <StudyCase />
                     <BadgeIndustry />
                   </div>

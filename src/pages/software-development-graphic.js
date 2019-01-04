@@ -53,6 +53,7 @@ export default class SoftwareDevGraphic extends React.Component {
                     <Subtitle className="subtitle-squeezing">
                       {siteSubtitle}
                     </Subtitle>
+                    <p className="text-description-all">{siteDescription}</p>
                     <div className="has-text-centered">
                       <img src={graphic} className="img-graphic" />
                     </div>

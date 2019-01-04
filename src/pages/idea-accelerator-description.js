@@ -52,7 +52,7 @@ export default class IdeaDescription extends React.Component {
                     <Subtitle className="subtitle-squeezing">
                       {siteSubtitle}
                     </Subtitle>
-                    <p className="text-description">
+                    <p className="text-description-all">
                       We help early stage and new entrepreneurs transform ideas
                       into <b>Scalable Software Products</b> through education
                       by using a collaborative and full-companion development

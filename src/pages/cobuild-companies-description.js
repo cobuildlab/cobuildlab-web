@@ -27,7 +27,7 @@ export default class CobuildDescription extends React.Component {
     const siteTitle = 'Cobuilding Companies in Miami'
     const siteSubtitle = 'We transform ideas into Software Companies'
     const siteDescription =
-      'Cobuild is the process of transforming an idea in a sustainable business, through the combination and collaboration of the areas of Lean Entrepreneurship, Business Strategy, Technological Innovation, and Exponential Growth.'
+      'Cobuild Is the process of transforming an idea in a Business, through the combination and collaboration of the areas of Lean Entrepreneurship, Business Strategy, Technological Innovation, and Exponential Growth.'
     const landingName = 'Cobuild Companies Description'
 
     return (
@@ -52,7 +52,15 @@ export default class CobuildDescription extends React.Component {
                     <Subtitle className="subtitle-squeezing">
                       {siteSubtitle}
                     </Subtitle>
-                    <p className="text-description">{siteDescription}</p>
+                    <p className="text-description-all">
+                      Cobuild Is the process of transforming an idea in a
+                      Business, through the combination and collaboration of the
+                      areas of{' '}
+                      <b>
+                        Lean Entrepreneurship, Business Strategy, Technological
+                        Innovation, and Exponential Growth.
+                      </b>
+                    </p>
                     <BadgeIndustry />
                   </div>
                 </div>

@@ -52,7 +52,13 @@ export default class ProductDevDescription extends React.Component {
                     <Subtitle className="subtitle-squeezing">
                       {siteSubtitle}
                     </Subtitle>
-                    <p className="text-description">{siteDescription}</p>
+                    <p className="text-description-all">
+                      We help entrepreneurs create amazing Products with our
+                      streamlined, lean and phased{' '}
+                      <b>Software Development Process. </b>
+                      Since day one, our technique is focused on early results
+                      and transparent communication.
+                    </p>
                     <BadgeIndustry />
                   </div>
                 </div>

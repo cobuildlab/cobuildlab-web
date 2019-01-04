@@ -53,6 +53,13 @@ export default class ProductDevGraphic extends React.Component {
                     <Subtitle className="subtitle-squeezing">
                       {siteSubtitle}
                     </Subtitle>
+                    <p className="text-description-all">
+                      We help entrepreneurs create amazing Products with our
+                      streamlined, lean and phased{' '}
+                      <b>Software Development Process. </b>
+                      Since day one, our technique is focused on early results
+                      and transparent communication.
+                    </p>
                     <div className="has-text-centered">
                       <img src={graphic} className="img-graphic" />
                     </div>

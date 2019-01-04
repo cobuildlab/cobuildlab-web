@@ -31,8 +31,6 @@ export default class EcommerceDevGraphic extends React.Component {
     const siteDescription =
       'We develop the best strategy to take your Business to the next Level. We create a plan for tools, integrations, and support to enable your operations in the e-commerce market.'
     const landingName = 'Ecommerce Development Graphic'
-    const text =
-      'Lorem ipsum dolor sit amet, maecenas dictum in est, tincidunt nec suscipit vitae et et est. Justo vel lorem taciti elementum. Suspendisse et integer, aliquam nostra sollicitudin lacus, molestiae sit praesent ultrices augue arcu elit. Risus eu nulla varius, eu est morbi, lacinia elit vivamus phasellus volutpat sed mauris, nascetur vitae illo proin pulvinar, hac praesent varius.'
 
     return (
       <React.Fragment>
@@ -56,6 +54,7 @@ export default class EcommerceDevGraphic extends React.Component {
                     <Subtitle className="subtitle-squeezing">
                       {siteSubtitle}
                     </Subtitle>
+                    <p className="text-description-all">{siteDescription}</p>
                     <div className="has-text-centered">
                       <img src={graphic} className="img-graphic" />
                     </div>

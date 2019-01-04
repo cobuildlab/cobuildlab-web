@@ -25,8 +25,8 @@ import badge4 from '../resources/badges4.png'
 
 export default class AppsDevTestimonial extends React.Component {
   render() {
-    const siteTitle = 'Developing new Software Products in Miami'
-    const siteSubtitle = 'We transform ideas into Software Products'
+    const siteTitle = 'Developing new Apps in Miami'
+    const siteSubtitle = 'We transform ideas into working Apps'
     const siteDescription =
       'We transform requirements into working software. We specialize in building web and mobile applications for Small and Medium Businesses.'
     const landingName = 'Apps Development Testimonial'
@@ -53,6 +53,7 @@ export default class AppsDevTestimonial extends React.Component {
                     <Subtitle className="subtitle-squeezing">
                       {siteSubtitle}
                     </Subtitle>
+                    <p className="text-description-all">{siteDescription}</p>
                     <Testimonial />
                     <BadgeIndustry />
                   </div>

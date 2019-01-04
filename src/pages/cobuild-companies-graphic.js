@@ -28,7 +28,7 @@ export default class CobuildGraphic extends React.Component {
     const siteTitle = 'Cobuilding Companies in Miami'
     const siteSubtitle = 'We transform ideas into Software Companies'
     const siteDescription =
-      'Cobuild is the process of transforming an idea in a sustainable business, through the combination and collaboration of the areas of Lean Entrepreneurship, Business Strategy, Technological Innovation, and Exponential Growth.'
+      'Cobuild Is the process of transforming an idea in a Business, through the combination and collaboration of the areas of Lean Entrepreneurship, Business Strategy, Technological Innovation, and Exponential Growth.'
     const landingName = 'Cobuild Companies Graphic'
 
     return (
@@ -53,6 +53,15 @@ export default class CobuildGraphic extends React.Component {
                     <Subtitle className="subtitle-squeezing">
                       {siteSubtitle}
                     </Subtitle>
+                    <p className="text-description-all">
+                      Cobuild Is the process of transforming an idea in a
+                      Business, through the combination and collaboration of the
+                      areas of{' '}
+                      <b>
+                        Lean Entrepreneurship, Business Strategy, Technological
+                        Innovation, and Exponential Growth.
+                      </b>
+                    </p>
                     <div className="has-text-centered">
                       <img src={graphic} className="img-graphic" />
                     </div>

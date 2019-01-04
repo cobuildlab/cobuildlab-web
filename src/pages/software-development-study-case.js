@@ -51,6 +51,7 @@ export default class SoftwareDevStudy extends React.Component {
                       Developing new Software <br /> Products in Miami
                     </Title>
                     <h2 className="subtitle-squeezing">{siteSubtitle}</h2>
+                    <p className="text-description-all">{siteDescription}</p>
                     <StudyCase />
                     <BadgeIndustry />
                   </div>

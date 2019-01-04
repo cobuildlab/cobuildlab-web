@@ -51,6 +51,13 @@ export default class ProductDevStudy extends React.Component {
                       Developing new Software <br /> Products in Miami
                     </Title>
                     <h2 className="subtitle-squeezing">{siteSubtitle}</h2>
+                    <p className="text-description-all">
+                      We help entrepreneurs create amazing Products with our
+                      streamlined, lean and phased{' '}
+                      <b>Software Development Process. </b>
+                      Since day one, our technique is focused on early results
+                      and transparent communication.
+                    </p>
                     <StudyCase />
                     <BadgeIndustry />
                   </div>

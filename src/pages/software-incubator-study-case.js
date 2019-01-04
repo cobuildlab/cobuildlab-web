@@ -26,7 +26,7 @@ import badge4 from '../resources/badges4.png'
 export default class SoftwareIncStudy extends React.Component {
   render() {
     const siteTitle = 'Developing new Software Products in Miami'
-    const siteSubtitle = 'We transform ideas into Software Companies'
+    const siteSubtitle = 'We incubate new Software Products'
     const siteDescription =
       'We help entrepreneurs create amazing Products with our streamlined, lean and phased Software Development Process. Since day one, our technique is focused on early results and transparent communication.'
     const landingName = 'Software Incubator Study Case'
@@ -51,6 +51,7 @@ export default class SoftwareIncStudy extends React.Component {
                       Developing new Software <br /> Products in Miami
                     </Title>
                     <h2 className="subtitle-squeezing">{siteSubtitle}</h2>
+                    <p className="text-description-all">{siteDescription}</p>
                     <StudyCase />
                     <BadgeIndustry />
                   </div>

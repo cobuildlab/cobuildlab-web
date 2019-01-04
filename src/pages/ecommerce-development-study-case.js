@@ -52,6 +52,7 @@ export default class EcommerceDevStudy extends React.Component {
                       Get your Business ready <br /> to Sell Online
                     </Title>
                     <h2 className="subtitle-squeezing">{siteSubtitle}</h2>
+                    <p className="text-description-all">{siteDescription}</p>
                     <StudyCase />
                     <BadgeIndustry />
                   </div>

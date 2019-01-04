@@ -30,8 +30,6 @@ export default class IdeaGraphic extends React.Component {
     const siteDescription =
       'We help early stage and new entrepreneurs transform ideas into Scalable Software Products through education by using a collaborative and full-companion development process'
     const landingName = 'Idea Accelerator Graphic'
-    const text =
-      'Lorem ipsum dolor sit amet, maecenas dictum in est, tincidunt nec suscipit vitae et et est. Justo vel lorem taciti elementum. Suspendisse et integer, aliquam nostra sollicitudin lacus, molestiae sit praesent ultrices augue arcu elit. Risus eu nulla varius, eu est morbi, lacinia elit vivamus phasellus volutpat sed mauris, nascetur vitae illo proin pulvinar, hac praesent varius.'
 
     return (
       <React.Fragment>

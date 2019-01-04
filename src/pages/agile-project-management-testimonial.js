@@ -54,6 +54,7 @@ export default class AgileProjectTestimonial extends React.Component {
                     <Subtitle className="subtitle-squeezing">
                       {siteSubtitle}
                     </Subtitle>
+                    <p className="text-description-all">{siteDescription}</p>
                     <Testimonial />
                     <BadgeIndustry />
                   </div>
