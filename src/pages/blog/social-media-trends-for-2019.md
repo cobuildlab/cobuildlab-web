@@ -153,7 +153,7 @@ As Snapchat, this feature was a success. In part thanks to the more human and au
 
 Let's see some statistics. 
 
-![stories](./media/insta-info-5.png_w768)
+![stories](./media/insta-info-5.png)
 
 
 
