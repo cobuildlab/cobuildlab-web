@@ -153,7 +153,21 @@ As Snapchat, this feature was a success. In part thanks to the more human and au
 
 Let's see some statistics. 
 
-![stories](./media/insta-info-5.png)
+![stories](./media/IMG_20190103_202405_551.jpg)
+
+Source: [Brandwatch](https://www.google.com/amp/s/www.brandwatch.com/blog/infographic-instagram-stories-facts-stats/%3famp)
+
+* **Messaging platforms are more than needed**
+
+![drake-meme](./media/top-social-media-trends-2018.png)
+
+Source:[plannhat](https://www.plannthat.com/top-social-media-trends-2018/)
+
+In 2018 has been so popular direct contact and instantaneous communication through direct messages, WhatsApp chats, and other tools that have a double function: inspire confident on customers who visit your website or social media account, and also, attend them faster and closer; in a personal way. 
+
+You saw telephone numbers, and real personal contact information on websites,  Instagram and Facebook descriptions thanks to this trend. 
+
+Why is really important to know social trends in the next year? Because if you do it first, you win the battle and catch the customer attention first. In a few words, you go viral. Another reason to know and practice these trends is only being up to date. For any of these reasons, knowing and practicing the **social media trends for 2019** is more than a desire; it is a necessity. So, once you put them into practice, tell us how it went?
 
 
 
