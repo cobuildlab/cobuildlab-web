@@ -55,7 +55,7 @@ If you want to be sure of this, we share this statistic and this study made for 
 
 ![chatbots](./media/0_9W95LgPh_6we4qNP.png)
 
-Source: [Chatsbots Magazine](https://chatbotsmagazine.com/chatbot-report-2018-global-trends-and-analysis-4d8bbe4d924b)
+Source: [Chatbots Magazine](https://chatbotsmagazine.com/chatbot-report-2018-global-trends-and-analysis-4d8bbe4d924b)
 
 <title-3>Lives, lives, and lives</title-3>
 
@@ -137,7 +137,7 @@ This trend was on Instagram, and every expert or influencer called it according 
 
 For example, you had to choose three types of content as an image, a phrase with a lettering design, and a video, to publish it in a specific order. Suppose that you selected first the image, then the phrase, and last, the video. People followed this publication format religiously, and as a result, you could see all feeds super organized, and the content categorized by the format used.
 
-![Hilda-Besson](IMG_20181227_145548_171.JPG)
+![Hilda-Besson](./media/IMG_20181227_145548_171.JPG)
 
 
 Though It is so difficult to know with precision what people will love in the future, if you study, read, and pay attention to what they are doing now on social media, and which promises make the influencers, it is a little bit easier to predict some trends that will be on fire the next year. 
@@ -153,7 +153,7 @@ As Snapchat, this feature was a success. In part thanks to the more human and au
 
 Let's see some statistics. 
 
-
+![stories](./media/insta-info-5.png_w768)
 
 
 
