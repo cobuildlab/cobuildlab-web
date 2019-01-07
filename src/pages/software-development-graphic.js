@@ -21,7 +21,7 @@ import badge1 from '../resources/badges1.png'
 import badge2 from '../resources/badges2.png'
 import badge3 from '../resources/badges3.png'
 import badge4 from '../resources/badges4.png'
-import graphic from '../resources/phases.png'
+import graphic from '../resources/graficas-1.png'
 
 export default class SoftwareDevGraphic extends React.Component {
   render() {
