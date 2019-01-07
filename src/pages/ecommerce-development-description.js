@@ -48,7 +48,7 @@ export default class EcommerceDevDescription extends React.Component {
                       <img src={logo} className="logo" />
                     </div>
                     <Title className="title-squeezing">
-                      Get your Business ready <br /> to Sell Online
+                      Get your Business ready to Sell Online
                     </Title>
                     <Subtitle className="subtitle-squeezing">
                       {siteSubtitle}

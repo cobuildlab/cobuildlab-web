@@ -48,7 +48,7 @@ export default class IdeaGraphic extends React.Component {
                       <img src={logo} className="logo" />
                     </div>
                     <Title className="title-squeezing">
-                      Idea Acelerator <br /> in Miami
+                      Idea Acelerator in Miami
                     </Title>
                     <Subtitle className="subtitle-squeezing">
                       {siteSubtitle}

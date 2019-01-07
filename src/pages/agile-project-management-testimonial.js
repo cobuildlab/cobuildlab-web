@@ -49,7 +49,7 @@ export default class AgileProjectTestimonial extends React.Component {
                       <img src={logo} className="logo" />
                     </div>
                     <Title className="title-squeezing">
-                      Agile Project Management <br /> in Miami
+                      Agile Project Management in Miami
                     </Title>
                     <Subtitle className="subtitle-squeezing">
                       {siteSubtitle}

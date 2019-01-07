@@ -21,18 +21,18 @@ const StudyCase = () => {
 
         <br />
 
-        <Columns className="is-mobile">
-          <Column className="study-subtext">
+        <Columns className="is-mobile study-case-metrics">
+          <Column className="study-subtext is-4-mobile is-2-desktop">
             Time to Market
             <br />
             <span className="study-number">4 Months</span>
           </Column>
-          <Column className="study-subtext">
+          <Column className="study-subtext is-4-mobile is-2-desktop">
             New Users
             <br />
             <span className="study-number">4000</span>
           </Column>
-          <Column className="study-subtext">
+          <Column className="study-subtext is-4-mobile is-2-desktop">
             Daily Active Users
             <br />
             <span className="study-number">500</span>

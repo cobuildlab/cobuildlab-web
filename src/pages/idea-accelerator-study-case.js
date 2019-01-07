@@ -48,7 +48,7 @@ export default class IdeaStudy extends React.Component {
                       <img src={logo} className="logo" />
                     </div>
                     <Title className="title-squeezing">
-                      Idea Acelerator <br /> in Miami
+                      Idea Acelerator in Miami
                     </Title>
                     <h2 className="subtitle-squeezing">{siteSubtitle}</h2>
                     <p className="text-description-all">

@@ -156,7 +156,7 @@ a.navbar-item.is-active,
 }
 
 .tabs li.is-active a {
-  border-bottom-color: #e77000 !important;
+  border-bottom-color: #e76c29 !important;
   color: #254a61 !important;
 }
 
@@ -345,7 +345,7 @@ hr {
 .tag-category {
   color: #fff !important;
   display: block;
-  background-color: #e76e1a !important;
+  background-color: #e76c29 !important;
 }
 
 .tag-content {
@@ -613,7 +613,7 @@ hr {
   border-radius: 160px !important;
   height: 160px;
   width: 160px;
-  background-position: center;
+  background-position: 10px -80px;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #fff;
@@ -622,6 +622,7 @@ hr {
 .testimonial-text {
   color: #264a60;
   text-align: justify;
+  font-size: 18px;
 }
 
 .testimonial-logo {
@@ -630,13 +631,13 @@ hr {
 
 /* Study Case */
 .study-logo {
-  border-radius: 160px !important;
+  /* border-radius: 160px !important; */
   height: 160px;
   width: 160px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-color: #fff;
+  /* background-color: #fff; */
   margin-top: 5px;
 }
 
@@ -676,11 +677,11 @@ hr {
 }
 .badge {
   margin: 5px;
-  width: 15%;
+  width: 18%;
 }
 .badge-google {
   margin: 5px;
-  width: 30%;
+  width: 35%;
   position: relative;
   top: -10px;
 }
@@ -854,13 +855,13 @@ input:focus ~ .highlight {
   padding-right: 12px !important;
 }
 .badge-industry {
-  background-color: #244a62;
+  background-color: #e76c29;
   border-radius: 10px;
   color: #fff;
-  font-size: 1vw;
+  font-size: 1em;
+  font-weight: bold;
   margin: 0 !important;
   padding: 5px 10px 5px 10px;
-  border-top: 3px #d7b365 solid;
 }
 .view-badge-industry {
   position: absolute;
@@ -938,7 +939,7 @@ input:focus ~ .highlight {
     width: 130px;
   }
   .study-logo {
-    border-radius: 160px !important;
+    /* border-radius: 160px !important; */
     height: 130px;
     width: 130px;
     margin-bottom: 25px;
@@ -989,6 +990,10 @@ input:focus ~ .highlight {
     font-size: 3vw;
     padding: 5px 10px 5px 10px;
     border-top: 3px #d7b365 solid;
+  }
+
+  .study-case-metrics {
+    margin-bottom: 20px !important;
   }
 }
 /* Desktops and tablet ----------- */
@@ -1049,7 +1054,7 @@ input:focus ~ .highlight {
     zoom: 1;
   }
   .study-logo {
-    border-radius: 160px !important;
+    /* border-radius: 160px !important; */
     height: 130px;
     width: 130px;
   }
@@ -1069,11 +1074,11 @@ input:focus ~ .highlight {
   }
   .logo {
     margin: 20px;
-    width: 310px;
+    width: 355px;
   }
   .title-squeezing {
     color: #264a60 !important;
-    font-size: 35px !important;
+    font-size: 40px !important;
     margin-top: 20px !important;
     margin-left: 20px;
     margin-bottom: 0px !important;
@@ -1084,49 +1089,49 @@ input:focus ~ .highlight {
     margin-left: 20px;
     margin-bottom: 0px !important;
     font-weight: 600 !important;
-    font-size: 22px !important;
+    font-size: 28px !important;
   }
   .text-description {
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 50px;
     color: #254a61;
-    font-size: 18px;
+    font-size: 24px !important;
   }
   .text-description-all {
     margin-left: 20px;
     margin-right: 30px;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 22px;
     color: #264a60;
     line-height: 1.4;
   }
   .study-logo {
-    border-radius: 160px !important;
+    /* border-radius: 160px !important; */
     height: 120px;
     width: 120px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: #fff;
+    /* background-color: #fff; */
     margin-top: 0;
   }
   .study-text {
     color: #264a60;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 0px !important;
   }
   .study-subtitle {
     color: #264a60 !important;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px !important;
     margin-top: 15px !important;
     margin-bottom: 0px !important;
   }
   .view-badge-industry {
     position: absolute;
     width: 65%;
-    bottom: -10px;
+    bottom: 5px;
   }
   .view-badge {
     padding-top: 0;

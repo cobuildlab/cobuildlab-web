@@ -48,7 +48,7 @@ export default class CobuildStudy extends React.Component {
                       <img src={logo} className="logo" />
                     </div>
                     <Title className="title-squeezing">
-                      Cobuilding Companies <br /> in Miami
+                      Cobuilding Companies in Miami
                     </Title>
                     <h2 className="subtitle-squeezing">{siteSubtitle}</h2>
                     <p className="text-description-all">

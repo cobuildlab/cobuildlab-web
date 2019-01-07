@@ -48,7 +48,7 @@ export default class SoftwareIncStudy extends React.Component {
                       <img src={logo} className="logo" />
                     </div>
                     <Title className="title-squeezing">
-                      Developing new Software <br /> Products in Miami
+                      Developing new Software Products in Miami
                     </Title>
                     <h2 className="subtitle-squeezing">{siteSubtitle}</h2>
                     <p className="text-description-all">{siteDescription}</p>

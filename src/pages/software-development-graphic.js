@@ -48,7 +48,7 @@ export default class SoftwareDevGraphic extends React.Component {
                       <img src={logo} className="logo" />
                     </div>
                     <Title className="title-squeezing">
-                      Developing new Software <br /> Products in Miami
+                      Developing new Software Products in Miami
                     </Title>
                     <Subtitle className="subtitle-squeezing">
                       {siteSubtitle}
