@@ -13,7 +13,7 @@ How we said in a previous post, an MVP is a step of the  [first part of cobuild'
 
 This post is not only about what is an MVP. What we want with this article it shows you the process you have to follow in the construction of your MVP.
 
-<title-2>But first, let us explain what is an MVP and its main characteristics</title-2>ts main characteristics</title-2>
+<title-2>But first, let us explain what is an MVP and its main characteristics</title-2>
 
 An MVP better known as a Minimum Viable Product, it is the first and light version of your product, maybe an app or software. But this version should be completely functional, and also, it should have some projections to later versions. 
 
@@ -78,7 +78,8 @@ That’s only a part in this phase, because the other part is the performance an
 
 About the app features, we want to show you the story map technique.  
 
-A story map is a visual way to build software. “Story mapping is a top-down approach of requirement gathering and is represented as a tree”.[Thoughtwords](https://www.thoughtworks.com/insights/blog/story-mapping-visual-way-building-product-backlog) 
+A story map is a visual way to build software. “Story mapping is a top-down approach of requirement gathering and is represented as a tree”.
+Source: [Thoughtwords](https://www.thoughtworks.com/insights/blog/story-mapping-visual-way-building-product-backlog) 
 
 A story map has the next components inside: goals of the app in the market, what you will achieve, activities you need to do, and tasks you must achieve. And the last, stories. Stories that are user stories for software development. That you can make thinking like a customer or you can create with the real customer criteria.  
 
@@ -93,7 +94,8 @@ By last, take all information recovered and you use it for doing [user stories](
 
 At this time, you will end your story map. 
 
-“Story mapping allows you to identify the pain points of the user and gains that a user can achieve. This exercise let you determine the greatest potential and adds more value. Then you will be able to focus on the minimum viable product while adding the less impactful ones to the product roadmap for the late releases”. [Medium](https://medium.com/swlh/how-to-build-an-mvp-in-the-right-way-in-2018-f538df0f2bba)
+“Story mapping allows you to identify the pain points of the user and gains that a user can achieve. This exercise let you determine the greatest potential and adds more value. Then you will be able to focus on the minimum viable product while adding the less impactful ones to the product roadmap for the late releases”. 
+Source: [Medium](https://medium.com/swlh/how-to-build-an-mvp-in-the-right-way-in-2018-f538df0f2bba)
 
 **4. Features definition** 
 
