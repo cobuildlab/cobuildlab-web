@@ -47,12 +47,12 @@ export default class IdeaDescription extends React.Component {
                       <img src={logo} className="logo" />
                     </div>
                     <Title className="title-squeezing">
-                      Idea Acelerator <br /> in Miami
+                      Idea Acelerator in Miami
                     </Title>
                     <Subtitle className="subtitle-squeezing">
                       {siteSubtitle}
                     </Subtitle>
-                    <p className="text-description-all">
+                    <p className="text-description">
                       We help early stage and new entrepreneurs transform ideas
                       into <b>Scalable Software Products</b> through education
                       by using a collaborative and full-companion development

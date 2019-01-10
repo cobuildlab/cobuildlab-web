@@ -53,7 +53,7 @@ export default class EcommerceDevDescription extends React.Component {
                     <Subtitle className="subtitle-squeezing">
                       {siteSubtitle}
                     </Subtitle>
-                    <p className="text-description-all">{siteDescription}</p>
+                    <p className="text-description">{siteDescription}</p>
                     <BadgeIndustry />
                   </div>
                 </div>

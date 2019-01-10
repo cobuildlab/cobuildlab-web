@@ -52,7 +52,7 @@ export default class CobuildDescription extends React.Component {
                     <Subtitle className="subtitle-squeezing">
                       {siteSubtitle}
                     </Subtitle>
-                    <p className="text-description-all">
+                    <p className="text-description">
                       Cobuild Is the process of transforming an idea in a
                       Business, through the combination and collaboration of the
                       areas of{' '}
