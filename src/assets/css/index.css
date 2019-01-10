@@ -1072,7 +1072,7 @@ input:focus ~ .highlight {
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
   .view-content-zoom {
-    zoom: 0.8;
+    zoom: 0.87;
   }
   .logo {
     margin: 20px;
@@ -1080,7 +1080,7 @@ input:focus ~ .highlight {
   }
   .title-squeezing {
     color: #264a60 !important;
-    font-size: 40px !important;
+    font-size: 48px !important;
     margin-top: 20px !important;
     margin-left: 20px;
     margin-bottom: 0px !important;
@@ -1091,20 +1091,20 @@ input:focus ~ .highlight {
     margin-left: 20px;
     margin-bottom: 0px !important;
     font-weight: 600 !important;
-    font-size: 28px !important;
+    font-size: 38px !important;
   }
   .text-description {
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 50px;
     color: #254a61;
-    font-size: 28px !important;
+    font-size: 30px !important;
   }
   .text-description-all {
     margin-left: 20px;
     margin-right: 30px;
     margin-top: 20px;
-    font-size: 22px;
+    font-size: 24px;
     color: #264a60;
     line-height: 1.4;
   }
@@ -1120,7 +1120,7 @@ input:focus ~ .highlight {
   }
   .study-text {
     color: #264a60;
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 0px !important;
   }
   .study-subtitle {
@@ -1130,6 +1130,11 @@ input:focus ~ .highlight {
     margin-top: 15px !important;
     margin-bottom: 0px !important;
   }
+  .testimonial-text {
+    color: #264a60;
+    text-align: justify;
+    font-size: 22px;
+}
   .view-badge-industry {
     position: absolute;
     width: 65%;
