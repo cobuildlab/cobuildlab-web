@@ -1098,7 +1098,7 @@ input:focus ~ .highlight {
     margin-right: 30px;
     margin-top: 50px;
     color: #254a61;
-    font-size: 30px !important;
+    font-size: 34px !important;
   }
   .text-description-all {
     margin-left: 20px;
@@ -1134,7 +1134,7 @@ input:focus ~ .highlight {
     color: #264a60;
     text-align: justify;
     font-size: 22px;
-}
+  }
   .view-badge-industry {
     position: absolute;
     width: 65%;
@@ -1153,7 +1153,8 @@ input:focus ~ .highlight {
     zoom: 0.7;
   }
   .img-graphic {
-    width: 40%;
+    width: 30%;
+    margin-top: -30px;
   }
 }
 /* Large screens ----------- */
@@ -1165,7 +1166,7 @@ input:focus ~ .highlight {
   }
   .title-squeezing {
     color: #264a60 !important;
-    font-size: 50px !important;
+    font-size: 55px !important;
     margin-top: 30px !important;
     margin-left: 75px;
     margin-bottom: 0px !important;
@@ -1176,13 +1177,13 @@ input:focus ~ .highlight {
     margin-left: 75px;
     margin-bottom: 15px !important;
     font-weight: 600 !important;
-    font-size: 1.9em;
+    font-size: 2em;
   }
   .text-description {
     margin-left: 75px;
     margin-right: 80px;
     margin-top: 80px;
-    font-size: 28px !important;
+    font-size: 32px !important;
     color: #264a60 !important;
   }
   .text-description-all {
@@ -1208,7 +1209,7 @@ input:focus ~ .highlight {
     zoom: 1;
   }
   .img-graphic {
-    width: 40%;
+    width: 30%;
   }
   .view-badge-industry {
     position: absolute;
