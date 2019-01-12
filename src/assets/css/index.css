@@ -983,7 +983,7 @@ input:focus ~ .highlight {
     bottom: 0px;
   }
   .badge-industry {
-    background-color: #244a62;
+    background-color: #e76c29;
     border-radius: 10px;
     color: #fff;
     margin-right: 5px !important;
@@ -1039,7 +1039,7 @@ input:focus ~ .highlight {
     bottom: 20px;
   }
   .badge-industry {
-    background-color: #244a62;
+    background-color: #e76c29;
     border-radius: 10px;
     color: #fff;
     font-size: 1.5vw;
