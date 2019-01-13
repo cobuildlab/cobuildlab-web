@@ -25,7 +25,7 @@ import badge4 from '../resources/badges4.png'
 export default class AppsDevDescription extends React.Component {
   render() {
     const siteTitle = "Mobile Application Development in Miami";
-    const siteSubtitle = 'We transform ideas into working Mobile Application'
+    const siteSubtitle = 'We transform ideas into working Mobile Applications'
     const siteDescription = "Let's create amazing Mobile Applications";
     const landingName = 'Mobile Application Development';
 
@@ -46,7 +46,7 @@ export default class AppsDevDescription extends React.Component {
                       <img src={logo} className="logo" />
                     </div>
                     <Title className="title-squeezing">
-                      Developing new Software Products in Miami
+                      {siteTitle}
                     </Title>
                     <Subtitle className="subtitle-squeezing">
                       {siteSubtitle}

@@ -26,7 +26,7 @@ import badge4 from '../resources/badges4.png'
 export default class AppsDevTestimonial extends React.Component {
   render() {
     const siteTitle = "Mobile Application Development in Miami";
-    const siteSubtitle = 'We transform ideas into working Mobile Application';
+    const siteSubtitle = 'We transform ideas into working Mobile Applications';
     const siteDescription = "Let's create amazing Mobile Applications";
     const siteLongDescription = 'We transform requirements into working Software Products. We specialize in building web and mobile applications for Small and Medium Businesses.'
     const landingName = 'Mobile Application Development';

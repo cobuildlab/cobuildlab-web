@@ -21,7 +21,7 @@ import '../assets/fonts/Lato-Regular.ttf';
 class Index extends React.Component {
   render() {
     const siteTitle = "Mobile Application Development in Miami";
-    const siteSubtitle = 'We transform ideas into working Mobile Application'
+    const siteSubtitle = 'We transform ideas into working Mobile Applications'
     const siteDescription = "Let's create amazing Mobile Applications";
     const siteLongDescription = "We transform requirements in Software Products. We specialize in building <strong>Mobile Application.</strong>";
     const landingName = 'Mobile Application Development';
