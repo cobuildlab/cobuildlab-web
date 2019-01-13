@@ -27,7 +27,7 @@ export default class AppsDevDescription extends React.Component {
     const siteTitle = "Mobile Application Development in Miami";
     const siteSubtitle = 'We transform ideas into working Mobile Applications'
     const siteDescription = "Let's create amazing Mobile Applications";
-    const landingName = 'Mobile Application Development';
+    const landingName = 'Mobile Application Development Description';
 
     return (
       <React.Fragment>

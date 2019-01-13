@@ -29,7 +29,7 @@ export default class AppsDevGraphic extends React.Component {
     const siteSubtitle = 'We transform ideas into working Mobile Applications'
     const siteDescription = "Let's create amazing Mobile Applications";
     const siteLongDescription = 'We transform requirements into working Software Products. We specialize in building web and mobile applications for Small and Medium Businesses.'
-    const landingName = 'Mobile Application Development';
+    const landingName = 'Mobile Application Development Graphic';
 
     return (
       <React.Fragment>
