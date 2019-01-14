@@ -4,7 +4,6 @@ title: Understanding Express.js middleware function
 date: 2018-01-23T15:31:27+00:00
 tags: 
 template: development-post
-tags:
 ---
 [Express](http://expressjs.com) middleware can be very confusing at first if you are not familiar with callbacks functions. Today we will show you how a middleware works, providing a basic usage example with user authentication.
 
