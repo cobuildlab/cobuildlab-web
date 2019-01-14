@@ -25,6 +25,7 @@ import { facebookOfficial } from 'react-icons-kit/fa/facebookOfficial'
 import { instagram } from 'react-icons-kit/fa/instagram'
 import { twitterSquare } from 'react-icons-kit/fa/twitterSquare'
 import { linkedinSquare } from 'react-icons-kit/fa/linkedinSquare'
+import { Link } from '@reach/router';
 
 class MyFooter extends React.Component {
   state = {
@@ -155,7 +156,7 @@ class MyFooter extends React.Component {
                       href="https://twitter.com/cobuildlab"
                       target="_blank"
                     >
-                      <Icon size="24" icon={twitterSquare} className="icon-center"/>
+                      <Icon size="24" icon={twitterSquare} className="icon-center" />
                     </a>
                   </Column>
                   <Column
@@ -167,10 +168,15 @@ class MyFooter extends React.Component {
                       href="https://www.linkedin.com/company/cobuildlab"
                       target="_blank"
                     >
-                      <Icon size="24" icon={linkedinSquare} className="icon-center"/>
+                      <Icon size="24" icon={linkedinSquare} className="icon-center" />
                     </a>
                   </Column>
                 </Columns>
+                <br />
+                <br />
+                <Link to="/development-blog">
+                  Development Blog
+                    </Link>
                 <br />
               </Column>
               <Column isSize="1/3">
