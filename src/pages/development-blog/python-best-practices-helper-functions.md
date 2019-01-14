@@ -1,5 +1,5 @@
 ---
-title: Python Best Practices: using pep8
+title: "Python Best Practices: Helper functions over complex expressions"
 date: 2019-01-14T01:00:00+00:00
 template: development-post
 tags: 
