@@ -991,7 +991,6 @@ input:focus ~ .highlight {
     margin-top: 5px !important;
     font-size: 3vw;
     padding: 5px 10px 5px 10px;
-    border-top: 3px #d7b365 solid;
   }
 
   .study-case-metrics {
@@ -1154,7 +1153,7 @@ input:focus ~ .highlight {
   }
   .img-graphic {
     width: 30%;
-    margin-top: -30px;
+    margin-top: 10px;
   }
 }
 /* Large screens ----------- */
@@ -1210,6 +1209,7 @@ input:focus ~ .highlight {
   }
   .img-graphic {
     width: 30%;
+    margin-top: -30px;
   }
   .view-badge-industry {
     position: absolute;
