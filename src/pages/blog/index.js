@@ -166,7 +166,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 100
-      filter: {fileAbsolutePath: {regex: "/pages/blog/.*\\.md$/"}}
+      filter: {fileAbsolutePath: {regex: "/(pages/blog)/.*\\.md$/"}}
     ) {
       edges {
         node {
