@@ -1,6 +1,6 @@
 ---
 title: "Using Newsletters to retain and acquire Customers"
-date: "2018-01-16T16:24:04.000Z"
+date: "2019-01-16T16:24:04.000Z"
 template: blog
 tags: Education
 image: "./media/newsletter.jpg"
