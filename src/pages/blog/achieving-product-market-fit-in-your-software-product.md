@@ -1,6 +1,6 @@
 ---
 title: "Achieving Product-Market fit in your Software Product"
-date: "2018-01-16T16:24:04.000Z"
+date: "2019-01-16T16:24:04.000Z"
 template: blog
 tags: Small Business
 image: "./media/product-market-fit.jpg"
