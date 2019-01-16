@@ -21,17 +21,17 @@ We list three requirements that product market fit has for you to understand bet
 
 <title-2>Necessary steps to find your product market fit</title-2>
 
-*** Work on the idea first**
+* **Work on the idea first**
 
 As we said, product market fit is part of the [Cobuild process](https://cobuildlab.com/blog/cobuild-process-part-1/): validating the idea should be first, the value and growth hypotheses too, as well as the minimum viable product. 
 But the most important thing you need to do before finding the perfect market fit is to be sure of you are solving a problem or a necessity of customers’ life, that your product offers a nice value proposition, and there are a segment in the market that can buy your product and they will want to do it.
 
-*** Define well your target**
+* **Define well your target**
 
 This is one of the key things in the equation. They are the group you will take to test, offer, and sell your product. 
 Be as specific as you can. There isn’t information that can be badly used. All of it is necessary to be effective.
 
-*** Get the first set of satisfied customers **
+* **Get the first set of satisfied customers **
 
 In this moment you should have defined the idea that will solve the problem or necessity, and also, you should have a minimum viable product. 
 What do you have to do? Easy! Select a group of potential customers and show them your app or software, explain well everything it would do for them, and if it is possible, let them test it.
@@ -41,7 +41,7 @@ What do you have to do? Easy! Select a group of potential customers and show the
 And then, take their feelings and references. They will be your first referenced customers. If you study and get the best version of your idea they should love your software. 
 Do it as many times you consider necessary and there you will have the first look about your product market fit.
 
-*** Make a predictable selling pattern**
+* **Make a predictable selling pattern**
 
 This is basically a description, a pattern that you make to clarify and define your customers, taking into consideration aspects as the role, the organization, sector, title and other customers characteristics. 
 This would help you to classify your customer’s information and in that way you will know how you can offer them a new feature, how you will sell or just know the level of satisfaction and loyalty they will have with you.
@@ -49,12 +49,12 @@ For example, suppose that you released an app for organizing tasks, but you make
 If you have a selling pattern, and thanks to him you know that 15 clients are technological companies, they would be your best clients for buy this upgrade. 
 Share this information with your sellers and enjoy results.
 
-*** Improve and work for references**
+* **Improve and work for references**
 
 If you convince a customer, the best thing you can do is to make her or him loyal. 
 Why? Because they will be ambassadors of your brand, and they can directly refer more people. And if it happens, congratulations, you will get a better product market fit.
 
-*** Repeat the process and doing it forever; market changes**
+* **Repeat the process and doing it forever; market changes**
 
 What you need to repeat? Well the market study for finding the perfect match between necessities, desires, requirements of customers and the product or the update you are offering. 
 The product market fit is not only for the beginning of the Product development process, it must be a constant in the life-cycle of your brand. That’s the only way to guarantee a good place in the market, high level in sells, and enough quantity of loyal customers.
