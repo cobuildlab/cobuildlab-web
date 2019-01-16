@@ -106,7 +106,7 @@ And last, the **conversion rate**. This is all people who made some conversion f
 
 <title-2>Tools for doing newsletters</title-2>
 
-*** Mail Chimp**
+* **Mail Chimp**
 
 ![Mail-chimp](./media/mailchimp.jpg)
 
@@ -129,7 +129,7 @@ And last, the **conversion rate**. This is all people who made some conversion f
 - Guides to solve all your doubts.
 - Download campaign data.
 
-*** Active Campaign**
+* **Active Campaign**
 
 ![Active-campaign](./media/active-campaign.jpg)
 
@@ -145,7 +145,7 @@ And last, the **conversion rate**. This is all people who made some conversion f
 - Pixel tracking to track all your contacts.
 - Creating funnels easier.
 
-*** Mail Relay**
+* **Mail Relay**
 
 ![Mail-relay](./media/mail-relay.jpg)
 
@@ -166,7 +166,7 @@ And last, the **conversion rate**. This is all people who made some conversion f
 - Plugin for WordPress.
 - Video tutorials and post to know how to use it. It's all in Spanish.
 
-*** MDirector**
+* **MDirector**
 
 ![MDirector](./media/mdirector.jpg)
 
@@ -185,7 +185,7 @@ And last, the **conversion rate**. This is all people who made some conversion f
 - Synchronize your CRM.
 - Recharge email bonus.
 
-*** Doppler**
+* **Doppler**
 
 ![Doppler](./media/doppler.jpg)
 
