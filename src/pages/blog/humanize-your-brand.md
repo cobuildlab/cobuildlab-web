@@ -76,7 +76,45 @@ Especially on the internet.
 
 “Instead of being asked to blindly trust a company’s claims, consumers will see real-life people falling in love with your products, which will promote trust in your brand”.
 
-!
+![starbucks](./media/starbucks1.jpg)
+
+<title-3>4. Show your team members as much as you can</title-3>
+
+Even if you offer a product, your users could be eager to know the people is behind than the same product. 
+
+Bigger brands in the world do it and they have gotten an amazing result with this technique. 
+
+This example of Starbucks sums it up well. 
+
+![starbucks](./media/starbucks2.jpg)
+
+Is not necessary that the information you bring has been about the work. It could be about their life. But don’t get confused. It is necessary that you tell the employees’ story related to their work and your brand. 
+
+The employee of the month, a story about what makes that staffer so great, and that is the kind of content that your client would love in your website and social media account.
+
+<title-3>5. Shows a funny side of your brand</title-3>
+
+Some laughs always are good and when it's about relationships between brands and customers it is good too. 
+
+Scientists from urku PET Centre, Oxford and Aalto universities discovered that when people have social laugh leads to an endorphin release in the brain and that helps to establish social bonds. So, if laugh improves social connections you can take advantage of them and use them in favor to your brand. 
+
+You don’t have to be a comedian, with share popular, viral, and funny content is enough. 
+
+But remember, this funny content should be related to your product or service. At least with a characteristic of your brand. 
+
+This is a good example of this. 
+
+![starbucks](./media/netflix.jpg)
+
+![starbucks](./media/netflix2.jpg)
+
+
+
+
+
+
+
+
 
 
 
