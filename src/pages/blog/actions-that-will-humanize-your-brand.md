@@ -1,6 +1,6 @@
 ---
 title: "7 actions that will humanize your brand"
-date: "2018-01-16T16:24:04.000Z"
+date: "2019-01-16T16:24:04.000Z"
 template: blog
 tags: Small Business
 image: "./media/humanize-your-brand.jpg"
