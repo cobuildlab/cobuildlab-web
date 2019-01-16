@@ -31,7 +31,7 @@ But the most important thing you need to do before finding the perfect market fi
 This is one of the key things in the equation. They are the group you will take to test, offer, and sell your product. 
 Be as specific as you can. There isn’t information that can be badly used. All of it is necessary to be effective.
 
-* **Get the first set of satisfied customers **
+* **Get the first set of satisfied customers**
 
 In this moment you should have defined the idea that will solve the problem or necessity, and also, you should have a minimum viable product. 
 What do you have to do? Easy! Select a group of potential customers and show them your app or software, explain well everything it would do for them, and if it is possible, let them test it.
