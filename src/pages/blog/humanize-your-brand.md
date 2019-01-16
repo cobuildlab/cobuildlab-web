@@ -104,10 +104,25 @@ But remember, this funny content should be related to your product or service. A
 
 This is a good example of this. 
 
-![starbucks](./media/netflix.jpg)
+![netflix](./media/netflix.jpg)
 
-![starbucks](./media/netflix2.jpg)
+![netflix](./media/netflix2.jpg)
 
+Netflix is the best brand to understand it. 
+
+<title-3>6. Interact fast and directly through your social media accounts</title-3>
+
+Interactions are the best weapon for humanizing a brand. If a person answer all questions, comments, and suggestions fastly and as a human, these clients will feel confident and they will know that behind the brand there are nice people. 
+
+Use emoticons, be polite and kind. That will give a good impression. 
+
+<title-3>7. Share a balance between personal information and commercial information</title-3>
+
+Nowadays, the big influencers and brands tell to their followers, clients, and community personal quotes, phrase, culture, and information that alone could be not interesting, but in a web platform and accompanies with commercial information will be a condiment. 
+
+We propose a percent of 40% of personal content, and 60% of commercial content. But be. Commercial content indirect. Or how we say, content that sells without sell. Be as creative as you can! 
+
+From now, be the best friend of your clients and make them loyal to you. Humanizing your brand It will happen. If you want more tips and actions to achieve the goal of **humanize your brand**, communicate with us, and we can do it faster together. 
 
 
 
