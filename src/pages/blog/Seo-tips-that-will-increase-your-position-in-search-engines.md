@@ -3,7 +3,7 @@ title: "5 SEO tips that will increase your position on search engines results"
 date: "2019-01-23T16:24:04.000Z"
 template: blog
 tags: Education
-image: "./media/advertising-alphabet-business-270637(1).jpg"
+image: "./media/SEO.jpg"
 ---
 
 Have you ever imagined that being on the first page of Google would earn you lots of money? It is this way now. And not only in Google, in every search engine of the internet, but Google is the most popular and profitable. That is possible thanks to SEO, and here we will explain you some **SEO tips** that will help you with this goal. 
