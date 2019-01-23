@@ -30,7 +30,7 @@ And the best of all, you can get search engine-friendly websites, and at the sam
 
 **1. Work on your speed as if it were about saving your life**
 
-<youtube-video id=”13jOMJhKISE"></youtube-video
+<youtube-video id=”13jOMJhKISE"></youtube-video>
 
 Three seconds is the longest time your web page should take to load it. You have to eliminate every element that makes it slow. 
 
