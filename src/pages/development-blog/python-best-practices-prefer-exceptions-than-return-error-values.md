@@ -1,6 +1,6 @@
 ---
 title: "Python Best Practices: Prefer raise Exceptions than return error values"
-date: 2019-01-14T01:00:00+00:00
+date: 2019-01-28T01:00:00+00:00
 template: development-post
 tags: 
 image: "./media/blocks.jpg"
