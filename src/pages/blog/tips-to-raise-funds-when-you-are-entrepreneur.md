@@ -53,6 +53,10 @@ If you plan to make an startup, you have to guarantee the project scalability be
 
 <title-3>4. Seeks, generates, and test traction</title-3>
 
+![raise-funds-tip4](./media/raise-funds-tip4.jpg)
+
+Source: [Pexels](https://www.pexels.com/)
+
 If you did not know it, traction is the proof of that there are users, other business, clients, or customers who need, want, and actually are buying (if the product was launched) your solution. 
 
 This comes after scalability because we think that only scalability is not enough when you raise funds. You need to prove the whole potential of your project. 
@@ -60,6 +64,10 @@ This comes after scalability because we think that only scalability is not enoug
 If you are in early stages, you would use your [idea validation](https://cobuildlab.com/blog/validating-your-idea-the-first-step-to-create-your-startup/), you would take your [value and growth hypotheses](https://cobuildlab.com/blog/value-hypothesis-and-growth-hypothesis/) or just demonstrated your [product market fit](https://cobuildlab.com/blog/achieving-product-market-fit-in-your-software-product/).
 
 <title-3>5. Choose a financing method</title-3>
+
+![raise-funds-tip5](./media/raise-funds-tip5.jpg)
+
+Source: [Pexels](https://www.pexels.com/)
 
 If you want funds for your business idea, you need to be sure of which (financing method) LINK you will use. Why? Because every financing method has a procedure that you need to follow or different requirements that you need to meet. 
 
@@ -69,6 +77,10 @@ So, choose your method and go for it.
 
 <title-3>6. Make a pitch deck if it necessary</title-3>
 
+![raise-funds-tip6](./media/raise-funds-tip6.jpg)
+
+Source: [Pexels](https://www.pexels.com/)
+
 When you are raising funds in the most of cases you need to do a pitch deck. 
 
 A pitch deck is a oral presentation that you make for get funding, and this presentation you can accompany her with a video or a presentation
@@ -76,6 +88,10 @@ A pitch deck is a oral presentation that you make for get funding, and this pres
 We make a post before where there are pieces of advices, tips, steps, and everything you have to know for make perfectly a [pitch deck](https://cobuildlab.com/blog/make-the-perfect-pitch-deck-and-convince-investors-easily/). 
 
 <title-3>7. Known clearly the amount of funds that you need</title-3>
+
+![raise-funds-tip7](./media/raise-funds-tip7.jpg)
+
+Source: [Pexels](https://www.pexels.com/)
 
 This is part of the business plan but it is so important that we decide to make an specific tip about it. 
 
