@@ -101,17 +101,27 @@ Talk or show this information as clearest as possible when you are raising funds
 
 <title-3>8. Try to get funding in the same coin you will earn money</title-3>
 
+![raise-funds-tip8](./media/raise-funds-tip8.jpeg)
 
+Source: [Pexels](https://www.pexels.com/)
 
 This is just a protection of exchange risks. If your product is for US and you will gain dollars it is really daring to raise funds in another coin.
 
 <title-3>9. Always sell</title-3>
+
+![raise-funds-tip9](./media/raise-funds-tip9.jpeg)
+
+Source: [Pexels](https://www.pexels.com/)
 
 Since you have the idea and are raising funds until you produce and commercialize your product or service, you have to sell. 
 
 Sell ideas, sell your benefits, sell yourself, and sell your product as much as possible and smartly. 
 
 <title-3>10. Use the right and necessary resources in favor</title-3>
+
+![raise-funds-tip10](./media/raise-funds-tip10.jpeg)
+
+Source: [Pexels](https://www.pexels.com/)
 
 If you need a phone, a determined look, a pc or every device you consider will be necessary to make good presentations when you are asking for investment, use it or try at least. 
 
