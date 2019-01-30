@@ -65,7 +65,7 @@ If you are in early stages, you would use your [idea validation](https://cobuild
 
 <title-3>5. Choose a financing method</title-3>
 
-![raise-funds-tip5](./media/raise-funds-tip5.jpg)
+![raise-funds-tip5](./media/raise-funds-tip5.png)
 
 Source: [Pexels](https://www.pexels.com/)
 
@@ -77,7 +77,7 @@ So, choose your method and go for it.
 
 <title-3>6. Make a pitch deck if it necessary</title-3>
 
-![raise-funds-tip6](./media/raise-funds-tip6.jpg)
+![raise-funds-tip6](./media/raise-funds-tip6.jpeg)
 
 Source: [Pexels](https://www.pexels.com/)
 
@@ -89,7 +89,7 @@ We make a post before where there are pieces of advices, tips, steps, and everyt
 
 <title-3>7. Known clearly the amount of funds that you need</title-3>
 
-![raise-funds-tip7](./media/raise-funds-tip7.jpg)
+![raise-funds-tip7](./media/raise-funds-tip7.jpeg)
 
 Source: [Pexels](https://www.pexels.com/)
 
@@ -100,6 +100,8 @@ You need to know and justify every cent you need and how you plan to use it, whi
 Talk or show this information as clearest as possible when you are raising funds and get amazing results doing it.
 
 <title-3>8. Try to get funding in the same coin you will earn money</title-3>
+
+
 
 This is just a protection of exchange risks. If your product is for US and you will gain dollars it is really daring to raise funds in another coin.
 
