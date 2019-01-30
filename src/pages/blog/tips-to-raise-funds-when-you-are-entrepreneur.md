@@ -18,6 +18,10 @@ If you are in this situation, relax, we Will give you some tips you should follo
 
 <title-3>1. Get ready enough </title-3>
 
+![raise-funds-tip1](./media/raise-funds-tip1.jpg)
+
+Source: [Pexels](https://www.pexels.com/)
+
 When we say this, we are referring to a clear business plan. 
 
 If you need investment you must go for investors or just get a loan for a bank. In both cases you will need to convince others, and that only will happen if you know well your project, what you want and where you want to go. 
@@ -26,11 +30,20 @@ It is vital for you having enough information for answer questions or just looki
 
 <title-3>2. Keep clear the solution that you offer</title-3>
 
+![raise-funds-tip2](./media/raise-funds-tip2.jpg)
+
+Source: [Pexels](https://www.pexels.com/)
+
 We think that the success of a startup is that, [it has found a solution for a problem or necessity in the market](https://cobuildlab.com/blog/make-the-perfect-pitch-deck-and-convince-investors-easily/). And that solution was unexplored before. 
 
 If you have an amazing branding, your brand has an amazing image and a personality well defined but you are not clear about the solution that you are offering in the market, hardly you will convince investors or you will get enough funding. You need to know it and be sure of this for motivating others and invite them to participate in your business project.
 
 <title-3>3. Be sure of scalability of your project and say it!</title-3>
+
+![raise-funds-tip3](./media/raise-funds-tip3.jpg)
+
+Source: [Pexels](https://www.pexels.com/)
+
 
 When a startup is scalable means that the idea behind would have growth and expansion in the future. 
 
