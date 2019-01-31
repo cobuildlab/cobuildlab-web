@@ -22,7 +22,7 @@ As we said, there are traditional methods that involve banks and traditional inv
 
 When we say traditional methods is because they involve banks which are the oldest way to get funding for a project with loans, micro-credits, etc.
 
-**1. Bank Loans**
+<title-3>1. Bank Loans</title-3>
 
 This is the most traditional method. Basically, you look for credit in the bank. This method is one of the most structured and you need to comply with many requirements. 
 
@@ -42,7 +42,7 @@ Common requirements for Bank Loans are:
 * Leasing agreements
 * Ongoing contracts
 
-**2. Credit Cards**
+<title-3>2. Credit Cards</title-3>
 
 This method is very common. Especially when entrepreneurs need money faster and immediately. 
 
@@ -53,7 +53,7 @@ Some people prefer this as the first method in the initial step because you don�
 
 But we don’t bet very much for this method, because it could be insufficient for starting a business, also it generates too much interests, and naturally credit cards are not thought for this kind of invest. For that reason, all banks have loan programs, micro credit program, even financing programs for entrepreneurs.
 
-**3. Government grants and loans**
+<title-3>3. Government grants and loans</title-3>
 
 Depending on the country you are, It is possible to get financing from the government in a kind of microcredit or a grant. 
 
@@ -63,7 +63,7 @@ For example, the [US Agency for International Development](https://www.grants.go
 
 In this case, you need to fulfill some legal requirements that will be specificated for the same government, and eventually, you will have a compromise with the government and the country. 
 
-**4. Lending Companies**
+<title-3>4. Lending Companies</title-3>
 
 These are companies that bring lending, but they are more dynamic and modern than a bank, and the main feature of this method is the fact that they don’t ask too many requirements, and usually provide online registration forms to check availability for loans.
 
@@ -73,7 +73,7 @@ Some examples of these companies are [Capital One](https://www.capitalone.com/),
 
 Other companies like this are [Lendio](https://www.lendio.com/)and [Kabbage](https://www.lendio.com/).
 
-**5. Nonprofits and Foundations**
+<title-3>5. Nonprofits and Foundations</title-3>
 
 This kind of organizations are famous for bringing money or investment to an audience, usually minorities. It could be for women, populations of specific religion or race, etc. 
 
