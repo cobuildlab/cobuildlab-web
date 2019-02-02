@@ -2,7 +2,7 @@
 title: "Weedmatch"
 date: "2018-11-19T12:40:35.000Z"
 template: story
-image: "./media/weedmatch-bg.png"
+image: "./media/weedmatchmain.jpg"
 ---
 
 ![Weedmatch](./media/weedmatch-bg.png)
@@ -41,19 +41,18 @@ The application was develop using **React Native** and **Django frameworks**.
 The project lasted approximately four and a half months with a **back-end programmer**, a **front-end programmer**, a **typesetter**, and a **Qa**. Working as a team with the client and holding daily meetings, the first beta of the application was developed and then functionalities were added. Currently, the project is already live and all the Chilean community loving cannabis enjoys it.
 
 <carousel folder='customer-success-stories'>
-./media/.jpg
-./media/.jpg
-./media/.jpg
-./media/.jpg
-./media/.jpg
-./media/.jpg
-./media/.jpg
-./media.jpg
-./media/.jpg
+./media/weedmatch1.jpeg
+./media/weedmatch2.jpeg
+./media/weedmatch3.jpeg
+./media/weedmatch4.jpeg
+./media/weedmatch5.jpeg
+./media/weedmatch6.jpeg
+./media/weedmatch7.jpeg
+./media/weedmatch8.jpeg
 </carousel>
 
 **Contact Person:** Oscar Lopez
 
 **Location:** Chile, Santiago
 
-**Industry:** 
+**Industry:** Lifestyle and Commnunities
