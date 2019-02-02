@@ -22,3 +22,11 @@ managing a news conglomerate with 15 million Facebook fans all over Latin Americ
 **software developer**.
 At the moment he is dedicated to change the Latin American Cannabis reality creating the first **Cannabis social network** in **Chile**
 and **Latin America**.
+
+## Biography of weedmatch
+
+Born as an idea on April 20, 2017, to attend a national cannabis march in Chile, surprised with the call and massiveness, Oscar Lopez decided to create something to unite all the community, and from there emerged the idea of a social network. As he delved deeper into
+the idea and the Chilean cannabis culture he realized that the market and opportunity were much bigger than he expected and at the same time the worldwide cannabis culture begins to have high traction: it was a case of perfect timing.
+
+We made an application for mobile Android and iPhone that allows you to contact the people closest to you, interested in the cannabis culture. Allows you to match and create a chat to chat and know the interests of those people. 
+The application was develop using React Native and Django frameworks
