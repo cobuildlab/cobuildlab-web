@@ -5,7 +5,7 @@ template: story
 image: "./media/weedmatch-bg.png"
 ---
 
-![Weedmatch](./media/logo.png)
+![Weedmatch](./media/weedmatch-bg.png)
 
 <title-2 align="centered">Weedmatch</title-2>
 
