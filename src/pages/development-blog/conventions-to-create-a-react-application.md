@@ -32,6 +32,8 @@ Here, we explain the problem, choose a convetion, and explain the reasons:
 ## 10) Routing
 <TODO>
 ## 11) State intialization
+## 11) Data Validation
+## 11) Testing
 
 Use constructor to initialize state instead of `static` members:
 
