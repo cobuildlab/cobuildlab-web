@@ -22,7 +22,7 @@ As we said, there are traditional methods that involve banks and traditional inv
 
 When we say traditional methods is because they involve banks which are the oldest way to get funding for a project with loans, micro-credits, etc.
 
-**1. Bank Loans**
+<title-3>1. Bank Loans</title-3>
 
 This is the most traditional method. Basically, you look for credit in the bank. This method is one of the most structured and you need to comply with many requirements. 
 
@@ -42,7 +42,7 @@ Common requirements for Bank Loans are:
 * Leasing agreements
 * Ongoing contracts
 
-**2. Credit Cards**
+<title-3>2. Credit Cards</title-3>
 
 This method is very common. Especially when entrepreneurs need money faster and immediately. 
 
@@ -53,7 +53,7 @@ Some people prefer this as the first method in the initial step because you don�
 
 But we don’t bet very much for this method, because it could be insufficient for starting a business, also it generates too much interests, and naturally credit cards are not thought for this kind of invest. For that reason, all banks have loan programs, micro credit program, even financing programs for entrepreneurs.
 
-**3. Government grants and loans**
+<title-3>3. Government grants and loans</title-3>
 
 Depending on the country you are, It is possible to get financing from the government in a kind of microcredit or a grant. 
 
@@ -63,7 +63,7 @@ For example, the [US Agency for International Development](https://www.grants.go
 
 In this case, you need to fulfill some legal requirements that will be specificated for the same government, and eventually, you will have a compromise with the government and the country. 
 
-**4. Lending Companies**
+<title-3>4. Lending Companies</title-3>
 
 These are companies that bring lending, but they are more dynamic and modern than a bank, and the main feature of this method is the fact that they don’t ask too many requirements, and usually provide online registration forms to check availability for loans.
 
@@ -73,7 +73,7 @@ Some examples of these companies are [Capital One](https://www.capitalone.com/),
 
 Other companies like this are [Lendio](https://www.lendio.com/)and [Kabbage](https://www.lendio.com/).
 
-**5. Nonprofits and Foundations**
+<title-3>5. Nonprofits and Foundations</title-3>
 
 This kind of organizations are famous for bringing money or investment to an audience, usually minorities. It could be for women, populations of specific religion or race, etc. 
 
@@ -87,7 +87,7 @@ On the other side of traditional methods, alternatives are related to people, we
 
 These methods are newer than the traditional, but they are really popular in the startup culture. Actually, some people prefer them.
 
-**1. Friends and family**
+<title-3>1. Friends and family</title-3>
 
 Some entrepreneurs think that everything should stay in the family. Maybe you are one of them. 
 
@@ -95,7 +95,7 @@ That's why the first alternative method that we consider to get the funding it i
 
 Of course, they are relatives to you. If is in their hands they will help you, and you would not have to be so formal, follow many requirements, and in general, make a good and beneficial treatment.
 
-**2. Venture capital**
+<title-3>2. Venture capital</title-3>
 
 When a group of people unite their resources, invest their money in a business project, and take part ownership in exchange for their capital, we will be in presence of a venture capital group or firm. 
 
@@ -127,13 +127,13 @@ They have eight offices in the country, including in Miami, six offices in Europ
 
 A local firm also is the Krillion Ventures. They are likely to invest in local companies in South Florida. This is its [portfolio](http://www.krillionventures.com/portfolio/index.html).
 
-**3. Partner financing**
+<title-3>3. Partner financing</title-3>
 
 In this financing method a partner who can be a bigger brand in the same area of your business, participate and bring money in exchange of distribution rights, special access to your product or service, etc. 
 
 It is not lending, It is more than a sale of shares.
 
-**4. Angel investors**
+<title-3>4. Angel investors</title-3>
 
 Angel investors are similar to venture capitals. Actually, people tend to confuse them. But they have a little bit differences. For example, venture capitals are a group of large companies commonly while angel investors are individual investors who are likely to invest in startups on early stages. 
 
@@ -147,7 +147,7 @@ He has been investing since 2005 on Social Media and Social Media Enablement, ac
 
 Also, he bet for E-Commerce and E-commerce Enablement, and Digital Media platforms.
 
-**5. Crowdfunding**
+<title-3>5. Crowdfunding</title-3>
 
 With this alternative method, you can get funding from websites where investors can support your business no matter where they are. 
 
@@ -162,7 +162,7 @@ You can do crowdfunding for different reasons like early access to products, a b
 
 Some websites you would use for this financing method are [Kickstarter](https://www.kickstarter.com/), which is one of the most used, Indiegogo, RockHub, Crowdrise, SellABand, GoFundMe, and others.
 
-**6. ICO**
+<title-3>6. ICO</title-3>
 
 This method translates Initial Coin Offering. What does it mean? Well, someone offers new cryptocurrencies or crypto-token to investors in exchange for cryptocurrencies more common and with more value like Bitcoin and Ethereum. 
 
