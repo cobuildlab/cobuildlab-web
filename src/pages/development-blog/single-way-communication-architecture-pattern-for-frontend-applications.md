@@ -7,7 +7,7 @@ permalink: /single-way-communication-architecture-pattern-for-frontend-applicati
 image: null
 ---
 
-For many years Software Developers have face different challenges building User Interfaces: Rendering, Event handling, external systems communications, loose coupling of elements, separations of concerns, components communication, state management, routers, navigations, etc, etc, etc, resulting in many many solutions from different specialties, desktop, mobile, web, etc. Some of then have been effective, some other not so much, and over the years several attemps have been made to communicate this solutions to other developers using design or achitectural patterns.
+For many years Software Developers have face different challenges building User Interfaces: Rendering, Event handling, external systems communications, loose coupling of elements, separations of concerns, components communication, state management, routers, navigations, etc, etc, etc, resulting in many many solutions from different specialties, desktop, mobile, web, etc. Some of them have been effective, some other not so much, and over the years several attempts have been made to communicate these solutions to other developers using a design or architectural patterns.
 
 
 >> An architectural pattern is a general, reusable solution to a commonly occurring problem in software architecture within a given context.[1] Architectural patterns are similar to software design patterns but have a broader scope. The architectural patterns address various issues in software engineering, such as computer hardware performance limitations, high availability and minimization of a business risk. Some architectural patterns have been implemented within software frameworks.
@@ -21,7 +21,7 @@ For many years Software Developers have face different challenges building User 
 This Rules usually are, but are not delimited to:
 
 - Component's names
-- Component's responsabilities
+- Component's responsibilities
 - Component's communication
 - System communications or interfaces
 
@@ -32,13 +32,13 @@ Let's review some of the most common patterns used nowadays:
 
 Delimits the components of the User Interface in three big groups: Models to modeling the Data Objects or Elements of the application, the Views to present the data to the User and the Controllers to handle user interactions.
 
-It has been around since the 70's and it has set the bases for all the further presented patterns. 
+It has been around since the 70s and it has set the bases for all the further presented patterns. 
 
 ![MVVM](./media/mvc.png)
 
 ## MVVM: Model View View-Model
 
-Here, the Model remains the domain or Data Objects, the View-Model is now in charge of rendering the data, and understanding the user interaction to communicate actions to the model. At last the View is completed serapated from logic of presentation, but maintains the responsability of handling the graphic elements normally in it's own domain language like HTML, XML, XAML
+Here, the Model remains the domain or Data Objects, the View-Model is now in charge of rendering the data, and understanding the user interaction to communicate actions to the model. At last the View is completed separated from the logic of presentation but maintains the responsibility of handling the graphics elements normally in its own domain language like HTML, XML, XAML.
 
 https://www.wintellect.com/model-view-viewmodel-mvvm-explained/
 
@@ -68,15 +68,13 @@ Introducing a new iteration on the MVC architectural pattern: Flux
 
 ### Single Way Communication Architectural Pattern Rules and Elements
 
-After examinating the evolution of Architectures for User Interfaces we compliant with the Flux pattern and extend it such as: 
+After reviewing the evolution of Architectures for User Interfaces we compliant with the Flux pattern and extend it such as: 
 
 
 - Store: holds the state of the application and are the only source of truth
 - View: or Controlled View handle the logic to present or render the state.
-- Action: Is consider any event that trigger execution of logic
-- Dispatcher: Is a hub of events, is incharge of receive all actions and to send them to the appropiate stores to change the state of the system
+- Action: Is consider any event that triggers execution of logic
+- Dispatcher: Is a hub of events, is in charge of receive all actions and to send them to the appropriate stores to change the state of the system
 - Views can trigger actions upon User Interaction
 - An Action can be trigger by the View or any other component of the system
 - Views register themselves with stores to get notified when a state change occurs
-
-
