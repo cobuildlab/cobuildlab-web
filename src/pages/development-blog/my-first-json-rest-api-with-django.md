@@ -17,7 +17,7 @@ The Term REST comes from an specific set of rules that provides a Client / Serve
 
 [More about REST](https://restfulapi.net/)
 
-![REST API](https://www.openprogrammer.info/wp-content/uploads/2015/01/buildingRestApi.jpg)
+![REST API](.media/rest-api-json.png)
 
 ## Django Framework
 
@@ -73,7 +73,7 @@ python3 manage.py startapp tasks
 INSTALLED_APPS = (
     ...
     'rest_framework',
-    'task.apps.TasksConfig',
+    'tasks.apps.TasksConfig',
 )
 ```
 
@@ -86,10 +86,10 @@ from django.http import JsonResponse
 
 
 def index(request):
-    return JsonResponse("["Hello World")
+    return JsonResponse("['Hello World']")
 ```
 
-urls.py
+tasks/urls.py
 
 ```python
 from django.urls import path
@@ -108,7 +108,7 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path('polls/', include('tasks.urls')),
+    path('tasks/', include('tasks.urls')),
     path('admin/', admin.site.urls),
 ]
 ```
@@ -126,13 +126,25 @@ class ToDo(models.Model):
     task = models.ForeignKey(Task, on_delete=models.CASCADE)
     text = models.CharField(max_length=200)
     is_done = models.BooleanField(default=0)
+
 ```
 
-```bash
+```shell
 python3 manage.py makemigrations tasks
+python3 manage.py migrate
 ```
 
 # 8. Create a Super User to play with the Models
+
+tasks/admin.py
+```python
+from django.contrib import admin
+
+from .models import Task, ToDo
+
+admin.site.register(Question)
+admin.site.register(ToDo)
+```
 
 ```bash
 python3 manage.py createsuperuser
@@ -142,40 +154,62 @@ python3 manage.py runserver
 # 9. Let's create more views
 
 
-tasks/views.py 
+tasks/urls.py 
 
-```python
-
-def detail(request, question_id):
-    return HttpResponse("You're looking at question %s." % question_id)
-
-def results(request, question_id):
-    response = "You're looking at the results of question %s."
-    return HttpResponse(response % question_id)
-
-def vote(request, question_id):
-    return HttpResponse("You're voting on question %s." % question_id)
-
-def index(request):
-    latest_question_list = Question.objects.order_by('-pub_date')[:5]
-    output = ', '.join([q.question_text for q in latest_question_list])
-    return HttpResponse(output)
-```
-
-tasks/urls.py
 ```python
 from django.urls import path
 
 from . import views
 
 urlpatterns = [
-    # ex: /polls/
+    path('test', views.test, name='index'),
+    # All tasks
     path('', views.index, name='index'),
-    # ex: /polls/5/
-    path('<int:question_id>/', views.detail, name='detail'),
-    # ex: /polls/5/results/
-    path('<int:question_id>/results/', views.results, name='results'),
-    # ex: /polls/5/vote/
-    path('<int:question_id>/vote/', views.vote, name='vote'),
+    # ex: /taks/5/
+    path('<int:task_id>/', views.task_detail, name='detail'),
+    # ex: /tasks/5/vote/
+    path('create-task/', views.create_task, name='vote'),
 ]
+```
+
+tasks/views.py
+```python
+from django.shortcuts import render
+from django.http import JsonResponse
+
+from . import models
+
+
+def test(request):
+    json_data = {
+        "first_name": "Angel",
+        "last_name": "Lacret"
+    }
+    return JsonResponse(json_data)
+
+def index(request):
+    tasks = models.Tasks.objects.all()
+    count = models.Tasks.objects.all().count()
+    tasks_list = []
+    for task in tasks:
+        task_object = {}
+        task_object["id"] = task.id
+        task_object["text"] = task.text
+    json_result = {
+        "tasks": tasks_list,
+        "count": count
+    }
+    return HttpResponse(json_result)
+
+def task_detail(request, task_id):
+    task = models.Tasks.objects.get(id=task_id)
+    task_object = {}
+    task_object["id"] = task.id
+    task_object["text"] = task.text
+    return HttpResponse(task_object)
+
+def create_task(request):
+    print(request)
+    print(dir(request))
+    return HttpResponse(response % question_id)
 ```
