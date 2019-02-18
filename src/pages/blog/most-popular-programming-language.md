@@ -1,5 +1,5 @@
 ---
-title: "Top 5 most popular programming language for February 2019"
+title: "Top 5 most popular programming languages for February 2019"
 date: "2019-02-14T16:24:04.000Z"
 template: blog
 tags: Tools
@@ -9,7 +9,7 @@ image: "./media/most-popular-programming-language.jpg"
 
 Github, Facebook, and the programmers' community in the whole world have shown their opinions and preferences for some **programming languages** the last year, and these 2019 trends began to notice. For that reason, we make this article about the most popular programming languages to explain to you which technologies you can use and take advantage in your software project. Let’s learn!
 
-<title-2>The 5 most popular programming language in 2018 and part of this year</title-2>
+<title-2>The 5 most popular programming languages in 2018 and part of this year</title-2>
 
 There are many programming languages nowadays. Too many options to choose. 
 
