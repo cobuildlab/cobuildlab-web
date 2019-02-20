@@ -48,7 +48,6 @@ This is an example of famous languages with frameworks:
 <Br>
  
 **Javascript or Typescript with [Firebase](https://firebase.google.com/?gclid=EAIaIQobChMI75zRlIDI4AIVxEOGCh344AFaEAAYASAAEgLdCvD_BwE)**
-
 <Br>
  
 **Javascript or Typescript [8base](https://www.8base.com/)**
