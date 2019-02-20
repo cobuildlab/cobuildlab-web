@@ -42,8 +42,15 @@ Frameworks will provide you with implementations for some common features for ap
 This is an example of famous languages with frameworks:
 
 **Python and [Django Framework](https://www.djangoproject.com/)**
+<Br>
+
 **Javascript with [ExpressJS](https://expressjs.com/)**
+<Br>
+ 
 **Javascript or Typescript with [Firebase](https://firebase.google.com/?gclid=EAIaIQobChMI75zRlIDI4AIVxEOGCh344AFaEAAYASAAEgLdCvD_BwE)**
+
+<Br>
+ 
 **Javascript or Typescript [8base](https://www.8base.com/)**
 
 Now, there are two new trends that are in the Serverless computing options. We personally use them. 
