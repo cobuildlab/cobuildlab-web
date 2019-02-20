@@ -98,10 +98,40 @@ Python is very popular in data analytics because it has many libraries and tools
 
 <title-3>5. Bet for open source technologies</title-3>
 
+There are many many technologies open source or even free software that are really good, functional, and perfect to build an app or a web. 
 
+All technologies that are open source give you the opportunity to get good software, tested and improved for other people, but also give you the opportunity to change its source code and adapt it better to your necessities. 
 
+Before you choose an [open source technology](https://cobuildlab.com/blog/software-open-source-vs-proprietary-software/) or your stack, don’t forget making the next questions: 
 
+“What kind of license does it have? Does the language or framework have the features you or your developers need? How many core developers are there? You can check out the contributors or stars in the Github repository and how they have evolved over time.”
 
+Source: [Medium](https://medium.com/unicorn-supplies/9-steps-how-to-choose-a-technology-stack-for-your-web-application-a6e302398e55)
 
+<title-3>6. The ecosystem should be solid</title-3>
 
-[Idea Validation](https://cobuildlab.com/blog/validating-your-idea-the-first-step-to-create-your-startup/))
+This is really important. When we talk about the ecosystem of a determined technology we are referring to people and tools that are around it. 
+
+This ecosystem is very is very important because it will give you tutorials, articles, packages, solutions to errors, FAQ, and information to take the maximum advantage of the technology you plan to use or you are using at the moment. 
+
+An ecosystem is a kind of community and you have to be sure that this community and tools are the right for you. So, it should be solid.
+
+A very important piece to check is the popularity of the tools, the most popular tools have more available developers to join your team
+
+<title-3>7. Long-term and support is important too</title-3>
+
+Our best recommendation for you when you are choosing a tech stack is that make how future-proof technologies are. 
+
+It would happen that you prefer the newer technology, but that’s not always is the best. There are some mature technologies that can get you more reliability. Or it would happen the opposite,
+ That you trust too much in the solid and older technologies, and you are out of the latest technology radar.
+
+The best you can do is investigate and know the life-cycle of each technology you are considering. 
+
+Search if people are using it, reviews, experiences, how is considered by people who used it and who is using it now. 
+
+Also, evaluate the support that the vendor is offering you or maybe if there is a big brand that is supporting this technology. For example, Google is behind Angular, and Facebook is behind React. How big is the community that it is behind? 
+
+You should check too how are updates handled? How easy is the migration process? If they have incompatible versions, etc. All of these aspects will help you to take the best decision. 
+
+If you had not chosen your **tech stack** until now, we hope that now you can do it successfully following these tips and information. We will continue bringing more information about this. Just visit us frequently or subscribe to our newsletter. Good luck and success with the software you are developing. 
+
