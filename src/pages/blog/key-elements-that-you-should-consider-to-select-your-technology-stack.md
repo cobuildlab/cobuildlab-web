@@ -3,7 +3,7 @@ title: "7 Key Elements that you should consider to select your Technology Stack"
 date: "2019-02-20T16:24:04.000Z"
 template: blog
 tags: Education
-image: "./media/product-market-fit.jpg"
+image: "./media/tech-stack.jpg"
 ---
 
 What is promised is debt and this post is proof of that. In the last post, we talked about the [most popular programming languages](https://cobuildlab.com/blog/most-popular-programming-language/) in 2018 and part of this year. But that information is not enough if you are developing software or at least you are [planning to do it](https://cobuildlab.com/blog/planning-a-software-project/). One of the most important things is the **tech stack** or technology stack that you choose. So, we make this post to clarify this task and to give you a guide about how to do it.
