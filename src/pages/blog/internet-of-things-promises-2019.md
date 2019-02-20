@@ -79,8 +79,28 @@ Now, this is the key to be on the top. All projects point to incorporate more de
 
 This is aligned to the main goal of this technology: make better and easier our lives. With democracy and openness, this goal would be closer. 
 
+**4. Cloud connection**
 
+In the internet of things projects, lots of information is handled. And this information is stored and classified on the Cloud. 
 
-<youtube-video id="bUQz9ZWjsvc"></youtube-video>
+In the same survey that we mentioned before, more than 500 developers and owners of IoT project confess that they work more with Amazon Web Services, Azure, and Google Cloud Platform.
 
+Until the last year, these cloud services are the top three. 
 
+**5. These are the areas that are more popular for IoT**
+
+Home automation is the most known. Also, self-drive cars, there is a concept called [smart cities](https://internetofthingsagenda.techtarget.com/definition/smart-city), and even on industrial automation, it has popularized this technology. 
+
+**6. These are the top of Operating system used for the internet of things projects**
+
+![iot](./media/iot3.png)
+
+Linux is the absolute king. 
+
+We couldn’t finish this article with some examples of the internet of things nowadays. For that, we prepare the next videos. 
+
+<youtube-video id="hIEIGDsbKqY"></youtube-video>
+
+<youtube-video id="EyMB828lieU"></youtube-video>
+
+The **internet of things** is the present and the future, and we are excited about that because it is related to our passion: [software development](https://cobuildlab.com/blog/best-software-development-process/). So, if you want to find out more information about it you can subscribe to our newsletter or just read us again. For this month we are talking about software. You are welcome! 
