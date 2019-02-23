@@ -39,6 +39,7 @@ import {
   CardContent,
   Content
 } from 'bloomer';
+import TTSVoice from '../components/TTSVoice';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -74,6 +75,8 @@ class BlogPostTemplate extends React.Component {
     const previousImage =
       get(previous, 'frontmatter.image.publicURL') || defaultImg;
     const nextImage = get(next, 'frontmatter.image.publicURL') || defaultImg;
+    let speech;
+
 
     return (
       <LayoutPost>
@@ -88,8 +91,8 @@ class BlogPostTemplate extends React.Component {
             <Title tag="h3" isSize={1} hasTextColor="Black">
               {post.frontmatter.title}
             </Title>
-            <br/>
-            <hr/>
+            <br />
+            <hr />
           </Container>
           <HeroBody
             className="bg-post"
@@ -104,7 +107,7 @@ class BlogPostTemplate extends React.Component {
             <Columns isCentered>
               <Column hasTextAlign="left">{renderAst(post.htmlAst)}</Column>
             </Columns>
-
+            <TTSVoice text={post.rawMarkdownBody} />
             <Share
               socialConfig={{
                 twitterHandle,
@@ -205,6 +208,7 @@ export const pageQuery = graphql`
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      rawMarkdownBody
       id
       excerpt
       htmlAst
