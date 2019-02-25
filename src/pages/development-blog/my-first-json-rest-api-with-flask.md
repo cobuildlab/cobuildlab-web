@@ -43,6 +43,7 @@ pip3 install Flask
 
 ```sh
 mkdir json_rest_api
+cd json_rest_api
 touch app.py
 
 ```
