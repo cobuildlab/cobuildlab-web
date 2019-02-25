@@ -3,7 +3,7 @@ title: My First JSON REST API with Django
 date: 2019-02-03T01:00:00+00:00
 tags: 
 template: development-post
-permalink: /single-way-communication-architecture-pattern-for-frontend-applications.md/
+permalink: /my-first-json-rest-api-with-django.md/
 image: null
 ---
 
