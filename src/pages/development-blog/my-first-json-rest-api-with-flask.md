@@ -1,6 +1,6 @@
 ---
 title: My First JSON REST API with Flask
-date: 2019-02-03T01:00:00+00:00
+date: 2019-02-25T01:00:00+00:00
 tags: 
 template: development-post
 permalink: /my-first-json-rest-api-with-flask.md/
