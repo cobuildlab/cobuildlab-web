@@ -1,6 +1,6 @@
 ---
-title: React Patterns Presentationsl and Container Components
-date: 2019-01-21T01:00:00+00:00
+title: React Patterns Presentational and Container Components
+date: 2019-03-04T01:00:00+00:00
 template: development-post
 tags: 
 image: "./media/blocks.jpg"
@@ -50,107 +50,117 @@ Components on React are designed to favor Composition as a mechanism of Extensio
 
 ## Container and Presentational Components
 
-Starting with React is not difficult, but once you start developing any application with any tool, several questions start to araise. Like:
+Starting with React is not difficult, but once you start developing an application with any tool, several questions start to arise. In React for example, as everything is a component, then we start wondering:
 
 - Where to put my data?
 - How do I manage state?
 - How and Where I communicate with the server?
 - How to communicate changes between my components?
 
-Luckly there are patterns to solve this type of problems in a glance. The Container and Presentational Cpom
 
-### A) Functional Component:
+First of all, the most used architecture to develop a React application in terms of responsibilities is [Flux](https://cobuildlab.com/development-blog/single-way-communication-architecture-pattern-for-frontend-applications/), following this we know that we will have: View, Stores, and Actions. So:
 
-Is a simple function definition that receives a single argument, often named `props` for convention, and return a valid React Component or a valid JSX Html (also called React Component):
+- Where to put my data? **Store**
+- How do I manage state? **Store**
+- How and Where I communicate with the server? **Actions**
+- How to communicate changes between my components? **???**
+
+Among others, a common problem by using React Components is which components are gonna **subscribe** to the Stores? All? or Some? if some, which ones?
+
+Luckily there are patterns to solve this type of problems in a glance. The Container and Presentational Components pattern help you separate the responsibilities on your components with easy to follow rules.
+
+
+### A) Container Component:
+
+The Container components are designed to hold high-level logic and subscriptions to the Stores, and usually, represent abstractions of high-level Views like Pages in a Web Application and Screens in a Mobile Application. Example:
 
 ```javascript
+/**
+*
+*/
+class HomePage extends React.Component{
+  constructor (props) { }
 
-function Clock(props) { // single props argument
-  const localDate = props.date.toLocal();
-  return ( // Valid JSX React Component
-    <div>
-      <p>{localDate}</p>
-      <span>{props.time}</span>
-    </div>
-  );
+  componentDidMount(){
+    // Handle subscription logic
+  }
+
+  render (){
+    return ( 
+      <html>
+        <body>
+          <h1>title</h1>
+          <span>{props.time}</span>
+          <p>
+            Some Text
+          </p>
+          <Tabs>
+            <Tab>
+              <h1>Comments</h1>
+              <Comment text="" />
+              <Comment text="" />
+            </Tab>
+          </Tabs>
+        </body>
+      </html>
+    );
+  }
 }
-
 ```
 
-### B) Class Component:
+So, a Container Component:
 
-A Class Component is a ES6 class that has a render method and extends the `Component` Class from the React library.
+- Manage subscriptions to the Store or any Datasource
+- Manage Routing
+- Could be coupled to any other Component on the system
+- Understands **what** to render but not **how** to render
 
-Note: this component is equivalent to the presented in the Functional Component example
+
+### B) Presentational Component:
+
+A presentational component basically holds logic only on **how to render** the data that is received in the component. It may occasionally hold an internal state, just to handle logic that only makes sense for it.
 
 
 ```javascript
 import React from 'react';
 
-class Clock extends React.Component{
-  function render() { // single props argument
-    const localDate = props.date.toLocal();
-    return ( // Valid JSX React Component
-      <div>
-        <p>{props.date}</p>
-        <span>{props.time}</span>
-      </div>
-    );
-  }
+/**
+* 
+*/
+const Comment = (props){  
+  const localDate = props.date.toLocal();
+  return (
+    <div>
+      <p>{props.date}</p>
+      <span>{props.text}</span>
+    </div>
+  );
 }
 
+/**
+*
+*/
+const InputField = (props){  
+  const localDate = props.date.toLocal();
+  return (
+    <div>
+      <p>{props.label}</p>
+      <input value={props.value} onChange={props.onChange}/>
+    </div>
+  );
+}
 ```
 
-## Class Components vs Functional Components
+So a Presentational Component:
+
+- It understands how to present it's state or props to the User
+- It does not holds [state](https://cobuildlab.com/development-blog/react-patterns-functional-components-vs-class-components/) unless this state is absolutely necessary for its normal behavior and only makes sense within the component itself
+- Does not interact directly with other React Components that are not Presentational Components as Well
+- Does not handle event handling logic, it delegates this to Container Components
 
 
-Some developers prefer using one above the other, some prefer a mix between them, but the truth is that it is possible to achieve the same results using Class or Functional components. Our opinion is that a mix of then is the best approach to build a complete an extensible application.
+## Conclusions:
 
-
-The main difference between a Functional Component and a Class Component is the ability of the last one to hold a state and the functionality that this provides. Also, a class component has direct access to the lifecycles methods of a Component.
-
-
-### State Management
-
-State means the local value of all the properties within a Class or a Component (whether is a React Component or no). It is useful to handle information on the component that is not relevant to the outside world.
-
-
-Common scenarios of state management are: Values to store information about show or hide pieces of the component, internal or intermedium values in the component that are not relevant outside, lists of value for a Select type field, etc.
-
-
-A Class Component offers a `setState` method to update the internal state, forcing a re-rendering of the component.
-
-
-### Lifecycle Methods
-
-React provides different methods on a Class Component to leverage the power to the user to do specific tasks. Some of these methods are:
-
-
-#### constructor(props)
-
-Called by React when the component its gonna be used before rendering. Usefull to initialize values and the initial state of the component.
-
-#### componentDidMount
-
-Called after the component is rendered for the first time. Useful for subscriptions.
-
-#### componentWillUnmount
-
-Called right before the component it's gonna be removed from the DOM. Useful for remove subscriptions and cleaning.
-
-
-NOTE: these methods can be used also from Functional Components, but how to do it takes a little more understanding of Javascript core features
-
-
-## Functional vs Class components: A simple guide
-
-This is a simple guide of when to use one or the other:
-
-1) Functional Components usually keeps your code cleaner and maximizes reusability and composition because it forces you to minimize the logic on a component
-2) Class Components enable the use of state which makes easier to control a Component internal state
-3) Use a Functional Component if the purpose of your component is just present information and response to events
-4) Use a Class Component is your component is gonna use helper values and variables that are irrelevant outside its scope
-5) Use Class Components if you handle subscriptions, meaning that your UI needs to respond to events in different parts of the application.
-6) One useful way to choose between Class and Functional Components is to use the pattern: `Containers vs Components` Containers can also be referred to `Views` or `Screens`. In this pattern, Containers components handle data state and behavior and Components components or just Components deal only with presentation logic.
+The main benefit of using this patterns is that it forces you to write components that are highly reusable for the Presentational part of the application, and clearly, it defines responsibilities into different React parts of the application/
 
 
