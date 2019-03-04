@@ -38,7 +38,7 @@ module.exports = {
             },
           },
           'gatsby-remark-component',
-          'gatsby-remark-prismjs',
+          // 'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
         ],
