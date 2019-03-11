@@ -174,28 +174,47 @@ if (len(initial_tasks)) == 0:
     })
 
 
-@app.route('/todo/api/v1.0/tasks', methods=['GET'])
+@app.route('/api/tasks', methods=['GET'])
 def get_tasks():
-    tasks = [task for task in tasks_collection.find()]
-    return jsonify({'tasks': tasks})
+    all_tasks = tasks_collection.find()
+    task_list = []
+    for task in all_tasks:
+        task_list.append({'title': task['title'], 'description': task['description'], 'id': task['id']})
+
+    return jsonify({'tasks': task_list})
 
 
-@app.route('/todo/api/v1.0/create-task', methods=['GET'])
+@app.route('/api/create-task', methods=['GET'])
 def create_task():
     tasks = tasks_collection.find()
-    tasks.insert({"id": tasks.count(), "title": "Learn Python", "description": "Start with Flask first", "done": False})
-    tasks = [task for task in tasks_collection.find()]
-    return jsonify({'tasks': tasks})
+    new_task = {"id": tasks.count(), "title": "Learn Mongo", "description": "Start with Flask + Mongo", "done": False}
+    tasks_collection.insert(new_task)
+    all_tasks = tasks_collection.find()
+    task_list = []
+    for task in all_tasks:
+        task_list.append({'title': task['title'], 'description': task['description'], 'id': task['id']})
+    return jsonify({'tasks': task_list})
 
 
-@app.route('/todo/api/v1.0/tasks/<int:task_id>', methods=['GET'])
+@app.route('/api/tasks/<int:task_id>', methods=['GET'])
 def get_task(task_id):
     tasks = tasks_collection.find({'id': task_id})
     if tasks.count() == 0:
-        abort(404)
-    return jsonify({'task': task[0]})
+        return jsonify({'task': None})
+    return jsonify({'task': tasks[0]})
+
+
+@app.route('/', methods=['GET'])
+def home():
+    return jsonify({'msg': 'This is the Home'})
+
+
+@app.route('/test', methods=['GET'])
+def test():
+    return jsonify({'msg': 'This is a Test'})
 
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 ```
