@@ -129,7 +129,9 @@ python3 app.py
 
 >>> The installation of Mongo DB differs a lot between operating system. This is the instructions to install on a Mac OS system:
 
-```
+```bash
+brew tap mongodb/brew
+brew install mongodb-community@4.0
 ```
 
 >>> For other operating systems you can check this [Instructions](https://docs.mongodb.com/manual/administration/install-community/)
@@ -152,44 +154,47 @@ from flask import Flask, jsonify
 from pymongo import MongoClient
 
 app = Flask(__name__)
-client = MongoClient("mongodb://127.0.0.1:27017") #host uri
-db = client.mymongodb #Select the database
-tasks_collection = db.task #Select the collection name
-initial_tasks = tasks_collection.find()
+client = MongoClient("mongodb://127.0.0.1:27017")  # host uri
+db = client.mymongodb  # Select the database
+tasks_collection = db.task  # Select the collection name
+initial_tasks = [task for task in tasks_collection.find()]
 
-if(len(initial_tasks)) == 0:
+if (len(initial_tasks)) == 0:
     tasks_collection.insert({
         'id': 1,
         'title': u'Buy groceries',
-        'description': u'Milk, Cheese, Pizza, Fruit, Tylenol', 
+        'description': u'Milk, Cheese, Pizza, Fruit, Tylenol',
         'done': False
     })
     tasks_collection.insert({
         'id': 2,
         'title': u'Learn Python',
-        'description': u'Need to find a good Python tutorial on the web', 
+        'description': u'Need to find a good Python tutorial on the web',
         'done': False
     })
 
 
 @app.route('/todo/api/v1.0/tasks', methods=['GET'])
 def get_tasks():
-    tasks = tasks_collection.find()
+    tasks = [task for task in tasks_collection.find()]
     return jsonify({'tasks': tasks})
+
 
 @app.route('/todo/api/v1.0/create-task', methods=['GET'])
 def create_task():
     tasks = tasks_collection.find()
-    tasks.insert({"id": len(tasks), "title": "Learn Python", "description": "Start with Flask first", "done": False})
-    tasks = tasks_collection.find()
+    tasks.insert({"id": tasks.count(), "title": "Learn Python", "description": "Start with Flask first", "done": False})
+    tasks = [task for task in tasks_collection.find()]
     return jsonify({'tasks': tasks})
+
 
 @app.route('/todo/api/v1.0/tasks/<int:task_id>', methods=['GET'])
 def get_task(task_id):
     tasks = tasks_collection.find({'id': task_id})
-    if len(task) == 0:
+    if tasks.count() == 0:
         abort(404)
     return jsonify({'task': task[0]})
+
 
 if __name__ == '__main__':
     app.run(debug=True)
