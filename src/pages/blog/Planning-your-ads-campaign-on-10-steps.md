@@ -1,6 +1,6 @@
 ---
 title: "Planning an Ads campaign on 10 steps"
-date: "2019-02-13T16:24:04.000Z"
+date: "2019-03-14T16:24:04.000Z"
 template: blog
 tags: Tools
 image: "./media/ads-campaign.jpg"
