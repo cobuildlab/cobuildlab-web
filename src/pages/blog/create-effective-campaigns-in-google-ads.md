@@ -46,7 +46,7 @@ So, keep in mind this segmentation and all preferences of them at the time of wr
 
 The main goal is to attract the attention of who reads or sees the ad, raise their interest, convince them that they desire your product or service, and finally but no less important, give them satisfaction when viewing your ad and visiting your website or your social media accounts as the destination. 
 
-** 3. Use negative keywords**
+**3. Use negative keywords**
 
 But first, what are they? When you create a Campaign you must specify to Google Ads with which keywords or terms he is going to relate your ads to display it when people search for those terms, as the search engine has millions of searches every second, Google Ads, by using [Artificial Intelligence](https://cobuildlab.com/blog/artificial-intelligence-in-2018/) starts to relate those initial terms that you provided with similar terms, to try to display your ad to more people that are interested in your message but that they do not necessarily use the exact same words that you provide. This process expands your terms broadly, so Negative keywords are keywords that you specifically tell Google Ads to not to use in this expansion process.
 
