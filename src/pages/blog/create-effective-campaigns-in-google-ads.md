@@ -3,7 +3,7 @@ title: "Tips to create effective campaigns in Google Ads"
 date: "2019-03-15T16:24:04.000Z"
 template: blog
 tags: Tools
-image: "./media/googleads.jpg"
+image: "./media/google-ads.jpg"
 ---
 
 If you want to increase your visibility on the web and drive more traffic to your site, a good alternative is to use Google Adwords. Why or how? We'll review the most important tips to create an entire campaign on **Google Ads**. But first things first:
