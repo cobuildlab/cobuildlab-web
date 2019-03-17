@@ -1,5 +1,5 @@
 ---
-title: "Tips to create effective campaigns in Google Ads"
+title: "Tips to create effective campaigns in the Google Search Engine"
 date: "2019-03-15T16:24:04.000Z"
 template: blog
 tags: Tools
