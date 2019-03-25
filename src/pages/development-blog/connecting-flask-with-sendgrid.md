@@ -91,8 +91,7 @@ app = Flask(__name__)
 def create_task():
     tasks.append({"id": len(tasks), "title": "Learn Python", "description": "Start with Flask first", "done": False})
 
-    sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('SENDGRID_API_KEY'))
-
+    sg = sendgrid.SendGridAPIClient(apikey='APIKEY')
     from_email = Email("test@example.com")
     to_email = Email("test@example.com")
     subject = "A news task was created"
@@ -114,4 +113,58 @@ if __name__ == '__main__':
 ```sh
 chmod a+x app.py
 python3 app.py
+```
+
+# 6. Using templates
+
+```python
+#!flask/bin/python
+from flask import Flask, jsonify
+import sendgrid
+import os
+from sendgrid.helpers.mail import Email, Substitution, Mail, Personalization
+from python_http_client import exceptions
+
+SENDGRID_API_KEY = ''
+
+app = Flask(__name__)
+
+
+@app.route('/todo/api/v2.0/create-task', methods=['GET'])
+def create_task_v2():
+    tasks.append({"id": len(tasks), "title": "Learn Python", "description": "Start with Flask first", "done": False})
+
+    sg = sendgrid.SendGridAPIClient(apikey='APIKEY')
+
+    personalization = Personalization()
+    personalization.add_to(Email("sendgridtesting@gmail.com"))
+    mail = Mail()
+    mail.from_email = Email("email@kylearoberts.org")
+    mail.subject = "I'm replacing the subject tag"
+    mail.add_personalization(personalization)
+    mail.template_id = "d-46073d1fbb2d473784afcb8b39d49a17"
+    personalization.add_substitution(Substitution("{{username}}", "Example User"))
+    personalization.add_substitution(Substitution("{{task_name}}", "A Task"))
+    try:
+        response = sg.client.mail.send.post(request_body=mail.get())
+    except exceptions.BadRequestsError as e:
+        print(e.body)
+        exit()
+    print(response.status_code)
+    print(response.body)
+    print(response.headers)
+    return jsonify({'tasks': tasks})
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+
+
+
+
+
+
+
+
 ```
