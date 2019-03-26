@@ -3,7 +3,7 @@ title: "User stories get the software market more human: Discover Why"
 date: "2018-10-10T13:22:35.000Z"
 template: blog
 tags: Tools
-image: "./media/user-stories.jpeg"
+image: "./media/user-stories.jpg"
 ---
 
 Since the world exists, humans have had the need to communicate. Effective communication is a basic human necessity (Maslow). **User stories** are part of this necessity, in the software development world. 

@@ -45,22 +45,16 @@ exports.createPages = ({ graphql, actions }) => {
         `
       ).then(result => {
         if (result.errors) {
-          console.log(result.errors);
           reject(result.errors);
         }
         // Create blog posts pages.
         const posts = result.data.allMarkdownRemark.edges;
 
         _.each(posts, (post, index) => {
-
-          console.log("/n\n\n\n\n\n") 
-         console.log(post) 
-         console.log(post.node.fields.slug) 
-
           const previous =
             index === posts.length - 1 ? null : posts[index + 1].node;
           const next = index === 0 ? null : posts[index - 1].node;
-
+          
           createPage({
             path: post.node.fields.slug,
             component: path.resolve(

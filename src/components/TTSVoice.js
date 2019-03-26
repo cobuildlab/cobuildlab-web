@@ -12,15 +12,11 @@ class TTSVoice extends React.Component {
   }
 
   render() {
-    console.log("TTSVOICE:render");
     const stripped = this.props.text.replace(/<(?:.|\n)*?>/gm, '');
-    console.log("TTSVOICE:render", stripped);
 
     const speech = (text) => {
-      console.log("window", window);
       try {
         const speech = window.speechSynthesis;
-        console.log("speech", speech);
         const utterance = new SpeechSynthesisUtterance(text);
         const voice = speech.getVoices().filter(function (voice) {
           return voice.lang === 'en';

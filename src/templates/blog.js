@@ -2,6 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import LayoutPost from '../components/layoutPost';
 import { Link, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import { DiscussionEmbed } from 'disqus-react';
 import Share from '../components/Share';
 import Carousel from '../components/Carousel';
@@ -94,12 +95,15 @@ class BlogPostTemplate extends React.Component {
             <br />
             <hr />
           </Container>
-          <HeroBody
+          {/* WITH GATSBY ALWAYS USE <IMG fluid={}> 
+            Because it handles the device size img for you*/}
+          {/* <HeroBody
             className="bg-post"
             style={{
               backgroundImage: `url(${image})`
             }}
-          />
+          /> */}
+          <Img className="bg-post" fluid={post.frontmatter.image.childImageSharp.fluid} />
         </Hero>
 
         <section id="section-post" className="section">
