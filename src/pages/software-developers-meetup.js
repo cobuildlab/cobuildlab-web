@@ -39,7 +39,7 @@ class Index extends React.Component {
           <Hero className="is-fullheight">
             <Columns isCentered isVCentered>
               <Column isCentered isVCentered isSize="1" className="space-title">
-                <div className="loading" style={{ margin: '0px auto', textAlign: 'center', width: '900px', height: '520px' }}>
+                <div className="loading" style={{ margin: '0px auto', textAlign: 'center', width: '600px', height: '338px' }}>
                   <Image isRatio="16:9" src={meetupImage} />
                 </div>
                 <Subtitle isCentered className="subtitle-logo-landing" style={{ margin: 'auto', textAlign: 'center' }}>
@@ -61,7 +61,7 @@ class Index extends React.Component {
           <Hero className="is-fullheight">
             <Columns isCentered isVCentered>
               <Column isCentered isVCentered isSize="1" className="space-title">
-                <div className="loading" style={{ margin: '-50px auto', textAlign: 'center', width: '900px', height: '260px' }}>
+                <div className="loading" style={{ margin: '-50px auto', textAlign: 'center', width: '700px', height: '260px' }}>
                   <Image isRatio="16:9" src={meetupImage} />
                 </div>
                 <Subtitle isCentered className="subtitle-logo-landing" style={{ margin: 'auto', textAlign: 'center' }}>
