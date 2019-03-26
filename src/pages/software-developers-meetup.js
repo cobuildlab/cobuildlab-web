@@ -22,9 +22,9 @@ import meetupImage from '../resources/meetup.jpeg';
 
 class Index extends React.Component {
 
-  // componentDidMount() {
-  //   window.location.replace("https://www.meetup.com/Software-Developers-of-Florida/");
-  // }
+  componentDidMount() {
+    window.location.replace("https://www.meetup.com/Software-Developers-of-Florida/");
+  }
 
   render() {
     return (
@@ -35,15 +35,13 @@ class Index extends React.Component {
           title={'Meetup: Software Developers of Florida'}
         />
 
-        {/*HEADER*/}
-        <Container isFluid>
+        <Container isFluid className="is-hidden-mobile">
           <Hero className="is-fullheight">
             <Columns isCentered isVCentered>
               <Column isCentered isVCentered isSize="1" className="space-title">
-                <div className="loading" style={{ margin: 'auto', textAlign: 'center', width: '900px', height: '506px' }}>
+                <div className="loading" style={{ margin: '0px auto', textAlign: 'center', width: '900px', height: '520px' }}>
                   <Image isRatio="16:9" src={meetupImage} />
                 </div>
-
                 <Subtitle isCentered className="subtitle-logo-landing" style={{ margin: 'auto', textAlign: 'center' }}>
                   Software Developers of Florida
                   </Subtitle>
@@ -58,7 +56,27 @@ class Index extends React.Component {
             </Columns>
           </Hero>
         </Container>
-        {/*HEADER*/}
+
+        <Container isFluid className="is-hidden-desktop">
+          <Hero className="is-fullheight">
+            <Columns isCentered isVCentered>
+              <Column isCentered isVCentered isSize="1" className="space-title">
+                <div className="loading" style={{ margin: '-50px auto', textAlign: 'center', width: '900px', height: '260px' }}>
+                  <Image isRatio="16:9" src={meetupImage} />
+                </div>
+                <Subtitle isCentered className="subtitle-logo-landing" style={{ margin: 'auto', textAlign: 'center' }}>
+                  Software Developers of Florida
+                </Subtitle>
+                <br />
+                <div className="loading" style={{ margin: 'auto', textAlign: 'center' }}>
+                  <ClipLoader size={90} color={'#e76c29'} loading={true} />
+                  <br />
+                  <Subtitle isSize={5}>Redirecting...</Subtitle>
+                </div>
+              </Column>
+            </Columns>
+          </Hero>
+        </Container>
       </LayoutLanding>
     );
   }
