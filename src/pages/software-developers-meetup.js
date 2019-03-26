@@ -22,16 +22,21 @@ import meetupImage from '../resources/meetup.jpeg';
 
 class Index extends React.Component {
 
-  componentDidMount() {
-    window.location.replace("https://www.meetup.com/Software-Developers-of-Florida/");
-  }
+  // componentDidMount() {
+  //   window.location.replace("https://www.meetup.com/Software-Developers-of-Florida/");
+  // }
 
   render() {
     return (
       <LayoutLanding location={this.props.location}>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: 'The Software Developers of Florida is here to demonstrate the power of programming languages , technologies and frameworks to people of Florida.' }]}
+          meta={[
+            { name: 'description', content: 'The Software Developers of Florida is here to demonstrate the power of programming languages , technologies and frameworks to people of Florida.' },
+          {name:'og:image', content: meetupImage},
+          {name:'twitter:image', content:meetupImage},
+          {name:'image', content:meetupImage},
+        ]}
           title={'Meetup: Software Developers of Florida'}
         />
 
