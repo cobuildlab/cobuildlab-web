@@ -33,12 +33,13 @@ class Index extends React.Component {
           htmlAttributes={{ lang: 'en' }}
           meta={[
             { name: 'description', content: 'The Software Developers of Florida is here to demonstrate the power of programming languages , technologies and frameworks to people of Florida.' },
-          {name:'og:image', content: meetupImage},
-          {name:'twitter:image', content:meetupImage},
-          {name:'image', content:meetupImage},
-        ]}
+          ]}
           title={'Meetup: Software Developers of Florida'}
-        />
+        >
+          <meta property="og:type" content="article" />
+          <meta property="og:image" content={meetupImage} />
+          <meta property="twitter:image" content={meetupImage} />
+        </Helmet>
 
         <Container isFluid className="is-hidden-mobile">
           <Hero className="is-fullheight">
