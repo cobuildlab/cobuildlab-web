@@ -1,41 +1,65 @@
 ---
 title: Conventions to create a ReactJS Web Application
-date: 2018-11-22T01:00:00+00:00
+date: 2019-05-01T01:00:00+00:00
 tags: 
 template: development-post
-permalink: /conventions-to-create-a-reactjs-web-application/
+permalink: /conventions-to-create-a-react-web-or-mobile-application/
 image: null
 ---
 
-This document aims to reduce the friction between patterns and ways of doing common tasks during the development of a ReactJS Web Application.
+This document aims to reduce the friction between patterns and ways of doing common tasks during the development of a React Web or Mobile Application.
 
-Here, we explain the problem, choose a convetion, and explain the reasons:
+This document is heavily based on the Convention proposed by [Airbnb](https://github.com/airbnb/javascript), [StandardJs](https://standardjs.com/) and our own experience for the last 10 years.
 
-## 1) Application Starter
-<TODO>
-## 2) Architecture
-<TODO>
-## 3) State Management
-<TODO>
-## 4) File Structure
-<TODO>
-## 5) Props validation
-<TODO>
-## 6) Css and Theme
-<TODO>
-## 7) HOC vs Composition
-<TODO>
-## 8) API communication
-<TODO>
-## 9) Notifications
-<TODO>
-## 10) Routing
-<TODO>
-## 11) State intialization
-## 11) Data Validation
-## 11) Testing
+Here, we explain the problem, choose a convention, and explain the reasons:
 
-Use constructor to initialize state instead of `static` members:
+## 1) General Best Practices
+
+### **1.1) Always prefer constants over variables**
+
+*PREFER THIS:*
+
+```javascript
+export const updateStateFromObject = (state, object) => {
+  const newState = {};
+  Object.keys(state).forEach((key) => {
+    const newValue = object[key];
+    const oldValue = state[key];
+    if (newValue === undefined) {
+      newState[key] = oldValue;
+      return;
+    }
+    newState[key] = newValue;
+  }
+}
+...
+```
+
+*AND NOT THIS:*
+
+```javascript
+export const updateStateFromObject = (state, object) => {
+  let newState = {};
+  Object.keys(state).forEach((key) => {
+    let newValue = object[key];
+    let oldValue = state[key];
+    if (newValue === undefined) {
+      newState[key] = oldValue;
+      return;
+    }
+    newState[key] = newValue;
+  }
+}
+...
+```
+
+#### Justification:
+
+* Code readability, constants values by definition cannot change, making the code easier to read and to debug.
+* Efficiency: Many Runtimes promise faster access to constant values than to variables values.
+
+
+### **1.2) Use constructor to initialize state instead of `static` members**
 
 *PREFER THIS:*
 
@@ -81,11 +105,180 @@ export default class SwiperView extends Component {
 
 ### Justification:
 
-- Code redeability
-- Consistency: Initialization should always be in the constructor
+* Code readability
+* Consistency: Initialization should always be in the constructor
+
+### **1.3) Components should not include styling props**
+
+Avoid using `style` or `className` for Components in Views to reduce visual noise, unless it is completely necessary.
+
+Rely on abstractions for defining styles for your components.
+
+See: [Proxy Pattern](https://cobuildlab.com/development-blog/react-patterns-proxy-pattern-for-components/)
 
 
 
+*PREFER THIS:*
 
-## 12) Testing
+```javascript
+const NormalText = ({children}) => (
+    <p className='blue-text'>
+        {children}
+    </p>
+);
+
+const H1 = ({children, icon}) => (
+    <div className='inline-block'>
+        <h1 className='header-note'>
+            {children}
+            <span class='icon-header-note'>
+                <img src={icon} />
+            </span> 
+        </h1>
+    </div>
+);
+
+export class View extends Component {
+    render(){
+        <section>
+            <H1 icon={plus}>Note Header</H1>
+            <NormalText>Note Text</NormalText>
+        </section>
+    }
+}
+...
+```
+
+*AND NOT THIS:*
+
+```javascript
+export class View extends Component {
+    render(){
+        <section>
+            <div className='inline-block'>
+                <h1 className='header-note'>
+                    Note Header
+                    <span class='icon-header-note'>
+                        <img src={plus} />
+                    </span> 
+                </h1>
+            </div>
+        <p className='blue-text'>
+            Note Text
+        </p>
+        </section>
+    }
+}
+...
+```
+### Justification:
+
+* Reduce Visual Noice
+* Increase component reusability
+* Increase speed of development avoinding design decisions
+* Maintenalbility by isolation of the styling options
+
+### **1.4) Use github templates for Feature Requests and Bugs**
+
+<TODO>
+## 2) Application Starter
+<TODO>
+## 3) Architecture
+<TODO>
+## 4) File Structure
+
+Organizing files are one of the most important conventions, especially for large codebases.
+
+## 5) Naming Conventions
+
+Naming is important for quickly understand the purpose of an element: Classes, constants, variables or methods.
+
+### Things to consider:
+- As a general Rule for React Components file names, use <Entity Name><Purpose><Object Type>. Example: `UserCreateView.js`, `TaskEditView.js`, `CompanyMembersListComponent.js`
+- As a general Rule for no React Components file names, use <entity-name>-<object-type>. Example: `user-actions.js`, `user-store.js`, `company-permissions.js`
+- Don't use short or ambiguous names like: `q`, `search`, `getById`, `Member`, be specific
+- A filename must always be exact to its default export
+- Acronyms and initialisms should always be all uppercase or all lowercase. [Reference](https://github.com/airbnb/javascript#naming--Acronyms-and-Initialisms)
+
+### React components
+
+React components are divided into [Views and Components](https://cobuildlab.com/development-blog/react-patterns-container-and-presentational-components/)
+
+- All React components, both [functional or class based](https://cobuildlab.com/development-blog/react-patterns-functional-components-vs-class-components/) must be name PascalCase. 
+
+Example: `LoginView`, `CompanyMembersView`
+
+- Container components are suffixed with the word `View` and presentational components can optionally be suffixed with the word `Component`. 
+
+Example: `MyProfileView`, `ListItemComponent`
+
+### Classes 
+
+- Classes should always be PascalCase. 
+
+Example: `AdminUser`, `Alliance`, `Company`
+
+### Methods, Functions, and Instances
+
+- Methods, functions, and instances must be always camelCase. 
+
+Example: `onSubmit`, `activeUser`
+
+### Variables and Constans
+
+- Variables must always be on camelCase.
+
+Example: `user`, `someCalculation`
+
+- Module level Constants must always be Uppercase with underscores for readability.
+
+Example: `API_KEY`, `INITIAL_STATUS`, `PI`
+
+- Function level constants adopt the rules of Variables.
+
+### Files
+
+- React components should live on a File with the same name of the Component with `.js` extensions
+
+Example: `MyProfileView`, `ListItemComponent`
+
+- Any other file must be named lowercase with hyphens for clarity
+
+Example: `user-actions.js`, `user-store.js`, `company-permissions.js`
+
+### Private members
+
+- Private names of a module adopt the same previous rules of naming. In addition to this, an underscore `_` can be prefixed to explicitly indicate its condition.
+
+Example: `_extractKeys`, `_compute`
+
+### Events name
+
+- Event names literals and functions callbacks to events must be named on camelCase prefixed by the word `on`
+
+Example: `onClick`, `onLoad`, `onListMembers`
+
+
+## 6) Linting and Code Formatting
+
+## 7) Github templates
+
+## 8) State Management
+<TODO>
+## 9) Props validation
+<TODO>
+## 10) Css and Theme
+<TODO>
+## 11) HOC vs Composition
+<TODO>
+## 12) API communication
+<TODO>
+## 13) Notifications
+<TODO>
+## 14) Routing
+<TODO>
+## 15) State intialization
+## 16) Data Validation
+## 17) Testing
+## 18) Testing
 <TODO>

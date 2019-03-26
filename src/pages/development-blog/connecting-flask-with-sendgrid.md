@@ -86,6 +86,7 @@ SENDGRID_API_KEY = ''
 
 app = Flask(__name__)
 
+tasks = []
 
 @app.route('/todo/api/v1.0/create-task', methods=['GET'])
 def create_task():
@@ -93,7 +94,7 @@ def create_task():
 
     sg = sendgrid.SendGridAPIClient(apikey='APIKEY')
     from_email = Email("test@example.com")
-    to_email = Email("test@example.com")
+    to_email = Email("alacret@gmail.com")
     subject = "A news task was created"
     content = Content("text/html", "<p> A task with the name: {} was created </p>")
     mail = Mail(from_email, subject, to_email, content)
