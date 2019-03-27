@@ -31,7 +31,7 @@ And these videos take you to one place: your website where you should have more 
 
 <title-3>Data and statistics that show the importance of video marketing</title-3>
 
-![video-marketing](./media/video-marketing1.jpg)
+![video-marketing](./media/video-marketing.1.jpg)
 
 Source: [Optimonster](https://optinmonster.com/video-marketing-statistics-what-you-must-know/)
 
