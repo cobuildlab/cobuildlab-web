@@ -1,6 +1,6 @@
 ---
 title: "Don’t Have Time to Deal With a Traffic Ticket? TIKD Has Your back"
-date: "2018-03-22T08:00:55.000Z"
+date: "2019-03-29T08:00:55.000Z"
 template: blog
 tags: Miami
 image: "./media/tikd1.png"
