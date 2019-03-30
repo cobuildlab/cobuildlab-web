@@ -55,7 +55,7 @@ Source: [Optimonster](https://optinmonster.com/video-marketing-statistics-what-y
 
 Google said that 50% of web users look for a video before visiting a store too.
 
-[Hubspot’s](https://www.hubspot.com/reports/the-future-of-content-marketing) research shows that 45% of people watch an hour or more of video per day.
+[Hubspot’s](https://vivipins.com/content-marketing/) research shows that 45% of people watch an hour or more of video per day.
 
 And all of this information doesn’t apply to mobile videos, that are consumed much more than others. Because of millions of people in the world have one and use them almost the whole day.
 
