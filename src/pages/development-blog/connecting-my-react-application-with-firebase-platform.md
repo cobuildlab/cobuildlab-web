@@ -1,9 +1,9 @@
 ---
 title: Connecting my React Application with Firebase platform
-date: 2019-03-18T01:00:00+00:00
+date: 2019-04-01T01:00:00+00:00
 tags: 
 template: development-post
-permalink: /connecting-my-react-application-with-8base-platform/
+permalink: /connecting-my-react-application-with-firebase-platform/
 image: null
 ---
 
@@ -26,8 +26,6 @@ Services:
 ![Show me the code](./media/show-me-the-code.jpeg)
 
 ## Connecting my React Application with Firebase
-
-This instruction is based on the [Oficial 8base Documentation](https://docs.8base.com/docs/quickstart)
 
 ### 1. Go to [Firebase](https://firebase.google.com/) and create an account or log in if you already have a google account
 
