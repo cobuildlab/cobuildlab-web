@@ -55,7 +55,8 @@
     "react-youtube": "^7.8.0",
     "rehype-react": "^3.0.3",
     "typeface-merriweather": "0.0.43",
-    "typeface-montserrat": "0.0.43"
+    "typeface-montserrat": "0.0.43",
+    "validate.js": "^0.12.0"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
