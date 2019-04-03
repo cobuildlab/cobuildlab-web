@@ -36,7 +36,7 @@ Of course, no one could introduce you better to [this platform than Google itsel
 
 When you log in to your Google Marketing platform account, the first option you'll see will be an integration center that will allow you to connect several products that are part of the tools mentioned above, and that this Google proposal brings them together in one place. 
 
-![interagtion-center-of-Google-marketing-platform](./media/interagtion-center-of-Google-marketing-platform.png)
+![interagtion-center-of-Google-marketing-platform](./media/integration-center-of-google-marketing-platform.png)
 
 Source: [Rockcontent](https://rockcontent.com/es/blog/google-marketing-platform/)
 
@@ -67,7 +67,7 @@ D. Google Tag Manager 360: Use an enterprise workflow to manage web and app tags
 
 * **Optimize 360:** It is a tool from Google that we can use for doing A/B Testing, get all of that information, and take the better decision for your business. In this site, you also could find another tool like Google Analytics and Google Tag Manager. With Optimize 360 we can see more than one variant to the page that you are testing with this tool. In addition to that, we can make multivariate tests and redirect tests.
 
-* **Surveys 360:**this tool is about advanced segmentation and remarketing. It is simple. It can help you to create online and mobile surveys and getting the consumer insights and relevant industries. Obtaining the results of these surveys, you can value the marketing strategy, also knowing its benefits and make decisions about your business. 
+* **Surveys 360:** this tool is about advanced segmentation and remarketing. It is simple. It can help you to create online and mobile surveys and getting the consumer insights and relevant industries. Obtaining the results of these surveys, you can value the marketing strategy, also knowing its benefits and make decisions about your business. 
 
 * **Tag Manager 360:** a tool that serves to put labels to your website or web platform and at the same time is a marketing analysis platform and a platform for optimizing labels on the web. 
 
