@@ -1,6 +1,6 @@
 ---
 title: Connecting My Flask Application with Twilio to send SMS
-date: 2019-03-25T01:00:00+00:00
+date: 2019-04-08T01:00:00+00:00
 tags: 
 template: development-post
 permalink: /connecting-my-flask-application-with-twilio/
