@@ -42,12 +42,17 @@ Twilio capabilities include:
 
 - Send and Receive SMS Messages
 - Send and Receive phone Calls
-- 
+- Email messaging
+- WhatsApp Messaging
+- Marketing Automation
+- Programmable Chats
 
 ![Show me the code](./media/show-me-the-code.jpeg)
 
 
 These instructions are based on the [Official Python Twilio Site](https://www.twilio.com/docs/libraries/python)
+
+The complete working example is on: [Github](https://github.com/cobuildlab/flask-and-twilio)
 
 ### 1. Create a Twilio Account:
 
