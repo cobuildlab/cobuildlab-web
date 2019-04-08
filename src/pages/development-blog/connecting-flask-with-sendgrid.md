@@ -7,7 +7,7 @@ permalink: /connecting-my-flask-application-with-sendgrid/
 image: null
 ---
 
-How good is an application that does not store information? not so much right?. 
+How good is an application that does not send notifications? not so much right?. 
 
 Continuing our previous example of [Our First JSON REST API using Flask](https://cobuildlab.com/development-blog/my-first-json-rest-api-with-flask/) we will add notifications via email capabilities to our app to let people know when something important happens.
 
@@ -15,7 +15,7 @@ Continuing our previous example of [Our First JSON REST API using Flask](https:/
 
 Modern Software Applications require a way to communicate events to the outside world. Examples: 
 
-- Signups
+- Sign ups
 - Payments overdue
 - Password Changed
 - New message received
@@ -45,7 +45,7 @@ From [Wikipedia](https://en.wikipedia.org/wiki/SendGrid)
 ![Show me the code](./media/show-me-the-code.jpeg)
 
 
-These instructions are based on the [Oficial Python SendGrid Repo](https://github.com/sendgrid/sendgrid-python)
+These instructions are based on the [Official Python SendGrid Repo](https://github.com/sendgrid/sendgrid-python)
 
 ### 1. Create a SendGrid Account:
 
