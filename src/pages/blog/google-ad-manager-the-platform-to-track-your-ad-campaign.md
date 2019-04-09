@@ -101,14 +101,33 @@ Deliver, measure, and optimize ads wherever the audience interacts. But basicall
 
 **3. The tools that unified Google Marketing Platform are:**
 
-* [Search 360.](
-* [Analytics 360.]
-* [DoubleClick Campaign Manager.]
-* [DoubleClick Studio.]
-* [Data Studio.]
-* [Google Audience Center 360.]
-* [Optimize 360.]
-* [Surveys 360.]
-* [Tag Manager.]
+* [Search 360.](https://support.google.com/searchads/answer/1187512?hl=en)
+* [Analytics 360.](https://support.google.com/marketingplatform/answer/6292532?hl=en)
+* [DoubleClick Campaign Manager.](https://www.jellyfish.net/en-es/doubleclick-certified-marketing-partner/doubleclick-campaign-manager)
+* [DoubleClick Studio.](https://support.google.com/richmedia/answer/2389093?hl=en)
+* [Data Studio.](https://datastudio.google.com/u/0/)
+* [Google Audience Center 360.](https://www.blastam.com/google-audience-center-360)
+* [Optimize 360.](https://www.blastam.com/google-optimize-360)
+* [Surveys 360.](https://www.periscopix.co.uk/analytics-360-suite/google-surveys-360/)
+* [Tag Manager.](https://marketingplatform.google.com/about/tag-manager/)
+
+**4. While the platforms that integrated Google Ad Manager**
+
+* [DoubleClick for Publishers](https://www.google.com/dfp/)
+* [DoubleClick Ad Exchange.](https://static.googleusercontent.com/media/www.google.com/en//adexchange/AdExchangeOverview.pdf)
+
+It is basically a market of ads.
+
+**5. Google ad manager has larger possible target platforms than Google Marketing Platform. Because in fact, this is one of its objectives, to give greater relevance and use to the content of this type in the lives of users. Even more than they already have. In fact, there are statistics that show that** [78% of monetization in digital advertising is due to this type of programmatic advertising. And this is only in our country.](https://www.kanlli.com/publicidad-programatica/google-marketing-platform-y-google-ad-manager/) Part of the innovation of Google Ad Manager is precisely this, the possibility of transmitting ads on mobile games, smart TVs, etc.
+
+<title-3>In this way, Google Ad Manager and Google Ads work together</title-3>
+
+Here's where Google explains [how these platforms work together](https://support.google.com/google-ads/answer/2472739?hl=en) in the auction:
+
+* "When a publisher offers inventory to Ad Exchange, Google Ads runs its own auction and composes the best ad unit -- with a full slot ad or a group of text ads. Google Ads will then calculate the appropriate Ad Exchange bid for the ad unit by taking the ads' bids and applying the Google Ads revenue share.
+* This bid is compared with other Ad Exchange advertiser bids and any controls set by publishers, such as minimum CPMs. Bids that don't meet these publisher controls are ignored.
+* Ad Exchange will then take all of the eligible bids and run an auction. If Google Ads wins the auction, the advertiser(s) in the winning ad unit will pay no more than what is required to rank higher than the next advertiser, on a CPC basis, when a user clicks on the ad or completes another valid event in connection with the ad. The publisher will be paid the higher of the second highest bid value in the Ad Exchange auction or the minimum CPM."
+
+This was the missing tool from the list of three proposals that Google presents us to manage marketing campaigns and ads. Now, you're in a position to decide to use any of these tools. Which one will be the winner? Google Ads, Google Marketing Platform and **Google Ad Manager**, which is the protagonist of this post. When you decide and use them, tell us your experience. The goal is to monetize. Let's go!
 
 
