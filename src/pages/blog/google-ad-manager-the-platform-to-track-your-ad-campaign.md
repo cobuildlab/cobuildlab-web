@@ -3,7 +3,7 @@ title: "Learn more about Google Ad Manager; the platform to track your ad campai
 date: "2019-04-08T16:24:04.000Z"
 template: blog
 tags: Tools
-image: "./media/analysis-coffee-communication-1493370.jpg"
+image: "./media/analysis-brainstorming-business-1571699.jpg"
 ---
 
 
