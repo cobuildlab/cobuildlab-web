@@ -75,6 +75,8 @@ React Native lets you build mobile apps using only JavaScript. It uses the same 
 
 This instruction is based on the [Official React Native Documentation](https://facebook.github.io/react-native/docs/getting-started)
 
+[Github Repo](https://github.com/cobuildlab/react-native-task-list)
+
 ### 1. Install Node and Watchman
 
 >>> For MACOS
@@ -101,7 +103,10 @@ npm i -g react-native-cli
 react-native init todoListRn
 ```
 
-Github Repo: []
+```bash
+git clone 
+```
+
 
 ### 4. Modify your code
 
