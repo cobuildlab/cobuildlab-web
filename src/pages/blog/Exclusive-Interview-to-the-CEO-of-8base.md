@@ -15,8 +15,7 @@ and the future of the company, Santalo also gives advice and talks about new tre
 8base is the newest project of Albert Santalo, a development acceleration platform where developers can build and run enterprise-class web
 and mobile apps powered by GraphQL. 
 
-[Click here](https://medium.com/startup-grind/grind-startup-of-the-year-winner-exclusive-interview-with-albert-santalo-founder-ceo-of-8base
--6048a257153c) to read the full interview and find out more about 8base.
+[Click here](https://medium.com/startup-grind/grind-startup-of-the-year-winner-exclusive-interview-with-albert-santalo-founder-ceo-of-8base-6048a257153c) to read the full interview and find out more about 8base.
 
 The purpose of Cobuild Lab is to help early stage and new entrepreneurs transform ideas into sustainable and scalable businesses. Cobuild 
 Lab also specializes in building web and mobile applications. Since day one, their technique is focused on early results and transparent 
