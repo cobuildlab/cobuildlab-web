@@ -92,7 +92,7 @@ You can make many hypotheses of your business idea as you want, but here, we wil
 * What are they looking for?
 * What do I need to solve the problem?
 * Which resources are involved?
-* Which is my expectative in some years?
+* Which is my expectation in some years?
 * Which resources will I need in the future?
 * Which I think will be the conversion percent?
 3. Answer these questions an order the list depending on your priorities.
