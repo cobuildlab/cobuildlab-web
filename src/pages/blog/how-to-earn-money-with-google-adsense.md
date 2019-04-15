@@ -3,7 +3,7 @@ title: "How to earn money with Google AdSense"
 date: "2019-03-29T16:24:04.000Z"
 template: blog
 tags: Tools
-image: "./media/google-adsense.jpg"
+image: "./media/accounting-aerial-businesswoman-1043506.jpg"
 ---
 
 Just like we promised, this is the other way that Google gives us to earn money thanks to the advertisement. Together with Ads, **Google AdSense** forms the network of ads platforms of Google, and here we will see everything we have to know about it. 
