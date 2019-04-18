@@ -77,9 +77,13 @@ With the keyword report, you can know which keywords you are getting organic vis
 When you have access to this report of keywords what you will be able to distinguish will be the impressions that had your content, the clicks, or the times that they entered to your website, the CTR that translates to Click Through Rate or the times or number of clicks that obtains a link with respect to its number of impressions that is to say when they see you in the results. And you can also see the average position of each keyword. 
 
 The route to access it is **Acquisition + Search Console + Queries**.
+
 <Br>
+ 
 ![keyword-report](./media/keyword-report.png)
+
 <Br>
+ 
 **3. Landing Page Report**
 
 This report lets you know which URLs your web visitors are accessing most organically and by reference. It also has a section for you to assess the quality of the content of each of those landing pages that make up your website, by the interaction that visitors have with each of the pages. 
@@ -87,7 +91,9 @@ This report lets you know which URLs your web visitors are accessing most organi
 It can even work so that you know which of your pages are not having the best effect and you can improve them even taking into account the aspects of those that do meet the goals. 
 
 The route for you to visit it is **Behavior + Site Content + Landing Pages**
+
 <Br>
+ 
 ![landing-page-report](./media/landing-pages-report.png)
 
 ![landing-page-report](./media/landing-pages-report1.png)
@@ -109,7 +115,9 @@ It's a pretty easy process that you can follow with this step by step.
 
 ![custom-report-google-analytics](./media/custom-report1.png)
 
+
 ![custom-report-google-analytics](./media/custom-report2.png)
+
 <Br>
 
 3. Give a title to that report you're creating.
