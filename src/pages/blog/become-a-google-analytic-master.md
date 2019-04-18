@@ -105,16 +105,70 @@ It's a pretty easy process that you can follow with this step by step.
 1. Log in to your Google Analytics account and open the reports section. 
 
 2. Click on **Customization**, specifically on **Custom Reports**, and select the **New Custom Report** option.
+<Br>
 
 ![custom-report-google-analytics](./media/custom-report1.png)
 
 ![custom-report-google-analytics](./media/custom-report2.png)
+<Br>
 
 3. Give a title to that report you're creating.
+<Br>
 
 ![custom-report-google-analytics](./media/custom-report3.png)
+<Br>
 
 4. If you wish, you can select the add report tab option.
+<Br>
 
+![custom-report-google-analytics](./media/custom-report4.png)
+<Br>
 
+5. Select one of the report types available to you. 
+The report types are: 
+
+* **Explorer:** This is a standard report that includes a line graph and a data table. 
+* **Unique Table:** as its name says, it is a table where the data is sorted in a row. 
+* **Graph of visits by location:** It is a graph that is basically a map of the world, where you can see the regions of the world where you get the most visits because they are shown in darker colors than the rest. 
+* **Conversion Funnel** that you define yourself.
+<Br>
+ 
+![custom-report-google-analytics](./media/custom-report5.png)
+<Br>
+
+6. Defines the properties of the report. Metrics and dimensions. 
+<Br>
+
+![custom-report-google-analytics](./media/custom-report6.png)
+<Br>
+
+7. If you add a filter you can limit the report to only a few properties. 
+<Br>
+
+![custom-report-google-analytics](./media/custom-report7.png)
+<Br>
+
+8. Then, the time will come for you to select the specific view option or the All Views associated with the account option, so that you can choose in which views or spaces the custom report you are creating will appear.
+<Br>
+ 
+![custom-report-google-analytics](./media/custom-report8.png)
+<Br>
+
+9. Click on save and your report is created. 
+
+Remember that you can merge information from several default report types, all in one report, so you get all the information you need just by accessing a single report. 
+
+If you want to access your customized reports or if you want to manage them, all you need to do is log into your Google Analytics account, go to the view you previously chose for the reports, click on customization, and there you will have a view of all the customized reports you have created. 
+
+![custom-report-google-analytics](./media/custom-report9.png)
+
+The management is very simple. If you activate the **“Actions”** option, you will have a complete menu to copy, edit, delete and even share your customized reports. But you can feel safe, what you will share with others, in this case, is the configuration you decided to give to the report since the information and data in your reports will continue to be private. This tool is quite secure. 
+
+Save the changes, and you're ready to create and manage your custom reports. 
+
+If you want to have a little more information from the hands of the creator of the tool you can [visit this link](https://support.google.com/analytics/answer/1151300?hl=en) that tells us a little about this topic. 
+
+If we had to define Google Analytic in one sentence, that would be: **measure and you'll win**. 
+
+What you measure in this case are the visits, the quality of the content and which pages of your website attract and convert more. All that and more **Google Analytics** offers you. 
 
