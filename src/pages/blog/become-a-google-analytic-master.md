@@ -78,11 +78,8 @@ When you have access to this report of keywords what you will be able to disting
 
 The route to access it is **Acquisition + Search Console + Queries**.
 
-<Br>
- 
 ![keyword-report](./media/keyword-report.png)
 
-<Br>
  
 **3. Landing Page Report**
 
@@ -92,11 +89,11 @@ It can even work so that you know which of your pages are not having the best ef
 
 The route for you to visit it is **Behavior + Site Content + Landing Pages**
 
-<Br>
  
 ![landing-page-report](./media/landing-pages-report.png)
 
 ![landing-page-report](./media/landing-pages-report1.png)
+
 
 <title-3>Other things you should know are the customized reports...</title-3>
 
@@ -118,7 +115,6 @@ It's a pretty easy process that you can follow with this step by step.
 
 ![custom-report-google-analytics](./media/custom-report2.png)
 
-<Br>
 
 3. Give a title to that report you're creating.
 <Br>
