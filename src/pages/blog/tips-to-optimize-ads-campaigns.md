@@ -82,7 +82,7 @@ Extensions with a location, with a distinctive phrase, with highlighted text, wi
 
 **See the following example of extensions in Google Ads**
 
-![ads-extension-example](./media/extension-example.png)
+![extension-example](./media/extension-example.png)
 
 Source: [Wordstream](https://www.wordstream.com/blog/ws/2016/09/06/sitelink-extensions-dos-and-donts)
 
