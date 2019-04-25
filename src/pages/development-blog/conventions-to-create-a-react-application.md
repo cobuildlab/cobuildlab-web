@@ -108,14 +108,13 @@ export default class SwiperView extends Component {
 * Code readability
 * Consistency: Initialization should always be in the constructor
 
-### **1.3) Components should not include styling props**
+### **1.3) Components should not include style props**
 
 Avoid using `style` or `className` for Components in Views to reduce visual noise, unless it is completely necessary.
 
 Rely on abstractions for defining styles for your components.
 
 See: [Proxy Pattern](https://cobuildlab.com/development-blog/react-patterns-proxy-pattern-for-components/)
-
 
 
 *PREFER THIS:*
@@ -173,23 +172,51 @@ export class View extends Component {
 ```
 ### Justification:
 
-* Reduce Visual Noice
-* Increase component reusability
-* Increase speed of development avoinding design decisions
-* Maintenalbility by isolation of the styling options
+* Reduce Visual Noise
+* Increase component readability
+* Increase speed of development avoiding design decisions
+* Maintainability by isolation of the styling options
 
-### **1.4) Use github templates for Feature Requests and Bugs**
+### **1.4) Separate LAYOUT Components from UI Components**
 
-<TODO>
-## 2) Application Starter
-<TODO>
+Avoid mixing in components layout properties with look and feel properties unless is strictly necessary.
+
+*PREFER THIS:*
+
+```javascript 1.8
+const View = () => {
+    return (<div className='float-right'>
+              <OptionButton text='Create' onClick='' icon='new' />
+          </div>);
+};
+```
+
+*AND NOT THIS:*
+```javascript 1.8
+const View = () => {
+    return (
+          <Button onClick={this.goToImportDeals} style={{ position: 'absolute', right: '0px' }}>
+                Import Deals
+          </Button>);
+};
+```
+
+### Justification:
+
+* Increase component reusability 
+* Increase component  portability
+
+TODO: 
+### 2) Application Starter
+TODO
 ## 3) Architecture
-<TODO>
+TODO
 ## 4) File Structure
 
+### 5) ### Use github templates for Feature Requests and Bugs
 Organizing files are one of the most important conventions, especially for large codebases.
 
-## 5) Naming Conventions
+## 2) Naming Conventions
 
 Naming is important for quickly understand the purpose of an element: Classes, constants, variables or methods.
 
