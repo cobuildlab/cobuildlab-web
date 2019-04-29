@@ -70,8 +70,6 @@ But watch out, it doesn't mean that the range or views aren't important; they ar
 
 With this information, you can even calculate the return on investment of the campaign, so it is very useful to focus on it, to analyze it and to improve it.
 
-
-
 <title-3>* If the platform allows it, add Ad Extensions</title-3>
 
 Much has been said in recent years about the [humanization of brands](https://cobuildlab.com/blog/actions-that-will-humanize-your-brand/), about the direct and personal treatment that should be given to consumers so that they not only buy or consume you but also are emotionally and rationally linked to your brand, have a long relationship with it, identify, and feel confident with you. 
