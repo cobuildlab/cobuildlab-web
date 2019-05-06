@@ -34,6 +34,7 @@ Dropbox initially offer was to sync files between different devices. Now, it off
 Prequisites:
 
 - Python 3+
+- Python 3 Virtual Enviroment
 - Git
 
 
