@@ -65,6 +65,10 @@ Go to: [https://www.dropbox.com/login](https://www.dropbox.com/login) and Comple
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py
 pip3 --version
+# In your project Folder Create the viruatl env
+ python3 -m venv .
+ # Activate the virtual Env (Unix Bash)
+ source bin/activate
 ```
 
 ### 4. Install Python Dropbox library:
