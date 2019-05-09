@@ -34,6 +34,10 @@ Dropbox initially offer was to sync files between different devices. Now, it off
 Prequisites:
 
 - Python 3+
+<<<<<<< HEAD
+=======
+- Python 3 Virtual Enviroment
+>>>>>>> 65bc29999d4eff70086bd10322c6a083b7740fc4
 - Git
 
 
@@ -64,6 +68,13 @@ Go to: [https://www.dropbox.com/login](https://www.dropbox.com/login) and Comple
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py
 pip3 --version
+<<<<<<< HEAD
+=======
+# In your project Folder Create the viruatl env
+ python3 -m venv .
+ # Activate the virtual Env (Unix Bash)
+ source bin/activate
+>>>>>>> 65bc29999d4eff70086bd10322c6a083b7740fc4
 ```
 
 ### 4. Install Python Dropbox library:
@@ -116,4 +127,8 @@ if __name__ == '__main__':
 ```sh
 chmod a+x app.py
 python3 app.py
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 65bc29999d4eff70086bd10322c6a083b7740fc4
