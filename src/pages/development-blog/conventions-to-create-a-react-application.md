@@ -201,6 +201,68 @@ const View = () => {
 };
 ```
 
+### **1.5) Keep complex rendering logic on the render method with local variables **
+
+Avoid clutter your rendering markup with complex conditional logic.
+
+const employee = job.employee && job.employee.firstName ? `${job.employee.first_name} ${job.employee.last_name}` : t('JOBS.notAsigned');
+
+**Complex manipulation**
+
+*PREFER THIS:*
+
+```javascript 1.8
+const View = () => {
+    const employee = job.employee && job.employee.firstName ? `${job.employee.first_name} ${job.employee.last_name}` : t('JOBS.notAsigned');
+    return (<Text>
+              {employee}
+          </Text>);
+};
+```
+
+*AND NOT THIS:*
+```javascript 1.8
+const View = () => {
+    return (<Text>
+              {job.employee && job.employee.firstName ? `${job.employee.first_name} ${job.employee.last_name}` : t('JOBS.notAsigned')}
+          </Text>);
+};
+```
+
+
+**Complex conditional rendering**
+
+*PREFER THIS:*
+
+```javascript 1.8
+const View = () => {
+    let content = "No rows to show!";
+    
+    if(condition){
+        // complex calculations
+        content = items.map((item, i ) => <Job key={i}></Job>);
+    }
+    return (<Content>
+              {content}
+          </Content>);
+};
+```
+
+*AND NOT THIS:*
+```javascript 1.8
+const View = () => {
+
+    return (<Content>
+              {condition ? {
+                // COMPLEX 
+                // MULTIPLE
+                // CALCULATIONS
+                // AND LOGIC
+              } : `No rows to show`}
+          </Content>);
+};
+```
+
 ### Justification:
 
 * Increase component reusability 
