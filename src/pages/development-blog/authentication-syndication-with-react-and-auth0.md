@@ -1,50 +1,77 @@
 ---
 title: Authentication Syndication with React and Auth0
 date: 2019-05-13T01:00:00+00:00
-tags: 
+tags:
 template: development-post
 permalink: /authentication-syndication-with-react-and-auth0/
 image: null
 ---
 
-Authentication With React + Auth0
+The needs for identifyng a user on your application is very common. Identity, personal data, preferences, permissions, etc are some of the cases where you will require to user a mechanism to authenticate a user who is accesign your app.
 
-#####
-Requirements
-#####
 
-````
-  Basic Knowledge of React.js
-  Previously Registered on https://auth0.com/
-  npm or yarn
-````
+## Authentication
 
-#####
-Introduction
-#####
+**Authentication** is the process of confirming a users identity against an entity capable of doing so. This entity on software development is referred commonly as an Authentication Provider.
 
-`````
-  In this tutorial I'll show you how to use React.js and Auth0 to create and Auth0 to handle User Authentication
-  From the client. Auth0 provides authentication and authorization as a service. 
-  This help Front-End Developers build applications that need authentication without backend service.
-  There's a lot of feature of Auth0 that I will explain later.
-  Using Auth0 platform, you can build your own authentication system that scales, Auth0 allows to perform features like:
-  - OAuth 2.0  (OAuth 2.0 is the industry-standard protocol for authorization)
-  - Dashboard (Lastest Logins, New Signups, Login Activity)
-  - Create an Appliaction (SPA, Native, RWA)
-  - APIs
-  - SSO Integrations
-  - Connections (Database, Social, Enterprise, Passwordless)
-  - Universal Login
-  - Users & Roles
-  - Rules
-  - Hooks
-  - Multifactor Authentication
-  - Emails (Templates, Providers)
-  - Logs (Sucessfull Logins, Issues)
-  Now, you had a idea of how auth0 works. Now we need to implement these two technologies: 
-  React.js & Auth0 service.
-`````
+
+## Authentication Provider
+
+In moderm web applications the Authentication Provider is responsable to confirm the users identity in one of several ways, for example:
+
+- A Username / Password combination on a database
+- A third party service
+- A directory service
+- A social network. ex: Google, Facebook,
+- An Identification Service: Github, Microsoft, etc
+
+
+An authentication provider can be an entity built within the system, a separate service built for this purpose or also can be a third party service.
+
+This last way, can also be referred as Authentication as a Service, and has grownth considerably the last few years and the most popular services on this space are:
+
+- [Amazon Cognito](https://aws.amazon.com/cognito/)
+- [Auth0](https://auth0.com/)
+- [Firebase](https://firebase.com)
+- [IBM App ID](https://www.ibm.com/cloud/app-id)
+- [Cloud IAM](https://cloud.google.com/iam/)
+
+The Authentication Provider is almost exactly the same in every case:
+
+1) The User request the Authentication to the Auth Provider
+2) The Auth Provider validates the user identify and permissions
+3) If succesfull, it generates a token to identify him against any other entity
+4) The user recibes the token and saves it to use with any subsequent request to access protected services
+5) The User makes a request to a protected service or resource
+6) The protected service checks the validity of the token with the Auth Provider
+7) If succesfull, allows the use of the resource
+
+
+## Auth0
+
+
+In this tutorial we'll show you how to use React.js and Auth0 to create and to handle User Authentication for a web application.
+
+Auth0 provides authentication and authorization as a service, this help Front-End Developers build applications that need authentication without backend service.
+
+###Features
+
+Auth0 allows to perform features like:
+- OAuth 2.0  (OAuth 2.0 is the industry-standard protocol for authorization)
+- Dashboard (Lastest Logins, New Signups, Login Activity)
+- Create an Appliaction (SPA, Native, RWA)
+- APIs
+- SSO Integrations
+- Connections (Database, Social, Enterprise, Passwordless)
+- Universal Login
+- Users & Roles
+- Rules
+- Hooks
+- Multifactor Authentication
+- Emails (Templates, Providers)
+- Logs (Sucessfull Logins, Issues)
+
+
 #####
 Intended Audience
 #####
@@ -57,7 +84,7 @@ Getting Started
 
   1. Create an Account on Auth0 (auth0 it's also free servic to use as a platform and pricing changes.)
     See pricing details here: https://auth0.com/pricing
-  
+
   2. Once you registered your email and password in Auth0 UI, you need to set a TENANT DOMAIN, you can set as you want.
   We will call tutorial-react-auth0.auth0.com and set our region as ES (United States) (Step 1 of 2)
 
@@ -66,7 +93,7 @@ Getting Started
   (Step 2 of 2) and that's all for now, you'll be redirect to the dashboard of auth0 note that's included the features that I introduced previously, now we need to setup our project.
 
   4. Go a head and click on the dashboard "Create Application" you may notice there's a lot of application types.
-  We need to choose as SPA (Single Page Application) you will able to call it with a name. In our case we set to 
+  We need to choose as SPA (Single Page Application) you will able to call it with a name. In our case we set to
   React-Auth0-Tutorial and click on "Create".
 
   5. Nicely done, at this point auth0 want to ask us what tecnhology we are using. We need to select "React" as our Technology,
@@ -74,6 +101,16 @@ Getting Started
 
   6. We need configure React.js Enviroment, you previously need to had a npx create-react-app. So, after that we need open the terminal and open the react project that we set for our project and handling authentication.
 ``````
+
+#####
+Requirements
+#####
+
+````
+  Basic Knowledge of React.js
+  Previously Registered on https://auth0.com/
+  npm or yarn
+````
 
 #####
 Installing the dependencies
@@ -119,13 +156,13 @@ Creating our project structure.
 ```
   First, we need some additional info for configure our project.
   Now we should import to set our configuration in config.js file.
-  Follow the next steps: 
+  Follow the next steps:
 
   import auth0 from 'auth0-js'
   import { Auth0Lock } from 'auth0-lock';
 
   // This configuration can be founded in your auth0 application settings
-  
+
 
   const app = new auth0.webAuth({
     domain: "YOUR_DOMAIN_NAME",
@@ -140,7 +177,7 @@ Creating our project structure.
 ```
 
 ####
-  4. Go to Application / Settings 
+  4. Go to Application / Settings
 ####
 
 ```
@@ -192,11 +229,11 @@ Creating our project structure.
 
   import { app } from './config';
   // importing our auth0 instance.
-  
+
   // Set all information, token, accessToken, expiration, this is for save the current sesion of the user.
 import { app } from './config';
   // importing our auth0 instance.
-  
+
   // Set all information, token, accessToken, expiration, this is for save the current sesion of the user.
   const setSession = (credentials) => {
     const tokenExpiration = (credentials.expiresIn * 1000) + new Date().getTime();
@@ -216,7 +253,7 @@ import { app } from './config';
     const accessToken = JSON.parse(localStorage.getItem('accessToken'));
     return accessToken;
   };
-  
+
   // Detects if the user has been logged in our applcation, if an error occurs we redirect.
   export const handleAuthentication = () => {
     app.parseHash((err, authResult) => {
