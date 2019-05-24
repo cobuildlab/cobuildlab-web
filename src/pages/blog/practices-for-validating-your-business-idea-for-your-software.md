@@ -122,7 +122,7 @@ This is what a Customer Journey Map looks like.
 
 **Source:** [Bright Vessel](https://www.brightvessel.com/customer-journey-map-2018/)
 
-**3. A landing page can help you too**
+<title-3>3. A landing page can help you too</title-3>
 
 A landing page is simple, easy to handle, very concrete, self-descriptive. There you can explain in a concrete and concise way the problem you observed and the solution you are offering.
 
