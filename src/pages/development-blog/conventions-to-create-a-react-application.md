@@ -350,11 +350,16 @@ Main folder to hold the the Module Specific folders
 ## *shared* folder
 App Specific folder to hold any asset that is not an image and that it should be shared across modules.
 
-Think about this folder as any potential code that could be put in a node package and be 
+Think about this folder as any potential code that could be put in a node package and be distributed as a library.
 
 ## *components* folder
+React componets that can be App specific under `shared/components/` or module specific under: `modules/<module-name>/components/`
+
 ## *\*-actions* files
+Module specific files that holds Actions of the module. (See Architecture)
+
 ## *\*-models* files
+Module 
 ## *\*-store* files
 ## *\*-permissions* files
 ## *\*-utils* files
@@ -463,6 +468,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE2NDE1MDkwLDIxNDM5ODI0MTUsNTU4Mj
-E5OTkxLDkzMTM5NDEzOV19
+eyJoaXN0b3J5IjpbMTUwNzY4OTAxNSwyMTQzOTgyNDE1LDU1OD
+IxOTk5MSw5MzEzOTQxMzldfQ==
 -->
