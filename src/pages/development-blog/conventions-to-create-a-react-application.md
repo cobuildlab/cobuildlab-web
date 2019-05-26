@@ -299,10 +299,13 @@ src/
 |	|	└───login-permissions.js
 |	|	└───login-queries.js
 |	|	└───...
-│   └───login/
-|	│   └───components/
-|	|	|	└───LoginForm.js
-|	|	└───LoginView.js
+│   └───management/						// Nested modules
+|	│   └───school/
+| 	|	│   └───components/
+|	|	|	|	└───DashboardGraph.js
+|	|	|	|	└───Navitation.js
+|	|	└───HomeView.js
+|	|	└───HomeView.js
 |	|	└───login-actions.js
 |	|	└───login-permissions.js
 |	|	└───login-queries.js
@@ -426,6 +429,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAwODA0OTg3LDU1ODIxOTk5MSw5MzEzOT
-QxMzldfQ==
+eyJoaXN0b3J5IjpbMTcwNTM1MDYzNCw1NTgyMTk5OTEsOTMxMz
+k0MTM5XX0=
 -->
