@@ -274,12 +274,18 @@ const TableView = ({children, loading}) => {
 ## **1.4) util functions over methods**
 
 # 2) File Structure
-<TODO>
-# 3) Architecture
-<TODO>
-# 4) Application Starter
+Organizing files are one of the most important conventions, especially for large codebases and large teams, specially remote teams.
 
-Organizing files are one of the most important conventions, especially for large codebases.
+Based on our experience for the last years working with React, we propose this file Structure:
+
+
+
+<TODO:>
+# 3) Architecture
+<TODO:>
+# 4) Application Starter
+<TODO:>
+
 
 # 5) Naming Conventions
 
@@ -378,5 +384,5 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM0NDUwMzQsOTMxMzk0MTM5XX0=
+eyJoaXN0b3J5IjpbLTE0MTUxNDg2NzMsOTMxMzk0MTM5XX0=
 -->
