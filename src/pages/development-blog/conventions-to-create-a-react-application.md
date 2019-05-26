@@ -273,6 +273,15 @@ const TableView = ({children, loading}) => {
 
 Reference: [React Patterns Presentational and Container Components]([https://cobuildlab.com/development-blog/react-patterns-container-and-presentational-components/](https://cobuildlab.com/development-blog/react-patterns-container-and-presentational-components/))
 
+React components can be clasified in 
+
+
+|   Presentational Components|   |
+|---|---|
+|   |   |
+|   |   |
+|   |   |
+
 
 ## **1.6) Pure functions**
 ## **1.7) util functions over methods**
@@ -482,6 +491,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkyNDgzNjI0LDI5MDg1NDgyNCwyMTQzOT
-gyNDE1LDU1ODIxOTk5MSw5MzEzOTQxMzldfQ==
+eyJoaXN0b3J5IjpbLTEyMjc4NzAxMDYsMjkwODU0ODI0LDIxND
+M5ODI0MTUsNTU4MjE5OTkxLDkzMTM5NDEzOV19
 -->
