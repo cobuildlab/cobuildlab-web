@@ -406,7 +406,9 @@ The main rules are:
 7) **Stores** propagates changes to all subscribers
 8) Any part of the application can have read only access to the application current state or **store**
 9) Posbile events or changes on the application must be declared either on a declarative or programatically way
-10) Consistency checks must always throw errors: a) A view can't subscribe to an event or change that doesn't exist, b) An action can never dispatch an event or change that doesn' exists c) 
+10) Consistency checks must always throw errors: a) A view can't subscribe to an event or change that doesn't exist, b) An action can never dispatch an event or change that doesn' exists c) A store can't handle data of an event or change that doesn't exist
+
+Any library that can comply with this rules is a good fit to handle the Architecture. For conience, a state library has been created with this set of rules in mind: 
 
 
 
@@ -510,6 +512,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDQzOTI3MTMsMjkwODU0ODI0LDIxND
+eyJoaXN0b3J5IjpbLTExNjM2MjQ2MzcsMjkwODU0ODI0LDIxND
 M5ODI0MTUsNTU4MjE5OTkxLDkzMTM5NDEzOV19
 -->
