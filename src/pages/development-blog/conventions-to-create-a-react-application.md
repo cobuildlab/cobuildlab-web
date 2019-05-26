@@ -394,7 +394,12 @@ Component specific styles should be handled using [Styled Components]([https://w
 
 
 # 3) Architecture
-React applications must rely on the [Flux]([https://facebook.github.io/flux/](https://facebook.github.io/flux/)) 
+React applications must rely on the [Flux]([https://facebook.github.io/flux/](https://facebook.github.io/flux/)) Architecture propose by Facebook.
+
+The main rules are:
+1) Presentational components subscribes to changes in any application level State store
+2) Presentational components can trigger actions that affect the state of the store
+
 <TODO:>
 # 4) Application Starter
 <TODO:>
@@ -495,6 +500,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2ODcxNDExMSwyOTA4NTQ4MjQsMjE0Mz
+eyJoaXN0b3J5IjpbLTUwNzEyMjM3NSwyOTA4NTQ4MjQsMjE0Mz
 k4MjQxNSw1NTgyMTk5OTEsOTMxMzk0MTM5XX0=
 -->
