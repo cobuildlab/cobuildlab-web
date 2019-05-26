@@ -277,7 +277,7 @@ const TableView = ({children, loading}) => {
 
 Organizing files are one of the most important conventions, especially for large codebases and large teams, specially remote teams.
 
-We will only consider the structure under the `src` folder, the project structure depends of other factors like the platform, linting tools, version control tools, react version, etc.
+We will only consider the structure under the `src` folder, the project structure depends of other factors like the platform, linting tools, enviroment files, version control tools, react version, etc.
 
 We use the terms **App Specific** to resources that can be used across the entire app, and **Module Specific** to resources that can only be used inside a module folder.
 
@@ -296,6 +296,7 @@ src/
 |	|	|	└───LoginForm.js
 |	|	└───LoginView.js
 |	|	└───login-actions.js
+|	|	└───login-models.js
 |	|	└───login-permissions.js
 |	|	└───login-queries.js
 |	|	└───login-store.js
@@ -315,10 +316,7 @@ src/
 | 	|	│   └───components/
 |	|	|	|	└───...
 |	|	|	└───AnotherView.js
-
-|	|	|	└───school-permissions.js
-|	|	|	└───school-queries.js
-|	|	|	└───school-store.js
+|	|	|	└───another-store.js
 |	|	|	└───...
 └───shared/
 │   └───components/
@@ -328,9 +326,10 @@ src/
 |   │   SomeComponent.js
 |   │   AnotherUnclassifiedComponent.js
 │   └───constants/
-│       │   file111.txt
-│       │   file112.txt
+│       │   user-types.json
 │   └───graphql/
+│       │   types.js
+│   └───typings/
 │   index.js
 │   App.js
 │   index.css
@@ -439,6 +438,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MjI3OTQzOSw1NTgyMTk5OTEsOTMxMz
-k0MTM5XX0=
+eyJoaXN0b3J5IjpbLTExMjMxODgyMTYsNTU4MjE5OTkxLDkzMT
+M5NDEzOV19
 -->
