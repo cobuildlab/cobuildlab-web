@@ -180,9 +180,9 @@ export class View extends Component {
 
 ### **1.4) Early return**
 
-### **1.4) Pure fun**
+### **1.4) Pure functions**
 
-### **1.4) Use github templates for Feature Requests and Bugs**
+### **1.4) util functions over methods**
 
 <TODO>
 ## 2) Application Starter
@@ -287,5 +287,5 @@ Example: `onClick`, `onLoad`, `onListMembers`
 ## 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MjI4MzExOSw5MzEzOTQxMzldfQ==
+eyJoaXN0b3J5IjpbLTE0MDAwMDU0NzIsOTMxMzk0MTM5XX0=
 -->
