@@ -181,7 +181,9 @@ export class View extends Component {
 ## **1.4) Return Early pattern for methods and functions**
 
 
-Enfor **Return
+Enforce  **Return Early** pattern in functions and methods, including the render method of React components.
+
+Return early pattern forces you to first consider exceptional situations or error conditions in your functions like validations and inconsistency on the first lines of a function or methodfunction 
 
 
 
@@ -353,5 +355,5 @@ Example: `onClick`, `onLoad`, `onListMembers`
 ## 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYyMTcyODY4LDkzMTM5NDEzOV19
+eyJoaXN0b3J5IjpbNjM2NjA4NzU0LDkzMTM5NDEzOV19
 -->
