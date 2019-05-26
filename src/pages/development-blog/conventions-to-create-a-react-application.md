@@ -341,7 +341,13 @@ src/
 ## assets
 ## modules
 ## shared
-## *-
+## *-actions 
+## *-models
+## *-store
+## *-permissions
+
+
+
 # 3) Architecture
 <TODO:>
 # 4) Application Starter
@@ -445,6 +451,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwOTYwNzE0MCw1NTgyMTk5OTEsOTMxMz
+eyJoaXN0b3J5IjpbMjE0Mzk4MjQxNSw1NTgyMTk5OTEsOTMxMz
 k0MTM5XX0=
 -->
