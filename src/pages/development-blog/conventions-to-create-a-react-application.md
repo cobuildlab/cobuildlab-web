@@ -271,7 +271,7 @@ const TableView = ({children, loading}) => {
 
 ## **1.5) Enforce the difference Between Presentational Components and Container Components (Views) **
 
-Reduce visual noice by proxy components using the [Proxy Pattern]([https://cobuildlab.com/development-blog/react-patterns-proxy-pattern-for-components/](https://cobuildlab.com/development-blog/react-patterns-proxy-pattern-for-components/))
+Reference: [React Patterns Presentational and Container Components]([https://cobuildlab.com/development-blog/react-patterns-container-and-presentational-components/](https://cobuildlab.com/development-blog/react-patterns-container-and-presentational-components/))
 
 
 ## **1.6) Pure functions**
@@ -482,6 +482,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDQ0ODE1NDQsMjkwODU0ODI0LDIxND
-M5ODI0MTUsNTU4MjE5OTkxLDkzMTM5NDEzOV19
+eyJoaXN0b3J5IjpbOTkyNDgzNjI0LDI5MDg1NDgyNCwyMTQzOT
+gyNDE1LDU1ODIxOTk5MSw5MzEzOTQxMzldfQ==
 -->
