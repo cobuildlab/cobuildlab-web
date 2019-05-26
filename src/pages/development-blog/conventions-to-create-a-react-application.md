@@ -204,21 +204,27 @@ const isDivisibleBy = (value, divisor) => (
 		return true;
 	if(divisor === 0) 
 		return false;
-	if(value === '' && allowEmpty === false) 
-		return false;
-	return true;
+	if(value === diviro) 
+		return true;
+	return value % divisor === 0;
 );
 
-const H1 = ({children, icon}) => (
-    <div className='inline-block'>
-        <h1 className='header-note'>
-            {children}
-            <span class='icon-header-note'>
-                <img src={icon} />
-            </span> 
-        </h1>
-    </div>
-);
+const TableView = ({children, loading}) => {
+	if(loading)
+		return <Loading size={10} />;
+
+	... logic
+	return (
+	    <div className='inline-block'>
+	        <h1 className='header-note'>
+	            {children}
+	            <span class='icon-header-note'>
+	                <img src={icon} />
+	            </span> 
+	        </h1>
+	    </div>
+	);
+}
 
 export class View extends Component {
     render(){
@@ -368,5 +374,5 @@ Example: `onClick`, `onLoad`, `onListMembers`
 ## 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjMzMzcwMDMsOTMxMzk0MTM5XX0=
+eyJoaXN0b3J5IjpbLTQ0MzE2NTY4Miw5MzEzOTQxMzldfQ==
 -->
