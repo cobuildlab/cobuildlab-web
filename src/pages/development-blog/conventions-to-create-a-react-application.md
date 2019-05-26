@@ -285,9 +285,10 @@ Organizing files are one of the most important conventions, especially for large
 
 Naming is important for quickly understand the purpose of an element: Classes, constants, variables or methods.
 
-## Things to consider:
-- As a general Rule for React Components file names, use <Entity Name><Purpose><Object Type>. Example: `UserCreateView.js`, `TaskEditView.js`, `CompanyMembersListComponent.js`
-- As a general Rule for non React Components file names, use <entity-name>-<object-type>. Example: `user-actions.js`, `user-store.js`, `company-permissions.js`
+## General Rules:
+- For React Components file names, use <Entity Name><Purpose><Object Type>. Example: `UserCreateView.js`, `TaskEditView.js`, `CompanyMembersListComponent.js`
+- For non React Components file names, use <entity-name>-<object-type>. Example: `user-actions.js`, `user-store.js`, `company-permissions.js`
+- For Module names follow file name convetions separating words using the hyppen `-`
 - Don't use short or ambiguous names like: `q`, `search`, `getById`, `Member`, be specific
 - A filename must always be exact to its default export
 - Acronyms and initialisms should always be all uppercase or all lowercase. [Reference](https://github.com/airbnb/javascript#naming--Acronyms-and-Initialisms)
@@ -353,29 +354,29 @@ Example: `_extractKeys`, `_compute`
 Example: `onClick`, `onLoad`, `onListMembers`
 
 
-## 6) Linting and Code Formatting
+# 6) Linting and Code Formatting
 
-## 7) Github templates
+# 7) Github templates
 
-## 8) State Management
+# 8) State Management
 <TODO>
-## 9) Props validation
+# 9) Props validation
 <TODO>
-## 10) Css and Theme
+# 10) Css and Theme
 <TODO>
-## 11) HOC vs Composition
+# 11) HOC vs Composition
 <TODO>
-## 12) API communication
+# 12) API communication
 <TODO>
-## 13) Notifications
+# 13) Notifications
 <TODO>
-## 14) Routing
+# 14) Routing
 <TODO>
-## 15) State intialization
-## 16) Data Validation
-## 17) Testing
-## 18) Testing
+# 15) State intialization
+# 16) Data Validation
+# 17) Testing
+# 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjczMTk1NDc4LDkzMTM5NDEzOV19
+eyJoaXN0b3J5IjpbNDM0NDUwMzQsOTMxMzk0MTM5XX0=
 -->
