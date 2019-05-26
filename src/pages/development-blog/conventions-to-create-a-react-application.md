@@ -1,21 +1,21 @@
 ---
-title: Conventions to create a ReactJS Web Application
-date: 2019-05-01T01:00:00+00:00
+title: Conventions to create a React or React Native Application
+date: 2019-05-26T01:00:00+00:00
 tags: 
 template: development-post
 permalink: /conventions-to-create-a-react-web-or-mobile-application/
 image: null
 ---
 
-This document aims to reduce the friction between patterns and ways of doing common tasks during the development of a React Web or Mobile Application.
+This document aims to reduce the friction between patterns and ways of doing common tasks during the development of a React Web or React Native Mobile Application.
 
-This document is heavily based on the Convention proposed by [Airbnb](https://github.com/airbnb/javascript), [StandardJs](https://standardjs.com/) and our own experience for the last 10 years.
+This document is heavily based on the Convention proposed by [Airbnb](https://github.com/airbnb/javascript), [StandardJs](https://standardjs.com/) and our own experience developing front end javascript applications since 2008 and React Applications since late 2016.
 
 Here, we explain the problem, choose a convention, and explain the reasons:
 
-## 1) General Best Practices
+# 1) General Best Practices
 
-### **1.1) Always prefer constants over variables**
+## **1.1) Always prefer constants over variables**
 
 *PREFER THIS:*
 
@@ -59,7 +59,7 @@ export const updateStateFromObject = (state, object) => {
 * Efficiency: Many Runtimes promise faster access to constant values than to variables values.
 
 
-### **1.2) Use constructor to initialize state instead of `static` members**
+## **1.2) Use constructor to initialize state instead of `static` members**
 
 *PREFER THIS:*
 
@@ -108,7 +108,7 @@ export default class SwiperView extends Component {
 * Code readability
 * Consistency: Initialization should always be in the constructor
 
-### **1.3) Components should not include style props**
+## **1.3) Components should not include styling props**
 
 Avoid using `style` or `className` for Components in Views to reduce visual noise, unless it is completely necessary.
 
@@ -274,22 +274,253 @@ TODO
 ## 3) Architecture
 TODO
 ## 4) File Structure
+## **1.4) Return Early pattern for methods and functions instead of conditionals**
 
-### 5) ### Use github templates for Feature Requests and Bugs
-Organizing files are one of the most important conventions, especially for large codebases.
 
-## 2) Naming Conventions
+Enforce  **Return Early** pattern in functions and methods, including the render method of React components.
+
+Return early pattern forces you to first consider exceptional situations or error conditions in your functions like validations and variables or input inconsistencies on the first lines of a function or method.
+
+
+*PREFER THIS:*
+
+```javascript
+const isValidString = (text, allowEmpty = false) => (
+	if(text === null) 
+		return false;
+	if(text === undefined) 
+		return false;
+	if(text === '' && allowEmpty === false) 
+		return false;
+	return true;
+);
+
+const isDivisibleBy = (value, divisor) => (
+	if(value === 0) 
+		return true;
+	if(divisor === 0) 
+		return false;
+	if(value === divisor) 
+		return true;
+	return value % divisor === 0;
+);
+
+const TableView = ({children, loading}) => {
+	if(loading)
+		return <Loading size={10} />;
+
+	//... logic
+	return (
+	    <div className='inline-block'>
+	        <h1 className='header-note'>
+	            {children}
+	            <span class='icon-header-note'>
+	                <img src={icon} />
+	            </span> 
+	        </h1>
+	    </div>
+	);
+}
+```
+
+*AND NOT THIS:*
+
+```javascript
+const isValidString = (text, allowEmpty = false) => (
+	if(text !== null){
+		if(text !== undefined){
+			if(allowEmpty === false){
+				if (text === ''){
+					return false;
+				}else{
+					return true
+				}					
+			}
+			else...
+		}
+	}else{
+		return false;
+	}
+);
+
+const TableView = ({children, loading}) => {
+	//	... logic
+	return (
+		{loading ? <Loading size={10}> :
+	    <div className='inline-block'>
+	        <h1 className='header-note'>
+	            {children}
+	            <span class='icon-header-note'>
+	                <img src={icon} />
+	            </span> 
+	        </h1>
+	    </div>}
+	);
+}
+```
+### Justification:
+
+* Reduce Visual Noice
+* Reduce complexity of conditionals
+* Increase readibility by excluding error and edge conditions early on the code and letting focusing on the complex part of the function
+
+
+## **1.5) Enforce the difference Between Presentational Components and Container Components (Views) **
+
+Reference: [React Patterns Presentational and Container Components]([https://cobuildlab.com/development-blog/react-patterns-container-and-presentational-components/](https://cobuildlab.com/development-blog/react-patterns-container-and-presentational-components/))
+
+React components can be clasified in 2 major groups depending on how they fit in the Architecture of your application, and how they interact with the App and the User:
+
+1) **Presentational Components** or just Components are responsible present or render the user interface, they interface the communication between the User and the Application State only through the **Container Components**.
+2) **Container Componets** or Views are responsible of "connecting" the application state with the User Interface by listening to changes to the Application State and rendering **Presentational Components**. The way they interact with the Application State or stores depends of the technology used (Redux, Flux, MobX, Context API)
+
+
+| Feature |   Presentational Components (Components) |  Container Components (Views) |
+|---|---|---|
+| **External Communication** |  Thet are not connected directly to the Application State. Their communication in handled via props | They subscribe and react to the Application State and its changes  |
+| **Internal State** |Normally relies on the Store connection|Handle internally with Component level state or Hooks|
+| **Renders**| Mostly understands **WHAT** to render   | It understands **WHAT** and **HOW** to render  |
+
+
+## **1.6) Pure functions**
+## **1.7) util functions over methods**
+
+# 2) File Structure
+
+Organizing files are one of the most important conventions, especially for large codebases and large teams, specially remote teams.
+
+We will only consider the structure under the `src` folder, the project structure depends of other factors like the platform, linting tools, enviroment files, version control tools, react version, etc.
+
+We use the terms **App Specific** to resources that can be used across the entire app, and **Module Specific** to resources that can only be used inside a module folder.
+
+Based on our experience for the last years working with React, we propose this file Structure with examples:
+
+```
+src/ 
+└───assets/
+│   └───images/
+|	|	└───logo.png
+|	|	└───background_main.jpg
+|	|	└───...
+└───modules/
+│   └───login/
+|	│   └───components/
+|	|	|	└───LoginForm.js
+|	|	└───LoginView.js
+|	|	└───login-actions.js
+|	|	└───login-models.js
+|	|	└───login-permissions.js
+|	|	└───login-queries.js
+|	|	└───login-store.js
+|	|	└───...
+│   └───management/						// Nested modules
+|	│   └───school/
+| 	|	│   └───components/
+|	|	|	|	└───DashboardGraph.js
+|	|	|	|	└───NavitationBar.js
+|	|	|	└───SchoolDetailView.js
+|	|	|	└───SchoolUpdateView.js
+|	|	|	└───SchoolCreateView.js
+|	|	|	└───school-actions.js
+|	|	|	└───school-utils.js
+|	|	|	└───school-permissions.js
+|	|	|	└───school-queries.js
+|	|	|	└───school-store.js
+|	|	|	└───...
+|	│   └───another-module/
+| 	|	│   └───components/
+|	|	|	|	└───...
+|	|	|	└───AnotherView.js
+|	|	|	└───another-store.js
+|	|	|	└───...
+└───shared/
+│   └───components/
+│	|   └───buttons/
+│	|   └───text/
+│	|   └───forms/
+|   │   SomeComponent.js
+|   │   AnotherUnclassifiedComponent.js
+│   └───constants/
+│       │   user-types.json
+│   └───typings/
+│       │   ...
+└───graphql/							// Others App specific folders
+|	│   types.js
+│   string-utils.json
+│   validation-utils.json
+│   index.js
+│   App.js
+│   index.css
+ ```
+
+## *assets* folder
+App Specific folder that contains images files like png, svg, jpg, etc
+
+## *modules* folder
+Main folder to hold the the Module Specific folders
+
+## *shared* folder
+App Specific folder to hold any asset that is not an image and that it should be shared across modules.
+
+Think about this folder as any potential code that could be put in a node package and be distributed as a library.
+
+## *components* folder
+React componets that can be App specific under `shared/components/` or module specific under: `modules/<module-name>/components/`
+
+## *\*-actions* files
+Module specific files that holds Actions of the module. (See Architecture)
+
+## *\*-models* files
+Module specific files that holds constants and Model Objects or Classes.
+
+## *\*-store* files
+Module specific files that that holds the store components. (See Architecture)
+
+## *\*-permissions* files
+Module specific files that that holds functions related to permissions.
+
+## *\*-utils* files
+Functions or Classes that can be App specific under `shared/` or module specific under: `modules/<module-name>/`
+
+## *\*.css* files
+As of this conventions the project should only have one `index.css` file, that holds general purpose styles like: Text, body styles, etc.
+
+Component specific styles should be handled using [Styled Components]([https://www.styled-components.com/](https://www.styled-components.com/))
+
+
+
+# 3) Architecture
+React applications must rely on the [Flux]([https://facebook.github.io/flux/](https://facebook.github.io/flux/)) Architecture propose by Facebook.
+
+The main rules are:
+1) Unidirectional flow always: View -> Actions -> Dispatcher -> Store -> View
+2) The Application State can be divided in separated stores
+3) **Presentational Components** subscribes to changes in any application level state or **store**
+4) **Actions** can dispatch events that modify the state of the **store**
+5) **Presentational components** can trigger **actions** that affect the state of the **store**
+6) **Actions** can be combined in to more complex **actions**
+7) **Stores** propagates changes to all subscribers
+8) Any part of the application can have read only access to the application current state or **store**
+9) Posbile events or changes on the application must be declared either on a declarative or programatically way
+10) Consistency checks must always throw errors: a) A view can't subscribe to an event or change that doesn't exist, b) An action can never dispatch an event or change that doesn' exists c) A store can't handle data of an event or change that doesn't exist
+
+Any library that can comply with this rules is a good fit to handle the Architecture. For conience, a state library has been created with this set of rules in mind: [Flux State]([https://github.com/cobuildlab/flux-state](https://github.com/cobuildlab/flux-state)) with a convenient React Wrapper: [React Flux State]([https://github.com/cobuildlab/react-flux-state](https://github.com/cobuildlab/react-flux-state))
+
+# 4) Application Starter
+<TODO:>
+# 5) Naming Conventions
 
 Naming is important for quickly understand the purpose of an element: Classes, constants, variables or methods.
 
-### Things to consider:
-- As a general Rule for React Components file names, use <Entity Name><Purpose><Object Type>. Example: `UserCreateView.js`, `TaskEditView.js`, `CompanyMembersListComponent.js`
-- As a general Rule for no React Components file names, use <entity-name>-<object-type>. Example: `user-actions.js`, `user-store.js`, `company-permissions.js`
+## General Rules:
+- For React Components file names, use <Entity Name><Purpose><Object Type>. Example: `UserCreateView.js`, `TaskEditView.js`, `CompanyMembersListComponent.js`
+- For non React Components file names, use <entity-name>-<object-type>. Example: `user-actions.js`, `user-store.js`, `company-permissions.js`
+- For Module names follow file name convetions separating words using the hyppen `-`
 - Don't use short or ambiguous names like: `q`, `search`, `getById`, `Member`, be specific
 - A filename must always be exact to its default export
 - Acronyms and initialisms should always be all uppercase or all lowercase. [Reference](https://github.com/airbnb/javascript#naming--Acronyms-and-Initialisms)
 
-### React components
+## React components
 
 React components are divided into [Views and Components](https://cobuildlab.com/development-blog/react-patterns-container-and-presentational-components/)
 
@@ -301,19 +532,21 @@ Example: `LoginView`, `CompanyMembersView`
 
 Example: `MyProfileView`, `ListItemComponent`
 
-### Classes 
+## Classes 
 
 - Classes should always be PascalCase. 
 
 Example: `AdminUser`, `Alliance`, `Company`
 
-### Methods, Functions, and Instances
+## Methods, Functions, and Instances
 
 - Methods, functions, and instances must be always camelCase. 
+- Events should always start with `on` prefix
+- Non events should start with a verb
 
-Example: `onSubmit`, `activeUser`
+Example: `onSubmit`, `activateUser`
 
-### Variables and Constans
+## Variables and Constansts
 
 - Variables must always be on camelCase.
 
@@ -325,7 +558,7 @@ Example: `API_KEY`, `INITIAL_STATUS`, `PI`
 
 - Function level constants adopt the rules of Variables.
 
-### Files
+## Files
 
 - React components should live on a File with the same name of the Component with `.js` extensions
 
@@ -335,39 +568,44 @@ Example: `MyProfileView`, `ListItemComponent`
 
 Example: `user-actions.js`, `user-store.js`, `company-permissions.js`
 
-### Private members
+## Private members
 
 - Private names of a module adopt the same previous rules of naming. In addition to this, an underscore `_` can be prefixed to explicitly indicate its condition.
 
 Example: `_extractKeys`, `_compute`
 
-### Events name
+## Events name
 
 - Event names literals and functions callbacks to events must be named on camelCase prefixed by the word `on`
 
 Example: `onClick`, `onLoad`, `onListMembers`
 
 
-## 6) Linting and Code Formatting
+# 6) Linting and Code Formatting
 
-## 7) Github templates
+# 7) Github templates
 
-## 8) State Management
+# 8) State Management
 <TODO>
-## 9) Props validation
+# 9) Props validation
 <TODO>
-## 10) Css and Theme
+# 10) Css and Theme
 <TODO>
-## 11) HOC vs Composition
+# 11) HOC vs Composition
 <TODO>
-## 12) API communication
+# 12) API communication
 <TODO>
-## 13) Notifications
+# 13) Notifications
 <TODO>
-## 14) Routing
+# 14) Routing
 <TODO>
-## 15) State intialization
-## 16) Data Validation
-## 17) Testing
-## 18) Testing
+# 15) State intialization
+# 16) Data Validation
+# 17) Testing
+# 18) Testing
 <TODO>
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTkyNTk5NTE3MCwyOTA4NTQ4MjQsMjE0Mz
+k4MjQxNSw1NTgyMTk5OTEsOTMxMzk0MTM5XX0=
+-->
