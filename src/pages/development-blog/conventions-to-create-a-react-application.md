@@ -394,6 +394,7 @@ Component specific styles should be handled using [Styled Components]([https://w
 
 
 # 3) Architecture
+React applications must rely on the [Flux]([https://facebook.github.io/flux/](https://facebook.github.io/flux/)) 
 <TODO:>
 # 4) Application Starter
 <TODO:>
@@ -494,6 +495,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM5MzkxNTAzLDI5MDg1NDgyNCwyMTQzOT
-gyNDE1LDU1ODIxOTk5MSw5MzEzOTQxMzldfQ==
+eyJoaXN0b3J5IjpbMTM2ODcxNDExMSwyOTA4NTQ4MjQsMjE0Mz
+k4MjQxNSw1NTgyMTk5OTEsOTMxMzk0MTM5XX0=
 -->
