@@ -278,7 +278,25 @@ Organizing files are one of the most important conventions, especially for large
 
 Based on our experience for the last years working with React, we propose this file Structure:
 
-
+```
+project-folder
+│   README.md
+│   file001.txt    
+│
+└───folder1
+│   │   file011.txt
+│   │   file012.txt
+│   │
+│   └───subfolder1
+│       │   file111.txt
+│       │   file112.txt
+│       │   ...
+│   
+└───folder2
+    │   file021.txt
+    │   file022.txt
+```
+```
 
 <TODO:>
 # 3) Architecture
@@ -384,5 +402,5 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTUxNDg2NzMsOTMxMzk0MTM5XX0=
+eyJoaXN0b3J5IjpbNDEwMzcxNTE4LDkzMTM5NDEzOV19
 -->
