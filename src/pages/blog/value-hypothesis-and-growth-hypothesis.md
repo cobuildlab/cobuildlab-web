@@ -92,7 +92,7 @@ You can make many hypotheses of your business idea as you want, but here, we wil
 * What are they looking for?
 * What do I need to solve the problem?
 * Which resources are involved?
-* Which is my expectation in some years?
+* Which is my expectationve in some years?
 * Which resources will I need in the future?
 * Which I think will be the conversion percent?
 3. Answer these questions an order the list depending on your priorities.
@@ -113,3 +113,6 @@ You can make many hypotheses of your business idea as you want, but here, we wil
 <youtube-video id="QaoVWtLX038"></youtube-video>
 
 Now you know: the **value hypothesis and growth hypothesis** are more than necessaries to start your business idea correctly. They are in the first step of the Cobuild’s Process, and they will increase your chances of your company of satisfying customers. So we invite you to do it now. If you need assistance we are here to help you. 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTI4NDU4NzQ1Nl19
+-->
