@@ -275,8 +275,8 @@ Reference: [React Patterns Presentational and Container Components]([https://cob
 
 React components can be clasified in 2 major groups depending on how they fit in the Architecture of your application, and how they interact with the App and the User:
 
-1) Presentational Components or just Components present or render the user interface, they interface the communication between the User and 
-2) Container Componets or Views
+1) Presentational Components or just Components are responsible present or render the user interface, they interface the communication between the User and the Application State only through the Container Components
+2) Container Componets or Views are responsible of "connecting" the application state with the User by using Presentational Components. 
 
 
 |   Presentational Components (Components) |  Container Components (Views) |
@@ -494,6 +494,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE3MTc2NjAsMjkwODU0ODI0LDIxNDM5OD
-I0MTUsNTU4MjE5OTkxLDkzMTM5NDEzOV19
+eyJoaXN0b3J5IjpbLTE1OTEwMTM2NiwyOTA4NTQ4MjQsMjE0Mz
+k4MjQxNSw1NTgyMTk5OTEsOTMxMzk0MTM5XX0=
 -->
