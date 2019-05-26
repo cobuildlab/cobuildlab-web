@@ -276,6 +276,8 @@ const TableView = ({children, loading}) => {
 # 2) File Structure
 Organizing files are one of the most important conventions, especially for large codebases and large teams, specially remote teams.
 
+We will consider the structure under the `src` folder, the project structure depends of other factor
+
 Based on our experience for the last years working with React, we propose this file Structure:
 
 ```
@@ -404,5 +406,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU4MjE5OTkxLDkzMTM5NDEzOV19
+eyJoaXN0b3J5IjpbLTc3OTE5MjI5LDU1ODIxOTk5MSw5MzEzOT
+QxMzldfQ==
 -->
