@@ -408,11 +408,8 @@ The main rules are:
 9) Posbile events or changes on the application must be declared either on a declarative or programatically way
 10) Consistency checks must always throw errors: a) A view can't subscribe to an event or change that doesn't exist, b) An action can never dispatch an event or change that doesn' exists c) A store can't handle data of an event or change that doesn't exist
 
-Any library that can comply with this rules is a good fit to handle the Architecture. For conience, a state library has been created with this set of rules in mind: 
+Any library that can comply with this rules is a good fit to handle the Architecture. For conience, a state library has been created with this set of rules in mind: [Flux State]([https://github.com/cobuildlab/flux-state](https://github.com/cobuildlab/flux-state)) with a convenient React Wrapper: [React Flux State]([https://github.com/cobuildlab/react-flux-state](https://github.com/cobuildlab/react-flux-state))
 
-
-
-<TODO:>
 # 4) Application Starter
 <TODO:>
 # 5) Naming Conventions
@@ -512,6 +509,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjM2MjQ2MzcsMjkwODU0ODI0LDIxND
-M5ODI0MTUsNTU4MjE5OTkxLDkzMTM5NDEzOV19
+eyJoaXN0b3J5IjpbMTkyNTk5NTE3MCwyOTA4NTQ4MjQsMjE0Mz
+k4MjQxNSw1NTgyMTk5OTEsOTMxMzk0MTM5XX0=
 -->
