@@ -285,16 +285,27 @@ Based on our experience for the last years working with React, we propose this f
 
 ```
 src/ 
-└───assets/									// Assets and resources
-│   └───images/								// Images Folder
+└───assets/
+│   └───images/
 |	|	└───logo.png
 |	|	└───background_main.jpg
 |	|	└───...
-└───modules/								
+└───modules/
 │   └───login/
 |	│   └───components/
-|	|	└───LoginView
-|	|	└───background_main.jpg
+|	|	|	└───LoginForm.js
+|	|	└───LoginView.js
+|	|	└───login-actions.js
+|	|	└───login-permissions.js
+|	|	└───login-queries.js
+|	|	└───...
+│   └───login/
+|	│   └───components/
+|	|	|	└───LoginForm.js
+|	|	└───LoginView.js
+|	|	└───login-actions.js
+|	|	└───login-permissions.js
+|	|	└───login-queries.js
 |	|	└───...
 └───shared/
 │   └───components/
@@ -415,6 +426,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMjgxNDQyNiw1NTgyMTk5OTEsOTMxMz
-k0MTM5XX0=
+eyJoaXN0b3J5IjpbMzAwODA0OTg3LDU1ODIxOTk5MSw5MzEzOT
+QxMzldfQ==
 -->
