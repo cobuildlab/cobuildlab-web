@@ -405,6 +405,8 @@ The main rules are:
 6) **Actions** can be combined in to more complex **actions**
 7) **Stores** propagates changes to all subscribers
 8) Any part of the application can have read only access to the application current state or **store**
+9) Events or changes on the application must be declared either on a declarative or programatically wa
+Consistency checks must always throw errors: a) A view can't subscribe to an event or change that 
 
 
 
@@ -508,6 +510,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ0MDEzNDE5LDI5MDg1NDgyNCwyMTQzOT
-gyNDE1LDU1ODIxOTk5MSw5MzEzOTQxMzldfQ==
+eyJoaXN0b3J5IjpbLTI3MTA4NjAzMCwyOTA4NTQ4MjQsMjE0Mz
+k4MjQxNSw1NTgyMTk5OTEsOTMxMzk0MTM5XX0=
 -->
