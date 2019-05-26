@@ -290,15 +290,18 @@ src/
 |	|	└───logo.png
 |	|	└───background_main.jpg
 |	|	└───...
-└───modules
-└───shared
+└───modules/
+└───shared/
 │   └───components/
-    │   file021.txt
-    │   file022.txt
-│   └───subfolder1
+│	|   └───buttons/
+│	|   └───text/
+│	|   └───forms/
+|   │   SomeComponent.js
+|   │   AnotherUnclassifiedComponent.js
+│   └───constants/
 │       │   file111.txt
 │       │   file112.txt
-│       │   ...
+│   └───graphql/
 │   
 └───folder2
     │   file021.txt
@@ -410,6 +413,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODcwMDQxODksNTU4MjE5OTkxLDkzMT
+eyJoaXN0b3J5IjpbLTIwMjQ1MTgyMTAsNTU4MjE5OTkxLDkzMT
 M5NDEzOV19
 -->
