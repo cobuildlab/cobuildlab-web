@@ -310,6 +310,7 @@ src/
 |	|	|	└───SchoolUpdateView.js
 |	|	|	└───SchoolCreateView.js
 |	|	|	└───school-actions.js
+|	|	|	└───school-utils.js
 |	|	|	└───school-permissions.js
 |	|	|	└───school-queries.js
 |	|	|	└───school-store.js
@@ -333,6 +334,8 @@ src/
 │       │   types.js
 │   └───typings/
 │       │   ...
+│   string-utils.json
+│   validation-utils.json
 │   index.js
 │   App.js
 │   index.css
@@ -345,6 +348,7 @@ src/
 ## *-models
 ## *-store
 ## *-permissions
+## *-utils
 
 
 
@@ -352,8 +356,6 @@ src/
 <TODO:>
 # 4) Application Starter
 <TODO:>
-
-
 # 5) Naming Conventions
 
 Naming is important for quickly understand the purpose of an element: Classes, constants, variables or methods.
@@ -451,6 +453,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0Mzk4MjQxNSw1NTgyMTk5OTEsOTMxMz
-k0MTM5XX0=
+eyJoaXN0b3J5IjpbNjQ2MzQyMDY4LDIxNDM5ODI0MTUsNTU4Mj
+E5OTkxLDkzMTM5NDEzOV19
 -->
