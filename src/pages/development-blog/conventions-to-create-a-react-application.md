@@ -398,11 +398,11 @@ React applications must rely on the [Flux]([https://facebook.github.io/flux/](ht
 
 The main rules are:
 1) Unidirectional flow always: View -> Actions -> Dispatcher -> Store -> View
-2) The Application State can be divided in 
-1) **Presentational Components** subscribes to changes in any application level state or Store
-2) Actions can dispatch actions that modify the state of the store
-3) Presentational components can trigger actions that affect the state of the store
-4) Actions can be combined
+2) The Application State can be divided in separated stores
+3) **Presentational Components** subscribes to changes in any application level state or **store**
+4) **Actions** can dispatch events that modify the state of the **store**
+5) **Presentational components** can trigger **actions** that affect the state of the **store**
+6) Actions can be combined
 
 
 
@@ -506,6 +506,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMTcyMTgyNiwyOTA4NTQ4MjQsMjE0Mz
+eyJoaXN0b3J5IjpbLTIyMTg0NDg4OSwyOTA4NTQ4MjQsMjE0Mz
 k4MjQxNSw1NTgyMTk5OTEsOTMxMzk0MTM5XX0=
 -->
