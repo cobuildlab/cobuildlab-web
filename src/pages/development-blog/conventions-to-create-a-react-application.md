@@ -194,8 +194,19 @@ const isValidString = (text, allowEmpty = false) => (
 		return false;
 	if(text === undefined) 
 		return false;
-	if(text === null) 
+	if(text === '' && allowEmpty === false) 
 		return false;
+	return true;
+);
+
+const isDivisibleBy = (value, divisor) => (
+	if(value === 0) 
+		return true;
+	if(divisor === 0) 
+		return false;
+	if(value === '' && allowEmpty === false) 
+		return false;
+	return true;
 );
 
 const H1 = ({children, icon}) => (
@@ -357,5 +368,5 @@ Example: `onClick`, `onLoad`, `onListMembers`
 ## 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NjM4NTkwMSw5MzEzOTQxMzldfQ==
+eyJoaXN0b3J5IjpbLTE3MjMzMzcwMDMsOTMxMzk0MTM5XX0=
 -->
