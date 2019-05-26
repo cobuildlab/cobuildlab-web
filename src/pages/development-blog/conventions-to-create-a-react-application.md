@@ -183,17 +183,19 @@ export class View extends Component {
 
 Enforce  **Return Early** pattern in functions and methods, including the render method of React components.
 
-Return early pattern forces you to first consider exceptional situations or error conditions in your functions like validations and inconsistency on the first lines of a function or methodfunction 
-
+Return early pattern forces you to first consider exceptional situations or error conditions in your functions like validations and inconsistencies on the first lines of a function or method.
 
 
 *PREFER THIS:*
 
 ```javascript
-const NormalText = ({children}) => (
-    <p className='blue-text'>
-        {children}
-    </p>
+const isValidString = (text, allowEmpty = false) => (
+	if(text === null) 
+		return false;
+	if(text === undefined) 
+		return false;
+	if(text === null) 
+		return false;
 );
 
 const H1 = ({children, icon}) => (
@@ -355,5 +357,5 @@ Example: `onClick`, `onLoad`, `onListMembers`
 ## 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM2NjA4NzU0LDkzMTM5NDEzOV19
+eyJoaXN0b3J5IjpbMTc4NjM4NTkwMSw5MzEzOTQxMzldfQ==
 -->
