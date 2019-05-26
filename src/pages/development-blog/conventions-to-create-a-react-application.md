@@ -402,7 +402,9 @@ The main rules are:
 3) **Presentational Components** subscribes to changes in any application level state or **store**
 4) **Actions** can dispatch events that modify the state of the **store**
 5) **Presentational components** can trigger **actions** that affect the state of the **store**
-6) Actions can be combined
+6) **Actions** can be combined in to more complex **actions**
+7) **Stores** propagates changes to all subscribers
+8) Any part of the application can have read only access to the application current state or **store**
 
 
 
@@ -506,6 +508,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMTg0NDg4OSwyOTA4NTQ4MjQsMjE0Mz
-k4MjQxNSw1NTgyMTk5OTEsOTMxMzk0MTM5XX0=
+eyJoaXN0b3J5IjpbOTQ0MDEzNDE5LDI5MDg1NDgyNCwyMTQzOT
+gyNDE1LDU1ODIxOTk5MSw5MzEzOTQxMzldfQ==
 -->
