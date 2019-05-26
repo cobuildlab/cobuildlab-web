@@ -178,7 +178,7 @@ export class View extends Component {
 * Increase speed of development avoinding design decisions
 * Maintenalbility by isolation of the styling options
 
-## **1.4) Return Early pattern for methods and functions**
+## **1.4) Return Early pattern for methods and functions instead of conditionals**
 
 
 Enforce  **Return Early** pattern in functions and methods, including the render method of React components.
@@ -231,13 +231,13 @@ const TableView = ({children, loading}) => {
 
 ```javascript
 const isValidString = (text, allowEmpty = false) => (
-
-	if(text !== null)
-	if(text === undefined) 
+	if(text !== null){
+		if(text !== undefined){
+			if(allowEmpty === false) 
+		}
+	}else{
 		return false;
-	if(text === '' && allowEmpty === false) 
-		return false;
-	return true;
+	}
 );
 
 const isDivisibleBy = (value, divisor) => (
@@ -382,5 +382,5 @@ Example: `onClick`, `onLoad`, `onListMembers`
 ## 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0Nzk5Mzk5LDkzMTM5NDEzOV19
+eyJoaXN0b3J5IjpbMTUyMTIxMDUwNSw5MzEzOTQxMzldfQ==
 -->
