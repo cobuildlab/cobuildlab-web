@@ -368,9 +368,12 @@ Module specific files that that holds the store components. (See Architecture)
 Module specific files that that holds functions related to permissions.
 
 ## *\*-utils* files
-Functions or Classes that can be App specific under `shared/` or module specific under: `modules/<module-name>/components/`
+Functions or Classes that can be App specific under `shared/` or module specific under: `modules/<module-name>/`
 
 ## *\*.css* files
+As of this conventions the project should only have one `index.css` file, that holds general purpose styles like: Text, body styles, etc.
+
+Component specific styles should be handled using [Styled Components]([https://www.styled-components.com/](https://www.styled-components.com/))
 
 
 
@@ -475,6 +478,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDQzMTU3NSwyMTQzOTgyNDE1LDU1OD
-IxOTk5MSw5MzEzOTQxMzldfQ==
+eyJoaXN0b3J5IjpbMjkwODU0ODI0LDIxNDM5ODI0MTUsNTU4Mj
+E5OTkxLDkzMTM5NDEzOV19
 -->
