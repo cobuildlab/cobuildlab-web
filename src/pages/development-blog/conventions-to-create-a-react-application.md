@@ -342,10 +342,14 @@ src/
  ```
 
 ## *assets* folder
-App Specific folder that contains images files like png
+App Specific folder that contains images files like png, svg, jpg, etc
 
 ## *modules* folder
+Main folder to hold the the Module Specific folders
+
 ## *shared* folder
+App Specific folder to hold any asset that is not an image and that it should be 
+
 ## *components* folder
 ## *\*-actions* files
 ## *\*-models* files
@@ -457,6 +461,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3Mzg5MTY5MywyMTQzOTgyNDE1LDU1OD
-IxOTk5MSw5MzEzOTQxMzldfQ==
+eyJoaXN0b3J5IjpbLTE4MjM3ODA0MTYsMjE0Mzk4MjQxNSw1NT
+gyMTk5OTEsOTMxMzk0MTM5XX0=
 -->
