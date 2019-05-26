@@ -279,7 +279,7 @@ Organizing files are one of the most important conventions, especially for large
 
 We will only consider the structure under the `src` folder, the project structure depends of other factors like the platform, linting tools, version control tools, react version, etc.
 
-We use the terms **App Specific** to resources that can be used across the entire app, and *Module Sp*
+We use the terms **App Specific** to resources that can be used across the entire app, and **Module Specific** to resources that can only be used inside a module folder.
 
 Based on our experience for the last years working with React, we propose this file Structure with examples:
 
@@ -287,11 +287,12 @@ Based on our experience for the last years working with React, we propose this f
 src/ 
 └───assets/
 │   └───images/
-|	|	└───bug_report.md
-|	|	└───feature_request.md
-│   │   pull_request_template.md
-└───node_modules
-└───public
+|	|	└───logo.png
+|	|	└───background_main.jpg
+|	|	└───...
+└───modules
+└───shared
+│   └───components/
     │   file021.txt
     │   file022.txt
 │   └───subfolder1
@@ -409,6 +410,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0MTQ2NzA1NSw1NTgyMTk5OTEsOTMxMz
-k0MTM5XX0=
+eyJoaXN0b3J5IjpbLTE2ODcwMDQxODksNTU4MjE5OTkxLDkzMT
+M5NDEzOV19
 -->
