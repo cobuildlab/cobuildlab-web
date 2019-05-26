@@ -7,7 +7,7 @@ permalink: /connecting-my-flask-application-with-sendgrid/
 image: null
 ---
 
-How good is an application that does not send notifications? not so much right?. 
+How good is an application that does not send notifictore informations? not so much right?. 
 
 Continuing our previous example of [Our First JSON REST API using Flask](https://cobuildlab.com/development-blog/my-first-json-rest-api-with-flask/) we will add notifications via email capabilities to our app to let people know when something important happens.
 
@@ -169,3 +169,6 @@ if __name__ == '__main__':
 
 
 ```
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTY3NDM2Njg3XX0=
+-->
