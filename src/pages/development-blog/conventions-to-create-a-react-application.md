@@ -178,14 +178,10 @@ export class View extends Component {
 * Increase speed of development avoinding design decisions
 * Maintenalbility by isolation of the styling options
 
-## **1.4) Early Return**
+## **1.4) Return Early pattern for methods and functions**
 
 
-Avoid using `style` or `className` for Components in Views to reduce visual noise, unless it is completely necessary.
-
-Rely on abstractions for defining styles for your components.
-
-See: [Proxy Pattern](https://cobuildlab.com/development-blog/react-patterns-proxy-pattern-for-components/)
+Enfor **Return
 
 
 
@@ -357,5 +353,5 @@ Example: `onClick`, `onLoad`, `onListMembers`
 ## 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgxMTA0Mzk5LDkzMTM5NDEzOV19
+eyJoaXN0b3J5IjpbMzYyMTcyODY4LDkzMTM5NDEzOV19
 -->
