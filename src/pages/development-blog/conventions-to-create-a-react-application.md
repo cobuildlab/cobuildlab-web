@@ -266,35 +266,33 @@ const TableView = ({children, loading}) => {
 
 * Reduce Visual Noice
 * Reduce complexity of conditionals
-* Increase readibility by excluding error and edge conditions early on the code
-* 
+* Increase readibility by excluding error and edge conditions early on the code and letting focusing on the complex part of the function
 
 
 ## **1.4) Pure functions**
 
 ## **1.4) util functions over methods**
 
+# 2) File Structure
 <TODO>
-## 2) File Structure
+# 3) Architecture
 <TODO>
-## 3) Architecture
-<TODO>
-## 4) Application Starter
+# 4) Application Starter
 
 Organizing files are one of the most important conventions, especially for large codebases.
 
-## 5) Naming Conventions
+# 5) Naming Conventions
 
 Naming is important for quickly understand the purpose of an element: Classes, constants, variables or methods.
 
-### Things to consider:
+## Things to consider:
 - As a general Rule for React Components file names, use <Entity Name><Purpose><Object Type>. Example: `UserCreateView.js`, `TaskEditView.js`, `CompanyMembersListComponent.js`
-- As a general Rule for no React Components file names, use <entity-name>-<object-type>. Example: `user-actions.js`, `user-store.js`, `company-permissions.js`
+- As a general Rule for non React Components file names, use <entity-name>-<object-type>. Example: `user-actions.js`, `user-store.js`, `company-permissions.js`
 - Don't use short or ambiguous names like: `q`, `search`, `getById`, `Member`, be specific
 - A filename must always be exact to its default export
 - Acronyms and initialisms should always be all uppercase or all lowercase. [Reference](https://github.com/airbnb/javascript#naming--Acronyms-and-Initialisms)
 
-### React components
+## React components
 
 React components are divided into [Views and Components](https://cobuildlab.com/development-blog/react-patterns-container-and-presentational-components/)
 
@@ -306,19 +304,19 @@ Example: `LoginView`, `CompanyMembersView`
 
 Example: `MyProfileView`, `ListItemComponent`
 
-### Classes 
+## Classes 
 
 - Classes should always be PascalCase. 
 
 Example: `AdminUser`, `Alliance`, `Company`
 
-### Methods, Functions, and Instances
+## Methods, Functions, and Instances
 
 - Methods, functions, and instances must be always camelCase. 
 
 Example: `onSubmit`, `activeUser`
 
-### Variables and Constans
+## Variables and Constans
 
 - Variables must always be on camelCase.
 
@@ -330,7 +328,7 @@ Example: `API_KEY`, `INITIAL_STATUS`, `PI`
 
 - Function level constants adopt the rules of Variables.
 
-### Files
+## Files
 
 - React components should live on a File with the same name of the Component with `.js` extensions
 
@@ -340,13 +338,13 @@ Example: `MyProfileView`, `ListItemComponent`
 
 Example: `user-actions.js`, `user-store.js`, `company-permissions.js`
 
-### Private members
+## Private members
 
 - Private names of a module adopt the same previous rules of naming. In addition to this, an underscore `_` can be prefixed to explicitly indicate its condition.
 
 Example: `_extractKeys`, `_compute`
 
-### Events name
+## Events name
 
 - Event names literals and functions callbacks to events must be named on camelCase prefixed by the word `on`
 
@@ -377,5 +375,5 @@ Example: `onClick`, `onLoad`, `onListMembers`
 ## 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzY1NTYzNDYsOTMxMzk0MTM5XX0=
+eyJoaXN0b3J5IjpbLTI5MjgxMDUzLDkzMTM5NDEzOV19
 -->
