@@ -13,9 +13,9 @@ This document is heavily based on the Convention proposed by [Airbnb](https://gi
 
 Here, we explain the problem, choose a convention, and explain the reasons:
 
-## 1) General Best Practices
+# 1) General Best Practices
 
-### **1.1) Always prefer constants over variables**
+## **1.1) Always prefer constants over variables**
 
 *PREFER THIS:*
 
@@ -59,7 +59,7 @@ export const updateStateFromObject = (state, object) => {
 * Efficiency: Many Runtimes promise faster access to constant values than to variables values.
 
 
-### **1.2) Use constructor to initialize state instead of `static` members**
+## **1.2) Use constructor to initialize state instead of `static` members**
 
 *PREFER THIS:*
 
@@ -108,7 +108,7 @@ export default class SwiperView extends Component {
 * Code readability
 * Consistency: Initialization should always be in the constructor
 
-### **1.3) Components should not include styling props**
+## **1.3) Components should not include styling props**
 
 Avoid using `style` or `className` for Components in Views to reduce visual noise, unless it is completely necessary.
 
@@ -178,9 +178,9 @@ export class View extends Component {
 * Increase speed of development avoinding design decisions
 * Maintenalbility by isolation of the styling options
 
-### **1.4) Early return**
+## **1.4) Early return**
 
-### **1.4) Pure functions**
+## **1.4) Pure functions**
 
 ### **1.4) util functions over methods**
 
@@ -287,5 +287,5 @@ Example: `onClick`, `onLoad`, `onListMembers`
 ## 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDAwMDU0NzIsOTMxMzk0MTM5XX0=
+eyJoaXN0b3J5IjpbLTE5NzAwMTcyMTQsOTMxMzk0MTM5XX0=
 -->
