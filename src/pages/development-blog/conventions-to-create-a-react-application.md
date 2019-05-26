@@ -183,7 +183,7 @@ export class View extends Component {
 
 Enforce  **Return Early** pattern in functions and methods, including the render method of React components.
 
-Return early pattern forces you to first consider exceptional situations or error conditions in your functions like validations and inconsistencies on the first lines of a function or method.
+Return early pattern forces you to first consider exceptional situations or error conditions in your functions like validations and variables or input inconsistencies on the first lines of a function or method.
 
 
 *PREFER THIS:*
@@ -225,39 +225,47 @@ const TableView = ({children, loading}) => {
 	    </div>
 	);
 }
-
-export class View extends Component {
-    render(){
-        <section>
-            <H1 icon={plus}>Note Header</H1>
-            <NormalText>Note Text</NormalText>
-        </section>
-    }
-}
-...
 ```
 
 *AND NOT THIS:*
 
 ```javascript
-export class View extends Component {
-    render(){
-        <section>
-            <div className='inline-block'>
-                <h1 className='header-note'>
-                    Note Header
-                    <span class='icon-header-note'>
-                        <img src={plus} />
-                    </span> 
-                </h1>
-            </div>
-        <p className='blue-text'>
-            Note Text
-        </p>
-        </section>
-    }
+const isValidString = (text, allowEmpty = false) => (
+
+	if(text !== null)
+	if(text === undefined) 
+		return false;
+	if(text === '' && allowEmpty === false) 
+		return false;
+	return true;
+);
+
+const isDivisibleBy = (value, divisor) => (
+	if(value === 0) 
+		return true;
+	if(divisor === 0) 
+		return false;
+	if(value === diviro) 
+		return true;
+	return value % divisor === 0;
+);
+
+const TableView = ({children, loading}) => {
+	if(loading)
+		return <Loading size={10} />;
+
+	... logic
+	return (
+	    <div className='inline-block'>
+	        <h1 className='header-note'>
+	            {children}
+	            <span class='icon-header-note'>
+	                <img src={icon} />
+	            </span> 
+	        </h1>
+	    </div>
+	);
 }
-...
 ```
 ### Justification:
 
@@ -374,5 +382,5 @@ Example: `onClick`, `onLoad`, `onListMembers`
 ## 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MzE2NTY4Miw5MzEzOTQxMzldfQ==
+eyJoaXN0b3J5IjpbLTM0Nzk5Mzk5LDkzMTM5NDEzOV19
 -->
