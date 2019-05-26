@@ -250,6 +250,7 @@ const isValidString = (text, allowEmpty = false) => (
 const TableView = ({children, loading}) => {
 	//	... logic
 	return (
+		{loading ? <Loading size={10}> :
 	    <div className='inline-block'>
 	        <h1 className='header-note'>
 	            {children}
@@ -257,16 +258,16 @@ const TableView = ({children, loading}) => {
 	                <img src={icon} />
 	            </span> 
 	        </h1>
-	    </div>
+	    </div>}
 	);
 }
 ```
 ### Justification:
 
 * Reduce Visual Noice
-* Increase component reusability
-* Increase speed of development avoinding design decisions
-* Maintenalbility by isolation of the styling options
+* Reduce complexity of conditionals
+* Increase readibility by excluding error and edge conditions early on the code
+* 
 
 
 ## **1.4) Pure functions**
@@ -376,5 +377,5 @@ Example: `onClick`, `onLoad`, `onListMembers`
 ## 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMzY4NzE0NCw5MzEzOTQxMzldfQ==
+eyJoaXN0b3J5IjpbLTE4MzY1NTYzNDYsOTMxMzk0MTM5XX0=
 -->
