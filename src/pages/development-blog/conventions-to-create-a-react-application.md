@@ -283,7 +283,7 @@ React components can be clasified in 2 major groups depending on how they fit in
 |---|---|---|
 | **External Communication** |  Thet are not connected directly to the Application State. Their communication in handled via props | They subscribe and react to the Application State and its changes  |
 | **Internal State** |Normally relies on the Store connection|Handle internally with Component level state or Hooks|
-| **Renders**| Mostly render other components that understand **how**   |   |
+| **Renders**| Mostly understands **WHAT** to render   | It understands **WHAT** and **HOW** to render  |
 
 
 ## **1.6) Pure functions**
@@ -494,6 +494,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE3MDk0OTU4LDI5MDg1NDgyNCwyMTQzOT
+eyJoaXN0b3J5IjpbOTM5MzkxNTAzLDI5MDg1NDgyNCwyMTQzOT
 gyNDE1LDU1ODIxOTk5MSw5MzEzOTQxMzldfQ==
 -->
