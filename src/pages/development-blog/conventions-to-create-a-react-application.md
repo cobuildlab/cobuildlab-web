@@ -330,10 +330,10 @@ src/
 |   │   AnotherUnclassifiedComponent.js
 │   └───constants/
 │       │   user-types.json
-│   └───graphql/
-│       │   types.js
 │   └───typings/
 │       │   ...
+└───graphql/
+|	│   types.js
 │   string-utils.json
 │   validation-utils.json
 │   index.js
@@ -461,6 +461,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjM3ODA0MTYsMjE0Mzk4MjQxNSw1NT
-gyMTk5OTEsOTMxMzk0MTM5XX0=
+eyJoaXN0b3J5IjpbMTg2NzE4OTk1MCwyMTQzOTgyNDE1LDU1OD
+IxOTk5MSw5MzEzOTQxMzldfQ==
 -->
