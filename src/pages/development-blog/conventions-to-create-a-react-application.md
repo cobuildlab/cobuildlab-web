@@ -342,14 +342,17 @@ src/
  ```
 
 ## *assets* folder
+App Specific folder that contains images files like png
+
 ## *modules* folder
 ## *shared* folder
 ## *components* folder
 ## *\*-actions* files
 ## *\*-models* files
-## *\*-store* folder
-## *\*-permissions* folder
-## *\*-utils* folder
+## *\*-store* files
+## *\*-permissions* files
+## *\*-utils* files
+## *\*.css* files
 
 
 
@@ -454,6 +457,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDM4ODU1OTYsMjE0Mzk4MjQxNSw1NT
-gyMTk5OTEsOTMxMzk0MTM5XX0=
+eyJoaXN0b3J5IjpbLTk3Mzg5MTY5MywyMTQzOTgyNDE1LDU1OD
+IxOTk5MSw5MzEzOTQxMzldfQ==
 -->
