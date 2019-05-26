@@ -178,18 +178,88 @@ export class View extends Component {
 * Increase speed of development avoinding design decisions
 * Maintenalbility by isolation of the styling options
 
-## **1.4) Early return**
+## **1.4) Early Return**
+
+
+Avoid using `style` or `className` for Components in Views to reduce visual noise, unless it is completely necessary.
+
+Rely on abstractions for defining styles for your components.
+
+See: [Proxy Pattern](https://cobuildlab.com/development-blog/react-patterns-proxy-pattern-for-components/)
+
+
+
+*PREFER THIS:*
+
+```javascript
+const NormalText = ({children}) => (
+    <p className='blue-text'>
+        {children}
+    </p>
+);
+
+const H1 = ({children, icon}) => (
+    <div className='inline-block'>
+        <h1 className='header-note'>
+            {children}
+            <span class='icon-header-note'>
+                <img src={icon} />
+            </span> 
+        </h1>
+    </div>
+);
+
+export class View extends Component {
+    render(){
+        <section>
+            <H1 icon={plus}>Note Header</H1>
+            <NormalText>Note Text</NormalText>
+        </section>
+    }
+}
+...
+```
+
+*AND NOT THIS:*
+
+```javascript
+export class View extends Component {
+    render(){
+        <section>
+            <div className='inline-block'>
+                <h1 className='header-note'>
+                    Note Header
+                    <span class='icon-header-note'>
+                        <img src={plus} />
+                    </span> 
+                </h1>
+            </div>
+        <p className='blue-text'>
+            Note Text
+        </p>
+        </section>
+    }
+}
+...
+```
+### Justification:
+
+* Reduce Visual Noice
+* Increase component reusability
+* Increase speed of development avoinding design decisions
+* Maintenalbility by isolation of the styling options
+
 
 ## **1.4) Pure functions**
 
-### **1.4) util functions over methods**
+## **1.4) util functions over methods**
 
 <TODO>
-## 2) Application Starter
+## 2) File Structure
 <TODO>
 ## 3) Architecture
 <TODO>
-## 4) File Structure
+## 4) Application Starter
 
 Organizing files are one of the most important conventions, especially for large codebases.
 
@@ -287,5 +357,5 @@ Example: `onClick`, `onLoad`, `onListMembers`
 ## 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzAwMTcyMTQsOTMxMzk0MTM5XX0=
+eyJoaXN0b3J5IjpbMjgxMTA0Mzk5LDkzMTM5NDEzOV19
 -->
