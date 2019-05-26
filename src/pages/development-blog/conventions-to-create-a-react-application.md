@@ -282,9 +282,13 @@ Based on our experience for the last years working with React, we propose this f
 project-folder 
 └───.github
 │   └───ISSUE_TEMPLATE
-│   │   file011.txt
-│   │   file012.txt
-│   │
+|	|	└───bug_report.md
+|	|	└───feature_request.md
+│   │   pull_request_template.md
+└───node_modules
+└───public
+    │   file021.txt
+    │   file022.txt
 │   └───subfolder1
 │       │   file111.txt
 │       │   file112.txt
@@ -400,5 +404,5 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MTA0ODMxNiw5MzEzOTQxMzldfQ==
+eyJoaXN0b3J5IjpbNTU4MjE5OTkxLDkzMTM5NDEzOV19
 -->
