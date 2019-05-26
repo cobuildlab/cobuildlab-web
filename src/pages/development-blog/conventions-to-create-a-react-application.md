@@ -204,7 +204,7 @@ const isDivisibleBy = (value, divisor) => (
 		return true;
 	if(divisor === 0) 
 		return false;
-	if(value === diviro) 
+	if(value === divisor) 
 		return true;
 	return value % divisor === 0;
 );
@@ -213,7 +213,7 @@ const TableView = ({children, loading}) => {
 	if(loading)
 		return <Loading size={10} />;
 
-	... logic
+	//... logic
 	return (
 	    <div className='inline-block'>
 	        <h1 className='header-note'>
@@ -233,28 +233,22 @@ const TableView = ({children, loading}) => {
 const isValidString = (text, allowEmpty = false) => (
 	if(text !== null){
 		if(text !== undefined){
-			if(allowEmpty === false) 
+			if(allowEmpty === false){
+				if (text === ''){
+					return false;
+				}else{
+					return true
+				}					
+			}
+			else...
 		}
 	}else{
 		return false;
 	}
 );
 
-const isDivisibleBy = (value, divisor) => (
-	if(value === 0) 
-		return true;
-	if(divisor === 0) 
-		return false;
-	if(value === diviro) 
-		return true;
-	return value % divisor === 0;
-);
-
 const TableView = ({children, loading}) => {
-	if(loading)
-		return <Loading size={10} />;
-
-	... logic
+	//	... logic
 	return (
 	    <div className='inline-block'>
 	        <h1 className='header-note'>
@@ -382,5 +376,5 @@ Example: `onClick`, `onLoad`, `onListMembers`
 ## 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMTIxMDUwNSw5MzEzOTQxMzldfQ==
+eyJoaXN0b3J5IjpbMTQyMzY4NzE0NCw5MzEzOTQxMzldfQ==
 -->
