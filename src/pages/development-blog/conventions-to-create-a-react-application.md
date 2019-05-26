@@ -281,8 +281,8 @@ React components can be clasified in 2 major groups depending on how they fit in
 
 | Feature |   Presentational Components (Components) |  Container Components (Views) |
 |---|---|---|
-| |  Thet are not connected directly to the Application State. There communication in handled via props |   |
-|   |   |
+| **External Communication** |  Thet are not connected directly to the Application State. Their communication in handled via props | They subscribe and react to the Application State and its changes  |
+| Internal State |Normally relies on the Store connection|Handle internally|
 |   |   |
 
 
@@ -494,6 +494,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNDA4NjUyLDI5MDg1NDgyNCwyMTQzOT
-gyNDE1LDU1ODIxOTk5MSw5MzEzOTQxMzldfQ==
+eyJoaXN0b3J5IjpbLTE5ODI2MzE5ODksMjkwODU0ODI0LDIxND
+M5ODI0MTUsNTU4MjE5OTkxLDkzMTM5NDEzOV19
 -->
