@@ -9,7 +9,7 @@ image: null
 
 This document aims to reduce the friction between patterns and ways of doing common tasks during the development of a React Web or React Native Mobile Application.
 
-This document is heavily based on the Convention proposed by [Airbnb](https://github.com/airbnb/javascript), [StandardJs](https://standardjs.com/) and our own experience developing front end javascript applications for the last 10 years.
+This document is heavily based on the Convention proposed by [Airbnb](https://github.com/airbnb/javascript), [StandardJs](https://standardjs.com/) and our own experience developing front end javascript applications since 2008 and React Applications since late 2016.
 
 Here, we explain the problem, choose a convention, and explain the reasons:
 
@@ -283,5 +283,5 @@ Example: `onClick`, `onLoad`, `onListMembers`
 ## 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMTc2NDUzOF19
+eyJoaXN0b3J5IjpbOTMxMzk0MTM5XX0=
 -->
