@@ -283,7 +283,7 @@ Based on our experience for the last years working with React, we propose this f
 
 ```
 src/ 
-└───.github
+└───assets/
 │   └───ISSUE_TEMPLATE
 |	|	└───bug_report.md
 |	|	└───feature_request.md
@@ -407,6 +407,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI1NTUyMjI5LDU1ODIxOTk5MSw5MzEzOT
-QxMzldfQ==
+eyJoaXN0b3J5IjpbLTEyNTgyNTM4MTQsNTU4MjE5OTkxLDkzMT
+M5NDEzOV19
 -->
