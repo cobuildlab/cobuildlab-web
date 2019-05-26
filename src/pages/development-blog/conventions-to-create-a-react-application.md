@@ -269,10 +269,12 @@ const TableView = ({children, loading}) => {
 * Increase readibility by excluding error and edge conditions early on the code and letting focusing on the complex part of the function
 
 
+## **1.5) **
+
+Reduce visual noice by proxy components using the [Proxy Pattern]([https://cobuildlab.com/development-blog/react-patterns-proxy-pattern-for-components/](https://cobuildlab.com/development-blog/react-patterns-proxy-pattern-for-components/))
+
+
 ## **1.5) Pure functions**
-
-Reduce visual noice by proxy components using the Proxy Pattern
-
 ## **1.4) util functions over methods**
 
 # 2) File Structure
@@ -480,6 +482,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NjkyNTQzMSwyOTA4NTQ4MjQsMjE0Mz
+eyJoaXN0b3J5IjpbMTE4MzY2OTIwNiwyOTA4NTQ4MjQsMjE0Mz
 k4MjQxNSw1NTgyMTk5OTEsOTMxMzk0MTM5XX0=
 -->
