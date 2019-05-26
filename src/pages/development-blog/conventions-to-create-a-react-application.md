@@ -269,7 +269,9 @@ const TableView = ({children, loading}) => {
 * Increase readibility by excluding error and edge conditions early on the code and letting focusing on the complex part of the function
 
 
-## **1.4) Pure functions**
+## **1.5) Pure functions**
+
+Reduce visual noice by proxy components using the Proxy Pattern
 
 ## **1.4) util functions over methods**
 
@@ -478,6 +480,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkwODU0ODI0LDIxNDM5ODI0MTUsNTU4Mj
-E5OTkxLDkzMTM5NDEzOV19
+eyJoaXN0b3J5IjpbMjA2NjkyNTQzMSwyOTA4NTQ4MjQsMjE0Mz
+k4MjQxNSw1NTgyMTk5OTEsOTMxMzk0MTM5XX0=
 -->
