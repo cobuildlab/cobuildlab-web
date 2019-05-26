@@ -313,10 +313,12 @@ Example: `AdminUser`, `Alliance`, `Company`
 ## Methods, Functions, and Instances
 
 - Methods, functions, and instances must be always camelCase. 
+- Events should always start with `on` prefix
+- Non events should start with a verb
 
-Example: `onSubmit`, `activeUser`
+Example: `onSubmit`, `activateUser`
 
-## Variables and Constans
+## Variables and Constansts
 
 - Variables must always be on camelCase.
 
@@ -375,5 +377,5 @@ Example: `onClick`, `onLoad`, `onListMembers`
 ## 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MjgxMDUzLDkzMTM5NDEzOV19
+eyJoaXN0b3J5IjpbMjczMTk1NDc4LDkzMTM5NDEzOV19
 -->
