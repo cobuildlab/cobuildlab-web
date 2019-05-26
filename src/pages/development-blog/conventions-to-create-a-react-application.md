@@ -178,6 +178,10 @@ export class View extends Component {
 * Increase speed of development avoinding design decisions
 * Maintenalbility by isolation of the styling options
 
+### **1.4) Early return**
+
+### **1.4) Pure fun**
+
 ### **1.4) Use github templates for Feature Requests and Bugs**
 
 <TODO>
@@ -283,5 +287,5 @@ Example: `onClick`, `onLoad`, `onListMembers`
 ## 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMxMzk0MTM5XX0=
+eyJoaXN0b3J5IjpbLTg4MjI4MzExOSw5MzEzOTQxMzldfQ==
 -->
