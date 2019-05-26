@@ -277,14 +277,16 @@ const TableView = ({children, loading}) => {
 
 Organizing files are one of the most important conventions, especially for large codebases and large teams, specially remote teams.
 
-We will consider the structure under the `src` folder, the project structure depends of other factors like the platform, linting tools, version control tools, react version, etc.
+We will only consider the structure under the `src` folder, the project structure depends of other factors like the platform, linting tools, version control tools, react version, etc.
 
-Based on our experience for the last years working with React, we propose this file Structure:
+We use the terms **App Specific** to resources that can be used across the entire app, and *Module Sp*
+
+Based on our experience for the last years working with React, we propose this file Structure with examples:
 
 ```
 src/ 
 └───assets/
-│   └───ISSUE_TEMPLATE
+│   └───images/
 |	|	└───bug_report.md
 |	|	└───feature_request.md
 │   │   pull_request_template.md
@@ -407,6 +409,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTgyNTM4MTQsNTU4MjE5OTkxLDkzMT
-M5NDEzOV19
+eyJoaXN0b3J5IjpbLTM0MTQ2NzA1NSw1NTgyMTk5OTEsOTMxMz
+k0MTM5XX0=
 -->
