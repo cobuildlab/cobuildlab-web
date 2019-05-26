@@ -17,7 +17,7 @@ The needs for identifyng a user on your application is very common. Identity, pe
 
 ## Authentication Provider
 
-In moderm web applications the Authentication Provider is responsable to confirm the users identity in one of several ways, for example:
+In modern web applications the Authentication Provider is responsible to confirm the users identity in one of several ways, for example:
 
 - A Username / Password combination on a database
 - A third party service
@@ -40,11 +40,11 @@ The Authentication Provider is almost exactly the same in every case:
 
 1) The User request the Authentication to the Auth Provider
 2) The Auth Provider validates the user identify and permissions
-3) If succesfull, it generates a token to identify him against any other entity
-4) The user recibes the token and saves it to use with any subsequent request to access protected services
+3) If successful, it generates a token to identify him against any other entity
+4) The user receives the token and saves it to use with any subsequent request to access protected services
 5) The User makes a request to a protected service or resource
 6) The protected service checks the validity of the token with the Auth Provider
-7) If succesfull, allows the use of the resource
+7) If successful, allows the use of the resource
 
 
 ## Auth0
