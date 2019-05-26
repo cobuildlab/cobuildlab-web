@@ -359,10 +359,17 @@ React componets that can be App specific under `shared/components/` or module sp
 Module specific files that holds Actions of the module. (See Architecture)
 
 ## *\*-models* files
-Module 
+Module specific files that holds constants and Model Objects or Classes.
+
 ## *\*-store* files
+Module specific files that that holds the store components. (See Architecture)
+
 ## *\*-permissions* files
+Module specific files that that holds functions related to permissions.
+
 ## *\*-utils* files
+Functions or Classes that can be App specific under `shared/` or module specific under: `modules/<module-name>/components/`
+
 ## *\*.css* files
 
 
@@ -468,6 +475,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNzY4OTAxNSwyMTQzOTgyNDE1LDU1OD
+eyJoaXN0b3J5IjpbLTExMDQzMTU3NSwyMTQzOTgyNDE1LDU1OD
 IxOTk5MSw5MzEzOTQxMzldfQ==
 -->
