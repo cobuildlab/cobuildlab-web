@@ -332,7 +332,7 @@ src/
 │       │   user-types.json
 │   └───typings/
 │       │   ...
-└───graphql/
+└───graphql/							// Others App specific folders
 |	│   types.js
 │   string-utils.json
 │   validation-utils.json
@@ -348,7 +348,9 @@ App Specific folder that contains images files like png, svg, jpg, etc
 Main folder to hold the the Module Specific folders
 
 ## *shared* folder
-App Specific folder to hold any asset that is not an image and that it should be 
+App Specific folder to hold any asset that is not an image and that it should be shared across modules.
+
+Think about this folder as any potential code that could be put in a node package and be 
 
 ## *components* folder
 ## *\*-actions* files
@@ -461,6 +463,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NzE4OTk1MCwyMTQzOTgyNDE1LDU1OD
-IxOTk5MSw5MzEzOTQxMzldfQ==
+eyJoaXN0b3J5IjpbMzE2NDE1MDkwLDIxNDM5ODI0MTUsNTU4Mj
+E5OTkxLDkzMTM5NDEzOV19
 -->
