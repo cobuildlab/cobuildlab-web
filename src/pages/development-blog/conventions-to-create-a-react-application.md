@@ -302,12 +302,9 @@ src/
 │       │   file111.txt
 │       │   file112.txt
 │   └───graphql/
-│   
-└───folder2
-    │   file021.txt
-    │   file022.txt
-│   README.md
-│   file001.txt    
+│   index.js
+│   App.js
+│   index.css
  ```
 <TODO:>
 # 3) Architecture
@@ -413,6 +410,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjQ1MTgyMTAsNTU4MjE5OTkxLDkzMT
-M5NDEzOV19
+eyJoaXN0b3J5IjpbLTM1ODA1MDEwOSw1NTgyMTk5OTEsOTMxMz
+k0MTM5XX0=
 -->
