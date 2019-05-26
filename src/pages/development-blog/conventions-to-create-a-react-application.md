@@ -306,7 +306,9 @@ src/
 | 	|	│   └───components/
 |	|	|	|	└───DashboardGraph.js
 |	|	|	|	└───NavitationBar.js
-|	|	|	└───SchoolView.js
+|	|	|	└───SchoolDetailView.js
+|	|	|	└───SchoolUpdateView.js
+|	|	|	└───SchoolCreateView.js
 |	|	|	└───school-actions.js
 |	|	|	└───school-permissions.js
 |	|	|	└───school-queries.js
@@ -330,11 +332,16 @@ src/
 │   └───graphql/
 │       │   types.js
 │   └───typings/
+│       │   ...
 │   index.js
 │   App.js
 │   index.css
  ```
-<TODO:>
+
+## assets
+## modules
+## shared
+## *-
 # 3) Architecture
 <TODO:>
 # 4) Application Starter
@@ -438,6 +445,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjMxODgyMTYsNTU4MjE5OTkxLDkzMT
-M5NDEzOV19
+eyJoaXN0b3J5IjpbMjAwOTYwNzE0MCw1NTgyMTk5OTEsOTMxMz
+k0MTM5XX0=
 -->
