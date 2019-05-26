@@ -80,7 +80,7 @@ Extensions with a location, with a distinctive phrase, with highlighted text, wi
 
 **See the following example of extensions in Google Ads**
 
-![extension-example](./media/extension-example.png)
+![ads-extension-example](./media/extension-example.png)
 
 Source: [Wordstream](https://www.wordstream.com/blog/ws/2016/09/06/sitelink-extensions-dos-and-donts)
 
@@ -109,3 +109,6 @@ There is a saying that goes: if you don't take risks, you don't win and we all w
 This is the end for now of our guide of tips to **optimize ads campaigns**.  We hope you find them very useful and that you can succeed with them.  If you want to know information like this, we invite you to subscribe to our newsletter, so that you get directly to your mail all these tips to help you manage your brand.
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTg3ODYzODMyNF19
+-->
