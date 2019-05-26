@@ -341,14 +341,15 @@ src/
 │   index.css
  ```
 
-## assets
-## modules
-## shared
-## *-actions 
-## *-models
-## *-store
-## *-permissions
-## *-utils
+## *assets* folder
+## *modules* folder
+## *shared* folder
+## *components* folder
+## *\*-actions* files
+## *\*-models* files
+## *\*-store* folder
+## *\*-permissions* folder
+## *\*-utils* folder
 
 
 
@@ -453,6 +454,6 @@ Example: `onClick`, `onLoad`, `onListMembers`
 # 18) Testing
 <TODO>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ2MzQyMDY4LDIxNDM5ODI0MTUsNTU4Mj
-E5OTkxLDkzMTM5NDEzOV19
+eyJoaXN0b3J5IjpbLTE0MDM4ODU1OTYsMjE0Mzk4MjQxNSw1NT
+gyMTk5OTEsOTMxMzk0MTM5XX0=
 -->
