@@ -1,5 +1,5 @@
 ---
-title: "Validating your business idea Part II"
+title: "Validating your business idea: Part 2"
 date: "2019-05-25T16:24:04.000Z"
 template: blog
 tags: Education
