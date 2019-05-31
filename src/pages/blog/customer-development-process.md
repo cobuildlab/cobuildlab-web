@@ -1,9 +1,9 @@
 ---
 title: "The Customer Development Process: Developing a consumer product for consumers"
-date: "2018-11-28T16:24:04.000Z"
+date: "2019-05-31T16:24:04.000Z"
 template: blog
 tags: Education
-image: "./media/ios-app.jpg"
+image: "./media/customer-development.jpg"
 ---
 
 Building a software product base on the customers'needs, opinion, desires, and criteria.
@@ -84,15 +84,43 @@ This step has three sub-phases:
 
 * **Problem-solution Fit:** that is the validation with customers where they will understand and recognize the specific solution will solve a known problem to such a degree that they will buy it.
 
-* **Product Market Fit:** At this point, it is not 100% necessary to have a first version of the product, but once you have collected the previous information, you should start to define, at least on paper, how you are going to satisfy the need or the problem you identified. And you should make sure to design a product that covers the demand of the market and the consumers too. This perfect match between the solution and the market demand generates what [we define as Product Market Fit. If you want to know a little more about this term we invite you to visit another post we made about this](https://cobuildlab.com/blog/achieving-product-market-fit-in-your-software-product/). In the meantime, it is enough for you to see that it is the perfect match between your offer and the market demand. This activity can do it in the form of a hypothesis, or if you wish, it is also possible to check it with an MVP or a prototype that you present to the customers after the initial interview of this step of the process. 
+* **Product Market Fit:** At this point, it is not 100% necessary to have a first version of the product, but once you have collected the previous information, you should start to define, at least on paper, how you are going to satisfy the need or the problem you identified. And you should make sure to design a product that covers the demand of the market and the consumers too. This perfect match between the solution and the market demand generates what [we define as Product Market Fit. If you want to know a little more about this term we invite you to visit another post we made about this](https://cobuildlab.com/blog/achieving-product-market-fit-in-your-software-product/). In the meantime, it is enough for you to see that it is the perfect match between your offer and the market demand. This activity can do it in the form of a hypothesis, or if you wish, it is also possible to check it with an [MVP](https://cobuildlab.com/blog/minimum-viable-product/) or a prototype that you present to the customers after the initial interview of this step of the process. 
 
 * **Sales Funnel:** defined as the customer purchase process business or marketing activities that must be done to mobilize consumers through the funnel and make them effectively buy your proposal.
 
+<title-3>B. Customer Validation</title-3>
 
+**It is composed for these items:**
 
+**1. MVP validated**
+**2. Validated Sales and Marketing roadmap:** This means that you understand the market segment correctly you are working with and with this, you optimized your conversion funnel from the knowledge of the product and the references you may have from customers. In practical terms, at this stage, you can determine that the money you invest in marketing will have its return and also its profit.
+**3. Validated Business Model**
 
+This stage is a more general idea. At this point, validation tells you that your business model is sustainable and scalable over time. In other words, the value you offer and establish generates profits over time that could exceed the operating costs of your business; in other words, the prices in technology, human resources, technical equipment, etc. 
 
+Another type of startups or businesses at this point are limited to be governed by a market study,  and in the best cases, they make the validation by the hand of one or two testers or using a small consumers population. This is not bad, but under the perspective of the Customer Development Process, this is not enough, because the validation stage must be more in-depth. 
 
+It is necessary to have more information that a market study or validation bring us. 
 
+<title-2>2. Execution Stage</title-2>
 
+<title-3>A. Customer Creation</title-3>
+
+It's the third step. And that's where you're going to find some customers or at least the first ones. It can be with marketing efforts or the old-fashioned way, door to door efforts.
+
+We would perhaps bet on less expensive methods than marketing, which should be done concretely in the next step. 
+
+It can be defined as an initiation into the market. 
+
+And of course, at this stage, you can also fine-tune details on the fly because as we told you, what matters is what the customer wants or needs more than what you think the product should comply. 
+
+<title-3>B. Customer Building</title-3>
+
+It would be the last stage. Where you capture all the learning and information you got in the previous steps and took them to action.
+
+You structure departments, make the product, execute the marketing and sales plan, and make your project scale as high as possible. 
+
+At this stage is where most economic resources are consumed because you already have all the information about the customer, the need, the solution, and the market. 
+
+And that's all there is to it. With the **Customer Development Process**, you can develop software products and any product from a knowledge and action plan based on the understanding of the customer, the market, and the need or problem to solve. This way is how the product is structured, and then it is launched to the market. If you want to know more about this, consult us, we are ready to help.
 
