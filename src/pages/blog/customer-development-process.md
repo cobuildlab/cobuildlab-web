@@ -94,6 +94,8 @@ This step has three sub-phases:
 
 **1. MVP validated**
 **2. Validated Sales and Marketing roadmap:** This means that you understand the market segment correctly you are working with and with this, you optimized your conversion funnel from the knowledge of the product and the references you may have from customers. In practical terms, at this stage, you can determine that the money you invest in marketing will have its return and also its profit.
+
+
 **3. Validated Business Model**
 
 This stage is a more general idea. At this point, validation tells you that your business model is sustainable and scalable over time. In other words, the value you offer and establish generates profits over time that could exceed the operating costs of your business; in other words, the prices in technology, human resources, technical equipment, etc. 
