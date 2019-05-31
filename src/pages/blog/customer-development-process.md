@@ -93,6 +93,7 @@ This step has three sub-phases:
 **It is composed for these items:**
 
 **1. MVP validated**
+
 **2. Validated Sales and Marketing roadmap:** This means that you understand the market segment correctly you are working with and with this, you optimized your conversion funnel from the knowledge of the product and the references you may have from customers. In practical terms, at this stage, you can determine that the money you invest in marketing will have its return and also its profit.
 
 
