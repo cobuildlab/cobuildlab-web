@@ -61,7 +61,7 @@
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.11.1",
-    "gatsby-remark-prismjs": "^3.2.6",
+    "gatsby-remark-prismjs": "^3.2.9",
     "gh-pages": "^1.2.0",
     "prettier": "^1.14.3"
   },
