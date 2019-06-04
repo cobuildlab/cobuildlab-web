@@ -52,34 +52,7 @@ python get-pip.py
 pip3 --version
 ```
 
-### 2. Create a requirements File with this content:
-
->>> requirements.txt
-```bash
-aiohttp
-cchardet
-aiodns
-```
-
-### 2. In your project Folder Create the virtualenv
-
-```bash
- python3 -m venv .
- ```
-
-### 3. Install AIOHTTP Framework and dependencies:
-
-```bash
-pip3 install -r requirements.txt
-```
- 
-### 4. Activate the virtual Env (Unix Bash)
- 
-```bash
-source bin/activate
-```
-
-### 3. Creating the Project
+### 2. Creating the Project Folder and Files
 
 ```sh
 mkdir aiohttp_api
@@ -88,7 +61,36 @@ touch server.py
 touch client.py
 ```
 
-### 4. My First AOIHTTP Server App
+### 3. Create a requirements File with this content:
+
+>>> requirements.txt
+```bash
+aiohttp
+cchardet
+aiodns
+```
+
+### 4. In your project Folder Create the virtualenv
+
+```bash
+ python3 -m venv .
+ ```
+ 
+ ### 5. Activate the virtual Env (Unix Bash)
+  
+ ```bash
+ source bin/activate
+ ```
+
+### 6. Install AIOHTTP Framework and dependencies:
+
+```bash
+bin/pip3 install -r requirements.txt
+```
+ 
+
+
+### 7. My First AOIHTTP Server App
 
 server.py
 
@@ -126,7 +128,7 @@ app.add_routes(routes)
 web.run_app(app)
 ```
 
-### 5. My First AOIHTTP Client App
+### 8. My First AOIHTTP Client App
 
 client.py
 
@@ -147,9 +149,9 @@ loop = asyncio.get_event_loop()
 loop.run_until_complete(main())
 ```
 
-# 5. Run the apps
+# 9. Run the apps
 
 ```sh
 chmod a+x app.py
-python3 app.py
+bin/python3 app.py
 ```
