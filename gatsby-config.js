@@ -37,7 +37,12 @@ module.exports = {
             },
           },
           'gatsby-remark-component',
-          // 'gatsby-remark-prismjs',
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              classPrefix: 'code-x-language-',
+            },
+          },
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
         ],

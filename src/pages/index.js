@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import 'react-toastify/dist/ReactToastify.min.css'
+import '../assets/prism.css';
 
 import Layout from '../components/layout'
 import Contact from '../components/Contact'
@@ -48,7 +49,6 @@ import {
   CardContent,
   Hero,
   HeroBody,
-  Tag,
 } from 'bloomer'
 
 class Index extends React.Component {

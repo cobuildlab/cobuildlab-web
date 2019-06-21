@@ -161,6 +161,6 @@ So a Presentational Component:
 
 ## Conclusions:
 
-The main benefit of using this patterns is that it forces you to write components that are highly reusable for the Presentational part of the application, and clearly, it defines responsibilities into different React parts of the application/
+The main benefit of using this patterns is that it forces you to write components that are highly reusable for the Presentational part of the application, and clearly, it defines responsibilities into different React parts of the application
 
 

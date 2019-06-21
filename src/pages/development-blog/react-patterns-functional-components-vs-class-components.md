@@ -25,7 +25,7 @@ According to the [React documentation](https://reactjs.org/docs/components-and-p
 
 The simplest example of a React Component can be:
 
-```javascript
+```javascript{numberLines: true}
 
 function BoldParagraph(props){
   return (
