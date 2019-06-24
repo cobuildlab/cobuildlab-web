@@ -73,7 +73,7 @@ React Native lets you build mobile apps using only JavaScript. It uses the same 
 
 ## My First IOS and Android App
 
-This instruction is based on the [Official React Native Documentation](https://facebook.github.io/react-native/docs/getting-started)
+This instructions are based on the [Official React Native Documentation](https://facebook.github.io/react-native/docs/getting-started)
 
 [Github Repo](https://github.com/cobuildlab/react-native-task-list)
 
