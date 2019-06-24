@@ -130,8 +130,6 @@ if __name__ == '__main__':
 ```sh
 chmod a+x app.py
 python3 app.py
-<<<<<<< HEAD
 ```
 =======
 ```
->>>>>>> 65bc29999d4eff70086bd10322c6a083b7740fc4

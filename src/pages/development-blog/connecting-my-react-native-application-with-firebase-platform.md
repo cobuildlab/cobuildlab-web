@@ -1,6 +1,6 @@
 ---
 title: Connecting my React Native Application with Firebase platform
-date: 2019-06-01T01:00:00+00:00
+date: 2019-06-24T01:00:00+00:00
 tags: 
 template: development-post
 permalink: /connecting-my-react-application-with-firebase-platform/

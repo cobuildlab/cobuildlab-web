@@ -7,7 +7,7 @@ permalink: /authentication-syndication-with-react-and-auth0/
 image: null
 ---
 
-The needs for identifyng a user on your application is very common. Identity, personal data, preferences, permissions, etc are some of the cases where you will require to user a mechanism to authenticate a user who is accesign your app.
+The needs for identifying a user on your application is very common. Identity, personal data, preferences, permissions, etc are some of the cases where you will require to user a mechanism to authenticate a user who is accessing your app.
 
 
 ## Authentication
@@ -49,7 +49,6 @@ The Authentication Provider is almost exactly the same in every case:
 
 ## Auth0
 
-
 In this tutorial we'll show you how to use React.js and Auth0 to create and to handle User Authentication for a web application.
 
 Auth0 provides authentication and authorization as a service, this help Front-End Developers build applications that need authentication without backend service.
@@ -58,8 +57,8 @@ Auth0 provides authentication and authorization as a service, this help Front-En
 
 Auth0 allows to perform features like:
 - OAuth 2.0  (OAuth 2.0 is the industry-standard protocol for authorization)
-- Dashboard (Lastest Logins, New Signups, Login Activity)
-- Create an Appliaction (SPA, Native, RWA)
+- Dashboard (Latest Logins, New Signups, Login Activity)
+- Create an Application (SPA, Native, RWA)
 - APIs
 - SSO Integrations
 - Connections (Database, Social, Enterprise, Passwordless)
@@ -69,7 +68,7 @@ Auth0 allows to perform features like:
 - Hooks
 - Multifactor Authentication
 - Emails (Templates, Providers)
-- Logs (Sucessfull Logins, Issues)
+- Logs (Successful Logins, Issues)
 
 
 #####
