@@ -268,13 +268,8 @@ const View = () => {
 * Increase component reusability 
 * Increase component  portability
 
-TODO: 
-### 2) Application Starter
-TODO
-## 3) Architecture
-TODO
-## 4) File Structure
-## **1.4) Return Early pattern for methods and functions instead of conditionals**
+
+## **1.6) Return Early pattern for methods and functions instead of conditionals**
 
 
 Enforce  **Return Early** pattern in functions and methods, including the render method of React components.
@@ -365,7 +360,7 @@ const TableView = ({children, loading}) => {
 * Increase readibility by excluding error and edge conditions early on the code and letting focusing on the complex part of the function
 
 
-## **1.5) Enforce the difference Between Presentational Components and Container Components (Views) **
+## **1.7) Enforce the difference Between Presentational Components and Container Components (Views) **
 
 Reference: [React Patterns Presentational and Container Components]([https://cobuildlab.com/development-blog/react-patterns-container-and-presentational-components/](https://cobuildlab.com/development-blog/react-patterns-container-and-presentational-components/))
 
@@ -382,8 +377,8 @@ React components can be clasified in 2 major groups depending on how they fit in
 | **Renders**| Mostly understands **WHAT** to render   | It understands **WHAT** and **HOW** to render  |
 
 
-## **1.6) Pure functions**
-## **1.7) util functions over methods**
+## **1.8) Pure functions**
+## **1.9) util functions over methods**
 
 # 2) File Structure
 
@@ -501,13 +496,84 @@ The main rules are:
 6) **Actions** can be combined in to more complex **actions**
 7) **Stores** propagates changes to all subscribers
 8) Any part of the application can have read only access to the application current state or **store**
-9) Posbile events or changes on the application must be declared either on a declarative or programatically way
-10) Consistency checks must always throw errors: a) A view can't subscribe to an event or change that doesn't exist, b) An action can never dispatch an event or change that doesn' exists c) A store can't handle data of an event or change that doesn't exist
+9) Possible events or changes on the application must be declared either on a declarative or programmatically way
+10) Consistency checks must always throw errors: a) A view can't subscribe to an event or change that doesnt exist, b) An action can never dispatch an event or change that doesn' exists c) A store can't handle data of an event or change that doesn't exist
 
-Any library that can comply with this rules is a good fit to handle the Architecture. For conience, a state library has been created with this set of rules in mind: [Flux State]([https://github.com/cobuildlab/flux-state](https://github.com/cobuildlab/flux-state)) with a convenient React Wrapper: [React Flux State]([https://github.com/cobuildlab/react-flux-state](https://github.com/cobuildlab/react-flux-state))
+Any library that can comply with this rules is a good fit to handle the Architecture. For convenience, a state library has been created with this set of rules in mind: [Flux State]([https://github.com/cobuildlab/flux-state](https://github.com/cobuildlab/flux-state)) with a convenient React Wrapper: [React Flux State]([https://github.com/cobuildlab/react-flux-state](https://github.com/cobuildlab/react-flux-state))
 
-# 4) Application Starter
-<TODO:>
+# 4) Formatting and Linting:
+
+We use one of the most populars libraries standard javascript (eslint)[https://eslint.org/], along with (prettier)[https://prettier.io/] for code formatting.
+
+We enforce this tools by using (husky + lint-staged)[https://github.com/okonet/lint-staged] for files on the staging area when you do a commit to git.
+
+To set it up:
+
+## 1) place `.eslintrc.js` and `.prettierrc.json`
+
+>>> .eslint.json
+
+```javascript 1.6
+module.exports = {
+  extends: [
+    'react-app',
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'eslint-config-prettier',
+  ],
+  rules: {
+    indent: ['error', 2],
+    semi: [2, 'always'],
+    'no-console': ['error', { allow: ['warn', 'error', 'log'] }],
+  },
+};
+```
+
+>>> .prettierrc.json
+
+```json
+{
+  "printWidth": 100,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": true,
+  "jsxSingleQuote": false,
+  "bracketSpacing": true,
+  "jsxBracketSameLine": true,
+  "arrowParens": "always",
+  "trailingComma": "all"
+}
+```
+
+## 2) And Add the following sections to your `package.json`:
+
+```json
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+```
+
+## 3) Install the following libraries:
+
+```bash
+npm i --save-dev eslint-config-prettier husky lint-staged prettier
+``` 
+
+## 4) Run `npm i` 
+
 # 5) Naming Conventions
 
 Naming is important for quickly understand the purpose of an element: Classes, constants, variables or methods.
@@ -515,7 +581,7 @@ Naming is important for quickly understand the purpose of an element: Classes, c
 ## General Rules:
 - For React Components file names, use <Entity Name><Purpose><Object Type>. Example: `UserCreateView.js`, `TaskEditView.js`, `CompanyMembersListComponent.js`
 - For non React Components file names, use <entity-name>-<object-type>. Example: `user-actions.js`, `user-store.js`, `company-permissions.js`
-- For Module names follow file name convetions separating words using the hyppen `-`
+- For Module names follow file name conventions separating words using the hyphen `-`
 - Don't use short or ambiguous names like: `q`, `search`, `getById`, `Member`, be specific
 - A filename must always be exact to its default export
 - Acronyms and initialisms should always be all uppercase or all lowercase. [Reference](https://github.com/airbnb/javascript#naming--Acronyms-and-Initialisms)
@@ -546,7 +612,7 @@ Example: `AdminUser`, `Alliance`, `Company`
 
 Example: `onSubmit`, `activateUser`
 
-## Variables and Constansts
+## Variables and Constants
 
 - Variables must always be on camelCase.
 
@@ -581,31 +647,17 @@ Example: `_extractKeys`, `_compute`
 Example: `onClick`, `onLoad`, `onListMembers`
 
 
-# 6) Linting and Code Formatting
-
-# 7) Github templates
-
-# 8) State Management
-<TODO>
-# 9) Props validation
-<TODO>
+# 6) Application Starter
+# 7) Linting and Code Formatting
+# 8) Github templates
+# 9) State Management
+# 10) Props validation
 # 10) Css and Theme
-<TODO>
 # 11) HOC vs Composition
-<TODO>
 # 12) API communication
-<TODO>
 # 13) Notifications
-<TODO>
 # 14) Routing
-<TODO>
-# 15) State intialization
+# 15) State initialization
 # 16) Data Validation
 # 17) Testing
 # 18) Testing
-<TODO>
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNTk5NTE3MCwyOTA4NTQ4MjQsMjE0Mz
-k4MjQxNSw1NTgyMTk5OTEsOTMxMzk0MTM5XX0=
--->
