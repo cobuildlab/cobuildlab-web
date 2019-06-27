@@ -1,6 +1,6 @@
 ---
 title: "Venture cafe Miami, the place where entrepreneurs meet innovators"
-date: "2019-06-14T08:00:55.000Z"
+date: "2019-06-27T08:00:55.000Z"
 template: blog
 tags: Miami
 image: "./media/venturecafe1.png"
