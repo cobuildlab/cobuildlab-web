@@ -363,7 +363,7 @@ hr {
 
 /*image backgroun header*/
 .bg-header {
-  background-image: url(../../resources/background-1.png);
+  /*background-image: url(../../resources/background-1.png);*/
   /*background-color: rgba(70, 70, 70, 0.10) !important;*/
   /*color: #254a61 !important;*/
   width: 100%;
