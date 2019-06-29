@@ -1,9 +1,9 @@
 ---
-title: "NVIDIA to boost  supercomputers with ARM processors"
+title: "NVIDIA to boost supercomputers with ARM processors"
 date: "2019-06-24T16:24:04.000Z"
 template: blog
 tags: News
-image: "./media/NVIDIA ARM-01.jpg"
+image: "./media/NVIDIA-ARM-01.jpg"
 ---
 
 <title-2>NVIDIA to boost  supercomputers with ARM processors</title-2>

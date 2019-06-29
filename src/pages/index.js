@@ -106,6 +106,7 @@ class Index extends React.Component {
       'props.data.site.siteMetadata.description',
     )
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const customerSuccessStories = get(this, 'props.data.customerSuccessStories.edges')
     const siteKey = process.env.RECAPTCHA_SITEKEY
 
     return (
@@ -256,12 +257,47 @@ class Index extends React.Component {
                   <Column isSize="1/3" key={node.fields.slug}>
                     <Link to={node.fields.slug}>
                       <Card className="card-p">
-                        <CardContent
-                          className="card-post"
-                          style={{
-                            backgroundImage: `url(${image})`,
-                          }}
-                        />
+                        <CardImage className="card-post">
+                          <Image isRatio="4:8" src={image} className="card-post"/>
+                          <Content className="title-post">
+                            <small>
+                              {' '}
+                              <Icon
+                                icon={clockO}
+                                style={{ paddingTop: 5 }}
+                              />{' '}
+                              {node.frontmatter.date}
+                            </small>
+                            <Subtitle hasTextColor="white">{title}</Subtitle>
+                          </Content>
+                        </CardImage>
+
+                      </Card>
+                    </Link>
+                  </Column>
+                )
+              })}
+            </Columns>
+          </Container>
+        </section>
+        {/*Section Latest News*/}
+
+        {/*Section Latest News*/}
+        <section className="section">
+          <Container hasTextAlign="centered">
+            <Link to="/customer-success-stories">
+              <Title className="title-section">Customer Success Stories</Title>
+            </Link>
+            <Columns isCentered>
+              {customerSuccessStories.map(({ node }) => {
+                const title = get(node, 'frontmatter.title') || node.fields.slug
+                const image =
+                  get(node, 'frontmatter.image.publicURL') || defaultImg
+                return (
+                  <Column isSize="1/3" key={node.fields.slug}>
+                    <Link to={node.fields.slug}>
+                      <CardImage>
+                        <Image isRatio="4:8" src={image}/>
                         <Content className="title-post">
                           <small>
                             {' '}
@@ -273,7 +309,7 @@ class Index extends React.Component {
                           </small>
                           <Subtitle hasTextColor="white">{title}</Subtitle>
                         </Content>
-                      </Card>
+                      </CardImage>
                     </Link>
                   </Column>
                 )
@@ -282,54 +318,6 @@ class Index extends React.Component {
           </Container>
         </section>
         {/*Section Latest News*/}
-
-        {/*Section Customer Success Stories*/}
-        <section className="section bg-section">
-          <Container hasTextAlign="centered">
-            <Link to="/customer-success-stories">
-              <Title className="title-section">Customer Success Stories</Title>
-            </Link>
-            <Columns isCentered>
-              <Column isSize="1/3">
-                <Card>
-                  <Link to="/customer-success-stories/propagad">
-                    <CardImage>
-                      <Image isRatio="4:8" src={propagadImg}/>
-                      <p className="name-team">
-                        <strong>PROPAGAD</strong>
-                      </p>
-                    </CardImage>
-                  </Link>
-                </Card>
-              </Column>
-              <Column isSize="1/3">
-                <Card>
-                  <Link to="/customer-success-stories/4geeks-academy">
-                    <CardImage>
-                      <Image isRatio="4:8" src={academyImg}/>
-                      <p className="name-team">
-                        <strong>4Geeks Academy</strong>
-                      </p>
-                    </CardImage>
-                  </Link>
-                </Card>
-              </Column>
-              <Column isSize="1/3">
-                <Card>
-                  <Link to="/customer-success-stories/payklever-campaign-manager">
-                    <CardImage>
-                      <Image isRatio="4:8" src={paykleverImg}/>
-                      <p className="name-team">
-                        <strong>Payklever Campaign Manager</strong>
-                      </p>
-                    </CardImage>
-                  </Link>
-                </Card>
-              </Column>
-            </Columns>
-          </Container>
-        </section>
-        {/*Section Customer Success Stories*/}
 
         <section className="section">
           <Container hasTextAlign="centered">
@@ -460,7 +448,38 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 3
-      filter: {fileAbsolutePath: {regex: "/(blog)/.*\\.md$/"}}
+      filter: {fileAbsolutePath: {regex: "/(pages/blog)/.*\\.md$/"}}
+    ) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            tags
+            image {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 480) {
+                  aspectRatio
+                  base64
+                  sizes
+                  src
+                  srcSet
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    customerSuccessStories:allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 3
+      filter: {fileAbsolutePath: {regex: "/(pages/customer-success-stories)/.*\\.md$/"}}
     ) {
       edges {
         node {

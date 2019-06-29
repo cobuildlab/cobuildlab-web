@@ -244,7 +244,7 @@ class PrivacyPolicy extends React.Component {
                 <p>If you have any questions about this Privacy Policy, please contact us:</p>
                 <p>By email: alacret@cobuildlab.com
                   <br/>
-                  By phone number: 7866003776</p>
+                  By phone number: 7869913467</p>
               </Column>
             </Columns>
           </Container>

@@ -3,7 +3,7 @@ title: "Know the 7 reasons why a Software Startup can fail beyond technical and 
 date: "2019-06-12T16:24:04.000Z"
 template: blog
 tags: Education
-image: "./media/why-a-startup-can-fail copy.jpg"
+image: "./media/why-a-startup-can-fail.jpg"
 ---
 
 

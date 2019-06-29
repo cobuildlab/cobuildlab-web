@@ -39,7 +39,7 @@ class header extends React.Component {
             <NavbarBrand>
               <NavbarItem>
                 <Link className="link-nav" to="/">
-                  <img src={logo} style={{ marginRight: 5 }} />
+                  <img src={logo} style={{ marginRight: 5 }}/>
                 </Link>
               </NavbarItem>
               <NavbarBurger
@@ -53,13 +53,8 @@ class header extends React.Component {
             >
               <NavbarEnd>
                 <NavbarItem>
-                  <Link className="link-nav" to="/">
-                    Home
-                  </Link>
-                </NavbarItem>
-                <NavbarItem>
-                  <Link className="link-nav" to="/#process">
-                    Cobuild Process
+                  <Link className="link-nav" to="/services">
+                    Services
                   </Link>
                 </NavbarItem>
                 <NavbarItem>
@@ -67,11 +62,7 @@ class header extends React.Component {
                     Customer Success Stories
                   </Link>
                 </NavbarItem>
-                <NavbarItem>
-                  <Link className="link-nav" to="/services">
-                    Services
-                  </Link>
-                </NavbarItem>
+
                 <NavbarItem>
                   <Link className="link-nav" to="/blog">
                     Blog
@@ -112,23 +103,13 @@ class header extends React.Component {
             >
               <NavbarEnd>
                 <NavbarItem>
-                  <Link className="link-nav" to="/">
-                    Home
-                  </Link>
-                </NavbarItem>
-                <NavbarItem>
-                  <Link className="link-nav" to="/#process">
-                    Cobuild Process
+                  <Link className="link-nav" to="/services">
+                    Services
                   </Link>
                 </NavbarItem>
                 <NavbarItem>
                   <Link className="link-nav" to="/customer-success-stories">
                     Customer Success Stories
-                  </Link>
-                </NavbarItem>
-                <NavbarItem>
-                  <Link className="link-nav" to="/services">
-                    Services
                   </Link>
                 </NavbarItem>
                 <NavbarItem>

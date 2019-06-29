@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import get from 'lodash/get';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import {
   Hero,
   HeroBody,
-  HeroHeader,
   Container,
   Title,
   Subtitle,
@@ -118,20 +117,21 @@ class ServicesIndex extends React.Component {
             <Columns>
               <Column>
                 <Title isSize={2} hasTextColor="black" className="mb-2">
-                  <Icon size={32} icon={checkmark}/> Digital Transformation
+                  <Icon size={32} icon={checkmark}/> Training
                 </Title>
                 <Subtitle isSize={5}>
                   <strong>
-                    Digital transformation is the process of innovative revolution
-                    driven by the rapid adoption of technologies in all aspects of
-                    our daily life.
+                    With over 10 years of experience developing web and mobile applications with our agile techniques we can drive success to your Software Development Team.
                   </strong>
                 </Subtitle>
                 <p>
-                  Leverage the technology to disrupt current processes could be a
-                  challenging job, this is where experience and innovation merge
-                  to produce a highly efficient outcome to move your company
-                  forward in the market.
+                  We provide training in the areas of:
+                  <ul>
+                    <li>- Scrum framework</li>
+                    <li>- Continuous integration and Continuous Delivery for Web Development</li>
+                    <li>- React and React Native development</li>
+                    <li>- API design and development</li>
+                  </ul>
                 </p>
               </Column>
             </Columns>
@@ -153,24 +153,6 @@ class ServicesIndex extends React.Component {
                 </p>
               </Column>
             </Columns>
-
-            <Columns>
-              <Column>
-                <Title isSize={2} hasTextColor="black" className="mb-2">
-                  <Icon size={32} icon={checkmark}/> It Support
-                </Title>
-                <Subtitle isSize={5}>
-                  <strong>
-                    Solutions to keep your business 100% up, 24 hours a day, 7 days a week.
-                  </strong>
-                </Subtitle>
-                <p>
-                  Our broad experience in Cloud Services, TI infrastructure, Help Desks, Virtualization, Hosting, allow
-                  us to improve and maintain your operations at the best possible level.
-                </p>
-              </Column>
-            </Columns>
-
           </Container>
         </section>
       </Layout>

@@ -3,20 +3,15 @@ import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Layout from '../../components/layout'
-import defaultImg from '../../resources/default-post.jpg'
 import {
   Hero,
   HeroBody,
   Container,
   Title,
-  Tabs,
-  TabList,
-  Tab,
   Subtitle,
   Columns,
   Column,
   Card,
-  CardContent,
   Content,
   Tag,
 } from 'bloomer'
@@ -47,7 +42,7 @@ class BlogIndex extends React.Component {
     const siteTitle = 'Software Development Blog'
     const siteDescription = get(
       this,
-      'props.data.site.siteMetadata.description'
+      'props.data.site.siteMetadata.description',
     )
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
@@ -68,12 +63,10 @@ class BlogIndex extends React.Component {
                     {siteTitle}
                   </Title>
                   <Subtitle isSize={5}>
-                    Ideas, advice, value and above all, entrepreneurship. <br />{' '}
-                    Unique content made as a guide for entrepreneurs that intend
-                    to offer new opportunities in the Startup World.
+                    Development team playground.
                   </Subtitle>
-                  <br />
-                  <hr />
+                  <br/>
+                  <hr/>
                 </Column>
               </Columns>
             </Container>
@@ -84,13 +77,10 @@ class BlogIndex extends React.Component {
             <Columns className="is-multiline">
               {posts.map(({ node }) => {
                 const title = get(node, 'frontmatter.title') || node.fields.slug
-                const splitTags = node.frontmatter.tags
-                  ? node.frontmatter.tags.split(', ')
-                  : undefined
                 return (
                   <Column key={node.fields.slug} isSize="1/3">
                     <Link to={node.fields.slug}>
-                      <Card className="card-p">
+                      <Card className="card-p" style={{height:'180px'}}>
                         <Content className="title-post">
                           <small>
                             {' '}
@@ -101,17 +91,6 @@ class BlogIndex extends React.Component {
                             {node.frontmatter.date}
                           </small>
                           <Subtitle hasTextColor="white">{title}</Subtitle>
-                        </Content>
-                        <Content className="tag-content">
-                          {splitTags && splitTags.length > 0
-                            ? splitTags.map((tag, index) => {
-                                return (
-                                  <p className="p-content" key={index}>
-                                    <Tag className="tag-category">{tag}</Tag>
-                                  </p>
-                                )
-                              })
-                            : null}
                         </Content>
                       </Card>
                     </Link>
@@ -151,18 +130,6 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             tags
-            # image {
-            #   publicURL
-            #   childImageSharp {
-            #     fluid(maxWidth: 720) {
-            #       aspectRatio
-            #       base64
-            #       sizes
-            #       src
-            #       srcSet
-            #     }
-            #   }
-            # }
           }
         }
       }
