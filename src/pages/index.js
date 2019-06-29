@@ -54,7 +54,34 @@ import {
   HeroBody,
 } from 'bloomer'
 import ModalVideo from 'react-modal-video'
+import * as PropTypes from 'prop-types'
 
+
+function ReadMore(props) {
+  return <Columns>
+    <Column isSize="1/2">
+      <Link
+        className="button is-primary is-medium is-rounded"
+        to="#"
+        onClick={props.onClick}
+      >
+        <Icon size="26" icon={play}/>
+        {' '} &nbsp;  VIDEO &nbsp;
+      </Link>
+    </Column>
+    <Column isSize="1/2">
+      <Link
+        className="button is-primary is-medium is-rounded"
+        target="_blank"
+        to="/blog/best-software-development-process/"
+      >
+        READ MORE
+      </Link>
+    </Column>
+  </Columns>
+}
+
+ReadMore.propTypes = { onClick: PropTypes.func }
 
 class Index extends React.Component {
   constructor(props) {
@@ -109,27 +136,7 @@ class Index extends React.Component {
                     Since day one, our technique is focused on early results and
                     transparent communication.
                   </Title>
-                  <Columns>
-                    <Column isSize="1/2">
-                      <Link
-                        className="button is-primary is-medium is-rounded"
-                        to="#"
-                        onClick={this.openModal}
-                      >
-                        <Icon size="26" icon={play}/>
-                        {' '} &nbsp;  VIDEO
-                      </Link>
-                    </Column>
-                    <Column isSize="1/2">
-                      <Link
-                        className="button is-primary is-medium is-rounded"
-                        target="_blank"
-                        to="/blog/best-software-development-process/"
-                      >
-                        READ MORE
-                      </Link>
-                    </Column>
-                  </Columns>
+                  <ReadMore onClick={this.openModal}/>
                 </Column>
               </Columns>
             </Container>
@@ -155,27 +162,7 @@ class Index extends React.Component {
                     Since day one, our technique is focused on early results and
                     transparent communication.
                   </Title>
-                  <Columns>
-                    <Column isSize="1/2">
-                      <Link
-                        className="button is-primary is-medium is-rounded"
-                        to="#"
-                        onClick={this.openModal}
-                      >
-                        <Icon size="26" icon={play}/>
-                        {' '} &nbsp;  VIDEO
-                      </Link>
-                    </Column>
-                    <Column isSize="1/2">
-                      <Link
-                        className="button is-primary is-medium is-rounded"
-                        target="_blank"
-                        to="/blog/best-software-development-process/"
-                      >
-                        READ MORE
-                      </Link>
-                    </Column>
-                  </Columns>
+                  <ReadMore onClick={this.openModal}/>
                 </Column>
               </Columns>
             </Container>
