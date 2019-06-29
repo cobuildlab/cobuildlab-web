@@ -21,6 +21,8 @@ import badge1 from '../resources/badges1.png'
 import badge2 from '../resources/badges2.png'
 import badge3 from '../resources/badges3.png'
 import badge4 from '../resources/badges4.png'
+import YouTube from 'react-youtube'
+import { YOUTUBE_MOBILE_OPTS } from '../components/YouTubeVideo'
 
 export default class EcommerceDevDescription extends React.Component {
   render() {
@@ -54,6 +56,9 @@ export default class EcommerceDevDescription extends React.Component {
                       {siteSubtitle}
                     </Subtitle>
                     <p className="text-description">{siteDescription}</p>
+                    <div style={{ height: '390px' }}>
+                      <YouTube videoId={'AlU5h2xrQ5M'} opts={YOUTUBE_MOBILE_OPTS} className={'youtube-div'} containerClassName={'youtube-container'}/>
+                    </div>
                     <BadgeIndustry />
                   </div>
                 </div>

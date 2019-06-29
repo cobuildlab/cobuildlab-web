@@ -21,6 +21,8 @@ import badge1 from '../resources/badges1.png'
 import badge2 from '../resources/badges2.png'
 import badge3 from '../resources/badges3.png'
 import badge4 from '../resources/badges4.png'
+import YouTubeVideo, { YOUTUBE_MOBILE_OPTS } from '../components/YouTubeVideo'
+import YouTube from 'react-youtube'
 
 export default class AppsDevDescription extends React.Component {
   render() {
@@ -44,7 +46,7 @@ export default class AppsDevDescription extends React.Component {
                 <div className="column is-8 h-100 bg-header-landing">
                   <div className="view-content-zoom">
                     <div>
-                      <img src={logo} className="logo" />
+                      <img src={logo} className="logo"/>
                     </div>
                     <Title className="title-squeezing">
                       Developing new Software Products in Miami
@@ -53,17 +55,20 @@ export default class AppsDevDescription extends React.Component {
                       {siteSubtitle}
                     </Subtitle>
                     <p className="text-description">{siteDescription}</p>
-                    <BadgeIndustry />
+                    <div style={{ height: '390px' }}>
+                      <YouTube videoId={'AlU5h2xrQ5M'} opts={YOUTUBE_MOBILE_OPTS} className={'youtube-div'} containerClassName={'youtube-container'}/>
+                    </div>
+                    <BadgeIndustry/>
                   </div>
                 </div>
                 <div className="column h-100 is-4 bg-form-landing Aligner">
                   <div className="has-text-centered view-badge">
-                    <img src={badge1} className="badge" />
-                    <img src={badge2} className="badge" />
-                    <img src={badge3} className="badge" />
-                    <img src={badge4} className="badge-google" />
+                    <img src={badge1} className="badge"/>
+                    <img src={badge2} className="badge"/>
+                    <img src={badge3} className="badge"/>
+                    <img src={badge4} className="badge-google"/>
                   </div>
-                  <NewLandingForm landingName={landingName} />
+                  <NewLandingForm landingName={landingName}/>
                 </div>
               </div>
             </div>
