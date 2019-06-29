@@ -451,7 +451,8 @@ class Index extends React.Component {
         <Contact siteKey={siteKey}/>
 
         {/*Video*/}
-        <ModalVideo channel='youtube' isOpen={this.state.showVideoModal} videoId='AlU5h2xrQ5M'
+        <ModalVideo channel='youtube' autoplay={this.state.showVideoModal} isOpen={this.state.showVideoModal}
+                    videoId='AlU5h2xrQ5M'
                     onClose={() => this.setState({ showVideoModal: false })}/>
 
       </Layout>
