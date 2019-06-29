@@ -364,6 +364,8 @@ hr {
 /*image backgroun header*/
 .bg-header {
   background-image: url(../../resources/background-1.png);
+  /*background-color: rgba(70, 70, 70, 0.10) !important;*/
+  /*color: #254a61 !important;*/
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -464,13 +466,27 @@ hr {
   margin-bottom: 0.5rem !important;
   font-family: 'Lato-Black', sans-serif !important;
 }
+.caption-main{
+  color: #254a61 !important;
+  font-size: 32px !important;
+  margin-bottom: 0.5rem !important;
+  font-family: 'Lato-Black', sans-serif !important;
+}
 
 .title-logo-mobile {
-  color: #e76c29 !important;
-  font-size: 55px !important;
-  margin-top: 0.9rem !important;
-  margin-bottom: 1.5rem !important;
-  font-family: 'Lato-Black', sans-serif !important;
+    color: #254a61 !important;
+    font-size: 55px !important;
+    margin-top: 0.9rem !important;
+    margin-bottom: 1.5rem !important;
+    font-family: 'Lato-Black', sans-serif !important;
+}
+
+.caption-main-mobile {
+    color: #254a61 !important;
+    font-size: 30px !important;
+    margin-top: 0.9rem !important;
+    margin-bottom: 1.5rem !important;
+    font-family: 'Lato-Black', sans-serif !important;
 }
 
 .title-blog {
