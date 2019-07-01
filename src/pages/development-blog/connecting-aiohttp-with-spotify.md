@@ -1,6 +1,6 @@
 ---
 title: Connecting AIOHTTP with Spotify
-date: 2019-06-03T01:00:00+00:00
+date: 2019-07-01T01:00:00+00:00
 tags:
 template: development-post
 permalink: /connecting-aiohttp-with-spotify/
@@ -40,7 +40,7 @@ Spotify is a super popular service to listen to music on your mobile device or c
 
 Prequisites:
 
-- Python 3.5+
+- Python 3.7+
 - Git
 - pip3
 
@@ -51,7 +51,6 @@ Prequisites:
 mkdir shopify_api
 cd shopify_api
 touch server.py
-touch client.py
 ```
 
 ### 2. Create a requirements File with this content:
@@ -91,52 +90,58 @@ server.py
 from aiohttp import web
 import json
 import spotipy
+
 spotify = spotipy.Spotify()
 
 
 async def handle_spotify_search(request):
     results = spotify.search(q='artist:' + request.query['name'], type='artist')
-    return web.Response(text=json.dumps(results)
+    return web.Response(text=json.dumps(results))
+
 
 async def handle_spotify_albums_search(request):
-    artist_uri = f'spotify:artist:{request.query['artist_id']}'
+    artist_uri = f"spotify:artist:{request.query['artist_id']}"
     results = spotify.artist_albums(artist_uri, album_type='album')
     albums = results['items']
     while results['next']:
         results = spotify.next(results)
         albums.extend(results['items'])
-    return web.Response(text=json.dumps(albums)
+    return web.Response(text=json.dumps(albums))
 
-async def handle_get(request):
+
+def handle_get(request):
     text = 'Hello, World!'
     return web.Response(text=text)
+
 
 async def handle_post(request):
     try:
         # Success path where name is set
-        response_obj = { 'status' : 'success' }
+        response_obj = {'status': 'success'}
         # Process our new user
         response_obj['body'] = request.query['name']
         # return a success json response with status code 200 i.e. 'OK'
         return web.Response(text=json.dumps(response_obj), status=200)
     except Exception as e:
         # Failed path where name is not set
-        response_obj = { 'status' : 'failed', 'reason': str(e) }
+        response_obj = {'status': 'failed', 'reason': str(e)}
         # return failed with a status code of 500 i.e. 'Server Error'
         return web.Response(text=json.dumps(response_obj), status=500)
+
 
 app = web.Application()
 
 routes = [
     web.get('/', handle_get),
-    web.post('/add-user', handle_post)
-    web.post('/spotify-search', handle_spotify_search)
+    web.post('/add-user', handle_post),
+    web.post('/spotify-search', handle_spotify_search),
     web.post('/spotify-album-search', handle_spotify_albums_search)
 ]
 
 app.add_routes(routes)
 
 web.run_app(app)
+
 ```
 
 
