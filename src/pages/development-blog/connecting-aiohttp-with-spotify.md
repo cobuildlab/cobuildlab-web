@@ -98,6 +98,15 @@ async def handle_spotify_search(request):
     results = spotify.search(q='artist:' + request.query['name'], type='artist')
     return web.Response(text=json.dumps(results)
 
+async def handle_spotify_albums_search(request):
+    artist_uri = f'spotify:artist:{request.query['artist_id']}'
+    results = spotify.artist_albums(artist_uri, album_type='album')
+    albums = results['items']
+    while results['next']:
+        results = spotify.next(results)
+        albums.extend(results['items'])
+    return web.Response(text=json.dumps(albums)
+
 async def handle_get(request):
     text = 'Hello, World!'
     return web.Response(text=text)
@@ -122,6 +131,7 @@ routes = [
     web.get('/', handle_get),
     web.post('/add-user', handle_post)
     web.post('/spotify-search', handle_spotify_search)
+    web.post('/spotify-album-search', handle_spotify_albums_search)
 ]
 
 app.add_routes(routes)
