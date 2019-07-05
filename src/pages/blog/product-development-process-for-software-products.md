@@ -99,6 +99,40 @@ These phases are an overview. But they are more specific and complex depending o
 <title-2>Frameworks of Software Product Development</title-2>
 
 
+<title-3>1. Cobuild Process</title-3>
+
+This is the framework that we use, and we consider that it is the most successful to develop a software product. 
+
+This product development framework consists of transforming an idea into a sustainable and profitable business over time, following a series of validations, techniques, and activities for it. 
+
+The main value of the Cobuild Process is that it is designed to achieve Product-Market Fit with a minimal amount of activities and time.
+
+It can be said that it is a mixture of the principles and practices provided by [Lean Entrepreneurship](http://theleanstartup.com/principles), [Business Strategy](https://www.business-case-analysis.com/business-strategy.html), [Technological Innovation](https://en.wikipedia.org/wiki/Technological_innovation_system), and [Exponential Growth.](https://en.wikipedia.org/wiki/Exponential_growth)
+
+* **Validation**
+
+At this point, you must analyze your idea, the market and your hypotheses of value and growth over time. These analyses are possible thanks to validation activities such as the [Validation Board of Lean Entrepreneurship.](https://cobuildlab.com/blog/validating-your-idea-the-first-step-to-create-your-startup/)
+
+Don't forget that every aspect must be validated, including technical and economic aspects. 
+
+We take advantage of this stage to improve the idea as much as possible, in fact, that's why we catalog ourselves as an accelerator of ideas. 
+
+* **Cobuild**
+
+In this phase, we build the idea of using good practices, tools, and a multidisciplinary team. All this to develop a Prototype or a [Minimum Viable Product](https://cobuildlab.com/blog/minimum-viable-product/) that must be tested with [software testing practices](https://cobuildlab.com/blog/software-testing-in-software-development/). Tests are made in each procedure and sub-procedure, unit tests, A/B testing, live tests and whatever is necessary to improve the quality and the compliance of the Software Product you're developing. 
+
+* **Plan**
+
+In the plan step, you must already have a Minimum Product validated in the market, and now, what corresponds is to make identity to your brand, give it a personality, values and make many marketing and commercialization efforts like the website, social media account, strategies, etc. 
+
+At this phase, we figure out how we are going to get the first users, methodologies, strategies, and actions. 
+
+* **Accelerate**
+
+At this point, we have a sustainable and good business with strategies and a product validated.
+This is the time to accelerate your business and try to get short-term exponential growth. This is the last step. 
+
+
 
 
 
