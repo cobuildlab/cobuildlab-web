@@ -132,6 +132,34 @@ At this phase, we figure out how we are going to get the first users, methodolog
 At this point, we have a sustainable and good business with strategies and a product validated.
 This is the time to accelerate your business and try to get short-term exponential growth. This is the last step. 
 
+<title-3>2. Fuzzy Front End (FFE)</title-3>
+
+This is a framework that has a few particularities. Among them, the team who uses it knows all the stages that compose the process, which we will explain later, but the interesting thing is that they do not necessarily have to follow these steps in the exact order. The team itself decides in which order it is best to apply them for a particular product. 
+
+These are the five elements that make up the development of products in this framework:
+
+* **Identification of design criteria**
+
+This is where brainstorming, creative brainstorming, is applied to begin to shape the product idea and apply a more comprehensive idea conception strategy.
+
+* **Idea Analysis**
+
+The goal of this step is to determine the viability of the product we want to make. And of course, this can be determined with market studies, better conceptualizing the idea and studying well the environment, ie competition, users, etc..
+
+* **Concept Genesis**
+
+Which is basically to convert this idea or an opportunity that you saw on a real and concrete solution. 
+
+* **Prototype**
+
+It is very common in software product development to the first prototype to test and validate the product. 
+
+“Prototyping in this front-end context means a "quick-and-dirty" model is created, rather than the refined product model that will be tested and marketed later on.''
+
+* **Product development**
+
+This is the last phase, which would mean that even the software prototype passed the test and can be marketed, in other words, launched on the market. 
+
 
 
 
