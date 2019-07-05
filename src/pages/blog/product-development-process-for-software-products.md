@@ -193,18 +193,23 @@ This prototype you have to test it. Take a group of people and invite them to us
 With this data, you will be able to improve the prototype and make the best version of this minimum product.  
 
 
+<title-2>Differences with the Cobuild Process</title-2>
 
+If it is necessary to choose a framework to put into practice to develop a Software Product, we bet for the Cobuild Process, and here we will show you a comparison between them: 
 
+* The phase of idea generation is not present at all, you begin from the idea conceptualization and the improvement of the main idea. We leave the complexity of generating the idea to a separated process
+* The review and conceptualization phase are together in the Idea Validation step. This is a complex step where not only the idea is validated and improved, it is studied the market, the solution, the audience, and so on. 
+* The Software Development phase is equivalent to the Cobuild phase. That's when software development happens. The team builds the idea and develop a minimum viable product, a prototype that is going to be validated again by the public, and this would be ready to launch the raw product to the market.  
+* All details about the Commercialization and Marketing phase we cover it in the planning stage, however, everything remains in a plan, which later must be executed in the soft launch and in the acceleration phase. 
+* As of the last phase of Cobuild, we find a step that is not within the macro process as is the acceleration where we are looking to develop exponentially and short term software product.
 
+<title-2>Software Product development process here, in Miami</title-2>
 
+If you did not know it, our team Cobuild Lab work with the Cobuild framework that is part of the macro Product Development Process we apply. So, you can [contact us click here](https://cobuildlab.com/#contact) or just visit us in the Miami office.
 
+For having more information like this, you also can subscribe to our newsletter. The goal is that you as an entrepreneur do not stay without developing your business idea.
 
-
-
-
-
-[SEO techniques](https://cobuildlab.com/blog/seo-tips-that-will-increase-your-position-in-search-engines/),
-
+After this tour of the **Product Development Process**, we shared this video with a particular example, so you can enjoy it and understand it better with images and voices. Enjoy it and dare to make it, you can get good results with it.
 
 
 
