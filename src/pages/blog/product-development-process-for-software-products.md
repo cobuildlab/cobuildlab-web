@@ -160,6 +160,39 @@ It is very common in software product development to the first prototype to test
 
 This is the last phase, which would mean that even the software prototype passed the test and can be marketed, in other words, launched on the market. 
 
+<title-3>3. Design Thinking</title-3>
+
+This is a method for developing a software project, a business, and even a problem that you have to solve. 
+
+Its focus is the innovation in essence because it is a half point between feasibility, desirability, and most importantly, viability. 
+
+It is composed of the next steps:
+
+* **Emphasize**
+
+Here you must learn about a specific problem, and look for different perspectives. But remember, at this time, it applies to software solutions.
+
+* **Define**
+
+Clarify the reach of the problem, search for its source, and delimited the nature of the problem that you would attack with your software solution.
+
+* **Ideate**
+
+Think and create as many ideas as you can. Have a brainstorming of solutions. It does not matter how crazy or simple it can look. 
+
+At the end of this step, you have to considerate to make a selection and choose only the best and more viable ideas that later you will incorporate in your software or business.
+
+* **Prototype**
+
+Build your software with the minimum required. Create a prototype taking into consideration all the information that you collected before and run it.
+
+* **Test**
+
+This prototype you have to test it. Take a group of people and invite them to use your solution, then they would make suggestions, share their experience, or just make a review. 
+
+With this data, you will be able to improve the prototype and make the best version of this minimum product.  
+
+
 
 
 
