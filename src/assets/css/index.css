@@ -1242,7 +1242,7 @@ input:focus ~ .highlight {
         height: 100%;
         -webkit-flex-direction: column; /* Safari 6.1+ */
         flex-direction: column;
-        zoom: 0.7;
+        zoom: 0.9;
     }
 
     .img-graphic {

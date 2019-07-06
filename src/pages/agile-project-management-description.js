@@ -21,8 +21,7 @@ import badge1 from '../resources/badges1.png'
 import badge2 from '../resources/badges2.png'
 import badge3 from '../resources/badges3.png'
 import badge4 from '../resources/badges4.png'
-import YouTube from 'react-youtube'
-import { YOUTUBE_MOBILE_OPTS } from '../components/YouTubeVideo'
+import YouTubeVideo from '../components/YouTubeVideo'
 
 export default class AgileProjectDescription extends React.Component {
   render() {
@@ -30,7 +29,7 @@ export default class AgileProjectDescription extends React.Component {
     const siteSubtitle =
       'Let our experience drive the success of your projects.'
     const siteDescription =
-      "Our senior's product managers and agile coaches work with you to build and deliver software effectively. Your team would be transformed through education of the most appropriate agile techniques and best practices."
+      'Our senior\'s product managers and agile coaches work with you to build and deliver software effectively. Your team would be transformed through education of the most appropriate agile techniques and best practices.'
     const landingName = 'Agile Project Management Description'
 
     return (
@@ -47,7 +46,7 @@ export default class AgileProjectDescription extends React.Component {
                 <div className="column is-8 h-100 bg-header-landing">
                   <div className="view-content-zoom">
                     <div>
-                      <img src={logo} className="logo" />
+                      <img src={logo} className="logo"/>
                     </div>
                     <Title className="title-squeezing">
                       Agile Project Management in Miami
@@ -56,20 +55,18 @@ export default class AgileProjectDescription extends React.Component {
                       {siteSubtitle}
                     </Subtitle>
                     <p className="text-description">{siteDescription}</p>
-                    <div style={{ height: '390px' }}>
-                      <YouTube videoId={'AlU5h2xrQ5M'} opts={YOUTUBE_MOBILE_OPTS} className={'youtube-div'} containerClassName={'youtube-container'}/>
-                    </div>
-                    <BadgeIndustry />
+                    <YouTubeVideo id={'AlU5h2xrQ5M'}/>
+                    <BadgeIndustry/>
                   </div>
                 </div>
                 <div className="column h-100 is-4 bg-form-landing Aligner">
                   <div className="has-text-centered view-badge">
-                    <img src={badge1} className="badge" />
-                    <img src={badge2} className="badge" />
-                    <img src={badge3} className="badge" />
-                    <img src={badge4} className="badge-google" />
+                    <img src={badge1} className="badge"/>
+                    <img src={badge2} className="badge"/>
+                    <img src={badge3} className="badge"/>
+                    <img src={badge4} className="badge-google"/>
                   </div>
-                  <NewLandingForm landingName={landingName} />
+                  <NewLandingForm landingName={landingName}/>
                 </div>
               </div>
             </div>

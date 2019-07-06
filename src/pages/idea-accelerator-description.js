@@ -22,7 +22,7 @@ import badge2 from '../resources/badges2.png'
 import badge3 from '../resources/badges3.png'
 import badge4 from '../resources/badges4.png'
 import YouTube from 'react-youtube'
-import { YOUTUBE_MOBILE_OPTS } from '../components/YouTubeVideo'
+import YouTubeVideo, { YOUTUBE_MOBILE_OPTS } from '../components/YouTubeVideo'
 
 export default class IdeaDescription extends React.Component {
   render() {
@@ -60,9 +60,7 @@ export default class IdeaDescription extends React.Component {
                       by using a collaborative and full-companion development
                       process.
                     </p>
-                    <div style={{ height: '390px' }}>
-                      <YouTube videoId={'AlU5h2xrQ5M'} opts={YOUTUBE_MOBILE_OPTS} className={'youtube-div'} containerClassName={'youtube-container'}/>
-                    </div>
+                    <YouTubeVideo id={'AlU5h2xrQ5M'}/>
                     <BadgeIndustry />
                   </div>
                 </div>

@@ -55,9 +55,7 @@ export default class AppsDevDescription extends React.Component {
                       {siteSubtitle}
                     </Subtitle>
                     <p className="text-description">{siteDescription}</p>
-                    <div style={{ height: '390px' }}>
-                      <YouTube videoId={'AlU5h2xrQ5M'} opts={YOUTUBE_MOBILE_OPTS} className={'youtube-div'} containerClassName={'youtube-container'}/>
-                    </div>
+                    <YouTubeVideo id={'AlU5h2xrQ5M'}/>
                     <BadgeIndustry/>
                   </div>
                 </div>

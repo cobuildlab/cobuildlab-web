@@ -23,16 +23,16 @@ export const YOUTUBE_OPTS = {
 class YouTubeVideo extends React.Component {
   render() {
     const { id } = this.props
-
-
     return (
       <Container>
         <Columns isCentered style={{ minHeight: '390px' }}>
           <Column className="has-text-centered is-hidden-desktop is-hidden-tablet-only" style={{ minHeight: '390px' }}>
-            <YouTube videoId={id} opts={YOUTUBE_MOBILE_OPTS} className="youtube-container" style={{ minHeight: '390px' }}/>
+            <YouTube videoId={id} opts={YOUTUBE_MOBILE_OPTS} className="youtube-container"
+                     style={{ minHeight: '390px' }}/>
           </Column>
           <Column className="has-text-centered is-hidden-mobile" style={{ minHeight: '390px' }}>
-            <YouTube videoId={id} opts={YOUTUBE_OPTS} className="youtube-container" style={{ width: '100%', minHeight: '390px' }}/>
+            <YouTube videoId={id} opts={YOUTUBE_OPTS} className="youtube-container"
+                     style={{ width: '100%', minHeight: '390px' }}/>
           </Column>
         </Columns>
       </Container>
