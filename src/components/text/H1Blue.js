@@ -9,7 +9,7 @@ const StyledTitle = styled(Title)`
   color: #254a61 !important;
   margin-bottom: 1rem !important;
   font-size: 92px !important;
-  font-size: 6em !important;
+  font-size: 7em !important;
   font-family: 'Lato-Black', sans-serif !important;
 `
 

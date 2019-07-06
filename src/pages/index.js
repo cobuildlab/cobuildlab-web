@@ -117,10 +117,12 @@ class Index extends React.Component {
 
         {/*HEADER*/}
         <Hero isSize="large">
-          <HeroBody className="bg-header" style={{ paddingTop: '2rem' }}>
+          <HeroBody className="bg-header" style={{ paddingTop: '2rem', paddingBottom:'11rem' }}>
             <Container isFluid className="is-hidden-mobile no-margin">
               <Columns>
                 <Column isSize="1/2">
+                  <br/>
+                  <br/>
                   <br/>
                   <br/>
                   <br/>

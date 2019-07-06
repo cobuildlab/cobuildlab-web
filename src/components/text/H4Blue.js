@@ -8,7 +8,7 @@ import styled from 'styled-components'
 const StyledTitle = styled(Title)`
   color: #254a61 !important;
   margin-bottom: 1rem !important;
-  font-size: 20px !important;
+  font-size: 24px !important;
   font-family: 'Lato-Black', sans-serif !important;
 `
 
