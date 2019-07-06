@@ -35,6 +35,7 @@ import { commentingO } from 'react-icons-kit/fa/commentingO'
 import { play } from 'react-icons-kit/fa/play'
 import comic from '../resources/icons/comic.svg'
 import { H2Blue } from '../components/text/H2Blue'
+import { H3Blue } from '../components/text/H3Blue'
 import { H1Blue } from '../components/text/H1Blue'
 import { H4Blue } from '../components/text/H4Blue'
 
@@ -128,7 +129,7 @@ class Index extends React.Component {
                   <br/>
                   <br/>
                   <br/>
-                  <H2Blue>Software Development Company</H2Blue>
+                  <H3Blue>Software Development Company</H3Blue>
                   <H1Blue>Let’s <span className={'orange-text'}>Build</span> a Great <span
                     className={'orange-text'}>Idea.</span></H1Blue>
                   <H4Blue>
@@ -154,8 +155,8 @@ class Index extends React.Component {
             >
               <H4Blue>Software Development Company</H4Blue>
               <img alt={'main comic'} src={comic} style={{ width: '85%', height: 'auto' }}/>
-              <H1Blue>Let’s <span className={'orange-text'}>Build</span> a Great <span
-                className={'orange-text'}>Idea.</span></H1Blue>
+              <H2Blue>Let’s <span className={'orange-text'}>Build</span> a Great <span
+                className={'orange-text'}>Idea.</span></H2Blue>
               <Columns>
                 <Column isSize="1/2">
                   <H4Blue>
