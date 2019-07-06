@@ -27,12 +27,12 @@ class YouTubeVideo extends React.Component {
 
     return (
       <Container>
-        <Columns isCentered>
-          <Column className="has-text-centered is-hidden-desktop is-hidden-tablet-only">
-            <YouTube videoId={id} opts={YOUTUBE_MOBILE_OPTS} className=""/>
+        <Columns isCentered style={{ minHeight: '390px' }}>
+          <Column className="has-text-centered is-hidden-desktop is-hidden-tablet-only" style={{ minHeight: '390px' }}>
+            <YouTube videoId={id} opts={YOUTUBE_MOBILE_OPTS} className="youtube-container" style={{ minHeight: '390px' }}/>
           </Column>
-          <Column className="has-text-centered is-hidden-mobile">
-            <YouTube videoId={id} opts={YOUTUBE_OPTS} className="" style={{ width: '100%' }}/>
+          <Column className="has-text-centered is-hidden-mobile" style={{ minHeight: '390px' }}>
+            <YouTube videoId={id} opts={YOUTUBE_OPTS} className="youtube-container" style={{ width: '100%', minHeight: '390px' }}/>
           </Column>
         </Columns>
       </Container>
