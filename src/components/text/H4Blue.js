@@ -6,9 +6,9 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledTitle = styled(Title)`
-  color: #e76c29 !important;
+  color: #254a61 !important;
   margin-bottom: 1rem !important;
-  font-size: 57px !important;
+  font-size: 20px !important;
   font-family: 'Lato-Black', sans-serif !important;
 `
 
@@ -18,4 +18,4 @@ const _H2 = (props) => (
   </StyledTitle>
 )
 
-export { _H2 as H2 }
+export { _H2 as H4Blue }

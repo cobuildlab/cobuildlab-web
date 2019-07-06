@@ -4,7 +4,6 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import 'react-toastify/dist/ReactToastify.min.css'
 import '../assets/prism.css'
-
 import Layout from '../components/layout'
 import Contact from '../components/Contact'
 import 'bulma'
@@ -19,9 +18,6 @@ import '../assets/fonts/Lato-Light.ttf'
 import '../assets/fonts/Lato-LightItalic.ttf'
 import '../assets/fonts/Lato-Regular.ttf'
 import 'react-modal-video/scss/modal-video.scss'
-import propagadImg from './customer-success-stories/media/5-1280x1080p-1024x864.png'
-import academyImg from './customer-success-stories/media/fondo-2-1024x511nuew.jpg'
-import paykleverImg from './customer-success-stories/media/payklever-cover.jpg'
 import marcelo from '../resources/marceloicigliani.jpg'
 import angel from '../resources/anglelacret.jpg'
 import alejandro from '../resources/alejandrosanchez.jpg'
@@ -37,7 +33,10 @@ import { linkedinSquare } from 'react-icons-kit/fa/linkedinSquare'
 import { clockO } from 'react-icons-kit/fa/clockO'
 import { commentingO } from 'react-icons-kit/fa/commentingO'
 import { play } from 'react-icons-kit/fa/play'
-
+import comic from '../resources/icons/comic.svg'
+import { H2Blue } from '../components/text/H2Blue'
+import { H1Blue } from '../components/text/H1Blue'
+import { H4Blue } from '../components/text/H4Blue'
 
 import {
   Container,
@@ -49,7 +48,6 @@ import {
   CardImage,
   Image,
   Content,
-  CardContent,
   Hero,
   HeroBody,
 } from 'bloomer'
@@ -119,50 +117,52 @@ class Index extends React.Component {
 
         {/*HEADER*/}
         <Hero isSize="large">
-          <HeroBody className="bg-header">
-            <Container isFluid className="is-hidden-mobile">
-              <Title className="caption-main">Software Development Company</Title>
-              <Title className="subtitle-logo">Let’s Build a Great Idea</Title>
-
+          <HeroBody className="bg-header" style={{ paddingTop: '2rem' }}>
+            <Container isFluid className="is-hidden-mobile no-margin">
               <Columns>
                 <Column isSize="1/2">
-                  <Title isSize={4}>
-                    We partner with new and early-stage entrepreneurs and industry experts to transforms ideas into
-                    {' '}
-                    <span style={{ color: '#fff' }}>
-                      Web and Mobile Software Products.
-                    </span>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <H2Blue>Software Development Company</H2Blue>
+                  <H1Blue>Let’s <span className={'orange-text'}>Build</span> a Great <span
+                    className={'orange-text'}>Idea.</span></H1Blue>
+                  <H4Blue>
+                    We partner with new and early-stage entrepreneurs and industry experts to transforms ideas into <span className={'orange-text'}>Web
+                    and Mobile Software Products.</span>
                     <br/>
                     <br/>
-                    Since day one, our technique is focused on early results and
-                    transparent communication.
-                  </Title>
+                    Since day one, our technique is focused on early results and transparent communication.
+                  </H4Blue>
                   <ReadMore onClick={this.openModal}/>
+                </Column>
+                <Column isSize="1/2">
+                  <br/>
+                  <br/>
+                  <img alt={'main comic'} src={comic} style={{ width: '100%', height: 'auto' }}/>
                 </Column>
               </Columns>
             </Container>
 
             <Container
               isFluid
-              className="is-hidden-desktop is-hidden-tablet-only"
+              className="is-hidden-desktop is-hidden-tablet-only no-margin"  hasTextAlign='centered'
             >
-              <Title className="caption-main-mobile">Software Development Company</Title>
-              <Title className="subtitle-logo-mobile">
-                Let’s Build a Great Idea
-              </Title>
+              <H4Blue>Software Development Company</H4Blue>
+              <img alt={'main comic'} src={comic} style={{ width: '85%', height: 'auto' }}/>
+              <H1Blue>Let’s <span className={'orange-text'}>Build</span> a Great <span
+                className={'orange-text'}>Idea.</span></H1Blue>
               <Columns>
                 <Column isSize="1/2">
-                  <Title isSize={6}>
-                    We partner with new and early-stage entrepreneurs and industry experts to transforms ideas into
-                    {' '}
-                    <span style={{ color: '#fff' }}>
-                      Web and Mobile Software Products.
-                    </span>
+                  <H4Blue>
+                    We partner with new and early-stage entrepreneurs and industry experts to transforms ideas into <span className={'orange-text'}>Web
+                    and Mobile Software Products.</span>
                     <br/>
                     <br/>
-                    Since day one, our technique is focused on early results and
-                    transparent communication.
-                  </Title>
+                    Since day one, our technique is focused on early results and transparent communication.
+                  </H4Blue>
                   <ReadMore onClick={this.openModal}/>
                 </Column>
               </Columns>

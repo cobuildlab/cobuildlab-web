@@ -365,7 +365,8 @@ hr {
 
 /*image backgroun header*/
 .bg-header {
-    background-image: url(../../resources/background-11.png);
+    background-image: url(../../resources/background-111.png);
+
     /*background-color: rgba(70, 70, 70, 0.10) !important;*/
     /*color: #254a61 !important;*/
     width: 100%;
@@ -1335,4 +1336,12 @@ input:focus ~ .highlight {
 
 .youtube-container {
     height: 410px;
+}
+
+.no-margin {
+    margin: 0px
+}
+
+.orange-text {
+    color: #e76c29;
 }
