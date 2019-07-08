@@ -16,14 +16,14 @@ According to the [React documentation](https://reactjs.org/docs/components-and-p
 >>>Components let you split the UI into independent, reusable pieces, and think about each piece in isolation.
 
 
-However a good framework is not enought to build good, efficent and maintable code, best practices and design patterns are always important to keep your code readable, maintenable and scalable, especially in large code bases.
+However a good framework is not enough to build good, efficient and maintainable code, best practices and design patterns are always important to keep your code readable, maintenable and scalable, especially in large code bases.
 
 
 ## Design Patterns
 
 In Software Development, a Design Pattern is a common solution to a common problem. Usually this solution has an structure, components and responsabilities, and usually is offer as a template reference or technique instead of actual code with the purpose of been explained independent of the language or application.
 
-Design patterns haver an additional and usually none mention great benefit that is the ability of been recognizable to Software Developers, making the comunication easier in development teams.
+Design patterns have an additional and usually none mention great benefit that is the ability of been recognizable to Software Developers, making the comunication easier in development teams.
 
 https://sourcemaking.com/design_patterns
 

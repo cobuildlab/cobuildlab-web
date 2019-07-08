@@ -68,8 +68,8 @@ Nowadays its very common to use a container tool to develop and release code to 
 
 - Virtual Machine Architecture: that enables run the same container in any OS
 - An easy development and deployment
-- Descriptive configuration to share among developers evniroment
-- Enables container orchestration, a powerfull techinique for achieve high scalability
+- Descriptive configuration to share among developers environment
+- Enables container orchestration, a powerful technique for achieve high scalability
 
 
 # Let's see the code

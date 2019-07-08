@@ -72,11 +72,10 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = 'Cobuild Lab'
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
-    const image = get(post, 'frontmatter.image.publicURL') || defaultImg
+    // const image = get(post, 'frontmatter.image.publicURL') || defaultImg
     const previousImage =
       get(previous, 'frontmatter.image.publicURL') || defaultImg
     const nextImage = get(next, 'frontmatter.image.publicURL') || defaultImg
-
     return (
       <LayoutPost>
         <Helmet
@@ -93,12 +92,6 @@ class BlogPostTemplate extends React.Component {
             <br/>
             <hr/>
           </Container>
-          <HeroBody
-            className="bg-post"
-            style={{
-              backgroundImage: `url(${image})`,
-            }}
-          />
         </Hero>
 
         <section id="section-post" className="section">
