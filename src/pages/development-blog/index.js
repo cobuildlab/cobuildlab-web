@@ -80,7 +80,7 @@ class BlogIndex extends React.Component {
                 return (
                   <Column key={node.fields.slug} isSize="1/3">
                     <Link to={node.fields.slug}>
-                      <Card className="card-p" style={{height:'180px'}}>
+                      <Card className="card-p" style={{height:'200px'}}>
                         <Content className="title-post">
                           <small>
                             {' '}
