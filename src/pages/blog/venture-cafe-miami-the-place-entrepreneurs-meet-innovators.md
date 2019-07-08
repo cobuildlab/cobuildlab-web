@@ -3,7 +3,7 @@ title: "Venture cafe Miami, the place where entrepreneurs meet innovators"
 date: "2019-06-27T08:00:55.000Z"
 template: blog
 tags: Miami
-image: "./media/venturecafe1.png"
+image: "./media/venturecafemia-01.png"
 ---
 
 <youtube-video id="https://www.youtube.com/watch?v=2AjDxF5nAIY"></youtube-video>
