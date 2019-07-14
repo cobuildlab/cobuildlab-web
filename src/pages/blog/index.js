@@ -3,7 +3,6 @@ import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Layout from '../../components/layout'
-import defaultImg from '../../resources/default-post.jpg'
 import {
   Hero,
   HeroBody,
@@ -43,7 +42,7 @@ class BlogIndex extends React.Component {
   }
 
   render() {
-    const siteTitle = 'The Cobuild Blog for Entrepreneurs'
+    const siteTitle = 'The Blog for Software Entrepreneurs'
     const siteDescription = get(
       this,
       'props.data.site.siteMetadata.description'

@@ -25,7 +25,7 @@ import {
 
 class EducationIndex extends React.Component {
   render() {
-    const siteTitle = 'The Cobuild Blog for Entrepreneurs'
+    const siteTitle = 'The Blog for Software Entrepreneurs'
     const siteDescription = get(
       this,
       'props.data.site.siteMetadata.description'
