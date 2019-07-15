@@ -26,7 +26,7 @@ The development process of new software products is more of a methodology that w
 
 We use a mix of two frameworks: [SCRUM](https://www.scrum.org/) and [XP](https://en.wikipedia.org/wiki/Extreme_programming).
 
-The framework provides a series of tools, artefacts, and values that you should use, but how and when to use them, you decide. 
+The framework provides a series of tools, artifacts, and values that you should use, but how and when to use them, you decide. 
 
 That's why we talk about that if we put together the tools of our framework (SCRUM+XP) with the how and when we use them, plus the activities that characterize software development, and we are in a project to develop a new software product, the result we get is a methodology to improve the product. 
 
