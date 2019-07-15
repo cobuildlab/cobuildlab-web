@@ -1,5 +1,5 @@
 ---
-title: Python 3 Data Structures: Lists
+title: "Python 3 Data Structures: Lists"
 date: 2019-08-15T01:00:00+00:00
 tags: 
 template: development-post
