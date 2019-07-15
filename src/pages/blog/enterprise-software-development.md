@@ -113,6 +113,14 @@ It must be stored and stored well. The cloud may be a good option, but today the
 
 ![enterprise-software-development-vs-standard-software-development](./media/enterprise-software-development-vs-standard-software-development.jpg)
 
+We have already mentioned the main difference between the development of startup software or new products concerning enterprise software development. And this is that, when it comes to startups, a product is created that meets the needs of a particular person or a group of people who have similar qualities or rather a profile on an environment of high uncertainty, while business software meets the needs of an organization. More than people, this software is designed for companies, processes, work environments, and automation. This is the starting point for all of the differences listed below:
+
+* Another difference they have is the environment in which they develop software products. In the case of traditional startups, the environment that is taken into account is an open market, generally demographically located, while in enterprise development the context in which the product or app is developed and used is business, is a closed and limited work environment. 
+* Related to this, we can also say that in traditional software development a product is launched to a heterogeneous public, which although segmented, have different thoughts, criteria and many personal reasons that may intervene in the way you use the product and feel with the product. In the development of business software, it could be said that the target with which we work is more homogenized, mainly because they are people who use this tool in standardized processes, are processes that regardless of the person who executes them have a form. And that in general, the interaction that the different consumers have is very similar or the same. 
+* We could say that enterprise software has a slightly longer useful life than mass or standard software, and this is for the issue of updates, versions, and improvements make through time. This premise is partly due to economic resources; in the estimate, you should even plan some updates, and they are usually medium or long term. These apps or systems are very well thought out and often, do not need significant updates over time because what you are looking for is to be more productive or optimize processes.  
+* Software for companies is usually used to reduce costs or automate processes and thus be more efficient and productive. Mass consumption software does not necessarily have this purpose. 
+* Enterprise software necessarily manages and stores large amounts of essential data that will be used for various purposes.  This is why the subject of storage is vital in this type of development. This is not necessarily the case with standard software because it may not be relevant. 
+
 
 
 
