@@ -111,6 +111,8 @@ It must be stored and stored well. The cloud may be a good option, but today the
 
 <title-3>Difference between Enterprise software Development and New Software Product Development</title-3>
 
+![enterprise-software-development](./media/enterprise-software-development.jpg)
+
 
 
 
