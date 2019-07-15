@@ -117,7 +117,7 @@ Developing new software products is our major expertise, and beyond commenting o
 
 <title-3>Weedmatch</title-3>
 
-![weedmatch](./media/weedmaych.jpg)
+![weedmatch](./media/weedmatch.jpg)
 
 [This project](https://weedmatch.cl/) was enjoyable and different. Weedmatch is the first free cannabis social network for Latin America. It was developed by a group of Venezuelans led by Oscar Lopez. 
 
