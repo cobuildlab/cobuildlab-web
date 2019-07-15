@@ -3,11 +3,8 @@ title: "Software Development for New Products on Cobuild Lab"
 date: "2019-07-15T16:24:04.000Z"
 template: blog
 tags: Education
-image: "./media/new-product-software-development.jpg"
+image: "./media/new-software-product-development.jpg"
 ---
-
-
-
 
 The interesting thing about software development is that although your goal is always to build a product, there are many alternatives on how to do it, from a framework to the activities of the type of product to be developed and even the methodology of each development team. 
 
