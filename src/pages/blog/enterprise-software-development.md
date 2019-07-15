@@ -37,7 +37,7 @@ In the same way, these enterprise apps serve a large number of users who are usu
 
 <title-2>Particularities and characteristics of the Enterprise Software Development</title-2>
 
-![enterprise-software-development-components](./media/enterprise-software-development-components.jpg)
+![enterprise-software-development-components](./media/entreprise-software-development-components.jpg)
 
 Enterprise Software Development not only has a clear goal. Also, it has certain aspects that characterize it and doing it differently from standard or particular processes as well. 
 
