@@ -1,5 +1,5 @@
 ---
-title: "Canonicals-GitHub-account-was-hacked.md"
+title: "Canonical's GitHub account, the creators of Ubuntu, was hacked."
 date: "2019-07-15T17:20:04.000Z"
 template: blog
 tags: News
