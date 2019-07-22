@@ -121,19 +121,43 @@ We have already mentioned the main difference between the development of startup
 * Software for companies is usually used to reduce costs or automate processes and thus be more efficient and productive. Mass consumption software does not necessarily have this purpose. 
 * Enterprise software necessarily manages and stores large amounts of essential data that will be used for various purposes.  This is why the subject of storage is vital in this type of development. This is not necessarily the case with standard software because it may not be relevant. 
 
+<title-2>Do you apply to have a Technical Co-founder or add a Technical Partner in this area?</title-2>
+
+The answer is yes. If you have a medium-sized or smaller company, perhaps you have an IT department, technology specialists within your team, but maybe you do not have a Technical Co-founder yet,  and you want to develop software for your company that automates processes, improves internal operations or complements the one you already have, perhaps it is a good idea to bet on a contractor or a Technical Co-founder. 
+
+This would help to renew all your systems; it would inject oxygen not only to the most critical internal processes but also to the company and your work team. He or she is a specialist, who would enter your organization's environment to add innovation, technology, new ideas, greater [cybersecurity](https://cobuildlab.com/blog/cybersecurity/), and in general, positive things. We think it's a great idea. 
+
+If you want to know more about this or are interested in our support in this area, do not be shy, contact us. 
 
 
+<title-2>Good examples of Enterprise Software Development</title-2>
+
+* An excellent example of business software is the [workflow tools](https://cobuildlab.com/blog/workflows-in-your-business/) that are so good that some companies include them as an essential, inherent need of the company. 
+
+There are many examples of this type of solutions such as [WorkFlowGen](https://www.workflowgen.com/), [Trello](https://trello.com/en), tools such as [Slack](https://slack.com/intl/en-ve/), which were not designed for your company, but are a massive product, but offer the solution you could look.  If you need to automate for example the assignment, management, and control of tasks, having a team that develops a tool similar to this one but adequate to your needs may be the best thing that happens to you.
+
+* Another example are CRM or Customer Relationship Management (CRM) Software. Another example is CRM or Customer Relationship Management (CRM) Software. With this type of business software what you are looking for is to have a kind of database of all customers and potential customers of your company along with the places where you can contact them. If it is in person, by phone, by social media platforms, and also the details of when you last made contact with them and all the attention or history you have with each customer. 
+"Typically, the best CRM services include features like workflow automation, dedicated document libraries, role-based user access, multi-currency support, email integration, and tracking, and lead capture from websites and custom reporting." Source: Sisense
+This tool can also be developed for your company.
+* Almost any tool that automates your company's process or helps you to increase productivity. This is 100% customized. Not all companies have the same needs or perform the same activities. 
+There are no limits when it comes to Enterprise Software.
+
+<title-2>Conclusions</title-2>
+
+1. Enterprise software is a technological solution that helps improve the processes and development of a company that already exists.
+
+2. It is created based on the needs of a company
+
+3. Enterprise software is an excellent choice for those who want to improve some aspect of the company's productivity, and have already tried everything with human capital. 
+
+4. There are many business software options available in the market, or that can be developed from scratch and completely customized for your company.
+
+5. This type of project has precise controls and particularities that make it distinctive from standard software development.
+
+6. They are products developed and planned in the long term so that they have a long useful life. 
+
+7. It is a good idea to bet on a contractor or a Technical Co-founder to develop a software of this type since it adds knowledge, experience, and innovation.  
 
 
-
-
-
-
-
-
-
-
-
-
-
+Do you have a company and want to develop software to make it more productive? **Enterprise Software Development** is the best solution for you. We hope this information has helped you a little, and if you want more, we are to order for you. 
 
