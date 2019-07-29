@@ -133,7 +133,7 @@ class Index extends React.Component {
                   <H1Blue>Let’s <span className={'orange-text'}>Build</span> a Great <span
                     className={'orange-text'}>Idea.</span></H1Blue>
                   <H4Blue>
-                    We partner with new and early-stage entrepreneurs and industry experts to transforms ideas into <span className={'orange-text'}>Web
+                    We partner with new and early-stage non-technical entrepreneurs and industry experts to transforms ideas into <span className={'orange-text'}>Web
                     and Mobile Software Products.</span>
                     <br/>
                     <br/>
@@ -160,7 +160,7 @@ class Index extends React.Component {
               <Columns>
                 <Column isSize="1/2">
                   <H4Blue>
-                    We partner with new and early-stage entrepreneurs and industry experts to transforms ideas into <span className={'orange-text'}>Web
+                    We partner with new and early-stage non-technical entrepreneurs and industry experts to transforms ideas into <span className={'orange-text'}>Web
                     and Mobile Software Products.</span>
                     <br/>
                     <br/>
