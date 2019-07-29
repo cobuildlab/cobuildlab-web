@@ -1,6 +1,6 @@
 ---
 title: "Python 3: Validation with Cerberus"
-date: 2018-07-29T01:00:00+00:00
+date: 2019-07-29T01:00:00+00:00
 template: development-post
 tags: 
 image: "./media/blocks.jpg"
