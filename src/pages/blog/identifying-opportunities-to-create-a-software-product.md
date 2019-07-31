@@ -188,6 +188,116 @@ This is an effortless method for coming up with new ideas that are pre-validated
 
 Uber is an excellent example of this type of business idea, which with the help of innovation could be made a place in a market and with a pre-existing and prevalent product, such as private transport, taxis.
 
+* **Use technology as a help for innovation and Idea Generation**
+
+The previous, are traditional methods which you can use on your own, or accompany a group of people to apply it and shape the ideas you already have in mind. But if you are more of a technical team, for you, there are also options to find your opportunity to develop software.  
+
+Several tools in the market are intended to help you manage your innovation process, be it in a personal environment or also in a work environment, business, etc.
+
+Some of these tools we mention below:
+
+[IdeaWake](https://info.ideawake.com/get-started-with-ideawake-today?utm_campaign=capterra&utm_medium=cpc&utm_source=capterra)
+
+"Idea Management Software that Helps Add Millions to Your Bottom Line". This is their concept and value proposition. Know it better with this video
+
+<youtube-video id="IvMc8y7HAKM"></youtube-video>
+
+It has exciting options to offer to range from 
+
+* Brand customization to 
+* Job accounting
+* Gambling, 
+* Access from anywhere in the world, whenever you want, 
+* Single sign-on, and several options that allow you to manage the process of ideation and innovation. 
+
+The promise they make to you as a product is that with the tool, you will be able to start applying 5% of the innovative ideas that will drive 95% of new business results.
+
+[IdeaDrop](https://demo.ideadrop.co/innovation-software-gdm/?directory=innovation&utm_source=capterra)
+
+"The Idea Drop idea management tool helps you harness the collective intelligence of your employees to solve business challenges faster." This tool is different but also it is very popular. 
+
+This application offers:
+
+* "Social Interactions
+
+Use @mentions, intelligent #hashtags, comments, link sharing, and real-time notifications.
+
+* User Innovation Scores
+
+Measure the innovation performance of individuals based on their participation.
+
+* Innovation dashboard
+
+Get a real-time snapshot of what's happening across the platform with our native mobile app  (iOS and Android).
+
+* Robust Reporting
+
+Create, edit, and export reports and analytics to track successes and areas for improvement.
+
+* Idea Cloaking
+
+Your colleagues can choose to 'cloak' to hide their identity when dropping an idea, and may 'uncloak' later on.
+
+* Innovation Pipeline
+
+Get a visual insight into the progression of ideas and drive continuous improvement via Pipeline. 
+
+* Intelligent Duplicate Check
+
+Scan the entire history of all the ideas shared using pattern recognition technology to flag ideas that look similar.
+
+* Bulletins
+
+Quickly post updates to colleagues when ideas have been actioned or implemented.
+
+* Smart Search
+
+Use Idea Drop as a valuable internal knowledge base with powerful smart search functionality.
+
+Idea Drop is intuitive, removes hierarchical barriers, and makes it faster to get help and support across the business.”
+
+[CrowdWorx Innovation Engine](https://www.capterra.com/p/148239/CrowdWorx-Innovation-Engine/)
+
+"CrowdWorx is an End-to-end Innovation Management software covering the full innovation and idea management process." Full coverage of the process sounds quite interesting due to the complexity of the process and that never really fits. It is an endless cycle. That's your proposal to us. 
+
+And so on. All of these tools can help you with the innovation process at the time to create or define an opportunity in the software market, and they can even help you after you develop your software. 
+
+We share in images some of the benefits you can get with this innovation management tool. 
+
+![innovation](./media/innovation1.png)
+
+![innovation](./media/innovation2.png)
+
+![innovation](./media/innovation3.png)
+
+**Source:**[Capaterra](https://www.capterra.com/p/148239/CrowdWorx-Innovation-Engine/)
+
+* **SCAMPER**
+
+This technique does not apply to creative business processes from zero, but it is often used in a corporate environment.
+ 
+However, we consider it prudent to mention it because it is a good practice that helps innovation. The Innovation process, you must continue applying it even after you find the opportunity in the software market. In that way, you will not fall behind your competition, and always you will cover the needs of your end-users. 
+
+The SCAMPER technique is holistic, and was developed by Bob Eberle and consists of 7 phases: 
+
+1. Substitution of the product, the process, or whatever you want to innovate. 
+
+2. Combination of two or more ideas after you have had your brainstorm, to put them together and make them better. 
+
+3. Adaptation of the process or product so that it is more flexible and can be further improved. 
+
+4. Modify effectively, focusing on improving the results and not the idea alone. 
+
+5.  Finding a new use for the idea you've already improved and it gives you good results. In this way, you see future benefits that you can obtain in other processes or products with the same solution that you already found. 
+
+6. Examine the possible results if one or more parts of the concept you have already created are eliminated. 
+
+7. Reverse the order of interchangeable elements of an idea.
+
+The good thing about this technique is that it defends the principle of innovation from ideas that already exist. In other words, if you have two ideas and they are not working well separately, put it together, and adapt them. Results could be significantly improved. That's innovation. 
+
+
+
 
 
 
