@@ -116,6 +116,84 @@ The result of the innovation process is an opportunity (or several), a software 
 
 Only when an idea meets these requirements we can say that it is a real opportunity.
 
+![innovation](./media/innovation-for-identifying-opportunities.png)
+
+<title-3>Techniques and practices for innovate</title-3>
+
+* **Opposite Thinking**
+
+The technique of the opposite thought is the perfect definition of its name. In it, the participants must think precisely the opposite of what is reasonable; they can even think in different orders, start at the end, etc. In this way, unconventional ideas and solutions are found. 
+
+Here we share the step by step for you to understand it better. 
+
+"1. Individually list two assumptions you have about the problem you are trying to solve or about solutions that you have in mind (10 min). 
+
+2. Individually pick an assumption and define one or two opposite realities in the second column (5min). 
+
+3. Individually think about these new realities, how it affects your problem and add potential solutions to the third column (5min). 
+
+4. Keep repeating levels 3 and four until you have identified opposite realities and potential solutions for all assumptions (10 min). 
+
+Tip: Don’t hesitate to build upon the opposite realities of proposed solutions of your team members!
+
+5. Review all proposed solutions as a team and build on each other idea (20 min)."
+
+**Source:** [Board of Innovation](https://www.boardofinnovation.com/tools/opposite-thinking/)
+
+* **Brainstorm Cards**
+
+Brainstorm cards are a technique where different trends of the moment, and external factors, are considered to generate ideas per pile as much as you can. 
+
+You will write these dozens of ideas on the cards, categorize them by each of the trends or factors you considered, and then debug them. 
+
+What you should make sure is to choose a period to think and write everything that goes through your head. There are no limits, and no matter how crazy the idea may be. Every thought can work. 
+
+If you want to have an idea about what to write about or at least get started, let's share with you the trends and external factors that this activity usually focuses on. 
+
+1. Consumer Momentum Trends
+
+The fashions, the trends you see that are in the market and that people love and that sometimes leave a need in the minds of people that you can be satisfied with your product. Even you would learn from these cutting-edge ideas and use design thinking to predict what's next and do it first. 
+
+This trend you can put it together with another validation technique we explained before called [Customer Journey Map](https://cobuildlab.com/blog/practices-for-validating-your-business-idea-for-your-software/). We invite you to read it, but basically, it is the route of a customer for knowing him or her better. 
+
+These are some examples:
+
+A) What if you could reframe your service into bite-size components?
+
+"Duolingo turns the lengthy process of learning a new language into a playful list of small, easy 5-min lessons. They make their service free by using their students to translate bits and parts of articles. Companies like CNN and Buzzfeed pay Duolingo for this service."
+
+B) What if you used [gamification](https://en.wikipedia.org/wiki/Gamification)?
+
+"Think of ways to make using your product or service fun for customers. You can add levels, social rankings, perks, awards, missions, and scores. Waze, a “sat-nav” traffic measurement system, for example, awards points for every km driven or every report added. These reports are so accurate, many car manufacturers such as Honda are leaving TomTom for Waze."
+
+C) What if you could predict customer behavior?
+
+"Think of ways to quickly answer customers’ needs by predicting them. Amazon patented a system for predictive logistics: based on buying trends, your searches, and regional data, they send products to warehouses close to you, even before you buy them."
+
+In the same way, you can use technology trends, such as those used by Google, Amazon and [Apple](https://cobuildlab.com/blog/ios-app/) putting a voice to their virtual assistants. [Artificial intelligence](https://cobuildlab.com/blog/artificial-intelligence-in-2018/) somehow profitable, [blockchain](https://cobuildlab.com/blog/blockchain-revolution-in-business-world/), and so several trends that are setting the tone and can offer many advantages to the software product you want to develop.
+
+Also, you can use market trends, regulation trends, among others. 
+
+* **Analogy Thinking**
+
+Analogies are techniques where information of a determined situation is used in another one for several reasons. Because they are similar or they could be in a comparison, etc. 
+
+In this innovation technique itself, information from one source is used to solve a problem or opportunity in another context.
+
+An example in which you can apply this innovation technique is studying a much larger and more successful business with which you can identify. 
+
+Determine what makes it great according to your criteria, and those principles give them your essence and use them as a basis for your software business idea. 
+
+This is an effortless method for coming up with new ideas that are pre-validated.
+
+Uber is an excellent example of this type of business idea, which with the help of innovation could be made a place in a market and with a pre-existing and prevalent product, such as private transport, taxis.
+
+
+
+
+
+
+
 
 
 
