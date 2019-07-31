@@ -296,14 +296,40 @@ The SCAMPER technique is holistic, and was developed by Bob Eberle and consists 
 
 The good thing about this technique is that it defends the principle of innovation from ideas that already exist. In other words, if you have two ideas and they are not working well separately, put it together, and adapt them. Results could be significantly improved. That's innovation. 
 
+<title-3>Evaluating the market is optional</title-3>
 
+All the activities we develop in this post will help you to work on your idea, to form them, and become them in real opportunities for success.
 
+Now, this product or business is going to be destined for a market segment. At this point, it is not 100% necessary that you study that market because this will happen in a process later, which we will share with you in the next post. 
 
+You should know it a little, even before generating the idea, so that your depth and your creativity is directed towards the path you expect. 
 
+In this way,  you can walk with us and give shape to your software business together.
 
+<title-2>Example of an Innovative Business</title-2>
 
+We love [Papa](https://www.joinpapa.com/)!  The creator of this application recognized the need to provide more intimate and exceptional attention to grandparents, seniors. This service is provided by people who may resemble their grandchildren, without the need to alter their routines or leave their home or comfort zone. 
 
+The Founder gave a technological touch and decided to make it an application where caregivers can contact their grandparents and vice versa. That makes it more human, closer, more real. 
 
+This proposal is innovative, although it offers two pre-existing concepts, which are the care of grandparents, plus an application in which a home service is provided. 
 
+If we see the story of how it was born, you could see that everything started from a need that the founder himself had.  
 
+But he knew how to do the right process to develop his idea.  He looked for the support of excellent and talented people who guided him. And this is how today is in the market, native to our city, Miami, and it has excellent projections for the future. 
 
+There is a theory called **"the theory of the blue oceans"**. If you unite two different ideas and create a new one with this mixture, you can obtain a result never seen before. 
+
+It sounds easy, but it's not. Although not software, an excellent example of this theory is Cirque Du Soleil. A perfect combination of circus, theatre, dance and music. Pre-existing markets, which did not necessarily converge in the same value proposition, and we can enjoy their success over time. 
+
+These are excellent examples of what we want to share with you with this post.
+
+[To learn more about Papa, you can visit an entry we made about them](https://cobuildlab.com/blog/papa-app-grandkids-on-demand/). They are GREAT.
+
+<title-2>Find an opportunity in the software market with us at Meetup</title-2>
+
+We love to support entrepreneurs like you, that's why we will be doing a MeetUp where we will be putting into practice these and many other tools that will help you to have a clearer idea of a software business you want, based on the opportunities in the market and what is more convenient to shape your software solution. 
+
+We look forward to seeing you this July 30th at 66 West Flagler Street Miami at 6 pm. 
+
+We look forward to meeting you there!
