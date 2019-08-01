@@ -2,7 +2,7 @@
 title: "Payklever Campaign Manager"
 date: "2018-10-11T17:48:35.000Z"
 template: story
-image: "./media/payklever-cover.jpg"
+image: "./media/imagenes blog-03.png"
 ---
 
 ![Cesar Lang](./media/payklever.png)
