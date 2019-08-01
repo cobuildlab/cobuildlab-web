@@ -1,11 +1,10 @@
 ---
 title: "Identifying opportunities to create a Software Product"
-date: "2019-07-30T16:24:04.000Z"
+date: "2019-08-01T16:24:04.000Z"
 template: blog
 tags: Education
 image: "./media/identifying-opportunities-to-develop-a-software.jpg"
 ---
-
 
 The world of entrepreneurship is about opportunities. About business opportunities, market opportunities, opportunities to develop an idea, etc. But these opportunities often have to be worked on or found. They do not come by themselves and even less today that we have so many saturated markets, a lot of information, a lot of offers, a lot of software solutions, etc.
 

@@ -2,7 +2,7 @@
 title: "Ezonseller"
 date: "2018-11-19T12:40:35.000Z"
 template: story
-image: "./media/imagenes blog-01.png"
+image: ./media/new-ezonseller.png
 ---
 
 ![Cesar Lang](./media/ezonseller-logo.png)

@@ -2,7 +2,7 @@
 title: "Weedmatch"
 date: "2018-11-19T12:40:35.000Z"
 template: story
-image: "./media/imagenes blog-02.png"
+image: ./media/new-weedmatch-01.png
 ---
 
 ![Weedmatch](./media/weedmatch-bg.png)

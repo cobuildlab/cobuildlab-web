@@ -2,7 +2,7 @@
 title: "Massone"
 date: "2018-04-25T06:40:35.000Z"
 template: story
-image: "./media/ imagenes blog-05.png"
+image: ./media/new-massone.png
 ---
 
 <title-2 align="centered">Massone Mechanical</title-2>
