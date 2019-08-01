@@ -2,7 +2,7 @@
 title: "4Geeks Academy"
 date: "2018-07-03T17:48:35.000Z"
 template: story
-image: "./media/fondo-2-1024x511nuew.jpg"
+image: "./media/imagenes blog-06.png"
 ---
 
 ![Cesar Lang](./media/1-1280x1080.png)
