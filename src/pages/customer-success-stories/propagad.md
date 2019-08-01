@@ -2,7 +2,7 @@
 title: "Propagad"
 date: "2018-07-03T17:48:35.000Z"
 template: story
-image: "./media/fondo-propagad2-1024x331.jpg"
+image: "./media/imagenes blog-04.png"
 ---
 
 ![Cesar Lang](./media/cover-propagad.jpg)
