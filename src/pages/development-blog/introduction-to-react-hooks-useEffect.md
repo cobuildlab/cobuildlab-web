@@ -109,5 +109,105 @@ function MouseTracker() {
 }
 ```
 
+One More Example:
+
+```javascript 1.8
+import React, {useState, useEffect} from 'react';
+import './App.css';
+
+function App() {
+  const [complexCounter, setComplexCounter] = useState({
+    counter: 0,
+    lastTimeClicked: new Date()
+  });
+  const [simpleCounter, setSimpleCounter] = useState(0);
+  const [mousePosition, setMousePosition] = React.useState({x:0,y:0});
+
+  const logMousePosition = e => {
+    setMousePosition({
+      x: e.clientX,
+      y: e.clientY,
+    });
+  };
+
+  useEffect(() => {
+    console.log("AFTER RENDER:complex:", complexCounter.counter);
+    return () => {
+      console.log("BEFORE UNMOUNT:complex:", complexCounter.counter);
+    }
+  }, [complexCounter]);
+
+  useEffect(() => {
+    console.log("AFTER RENDER:simple:", simpleCounter);
+    return () => {
+      console.log("BEFORE UNMOUNT:simple", simpleCounter);
+    }
+  }, [simpleCounter]);
+
+  useEffect(() => {
+    document.title = `it has benn ${simpleCounter} clicks!`;
+  });
+
+  useEffect(() => {
+    window.addEventListener("mousemove", logMousePosition);
+    console.log("Created");
+    return () => {
+      console.log("Cleaned up");
+      window.removeEventListener("mousemove", logMousePosition);
+    };
+  }, []);
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <p>
+          The current mouse position is: X: {mousePosition.x} and Y: {mousePosition.y}
+        </p>
+        <p>
+          The current value for the counter is {complexCounter.counter}
+        </p>
+        <p>
+          Last time updated: {String(complexCounter.lastTimeClicked)}
+        </p>
+        <a
+          onClick={() => {
+            setComplexCounter({counter: complexCounter.counter + 1, lastTimeClicked: new Date()})
+          }}
+          // onClick={()=> setCounter(prevCounter => prevCounter + 1)}
+          className="App-link"
+          href="#"
+          rel="noopener noreferrer"
+        >
+          Increase Counter
+        </a>
+
+
+        <p>
+          The current value for the Simple counter is {simpleCounter}
+        </p>
+        <a
+          onClick={() => {
+            setSimpleCounter(simpleCounter + 1);
+          }}
+          // onClick={()=> setCounter(prevCounter => prevCounter + 1)}
+          className="App-link"
+          href="#"
+          rel="noopener noreferrer"
+        >
+          Increase Simple Counter
+        </a>
+
+
+      </header>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+```
+
 Source: (https://reactjs.org/docs/hooks-intro.html)[https://reactjs.org/docs/hooks-intro.html] 
 
