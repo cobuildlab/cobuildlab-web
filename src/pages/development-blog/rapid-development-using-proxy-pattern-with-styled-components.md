@@ -1,6 +1,6 @@
 ---
 title: "Rapid Software Development using the Proxy Pattern with Styled Components"
-date: 2019-08-08T01:00:00+00:00
+date: 2019-07-10T01:00:00+00:00
 template: development-post
 tags: 
 image: "./media/python-wsgi-docker.png"

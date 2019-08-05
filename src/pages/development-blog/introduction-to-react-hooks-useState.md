@@ -12,7 +12,7 @@ React Hooks introduced in version 16.8.0 is a set of features that enable [React
 
 - Provide a out of the box mechanism to share and reuse behaviour between components. Currently solved now with HOCs
 - Reduce verbosity on complex components
-- Reduce the complexity of learning React by promoting the use of Functional bases Components instead of Class based components
+- Reduce the complexity of learning React by promoting the use of Functional based Components instead of Class based components
  
 
 ## Hook Rules
