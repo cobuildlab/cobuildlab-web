@@ -5,8 +5,6 @@ template: story
 image: ./media/CustomerSuccessStories-ezonseller.png
 ---
 
-![Cesar Lang](./media/ezonseller-logo.png)
-
 <title-2 align="centered">Ezonseller</title-2>
 
 **Ezonseller** uses a simple principle that has been the basis of a profitable business for thousands of years - buy at a price and sell

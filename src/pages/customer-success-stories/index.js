@@ -80,6 +80,7 @@ class BlogIndex extends React.Component {
             <Columns className="is-multiline">
               {posts.map(({ node }) => {
                 const title = get(node, 'frontmatter.title') || node.fields.slug
+                console.log(`DEBUG:`, node)
                 return (
                   <Column key={node.fields.slug} isSize="1/3">
                     <Link to={node.fields.slug}>

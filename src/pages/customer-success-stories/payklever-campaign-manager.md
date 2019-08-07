@@ -2,10 +2,8 @@
 title: "Payklever Campaign Manager"
 date: "2018-10-11T17:48:35.000Z"
 template: story
-image: ./CustomerSuccessStories-payklever.png
+image: ./media/CustomerSuccessStories-payklever.png
 ---
-
-![Cesar Lang](./media/payklever.png)
 
 <title-2 align="centered">Payklever Campaign Manager</title-2>
  

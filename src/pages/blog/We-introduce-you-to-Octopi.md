@@ -15,13 +15,13 @@ Octopi, it's a Miami-based software startup that builds and sells a modern and s
 ![software-development](./media/octopi-1.jpg)
 **SOURCE:** [StartUp Miami](http://startup.miami/spotlight/octopi/)
 
-The company was founded in 2015 by Luc Castera and Guille Carlos, two software engineers with more than 25 years of combined experience in software development whom strongly believe that quality software should be elegant and easy to use. Miles Varghese joined the team to head up sales in 2017. 
+The company was founded in 2015 by Luc Castera and Guille Carlos, two software engineers with more than 25 years of combined experience in software development whom strongly believe that quality software should be elegant and easy to use. Miles Varghese joined the team to head up sales in 2017.
 
 Octopi's CEO, [Luc Castera](http://luccastera.com/resume/), studied Electrical Engineering at the University of Virginia, and masters at Georgia Tech in the same field. After gaining experience as a Software Architect, CTO, in different companies working with customers like AT&T, Facebook, Google and SnapChat, he developed and launched projects with friends such as job509.com (which is now the #1 jobs website in Haiti) and htmlsig.com (on which more than half a million email signatures have been created).
 
 <title-2 align=centered>*"First find someone willing to pay you for a product before you spend the time and resources to build it."*</title-2>
 
-That was a crucial lesson Castera learned after his first attempt at starting his own company (ShareMeme). Luc quit his two years job as a Software Architect at Verizon Communications he got after graduating to start ShareMeme, even though it was not a success, this failure did not stop him to look forward to his next project. Years later he stumbled into the shipping and maritime industry thanks to a friend who was looking for a software for that industry and they ended up founding Octopi. 
+That was a crucial lesson Castera learned after his first attempt at starting his own company (ShareMeme). Luc quit his two years job as a Software Architect at Verizon Communications he got after graduating to start ShareMeme, even though it was not a success, this failure did not stop him to look forward to his next project. Years later he stumbled into the shipping and maritime industry thanks to a friend who was looking for a software for that industry and they ended up founding Octopi.
 
 
 The largely bootstrapped Octopi won the eMerge Americas Startup Showcase early-stage competition in 2016, winning $50,000. That year it also participated in the Venture Hive accelerator class and has been growing its revenues and customer base since.
@@ -34,7 +34,7 @@ On March 2019,  Navis, a California subsidiary of Helsinki-based Cargotec,  purc
 You could say it's a win-win situation because Navi sells terminal operating systems and focuses on the big ports of the world, but they needed an agile, cloud-based solution to serve that market.  Octopi, on the other hand,  offering a cloud-based TOS that is intuitive and quick to implement works in a very conservative industry that not trusts in small companies like them.
 
 So Navi will tackle a market they were not able to tackle with their existing product line, and they will help Octopi scale, now being backed by a billion-dollar company.
- 
+
 "We think we will achieve great things within Cargotec-Navis. We love the fact that we have gotten a lot of support from the Miami tech community and we are happy that we have lived up to the expectations that a lot of people have put on us." Castera said.
 
 **SOURCE:** [Navis](https://www.navis.com/en/about/news-events/news/exit-miamis-octopi-acquired-by-cargotec-subsidiary.-whats-ahead-for-octopi/)

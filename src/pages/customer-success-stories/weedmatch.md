@@ -5,8 +5,6 @@ template: story
 image: ./media/CustomerSuccessStories-weeddmatch.png
 ---
 
-![Weedmatch](./media/weedmatch-bg.png)
-
 <title-2 align="centered">Weedmatch</title-2>
 
 **Weedmatch** is the **first free cannabis social network** made by a group of Venezuelans led by its founder Oscar Lopez in Chile where
