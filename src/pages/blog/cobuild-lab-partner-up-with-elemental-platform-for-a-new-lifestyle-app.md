@@ -3,7 +3,7 @@ title: "Cobuild Lab partner up with Elemental Platform to start developing a new
 date: "2019-08-05T12:50:05.000Z"
 template: blog
 tags: News
-image: "./media/PORTADA ELEMENTAL.png"
+image: "./media/portada-elemental.png"
 ---
 
 <title-2>Cobuild Lab partner up with Elemental Platform to start developing a new lifestyle app</title-2>
@@ -16,7 +16,7 @@ The main idea is<block-quote>"Creating an application capable of helping people 
 
 The application will provide a physical training platform based on programs initially for Crossfit, conventional Gymnasiums, and outdoor training. Its main goal is to take you by the hand through this entire transformation process, seeking to facilitate the arrival at the goal and that this change lasts in you. 
 
-![software-development](./media/ELEMENTAL PLATFORM.png)
+![software-development](./media/elemental-platform.png)
 Source: [Elemental Platform](https://josechirinos3.wixsite.com/misitio)
 
 Its purpose is to shield you from long-term illnesses, with excellent programming, coaching, nutrition tips, and a whole community of people looking for a better lifestyle. Stay tuned for more Elemental App updates.
