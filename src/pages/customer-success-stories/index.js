@@ -48,7 +48,7 @@ class BlogIndex extends React.Component {
       <Layout>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
+          meta={[{ name: 'description', content: 'Success Cases for the Cobuild Lab in Miami' }]}
           title={siteTitle}
         />
 

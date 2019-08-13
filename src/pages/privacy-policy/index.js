@@ -34,7 +34,7 @@ class PrivacyPolicy extends React.Component {
       <Layout>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
+          meta={[{ name: 'description', content: 'Privacy Policy for the Cobuild Lab' }]}
           title={siteTitle}
         />
         <section className="section pt-10">

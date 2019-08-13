@@ -38,7 +38,7 @@ class ServicesIndex extends React.Component {
       <Layout>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
+          meta={[{ name: 'description', content: 'Services Offer by the Cobuild Lab in Miami' }]}
           title={siteTitle}
         />
 

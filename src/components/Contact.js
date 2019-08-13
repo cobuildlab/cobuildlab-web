@@ -47,7 +47,7 @@ export default class Contact extends React.Component {
     if (this.state.firstName.length <= 0) {
       toast.dismiss()
 
-      toast.error("First name can't be empty", {
+      toast.error('First name can\'t be empty', {
         position: 'bottom-right',
       })
       return
@@ -56,7 +56,7 @@ export default class Contact extends React.Component {
     if (this.state.lastName.length <= 0) {
       toast.dismiss()
 
-      toast.error("Last name can't be empty", {
+      toast.error('Last name can\'t be empty', {
         position: 'bottom-right',
       })
       return
@@ -65,7 +65,7 @@ export default class Contact extends React.Component {
     if (this.state.email.length <= 0) {
       toast.dismiss()
 
-      toast.error("Email can't be empty", {
+      toast.error('Email can\'t be empty', {
         position: 'bottom-right',
       })
       return
@@ -74,7 +74,7 @@ export default class Contact extends React.Component {
     if (this.state.comment.length <= 0) {
       toast.dismiss()
 
-      toast.error("Comment can't be empty", {
+      toast.error('Comment can\'t be empty', {
         position: 'bottom-right',
       })
       return
@@ -141,18 +141,19 @@ export default class Contact extends React.Component {
   render() {
     return (
       <section id="contact" className="section bg-section">
-        <ToastContainer />
+        <ToastContainer/>
         <Container>
           <Columns isCentered>
             <Column className="p-f" isSize="1/2">
               <Title isSize={2} className="title-section" hasTextAlign="left">
                 Where we are?
               </Title>
+              <Title className="title-section">66 West Flagler St, Suite 900, Miami, Florida 33130</Title>
               <Card>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7185.8011732692985!2d-80.194957!3d25.773847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b69bc4ede3f9%3A0x16e796cf8c581432!2s66+W+Flagler+St+%23900%2C+Miami%2C+FL+33130%2C+EE.+UU.!5e0!3m2!1ses!2sve!4v1537197642139"
                   width="600"
-                  height="450"
+                  height="550"
                   frameBorder="0"
                   style={{ border: 0, width: '100%' }}
                   allowFullScreen
@@ -234,9 +235,9 @@ export default class Contact extends React.Component {
                 </Field>
                 <Field isGrouped>
                   <Control>
-                    <br />
+                    <br/>
                     {this.state.isLoading ? (
-                      <Loading loading={this.state.isLoading} />
+                      <Loading loading={this.state.isLoading}/>
                     ) : (
                       <button
                         className="button is-primary is-medium is-rounded"
