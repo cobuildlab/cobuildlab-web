@@ -77,7 +77,7 @@ class BlogPostTemplate extends React.Component {
     const nextImage = get(next, 'frontmatter.image.publicURL') || defaultImg
     let speech
 
-
+    const imageAmp = post.frontmatter.image.childImageSharp
     return (
       <LayoutPost>
         <Helmet
@@ -102,7 +102,9 @@ class BlogPostTemplate extends React.Component {
               backgroundImage: `url(${image})`
             }}
           /> */}
-          <Img className="bg-post" fluid={post.frontmatter.image.childImageSharp.fluid}/>
+          {/*<Img className="bg-post" fluid={post.frontmatter.image.childImageSharp.fluid}/>*/}
+          <amp-img src-set={imageAmp.srcSet} src={imageAmp.src} width={imageAmp.width} height={imageAmp.height} alt={imageAmp.altText}
+                   layout="responsive"/>
         </Hero>
 
         <section id="section-post" className="section">

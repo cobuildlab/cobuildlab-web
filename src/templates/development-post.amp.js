@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import LayoutPost from '../components/layoutPost'
 import { Link, graphql } from 'gatsby'
-import Img from 'gatsby-image'
 import { DiscussionEmbed } from 'disqus-react'
 import Share from '../components/Share'
 import Carousel from '../components/Carousel'
@@ -29,8 +28,11 @@ import '../assets/fonts/Lato-Italic.ttf'
 import '../assets/fonts/Lato-Light.ttf'
 import '../assets/fonts/Lato-LightItalic.ttf'
 import '../assets/fonts/Lato-Regular.ttf'
+import '../assets/prism.css'
+
 import {
   Hero,
+  HeroBody,
   Container,
   Title,
   Columns,
@@ -39,7 +41,6 @@ import {
   CardContent,
   Content,
 } from 'bloomer'
-import TTSVoice from '../components/TTSVoice'
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -71,13 +72,10 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = 'Cobuild Lab'
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
-    const image = get(post, 'frontmatter.image.publicURL') || defaultImg
+    // const image = get(post, 'frontmatter.image.publicURL') || defaultImg
     const previousImage =
       get(previous, 'frontmatter.image.publicURL') || defaultImg
     const nextImage = get(next, 'frontmatter.image.publicURL') || defaultImg
-    let speech
-
-
     return (
       <LayoutPost>
         <Helmet
@@ -94,15 +92,6 @@ class BlogPostTemplate extends React.Component {
             <br/>
             <hr/>
           </Container>
-          {/* WITH GATSBY ALWAYS USE <IMG fluid={}>
-            Because it handles the device size img for you*/}
-          {/* <HeroBody
-            className="bg-post"
-            style={{
-              backgroundImage: `url(${image})`
-            }}
-          /> */}
-          <Img className="bg-post" fluid={post.frontmatter.image.childImageSharp.fluid}/>
         </Hero>
 
         <section id="section-post" className="section">
@@ -110,7 +99,7 @@ class BlogPostTemplate extends React.Component {
             <Columns isCentered>
               <Column hasTextAlign="left">{renderAst(post.htmlAst)}</Column>
             </Columns>
-            <TTSVoice text={post.rawMarkdownBody}/>
+
             <Share
               socialConfig={{
                 twitterHandle,
@@ -201,40 +190,39 @@ class BlogPostTemplate extends React.Component {
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
-    query ($slug: String!) {
-        site {
-            siteMetadata {
-                title
-                siteUrl
-                author
-                twitterHandle
-            }
-        }
-        markdownRemark(fields: { slug: { eq: $slug } }) {
-            rawMarkdownBody
-            id
-            excerpt
-            htmlAst
-            frontmatter {
-                title
-                date(formatString: "DD MMMM, YYYY")
-                tags
-                image {
-                    publicURL
-                    childImageSharp {
-                        fluid(maxWidth: 1920) {
-                            aspectRatio
-                            base64
-                            sizes
-                            src
-                            srcSet
-                        }
-                    }
-                }
-            }
-            fields {
-                slug
-            }
-        }
+  query ($slug: String!) {
+    site {
+      siteMetadata {
+        title
+        siteUrl
+        author
+        twitterHandle
+      }
     }
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      id
+      excerpt
+      htmlAst
+      frontmatter {
+        title
+        date(formatString: "DD MMMM, YYYY")
+        tags
+        # image {
+        #   publicURL
+        #   childImageSharp {
+        #     fluid(maxWidth: 1920) {
+        #       aspectRatio
+        #       base64
+        #       sizes
+        #       src
+        #       srcSet
+        #     }
+        #   }
+        # }
+      }
+      fields {
+        slug
+      }
+    }
+  }
 `
