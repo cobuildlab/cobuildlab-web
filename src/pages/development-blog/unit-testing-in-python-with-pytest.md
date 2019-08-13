@@ -1,6 +1,6 @@
 ---
 title: Unit testing in Python with pytest
-date: 2018-08-12T01:00:00+00:00
+date: 2019-08-12T01:00:00+00:00
 template: development-post
 tags: 
 image: "./media/blocks.jpg"
