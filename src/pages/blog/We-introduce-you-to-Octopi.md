@@ -5,8 +5,6 @@ template: blog
 tags: Miami
 image: "./media/octopi-0.jpg"
 ---
-<title-2>Get to know a team of passionate software developers. We introduce you to Octopi</title-2>
-
 
 Octopi, it's a Miami-based software startup that builds and sells a modern and smart Terminal Operating System (TOS) that helps small and medium-size seaport terminal operators manage operations, track cargo, and communicate electronically in real-time with commercial partners, launched with its first customer, one small terminal in Haiti in 2015. The company's cloud-based TOS is now in use at ten terminals in seven countries.
 
