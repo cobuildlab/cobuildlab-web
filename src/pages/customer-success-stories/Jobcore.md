@@ -26,9 +26,7 @@ Source: [LinkedIn](https://www.linkedin.com/in/alesanchezr/?locale=es_ES)
 
 Jobcore is a web and mobile platform where employers can create a job opening to search talent in the hospitality industry. The talent by using the mobile app is able to apply and work using this incredible platform and get paid faster than ever.
 
-The Employer interface is a website where he can plan his shifts and invite talents to work for them. This interface allows you not only to manage your schedules but also to see the activity for the specific job, and track the time that your talents work on each shift.
-
-In the next release, the capabilities of making payroll will become available. 
+The Employer interface is a website where he can plan his shifts and invite talents to work for them. This interface allows you not only to manage your schedules but also to see the activity for the specific job, and track the time that your talents work on each shift. In the next release, the capabilities of making payroll will become available. 
 
 For the talent, the mobile app allows them to get notifications for open positions, apply, and full fill the shift and track payments all in one place.
 
