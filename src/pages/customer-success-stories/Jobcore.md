@@ -1,5 +1,5 @@
 ---
-title: "8base is now sponsoring our Meetups"
+title: "Jobcore"
 date: "2019-08-14T16:24:04.000Z"
 template: Customer Success Stories
 image: "./media/jobcore-01.png"
