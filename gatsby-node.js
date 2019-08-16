@@ -45,8 +45,22 @@ exports.createPages = ({ graphql, actions }) => {
         `,
       ).then(result => {
         if (result.errors) {
-          reject(result.errors)
+          return reject(result.errors)
         }
+        console.log(`DEBUG: gatsby-node: processing:`);
+        console.log(`DEBUG: gatsby-node: processing:`);
+        console.log(`DEBUG: gatsby-node: processing:`);
+        console.log(`DEBUG: gatsby-node: processing:`);
+        console.log(`DEBUG: gatsby-node: processing:`);
+        console.log(`DEBUG: gatsby-node: processing:`);
+        console.log(`DEBUG: gatsby-node: processing:`);
+        console.log(`DEBUG: gatsby-node: processing:`, result);
+        console.log(`DEBUG: gatsby-node: processing:`);
+        console.log(`DEBUG: gatsby-node: processing:`);
+        console.log(`DEBUG: gatsby-node: processing:`);
+        console.log(`DEBUG: gatsby-node: processing:`);
+        console.log(`DEBUG: gatsby-node: processing:`);
+        console.log(`DEBUG: gatsby-node: processing:`);
         // Create blog posts pages.
         const posts = result.data.allMarkdownRemark.edges
 
@@ -54,7 +68,7 @@ exports.createPages = ({ graphql, actions }) => {
           const previous =
             index === posts.length - 1 ? null : posts[index + 1].node
           const next = index === 0 ? null : posts[index - 1].node
-          console.log(`DEBUG: gatsby-node: processing:`, post.node.fields.slug)
+
           createPage({
             path: post.node.fields.slug,
             component: path.resolve(
@@ -67,18 +81,17 @@ exports.createPages = ({ graphql, actions }) => {
             },
           })
           // AMP
-          // createPage({
-          //   path: post.node.fields.slug + `/amp`,
-          //   component: path.resolve(
-          //     `src/templates/${String(post.node.frontmatter.template)}.amp.js`,
-          //   ),
-          //   context: {
-          //     slug: post.node.fields.slug,
-          //     previous,
-          //     next,
-          //   },
-          // })
-
+          createPage({
+            path: post.node.fields.slug + `/amp`,
+            component: path.resolve(
+              `src/templates/${String(post.node.frontmatter.template)}.amp.js`,
+            ),
+            context: {
+              slug: post.node.fields.slug,
+              previous,
+              next,
+            },
+          })
         })
       }),
     )

@@ -1,7 +1,7 @@
 ---
 title: "Jobcore"
 date: "2019-08-14T16:24:04.000Z"
-template: Customer Success Stories
+template: story
 image: "./media/jobcore-01.png"
 ---
 Get work fast and get paid the same day with Jobcore. This is a web platform that allows employers to post job applications for candidates using the mobile and web app. It is the first distributed talent pool for the hospitality industry.
