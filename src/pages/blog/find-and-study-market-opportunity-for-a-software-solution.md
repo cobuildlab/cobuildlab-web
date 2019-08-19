@@ -96,12 +96,53 @@ The more specific the better. It is a person that we design and define as our id
 
 <title-2>3. Think a software that solves the problem</title-2>
 
+In the previous phases, you had to think about the whole environment, the situations, and even the complaints that your ideal client may have. This will help you to know the problems he may have in his life. Try to think like him. And you don't necessarily have to do it yourself. You can form a team that complements your effort. 
+
+Thinking about their problems will give you the chance to propose solutions, solutions that you will later translate into software or a software idea that you will then develop. 
+
+Think about how you would like the problem or desire to be solved if you were that person. This exercise is essential and can even be fun. 
+
+<title-2>4. You would look for an expert team in software and business</title-2>
+
+If at this point, you incorporated marketing experts into your team, congratulations. But as we said before, the desire to find a business opportunity is limited to the software market, and for that, you need to develop a product. For this, you will need to ally with a [**software development company**](https://cobuildlab.com/#contact), or you will have to form a technology and development team, or even find a [CTO](https://en.wikipedia.org/wiki/Chief_technology_officer), to carry out your idea successfully. 
+
+<title-2>5. Find your competition</title-2>
+
+Finding your competition is almost as important as getting to know your ideal customer deeply, finding a solution and putting together the right team to develop and market it. 
+
+When you look for and know what your competitors offer and are doing, you know what works and what doesn't, you can find a value proposition that makes you different, you can improve what they are already offering, or you can know the market in which you are going to develop. This is very important.  That's why we decided to add it as a separate step for you to find the opportunity you have always wanted in the market. Think about it this way: if you don't know what's happening in the market, how are you going to find an opportunity?
+
+<title-2>6. Innovate and think about your value proposition</title-2>
+
+Your value proposition is the distinctive feature, the seal that makes you different from the competition and that you use to capture your potential customers. 
+
+It is fair and necessary that you stop to think why people might choose the software solution you are offering and not your competition. 
+
+What makes you unique and different is your value proposition. 
+
+And most importantly, be consistent with the product and what you offer.
+
+<title-2>7. You must validate the market you found</title-2>
+
+This is the moment when you do some activities to confirm if the software idea you found is the best. If the design fits your segmentation and buyer person, if it has a clear value proposition if it is innovative and different from the rest, and most importantly if the final consumer or at least a significant sample of people would be willing to consume your software product so the opportunity it will be ok. All of that is possible with market validation. 
+
+<title-3>Market Validation activities</title-3>
+
+1. Determine the first customer Archetype 
+
+2. Determine which is the best way to found them
+
+3. How we can expose them to the product
+
+4. Execute all methods planned in as many experiments as necessary
+
+Interviews are the most common. 
+
+5. Evaluate the results and the market 
+
+6. Determine the total addressable market
 
 
+After all this.
 
-
-
-
-
-
-
+<title-2>Congrats! You have found an opportunity in the market to develop a software solution!</title-2>
