@@ -1,5 +1,5 @@
 ---
-title: "Introduction to React Hooks: useEffect"
+title: "Introduction to React Hooks Part II: useEffect"
 date: 2019-08-05T01:00:00+00:00
 tags:
 template: development-post

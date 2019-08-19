@@ -1,5 +1,5 @@
 ---
-title: "Introduction to React Hooks: useState"
+title: "Introduction to React Hooks Part I: useState"
 date: 2019-07-23T01:00:00+00:00
 tags:
 template: development-post
