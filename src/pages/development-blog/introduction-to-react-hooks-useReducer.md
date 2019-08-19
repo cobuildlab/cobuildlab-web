@@ -16,11 +16,9 @@ Continuing our previous post on [React Hooks](https://cobuildlab.com/development
 The `useReducer` hook is a more powerful alternative to the `useState` hook. Both have the same purpose: maintaining state values, the difference with the `useReducer` hook is that it uses a `reducer` function to mutate the state when any action or state change is "dispatched".
 
 
-```bash
-An alternative to useState. Accepts a reducer of type (state, action) => newState, and returns the current state paired with a dispatch method. (If you’re familiar with Redux, you already know how this works.)
+>An alternative to useState. Accepts a reducer of type (state, action) => newState, and returns the current state paired with a dispatch method. (If you’re familiar with Redux, you already know how this works.)
 
-useReducer is usually preferable to useState when you have complex state logic that involves multiple sub-values or when the next state depends on the previous one. useReducer also lets you optimize performance for components that trigger deep updates because you can pass dispatch down instead of callbacks.
-```
+>useReducer is usually preferable to useState when you have complex state logic that involves multiple sub-values or when the next state depends on the previous one. useReducer also lets you optimize performance for components that trigger deep updates because you can pass dispatch down instead of callbacks.
 
 [Source:](https://reactjs.org/docs/hooks-reference.html#usereducer)
 
@@ -124,11 +122,10 @@ function MouseTracker() {
 
 ## [Bailing out a dispatch](https://reactjs.org/docs/hooks-reference.html#bailing-out-of-a-dispatch)
 
-```text
-If you return the same value from a Reducer Hook as the current state, React will bail out without rendering the children or firing effects. (React uses the Object.is comparison algorithm.)
+>If you return the same value from a Reducer Hook as the current state, React will bail out without rendering the children or firing effects. (React uses the Object.is comparison algorithm.)
 
-Note that React may still need to render that specific component again before bailing out. That shouldn’t be a concern because React won’t unnecessarily go “deeper” into the tree. If you’re doing expensive calculations while rendering, you can optimize them with useMemo.
-```
+>Note that React may still need to render that specific component again before bailing out. That shouldn’t be a concern because React won’t unnecessarily go “deeper” into the tree. If you’re doing expensive calculations while rendering, you can optimize them with useMemo.
+
 
 Source: (https://reactjs.org/docs/hooks-intro.html)[https://reactjs.org/docs/hooks-intro.html] 
 
