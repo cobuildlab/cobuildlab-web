@@ -10,3 +10,17 @@ React Hooks introduced in version 16.8.0 is a set of features that enable [React
 
 Continuing our previous post on [React Hooks](https://cobuildlab.com/development-blog/introduction-to-react-hooks-useState/) and the `useState` hook, today we will explain the `useEffect` hook.
 
+
+## `useEffect` Hook
+
+The `useEffect` hook is a React hook that is used to indicate to the React render engine to perform certain actions or `effects` in the lifecycle of a Component.
+
+The lifecycle of a Functional component is composed by 2 states: Render and not Rendered. The `useEffect` hook allows us to execute functions after the component has been rendered, and before it's gonna be removed or unmounted.
+
+Every time a state variable of the component is changed, a re-render of the component is triggered, by doing so, also triggering any functions specified on any `useEffect` hook. Sometimes this is not the desired behaviour, so, the `useEffect` hook allows to specified a set of dependencies for this behaviour to be performed. 
+
+This dependencies instruct the hook to execute their functions only if any of the dependencies change. A common practice is to pass a empty set of dependencies if you want the functions to be executed only the first time it renders and the last time is unmounted.
+
+
+[According to React Docs on `useEffect`:](https://reactjs.org/docs/hooks-reference.html#useeffect)
+
