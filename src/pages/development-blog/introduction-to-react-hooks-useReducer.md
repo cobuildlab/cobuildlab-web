@@ -45,7 +45,7 @@ And returns an array with 2 values:
 
 ## Example: 
 
-```javascript 1.8
+```javascript
 import React, {useReducer} from 'react';
 
 function init(initialCount) {
@@ -84,7 +84,7 @@ function Counter({initialCount}) {
 
 ## Example
 
-```javascript 1.8
+```javascript
 import React, {useReducer} from 'react';
 
 function MouseTracker() {  
