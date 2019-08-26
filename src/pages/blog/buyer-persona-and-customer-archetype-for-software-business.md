@@ -11,7 +11,7 @@ When you find an opportunity to develop software, i.e. you worked on your idea e
 
 Delimit them to such an extent that you develop your sense of software specially adapted to their needs, to their complaints, to their desires, to the value they require. 
 
-You can achieve this by making the character of your ideal client. As if it were a role for a story or a movie, you will create a representation, give it a name, preferences, a profile, and in general provides life to the role. Why is this done? We'll explain it in more detail and show you how to do it. First of all, you only need to know that these tools are known as **Customer Archetypes and Buyer Persona.
+You can achieve this by making the character of your ideal client. As if it were a role for a story or a movie, you will create a representation, give it a name, preferences, a profile, and in general provides life to the role. Why is this done? We'll explain it in more detail and show you how to do it. First of all, you only need to know that these tools are known as **Customer Archetypes and Buyer Persona.**
 
 <title-2>A more complete understanding of the Customer Archetypes</title-2>
 
