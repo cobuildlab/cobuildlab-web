@@ -71,19 +71,36 @@ Sometimes, the best teams aren't made up by the most talented people in the worl
 
 If you’re not an expert in the technicalities of Software Development, you may feel your team is incomplete, but remember you could ask for help from a software development company or also a [technical co-founder](https://cobuildlab.com/blog/co-founders/). Whatever it is, make sure that each person has an  assigned responsibility, that they know it, and that  matches their strengths. 
 
-<title-3>8. </title-3>
+<title-3>8. Create your formula</title-3>
 
+Each leader has their own methodologies, formulas that may have worked for them in previous processes, or that might have been validated as successful with other analogies. But what is most certain is that there is always a method behind every leader. If you can define your own methodology, refine it, spread it, and make the rest of your team feel identified with it, you have won a great battle. 
 
+Impositions usually are a leader’s worst enemy. Especially in the area of software development where often the person or founder who had the initial idea, is not a software specialist and must surround himself with people who are. Show your team how your plan can succeed. Set smaller goals in the beginning, and make sure they are met successfully. These early victories, will motivate you as well as your team. Just please don’t be that boss that runs everyone ragged.
 
+<title-3>9. Feedback, alignment, and elimination</title-3>
 
+As tasks, activities, and objectives are completed, it is good that you give feedback to each member of your team and vice versa, putting in the same effort to listen to feedback from the team as you did to give it to them
 
+Now, with this information, you must fine-tune the necessary details; eliminate what is not required and align the rest so that the software development process runs smoothly and effectively. 
 
+<title-3>10. Always be learning</title-3>
 
+Even if you can sell ice to Eskimos, it’s important to realize that a leader never stops learning. Leaders are always learning from their environment, from their team, and from everything they can.
 
+<title-3>11. Think of a legacy</title-3>
 
+High-performance teams are achieved because they have a great leader who takes the time to train them,  as well as  continuously encouraging them to be leaders in their area. A leader sees the potential in every member of their team, believing that each and every one of them has the capacity of leading a team, of completing tasks, and of working organized under the same philosophy, because that’s what they have been taught. 
 
+Now you could be released of some responsibilities because you will have a trust-worthy team. In case you have to disengage yourself of some process at some point, someone else will be able to replace you without affecting the performance of the team. 
 
+Maybe your position requires you to represent your company in another way. But now you will know that the company will still thrive even if you are not there for a while. That's what it's all about, creating a legacy. Putting together a team that represents the ideals that you and them stand for.
 
+<title-3>12. Commitment, commitment, commitment</title-3>
 
+The best leader commits fully to a project, maintaining that commitment over time, and until he or she executes it, their commitment never fades.  The bar you set for yourself should be higher than the rest, that’s because a major effort is expected from the leader, and all this without mentioning that your commitment must be contagious for the team. It is imperative that you find the tools to do it, this is a sure way to guarantee your team’s growth and performance. If your colleagues and teammates grow, they develop themselves; the result will be the growth of you and your software project. It's a win-win equation.
 
+As your colleagues and teammates continue to grow, the quality of their work and those around them will grow as well, creating a chain reaction resulting in the growth of your team as well as that of your company, start-up, or software project.
 
+Being a software entrepreneur is not an easy task. On the entrepreneurial side, you must be an excellent leader and motivate your team to give the best of themselves, and on the software side, you should have at least a basic knowledge or support from an expert, so that the technical quality of the product being developed is the highest possible, making use of the right tools, and in general, following the [software development process](https://cobuildlab.com/blog/best-software-development-process/) correctly. 
+
+We hope that these **leadership tips for entrepreneurs** have helped you, and if you want more, [contact us](https://cobuildlab.com/#contact), and we will gladly help you. 
