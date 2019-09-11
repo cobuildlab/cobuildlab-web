@@ -43,6 +43,8 @@ There are important, unimportant, urgent, and non-urgent things. There is a prio
 
 ![leader-management](./media/leader.jpeg)
 
+<Br>
+
 The prioritization exercise consists of finding a balance between things that are urgent and things that are important, and based on that prioritize activities, goals, and everything that the team must undertake. This sense of prioritization is necessary to be effective and efficient in the final result, to work in an organized way based on the plan you make. But this effort must come from you, and then your team will follow your guidelines and even be able to prioritize their activities by their own initiative. 
 
 
