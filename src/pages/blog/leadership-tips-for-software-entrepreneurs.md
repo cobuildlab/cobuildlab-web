@@ -1,5 +1,5 @@
 ---
-title: "12 Good Leadership Tips for Software Entrepreneurs"
+title: "12 Leadership Tips for Software Entrepreneurs"
 date: "2019-09-11T16:24:04.000Z"
 template: blog
 tags: Education
@@ -41,7 +41,7 @@ You can use any tools you want for this or do it face to face. The most importan
 
 There are important, unimportant, urgent, and non-urgent things. There is a prioritization exercise in which a picture is drawn divided into four spaces with these characteristics in each sector. The division would be this way:
 
-![leader-management](./media/leader.jpeg)
+[![leader-management](./media/leader.jpeg)](#)
 
 <Br>
 
