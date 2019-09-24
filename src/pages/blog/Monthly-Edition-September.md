@@ -16,11 +16,11 @@ With a very topic-oriented program, Miami Software Developers provides weekly me
 
 September Monthly Edition is focused on best practices and technologies for capturing metrics on Web and Mobile Applications from both a technical point of view, as well as practical.
 
-[SoftwareDevelopment](./media/monthlyseptember2.jpg)
+(./media/monthlyseptember2.jpg)
 
-[SoftwareDevelopment](./media/monthlyseptember3.jpg)
+(./media/monthlyseptember3.jpg)
 
 Want to [become a member](https://www.meetup.com/Miami-Software-Developers/discussions/)?Just bring your laptop and whatever problem you are working on! They will help you in any way they can. Become a developer with Miami Software Developers!  
 
-[SoftwareDevelopment](./media/monthlyseptember4.jpg)
+(/media/monthlyseptember4.jpg)
 [Monthly Edition: Actionable Metrics on Web and Mobile Applications](https://www.meetup.com/Miami-Software-Developers/events/264621834/)
