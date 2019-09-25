@@ -24,3 +24,4 @@ Want to [become a member](https://www.meetup.com/Miami-Software-Developers/discu
 
 (/media/monthlyseptember4.jpg)
 [Monthly Edition: Actionable Metrics on Web and Mobile Applications](https://www.meetup.com/Miami-Software-Developers/events/264621834/)
+
