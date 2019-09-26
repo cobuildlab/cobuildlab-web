@@ -82,7 +82,7 @@ They are known for their excellent products and services. The founders were init
 
 A positive aspect of this tool is that it has a free and a paid version, and both of them are good. Also, it provides you the opportunity to choose if a personal option works for you or if you need G-Suite to be able to better collaborate as a business. 
 
-[![Google-tools](./media/google services.jpg)](#)
+[![Google-tools](./media/google-services.jpg)](#)
 
 
 <title-3>3. The need to analyze and connect</title-3>
