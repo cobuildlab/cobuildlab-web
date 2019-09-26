@@ -121,12 +121,37 @@ With this tool, you can create mobile or web applications without having to mana
  
 This  is a [server-less](https://martinfowler.com/articles/serverless.html) platform, a technology that’s here to stay in the [software development](https://cobuildlab.com/blog/best-software-development-process/) industry, because it makes it much easier to  [integrate the back-end with the front-end](https://cobuildlab.com/blog/key-elements-that-you-should-consider-to-select-your-technology-stack/), so easy it can be managed by a front developer. Why is it ideal for entrepreneurs? Because you will most likely need less human resources, and it will allow you to develop your product in Google's infrastructure making it more adaptive. 
 
+Even large applications are currently using it. It is one of the most used tools in the market today, and therefore, should not be missing from your entrepreneurial toolbox.
+ 
+With Firebase, you can have analytics, databases, messaging and crash reporting. Making it easier for you to focus on your users, and making a product that fulfills their needs. 
+
+<title-3>5. The need to design and to have a visual style</title-3>
+
+<Br>
+
+<title-3>Canvas or any design tool</title-3>
+
+Part of the work done in the development of a software application is the design. The design system you pick will be representative of your brand in everything from the website all the way to the User Interface. To do this, you will need designers to support you with the theme, but also the right tools.
+ 
+There are many in the market. Among them, the [Adobe Suite](https://www.adobe.com/creativecloud.html?gclid=EAIaIQobChMI2fbk3Kfs4wIVyJyzCh0RQwfMEAAYASAAEgJqgPD_BwE&sdid=KKQWP&mv=search&ef_id=EAIaIQobChMI2fbk3Kfs4wIVyJyzCh0RQwfMEAAYASAAEgJqgPD_BwE:G:s&s_kwcid=AL!3085!3!356236615083!e!!g!!adobe%20suite), [Canvas](https://canvas.apps.chrome/) or any other software that helps you with the design theme. The difference between the first option and the second is that the first is 100% proprietary software, and not so accessible if you are trying to maintain a budget, but really you can pay to get the advantages. Canvas is paid, but it has a free version as well.
+ 
+We selected Canvas with the theme, because not only has it just become a unicorn, but it also has a free version that is also very easy to use. Accessible, intuitive  and available as a mobile version or on the web.
+
+<title-3>6. The need to hire freelancers or to form a development team</title-3>
+
+<Br>
+
+<title-3>Platforms such as Upwork, Workana 'and' Fiverr, are available for this need</title-3>
+
+Creating a team is not easy work. It requires looking for the right people and collaborating with them correctly.
+ 
+To achieve the first goal, we  recommend you attend networking events regularly or places where you know the experts you are looking for are present daily.
+ 
+However, this is not the only way. Several platforms work as a professional marketplaces, and you can find the right people there to structure your team, even a software company website can help you to achieve this goal.
+ 
+For the second one, you need to develop and improve other abilities, as the leader, we recommend you check out this blog on Leadership Development
+ 
+Again, some freelance Platforms we recommend include [UpWork](https://www.upwork.com/), [Workana](https://www.workana.com/dashboard), [Fiverr](https://www.fiverr.com/) and Freelancer.  
 
 
-
-
-
-
-
-
-
+We’ve now completed **your entrepreneurship toolbox with all the tools you need to know and use** to help you form your idea, manage your work, communicate better, design, and most importantly develop your software application.
