@@ -41,7 +41,7 @@ For entrepreneurs, this kind of tool can help to improve efficiency and effectiv
  
 We recommend Trello, one of the most famous entrepreneur tools in the world. There, you can create, share and edit dashboards, enabling you to organize everything you need, from your day-to-day to your next family vacation, as well as where all activities, descriptions, processes, responsibilities and the complete information of each method is stored. Both mobile and web versions are available, so you or any member of your team can collaborate by creating tasks and lists; upon completion of an activity, they can eliminate or mark the event as solved, from the palm of their hand.
 
-[![trello](./media/TOOLS THAT EVERY ENTREPRENEUR SHOULD KNOW AND USE- trello - 1.gif)](#)
+[![trello](./media/TOOLS THAT EVERY ENTREPRENEUR SHOULD KNOW AND USE- trello - 1.mp4)](#)
 
 
 
