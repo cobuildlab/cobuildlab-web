@@ -1,5 +1,5 @@
 ---
-title: "REVIEW: Cobuild Lab was a sponsor of DevFest Miami!"
+title: "REVIEW: DevFest Miami 2019 a Success!"
 date: "2019-10-11T16:24:04.000Z"
 template: blog
 tags: News
