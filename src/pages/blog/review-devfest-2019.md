@@ -27,9 +27,9 @@ Creating an app that even a blind or deaf person can use would be a milestone in
 [Cobuild Lab](https://cobuildlab.com/) founder, [Angel Lacret](https://www.linkedin.com/in/alacret), was one of the speakers as well, sharing his experience as a technical Product Manager. Instead of focusing on traditional database management, he explaining how the Google platform, [Firebase](https://firebase.google.com/?hl=es-419), sets a new trend for software product development, helping us to work better with our customers.
 
 <carousel folder='blog'>
-./media/angel-devfest1.jpg
-./media/angel-devfest2.jpg
-./media/angel-devfest3.jpg
+./media/alacret-devfest1.jpg
+./media/alacret-devfest2.jpg
+./media/alacret-devfest3.jpg
 </carousel>
 
 <title-5>Also, as a sponsor of DevFest, Cobuild Lab gave away two coupon for a Fully Designed One-Page-Website Valued at $2000 each!</title-5>
