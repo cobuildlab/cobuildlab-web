@@ -6,7 +6,7 @@ tags: News
 image: "./media/devfest1.jpg"
 ---
 
-<title-2>REVIEW: DevFest Miami 2019 a Success!</title-2>
+<!-- <title-2>REVIEW: DevFest Miami 2019 a Success!</title-2> -->
 
 On September 28th, Cobuild Lab was a Sponsor of DevFest Miami which took place at the Wix.com offices in Miami Beach, Florida. 
 
