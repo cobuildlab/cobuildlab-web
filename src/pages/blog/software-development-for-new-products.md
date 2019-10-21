@@ -1,5 +1,5 @@
 ---
-title: "Software Development for New Products on Cobuild Lab"
+title: "Software Development for New Products with Cobuild Lab"
 date: "2019-07-15T16:24:04.000Z"
 template: blog
 tags: Education
