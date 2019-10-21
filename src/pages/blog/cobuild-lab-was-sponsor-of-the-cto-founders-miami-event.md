@@ -1,5 +1,5 @@
 ---
-title: "EXCITING! Cobuild Lab was sponsor of the CTO founders Miami event."
+title: "EXCITING! Cobuild Lab was sponsor of the CTO Founders Miami event."
 date: "2019-10-18T16:24:04.000Z"
 template: blog
 tags: News
