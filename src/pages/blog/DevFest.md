@@ -3,7 +3,7 @@ title: "WE ARE NOW SPONSORS OF THE 2019 DEVFEST MIAMI!"
 date: "2019-09-26T16:24:04.000Z"
 template: blog
 tags: News
-image: "./media/devfest.jpg"
+image: "./media/devfest1.jpg"
 ---
 
 <title-2>WE ARE NOW SPONSORS OF THE 2019 DEVFEST MIAMI!</title-2>
