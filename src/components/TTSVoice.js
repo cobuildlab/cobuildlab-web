@@ -1,47 +1,48 @@
 import React from 'react'
-import {
-  Button,
-  Title
-} from 'bloomer';
+import { Button, Title } from 'bloomer'
 
-
-class TTSVoice extends React.Component {
-
-  constructor(props) {
-    super(props);
+let speechSynthesis = null
+const speech = (text) => {
+  try {
+    speechSynthesis = window.speechSynthesis
+    const utterance = new SpeechSynthesisUtterance(text)
+    // Set utterance properties
+    utterance.voice = speechSynthesis.getVoices().filter(function(voice) {
+      return voice.lang === 'en'
+    })[0]
+    utterance.pitch = 1
+    utterance.rate = 0.8
+    utterance.volume = 0.8
+    speechSynthesis.speak(utterance)
+  } catch (e) {
+    console.log('SPEECH', e)
   }
+}
+const pause = () => {
+  if (speechSynthesis)
+    speechSynthesis.pause()
+}
 
-  render() {
-    const stripped = this.props.text.replace(/<(?:.|\n)*?>/gm, '');
-
-    const speech = (text) => {
-      try {
-        const speech = window.speechSynthesis;
-        const utterance = new SpeechSynthesisUtterance(text);
-        const voice = speech.getVoices().filter(function (voice) {
-          return voice.lang === 'en';
-        })[0];
-        // Set utterance properties
-        utterance.voice = voice;
-        utterance.pitch = 1;
-        utterance.rate = 0.8;
-        utterance.volume = 0.8;
-        speech.speak(utterance);
-      } catch (e) {
-        console.log("SPEECH", e);
-      }
-    };
-
-    return (
-      <React.Fragment>
-        <Title isSize={2}>Text to Speach:</Title>
-        <Button isColor={"primary"} onClick={() => {
-          speech(stripped);
+const TTSVoice = (props) => {
+  const [isPlaying, setIsPlaying] = React.useState(false)
+  const stripped = props.text.replace(/<(?:.|\n)*?>/gm, '')
+  return (
+    <React.Fragment>
+      <Title isSize={2}>Text to Speech:</Title>
+      {isPlaying ?
+        <Button isColor={'primary'} onClick={() => {
+          pause(stripped)
+          setIsPlaying(false)
+        }}>Pause</Button>
+        :
+        <Button isColor={'primary'} onClick={() => {
+          speech(stripped)
+          setIsPlaying(true)
         }}>Play</Button>
-      </React.Fragment >
-    );
-  }
+      }
 
+    </React.Fragment>
+  )
 }
 
 export default TTSVoice
