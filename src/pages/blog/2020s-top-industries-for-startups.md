@@ -93,7 +93,7 @@ So what do you need to get started? Raise a lot of capital, you will need it to 
 
 Business Insider shared this visual showing some of this year’s top players in the FinTech ecosystem. 
 
-[![FinTech-ecosystem](./media/fintech-ecosystem.jgp)](#)
+[![FinTech-ecosystem](./media/fintech-ecosystem.jpg)](#)
 
 Source: [Business Insider](https://www.businessinsider.com/fintech-ecosystem-report)
 
