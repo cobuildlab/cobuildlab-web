@@ -51,4 +51,4 @@ This passion for healthcare [software development](https://cobuildlab.com/blog/b
 
 This year an example of a startup that we can follow in this industry is Nurx. It is an app that aims to give women better and faster access to birth control. 
 
-[![healthcare](./media/NURX.PNG)](#)
+[![healthcare](./media/NURX.png)](#)
