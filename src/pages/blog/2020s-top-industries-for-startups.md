@@ -35,7 +35,20 @@ You will also need a lot of capital, and knowledge on laws of the state where yo
 
 Last year, global investors raised $3.7 billion for electric bicycle and scooter companies in the first ten months, and this year, growth has been much higher, which means that people are interested in this business, so if you are thinking about launching a product in this industry, it is the perfect time to do so.
 
+<youtube-video id="XnRr8PDFhbU"></youtube-video>
 
+<title-3>* Healthcare Industry</title-3>
 
+Health is another mega-trend in the software industry. 
 
+Not only are startups providing products that brings medical services to the patient, by providing  a platform where doctors can offer their services. But now this industry is also developing solutions for preventive health. 
 
+Nowadays, there are [artificial intelligence](https://cobuildlab.com/blog/artificial-intelligence-in-2018/) and several technologies that startups are taking advantage of.
+
+At the same time, many related micro-niches have been developing such as health for babies, elderly people, mothers, and much more.
+
+This passion for healthcare [software development](https://cobuildlab.com/blog/best-software-development-process/) has been promoted in our country so much, that actually revenue last year was $36 billion and still  growing exponentially. 
+
+This year an example of a startup that we can follow in this industry is Nurx. It is an app that aims to give women better and faster access to birth control. 
+
+[![healthcare](./media/NURX.PNG)](#)
