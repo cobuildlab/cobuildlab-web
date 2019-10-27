@@ -133,7 +133,7 @@ Cobuild Lab actually had the pleasure of accelerating and developing an app call
 
 It’s an industry that has a proven growth record, and most importantly its still in its infancy stage, primed for even more growth. Will you be the next to join? 
 
-[![Cannabis-industry](./media/weedmatch.png)](#)
+[![Cannabis-industry](./media/weedmatch.jpg)](#)
 
 <title-3>* AdTech or Advertising Technology Industry</title-3>
 
