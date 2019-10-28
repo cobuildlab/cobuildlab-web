@@ -32,7 +32,7 @@ const TTSVoice = (props) => {
   }
 
   return (
-    <div style={{margin:'10px 0 10px 0'}}>
+    <div style={{marginBottom:10}}>
       {/* <Title isSize={2}>Text to Speech:</Title> */}
       {isPlaying ?
         <Button isColor={'primary'} onClick={() => {
