@@ -17,7 +17,7 @@ Every entrepreneur has to rely on adequate tools to perform successfully and kee
 
 <Br>
 
-<title-3>* Wix, Squarespace, or Instapage</title-3>
+<title-3>Wix, Squarespace, or Instapage</title-3>
 
 Those days of pulling out the yellow pages or flipping through the classified ads are gone. Instead, Internet searches with keywords are the norm. So, if you are not on the internet, you don’t exist.
  
@@ -33,7 +33,7 @@ Some of them will include the hosting and domain service, while others even help
 
 <Br>
 
-<title-3>* Trello or any Workflow Tool</title-3>
+<title-3>Trello or any Workflow Tool</title-3>
 
 [Workflow](https://cobuildlab.com/blog/workflows-in-your-business/) tools are necessary and essential. Using them will allow you to have the opportunity to control, manage, and have a better distribution of time, activities, responsibilities, and every process you desire.
  
@@ -49,7 +49,7 @@ If you are [developing a software product](https://cobuildlab.com/blog/software-
 
 The good thing about using Trello or another Workflow tool and the respective documentation of every step and phase of your software development process, is that anyone that comes and participates in the process or comes to review what the team has developed, will find it easier to access and view this information on the dashboard.  So, know it, use it and take advantage of it.
 
-<title-3>* The Estimate App</title-3>
+<title-3>The Estimate App</title-3>
 
 [Estimate](https://estimatemyapp.com/) is a web app that helps you to estimate the time you will use to develop your software.
  
@@ -59,7 +59,7 @@ If it is a web app, an Android App or an iOS app; the UI, UX and every detail yo
 
 <Br>
 
-<title-3>* Slack or a communication tool</title-3>
+<title-3>Slack or a communication tool</title-3>
 
 Communication is essential for every interaction in this world: relations, partnerships, teams, processes and all things related to human interactions. That is why you have to improve it within your team, not only in person or e-mail.
 
@@ -89,7 +89,7 @@ A positive aspect of this tool is that it has a free and a paid version, and bot
 
 <Br>
 
-<title-3>* Ads and Analytics Platforms</title-3>
+<title-3>Ads and Analytics Platforms</title-3>
 
  We can’t forget to  mention [Google Analytics.](https://analytics.google.com/analytics/web/#/)
  
@@ -103,7 +103,7 @@ Google has developed many tools that offer support with this issue, such as the 
 
 In this sense, we consider that it is a tool that should not be missing in your entrepreneurial toolbox, because it will help you maintain and improve your website reputation providing keywords and information about metrics in the internet environment.
 
-<title-3>* Do not forget Social Media Platforms</title-3>
+<title-3>Do not forget Social Media Platforms</title-3>
 
 Social media platforms are part of our daily life. That is not an exception for businesses or entrepreneurs. The goal of your business must be to reach people, customers who will use your product; and those people are on social media. These tools are not fully necessary in the first stages of your project, but they will be significant later when you release your software product.
  
@@ -115,7 +115,7 @@ When you have to think about where you will present and offer your software prod
 
 <Br>
 
-<title-3>* Another excellent Google Tool for software entrepreneurs themselves is [Firebase](https://firebase.google.com/?gclid=EAIaIQobChMI6JqIze3r4wIVgpyzCh19-Ar1EAAYASAAEgLDjPD_BwE)</title-3>
+<title-3>Another excellent Google Tool for software entrepreneurs themselves is [Firebase](https://firebase.google.com/?gclid=EAIaIQobChMI6JqIze3r4wIVgpyzCh19-Ar1EAAYASAAEgLDjPD_BwE)</title-3>
 
 With this tool, you can create mobile or web applications without having to manage the infrastructure (servers, etc.).
  
