@@ -1,5 +1,7 @@
 import React from 'react'
 import { Button, Title } from 'bloomer'
+import playCircleIcon from '../resources/icons/play-circle-solid.svg'
+import stopCircleIcon from '../resources/icons/stop-circle-solid.svg'
 
 const TTSVoice = (props) => {
   const [isPlaying, setIsPlaying] = React.useState(false)
@@ -30,21 +32,21 @@ const TTSVoice = (props) => {
   }
 
   return (
-    <React.Fragment>
-      <Title isSize={2}>Text to Speech:</Title>
+    <div style={{marginBottom:10}}>
+      {/* <Title isSize={2}>Text to Speech:</Title> */}
       {isPlaying ?
         <Button isColor={'primary'} onClick={() => {
           cancel(stripped)
           setIsPlaying(false)
-        }}>Cancel</Button>
+        }}><img style={{maxWidth:35,height:'100%',color:'white'}} src={stopCircleIcon}></img> Cancel </Button>
         :
         <Button isColor={'primary'} onClick={() => {
           speech(stripped)
           setIsPlaying(true)
-        }}>Play</Button>
+        }}><img style={{maxWidth:35,height:'100%',color:'white'}} src={playCircleIcon}></img> Text to Speech </Button>
       }
 
-    </React.Fragment>
+    </div>
   )
 }
 
