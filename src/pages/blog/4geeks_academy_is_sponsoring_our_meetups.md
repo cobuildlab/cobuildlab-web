@@ -11,6 +11,7 @@ Miami, FL. Oct 28, 2019 - We're very grateful to 4Geeks Academy for becoming the
 
 <a href="https://www.4geeksacademy.co/es/inicio/" target="_blank">4Geeks Academy</a> was founded in 2015 in Caracas, Venezuela, by <a href="https://www.linkedin.com/in/marcelo-ricigliano-32440379" target="_blank">Marcelo Ricigliano</a> and <a href="https://www.linkedin.com/in/alesanchezr/" target="_blank">Alejandro Sánchez</a>. It started as an internal initiative within a software development company in the search to train more and better talent for it, and ended up being a more significant and unique project called "The Academy." To the present day, they have a solid syllabus backed up by over 200 active developers in our community and over 500 graduates between their locations (Caracas, Santiago de Chile, Maracaibo, and Miami). 
 
+
 Do you want to <a href="https://www.meetup.com/Miami-Software-Developers/discussions/" target="_blank">become a member?</a> Just bring your laptop and any problem you are working on, and we will help you in any way we can. Let's become better developers together!
  
 Be sure to join our active developer communities in Telegram:
