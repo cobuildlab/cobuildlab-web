@@ -1,6 +1,6 @@
 ---
 title: "Let's Explore 2020’s Top Industries for Software Startups"
-date: "2019-10-25T16:24:04.000Z"
+date: "2019-10-28T16:24:04.000Z"
 template: blog
 tags: Education
 image: "./media/software-industries1.jpg"
@@ -13,7 +13,7 @@ Which criteria did we use? We considered the number of proposals generated as we
 
 <Br>
 
-<title-3>* Micro-mobility in the Transportation Tech Industry</title-3>
+<title-3>Micro-mobility in the Transportation Tech Industry</title-3>
 
 The micro-mobility industry is a type of urban transportation, and this year it has been on fire.  
 
@@ -37,7 +37,7 @@ Last year, global investors raised $3.7 billion for electric bicycle and scooter
 
 <youtube-video id="XnRr8PDFhbU"></youtube-video>
 
-<title-3>* Healthcare Industry</title-3>
+<title-3>Healthcare Industry</title-3>
 
 Health is another mega-trend in the software industry. 
 
@@ -71,7 +71,7 @@ If you want to start, you should keep in mind that it is probable you will have 
 
 It’s also possible that you will have to meet certain legal requirements, comply with regulations, and have permits, depending on the state you are. All of this, to develop a new software product in this niche.
 
-<title-3>* Financial Technology or FinTech</title-3>
+<title-3>Financial Technology or FinTech</title-3>
 
 The automation of various financial services became a necessity, and therefore, FinTech or financial technology has taken hold in the market of software startups. 
 
@@ -97,7 +97,7 @@ Business Insider shared this visual showing some of this year’s top players in
 
 Source: [Business Insider](https://www.businessinsider.com/fintech-ecosystem-report)
 
-<title-3>* Education Technology</title-3>
+<title-3>Education Technology</title-3>
 
 Education technology has been helping transform traditional education by creating new ways to learn as well as ways to automate various processes, of course software development has been at the forefront of this transformation.
 
@@ -119,7 +119,7 @@ A recent example of a startup in this industry dating back to 2018 is [Xennial D
 
 They developed the XDVR Learning Portal in partnership with ByteSpeed and have continued to grow since last year. Another great thing about them is that they are a local venture headquartered here in Miami. 
 
-<title-3>* Cannabis</title-3>
+<title-3>Cannabis</title-3>
 
 Five years ago, there was no legal or formal cannabis market in the United States, at least not how we know it today. [This market grew almost 40 percent in 2017 to $367 million, according to a recent report by New Frontier Data](https://www.inc.com/best-industries/index.html), reached $500 million in 2018 and is expected to reach $1.91 billion by 2022. It's a growing market without a doubt, and software is a big part of it as well.
 
@@ -135,7 +135,7 @@ It’s an industry that has a proven growth record, and most importantly its sti
 
 [![Cannabis-industry](./media/weedmatch.jpg)](#)
 
-<title-3>* AdTech or Advertising Technology Industry</title-3>
+<title-3>AdTech or Advertising Technology Industry</title-3>
 
 AdTech is an abbreviation for advertising technology. This market is absolutely explosive. The more time that goes by, the more it grows, and the more software options that there are, and more alternatives will keep on being added even if it would seem the  market is already saturated. It is and will continue to be a good option and a good proposal for any new software product.
 
@@ -153,7 +153,7 @@ An example of a recent startup in this industry is [StickEarn](https://east.vc/p
 
 It was founded in 2018, by Archie Carlson, Garry Limanata, Hartanto Alim, and Sugito Alim.
 
-<title-3>* PropTech</title-3>
+<title-3>PropTech</title-3>
 
 Proptech is a term that refers to technology related to the real estate and property management industry, whether in the form of software applications or in the shape of hardware such as sensors or materials.
 
