@@ -15,3 +15,4 @@ Now Cobuild Lab has the mission of building a Version 2.0 of the platform, upgra
 
 Stay tuned for more Storyrocket updates!
 [![Storyrocket Early Mock-Ups](./media/storyrocket-ux-samples.jpg)](#)
+<div style="display:none;"><img src="./media/storyrocket-cover-linkedin.jpg" style="display:none;"></div>
