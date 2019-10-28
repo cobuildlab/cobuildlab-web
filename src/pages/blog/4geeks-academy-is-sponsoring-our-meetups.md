@@ -5,7 +5,7 @@ template: blog
 tags: News
 image: "./media/4geeksacademyportada.jpg"
 ---
-Miami, FL. Oct 28, 2019 - We're very grateful to 4Geeks Academy for becoming the latest sponsor of our <a href="https://www.meetup.com/Miami-Software-Developers/" target="_blank">Meetup Miami Software Developers</a. The sponsorship was confirmed by Cobuild Lab founder, <a href="https://www.linkedin.com/in/alacret/" target="_blank">Angel Lacret</a>, also founder of our Meetup. 
+Miami, FL. Oct 28, 2019 - We're very grateful to <a href="https://www.4geeksacademy.co/es/inicio/" target="_blank">4Geeks Academy</a> for becoming the latest sponsor of our <a href="https://www.meetup.com/Miami-Software-Developers/" target="_blank">Meetup Miami Software Developers</a>. The sponsorship was confirmed by Cobuild Lab founder, <a href="https://www.linkedin.com/in/alacret/" target="_blank">Angel Lacret</a>, also founder of our Meetup. 
 
 <a href="https://www.meetup.com/Miami-Software-Developers/" target="_blank">Miami Software Developers</a> aims to help developers grow in their tradecraft, giving them the tools to solve problems found on any project, while also exposing them to ways in which these skills are being used in various industries. It’s a space for developers to learn, connect and share with other developers. The group provides weekly meetups every Monday in Downtown Miami.
 
