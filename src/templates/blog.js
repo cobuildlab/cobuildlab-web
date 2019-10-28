@@ -108,9 +108,11 @@ class BlogPostTemplate extends React.Component {
         <section id="section-post" className="section">
           <Container>
             <Columns isCentered>
-              <Column hasTextAlign="left">{renderAst(post.htmlAst)}</Column>
+              <Column hasTextAlign="left">
+                <TTSVoice text={post.rawMarkdownBody}/>
+{                 renderAst(post.htmlAst)}
+              </Column>
             </Columns>
-            <TTSVoice text={post.rawMarkdownBody}/>
             <Share
               socialConfig={{
                 twitterHandle,
