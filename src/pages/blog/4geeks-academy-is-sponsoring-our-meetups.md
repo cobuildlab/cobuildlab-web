@@ -1,6 +1,6 @@
 ---
 title: "4Geeks Academy is now sponsoring our Meetups!"
-date: "2019-10-28T16:24:04.000Z"
+date: "2019-10-29T16:24:04.000Z"
 template: blog
 tags: News
 image: "./media/4geeksacademyportada.jpg"
