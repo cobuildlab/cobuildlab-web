@@ -20,5 +20,5 @@ Be sure to join our active developer communities in Telegram:
 <a href="https://t.me/ReactMiami" target="_blank">For React Developers</a> 
 <carousel folder='blog'>
 ./media/4geeks-classroom.jpg
-<!-- ./media/4geeks-graduate.jpg -->
+./media/4geeks-graduate.jpg
 </carousel>
