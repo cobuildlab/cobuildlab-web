@@ -6,7 +6,7 @@ tags: Tools
 image: "./media/10-success-whatsapp-business-images/image2.png"
 ---
 
-Since it wass launched in January on this year, WhatsApp Business has come to revolutionize the traditional customer support for companies around the world. **Its functionalities allow the brand to be closer to the clients and interact with them**, as they do with families and friends.
+Since it was launched in January on this year, WhatsApp Business has come to revolutionize the traditional customer support for companies around the world. **Its functionalities allow the brand to be closer to the clients and interact with them**, as they do with families and friends.
 
 Currently,** the people want to connect and talk to companies immediately and the phone call is no longer enough.** We need the conversation to be in text and to be in writing for future review or check.
 
