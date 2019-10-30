@@ -10,7 +10,7 @@ This is a very SLIM architecture proposal for API REST with Python using Django.
 
 Personally, i like the use of Django REST. At the beginning&nbsp;make things very simple, but when you have a large application this way of doing things just would not work.
 
-So, I&nbsp;propose a new, scalable and&nbsp;pluggable&nbsp;way of doing things based on 4Geeks experience these last few years using Django Rest Framework.
+So, I&nbsp;propose a new, scalable and portable way of doing things based on 4Geeks experience these last few years using Django Rest Framework.
 
 Some of the decisions that I make for doing this are based on the SOLID principles:&nbsp;https://en.wikipedia.org/wiki/SOLID\_(object-oriented\_design) especially separation of Concerns.
 

@@ -28,6 +28,6 @@ Remove unused Volumes:
 
 &nbsp;
 
-You can read the complet article from Digital Ocena [here](https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes) 
+You can read the complete article from Digital Ocena [here](https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes) 
 
 &nbsp;
