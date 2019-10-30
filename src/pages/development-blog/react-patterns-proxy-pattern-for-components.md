@@ -6,7 +6,7 @@ tags:
 image: "./media/blocks.jpg"
 ---
 
-We keep our series of React Patterns, and today we are gonna talk about a pattern to simplify your views and remove unnecesarry complexity on components.
+We keep our series of React Patterns, and today we are gonna talk about a pattern to simplify your views and remove unnecessary complexity on components.
 
 As we discuss in our [previous post on React](https://cobuildlab.com/development-blog/react-patterns-functional-components-vs-class-components/), this is a libreary based on Components to build User Interfaces and their behavior.
 

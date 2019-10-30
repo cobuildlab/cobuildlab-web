@@ -15,7 +15,7 @@ This is an small example
 
 <pre class="prettyprint">rsync -rvz -e ssh ubuntu@192.168.234.912:&lt;from-folder-or-archive&gt; &lt;to-folder-or-archive&gt;</pre>
 
--r For recursive (only when your are syncyng complete directories
+-r For recursive (only when your are syncing complete directories
 
 -v For verbose operation
 
