@@ -72,6 +72,6 @@ Previously, you had to hire professional services to send thousands of messages 
 
 12.  **Solve fast**
 
-The most important thing in all this is that you must quickly solve the need of the customer because is there something that defines this application is the instantaneity, so you must attend and respond to the client as quickly as possible. This application had more than **3 million users by January of this year**, a lot less than the application WhatsApp that has reached 1.500 million persons. This means that there are few who are taking advantages of this service that gives you innumerable options and benefits to enhance your business. 
+The most important thing in all this is that you must quickly solve the need of the customer because is there something that defines this application is the instability, so you must attend and respond to the client as quickly as possible. This application had more than **3 million users by January of this year**, a lot less than the application WhatsApp that has reached 1.500 million persons. This means that there are few who are taking advantages of this service that gives you innumerable options and benefits to enhance your business. 
 
 ¡Come on! 
