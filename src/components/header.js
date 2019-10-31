@@ -12,16 +12,24 @@ import {
 import '../assets/css/index.css'
 import logo from '../resources/cobuildlab.png'
 import '../assets/css/index.css'
+// import useScript from '../utils/useScript'
 
 class header extends React.Component {
   constructor(props) {
     super(props)
-
     this.state = {
       isActive: false,
     }
   }
+  componentDidMount() {
+    const script = document.createElement('script')
 
+    script.src =
+      "<script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '1a20d805-24ed-4533-a6db-9172a94a63a2', f: true }); done = true; } }; })();</script>"
+    script.async = true
+
+    document.body.appendChild(script)
+  }
   onClickNav = () => {
     this.setState(({ isActive }) => ({
       isActive: !isActive,
@@ -39,7 +47,7 @@ class header extends React.Component {
             <NavbarBrand>
               <NavbarItem>
                 <Link className="link-nav" to="/">
-                  <img src={logo} style={{ marginRight: 5 }}/>
+                  <img src={logo} style={{ marginRight: 5 }} />
                 </Link>
               </NavbarItem>
               <NavbarBurger
