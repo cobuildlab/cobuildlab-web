@@ -50,15 +50,28 @@ Let's be concrete with the reasons and list them so that you understand them bet
 
 * This market has also grown thanks to the exponential growth of companies such as [Trade Desk](https://www.thetradedesk.com/), [AdRoll](https://www.adroll.com/), [Criteo](https://www.criteo.com/), Google, [4C Insights](https://www.4cinsights.com/), [InMobi](https://www.inmobi.com/), [Amobee](https://www.amobee.com/), [Adform](https://site.adform.com/), [IgnitionOne](https://ignitionone.com/), [Kenshoo](https://kenshoo.com/), [AppNexus](https://www.appnexus.com/), [Quantcast](https://www.quantcast.com/), [FlashTalking](https://www.flashtalking.com/), etc. They are all members of this industry. And you can be too from today. 
 
+<title-2>Particularities of AdTech Industry for startups</title-2>
 
+Like all industries, businesses, and markets, there is always some risk, some difficulty, and certain particularities that are not the most positive. 
 
+Knowing these aspects is essential because it helps you make an informed decision taking into account the opportunities and threats that exist. Not everything can be useful. 
 
+The decision we refer to is the choice of the industry in which you will develop your software product.  
 
+* In the case of the Ad Tech industry, you should know that many times tools are excellent, the value proposition unique and innovative, but this does not give a 100% guarantee of effectiveness. You must clarify this issue to your consumer saying that it is probably that their ads investment would be lost if they do not follow the steps for developing and optimizing an ad campaign, or if they do not use the software tool, you are providing.
 
+[According to Nielsen's 'Measurement Breakthroughs' report, 56% of advertising campaign impressions are lost](https://innovecs.com/blog/adtech-trends/) due to fraud or off-target audiences. This number could affect your customers without necessarily being your and your solution's responsibility. 
 
+[![](./media/adtech1.png)](#)
 
+**Source:**[Innovecs](https://innovecs.com/blog/adtech-trends/)
 
+* Another issue you must solve or take into account if you want to develop a software startup in the advertising industry is billing in more than one universal currency. Advertising is a universal language, and the specialists who can be your target audience are found all over the world. Technology has erased physical boundaries, and therefore, you must take this issue into account to provide facilities or adapt to the rates, currencies, or economic realities of different countries. 
+"Integrate a currency converter into your ready-made platform. Find an application programming interface (API) that provides access to the maximum amount of world currencies and updates currency exchange rates regularly. You can try such APIs as currencylayer, Fixer, or XE Currency Data.
+Provide your customers with the opportunity to use significant payment gateways such as PayPal, Authorize.Net, Stripe, SecurePay, 2Checkout, and Payline."
+**Source:** [Innovecs](https://innovecs.com/blog/adtech-trends/)
 
+* Everyone who develops a startup in the AdTech industry must have a software team capable of adapting to the advance of disruptive technologies such as virtual reality, augmented reality, and artificial intelligence. 
+The competition in this sense is quite intense, because for example, Google last year added artificial intelligence to some of its proposals in the advertising industry, but even if you are starting, if you focus on taking advantage of new trends in technology, you will surely find an attractive value proposition to make to your target audience.  
 
-
-
+It is a fact that this industry has excellent promises and will continue to grow. Either with the evolution of technology as well as the development of more and better startups. Remember that you can be one of the software entrepreneurs dedicated to the **Ad Tech software industry.** If you need help, [contact us](https://cobuildlab.com/), and we will help you. 
