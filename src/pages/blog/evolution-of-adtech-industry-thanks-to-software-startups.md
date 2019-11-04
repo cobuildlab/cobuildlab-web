@@ -1,5 +1,5 @@
 ---
-title: "AdTech and its evolution in the last years' thanks to software startups"
+title: "AdTech and its evolution over the last years' thanks to software startups"
 date: '2019-11-01T16:24:04.000Z'
 template: blog
 tags: Education
@@ -47,7 +47,7 @@ Let's be concrete with the reasons and list them so that you understand them bet
 
 - This market has also grown thanks to the exponential growth of companies such as [Trade Desk](https://www.thetradedesk.com/), [AdRoll](https://www.adroll.com/), [Criteo](https://www.criteo.com/), Google, [4C Insights](https://www.4cinsights.com/), [InMobi](https://www.inmobi.com/), [Amobee](https://www.amobee.com/), [Adform](https://site.adform.com/), [IgnitionOne](https://ignitionone.com/), [Kenshoo](https://kenshoo.com/), [AppNexus](https://www.appnexus.com/), [Quantcast](https://www.quantcast.com/), [FlashTalking](https://www.flashtalking.com/), etc. They are all members of this industry. And you can be too from today.
 
-<title-2>Particularities of AdTech Industry for startups</title-2>
+<title-2>Particularities of the AdTech Industry for startups</title-2>
 
 Like all industries, businesses, and markets, there is always some risk, some difficulty, and certain particularities that are not the most positive.
 
