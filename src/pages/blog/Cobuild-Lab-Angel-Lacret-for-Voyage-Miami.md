@@ -3,7 +3,7 @@ title: 'Cobuild Lab Founder Angel Lacret Shares Our Story with Voyage Miami'
 date: '2019-11-04T16:24:04.000Z'
 template: blog
 tags: News
-image: './media/cto2.jpg'
+image: './media/angel-voyage.jpg'
 ---
 
 Miami, FL. Nov 04, 2019 - Voyage Miami's interview with Cobuild Lab founder Angel Lacret is now available.
