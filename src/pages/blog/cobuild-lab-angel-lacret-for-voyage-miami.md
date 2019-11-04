@@ -22,4 +22,3 @@ He also talked about what sets him apart from the competition. "We have sharpene
 
 We thank the Voyage Miami team for their incredible work and for taking us into account for this edition. Now you can <a href="http://voyagemia.com/interview/meet-angel-lacret-cobuild-lab-downtown-miami/">Visit read the full interview here.</a>
 
-<a href=" ">Visit </a>
