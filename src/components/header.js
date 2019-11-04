@@ -22,11 +22,15 @@ class header extends React.Component {
     }
   }
   componentDidMount() {
-    const script = document.createElement('script')
-
-    script.src =
+    const script = document.createTextNode(
       "<script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '1a20d805-24ed-4533-a6db-9172a94a63a2', f: true }); done = true; } }; })();</script>"
-    script.async = true
+    )
+
+    // script.type = 'text/javascript'
+    // console.warn('SCRIPT', script)
+    // script.src =
+    //   "data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '1a20d805-24ed-4533-a6db-9172a94a63a2', f: true }); done = true; } }; })();</script>"
+    // script.async = true
 
     document.body.appendChild(script)
   }
