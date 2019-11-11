@@ -3,7 +3,7 @@ title: "AdTech and its evolution over the last years' thanks to software startup
 date: '2019-11-01T16:24:04.000Z'
 template: blog
 tags: Education
-image: './media/ADTECH.jpg'
+image: './media/Adtech1.jpg'
 ---
 
 Advertising is a valuable business since it was created. It generates a lot of resources, makes brands sell, makes markets grow, and generally moves the world.
