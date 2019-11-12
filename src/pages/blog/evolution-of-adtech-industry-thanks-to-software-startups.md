@@ -1,5 +1,5 @@
 ---
-title: 'AdTech and its Evolution in the Last Year'
+title: 'The Evolution of the AdTech Industry Thanks to Software Startups'
 date: '2019-11-01T16:24:04.000Z'
 template: blog
 tags: Education
@@ -37,7 +37,7 @@ Another good reason why AdTech has become a trend is that the internet is so ful
 
 All this, without mentioning all the advances in technology that make these types of [software products](https://cobuildlab.com/blog/software-development-for-new-products/) a much more complete experience, fun, effective, efficient and better in many aspects. Much has been done in the AdTech industry, but there is always room for [innovation.](https://cobuildlab.com/blog/identifying-opportunities-to-create-a-software-product/)
 
-<title-3>Worldwide Panorama of the AdTech industry in 2019</title-3>
+<title-2>Worldwide Panorama of the AdTech Industry in 2019</title-2>
 
 Let’s be concrete with the reasons and list them so that you understand them better:
 
