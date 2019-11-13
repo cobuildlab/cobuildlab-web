@@ -10,7 +10,7 @@ Miami, FL. Nov 12, 2019 - We are excited to announce that once again Cobuild Lab
 
 <a target="_blank" href="https://www.genglobal.org/startup-nations"> The Global Entrepreneurship Network</a> have built a global entrepreneurial ecosystem that allows anyone on the planet to connect, understand, support and celebrate the entrepreneurs who hold so much promise for our future.
 
-The GEW will be November 18-24 2019 removing barriers and welcoming everyone during 35,000 simultaneous events in 170+ countries. Join us next November 19, from 5pm to 8pm at the <a target="_blank" href="https://cic.com/miami"> CIC Miami</a>. Our Speakers:
+The GEW will be November 18-24 2019 removing barriers and welcoming everyone during 35,000 simultaneous events in 170+ countries. Join us next November 19, from 5pm to 8pm at the <a target="_blank" href="https://www.linkedin.com/company/cicnow/"> CIC Miami</a>. Our Speakers:
 
 <a target="_blank" href="https://www.linkedin.com/in/sharmajulie/"> Julie Sharma</a> – CEO/Entrepreneur for <a target="_blank" href="https://www.meditation.live/"> meditation.live</a>. A global entrepreneur with a successful multinational startup company meditation.live will share her experience in hiring and training business and tech talents around the world.
 
