@@ -6,7 +6,6 @@ tags: News
 image: "./media/MIAMI.jpeg"
 ---
 
-<title-2>Miami, the perfect Tech Hub for investors</title-2>
 
 Could you say Miami is the next Silicon Valley? When you think about startups, maybe Miam isn't your first call, compared to New York, Boston or Silicon Valley which are more closely associated with entrepreneurial activity. 
 
