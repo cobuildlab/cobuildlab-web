@@ -6,7 +6,6 @@ tags: News
 image: "./media/NVIDIA-ARM-01.jpg"
 ---
 
-<title-2>NVIDIA to boost  supercomputers with ARM processors</title-2>
 
 NVIDIA announced that it will offer support for the ARM architecture from the next year, in order to accelerate the implementation of its technology in supercomputers with low power consumption processors. This was confirmed by Jensen Huang, CEO of NVIDIA, who said he will make his software development kits, compilers and CUDA-X libraries available, among other things, to the British company ARM in 2020.
  
