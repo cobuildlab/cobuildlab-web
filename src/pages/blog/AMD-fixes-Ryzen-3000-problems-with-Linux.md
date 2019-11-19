@@ -6,8 +6,6 @@ tags: News
 image: "./media/ryzen 3000.jpg"
 ---
 
-<title-2>AMD fixes Ryzen 3000 problems with Linux</title-2>
-
 
 Everything indicates that at least for the moment, it is not possible to reach the frequencies promised by AMD in the presentation of this generation of processors. When AMD first launched its Ryzen 3000 series processors on July 7, 2019 they were unable to launch Bungie’s most popular title: Destiny 2. Many reviews have appeared throughout the Internet, indicating problems in several fronts, especially those related to overclocking. Not being able to play Destiny 2 on Windows 10, and not being able to boot up Linux using more recent kernels are two vastly different and curious bugs that early Zen2 buyers have run up against.
 
