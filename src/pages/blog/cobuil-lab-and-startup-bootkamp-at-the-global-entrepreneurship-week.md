@@ -5,7 +5,7 @@ template: blog
 tags: News
 image: "./media/startupbootkampcover.jpg"
 ---
-Miami, FL. Nov 15, 2019 -  Cobuild Lab is now sponsoring <a target="_blank" href="https://www.startupbootkamp.com/miami3"> Startup Bootkamp</a>, a one day nationally known workshop that will  teach you the fundamentals of starting your very own startup. This event is part of <a target="_blank" href="https://www.genglobal.org/gew"> The Global Entrepreneurship Week</a> that will take place from November 18 to 24 at the <a target="_blank" href="https://www.linkedin.com/company/cicnow/"> Cambridge Innovation Center in Miami</a>. 
+Miami, FL. Nov 18, 2019 -  Cobuild Lab is now sponsoring <a target="_blank" href="https://www.startupbootkamp.com/miami3"> Startup Bootkamp</a>, a one day nationally known workshop that will  teach you the fundamentals of starting your very own startup. This event is part of <a target="_blank" href="https://www.genglobal.org/gew"> The Global Entrepreneurship Week</a> that will take place from November 18 to 24 at the <a target="_blank" href="https://www.linkedin.com/company/cicnow/"> Cambridge Innovation Center in Miami</a>. 
 
 There's a lot of work behind starting a Startup, and we know it's not easy when you're in the early stages of your journey. That's why in order to save you hundreds of dollars and years of time, the Bootkamp Startup team shares all the secrets only veterans know.
 
