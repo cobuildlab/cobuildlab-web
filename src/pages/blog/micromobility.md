@@ -6,7 +6,6 @@ tags: News
 image: "./media/MICROMOBILIDAD-000.jpg"
 ---
 
-<title-2 align="centered">Micromobility: a simple way to change the world</title-2>
 
 In a win for micromobility, this last June Florida Governor Ron DeSantis signed off on granting e-scooter riders the same rights as bicyclists. The bill allows electric scooter companies like [Uber's Jump Scooters](https://www.uber.com/us/en/ride/scooters/), as well as [Bird](https://www.bird.co/), [Lime](https://www.li.me/electric-scooter) and [Spin](https://www.spin.app/) to operate anywhere in the state. Now cities across Florida are implementing e-scooter programs.
 
