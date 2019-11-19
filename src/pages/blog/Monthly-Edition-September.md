@@ -6,7 +6,6 @@ tags: News
 image: "./media/monthlyseptember1.jpg"
 ---
 
-<title-2>Monthly Edition: Actionable Metrics on Web and Mobile Applications</title-2>
 
 <title-4>On September 24, Miami Software Developers Monthly Edition Meetup will be taking place at The Venture City,  focusing on Actionable Metrics on Web and Mobile Applications.</title-4>
 
