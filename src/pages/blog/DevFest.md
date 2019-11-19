@@ -6,7 +6,6 @@ tags: News
 image: "./media/devfest1.jpg"
 ---
 
-<title-2>WE ARE NOW SPONSORS OF THE 2019 DEVFEST MIAMI!</title-2>
 
 <title-5>On September 28, the annual DevFest will be taking place at the Wix.com offices in South Beach, Florida!</title-5>  
 
