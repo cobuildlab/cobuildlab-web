@@ -1,5 +1,5 @@
 ---
-title: 'CTO Founders Step Up at the Global Entrepreneurship Week Sponsored by Cobuild Lab'
+title: 'CTO Founders Step Up at the Global Entrepreneurship Week'
 date: '2019-11-12T16:24:04.000Z'
 template: blog
 tags: News
