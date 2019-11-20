@@ -29,6 +29,6 @@ With a pragmatic educational program it will give you tremendous insight into th
 
 Startup Bootkamp is scheduled for November 23rd at CIC Miami and will be open to all visionaries, early stage founders, aspiring entrepreneurs, and seed stage founders. Places are limited so make sure to reserve yours today.</br></br>
 
-<a target="_blank" href="https://https://www.startupbootkamp.com/miami3"><button type="button" class="button is-primary">Reserve Your Seat Now</button></a></br></br>
+<a target="_blank" href="https://www.startupbootkamp.com/miami3"><button type="button" class="button is-primary">Reserve Your Seat Now</button></a></br></br>
 
 <youtube-video id="KuPGTANf-Rs"></youtube-video>
