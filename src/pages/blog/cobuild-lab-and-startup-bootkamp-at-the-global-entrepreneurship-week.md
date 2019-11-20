@@ -11,7 +11,10 @@ There's a lot of work behind starting a Startup, and we know it's not easy when 
 
 With a pragmatic educational program it will give you tremendous insight into the world of startups, venture capital and entrepreneurship sharing amazing strategies for your  business, and showing you the common mistakes entrepreneurs make and how to avoid them.</br></br>
 
-<img src="src/pages/blog/media/startupbootkamp1.jpg">
+
+<carousel folder='blog'>
+./media/startupbootkamp1.jpg
+</carousel> </br></br>
 
 <title-3 align="centered"> The Speakers</title-3>
 
