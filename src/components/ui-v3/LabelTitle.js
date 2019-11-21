@@ -19,4 +19,4 @@ const _Label = (props) => (
     </div>
 )
 
-export { _Label as NewsletterLayout }
+export { _Label as LabelTitle }

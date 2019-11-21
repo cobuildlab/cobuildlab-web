@@ -9,24 +9,21 @@ import {
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 import { toast } from 'react-toastify'
 import { navigate } from 'gatsby'
-import { BtnOrange } from '../components/btn/BtnOrange'
-import { BtnWhite } from '../components/btn/BtnWhite'
-import { NewsletterLayout } from '../components/layout/NewsletterLayout'
-import { H2Subtitle } from '../components/text/H2Subtitle'
+import { BtnOrange } from './ui-v3/btn/BtnOrange'
+import { BtnWhite } from './ui-v3/btn/BtnWhite'
+import { LabelTitle } from './ui-v3/LabelTitle'
+import { H2Subtitle } from './ui-v3/H2Subtitle'
 
 class ModalSletter extends React.Component {
    constructor(props) {
       super(props)
       this.state = {
          email: '',
-         isLoading: false,
-         scrollPostion: 0,
          showModal: false,
-         flagModal: true
+         isLoading: false
       }
       this.onSubmitModal = this.onSubmitModal.bind(this)
-      this.closeModal = this.closeModal.bind(this)
-      this.openModal = this.openModal.bind(this)
+      this.handleModal = this.handleModal.bind(this)
       this.calculateScrollDistance = this.calculateScrollDistance.bind(this)
    }
 
@@ -34,12 +31,11 @@ class ModalSletter extends React.Component {
       const oldWeek = localStorage.getItem('week');
       const toDay = Date.now();
 
-      window.onscroll = () => {
-         this.calculateScrollDistance();
-         // if (this.state.scrollPostion === 50 && ( oldWeek < toDay - (7*24*60*60*1000) || oldWeek === undefined)) {   
-         if (this.state.scrollPostion === 50) {
+      window.onscroll = () => {         
+         if (this.calculateScrollDistance() === 50 && ( oldWeek < toDay - (7*24*60*60*1000) || oldWeek === undefined)) {    
+            // if (this.calculateScrollDistance() === 50 ) {       
             localStorage.setItem('week', toDay);
-            this.openModal();
+            this.handleModal(true);
          }
       };
    }
@@ -50,11 +46,9 @@ class ModalSletter extends React.Component {
       const docHeight = this.getDocHeight();
 
       const totalDocScrollLength = docHeight - winHeight;
-      const scrollPostion = Math.floor(scrollTop / totalDocScrollLength * 100)
-
-      this.setState({
-         scrollPostion,
-      });
+      const scrollPostion = Math.floor(scrollTop / totalDocScrollLength * 100)      
+      
+      return scrollPostion
    }
 
    getDocHeight = () => {
@@ -92,19 +86,12 @@ class ModalSletter extends React.Component {
             })
          }
       })
-      this.closeModal()
+      this.handleModal(false)
    }
 
-   closeModal() {
+   handleModal = (showModal) => {
       this.setState({
-         showModal: false,
-      })
-   }
-
-   openModal = () => {
-      this.setState({
-         showModal: true,
-         flagModal: false
+         showModal
       })
    }
 
@@ -117,7 +104,7 @@ class ModalSletter extends React.Component {
             <ModalCard >
                <ModalCardBody style={{ paddingTop: '37px', paddingBottom: '59px',paddingLeft: '56px', paddingRight: '58px', width: '600px', height: '470px' }}>
                   <Container>
-                     <NewsletterLayout>Newsletter</NewsletterLayout>
+                     <LabelTitle>Newsletter</LabelTitle>
                      <H2Subtitle>
                      Problem-solution fit: Observe the Customer, think as the Customer, be the Customer.Problem-solution fit: Observe the
                      </H2Subtitle>
@@ -139,7 +126,7 @@ class ModalSletter extends React.Component {
                         <Control>
                            <br />
                            <BtnWhite
-                              closeModal={this.closeModal}
+                              handleModal={this.handleModal}
                            >
                               No Thanks
                            </BtnWhite>

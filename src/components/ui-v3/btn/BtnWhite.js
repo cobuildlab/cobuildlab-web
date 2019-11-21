@@ -18,7 +18,7 @@ margin-top: 15px!important;
 `
 
 const _Btn = (props) => (
-    <StyledButton onClick={() => props.closeModal()}>
+    <StyledButton onClick={() => props.handleModal(false)}>
         {props.children}
     </StyledButton>
 )
