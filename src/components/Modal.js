@@ -1,11 +1,14 @@
 import React from 'react'
-import { Container, Modal, ModalBackground, ModalCard, ModalCardBody } from 'bloomer'
-import {
+import { 
+   Container, 
+   Modal, 
+   ModalBackground, 
+   ModalCard, 
+   ModalCardBody, 
    Field,
    Label,
    Control,
-   Input,
-} from 'bloomer'
+   Input, } from 'bloomer'
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 import { toast } from 'react-toastify'
 import { navigate } from 'gatsby'
