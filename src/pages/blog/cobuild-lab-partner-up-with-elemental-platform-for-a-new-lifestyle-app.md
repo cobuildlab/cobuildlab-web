@@ -6,7 +6,6 @@ tags: News
 image: "./media/portada-elemental.png"
 ---
 
-<title-2>Cobuild Lab partner up with Elemental Platform to start developing a new lifestyle app</title-2>
 
 On July 31st, Elemental Platform announced a new partnership agreement with Cobuild Lab. It was made known by its CEO, José Chirinos through the new official Instagram account [@elementalapp](https://www.instagram.com/elementalapp/).
 

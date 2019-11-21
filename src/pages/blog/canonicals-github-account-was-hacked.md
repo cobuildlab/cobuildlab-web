@@ -6,7 +6,6 @@ tags: News
 image: "./media/canonical.png"
 ---
 
-<title-2>Canonical's GitHub account, the creators of Ubuntu, was hacked.</title-2>
 
 The GitHub account of Canonical Ltd., the company responsible for the distribution of GNU/Linux, Ubuntu, and other projects, was hacked this past Saturday, July 06. 
 

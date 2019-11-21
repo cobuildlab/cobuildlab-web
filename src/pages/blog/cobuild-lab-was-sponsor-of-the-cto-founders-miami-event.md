@@ -6,7 +6,6 @@ tags: News
 image: "./media/CTO_founders_5.jpg"
 ---
 
-<title-2>EXCITING! Cobuild Lab was sponsor of the CTO founders Miami event</title-2>
 
 On October 15th, the CTO founders Miami was held at the [WeWork](https://www.wework.com/) offices, and Cobuild Lab was one of the proud sponsors of the event.  
 
