@@ -86,63 +86,14 @@ class Index extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      scrollPostion: 0,
-      showVideoModal: false,
-      showModal: false,
-      flagModal: true      
+      showVideoModal: false  
     }
     this.openModal = this.openModal.bind(this)
-    this.closeModalEmail = this.closeModalEmail.bind(this)
-    this.openModalEmail = this.openModalEmail.bind(this)
-    this.calculateScrollDistance = this.calculateScrollDistance.bind(this)
   };
-
-  componentDidMount() {
-    window.onscroll = () => {
-      this.calculateScrollDistance();
-      if (this.state.scrollPostion >= 49 && this.state.scrollPostion <= 51 && this.state.flagModal) {   
-        this.openModalEmail();
-      }
-    };    
-  }
-
-  calculateScrollDistance = () => {
-    const scrollTop = window.pageYOffset;
-    const winHeight = window.innerHeight;
-    const docHeight = this.getDocHeight();
-
-    const totalDocScrollLength = docHeight - winHeight;
-    const scrollPostion = Math.floor(scrollTop / totalDocScrollLength * 100)
-
-    this.setState({
-      scrollPostion,
-    });
-  }
-
-  getDocHeight = () => {
-    return Math.max(
-      document.body.scrollHeight, document.documentElement.scrollHeight,
-      document.body.offsetHeight, document.documentElement.offsetHeight,
-      document.body.clientHeight, document.documentElement.clientHeight
-    );
-  }
 
   openModal() {
     this.setState({
       showVideoModal: true,
-    })
-  }
-
-  closeModalEmail() {
-    this.setState({
-      showModal: false,
-    })
-  }
-
-  openModalEmail = () => {
-    this.setState({
-      showModal: true,
-      flagModal: false
     })
   }
 
@@ -164,7 +115,7 @@ class Index extends React.Component {
           title={siteTitle}
         />
 
-        <ModalSletter isActive={this.state.showModal} closeModal={this.closeModalEmail} />
+        <ModalSletter />
 
         {/*HEADER*/}
         <Hero isSize="large">
