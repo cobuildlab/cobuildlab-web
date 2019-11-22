@@ -54,7 +54,7 @@ import {
 } from 'bloomer'
 import ModalVideo from 'react-modal-video'
 import * as PropTypes from 'prop-types'
-import ModalSletter from '../components/Modal'
+import NewSletterModal from '../components/NewSletterModal'
 
 function ReadMore(props) {
   return <Columns>
@@ -115,7 +115,7 @@ class Index extends React.Component {
           title={siteTitle}
         />
 
-        <ModalSletter />
+        <NewSletterModal />
 
         {/*HEADER*/}
         <Hero isSize="large">

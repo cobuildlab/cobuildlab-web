@@ -17,7 +17,7 @@ import { BtnWhite } from './ui-v3/btn/BtnWhite'
 import { LabelTitle } from './ui-v3/LabelTitle'
 import { H2Subtitle } from './ui-v3/H2Subtitle'
 
-class ModalSletter extends React.Component {
+class NewSletterModal extends React.Component {
    constructor(props) {
       super(props)
       this.state = {
@@ -35,8 +35,7 @@ class ModalSletter extends React.Component {
       const toDay = Date.now();
 
       window.onscroll = () => {         
-         // if (this.calculateScrollDistance() === 50 && ( oldWeek < toDay - (7*24*60*60*1000) || oldWeek === undefined)) {    
-            if (this.calculateScrollDistance() === 50 ) {       
+         if (this.calculateScrollDistance() === 50 && ( oldWeek < toDay - (1*24*60*60*1000) || oldWeek === undefined)) {                
             localStorage.setItem('week', toDay);
             this.handleModal(true);
          }
@@ -151,4 +150,4 @@ class ModalSletter extends React.Component {
    }
 }
 
-export default ModalSletter
+export default NewSletterModal
