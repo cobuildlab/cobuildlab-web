@@ -35,8 +35,8 @@ class ModalSletter extends React.Component {
       const toDay = Date.now();
 
       window.onscroll = () => {         
-         if (this.calculateScrollDistance() === 50 && ( oldWeek < toDay - (7*24*60*60*1000) || oldWeek === undefined)) {    
-            // if (this.calculateScrollDistance() === 50 ) {       
+         // if (this.calculateScrollDistance() === 50 && ( oldWeek < toDay - (7*24*60*60*1000) || oldWeek === undefined)) {    
+            if (this.calculateScrollDistance() === 50 ) {       
             localStorage.setItem('week', toDay);
             this.handleModal(true);
          }
