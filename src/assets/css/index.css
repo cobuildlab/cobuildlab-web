@@ -1353,3 +1353,15 @@ input:focus ~ .highlight {
 .orange-text {
     color: #e76c29;
 }
+
+.modal {
+    transition: opacity 0.3s linear;
+    opacity: 0!important;
+    display: flex!important;
+}
+
+.modal.is-active {
+    opacity: 1!important;
+}
+
+    

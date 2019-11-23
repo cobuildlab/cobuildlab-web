@@ -54,7 +54,7 @@ import {
 } from 'bloomer'
 import ModalVideo from 'react-modal-video'
 import * as PropTypes from 'prop-types'
-
+import NewSletterModal from '../components/NewSletterModal'
 
 function ReadMore(props) {
   return <Columns>
@@ -64,7 +64,7 @@ function ReadMore(props) {
         to="#"
         onClick={props.onClick}
       >
-        <Icon size="26" icon={play}/>
+        <Icon size="26" icon={play} />
         {' '} &nbsp;  VIDEO &nbsp;
       </Link>
     </Column>
@@ -86,10 +86,9 @@ class Index extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      showVideoModal: false,
+      showVideoModal: false  
     }
     this.openModal = this.openModal.bind(this)
-
   };
 
   openModal() {
@@ -116,45 +115,47 @@ class Index extends React.Component {
           title={siteTitle}
         />
 
+        <NewSletterModal />
+
         {/*HEADER*/}
         <Hero isSize="large">
-          <HeroBody className="bg-header" style={{ paddingTop: '2rem', paddingBottom:'11rem' }}>
+          <HeroBody className="bg-header" style={{ paddingTop: '2rem', paddingBottom: '11rem' }}>
             <Container isFluid className="is-hidden-mobile no-margin">
               <Columns>
                 <Column isSize="1/2">
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
                   <H3Blue>Software Development Company</H3Blue>
                   <H1Blue>Let’s <span className={'orange-text'}>Build</span> a Great <span
                     className={'orange-text'}>Idea.</span></H1Blue>
                   <H4Blue>
                     We partner with new and early-stage non-technical entrepreneurs and industry experts to transforms ideas into <span className={'orange-text'}>Web
                     and Mobile Software Products.</span>
-                    <br/>
-                    <br/>
+                    <br />
+                    <br />
                     Since day one, our technique is focused on early results and transparent communication.
                   </H4Blue>
-                  <ReadMore onClick={this.openModal}/>
+                  <ReadMore onClick={this.openModal} />
                 </Column>
                 <Column isSize="1/2">
-                  <br/>
-                  <br/>
-                  <img alt={'main comic'} src={comic} style={{ width: '100%', height: 'auto' }}/>
+                  <br />
+                  <br />
+                  <img alt={'main comic'} src={comic} style={{ width: '100%', height: 'auto' }} />
                 </Column>
               </Columns>
             </Container>
 
             <Container
               isFluid
-              className="is-hidden-desktop is-hidden-tablet-only no-margin"  hasTextAlign='centered'
+              className="is-hidden-desktop is-hidden-tablet-only no-margin" hasTextAlign='centered'
             >
               <H4Blue>Software Development Company</H4Blue>
-              <img alt={'main comic'} src={comic} style={{ width: '85%', height: 'auto' }}/>
+              <img alt={'main comic'} src={comic} style={{ width: '85%', height: 'auto' }} />
               <H2Blue>Let’s <span className={'orange-text'}>Build</span> a Great <span
                 className={'orange-text'}>Idea.</span></H2Blue>
               <Columns>
@@ -162,11 +163,11 @@ class Index extends React.Component {
                   <H4Blue>
                     We partner with new and early-stage non-technical entrepreneurs and industry experts to transforms ideas into <span className={'orange-text'}>Web
                     and Mobile Software Products.</span>
-                    <br/>
-                    <br/>
+                    <br />
+                    <br />
                     Since day one, our technique is focused on early results and transparent communication.
                   </H4Blue>
-                  <ReadMore onClick={this.openModal}/>
+                  <ReadMore onClick={this.openModal} />
                 </Column>
               </Columns>
             </Container>
@@ -180,17 +181,17 @@ class Index extends React.Component {
             <Title isSize={2} className="title-section">
               Cobuild Process
             </Title>
-            <hr/>
+            <hr />
             <Subtitle isSize={6}>
               Is the process of transforming an idea in a sustainable business,
               through the combination and collaboration of the areas of Lean{' '}
-              <br/> Entrepreneurship, Business Strategy, Technological
+              <br /> Entrepreneurship, Business Strategy, Technological
               Innovation and Exponential Growth
             </Subtitle>
             <Columns isCentered className="p-2">
               <Column isSize="1/5">
                 <div className="icon-process">
-                  <Icon size="24" icon={commentingO} className="icon-center"/>
+                  <Icon size="24" icon={commentingO} className="icon-center" />
                 </div>
                 <Title isSize={3}>Think</Title>
                 <p>
@@ -199,7 +200,7 @@ class Index extends React.Component {
               </Column>
               <Column isSize="1/5">
                 <div className="icon-process">
-                  <Icon size="24" icon={check} className="icon-center"/>
+                  <Icon size="24" icon={check} className="icon-center" />
                 </div>
                 <Title isSize={3}>Validate</Title>
                 <p>
@@ -211,7 +212,7 @@ class Index extends React.Component {
               </Column>
               <Column isSize="1/5">
                 <div className="icon-process">
-                  <Icon size="24" icon={code} className="icon-center"/>
+                  <Icon size="24" icon={code} className="icon-center" />
                 </div>
                 <Title isSize={3}>CoBuild</Title>
                 <p>
@@ -221,7 +222,7 @@ class Index extends React.Component {
               </Column>
               <Column isSize="1/5">
                 <div className="icon-process">
-                  <Icon size="24" icon={ic_layers} className="icon-center"/>
+                  <Icon size="24" icon={ic_layers} className="icon-center" />
                 </div>
                 <Title isSize={3}>Plan</Title>
                 <p>
@@ -232,7 +233,7 @@ class Index extends React.Component {
               </Column>
               <Column isSize="1/5">
                 <div className="icon-process">
-                  <Icon size="24" icon={slideshare} className="icon-center"/>
+                  <Icon size="24" icon={slideshare} className="icon-center" />
                 </div>
                 <Title isSize={3}>Accelerate</Title>
                 <p>
@@ -261,7 +262,7 @@ class Index extends React.Component {
                     <Link to={node.fields.slug}>
                       <Card className="card-p">
                         <CardImage className="card-post">
-                          <Image isRatio="4:8" src={image} className="card-post"/>
+                          <Image isRatio="4:8" src={image} className="card-post" />
                           <Content className="title-post">
                             <small>
                               {' '}
@@ -300,7 +301,7 @@ class Index extends React.Component {
                   <Column isSize="1/3" key={node.fields.slug}>
                     <Link to={node.fields.slug}>
                       <CardImage>
-                        <Image isRatio="4:8" src={image}/>
+                        <Image isRatio="4:8" src={image} />
                         <Content className="title-post">
                           <small>
                             {' '}
@@ -335,27 +336,27 @@ class Index extends React.Component {
                     target="_blank"
                   >
                     <CardImage>
-                      <Image isRatio="4:8" src={marcelo}/>
+                      <Image isRatio="4:8" src={marcelo} />
                       <p className="name-team">
-                        Marcelo Ricigliano <br/> COO at 4Geeks Academy
+                        Marcelo Ricigliano <br /> COO at 4Geeks Academy
                       </p>
                     </CardImage>
                   </a>
                 </Card>
                 <Content>
-                  <br/>
+                  <br />
                   <small>
                     Co-founded Startups in Venezuela, Ecuador y USA: Vikua,{' '}
-                    <br/> 4Geeks Academy, Siplik, Hack, InTraffic.
+                    <br /> 4Geeks Academy, Siplik, Hack, InTraffic.
                   </small>
-                  <br/>
-                  <Icon size="18" icon={envelopeO}/>
+                  <br />
+                  <Icon size="18" icon={envelopeO} />
                   <a
                     className="icon-link"
                     href="https://www.linkedin.com/in/marcelo-ricigliano-32440379"
                     target="_blank"
                   >
-                    <Icon size="18" icon={linkedinSquare}/>
+                    <Icon size="18" icon={linkedinSquare} />
                   </a>
                 </Content>
               </Column>
@@ -366,25 +367,25 @@ class Index extends React.Component {
                     target="_blank"
                   >
                     <CardImage>
-                      <Image isRatio="4:8" src={angel}/>
+                      <Image isRatio="4:8" src={angel} />
                       <p className="name-team">
-                        Angel Lacret <br/> Chief of Product Development at
+                        Angel Lacret <br /> Chief of Product Development at
                         Cobuild Lab
                       </p>
                     </CardImage>
                   </a>
                 </Card>
                 <Content>
-                  <br/>
+                  <br />
                   <small>Technical Product Owner and Software Developer</small>
-                  <br/>
-                  <Icon size="18" icon={envelopeO}/>
+                  <br />
+                  <Icon size="18" icon={envelopeO} />
                   <a
                     className="icon-link"
                     href="https://www.linkedin.com/in/alacret/"
                     target="_blank"
                   >
-                    <Icon size="18" icon={linkedinSquare}/>
+                    <Icon size="18" icon={linkedinSquare} />
                   </a>
                 </Content>
               </Column>
@@ -395,28 +396,28 @@ class Index extends React.Component {
                     target="_blank"
                   >
                     <CardImage>
-                      <Image isRatio="4:8" src={alejandro}/>
+                      <Image isRatio="4:8" src={alejandro} />
                       <p className="name-team">
-                        Alejandro Sanchez <br/> CEO of 4Geeks Academy. Software
+                        Alejandro Sanchez <br /> CEO of 4Geeks Academy. Software
                         Developer and Data-Oriented Marketeer
                       </p>
                     </CardImage>
                   </a>
                 </Card>
                 <Content>
-                  <br/>
+                  <br />
                   <small>
                     I'm a computer engineer with all my life dedicated to the
                     coding industry through several initiatives.
                   </small>
-                  <br/>
-                  <Icon size="18" icon={envelopeO}/>
+                  <br />
+                  <Icon size="18" icon={envelopeO} />
                   <a
                     className="icon-link"
                     href="https://www.linkedin.com/in/alesanchezr/"
                     target="_blank"
                   >
-                    <Icon size="18" icon={linkedinSquare}/>
+                    <Icon size="18" icon={linkedinSquare} />
                   </a>
                 </Content>
               </Column>
@@ -426,12 +427,12 @@ class Index extends React.Component {
         {/*Section Customer Success Stories*/}
 
         {/*Section Where we are? and Write Us! */}
-        <Contact siteKey={siteKey}/>
+        <Contact siteKey={siteKey} />
 
         {/*Video*/}
         <ModalVideo channel='youtube' autoplay={this.state.showVideoModal} isOpen={this.state.showVideoModal}
-                    videoId='AlU5h2xrQ5M'
-                    onClose={() => this.setState({ showVideoModal: false })}/>
+          videoId='AlU5h2xrQ5M'
+          onClose={() => this.setState({ showVideoModal: false })} />
 
       </Layout>
     )
