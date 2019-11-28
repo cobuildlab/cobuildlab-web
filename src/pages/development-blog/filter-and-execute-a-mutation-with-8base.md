@@ -21,13 +21,17 @@ When using 8base, you're project benefits from having:
 
 ## Connect to 8base
 
-### 1. First we go to the 8base [documentation](https://docs.8base.com/getting-started/quick-start) and Clone the Demo Repository
+### 1. Create an account at 8base
+
+In a previous article we saw in depth everything necessary to create an account and configuration, you can review the article [here](connect-to-8base-and-make-a-query.md)
+
+### 2. The best way to start with 8base for the first time is to go to the 8base [documentation](https://docs.8base.com/getting-started/quick-start) and Clone the Demo Repository. They have on for React and one for Vue
 
     git clone https://github.com/8base/react-8base-starter-app.git
 
-### 2. Then we go into the project folder and do an npm install
+### 3. Then we go into the project folder and do an npm install
 
-### 3. Configuración del cliente
+### 4. Configuración del cliente
 
     APP_WORKSPACE_ENDPOINT=<workspace_endpoint>
     APP_AUTH_PROFILE_ID=<auth_profile_id>
@@ -36,7 +40,7 @@ When using 8base, you're project benefits from having:
 
 Look for a 8base-starter-app/client/.env file that contains a template for the required environment variables. Fill in the template with all appropriate values. Each starter app will have a thorough READme.md with instructions on which files are responsible for which functionality. Please read them!
 
-### 4. Run the application with the NPM STAR command
+### 5. Run the application with the NPM STAR command
 
 ## Executing the mutation
 
