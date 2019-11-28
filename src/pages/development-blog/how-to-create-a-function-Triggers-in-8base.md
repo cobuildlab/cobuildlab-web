@@ -22,16 +22,20 @@ A trigger is a type of function that runs in response to a data mutation event (
 
 <https://docs.8base.com/8base-console/custom-functions/triggers>
 
-### 1. Install the 8base CLI and Authenticate
+### 1. Create an account at 8base
+
+In a previous article we saw in depth everything necessary to create an account and configuration, you can review the article [here](connect-to-8base-and-make-a-query.md)
+
+### 2. Install the 8base CLI and Authenticate
 
     npm install -g 8base-cli
     8base login
 
-### 2. Creating the project and custom functions
+### 3. Creating the project and custom functions
 
     8base init . --functions=trigger:myCustomResolver
 
-### 3. Installing dependencies and configuring the workspace
+### 4. Installing dependencies and configuring the workspace
 
     npm install
     8base configure
