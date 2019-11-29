@@ -1,18 +1,18 @@
 ---
-title: 'CareCloud taking healthcare tech to the next level'
+title: 'CareCloud Taking Healthcare Tech to the Next Level'
 date: '2019-11-28T16:24:04.000Z'
 template: blog
 tags: Miami
 image: './media/carecloud-portada.jpg'
 ---
 
-Fact: There's no place like Miami. The “Magic City” boasts a unique and exciting mix of hip urban culture, latin vibes,  and all sorts of fun things to do and interesting places to visit, but most of all <a target="_blank" href="https://cobuildlab.com/blog/Miami-a-Tech-Hub-for-investors/"> Miami is the perfect Tech Hub for Investors</a>. </br></br>
+Fact: There's no place like Miami. The “Magic City” boasts a unique and exciting mix of hip urban culture, latin vibes, and all sorts of fun things to do and interesting places to visit, but most of all <a target="_blank" href="https://cobuildlab.com/blog/Miami-a-Tech-Hub-for-investors/"> Miami is the perfect Tech Hub for Investors</a>. </br></br>
 
-You know we like to think about Miami as the next Silicon Valley, and why is that? Well, maybe because it is the second most entrepreneurial city in the U.S. according to the <a target="_blank" href="https://indicators.kauffman.org/"> Kauffman Index</a>. And that’s why on this segment we are going to talk about some very promising Miami-based Startups. </br></br> 
+You know we like to think about Miami as the next Silicon Valley, and why is that? Well, maybe because it is the second most entrepreneurial city in the U.S. according to the <a target="_blank" href="https://indicators.kauffman.org/"> Kauffman Index</a>. And that’s why on this segment we are going to talk about some very promising Miami-based Startups. </br></br>
 
-Today we present to you a company that started about ten years ago but whose product has immeasurably improved the health industry. Ranked #28 on the <a target="_blank" href="https://www.forbes.com/companies/carecloud/#230218f7624b"> Forbes 'Most Promising Companies'</a>  list in 2014, <a target="_blank" href="https://www.carecloud.com/"> CareCloud Corp.</a> has become one of the fastest-growing  players in the electronic health records business. </br></br> 
+Today we present to you a company that started about ten years ago but whose product has immeasurably improved the health industry. Ranked #28 on the <a target="_blank" href="https://www.forbes.com/companies/carecloud/#230218f7624b"> Forbes 'Most Promising Companies'</a> list in 2014, <a target="_blank" href="https://www.carecloud.com/"> CareCloud Corp.</a> has become one of the fastest-growing players in the electronic health records business. </br></br>
 
-<a href="#"><img style="margin:auto; max-width: 800px;" src="./media/carecloud-logo.png"></a>
+<a href="#carecloud-logo"><span  id="carecloud-logo"><img alt="CareCloud Logo" style="margin:auto; max-width: 800px;" src="./media/carecloud-logo.png"></span></a>
 </br></br>
 
 CareCloud provides cloud-based practice management, electronic health record and medical billing software and services to medical groups. </br></br>
@@ -37,11 +37,11 @@ This Electronic Medical Records software balances flexibility with ease of use, 
 <a href="#"><img style="margin:auto; max-width: 800px;" src="./media/carecloud-2.png"></a>
 </br></br>
 
-In 2014 CareCloud debuted at #127 on the <a target="_blank" href="https://www.inc.com/profile/carecloud"> Inc. 500 list of Fastest Growing private companies</a>.  It was also honored in: </br></br>
-* <a target="_blank" href="http://thetechtribune.com/10-best-tech-startups-in-florida/"> 2019 Best Tech Startups in Florida</a> </br></br>
-* <a target="_blank" href="http://thetechtribune.com/2019-best-tech-startups-in-miami/"> 2019 Best Tech Startups in Miami</a> </br></br>
-* <a target="_blank" href="http://thetechtribune.com/2018-best-tech-startups-in-florida/"> 2018 Best Tech Startups in Florida</a> </br></br>
-* <a target="_blank" href="http://thetechtribune.com/2018-best-tech-startups-in-miami/"> 2018 Best Tech Startups in Miami</a> </br></br>
+In 2014 CareCloud debuted at #127 on the <a target="_blank" href="https://www.inc.com/profile/carecloud"> Inc. 500 list of Fastest Growing private companies</a>. It was also honored in: </br></br>
 
+- <a target="_blank" href="http://thetechtribune.com/10-best-tech-startups-in-florida/"> 2019 Best Tech Startups in Florida</a> </br></br>
+- <a target="_blank" href="http://thetechtribune.com/2019-best-tech-startups-in-miami/"> 2019 Best Tech Startups in Miami</a> </br></br>
+- <a target="_blank" href="http://thetechtribune.com/2018-best-tech-startups-in-florida/"> 2018 Best Tech Startups in Florida</a> </br></br>
+- <a target="_blank" href="http://thetechtribune.com/2018-best-tech-startups-in-miami/"> 2018 Best Tech Startups in Miami</a> </br></br>
 
 <youtube-video id="nBnyM_lcZY4"></youtube-video>
