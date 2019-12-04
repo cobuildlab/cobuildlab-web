@@ -35,13 +35,13 @@ when you create an account 8base give you a free workspace for 30, but if you wa
 
 Under the hood, 8base utilizes Auth0 to manage your users' identities and ensure the best security standards.But in this tutorial we will use our own auth0 account
 
-first we go to [auth0](https://auth0.com/) official page we create an account.We go dashboard and click where it says "CREATE APPLICATION" and follow the steps that tell us
+In this tutorial we will use the authentication that gives us 8base
 
-Once created our auth0 account we will connect it to 8base
+To create the authentication profile, go to Settings > Authentication and press the + button. The form that appears can be completed using the following fields described.
 
-Once created our auth0 account we are going to connect it to 8base .in the 8base console we go to Settings then to Authentication and we create a new authenticaicon profile, we fill the form and ready.
+Once the authentication prefil is created, ClientID and Domain are generated, which will allow us to connect the 8base back-end to any application.
 
-![conect auth0](./media/conect-auth0.png)
+![new workspace](./media/test.png)
 
 ### 4. The best way to start with 8base for the first time is to go to the 8base [documentation](https://docs.8base.com/getting-started/quick-start) and Clone the Demo Repository. They have on for React and one for Vue
 
@@ -58,7 +58,15 @@ Once created our auth0 account we are going to connect it to 8base .in the 8base
 
 Look for a 8base-starter-app/client/.env file that contains a template for the required environment variables. Fill in the template with all appropriate values. Each starter app will have a thorough READme.md with instructions on which files are responsible for which functionality. Please read them!
 
-### 7. Run the application with the NPM STAR command
+### 7. Create table
+
+8base provides you with a default table called users but in this example we'll see how to create a
+
+to create a table go to Data you click on +add table and we name it tasks.Next we will create the fields and we will fill them manually that will serve us to execute the mutation
+
+![new workspace](./media/createtable.png)
+
+### 8. Run the application with the NPM STAR command
 
 ## To execute a query
 
