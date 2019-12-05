@@ -33,23 +33,33 @@ when you create an account 8base give you a free workspace for 30, but if you wa
 
 ### 3. Create the Authentication provider
 
-Under the hood, 8base utilizes Auth0 to manage your users' identities and ensure the best security standards.But in this tutorial we will use our own auth0 account
+Under the hood, 8base utilizes Auth0 to manage your users' identities and ensure the best security standards. But in this tutorial we will use our own auth0 account
 
 In this tutorial we will use the authentication that gives us 8base
+To create the authentication profile, go to Settings > Authentication and press the + button. The form that appears can be completed using
 
-To create the authentication profile, go to Settings > Authentication and press the + button. The form that appears can be completed using the following fields described.
+the following fields described.
+Once the authentication profile is created, ClientID and Domain are generated, which will allow us to connect the 8base back-end to any application.
 
-Once the authentication prefil is created, ClientID and Domain are generated, which will allow us to connect the 8base back-end to any application.
+![auth provider](./media/test.png)
 
-![new workspace](./media/test.png)
+### 4. Create table
 
-### 4. The best way to start with 8base for the first time is to go to the 8base [documentation](https://docs.8base.com/getting-started/quick-start) and Clone the Demo Repository. They have on for React and one for Vue
+8base provides you with a default table called users,but in this example we'll see how to create a
+
+to create a table go to Data you click on +add table and we name it tasks.Next we will create the fields and we will fill them manually that will serve us to execute the Query
+
+![new workspace](./media/createtable.png)
+
+### 5. Cloning repository
+
+The best way to start with 8base for the first time is to go to the 8base [documentation](https://docs.8base.com/getting-started/quick-start) and Clone the Demo Repository. They have on for React and one for Vue
 
     git clone https://github.com/8base/react-8base-starter-app.git
 
-### 5. Then we go into the project folder and do an npm install
+### 6. Then we go into the project folder and do an `npm install`
 
-### 6. Setting up the client
+### 7. Setting up the client
 
     APP_WORKSPACE_ENDPOINT=<workspace_endpoint>
     APP_AUTH_PROFILE_ID=<auth_profile_id>
@@ -58,17 +68,16 @@ Once the authentication prefil is created, ClientID and Domain are generated, wh
 
 Look for a 8base-starter-app/client/.env file that contains a template for the required environment variables. Fill in the template with all appropriate values. Each starter app will have a thorough READme.md with instructions on which files are responsible for which functionality. Please read them!
 
-### 7. Create table
+### 8. Installing Dependencies
 
-8base provides you with a default table called users but in this example we'll see how to create a
+Although the example application that we clone already has included apollo-client we will use the version of apollo but with hooks
 
-to create a table go to Data you click on +add table and we name it tasks.Next we will create the fields and we will fill them manually that will serve us to execute the mutation
+    npm install apollo-boost @apollo/react-hooks graphql
 
-![new workspace](./media/createtable.png)
+### 9. Modifying the file
 
-### 8. Run the application with the NPM STAR command
-
-## To execute a query
+we are going to modify the index.js file located in the `src/routes/home/index.js` folder.
+In the file copy the following code
 
 ```javascript
 import React from 'react'
@@ -82,41 +91,49 @@ const TASK_LIST_QUERY = gql`
       items {
         name
         description
-        createdAt
+        createAt
       }
     }
   }
 `
 
-const Home = () => {
+const Home = props => {
   const { data, loading, error } = useQuery(TASK_LIST_QUERY)
-  console.log(`DEBUG:`, data, loading, error)
 
+  if (data === undefined) return <p>Login to view content </p>
   if (loading === true) return <div className={'loading'}>Loading...</div>
 
   const {
     tasksList: { items },
   } = data
-
   return (
     <div>
-      <h1>Tasks!</h1>
+      <h1>Tasks List</h1>
       {items.map((task, i) => (
         <p key={i}>{task.name}</p>
       ))}
     </div>
   )
 }
+
+export { Home }
 ```
 
 ### Let's explain what we did here
 
 - We imported React
-- We import useQuery from @apollo/react-hooks that is not used to make the query
-- We import graphql-tag gql that will help us write the query
-  In the **TASK_LIST_QUERY** constant we store the query using gql
+- we import useQuery from @apollo/react-hooks to make the query.
+- We import graphical-tag gql that will help us write the query.
 - We created a functional component called **Home**
-  Inside that component we make a destructuring of objects to useQuery ue resive as prametro the constant that we created
-- We ask if loading exites and return a div indicating the load
+  Inside that component we make a destructuring of objects to useQuery that receives as parameter the constant **TASK_LIST_QUERY**.
+- We ask if data is not defined and return a paragraph explaining that you have to log in to see the content.
+- We ask if the load goes out and we return a div indicating that it is loading.
 - We make a double desestructuration to **data** and extract **item**
-- Finally we return a div with all the names of the list
+- Finally we return a div with all the names of the list.
+
+### 10. Run the application with the `NPM STAR` command
+
+### 11. Showing the data
+
+![tasksList](./media/tasksList.png)
+Siéntase libre de darle los estilos que desee
