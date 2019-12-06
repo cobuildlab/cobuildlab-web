@@ -101,7 +101,7 @@ Some companies that are in the Edtech industry we have:
 
 <title-3>[BYJU’S](https://byjus.com/)</title-3>
 
-[![BIJUS](./media/BIJUS.png)](#)
+[![BIJUS](./media/BIJU1.png)](#)
 
 The first we want to show you is [BYJU’S](https://play.google.com/store/apps/details?id=com.byjus.thelearningapp&hl=en). Their main product is a mobile app launched in August 2015. 
 
