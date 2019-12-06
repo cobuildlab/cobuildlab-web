@@ -59,8 +59,79 @@ Autonomous cars, smart communities, the Internet of Things and Immersive Educati
 
 These are some suggestions about what will mean 5G for Edtech: a holographic teacher who can lead debates on specialized topics; virtual reality experiences that can help students with diverse learning needs; or connected devices that can help close gaps in the education of international students.
 
+<youtube-video id="Xvfupr2n4f0"></youtube-video>
+
+<title-3>* VR/AR</title-3>
+
+In September 2018, NYC Media Lab and RLab - an RV/RA center - launched the XR Startup Bootcamp. An intensive 12-week acceleration program with ten teams in its initial phase. They focused on customer discovery and market validation for concepts that leverage virtual, augmented and mixed reality, voice technology, robotics, and other future interfaces. 
+
+One of the promising teams to emerge from the program was SPARk, an Augmented Reality and voice platform for STEAM educators and learners that formed at Columbia University. 
+
+Zhi Hao (Joe) Chung, the team founder, worked as a STEAM educator for over five years, and he noticed a challenge to technical and scientific areas. "Lesson plans are complicated, content is sometimes unengaging, and students can tire in the learning process." 
+
+SPARK built a platform that allows educators to search for and upload lesson plans, which can a student have interactive and multi-sensory learning experiences. 
+
+As the students learn, the platform uses voice technology to listen to the student progress, and provide him comprehensive feedback from teachers, which can improve future lessons. 
+
+As an example, a slide presentation on the process of photosynthesis could, with SPARK, transform into an AR game. A student interacts with a tangible block, and when activated the AR, that block becomes the sun. The student can use the block to trigger the process of photosynthesis while visualizing the results in a headset or on a mobile device.
+
+<youtube-video id="uf7ix03cgsQ"></youtube-video>
+
+<title-2>How is the Edtech industry expected to grow?</title-2>
+
+Some predictions of how the EdTech will evolve in the following years:
+
+* According to Top Hat product manager (Eran Ben-Ari), the success of teacher and students must be better as this trend grows. Students will achieve better learning outcomes, and administrators will find ways to identify where a student may be falling behind or needing additional resources and intervene as needed. 
+
+Eran said that the increase of students per class is a growing need for technology solutions that allow engaging students wherever they are. Student success will increasingly depend upon these choices.
+
+And all of these necessities are an opportunity for you to develop the software solution based on this industry. 
+
+* Mike Huseby, CEO of Barnes & Noble Education thinks we will see the use of Artificial Intelligence increasingly as higher education institutions continue their digital transformation journeys and seek to catch students' attention using adaptive and engaging learning experiences. 
+
+In addition to improving both in-class and out-of-class learning, for all kind of students, these tools also increase student efficiency, as they are available when and where students need them. 
+
+We can add that these initiatives increase the demand for educational software, and best of all, it increases and improves educational experiences. That is to say, if you develop a project of this type, you would not only be benefiting but also contributing to society and the development of other people in the world. 
+
+We bet for a world with more software and education.
+
+<title-2>Examples of Edtech startups that can inspire you</title-2>
+
+Some companies that are in the Edtech industry we have:
+
+<title-3>[BYJU’S](https://byjus.com/)</title-3>
+
+[![BIJUS](./media/BIJUS.png)](#)
+
+The first we want to show you is [BYJU’S](https://play.google.com/store/apps/details?id=com.byjus.thelearningapp&hl=en). Their main product is a mobile app launched in August 2015. 
+
+It provides educational content mainly to school students from primary to higher secondary level education. 
+
+The company trains students for examinations in India such as IIT-JEE, NEET, CAT, IAS as well as for international tests such as GRE and GMAT. The focus is on mathematics and science, where concepts are explained using 12-20 minute digital animation videos. [BYJU'S reports to have 33 million users overall, 2.2 million annual paid subscribers and an annual retention rate of about 85%.](https://en.wikipedia.org/wiki/BYJU%27S)
+
+There is an example of the market you can get. 
+
+<title-3>BLACKBOARD</title-3>
+
+[![BLACKBOARD](./media/BLACKBOARD.jpg)](#)
+
+Blackboard: Dr. William Ballhaus is the founder of Blackboard. An app which seeks to close the gap between the evolving work environment, educators, and students. 
+
+Blackboard's goal is to provide teachers with various online options that can enhance their experience as instructors beyond the classroom. 
+
+The platform offers insightful analysis that can help students and teachers connect on a more personalized level and work on the individual strengths and weaknesses of students.
+
+<title-3>MIAMI EDTECH</title-3>
+
+[![MIAMI-EDTECH](./media/miami-edtech.jpg)](#)
+
+Here in Miami, you have the success example of [Miami EdTech](https://miamiedtech.com/). A company dedicated to providing innovative technologies to the educational institutes of the city. 
+
+They convert teacher's ideas on personalized software that improve education. Also, they are creating a community of innovation and technology in the education area. 
+
+All that effort recently had its rewards because [Microsoft donated $125.000 to develop its Computer science training program for Miami-Dade teachers.](https://www.prnewswire.com/news-releases/microsoft-awards-125-000-to-miami-edtechs-computer-science-training-program-for-miami-dade-teachers-in-partnership-with-fiu-300845400.html)
+
+Under the slogan of "train the trainer," this startup continues to develop and showing the right numbers of the EdTech Industry in Miami and the whole country. 
 
 
-
-
-
+What could we observe in this post? EdTech industry moves money; there are many startups, and they are not enough, it is a market that is increasingly in demand, and that is why needs more offers, and we do not mention it has immense value because it contributes to education and the growth of societies. It would be good to invest in it, don't you? If you want to do it, contact us. 
