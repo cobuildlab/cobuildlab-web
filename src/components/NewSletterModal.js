@@ -16,6 +16,11 @@ import { BtnOrange } from './ui-v3/btn/BtnOrange'
 import { BtnWhite } from './ui-v3/btn/BtnWhite'
 import { LabelTitle } from './ui-v3/LabelTitle'
 import { H2Subtitle } from './ui-v3/H2Subtitle'
+// import { Orange, Navy } from '../shared/colors'
+// import { Hero } from '../shared/typography'
+// import { BtnCallToAction } from './ui-v3/btn/BtnCallToAction'
+// import { BtnCancel } from './ui-v3/btn/BtnCancel'
+// import { BtnReadMore } from './ui-v3/btn/BtnReadMore'
 
 class NewSletterModal extends React.Component {
    constructor(props) {
@@ -31,13 +36,21 @@ class NewSletterModal extends React.Component {
    }
 
    componentDidMount() {
-      const oldWeek = localStorage.getItem('week');
+      // console.log("Orange",Orange)
+      // console.log("Navy",Navy)
+      // console.log("Hero",Hero)
+      let oldWeek = localStorage.getItem('week');
       const toDay = Date.now();
 
       window.onscroll = () => {         
-         if (this.calculateScrollDistance() === 50 && ( oldWeek < toDay - (1*24*60*60*1000) || oldWeek === undefined)) {                
+         if (this.calculateScrollDistance() === 50 
+         && ( oldWeek < toDay - (1*24*60*60*1000) || oldWeek === undefined)
+         ) {    
+            if (oldWeek === undefined) {
+               oldWeek = localStorage.getItem('week');
+            }   
             localStorage.setItem('week', toDay);
-            this.handleModal(true);
+            this.handleModal(true);                     
          }
       };
    }
@@ -142,6 +155,15 @@ class NewSletterModal extends React.Component {
                            </BtnOrange>
                         </Control>
                      </Field>
+                     {/* <BtnCallToAction>
+                        BtnCallToAction
+                     </BtnCallToAction> */}
+                     {/* <BtnCancel>
+                        BtnCancel
+                      </BtnCancel>
+                      <BtnReadMore>
+                         BtnReadMore
+                      </BtnReadMore> */}
                   </Container>
                </ModalCardBody>
             </ModalCard>
