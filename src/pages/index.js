@@ -54,30 +54,31 @@ import {
 } from 'bloomer'
 import ModalVideo from 'react-modal-video'
 import * as PropTypes from 'prop-types'
-import NewSletterModal from '../components/NewSletterModal'
+// import NewsletterModal from '../components/NewsletterModal'
 
 function ReadMore(props) {
-  return <Columns>
-    <Column isSize="1/2">
-      <Link
-        className="button is-primary is-medium is-rounded"
-        to="#"
-        onClick={props.onClick}
-      >
-        <Icon size="26" icon={play} />
-        {' '} &nbsp;  VIDEO &nbsp;
-      </Link>
-    </Column>
-    <Column isSize="1/2">
-      <Link
-        className="button is-primary is-medium is-rounded"
-        target="_blank"
-        to="/blog/best-software-development-process/"
-      >
-        READ MORE
-      </Link>
-    </Column>
-  </Columns>
+  return (
+    <Columns>
+      <Column isSize="1/2">
+        <Link
+          className="button is-primary is-medium is-rounded"
+          to="#"
+          onClick={props.onClick}
+        >
+          <Icon size="26" icon={play} /> &nbsp; VIDEO &nbsp;
+        </Link>
+      </Column>
+      <Column isSize="1/2">
+        <Link
+          className="button is-primary is-medium is-rounded"
+          target="_blank"
+          to="/blog/best-software-development-process/"
+        >
+          READ MORE
+        </Link>
+      </Column>
+    </Columns>
+  )
 }
 
 ReadMore.propTypes = { onClick: PropTypes.func }
@@ -86,10 +87,10 @@ class Index extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      showVideoModal: false  
+      showVideoModal: false,
     }
     this.openModal = this.openModal.bind(this)
-  };
+  }
 
   openModal() {
     this.setState({
@@ -101,10 +102,13 @@ class Index extends React.Component {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteDescription = get(
       this,
-      'props.data.site.siteMetadata.description',
+      'props.data.site.siteMetadata.description'
     )
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
-    const customerSuccessStories = get(this, 'props.data.customerSuccessStories.edges')
+    const customerSuccessStories = get(
+      this,
+      'props.data.customerSuccessStories.edges'
+    )
     const siteKey = process.env.RECAPTCHA_SITEKEY
 
     return (
@@ -115,11 +119,15 @@ class Index extends React.Component {
           title={siteTitle}
         />
 
-        <NewSletterModal />
+        {/* FIXME: Newsletter Modal */}
+        {/* <NewsletterModal /> */}
 
         {/*HEADER*/}
         <Hero isSize="large">
-          <HeroBody className="bg-header" style={{ paddingTop: '2rem', paddingBottom: '11rem' }}>
+          <HeroBody
+            className="bg-header"
+            style={{ paddingTop: '2rem', paddingBottom: '11rem' }}
+          >
             <Container isFluid className="is-hidden-mobile no-margin">
               <Columns>
                 <Column isSize="1/2">
@@ -131,41 +139,62 @@ class Index extends React.Component {
                   <br />
                   <br />
                   <H3Blue>Software Development Company</H3Blue>
-                  <H1Blue>Let’s <span className={'orange-text'}>Build</span> a Great <span
-                    className={'orange-text'}>Idea.</span></H1Blue>
+                  <H1Blue>
+                    Let’s <span className={'orange-text'}>Build</span> a Great{' '}
+                    <span className={'orange-text'}>Idea.</span>
+                  </H1Blue>
                   <H4Blue>
-                    We partner with new and early-stage non-technical entrepreneurs and industry experts to transforms ideas into <span className={'orange-text'}>Web
-                    and Mobile Software Products.</span>
+                    We partner with new and early-stage non-technical
+                    entrepreneurs and industry experts to transforms ideas into{' '}
+                    <span className={'orange-text'}>
+                      Web and Mobile Software Products.
+                    </span>
                     <br />
                     <br />
-                    Since day one, our technique is focused on early results and transparent communication.
+                    Since day one, our technique is focused on early results and
+                    transparent communication.
                   </H4Blue>
                   <ReadMore onClick={this.openModal} />
                 </Column>
                 <Column isSize="1/2">
                   <br />
                   <br />
-                  <img alt={'main comic'} src={comic} style={{ width: '100%', height: 'auto' }} />
+                  <img
+                    alt={'main comic'}
+                    src={comic}
+                    style={{ width: '100%', height: 'auto' }}
+                  />
                 </Column>
               </Columns>
             </Container>
 
             <Container
               isFluid
-              className="is-hidden-desktop is-hidden-tablet-only no-margin" hasTextAlign='centered'
+              className="is-hidden-desktop is-hidden-tablet-only no-margin"
+              hasTextAlign="centered"
             >
               <H4Blue>Software Development Company</H4Blue>
-              <img alt={'main comic'} src={comic} style={{ width: '85%', height: 'auto' }} />
-              <H2Blue>Let’s <span className={'orange-text'}>Build</span> a Great <span
-                className={'orange-text'}>Idea.</span></H2Blue>
+              <img
+                alt={'main comic'}
+                src={comic}
+                style={{ width: '85%', height: 'auto' }}
+              />
+              <H2Blue>
+                Let’s <span className={'orange-text'}>Build</span> a Great{' '}
+                <span className={'orange-text'}>Idea.</span>
+              </H2Blue>
               <Columns>
                 <Column isSize="1/2">
                   <H4Blue>
-                    We partner with new and early-stage non-technical entrepreneurs and industry experts to transforms ideas into <span className={'orange-text'}>Web
-                    and Mobile Software Products.</span>
+                    We partner with new and early-stage non-technical
+                    entrepreneurs and industry experts to transforms ideas into{' '}
+                    <span className={'orange-text'}>
+                      Web and Mobile Software Products.
+                    </span>
                     <br />
                     <br />
-                    Since day one, our technique is focused on early results and transparent communication.
+                    Since day one, our technique is focused on early results and
+                    transparent communication.
                   </H4Blue>
                   <ReadMore onClick={this.openModal} />
                 </Column>
@@ -195,7 +224,8 @@ class Index extends React.Component {
                 </div>
                 <Title isSize={3}>Think</Title>
                 <p>
-                  Problem-solution fit: Observe the Customer, think as the Customer, be the Customer.
+                  Problem-solution fit: Observe the Customer, think as the
+                  Customer, be the Customer.
                 </p>
               </Column>
               <Column isSize="1/5">
@@ -216,8 +246,8 @@ class Index extends React.Component {
                 </div>
                 <Title isSize={3}>CoBuild</Title>
                 <p>
-                  It's time to build!. We combine a
-                  multidisciplinary team to build the idea. Minimum Viable Product (MVP)
+                  It's time to build!. We combine a multidisciplinary team to
+                  build the idea. Minimum Viable Product (MVP)
                 </p>
               </Column>
               <Column isSize="1/5">
@@ -226,9 +256,9 @@ class Index extends React.Component {
                 </div>
                 <Title isSize={3}>Plan</Title>
                 <p>
-                  Identity, purpose, values, and the correct tools
-                  for launching are the main purpose of this step. - Branding -
-                  WebSite and Social Networks - Strategy
+                  Identity, purpose, values, and the correct tools for launching
+                  are the main purpose of this step. - Branding - WebSite and
+                  Social Networks - Strategy
                 </p>
               </Column>
               <Column isSize="1/5">
@@ -262,7 +292,11 @@ class Index extends React.Component {
                     <Link to={node.fields.slug}>
                       <Card className="card-p">
                         <CardImage className="card-post">
-                          <Image isRatio="4:8" src={image} className="card-post" />
+                          <Image
+                            isRatio="4:8"
+                            src={image}
+                            className="card-post"
+                          />
                           <Content className="title-post">
                             <small>
                               {' '}
@@ -275,7 +309,6 @@ class Index extends React.Component {
                             <Subtitle hasTextColor="white">{title}</Subtitle>
                           </Content>
                         </CardImage>
-
                       </Card>
                     </Link>
                   </Column>
@@ -430,10 +463,13 @@ class Index extends React.Component {
         <Contact siteKey={siteKey} />
 
         {/*Video*/}
-        <ModalVideo channel='youtube' autoplay={this.state.showVideoModal} isOpen={this.state.showVideoModal}
-          videoId='AlU5h2xrQ5M'
-          onClose={() => this.setState({ showVideoModal: false })} />
-
+        <ModalVideo
+          channel="youtube"
+          autoplay={this.state.showVideoModal}
+          isOpen={this.state.showVideoModal}
+          videoId="AlU5h2xrQ5M"
+          onClose={() => this.setState({ showVideoModal: false })}
+        />
       </Layout>
     )
   }
