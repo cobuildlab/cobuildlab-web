@@ -17,13 +17,13 @@ You must recognize your abilities and go looking for the right people to complem
 
 Even the most prodigious entrepreneurs in the history of software have relied on others to develop their projects. 
 
-Mark Zuckerberg needed someone in charge of finance and public relations, and his best friend was with him from the beginning. 
+* Mark Zuckerberg needed someone in charge of finance and public relations, and his best friend was with him from the beginning. 
 
-Steve Jobs might not have been the same in the software world without Steve Wozniak's great effort. 
+* Steve Jobs might not have been the same in the software world without Steve Wozniak's great effort. 
 
-Larry Page and Sergey Brin also complemented each other wonderfully to create and develop the giant Google. 
+* Larry Page and Sergey Brin also complemented each other wonderfully to create and develop the giant Google. 
 
-[Maxeme Tuchman](https://www.linkedin.com/in/maxemetuchman/) is another example of a non-technical co-founder who can achieve tremendous things. 
+* [Maxeme Tuchman](https://www.linkedin.com/in/maxemetuchman/) is another example of a non-technical co-founder who can achieve tremendous things. 
 
 She is a superwoman who has worked for the government and business from many years ago, and now, she decides to undertake as CTO on Caribu in the company of Alvaro Sabido. 
 
@@ -33,7 +33,7 @@ It offers a marketplace that brings to children and family members video-call to
 
 They are a good team. 
 
-Two family members can also be successfully co-founders and be the right team. Matthew Vega-Sanz and Michael Vega-Sanz are evidence of this. 
+* Two family members can also be successfully co-founders and be the right team. Matthew Vega-Sanz and Michael Vega-Sanz are evidence of this. 
 
 They are the CEO and the President of [Lula](https://lularides.com/), a car-sharing startup that connects college students to other students who want to rent their vehicles.
 
