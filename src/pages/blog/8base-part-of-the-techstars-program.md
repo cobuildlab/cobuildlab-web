@@ -1,6 +1,6 @@
 ---
 title: "Our partner 8base will be part of the TechStars Austin program!"
-date: "2019-11-05T16:24:04.000Z"
+date: "2019-12-05T16:24:04.000Z"
 template: blog
 tags: News
 image: "./media/portada8base.png"
