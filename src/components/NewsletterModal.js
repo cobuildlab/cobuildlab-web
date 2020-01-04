@@ -31,8 +31,7 @@ class NewsletterModal extends React.Component {
     this.calculateScrollDistance = this.calculateScrollDistance.bind(this)
   }
 
-  componentDidMount() {
-    window.localStorage.clear()
+  componentDidMount() {     
     var oldWeek = localStorage.getItem('week')
     const toDay = Date.now()
     console.log("oldWeek 1", oldWeek);
@@ -40,7 +39,7 @@ class NewsletterModal extends React.Component {
 
     window.onscroll = () => {
       if (this.calculateScrollDistance() === 50 && (oldWeek < toDay - 1 * 24 * 60 * 60 * 1000 || oldWeek === undefined)) {
-        if (oldWeek === null) {
+        if (oldWeek === null || oldWeek === undefined) {
           console.log("oldWeek 2", oldWeek);
           console.log("toDay 2", toDay);
           oldWeek = toDay

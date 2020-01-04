@@ -1,0 +1,6 @@
+export const Orange = '#E76C29'
+export const Navy = '#264A60'
+export const Dark_Slate = '#90A2AD'
+export const Medium_Slate = '#D2DFE6'
+export const Light_Slate = '#F6F6FB'
+export const White = '#FFFFFF'
