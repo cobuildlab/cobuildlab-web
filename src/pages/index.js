@@ -54,7 +54,7 @@ import {
 } from 'bloomer'
 import ModalVideo from 'react-modal-video'
 import * as PropTypes from 'prop-types'
-// import NewsletterModal from '../components/NewsletterModal'
+import NewsletterModal from '../components/NewsletterModal'
 
 function ReadMore(props) {
   return (
@@ -120,7 +120,7 @@ class Index extends React.Component {
         />
 
         {/* FIXME: Newsletter Modal */}
-        {/* <NewsletterModal /> */}
+        <NewsletterModal />
 
         {/*HEADER*/}
         <Hero isSize="large">
