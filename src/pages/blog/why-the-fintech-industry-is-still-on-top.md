@@ -89,9 +89,34 @@ Financial technology is an engine of the modern economy; it includes companies i
 
 FinTech's significant companies in the world can get multi-billion dollar valuations.
 
+<title-3>Ant Financial</title-3>
 
+[![ant-fintech](./media/ant-financial.jpg)](#)
 
+China-based Ant Financial is a spin-off from the Alibaba Group ([BABA](https://www.investopedia.com/markets/quote?tvwidgetsymbol=baba)). Officially founded in 2014, it originated from Alipay, the world’s leading third-party payment platform founded in 2004. Today, Ant Financial runs Alipay, Ant Fortune, Ant Financial Cloud, and other financial services. Together, Ant Financial and its affiliates cover wealth management, credit reporting, private bank, payments, and cloud computing. Its business value was an estimate at a whopping $75 billion in 2016. Ant Financial tops the list of the most anticipated IPOs.
 
+<title-3>Adyen</title-3>
 
+[![Adyen-Fintech](./media/adyen.png)](#)
 
-[![leader-management](./media/leader.jpeg)](#)
+Founded in 2006, [Adyen](https://www.adyen.com/es_ES/) provides businesses with a single platform to accept payments through any sales channel anywhere in the world. The Netherlands-based Adyen serves more than 4,500 companies to process payments through mobile, online mode, or in-store. Adyen continues to grow at a fast pace and has an impressive roster of customers, including Facebook, Uber, Netflix, Spotify, L’Oréal, Burberry, Symantec, and Microsoft. Its 2016 revenue surpassed $700 million, up from $365 million in 2015. During 2016, $90 billion in transactions made by Adyen, an increase of 80% year-on-year.
+
+<title-3>Qudian</title-3>
+
+[![Qudian-Fintech](./media/qudian.png)](#)
+
+Founded in 2014, [Qudian](https://www.qidian.com/) is a China-based FinTech firm belonging to the category of lending. Qudian broadly operates as a student micro-loan site, an installment payment, and investment management platform. While in the Western countries, many purchases made through credit cards which allow payback in installments, the consumers in [Chinese markets](https://www.investopedia.com/articles/investing/022716/4-consequences-government-intervention-chinas-markets.asp) do not currently use much of that mechanism and this created scope for platforms such as Qudian. The company has formed partnerships with several e-commerce, digital services, and financial services in a bid to attract consumers. Qudian which is likely to go public soon and [expects](https://www.caixinglobal.com/2017-03-20/microlender-qudian-eyes-1-billion-new-york-listing-source-says-101068064.html) to raise $800 million to $1 billion. The figure was projected to more than double to 80 billion yuan in 2017.
+
+<title-3>Avant</title-3>
+ 
+[![Avant-Fintech](./media/avant.png)](#)
+
+Founded in 2012, [Avant](https://www.avant.com/) is a U.S.-based online lending platform lowering the costs and barriers of borrowing for consumers. Avant is a tech company that is dedicated to creating innovative and practical financial products for all consumers. The company has empowered more than 500,000 customers and has a loan portfolio worth $3.5 billion. 
+
+<title-3>Oscar</title-3>
+
+[![Oscar-Fintech](./media/oscar.png)](#)
+
+Oscar is a prominent InsurTech startup founded in 2013 in the United States. By bringing insurance and technology together, Oscar has worked on ways to improve the healthcare system and customer experience. It is doing so by providing a transparent and faster medical claim process, all at minimal costs. Oscar is making the healthcare system simple, efficient, and cost-effective for customers. Prominent names such as Fidelity, Google Capital, and [Khosla Ventures](https://www.khoslaventures.com/portfolio/oscar), among others are on its list of investors. Khosla Ventures defines OSCAR as “a new kind of health insurance company that is using technology to make insurance simple, intuitive and human.” 
+
+As you could see, the majority of **FinTech** startups there are in Asia and here, in the country. So, Do you want to be part of this Fintech business? Any idea can make the difference. 
