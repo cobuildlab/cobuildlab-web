@@ -1,15 +1,62 @@
 ---
-title: "Achieving Product-Market fit in your Software Product"
+title: "The FinTech industry is still on top. Find out why"
 date: "2020-01-06T16:24:04.000Z"
 template: blog
 tags: News
 image: "./media/fintech.jpg"
 ---
 
+Nowadays  the finance world has taken an emerging and revolutionary turn with the arrival of the **fintech** wave, which have changed the bases of competition for financial services, as well as how these kinds of services are structured, supplied, and consumed.
+
+Fintech is the acronym to refer to financial technology which is used to describe new applications or software development that improve and automate the provision and use of financial services. It competes with the implementers of traditional economic methods. Primarily, Fintech is used to help companies, business owners, and consumers better manage their commercial operations, and processes through the use of specialized software, hardware, and algorithms for web and smartphones.
+
+But what is fintech, what are its benefits and risks, what products exist, what are the prospects? This guide will orientate you about the scopes and other implications that you should know. 
+
+
+<title-2>What is FinTech and what its usefulness has been in recent years</title-2>
+
+Fintech is impacting development of current technological innovations to optimize the financial services provided to the sectors of banking, commerce, investment, insurance and other industries related to the area of finance; applied directly by companies in the field or by companies that develop applications or software that offer products and services increasingly active and highly competitive. It can also be known as new applications, processes, products, or business models in the financial services industry, composed of one or more complementary financial services and provided as an end-to-end process through the Internet.
+ 
+This innovative approach to financial technology can have a favorable impact on investment choices and the economic future of companies in the area as they diversify their assets and look for alternatives to traditional financial services.
+
+Some of the most active areas of  innovation include or revolve around the following areas: 
+
+<title-3>Digital cash</title-3> 
+
+The global economy is fast moving from cash-based to digital transactions. At least [64% of smartphone users](https://www.paymentscardsandmobile.com/mobile-wallet-global-usage-statistic/) have used any mobile payment in the last year. Examples of mobile payment methods include Apple Pay, Google Wallet, and PayPal services.
+
+<title-3>Cryptocurrency</title-3>
+
+Are currencies that only exist digitally and can be secure. Unlike traditional currencies, they are not government regulated by a public network. As of November 2018, there were over 2,500 cryptocurrencies in the world.
+
+Blockchain technology</title-3>
+
+Blockchain technology has helped make financial transactions faster and more secure. About [61% of big digital industry names](https://cointelegraph.com/news/61-of-major-global-digital-firms-invest-in-blockchain-report-finds) have invested in blockchain technology, according to the Digital Enterprise Report by Okta. For Example, including Ethereum, a distributed ledger technology (DLT) that maintains records on a network of computers, but has no central ledger.
+
+<title-3>Insurance industry</title-3>
+
+Insurance industry innovations have impacted the insurance industry by improving efficiency, reducing costs, improving risk assessment, and delivering better customer experience, which seeks to use technology to simplify and streamline the insurance industry. According to a study by Accenture, insurers are paying more attention to insurtech with 86% believing that rapid innovation is a must if they are to retain a competitive edge in the market.  
+
+<title-3>Open banking</title-3>
+
+It refers to the sharing of financial data electronically and securely under customer-approved conditions. Lots of lending apps leverage a customer’s transactional information to make lending decisions. Through open banking technology, you can borrow money without hassle electronically. This concept leans on the blockchain and posits that third-parties should have access to bank data to build applications that create a connected network of financial institutions and third-party providers.
+An example is the all-in-one money management tool Mint.
+
+<title-3>Robo-advisers</title-3>
+
+They are a class of automated financial adviser that provide financial advice or investment management online with moderate to minimal human intervention. They offer digital financial information based on mathematical rules or algorithms and thus can provide a low-cost alternative to an adviser.
+
+<title-3>Virtual assistants</title-3>
+
+They have made users mobile experience and access to services from financial institutions timely and secure. With this technological innovation, customers can access their credit score data, get alerts about fraud, and make voice or text-enabled payments. An example of this is Eno, Capital One’s AI assistant
+
+* **Regtech**, which seeks to help financial service firms meet industry compliance rules, especially those are covering Anti-Money Laundering and Know Your Customer protocols which fight fraud.
+* **Unbanked**: Services that seek to serve disadvantaged or low-income individuals who are ignored or underserved by traditional banks or mainstream financial services companies.
+**Cybersecurity**, given the proliferation of cybercrime and the decentralized storage of data, cybersecurity and fintech are intertwined.
+* **Budgeting Assistance Apps**: Last, by not least is another alternative finance example is budgeting apps. Created as a fintech solution for customers who struggle to track their finances and spending, these apps have steadily grown in popularity. They help customers keep their income, monthly expenditures, and payments in check. Examples include Acorns, Mint, and PocketGuard.
 
 
 
-<title-2>What is Product Market Fit?</title-2>
 
 
 [![leader-management](./media/leader.jpeg)](#)
