@@ -55,6 +55,41 @@ They have made users mobile experience and access to services from financial ins
 **Cybersecurity**, given the proliferation of cybercrime and the decentralized storage of data, cybersecurity and fintech are intertwined.
 * **Budgeting Assistance Apps**: Last, by not least is another alternative finance example is budgeting apps. Created as a fintech solution for customers who struggle to track their finances and spending, these apps have steadily grown in popularity. They help customers keep their income, monthly expenditures, and payments in check. Examples include Acorns, Mint, and PocketGuard.
 
+<title-2>What are the benefits of fintech?</title-2>
+
+The following are several advantages to fintech:
+
+* **Price**
+
+Fintech products can come with lower prices that are better for consumers and businesses. These lower prices can be because of the use of algorithms to judge the risk of lending to someone better or directly through the lack of legacy systems.
+
+* **Access to financial products**
+
+A benefit of fintech globally is the increased access to banking and lending products. In Australia, small businesses may benefit from better access to finance through fintech products. Consumers may benefit from better insight into their spending and better interest rates through risk-based pricing. Simpler, automated investing also gives people options outside of savings accounts, and people living in regional areas will benefit by not having to visit a branch to conduct their banking.
+
+* **Improve your finances**
+ 
+Many fintech products aim to improve your financial position and strive to give you a better view of your finances. For example, neobanks and other banks offer [to spend analysis and insights](https://www.finder.com.au/compare-bank-apps-spend-tracking) as well as notifications to help you understand exactly where your money is going.
+
+<title-2>Are there any risks to fintech?</title-2>
+
+* **New companies**
+
+Many companies entering the fintech space have less experience in financial services compared to banks. Makes it essential to check that the company is appropriately licensed and contactable before applying for any products. You would also benefit from reading financial documents, such as product disclosure statements as well as reviews, from ensuring you're well informed about what you're buying.
+
+* **Less regulation** 
+
+Some fintech products and companies tend to operate outside of the traditional financial landscape and therefore may be pending management or be working in a less regulated space. For example, small business finance providers do not require a credit license to offer business loans. There are still consumer laws to protect you, but it's best to check how a company is regulated and licensed if you have any concerns, or you can even contact ASIC directly.
+
+According to [Statista](https://www.statista.com/statistics/893954/number-fintech-startups-by-region/), there are 5,779 fintech startups in the Americas, 3,583 in Europe, Africa, and the Middle East, and 2,849 in the Pacific Region and Asia as of February 2019.
+
+<title-2>Examples of FinTech Startups</title-2>
+
+Financial technology is an engine of the modern economy; it includes companies involved in payments, insurance, investments, credit and loans, and blocking chains, to name just a few of the developed areas.
+
+FinTech's significant companies in the world can get multi-billion dollar valuations.
+
+
 
 
 
