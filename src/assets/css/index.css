@@ -1358,6 +1358,7 @@ input:focus ~ .highlight {
     transition: opacity 0.3s linear;
     opacity: 0!important;
     display: flex!important;
+    z-index: 1!important;
 }
 
 .modal.is-active {
