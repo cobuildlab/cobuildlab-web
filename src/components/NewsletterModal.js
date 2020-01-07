@@ -31,21 +31,13 @@ class NewsletterModal extends React.Component {
     this.calculateScrollDistance = this.calculateScrollDistance.bind(this)
   }
 
-  componentDidMount() {     
-    var oldWeek = localStorage.getItem('week')
+  componentDidMount() {
+    let oldWeek = localStorage.getItem('week')
     const toDay = Date.now()
-    console.log("oldWeek 1", oldWeek);
-    console.log("toDay 1", toDay);
-
     window.onscroll = () => {
-      if (this.calculateScrollDistance() === 50 && (oldWeek < toDay - 1 * 24 * 60 * 60 * 1000 || oldWeek === undefined)) {
-        if (oldWeek === null || oldWeek === undefined) {
-          console.log("oldWeek 2", oldWeek);
-          console.log("toDay 2", toDay);
-          oldWeek = toDay
-        }
-        console.log("oldWeek 3",oldWeek);
-        console.log("toDay 3",toDay);
+      if (this.calculateScrollDistance() === 50 && (oldWeek < toDay - 1 * 24 * 60 * 60 * 1000 || oldWeek === undefined)) {        
+        oldWeek = toDay       
+
         localStorage.setItem('week', toDay)
         this.handleModal(true)
       }
