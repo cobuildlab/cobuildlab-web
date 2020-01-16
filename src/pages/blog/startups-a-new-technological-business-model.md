@@ -38,11 +38,11 @@ As we all know, the tech business is constantly changing, and these companies ar
 The aforementioned gives startups a much faster growth than conventional companies since it allows a much faster recovery of the investment made. In this sense, it is very important to hold events that strengthen the community of entrepreneurs, creating opportunities for organizational growth and become meeting points for potential partners and investors, which drive business scalability. 
 
 
-<title-2>TEINES Ratio</title-2>
+<title-2>TEINS Ratio</title-2>
 
-[![TEINES-ratio](./media/teines-ratio.jpg)](#)
+[![TEINS-ratio](./media/1.jpg)](#)
 
-When talking about startups, there is a perfect relationship between three components that are essential: TEnology-INnovation-Scalability. For the purposes of this post, we will call it the TEINES relationship.
+When talking about startups, there is a perfect relationship between three components that are essential: TEnology-Innovation-Scalability. For the purposes of this post, we will call it the TEINES relationship.
 
 
 <title-3>Technology</title-3>
