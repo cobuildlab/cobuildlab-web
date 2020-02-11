@@ -38,6 +38,10 @@ module.exports = {
           },
           'gatsby-remark-component',
           {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: { isIconAfterHeader: true, maintainCase: true },
+          },
+          {
             resolve: 'gatsby-remark-prismjs',
             options: {
               classPrefix: 'code-x-language-',

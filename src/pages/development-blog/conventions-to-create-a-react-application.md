@@ -13,7 +13,7 @@ This document is heavily based on the Convention proposed by [Airbnb](https://gi
 
 Here, we explain the problem, choose a convention, and explain the reasons:
 
-# 1) General Best Practices
+# 1) General Best Practices for Code Style
 
 ## **1.1) Always prefer constants over variables**
 
@@ -377,8 +377,64 @@ React components can be clasified in 2 major groups depending on how they fit in
 | **Renders**| Mostly understands **WHAT** to render   | It understands **WHAT** and **HOW** to render  |
 
 
-## **1.8) Pure functions**
-## **1.9) util functions over methods**
+## **1.8) Avoid module exporting from index.js**
+
+**NOTE: This rule is not applicable to libraries shared node packages, just for Application Development**
+
+Avoid module exports from index.js in the codebase. For some developers this is a common practice to avoid long paths of imports, example:
+
+Having these components:
+
+```shell script
+modules/A/View1.js
+modules/A/View2.js
+modules/B/View3.js
+```
+
+To use `View1.js` and `View2.js` in `View3.js`
+
+*PREFER THIS:*
+
+`modules/B/View3.js`
+```jsx harmony
+import {View1} from "../A/View1";
+import {View2} from "../A/View2";
+
+const View3 = ()=> {
+  return ...
+}
+```
+
+*AND NOT THIS:*
+
+`modules/A/index.js`
+```jsx harmony
+import {View1} from "View1";
+import {View2} from "View2";
+```
+
+`modules/B/View3.js`
+```jsx harmony
+import {View1, View2} from "../A";
+
+const View3 = ()=> {
+  return ...
+}
+```
+
+
+### Justification
+
+* Maintaining an unnecessary file is usually a source of errors. Adopting this technique requires creating components and remembering to export them with this technique.
+* The real purpose of this technique is `encapsulation`, hiding the intrinsics of a module to the outside world, which is rarely the case for Application Development.
+* Keeping this option open to do it or not to do it without a proper set of rules creates inconsistency in the source code of a project. 
+* Complete imports give an exact location of the resource, making easier the debugging process.
+* Introspection tools like type checkers or IDE navigation don't work well with this approach.
+* More than style there is no real gain on do module exporting.
+
+###TODO: 
+## **1.9) Pure functions**
+## **1.10) util functions over methods**
 
 # 2) File Structure
 
@@ -646,6 +702,8 @@ Example: `_extractKeys`, `_compute`
 
 Example: `onClick`, `onLoad`, `onListMembers`
 
+
+#TODO:
 
 # 6) Application Starter
 # 7) Linting and Code Formatting
