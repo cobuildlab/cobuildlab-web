@@ -571,11 +571,13 @@ To set it up:
 
 ```javascript 1.6
 module.exports = {
+ "plugins": ["jsdoc"],
   extends: [
     'react-app',
     'eslint:recommended',
     'plugin:react/recommended',
     'eslint-config-prettier',
+    'plugin:jsdoc/recommended',
   ],
   rules: {
     indent: ['error', 2],
