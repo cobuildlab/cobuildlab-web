@@ -3,7 +3,7 @@ title: "Enterprise Software Solutions: Know the tools that drive success in medi
 date: "2020-02-04T16:24:04.000Z"
 template: blog
 tags: Tools
-image: "./media/enterprise-software-tools.jpg"
+image: "./media/ENTERPRISE_SOFTWARE.jpg"
 ---
 
 When we talk about technology, it is sometimes overwhelming to keep up with new terminology and trends. Enterprise software is a term that we often hear, though it isn’t always easily defined. 
