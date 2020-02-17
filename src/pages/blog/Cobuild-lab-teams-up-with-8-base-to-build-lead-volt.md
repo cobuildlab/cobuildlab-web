@@ -15,5 +15,4 @@ The new project to be built is Lead Volt, a very specific CRM for the automotive
 The platform will allow Lead Volt to share and maximize the knowledge of a given customer and thus understand their needs and anticipate them.  “Of course, we will use the Backend-as-a-Service offered by <a target="_blank" href="https://www.8base.com/"> 8base </a>
  since it allows us to develop a solution to manage three basic areas on the Lead Volt platform: sales management, marketing, and after-sales or customer service,” said Lacret.
 
-
 Stay tuned for more updates about the Lead Volt project.
