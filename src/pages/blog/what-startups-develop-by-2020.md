@@ -1,6 +1,6 @@
 ---
 title: "What startups to expect or develop by 2020"
-date: "2020-02-T16:24:04.000Z"
+date: "2020-02-17T16:24:04.000Z"
 template: blog
 tags: Education
 image: "./media/startups-for-2020.jpg"
