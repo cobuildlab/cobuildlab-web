@@ -1,6 +1,6 @@
 ---
 title: "Artificial Intelligence, What is it?"
-date: "2020-02-T20:29:10.000Z"
+date: "2020-02-19T20:29:10.000Z"
 template: blog
 tags: Education
 image: "./media/what-is-artificial-intelligence.jpg"
