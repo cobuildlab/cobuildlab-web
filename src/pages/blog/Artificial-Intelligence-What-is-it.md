@@ -1,19 +1,21 @@
 ---
 title: "Artificial Intelligence, What is it?"
-date: "2018-06-06T20:29:10.000Z"
+date: "2020-02-T20:29:10.000Z"
 template: blog
-tags:
-image: "./media/sphere-art-modern-art.jpg"
+tags: Education
+image: "./media/what-is-artificial-intelligence.jpg"
 ---
 
 <block-quote>_"The original question, 'Can machines think?' I believe to be too meaningless to deserve discussion.”_  
 [**Alan Turing**](https://www.goodreads.com/author/show/87041.Alan_Turing) - [**Mechanical Intelligence.**](https://www.goodreads.com/work/quotes/764008)</blockquote>
 
-We used to say that **computers** were obedient, that it was strictly what we **programmed** it step by step, like a recipe for cooking. Today **artificial intelligence** manages to find results and conclusions without being explicitly **programmed**, but they discover them by making an **automatic** analysis of the data that is offered to them. Is this good or bad for **humanity**? Let’s talk about it!
+We used to say that computers were obedient, that it was strictly what we programmed it step by step, like a recipe for cooking. Today **artificial intelligence** manages to find results and conclusions without being explicitly programmed, but they discover them by making an **automatic** analysis of the data that is offered to them. Is this good or bad for humanity? Let’s talk about it!
 
-**Artificial Intelligence** is a collection of advanced **technologies** that allow **machines** to sense, **comprehend, act** and **learn**. It is configured to transform **the studies, medicine, business** and the **apps** in ways never seen before (only in science fiction). When this **technology** is implemented in the correct way, it helps to improve productivity, solve problems and reduce costs, unlocking more creative work and creating new growth opportunities. 
+<title-2>Artificial Intelligence is...</title-2> 
 
-<title-4>Advantages of AI</title-4>
+A collection of advanced technologies that allow machines** to sense, comprehend, act and learn. It is configured to transform the studies, medicine, business and the apps in ways never seen before (only in science fiction). When this technology is implemented in the correct way, it helps to improve productivity, solve problems and reduce costs, unlocking more creative work and creating new growth opportunities. 
+
+<title-2>Advantages of AI</title-2>
 
 *   Exploration capacity.
 *   Reduction of errors.
@@ -21,7 +23,7 @@ We used to say that **computers** were obedient, that it was strictly what we **
 *   Better performance than humans.
 *   Faster information processing.
 
-<title-4>Disadvantages of AI</title-4>
+<title-2>Disadvantages of AI</title-2>
 
 *   Vulnerable to attacks.
 *   Risk related to system hacking
@@ -31,11 +33,11 @@ We used to say that **computers** were obedient, that it was strictly what we **
 
 ![Artificial Intelligence Picture](./media/image121221sad21.jpg)
 
-<title-4>Have you heard about the Turing test?</title-4>
+<title-3>Have you heard about the Turing test?</title-3>
 
-First of all, **who is Turing?** Turing was a British mathematician and logician. He is considered one of the fathers of computing and modern computing. During Second World War worked on decipher the Nazi codes, particularly The Enigma Machine. Then designed one of the first digital programmable electronic computers. If you want to know more about his history and how he designed a machine capable of deciphering Nazi codes, I recommend you watch the movie “The Imitation Game”. 
+First of all, who is Turing? Turing was a British mathematician and logician. He is considered one of the fathers of computing and modern computing. During Second World War worked on decipher the Nazi codes, particularly The Enigma Machine. Then designed one of the first digital programmable electronic computers. If you want to know more about his history and how he designed a machine capable of deciphering Nazi codes, I recommend you watch the movie “The Imitation Game”. 
 
-**The Turing test** is a series of questions that an interrogator (human) must ask questions to a computer and to a person without knowing who is the human and which is the machine, the idea is that if the person asking cannot differentiate between the human being and the machine, it must be considered an intelligent entity. 
+The Turing test is a series of questions that an interrogator (human) must ask questions to a computer and to a person without knowing who is the human and which is the machine, the idea is that if the person asking cannot differentiate between the human being and the machine, it must be considered an intelligent entity. 
 
 An inverse form of the Turing test is widely used on the internet as the CAPTCHA test (an acronym for “Completely Automated Public Turing test to tell Computers and Humans Apart”) that is designed to determine if a user is a human and not a computer. 
 
