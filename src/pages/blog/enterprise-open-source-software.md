@@ -1,5 +1,5 @@
 ---
-title: "Know the Enterprise World with Open Source Software"
+title: "Know the Enterprise World with Open Source Software: ERP platforms"
 date: "2020-02-26T16:24:04.000Z"
 template: blog
 tags: Education
@@ -49,6 +49,20 @@ Dolibarr also has a network of very active users, which facilitates the repair o
 [iDempiere](https://www.idempiere.org/) is a full-fledged ERP, with everything from invoicing to POS integration to warehouse management to forecasting. While iDempiere is open source, installing an ERP is never truly free.  iDempiere, like most open-source programs, relies on community support for troubleshooting. Businesses may also call in specialists with experience in iDempiere.
 
 [![idempiere-erp-software](./media/idempiere-erp-software.png)](#)
+
+<title-3>* ODOO</title-3>
+
+[ODOO](https://www.odoo.com/) is a general business management software. That includes CRM, e-commerce, billing, accounting, manufacturing, warehouse, project management, and inventory management. 
+
+This software has two versions. First, the Community version (open source) called LGPLv3, which is supplemented on features and services by the Enterprise version's (proprietary).
+
+[![ODOO](./media/odoo-erp.png)](#)
+
+<title-3>* OpenBravo</title-3>
+
+[Openbravo](https://www.openbravo.com/) is an international business software company focused on helping retailers and restaurateurs through their internal processes.  The omnibus platform is one of their most significant proposals, which is the most flexible mobile and cloud-based.  
+
+[![Open-bravo](./media/open-bravo-erp.png)](#)
 
 The **Free and open-source software** are undoubtedly a great advantage for companies since they allow them to reduce their operating costs because they do not have a license to use them, in the same way, they speed up the activities within the company and facilitate the work of users. They also allow you to make modifications to fit your needs, so they are an excellent option for small or medium-sized businesses that are growing.  If you want, we can develop another option for you or just introduce you to new options. Contact us and you will see. 
 
