@@ -486,8 +486,8 @@ class Index extends React.Component {
                     <Icon size="18" icon={linkedinSquare} />
                   </a>
                 </Content>
-              </Column>
-            </Columns> */}
+              </Column>*/}
+            </Columns> 
           </Container>
         </section>
         {/*Section Customer Success Stories*/}
