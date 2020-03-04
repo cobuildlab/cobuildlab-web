@@ -522,16 +522,16 @@ hr {
 
 .name-team {
     position: absolute;
-    bottom: -4px;
+    bottom: -30px;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
     font-family: Lato-Black;
     color: #fff;
-    text-shadow: 1px 1px 2px #0000006e;
+    text-shadow: 1px 1px 8px rgba(0,0,0,.73);
     width: 100%;
-    font-size: 14px;
+    font-size: 18px;
+    margin-bottom: 0 !important;
 }
 
 /* .name-team-description{

@@ -374,7 +374,7 @@ class Index extends React.Component {
                     <CardImage>
                       <Image isRatio="4:8" src={angel} />
                       <p className="name-team">
-                        Angel Lacret <br /> Chief of Product Development at
+                        Angel Lacret <br /> Chief of Product Development <br/>
                         Cobuild Lab
                       </p>
                     </CardImage>
