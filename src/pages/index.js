@@ -364,37 +364,7 @@ class Index extends React.Component {
             </Title>
             <Columns isCentered>
             
-              {/* <Column isSize="1/3">
-                <Card>
-                  <a
-                    href="https://www.linkedin.com/in/marcelo-ricigliano-32440379"
-                    target="_blank"
-                  >
-                    <CardImage>
-                      <Image isRatio="4:8" src={marcelo} />
-                      <p className="name-team">
-                        Marcelo Ricigliano <br /> COO at 4Geeks Academy
-                      </p>
-                    </CardImage>
-                  </a>
-                </Card>
-                <Content>
-                  <br />
-                  <small>
-                    Co-founded Startups in Venezuela, Ecuador y USA: Vikua,{' '}
-                    <br /> 4Geeks Academy, Siplik, Hack, InTraffic.
-                  </small>
-                  <br />
-                  <Icon size="18" icon={envelopeO} />
-                  <a
-                    className="icon-link"
-                    href="https://www.linkedin.com/in/marcelo-ricigliano-32440379"
-                    target="_blank"
-                  >
-                    <Icon size="18" icon={linkedinSquare} />
-                  </a>
-                </Content>
-              </Column> */}
+            
               <Column isSize="1/2">
                 <Card>
                   <a
@@ -455,6 +425,37 @@ class Index extends React.Component {
                   </a>
                 </Content>
               </Column>
+                {/* <Column isSize="1/3">
+                <Card>
+                  <a
+                    href="https://www.linkedin.com/in/marcelo-ricigliano-32440379"
+                    target="_blank"
+                  >
+                    <CardImage>
+                      <Image isRatio="4:8" src={marcelo} />
+                      <p className="name-team">
+                        Marcelo Ricigliano <br /> COO at 4Geeks Academy
+                      </p>
+                    </CardImage>
+                  </a>
+                </Card>
+                <Content>
+                  <br />
+                  <small>
+                    Co-founded Startups in Venezuela, Ecuador y USA: Vikua,{' '}
+                    <br /> 4Geeks Academy, Siplik, Hack, InTraffic.
+                  </small>
+                  <br />
+                  <Icon size="18" icon={envelopeO} />
+                  <a
+                    className="icon-link"
+                    href="https://www.linkedin.com/in/marcelo-ricigliano-32440379"
+                    target="_blank"
+                  >
+                    <Icon size="18" icon={linkedinSquare} />
+                  </a>
+                </Content>
+              </Column> */}
               {/* <Column isSize="1/3">
                 <Card>
                   <a
