@@ -19,9 +19,9 @@ import '../assets/fonts/Lato-LightItalic.ttf'
 import '../assets/fonts/Lato-Regular.ttf'
 import 'react-modal-video/scss/modal-video.scss'
 // import marcelo from '../resources/marceloicigliani.jpg'
+// import alejandro from '../resources/alejandrosanchez.jpg'
 import alan from '../resources/alan-cobuild-profile.jpg'
-import angel from '../resources/anglelacret.jpg'
-import alejandro from '../resources/alejandrosanchez.jpg'
+import angel from '../resources/angel-lacret-cobuild-lab.jpg'
 import defaultImg from '../resources/default-post.jpg'
 
 import { Icon } from 'react-icons-kit'
@@ -363,38 +363,7 @@ class Index extends React.Component {
               Our Team
             </Title>
             <Columns isCentered>
-            <Column isSize="1/3">
-                <Card>
-                  <a
-                    href="https://www.linkedin.com/in/alanthinks"
-                    target="_blank"
-                  >
-                    <CardImage>
-                      <Image isRatio="4:8" src={alan} />
-                      <p className="name-team">
-                        Alan R. Guevara <br /> Chief of Product Management <br/> Cobuild Lab
-                      </p>
-                    </CardImage>
-                  </a>
-                </Card>
-                <Content>
-                  <br />
-                  <small>
-                    Close to 15 years of experience in Marketing and Product Design,
-                    <br /> Former lead UX/UI Designer and Developer for top <br/>
-                    Healthcare Company in the United States
-                  </small>
-                  <br />
-                  <Icon size="18" icon={envelopeO} />
-                  <a
-                    className="icon-link"
-                    href="https://www.linkedin.com/in/alanthinks"
-                    target="_blank"
-                  >
-                    <Icon size="18" icon={linkedinSquare} />
-                  </a>
-                </Content>
-              </Column>
+            
               {/* <Column isSize="1/3">
                 <Card>
                   <a
@@ -426,7 +395,7 @@ class Index extends React.Component {
                   </a>
                 </Content>
               </Column> */}
-              <Column isSize="1/3">
+              <Column isSize="1/2">
                 <Card>
                   <a
                     href="https://www.linkedin.com/in/alacret/"
@@ -455,7 +424,38 @@ class Index extends React.Component {
                   </a>
                 </Content>
               </Column>
-              <Column isSize="1/3">
+              <Column isSize="1/2">
+                <Card>
+                  <a
+                    href="https://www.linkedin.com/in/alanthinks"
+                    target="_blank"
+                  >
+                    <CardImage>
+                      <Image isRatio="4:8" src={alan} />
+                      <p className="name-team">
+                        Alan R. Guevara <br /> Chief of Product Management <br/> Cobuild Lab
+                      </p>
+                    </CardImage>
+                  </a>
+                </Card>
+                <Content>
+                  <br />
+                  <small>
+                    Close to 15 years of experience in Marketing and Product Design.
+                    <br /> Former lead UX/UI Designer and Developer for top Healthcare Company in the United States.
+                  </small>
+                  <br />
+                  <Icon size="18" icon={envelopeO} />
+                  <a
+                    className="icon-link"
+                    href="https://www.linkedin.com/in/alanthinks"
+                    target="_blank"
+                  >
+                    <Icon size="18" icon={linkedinSquare} />
+                  </a>
+                </Content>
+              </Column>
+              {/* <Column isSize="1/3">
                 <Card>
                   <a
                     href="https://www.linkedin.com/in/alesanchezr/"
@@ -487,7 +487,7 @@ class Index extends React.Component {
                   </a>
                 </Content>
               </Column>
-            </Columns>
+            </Columns> */}
           </Container>
         </section>
         {/*Section Customer Success Stories*/}
