@@ -21,10 +21,11 @@ True AI is when a computer or robot can think and act as a human brain would. At
 
 <title-2>The market of AI in the enterprise software</title-2>
 
+Market forecasts vary, but all consistently predict explosive growth. IDC predicts that the Cognitive Systems and AI market (including hardware & services) will grow to $47B in 2020, attaining a Compound Annual Growth Rate (CAGR) of 55%. This forecast includes $18B in software applications, $5B in software platforms, and $24B in services and hardware. IBM claims that Cognitive Computing is a $2T market, including $200B in healthcare/life sciences alone. Tractica forecasts direct and indirect applications of AI software to grow from $1.4B in 2016 to $59.8B by 2025, a 52% CAGR.
+
+**Source:** [Forbes](https://www.forbes.com/sites/louiscolumbus/2017/06/11/how-artificial-intelligence-is-revolutionizing-enterprise-software-in-2017/#7ac473e82463)
+
+[![erp-software](./media/artificial-intelligence-revenue.jpg)](#)
 
 
-
-
-
-[![erp-software](./media/ERP-software.jpg)](#)
 
