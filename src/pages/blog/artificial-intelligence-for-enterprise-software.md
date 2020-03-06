@@ -31,7 +31,7 @@ Market forecasts vary, but all consistently predict explosive growth. IDC predic
 
 AI and automation, like some other emerging technologies, will allow businesses to cut costs, boost productivity by freeing up workers from more ordinary tasks, increase agility and flexibility, and spur innovation — all the buzzwords.  AI and automation stand out from other technologies, in that it will help advance those other technologies into the mainstream enterprise environment. 
 
-**Integration challenges**
+<title-2>Integration challenges</title-2>
 
  If the leadership team of an organization does decide to integrate AI and automation, then there will be some challenges to overcome, including control, a lack of skills, and legacy systems.
 
