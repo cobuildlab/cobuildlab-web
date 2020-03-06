@@ -27,5 +27,24 @@ Market forecasts vary, but all consistently predict explosive growth. IDC predic
 
 [![erp-software](./media/artificial-intelligence-revenue.jpg)](#)
 
+<title-2>The benefits of AI: is it necessary?</title-2>
 
+AI and automation, like some other emerging technologies, will allow businesses to cut costs, boost productivity by freeing up workers from more ordinary tasks, increase agility and flexibility, and spur innovation — all the buzzwords.  AI and automation stand out from other technologies, in that it will help advance those other technologies into the mainstream enterprise environment. 
 
+**Integration challenges**
+
+ If the leadership team of an organization does decide to integrate AI and automation, then there will be some challenges to overcome, including control, a lack of skills, and legacy systems.
+
+<title-3>AI and control</title-3>
+
+Businesses must be able to control the scope of how it’s AI makes decisions,  the ability to change from opaque, where the decisions being made by the AI are not easily explainable, where they need to insist on it being transparent and able to explain its results. 
+
+<title-3>Lack of skills</title-3>
+
+The global digital skills crisis has been well documented, and any organization looking to integrate AI and automation processes will need employees who can work with, and understand the technology. Industry at large will need more data scientists who are also domain experts and understand the relevance of the training datasets as they conduct regression and optimize their ML algorithms.
+
+<title-3>Legacy systems</title-3>
+
+Many large enterprises are based on legacy systems, and integrating any new, emerging technology with these is a challenge. Many businesses face the challenge of working out how automation fits in with existing systems and processes.
+
+The workspace is gradually going through an evolvement, and this will, in years to come, an increase in a geometrical rate due to the import of artificial intelligence. CEOs make more money; recruiters save energy, employees go through less stress, and the masses are enjoying transitions in different facets of life. Hence, the transformation that comes with **AI** only caused a ripple effect on productivity in the industrial world.
