@@ -47,4 +47,12 @@ The global digital skills crisis has been well documented, and any organization 
 
 Many large enterprises are based on legacy systems, and integrating any new, emerging technology with these is a challenge. Many businesses face the challenge of working out how automation fits in with existing systems and processes.
 
+<title-2>Artificial intelligence trends for enterprise software</title-2>
+
+Despite challenges, more are the benefits of Artificial Intelligence used for improving business processes. We share this video where you would see what we are talking about. 
+
+Take advantage if you have a business that needs an upgrade. 
+
+<youtube-video id="i9gn4NH4KU"></youtube-video>
+
 The workspace is gradually going through an evolvement, and this will, in years to come, an increase in a geometrical rate due to the import of artificial intelligence. CEOs make more money; recruiters save energy, employees go through less stress, and the masses are enjoying transitions in different facets of life. Hence, the transformation that comes with **AI** only caused a ripple effect on productivity in the industrial world.
