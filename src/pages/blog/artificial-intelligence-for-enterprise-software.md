@@ -51,7 +51,7 @@ Many large enterprises are based on legacy systems, and integrating any new, eme
 
 Despite challenges, more are the benefits of Artificial Intelligence used for improving business processes. We share this video where you would see what we are talking about. 
 
-Take advantage if you have a business that needs an upgrade. 
+Take advantage if you have a business that needs an update. 
 
 <youtube-video id="i9gn4NH4KU"></youtube-video>
 
