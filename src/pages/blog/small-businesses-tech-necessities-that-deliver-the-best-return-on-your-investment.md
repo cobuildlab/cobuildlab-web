@@ -30,6 +30,5 @@ As long as you’re covered when it comes to cell service, you can take full adv
 
 The great thing about many of these tech tools is that the time that’s saved, combined with the increased revenue they generate, means your investment pays off multiple times over. We know that starting and running a small business is a big risk, and you have to make sure every dollar you invest is worthwhile. This is why these tech basics, which every small business needs to succeed, should be part of your budget from day one.
 
-
-<block-quote>This post was written by Womenled.org.</block-quote>
+<block-quote>Womenled.org wrote this post.</block-quote>
 
