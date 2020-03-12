@@ -26,11 +26,11 @@ As long as you’re covered when it comes to cell service, you can take full adv
 
 <title-2>Mobile Marketing</title-2>
 
+[Marketing for mobile users](https://www.business.com/articles/megan-totka-mobile-marketing/) is also crucial to accomplishing your business goals. Not only do you need a website, but you also want to make sure your website is optimized for mobile and that you’re also using social media for marketing. We also recommend using a [social media management](https://www.entrepreneur.com/article/279338) app to build your audience (and keep them engaged) without feeling like that’s all you do. 
+
+The great thing about many of these tech tools is that the time that’s saved, combined with the increased revenue they generate, means your investment pays off multiple times over. We know that starting and running a small business is a big risk, and you have to make sure every dollar you invest is worthwhile. This is why these tech basics, which every small business needs to succeed, should be part of your budget from day one.
 
 
-
-
-[![erp-software](./media/artificial-intelligence-revenue.jpg)](#)
 
 
 
