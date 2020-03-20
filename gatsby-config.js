@@ -122,5 +122,14 @@ module.exports = {
         useAmpClientIdApi: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@2020": "src/pages/2020",
+        },
+        extensions: []
+      }
+    }
   ],
 }
