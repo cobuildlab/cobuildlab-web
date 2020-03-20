@@ -1,0 +1,74 @@
+@import '@2020/css/var.scss';
+
+/*TODO fixed responsive title size */
+
+.title{
+  color: $navy;
+  letter-spacing: 0;
+  opacity: 1;
+
+  &_hero{
+    font-size: $font-size-hero;
+    font-weight: bold;
+    @media all and (max-width: 767.99px){
+      font-size: 55px;
+    }
+  }
+
+  &_h1{
+    font-size: $font-size-h1;
+    font-weight: bold;
+    @media all and (max-width: 767.99px){
+      font-size: 55px;
+    }
+  }
+
+  &_h2{
+    font-size: $font-size-h2;
+    font-weight: lighter;
+    @media all and (max-width: 767.99px){
+      font-size: 55px;
+    }
+  }
+
+  &_h3{
+    font-size: $font-size-h3;
+    font-weight: bold;
+    @media all and (max-width: 767.99px){
+      font-size: 55px;
+    }
+  }
+
+  &_h4{
+    font-size: $font-size-h4;
+    color: $orange;
+    font-weight: 400;
+    @media all and (max-width: 767.99px){
+      font-size: 55px;
+    }
+  }
+  
+  &_h5{
+    font-size: $font-size-h5;
+    font-weight: normal;
+    @media all and (max-width: 767.99px){
+      font-size: 55px;
+    }
+  }
+
+  &_h6{
+    font-size: $font-size-h6;
+    font-weight: normal;
+    @media all and (max-width: 767.99px){
+      font-size: 18px;
+    }
+  }
+
+  &_sub_title{
+    font-size: $text-size;
+    font-weight: normal;
+    @media all and (max-width: 767.99px){
+      font-size: 15px;
+    }
+  }
+}

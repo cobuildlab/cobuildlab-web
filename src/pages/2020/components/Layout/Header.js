@@ -9,7 +9,7 @@ import {
   NavbarMenu,
   NavbarEnd,
 } from 'bloomer'
-import Button from '@2020/components/Button';
+import { Button } from '@2020/components';
 
 import logo from '@2020/resources/cobuildlab.png'
 import facebook from '@2020/resources/icons/facebook.svg';

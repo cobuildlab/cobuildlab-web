@@ -1,17 +1,10 @@
 import React from 'react';
-import {
-  Container,
-  Column,
-  Columns,
-  Title
-} from 'bloomer'
-
-import Button from '../Button';
-
-import componse from '@2020/utils/StyleComponse';
+import { Container, Column, Columns} from 'bloomer'
+import { Typography, Button } from '@2020/components';
 import comic from '@2020/resources/home/cobuildlab-home.svg'
 import styles from './css/index.module.scss';
 
+const { Title } = Typography;
 
 export default () => (
   <Container>
@@ -19,23 +12,15 @@ export default () => (
       <Columns isCentered>
         <Column isSize={{ mobile: 12, desktop: 6}}>
           <div className={styles.hero_body_left}>
-            <Title 
-              tag="h3" 
-              className={componse(styles.hero_title, styles.hero_title_h3)}
-            >
-              Software Development Company</Title>
-            <Title 
-              tag="h1" 
-              className={componse(styles.hero_title, styles.hero_title_h1)}
-            >
+            <Title size="h6" className={styles.hero_text}>
+              Software Development Company
+            </Title>
+            <Title size="h1" className={styles.hero_text}>
               Let’s <span className={styles.hero_orange_text}>Build</span> a <br/>
               Great<span className={styles.hero_orange_text}>{' '}Idea.</span>
             </Title>
-            <Title 
-              tag="h4" 
-              className={componse(styles.hero_title, styles.hero_title_h4, styles.hero_sub_title)}
-            >
-              We partner with new and early-stage non-technical
+            <Title size="subTitle" className={styles.hero_text}>
+              We partner with new and early-stage
               entrepreneurs and industry experts to transforms ideas into{' '}
               <span className={styles.hero_orange_text}>
                 Web and Mobile Software Products.

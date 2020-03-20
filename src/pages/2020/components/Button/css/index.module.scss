@@ -7,15 +7,16 @@
   height: 42px;
   border-color: $orange;
   background: $orange 0% 0% no-repeat padding-box  !important;
-  box-shadow: 0px 8px 25px $btn-shadow !important;
+  box-shadow: 0px 0px 25px $btn-shadow !important;
   opacity: 1;
   letter-spacing: 0;
   text-transform: uppercase;
   text-align: center;
+  font-size: $text-button-size;
   &:hover{
     border-color: $btn-hover-bg !important;
     background-color: $btn-hover-bg !important;
-    box-shadow: 0px 8px 25px $btn-hover-shadow !important;
+    box-shadow: 0px 0px 25px $btn-hover-shadow !important;
     color: $white;
   }
 }
