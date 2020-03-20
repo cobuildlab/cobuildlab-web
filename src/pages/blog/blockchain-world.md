@@ -69,6 +69,36 @@ Private blockchains can run independently or can be integrated with other blockc
 
 Also called consortium blockchains, are considered to be semi-decentralized and employ characteristics of both public and private blockchains. Hybrid blockchains contain sets of permissions, similar to private blockchains; however, instead of a single organization controlling it, a group of agreed-upon organizations controls it. Administrators of each organization can restrict users’ reading rights as they desire and only allow a limited set of trusted nodes to execute a consensus protocol.
 
+<title-2>Now, which applications can you develop using blockchain technology?</title-2>
+
+Cryptocurrencies were the first signals of the enormous potential of blockchain technology. Actually, they made it famous, but this is not the only way of using and taking advantage of it. 
+
+Blockchain technology has led businesses, industries, and entrepreneurs from all around the world to explore the technology's potential, make revolutionary changes, and earn money being safe.
+
+So, let's find out how Blockchain can be useful in practical implementation for you.
+
+<title-3>1. Smart contracts</title-3>
+
+A contract is a document where reposes a transaction between two people, companies, and so on. 
+
+Different businesses deal with each other to exchange services or products using it, but paper-based contracts are prone to errors and frauds. 
+
+Blockchain, by itself, brings forward a fantastic solution to this problem for the high level of security it has. 
+
+In that way, smart contracts perform similar functions as paper-based agreements, but they are digital as well as self-executable in nature. 
+
+Self-executable means that when certain conditions in the code of these are met, they are automatically deployed. 
+
+Ethereum (which is a blockchain network) has fantastic options to develop smart contracts. There is no area where this kind of document can not be useful.
+
+<title-3>2. Government Elections</title-3>
+
+This is a public business, but you perfectly can develop a software to ensure the authencity and the correct transaction of votes for any government voting process or tender.
+
+The current voting system relies on manual processing and trust, and you can change this.  
+
+Blockchain smart contracts provide a modern system through which these common issues can be easily eliminated, so smart contracts will allow transparency and security while maintaining the privacy of the voters. 
+
 
 
 
