@@ -99,13 +99,12 @@ The current voting system relies on manual processing and trust, and you can cha
 
 Blockchain smart contracts provide a modern system through which these common issues can be easily eliminated, so smart contracts will allow transparency and security while maintaining the privacy of the voters. 
 
+<title-3>3. Identity management</title-3>
 
+Everything is on the internet. And financial transactions are part of this. Blockchain each time represents excellent options to protect sensitive information like financial transactions, invoices, and even accessing credentials.
 
+This technology offers you advanced methods of public-private encryption using which you can prove your identity and digitize your documents, money, and whatever you need keeping in safe. 
 
+This is enough reason to consider providing software for this necessity. It can make you a millionaire if you follow the right steps. 
 
-[![erp-software](./media/artificial-intelligence-revenue.jpg)](#)
-
-<title-2>Let's know a little bit about Apple and its iOS</title-2>
-
-
-<youtube-video id="bUQz9ZWjsvc"></youtube-video>
+**Blockchain** is a nice technology. If you are interested, keep reading and investigating what you do need to develop a software project using it. More areas of applications are being discovered and tested with each passing day, and you can discover the next. Why not?
