@@ -107,4 +107,4 @@ This technology offers you advanced methods of public-private encryption using w
 
 This is enough reason to consider providing software for this necessity. It can make you a millionaire if you follow the right steps. 
 
-**Blockchain** is a nice technology. If you are interested, keep reading and investigating what you do need to develop a software project using it. More areas of applications are being discovered and tested with each passing day, and you can discover the next. Why not?
+**Blockchain** is friendly technology. If you are interested, keep reading and investigating what you do need to develop a software project using it. More areas of applications are being discovered and tested with each passing day, and you can find the next. Why not?
