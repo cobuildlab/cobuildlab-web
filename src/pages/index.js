@@ -5,7 +5,8 @@ import get from 'lodash/get'
 import { 
   HeroHeader, 
   HeroBody, 
-  Hero 
+  Hero,
+  Section 
 } from 'bloomer';
 
 import 'react-toastify/dist/ReactToastify.min.css'
@@ -23,9 +24,11 @@ import '../assets/fonts/Lato-LightItalic.ttf'
 import '../assets/fonts/Lato-Regular.ttf'
 import 'react-modal-video/scss/modal-video.scss'
 
-import HeroBodyContent from '../components/Hero';
-import Header from '../components/Layout/Header';
 import Layout from '../components/Layout'
+import Header from '../components/Layout/Header';
+import HeroBodyContent from '../components/Hero';
+import Service from '../components/Service';
+
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -70,6 +73,9 @@ export default class HomePage extends React.Component {
             <HeroBodyContent />
           </HeroBody>
         </Hero>
+        <Section>
+          <Service />
+        </Section>
       </Layout>
     )
   }
