@@ -68,7 +68,6 @@ class Index extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
         />
-
         {/*HEADER*/}
         <Hero isSize="large">
           <HeroBody className="bg-header">
@@ -195,13 +194,7 @@ class Index extends React.Component {
                 </p>
               </Column>
             </Columns>
-            {/* <Columns isCentered>
-              <Column>
-                <Link className="button is-primary is-medium is-rounded">
-                  <small>Learn more</small>
-                </Link>
-              </Column>
-            </Columns> */}
+  
           </Container>
         </section>
         {/*Section Cobuild Process*/}
@@ -449,3 +442,10 @@ export const pageQuery = graphql`
     }
   }
 `
+/* <Columns isCentered>
+    <Column>
+      <Link className="button is-primary is-medium is-rounded">
+        <small>Learn more</small>
+      </Link>
+    </Column>
+  </Columns> */
