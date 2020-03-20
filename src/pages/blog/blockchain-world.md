@@ -65,6 +65,11 @@ Contrary to the public blockchain, private blockchains are the ones which are sh
 
 Private blockchains can run independently or can be integrated with other blockchains too. Enterprises and organizations usually use these. Therefore, the level of trust required amongst the participants is higher in private blockchains.
 
+<title-3>Hybrid Blockchain</title-3>
+
+Also called consortium blockchains, are considered to be semi-decentralized and employ characteristics of both public and private blockchains. Hybrid blockchains contain sets of permissions, similar to private blockchains; however, instead of a single organization controlling it, a group of agreed-upon organizations controls it. Administrators of each organization can restrict users’ reading rights as they desire and only allow a limited set of trusted nodes to execute a consensus protocol.
+
+
 
 
 
