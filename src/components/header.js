@@ -31,7 +31,6 @@ class header extends React.Component {
     return (
       <React.Fragment>
         <Navbar
-          className="is-hidden-desktop is-hidden-tablet-only"
           style={{ margin: '0' }}
         >
           <Container isFluid>
@@ -76,7 +75,18 @@ class header extends React.Component {
             </NavbarMenu>
           </Container>
         </Navbar>
-        <Navbar
+      
+      </React.Fragment>
+    )
+  }
+}
+
+export default header
+
+
+/*
+
+    <Navbar
           className="isTransparent navbar-absolute is-hidden-mobile"
           style={{ margin: '0' }}
         >
@@ -125,9 +135,5 @@ class header extends React.Component {
             </NavbarMenu>
           </Container>
         </Navbar>
-      </React.Fragment>
-    )
-  }
-}
 
-export default header
+*/

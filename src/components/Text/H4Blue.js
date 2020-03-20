@@ -12,10 +12,8 @@ const StyledTitle = styled(Title)`
   font-family: 'Lato-Black', sans-serif !important;
 `
 
-const _H2 = (props) => (
+export default (props) => (
   <StyledTitle isSize={2} tag={'h2'}>
     {props.children}
   </StyledTitle>
 )
-
-export { _H2 as H4Blue }

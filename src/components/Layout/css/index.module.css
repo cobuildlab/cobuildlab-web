@@ -1,0 +1,41 @@
+.nav_item {
+  padding: 0 10px;
+}
+
+.nav_link{
+  color: #254a60;
+  font-weight: 600;
+}
+
+.nav_link_primary{
+  padding: .5em 1em;
+  background-color: #e76c29;
+  color: #fff;
+  box-shadow: 0px 0px 15px #e76c29 !important;
+  margin-right: 35px;
+}
+
+.nav_icon{
+  width: 16px;
+  height: 16px;
+}
+
+.nav_divider{
+  box-shadow: 0px 1px 2px #254a6038;
+}
+
+@media only screen and (min-width: 1224px){
+
+  .nav_brand{
+    width: 229px;
+    height: 49px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .nav_brand_img{
+    margin-right: 5px;
+    width: 100%;
+    max-height: 100% !important;
+  }
+}
