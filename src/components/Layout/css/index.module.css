@@ -7,11 +7,7 @@
   font-weight: 600;
 }
 
-.nav_link_primary{
-  padding: .5em 1em;
-  background-color: #e76c29;
-  color: #fff;
-  box-shadow: 0px 0px 15px #e76c29 !important;
+.nav_link_spacing{
   margin-right: 35px;
 }
 

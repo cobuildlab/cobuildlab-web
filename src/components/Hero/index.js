@@ -3,20 +3,17 @@ import {
   Container,
   Column,
   Columns,
-  Hero,
-  HeroBody,
+  Title
 } from 'bloomer'
 import ModalVideo from 'react-modal-video'
-import comic from '../../resources/icons/comic.svg'
+
 import ReadMore from './ReadMore';
+import Button from '../Button';
 
-import H1Blue from '../Text/H1Blue'
-import H2Blue from '../Text/H2Blue'
-import H3Blue from '../Text/H3Blue'
-import H4Blue from '../Text/H4Blue'
+import componse from '../../utils/StyleComponse';
+import comic from '../../resources/home/cobuildlab-home.svg'
+import styles from './css/index.module.css';
 
-
-console.log(H1Blue)
 
 export default () => {
 
@@ -27,74 +24,49 @@ export default () => {
   }, [])
 
   return(
-    <>
-    <Container isFluid className="is-hidden-mobile no-margin">
-    <Columns>
-      <Column isSize="1/2">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <H3Blue>Software Development Company</H3Blue>
-        <H1Blue>
-          Let’s <span className={'orange-text'}>Build</span> a Great{' '}
-          <span className={'orange-text'}>Idea.</span>
-        </H1Blue>
-        <H4Blue>
-          We partner with new and early-stage non-technical
-          entrepreneurs and industry experts to transforms ideas into{' '}
-          <span className={'orange-text'}>
-            Web and Mobile Software Products.
-          </span>
-          <br />
-          <br />
-          Since day one, our technique is focused on early results and
-          transparent communication.
-        </H4Blue>
-        <ReadMore onClick={handleModal} />
-      </Column>
-      <Column isSize="1/2">
-        <br />
-        <br />
-       
-      </Column>
-    </Columns>
-  </Container>
-  <Container
-    isFluid
-    className="is-hidden-desktop is-hidden-tablet-only no-margin"
-    hasTextAlign="centered"
-  >
-    <H4Blue>Software Development Company</H4Blue>
-    <img
-      alt={'main comic'}
-      src={comic}
-      style={{ width: '85%', height: 'auto' }}
-    />
-    <H2Blue>
-      Let’s <span className={'orange-text'}>Build</span> a Great{' '}
-      <span className={'orange-text'}>Idea.</span>
-    </H2Blue>
-    <Columns>
-      <Column isSize="1/2">
-        <H4Blue>
-          We partner with new and early-stage non-technical
-          entrepreneurs and industry experts to transforms ideas into{' '}
-          <span className={'orange-text'}>
-            Web and Mobile Software Products.
-          </span>
-          <br />
-          <br />
-          Since day one, our technique is focused on early results and
-          transparent communication.
-        </H4Blue>
-        <ReadMore onClick={handleModal} />
-      </Column>
-    </Columns>
-  </Container>
-  </>
+    <Container>
+      <div className={styles.hero_body}>
+        <Columns isCentered>
+          <Column isSize={{ mobile: 12, desktop: 6}}>
+            <div className={styles.hero_body_left}>
+              <Title 
+                tag="h3" 
+                className={componse(styles.hero_title, styles.hero_title_h3)}
+              >
+                Software Development Company</Title>
+              <Title 
+                tag="h1" 
+                className={componse(styles.hero_title, styles.hero_title_h1)}
+              >
+                Let’s <span className={styles.hero_orange_text}>Build</span> a <br/>
+                Great<span className={styles.hero_orange_text}>{' '}Idea.</span>
+              </Title>
+              <Title 
+                tag="h4" 
+                className={componse(styles.hero_title, styles.hero_title_h4, styles.hero_sub_title)}
+              >
+                We partner with new and early-stage non-technical
+                entrepreneurs and industry experts to transforms ideas into{' '}
+                <span className={styles.hero_orange_text}>
+                  Web and Mobile Software Products.
+                </span>
+                <br />
+                <br />
+                Since day one, our technique is focused on early results and
+                transparent communication.
+              </Title>
+              <div className={styles.hero_read_more}>
+                <Button>
+                  Read More
+                </Button>
+              </div>
+            </div>
+          </Column>
+          <Column isSize={{ mobile: 12, desktop: 6}}>
+              <img alt="main comic" src={comic} style={{ width: '100%', height: 'auto' }} />
+          </Column>
+        </Columns>
+      </div>
+    </Container>
   )
 }
