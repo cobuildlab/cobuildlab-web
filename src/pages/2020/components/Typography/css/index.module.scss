@@ -71,4 +71,16 @@
       font-size: 15px;
     }
   }
+
+  &_normal{
+    font-weight: normal !important;
+  }
+
+  &_bold{
+    font-weight: bold !important;
+  }
+
+  &_lighter{
+    font-weight: lighter !important;
+  }
 }

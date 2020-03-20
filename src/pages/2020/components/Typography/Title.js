@@ -9,59 +9,59 @@ import styles from './css/index.module.scss';
  * 
  */
 
+const defaultSize = {
+  hero:{
+    tag: 'h1',
+    className: styles.title_hero,
+  },
+  h1:{
+    tag: 'h1',
+    className: styles.title_h1,
+  },
+  h2:{
+    tag: 'h2',
+    className: styles.title_h2,
+  },
+  h3:{
+    tag: 'h3',
+    className: styles.title_h3,
+  },
+  h4:{
+    tag: 'h4',
+    className: styles.title_h4,
+  },
+  h5:{
+    tag: 'h5',
+    className: styles.title_h5,
+  },
+  h6:{
+    tag: 'h6',
+    className: styles.title_h6,
+  },
+  subTitle:{
+    tag: 'h2',
+    className: styles.title_sub_title,
+  }
+}
+
 const CustomTitlte = ({ 
   children, 
   size, 
   hasTextAlign, 
   className,
+  fontWeight,
 }) => {
-
-  let sizeStyle, tag;
-
-  switch(size){
-    case 'hero':
-      sizeStyle = styles.title_hero;
-      tag = 'h1';
-      break;
-    case 'h1':
-      sizeStyle = styles.title_h1;
-      tag = 'h1';
-      break;
-    case 'h2':
-      sizeStyle = styles.title_h2;
-      tag = 'h2';
-      break;
-    case 'h3':
-      sizeStyle = styles.title_h3;
-      tag = 'h3';
-      break;
-    case 'h4':
-      sizeStyle = styles.title_h4;
-      tag = 'h4';
-      break;
-    case 'h5':
-      sizeStyle = styles.title_h5;
-      tag = 'h5';
-      break;
-    case 'h6':
-      sizeStyle = styles.title_h6;
-      tag = 'h6';
-      break;
-    case 'subTitle':
-      sizeStyle = styles.title_sub_title;
-      tag = 'h2';
-      break;
-    default:
-      sizeStyle = styles.title_hero;
-      tag = 'h1';
-      break;
-  }
-
   return(
     <Title 
-      tag={tag} 
+      tag={defaultSize[size]? defaultSize[size].tag : ''} 
       hasTextAlign={hasTextAlign}
-      className={componse(styles.title, sizeStyle, className)}
+      className={
+        componse(
+          styles.title, 
+          defaultSize[size]? defaultSize[size].className : '', 
+          className, 
+          styles[`title_${fontWeight}`]
+        )}
     >
       {children}
     </Title>
@@ -71,13 +71,15 @@ const CustomTitlte = ({
 CustomTitlte.defaultProps = {
   size: 'hero',
   tag: 'h1',
-  className: ''
+  className: '',
+  fontWeight: '',
 }
 
 CustomTitlte.propTypes = {
   size: PropTypes.string,
   hasTextAlign: PropTypes.string,
-  className: PropTypes.string
+  className: PropTypes.string,
+  fontWeight: PropTypes.string
 }
 
 export default memo(CustomTitlte);

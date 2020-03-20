@@ -1,0 +1,18 @@
+@import '@2020/css/var.scss';
+
+
+.service{
+
+  &_card_container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: $white 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 30px $box-shadow;
+    margin-top: 105px;
+  }
+
+  &_item{
+    min-height: 447px;
+  }
+}

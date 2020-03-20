@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from './Footer';
 import '@2020/css/var.scss';
+import '@2020/css/common.scss';
 import 'bulma';
 /* import '../../assets/fonts/Lato-Black.ttf';
 import '../../assets/fonts/Lato-BlackItalic.ttf';

@@ -15,7 +15,7 @@ export default () => (
             <Title size="h6" className={styles.hero_text}>
               Software Development Company
             </Title>
-            <Title size="h1" className={styles.hero_text}>
+            <Title size="hero" className={styles.hero_text}>
               Let’s <span className={styles.hero_orange_text}>Build</span> a <br/>
               Great<span className={styles.hero_orange_text}>{' '}Idea.</span>
             </Title>
