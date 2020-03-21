@@ -1,45 +1,36 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import LayoutPost from '../components/layoutPost'
-import { Link, graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import { DiscussionEmbed } from 'disqus-react'
-import Share from '../components/Share'
-import Carousel from '../components/Carousel'
-import Title2 from '../components/Title2'
-import Title3 from '../components/Title3'
-import Title4 from '../components/Title4'
-import Title5 from '../components/Title5'
-import Title6 from '../components/Title6'
-import YouTubeVideo from '../components/YouTubeVideo'
-import BlockQuote from '../components/BlockQuote'
-import Banner from '../components/Banner'
-import Credits from '../components/Credits'
-import get from 'lodash/get'
-import defaultImg from '../resources/default-post.jpg'
-import rehypeReact from 'rehype-react'
-import 'bulma'
-import '../assets/fonts/Lato-Black.ttf'
-import '../assets/fonts/Lato-BlackItalic.ttf'
-import '../assets/fonts/Lato-Bold.ttf'
-import '../assets/fonts/Lato-BoldItalic.ttf'
-import '../assets/fonts/Lato-Hairline.ttf'
-import '../assets/fonts/Lato-HairlineItalic.ttf'
-import '../assets/fonts/Lato-Italic.ttf'
-import '../assets/fonts/Lato-Light.ttf'
-import '../assets/fonts/Lato-LightItalic.ttf'
-import '../assets/fonts/Lato-Regular.ttf'
-import {
-  Hero,
-  Container,
-  Title,
-  Columns,
-  Column,
-  Card,
-  CardContent,
-  Content,
-} from 'bloomer'
-import TTSVoice from '../components/TTSVoice'
+import React from 'react';
+import Helmet from 'react-helmet';
+import LayoutPost from '../components/layoutPost';
+import { Link, graphql } from 'gatsby';
+import Img from 'gatsby-image';
+import { DiscussionEmbed } from 'disqus-react';
+import Share from '../components/Share';
+import Carousel from '../components/Carousel';
+import Title2 from '../components/Title2';
+import Title3 from '../components/Title3';
+import Title4 from '../components/Title4';
+import Title5 from '../components/Title5';
+import Title6 from '../components/Title6';
+import YouTubeVideo from '../components/YouTubeVideo';
+import BlockQuote from '../components/BlockQuote';
+import Banner from '../components/Banner';
+import Credits from '../components/Credits';
+import get from 'lodash/get';
+import defaultImg from '../resources/default-post.jpg';
+import rehypeReact from 'rehype-react';
+import 'bulma';
+import '../assets/fonts/Lato-Black.ttf';
+import '../assets/fonts/Lato-BlackItalic.ttf';
+import '../assets/fonts/Lato-Bold.ttf';
+import '../assets/fonts/Lato-BoldItalic.ttf';
+import '../assets/fonts/Lato-Hairline.ttf';
+import '../assets/fonts/Lato-HairlineItalic.ttf';
+import '../assets/fonts/Lato-Italic.ttf';
+import '../assets/fonts/Lato-Light.ttf';
+import '../assets/fonts/Lato-LightItalic.ttf';
+import '../assets/fonts/Lato-Regular.ttf';
+import { Hero, Container, Title, Columns, Column, Card, CardContent, Content } from 'bloomer';
+import TTSVoice from '../components/TTSVoice';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -55,29 +46,25 @@ const renderAst = new rehypeReact({
     credits: Credits,
     carousel: Carousel,
   },
-}).Compiler
+}).Compiler;
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
-    const twitterHandle = get(
-      this.props,
-      'data.site.siteMetadata.twitterHandle',
-    )
-    const disqusShortname = 'cobuildlab'
-    const disqusConfig = { identifier: post.id, title: post.frontmatter.title }
-    const slug = post.fields.slug
-    const url = get(this.props, 'data.site.siteMetadata.siteUrl')
-    const siteTitle = 'Cobuild Lab'
-    const siteDescription = post.excerpt
-    const { previous, next } = this.props.pageContext
-    const image = get(post, 'frontmatter.image.publicURL') || defaultImg
-    const previousImage =
-      get(previous, 'frontmatter.image.publicURL') || defaultImg
-    const nextImage = get(next, 'frontmatter.image.publicURL') || defaultImg
-    let speech
+    const post = this.props.data.markdownRemark;
+    const twitterHandle = get(this.props, 'data.site.siteMetadata.twitterHandle');
+    const disqusShortname = 'cobuildlab';
+    const disqusConfig = { identifier: post.id, title: post.frontmatter.title };
+    const slug = post.fields.slug;
+    const url = get(this.props, 'data.site.siteMetadata.siteUrl');
+    const siteTitle = 'Cobuild Lab';
+    const siteDescription = post.excerpt;
+    const { previous, next } = this.props.pageContext;
+    const image = get(post, 'frontmatter.image.publicURL') || defaultImg;
+    const previousImage = get(previous, 'frontmatter.image.publicURL') || defaultImg;
+    const nextImage = get(next, 'frontmatter.image.publicURL') || defaultImg;
+    let speech;
 
-    const imageAmp = post.frontmatter.image.childImageSharp
+    const imageAmp = post.frontmatter.image.childImageSharp;
     return (
       <LayoutPost>
         <Helmet
@@ -91,8 +78,8 @@ class BlogPostTemplate extends React.Component {
             <Title tag="h3" isSize={1} hasTextColor="Black">
               {post.frontmatter.title}
             </Title>
-            <br/>
-            <hr/>
+            <br />
+            <hr />
           </Container>
           {/* WITH GATSBY ALWAYS USE <IMG fluid={}>
             Because it handles the device size img for you*/}
@@ -103,8 +90,14 @@ class BlogPostTemplate extends React.Component {
             }}
           /> */}
           {/*<Img className="bg-post" fluid={post.frontmatter.image.childImageSharp.fluid}/>*/}
-          <amp-img src-set={imageAmp.srcSet} src={imageAmp.src} width={imageAmp.width} height={imageAmp.height} alt={imageAmp.altText}
-                   layout="responsive"/>
+          <amp-img
+            src-set={imageAmp.srcSet}
+            src={imageAmp.src}
+            width={imageAmp.width}
+            height={imageAmp.height}
+            alt={imageAmp.altText}
+            layout="responsive"
+          />
         </Hero>
 
         <section id="section-post" className="section">
@@ -112,7 +105,7 @@ class BlogPostTemplate extends React.Component {
             <Columns isCentered>
               <Column hasTextAlign="left">{renderAst(post.htmlAst)}</Column>
             </Columns>
-            <TTSVoice text={post.rawMarkdownBody}/>
+            <TTSVoice text={post.rawMarkdownBody} />
             <Share
               socialConfig={{
                 twitterHandle,
@@ -134,12 +127,7 @@ class BlogPostTemplate extends React.Component {
             <Columns isCentered>
               {previous ? (
                 <Column isSize="1/3">
-                  <Title
-                    tag="h6"
-                    isSize={5}
-                    hasTextColor="Black"
-                    hasTextAlign="centered"
-                  >
+                  <Title tag="h6" isSize={5} hasTextColor="Black" hasTextAlign="centered">
                     Previous Post
                   </Title>
                   <Link to={previous.fields.slug} rel="prev">
@@ -150,9 +138,7 @@ class BlogPostTemplate extends React.Component {
                           backgroundImage: `url(${previousImage})`,
                         }}
                       />
-                      <Content className="link-post">
-                        ← {previous.frontmatter.title}
-                      </Content>
+                      <Content className="link-post">← {previous.frontmatter.title}</Content>
                     </Card>
                   </Link>
                 </Column>
@@ -160,12 +146,7 @@ class BlogPostTemplate extends React.Component {
 
               {next ? (
                 <Column isSize="1/3">
-                  <Title
-                    tag="h6"
-                    isSize={5}
-                    hasTextColor="Black"
-                    hasTextAlign="centered"
-                  >
+                  <Title tag="h6" isSize={5} hasTextColor="Black" hasTextAlign="centered">
                     Next Post
                   </Title>
                   <Link to={next.fields.slug} rel="next">
@@ -176,9 +157,7 @@ class BlogPostTemplate extends React.Component {
                           backgroundImage: `url(${nextImage})`,
                         }}
                       />
-                      <Content className="link-post">
-                        {next.frontmatter.title} →
-                      </Content>
+                      <Content className="link-post">{next.frontmatter.title} →</Content>
                     </Card>
                   </Link>
                 </Column>
@@ -196,47 +175,47 @@ class BlogPostTemplate extends React.Component {
           </Container>
         </section>
       </LayoutPost>
-    )
+    );
   }
 }
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
-    query ($slug: String!) {
-        site {
-            siteMetadata {
-                title
-                siteUrl
-                author
-                twitterHandle
-            }
-        }
-        markdownRemark(fields: { slug: { eq: $slug } }) {
-            rawMarkdownBody
-            id
-            excerpt
-            htmlAst
-            frontmatter {
-                title
-                date(formatString: "DD MMMM, YYYY")
-                tags
-                image {
-                    publicURL
-                    childImageSharp {
-                        fluid(maxWidth: 1920) {
-                            aspectRatio
-                            base64
-                            sizes
-                            src
-                            srcSet
-                        }
-                    }
-                }
-            }
-            fields {
-                slug
-            }
-        }
+  query($slug: String!) {
+    site {
+      siteMetadata {
+        title
+        siteUrl
+        author
+        twitterHandle
+      }
     }
-`
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      rawMarkdownBody
+      id
+      excerpt
+      htmlAst
+      frontmatter {
+        title
+        date(formatString: "DD MMMM, YYYY")
+        tags
+        image {
+          publicURL
+          childImageSharp {
+            fluid(maxWidth: 1920) {
+              aspectRatio
+              base64
+              sizes
+              src
+              srcSet
+            }
+          }
+        }
+      }
+      fields {
+        slug
+      }
+    }
+  }
+`;

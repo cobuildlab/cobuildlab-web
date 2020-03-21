@@ -1,35 +1,35 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import 'react-toastify/dist/ReactToastify.min.css'
-import StudyCase from '../components/StudyCase'
-import NewLandingForm from '../components/NewLandingForm'
-import BadgeIndustry from '../components/BadgeIndustry'
-import { Title } from 'bloomer'
-import 'bulma'
-import '../assets/fonts/Lato-Black.ttf'
-import '../assets/fonts/Lato-BlackItalic.ttf'
-import '../assets/fonts/Lato-Bold.ttf'
-import '../assets/fonts/Lato-BoldItalic.ttf'
-import '../assets/fonts/Lato-Hairline.ttf'
-import '../assets/fonts/Lato-HairlineItalic.ttf'
-import '../assets/fonts/Lato-Italic.ttf'
-import '../assets/fonts/Lato-Light.ttf'
-import '../assets/fonts/Lato-LightItalic.ttf'
-import '../assets/fonts/Lato-Regular.ttf'
+import React from 'react';
+import Helmet from 'react-helmet';
+import 'react-toastify/dist/ReactToastify.min.css';
+import StudyCase from '../components/StudyCase';
+import NewLandingForm from '../components/NewLandingForm';
+import BadgeIndustry from '../components/BadgeIndustry';
+import { Title } from 'bloomer';
+import 'bulma';
+import '../assets/fonts/Lato-Black.ttf';
+import '../assets/fonts/Lato-BlackItalic.ttf';
+import '../assets/fonts/Lato-Bold.ttf';
+import '../assets/fonts/Lato-BoldItalic.ttf';
+import '../assets/fonts/Lato-Hairline.ttf';
+import '../assets/fonts/Lato-HairlineItalic.ttf';
+import '../assets/fonts/Lato-Italic.ttf';
+import '../assets/fonts/Lato-Light.ttf';
+import '../assets/fonts/Lato-LightItalic.ttf';
+import '../assets/fonts/Lato-Regular.ttf';
 
-import logo from '../resources/cobuildlab.png'
-import badge1 from '../resources/badges1.png'
-import badge2 from '../resources/badges2.png'
-import badge3 from '../resources/badges3.png'
-import badge4 from '../resources/badges4.png'
+import logo from '../resources/cobuildlab.png';
+import badge1 from '../resources/badges1.png';
+import badge2 from '../resources/badges2.png';
+import badge3 from '../resources/badges3.png';
+import badge4 from '../resources/badges4.png';
 
 export default class SoftwareDevStudy extends React.Component {
   render() {
-    const siteTitle = 'Developing new Software Products in Miami'
-    const siteSubtitle = 'We transform ideas into Software Products'
+    const siteTitle = 'Developing new Software Products in Miami';
+    const siteSubtitle = 'We transform ideas into Software Products';
     const siteDescription =
-      'We transform requirements into working software. We specialize in building web and mobile solutions for Small and Medium Businesses.'
-    const landingName = 'Software Development Study Case'
+      'We transform requirements into working software. We specialize in building web and mobile solutions for Small and Medium Businesses.';
+    const landingName = 'Software Development Study Case';
 
     return (
       <React.Fragment>
@@ -71,6 +71,6 @@ export default class SoftwareDevStudy extends React.Component {
           </div>
         </section>
       </React.Fragment>
-    )
+    );
   }
 }

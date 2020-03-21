@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link, navigate } from 'gatsby'
-import { ToastContainer, toast } from 'react-toastify'
-import Loading from './Loading'
+import React from 'react';
+import { Link, navigate } from 'gatsby';
+import { ToastContainer, toast } from 'react-toastify';
+import Loading from './Loading';
 import {
   Container,
   Title,
@@ -15,11 +15,11 @@ import {
   Control,
   Input,
   TextArea,
-} from 'bloomer'
+} from 'bloomer';
 
 export default class Contact extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       firstName: '',
       lastName: '',
@@ -29,71 +29,64 @@ export default class Contact extends React.Component {
       isVerified: true,
       isLoading: false,
       landingName: 'Cobuild Lab',
-    }
+    };
 
-    this.handleChange = this.handleChange.bind(this)
-    this.onSubmit = this.onSubmit.bind(this)
+    this.handleChange = this.handleChange.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
   }
 
   handleChange(e) {
     this.setState({
       [e.target.name]: e.target.value,
-    })
+    });
   }
 
   onSubmit(e) {
-    e.preventDefault()
+    e.preventDefault();
 
     if (this.state.firstName.length <= 0) {
-      toast.dismiss()
+      toast.dismiss();
 
       toast.error("First name can't be empty", {
         position: 'bottom-right',
-      })
-      return
+      });
+      return;
     }
 
     if (this.state.lastName.length <= 0) {
-      toast.dismiss()
+      toast.dismiss();
 
       toast.error("Last name can't be empty", {
         position: 'bottom-right',
-      })
-      return
+      });
+      return;
     }
 
     if (this.state.email.length <= 0) {
-      toast.dismiss()
+      toast.dismiss();
 
       toast.error("Email can't be empty", {
         position: 'bottom-right',
-      })
-      return
+      });
+      return;
     }
 
     if (this.state.comment.length <= 0) {
-      toast.dismiss()
+      toast.dismiss();
 
       toast.error("Comment can't be empty", {
         position: 'bottom-right',
-      })
-      return
+      });
+      return;
     }
 
     this.setState({
       isLoading: true,
-    })
+    });
 
-    const url = 'https://api.cobuild-lab.com/landing/contact'
+    const url = 'https://api.cobuild-lab.com/landing/contact';
 
-    const {
-      firstName,
-      lastName,
-      email,
-      phone,
-      comment,
-      landingName,
-    } = this.state
+    const { firstName, lastName, email, phone, comment, landingName } = this.state;
 
     const data = {
       firstName,
@@ -102,7 +95,7 @@ export default class Contact extends React.Component {
       phone,
       comment,
       landingName,
-    }
+    };
 
     const settings = {
       method: 'POST',
@@ -111,31 +104,31 @@ export default class Contact extends React.Component {
         Accept: 'application/json',
         'Content-Type': 'application/json',
       },
-    }
+    };
 
     fetch(url, settings)
-      .then(res => res.json())
-      .then(response => {
+      .then((res) => res.json())
+      .then((response) => {
         if (response.statusCode >= 400) {
-          toast.dismiss()
+          toast.dismiss();
 
           toast.error(response.message, {
             position: 'bottom-right',
-          })
+          });
 
           this.setState({
             isLoading: false,
-          })
+          });
         } else {
-          toast.dismiss()
+          toast.dismiss();
 
           toast.success(response.message, {
             position: 'bottom-right',
-          })
+          });
 
-          navigate('/thanks-contact')
+          navigate('/thanks-contact');
         }
-      })
+      });
   }
 
   render() {
@@ -163,10 +156,8 @@ export default class Contact extends React.Component {
               <Title isSize={2} className="title-section" hasTextAlign="left">
                 Write Us!
               </Title>
-              <Content isSize="small">
-                Your business takes off right now
-              </Content>
-              <form onSubmit={e => this.onSubmit(e)}>
+              <Content isSize="small">Your business takes off right now</Content>
+              <form onSubmit={(e) => this.onSubmit(e)}>
                 <Columns>
                   <Column isSize="1/2">
                     <Field>
@@ -177,7 +168,7 @@ export default class Contact extends React.Component {
                           name="firstName"
                           placeholder="First Name"
                           value={this.state.firstName}
-                          onChange={e => this.handleChange(e)}
+                          onChange={(e) => this.handleChange(e)}
                         />
                       </Control>
                     </Field>
@@ -191,7 +182,7 @@ export default class Contact extends React.Component {
                           name="lastName"
                           placeholder="Last Name"
                           value={this.state.lastName}
-                          onChange={e => this.handleChange(e)}
+                          onChange={(e) => this.handleChange(e)}
                         />
                       </Control>
                     </Field>
@@ -205,7 +196,7 @@ export default class Contact extends React.Component {
                       name="email"
                       placeholder="Email"
                       value={this.state.email}
-                      onChange={e => this.handleChange(e)}
+                      onChange={(e) => this.handleChange(e)}
                     />
                   </Control>
                 </Field>
@@ -217,7 +208,7 @@ export default class Contact extends React.Component {
                       name="phone"
                       placeholder="Phone number is optional"
                       value={this.state.phone}
-                      onChange={e => this.handleChange(e)}
+                      onChange={(e) => this.handleChange(e)}
                     />
                   </Control>
                 </Field>
@@ -228,7 +219,7 @@ export default class Contact extends React.Component {
                       name="comment"
                       placeholder="Your message or comment goes here"
                       value={this.state.comment}
-                      onChange={e => this.handleChange(e)}
+                      onChange={(e) => this.handleChange(e)}
                     />
                   </Control>
                 </Field>
@@ -238,10 +229,7 @@ export default class Contact extends React.Component {
                     {this.state.isLoading ? (
                       <Loading loading={this.state.isLoading} />
                     ) : (
-                      <button
-                        className="button is-primary is-medium is-rounded"
-                        type="submit"
-                      >
+                      <button className="button is-primary is-medium is-rounded" type="submit">
                         Submit
                       </button>
                     )}
@@ -250,8 +238,7 @@ export default class Contact extends React.Component {
                 <Content hasTextAlign="centered">
                   <Subtitle>Privacy Policy</Subtitle>
                   <Link to="/privacy-policy">
-                    Here you can access the information about how we treat your
-                    data.
+                    Here you can access the information about how we treat your data.
                   </Link>
                 </Content>
               </form>
@@ -259,6 +246,6 @@ export default class Contact extends React.Component {
           </Columns>
         </Container>
       </section>
-    )
+    );
   }
 }

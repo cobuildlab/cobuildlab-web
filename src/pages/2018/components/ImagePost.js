@@ -1,5 +1,5 @@
-import React from 'react'
-import { Container, Columns, Column, Image } from 'bloomer'
+import React from 'react';
+import { Container, Columns, Column, Image } from 'bloomer';
 
 class ImagePost extends React.Component {
   render() {
@@ -12,7 +12,7 @@ class ImagePost extends React.Component {
           </Column>
         </Columns>
       </Container>
-    )
+    );
   }
 }
-export default ImagePost
+export default ImagePost;
