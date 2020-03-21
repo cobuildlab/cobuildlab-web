@@ -53,20 +53,17 @@ import {
 
 class Backup extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const siteDescription = get(
-      this,
-      'props.data.site.siteMetadata.description'
-    )
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
-    const siteKey = process.env.RECAPTCHA_SITEKEY
 
     return (
       <Layout location={this.props.location}>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
-          title={siteTitle}
+          meta={[{
+            name: 'description',
+            content: 'We help entrepreneurs create amazing Products with our streamlined, lean and phased Software Development Process. Since day one, our technique is focused on early results and transparent communication.',
+          }]}
+          title={'Cobuild Lab | Miami Accelerator'}
         />
         {/*HEADER*/}
         <Hero isSize="large">
@@ -134,11 +131,11 @@ class Backup extends React.Component {
             <Title isSize={2} className="title-section">
               Cobuild Process
             </Title>
-            <hr />
+            <hr/>
             <Subtitle isSize={6}>
               Is the process of transforming an idea in a sustainable business,
               through the combination and collaboration of the areas of Lean{' '}
-              <br /> Entrepreneurship, Business Strategy, Technological
+              <br/> Entrepreneurship, Business Strategy, Technological
               Innovation and Exponential Growth
             </Subtitle>
             <Columns isCentered className="p-2">
@@ -156,7 +153,7 @@ class Backup extends React.Component {
               </Column>
               <Column isSize="1/4">
                 <div className="icon-process">
-                  <Icon size="24" icon={code} className="icon-center" />
+                  <Icon size="24" icon={code} className="icon-center"/>
                 </div>
                 <Title isSize={3}>CoBuild</Title>
                 <p>
@@ -194,7 +191,7 @@ class Backup extends React.Component {
                 </p>
               </Column>
             </Columns>
-  
+
           </Container>
         </section>
         {/*Section Cobuild Process*/}
@@ -252,7 +249,7 @@ class Backup extends React.Component {
                 <Card>
                   <Link to="/customer-success-stories/propagad">
                     <CardImage>
-                      <Image isRatio="4:8" src={propagadImg} />
+                      <Image isRatio="4:8" src={propagadImg}/>
                       <p className="name-team">
                         <strong>PROPAGAD</strong>
                       </p>
@@ -264,7 +261,7 @@ class Backup extends React.Component {
                 <Card>
                   <Link to="/customer-success-stories/4geeks-academy">
                     <CardImage>
-                      <Image isRatio="4:8" src={academyImg} />
+                      <Image isRatio="4:8" src={academyImg}/>
                       <p className="name-team">
                         <strong>4Geeks Academy</strong>
                       </p>
@@ -276,7 +273,7 @@ class Backup extends React.Component {
                 <Card>
                   <Link to="/customer-success-stories/payklever-campaign-manager">
                     <CardImage>
-                      <Image isRatio="4:8" src={paykleverImg} />
+                      <Image isRatio="4:8" src={paykleverImg}/>
                       <p className="name-team">
                         <strong>Payklever Campaign Manager</strong>
                       </p>
@@ -302,27 +299,27 @@ class Backup extends React.Component {
                     target="_blank"
                   >
                     <CardImage>
-                      <Image isRatio="4:8" src={marcelo} />
+                      <Image isRatio="4:8" src={marcelo}/>
                       <p className="name-team">
-                        Marcelo Ricigliano <br /> COO at 4Geeks Academy
+                        Marcelo Ricigliano <br/> COO at 4Geeks Academy
                       </p>
                     </CardImage>
                   </a>
                 </Card>
                 <Content>
-                  <br />
+                  <br/>
                   <small>
                     Co-founded Startups in Venezuela, Ecuador y USA: Vikua,{' '}
-                    <br /> 4Geeks Academy, Siplik, Hack, InTraffic.
+                    <br/> 4Geeks Academy, Siplik, Hack, InTraffic.
                   </small>
-                  <br />
-                  <Icon size="18" icon={envelopeO} />
+                  <br/>
+                  <Icon size="18" icon={envelopeO}/>
                   <a
                     className="icon-link"
                     href="https://www.linkedin.com/in/marcelo-ricigliano-32440379"
                     target="_blank"
                   >
-                    <Icon size="18" icon={linkedinSquare} />
+                    <Icon size="18" icon={linkedinSquare}/>
                   </a>
                 </Content>
               </Column>
@@ -333,25 +330,25 @@ class Backup extends React.Component {
                     target="_blank"
                   >
                     <CardImage>
-                      <Image isRatio="4:8" src={angel} />
+                      <Image isRatio="4:8" src={angel}/>
                       <p className="name-team">
-                        Angel Lacret <br /> Chief of Product Development at
+                        Angel Lacret <br/> Chief of Product Development at
                         Cobuild Lab
                       </p>
                     </CardImage>
                   </a>
                 </Card>
                 <Content>
-                  <br />
+                  <br/>
                   <small>Technical Product Owner and Software Developer</small>
-                  <br />
-                  <Icon size="18" icon={envelopeO} />
+                  <br/>
+                  <Icon size="18" icon={envelopeO}/>
                   <a
                     className="icon-link"
                     href="https://www.linkedin.com/in/alacret/"
                     target="_blank"
                   >
-                    <Icon size="18" icon={linkedinSquare} />
+                    <Icon size="18" icon={linkedinSquare}/>
                   </a>
                 </Content>
               </Column>
@@ -362,28 +359,28 @@ class Backup extends React.Component {
                     target="_blank"
                   >
                     <CardImage>
-                      <Image isRatio="4:8" src={alejandro} />
+                      <Image isRatio="4:8" src={alejandro}/>
                       <p className="name-team">
-                        Alejandro Sanchez <br /> CEO of 4Geeks Academy. Software
+                        Alejandro Sanchez <br/> CEO of 4Geeks Academy. Software
                         Developer and Data-Oriented Marketeer
                       </p>
                     </CardImage>
                   </a>
                 </Card>
                 <Content>
-                  <br />
+                  <br/>
                   <small>
                     I'm a computer engineer with all my life dedicated to the
                     coding industry through several initiatives.
                   </small>
-                  <br />
-                  <Icon size="18" icon={envelopeO} />
+                  <br/>
+                  <Icon size="18" icon={envelopeO}/>
                   <a
                     className="icon-link"
                     href="https://www.linkedin.com/in/alesanchezr/"
                     target="_blank"
                   >
-                    <Icon size="18" icon={linkedinSquare} />
+                    <Icon size="18" icon={linkedinSquare}/>
                   </a>
                 </Content>
               </Column>
@@ -393,7 +390,7 @@ class Backup extends React.Component {
         {/*Section Customer Success Stories*/}
 
         {/*Section Where we are? and Write Us! */}
-        <Contact siteKey={siteKey} />
+        <Contact/>
       </Layout>
     )
   }
