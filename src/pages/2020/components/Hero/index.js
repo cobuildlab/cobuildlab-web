@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container, Column, Columns} from 'bloomer'
-import { Typography, Button } from '@2020/components';
+import Title from '@2020/components/Typography/Title';
+import Button from '@2020/components/Button';
 import comic from '@2020/resources/home/cobuildlab-home.svg'
 import styles from './css/index.module.scss';
 
-const { Title } = Typography;
 
 export default () => (
   <Container>
