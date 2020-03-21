@@ -93,7 +93,7 @@
   },
   "scripts": {
     "dev": "gatsby develop",
-    "lint": "eslint --ext .js,.jsx --fix --ignore-pattern public --ignore-pattern '!.eslintrc.js' .",
+    "eslint": "eslint --ext .js,.jsx --fix --ignore-pattern public --ignore-pattern '!.eslintrc.js' .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "develop": "gatsby develop",
