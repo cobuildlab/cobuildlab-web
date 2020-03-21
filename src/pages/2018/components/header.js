@@ -38,7 +38,7 @@ class header extends React.Component {
           <Container isFluid>
             <NavbarBrand>
               <NavbarItem>
-                <Link className="link-nav" to="/">
+                <Link className="link-nav-backup" to="/2018">
                   <img src={logo} style={{ marginRight: 5 }} />
                 </Link>
               </NavbarItem>
@@ -53,32 +53,32 @@ class header extends React.Component {
             >
               <NavbarEnd>
                 <NavbarItem>
-                  <Link className="link-nav" to="/">
+                  <Link className="link-nav-backup" to="/2018">
                     Home
                   </Link>
                 </NavbarItem>
                 <NavbarItem>
-                  <Link className="link-nav" to="/#process">
+                  <Link className="link-nav-backup" to="/2018/#process">
                     Cobuild Process
                   </Link>
                 </NavbarItem>
                 <NavbarItem>
-                  <Link className="link-nav" to="/customer-success-stories">
+                  <Link className="link-nav-backup" to="/customer-success-stories">
                     Customer Success Stories
                   </Link>
                 </NavbarItem>
                 <NavbarItem>
-                  <Link className="link-nav" to="/services">
+                  <Link className="link-nav-backup" to="/services">
                     Services
                   </Link>
                 </NavbarItem>
                 <NavbarItem>
-                  <Link className="link-nav" to="/blog">
+                  <Link className="link-nav-backup" to="/blog">
                     Blog
                   </Link>
                 </NavbarItem>
                 <NavbarItem>
-                  <Link to="/#contact" className="link-nav">
+                  <Link to="/2018/#contact" className="link-nav-backup">
                     Contact Us
                   </Link>
                 </NavbarItem>
@@ -92,7 +92,7 @@ class header extends React.Component {
         >
           <Container isFluid className="mt-25">
             <NavbarBrand>
-              <Link className="link-nav" to="/">
+              <Link className="link-nav-backup" to="/">
                 <img
                   src={logo}
                   style={{ marginRight: 5 }}
@@ -112,32 +112,32 @@ class header extends React.Component {
             >
               <NavbarEnd>
                 <NavbarItem>
-                  <Link className="link-nav" to="/">
+                  <Link className="link-nav-backup" to="/2018">
                     Home
                   </Link>
                 </NavbarItem>
                 <NavbarItem>
-                  <Link className="link-nav" to="/#process">
+                  <Link className="link-nav-backup" to="/2018/#process">
                     Cobuild Process
                   </Link>
                 </NavbarItem>
                 <NavbarItem>
-                  <Link className="link-nav" to="/customer-success-stories">
+                  <Link className="link-nav-backup" to="/customer-success-stories">
                     Customer Success Stories
                   </Link>
                 </NavbarItem>
                 <NavbarItem>
-                  <Link className="link-nav" to="/services">
+                  <Link className="link-nav-backup" to="/services">
                     Services
                   </Link>
                 </NavbarItem>
                 <NavbarItem>
-                  <Link className="link-nav" to="/blog">
+                  <Link className="link-nav-backup" to="/blog">
                     Blog
                   </Link>
                 </NavbarItem>
                 <NavbarItem>
-                  <Link className="link-nav" to="/#contact">
+                  <Link className="link-nav-backup" to="/2018/#contact">
                     Contact Us
                   </Link>
                 </NavbarItem>

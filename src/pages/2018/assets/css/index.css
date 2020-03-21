@@ -136,7 +136,7 @@ a.navbar-item.is-active,
   font-family: Lato-Regular;
 }
 
-.link-nav {
+.link-nav-backup {
   color: #000;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -148,7 +148,7 @@ a.navbar-item.is-active,
   transition: color 0.3s ease-in-out;
 }
 
-.link-nav:hover {
+.link-nav-backup:hover {
   color: #254a61;
   font-weight: 500;
   margin-bottom: 10px;
@@ -362,8 +362,8 @@ hr {
 /*---- --------- ---*/
 
 /*image backgroun header*/
-.bg-header {
-  background-image: url(../../resources/background-1.png);
+.bg-header-backup {
+  background-image: url(../../resources/backup-background-1.png);
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -371,7 +371,7 @@ hr {
   background-size: cover;
 }
 .bg-header-landing {
-  background-image: url(../../resources/b2.png);
+  background-image: url(../../resources/backup-b2.png);
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -379,7 +379,7 @@ hr {
   background-size: cover;
 }
 .bg-header-graphic {
-  background-image: url(../../resources/b3.png);
+  background-image: url(../../resources/backup-b3.png);
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -387,7 +387,7 @@ hr {
   background-size: cover;
 }
 .bg-header-study {
-  background-image: url(../../resources/b1.png);
+  background-image: url(../../resources/backup-b1.png);
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -395,7 +395,7 @@ hr {
   background-size: cover;
 }
 .bg-services {
-  background-image: url(../../resources/bg-services.jpg);
+  background-image: url(../../resources/backup-bg-services.jpg);
   width: 100%;
   height: 0px;
   background-repeat: no-repeat;
@@ -458,7 +458,7 @@ hr {
 /*image backgroun header*/
 
 /*Title and sections*/
-.title-logo {
+.title-logo-backup {
   color: #e76c29 !important;
   font-size: 77px !important;
   margin-bottom: 0.5rem !important;
@@ -513,7 +513,7 @@ hr {
   text-shadow: 1px 1px 2px #00000059;
   font-size: 14px;
 } */
-.subtitle-logo {
+.subtitle-logo-backup {
   color: #264a60 !important;
   font-size: 65px !important;
 }

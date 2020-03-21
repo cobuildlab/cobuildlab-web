@@ -51,7 +51,7 @@ import {
   Tag,
 } from 'bloomer'
 
-class Index extends React.Component {
+class Backup extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteDescription = get(
@@ -70,10 +70,10 @@ class Index extends React.Component {
         />
         {/*HEADER*/}
         <Hero isSize="large">
-          <HeroBody className="bg-header">
+          <HeroBody className="bg-header-backup">
             <Container isFluid className="is-hidden-mobile">
-              <Title className="title-logo">Cobuild Lab</Title>
-              <Title className="subtitle-logo">Let’s Build a Great Idea</Title>
+              <Title className="title-logo-backup">Cobuild Lab</Title>
+              <Title className="subtitle-logo-backup">Let’s Build a Great Idea</Title>
               <Columns>
                 <Column isSize="1/2">
                   <Title isSize={4}>
@@ -399,7 +399,7 @@ class Index extends React.Component {
   }
 }
 
-export default Index
+export default Backup
 
 export const pageQuery = graphql`
   query {
