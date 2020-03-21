@@ -358,6 +358,12 @@ class IsLoggedInPermissions (Permissions):
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=gurupia-20&marketplace=amazon&region=US&placement=1449355730&asins=1449355730&linkId=9921c500f5c33fc2acee6a60b7506f1c&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
     </iframe>
 <br/>
+<br/>
+
+<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=8&l=ez&f=ifr&linkID=fead2d487b281400d196ecfc994442cd&t=gurupia-20&tracking_id=gurupia-20" width="120" height="240" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+
+<br/>
+<iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=40&l=ur1&category=textbooks&banner=0778BN02ASP57EHWDWR2&f=ifr&linkID=57478485f36af1d9c661e820ade8b528&t=gurupia-20&tracking_id=gurupia-20" width="120" height="60" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 
 ## References
 
