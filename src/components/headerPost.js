@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
 import {
   Container,
   Navbar,
@@ -8,31 +8,30 @@ import {
   NavbarBurger,
   NavbarMenu,
   NavbarEnd,
-} from 'bloomer'
-import '../assets/css/index.css'
-import logo from '../resources/cobuildlab.png'
+} from 'bloomer';
+import '../assets/css/index.css';
+import logo from '../resources/cobuildlab.png';
 
 class headerBlog extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       isActive: false,
-    }
+    };
   }
 
   onClickNav = () => {
     this.setState(({ isActive }) => ({
       isActive: !isActive,
-    }))
-  }
+    }));
+  };
   render() {
     return (
       <React.Fragment>
         <Navbar
           style={{ position: 'initial !important', margin: '0' }}
-          className="isTransparent is-hidden-desktop is-hidden-tablet-only"
-        >
+          className="isTransparent is-hidden-desktop is-hidden-tablet-only">
           <Container isFluid>
             <NavbarBrand>
               <NavbarItem>
@@ -40,15 +39,9 @@ class headerBlog extends React.Component {
                   <img src={logo} style={{ marginRight: 5 }} />
                 </Link>
               </NavbarItem>
-              <NavbarBurger
-                isActive={this.state.isActive}
-                onClick={this.onClickNav}
-              />
+              <NavbarBurger isActive={this.state.isActive} onClick={this.onClickNav} />
             </NavbarBrand>
-            <NavbarMenu
-              isActive={this.state.isActive}
-              onClick={this.onClickNav}
-            >
+            <NavbarMenu isActive={this.state.isActive} onClick={this.onClickNav}>
               <NavbarEnd>
                 <NavbarItem>
                   <Link className="link-nav" to="/">
@@ -82,8 +75,7 @@ class headerBlog extends React.Component {
 
         <Navbar
           style={{ position: 'initial !important', margin: '0' }}
-          className="isTransparent is-hidden-mobile"
-        >
+          className="isTransparent is-hidden-mobile">
           <Container isFluid className="mt-25">
             <NavbarBrand>
               <Link className="link-nav" to="/">
@@ -94,15 +86,9 @@ class headerBlog extends React.Component {
                   height="49"
                 />
               </Link>
-              <NavbarBurger
-                isActive={this.state.isActive}
-                onClick={this.onClickNav}
-              />
+              <NavbarBurger isActive={this.state.isActive} onClick={this.onClickNav} />
             </NavbarBrand>
-            <NavbarMenu
-              isActive={this.state.isActive}
-              onClick={this.onClickNav}
-            >
+            <NavbarMenu isActive={this.state.isActive} onClick={this.onClickNav}>
               <NavbarEnd>
                 <NavbarItem>
                   <Link className="link-nav" to="/customer-success-stories">
@@ -129,7 +115,7 @@ class headerBlog extends React.Component {
           </Container>
         </Navbar>
       </React.Fragment>
-    )
+    );
   }
 }
-export default headerBlog
+export default headerBlog;
