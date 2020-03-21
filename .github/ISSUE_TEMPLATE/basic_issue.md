@@ -1,10 +1,10 @@
 ---
 name: 👉 Basic Issue
-about: Basic User Story Issue
+about: Basic User StoryCommon Issue
 title: "VIEW: DETAIL"
 ---
 
-### User Story
+### User StoryCommon
 **_User Type:_**  
 **_Wants To:_**  
 **_So That:_**  

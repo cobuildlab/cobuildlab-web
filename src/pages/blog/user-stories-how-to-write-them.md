@@ -58,7 +58,7 @@ It seeks to understand what is the added value that this user story has for the 
 
 **Acceptance tests:** consensus tests between the client or user and the team that the code must overcome to complete the implementation of the user history. This field is also commonly referred to as "acceptance criteria or conditions."
 
-**Writing a User Story** Mike Cohn suggests a certain way of writing User Stories in the following format:
+**Writing a User StoryCommon** Mike Cohn suggests a certain way of writing User Stories in the following format:
 
 _As a <_ **_type of user_** _>,_ **_I want_** _< some goal >_ **_so that_** _< some reason >_
 

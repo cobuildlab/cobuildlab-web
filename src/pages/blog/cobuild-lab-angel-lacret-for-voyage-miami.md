@@ -1,5 +1,5 @@
 ---
-title: 'Cobuild Lab Founder Angel Lacret Shares Our Story with Voyage Miami'
+title: 'Cobuild Lab Founder Angel Lacret Shares Our StoryCommon with Voyage Miami'
 date: '2019-11-04T16:24:04.000Z'
 template: blog
 tags: News
