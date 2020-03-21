@@ -43,19 +43,28 @@ export default class ProductDevGraphic extends React.Component {
             <div className="container is-fluid is-marginless">
               <div className="columns is-desktop">
                 <div className="column is-8 h-100 bg-header-graphic">
-                  <div>
-                    <img src={logo} className="logo" />
+                  <div className="view-content-zoom">
+                    <div>
+                      <img src={logo} className="logo" />
+                    </div>
+                    <Title className="title-squeezing">
+                      Developing new Software Products in Miami
+                    </Title>
+                    <Subtitle className="subtitle-squeezing">
+                      {siteSubtitle}
+                    </Subtitle>
+                    <p className="text-description-all">
+                      We help entrepreneurs create amazing Products with our
+                      streamlined, lean and phased{' '}
+                      <b>Software Development Process. </b>
+                      Since day one, our technique is focused on early results
+                      and transparent communication.
+                    </p>
+                    <div className="has-text-centered">
+                      <img src={graphic} className="img-graphic" />
+                    </div>
+                    <BadgeIndustry />
                   </div>
-                  <Title className="title-squeezing">
-                    Developing new Software <br /> Products in Miami
-                  </Title>
-                  <Subtitle className="subtitle-squeezing">
-                    {siteSubtitle}
-                  </Subtitle>
-                  <div className="has-text-centered">
-                    <img src={graphic} className="img-graphic" />
-                  </div>
-                  <BadgeIndustry />
                 </div>
                 <div className="column h-100 is-4 bg-form-landing Aligner">
                   <div className="has-text-centered view-badge">

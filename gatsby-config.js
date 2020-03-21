@@ -1,7 +1,6 @@
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
-console.log(process.env)
 
 module.exports = {
   siteMetadata: {
@@ -38,7 +37,16 @@ module.exports = {
             },
           },
           'gatsby-remark-component',
-          'gatsby-remark-prismjs',
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: { isIconAfterHeader: true, maintainCase: true },
+          },
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              classPrefix: 'code-x-language-',
+            },
+          },
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
         ],
@@ -87,6 +95,31 @@ module.exports = {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
         id: 'GTM-PFDRR5V',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-amp`,
+      options: {
+        analytics: {
+          type: 'gtag',
+          dataCredentials: 'include',
+          config: {
+            vars: {
+              gtag_id: 'GTM-PFDRR5V',
+              config: {
+                'GTM-PFDRR5V': {
+                  page_location: '{{pathname}}',
+                },
+              },
+            },
+          },
+        },
+        canonicalBaseUrl: 'https://cobuildlab.com/',
+        components: ['amp-form'],
+        excludedPaths: ['/404*', '/'],
+        pathIdentifier: '/amp/',
+        relAmpHtmlPattern: '{{canonicalBaseUrl}}{{pathname}}{{pathIdentifier}}',
+        useAmpClientIdApi: true,
       },
     },
   ],

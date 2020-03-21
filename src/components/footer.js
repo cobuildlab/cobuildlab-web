@@ -25,6 +25,8 @@ import { facebookOfficial } from 'react-icons-kit/fa/facebookOfficial'
 import { instagram } from 'react-icons-kit/fa/instagram'
 import { twitterSquare } from 'react-icons-kit/fa/twitterSquare'
 import { linkedinSquare } from 'react-icons-kit/fa/linkedinSquare'
+import { Link } from '@reach/router'
+import * as moment from 'moment';
 
 class MyFooter extends React.Component {
   state = {
@@ -43,14 +45,14 @@ class MyFooter extends React.Component {
     e.preventDefault()
 
     if (this.state.fullName.length <= 0) {
-      toast.error("Your name can't be empty", {
+      toast.error('Your name can\'t be empty', {
         position: 'bottom-right',
       })
       return
     }
 
     if (this.state.email.length <= 0) {
-      toast.error("Email can't be empty", {
+      toast.error('Email can\'t be empty', {
         position: 'bottom-right',
       })
       return
@@ -104,14 +106,14 @@ class MyFooter extends React.Component {
                   </Field>
                   <Field isGrouped>
                     <Control>
-                      <br />
+                      <br/>
                       <button
                         className="button is-primary is-medium is-rounded"
                         type="submit"
                       >
                         Submit
                       </button>
-                      <ToastContainer />
+                      <ToastContainer/>
                     </Control>
                   </Field>
                 </form>
@@ -120,7 +122,7 @@ class MyFooter extends React.Component {
                 <Title hasTextAlign="centered" hasTextColor="white">
                   Follow Us
                 </Title>
-                <br />
+                <br/>
                 <Columns isMobile isCentered>
                   <Column
                     className="is-variable is-3"
@@ -131,7 +133,7 @@ class MyFooter extends React.Component {
                       href="https://www.instagram.com/cobuildlab"
                       target="_blank"
                     >
-                      <Icon size="24" icon={instagram} className="icon-center" />
+                      <Icon size="24" icon={instagram} className="icon-center"/>
                     </a>
                   </Column>
                   <Column
@@ -143,7 +145,7 @@ class MyFooter extends React.Component {
                       href="https://www.facebook.com/cobuildlab"
                       target="_blank"
                     >
-                      <Icon size="24" icon={facebookOfficial} className="icon-center" />
+                      <Icon size="24" icon={facebookOfficial} className="icon-center"/>
                     </a>
                   </Column>
                   <Column
@@ -171,19 +173,24 @@ class MyFooter extends React.Component {
                     </a>
                   </Column>
                 </Columns>
-                <br />
+                <br/>
+                <br/>
+                <Link to="/development-blog">
+                  Development Blog
+                </Link>
+                <br/>
               </Column>
               <Column isSize="1/3">
                 <Title hasTextColor="white">Contact Us</Title>
                 <p>
-                  Adress: 66 W Flagler St, Miami, Florida <br /> Phone: +1 (786)
-                  600-3776 <br /> Email: contact@cobuildlab.com{' '}
+                  Adress: 66 W Flagler St, Miami, Florida <br/> Phone: +1 (786)
+                  991-3467 <br/> Email: contact@cobuildlab.com{' '}
                 </p>
               </Column>
             </Columns>
             <Content isSize="small">
               <p>
-                © 2018 <strong>Cobuild Lab</strong> All Rights Reserved.
+                © {moment().format('Y')} <strong>Cobuild Lab</strong> All Rights Reserved.
               </p>
             </Content>
           </Content>

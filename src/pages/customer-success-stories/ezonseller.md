@@ -2,10 +2,8 @@
 title: "Ezonseller"
 date: "2018-11-19T12:40:35.000Z"
 template: story
-image: "./media/ezonseller_1.jpg"
+image: ./media/CustomerSuccessStories-ezonseller.png
 ---
-
-![Cesar Lang](./media/ezonseller-logo.png)
 
 <title-2 align="centered">Ezonseller</title-2>
 

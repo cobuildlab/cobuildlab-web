@@ -132,7 +132,7 @@ class FormContact extends React.Component {
           <Columns>
             <Column
               className="p-f col-form"
-              isSize={{ mobile: 12, desktop: '1/2' }}
+              isSize={{ mobile: 12, desktop: '1' }}
             >
               <Content className="content-form">
                 <Title

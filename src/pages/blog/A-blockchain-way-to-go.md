@@ -61,7 +61,7 @@ A **transaction** is a transfer of data values that are broadcast to the [networ
 
 *   **Public Blockchain:**
 
-The most common example: The environment where you make a bitcoin transaction is a public one, people around the world can access in and make transactions with others and the persons behind the bitcoin project doesn’t need to be acquainted of who are these people to let them use the platform. they aren’t  “vetted users”. but how they let that happen without getting worry about the security of the system? 
+The most common example: The environment where you make a bitcoin transaction is a public one, people around the world can access in and make transactions with others and the persons behind the bitcoin project doesn’t need to be acquainted of who are these people to let them use the platform. they are not  “vetted users”. but how they let that happen without getting worry about the security of the system? 
 
 In a public environment the security it’s an expensive thing, in these cases where you don’t know the participants that are going to be making transactions in between, the system is vulnerable to be attacked from people or organizations who might have been motivated by a financial incentive. so to protect the process it has to go through an extra bit(relative) of complexity to avoid it, and this means the costs get higher. 
 

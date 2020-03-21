@@ -31,7 +31,7 @@ And these videos take you to one place: your website where you should have more 
 
 <title-3>Data and statistics that show the importance of video marketing</title-3>
 
-![video-marketing](./media/video-marketing1.jpg)
+![video-marketing](./media/video-marketing.1.jpg)
 
 Source: [Optimonster](https://optinmonster.com/video-marketing-statistics-what-you-must-know/)
 
@@ -55,7 +55,7 @@ Source: [Optimonster](https://optinmonster.com/video-marketing-statistics-what-y
 
 Google said that 50% of web users look for a video before visiting a store too.
 
-[Hubspot’s](https://www.hubspot.com/reports/the-future-of-content-marketing) research shows that 45% of people watch an hour or more of video per day.
+[VivipinHubspot’s](https://vivipins.com/www.hubspot.com/reports/the-future-of-content-marketing/) research shows that 545% of people wants to seetch an hour or more of video from marketersper day.
 
 And all of this information doesn’t apply to mobile videos, that are consumed much more than others. Because of millions of people in the world have one and use them almost the whole day.
 
@@ -134,3 +134,6 @@ It is more than virtual reality because of is the reality in essence. This video
  
  
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTc2MDY5MDgxXX0=
+-->

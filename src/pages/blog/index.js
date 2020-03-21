@@ -3,7 +3,6 @@ import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Layout from '../../components/layout'
-import defaultImg from '../../resources/default-post.jpg'
 import {
   Hero,
   HeroBody,
@@ -37,14 +36,13 @@ import '../../assets/fonts/Lato-Regular.ttf'
 class BlogIndex extends React.Component {
   constructor(props) {
     super(props)
-
     this.state = {
       isActive: false,
     }
   }
 
   render() {
-    const siteTitle = 'The Cobuild Blog for Entrepreneurs'
+    const siteTitle = 'The Blog for Software Entrepreneurs'
     const siteDescription = get(
       this,
       'props.data.site.siteMetadata.description'
@@ -55,7 +53,7 @@ class BlogIndex extends React.Component {
       <Layout>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
+          meta={[{ name: 'description', content: 'The Blog for Software Entrepreneurs of Miami' }]}
           title={siteTitle}
         />
 
@@ -102,9 +100,11 @@ class BlogIndex extends React.Component {
             </Tabs>
             <Columns className="is-multiline">
               {posts.map(({ node }) => {
+
+                const backgroundSrc = node.frontmatter.image.childImageSharp.fluid.src;
                 const title = get(node, 'frontmatter.title') || node.fields.slug
-                const image =
-                  get(node, 'frontmatter.image.publicURL') || defaultImg
+                // const image =
+                //   get(node, 'frontmatter.image.publicURL') || defaultImg
                 const splitTags = node.frontmatter.tags
                   ? node.frontmatter.tags.split(', ')
                   : undefined
@@ -115,7 +115,7 @@ class BlogIndex extends React.Component {
                         <CardContent
                           className="card-post"
                           style={{
-                            backgroundImage: `url(${image})`,
+                            backgroundImage: `url(${backgroundSrc})`,
                           }}
                         />
                         <Content className="title-post">
@@ -132,12 +132,12 @@ class BlogIndex extends React.Component {
                         <Content className="tag-content">
                           {splitTags && splitTags.length > 0
                             ? splitTags.map((tag, index) => {
-                                return (
-                                  <p className="p-content" key={index}>
-                                    <Tag className="tag-category">{tag}</Tag>
-                                  </p>
-                                )
-                              })
+                              return (
+                                <p className="p-content" key={index}>
+                                  <Tag className="tag-category">{tag}</Tag>
+                                </p>
+                              )
+                            })
                             : null}
                         </Content>
                       </Card>
@@ -165,8 +165,8 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 100
-      filter: {fileAbsolutePath: {regex: "/(blog)/.*\\.md$/"}}
+      limit: 1000
+      filter: {fileAbsolutePath: {regex: "/(pages/blog)/.*\\.md$/"}}
     ) {
       edges {
         node {
@@ -181,7 +181,7 @@ export const pageQuery = graphql`
             image {
               publicURL
               childImageSharp {
-                fluid(maxWidth: 720) {
+                fluid(maxWidth: 380) {
                   aspectRatio
                   base64
                   sizes

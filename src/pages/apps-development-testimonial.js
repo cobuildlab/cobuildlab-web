@@ -22,18 +22,14 @@ import badge1 from '../resources/badges1.png'
 import badge2 from '../resources/badges2.png'
 import badge3 from '../resources/badges3.png'
 import badge4 from '../resources/badges4.png'
-import weedLogo from '../resources/weedmatch.png'
-import clienteImg from '../resources/oscar-weedmatch.png'
 
 export default class AppsDevTestimonial extends React.Component {
   render() {
-    const siteTitle = 'Developing new Software Products in Miami'
-    const siteSubtitle = 'We transform ideas into Software Products'
+    const siteTitle = 'Developing new Apps in Miami'
+    const siteSubtitle = 'We transform ideas into working Apps'
     const siteDescription =
       'We transform requirements into working software. We specialize in building web and mobile applications for Small and Medium Businesses.'
     const landingName = 'Apps Development Testimonial'
-    const text =
-      'Lorem ipsum dolor sit amet, maecenas dictum in est, tincidunt nec suscipit vitae et et est. Justo vel lorem taciti elementum. Suspendisse et integer, aliquam nostra sollicitudin lacus, molestiae sit praesent ultrices augue arcu elit. Risus eu nulla varius, eu est morbi, lacinia elit vivamus phasellus volutpat sed mauris, nascetur vitae illo proin pulvinar, hac praesent varius.'
 
     return (
       <React.Fragment>
@@ -47,17 +43,20 @@ export default class AppsDevTestimonial extends React.Component {
             <div className="content">
               <div className="columns is-desktop">
                 <div className="column is-8 h-100 bg-header-landing">
-                  <div>
-                    <img src={logo} className="logo" />
+                  <div className="view-content-zoom">
+                    <div>
+                      <img src={logo} className="logo" />
+                    </div>
+                    <Title className="title-squeezing">
+                      Developing new Software Products in Miami
+                    </Title>
+                    <Subtitle className="subtitle-squeezing">
+                      {siteSubtitle}
+                    </Subtitle>
+                    <p className="text-description-all">{siteDescription}</p>
+                    <Testimonial />
+                    <BadgeIndustry />
                   </div>
-                  <Title className="title-squeezing">
-                    Developing new Software <br /> Products in Miami
-                  </Title>
-                  <Subtitle className="subtitle-squeezing">
-                    {siteSubtitle}
-                  </Subtitle>
-                  <Testimonial image={clienteImg} logo={weedLogo} text={text} />
-                  <BadgeIndustry />
                 </div>
                 <div className="column h-100 is-4 bg-form-landing Aligner">
                   <div className="has-text-centered view-badge">

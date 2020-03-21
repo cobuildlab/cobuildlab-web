@@ -21,7 +21,7 @@ import badge1 from '../resources/badges1.png'
 import badge2 from '../resources/badges2.png'
 import badge3 from '../resources/badges3.png'
 import badge4 from '../resources/badges4.png'
-import graphic from '../resources/phases.png'
+import graphic from '../resources/graficas-1.png'
 
 export default class EcommerceDevGraphic extends React.Component {
   render() {
@@ -31,8 +31,6 @@ export default class EcommerceDevGraphic extends React.Component {
     const siteDescription =
       'We develop the best strategy to take your Business to the next Level. We create a plan for tools, integrations, and support to enable your operations in the e-commerce market.'
     const landingName = 'Ecommerce Development Graphic'
-    const text =
-      'Lorem ipsum dolor sit amet, maecenas dictum in est, tincidunt nec suscipit vitae et et est. Justo vel lorem taciti elementum. Suspendisse et integer, aliquam nostra sollicitudin lacus, molestiae sit praesent ultrices augue arcu elit. Risus eu nulla varius, eu est morbi, lacinia elit vivamus phasellus volutpat sed mauris, nascetur vitae illo proin pulvinar, hac praesent varius.'
 
     return (
       <React.Fragment>
@@ -46,19 +44,22 @@ export default class EcommerceDevGraphic extends React.Component {
             <div className="container is-fluid is-marginless">
               <div className="columns is-desktop">
                 <div className="column is-8 h-100 bg-header-graphic">
-                  <div>
-                    <img src={logo} className="logo" />
+                  <div className="view-content-zoom">
+                    <div>
+                      <img src={logo} className="logo" />
+                    </div>
+                    <Title className="title-squeezing">
+                      Get your Business ready to Sell Online
+                    </Title>
+                    <Subtitle className="subtitle-squeezing">
+                      {siteSubtitle}
+                    </Subtitle>
+                    <p className="text-description-all">{siteDescription}</p>
+                    <div className="has-text-centered">
+                      <img src={graphic} className="img-graphic" />
+                    </div>
+                    <BadgeIndustry />
                   </div>
-                  <Title className="title-squeezing">
-                    Get your Business ready <br /> to Sell Online
-                  </Title>
-                  <Subtitle className="subtitle-squeezing">
-                    {siteSubtitle}
-                  </Subtitle>
-                  <div className="has-text-centered">
-                    <img src={graphic} className="img-graphic" />
-                  </div>
-                  {/* <BadgeIndustry /> */}
                 </div>
                 <div className="column h-100 is-4 bg-form-landing Aligner">
                   <div className="has-text-centered view-badge">

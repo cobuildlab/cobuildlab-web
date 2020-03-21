@@ -21,6 +21,7 @@ import badge1 from '../resources/badges1.png'
 import badge2 from '../resources/badges2.png'
 import badge3 from '../resources/badges3.png'
 import badge4 from '../resources/badges4.png'
+import YouTubeVideo from '../components/YouTubeVideo'
 
 export default class AgileProjectDescription extends React.Component {
   render() {
@@ -28,8 +29,8 @@ export default class AgileProjectDescription extends React.Component {
     const siteSubtitle =
       'Let our experience drive the success of your projects.'
     const siteDescription =
-      "Our senior's product managers and agile coaches work with you to build and deliver software effectively. Your team would be transformed through education of the most appropriate agile techniques and best practices."
-    const landingName = 'Ecommerce Development Description'
+      'Our senior\'s product managers and agile coaches work with you to build and deliver software effectively. Your team would be transformed through education of the most appropriate agile techniques and best practices.'
+    const landingName = 'Agile Project Management Description'
 
     return (
       <React.Fragment>
@@ -43,26 +44,29 @@ export default class AgileProjectDescription extends React.Component {
             <div className="content">
               <div className="columns is-desktop">
                 <div className="column is-8 h-100 bg-header-landing">
-                  <div>
-                    <img src={logo} className="logo" />
+                  <div className="view-content-zoom">
+                    <div>
+                      <img src={logo} className="logo"/>
+                    </div>
+                    <Title className="title-squeezing">
+                      Agile Project Management in Miami
+                    </Title>
+                    <Subtitle className="subtitle-squeezing">
+                      {siteSubtitle}
+                    </Subtitle>
+                    <p className="text-description">{siteDescription}</p>
+                    <YouTubeVideo id={'AlU5h2xrQ5M'}/>
+                    <BadgeIndustry/>
                   </div>
-                  <Title className="title-squeezing">
-                    Agile Project Management <br /> in Miami
-                  </Title>
-                  <Subtitle className="subtitle-squeezing">
-                    {siteSubtitle}
-                  </Subtitle>
-                  <p className="text-description">{siteDescription}</p>
-                  <BadgeIndustry />
                 </div>
                 <div className="column h-100 is-4 bg-form-landing Aligner">
                   <div className="has-text-centered view-badge">
-                    <img src={badge1} className="badge" />
-                    <img src={badge2} className="badge" />
-                    <img src={badge3} className="badge" />
-                    <img src={badge4} className="badge-google" />
+                    <img src={badge1} className="badge"/>
+                    <img src={badge2} className="badge"/>
+                    <img src={badge3} className="badge"/>
+                    <img src={badge4} className="badge-google"/>
                   </div>
-                  <NewLandingForm landingName={landingName} />
+                  <NewLandingForm landingName={landingName}/>
                 </div>
               </div>
             </div>

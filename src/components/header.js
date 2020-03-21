@@ -16,7 +16,6 @@ import '../assets/css/index.css'
 class header extends React.Component {
   constructor(props) {
     super(props)
-
     this.state = {
       isActive: false,
     }
@@ -53,13 +52,8 @@ class header extends React.Component {
             >
               <NavbarEnd>
                 <NavbarItem>
-                  <Link className="link-nav" to="/">
-                    Home
-                  </Link>
-                </NavbarItem>
-                <NavbarItem>
-                  <Link className="link-nav" to="/#process">
-                    Cobuild Process
+                  <Link className="link-nav" to="/services">
+                    Services
                   </Link>
                 </NavbarItem>
                 <NavbarItem>
@@ -67,11 +61,7 @@ class header extends React.Component {
                     Customer Success Stories
                   </Link>
                 </NavbarItem>
-                <NavbarItem>
-                  <Link className="link-nav" to="/services">
-                    Services
-                  </Link>
-                </NavbarItem>
+
                 <NavbarItem>
                   <Link className="link-nav" to="/blog">
                     Blog
@@ -112,23 +102,13 @@ class header extends React.Component {
             >
               <NavbarEnd>
                 <NavbarItem>
-                  <Link className="link-nav" to="/">
-                    Home
-                  </Link>
-                </NavbarItem>
-                <NavbarItem>
-                  <Link className="link-nav" to="/#process">
-                    Cobuild Process
+                  <Link className="link-nav" to="/services">
+                    Services
                   </Link>
                 </NavbarItem>
                 <NavbarItem>
                   <Link className="link-nav" to="/customer-success-stories">
                     Customer Success Stories
-                  </Link>
-                </NavbarItem>
-                <NavbarItem>
-                  <Link className="link-nav" to="/services">
-                    Services
                   </Link>
                 </NavbarItem>
                 <NavbarItem>

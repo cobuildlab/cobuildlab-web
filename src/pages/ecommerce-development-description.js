@@ -21,6 +21,8 @@ import badge1 from '../resources/badges1.png'
 import badge2 from '../resources/badges2.png'
 import badge3 from '../resources/badges3.png'
 import badge4 from '../resources/badges4.png'
+import YouTube from 'react-youtube'
+import YouTubeVideo, { YOUTUBE_MOBILE_OPTS } from '../components/YouTubeVideo'
 
 export default class EcommerceDevDescription extends React.Component {
   render() {
@@ -43,17 +45,20 @@ export default class EcommerceDevDescription extends React.Component {
             <div className="content">
               <div className="columns is-desktop">
                 <div className="column is-8 h-100 bg-header-landing">
-                  <div>
-                    <img src={logo} className="logo" />
+                  <div className="view-content-zoom">
+                    <div>
+                      <img src={logo} className="logo" />
+                    </div>
+                    <Title className="title-squeezing">
+                      Get your Business ready to Sell Online
+                    </Title>
+                    <Subtitle className="subtitle-squeezing">
+                      {siteSubtitle}
+                    </Subtitle>
+                    <p className="text-description">{siteDescription}</p>
+                    <YouTubeVideo id={'AlU5h2xrQ5M'}/>
+                    <BadgeIndustry />
                   </div>
-                  <Title className="title-squeezing">
-                    Get your Business ready <br /> to Sell Online
-                  </Title>
-                  <Subtitle className="subtitle-squeezing">
-                    {siteSubtitle}
-                  </Subtitle>
-                  <p className="text-description">{siteDescription}</p>
-                  <BadgeIndustry />
                 </div>
                 <div className="column h-100 is-4 bg-form-landing Aligner">
                   <div className="has-text-centered view-badge">

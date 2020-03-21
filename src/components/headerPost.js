@@ -56,11 +56,6 @@ class headerBlog extends React.Component {
                   </Link>
                 </NavbarItem>
                 <NavbarItem>
-                  <Link className="link-nav" to="/#process">
-                    Cobuild Process
-                  </Link>
-                </NavbarItem>
-                <NavbarItem>
                   <Link className="link-nav" to="/customer-success-stories">
                     Customer Success Stories
                   </Link>
@@ -109,16 +104,6 @@ class headerBlog extends React.Component {
               onClick={this.onClickNav}
             >
               <NavbarEnd>
-                <NavbarItem>
-                  <Link className="link-nav" to="/">
-                    Home
-                  </Link>
-                </NavbarItem>
-                <NavbarItem>
-                  <Link className="link-nav" to="/#process">
-                    Cobuild Process
-                  </Link>
-                </NavbarItem>
                 <NavbarItem>
                   <Link className="link-nav" to="/customer-success-stories">
                     Customer Success Stories

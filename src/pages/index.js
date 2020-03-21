@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import 'react-toastify/dist/ReactToastify.min.css'
-
+import '../assets/prism.css'
 import Layout from '../components/layout'
 import Contact from '../components/Contact'
 import 'bulma'
@@ -17,13 +17,11 @@ import '../assets/fonts/Lato-Italic.ttf'
 import '../assets/fonts/Lato-Light.ttf'
 import '../assets/fonts/Lato-LightItalic.ttf'
 import '../assets/fonts/Lato-Regular.ttf'
-
-import propagadImg from './customer-success-stories/media/5-1280x1080p-1024x864.png'
-import academyImg from './customer-success-stories/media/fondo-2-1024x511nuew.jpg'
-import paykleverImg from './customer-success-stories/media/payklever-cover.jpg'
-import marcelo from '../resources/marceloicigliani.jpg'
-import angel from '../resources/anglelacret.jpg'
-import alejandro from '../resources/alejandrosanchez.jpg'
+import 'react-modal-video/scss/modal-video.scss'
+// import marcelo from '../resources/marceloicigliani.jpg'
+// import alejandro from '../resources/alejandrosanchez.jpg'
+import alan from '../resources/alan-cobuild-profile.jpg'
+import angel from '../resources/angel-lacret-cobuild-lab.jpg'
 import defaultImg from '../resources/default-post.jpg'
 
 import { Icon } from 'react-icons-kit'
@@ -34,6 +32,13 @@ import { slideshare } from 'react-icons-kit/fa/slideshare'
 import { envelopeO } from 'react-icons-kit/fa/envelopeO'
 import { linkedinSquare } from 'react-icons-kit/fa/linkedinSquare'
 import { clockO } from 'react-icons-kit/fa/clockO'
+import { commentingO } from 'react-icons-kit/fa/commentingO'
+import { play } from 'react-icons-kit/fa/play'
+import comic from '../resources/icons/comic.svg'
+import { H2Blue } from '../components/text/H2Blue'
+import { H3Blue } from '../components/text/H3Blue'
+import { H1Blue } from '../components/text/H1Blue'
+import { H4Blue } from '../components/text/H4Blue'
 
 import {
   Container,
@@ -45,13 +50,55 @@ import {
   CardImage,
   Image,
   Content,
-  CardContent,
   Hero,
   HeroBody,
-  Tag,
 } from 'bloomer'
+import ModalVideo from 'react-modal-video'
+import * as PropTypes from 'prop-types'
+// import NewsletterModal from '../components/NewsletterModal'
+
+function ReadMore(props) {
+  return (
+    <Columns>
+      <Column isSize="1/2">
+        <Link
+          className="button is-primary is-medium is-rounded"
+          to="#"
+          onClick={props.onClick}
+        >
+          <Icon size="26" icon={play} /> &nbsp; VIDEO &nbsp;
+        </Link>
+      </Column>
+      <Column isSize="1/2">
+        <Link
+          className="button is-primary is-medium is-rounded"
+          target="_blank"
+          to="/blog/best-software-development-process/"
+        >
+          READ MORE
+        </Link>
+      </Column>
+    </Columns>
+  )
+}
+
+ReadMore.propTypes = { onClick: PropTypes.func }
 
 class Index extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      showVideoModal: false,
+    }
+    this.openModal = this.openModal.bind(this)
+  }
+
+  openModal() {
+    this.setState({
+      showVideoModal: true,
+    })
+  }
+
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteDescription = get(
@@ -59,6 +106,10 @@ class Index extends React.Component {
       'props.data.site.siteMetadata.description'
     )
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const customerSuccessStories = get(
+      this,
+      'props.data.customerSuccessStories.edges'
+    )
     const siteKey = process.env.RECAPTCHA_SITEKEY
 
     return (
@@ -68,59 +119,85 @@ class Index extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
         />
+
+        {/* FIXME: Newsletter Modal */}
+        {/* <NewsletterModal /> */}
+
         {/*HEADER*/}
         <Hero isSize="large">
-          <HeroBody className="bg-header">
-            <Container isFluid className="is-hidden-mobile">
-              <Title className="title-logo">Cobuild Lab</Title>
-              <Title className="subtitle-logo">Let’s Build a Great Idea</Title>
+          <HeroBody
+            className="bg-header"
+            style={{ paddingTop: '2rem', paddingBottom: '11rem' }}
+          >
+            <Container isFluid className="is-hidden-mobile no-margin">
               <Columns>
                 <Column isSize="1/2">
-                  <Title isSize={4}>
-                    We help entrepreneurs create amazing Products with our
-                    streamlined, lean and phased{' '}
-                    <span style={{ color: '#fff' }}>
-                      Software Development Process.
-                    </span>{' '}
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <H3Blue>Software Development Company</H3Blue>
+                  <H1Blue>
+                    Let’s <span className={'orange-text'}>Build</span> a Great{' '}
+                    <span className={'orange-text'}>Idea.</span>
+                  </H1Blue>
+                  <H4Blue>
+                    We partner with new and early-stage non-technical
+                    entrepreneurs and industry experts to transforms ideas into{' '}
+                    <span className={'orange-text'}>
+                      Web and Mobile Software Products.
+                    </span>
+                    <br />
+                    <br />
                     Since day one, our technique is focused on early results and
                     transparent communication.
-                  </Title>
-                  <Link
-                    className="button is-primary is-medium is-rounded"
-                    target="_blank"
-                    to="/blog/best-software-development-process/"
-                  >
-                    READ MORE
-                  </Link>
+                  </H4Blue>
+                  <ReadMore onClick={this.openModal} />
+                </Column>
+                <Column isSize="1/2">
+                  <br />
+                  <br />
+                  <img
+                    alt={'main comic'}
+                    src={comic}
+                    style={{ width: '100%', height: 'auto' }}
+                  />
                 </Column>
               </Columns>
             </Container>
 
             <Container
               isFluid
-              className="is-hidden-desktop is-hidden-tablet-only"
+              className="is-hidden-desktop is-hidden-tablet-only no-margin"
+              hasTextAlign="centered"
             >
-              <Title className="title-logo-mobile">Cobuild Lab</Title>
-              <Title className="subtitle-logo-mobile">
-                Let’s Build a Great Idea
-              </Title>
+              <H4Blue>Software Development Company</H4Blue>
+              <img
+                alt={'main comic'}
+                src={comic}
+                style={{ width: '85%', height: 'auto' }}
+              />
+              <H2Blue>
+                Let’s <span className={'orange-text'}>Build</span> a Great{' '}
+                <span className={'orange-text'}>Idea.</span>
+              </H2Blue>
               <Columns>
                 <Column isSize="1/2">
-                  <Title isSize={6}>
-                    We help entrepreneurs create amazing Products with our
-                    streamlined, lean and phased{' '}
-                    <span style={{ color: '#fff' }}>
-                      Software Development Process.
-                    </span>{' '}
+                  <H4Blue>
+                    We partner with new and early-stage non-technical
+                    entrepreneurs and industry experts to transforms ideas into{' '}
+                    <span className={'orange-text'}>
+                      Web and Mobile Software Products.
+                    </span>
+                    <br />
+                    <br />
                     Since day one, our technique is focused on early results and
                     transparent communication.
-                  </Title>
-                  <Link
-                    className="button is-primary is-small is-rounded"
-                    to="#"
-                  >
-                    READ MORE
-                  </Link>
+                  </H4Blue>
+                  <ReadMore onClick={this.openModal} />
                 </Column>
               </Columns>
             </Container>
@@ -142,59 +219,60 @@ class Index extends React.Component {
               Innovation and Exponential Growth
             </Subtitle>
             <Columns isCentered className="p-2">
-              <Column isSize="1/4">
+              <Column isSize="1/5">
                 <div className="icon-process">
-                  <Icon size="24" icon={check} className="icon-center"/>
+                  <Icon size="24" icon={commentingO} className="icon-center" />
                 </div>
-                <Title isSize={3}>Validation</Title>
+                <Title isSize={3}>Think</Title>
+                <p>
+                  Problem-solution fit: Observe the Customer, think as the
+                  Customer, be the Customer.
+                </p>
+              </Column>
+              <Column isSize="1/5">
+                <div className="icon-process">
+                  <Icon size="24" icon={check} className="icon-center" />
+                </div>
+                <Title isSize={3}>Validate</Title>
                 <p>
                   Plain and simple: Don't offer what people doesn't want. - Idea
-                  Validation: (Technical and Economical) - Market Validation:
-                  (Estimation and Competitors Analysis) - Value and Growth
+                  Validation: Technical and Economical - Market Validation:
+                  Estimation and Competitors Analysis - Value and Growth
                   Hypothesis.
                 </p>
               </Column>
-              <Column isSize="1/4">
+              <Column isSize="1/5">
                 <div className="icon-process">
                   <Icon size="24" icon={code} className="icon-center" />
                 </div>
                 <Title isSize={3}>CoBuild</Title>
                 <p>
-                  It's time to build!. In this phase we combine a
-                  multidisciplinary team to actually build the idea. -
-                  Prototyping - Customers Archetypes - Minimum Viable Product
-                  (MVP) - Live testing - A/B Testing - Product Market Fit -
-                  Value and Growth Hypothesis (Again)
+                  It's time to build!. We combine a multidisciplinary team to
+                  build the idea. Minimum Viable Product (MVP)
                 </p>
               </Column>
-              <Column isSize="1/4">
+              <Column isSize="1/5">
                 <div className="icon-process">
-                  <Icon size="24" icon={ic_layers} className="icon-center"/>
+                  <Icon size="24" icon={ic_layers} className="icon-center" />
                 </div>
                 <Title isSize={3}>Plan</Title>
                 <p>
-                  A very important step. Here we make sure that the idea has
-                  every detail that is needed for been available to transform
-                  effectively: Identity, purpose, values, and the correct tools
-                  for launching are the main purpose of this step. - Branding -
-                  WebSite and Social Networks - Strategy
+                  Identity, purpose, values, and the correct tools for launching
+                  are the main purpose of this step. - Branding - WebSite and
+                  Social Networks - Strategy
                 </p>
               </Column>
-              <Column isSize="1/4">
+              <Column isSize="1/5">
                 <div className="icon-process">
-                  <Icon size="24" icon={slideshare} className="icon-center"/>
+                  <Icon size="24" icon={slideshare} className="icon-center" />
                 </div>
                 <Title isSize={3}>Accelerate</Title>
                 <p>
                   Congratulations! We have proved to have a sustainable business
-                  with a healthy growth rate. It's time to accelerate. At this
-                  point our business strategy and marketing strategy must be on
-                  the right track, so it's time to create High Impact. - Growth
-                  Hacking: Short-Term Exponential Growth
+                  with a healthy growth rate. It's time to accelerate.
                 </p>
               </Column>
             </Columns>
-  
           </Container>
         </section>
         {/*Section Cobuild Process*/}
@@ -214,12 +292,50 @@ class Index extends React.Component {
                   <Column isSize="1/3" key={node.fields.slug}>
                     <Link to={node.fields.slug}>
                       <Card className="card-p">
-                        <CardContent
-                          className="card-post"
-                          style={{
-                            backgroundImage: `url(${image})`,
-                          }}
-                        />
+                        <CardImage className="card-post">
+                          <Image
+                            isRatio="4:8"
+                            src={image}
+                            className="card-post"
+                          />
+                          <Content className="title-post">
+                            <small>
+                              {' '}
+                              <Icon
+                                icon={clockO}
+                                style={{ paddingTop: 5 }}
+                              />{' '}
+                              {node.frontmatter.date}
+                            </small>
+                            <Subtitle hasTextColor="white">{title}</Subtitle>
+                          </Content>
+                        </CardImage>
+                      </Card>
+                    </Link>
+                  </Column>
+                )
+              })}
+            </Columns>
+          </Container>
+        </section>
+        {/*Section Latest News*/}
+
+        {/*Section Latest News*/}
+        <section className="section">
+          <Container hasTextAlign="centered">
+            <Link to="/customer-success-stories">
+              <Title className="title-section">Customer Success Stories</Title>
+            </Link>
+            <Columns isCentered>
+              {customerSuccessStories.map(({ node }) => {
+                const title = get(node, 'frontmatter.title') || node.fields.slug
+                const image =
+                  get(node, 'frontmatter.image.publicURL') || defaultImg
+                return (
+                  <Column isSize="1/3" key={node.fields.slug}>
+                    <Link to={node.fields.slug}>
+                      <CardImage>
+                        <Image isRatio="4:8" src={image} />
                         <Content className="title-post">
                           <small>
                             {' '}
@@ -231,7 +347,7 @@ class Index extends React.Component {
                           </small>
                           <Subtitle hasTextColor="white">{title}</Subtitle>
                         </Content>
-                      </Card>
+                      </CardImage>
                     </Link>
                   </Column>
                 )
@@ -241,61 +357,75 @@ class Index extends React.Component {
         </section>
         {/*Section Latest News*/}
 
-        {/*Section Customer Success Stories*/}
-        <section className="section bg-section">
-          <Container hasTextAlign="centered">
-            <Link to="/customer-success-stories">
-              <Title className="title-section">Customer Success Stories</Title>
-            </Link>
-            <Columns isCentered>
-              <Column isSize="1/3">
-                <Card>
-                  <Link to="/customer-success-stories/propagad">
-                    <CardImage>
-                      <Image isRatio="4:8" src={propagadImg} />
-                      <p className="name-team">
-                        <strong>PROPAGAD</strong>
-                      </p>
-                    </CardImage>
-                  </Link>
-                </Card>
-              </Column>
-              <Column isSize="1/3">
-                <Card>
-                  <Link to="/customer-success-stories/4geeks-academy">
-                    <CardImage>
-                      <Image isRatio="4:8" src={academyImg} />
-                      <p className="name-team">
-                        <strong>4Geeks Academy</strong>
-                      </p>
-                    </CardImage>
-                  </Link>
-                </Card>
-              </Column>
-              <Column isSize="1/3">
-                <Card>
-                  <Link to="/customer-success-stories/payklever-campaign-manager">
-                    <CardImage>
-                      <Image isRatio="4:8" src={paykleverImg} />
-                      <p className="name-team">
-                        <strong>Payklever Campaign Manager</strong>
-                      </p>
-                    </CardImage>
-                  </Link>
-                </Card>
-              </Column>
-            </Columns>
-          </Container>
-        </section>
-        {/*Section Customer Success Stories*/}
-
         <section className="section">
           <Container hasTextAlign="centered">
             <Title isSize={2} className="title-section">
               Our Team
             </Title>
             <Columns isCentered>
-              <Column isSize="1/3">
+            
+            
+              <Column isSize="1/2">
+                <Card>
+                  <a
+                    href="https://www.linkedin.com/in/alacret/"
+                    target="_blank"
+                  >
+                    <CardImage>
+                      <Image isRatio="4:8" src={angel} />
+                      <p className="name-team">
+                        Angel Lacret <br /> Chief of Product Development <br/>
+                        Cobuild Lab
+                      </p>
+                    </CardImage>
+                  </a>
+                </Card>
+                <Content>
+                  <br />
+                  <small>Technical Product Owner and Software Developer</small>
+                  <br />
+                  <Icon size="18" icon={envelopeO} />
+                  <a
+                    className="icon-link"
+                    href="https://www.linkedin.com/in/alacret/"
+                    target="_blank"
+                  >
+                    <Icon size="18" icon={linkedinSquare} />
+                  </a>
+                </Content>
+              </Column>
+              <Column isSize="1/2">
+                <Card>
+                  <a
+                    href="https://www.linkedin.com/in/alanthinks"
+                    target="_blank"
+                  >
+                    <CardImage>
+                      <Image isRatio="4:8" src={alan} />
+                      <p className="name-team">
+                        Alan R. Guevara <br /> Chief of Product Management <br/> Cobuild Lab
+                      </p>
+                    </CardImage>
+                  </a>
+                </Card>
+                <Content>
+                  <br />
+                  <small>
+                    Close to 15 years of experience in Marketing and Product Design.
+                    <br /> Former lead UX/UI Designer and Developer for top Healthcare Company in the United States.
+                  </small>
+                  <br />
+                  <Icon size="18" icon={envelopeO} />
+                  <a
+                    className="icon-link"
+                    href="https://www.linkedin.com/in/alanthinks"
+                    target="_blank"
+                  >
+                    <Icon size="18" icon={linkedinSquare} />
+                  </a>
+                </Content>
+              </Column>
+                {/* <Column isSize="1/3">
                 <Card>
                   <a
                     href="https://www.linkedin.com/in/marcelo-ricigliano-32440379"
@@ -325,37 +455,8 @@ class Index extends React.Component {
                     <Icon size="18" icon={linkedinSquare} />
                   </a>
                 </Content>
-              </Column>
-              <Column isSize="1/3">
-                <Card>
-                  <a
-                    href="https://www.linkedin.com/in/alacret/"
-                    target="_blank"
-                  >
-                    <CardImage>
-                      <Image isRatio="4:8" src={angel} />
-                      <p className="name-team">
-                        Angel Lacret <br /> Chief of Product Development at
-                        Cobuild Lab
-                      </p>
-                    </CardImage>
-                  </a>
-                </Card>
-                <Content>
-                  <br />
-                  <small>Technical Product Owner and Software Developer</small>
-                  <br />
-                  <Icon size="18" icon={envelopeO} />
-                  <a
-                    className="icon-link"
-                    href="https://www.linkedin.com/in/alacret/"
-                    target="_blank"
-                  >
-                    <Icon size="18" icon={linkedinSquare} />
-                  </a>
-                </Content>
-              </Column>
-              <Column isSize="1/3">
+              </Column> */}
+              {/* <Column isSize="1/3">
                 <Card>
                   <a
                     href="https://www.linkedin.com/in/alesanchezr/"
@@ -386,14 +487,23 @@ class Index extends React.Component {
                     <Icon size="18" icon={linkedinSquare} />
                   </a>
                 </Content>
-              </Column>
-            </Columns>
+              </Column>*/}
+            </Columns> 
           </Container>
         </section>
         {/*Section Customer Success Stories*/}
 
         {/*Section Where we are? and Write Us! */}
         <Contact siteKey={siteKey} />
+
+        {/*Video*/}
+        <ModalVideo
+          channel="youtube"
+          autoplay={this.state.showVideoModal}
+          isOpen={this.state.showVideoModal}
+          videoId="AlU5h2xrQ5M"
+          onClose={() => this.setState({ showVideoModal: false })}
+        />
       </Layout>
     )
   }
@@ -412,7 +522,38 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 3
-      filter: {fileAbsolutePath: {regex: "/(blog)/.*\\.md$/"}}
+      filter: {fileAbsolutePath: {regex: "/(pages/blog)/.*\\.md$/"}}
+    ) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            tags
+            image {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 480) {
+                  aspectRatio
+                  base64
+                  sizes
+                  src
+                  srcSet
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    customerSuccessStories:allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 3
+      filter: {fileAbsolutePath: {regex: "/(pages/customer-success-stories)/.*\\.md$/"}}
     ) {
       edges {
         node {

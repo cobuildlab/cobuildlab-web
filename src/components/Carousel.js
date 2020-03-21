@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Columns, Column, Image } from 'bloomer'
 import { StaticQuery, graphql } from 'gatsby'
-
+import {getOrientation} from "../utils/getOrientation"
 class Carousel extends React.Component {
   render() {
     const { children, folder } = this.props
@@ -9,7 +9,8 @@ class Carousel extends React.Component {
       .toString()
       .split(/\r?\n|\r/)
       .filter(text => text.indexOf('./media') > -1)
-      .map(src => src.replace('./', folder + '/'))
+      .map(src => src.replace('./', folder + '/'));
+
     return (
       <StaticQuery
         query={graphql`
@@ -31,10 +32,13 @@ class Carousel extends React.Component {
             <Columns>
               {data.allFile.edges.map((node, index) => {
                 const path = node.node.relativePath
+                // console.log(getOrientation(node.)) WORKING ON GETTING ORIENTATION TO THEN FLIP IMAGE ACCORDINGLY
                 if (allImages.includes(path) === true)
                   return (
                     <Column key={index}>
-                      <Image isRatio="4:3" src={node.node.publicURL} />
+                      <img src={node.node.publicURL}/>
+                      {/* <Image isRatio="4:3" src={node.node.publicURL} /> */}
+                      {/* <Image src={node.node.publicURL} /> */}
                     </Column>
                   )
                 return null

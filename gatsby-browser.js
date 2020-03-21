@@ -1,3 +1,6 @@
+require('prismjs/themes/prism-solarizedlight.css')
+require("prismjs/plugins/line-numbers/prism-line-numbers.css")
+
 /* global window, document */
 /* const scrollTo = id => () => {
   const el = document.querySelector(id)
