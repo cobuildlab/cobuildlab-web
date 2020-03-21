@@ -1,3 +1,4 @@
+// color palette
 $orange: #E76C29;
 $navy: #264A60;
 $dark-slate: #90A2AD;
@@ -5,17 +6,18 @@ $medium-slate:#D2DFE6;
 $light-slate: #F6F6FB;
 $white: #FFFFFF;
 
+//backgrounds
 $background-color: #F4F6FB;
-$box-shadow: #264A6017;
-
-$btn-shadow: #E76C2999;
-
-$btn-active-shadow: #D15F2099;
-$btn-hover-shadow: $btn-active-shadow;
-
 $btn-active-bg: #D05B1B;
 $btn-hover-bg: $btn-active-bg;
 
+// shawdow
+$box-shadow: #264A6017;
+$btn-shadow: #E76C2999;
+$btn-active-shadow: rgba(31, 26, 23, 0.6);
+$btn-hover-shadow: $btn-active-shadow;
+
+// font sizes
 $font-size-hero: 100px;
 $font-size-h1: 80px;
 $font-size-h2: 60px;
@@ -28,3 +30,9 @@ $text-button-size: 16px;
 $text-button-light-size: 16px;
 $paragraph: 18px;
 $icon-title: 12px;
+
+//fonts family
+$font-light: 'Lato-light', sans-serif;
+$font-regular: 'Lato-Regular', sans-serif;
+$font-bold: 'Lato-bold', sans-serif;
+$font-black: 'Lato-black', sans-serif;

@@ -8,79 +8,98 @@
   opacity: 1;
 
   &_hero{
-    font-size: $font-size-hero;
     font-weight: bold;
+    font-family: $font-bold !important;
+    font-size: $font-size-hero;
     @media all and (max-width: 767.99px){
       font-size: 55px;
     }
   }
 
   &_h1{
-    font-size: $font-size-h1;
     font-weight: bold;
+    font-family: $font-bold !important;
+    font-size: $font-size-h1;
     @media all and (max-width: 767.99px){
       font-size: 55px;
     }
   }
 
   &_h2{
-    font-size: $font-size-h2;
     font-weight: lighter;
+    font-family: $font-light !important;
+    font-size: $font-size-h2;
     @media all and (max-width: 767.99px){
       font-size: 55px;
     }
   }
 
   &_h3{
-    font-size: $font-size-h3;
     font-weight: bold;
+    font-family: $font-bold !important;
+    font-size: $font-size-h3;
     @media all and (max-width: 767.99px){
-      font-size: 55px;
+      font-size: 31px;
     }
   }
 
   &_h4{
+    font-weight: normal;
+    font-family: $font-regular !important;
     font-size: $font-size-h4;
     color: $orange;
-    font-weight: 400;
     @media all and (max-width: 767.99px){
       font-size: 55px;
     }
   }
   
   &_h5{
-    font-size: $font-size-h5;
     font-weight: normal;
+    font-family: $font-regular !important;
+    font-size: $font-size-h5;
     @media all and (max-width: 767.99px){
       font-size: 55px;
     }
   }
 
   &_h6{
+    font-weight: lighter;
+    font-family: $font-light !important;
     font-size: $font-size-h6;
-    font-weight: normal;
     @media all and (max-width: 767.99px){
       font-size: 18px;
     }
   }
 
   &_sub_title{
-    font-size: $text-size;
     font-weight: normal;
+    font-family: $font-regular !important;
+    font-size: $text-size;
     @media all and (max-width: 767.99px){
       font-size: 15px;
     }
   }
 
   &_normal{
+    font-family: $font-regular !important;
     font-weight: normal !important;
   }
 
   &_bold{
+    font-family: $font-bold !important;
     font-weight: bold !important;
   }
 
   &_lighter{
+    font-family: $font-light !important;
     font-weight: lighter !important;
   }
+}
+
+
+.paragraph{
+  font-family: $font-regular !important;
+  font-weight: normal;
+  font-size: $paragraph;
+  color: $navy;
 }

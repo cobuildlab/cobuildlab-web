@@ -27,9 +27,6 @@ import { linkedinSquare } from 'react-icons-kit/fa/linkedinSquare'
 import { Link } from '@reach/router'
 import * as moment from 'moment';
 
-import '@2020/assets/css/index.css'
-
-
 class MyFooter extends React.Component {
   state = {
     email: '',
