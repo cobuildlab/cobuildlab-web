@@ -1,35 +1,35 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import 'react-toastify/dist/ReactToastify.min.css'
-import NewLandingForm from '../components/NewLandingForm'
-import BadgeIndustry from '../components/BadgeIndustry'
-import { Title, Subtitle } from 'bloomer'
-import 'bulma'
-import '../assets/fonts/Lato-Black.ttf'
-import '../assets/fonts/Lato-BlackItalic.ttf'
-import '../assets/fonts/Lato-Bold.ttf'
-import '../assets/fonts/Lato-BoldItalic.ttf'
-import '../assets/fonts/Lato-Hairline.ttf'
-import '../assets/fonts/Lato-HairlineItalic.ttf'
-import '../assets/fonts/Lato-Italic.ttf'
-import '../assets/fonts/Lato-Light.ttf'
-import '../assets/fonts/Lato-LightItalic.ttf'
-import '../assets/fonts/Lato-Regular.ttf'
+import React from 'react';
+import Helmet from 'react-helmet';
+import 'react-toastify/dist/ReactToastify.min.css';
+import NewLandingForm from '../components/NewLandingForm';
+import BadgeIndustry from '../components/BadgeIndustry';
+import { Title, Subtitle } from 'bloomer';
+import 'bulma';
+import '../assets/fonts/Lato-Black.ttf';
+import '../assets/fonts/Lato-BlackItalic.ttf';
+import '../assets/fonts/Lato-Bold.ttf';
+import '../assets/fonts/Lato-BoldItalic.ttf';
+import '../assets/fonts/Lato-Hairline.ttf';
+import '../assets/fonts/Lato-HairlineItalic.ttf';
+import '../assets/fonts/Lato-Italic.ttf';
+import '../assets/fonts/Lato-Light.ttf';
+import '../assets/fonts/Lato-LightItalic.ttf';
+import '../assets/fonts/Lato-Regular.ttf';
 
-import logo from '../resources/cobuildlab.png'
-import badge1 from '../resources/badges1.png'
-import badge2 from '../resources/badges2.png'
-import badge3 from '../resources/badges3.png'
-import badge4 from '../resources/badges4.png'
-import graphic from '../resources/phases.png'
+import logo from '../resources/cobuildlab.png';
+import badge1 from '../resources/badges1.png';
+import badge2 from '../resources/badges2.png';
+import badge3 from '../resources/badges3.png';
+import badge4 from '../resources/badges4.png';
+import graphic from '../resources/phases.png';
 
 export default class CobuildGraphic extends React.Component {
   render() {
-    const siteTitle = 'Cobuilding Companies in Miami'
-    const siteSubtitle = 'We transform ideas into Software Companies'
+    const siteTitle = 'Cobuilding Companies in Miami';
+    const siteSubtitle = 'We transform ideas into Software Companies';
     const siteDescription =
-      'Cobuild Is the process of transforming an idea in a Business, through the combination and collaboration of the areas of Lean Entrepreneurship, Business Strategy, Technological Innovation, and Exponential Growth.'
-    const landingName = 'Cobuild Companies Graphic'
+      'Cobuild Is the process of transforming an idea in a Business, through the combination and collaboration of the areas of Lean Entrepreneurship, Business Strategy, Technological Innovation, and Exponential Growth.';
+    const landingName = 'Cobuild Companies Graphic';
 
     return (
       <React.Fragment>
@@ -47,19 +47,14 @@ export default class CobuildGraphic extends React.Component {
                     <div>
                       <img src={logo} className="logo" />
                     </div>
-                    <Title className="title-squeezing">
-                      Cobuilding Companies in Miami
-                    </Title>
-                    <Subtitle className="subtitle-squeezing">
-                      {siteSubtitle}
-                    </Subtitle>
+                    <Title className="title-squeezing">Cobuilding Companies in Miami</Title>
+                    <Subtitle className="subtitle-squeezing">{siteSubtitle}</Subtitle>
                     <p className="text-description-all">
-                      Cobuild Is the process of transforming an idea in a
-                      Business, through the combination and collaboration of the
-                      areas of{' '}
+                      Cobuild Is the process of transforming an idea in a Business, through the
+                      combination and collaboration of the areas of{' '}
                       <b>
-                        Lean Entrepreneurship, Business Strategy, Technological
-                        Innovation, and Exponential Growth.
+                        Lean Entrepreneurship, Business Strategy, Technological Innovation, and
+                        Exponential Growth.
                       </b>
                     </p>
                     <div className="has-text-centered">
@@ -82,6 +77,6 @@ export default class CobuildGraphic extends React.Component {
           </div>
         </section>
       </React.Fragment>
-    )
+    );
   }
 }

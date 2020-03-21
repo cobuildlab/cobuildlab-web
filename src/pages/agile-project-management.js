@@ -20,7 +20,7 @@ import '../assets/fonts/Lato-Regular.ttf';
 
 class Index extends React.Component {
   render() {
-    const siteTitle = "Agile Project Management in Miami";
+    const siteTitle = 'Agile Project Management in Miami';
     const siteDescription = "Let'us deliver your Projects";
     const landingName = 'Agile Project Management';
 
@@ -42,48 +42,47 @@ class Index extends React.Component {
                   <Subtitle className="subtitle-logo-landing">{landingName}</Subtitle>
                   <Subtitle isSize={4}>
                     <h3>Let our experience drive the success of your projects.</h3>
-                    <br/>
+                    <br />
                     <p>
                       <strong>
-                        Our senior's product managers and agile coaches work with you to build and deliver software
-                        effectively. Your team would be transformed through education of the most appropriate agile
-                        techniques and best practices.
+                        Our senior's product managers and agile coaches work with you to build and
+                        deliver software effectively. Your team would be transformed through
+                        education of the most appropriate agile techniques and best practices.
                       </strong>
                     </p>
                   </Subtitle>
                 </Column>
                 <Column isSize="1/2">
-                  <FormContact landingName={landingName}/>
+                  <FormContact landingName={landingName} />
                 </Column>
               </Columns>
             </Container>
 
-            <Container isFluid className="is-hidden-desktop is-hidden-tablet-only"
-                       style={{backgroundColor:"white", padding:"5px"}}
-            >
+            <Container
+              isFluid
+              className="is-hidden-desktop is-hidden-tablet-only"
+              style={{ backgroundColor: 'white', padding: '5px' }}>
               <Columns>
                 <Column isSize="1/2">
                   <Title className="title-logo-mobile" hasTextAlign="centered">
                     Cobuild Lab
                   </Title>
                   <Subtitle className="subtitle-logo-mobile" hasTextAlign="centered">
-                    <strong>
-                      {landingName}
-                    </strong>
+                    <strong>{landingName}</strong>
                   </Subtitle>
                   <Subtitle isSize={4}>
                     <h3>Let our experience drive the success of your projects.</h3>
                     <p>
                       <strong>
-                      Our senior's product managers and agile coaches work with you to build and deliver software
-                      effectively. Your team would be transformed through education of the most appropriate agile
-                      techniques and best practices.
+                        Our senior's product managers and agile coaches work with you to build and
+                        deliver software effectively. Your team would be transformed through
+                        education of the most appropriate agile techniques and best practices.
                       </strong>
                     </p>
                   </Subtitle>
                 </Column>
                 <Column isSize="1/2">
-                  <FormContact landingName={landingName}/>
+                  <FormContact landingName={landingName} />
                 </Column>
               </Columns>
             </Container>

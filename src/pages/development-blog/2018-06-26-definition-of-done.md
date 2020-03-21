@@ -17,7 +17,7 @@ In the agile, fast, changing and uncertain world of software development, we com
 
 One, in particular, is a constant headache for many Project Managers, Scrum Masters,  Directors, Product Owners, Designers, Analysts, or any other stakeholders that every iteration checks the status of a Project: The missing of a clear, visible, commonly agreed Definition of Done.
 
-The **Definition of Done** is a term popularized by the Scrum Framework that explicitly describes an item (Use Case, User Story or Feature) as Ready or Done, in the terms precisely expressed by of this Definition.
+The **Definition of Done** is a term popularized by the Scrum Framework that explicitly describes an item (Use Case, User StoryCommon or Feature) as Ready or Done, in the terms precisely expressed by of this Definition.
 
 As in most of the cases this DoD it&#8217;s directly related to the type of project, circumstances, technology, team members, Scrum Master, Scope and many other factors that could affect how this definition is shaped. So in here, I will try to explain in my experience what makes a good definition of Done, and I would give you an example ready to use.
 
@@ -51,7 +51,7 @@ A good Definition of Done must be:
 
 Every feature must:
 
-  1. Have a User Story Document with a Description, Roles, Acceptance Criteria and Conditions
+  1. Have a User StoryCommon Document with a Description, Roles, Acceptance Criteria and Conditions
   2. Understood by every Team Member
   3. Build it in the code
   4. Code reviewed

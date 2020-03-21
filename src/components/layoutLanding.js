@@ -13,14 +13,13 @@ import '../assets/fonts/Lato-Light.ttf';
 import '../assets/fonts/Lato-LightItalic.ttf';
 import '../assets/fonts/Lato-Regular.ttf';
 
-
 class Template extends React.Component {
   render() {
     const { children } = this.props;
     return (
       <div>
-        <HeaderLanding/>
-          {children}
+        <HeaderLanding />
+        {children}
       </div>
     );
   }

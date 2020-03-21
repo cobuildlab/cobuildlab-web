@@ -1,5 +1,5 @@
-import React from 'react'
-import { Container, Columns, Column, Image } from 'bloomer'
+import React from 'react';
+import { Container, Columns, Column, Image } from 'bloomer';
 
 class Banner extends React.Component {
   render() {
@@ -12,7 +12,7 @@ class Banner extends React.Component {
           </Column>
         </Columns>
       </Container>
-    )
+    );
   }
 }
-export default Banner
+export default Banner;

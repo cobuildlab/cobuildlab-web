@@ -8,7 +8,7 @@
 
 ### Definition of Done
 
-- [ ] User Story compliant
+- [ ] User StoryCommon compliant
 - [ ] Feature completed
 - [ ] My code follows the style guidelines of this project
 - [ ] I have performed a self-review of my own code

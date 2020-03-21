@@ -1,11 +1,11 @@
-import React from 'react'
-import { Media, MediaLeft, MediaContent, Column, Columns } from 'bloomer'
-import '../assets/css/index.css'
-import logo from '../resources/weedmatch.png'
+import React from 'react';
+import { Media, MediaLeft, MediaContent, Column, Columns } from 'bloomer';
+import '../assets/css/index.css';
+import logo from '../resources/weedmatch.png';
 
 const StudyCase = () => {
   const text =
-    'Weedmatch is a social platform to get you closer to other cannabis lovers in an unique experience. This social network connects you with events and news around the cannabis culture'
+    'Weedmatch is a social platform to get you closer to other cannabis lovers in an unique experience. This social network connects you with events and news around the cannabis culture';
   return (
     <Media className="component-changes">
       <MediaLeft
@@ -40,7 +40,7 @@ const StudyCase = () => {
         </Columns>
       </MediaContent>
     </Media>
-  )
-}
+  );
+};
 
-export default StudyCase
+export default StudyCase;
