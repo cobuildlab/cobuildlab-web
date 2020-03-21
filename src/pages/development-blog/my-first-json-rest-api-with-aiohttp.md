@@ -41,6 +41,14 @@ Prequisites:
 - Python 3.5+
 - Git
 
+### As a complementary reading I recommend this book, it has help me in all my years coding with Python:
+
+<br/>
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=gurupia-20&marketplace=amazon&region=US&placement=1491946008&asins=1491946008&linkId=c080307502c51c27b32bcd7f1fdac3ea&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+<br/>
+
+
 
 This instructions are based on the [Oficial AIOHTTP Documentation](https://aiohttp.readthedocs.io/en/stable/)
 

@@ -1,12 +1,11 @@
-import React from 'react'
-import '../assets/css/index.css'
-const BadgeIndustry = props => {
+import React from 'react';
+import '../assets/css/index.css';
+const BadgeIndustry = (props) => {
   return (
     <div className="view-badge-industry">
       <p
         className="has-text-centered subtitle mt-3 is-marginless"
-        style={{ color: '#244a62', marginBottom: '0px !important' }}
-      >
+        style={{ color: '#244a62', marginBottom: '0px !important' }}>
         <b>We specialize in these industries:</b>
       </p>
       <div className="columns is-desktop is-mobile has-text-centered is-hidden-mobile is-marginless">
@@ -40,6 +39,6 @@ const BadgeIndustry = props => {
         </div>
       </div>
     </div>
-  )
-}
-export default BadgeIndustry
+  );
+};
+export default BadgeIndustry;

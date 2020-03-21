@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
 import {
   Container,
   Navbar,
@@ -8,31 +8,29 @@ import {
   NavbarBurger,
   NavbarMenu,
   NavbarEnd,
-} from 'bloomer'
-import '../assets/css/index.css'
-import logo from '../resources/cobuildlab.png'
-import '../assets/css/index.css'
+} from 'bloomer';
+import '../assets/css/index.css';
+import logo from '../resources/cobuildlab.png';
+import '../assets/css/index.css';
 
 class header extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       isActive: false,
-    }
+    };
   }
 
   onClickNav = () => {
     this.setState(({ isActive }) => ({
       isActive: !isActive,
-    }))
-  }
+    }));
+  };
 
   render() {
     return (
       <React.Fragment>
-        <Navbar
-          style={{ margin: '0' }}
-        >
+        <Navbar className="is-hidden-desktop is-hidden-tablet-only" style={{ margin: '0' }}>
           <Container isFluid>
             <NavbarBrand>
               <NavbarItem>
@@ -40,15 +38,9 @@ class header extends React.Component {
                   <img src={logo} style={{ marginRight: 5 }} />
                 </Link>
               </NavbarItem>
-              <NavbarBurger
-                isActive={this.state.isActive}
-                onClick={this.onClickNav}
-              />
+              <NavbarBurger isActive={this.state.isActive} onClick={this.onClickNav} />
             </NavbarBrand>
-            <NavbarMenu
-              isActive={this.state.isActive}
-              onClick={this.onClickNav}
-            >
+            <NavbarMenu isActive={this.state.isActive} onClick={this.onClickNav}>
               <NavbarEnd>
                 <NavbarItem>
                   <Link className="link-nav" to="/services">
@@ -75,41 +67,16 @@ class header extends React.Component {
             </NavbarMenu>
           </Container>
         </Navbar>
-      
-      </React.Fragment>
-    )
-  }
-}
-
-export default header
-
-
-/*
-
-    <Navbar
-          className="isTransparent navbar-absolute is-hidden-mobile"
-          style={{ margin: '0' }}
-        >
+        <Navbar className="isTransparent navbar-absolute is-hidden-mobile" style={{ margin: '0' }}>
           <Container isFluid className="mt-25">
             <NavbarBrand>
               <Link className="link-nav" to="/">
-                <img
-                  src={logo}
-                  style={{ marginRight: 5 }}
-                  width="229"
-                  height="49"
-                />
+                <img src={logo} style={{ marginRight: 5 }} width="229" height="49" />
               </Link>
 
-              <NavbarBurger
-                isActive={this.state.isActive}
-                onClick={this.onClickNav}
-              />
+              <NavbarBurger isActive={this.state.isActive} onClick={this.onClickNav} />
             </NavbarBrand>
-            <NavbarMenu
-              isActive={this.state.isActive}
-              onClick={this.onClickNav}
-            >
+            <NavbarMenu isActive={this.state.isActive} onClick={this.onClickNav}>
               <NavbarEnd>
                 <NavbarItem>
                   <Link className="link-nav" to="/services">
@@ -135,5 +102,9 @@ export default header
             </NavbarMenu>
           </Container>
         </Navbar>
+      </React.Fragment>
+    );
+  }
+}
 
-*/
+export default header;

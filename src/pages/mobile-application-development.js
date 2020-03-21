@@ -20,10 +20,11 @@ import '../assets/fonts/Lato-Regular.ttf';
 
 class Index extends React.Component {
   render() {
-    const siteTitle = "Mobile Application Development in Miami";
-    const siteSubtitle = 'We transform ideas into working Mobile Applications'
+    const siteTitle = 'Mobile Application Development in Miami';
+    const siteSubtitle = 'We transform ideas into working Mobile Applications';
     const siteDescription = "Let's create amazing Mobile Applications";
-    const siteLongDescription = "We transform requirements in Software Products. We specialize in building <strong>Mobile Application.</strong>";
+    const siteLongDescription =
+      'We transform requirements in Software Products. We specialize in building <strong>Mobile Application.</strong>';
     const landingName = 'Mobile Application Development';
 
     return (
@@ -43,25 +44,24 @@ class Index extends React.Component {
                   <Title className="title-logo">Cobuild Lab</Title>
                   <Subtitle className="subtitle-logo-landing">{landingName}</Subtitle>
                   <Subtitle isSize={4}>
-                    <h3>
-                      {siteLongDescription}
-                    </h3>
-                    <br/>
+                    <h3>{siteLongDescription}</h3>
+                    <br />
                     <p>
                       <strong>
-                        Mobile Application development is the process of conceiving, specifying, designing, programming,
-                        documenting, testing, and bug fixing involved in creating and maintaining applications,
-                        frameworks, or other software components.
-                        <br/>
-                        With our streamlined, lean and phased Process we achieve incredible results. 
-                        Since day one, our technique is focused on early results and
-                        transparent communication.
+                        Mobile Application development is the process of conceiving, specifying,
+                        designing, programming, documenting, testing, and bug fixing involved in
+                        creating and maintaining applications, frameworks, or other software
+                        components.
+                        <br />
+                        With our streamlined, lean and phased Process we achieve incredible results.
+                        Since day one, our technique is focused on early results and transparent
+                        communication.
                       </strong>
                     </p>
                   </Subtitle>
                 </Column>
                 <Column isSize="1/2">
-                  <FormContact landingName={landingName}/>
+                  <FormContact landingName={landingName} />
                 </Column>
               </Columns>
             </Container>
@@ -69,35 +69,36 @@ class Index extends React.Component {
             <Container
               isFluid
               className="is-hidden-desktop is-hidden-tablet-only"
-              style={{backgroundColor:"white", padding:"5px"}}
-            >
+              style={{ backgroundColor: 'white', padding: '5px' }}>
               <Columns>
                 <Column isSize="1/2">
                   <Title className="title-logo-mobile" hasTextAlign="centered">
                     Cobuild Lab
                   </Title>
                   <Subtitle className="subtitle-logo-mobile" hasTextAlign="centered">
-                    <strong>
-                      {landingName}
-                    </strong>
+                    <strong>{landingName}</strong>
                   </Subtitle>
                   <Subtitle isSize={4}>
-                    <h3>We transform requirements in Software Products. We specialize in building <strong>Mobile Application.</strong></h3>
+                    <h3>
+                      We transform requirements in Software Products. We specialize in building{' '}
+                      <strong>Mobile Application.</strong>
+                    </h3>
                     <p>
                       <strong>
-                        Mobile Application development is the process of conceiving, specifying, designing, programming,
-                        documenting, testing, and bug fixing involved in creating and maintaining applications,
-                        frameworks, or other software components.
-                        <br/>
-                        With our streamlined, lean and phased Process we
-                        achieve incredible results. Since day one, our technique is focused on early results and
-                        transparent communication.
+                        Mobile Application development is the process of conceiving, specifying,
+                        designing, programming, documenting, testing, and bug fixing involved in
+                        creating and maintaining applications, frameworks, or other software
+                        components.
+                        <br />
+                        With our streamlined, lean and phased Process we achieve incredible results.
+                        Since day one, our technique is focused on early results and transparent
+                        communication.
                       </strong>
                     </p>
                   </Subtitle>
                 </Column>
                 <Column isSize="1/2">
-                  <FormContact landingName={landingName}/>
+                  <FormContact landingName={landingName} />
                 </Column>
               </Columns>
             </Container>

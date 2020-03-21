@@ -1,9 +1,9 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import Layout from '../../../components/layout'
-import BlogIndexAlt from '../../../components/BlogIndexAlt'
+import React from 'react';
+import { graphql } from 'gatsby';
+import get from 'lodash/get';
+import Helmet from 'react-helmet';
+import Layout from '../../../components/layout';
+import BlogIndexAlt from '../../../components/BlogIndexAlt';
 import {
   Hero,
   HeroBody,
@@ -21,16 +21,13 @@ import {
   CardContent,
   Content,
   Tag,
-} from 'bloomer'
+} from 'bloomer';
 
 class ToolsIndex extends React.Component {
   render() {
-    const siteTitle = 'The Blog for Software Entrepreneurs'
-    const siteDescription = get(
-      this,
-      'props.data.site.siteMetadata.description'
-    )
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const siteTitle = 'The Blog for Software Entrepreneurs';
+    const siteDescription = get(this, 'props.data.site.siteMetadata.description');
+    const posts = get(this, 'props.data.allMarkdownRemark.edges');
 
     return (
       <Layout>
@@ -42,11 +39,11 @@ class ToolsIndex extends React.Component {
 
         <BlogIndexAlt activeTab="tools" siteTitle={siteTitle} posts={posts} />
       </Layout>
-    )
+    );
   }
 }
 
-export default ToolsIndex
+export default ToolsIndex;
 
 export const pageQuery = graphql`
   query {
@@ -88,4 +85,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

@@ -87,7 +87,7 @@ For new Products the Definition of Done usually looks like this:
 
 * Code Review it
 * Integrated to the main repository
-* [Product Owner](https://www.scrum.org/resources/what-is-a-product-owner) has validated the feature against the User Story.
+* [Product Owner](https://www.scrum.org/resources/what-is-a-product-owner) has validated the feature against the User StoryCommon.
 
 <title-3>4. Product Quality</title-3>
 
