@@ -1,39 +1,39 @@
-import React from "react";
-import { Link, graphql } from "gatsby";
-import get from "lodash/get";
-import Helmet from "react-helmet";
-import "react-toastify/dist/ReactToastify.min.css";
-import Layout from "./components/layout";
-import Contact from "./components/Contact";
-import "bulma";
-import "./assets/fonts/Lato-Black.ttf";
-import "./assets/fonts/Lato-BlackItalic.ttf";
-import "./assets/fonts/Lato-Bold.ttf";
-import "./assets/fonts/Lato-BoldItalic.ttf";
-import "./assets/fonts/Lato-Hairline.ttf";
-import "./assets/fonts/Lato-HairlineItalic.ttf";
-import "./assets/fonts/Lato-Italic.ttf";
-import "./assets/fonts/Lato-Light.ttf";
-import "./assets/fonts/Lato-LightItalic.ttf";
-import "./assets/fonts/Lato-Regular.ttf";
-import "react-modal-video/scss/modal-video.scss";
-import alan from "./resources/alan-cobuild-profile.jpg";
-import angel from "./resources/angel-lacret-cobuild-lab.jpg";
-import defaultImg from "./resources/default-post.jpg";
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import get from 'lodash/get';
+import Helmet from 'react-helmet';
+import 'react-toastify/dist/ReactToastify.min.css';
+import Layout from './components/layout';
+import Contact from './components/Contact';
+import 'bulma';
+import './assets/fonts/Lato-Black.ttf';
+import './assets/fonts/Lato-BlackItalic.ttf';
+import './assets/fonts/Lato-Bold.ttf';
+import './assets/fonts/Lato-BoldItalic.ttf';
+import './assets/fonts/Lato-Hairline.ttf';
+import './assets/fonts/Lato-HairlineItalic.ttf';
+import './assets/fonts/Lato-Italic.ttf';
+import './assets/fonts/Lato-Light.ttf';
+import './assets/fonts/Lato-LightItalic.ttf';
+import './assets/fonts/Lato-Regular.ttf';
+import 'react-modal-video/scss/modal-video.scss';
+import alan from './resources/alan-cobuild-profile.jpg';
+import angel from './resources/angel-lacret-cobuild-lab.jpg';
+import defaultImg from './resources/default-post.jpg';
 
-import { Icon } from "react-icons-kit";
-import { check } from "react-icons-kit/fa/check";
-import { code } from "react-icons-kit/fa/code";
-import { ic_layers } from "react-icons-kit/md/ic_layers";
-import { slideshare } from "react-icons-kit/fa/slideshare";
-import { envelopeO } from "react-icons-kit/fa/envelopeO";
-import { linkedinSquare } from "react-icons-kit/fa/linkedinSquare";
-import { clockO } from "react-icons-kit/fa/clockO";
-import { commentingO } from "react-icons-kit/fa/commentingO";
-import { play } from "react-icons-kit/fa/play";
-import comic from "./resources/icons/comic.svg";
-import { Title } from "bloomer";
-import styled from "styled-components";
+import { Icon } from 'react-icons-kit';
+import { check } from 'react-icons-kit/fa/check';
+import { code } from 'react-icons-kit/fa/code';
+import { ic_layers } from 'react-icons-kit/md/ic_layers';
+import { slideshare } from 'react-icons-kit/fa/slideshare';
+import { envelopeO } from 'react-icons-kit/fa/envelopeO';
+import { linkedinSquare } from 'react-icons-kit/fa/linkedinSquare';
+import { clockO } from 'react-icons-kit/fa/clockO';
+import { commentingO } from 'react-icons-kit/fa/commentingO';
+import { play } from 'react-icons-kit/fa/play';
+import comic from './resources/icons/comic.svg';
+import { Title } from 'bloomer';
+import styled from 'styled-components';
 import {
   Container,
   Subtitle,
@@ -44,10 +44,10 @@ import {
   Image,
   Content,
   Hero,
-  HeroBody
-} from "bloomer";
-import ModalVideo from "react-modal-video";
-import * as PropTypes from "prop-types";
+  HeroBody,
+} from 'bloomer';
+import ModalVideo from 'react-modal-video';
+import * as PropTypes from 'prop-types';
 
 const StyledTitle = styled(Title)`
   color: #254a61 !important;
@@ -58,7 +58,7 @@ const StyledTitle = styled(Title)`
 `;
 
 const H1Blue = ({ children, ...props }) => (
-  <StyledTitle isSize={1} tag={"h1"} {...props}>
+  <StyledTitle isSize={1} tag={'h1'} {...props}>
     {children}
   </StyledTitle>
 );
@@ -72,11 +72,10 @@ const StyledTitle2 = styled(Title)`
 `;
 
 const H2Blue = (props) => (
-  <StyledTitle2 isSize={2} tag={"h2"}>
+  <StyledTitle2 isSize={2} tag={'h2'}>
     {props.children}
   </StyledTitle2>
 );
-
 
 const StyledTitle3 = styled(Title)`
   color: #254a61 !important;
@@ -87,7 +86,7 @@ const StyledTitle3 = styled(Title)`
 `;
 
 const H3Blue = (props) => (
-  <StyledTitle3 isSize={2} tag={"h2"}>
+  <StyledTitle3 isSize={2} tag={'h2'}>
     {props.children}
   </StyledTitle3>
 );
@@ -100,11 +99,10 @@ const StyledTitle4 = styled(Title)`
 `;
 
 const H4Blue = (props) => (
-  <StyledTitle4 isSize={2} tag={"h2"}>
+  <StyledTitle4 isSize={2} tag={'h2'}>
     {props.children}
   </StyledTitle4>
 );
-
 
 /**
  * @param props
@@ -114,7 +112,7 @@ function ReadMore(props) {
     <Columns>
       <Column isSize="1/2">
         <Link className="button is-primary is-medium is-rounded" to="#" onClick={props.onClick}>
-          <Icon size="26" icon={play}/> &nbsp; VIDEO &nbsp;
+          <Icon size="26" icon={play} /> &nbsp; VIDEO &nbsp;
         </Link>
       </Column>
       <Column isSize="1/2">
@@ -135,30 +133,31 @@ class Index extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      showVideoModal: false
+      showVideoModal: false,
     };
     this.openModal = this.openModal.bind(this);
   }
 
   openModal() {
     this.setState({
-      showVideoModal: true
+      showVideoModal: true,
     });
   }
 
   render() {
-    const siteTitle = "Cobuild Lab | Software Development Company in Miami, Florida";
-    const siteDescription = "We partner with new and early-stage non-technical entrepreneurs and industry experts to transforms ideas into Web and Mobile Software Products.\n" +
-      "Since day one, our technique is focused on early results and transparent communication.";
-    const posts = get(this, "props.data.allMarkdownRemark.edges");
-    const customerSuccessStories = get(this, "props.data.customerSuccessStories.edges");
+    const siteTitle = 'Cobuild Lab | Software Development Company in Miami, Florida';
+    const siteDescription =
+      'We partner with new and early-stage non-technical entrepreneurs and industry experts to transforms ideas into Web and Mobile Software Products.\n' +
+      'Since day one, our technique is focused on early results and transparent communication.';
+    const posts = get(this, 'props.data.allMarkdownRemark.edges');
+    const customerSuccessStories = get(this, 'props.data.customerSuccessStories.edges');
     const siteKey = process.env.RECAPTCHA_SITEKEY;
 
     return (
       <Layout location={this.props.location}>
         <Helmet
-          htmlAttributes={{ lang: "en" }}
-          meta={[{ name: "description", content: siteDescription }]}
+          htmlAttributes={{ lang: 'en' }}
+          meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
         />
 
@@ -167,37 +166,37 @@ class Index extends React.Component {
 
         {/*HEADER*/}
         <Hero isSize="large">
-          <HeroBody className="bg-header" style={{ paddingTop: "2rem", paddingBottom: "11rem" }}>
+          <HeroBody className="bg-header" style={{ paddingTop: '2rem', paddingBottom: '11rem' }}>
             <Container isFluid className="is-hidden-mobile no-margin">
               <Columns>
                 <Column isSize="1/2">
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
                   <H3Blue>Software Development Company</H3Blue>
                   <H1Blue>
-                    Let’s <span className={"orange-text"}>Build</span> a Great{" "}
-                    <span className={"orange-text"}>Idea.</span>
+                    Let’s <span className={'orange-text'}>Build</span> a Great{' '}
+                    <span className={'orange-text'}>Idea.</span>
                   </H1Blue>
                   <H4Blue>
                     We partner with new and early-stage non-technical entrepreneurs and industry
-                    experts to transforms ideas into{" "}
-                    <span className={"orange-text"}>Web and Mobile Software Products.</span>
-                    <br/>
-                    <br/>
+                    experts to transforms ideas into{' '}
+                    <span className={'orange-text'}>Web and Mobile Software Products.</span>
+                    <br />
+                    <br />
                     Since day one, our technique is focused on early results and transparent
                     communication.
                   </H4Blue>
-                  <ReadMore onClick={this.openModal}/>
+                  <ReadMore onClick={this.openModal} />
                 </Column>
                 <Column isSize="1/2">
-                  <br/>
-                  <br/>
-                  <img alt={"main comic"} src={comic} style={{ width: "100%", height: "auto" }}/>
+                  <br />
+                  <br />
+                  <img alt={'main comic'} src={comic} style={{ width: '100%', height: 'auto' }} />
                 </Column>
               </Columns>
             </Container>
@@ -207,23 +206,23 @@ class Index extends React.Component {
               className="is-hidden-desktop is-hidden-tablet-only no-margin"
               hasTextAlign="centered">
               <H4Blue>Software Development Company</H4Blue>
-              <img alt={"main comic"} src={comic} style={{ width: "85%", height: "auto" }}/>
+              <img alt={'main comic'} src={comic} style={{ width: '85%', height: 'auto' }} />
               <H2Blue>
-                Let’s <span className={"orange-text"}>Build</span> a Great{" "}
-                <span className={"orange-text"}>Idea.</span>
+                Let’s <span className={'orange-text'}>Build</span> a Great{' '}
+                <span className={'orange-text'}>Idea.</span>
               </H2Blue>
               <Columns>
                 <Column isSize="1/2">
                   <H4Blue>
                     We partner with new and early-stage non-technical entrepreneurs and industry
-                    experts to transforms ideas into{" "}
-                    <span className={"orange-text"}>Web and Mobile Software Products.</span>
-                    <br/>
-                    <br/>
+                    experts to transforms ideas into{' '}
+                    <span className={'orange-text'}>Web and Mobile Software Products.</span>
+                    <br />
+                    <br />
                     Since day one, our technique is focused on early results and transparent
                     communication.
                   </H4Blue>
-                  <ReadMore onClick={this.openModal}/>
+                  <ReadMore onClick={this.openModal} />
                 </Column>
               </Columns>
             </Container>
@@ -237,16 +236,16 @@ class Index extends React.Component {
             <Title isSize={2} className="title-section">
               Cobuild Process
             </Title>
-            <hr/>
+            <hr />
             <Subtitle isSize={6}>
               Is the process of transforming an idea in a sustainable business, through the
-              combination and collaboration of the areas of Lean <br/> Entrepreneurship, Business
+              combination and collaboration of the areas of Lean <br /> Entrepreneurship, Business
               Strategy, Technological Innovation and Exponential Growth
             </Subtitle>
             <Columns isCentered className="p-2">
               <Column isSize="1/5">
                 <div className="icon-process">
-                  <Icon size="24" icon={commentingO} className="icon-center"/>
+                  <Icon size="24" icon={commentingO} className="icon-center" />
                 </div>
                 <Title isSize={3}>Think</Title>
                 <p>
@@ -256,7 +255,7 @@ class Index extends React.Component {
               </Column>
               <Column isSize="1/5">
                 <div className="icon-process">
-                  <Icon size="24" icon={check} className="icon-center"/>
+                  <Icon size="24" icon={check} className="icon-center" />
                 </div>
                 <Title isSize={3}>Validate</Title>
                 <p>
@@ -267,7 +266,7 @@ class Index extends React.Component {
               </Column>
               <Column isSize="1/5">
                 <div className="icon-process">
-                  <Icon size="24" icon={code} className="icon-center"/>
+                  <Icon size="24" icon={code} className="icon-center" />
                 </div>
                 <Title isSize={3}>CoBuild</Title>
                 <p>
@@ -277,7 +276,7 @@ class Index extends React.Component {
               </Column>
               <Column isSize="1/5">
                 <div className="icon-process">
-                  <Icon size="24" icon={ic_layers} className="icon-center"/>
+                  <Icon size="24" icon={ic_layers} className="icon-center" />
                 </div>
                 <Title isSize={3}>Plan</Title>
                 <p>
@@ -287,7 +286,7 @@ class Index extends React.Component {
               </Column>
               <Column isSize="1/5">
                 <div className="icon-process">
-                  <Icon size="24" icon={slideshare} className="icon-center"/>
+                  <Icon size="24" icon={slideshare} className="icon-center" />
                 </div>
                 <Title isSize={3}>Accelerate</Title>
                 <p>
@@ -308,18 +307,18 @@ class Index extends React.Component {
             </Title>
             <Columns isCentered>
               {posts.map(({ node }) => {
-                const title = get(node, "frontmatter.title") || node.fields.slug;
-                const image = get(node, "frontmatter.image.publicURL") || defaultImg;
+                const title = get(node, 'frontmatter.title') || node.fields.slug;
+                const image = get(node, 'frontmatter.image.publicURL') || defaultImg;
                 return (
                   <Column isSize="1/3" key={node.fields.slug}>
                     <Link to={node.fields.slug}>
                       <Card className="card-p">
                         <CardImage className="card-post">
-                          <Image isRatio="4:8" src={image} className="card-post"/>
+                          <Image isRatio="4:8" src={image} className="card-post" />
                           <Content className="title-post">
                             <small>
-                              {" "}
-                              <Icon icon={clockO} style={{ paddingTop: 5 }}/>{" "}
+                              {' '}
+                              <Icon icon={clockO} style={{ paddingTop: 5 }} />{' '}
                               {node.frontmatter.date}
                             </small>
                             <Subtitle hasTextColor="white">{title}</Subtitle>
@@ -343,17 +342,17 @@ class Index extends React.Component {
             </Link>
             <Columns isCentered>
               {customerSuccessStories.map(({ node }) => {
-                const title = get(node, "frontmatter.title") || node.fields.slug;
-                const image = get(node, "frontmatter.image.publicURL") || defaultImg;
+                const title = get(node, 'frontmatter.title') || node.fields.slug;
+                const image = get(node, 'frontmatter.image.publicURL') || defaultImg;
                 return (
                   <Column isSize="1/3" key={node.fields.slug}>
                     <Link to={node.fields.slug}>
                       <CardImage>
-                        <Image isRatio="4:8" src={image}/>
+                        <Image isRatio="4:8" src={image} />
                         <Content className="title-post">
                           <small>
-                            {" "}
-                            <Icon icon={clockO} style={{ paddingTop: 5 }}/> {node.frontmatter.date}
+                            {' '}
+                            <Icon icon={clockO} style={{ paddingTop: 5 }} /> {node.frontmatter.date}
                           </small>
                           <Subtitle hasTextColor="white">{title}</Subtitle>
                         </Content>
@@ -377,24 +376,24 @@ class Index extends React.Component {
                 <Card>
                   <a href="https://www.linkedin.com/in/alacret/" target="_blank">
                     <CardImage>
-                      <Image isRatio="4:8" src={angel}/>
+                      <Image isRatio="4:8" src={angel} />
                       <p className="name-team">
-                        Angel Lacret <br/> Chief of Product Development <br/>
+                        Angel Lacret <br /> Chief of Product Development <br />
                         Cobuild Lab
                       </p>
                     </CardImage>
                   </a>
                 </Card>
                 <Content>
-                  <br/>
+                  <br />
                   <small>Technical Product Owner and Software Developer</small>
-                  <br/>
-                  <Icon size="18" icon={envelopeO}/>
+                  <br />
+                  <Icon size="18" icon={envelopeO} />
                   <a
                     className="icon-link"
                     href="https://www.linkedin.com/in/alacret/"
                     target="_blank">
-                    <Icon size="18" icon={linkedinSquare}/>
+                    <Icon size="18" icon={linkedinSquare} />
                   </a>
                 </Content>
               </Column>
@@ -402,27 +401,27 @@ class Index extends React.Component {
                 <Card>
                   <a href="https://www.linkedin.com/in/alanthinks" target="_blank">
                     <CardImage>
-                      <Image isRatio="4:8" src={alan}/>
+                      <Image isRatio="4:8" src={alan} />
                       <p className="name-team">
-                        Alan R. Guevara <br/> Chief of Product Management <br/> Cobuild Lab
+                        Alan R. Guevara <br /> Chief of Product Management <br /> Cobuild Lab
                       </p>
                     </CardImage>
                   </a>
                 </Card>
                 <Content>
-                  <br/>
+                  <br />
                   <small>
                     Close to 15 years of experience in Marketing and Product Design.
-                    <br/> Former lead UX/UI Designer and Developer for top Healthcare Company in
+                    <br /> Former lead UX/UI Designer and Developer for top Healthcare Company in
                     the United States.
                   </small>
-                  <br/>
-                  <Icon size="18" icon={envelopeO}/>
+                  <br />
+                  <Icon size="18" icon={envelopeO} />
                   <a
                     className="icon-link"
                     href="https://www.linkedin.com/in/alanthinks"
                     target="_blank">
-                    <Icon size="18" icon={linkedinSquare}/>
+                    <Icon size="18" icon={linkedinSquare} />
                   </a>
                 </Content>
               </Column>
@@ -495,7 +494,7 @@ class Index extends React.Component {
         {/*Section Customer Success Stories*/}
 
         {/*Section Where we are? and Write Us! */}
-        <Contact siteKey={siteKey}/>
+        <Contact siteKey={siteKey} />
 
         {/*Video*/}
         <ModalVideo

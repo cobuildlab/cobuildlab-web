@@ -20,7 +20,7 @@ class Template extends React.Component {
     const siteKey = process.env.RECAPTCHA_SITEKEY;
     return (
       <div>
-        <Header/>
+        <Header />
         {children}
         <MyFooter siteKey={siteKey} />
       </div>
