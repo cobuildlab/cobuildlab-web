@@ -43,9 +43,9 @@ export default () => {
 
   return(
     <Container>
-      <div >
-        <Typography size={title} hasTextAlign="centered">
-          Service
+      <div className="section-title">
+        <Typography tag="h2" size={title} hasTextAlign="centered">
+          Services
         </Typography>
       </div>
       <div className={styles.service_card_container}>
@@ -55,10 +55,10 @@ export default () => {
               <div className={styles.service_icon_container}>
                 <img src={icon_1} atl="service-icon" className={styles.service_img}/>
               </div>
-              <Typography size={subTitle}>
+              <Typography tag="h4" size={subTitle}>
                 Product development
               </Typography>
-              <Typography size={paragraph}>
+              <Typography tag="p" size={paragraph}>
                 Problem-solution fit: Observe the Customer, 
                 think as the Customer, be the Customer.
               </Typography>
@@ -74,10 +74,10 @@ export default () => {
               <div className={styles.service_icon_container}>
                 <img src={icon_2} atl="service-icon" className={styles.service_img} />
               </div>
-              <Typography size={subTitle}>
+              <Typography tag="h4" size={subTitle}>
                 Software development
               </Typography>
-              <Typography size={paragraph}>
+              <Typography tag="p" size={paragraph}>
                 It's time to build!. We combine a multidisciplinary 
                 team to build the idea. Minimum Viable Product (MVP)
               </Typography>
@@ -93,10 +93,10 @@ export default () => {
               <div className={styles.service_icon_container}>
                 <img src={icon_3} atl="service-icon" className={styles.service_img}/>
               </div>
-              <Typography size={subTitle}>
+              <Typography tag="h4" size={subTitle}>
                 Education < br /> and training
               </Typography>
-              <Typography size={paragraph}>
+              <Typography tag="p" size={paragraph}>
                 Identity, purpose, values, and the correct tools 
                 for launching are the main purpose of this step. - 
                 Branding - WebSite and Social Networks - Strategy

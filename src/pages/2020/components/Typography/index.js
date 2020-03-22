@@ -65,8 +65,8 @@ Typography.defaultProps = {
 
 Typography.propTypes = {
   size: PropTypes.object,
-  hasTextAlign: PropTypes.string,
   className: PropTypes.string,
+  tag: PropTypes.string,
 }
 
 export default memo(Typography);

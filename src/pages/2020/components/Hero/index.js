@@ -46,7 +46,7 @@ export default () => (
         <Column isSize={{ mobile: 12, desktop: 6}}>
           <div className={styles.hero_body_left}>
             <Typography 
-              tag="h3"
+              tag="h2"
               size={title1} 
               className={styles.hero_text}
             >
@@ -61,7 +61,7 @@ export default () => (
               Great<span className={styles.hero_orange_text}>{' '}Idea.</span>
             </Typography>
             <Typography 
-              tag="h4"
+              tag="p"
               size={title3}
               className={styles.hero_text}
             >

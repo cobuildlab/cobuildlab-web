@@ -9,7 +9,7 @@ export default class Template extends React.Component {
     const { children } = this.props;
     const siteKey = process.env.RECAPTCHA_SITEKEY;
     return (
-      <div>
+      <div style={{ overflow: 'hidden'}}>
         {children}
         <Footer siteKey={siteKey} />
       </div>
