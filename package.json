@@ -13,8 +13,8 @@
     "core-js": "^2.6.9",
     "disqus-react": "^1.0.5",
     "dotenv": "^6.1.0",
-    "gatsby": "^2.8.2",
-    "gatsby-cli": "^2.6.4",
+    "gatsby": "^2.20.2",
+    "gatsby-cli": "^2.11.0",
     "gatsby-image": "^2.1.2",
     "gatsby-plugin-amp": "^0.2.2",
     "gatsby-plugin-feed": "^2.2.2",
@@ -76,10 +76,9 @@
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-react": "^7.12.4",
     "gatsby-remark-prismjs": "^3.2.9",
-    "gh-pages": "^1.2.0",
-    "prettier": "^1.17.1",
     "husky": "^1.3.1",
-    "lint-staged": "^8.1.5"
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.17.1"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
@@ -95,12 +94,9 @@
     "dev": "gatsby develop",
     "eslint": "eslint --ext .js,.jsx --fix --ignore-pattern public --ignore-pattern '!.eslintrc.js' .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "develop": "gatsby develop",
     "build:dev": "NODE_ENV=development gatsby build",
-    "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
+    "build": "gatsby build"
   },
   "husky": {
     "hooks": {
