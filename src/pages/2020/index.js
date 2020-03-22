@@ -17,6 +17,7 @@ import Layout from '@2020/components/Layout'
 import Header from '@2020/components/Layout/Header';
 import HeroBodyContent from '@2020/components/Hero';
 import Service from '@2020/components/Service';
+import BusinessValue from '@2020/components/BusinessValue';
 
 
 export default class HomePage extends React.Component {
@@ -64,6 +65,9 @@ export default class HomePage extends React.Component {
         </Hero>
         <Section>
           <Service />
+        </Section>
+        <Section>
+          <BusinessValue />
         </Section>
       </Layout>
     )
