@@ -10,20 +10,8 @@ import {
 } from 'bloomer';
 
 import 'react-toastify/dist/ReactToastify.min.css'
-import '@2020/assets/prism.css'
-import 'bulma'
-
-import '@2020/assets/fonts/Lato-Black.ttf'
-import '@2020/assets/fonts/Lato-BlackItalic.ttf'
-import '@2020/assets/fonts/Lato-Bold.ttf'
-import '@2020/assets/fonts/Lato-BoldItalic.ttf'
-import '@2020/assets/fonts/Lato-Hairline.ttf'
-import '@2020/assets/fonts/Lato-HairlineItalic.ttf'
-import '@2020/assets/fonts/Lato-Italic.ttf'
-import '@2020/assets/fonts/Lato-Light.ttf'
-import '@2020/assets/fonts/Lato-LightItalic.ttf'
-import '@2020/assets/fonts/Lato-Regular.ttf'
 import 'react-modal-video/scss/modal-video.scss'
+import 'bulma'
 
 import Layout from '@2020/components/Layout'
 import Header from '@2020/components/Layout/Header';

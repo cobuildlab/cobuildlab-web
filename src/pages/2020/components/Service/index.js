@@ -2,37 +2,66 @@ import React from 'react';
 import { Container, Columns, Column } from 'bloomer';
 // import Button from '@2020/components/Button';
 import Button from '@2020/components/Button';
-import Title from '@2020/components/Typography/Title';
-import Paragraph from '@2020/components/Typography/Paragraph';
+import Typography from '@2020/components/Typography';
 import styles from './css/index.module.scss';
 
 import icon_1 from '@2020/resources/icons/Product-development.svg';
 import icon_2 from '@2020/resources/icons/Software-development.svg';
 import icon_3 from '@2020/resources/icons/Education-training.svg';
 
+
+const title = {
+  default:{
+    level: 4,
+    fontWeight: 'bold'
+  },
+  lg:{
+    level: 2,
+    fontWeight: 'bold'
+  }
+}
+
+const subTitle = {
+  default:{
+    level: 6,
+    fontWeight: 'lighter'
+  },
+  lg:{
+    level: 4,
+    fontWeight: 'lighter'
+  },
+}
+
+const paragraph = {
+  default:{
+    level: 10,
+    fontWeight: 'normal'
+  },
+}
+
 export default () => {
 
   return(
     <Container>
       <div >
-        <Title size="h1" hasTextAlign="centered">
+        <Typography size={title} hasTextAlign="centered">
           Service
-        </Title>
+        </Typography>
       </div>
       <div className={styles.service_card_container}>
         <Columns>
           <Column className={styles.service_column} isSize={4}>
             <div className={styles.service_item}>
               <div className={styles.service_icon_container}>
-                <img src={icon_1} atl="service-icon" />
+                <img src={icon_1} atl="service-icon" className={styles.service_img}/>
               </div>
-              <Title size="h3" fontWeight="lighter">
+              <Typography size={subTitle}>
                 Product development
-              </Title>
-              <Paragraph fontSize={16}>
+              </Typography>
+              <Typography size={paragraph}>
                 Problem-solution fit: Observe the Customer, 
                 think as the Customer, be the Customer.
-              </Paragraph>
+              </Typography>
               <div className={styles.service_item_footer}>
                 <Button>
                   Read more
@@ -43,15 +72,15 @@ export default () => {
           <Column className={styles.service_column} isSize={4}>
             <div className={styles.service_item}>
               <div className={styles.service_icon_container}>
-                <img src={icon_2} atl="service-icon" />
+                <img src={icon_2} atl="service-icon" className={styles.service_img} />
               </div>
-              <Title size="h3" fontWeight="lighter">
+              <Typography size={subTitle}>
                 Software development
-              </Title>
-              <Paragraph fontSize={16}>
+              </Typography>
+              <Typography size={paragraph}>
                 It's time to build!. We combine a multidisciplinary 
                 team to build the idea. Minimum Viable Product (MVP)
-              </Paragraph>
+              </Typography>
               <div className={styles.service_item_footer}>
                 <Button>
                   Read more
@@ -62,16 +91,16 @@ export default () => {
           <Column className={styles.service_column} isSize={4}>
             <div className={styles.service_item}>
               <div className={styles.service_icon_container}>
-                <img src={icon_3} atl="service-icon" />
+                <img src={icon_3} atl="service-icon" className={styles.service_img}/>
               </div>
-              <Title size="h3" fontWeight="lighter">
+              <Typography size={subTitle}>
                 Education < br /> and training
-              </Title>
-              <Paragraph fontSize={16}>
+              </Typography>
+              <Typography size={paragraph}>
                 Identity, purpose, values, and the correct tools 
                 for launching are the main purpose of this step. - 
                 Branding - WebSite and Social Networks - Strategy
-              </Paragraph>
+              </Typography>
               <div className={styles.service_item_footer}>
                 <Button>
                   Read more

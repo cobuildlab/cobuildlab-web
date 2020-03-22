@@ -18,14 +18,18 @@
     }
     
     &:nth-child(1){
+      border-right: 1px solid $dark-slate;
       @media all and (max-width: 767.99px){
         border-bottom: 1px solid $dark-slate;
+        border-right: none;
       }
     }
 
     &:nth-child(2){
+      border-right: 1px solid $dark-slate;
       @media all and (max-width: 767.99px){
         border-bottom: 1px solid $dark-slate;
+        border-right: none;
       }
     }
    
@@ -44,11 +48,17 @@
   }
 
   &_icon_container{
-    padding-bottom: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    max-height: 72px;
   }
 
   &_item_footer{
     margin-top: 3em;
+  }
+
+  &_img {
+    height: 100%;
   }
 
 }
