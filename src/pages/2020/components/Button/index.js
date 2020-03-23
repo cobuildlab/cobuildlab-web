@@ -5,10 +5,11 @@ import { Link } from 'gatsby';
 import componse from '@2020/utils/StyleComponse';
 import styles from './css/index.module.scss';
 
-const Button = ({ children, to, onClick, className }) => {
+const Button = ({ children, to, onClick, className, ...rest }) => {
   if (to) {
     return (
       <BloomerButton
+        {...rest}
         render={(props) => (
           <Link {...props} to={to} className={componse(styles.button_primary, props.className)} />
         )}>
@@ -19,6 +20,7 @@ const Button = ({ children, to, onClick, className }) => {
 
   return (
     <BloomerButton
+      {...rest}
       onClick={onClick}
       className={className ? componse(styles.button_primary, className) : styles.button_primary}>
       {children}

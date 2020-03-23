@@ -1,79 +1,98 @@
 import React, { PureComponent } from 'react';
 import { navigate } from 'gatsby';
 import { ToastContainer, toast } from 'react-toastify';
-import {
-  Container,
-  Title,
-  Column,
-  Columns,
-  Content,
-  Field,
-  Label,
-  Control,
-  Input,
-  TextArea,
-} from 'bloomer';
-
+import { Container, Column, Columns, Field, Control, Input, TextArea } from 'bloomer';
+import Typography from '@2020/components/Typography';
+import Button from '@2020/components/Button';
+import styles from './css/index.module.scss';
 import img from '@2020/resources/home/coubuild-v.svg';
+
+const title = {
+  default: {
+    level: 4,
+    fontWeight: 'bold',
+  },
+  lg: {
+    level: 2,
+    fontWeight: 'bold',
+  },
+};
+
+const subTitle = {
+  default: {
+    level: 9,
+    fontWeight: 'lighter',
+  },
+};
+
+const description = {
+  title: {
+    default: {
+      level: 11,
+      fontWeight: 'bold',
+    },
+  },
+  subTitle: {
+    default: {
+      level: 13,
+      fontWeight: 'lighter',
+    },
+  },
+};
 
 export default class Contact extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      firstName: '',
-      lastName: '',
-      email: '',
-      phone: '',
-      comment: '',
-      isVerified: true,
+      data: {
+        name: '',
+        email: '',
+        phone: '',
+        message: '',
+        landingName: 'Cobuild Lab',
+      },
       isLoading: false,
-      landingName: 'Cobuild Lab',
     };
-
+    this.url = 'https://api.cobuild-lab.com/landing/contact';
     this.handleChange = this.handleChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
 
   handleChange(e) {
-    this.setState({
-      [e.target.name]: e.target.value,
-    });
+    const field = { [e.target.name]: e.target.value };
+    this.setState((state) => ({
+      data: {
+        ...state.data,
+        ...field,
+      },
+    }));
   }
 
   onSubmit(e) {
     e.preventDefault();
+    const {
+      data: { name, email, message, phone, landingName },
+    } = this.state;
 
-    if (this.state.firstName.length <= 0) {
+    if (!name.length) {
       toast.dismiss();
-
-      toast.error("First name can't be empty", {
-        position: 'bottom-right',
-      });
-      return;
-    }
-
-    if (this.state.lastName.length <= 0) {
-      toast.dismiss();
-
       toast.error("Last name can't be empty", {
         position: 'bottom-right',
       });
       return;
     }
 
-    if (this.state.email.length <= 0) {
+    if (!email.length) {
       toast.dismiss();
-
       toast.error("Email can't be empty", {
         position: 'bottom-right',
       });
       return;
     }
 
-    if (this.state.comment.length <= 0) {
+    if (!message.length) {
       toast.dismiss();
-
-      toast.error("Comment can't be empty", {
+      toast.error("Message can't be empty", {
         position: 'bottom-right',
       });
       return;
@@ -83,16 +102,11 @@ export default class Contact extends PureComponent {
       isLoading: true,
     });
 
-    const url = 'https://api.cobuild-lab.com/landing/contact';
-
-    const { firstName, lastName, email, phone, comment, landingName } = this.state;
-
     const data = {
-      firstName,
-      lastName,
+      name,
       email,
+      message,
       phone,
-      comment,
       landingName,
     };
 
@@ -105,7 +119,7 @@ export default class Contact extends PureComponent {
       },
     };
 
-    fetch(url, settings)
+    fetch(this.url, settings)
       .then((res) => res.json())
       .then((response) => {
         if (response.statusCode >= 400) {
@@ -131,92 +145,88 @@ export default class Contact extends PureComponent {
   }
 
   render() {
+    const { name, phone, email, message } = this.state;
+
     return (
       <Container>
         <ToastContainer />
         <Columns isCentered>
-          <Column className="p-f" isSize="1/2">
-            <img src={img} alt="contact form" style={{ width: '100%', height: '100%' }} />
-          </Column>
-          <Column className="p-f" isSize="1/2">
-            <Title isSize={2} className="title-section" hasTextAlign="left">
-              Write Us!
-            </Title>
-            <Content isSize="small">Your business takes off right now</Content>
-            <form onSubmit={(e) => this.onSubmit(e)}>
-              <Columns>
-                <Column isSize="1/2">
-                  <Field>
-                    <Label>First Name</Label>
-                    <Control>
-                      <Input
-                        type="text"
-                        name="firstName"
-                        placeholder="First Name"
-                        value={this.state.firstName}
-                        onChange={(e) => this.handleChange(e)}
-                      />
-                    </Control>
-                  </Field>
-                </Column>
-                <Column isSize="1/2">
-                  <Field>
-                    <Label>Last Name</Label>
-                    <Control>
-                      <Input
-                        type="text"
-                        name="lastName"
-                        placeholder="Last Name"
-                        value={this.state.lastName}
-                        onChange={(e) => this.handleChange(e)}
-                      />
-                    </Control>
-                  </Field>
-                </Column>
-              </Columns>
+          <Column className={styles.contact_column} isSize={{ mobile: 12, desktop: 6 }}>
+            <div className={styles.contact_title}>
+              <Typography tag="h6" size={title} hasTextAlign="left">
+                Write Us!
+              </Typography>
+              <Typography tag="span" size={subTitle} hasTextAlign="left">
+                Your business takes off right now
+              </Typography>
+            </div>
+            <form onSubmit={this.onSubmit}>
               <Field>
-                <Label>Email</Label>
                 <Control>
                   <Input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    value={this.state.email}
-                    onChange={(e) => this.handleChange(e)}
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    value={name}
+                    onChange={this.handleChange}
                   />
                 </Control>
               </Field>
               <Field>
-                <Label>Phone</Label>
                 <Control>
                   <Input
                     type="number"
                     name="phone"
                     placeholder="Phone number is optional"
-                    value={this.state.phone}
-                    onChange={(e) => this.handleChange(e)}
+                    value={phone}
+                    onChange={this.handleChange}
                   />
                 </Control>
               </Field>
               <Field>
-                <Label>Comment or Message</Label>
+                <Control>
+                  <Input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    value={email}
+                    onChange={this.handleChange}
+                  />
+                </Control>
+              </Field>
+              <Field>
                 <Control>
                   <TextArea
-                    name="comment"
-                    placeholder="Your message or comment goes here"
-                    value={this.state.comment}
-                    onChange={(e) => this.handleChange(e)}
+                    name="message"
+                    placeholder="Message"
+                    value={message}
+                    onChange={this.handleChange}
                   />
                 </Control>
               </Field>
               <Field isGrouped>
-                <Control>
-                  <button className="button is-primary is-medium is-rounded" type="submit">
-                    Submit
-                  </button>
-                </Control>
+                <Columns>
+                  <Column isSize={{ mobile: 12, desktop: 4 }}>
+                    <Control>
+                      <Button type="submit">Submit</Button>
+                    </Control>
+                  </Column>
+                  <Column isSize={{ mobile: 12, desktop: 6 }}>
+                    <Typography tag="p" size={description.title}>
+                      Where are we?
+                      <br />
+                      <Typography tag="span" size={description.subTitle}>
+                        66 West Flagler St, Suite 900, Miami, Florida 33130 +1 (786) 991-3467
+                        contact@cobuildlab.com
+                      </Typography>
+                    </Typography>
+                  </Column>
+                </Columns>
               </Field>
             </form>
+          </Column>
+          <Column className={styles.contact_column} isSize={{ mobile: 12, desktop: 6 }}>
+            <img src={img} alt="contact form" style={{ width: '100%', height: '100%' }} />
           </Column>
         </Columns>
       </Container>
