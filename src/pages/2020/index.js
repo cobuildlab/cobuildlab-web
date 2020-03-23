@@ -14,6 +14,7 @@ import HeroBodyContent from '@2020/components/Hero';
 import Service from '@2020/components/Service';
 import BusinessValue from '@2020/components/BusinessValue';
 import CustomerSuccessStories from '@2020/components/CustomerSuccessStories';
+import OurTeam from '@2020/components/OurTeam';
 
 export default class HomePage extends PureComponent {
   constructor(props) {
@@ -62,6 +63,9 @@ export default class HomePage extends PureComponent {
         <Section className="section-not-padding">
           <CustomerSuccessStories />
         </Section>
+        <Section className="section-not-padding">
+          <OurTeam />
+        </Section>
       </Layout>
     );
   }
@@ -79,37 +83,6 @@ export const pageQuery = graphql`
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 3
       filter: {fileAbsolutePath: {regex: "/(pages/blog)/.*\\.md$/"}}
-    ) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            tags
-            image {
-              publicURL
-              childImageSharp {
-                fluid(maxWidth: 480) {
-                  aspectRatio
-                  base64
-                  sizes
-                  src
-                  srcSet
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    customerSuccessStories:allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: 3
-      filter: {fileAbsolutePath: {regex: "/(pages/customer-success-stories)/.*\\.md$/"}}
     ) {
       edges {
         node {

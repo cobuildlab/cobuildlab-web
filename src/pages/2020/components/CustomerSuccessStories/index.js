@@ -23,7 +23,7 @@ const settings = {
   touchMove: false,
   centerMode: true,
   infinite: true,
-  autoplay: true,
+  autoplay: false, //TODO set this true when finish
   slidesToShow: 3,
   speed: 2500,
   variableWidth: true,
@@ -47,6 +47,7 @@ const CustomerSuccessStories = () => {
   const data = useStaticQuery(pageQuery);
 
   // dont remove inline styles or react slick is going to overwrite the css class
+  //TODO add redirect to customer view
 
   const items = data.customerSuccessStories.edges.map(({ node }) => (
     <div style={{ width: 300 }} key={node.fields.slug}>
@@ -80,7 +81,7 @@ const CustomerSuccessStories = () => {
   );
 };
 
-export const pageQuery = graphql`
+const pageQuery = graphql`
   query {
     customerSuccessStories: allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, filter: {fileAbsolutePath: {regex: "/(pages/customer-success-stories)/.*\\.md$/"}}) {
       edges {
