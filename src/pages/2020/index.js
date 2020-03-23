@@ -1,56 +1,47 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Helmet from 'react-helmet'
-import get from 'lodash/get'
-import { 
-  HeroHeader, 
-  HeroBody, 
-  Hero,
-  Section 
-} from 'bloomer';
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
+import React, { PureComponent } from 'react';
+import { graphql } from 'gatsby';
+import Helmet from 'react-helmet';
+import get from 'lodash/get';
+import { HeroHeader, HeroBody, Hero, Section } from 'bloomer';
 
-import 'react-toastify/dist/ReactToastify.min.css'
-import 'react-modal-video/scss/modal-video.scss'
-import 'bulma'
+import 'react-toastify/dist/ReactToastify.min.css';
+import 'react-modal-video/scss/modal-video.scss';
+import 'bulma';
 
-import Layout from '@2020/components/Layout'
+import Layout from '@2020/components/Layout';
 import Header from '@2020/components/Layout/Header';
 import HeroBodyContent from '@2020/components/Hero';
 import Service from '@2020/components/Service';
 import BusinessValue from '@2020/components/BusinessValue';
+import CustomerSuccessStories from '@2020/components/CustomerSuccessStories';
 
-
-export default class HomePage extends React.Component {
+export default class HomePage extends PureComponent {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       showVideoModal: false,
-    }
-    this.openModal = this.openModal.bind(this)
+    };
+    this.openModal = this.openModal.bind(this);
   }
 
   openModal() {
     this.setState({
       showVideoModal: true,
-    })
+    });
   }
 
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const siteDescription = get(
-      this,
-      'props.data.site.siteMetadata.description'
-    )
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
-    const customerSuccessStories = get(
-      this,
-      'props.data.customerSuccessStories.edges'
-    )
-    const siteKey = process.env.RECAPTCHA_SITEKEY
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title');
+    const siteDescription = get(this, 'props.data.site.siteMetadata.description');
+    const posts = get(this, 'props.data.allMarkdownRemark.edges');
+    const customerSuccessStories = get(this, 'props.data.customerSuccessStories.edges');
+    const siteKey = process.env.RECAPTCHA_SITEKEY;
 
     return (
       <Layout location={this.props.location}>
-         <Helmet
+        <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
@@ -69,8 +60,11 @@ export default class HomePage extends React.Component {
         <Section>
           <BusinessValue />
         </Section>
+        <Section>
+          <CustomerSuccessStories />
+        </Section>
       </Layout>
-    )
+    );
   }
 }
 
@@ -145,4 +139,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

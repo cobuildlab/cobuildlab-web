@@ -1,0 +1,11 @@
+
+.carousel {
+  & > div{
+    // overflow: visible !important;
+  }
+
+  & .slick-current .item{
+    transform: scale(1.2);
+  }
+  
+}

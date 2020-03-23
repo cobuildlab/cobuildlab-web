@@ -1,0 +1,7 @@
+.slick-current .item{
+  transform: scale(1.2);
+}
+
+.item{
+  transition: transform .3s ease-out;
+}
