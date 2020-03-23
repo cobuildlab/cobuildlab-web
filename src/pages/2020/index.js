@@ -15,6 +15,7 @@ import Service from '@2020/components/Service';
 import BusinessValue from '@2020/components/BusinessValue';
 import CustomerSuccessStories from '@2020/components/CustomerSuccessStories';
 import OurTeam from '@2020/components/OurTeam';
+import Contact from '@2020/components/Contact';
 
 export default class HomePage extends PureComponent {
   constructor(props) {
@@ -65,6 +66,9 @@ export default class HomePage extends PureComponent {
         </Section>
         <Section className="section-not-padding">
           <OurTeam />
+        </Section>
+        <Section>
+          <Contact />
         </Section>
       </Layout>
     );
