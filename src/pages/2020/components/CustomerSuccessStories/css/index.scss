@@ -1,7 +1,8 @@
-.slick-current .item{
+
+.slick-current .carousel-item{
   transform: scale(1.2);
 }
 
-.item{
+.carousel-item{
   transition: transform .3s ease-out;
 }

@@ -59,7 +59,7 @@ export default class HomePage extends PureComponent {
         <Section>
           <BusinessValue />
         </Section>
-        <Section>
+        <Section className="section-not-padding">
           <CustomerSuccessStories />
         </Section>
       </Layout>
