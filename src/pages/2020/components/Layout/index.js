@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 import Footer from './Footer';
 //TODO add this file to index.scss and import this here
 import '@2020/css/var.scss';
@@ -18,3 +18,7 @@ export default class Template extends React.Component {
     );
   }
 }
+
+Template.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+};

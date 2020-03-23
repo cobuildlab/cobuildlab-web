@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
 import React, { PureComponent } from 'react';
 import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
@@ -35,12 +33,13 @@ export default class HomePage extends PureComponent {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title');
     const siteDescription = get(this, 'props.data.site.siteMetadata.description');
-    const posts = get(this, 'props.data.allMarkdownRemark.edges');
-    const customerSuccessStories = get(this, 'props.data.customerSuccessStories.edges');
-    const siteKey = process.env.RECAPTCHA_SITEKEY;
+    //TODO move this request to Customer Succes Stories
+    // const posts = get(this, 'props.data.allMarkdownRemark.edges');
+    // const customerSuccessStories = get(this, 'props.data.customerSuccessStories.edges');
+    // const siteKey = process.env.RECAPTCHA_SITEKEY;
 
     return (
-      <Layout location={this.props.location}>
+      <Layout>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}

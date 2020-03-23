@@ -1,5 +1,6 @@
-import React, { Fragment, useState, useCallback } from 'react'
-import { Link } from 'gatsby'
+import React, { Fragment, useState, useCallback } from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
 import {
   Container,
   Navbar,
@@ -8,43 +9,51 @@ import {
   NavbarBurger,
   NavbarMenu,
   NavbarEnd,
-} from 'bloomer'
+} from 'bloomer';
 import Button from '@2020/components/Button';
 
-import logo from '@2020/resources/cobuildlab.png'
+import logo from '@2020/resources/cobuildlab.png';
 import facebook from '@2020/resources/icons/facebook.svg';
 import instagram from '@2020/resources/icons/instagram.svg';
 import youtube from '@2020/resources/icons/youtube.svg';
 
 import styles from './css/index.module.scss';
 
-
+//TODO add links
 const SocialIcon = ({ isHidden }) => (
   <Fragment>
     <NavbarItem isHidden={isHidden}>
-      <a>
-        <img  className={styles.nav_icon} src={facebook} atl="facebook" />
+      <a href="www.facebook.com">
+        <img className={styles.nav_icon} src={facebook} alt="facebook" />
       </a>
     </NavbarItem>
     <NavbarItem isHidden={isHidden}>
-      <a>
-        <img className={styles.nav_icon} src={instagram} atl="facebook" />
+      <a href="www.facebook.com">
+        <img className={styles.nav_icon} src={instagram} alt="facebook" />
       </a>
     </NavbarItem>
     <NavbarItem isHidden={isHidden}>
-      <a>
-        <img className={styles.nav_icon} src={youtube} atl="facebook" />
+      <a href="www.facebook.com">
+        <img className={styles.nav_icon} src={youtube} alt="facebook" />
       </a>
     </NavbarItem>
   </Fragment>
 );
 
-export default () => {
+SocialIcon.defaultProps = {
+  isHidden: '',
+};
+
+SocialIcon.propTypes = {
+  isHidden: PropTypes.string,
+};
+
+const Header = () => {
   const [isActive, setAtvice] = useState(false);
 
   const handleActive = useCallback(() => {
-    setAtvice(state => !state);
-  }, [])
+    setAtvice((state) => !state);
+  }, []);
 
   return (
     <div className={styles.nav_divider}>
@@ -53,56 +62,49 @@ export default () => {
           <NavbarBrand>
             <NavbarItem>
               <Link className={styles.nav_brand} to="/">
-              <img  className={styles.nav_brand_img} src={logo} />
+                <img className={styles.nav_brand_img} src={logo} alt="logo" />
               </Link>
             </NavbarItem>
             <SocialIcon isHidden="desktop" />
-            <NavbarBurger
-              isActive={isActive}
-              onClick={handleActive}
-            />
+            <NavbarBurger isActive={isActive} onClick={handleActive} />
           </NavbarBrand>
-          <NavbarMenu
-            isActive={isActive}
-            onClick={handleActive}
-          >
-          <NavbarEnd>
-            <NavbarItem>
-              <div className={styles.nav_item}>
-                <Link to="/services" className={styles.nav_link} >
-                  Services
-                </Link>
-              </div>
-            </NavbarItem>
-            <NavbarItem>
-              <div className={styles.nav_item}>
-                <Link to="/customer-success-stories" className={styles.nav_link} >
-                  Customer Success Stories
-                </Link>
-              </div>
-            </NavbarItem>
-            <NavbarItem>
-              <div className={styles.nav_item}>
-                <Link to="/blog" className={styles.nav_link} >
-                  Blog
-                </Link>
-              </div>
-            </NavbarItem>
-            <NavbarItem>
-              <div className={styles.nav_item}>
-                <Button to="/#contact" className={styles.nav_link_spacing}>
-                  Contact Us
-                </Button>
-              </div>
-            </NavbarItem>
-            <SocialIcon isHidden="mobile" />
-          </NavbarEnd>
+          <NavbarMenu isActive={isActive} onClick={handleActive}>
+            <NavbarEnd>
+              <NavbarItem>
+                <div className={styles.nav_item}>
+                  <Link to="/services" className={styles.nav_link}>
+                    Services
+                  </Link>
+                </div>
+              </NavbarItem>
+              <NavbarItem>
+                <div className={styles.nav_item}>
+                  <Link to="/customer-success-stories" className={styles.nav_link}>
+                    Customer Success Stories
+                  </Link>
+                </div>
+              </NavbarItem>
+              <NavbarItem>
+                <div className={styles.nav_item}>
+                  <Link to="/blog" className={styles.nav_link}>
+                    Blog
+                  </Link>
+                </div>
+              </NavbarItem>
+              <NavbarItem>
+                <div className={styles.nav_item}>
+                  <Button to="/#contact" className={styles.nav_link_spacing}>
+                    Contact Us
+                  </Button>
+                </div>
+              </NavbarItem>
+              <SocialIcon isHidden="mobile" />
+            </NavbarEnd>
           </NavbarMenu>
         </Navbar>
       </Container>
     </div>
   );
-}
+};
 
-
-// <Link to="/#contact" className={componse(styles.nav_link, styles.nav_link_primary)}>  </Link>
+export default Header;
