@@ -7,6 +7,10 @@ body{
 
 .section{
 
+  &-bg-white{
+    background-color: $white;
+  }
+
   &-not-padding{
     padding: 4.5rem 0 !important;
   }

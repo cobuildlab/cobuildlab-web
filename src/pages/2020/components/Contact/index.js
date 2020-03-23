@@ -145,7 +145,10 @@ export default class Contact extends PureComponent {
   }
 
   render() {
-    const { name, phone, email, message } = this.state;
+    const {
+      data: { name, phone, email, message },
+      isLoading,
+    } = this.state;
 
     return (
       <Container>
@@ -208,7 +211,9 @@ export default class Contact extends PureComponent {
                 <Columns>
                   <Column isSize={{ mobile: 12, desktop: 4 }}>
                     <Control>
-                      <Button type="submit">Submit</Button>
+                      <Button isLoading={isLoading} type="submit">
+                        Submit
+                      </Button>
                     </Control>
                   </Column>
                   <Column isSize={{ mobile: 12, desktop: 6 }}>

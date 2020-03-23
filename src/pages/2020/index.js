@@ -16,6 +16,7 @@ import BusinessValue from '@2020/components/BusinessValue';
 import CustomerSuccessStories from '@2020/components/CustomerSuccessStories';
 import OurTeam from '@2020/components/OurTeam';
 import Contact from '@2020/components/Contact';
+import Newsletter from '@2020/components/Newsletter';
 
 export default class HomePage extends PureComponent {
   constructor(props) {
@@ -69,6 +70,9 @@ export default class HomePage extends PureComponent {
         </Section>
         <Section>
           <Contact />
+        </Section>
+        <Section className="section-bg-white">
+          <Newsletter />
         </Section>
       </Layout>
     );
