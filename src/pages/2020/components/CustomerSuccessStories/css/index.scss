@@ -1,8 +1,16 @@
+@import '@2020/css/var.scss';
+
 
 .slick-current .carousel-item{
   transform: scale(1.2);
+  box-shadow: none;
 }
 
 .carousel-item{
   transition: transform .3s ease-out;
+  width: 100%;
+  height: 80%;
+  margin: auto;
+  /*add this shadow to vars file*/
+  box-shadow: 0px 15px 30px #00000040;
 }
