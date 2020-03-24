@@ -11,6 +11,7 @@ import {
   NavbarEnd,
 } from 'bloomer';
 import Button from '../Button';
+import Image from '../Image';
 
 import logo from '../../../resources/cobuildlab.png';
 import facebook from '../../../resources/icons/facebook.svg';
@@ -23,18 +24,18 @@ import styles from './css/index.module.scss';
 const SocialIcon = ({ isHidden }) => (
   <Fragment>
     <NavbarItem isHidden={isHidden}>
-      <a href="www.facebook.com">
-        <img className={styles.nav_icon} src={facebook} alt="facebook" />
+      <a href="www.facebook.com" className={styles.nav_icon}>
+        <Image src={facebook} alt="facebook-icon" />
       </a>
     </NavbarItem>
     <NavbarItem isHidden={isHidden}>
-      <a href="www.facebook.com">
-        <img className={styles.nav_icon} src={instagram} alt="facebook" />
+      <a href="www.facebook.com" className={styles.nav_icon}>
+        <Image src={instagram} alt="instagram-icon" />
       </a>
     </NavbarItem>
     <NavbarItem isHidden={isHidden}>
-      <a href="www.facebook.com">
-        <img className={styles.nav_icon} src={youtube} alt="facebook" />
+      <a href="www.facebook.com" className={styles.nav_icon}>
+        <Image  src={youtube} alt="youtube-icon" />
       </a>
     </NavbarItem>
   </Fragment>
@@ -62,7 +63,7 @@ const Header = () => {
           <NavbarBrand>
             <NavbarItem>
               <Link className={styles.nav_brand} to="/">
-                <img className={styles.nav_brand_img} src={logo} alt="logo" />
+                <Image className={styles.nav_brand_img} src={logo} alt="logo" />
               </Link>
             </NavbarItem>
             <SocialIcon isHidden="desktop" />

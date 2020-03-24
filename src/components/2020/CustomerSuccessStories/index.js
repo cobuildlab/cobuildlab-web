@@ -1,7 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import { Container } from 'bloomer';
 import Slider from 'react-slick';
+import Image from '../Image';
 import Typography from '../Typography';
 import './css/index.scss';
 import 'slick-carousel/slick/slick.scss';
@@ -43,31 +45,41 @@ const settings = {
   ],
 };
 
-
 //TODO add redirect to customer view
+// DONT REMOVE inline styles or react slick is going to overwrite the css class
+const CarouselItem = ({ src, alt, slug }) => (
+  <div style={{ width: 300 }}>
+    <div
+      style={{
+        width: '100%',
+        height: 385,
+        display: 'flex',
+        alignItems: 'center',
+      }}>
+      <div className="carousel-item">
+        <Image src={src}  alt={alt} />
+      </div>
+    </div>
+  </div>
+);
+
+CarouselItem.propTypes = {
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  slug: PropTypes.string.isRequired
+};
+
+
 const CustomerSuccessStories = () => {
   const data = useStaticQuery(pageQuery);
 
-
-  // DONT REMOVE inline styles or react slick is going to overwrite the css class
   const items = data.customerSuccessStories.edges.map(({ node }) => (
-    <div style={{ width: 300 }} key={node.fields.slug}>
-      <div
-        style={{
-          width: '100%',
-          height: 385,
-          display: 'flex',
-          alignItems: 'center',
-        }}>
-        <div className="carousel-item">
-          <img
-            src={node?.frontmatter?.image?.publicURL}
-            alt={node?.frontmatter?.title}
-            style={{ width: '100%', height: '100%' }}
-          />
-        </div>
-      </div>
-    </div>
+    <CarouselItem 
+      key={node.fields.slug}
+      slug="add the slug here"
+      src={node?.frontmatter?.image?.publicURL}  
+      alt={node?.frontmatter?.title} 
+    />
   ));
 
   return (

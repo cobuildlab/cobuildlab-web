@@ -22,11 +22,18 @@ const Typography = ({ children, size, hasTextAlign, className, tag }) => {
     }
   });
 
+  const result = componse(
+    styles.font, 
+    classNameSelect, 
+    className, 
+    fontWeightSelect
+  );
+
   return (
     <Title
       tag={tag}
       hasTextAlign={hasTextAlign}
-      className={componse(styles.font, classNameSelect, className, fontWeightSelect)}>
+      className={result}>
       {children}
     </Title>
   );
@@ -39,7 +46,7 @@ Typography.defaultProps = {
       fontWeight: 'bold',
     },
   },
-  tag: 'h1',
+  tag: 'span',
   className: '',
   hasTextAlign: '',
 };

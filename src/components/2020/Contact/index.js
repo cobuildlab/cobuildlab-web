@@ -4,6 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import { Container, Column, Columns, Field, Control, Input, TextArea } from 'bloomer';
 import Typography from '../Typography';
 import Button from '../Button';
+import Image from '../Image';
 import styles from './css/index.module.scss';
 import img from '../../../resources/2020/home/coubuild-v.svg';
 
@@ -39,6 +40,28 @@ const description = {
     },
   },
 };
+
+const Title = () => (
+  <div className={styles.contact_title}>
+    <Typography tag="h6" size={title} hasTextAlign="left">
+    Write Us!
+    </Typography>
+    <Typography tag="span" size={subTitle} hasTextAlign="left">
+    Your business takes off right now
+    </Typography>
+  </div>
+);
+
+const Description = () => (
+  <Typography tag="p" size={description.title}>
+    Where are we?
+    <br />
+    <Typography tag="span" size={description.subTitle}>
+    66 West Flagler St, Suite 900, Miami, Florida 33130 +1 (786) 991-3467
+    contact@cobuildlab.com
+    </Typography>
+  </Typography>
+);
 
 export default class Contact extends PureComponent {
   constructor(props) {
@@ -155,14 +178,7 @@ export default class Contact extends PureComponent {
         <ToastContainer />
         <Columns isCentered>
           <Column className={styles.contact_column} isSize={{ mobile: 12, desktop: 6 }}>
-            <div className={styles.contact_title}>
-              <Typography tag="h6" size={title} hasTextAlign="left">
-                Write Us!
-              </Typography>
-              <Typography tag="span" size={subTitle} hasTextAlign="left">
-                Your business takes off right now
-              </Typography>
-            </div>
+            <Title />
             <form onSubmit={this.onSubmit}>
               <Field>
                 <Control>
@@ -217,21 +233,14 @@ export default class Contact extends PureComponent {
                     </Control>
                   </Column>
                   <Column isSize={{ mobile: 12, desktop: 6 }}>
-                    <Typography tag="p" size={description.title}>
-                      Where are we?
-                      <br />
-                      <Typography tag="span" size={description.subTitle}>
-                        66 West Flagler St, Suite 900, Miami, Florida 33130 +1 (786) 991-3467
-                        contact@cobuildlab.com
-                      </Typography>
-                    </Typography>
+                    <Description />
                   </Column>
                 </Columns>
               </Field>
             </form>
           </Column>
           <Column className={styles.contact_column} isSize={{ mobile: 12, desktop: 6 }}>
-            <img src={img} alt="contact form" style={{ width: '100%', height: '100%' }} />
+            <Image src={img} alt="contact form" />
           </Column>
         </Columns>
       </Container>

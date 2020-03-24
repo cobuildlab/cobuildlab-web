@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Column, Columns } from 'bloomer';
 import Typography from '../Typography';
 import Button from '../Button';
+import Image from '../Image';
 import comic from '../../../resources/2020/home/cobuildlab-home.svg';
 import styles from './css/index.module.scss';
 
@@ -38,35 +39,51 @@ const title3 = {
   },
 };
 
+const TopTitle = () => (
+  <Typography tag="h2" size={title1} className={styles.hero_text}>
+    Software Development Company
+  </Typography>
+);
+
+const MainTitle = () => (
+  <Typography tag="h1" size={title2} className={styles.hero_text}>
+    Let’s <span className={styles.hero_orange_text}>Build</span> a <br />
+    Great<span className={styles.hero_orange_text}> Idea.</span>
+  </Typography>
+);
+
+const SubTitle = () => (
+  <Typography tag="p" size={title3} className={styles.hero_text}>
+    We partner with new and early-stage entrepreneurs and industry experts to transforms
+    ideas into{' '}
+    <span className={styles.hero_orange_text}>Web and Mobile Software Products.</span>
+    <br />
+    <br />
+    Since day one, our technique is focused on early results and transparent
+    communication.
+  </Typography>
+);
+
+const ReadMore = () => (
+  <div className={styles.hero_read_more}>
+    <Button>Read More</Button>
+  </div>
+);
+
 const HeroSection = () => (
   <Container>
     <div className={styles.hero_body}>
       <Columns isCentered>
         <Column isSize={{ mobile: 12, desktop: 6 }}>
           <div className={styles.hero_body_left}>
-            <Typography tag="h2" size={title1} className={styles.hero_text}>
-              Software Development Company
-            </Typography>
-            <Typography tag="h1" size={title2} className={styles.hero_text}>
-              Let’s <span className={styles.hero_orange_text}>Build</span> a <br />
-              Great<span className={styles.hero_orange_text}> Idea.</span>
-            </Typography>
-            <Typography tag="p" size={title3} className={styles.hero_text}>
-              We partner with new and early-stage entrepreneurs and industry experts to transforms
-              ideas into{' '}
-              <span className={styles.hero_orange_text}>Web and Mobile Software Products.</span>
-              <br />
-              <br />
-              Since day one, our technique is focused on early results and transparent
-              communication.
-            </Typography>
-            <div className={styles.hero_read_more}>
-              <Button>Read More</Button>
-            </div>
+            <TopTitle />
+            <MainTitle />
+            <SubTitle />
+            <ReadMore />
           </div>
         </Column>
         <Column isSize={{ mobile: 12, desktop: 6 }}>
-          <img alt="main comic" src={comic} style={{ width: '100%', height: 'auto' }} />
+          <Image alt="main comic" src={comic} />
         </Column>
       </Columns>
     </div>

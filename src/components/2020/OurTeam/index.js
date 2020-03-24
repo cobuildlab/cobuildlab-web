@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Columns, Column } from 'bloomer';
 import Button from '../Button';
 import Typography from '../Typography';
+import Image from '../Image';
 import styles from './css/index.module.scss';
 
 import img1 from '../../../resources/2020/home/team1.png';
@@ -30,12 +31,12 @@ const OurTeam = () => (
       <Columns>
         <Column className={styles.columns_not_padding} isSize={{ mobile: 12, desktop: 6 }}>
           <div>
-            <img src={img2} alt="out team" />
+            <Image src={img2} alt="out team" />
           </div>
         </Column>
         <Column className={styles.columns_not_padding} isSize={{ mobile: 12, desktop: 6 }}>
           <div>
-            <img src={img1} alt="out team" />
+            <Image src={img1} alt="out team" />
           </div>
         </Column>
       </Columns>
