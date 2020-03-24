@@ -69,7 +69,7 @@ const Footer = () => {
       key={node?.fields?.slug}
       slug={node?.fields?.slug}
       src={node?.frontmatter?.image?.publicURL}
-      alt={node?.frontmatter?.tag}
+      alt={node?.frontmatter?.date}
       title={node?.frontmatter?.title}
       date={node?.frontmatter?.date}
     />
