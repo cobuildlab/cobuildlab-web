@@ -1,0 +1,147 @@
+@import "../../../../assets/scss/variable";
+
+/* contact section css start */
+.contact-wrapper {
+  .contact-content-block {
+    &.main-title-wrapper {
+      text-align: left;
+      margin: 0;
+    }
+    .contact-title {
+      color: $color-black;
+      font-weight: 700;
+      font-size: calc(22px + (36 - 22) * ((100vw - 320px) / (1920 - 320)));
+      margin-bottom: 13px;
+      text-transform: capitalize;
+    }
+    .contact-dec {
+      font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+      font-weight: 400;
+      position: relative;
+      margin-bottom: calc(12px + (20 - 12) * ((100vw - 320px) / (1920 - 320)));
+    }
+    .form {
+      .form-label {
+        color: $color-black;
+        font-weight: 400;
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+      }
+      .form-group {
+        margin-bottom: calc(15px + (30 - 15) * ((100vw - 320px) / (1920 - 320)));
+        .form-control {
+          border: 1px solid #cccccc;
+          border-radius: 5px;
+          padding: 0 15px;
+          height: calc(38px + (50 - 38) * ((100vw - 320px) / (1920 - 320)));
+          font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+          color: #9c9c9c;
+          &::placeholder {
+            color: #9c9c9c;
+          }
+          &:focus {
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+          }
+        }
+        .textbox.form-control {
+          line-height: normal;
+          padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
+          height: calc(80px + (160 - 80) * ((100vw - 320px) / (1920 - 320)));
+        }
+      }
+    }
+  }
+  .contact-animation-images {
+    span {
+      display: block;
+      position: absolute;
+      filter: opacity(0);
+    }
+    .image1 {
+      left: 3%;
+      animation: animationFramesOne 15s infinite linear;
+    }
+    .image2 {
+      bottom: 10%;
+      left: 3%;
+      animation: animationFramesTwo 13s infinite linear;
+    }
+    .image3 {
+      left: 35.5%;
+      top: 25%;
+      animation: animationFramesOne 15s infinite linear;
+    }
+    .image4 {
+      right: 13%;
+      top: 5%;
+      animation: animationFramesTwo 14s infinite linear;
+    }
+    .image5 {
+      right: 12%;
+      bottom: 24%;
+      animation: animationFramesOne 12s infinite linear;
+    }
+    @keyframes animationFramesOne {
+      0% {
+        -webkit-transform: translate(0px, 0px) rotate(0deg);
+        transform: translate(0px, 0px) rotate(0deg);
+      }
+      20% {
+        -webkit-transform: translate(73px, -1px) rotate(36deg);
+        transform: translate(73px, -1px) rotate(36deg);
+      }
+      40% {
+        -webkit-transform: translate(141px, 72px) rotate(72deg);
+        transform: translate(141px, 72px) rotate(72deg);
+      }
+      60% {
+        -webkit-transform: translate(83px, 122px) rotate(108deg);
+        transform: translate(83px, 122px) rotate(108deg);
+      }
+      80% {
+        -webkit-transform: translate(-40px, 72px) rotate(144deg);
+        transform: translate(-40px, 72px) rotate(144deg);
+      }
+      100% {
+        -webkit-transform: translate(0px, 0px) rotate(0deg);
+        transform: translate(0px, 0px) rotate(0deg);
+      }
+    }
+    @keyframes animationFramesTwo {
+      0% {
+        -webkit-transform: translate(0px, 0px) rotate(0deg) scale(1);
+        transform: translate(0px, 0px) rotate(0deg) scale(1);
+      }
+      20% {
+        -webkit-transform: translate(200px, -1px) rotate(36deg) scale(0.7);
+        transform: translate(200px, -1px) rotate(36deg) scale(0.7);
+      }
+      40% {
+        -webkit-transform: translate(251px, 140px) rotate(72deg) scale(0.6);
+        transform: translate(251px, 140px) rotate(72deg) scale(0.6);
+      }
+      60% {
+        -webkit-transform: translate(141px, 250px) rotate(108deg) scale(0.7);
+        transform: translate(141px, 250px) rotate(108deg) scale(0.7);
+      }
+      80% {
+        -webkit-transform: translate(-40px, 100px) rotate(144deg) scale(0.8);
+        transform: translate(-40px, 100px) rotate(144deg) scale(0.8);
+      }
+      100% {
+        -webkit-transform: translate(0px, 0px) rotate(0deg) scale(1);
+        transform: translate(0px, 0px) rotate(0deg) scale(1);
+      }
+    }
+  }
+}
+.valid-feedback {
+  font-size: 14px;
+}
+/* responsive css */
+@media (max-width: 767px) {
+  .contact-image {
+    display: none;
+  }
+}
+
+/* contact section css end */

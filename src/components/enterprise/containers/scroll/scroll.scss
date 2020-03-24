@@ -1,0 +1,51 @@
+@import "../../../../assets/scss/variable";
+
+/* bottom-to-top button css start */
+
+#bottom-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  cursor: pointer;
+  border: 0;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+  z-index: 50;
+  &.show {
+    opacity: 1;
+  }
+  .scroll-icon-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 5px;
+    line-height: 44px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      color: $color-white;
+      font-size: 23px;
+    }
+  }
+}
+
+/* responsive css */
+
+@media (max-width: 991px) {
+  #bottom-to-top {
+    bottom: 35px;
+    right: 25px;
+    .scroll-icon-link {
+      width: 40px;
+      height: 40px;
+      line-height: 44px;
+      svg {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+/* bottom-to-top button css end */

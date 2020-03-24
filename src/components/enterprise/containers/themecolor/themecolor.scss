@@ -1,0 +1,207 @@
+@import "../../../../assets/scss/variable";
+
+/* #themecontrol css start */
+
+#themecontrol {
+  background: none repeat scroll 0 0 $color-white;
+  box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
+  left: -250px;
+  position: fixed;
+  top: 37%;
+  width: 250px;
+  z-index: 20;
+  border: 1px solid #eeeeee;
+  direction: ltr;
+  text-align: left;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  &.open {
+    left: 0;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+  .title {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px;
+    border-bottom: 2px solid #eeeeee;
+    margin: 0;
+  }
+  .bottom {
+    color: #161c2d;
+    padding: 0;
+    background: none repeat scroll 0 0 $color-white;
+    box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eeeeee;
+    position: absolute;
+    right: -52px;
+    top: -1px;
+    width: 51px;
+    cursor: pointer;
+    height: 51px;
+    line-height: 51px;
+    .settings {
+      svg {
+        width: 24px;
+        text-align: center;
+        color: #111111;
+        background-color: $color-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  ul {
+    &.pattern {
+      overflow: hidden;
+      margin: 0;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 5px;
+        span {
+          cursor: pointer;
+          display: block;
+          height: 27px;
+          width: 27px;
+          border-radius: 100%;
+        }
+        .color1 {
+          background: $color1;
+        }
+        .color2 {
+          background: $color2;
+        }
+        .color3 {
+          background: $color3;
+        }
+        .color4 {
+          background: $color4;
+        }
+        .color5 {
+          background: $color5;
+        }
+        .color6 {
+          background: $color6;
+        }
+      }
+    }
+  }
+}
+
+/* responsive css*/
+
+@media (max-width: 991px) {
+  #themecontrol {
+    .title {
+      font-size: 15px;
+      padding: 11px;
+    }
+    .bottom {
+      right: -41px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      .settings {
+        svg {
+          width: 18px;
+        }
+      }
+    }
+  }
+}
+.theme-rtl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  direction: ltr;
+  border-top: 2px solid #eeeeee;
+  .rtl-title {
+    margin: 0;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 55px;
+    height: 30px;
+    margin: 0;
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+  }
+  #slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #bbb;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: 0.4s;
+    border-radius: 50px;
+    &:before {
+      position: absolute;
+      content: "";
+      height: 22px;
+      width: 22px;
+      left: 4px;
+      bottom: 4px;
+      border-radius: 50px;
+      background-color: $color-white;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: 0.4s;
+    }
+  }
+  input {
+    &:checked {
+      + {
+        #slider {
+          &:before {
+            -webkit-transform: translateX(25px);
+            -ms-transform: translateX(25px);
+            transform: translateX(25px);
+          }
+        }
+      }
+    }
+    &:focus {
+      + {
+        #slider {
+          box-shadow: 0 0 1px #373737;
+        }
+      }
+    }
+  }
+}
+/* responsive css*/
+
+@media (max-width: 991px) {
+  .theme-rtl {
+    .rtl-title {
+      font-size: 15px;
+    }
+  }
+}
+/* #themecontrol css end */
