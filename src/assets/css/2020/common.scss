@@ -1,0 +1,33 @@
+@import './var.scss';
+
+
+body{
+  background-color: $background-color;
+}
+
+.section{
+
+  &-bg-white{
+    background-color: $white;
+  }
+
+  &-not-padding{
+    padding: 4.5rem 0 !important;
+  }
+
+  &-title{
+    margin-bottom: 105px;
+  }
+}
+
+.container{
+  &-not-margin{
+    margin: 0 !important;
+  }
+}
+
+
+
+.text-color-orange{
+  color: $orange;
+}
