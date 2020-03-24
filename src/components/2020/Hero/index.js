@@ -7,6 +7,7 @@ import { play } from 'react-icons-kit/fa/play';
 import Typography from '../Typography';
 import Button from '../Button';
 import Image from '../Image';
+import background from '../../../resources/2020/home/background.svg';
 import comic from '../../../resources/2020/home/cobuildlab-home.svg';
 import styles from './css/index.module.scss';
 
@@ -43,28 +44,35 @@ const title3 = {
   },
 };
 
-const TopTitle = () => (
+const TopTitle = ({ children }) => (
   <Typography tag="h2" size={title1} className={styles.hero_text}>
-    Software Development Company
+    {children}
   </Typography>
 );
 
-const MainTitle = () => (
+TopTitle.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+};
+
+const MainTitle = ({ children }) => (
   <Typography tag="h1" size={title2} className={styles.hero_text}>
-    Let’s <span className={styles.hero_orange_text}>Build</span> a <br />
-    Great<span className={styles.hero_orange_text}> Idea.</span>
+    {children}
   </Typography>
 );
 
-const SubTitle = () => (
+MainTitle.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+};
+
+const SubTitle = ({ children }) => (
   <Typography tag="p" size={title3} className={styles.hero_text}>
-    We partner with new and early-stage entrepreneurs and industry experts to transforms ideas into{' '}
-    <span className={styles.hero_orange_text}>Web and Mobile Software Products.</span>
-    <br />
-    <br />
-    Since day one, our technique is focused on early results and transparent communication.
+    {children}
   </Typography>
 );
+
+SubTitle.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+};
 
 const PlayIcon = ({ onClick }) => (
   <div onClick={onClick} className={styles.hero_icon_video_container}>
@@ -105,15 +113,33 @@ const ReadMore = () => (
   </div>
 );
 
+const OverlayBackground = () => (
+  <div className={styles.overlay_background}>
+    <img src={background} alt="b" />
+  </div>
+);
+
 const HeroSection = () => (
-  <Container>
-    <div className={styles.hero_body}>
+  <div className={styles.hero_body}>
+    <OverlayBackground />
+    <Container>
       <Columns isCentered>
         <Column isSize={{ mobile: 12, desktop: 6 }}>
           <div className={styles.hero_body_left}>
-            <TopTitle />
-            <MainTitle />
-            <SubTitle />
+            <TopTitle>Software Development Company</TopTitle>
+            <MainTitle>
+              Let’s <span className={styles.hero_orange_text}>Build</span> a <br />
+              Great<span className={styles.hero_orange_text}> Idea.</span>
+            </MainTitle>
+            <SubTitle>
+              We partner with new and early-stage entrepreneurs and industry experts to transforms
+              ideas into{' '}
+              <span className={styles.hero_orange_text}>Web and Mobile Software Products.</span>
+              <br />
+              <br />
+              Since day one, our technique is focused on early results and transparent
+              communication.
+            </SubTitle>
             <ReadMore />
           </div>
         </Column>
@@ -121,8 +147,8 @@ const HeroSection = () => (
           <ImagesContainer />
         </Column>
       </Columns>
-    </div>
-  </Container>
+    </Container>
+  </div>
 );
 
 export default HeroSection;

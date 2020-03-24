@@ -5,6 +5,7 @@ import { Container } from 'bloomer';
 import Slider from 'react-slick';
 import Image from '../Image';
 import Typography from '../Typography';
+import background from '../../../resources/2020/home/background.svg';
 import './css/index.scss';
 import 'slick-carousel/slick/slick.scss';
 import 'slick-carousel/slick/slick-theme.scss';
@@ -45,6 +46,12 @@ const settings = {
   ],
 };
 
+const OverlayBackground = () => (
+  <div className="overlay_background">
+    <img src={background} alt="b" />
+  </div>
+);
+
 //TODO add redirect to customer view
 // DONT REMOVE inline styles or react slick is going to overwrite the css class
 const CarouselItem = ({ src, alt, slug }) => (
@@ -57,7 +64,7 @@ const CarouselItem = ({ src, alt, slug }) => (
         alignItems: 'center',
       }}>
       <div className="carousel-item">
-        <Image src={src}  alt={alt} />
+        <Image src={src} alt={alt} />
       </div>
     </div>
   </div>
@@ -66,31 +73,33 @@ const CarouselItem = ({ src, alt, slug }) => (
 CarouselItem.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
-  slug: PropTypes.string.isRequired
+  slug: PropTypes.string.isRequired,
 };
-
 
 const CustomerSuccessStories = () => {
   const data = useStaticQuery(pageQuery);
 
   const items = data.customerSuccessStories.edges.map(({ node }) => (
-    <CarouselItem 
+    <CarouselItem
       key={node.fields.slug}
       slug="add the slug here"
-      src={node?.frontmatter?.image?.publicURL}  
-      alt={node?.frontmatter?.title} 
+      src={node?.frontmatter?.image?.publicURL}
+      alt={node?.frontmatter?.title}
     />
   ));
 
   return (
-    <Container isFluid className="container-not-margin">
-      <div className="section-title">
-        <Typography tag="h2" size={title} hasTextAlign="centered">
-          Customer Success Stories
-        </Typography>
-      </div>
-      <Slider {...settings}>{items}</Slider>
-    </Container>
+    <div className="position-relative">
+      <OverlayBackground />
+      <Container isFluid className="container-not-margin">
+        <div className="section-title">
+          <Typography tag="h2" size={title} hasTextAlign="centered">
+            Customer Success Stories
+          </Typography>
+        </div>
+        <Slider {...settings}>{items}</Slider>
+      </Container>
+    </div>
   );
 };
 
