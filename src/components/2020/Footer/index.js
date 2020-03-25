@@ -5,7 +5,7 @@ import { Container, Columns, Column } from 'bloomer';
 import Typography from '../Typography';
 import Image from '../Image';
 import styles from './css/index.module.scss';
-// import icon from '../../../resources/2020/home/icon-footer.png';
+import icon from '../../../resources/2020/home/icon-footer.png';
 
 const title = {
   default: {
@@ -80,7 +80,7 @@ const Footer = () => {
     <Container>
       <Columns>
         <Column isSize={{ mobile: 12, desktop: 1 }}>
-          <Image src="" alt="footer icon" />
+          <Image src={icon} alt="footer icon" className={styles.icon_footer} />
         </Column>
         <Column isSize={{ mobile: 12, desktop: 2 }}>
           <Title>Services</Title>
