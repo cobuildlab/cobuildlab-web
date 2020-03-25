@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import { Container } from 'bloomer';
 import Slider from 'react-slick';
 import Image from '../Image';
@@ -12,7 +12,7 @@ import 'slick-carousel/slick/slick-theme.scss';
 
 const title = {
   default: {
-    level: 4,
+    level: 7,
     fontWeight: 'bold',
   },
   lg: {
@@ -26,10 +26,11 @@ const settings = {
   touchMove: false,
   centerMode: true,
   infinite: true,
-  autoplay: false, //TODO set this true when finish
+  autoplay: true, //TODO set this true when finish
   slidesToShow: 3,
   speed: 2500,
   variableWidth: true,
+  arrows: false,
   responsive: [
     {
       breakpoint: 480,
@@ -63,8 +64,10 @@ const CarouselItem = ({ src, alt, slug }) => (
         display: 'flex',
         alignItems: 'center',
       }}>
-      <div className="carousel-item">
-        <Image src={src} alt={alt} />
+      <div className="customer-carousel-item">
+        <Link to={slug}>
+          <Image src={src} alt={alt} />
+        </Link>
       </div>
     </div>
   </div>
@@ -82,7 +85,7 @@ const CustomerSuccessStories = () => {
   const items = data.customerSuccessStories.edges.map(({ node }) => (
     <CarouselItem
       key={node.fields.slug}
-      slug="add the slug here"
+      slug={node.fields.slug}
       src={node?.frontmatter?.image?.publicURL}
       alt={node?.frontmatter?.title}
     />
@@ -91,7 +94,7 @@ const CustomerSuccessStories = () => {
   return (
     <div className="position-relative">
       <OverlayBackground />
-      <Container isFluid className="container-not-margin">
+      <Container isFluid className="container-full-width">
         <div className="section-title">
           <Typography tag="h2" size={title} hasTextAlign="centered">
             Customer Success Stories

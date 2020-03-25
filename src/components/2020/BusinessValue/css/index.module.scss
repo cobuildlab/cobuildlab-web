@@ -46,16 +46,20 @@
     margin-bottom: 2.5em;
   }
 
-  &_icon_list{
-    display: flex;
-    align-items: center;
-  }
   &_icon_item{
     &_right{
       margin-right: 3.5em;
+      margin-top: 1em;
+      @media all and (max-width: 767.99px){
+        margin-right: 1.5em;
+      }
     }
     &_left{
       margin-left: 3.5em;
+      margin-top: 1em;
+      @media all and (max-width: 767.99px){
+        margin-left: 1.5em;
+      }
     }
   }
 

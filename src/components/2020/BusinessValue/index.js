@@ -46,103 +46,84 @@ const paragraph = {
   },
 };
 
-
 const ContentWrapper = ({ children, direction }) => (
   <div className={styles.business_value_content}>
-    <div className={componse( 
-      styles.business_value_overlay, 
-      styles[`business_value_overlay_${direction}`],
-    )} 
+    <div
+      className={componse(
+        styles.business_value_overlay,
+        styles[`business_value_overlay_${direction}`],
+      )}
     />
-    <div className={styles.business_value_content_container}>
-      {children}
-    </div>
+    <div className={styles.business_value_content_container}>{children}</div>
   </div>
-); 
+);
 
 ContentWrapper.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node), 
-    PropTypes.node
-  ]).isRequired,
-  direction: PropTypes.string.isRequired
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+  direction: PropTypes.string.isRequired,
 };
 
-
-const ContentTitle = ({ children }) => (
-  <Typography tag="h4" size={subTitle}>
+const ContentTitle = ({ children, hasTextAlign }) => (
+  <Typography tag="h4" size={subTitle} hasTextAlign={hasTextAlign}>
     {children}
   </Typography>
 );
 
 ContentTitle.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node), 
-    PropTypes.node
-  ]).isRequired,
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+  hasTextAlign: PropTypes.string.isRequired,
 };
 
-
-const ContentParagraph = ({ children }) => (
+const ContentParagraph = ({ children, hasTextAlign }) => (
   <div className={styles.business_value_paragraph}>
-    <Typography tag="p" size={paragraph}>
+    <Typography tag="p" size={paragraph} hasTextAlign={hasTextAlign}>
       {children}
     </Typography>
   </div>
 );
 
 ContentParagraph.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node), 
-    PropTypes.node
-  ]).isRequired,
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+  hasTextAlign: PropTypes.string.isRequired,
 };
 
 const IconList = ({ children, isLeft }) => {
-  const className = isLeft ? componse(
-    styles.business_value_content_footer,
-    styles.business_value_content_right,
-  ) : styles.business_value_icon_list;
-  return (
-    <ul className={className}>
-      {children}
-    </ul>
-  );
+  const className = isLeft
+    ? componse(styles.business_value_content_footer, styles.business_value_content_right)
+    : styles.business_value_content_footer;
+  return <ul className={className}>{children}</ul>;
 };
 
 IconList.defaultProps = {
-  isLeft: false
+  isLeft: false,
 };
 
 IconList.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
-  isLeft: PropTypes.bool
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+  isLeft: PropTypes.bool,
 };
 
 const IconItem = ({ icon, direction }) => {
-  const className = styles[`business_value_icon_item_${direction}`]; 
+  const className = styles[`business_value_icon_item_${direction}`];
   return (
     <li className={className}>
-      <img src={icon} alt="business value" />
+      <Image src={icon} alt="business value" />
     </li>
   );
 };
 
 IconItem.propTypes = {
   icon: PropTypes.string.isRequired,
-  direction: PropTypes.string.isRequired
+  direction: PropTypes.string.isRequired,
 };
 
 const ContentFooter = ({ direction, to }) => {
   const className = componse(
-    styles.business_value_content_footer,  
-    styles[`business_value_content_${direction}`], 
+    styles.business_value_content_footer,
+    styles[`business_value_content_${direction}`],
   );
   return (
-    <div  className={className}>
+    <div className={className}>
       <Button to={to}>read more</Button>
     </div>
   );
@@ -154,7 +135,7 @@ ContentFooter.defaultProps = {
 
 ContentFooter.propTypes = {
   to: PropTypes.string,
-  direction: PropTypes.string.isRequired
+  direction: PropTypes.string.isRequired,
 };
 
 const BusinessValue = () => (
@@ -171,15 +152,15 @@ const BusinessValue = () => (
         </Column>
         <Column isSize={{ mobile: 12, desktop: 8 }}>
           <ContentWrapper direction="right">
-            <ContentTitle>
+            <ContentTitle hasTextAlign="left">
               Business <span className="text-color-orange">Value</span>
             </ContentTitle>
-            <ContentParagraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque,
-              sapien at molestie suscipit, sapien leo faucibus ante, quis iaculis mauris nisl
-              nec libero. Suspendisse imperdiet in ex ac varius. Donec elementum libero eu purus
-              euismod, sit amet congue leo bibendum. Donec lacus ipsum, sodales a dignissim
-              quis, placerat eget ex.
+            <ContentParagraph hasTextAlign="left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque, sapien at
+              molestie suscipit, sapien leo faucibus ante, quis iaculis mauris nisl nec libero.
+              Suspendisse imperdiet in ex ac varius. Donec elementum libero eu purus euismod, sit
+              amet congue leo bibendum. Donec lacus ipsum, sodales a dignissim quis, placerat eget
+              ex.
             </ContentParagraph>
             <IconList>
               <IconItem icon={icon1} direction="right" />
@@ -197,15 +178,15 @@ const BusinessValue = () => (
       <Columns>
         <Column isSize={{ mobile: 12, desktop: 8 }}>
           <ContentWrapper direction="left">
-            <ContentTitle>
+            <ContentTitle hasTextAlign="right">
               Business <span className="text-color-orange">Value</span>
             </ContentTitle>
-            <ContentParagraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque,
-              sapien at molestie suscipit, sapien leo faucibus ante, quis iaculis mauris nisl
-              nec libero. Suspendisse imperdiet in ex ac varius. Donec elementum libero eu purus
-              euismod, sit amet congue leo bibendum. Donec lacus ipsum, sodales a dignissim
-              quis, placerat eget ex.
+            <ContentParagraph hasTextAlign="right">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque, sapien at
+              molestie suscipit, sapien leo faucibus ante, quis iaculis mauris nisl nec libero.
+              Suspendisse imperdiet in ex ac varius. Donec elementum libero eu purus euismod, sit
+              amet congue leo bibendum. Donec lacus ipsum, sodales a dignissim quis, placerat eget
+              ex.
             </ContentParagraph>
             <IconList isLeft>
               <IconItem icon={icon1} direction="left" />

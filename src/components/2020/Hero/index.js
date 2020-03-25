@@ -109,7 +109,7 @@ const ImagesContainer = () => {
 
 const ReadMore = () => (
   <div className={styles.hero_read_more}>
-    <Button>Read More</Button>
+    <Button to="/blog/best-software-development-process/">Read More</Button>
   </div>
 );
 

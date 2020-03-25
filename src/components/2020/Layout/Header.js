@@ -23,19 +23,22 @@ import styles from './css/index.module.scss';
 //TODO add links
 const SocialIcon = ({ isHidden }) => (
   <Fragment>
-    <NavbarItem isHidden={isHidden}>
-      <a href="www.facebook.com" className={styles.nav_icon}>
+    <NavbarItem isHidden={isHidden} className={styles.nav_icon}>
+      <a href="www.facebook.com" rel="noreferrer noopener" target="_blank">
         <Image src={facebook} alt="facebook-icon" />
       </a>
     </NavbarItem>
-    <NavbarItem isHidden={isHidden}>
-      <a href="www.facebook.com" className={styles.nav_icon}>
+    <NavbarItem isHidden={isHidden} className={styles.nav_icon}>
+      <a href="https://www.instagram.com/cobuildlab/" rel="noreferrer noopener" target="_blank">
         <Image src={instagram} alt="instagram-icon" />
       </a>
     </NavbarItem>
-    <NavbarItem isHidden={isHidden}>
-      <a href="www.facebook.com" className={styles.nav_icon}>
-        <Image  src={youtube} alt="youtube-icon" />
+    <NavbarItem isHidden={isHidden} className={styles.nav_icon}>
+      <a
+        href="https://www.youtube.com/channel/UCdI6t05TWyASVdT_H0Sqt3A"
+        rel="noreferrer noopener"
+        target="_blank">
+        <Image src={youtube} alt="youtube-icon" />
       </a>
     </NavbarItem>
   </Fragment>
@@ -59,8 +62,8 @@ const Header = () => {
   return (
     <div className={styles.nav_divider}>
       <Container>
-        <Navbar>
-          <NavbarBrand>
+        <Navbar className={styles.navbar}>
+          <NavbarBrand className={styles.nav_bran_container}>
             <NavbarItem>
               <Link className={styles.nav_brand} to="/">
                 <Image className={styles.nav_brand_img} src={logo} alt="logo" />

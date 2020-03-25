@@ -21,7 +21,7 @@ const title = {
 
 //TODO add redirect
 const OurTeam = () => (
-  <Container isFluid className="container-not-margin">
+  <Container isFluid className="container-full-width">
     <div className="section-title">
       <Typography tag="h2" size={title} hasTextAlign="centered">
         Our Team
