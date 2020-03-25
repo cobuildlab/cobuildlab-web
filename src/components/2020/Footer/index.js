@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import { Container, Columns, Column } from 'bloomer';
+import GoodFirms from '../GoodFirms';
 import Typography from '../Typography';
 import Image from '../Image';
 import styles from './css/index.module.scss';
@@ -97,6 +98,7 @@ const Footer = () => {
           <Description>
             Okroo <br /> MyVoice <br /> Balz
           </Description>
+          <GoodFirms />
         </Column>
         <Column isSize={{ mobile: 12, desktop: 4 }} isOffset={{ mobile: 0, desktop: 1 }}>
           <Title>Latest Blog Post</Title>
