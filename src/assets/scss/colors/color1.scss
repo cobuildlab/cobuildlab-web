@@ -1,0 +1,146 @@
+:root {
+  --primary: linear-gradient(to right, #e100ff 0%, #7f00ff 100%);
+  --primary1: #8200ff;
+  --primary2: #e000ff;
+  --primary3: rgba(183, 41, 255, 0.1);
+}
+
+$primary: var(--primary);
+$primary1: var(--primary1);
+$primary2: var(--primary2);
+$primary3: var(--primary3);
+
+.project-wrapper .project-box-outer .counters-number,
+.navbar-link-wrapper ul > li.active > a span,
+.navbar-link-wrapper ul > li:hover > a span,
+.navbar-link-wrapper ul > li.active > a i,
+.navbar-link-wrapper ul > li:hover > a i,
+#slidebar-close-btn i:hover,
+.menu-right-1 .login-register-wrapper .login-register-outer .tab-buttons li a.active,
+.menu-right-1
+  .login-register-wrapper
+  .login-register-outer
+  .tab-content
+  .tabfirst-block
+  .form-wrapper
+  .form-group.checkbox-password
+  .forget-password,
+.service-content:hover .service-title,
+.blog-second-block:hover .blog-title,
+.skills-content-block .progress-outer-block .progress-title,
+.project-wrapper .project-box-outer .counters-number,
+.service-content:hover .service-content-dec .service-title,
+.contact-wrapper .contact-content-block .contact-dec,
+.video-wrapper .video-btn span svg,
+.button1 .btn-icon.gradient-color1 svg,
+.footer-wrapper .footer-content-wrapper .footer-about-us .footer-about-outer svg,
+.service-content:hover .service-icon span svg,
+.blog-second-block:hover .blog-icon span svg,
+.menu-right-1
+  .login-register-wrapper
+  .login-register-outer
+  .react-tabs__tab-panel
+  .tabfirst-block
+  .form-wrapper
+  .form-group.checkbox-password
+  .forget-password,
+.menu-right-1 .login-register-wrapper .login-register-outer .react-tabs__tab-list li.react-tabs__tab--selected,
+.footer-wrapper .footer-content-wrapper .footer-contact-us ul li a span {
+  color: $primary1;
+}
+::selection,
+#slidebar-close-btn i:hover::after,
+.menu-right-1 .login-register-wrapper .login-register-outer .tab-content .tabfirst-block .form-wrapper .login-btn,
+.progressbar2 .progress-bar,
+.custom-control-input:checked ~ .custom-control-label::before {
+  background-color: $primary1;
+}
+.animated-bg i {
+  background: $primary;
+}
+.main-title-wrapper .site-subtitle {
+  background-color: $primary3;
+}
+.menu-right-1 .login-close,
+.menu-right-1 .search-close {
+  box-shadow: $primary2 0px 0 5px 0px;
+}
+.progressbar1 .progress-bar {
+  background-color: $primary1;
+}
+.menu-right-1 .login-register-wrapper .login-register-outer .tab-buttons li a.active,
+.menu-right-1
+  .login-register-wrapper
+  .login-register-outer
+  .tab-content
+  .tabfirst-block
+  .form-wrapper
+  .form-group
+  .form-control:focus,
+.menu-right-1 .login-register-wrapper .search-box .form-control:focus,
+.menu-right-1 .search-outer-wrapper .search-box .form-control:focus,
+.menu-right-1
+  .login-register-wrapper
+  .login-register-outer
+  .react-tabs__tab-panel
+  .tabfirst-block
+  .form-wrapper
+  .form-group
+  .form-control:focus,
+.menu-right-1 .login-register-wrapper .login-register-outer .react-tabs__tab-list li.react-tabs__tab--selected {
+  border-bottom: 2px solid $primary1;
+}
+.skills-content-block
+  .progress-outer-block
+  .progressbar-wrapper:nth-child(odd)
+  .react-sweet-progress
+  .react-sweet-progress-line
+  .react-sweet-progress-line-inner,
+.skills-content-block
+  .progress-outer-block
+  .progressbar-wrapper:nth-child(odd)
+  .react-sweet-progress
+  .react-sweet-progress-line
+  .react-sweet-progress-line-inner:before {
+  border-bottom: 8px solid $primary2;
+}
+.skills-content-block
+  .progress-outer-block
+  .progressbar-wrapper:nth-child(even)
+  .react-sweet-progress
+  .react-sweet-progress-line
+  .react-sweet-progress-line-inner,
+.skills-content-block
+  .progress-outer-block
+  .progressbar-wrapper:nth-child(even)
+  .react-sweet-progress
+  .react-sweet-progress-line
+  .react-sweet-progress-line-inner:before {
+  border-bottom: 8px solid $primary1;
+}
+
+.menu-right-1 .custom-control-input:checked ~ .custom-control-label::before,
+.custom-control-input:checked ~ .custom-control-label::before,
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before,
+.contact-wrapper .contact-content-block .form .form-group .form-control:focus {
+  border-color: $primary1;
+}
+.theme-rtl input:checked + #slider,
+.footer-wrapper .footer-content-wrapper .footer-title:after,
+.skills-content-block.main-title-wrapper .site-subtitle2:after,
+.portfolio-wrapper .portfolio-content .portfolio-first-block:before,
+header.header-sticky.sticky,
+.gradient-color,
+.demo2,
+.demo3 {
+  background: $primary;
+}
+.gradient-color1 {
+  background-image: linear-gradient(white, white), $primary;
+}
+
+.service-content:hover .service-icon span:after,
+.blog-second-block:hover .blog-icon:after,
+.contact-wrapper .contact-animation-images span {
+  filter: opacity(0.1) drop-shadow(0 0 0 $primary1);
+}

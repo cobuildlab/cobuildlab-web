@@ -1,25 +1,24 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import get from 'lodash/get';
 import Helmet from 'react-helmet';
-import Layout from '../../components/layout';
-import { Container, Title, Subtitle, Columns, Column } from 'bloomer';
+import Layout from '../components/layout';
+import { Container, Title, Columns, Column } from 'bloomer';
 import 'bulma';
-import '../../assets/fonts/Lato-Black.ttf';
-import '../../assets/fonts/Lato-BlackItalic.ttf';
-import '../../assets/fonts/Lato-Bold.ttf';
-import '../../assets/fonts/Lato-BoldItalic.ttf';
-import '../../assets/fonts/Lato-Hairline.ttf';
-import '../../assets/fonts/Lato-HairlineItalic.ttf';
-import '../../assets/fonts/Lato-Italic.ttf';
-import '../../assets/fonts/Lato-Light.ttf';
-import '../../assets/fonts/Lato-LightItalic.ttf';
-import '../../assets/fonts/Lato-Regular.ttf';
+import '../assets/fonts/Lato-Black.ttf';
+import '../assets/fonts/Lato-BlackItalic.ttf';
+import '../assets/fonts/Lato-Bold.ttf';
+import '../assets/fonts/Lato-BoldItalic.ttf';
+import '../assets/fonts/Lato-Hairline.ttf';
+import '../assets/fonts/Lato-HairlineItalic.ttf';
+import '../assets/fonts/Lato-Italic.ttf';
+import '../assets/fonts/Lato-Light.ttf';
+import '../assets/fonts/Lato-LightItalic.ttf';
+import '../assets/fonts/Lato-Regular.ttf';
 
 class PrivacyPolicy extends React.Component {
   render() {
     const siteTitle = 'Privacy Policy | Cobuild Lab';
-    const siteDescription = get(this, 'props.data.site.siteMetadata.description');
 
     return (
       <Layout>

@@ -1,0 +1,183 @@
+{
+    "sidebar": [
+        {
+            "id": 1,
+            "title": "Home",
+            "href": "#home"
+        },
+        {
+            "id": 2,
+            "title": "Service",
+            "href": "#service"
+        },
+        {
+            "id": 3,
+            "title": "About",
+            "href": "#about"
+        },
+        {
+            "id": 4,
+            "title": "Blog",
+            "href": "#blog"
+        },
+        {
+            "id": 5,
+            "title": "Video",
+            "href": "#video"
+        },
+        {
+            "id": 6,
+            "title": "Skills",
+            "href": "#skills"
+        },
+        {
+            "id": 7,
+            "title": "Project",
+            "href": "#project"
+        },
+        {
+            "id": 8,
+            "title": "Portfolio",
+            "href": "#portfolio"
+        },
+        {
+            "id": 9,
+            "title": "Testimonial",
+            "href": "#testimonial"
+        },
+        {
+            "id": 10,
+            "title": "Contact",
+            "href": "#contact"
+        }
+    ],
+    "bannerranimation": [
+        {
+            "img": "./banner/animation/1.png"
+        },
+        {
+            "img": "./banner/animation/2.png"
+        },
+        {
+            "img": "./banner/animation/3.png"
+        },
+        {
+            "img": "./banner/animation/4.png"
+        },
+        {
+            "img": "./banner/animation/5.png"
+        },
+        {
+            "img": "./banner/animation/6.png"
+        },
+        {
+            "img": "./banner/animation/7.png"
+        },
+        {
+            "img": "./banner/animation/8.png"
+        },
+        {
+            "img": "./banner/animation/9.png"
+        }
+    ],
+    "brands": [
+        {
+            "id": 1,
+            "img": "./brand/1.jpg"
+        },
+        {
+            "id": 2,
+            "img": "./brand/2.jpg"
+        },
+        {
+            "id": 3,
+            "img": "./brand/3.jpg"
+        },
+        {
+            "id": 4,
+            "img": "./brand/4.jpg"
+        },
+        {
+            "id": 5,
+            "img": "./brand/1.jpg"
+        },
+        {
+            "id": 6,
+            "img": "./brand/2.jpg"
+        },
+        {
+            "id": 7,
+            "img": "./brand/3.jpg"
+        },
+        {
+            "id": 8,
+            "img": "./brand/4.jpg"
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "number": 502,
+            "title": "Clients"
+        },
+        {
+            "id": 2,
+            "number": 635,
+            "title": "Projects"
+        },
+        {
+            "id": 3,
+            "number": 36,
+            "title": "Team Experts"
+        },
+        {
+            "id": 4,
+            "number": 723,
+            "title": "Comments"
+        }
+    ],
+    "testimonial": [
+        {
+            "id": 1,
+            "title": "John one",
+            "subtitle": "Client of example Project",
+            "img": "./testimonial/1.png",
+            "content": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web  designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book."
+        },
+        {
+            "id": 2,
+            "title": "Innovatory Two",
+            "subtitle": "Wed Censtoriya",
+            "img": "./testimonial/2.png",
+            "content": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web  designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book."
+        },
+        {
+            "id": 3,
+            "title": "John three",
+            "subtitle": "Client of example Project",
+            "img": "./testimonial/3.png",
+            "content": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web  designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book."
+        },
+        {
+            "id": 4,
+            "title": "John Four",
+            "subtitle": "Client of example Project",
+            "img": "./testimonial/4.png",
+            "content": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web  designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book."
+        },
+        {
+            "id": 5,
+            "title": "John five",
+            "subtitle": "Client of example Project",
+            "img": "./testimonial/5.png",
+            "content": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web  designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book."
+        },
+        {
+            "id": 6,
+            "title": "John six",
+            "subtitle": "Client of example Project",
+            "img": "./testimonial/6.png",
+            "content": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web  designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book."
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+@import "../../../../assets/scss/variable";
+
+/* footer copyright css start */
+.footer-wrapper-copytext {
+  background: #1f1f1f;
+  transition: all 0.6s ease-in-out;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.15;
+    background: url(../../../../assets/images/footer/footer-bg.png) no-repeat center;
+    background-size: cover;
+  }
+  .footer-copyright-text {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
+    padding-bottom: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
+    position: relative;
+    .row {
+      align-items: center;
+    }
+    .copyright-link {
+      text-align: center;
+      span {
+        font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 400;
+        color: $color-white;
+        transition: all 0.5s ease-in-out;
+        line-height: 30px;
+      }
+    }
+  }
+}
+/* responsive css */
+@media (min-width: 576px) {
+  .copyright-link {
+    &.link2 {
+      text-align: right;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .footer-wrapper-copytext {
+    position: relative;
+  }
+}
+@media (max-width: 575px) {
+  .copyright-link {
+    text-align: center;
+  }
+}
+
+/* footer copyright css end */
