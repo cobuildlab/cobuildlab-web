@@ -24,7 +24,7 @@ import styles from './css/index.module.scss';
 const SocialIcon = ({ isHidden }) => (
   <Fragment>
     <NavbarItem isHidden={isHidden} className={styles.nav_icon}>
-      <a href="www.facebook.com" rel="noreferrer noopener" target="_blank">
+      <a href="https://www.facebook.com/cobuildlab/" rel="noreferrer noopener" target="_blank">
         <Image src={facebook} alt="facebook-icon" />
       </a>
     </NavbarItem>

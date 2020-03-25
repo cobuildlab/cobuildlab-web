@@ -4,7 +4,7 @@ import get from 'lodash/get';
 import { HeroHeader, HeroBody, Hero, Section } from 'bloomer';
 
 import Layout from '../../components/2020/Layout';
-import Header from '../../components/2020/Layout/Header';
+import Header from '../../components/2020/Header';
 import HeroBodyContent from '../../components/2020/Hero';
 import Service from '../../components/2020/Service';
 import BusinessValue from '../../components/2020/BusinessValue';

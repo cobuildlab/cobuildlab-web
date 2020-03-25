@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import { Container, Columns, Column } from 'bloomer';
 import Typography from '../Typography';
 import Image from '../Image';
 import styles from './css/index.module.scss';
+// import icon from '../../../resources/2020/home/icon-footer.png';
 
 const title = {
   default: {
@@ -41,7 +42,7 @@ Description.propTypes = {
 };
 
 const LastPostItem = ({ src, alt, title, date, slug }) => (
-  <div className={styles.last_post_item}>
+  <Link to={slug} className={styles.last_post_item}>
     <div className={styles.last_post_img_container}>
       <Image src={src} alt={alt} />
     </div>
@@ -51,7 +52,7 @@ const LastPostItem = ({ src, alt, title, date, slug }) => (
         <strong>{date}</strong>
       </Description>
     </div>
-  </div>
+  </Link>
 );
 
 LastPostItem.propTypes = {
@@ -79,7 +80,7 @@ const Footer = () => {
     <Container>
       <Columns>
         <Column isSize={{ mobile: 12, desktop: 1 }}>
-          <Image alt="footer icon" />
+          <Image src="" alt="footer icon" />
         </Column>
         <Column isSize={{ mobile: 12, desktop: 2 }}>
           <Title>Services</Title>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
 import { RingSpinner } from 'react-spinners-kit';
 import Navbar from '../../components/enterprise/containers/navbar';
 import Banner from '../../components/enterprise/containers/banner';
@@ -17,7 +16,10 @@ import Footer from '../../components/enterprise/containers/footer';
 import CopyRight from '../../components/enterprise/containers/copyright_text';
 import ThemeColor from '../../components/enterprise/containers/themecolor';
 import ThemeOption from '../../components/enterprise/containers/themeoptions';
-import '../../assets/scss/style.scss';
+
+// NOTE these styles cause problems on the new landing careful when you add them
+// import 'bootstrap/dist/css/bootstrap.css';
+// import '../../assets/scss/style.scss';
 
 const IndexPage = () => {
   const [loader, setLoader] = useState(false);

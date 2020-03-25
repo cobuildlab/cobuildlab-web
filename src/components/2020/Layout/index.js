@@ -2,11 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Footer as FooterContainer } from 'bloomer';
 import Footer from '../Footer';
+import style from './css/index.module.scss';
 import '../../../assets/css/2020/common.scss';
 import 'bulma';
 
 const Layout = ({ children }) => (
-  <div style={{ overflow: 'hidden' }}>
+  <div className={style.app_wrapper}>
     {children}
     <FooterContainer>
       <Footer />
