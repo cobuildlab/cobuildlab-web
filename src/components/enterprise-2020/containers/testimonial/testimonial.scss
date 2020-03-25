@@ -1,0 +1,342 @@
+@import "../../../../assets/enterprise-2020/scss/variable";
+
+
+
+/* testimonial section css start */
+
+.testimonial-wrapper {
+  background: $color-theme;
+  padding-bottom: calc(40px + (120 - 40) * ((100vw - 320px) / (1920 - 320)));
+}
+.testimonial-slider {
+  max-width: 720px;
+  margin: 0 auto;
+  overflow: hidden;
+  .testimonial-outer-box {
+    margin: 0 -15px;
+    .testimonial-item {
+      padding: 0 15px;
+      cursor: pointer;
+      vertical-align: middle;
+      .testimonial-content {
+        background-color: $color-white;
+        border-radius: 5px;
+        padding: 45px 15px;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        .testimonial-dec {
+          margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
+          line-height: 25px;
+          -webkit-line-clamp: 4;
+          overflow: hidden;
+          -webkit-box-orient: vertical;
+          display: -webkit-box;
+        }
+        .testimonial-title {
+          font-weight: 700;
+          color: $color-black;
+          text-transform: capitalize;
+          margin-bottom: 5px;
+          font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1920 - 320)));
+        }
+        .testimonial-subtitle {
+          font-weight: 400;
+          color: $color-black;
+          text-transform: capitalize;
+          margin: 0;
+          font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+          line-height: 24px;
+        }
+        .testimonial-images {
+          padding-top: 20px;
+          visibility: hidden;
+          display: none;
+          img {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 0;
+}
+.testimonial-slider {
+  .testimonial-outer-box {
+    .slick-slider {
+      position: initial;
+      .slick-dots {
+        position: inherit;
+        bottom: auto;
+        line-height: 0;
+        li {
+          vertical-align: middle;
+          position: initial;
+          width: auto;
+          height: auto;
+          button {
+            width: auto;
+            height: auto;
+            padding: 0;
+            line-height: normal;
+            margin: 0;
+            border-radius: 200px;
+            position: absolute;
+            background: #222222;
+            border: 4px solid transparent;
+          }
+          &.slick-active {
+            button {
+              box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.35);
+              animation-name: bounce-1;
+              animation-timing-function: linear;
+              animation-duration: 2s;
+              animation-iteration-count: infinite;
+              transform-origin: bottom;
+              border: 4px solid $color-white;
+            }
+          }
+          &:nth-child(1) {
+            button {
+              width: 120px;
+              height: 120px;
+              left: 115px;
+              bottom: 175px;
+              background: url(../../../../assets/enterprise-2020/images/testimonial/1.png) no-repeat center;
+              background-size: cover;
+            }
+          }
+          &:nth-child(2) {
+            button {
+              width: 100px;
+              height: 100px;
+              top: 148px;
+              left: 328px;
+              background: url(../../../../assets/enterprise-2020/images/testimonial/2.png) no-repeat center;
+              background-size: cover;
+            }
+          }
+          &:nth-child(3) {
+            button {
+              width: 75px;
+              height: 75px;
+              bottom: 142px;
+              left: 383px;
+              background: url(../../../../assets/enterprise-2020/images/testimonial/3.png) no-repeat center;
+              background-size: cover;
+            }
+          }
+          &:nth-child(4) {
+            button {
+              width: 120px;
+              height: 120px;
+              right: 161px;
+              top: 142px;
+              background: url(../../../../assets/enterprise-2020/images/testimonial/4.png) no-repeat center;
+              background-size: cover;
+            }
+          }
+          &:nth-child(5) {
+            button {
+              width: 100px;
+              height: 100px;
+              bottom: 187px;
+              right: 287px;
+              background: url(../../../../assets/enterprise-2020/images/testimonial/5.png) no-repeat center;
+              background-size: cover;
+            }
+          }
+          &:nth-child(6) {
+            button {
+              width: 75px;
+              height: 75px;
+              bottom: 142px;
+              right: 98px;
+              background: url(../../../../assets/enterprise-2020/images/testimonial/6.png) no-repeat center;
+              background-size: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.testimonial-content:before,
+.testimonial-content:after {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 25px;
+}
+.testimonial-content:before {
+  left: 15px;
+  top: 15px;
+  background: url(../../../../assets/enterprise-2020/images/testimonial/left-box.png) no-repeat 0;
+}
+.testimonial-content:after {
+  right: 15px;
+  bottom: 15px;
+  background: url(../../../../assets/enterprise-2020/images/testimonial/right-box.png) no-repeat 0;
+}
+
+@keyframes bounce-1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* responsive css */
+@media (max-width: 1660px) {
+  .testimonial-slider {
+    .testimonial-outer-box {
+      .slick-slider {
+        .slick-dots {
+          li {
+            &:nth-child(1) {
+              button {
+                left: 40px;
+              }
+            }
+            &:nth-child(2) {
+              button {
+                top: 145px;
+                left: 205px;
+              }
+            }
+            &:nth-child(3) {
+              button {
+                bottom: 80px;
+                left: 240px;
+              }
+            }
+            &:nth-child(4) {
+              button {
+                right: 95px;
+                top: 120px;
+              }
+            }
+            &:nth-child(5) {
+              button {
+                bottom: 187px;
+                right: 220px;
+              }
+            }
+            &:nth-child(6) {
+              button {
+                bottom: 90px;
+                right: 50px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1370px) {
+  .testimonial-slider {
+    .testimonial-outer-box {
+      .slick-slider {
+        .slick-dots {
+          li {
+            &:nth-child(1) {
+              button {
+                left: 15px;
+              }
+            }
+            &:nth-child(2) {
+              button {
+                top: 50px;
+                left: 150px;
+              }
+            }
+            &:nth-child(3) {
+              button {
+                bottom: 40px;
+                left: 140px;
+              }
+            }
+            &:nth-child(4) {
+              button {
+                right: 60px;
+                top: 55px;
+              }
+            }
+            &:nth-child(5) {
+              button {
+                bottom: 225px;
+                right: 126px;
+              }
+            }
+            &:nth-child(6) {
+              button {
+                bottom: 35px;
+                right: 45px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .testimonial-slider {
+    .testimonial-outer-box {
+      .slick-slider {
+        .slick-dots {
+          margin-top: 15px;
+          li {
+            margin: 0 7.5px;
+            button {
+              position: initial;
+              top: auto;
+              left: auto;
+              right: auto;
+              bottom: auto;
+              width: 70px !important;
+              height: 70px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .testimonial-slider {
+    .testimonial-outer-box {
+      .slick-slider {
+        .slick-dots {
+          display: none !important;
+        }
+      }
+    }
+    .testimonial-outer-box {
+      .testimonial-item {
+        .testimonial-content {
+          .testimonial-images {
+            display: block;
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* testimonial section css end */

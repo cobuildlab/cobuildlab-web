@@ -1,0 +1,15 @@
+@import "../../../../assets/enterprise-2020/scss/variable";
+
+/* brand section css start */
+.brand-slider {
+  padding-top: 0;
+  .brand-content {
+    padding: 0 15px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      filter: hue-rotate(100deg);
+    }
+  }
+}
+/* brand section css end */
