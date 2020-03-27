@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, FormGroup } from 'reactstrap';
+import { Link } from 'gatsby';
+import { FormGroup } from 'reactstrap';
+import { Container, Columns, Column } from 'bloomer';
 import InputBox from '../../components/input';
 import PreviewIcon from '../../components/icon';
 import Menu from '../menu';
@@ -8,7 +10,10 @@ import logo from '../../../../assets/images/Logo.png';
 import { Title } from '../../components/title';
 import Login from './login';
 import { user, search, x } from 'react-icons-kit/feather';
-import './navbar.scss';
+import componse from '../../../../utils/styles-componse';
+import styles from './css/navbar.module.scss';
+
+console.log(styles);
 
 /**
  *
@@ -38,56 +43,28 @@ function Navbar() {
     setLogin(!login);
   };
 
-  return (
-    <div className="App-header">
-      <header className={`header-sticky ${activeClass ? 'sticky' : ''}`}>
-        <Container>
-          <Row>
-            <Col sm={6} className="left-block">
-              <div className="logo-wrapper">
-                <a href="/">
-                  <Image Path={logo} Class="logo-img" />
-                </a>
-              </div>
-            </Col>
-            <Col sm={6} className="right-block">
-              <div className="search-menu-account-wrapper">
-                <div className="menu-right-1">
-                  <div className="account-wrapper">
-                    <div className="account-icon" onClick={loginClick}>
-                      <PreviewIcon icon={user} />
-                    </div>
-                    <div className={`login-register-wrapper ${login ? 'open' : ''}`}>
-                      <Login Click={loginClick} />
-                    </div>
-                  </div>
-                  <div className="search-wrapper">
-                    <div className="search-header" onClick={searchClick}>
-                      <PreviewIcon icon={search} />
-                    </div>
+  const headerStyles = componse(styles.header, activeClass ? styles.sticky : '');
 
-                    <div className={`search-outer-wrapper ${searchValue ? 'open' : ''}`}>
-                      <div className="search-close gradient-color" onClick={searchClick}>
-                        <PreviewIcon icon={x} />
-                      </div>
-                      <div className="search-title-box">
-                        <Title Class="search-title" Name="Search Panel" />
-                        <div className="search-box">
-                          <FormGroup>
-                            <InputBox Type="text" Name="search" PlaceHolder="Search items" />
-                          </FormGroup>
-                          <span className="search-icon">
-                            <PreviewIcon icon={search} />
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+  return (
+    <div className={styles.app_header}>
+      <header className={headerStyles}>
+        <Container>
+          <Columns isDisplay="flex" isMarginless>
+            <Column isPaddingless isSize={{ mobile: 7 }}>
+              <div className={styles.content}>
+                <div className={styles.logo_wrapper}>
+                  <Link to="/">
+                    <Image Path={logo} />
+                  </Link>
                 </div>
+              </div>
+            </Column>
+            <Column isPaddingless isSize={{ mobile: 5 }}>
+              <div className={styles.content}>
                 <Menu />
               </div>
-            </Col>
-          </Row>
+            </Column>
+          </Columns>
         </Container>
       </header>
     </div>
@@ -95,3 +72,10 @@ function Navbar() {
 }
 
 export default Navbar;
+
+/**.
+ *
+ *
+ *
+ *
+ */

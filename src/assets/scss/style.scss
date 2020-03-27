@@ -3,7 +3,7 @@
 @import "variable";
 
 /* common css */
-/* body {
+ body {
   background-color: $color-white;
   font-size: 14px;
   color: $color-black;
@@ -15,7 +15,7 @@
 }
 body.rtl {
   direction: rtl;
-}*/
+}
 
 * {
   margin: 0;
@@ -149,11 +149,11 @@ h6 {
 html {
   scroll-behavior: smooth;
 }
-/*section {
+section {
   padding-top: calc(40px + (100 - 40) * ((100vw - 320px) / (1920 - 320)));
   padding-bottom: calc(40px + (100 - 40) * ((100vw - 320px) / (1920 - 320)));
   position: relative;
-}*/
+}
 body {
   &.serch-modal {
     overflow: hidden;
@@ -206,7 +206,7 @@ body {
   overflow: hidden;
 }
 
-/* header {
+header {
   position: fixed;
   width: 100%;
   left: 0;
@@ -231,7 +231,7 @@ body {
   .container {
     padding: 0 15px;
   }
-}*/
+}
 // buttons
 .banner-btn-wrapper {
   display: flex;
@@ -494,7 +494,7 @@ body {
   }
 }
 
-/*.hero svg {
+.hero svg {
   position: absolute;
   top: 0;
   left: 0;
@@ -555,7 +555,7 @@ body {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
-}*/
+}
 
 /* loader css */
 .loader {
