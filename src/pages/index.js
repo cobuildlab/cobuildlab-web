@@ -55,7 +55,7 @@ import {
 } from 'bloomer';
 import ModalVideo from 'react-modal-video';
 import * as PropTypes from 'prop-types';
-// import NewsletterModal from '../components/NewsletterModal'
+import NewsletterModal from '../components/NewsletterModal';
 
 /**
  * @param props
@@ -106,6 +106,7 @@ class Index extends React.Component {
 
     return (
       <Layout location={this.props.location}>
+        <NewsletterModal />
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}

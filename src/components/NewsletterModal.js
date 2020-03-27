@@ -33,7 +33,9 @@ class NewsletterModal extends React.Component {
 
   componentDidMount() {
     const oldWeek = localStorage.getItem('week');
-    const toDay = Date.now();
+    const toDay = new Date().getTime();
+    // calWeek = today - 7 days (previous week value)
+    const calcWeek = new Date(toDay - 24 * 60 * 60 * 1000 * 7).getTime();
 
     window.onscroll = () => {
       if (
@@ -44,6 +46,11 @@ class NewsletterModal extends React.Component {
         this.handleModal(true);
       }
     };
+
+    if (!oldWeek || parseInt(oldWeek) - calcWeek <= 0) {
+      localStorage.setItem('week', toDay);
+      this.handleModal(true);
+    }
   }
 
   calculateScrollDistance = () => {
