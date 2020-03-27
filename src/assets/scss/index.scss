@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&display=swap");
+@import "colors/color1";
+@import "variable";
+
+.enterprise-section {
+  padding-top: calc(40px + (100 - 40) * ((100vw - 320px) / (1920 - 320)));
+  padding-bottom: calc(40px + (100 - 40) * ((100vw - 320px) / (1920 - 320)));
+  position: relative;
+}
+
+.main-title-wrapper {
+  text-align: center;
+  margin-bottom: calc(20px + (50 - 20) * ((100vw - 320px) / (1920 - 320)));
+  .site-subtitle {
+    font-weight: 400;
+    font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
+    color: $color-black;
+    margin-bottom: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border-radius: 50px;
+    padding: 7px 30px 5px;
+  }
+  .site-subtitle2 {
+    color: $color-defult1;
+    font-size: calc(18px + (36 - 18) * ((100vw - 320px) / (1920 - 320)));
+    font-weight: 500;
+    position: relative;
+    margin-bottom: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
+    text-transform: capitalize;
+  }
+  .sitemain-subtitle {
+    font-weight: 600;
+    font-size: calc(24px + (42 - 24) * ((100vw - 320px) / (1920 - 320)));
+    color: $color-black;
+    margin-bottom: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
+    text-transform: capitalize;
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .site-dec {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+}
+
+.about-content-block {
+  &.main-title-wrapper {
+    text-align: left;
+    margin: 0;
+    .sub-title-wrapper {
+      h4 {
+        color: $color-white;
+      }
+    }
+  }
+}
+.video-content-block {
+  &.main-title-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    h4 {
+      color: $color-white;
+    }
+  }
+}
+.skills-content-block {
+& .main-title-wrapper {
+    text-align: left;
+    margin: 0;
+    .site-subtitle2 {
+      display: inline-block;
+      vertical-align: middle;
+      padding-right: 50px;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 36px;
+        height: 3px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  }
+}

@@ -19,7 +19,7 @@ import ThemeOption from '../../components/enterprise/containers/themeoptions';
 
 // NOTE these styles cause problems on the new landing careful when you add them
 // import 'bootstrap/dist/css/bootstrap.css';
-// import '../../assets/scss/style.scss';
+import '../../assets/scss/index.scss';
 
 const IndexPage = () => {
   const [loader, setLoader] = useState(false);
