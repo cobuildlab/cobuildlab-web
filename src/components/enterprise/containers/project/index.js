@@ -13,7 +13,7 @@ const Project = () => {
         <div className="project-content-wrapper">
           <Columns>
             {Counterdata.map((data, i) => (
-              <Column isSize={{ mobile: 6, desktop: 3 }} key={data.id}>
+              <Column isSize={{ mobile: 12, desktop: 3 }} key={data.id}>
                 <div className={`counter-${i} project-box-outer`}>
                   <div className="animated-bg">
                     <i></i>

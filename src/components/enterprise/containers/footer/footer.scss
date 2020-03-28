@@ -23,6 +23,9 @@
   }
   .footer-content-wrapper {
     position: relative;
+    @media screen and (max-width: 768px){
+      padding: 1em;
+    }
     .footer-logo-wrapper {
       padding-right: calc(0px + (80 - 0) * ((100vw - 320px) / (1920 - 320)));
       .footer-logo {
@@ -144,6 +147,7 @@
       .form-group {
         position: relative;
         padding-top: 7px;
+        margin-bottom: 1em;
         .input-search {
           height: calc(38px + (50 - 38) * ((100vw - 320px) / (1920 - 320)));
           padding-left: 10px;

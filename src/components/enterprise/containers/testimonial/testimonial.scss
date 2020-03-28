@@ -17,6 +17,9 @@
     .testimonial-item {
       padding: 0 15px;
       cursor: pointer;
+      @media (max-width: 767px) {
+        padding: 25px;
+      }
       vertical-align: middle;
       .testimonial-content {
         background-color: $color-white;

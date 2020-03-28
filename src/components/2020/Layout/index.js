@@ -9,7 +9,7 @@ import 'bulma';
 const Layout = ({ children }) => (
   <div className={style.app_wrapper}>
     {children}
-    <FooterContainer>
+    <FooterContainer className="custom-footer">
       <Footer />
     </FooterContainer>
   </div>

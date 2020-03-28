@@ -14,8 +14,8 @@ import Contact from '../../components/enterprise/containers/contact';
 import Brand from '../../components/enterprise/containers/brands';
 import Footer from '../../components/enterprise/containers/footer';
 import CopyRight from '../../components/enterprise/containers/copyright_text';
-import ThemeColor from '../../components/enterprise/containers/themecolor';
-import ThemeOption from '../../components/enterprise/containers/themeoptions';
+// import ThemeColor from '../../components/enterprise/containers/themecolor';
+// import ThemeOption from '../../components/enterprise/containers/themeoptions';
 
 // NOTE these styles cause problems on the new landing careful when you add them
 // import 'bootstrap/dist/css/bootstrap.css';
@@ -47,8 +47,7 @@ const IndexPage = () => {
         <Brand />
         <Footer />
         <CopyRight />
-        <ThemeColor />
-        <ThemeOption />
+       
       </div>
     </div>
   ) : (
@@ -57,5 +56,11 @@ const IndexPage = () => {
     </div>
   );
 };
+
+/**
+ *  <ThemeColor />
+        <ThemeOption />.
+ * 
+ */
 
 export default IndexPage;
