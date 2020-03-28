@@ -23,10 +23,16 @@ function Button(props) {
   );
 }
 
+Button.defaultProps = {
+  class: '',
+  clickable: '',
+  name: '',
+};
+
 Button.propTypes = {
-  class: PropTypes.string.isRequired,
-  clickable: PropTypes.func.isRequired,
-  name: PropTypes.string.isRequired,
+  class: PropTypes.string,
+  clickable: PropTypes.func,
+  name: PropTypes.string,
   title: PropTypes.string,
   btnIcon: PropTypes.string,
 };

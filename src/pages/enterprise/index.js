@@ -16,9 +16,6 @@ import Footer from '../../components/enterprise/containers/footer';
 import CopyRight from '../../components/enterprise/containers/copyright_text';
 // import ThemeColor from '../../components/enterprise/containers/themecolor';
 // import ThemeOption from '../../components/enterprise/containers/themeoptions';
-
-// NOTE these styles cause problems on the new landing careful when you add them
-// import 'bootstrap/dist/css/bootstrap.css';
 import '../../assets/scss/index.scss';
 
 const IndexPage = () => {
