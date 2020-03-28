@@ -6,13 +6,10 @@ import { Subtitle, Description, Title, Titlespan2 } from '../../components/title
 import Button from '../../components/button';
 import { Servicedata, Servicedata1 } from '../../../../data/service';
 import PreviewIcon from '../../components/icon';
-import styles from './css/index.module.scss';
+import './service.scss';
 
 const ConentContainer = ({ children }) => (
-  <div className={componse(
-    styles.service_content_1, 
-    styles.main_title_wrapper
-  )}>
+  <div className="service-content-1 main-title-wrapper">
     {children}
   </div>
 );
@@ -26,19 +23,15 @@ ConentContainer.propTypes = {
 
 
 const Card = ({ index, icon, title, content }) => (
-  <div className={componse(
-    styles[`service_${index}`],
-    styles.service_content
-  )}
-  >
-    <div className={styles.service_icon}>
+  <div className={`service-${index} service-content`}>
+    <div className="service-icon">
       <span>
         <PreviewIcon icon={icon} />
       </span>
     </div>
-    <div className={styles.service_content_dec}>
-      <Title Class={styles.service_title} Name={title} />
-      <Description Class={styles.service_dec_content} Name={content} />
+    <div className="service-content-dec">
+      <Title Class="service-title" Name={title} />
+      <Description Class="service-dec-content" Name={content} />
     </div>
   </div>
 );
@@ -53,7 +46,7 @@ Card.propTypes = {
 const Service = () => {
   return (
     <Section>
-      <div className={styles.container_section}>
+      <div className="service-wrapper">
         <Container>
           <Columns>
             <Column
@@ -62,18 +55,20 @@ const Service = () => {
               isSize={{ mobile: 12, tablet: 4, desktop: 5}}
             >
               <ConentContainer>
-                <Titlespan2 Class={styles.sitemain_subtitle} Name="Business" Label="Solutions" />
-                <Subtitle Class={styles.site_subtitle2} Name="We Provide The" />
-                <Title Class={styles.service_title} Name="Our core features" />
-                <Description
-                  Class={styles.service_dec}
-                  Name="A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot."
-                />
-                <Button
-                  Class="button1 btn button2 gradient-color"
-                  Name="Explore"
-                  BtnIcon="btn-icon"
-                />
+                <div className="service-content-1 main-title-wrapper">
+                  <Titlespan2 Class="sitemain-subtitle" Name="Business" Label="Solutions" />
+                  <Subtitle Class="site-subtitle2" Name="We Provide The" />
+                  <Title Class="service-title" Name="Our core features" />
+                  <Description
+                    Class="service-dec"
+                    Name="A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot."
+                  />
+                  <Button
+                    Class="button1 btn button2 gradient-color"
+                    Name="Explore"
+                    BtnIcon="btn-icon"
+                  />
+                </div>
               </ConentContainer>
             </Column>
             <Column 
@@ -81,14 +76,14 @@ const Service = () => {
               isMarginless 
               isPaddingless
             >
-              <div className={styles.service_block_content}>
+              <div className="service-block-content">
                 <Columns isDisplay="flex-tablet">
                   <Column 
                     isMarginless 
                     isPaddingless 
                     isSize={{mobile: 12, tablet: 6 }} 
                   >
-                    <div className={styles.service_block1}>
+                    <div className="service-block1">
                       {Servicedata.map((data, i) => (
                         <Card 
                           index={i}
@@ -101,7 +96,7 @@ const Service = () => {
                     </div>
                   </Column>
                   <Column isSize={{ mobile:12, tablet: 6 }} >
-                    <div className={styles.service_block2}>
+                    <div className="service-block2">
                       {Servicedata1.map((data, i) => (
                         <Card 
                           index={i}

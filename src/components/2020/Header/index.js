@@ -62,8 +62,8 @@ const Header = () => {
   return (
     <div className={styles.nav_divider}>
       <Container>
-        <Navbar className={styles.navbar}>
-          <NavbarBrand className={styles.nav_bran_container}>
+        <Navbar>
+          <NavbarBrand>
             <NavbarItem>
               <Link className={styles.nav_brand} to="/">
                 <Image className={styles.nav_brand_img} src={logo} alt="logo" />

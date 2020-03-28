@@ -3,7 +3,7 @@ import { Container, Columns, Column, Section } from 'bloomer';
 import { Subtitle, Description, Title, Titlespan2 } from '../../components/title';
 import BlogData from '../../../../data/blog';
 import PreviewIcon from '../../components/icon';
-import styles from './css/index.module.scss';
+import './blog.scss';
 
 const Blog = () => {
   return (
@@ -22,22 +22,22 @@ const Blog = () => {
             <Columns>
               {BlogData.map((data, i) => (
                 <Column isSize={{ mobile: 12, desktop: 4 }}  key={data.id} >
-                  <div className={styles[`blog_${i}`]}>
-                    <div className={styles.blog_content}>
-                      <div className={styles.blog_first_block}>
+                  <div className={`blog-${i}`}>
+                    <div className="blog-content">
+                      <div className="blog-first-block">
                         <img src={data.img} alt="" title="" />
                       </div>
-                      <div className={styles.blog_second_block}>
-                        <div className={styles.blog_left_content}>
-                          <div className={styles.blog_icon}>
+                      <div className="blog-second-block">
+                        <div className="blog-left-content">
+                          <div className="blog-icon">
                             <span>
                               <PreviewIcon icon={data.Icon} />
                             </span>
                           </div>
                         </div>
-                        <div className={styles.blog_right_content}>
-                          <Title Class={styles.blog_title} Name={data.title} />
-                          <Description Class={styles.blog_dec} Name={data.content} />
+                        <div className="blog-right-content">
+                          <Title Class="blog-title" Name={data.title} />
+                          <Description Class="blog-dec" Name={data.content} />
                         </div>
                       </div>
                     </div>

@@ -64,7 +64,7 @@ function Brand() {
     <Section isPaddingless>
       <div className="brand-slider">
         <div className="enterprise-section">
-          <Container isFluid>
+          <Container>
             <Slider {...settings}>
               {Branddata.allDataJson.edges[0].node.brands.map((data) => (
                 <div className="brand-item" key={data.id}>

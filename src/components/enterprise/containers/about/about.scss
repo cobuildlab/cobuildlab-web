@@ -5,7 +5,9 @@
   background: $color-theme;
   z-index: 1;
   .row {
+    display: flex;
     align-items: center;
+    height: 100%;
   }
 }
 .about-content-block {
