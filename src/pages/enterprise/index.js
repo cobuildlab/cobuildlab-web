@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { RingSpinner } from 'react-spinners-kit';
+import React from 'react';
 import Navbar from '../../components/enterprise/containers/navbar';
 import Banner from '../../components/enterprise/containers/banner';
 import Service from '../../components/enterprise/containers/service';
@@ -14,20 +13,10 @@ import Contact from '../../components/enterprise/containers/contact';
 import Brand from '../../components/enterprise/containers/brands';
 import Footer from '../../components/enterprise/containers/footer';
 import CopyRight from '../../components/enterprise/containers/copyright_text';
-// import ThemeColor from '../../components/enterprise/containers/themecolor';
-// import ThemeOption from '../../components/enterprise/containers/themeoptions';
 import '../../assets/scss/index.scss';
 
 const IndexPage = () => {
-  const [loader, setLoader] = useState(false);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setLoader(true);
-    }, 2000);
-    return () => clearInterval(interval);
-  }, []);
-
-  return loader ? (
+  return (
     <div className="main-wrapper">
       <Navbar />
       <div id="main-content">
@@ -44,20 +33,15 @@ const IndexPage = () => {
         <Brand />
         <Footer />
         <CopyRight />
-       
       </div>
-    </div>
-  ) : (
-    <div className="theme-loader">
-      <RingSpinner size={80} color="#e100ff" loading={!loader} />
     </div>
   );
 };
 
 /**
  *  <ThemeColor />
-        <ThemeOption />.
- * 
+ <ThemeOption />.
+ *
  */
 
 export default IndexPage;
