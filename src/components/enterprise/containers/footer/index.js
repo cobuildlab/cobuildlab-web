@@ -113,7 +113,7 @@ const Footer = () => {
                 <div className="footer-newsletter">
                   <Title Class="footer-title" Name="Stay with us" />
                   <div className="form-group">
-                    <Input Type="text" placeholder="Enter email"  className="input-search"/>
+                    <Input type="text" placeholder="Enter email"  className="input-search"/>
                     <span className="search-icon gradient-color">
                       <PreviewIcon icon={paperPlane} />
                     </span>
