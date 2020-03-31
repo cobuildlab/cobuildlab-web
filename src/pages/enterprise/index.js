@@ -3,7 +3,7 @@ import Navbar from '../../components/enterprise/containers/navbar';
 import Banner from '../../components/enterprise/containers/banner';
 import Service from '../../components/enterprise/containers/service';
 import About from '../../components/enterprise/containers/about';
-import Blog from '../../components/enterprise/containers/blog';
+import CustomerSuccess from '../../components/enterprise/containers/customer-success';
 import Video from '../../components/enterprise/containers/video';
 import Skills from '../../components/enterprise/containers/skills';
 import Project from '../../components/enterprise/containers/project';
@@ -24,7 +24,7 @@ const IndexPage = () => {
         <Banner ChangeClass={'demo1'} />
         <Service />
         <About />
-        <Blog />
+        <CustomerSuccess />
         <Video />
         <Skills />
         <Project />

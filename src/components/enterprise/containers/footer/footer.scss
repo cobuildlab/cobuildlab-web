@@ -2,7 +2,7 @@
 
 /* footer css start */
 .footer-wrapper {
-  background: #1f1f1f;
+  background: $cobuild-indigo;
   padding: calc(32px + (110 - 40) * ((100vw - 320px) / (1920 - 320))) 0;
   position: relative;
   border-top-right-radius: calc(30px + (200 - 30) * ((100vw - 320px) / (1920 - 320)));

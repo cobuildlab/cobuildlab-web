@@ -12,7 +12,7 @@ import {
 import { Title, Description } from '../../components/title';
 import PreviewIcon from '../../components/icon';
 import Image from '../../components/image';
-import logo from '../../../../assets/images/Logo.png';
+import logo from '../../../../assets/images/cobuild-white-logo.png';
 import { arrowRightCircle } from 'react-icons-kit/feather/arrowRightCircle';
 import './footer.scss';
 
@@ -44,7 +44,7 @@ const Footer = () => {
                           </span>
                           <Title
                             Class="footer-link"
-                            Name="Office No - 115 , Street No - 05 , NY, USA"
+                            Name="66 W Flagler St #900, Miami, FL 33130"
                           />
                         </a>
                       </li>
@@ -53,7 +53,7 @@ const Footer = () => {
                           <span>
                             <PreviewIcon icon={envelopeOpen} />
                           </span>
-                          <Title Class="footer-link footer-email" Name="example@email.com" />
+                          <Title Class="footer-link footer-email" Name="contact@cobuildlab.com" />
                         </a>
                       </li>
                       <li>
@@ -61,7 +61,7 @@ const Footer = () => {
                           <span>
                             <PreviewIcon icon={volumeControlPhone} />
                           </span>
-                          <Title Class="footer-link" Name="+1 123 - 564 - 7890" />
+                          <Title Class="footer-link" Name="+1 (786) 991-3467" />
                         </a>
                       </li>
                     </ul>
@@ -121,21 +121,21 @@ const Footer = () => {
                   <Title Class="footer-social-title" Name="Social icon" />
                   <ul className="social-wrapper">
                     <li>
-                      <a href="/index">
+                      <a target="_blank" href="https://facebook.com/cobuildlab">
                         <span>
                           <PreviewIcon icon={facebookSquare} />
                         </span>
                       </a>
                     </li>
                     <li>
-                      <a href="/index">
+                      <a target="_blank" href="https://twitter.com/cobuildlab">
                         <span>
                           <PreviewIcon icon={twitterSquare} />
                         </span>
                       </a>
                     </li>
                     <li>
-                      <a href="/index">
+                      <a target="_blank" href="https://linkedin.com/company/cobuildlab">
                         <span>
                           <PreviewIcon icon={linkedinSquare} />
                         </span>
