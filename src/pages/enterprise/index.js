@@ -12,6 +12,7 @@ import Testimonial from '../../components/enterprise/containers/testimonial';
 import Contact from '../../components/enterprise/containers/contact';
 import Brand from '../../components/enterprise/containers/brands';
 import Footer from '../../components/enterprise/containers/footer';
+// import ThemeColor from '../../components/enterprise/containers/themecolor';
 import CopyRight from '../../components/enterprise/containers/copyright_text';
 import '../../assets/scss/index.scss';
 
@@ -33,6 +34,7 @@ const IndexPage = () => {
         <Brand />
         <Footer />
         <CopyRight />
+        {/* <ThemeColor /> */}
       </div>
     </div>
   );

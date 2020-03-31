@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Button from '../../components/button';
 import { Titlespan, Description } from '../../components/title';
 import Image from '../../components/image';
-import BannerImg1 from '../../../../assets/images/banner/bannerimg.png';
+import BannerImg1 from '../../../../assets/images/banner/group-banner-2.png';
 import Shape2 from '../../../../assets/images/banner/bg-wave.svg';
 import Shape3 from '../../../../assets/images/banner/wave.png';
 import './banner.scss';
@@ -40,14 +40,10 @@ const Banner = (props) => {
               <Column isSize={6}>
                 <div className="row">
                   <div className="banner-content">
-                    <Titlespan
-                      Class="banner-main-title"
-                      Label="WE ARE"
-                      Name="CREATIVE BUSINESS AGENCY"
-                    />
+                    <Titlespan Class="banner-main-title" Label="LET'S BUILD" Name="A GREAT IDEA" />
                     <Description
                       Class="banner-dec"
-                      Name="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever"
+                      Name="A team or UX/UI Designers, Project Managers, Senior Developers, and QA Engineers are waiting to make your idea come alive"
                     />
                     <div className="banner-btn-wrapper">
                       <Button Class="button1 button3 btn" Name="LEARN MORE" />

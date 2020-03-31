@@ -86,7 +86,7 @@ body.open {
 }
 
 p {
-  color: $color-defult;
+  color: $color-default;
   font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
   font-weight: 500;
   position: relative;
@@ -335,7 +335,7 @@ header {
     padding: 7px 30px 5px;
   }
   .site-subtitle2 {
-    color: $color-defult1;
+    color: $color-default1;
     font-size: calc(18px + (36 - 18) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 500;
     position: relative;

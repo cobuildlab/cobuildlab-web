@@ -1,9 +1,25 @@
 :root {
-  --primary: linear-gradient(to right, #e100ff 0%, #7f00ff 100%);
-  --primary1: #8200ff;
-  --primary2: #e000ff;
-  --primary3: rgba(183, 41, 255, 0.1);
+  // Blue
+  // --primary: linear-gradxient(to right, #264A60 0%, rgb(77, 157, 218) 100%);  ;
+  --primary: linear-gradient(to right, #F6F6FB 0%, rgb(233, 238, 247) 100%);  ;
+  --primary2: #F6F6FB;
+  --primary1: #F6F6FB;
+  --primary3: #F6F6FB;
 }
+// :root {
+  // Orange
+//   --primary: linear-gradient(to right, rgb(202, 89, 29) 0%, #E76C29 100%);  ;
+//   --primary2: rgb(202, 89, 29);
+//   --primary1: #E76C29;
+//   --primary3: #E76C29;
+// }
+// :root {
+  // Purple
+//   --primary: linear-gradient(to right, #e100ff 0%, #7f00ff 100%);
+//   --primary1: #8200ff;
+//   --primary2: #e000ff;
+//   --primary3: rgba(183, 41, 255, 0.1);
+// }
 
 $primary: var(--primary);
 $primary1: var(--primary1);

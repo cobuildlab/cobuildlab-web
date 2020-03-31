@@ -154,10 +154,10 @@
           padding-right: calc(38px + (50 - 38) * ((100vw - 320px) / (1920 - 320)));
           background-color: transparent;
           border: 1px solid rgba(255, 255, 255, 0.2);
-          color: $color-defult;
+          color: $color-default;
           font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1920 - 320)));
           &::placeholder {
-            color: $color-defult;
+            color: $color-default;
           }
         }
         .search-icon {
