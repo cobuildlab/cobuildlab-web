@@ -47,9 +47,9 @@ import { Container, Columns, Column, Section } from 'bloomer';
 import { Subtitle, Description, Title, Titlespan2 } from '../../components/title';
 import BlogData from '../../../../data/blog';
 import PreviewIcon from '../../components/icon';
-import './blog.scss';
+import './customer-success.scss';
 
-const Blog = () => {
+const CustomerSuccess = () => {
   return (
     <Section>
       <div className="blog-wrapper">
@@ -96,4 +96,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default CustomerSucess;
