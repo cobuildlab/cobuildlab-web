@@ -58,7 +58,7 @@ const Banner = (props) => {
               <Column isSize={6}>
                 <div className="row">
                   <div className="banner-content">
-                    <Typrography size={title} tag="h1" className="banner-main-title">
+                    <Typrography size={title} tag="h1">
                       Let’s <span className="enterprise-text-orange">Build</span> a <br />
                       Great<span className=" enterprise-text-orange"> Idea.</span>
                     </Typrography>

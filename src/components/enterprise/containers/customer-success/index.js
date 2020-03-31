@@ -41,12 +41,11 @@
 //   },
 // ];
 
-
 import React from 'react';
 import { Container, Columns, Column, Section } from 'bloomer';
-import { Subtitle, Description, Title, Titlespan2 } from '../../components/title';
 import BlogData from '../../../../data/blog';
 import PreviewIcon from '../../components/icon';
+import Typography from '../../../2020/Typography';
 import './customer-success.scss';
 
 const CustomerSuccess = () => {
@@ -56,16 +55,23 @@ const CustomerSuccess = () => {
         <div className="enterprise-section">
           <Container>
             <div className="main-title-wrapper">
-              <Subtitle Class="site-subtitle" Name="OUR MAIN MISSIONS" />
-              <Titlespan2 Class="sitemain-subtitle" Name="Build Smart & Effective" Label="Management" />
-              <Description
-                Class="site-dec"
-                Name="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown"
-              />
+              <div className="sub-title-wrapper">
+                <Typography className="site-subtitle" tag="h3">
+                  OUR MAIN MISSIONS
+                </Typography>
+              </div>
+              <Typography className="sitemain-subtitle" tag="h2">
+                Build Smart & Effective  Management
+              </Typography>
+              <Typography className="site-dec" tag="p">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s 
+                standard dummy text ever since the 1500s, 
+                when an unknown
+              </Typography>
             </div>
             <Columns>
               {BlogData.map((data, i) => (
-                <Column isSize={{ mobile: 12, desktop: 4 }}  key={data.id} >
+                <Column isSize={{ mobile: 12, desktop: 4 }} key={data.id}>
                   <div className={`blog-${i}`}>
                     <div className="blog-content">
                       <div className="blog-first-block">
@@ -80,8 +86,12 @@ const CustomerSuccess = () => {
                           </div>
                         </div>
                         <div className="blog-right-content">
-                          <Title Class="blog-title" Name={data.title} />
-                          <Description Class="blog-dec" Name={data.content} />
+                          <Typography className="blog-title" tag="h5">
+                            {data.title}
+                          </Typography>
+                          <Typography className="blog-dec" tag="p">
+                            {data.content}
+                          </Typography>
                         </div>
                       </div>
                     </div>

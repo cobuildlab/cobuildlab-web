@@ -23,7 +23,7 @@ const Footer = () => {
         <Container>
           <div className="footer-content-wrapper">
             <Columns>
-              <Column  isSize={{ mobile: 8, desktop: 4 }}>
+              <Column isSize={{ mobile: 8, desktop: 4 }}>
                 <div className="footer-logo-wrapper">
                   <Image Path={logo} Class="footer-logo" />
                   <Description
@@ -42,10 +42,7 @@ const Footer = () => {
                           <span>
                             <PreviewIcon icon={mapMarker} />
                           </span>
-                          <Title
-                            Class="footer-link"
-                            Name="66 W Flagler St #900, Miami, FL 33130"
-                          />
+                          <Title Class="footer-link" Name="66 W Flagler St #900, Miami, FL 33130" />
                         </a>
                       </li>
                       <li>
@@ -68,7 +65,7 @@ const Footer = () => {
                   </div>
                 </div>
               </Column>
-              <Column isSize={{ mobile: 6, desktop: 2}}>
+              <Column isSize={{ mobile: 6, desktop: 2 }}>
                 <div className="footer-about-us">
                   <div className="footer-about-outer">
                     <Title Class="footer-title" Name="About Us" />
@@ -109,11 +106,11 @@ const Footer = () => {
                   </div>
                 </div>
               </Column>
-              <Column isSize={{ mobile: 12, desktop: 3 }} >
+              <Column isSize={{ mobile: 12, desktop: 3 }}>
                 <div className="footer-newsletter">
                   <Title Class="footer-title" Name="Stay with us" />
                   <div className="form-group">
-                    <Input type="text" placeholder="Enter email"  className="input-search"/>
+                    <Input type="text" placeholder="Enter email" className="input-search" />
                     <span className="search-icon gradient-color">
                       <PreviewIcon icon={paperPlane} />
                     </span>

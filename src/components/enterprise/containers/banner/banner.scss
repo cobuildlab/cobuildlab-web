@@ -1,7 +1,7 @@
 @import "../../../../assets/scss/variable";
 
 :root {
-  --bannerimg: url("../../../../assets/images/banner/bg-blue-2.png");
+  --bannerimg: url("../../../../assets/images/banner/bg-slate.png");
 }
 $bannerimg: var(--bannerimg);
 
@@ -43,13 +43,9 @@ $bannerimg: var(--bannerimg);
 }
 
 .banner-content {
-  .banner-main-title {
-    color: $color-white;
-  }
   .banner-dec {
     font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
     line-height: calc(20px + (26 - 20) * ((100vw - 320px) / (1920 - 320)));
-    color: $color-white;
     margin-bottom: 33px;
   }
 }

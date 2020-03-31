@@ -1,19 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Columns, Column, Section } from 'bloomer';
-import componse from '../../../../utils/styles-componse';
-import { Subtitle, Description, Title, Titlespan2 } from '../../components/title';
+
 import Button from '../../components/button';
 import { Servicedata, Servicedata1 } from '../../../../data/service';
 import PreviewIcon from '../../components/icon';
 import Typrography from '../../../2020/Typography';
 import './service.scss';
 
-const font = {
-  default: {
-    fontWeight: 'normal'
-  }
-};
 
 const ConentContainer = ({ children }) => (
   <div className="service-content-1 main-title-wrapper">

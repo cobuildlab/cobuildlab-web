@@ -4,6 +4,7 @@ import { Subtitle, Description, Titlespan2, Title } from '../../components/title
 import Image from '../../components/image';
 import Skills_img from '../../../../assets/images/skills/skills-img.png';
 import Progressbar from './progressbar';
+import Typography from '../../../2020/Typography';
 import './skills.scss';
 import '../../../../assets/scss/variable.scss';
 
@@ -23,15 +24,22 @@ function Skills() {
             </Column>
             <Column  isSize={{ mobile: 12, desktop: 6 }}>
               <div className="skills-content-block main-title-wrapper">
-                <Titlespan2 Class="sitemain-subtitle" Name="We Lead From " Label="The Front" />
-                <Subtitle Class="site-subtitle2" Name="What We Do" />
-
-                <Description
-                  Class="skills-dec"
-                  Name="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown dummy text of the printing "
-                />
+                <Typography className="sitemain-subtitle" tag="h3">
+                  We Lead From The Front
+                </Typography>
+                <div className="sub-title-wrapper">
+                  <Typography className="site-subtitle2" tag="h2">
+                    What We Do
+                  </Typography>
+                </div>
+                <Typography className="skills-dec" tag="p">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                  Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown dummy text of the printing
+                </Typography>
                 <div className="progress-outer-block">
-                  <Title Class="progress-title" Name="Our Best Skill" />
+                  <Typography className="progress-title" tag="h4">
+                    Our Best Skill
+                  </Typography>
                   <div className="progressbar-wrapper-block">
                     <div className="progressbar-block">
                       <Progressbar
