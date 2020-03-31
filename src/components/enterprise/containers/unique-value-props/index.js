@@ -47,9 +47,9 @@ import { Container, Columns, Column, Section } from 'bloomer';
 import { Subtitle, Description, Title, Titlespan2 } from '../../components/title';
 import BlogData from '../../../../data/blog';
 import PreviewIcon from '../../components/icon';
-import './customer-success.scss';
+import './unique-value-props.scss';
 
-const CustomerSuccess = () => {
+const UniqueValueProps = () => {
   return (
     <Section>
       <div className="blog-wrapper">
@@ -96,4 +96,4 @@ const CustomerSuccess = () => {
   );
 };
 
-export default CustomerSuccess;
+export default UniqueValueProps;
