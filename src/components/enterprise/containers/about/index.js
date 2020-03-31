@@ -3,7 +3,7 @@ import { Container, Columns, Column, Section } from 'bloomer';
 import { Subtitle, Description, Titlespan2 } from '../../components/title';
 import Button from '../../components/button';
 import Image from '../../components/image';
-import AboutImg from '../../../../assets/images/about/about-img.png';
+import AboutImg from '../../../../assets/images/banner/group-banner.png';
 import './about.scss';
 
 const About = () => {
