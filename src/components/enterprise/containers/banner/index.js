@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Columns, Column, Section } from 'bloomer';
-import { useStaticQuery, graphql } from 'gatsby';
+// import { useStaticQuery, graphql } from 'gatsby';
 import Button from '../../components/button';
 import { Titlespan, Description } from '../../components/title';
 import Image from '../../components/image';
@@ -8,32 +8,74 @@ import BannerImg1 from '../../../../assets/images/banner/group-banner-2.png';
 import Shape2 from '../../../../assets/images/banner/bg-wave.svg';
 import Shape3 from '../../../../assets/images/banner/wave.png';
 import './banner.scss';
+import anim1 from './1-blue.png'
+import anim2 from './2-blue.png'
+import anim3 from './3-blue.png'
+import anim4 from './4-blue.png'
+import anim5 from './5-blue.png'
+import anim6 from './6-orange.png'
+import anim7 from './7-blue.png'
+import anim8 from './8-blue.png'
+import anim9 from './9-blue.png'
 
 const Banner = (props) => {
-  const BannerAnimationImages = useStaticQuery(graphql`
-    query BackgroundImages {
-      allDataJson {
-        edges {
-          node {
-            bannerranimation {
-              img
-            }
-          }
-        }
-      }
-    }
-  `);
-
+  // const BannerAnimationImages = useStaticQuery(graphql`
+  //   query BackgroundImages {
+  //     allDataJson {
+  //       edges {
+  //         node {
+  //           bannerranimation {
+  //             img
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
+const bannerAnimationImages=[
+  {
+      "img": anim1
+  },
+  {
+      "img": anim2
+  },
+  {
+      "img": anim3
+  },
+  {
+      "img": anim4
+  },
+  {
+      "img": anim5
+  },
+  {
+      "img": anim6
+  },
+  {
+      "img": anim7
+  },
+  {
+      "img": anim8
+  },
+  {
+      "img": anim9
+  }
+]
   return (
     <Section isPaddingless>
       <div className="banner-wrapper demo1">
         <div className="banner-outer">
           <div className="slider-animation-images">
-            {BannerAnimationImages.allDataJson.edges[0].node.bannerranimation.map((img, index) => (
+            {bannerAnimationImages.map((img, index) => (
               <span className={`image${index + 1}`} key={`banner-${index}`}>
                 <Image Path={img.img} />
               </span>
             ))}
+            {/* {BannerAnimationImages.allDataJson.edges[0].node.bannerranimation.map((img, index) => (
+              <span className={`image${index + 1}`} key={`banner-${index}`}>
+                <Image Path={img.img} />
+              </span>
+            ))} */}
           </div>
           <Container>
             <Columns isDisplay="flex">
