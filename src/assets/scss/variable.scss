@@ -1,6 +1,5 @@
 // $color1: linear-gradient(to right, rgb(202, 89, 29) 0%, #E76C29 100%);
 // $color1: linear-gradient(to right, #F6F6FB 0%, #F6F6FB 100%);
-$color1: linear-gradient(to right, #F6F6FB 0%, rgb(49, 106, 141) 100%);
 // $color1: linear-gradient(to right, #264A60 0%, rgb(49, 106, 141) 100%);
 // $color1: linear-gradient(to right, #e100ff 0%, #7f00ff 100%);
 // $color2: linear-gradient(to right, #33ccff 0%, #3366ffth 100%);
@@ -10,9 +9,15 @@ $color1: linear-gradient(to right, #F6F6FB 0%, rgb(49, 106, 141) 100%);
 // $color5: linear-gradient(to right, #184e68 0%, #57ca85 100%);
 // $color6: linear-gradient(to right, #30cfd0 0%, #842eee 100%);
 
+$cobuild-indigo: #264A60;
+$cobuild-orange: #E76C29;
+$cobuild-dark-slate: #90a2ad;
+$cobuild-med-slate: #d2dfe6;
+$cobuild-light-slate: #f6f6fb;
 
+$color1: linear-gradient(to right, $cobuild-light-slate 0%, rgb(49, 106, 141) 100%);
 
-$color-dark: #264A60;
+$color-dark: $cobuild-indigo;
 $color-white: #ffffff;
 // $color-theme: linear-gradient(to left, rgb(225, 0, 255) 0%, rgb(127, 0, 255) 100%);
 $color-theme: $color1;
