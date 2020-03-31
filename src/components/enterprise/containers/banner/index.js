@@ -1,12 +1,13 @@
 import React from 'react';
 import { Container, Columns, Column, Section } from 'bloomer';
 import { useStaticQuery, graphql } from 'gatsby';
-import Button from '../../components/button';
 import Image from '../../components/image';
 import BannerImg1 from '../../../../assets/images/banner/group-banner-2.png';
 import Shape2 from '../../../../assets/images/banner/bg-wave.svg';
 import Shape3 from '../../../../assets/images/banner/wave.png';
 import Typrography from '../../../2020/Typography';
+import Button from '../../../2020/Button';
+
 
 import './banner.scss';
 
@@ -67,13 +68,9 @@ const Banner = (props) => {
                       and QA Engineers are waiting to make your idea come alive
                     </Typrography>
                     <div className="banner-btn-wrapper">
-                      <Button Class="button1 button3 btn" Name="LEARN MORE" />
-                      <Button
-                        Class="button1 button4 btn"
-                        Name="GET STARTED"
-                        Title="gradient-color"
-                        BtnIcon="btn-icon gradient-color1"
-                      />
+                      <Button>
+                        GET STARTED
+                      </Button>
                     </div>
                   </div>
                 </div>

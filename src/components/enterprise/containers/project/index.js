@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Columns, Column, Section } from 'bloomer';
-import { Title } from '../../components/title';
 import CountUp from 'react-countup';
 import Counterdata from '../../../../data/project';
+import Typography from '../../../2020/Typography';
 import './project.scss';
 
 
@@ -23,7 +23,9 @@ const Project = () => {
                     </div>
                     <div className="counters">
                       <CountUp delay={3} end={data.number} className="counters-number"></CountUp>
-                      <Title Class="counters-title" Name={data.title} />
+                      <Typography className="counters-title" tag="h3">
+                        {data.title}
+                      </Typography>
                     </div>
                   </div>
                 </Column>

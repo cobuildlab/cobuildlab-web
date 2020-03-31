@@ -46,7 +46,6 @@ import { Container, Columns, Column, Section } from 'bloomer';
 import BlogData from '../../../../data/blog';
 import PreviewIcon from '../../components/icon';
 import Typography from '../../../2020/Typography';
-import './customer-success.scss';
 import './unique-value-props.scss';
 
 const UniqueValueProps = () => {

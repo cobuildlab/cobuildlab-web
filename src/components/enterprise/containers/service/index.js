@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Columns, Column, Section } from 'bloomer';
-
-import Button from '../../components/button';
 import { Servicedata, Servicedata1 } from '../../../../data/service';
 import PreviewIcon from '../../components/icon';
 import Typrography from '../../../2020/Typography';
+import Button from '../../../2020/Button';
 import './service.scss';
 
 const ConentContainer = ({ children }) => (
@@ -66,11 +65,9 @@ const Service = () => {
                     mornings of spring which I enjoy with my whole heart. I am alone, and feel the
                     charm of existence in this spot.
                   </Typrography>
-                  <Button
-                    Class="button1 btn button2 gradient-color"
-                    Name="Explore"
-                    BtnIcon="btn-icon"
-                  />
+                  <Button>
+                    Explore
+                  </Button>
                 </div>
               </ConentContainer>
             </Column>

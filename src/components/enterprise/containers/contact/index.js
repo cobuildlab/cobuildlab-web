@@ -11,10 +11,10 @@ import {
   Section 
 } from 'bloomer';
 // import Img from "gatsby-image"
-import { Subtitle, Description } from '../../components/title';
 import Image from '../../components/image';
 import ContactImg from '../../../../assets/images/contact/woman.png';
-import Button from '../../components/button';
+import Button from '../../../2020/Button';
+import Typography from '../../../2020/Typography';
 import ContactBackgroundImages from '../../../../data/contact';
 import './contact.scss';
 
@@ -65,9 +65,17 @@ const Contact = () => {
             </Column>
             <Column isSize={6}>
               <div className="contact-content-block main-title-wrapper">
-                <Subtitle Class="sitemain-subtitle" Name="Send us mesage for any Info" />
-                <Subtitle Class="site-subtitle2" Name="Call us for any emergency" />
-                <Description Class="contact-dec" Name="+1 123 - 456 - 7890" />
+                <div className="sub-title-wrapper">
+                  <Typography className="sitemain-subtitle" tag="h6">
+                    Send us mesage for any Info
+                  </Typography>
+                  <Typography className="site-subtitle2" tag="h6">
+                    Call us for any emergency
+                  </Typography>
+                </div>
+                <Typography className="contact-dec" tag="p">
+                  +1 123 - 456 - 7890
+                </Typography>
                 <form className="form">
                   <Field>
                     <Label>Name</Label>
@@ -106,13 +114,13 @@ const Contact = () => {
                       />
                     </Control>
                   </Field>
+                  <Field>
+                    <Control>
+                      <Button>Submit</Button>
+                    </Control>
+                  </Field>
                 </form>
-                <Button
-                  Class="button1 btn button2 gradient-color"
-                  Name="SUBMIT"
-                  Clickble={handelSubmit}
-                  BtnIcon="btn-icon"
-                />
+              
               </div>
             </Column>
           </Columns>
