@@ -8,7 +8,7 @@
       margin: 0;
     }
     .contact-title {
-      color: $color-black;
+      color: $color-dark;
       font-weight: 700;
       font-size: calc(22px + (36 - 22) * ((100vw - 320px) / (1920 - 320)));
       margin-bottom: 13px;
@@ -22,7 +22,7 @@
     }
     .form {
       .form-label {
-        color: $color-black;
+        color: $color-dark;
         font-weight: 400;
         font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
       }

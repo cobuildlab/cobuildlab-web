@@ -38,14 +38,14 @@
         }
         .testimonial-title {
           font-weight: 700;
-          color: $color-black;
+          color: $color-dark;
           text-transform: capitalize;
           margin-bottom: 5px;
           font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1920 - 320)));
         }
         .testimonial-subtitle {
           font-weight: 400;
-          color: $color-black;
+          color: $color-dark;
           text-transform: capitalize;
           margin: 0;
           font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));

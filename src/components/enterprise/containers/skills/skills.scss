@@ -36,7 +36,7 @@
         margin-bottom: 0;
       }
       .progressbar-title {
-        color: $color-black;
+        color: $color-dark;
         font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
         font-weight: 400;
         position: relative;
