@@ -2,7 +2,7 @@
 
 /* footer css start */
 .footer-wrapper {
-  background: #1f1f1f;
+  background: $cobuild-indigo;
   padding: calc(32px + (110 - 40) * ((100vw - 320px) / (1920 - 320))) 0;
   position: relative;
   border-top-right-radius: calc(30px + (200 - 30) * ((100vw - 320px) / (1920 - 320)));
@@ -23,6 +23,9 @@
   }
   .footer-content-wrapper {
     position: relative;
+    @media screen and (max-width: 768px){
+      padding: 1em;
+    }
     .footer-logo-wrapper {
       padding-right: calc(0px + (80 - 0) * ((100vw - 320px) / (1920 - 320)));
       .footer-logo {
@@ -144,16 +147,17 @@
       .form-group {
         position: relative;
         padding-top: 7px;
+        margin-bottom: 1em;
         .input-search {
           height: calc(38px + (50 - 38) * ((100vw - 320px) / (1920 - 320)));
           padding-left: 10px;
           padding-right: calc(38px + (50 - 38) * ((100vw - 320px) / (1920 - 320)));
           background-color: transparent;
           border: 1px solid rgba(255, 255, 255, 0.2);
-          color: $color-defult;
+          color: $color-default;
           font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1920 - 320)));
           &::placeholder {
-            color: $color-defult;
+            color: $color-default;
           }
         }
         .search-icon {

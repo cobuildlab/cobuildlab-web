@@ -1,28 +1,30 @@
+/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/require-default-props */
+/* eslint-disable jsdoc/require-returns */
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import get from 'lodash/get';
 import Helmet from 'react-helmet';
 import 'react-toastify/dist/ReactToastify.min.css';
-import '../assets/prism.css';
-import Layout from '../components/layout';
-import Contact from '../components/Contact';
+import Layout from './2019/components/layout';
+import Contact from './2019/components/Contact';
 import 'bulma';
-import '../assets/fonts/Lato-Black.ttf';
-import '../assets/fonts/Lato-BlackItalic.ttf';
-import '../assets/fonts/Lato-Bold.ttf';
-import '../assets/fonts/Lato-BoldItalic.ttf';
-import '../assets/fonts/Lato-Hairline.ttf';
-import '../assets/fonts/Lato-HairlineItalic.ttf';
-import '../assets/fonts/Lato-Italic.ttf';
-import '../assets/fonts/Lato-Light.ttf';
-import '../assets/fonts/Lato-LightItalic.ttf';
-import '../assets/fonts/Lato-Regular.ttf';
+import './2019/assets/fonts/Lato-Black.ttf';
+import './2019/assets/fonts/Lato-BlackItalic.ttf';
+import './2019/assets/fonts/Lato-Bold.ttf';
+import './2019/assets/fonts/Lato-BoldItalic.ttf';
+import './2019/assets/fonts/Lato-Hairline.ttf';
+import './2019/assets/fonts/Lato-HairlineItalic.ttf';
+import './2019/assets/fonts/Lato-Italic.ttf';
+import './2019/assets/fonts/Lato-Light.ttf';
+import './2019/assets/fonts/Lato-LightItalic.ttf';
+import './2019/assets/fonts/Lato-Regular.ttf';
 import 'react-modal-video/scss/modal-video.scss';
-// import marcelo from '../resources/marceloicigliani.jpg'
-// import alejandro from '../resources/alejandrosanchez.jpg'
-import alan from '../resources/alan-cobuild-profile.jpg';
-import angel from '../resources/angel-lacret-cobuild-lab.jpg';
-import defaultImg from '../resources/default-post.jpg';
+import alan from './2019/resources/alan-cobuild-profile.jpg';
+import angel from './2019/resources/angel-lacret-cobuild-lab.jpg';
+import defaultImg from './2019/resources/default-post.jpg';
 
 import { Icon } from 'react-icons-kit';
 import { check } from 'react-icons-kit/fa/check';
@@ -34,15 +36,11 @@ import { linkedinSquare } from 'react-icons-kit/fa/linkedinSquare';
 import { clockO } from 'react-icons-kit/fa/clockO';
 import { commentingO } from 'react-icons-kit/fa/commentingO';
 import { play } from 'react-icons-kit/fa/play';
-import comic from '../resources/icons/comic.svg';
-import { H2Blue } from '../components/text/H2Blue';
-import { H3Blue } from '../components/text/H3Blue';
-import { H1Blue } from '../components/text/H1Blue';
-import { H4Blue } from '../components/text/H4Blue';
-
+import comic from './2019/resources/icons/comic.svg';
+import { Title } from 'bloomer';
+import styled from 'styled-components';
 import {
   Container,
-  Title,
   Subtitle,
   Column,
   Columns,
@@ -55,7 +53,61 @@ import {
 } from 'bloomer';
 import ModalVideo from 'react-modal-video';
 import * as PropTypes from 'prop-types';
-import NewsletterModal from '../components/NewsletterModal';
+
+const StyledTitle = styled(Title)`
+  color: #254a61 !important;
+  margin-bottom: 1rem !important;
+  font-size: 92px !important;
+  font-size: 7em !important;
+  font-family: 'Lato-Black', sans-serif !important;
+`;
+
+const H1Blue = ({ children, ...props }) => (
+  <StyledTitle isSize={1} tag={'h1'} {...props}>
+    {children}
+  </StyledTitle>
+);
+
+const StyledTitle2 = styled(Title)`
+  color: #254a61 !important;
+  margin-bottom: 1rem !important;
+  font-size: 58px !important;
+  font-weight: 'bold';
+  font-family: 'Lato-Black', sans-serif !important;
+`;
+
+const H2Blue = (props) => (
+  <StyledTitle2 isSize={2} tag={'h2'}>
+    {props.children}
+  </StyledTitle2>
+);
+
+const StyledTitle3 = styled(Title)`
+  color: #254a61 !important;
+  margin-bottom: 1rem !important;
+  font-size: 36px !important;
+  font-weight: 'bold';
+  font-family: 'Lato-Black', sans-serif !important;
+`;
+
+const H3Blue = (props) => (
+  <StyledTitle3 isSize={2} tag={'h2'}>
+    {props.children}
+  </StyledTitle3>
+);
+
+const StyledTitle4 = styled(Title)`
+  color: #254a61 !important;
+  margin-bottom: 1rem !important;
+  font-size: 24px !important;
+  font-family: 'Lato-Black', sans-serif !important;
+`;
+
+const H4Blue = (props) => (
+  <StyledTitle4 isSize={2} tag={'h2'}>
+    {props.children}
+  </StyledTitle4>
+);
 
 /**
  * @param props
@@ -98,8 +150,10 @@ class Index extends React.Component {
   }
 
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title');
-    const siteDescription = get(this, 'props.data.site.siteMetadata.description');
+    const siteTitle = 'Cobuild Lab | Software Development Company in Miami, Florida';
+    const siteDescription =
+      'We partner with new and early-stage non-technical entrepreneurs and industry experts to transforms ideas into Web and Mobile Software Products.\n' +
+      'Since day one, our technique is focused on early results and transparent communication.';
     const posts = get(this, 'props.data.allMarkdownRemark.edges');
     const customerSuccessStories = get(this, 'props.data.customerSuccessStories.edges');
     const siteKey = process.env.RECAPTCHA_SITEKEY;
@@ -465,12 +519,6 @@ export default Index;
 
 export const pageQuery = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-        description
-      }
-    }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 3

@@ -1,0 +1,127 @@
+@import '../../../../../assets/scss/variable';
+
+.toggle_container{
+  margin-left: auto;
+}
+
+.menu_btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  .title {
+    color: $cobuild-indigo;
+    line-height: 40px;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
+  }
+  .btn_block {
+    width: 36px;
+    height: 2px;
+    position: relative;
+    margin-right: 15px;
+    transition: all 0.5s ease-in-out;
+    background-color: $cobuild-indigo;
+    &:after,
+    &:before {
+      content: '';
+      position: absolute;
+      top: -8px;
+      right: 0;
+      width: 36px;
+      height: 2px;
+      transition: all 0.5s ease-in-out;
+      background-color: $cobuild-indigo;
+    }
+    &:after {
+      top: auto;
+      bottom: -8px;
+      width: 24px;
+    }
+  }
+  &:hover {
+    span {
+      &:before {
+        width: 24px;
+      }
+      &:after {
+        width: 36px;
+      }
+    }
+  }
+}
+
+.navbar_toggle{
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.sider{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.overlay{
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  opacity: 0.5;
+  z-index: 6;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  animation: overlay .1.5s ease-out;
+}
+
+.menu{
+  width: 250px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  position: absolute;
+  background-color: white;
+  animation: menu .4s ease-out;
+
+  &_item{
+    padding: 1.5em 1em;
+    border-bottom: 1px solid #e2e2e2;;
+    cursor: pointer;
+  }
+}
+
+
+
+.hidden{
+  display: none;
+}
+.show{
+  display: block;
+}
+
+@keyframes overlay {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0.5;
+  }
+}
+
+
+@keyframes menu {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}

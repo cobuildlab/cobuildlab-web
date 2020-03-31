@@ -1,53 +1,136 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
-import { useStaticQuery, graphql } from 'gatsby';
+import { Container, Columns, Column, Section } from 'bloomer';
+// import { useStaticQuery, graphql } from 'gatsby';
 import Button from '../../components/button';
 import { Titlespan, Description } from '../../components/title';
 import Image from '../../components/image';
-import BannerImg1 from '../../../../assets/enterprise-2020/images/banner/bannerimg.png';
-import Shape2 from '../../../../assets/enterprise-2020/images/banner/bg-wave.svg';
-import Shape3 from '../../../../assets/enterprise-2020/images/banner/wave.png';
+import BannerImg1 from '../../../../assets/images/banner/group-banner-2.png';
+import Shape2 from '../../../../assets/images/banner/bg-wave.svg';
+import Shape3 from '../../../../assets/images/banner/wave.png';
 import './banner.scss';
+import anim1 from './1-blue.png'
+import anim2 from './2-blue.png'
+import anim3 from './3-blue.png'
+import anim4 from './4-blue.png'
+import anim5 from './5-blue.png'
+import anim6 from './6-orange.png'
+import anim7 from './7-blue.png'
+import anim8 from './8-blue.png'
+import anim9 from './9-blue.png'
+
+const Banner = (props) => {
+  // const BannerAnimationImages = useStaticQuery(graphql`
+  //   query BackgroundImages {
+  //     allDataJson {
+  //       edges {
+  //         node {
+  //           bannerranimation {
+  //             img
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
+const bannerAnimationImages=[
+  {
+      "img": anim1
+  },
+  {
+      "img": anim2
+  },
+  {
+      "img": anim3
+  },
+  {
+      "img": anim4
+  },
+  {
+      "img": anim5
+  },
+  {
+      "img": anim6
+  },
+  {
+      "img": anim7
+  },
+  {
+      "img": anim8
+  },
+  {
+      "img": anim9
+  }
+]
+  return (
+    <Section isPaddingless>
+      <div className="banner-wrapper demo1">
+        <div className="banner-outer">
+          <div className="slider-animation-images">
+            {bannerAnimationImages.map((img, index) => (
+              <span className={`image${index + 1}`} key={`banner-${index}`}>
+                <Image Path={img.img} />
+              </span>
+            ))}
+            {/* {BannerAnimationImages.allDataJson.edges[0].node.bannerranimation.map((img, index) => (
+              <span className={`image${index + 1}`} key={`banner-${index}`}>
+                <Image Path={img.img} />
+              </span>
+            ))} */}
+          </div>
+          <Container>
+            <Columns isDisplay="flex">
+              <Column isSize={6}>
+                <div className="row">
+                  <div className="banner-content">
+                    <Titlespan Class="banner-main-title" Label="LET'S BUILD" Name="A GREAT IDEA" />
+                    <Description
+                      Class="banner-dec"
+                      Name="A team or UX/UI Designers, Project Managers, Senior Developers, and QA Engineers are waiting to make your idea come alive"
+                    />
+                    <div className="banner-btn-wrapper">
+                      <Button Class="button1 button3 btn" Name="LEARN MORE" />
+                      <Button
+                        Class="button1 button4 btn"
+                        Name="GET STARTED"
+                        Title="gradient-color"
+                        BtnIcon="btn-icon gradient-color1"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </Column>
+              <Column isHidden="mobile" isSize={6}>
+                <div className="row">
+                  <div className="banner-image">
+                    <Image Path={BannerImg1} Class="banner-img" />
+                  </div>
+                </div>
+              </Column>
+            </Columns>
+          </Container>
+          {(props.ChangeClass === 'demo2' || props.ChangeClass === 'demo3') && (
+            <div className="bottom-img">
+              {props.ChangeClass === 'demo2' ? <Image Path={Shape2} /> : <Image Path={Shape3} />}
+            </div>
+          )}
+        </div>
+      </div>
+    </Section>
+  );
+};
+
+export default Banner;
 
 /**
- * @param props
- */
-function Banner(props) {
-  const BannerAnimationImages = useStaticQuery(graphql`
-    query BackgroundImages {
-      allDataJson {
-        edges {
-          node {
-            bannerranimation {
-              img
-            }
-          }
-        }
-      }
-    }
-  `);
-
-  return (
-    <section className={`banner-wrapper ${props.ChangeClass}`} id="home">
-      <div className="banner-outer">
-        <div className="slider-animation-images">
-          {BannerAnimationImages.allDataJson.edges[0].node.bannerranimation.map((img, index) => (
-            <span className={`image${index + 1}`} key={`banner-${index}`}>
-              <Image Path={img.img} />
-            </span>
-          ))}
-        </div>
-        <Container>
-          <Row>
-            <Col md={6}>
-              <div className="banner-content">
+ * 
+ *    <div className={styles.banner_content}>
                 <Titlespan
-                  Class="banner-main-title"
+                  Class={styles.banner_main_title}
                   Label="WE ARE"
                   Name="CREATIVE BUSINESS AGENCY"
                 />
                 <Description
-                  Class="banner-dec"
+                  Class={styles.banner_dec}
                   Name="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever"
                 />
                 <div className="banner-btn-wrapper">
@@ -58,25 +141,8 @@ function Banner(props) {
                     Title="gradient-color"
                     BtnIcon="btn-icon gradient-color1"
                   />
-                </div>
-              </div>
-            </Col>
-            <Col md={6}>
-              <div className="banner-image">
-                <Image Path={BannerImg1} Class="banner-img" />
-              </div>
-            </Col>
-          </Row>
-        </Container>
-
-        {(props.ChangeClass === 'demo2' || props.ChangeClass === 'demo3') && (
-          <div className="bottom-img">
-            {props.ChangeClass === 'demo2' ? <Image Path={Shape2} /> : <Image Path={Shape3} />}
-          </div>
-        )}
-      </div>
-    </section>
-  );
-}
-
-export default Banner;
+                </div>.
+              </div>.
+ * 
+ * 
+ */

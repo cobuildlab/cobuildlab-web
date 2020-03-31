@@ -1,0 +1,118 @@
+@import '../../../../assets/css/2020/var.scss';
+
+$circle: 70px;
+
+.hero{
+
+  &_body{
+    position: relative;
+    padding-top: 2.5em;
+    @media all and (max-width: 767.99px){
+      padding-top: 0em;
+    }
+  }
+
+  &_body_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+  }
+
+  &_text{
+    @media all and (max-width: 767.99px){
+      text-align: center;
+    }
+  }
+
+  &_orange_text{
+    color: $orange;
+  }
+
+  &_read_more{
+    margin-top: 25px;
+    @media all and (max-width: 767.99px){
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &_image_container{
+    position: relative;
+  }
+
+  &_icon_video_container{
+    position: absolute;
+    top: calc(50% + 35px);
+    left: calc(50% - 70px);
+    width: $circle;
+    height: $circle;
+    z-index: 100;
+    cursor: pointer;
+
+    @media screen and (max-width: 768px){
+      left: calc(50% - 35px);
+    }
+  }
+
+  &_icon{
+    color: $white;
+    }
+
+}
+
+.overlay_background{
+  position: absolute;
+  top: 15%;
+  left: -35%;
+  width: 100%;
+  height: 100%;
+  @media screen and (max-width: 768px){
+    display: none;
+  }
+}
+
+
+/* The circle */
+.sonar_emitter {
+  position: relative;
+  margin: 0 auto;
+  width: $circle;
+  height: $circle;
+  border-radius: 9999px;
+  background-color: hsla(21, 79%, 53%, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* the 'wave', same shape and size as its parent */
+.sonar_wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 9999px;
+  background-color: hsla(21, 79%, 53%, 1);
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+  animation: sonarWave 2s linear infinite;
+
+}
+
+/*
+  Animate!
+  NOTE: add browser prefixes where needed.
+*/
+
+@keyframes sonarWave {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
-import Nextjs from '../../../../assets/enterprise-2020/images/framework/next-js.svg';
-import Html from '../../../../assets/enterprise-2020/images/framework/html-5.svg';
+import Nextjs from '../../../../assets/images/framework/next-js.svg';
+import Html from '../../../../assets/images/framework/html-5.svg';
 
 const ThemeOption = () => {
   return (

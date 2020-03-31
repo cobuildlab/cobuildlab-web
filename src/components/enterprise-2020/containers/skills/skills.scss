@@ -9,7 +9,7 @@
 
 .skills-content-block {
   .skills-title {
-    color: $color-defult1;
+    color: $color-default1;
     font-size: calc(20px + (36 - 20) * ((100vw - 320px) / (1920 - 320)));
     line-height: calc(32px + (46 - 32) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 500;
@@ -36,7 +36,7 @@
         margin-bottom: 0;
       }
       .progressbar-title {
-        color: $color-black;
+        color: $color-dark;
         font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
         font-weight: 400;
         position: relative;
@@ -54,7 +54,7 @@
             &:after {
               content: "";
               font-weight: 400;
-              color: $color-defult;
+              color: $color-default;
               font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1920 - 320)));
               display: block;
               width: auto;

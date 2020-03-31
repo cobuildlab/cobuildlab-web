@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'reactstrap';
+import { Container, Section } from 'bloomer';
 import { useStaticQuery, graphql } from 'gatsby';
 import Image from '../../components/image';
 import Slider from 'react-slick';
@@ -61,19 +61,23 @@ function Brand() {
   };
 
   return (
-    <section className="brand-slider">
-      <Container>
-        <Slider {...settings}>
-          {Branddata.allDataJson.edges[0].node.brands.map((data) => (
-            <div className="brand-item" key={data.id}>
-              <div className="brand-content">
-                <Image Path={data.img} />
-              </div>
-            </div>
-          ))}
-        </Slider>
-      </Container>
-    </section>
+    <Section isPaddingless>
+      <div className="brand-slider">
+        <div className="enterprise-section">
+          <Container>
+            <Slider {...settings}>
+              {Branddata.allDataJson.edges[0].node.brands.map((data) => (
+                <div className="brand-item" key={data.id}>
+                  <div className="brand-content">
+                    <Image Path={data.img} />
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </Container>
+        </div>
+      </div>
+    </Section>
   );
 }
 

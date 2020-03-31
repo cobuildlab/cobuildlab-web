@@ -5,6 +5,13 @@ span.token.numer{
     min-width: auto !important;
     padding: 0px !important;
 }
+@font-face {
+    font-family: 'Lato-light';
+    src: url(../fonts/Lato-Light.ttf);
+    font-weight: lighter;
+    font-variant: normal;
+    text-rendering: optimizeLegibility;
+}
 
 @font-face {
     font-family: 'Lato-Regular';
@@ -17,7 +24,7 @@ span.token.numer{
 @font-face {
     font-family: 'Lato-Bold';
     src: url(../fonts/Lato-Bold.ttf);
-    font-weight: normal;
+    font-weight: bold;
     font-variant: normal;
     text-rendering: optimizeLegibility;
 }
@@ -635,7 +642,7 @@ hr {
 
 /*customize tag*/
 
-.footer {
+.custom-footer {
     background-color: #264a60 !important;
     padding: 4rem 1.5rem 6rem;
     color: #fff;
@@ -1363,3 +1370,5 @@ input:focus ~ .highlight {
 .modal.is-active {
     opacity: 1!important;
 }
+
+    

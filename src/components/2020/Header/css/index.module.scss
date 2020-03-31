@@ -1,0 +1,56 @@
+@import '../../../../assets/css/2020/var.scss';
+
+
+.nav_brand{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav_brand_img{
+  width: auto;
+  height: auto;
+}
+
+.nav_item {
+  padding: 0 10px;
+}
+
+.nav_link{
+  color: #254a60;
+  font-weight: 600;
+}
+
+.nav_link_spacing{
+  margin-right: 35px;
+}
+
+.nav_icon{
+  @media screen and (max-width: 768px){
+    align-items: flex-start;
+  }
+}
+
+.nav_divider{
+  box-shadow: 0px 1px 2px #254a6038;
+
+  & > div {
+    padding: 0  ;
+  }
+}
+
+@media only screen and (min-width: 1224px){
+
+  .nav_brand{
+    width: 229px;
+    height: 49px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .nav_brand_img{
+    margin-right: 5px;
+    width: 100%;
+    max-height: 100% !important;
+  }
+}

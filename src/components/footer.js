@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
 import { navigate } from 'gatsby';
 import { ToastContainer, toast } from 'react-toastify';
@@ -73,7 +74,7 @@ class MyFooter extends React.Component {
 
   render() {
     return (
-      <Footer id="footer" className="is-fixed-bottom">
+      <Footer id="footer" className="is-fixed-bottom custom-footer">
         <Container>
           <Content>
             <Columns>

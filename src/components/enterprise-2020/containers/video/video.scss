@@ -2,7 +2,8 @@
 
 /* video-wrapper css start */
 .video-wrapper {
-  background: url(../../../../assets/enterprise-2020/images/video/bg-img.png) center no-repeat;
+  position: relative;
+  background: url(../../../../assets/images/video/bg-img.png) center no-repeat;
   background-size: cover;
   .video-dec {
     margin-bottom: calc(15px + (50 - 15) * ((100vw - 320px) / (1920 - 320))) !important;

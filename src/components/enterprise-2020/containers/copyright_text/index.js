@@ -1,12 +1,9 @@
 import React from 'react';
-import { Container } from 'reactstrap';
+import { Container } from 'bloomer';
 import Scroll from '../scroll';
 import './copyright.scss';
 
-/**
- *
- */
-function CopyRight() {
+const CopyRight = () => {
   return (
     <div className="footer-wrapper-copytext">
       <Container>
@@ -21,6 +18,6 @@ function CopyRight() {
       </Container>
     </div>
   );
-}
+};
 
 export default CopyRight;

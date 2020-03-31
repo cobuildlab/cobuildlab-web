@@ -1,0 +1,36 @@
+@import './var.scss';
+
+.section{
+
+  &-bg-white{
+    background-color: $white;
+  }
+
+  &-not-padding{
+    padding: 4.5rem 0 !important;
+  }
+
+  &-title{
+    margin-bottom: 105px;
+  }
+}
+
+.container{
+  &-full-width{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+.image{
+  &-fluid{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+.text-color-orange{
+  color: $orange;
+}

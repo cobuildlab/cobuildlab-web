@@ -1,7 +1,7 @@
 import { lightbulbO, calendarO, gavel } from 'react-icons-kit/fa';
-import Img1 from '../../images/blog/blog1.png';
-import Img2 from '../../images/blog/blog2.png';
-import Img3 from '../../images/blog/blog3.png';
+import Img1 from '../../assets/images/blog/css1.jpg';
+import Img2 from '../../assets/images/blog/css2.jpg';
+import Img3 from '../../assets/images/blog/css3.jpg';
 
 const BlogData = [
   {

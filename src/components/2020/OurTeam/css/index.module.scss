@@ -1,0 +1,20 @@
+
+.our_team_container{
+  position: relative;
+}
+
+.our_team_redirect{
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
+}
+
+.columns{
+  &_not_padding{
+    padding: 0 !important;
+  }
+}

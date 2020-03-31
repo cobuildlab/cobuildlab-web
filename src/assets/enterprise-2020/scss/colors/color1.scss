@@ -1,9 +1,34 @@
+
+@import "./variable.scss";
+
+$color1: linear-gradient(to right, $cobuild-light-slate 0%, #d2dfe6 100%);
+$cobuild-indigo: #264A60;
+$cobuild-orange: #E76C29;
+$cobuild-dark-slate: #90a2ad;
+$cobuild-med-slate: #d2dfe6;
+$cobuild-light-slate: #f6f6fb;
 :root {
-  --primary: linear-gradient(to right, #e100ff 0%, #7f00ff 100%);
-  --primary1: #8200ff;
-  --primary2: #e000ff;
-  --primary3: rgba(183, 41, 255, 0.1);
+  // Blue / Gray Slate
+  // --primary: linear-gradxient(to right, #264A60 0%, rgb(77, 157, 218) 100%);  ;
+  --primary: linear-gradient(to right, #d2dfe6 100%, #f6f6fb 0%);
+  --primary1: #264A60;
+  --primary2: #E76C29;
+  --primary3:  #d2dfe6;
 }
+// :root {
+  // Cobuild Lab Orange
+//   --primary: linear-gradient(to right, rgb(202, 89, 29) 0%, #E76C29 100%);  ;
+//   --primary2: rgb(202, 89, 29);
+//   --primary1: #E76C29;
+//   --primary3: #E76C29;
+// }
+// :root {
+  // Original Purple
+//   --primary: linear-gradient(to right, #e100ff 0%, #7f00ff 100%);
+//   --primary1: #8200ff;
+//   --primary2: #e000ff;
+//   --primary3: rgba(183, 41, 255, 0.1);
+// }
 
 $primary: var(--primary);
 $primary1: var(--primary1);

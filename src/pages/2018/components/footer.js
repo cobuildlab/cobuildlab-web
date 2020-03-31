@@ -71,7 +71,7 @@ class MyFooter extends React.Component {
 
   render() {
     return (
-      <Footer id="footer" className="is-fixed-bottom">
+      <Footer id="footer" className="custom-footer is-fixed-bottom">
         <Container>
           <Content>
             <Columns>

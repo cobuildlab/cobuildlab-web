@@ -28,7 +28,6 @@ import '../assets/fonts/Lato-Italic.ttf';
 import '../assets/fonts/Lato-Light.ttf';
 import '../assets/fonts/Lato-LightItalic.ttf';
 import '../assets/fonts/Lato-Regular.ttf';
-import '../assets/prism.css';
 
 import {
   Hero,

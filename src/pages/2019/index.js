@@ -1,3 +1,8 @@
+/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/require-default-props */
+/* eslint-disable jsdoc/require-returns */
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import get from 'lodash/get';

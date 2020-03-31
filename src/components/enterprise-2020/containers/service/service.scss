@@ -8,7 +8,7 @@
 }
 .service-content-1 {
   .service-title {
-    color: $color-defult;
+    color: $color-default;
     font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 400;
     position: relative;
@@ -51,7 +51,7 @@
   border-radius: 5px;
   .service-content-dec {
     .service-title {
-      color: $color-black;
+      color: $color-dark;
       font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
       font-weight: 600;
       position: relative;
@@ -96,7 +96,7 @@
       line-height: 32px;
       position: relative;
       z-index: 1;
-      color: $color-black;
+      color: $color-dark;
       transition: all 0.5s ease-in-out;
     }
   }
