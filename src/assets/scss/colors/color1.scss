@@ -1,5 +1,7 @@
 
 @import "./variable.scss";
+
+$color1: linear-gradient(to right, $cobuild-light-slate 0%, #d2dfe6 100%);
 $cobuild-indigo: #264A60;
 $cobuild-orange: #E76C29;
 $cobuild-dark-slate: #90a2ad;
@@ -8,7 +10,7 @@ $cobuild-light-slate: #f6f6fb;
 :root {
   // Blue / Gray Slate
   // --primary: linear-gradxient(to right, #264A60 0%, rgb(77, 157, 218) 100%);  ;
-  --primary: $color1;
+  --primary: linear-gradient(to right, #d2dfe6 100%, #f6f6fb 0%);
   --primary1: #264A60;
   --primary2: #E76C29;
   --primary3:  #d2dfe6;
