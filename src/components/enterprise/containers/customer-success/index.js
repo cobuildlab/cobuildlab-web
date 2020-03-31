@@ -96,4 +96,4 @@ const CustomerSuccess = () => {
   );
 };
 
-export default CustomerSucess;
+export default CustomerSuccess;
