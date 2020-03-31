@@ -1371,4 +1371,6 @@ input:focus ~ .highlight {
     opacity: 1!important;
 }
 
-    
+.p-0 {
+    padding: 0px !important;
+}
