@@ -61,12 +61,12 @@ const CustomerSuccess = () => {
                 </Typography>
               </div>
               <Typography className="sitemain-subtitle" tag="h2">
-                Build Smart & Effective  Management
+                Build Smart & Effective Management
               </Typography>
               <Typography className="site-dec" tag="p">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s 
-                standard dummy text ever since the 1500s, 
-                when an unknown
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an
+                unknown
               </Typography>
             </div>
             <Columns>

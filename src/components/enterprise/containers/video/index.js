@@ -5,7 +5,6 @@ import { caretRight } from 'react-icons-kit/fa/caretRight';
 import Typography from '../../../2020/Typography';
 import './video.scss';
 
-
 const Video = () => {
   return (
     <Section isPaddingless>
@@ -22,8 +21,9 @@ const Video = () => {
               </Typography>
             </div>
             <Typography className="video-dec" tag="p">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s 
-              standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown
+              printer took a galley of type and scrambled it to make
             </Typography>
             <div className="video-btn">
               <span>

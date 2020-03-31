@@ -24,21 +24,20 @@ const About = () => {
                     </Typrography>
                   </div>
                   <Typrography tag="h3" className="about-dec about-dec-1">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, 
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
                     when an unknown dummy text of the printing
                   </Typrography>
                   <Typrography tag="h3" className="about-twosub-title">
                     What we can help you<span className="enterprise-text-orange">Achive</span>
                   </Typrography>
                   <Typrography className="about-dec">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
+                    when an
                   </Typrography>
                   <div className="about-button-container">
-                    <Buttom>
-                      See more
-                    </Buttom>
+                    <Buttom>See more</Buttom>
                   </div>
                 </div>
               </div>

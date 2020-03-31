@@ -8,20 +8,13 @@ import PreviewIcon from '../../components/icon';
 import Typrography from '../../../2020/Typography';
 import './service.scss';
 
-
 const ConentContainer = ({ children }) => (
-  <div className="service-content-1 main-title-wrapper">
-    {children}
-  </div>
+  <div className="service-content-1 main-title-wrapper">{children}</div>
 );
 
 ConentContainer.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
-  ]).isRequired
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
-
 
 const Card = ({ index, icon, title, content }) => (
   <div className={`service-${index} service-content`}>
@@ -45,7 +38,7 @@ Card.propTypes = {
   index: PropTypes.number.isRequired,
   icon: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired
+  content: PropTypes.string.isRequired,
 };
 
 const Service = () => {
@@ -54,11 +47,7 @@ const Service = () => {
       <div className="service-wrapper">
         <Container>
           <Columns>
-            <Column
-              isMarginless 
-              isPaddingless 
-              isSize={{ mobile: 12, tablet: 4, desktop: 5}}
-            >
+            <Column isMarginless isPaddingless isSize={{ mobile: 12, tablet: 4, desktop: 5 }}>
               <ConentContainer>
                 <div className="service-content-1 main-title-wrapper">
                   <Typrography tag="h2" className="sitemain-subtitle">
@@ -73,9 +62,9 @@ const Service = () => {
                     Our core features
                   </Typrography>
                   <Typrography tag="p" className="service-dec">
-                    A wonderful serenity has taken possession of my entire soul, 
-                    like these sweet mornings of spring which I enjoy with my whole heart. 
-                    I am alone, and feel the charm of existence in this spot.
+                    A wonderful serenity has taken possession of my entire soul, like these sweet
+                    mornings of spring which I enjoy with my whole heart. I am alone, and feel the
+                    charm of existence in this spot.
                   </Typrography>
                   <Button
                     Class="button1 btn button2 gradient-color"
@@ -85,21 +74,13 @@ const Service = () => {
                 </div>
               </ConentContainer>
             </Column>
-            <Column 
-              isSize={{ mobile: 12, tablet: 8, desktop: 7}} 
-              isMarginless 
-              isPaddingless
-            >
+            <Column isSize={{ mobile: 12, tablet: 8, desktop: 7 }} isMarginless isPaddingless>
               <div className="service-block-content">
                 <Columns isDisplay="flex-tablet">
-                  <Column 
-                    isMarginless 
-                    isPaddingless 
-                    isSize={{mobile: 12, tablet: 6 }} 
-                  >
+                  <Column isMarginless isPaddingless isSize={{ mobile: 12, tablet: 6 }}>
                     <div className="service-block1">
                       {Servicedata.map((data, i) => (
-                        <Card 
+                        <Card
                           index={i}
                           key={data.id}
                           icon={data.Icon}
@@ -109,10 +90,10 @@ const Service = () => {
                       ))}
                     </div>
                   </Column>
-                  <Column isSize={{ mobile:12, tablet: 6 }} >
+                  <Column isSize={{ mobile: 12, tablet: 6 }}>
                     <div className="service-block2">
                       {Servicedata1.map((data, i) => (
-                        <Card 
+                        <Card
                           index={i}
                           key={data.id}
                           icon={data.Icon}
@@ -127,7 +108,7 @@ const Service = () => {
             </Column>
           </Columns>
         </Container>
-      </div> 
+      </div>
     </Section>
   );
 };

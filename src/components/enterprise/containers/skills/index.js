@@ -17,12 +17,12 @@ function Skills() {
       <div className="skills-wrapper" id="skills">
         <Container>
           <Columns>
-            <Column  isHidden="mobile" isSize={6}>
+            <Column isHidden="mobile" isSize={6}>
               <div className="skills-image">
                 <Image Path={Skills_img} Class="logo-img" />
               </div>
             </Column>
-            <Column  isSize={{ mobile: 12, desktop: 6 }}>
+            <Column isSize={{ mobile: 12, desktop: 6 }}>
               <div className="skills-content-block main-title-wrapper">
                 <Typography className="sitemain-subtitle" tag="h3">
                   We Lead From The Front
@@ -33,8 +33,9 @@ function Skills() {
                   </Typography>
                 </div>
                 <Typography className="skills-dec" tag="p">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown dummy text of the printing
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                  Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when
+                  an unknown dummy text of the printing
                 </Typography>
                 <div className="progress-outer-block">
                   <Typography className="progress-title" tag="h4">
@@ -75,7 +76,6 @@ function Skills() {
         </Container>
       </div>
     </Section>
-   
   );
 }
 

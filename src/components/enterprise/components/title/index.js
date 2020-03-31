@@ -27,13 +27,22 @@ const Title = (props) => {
   return <h5 className={props.Class}>{props.Name}</h5>;
 };
 
-const Titlespan = ({ Class, Name, Label, tag = 'h4' }) => {
+const Titlespan = ({ Class, Name, Label, tag = 'h4', children }) => {
   const innerText = `${Name} ${Label}`;
-  return (
-    <Typrography tag={tag} className={Class} size={{ default: { fontWeight: 'bold' }}}>
-      {innerText}
-    </Typrography>
-  );
+
+  if(children){
+    return (
+      <Typrography 
+        tag={tag} 
+        className={Class} 
+        size={{ default: { fontWeight: 'bold' }}}
+      >
+        {innerText}
+      </Typrography>
+    );
+  }
+ 
+  return null;
 };
 
 

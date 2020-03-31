@@ -63,9 +63,8 @@ const Banner = (props) => {
                       Great<span className=" enterprise-text-orange"> Idea.</span>
                     </Typrography>
                     <Typrography size={subTitle} tag="p" className="banner-dec">
-                        A team or UX/UI Designers, Project Managers, Senior Developers, <br /> 
-                        and QA Engineers are waiting to 
-                        make your idea come alive
+                      A team or UX/UI Designers, Project Managers, Senior Developers, <br />
+                      and QA Engineers are waiting to make your idea come alive
                     </Typrography>
                     <div className="banner-btn-wrapper">
                       <Button Class="button1 button3 btn" Name="LEARN MORE" />
