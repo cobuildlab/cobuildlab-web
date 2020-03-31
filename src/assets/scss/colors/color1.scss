@@ -35,7 +35,10 @@ $primary1: var(--primary1);
 $primary2: var(--primary2);
 $primary3: var(--primary3);
 
-.project-wrapper .project-box-outer .counters-number,
+.project-wrapper .project-box-outer .counters-number, .counters-number{
+  color: $primary2;
+}
+
 .navbar-link-wrapper ul > li.active > a span,
 .navbar-link-wrapper ul > li:hover > a span,
 .navbar-link-wrapper ul > li.active > a i,
@@ -53,7 +56,7 @@ $primary3: var(--primary3);
 .service-content:hover .service-title,
 .blog-second-block:hover .blog-title,
 .skills-content-block .progress-outer-block .progress-title,
-.project-wrapper .project-box-outer .counters-number,
+.project-wrapper .project-box-outer,
 .service-content:hover .service-content-dec .service-title,
 .contact-wrapper .contact-content-block .contact-dec,
 .video-wrapper .video-btn span svg,
@@ -81,8 +84,9 @@ $primary3: var(--primary3);
   background-color: $primary1;
 }
 .animated-bg i {
-  background: $primary;
+  background: $primary2;
 }
+
 .main-title-wrapper .site-subtitle {
   background-color: $primary3;
 }
