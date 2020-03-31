@@ -13,7 +13,7 @@ import {
 // import Img from "gatsby-image"
 import { Subtitle, Description } from '../../components/title';
 import Image from '../../components/image';
-import ContactImg from '../../../../assets/images/contact/woman.png';
+import ContactImg from '../../../../assets/images/contact/cobuild-lab-form.jpg';
 import Button from '../../components/button';
 import ContactBackgroundImages from '../../../../data/contact';
 import './contact.scss';

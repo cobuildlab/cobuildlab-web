@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Columns, Column, Section } from 'bloomer';
 import { Subtitle, Description, Titlespan2, Title } from '../../components/title';
 import Image from '../../components/image';
-import Skills_img from '../../../../assets/images/skills/skills-img.png';
+import Skills_img from '../../../../assets/images/skills/cobuild-lab-customers.png';
 import Progressbar from './progressbar';
 import './skills.scss';
 import '../../../../assets/scss/variable.scss';
