@@ -7,6 +7,13 @@
   padding-bottom: calc(40px + (100 - 40) * ((100vw - 320px) / (1920 - 320)));
   position: relative;
 }
+
+.enterprise{ 
+  &-text-orange{
+    color: $cobuild-orange;
+  }
+}
+
 /* common css */
 .enterprise-body {
   background-color: $color-white;

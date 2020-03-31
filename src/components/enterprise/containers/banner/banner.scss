@@ -1,9 +1,10 @@
 @import "../../../../assets/scss/variable";
 
 :root {
-  --bannerimg: url("../../../../assets/images/banner/bg-slate.png");
+  --bannerimg: url("../../../../assets/images/banner/bg-blue-2.png");
 }
 $bannerimg: var(--bannerimg);
+
 .demo1 {
   &.banner-wrapper {
     background-position: bottom;
@@ -43,12 +44,7 @@ $bannerimg: var(--bannerimg);
 
 .banner-content {
   .banner-main-title {
-    font-size: calc(20px + (60 - 20) * ((100vw - 320px) / (1920 - 320)));
-    line-height: calc(26px + (66 - 26) * ((100vw - 320px) / (1920 - 320)));
-    margin-bottom: calc(10px + (27 - 10) * ((100vw - 320px) / (1920 - 320)));
     color: $color-white;
-    font-weight: 700;
-    text-transform: uppercase;
   }
   .banner-dec {
     font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));

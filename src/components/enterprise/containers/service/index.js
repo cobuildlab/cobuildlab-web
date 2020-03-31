@@ -6,7 +6,14 @@ import { Subtitle, Description, Title, Titlespan2 } from '../../components/title
 import Button from '../../components/button';
 import { Servicedata, Servicedata1 } from '../../../../data/service';
 import PreviewIcon from '../../components/icon';
+import Typrography from '../../../2020/Typography';
 import './service.scss';
+
+const font = {
+  default: {
+    fontWeight: 'normal'
+  }
+};
 
 const ConentContainer = ({ children }) => (
   <div className="service-content-1 main-title-wrapper">
@@ -30,8 +37,12 @@ const Card = ({ index, icon, title, content }) => (
       </span>
     </div>
     <div className="service-content-dec">
-      <Title Class="service-title" Name={title} />
-      <Description Class="service-dec-content" Name={content} />
+      <Typrography tag="h5" className="service-title">
+        {title}
+      </Typrography>
+      <Typrography tag="p" className="service-dec-content">
+        {content}
+      </Typrography>
     </div>
   </div>
 );
@@ -56,13 +67,22 @@ const Service = () => {
             >
               <ConentContainer>
                 <div className="service-content-1 main-title-wrapper">
-                  <Titlespan2 Class="sitemain-subtitle" Name="Business" Label="Solutions" />
-                  <Subtitle Class="site-subtitle2" Name="We Provide The" />
-                  <Title Class="service-title" Name="Our core features" />
-                  <Description
-                    Class="service-dec"
-                    Name="A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot."
-                  />
+                  <Typrography tag="h2" className="sitemain-subtitle">
+                    Business Solutions
+                  </Typrography>
+                  <div className="sub-title-wrapper">
+                    <Typrography tag="h3" className="site-subtitle2">
+                      We Provide The
+                    </Typrography>
+                  </div>
+                  <Typrography tag="h3" className="service-title">
+                    Our core features
+                  </Typrography>
+                  <Typrography tag="p" className="service-dec">
+                    A wonderful serenity has taken possession of my entire soul, 
+                    like these sweet mornings of spring which I enjoy with my whole heart. 
+                    I am alone, and feel the charm of existence in this spot.
+                  </Typrography>
                   <Button
                     Class="button1 btn button2 gradient-color"
                     Name="Explore"

@@ -2,12 +2,30 @@ import React from 'react';
 import { Container, Columns, Column, Section } from 'bloomer';
 import { useStaticQuery, graphql } from 'gatsby';
 import Button from '../../components/button';
-import { Titlespan, Description } from '../../components/title';
 import Image from '../../components/image';
 import BannerImg1 from '../../../../assets/images/banner/group-banner-2.png';
 import Shape2 from '../../../../assets/images/banner/bg-wave.svg';
 import Shape3 from '../../../../assets/images/banner/wave.png';
+import Typrography from '../../../2020/Typography';
+
 import './banner.scss';
+
+const title = {
+  default: {
+    level: 4,
+    fontWeight: 'bold',
+  },
+  lg: {
+    level: 1,
+    fontWeight: 'bold',
+  },
+};
+
+const subTitle = {
+  default: {
+    fontWeight: 'normal',
+  },
+};
 
 const Banner = (props) => {
   const BannerAnimationImages = useStaticQuery(graphql`
@@ -40,11 +58,15 @@ const Banner = (props) => {
               <Column isSize={6}>
                 <div className="row">
                   <div className="banner-content">
-                    <Titlespan Class="banner-main-title" Label="LET'S BUILD" Name="A GREAT IDEA" />
-                    <Description
-                      Class="banner-dec"
-                      Name="A team or UX/UI Designers, Project Managers, Senior Developers, and QA Engineers are waiting to make your idea come alive"
-                    />
+                    <Typrography size={title} tag="h1" className="banner-main-title">
+                      Let’s <span className="enterprise-text-orange">Build</span> a <br />
+                      Great<span className=" enterprise-text-orange"> Idea.</span>
+                    </Typrography>
+                    <Typrography size={subTitle} tag="p" className="banner-dec">
+                        A team or UX/UI Designers, Project Managers, Senior Developers, <br /> 
+                        and QA Engineers are waiting to 
+                        make your idea come alive
+                    </Typrography>
                     <div className="banner-btn-wrapper">
                       <Button Class="button1 button3 btn" Name="LEARN MORE" />
                       <Button

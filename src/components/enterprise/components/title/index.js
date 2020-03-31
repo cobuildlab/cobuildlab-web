@@ -1,63 +1,49 @@
 import React from 'react';
+import Typrography from '../../../2020/Typography';
 
-/**
- * @param props
- */
-function Maintitle(props) {
+
+const Maintitle = (props) => {
   return (
     <div className="main-title-wrapper">
       <h3 className={props.Class}>{props.Name}</h3>
     </div>
   );
-}
+};
 
-/**
- * @param props
- */
-function Subtitle(props) {
+const Subtitle = (props) => {
   return (
     <div className="sub-title-wrapper">
       <h4 className={props.Class}>{props.Name}</h4>
     </div>
   );
-}
+};
 
-/**
- * @param props
- */
-function Description(props) {
+
+const Description = (props) => {
   return <p className={props.Class}>{props.Name}</p>;
-}
+};
 
-/**
- * @param props
- */
-function Title(props) {
+const Title = (props) => {
   return <h5 className={props.Class}>{props.Name}</h5>;
-}
+};
 
-/**
- * @param props
- */
-function Titlespan(props) {
+const Titlespan = ({ Class, Name, Label, tag = 'h4' }) => {
+  const innerText = `${Name} ${Label}`;
   return (
-    <h4 className={props.Class}>
-      {' '}
-      <span>{props.Label}</span> {props.Name}{' '}
-    </h4>
+    <Typrography tag={tag} className={Class} size={{ default: { fontWeight: 'bold' }}}>
+      {innerText}
+    </Typrography>
   );
-}
+};
 
-/**
- * @param props
- */
-function Titlespan2(props) {
+
+const Titlespan2 = (props) => {
   return (
     <h4 className={props.Class}>
       {' '}
       {props.Name} <span>{props.Label}</span>{' '}
     </h4>
   );
-}
+};
 
 export { Maintitle, Subtitle, Description, Title, Titlespan, Titlespan2 };

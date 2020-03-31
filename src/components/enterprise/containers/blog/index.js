@@ -4,9 +4,9 @@ import { Subtitle, Description, Title, Titlespan2 } from '../../components/title
 import PreviewIcon from '../../components/icon';
 import './blog.scss';
 import { lightbulbO, calendarO, gavel } from 'react-icons-kit/fa';
-import Img1 from '../../assets/images/blog/blog1.png';
-import Img2 from '../../assets/images/blog/blog2.png';
-import Img3 from '../../assets/images/blog/blog3.png';
+import Img1 from '../../../../assets/images/blog/blog1.png';
+import Img2 from '../../../../assets/images/blog/blog2.png';
+import Img3 from '../../../../assets/images/blog/blog3.png';
 
 const BlogData = [
   {
