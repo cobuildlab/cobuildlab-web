@@ -35,7 +35,10 @@ $primary1: var(--primary1);
 $primary2: var(--primary2);
 $primary3: var(--primary3);
 
-.project-wrapper .project-box-outer,
+.project-wrapper .project-box-outer .counters-number, .counters-number{
+  color: $primary2;
+}
+
 .navbar-link-wrapper ul > li.active > a span,
 .navbar-link-wrapper ul > li:hover > a span,
 .navbar-link-wrapper ul > li.active > a i,
@@ -81,8 +84,9 @@ $primary3: var(--primary3);
   background-color: $primary1;
 }
 .animated-bg i {
-  background: $primary;
+  background: $primary1;
 }
+
 .main-title-wrapper .site-subtitle {
   background-color: $primary3;
 }
