@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Columns, Column, Section } from 'bloomer';
-import { Subtitle, Description, Titlespan2 } from '../../components/title';
-import Button from '../../components/button';
 import Image from '../../components/image';
 import AboutImg from '../../../../assets/images/banner/group-banner.png';
+import Typrography from '../../../2020/Typography';
+import Buttom from '../../../2020/Button';
 import './about.scss';
 
 const About = () => {
@@ -15,24 +15,30 @@ const About = () => {
             <Column isSize={{ mobile: 11, desktop: 6 }}>
               <div className="row">
                 <div className="about-content-block main-title-wrapper">
-                  <Subtitle Class="sitemain-subtitle" Name="Business solution" />
-                  <Subtitle Class="site-subtitle2" Name="We gives you the best" />
-
-                  <Description
-                    Class="about-dec about-dec-1"
-                    Name="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown dummy text of the printing"
-                  />
-                  <Titlespan2 Class="about-twosub-title" Name="What we can help you" Label="Achive" />
-                  <Description
-                    Class="about-dec"
-                    Name="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an"
-                  />
-                  <Button
-                    Class="button1 button4 btn"
-                    Name="HIRE US NOW"
-                    Title="gradient-color"
-                    BtnIcon="btn-icon gradient-color1"
-                  />
+                  <div className="sub-title-wrapper">
+                    <Typrography tag="h2" className="sitemain-subtitle">
+                      Business solution
+                    </Typrography>
+                    <Typrography tag="h3" className="site-subtitle2">
+                      We gives you the best
+                    </Typrography>
+                  </div>
+                  <Typrography tag="h3" className="about-dec about-dec-1">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
+                    when an unknown dummy text of the printing
+                  </Typrography>
+                  <Typrography tag="h3" className="about-twosub-title">
+                    What we can help you<span className="enterprise-text-orange">Achive</span>
+                  </Typrography>
+                  <Typrography className="about-dec">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
+                    when an
+                  </Typrography>
+                  <div className="about-button-container">
+                    <Buttom>See more</Buttom>
+                  </div>
                 </div>
               </div>
             </Column>

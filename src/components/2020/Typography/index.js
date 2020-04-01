@@ -24,8 +24,8 @@ const Typography = ({ children, size, hasTextAlign, className, tag }) => {
   const result = componse(
     styles.font,
     classNameSelect,
-    className,
     fontWeightSelect,
+    className,
     hasTextAlign.length ? styles[`text_align_${hasTextAlign}`] : '',
   );
 
@@ -35,8 +35,7 @@ const Typography = ({ children, size, hasTextAlign, className, tag }) => {
 Typography.defaultProps = {
   size: {
     default: {
-      level: 10,
-      fontWeight: 'bold',
+      // not config for default props
     },
   },
   tag: 'span',

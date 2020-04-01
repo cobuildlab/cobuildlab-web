@@ -1,22 +1,40 @@
 import React from 'react';
 import { Container, Columns, Column, Section } from 'bloomer';
-// import { useStaticQuery, graphql } from 'gatsby';
-import Button from '../../components/button';
-import { Titlespan, Description } from '../../components/title';
 import Image from '../../components/image';
 import BannerImg1 from '../../../../assets/images/banner/group-banner-2.png';
 import Shape2 from '../../../../assets/images/banner/bg-wave.svg';
 import Shape3 from '../../../../assets/images/banner/wave.png';
+import Typrography from '../../../2020/Typography';
+import Button from '../../../2020/Button';
+
+
 import './banner.scss';
-import anim1 from './1-blue.png'
-import anim2 from './2-blue.png'
-import anim3 from './3-blue.png'
-import anim4 from './4-blue.png'
-import anim5 from './5-blue.png'
-import anim6 from './6-orange.png'
-import anim7 from './7-blue.png'
-import anim8 from './8-blue.png'
-import anim9 from './9-blue.png'
+import anim1 from './1-blue.png';
+import anim2 from './2-blue.png';
+import anim3 from './3-blue.png';
+import anim4 from './4-blue.png';
+import anim5 from './5-blue.png';
+import anim6 from './6-orange.png';
+import anim7 from './7-blue.png';
+import anim8 from './8-blue.png';
+import anim9 from './9-blue.png';
+
+const title = {
+  default: {
+    level: 4,
+    fontWeight: 'bold',
+  },
+  lg: {
+    level: 1,
+    fontWeight: 'bold',
+  },
+};
+
+const subTitle = {
+  default: {
+    fontWeight: 'normal',
+  },
+};
 
 const Banner = (props) => {
   // const BannerAnimationImages = useStaticQuery(graphql`
@@ -32,35 +50,35 @@ const Banner = (props) => {
   //     }
   //   }
   // `);
-const bannerAnimationImages=[
-  {
+  const bannerAnimationImages=[
+    {
       "img": anim1
-  },
-  {
+    },
+    {
       "img": anim2
-  },
-  {
+    },
+    {
       "img": anim3
-  },
-  {
+    },
+    {
       "img": anim4
-  },
-  {
+    },
+    {
       "img": anim5
-  },
-  {
+    },
+    {
       "img": anim6
-  },
-  {
+    },
+    {
       "img": anim7
-  },
-  {
+    },
+    {
       "img": anim8
-  },
-  {
+    },
+    {
       "img": anim9
-  }
-]
+    }
+  ];
   return (
     <Section isPaddingless>
       <div className="banner-wrapper demo1">
@@ -82,19 +100,18 @@ const bannerAnimationImages=[
               <Column isSize={6}>
                 <div className="row">
                   <div className="banner-content">
-                    <Titlespan Class="banner-main-title" Label="LET'S BUILD" Name="A GREAT IDEA" />
-                    <Description
-                      Class="banner-dec"
-                      Name="A team or UX/UI Designers, Project Managers, Senior Developers, and QA Engineers are waiting to make your idea come alive"
-                    />
+                    <Typrography size={title} tag="h1">
+                      Let’s <span className="enterprise-text-orange">Build</span> a <br />
+                      Great<span className=" enterprise-text-orange"> Idea.</span>
+                    </Typrography>
+                    <Typrography size={subTitle} tag="p" className="banner-dec">
+                      A team or UX/UI Designers, Project Managers, Senior Developers, <br />
+                      and QA Engineers are waiting to make your idea come alive
+                    </Typrography>
                     <div className="banner-btn-wrapper">
-                      <Button Class="button1 button3 btn" Name="LEARN MORE" />
-                      <Button
-                        Class="button1 button4 btn"
-                        Name="GET STARTED"
-                        Title="gradient-color"
-                        BtnIcon="btn-icon gradient-color1"
-                      />
+                      <Button>
+                        GET STARTED
+                      </Button>
                     </div>
                   </div>
                 </div>

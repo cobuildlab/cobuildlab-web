@@ -9,11 +9,11 @@ import {
   twitterSquare,
   linkedinSquare,
 } from 'react-icons-kit/fa';
-import { Title, Description } from '../../components/title';
 import PreviewIcon from '../../components/icon';
 import Image from '../../components/image';
 import logo from '../../../../assets/images/cobuild-white-logo.png';
 import { arrowRightCircle } from 'react-icons-kit/feather/arrowRightCircle';
+import Typography from '../../../2020/Typography';
 import './footer.scss';
 
 const Footer = () => {
@@ -23,18 +23,20 @@ const Footer = () => {
         <Container>
           <div className="footer-content-wrapper">
             <Columns>
-              <Column  isSize={{ mobile: 8, desktop: 4 }}>
+              <Column isSize={{ mobile: 8, desktop: 4 }}>
                 <div className="footer-logo-wrapper">
                   <Image Path={logo} Class="footer-logo" />
-                  <Description
-                    Class="footer-dec"
-                    Name="Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown"
-                  />
+                  <Typography className="footer-dec" tag="p">
+                    Lorem ipsum, or lipsum as it is sometimes known, is dummy text used 
+                    in laying out print, graphic or web designs. The passage is attributed to an unknown
+                  </Typography>
                 </div>
               </Column>
               <Column isSize={{ mobile: 8, desktop: 3 }}>
                 <div className="footer-contact-us">
-                  <Title Class="footer-title" Name="Contact Us" />
+                  <Typography className="footer-title" tag="h6">
+                    Contact Us
+                  </Typography>
                   <div className="footer-details-link">
                     <ul>
                       <li>
@@ -42,10 +44,9 @@ const Footer = () => {
                           <span>
                             <PreviewIcon icon={mapMarker} />
                           </span>
-                          <Title
-                            Class="footer-link"
-                            Name="66 W Flagler St #900, Miami, FL 33130"
-                          />
+                          <Typography className="footer-link" tag="p">
+                            66 W Flagler St #900, Miami, FL 33130
+                          </Typography>
                         </a>
                       </li>
                       <li>
@@ -53,7 +54,9 @@ const Footer = () => {
                           <span>
                             <PreviewIcon icon={envelopeOpen} />
                           </span>
-                          <Title Class="footer-link footer-email" Name="contact@cobuildlab.com" />
+                          <Typography className="footer-link footer-email" tag="p">
+                            contact@cobuildlab.com
+                          </Typography>
                         </a>
                       </li>
                       <li>
@@ -61,47 +64,61 @@ const Footer = () => {
                           <span>
                             <PreviewIcon icon={volumeControlPhone} />
                           </span>
-                          <Title Class="footer-link" Name="+1 (786) 991-3467" />
+                          <Typography className="footer-link" tag="p">
+                            +1 (786) 991-3467
+                          </Typography>
                         </a>
                       </li>
                     </ul>
                   </div>
                 </div>
               </Column>
-              <Column isSize={{ mobile: 6, desktop: 2}}>
+              <Column isSize={{ mobile: 6, desktop: 2 }}>
                 <div className="footer-about-us">
                   <div className="footer-about-outer">
-                    <Title Class="footer-title" Name="About Us" />
+                    <Typography className="footer-title" tag="h6">
+                      About Us
+                    </Typography>
                     <div className="footer-details-link">
                       <ul>
                         <li>
                           <a href="/">
                             <PreviewIcon icon={arrowRightCircle} />
-                            <Title Class="footer-link footer-arrow" Name="Home" />
+                            <Typography className="footer-link footer-arrow" tag="span">
+                              Home
+                            </Typography>
                           </a>
                         </li>
                         <li>
                           <a href="/">
                             <PreviewIcon icon={arrowRightCircle} />
-                            <Title Class="footer-link footer-arrow" Name="About Us" />
+                            <Typography className="footer-link footer-arrow" tag="span">
+                              About Us
+                            </Typography>
                           </a>
                         </li>
                         <li>
                           <a href="/">
                             <PreviewIcon icon={arrowRightCircle} />
-                            <Title Class="footer-link footer-arrow" Name="Features" />
+                            <Typography className="footer-link footer-arrow" tag="span">
+                              Features
+                            </Typography>
                           </a>
                         </li>
                         <li>
                           <a href="/">
                             <PreviewIcon icon={arrowRightCircle} />
-                            <Title Class="footer-link footer-arrow" Name="Services" />
+                            <Typography className="footer-link footer-arrow" tag="span">
+                              Services
+                            </Typography>
                           </a>
                         </li>
                         <li>
                           <a href="/">
                             <PreviewIcon icon={arrowRightCircle} />
-                            <Title Class="footer-link footer-arrow" Name="Contact" />
+                            <Typography className="footer-link footer-arrow" tag="span">
+                              Contact
+                            </Typography>
                           </a>
                         </li>
                       </ul>
@@ -109,33 +126,37 @@ const Footer = () => {
                   </div>
                 </div>
               </Column>
-              <Column isSize={{ mobile: 12, desktop: 3 }} >
+              <Column isSize={{ mobile: 12, desktop: 3 }}>
                 <div className="footer-newsletter">
-                  <Title Class="footer-title" Name="Stay with us" />
+                  <Typography className="footer-title" tag="h6">
+                    Stay with us
+                  </Typography>
                   <div className="form-group">
-                    <Input type="text" placeholder="Enter email"  className="input-search"/>
+                    <Input type="text" placeholder="Enter email" className="input-search" />
                     <span className="search-icon gradient-color">
                       <PreviewIcon icon={paperPlane} />
                     </span>
                   </div>
-                  <Title Class="footer-social-title" Name="Social icon" />
+                  <Typography className="footer-social-title" tag="h6">
+                    Social icon
+                  </Typography>
                   <ul className="social-wrapper">
                     <li>
-                      <a target="_blank" href="https://facebook.com/cobuildlab">
+                      <a target="_blank" href="https://facebook.com/cobuildlab" rel="noreferrer noopener">
                         <span>
                           <PreviewIcon icon={facebookSquare} />
                         </span>
                       </a>
                     </li>
                     <li>
-                      <a target="_blank" href="https://twitter.com/cobuildlab">
+                      <a target="_blank" href="https://twitter.com/cobuildlab" rel="noreferrer noopener">
                         <span>
                           <PreviewIcon icon={twitterSquare} />
                         </span>
                       </a>
                     </li>
                     <li>
-                      <a target="_blank" href="https://linkedin.com/company/cobuildlab">
+                      <a target="_blank" href="https://linkedin.com/company/cobuildlab" rel="noreferrer noopener">
                         <span>
                           <PreviewIcon icon={linkedinSquare} />
                         </span>
