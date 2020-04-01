@@ -1,6 +1,62 @@
 @import '../../../../assets/css/2020/var.scss';
 
-.button_primary{
+.button{
+  
+  min-width: 170px;
+  min-height: 42px;
+  border: none;
+  cursor: pointer;
+  transition: all .3s linear  ;
+  outline-style: none ;
+
+  &_text{
+    text-transform: uppercase;
+    color: inherit !important;
+  }
+
+  &_primary{
+    background-color: $orange;
+    background: $orange 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 25px $btn-shadow;
+    color: $white !important;
+
+    &:hover, &:focus{
+      background: $btn-active-bg 0% 0% no-repeat padding-box;
+      box-shadow: 0px 5px 10px $btn-shadow;
+    }
+  }
+
+  &:hover, &:focus{
+    border: none;
+  }
+}
+
+.icon_container{
+  display: inline-block;
+  margin: auto;
+  animation: loading 1.25s linear  infinite;
+ 
+}
+
+.display{
+  &_block{
+    display: block;
+  }
+  &_hidden{
+    display: none;
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+/*
   color: $white;
   width: 170px;
   height: 42px;
@@ -18,4 +74,5 @@
     box-shadow: 0px 0px 25px $btn-hover-shadow !important;
     color: $white;
   }
-}
+
+**/
