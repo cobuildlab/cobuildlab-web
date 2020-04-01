@@ -227,7 +227,7 @@ export default class Contact extends PureComponent {
                 <Columns>
                   <Column isSize={{ mobile: 12, desktop: 4 }}>
                     <Control>
-                      <Button isLoading={isLoading} type="submit">
+                      <Button isLoading={isLoading} htmlType="submit">
                         Submit
                       </Button>
                     </Control>

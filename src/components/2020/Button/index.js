@@ -9,7 +9,6 @@ import styles from './css/index.module.scss';
 
 const text = {
   default: {
-    level: 11,
     fontWeight: 'normal',
   },
 };
@@ -40,8 +39,32 @@ Loading.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
 
-const Button = ({ children, to, onClick, className, isLoading, type, ...rest }) => {
-  const buttonStyles = componse(styles.button, styles[`button_${type}`], className);
+
+/**
+ * @author github @kikeztw
+ * @param {string} to -  Link prop for button, this property adds a label at the same time as a button.
+ * @param {string} className -  Styles for the button.
+ * @param {bool}   isLoading -   Loading indicator for button.
+ * @param {string} type - Button type  default | primary | secondary.
+ * @param {string} htmlType - Set the original html type of button see:
+ *                         https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type.
+ */
+
+const Button = ({ 
+  to,
+  children, 
+  className, 
+  isLoading, 
+  htmlType, 
+  isBlock,
+  type, 
+  ...rest 
+}) => {
+  const buttonStyles = componse(
+    styles.button, styles[`button_${type}`], 
+    className,
+    isBlock ? styles.button_block : '',
+  );
 
   if (to && to.length) {
     return (
@@ -52,7 +75,7 @@ const Button = ({ children, to, onClick, className, isLoading, type, ...rest }) 
   }
 
   return (
-    <button {...rest} className={buttonStyles}>
+    <button type={htmlType} {...rest} className={buttonStyles}>
       <Loading isLoading={isLoading}>{children}</Loading>
     </button>
   );
@@ -60,19 +83,23 @@ const Button = ({ children, to, onClick, className, isLoading, type, ...rest }) 
 
 Button.defaultProps = {
   to: '',
-  onClick: () => null,
   className: '',
   isLoading: false,
-  type: 'primary',
+  type: 'default',
+  htmlType: 'button',
+  isBlock: false,
 };
 
 Button.propTypes = {
-  type: PropTypes.string,
+  isBlock: PropTypes.bool,
+  htmlType: PropTypes.string,
+  type:  PropTypes.oneOf(['default','primary', 'secondary']),
   isLoading: PropTypes.bool,
   to: PropTypes.string,
-  onClick: PropTypes.func,
   className: PropTypes.string,
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
 
 export default memo(Button);
+
+

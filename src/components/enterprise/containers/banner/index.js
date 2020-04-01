@@ -109,9 +109,12 @@ const Banner = (props) => {
                       and QA Engineers are waiting to make your idea come alive
                     </Typrography>
                     <div className="banner-btn-wrapper">
-                      <Button>
-                        GET STARTED
-                      </Button>
+                      <div className="banner-btn-item">
+                        <Button> GET STARTED </Button>
+                      </div>
+                      <div className="banner-btn-item">
+                        <Button type="primary"> Read more </Button>
+                      </div>
                     </div>
                   </div>
                 </div>
