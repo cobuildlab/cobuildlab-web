@@ -53,31 +53,31 @@
     ],
     "bannerranimation": [
         {
-            "img": "./banner/animation/1.png"
+            "img": "./banner/animation/1-blue.png"
         },
         {
-            "img": "./banner/animation/2.png"
+            "img": "./banner/animation/2-blue.png"
         },
         {
-            "img": "./banner/animation/3.png"
+            "img": "./banner/animation/3-blue.png"
         },
         {
-            "img": "./banner/animation/4.png"
+            "img": "./banner/animation/4-blue.png"
         },
         {
-            "img": "./banner/animation/5.png"
+            "img": "./banner/animation/5-blue.png"
         },
         {
-            "img": "./banner/animation/6.png"
+            "img": "./banner/animation/6-blue.png"
         },
         {
-            "img": "./banner/animation/7.png"
+            "img": "./banner/animation/7-blue.png"
         },
         {
-            "img": "./banner/animation/8.png"
+            "img": "./banner/animation/8-blue.png"
         },
         {
-            "img": "./banner/animation/9.png"
+            "img": "./banner/animation/9-blue.png"
         }
     ],
     "brands": [
@@ -141,42 +141,42 @@
             "id": 1,
             "title": "John one",
             "subtitle": "Client of example Project",
-            "img": "./testimonial/1.png",
+            "img": "./testimonial/1-blue.png",
             "content": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web  designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book."
         },
         {
             "id": 2,
             "title": "Innovatory Two",
             "subtitle": "Wed Censtoriya",
-            "img": "./testimonial/2.png",
+            "img": "./testimonial/2-blue.png",
             "content": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web  designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book."
         },
         {
             "id": 3,
             "title": "John three",
             "subtitle": "Client of example Project",
-            "img": "./testimonial/3.png",
+            "img": "./testimonial/3-blue.png",
             "content": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web  designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book."
         },
         {
             "id": 4,
             "title": "John Four",
             "subtitle": "Client of example Project",
-            "img": "./testimonial/4.png",
+            "img": "./testimonial/4-blue.png",
             "content": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web  designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book."
         },
         {
             "id": 5,
             "title": "John five",
             "subtitle": "Client of example Project",
-            "img": "./testimonial/5.png",
+            "img": "./testimonial/5-blue.png",
             "content": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web  designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book."
         },
         {
             "id": 6,
             "title": "John six",
             "subtitle": "Client of example Project",
-            "img": "./testimonial/6.png",
+            "img": "./testimonial/6-blue.png",
             "content": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web  designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book."
         }
     ]
