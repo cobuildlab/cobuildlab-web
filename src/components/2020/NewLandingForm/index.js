@@ -187,7 +187,7 @@ export default class NewLandingForm extends Component {
           {isLoading ? (
             <Loading loading={isLoading} />
           ) : (
-            <Button type="submit">
+            <Button htmlType="submit">
               Submit
             </Button>
           )}

@@ -1,24 +1,91 @@
 import React, { Component, Fragment } from 'react';
 import Helmet from 'react-helmet';
 import { 
-  Container,
-  Hero, HeroBody, Content, 
+  Section,
+  Hero, HeroBody, HeroHeader, 
   Columns, Column,
-  Title, Subtitle 
+  Title, Subtitle,
 } from 'bloomer';
+import 'bulma';
 
 // COMPONENTS
+import LandingHeader from '../../components/2020/LandingHeader';
 import BadgeIndustry from '../../components/2020/BadgeIndustry';
 import NewLandingForm from '../../components/2020/NewLandingForm';
+import styles from '../../components/2020/hero/css/index.module.scss';
+import Typography from '../../components/2020/Typography';
  
 // RESOURCES
-import logo from '../../resources/cobuildlab.png';
+import background from '../../resources/2020/home/background.svg';
 import badge1 from '../../resources/badges1.png';
 import badge2 from '../../resources/badges2.png';
 import badge3 from '../../resources/badges3.png';
 import badge4 from '../../resources/badges4.png';
 
 import YouTubeVideo from '../../components/YouTubeVideo';
+import styled from 'styled-components';
+
+// TYPOGRAPHY CONFIG
+const title = {
+  default: {
+    level: 6,
+    fontWeight: 'bold',
+  },
+  lg: {
+    level: 3,
+    fontWeight: 'bold',
+  },
+};
+
+const subTitle = {
+  default: {
+    level: 7,
+    fontWeight: 'bold',
+  },
+  lg: {
+    level: 6,
+    fontWeight: 'bold',
+  },
+};
+
+const paragraph = {
+  default: {
+    level: 9,
+    fontWeight: 'normal',
+  },
+  lg: {
+    level: 8,
+    fontWeight: 'normal',
+  },
+};
+
+
+const Wrapper = styled.div`
+  background-color: #F4F6FB !important;
+  overflow: hidden;
+`;
+
+const Box = styled.div`
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0px 8px 30px #264A6017;
+  width: 100%;
+  heigth: 100%;
+  padding: 1.25rem;
+`;
+
+const StyledSection = styled(Section)`
+  padding-left: 1rem;
+  padding-right: 1rem ;
+`;
+
+const HeroBodyContent = () => (
+  <div style={{ position: 'relative' }}>
+    <div className={styles.overlay_background}>
+      <img src={background} alt="b" />
+    </div>
+  </div>
+);
 
 class AppsDevDescription extends Component {
   
@@ -31,9 +98,11 @@ class AppsDevDescription extends Component {
     const siteTitle = 'Developing new Apps in Miami';
     const siteSubtitle = 'We transform ideas into working Apps';
     const siteDescription =
-          'We transform requirements into working software. We specialize in building web and mobile applications for Small and Medium Businesses.';
+    'We transform requirements into working software. We specialize in building web and mobile applications for Small and Medium Businesses.';
     const landingName = 'Apps Development Description';
+    
 
+    
     return (
       <Fragment>
         <Helmet
@@ -41,54 +110,44 @@ class AppsDevDescription extends Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
         />
-        <Hero class="is-fullheight">
-          <HeroBody className="p-0">
-            <Content>
-              
-              <div className="bg-header-landing">
-                <div>
-                  <img src={logo} className="logo" alt="logo"/>
-                </div>
-                <Columns>
-                  <Column isSize={{ tablet: 12, desktop: 7 }}>
-                    <Title className="title-squeezing">
-                      Developing new Software Products in Miami
-                    </Title>
-                    <Subtitle className="subtitle-squeezing">{siteSubtitle}</Subtitle>
-                    <p className="text-description">{siteDescription}</p>
-                  </Column>
-
-                  <Column isSize={{ tablet: 12, desktop: 5 }}>
-                    <YouTubeVideo id={'AlU5h2xrQ5M'} />
-                  </Column>
-                </Columns>
-                
-                <Container className="is-centered">
+        <Wrapper>
+          <Hero>
+            <HeroHeader>
+              <LandingHeader />
+            </HeroHeader>
+            <HeroBody style={{ padding: '0' }}>
+              <HeroBodyContent />
+            </HeroBody>
+          </Hero>
+          <StyledSection>
+            <Columns isDesktop>
+              <Column isSize={{ desktop: 8 }}>
+                <Box>
+                  <Typography tag="h1" size={title}>
+                    Developing new Software Products in Miami
+                  </Typography>
+                  <Typography tag="h2" size={subTitle} >
+                    {siteSubtitle}
+                  </Typography>
+                  <Typography tag="p" size={paragraph}>
+                    {siteDescription}
+                  </Typography>
+                  <YouTubeVideo id={'AlU5h2xrQ5M'} />
                   <BadgeIndustry />
-                </Container>
-              </div>
-
-              <Container className="is-centered" style={{ marginTop: '1rem' }}>
-                <Columns isDesktop style={{ alignItems: 'center' }}>
-                  <Column>
-                    <div className="has-text-centered">
-                      <img src={badge1} className="badge" />
-                      <img src={badge2} className="badge" />
-                    </div>
-                    <div className="has-text-centered">
-                      <img src={badge3} className="badge" />
-                      <img src={badge4} className="badge-google" />
-                    </div>
-                  </Column>
-                  <Column>
-                    <NewLandingForm />
-                  </Column>
-                </Columns>
-              </Container>
-
-            </Content>
-          </HeroBody>
-        </Hero>
+                </Box>
+              </Column>
+              <Column isSize={{ desktop: 4 }}>
+                <div className="has-text-centered">
+                  <img src={badge1} className="badge" />
+                  <img src={badge2} className="badge" />
+                  <img src={badge3} className="badge" />
+                  <img src={badge4} className="badge-google" />
+                </div>
+                <NewLandingForm landingName={landingName} />
+              </Column>
+            </Columns>
+          </StyledSection>
+        </Wrapper>
       </Fragment>
     );
   }

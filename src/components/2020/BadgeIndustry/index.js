@@ -5,7 +5,7 @@ import { Columns, Column, Box } from 'bloomer';
 const Badge = styled.p`
   font-size: 1rem;
   font-weight: bold;
-  marginBottom: 0px !important;
+  margin-bottom: 0px !important;
   text-align: center;
 `;
 
@@ -15,6 +15,10 @@ const Title = styled.p`
   font-wight: bold;
 `;
 
+const StyledBox = styled(Box)`
+  padding: 5px 10px;
+`;
+
 const BadgeIndustry = () => {
   return (
     <Fragment>
@@ -22,26 +26,26 @@ const BadgeIndustry = () => {
         <b>We specialize in these industries:</b>
       </Title>
       
-      <Columns isDesktop>
+      <Columns isDesktop  style={{ alignItems: 'center' }}>
         <Column>
-          <Box>
+          <StyledBox>
             <Badge>Advertising and Retailling</Badge>
-          </Box>
+          </StyledBox>
         </Column>
         <Column>
-          <Box>
+          <StyledBox>
             <Badge>Fitness and Fashion</Badge>
-          </Box>
+          </StyledBox>
         </Column>
         <Column>
-          <Box>
+          <StyledBox>
             <Badge>Communities and Lifestyle</Badge>
-          </Box>
+          </StyledBox>
         </Column>
         <Column>
-          <Box>
+          <StyledBox>
             <Badge>ERP Software</Badge>
-          </Box>
+          </StyledBox>
         </Column>
       </Columns>
       
