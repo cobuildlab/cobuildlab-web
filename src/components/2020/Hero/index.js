@@ -4,83 +4,54 @@ import { Container, Column, Columns } from 'bloomer';
 import { Icon } from 'react-icons-kit';
 import ModalVideo from 'react-modal-video';
 import { play } from 'react-icons-kit/fa/play';
-import Typography from '../Typography';
 import Button from '../Button';
 import Image from '../Image';
 import background from '../../../resources/2020/home/background.svg';
 import comic from '../../../resources/2020/home/cobuildlab-home.svg';
 import styles from './css/index.module.scss';
+import Hero from '../../Typography/H1';
+import H6 from '../../Typography/H6';
+import Paragraph from '../../Typography/Paragraph';
+import { TextOrange } from '../../Typography/TextHelpers';
+import styled from 'styled-components';
 
-const title1 = {
-  default: {
-    level: 10,
-    fontWeight: 'bold',
-  },
-  lg: {
-    level: 7,
-    fontWeight: 'bold',
-  },
-};
+const HeroWrapper = styled.div`
+  padding: 1em 0;
+`;
 
-const title2 = {
-  default: {
-    level: 4,
-    fontWeight: 'bold',
-  },
-  lg: {
-    level: 1,
-    fontWeight: 'bold',
-  },
-};
+const PlayIconContainer = styled.div`
+  position: absolute;
+  top: calc(50% + 35px);
+  left: calc(50% - 70px);
+  width: 70px;
+  height: 70px;
+  z-index: 100;
+  cursor: pointer;
+  @media screen and (max-width: 768px){
+    left: calc(50% - 35px);
+  }
+`;
 
-const title3 = {
-  default: {
-    level: 11,
-    fontWeight: 'normal',
-  },
-  lg: {
-    level: 9,
-    fontWeight: 'normal',
-  },
-};
+const SonarEmitter = styled.div`
+  position: relative;
+  margin: 0 auto;
+  width:  70px;
+  height: 70px;
+  border-radius: 9999px;
+  background-color: hsla(21, 79%, 53%, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
-const TopTitle = ({ children }) => (
-  <Typography tag="h2" size={title1} className={styles.hero_text}>
-    {children}
-  </Typography>
-);
-
-TopTitle.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
-};
-
-const MainTitle = ({ children }) => (
-  <Typography tag="h1" size={title2} className={styles.hero_text}>
-    {children}
-  </Typography>
-);
-
-MainTitle.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
-};
-
-const SubTitle = ({ children }) => (
-  <Typography tag="p" size={title3} className={styles.hero_text}>
-    {children}
-  </Typography>
-);
-
-SubTitle.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
-};
-
+//TODO move this to other file and use styled components
 const PlayIcon = ({ onClick }) => (
-  <div onClick={onClick} className={styles.hero_icon_video_container}>
-    <div className={styles.sonar_emitter}>
+  <PlayIconContainer onClick={onClick}>
+    <SonarEmitter>
       <Icon size={34} icon={play} className={styles.hero_icon} />
-    </div>
+    </SonarEmitter>
     <div className={styles.sonar_wave} />
-  </div>
+  </PlayIconContainer>
 );
 
 PlayIcon.propTypes = {
@@ -126,20 +97,21 @@ const HeroSection = () => (
       <Columns isCentered>
         <Column isSize={{ mobile: 12, desktop: 6 }}>
           <div className={styles.hero_body_left}>
-            <TopTitle>Software Development Company</TopTitle>
-            <MainTitle>
-              Let’s <span className={styles.hero_orange_text}>Build</span> a <br />
-              Great<span className={styles.hero_orange_text}> Idea.</span>
-            </MainTitle>
-            <SubTitle>
+            <H6>Software Development Company</H6>
+            <HeroWrapper>
+              <Hero >
+                Let’s <TextOrange >Build</TextOrange> a <br />
+                Great <TextOrange > Idea.</TextOrange>
+              </Hero>
+            </HeroWrapper>
+            <Paragraph>
               We partner with new and early-stage entrepreneurs and industry experts to transforms
               ideas into{' '}
-              <span className={styles.hero_orange_text}>Web and Mobile Software Products.</span>
               <br />
               <br />
               Since day one, our technique is focused on early results and transparent
               communication.
-            </SubTitle>
+            </Paragraph>
             <ReadMore />
           </div>
         </Column>
@@ -152,3 +124,12 @@ const HeroSection = () => (
 );
 
 export default HeroSection;
+
+
+/* 
+
+
+              <TextOrange>Web and Mobile Software Products.</TextOrange>
+
+
+*/
