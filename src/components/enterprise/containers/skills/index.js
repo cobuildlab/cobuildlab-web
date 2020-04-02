@@ -8,7 +8,7 @@ import './skills.scss';
 import '../../../../assets/scss/variable.scss';
 
 /**
- *
+ * @returns {object} - The Skills component.
  */
 function Skills() {
   return (
@@ -24,46 +24,45 @@ function Skills() {
             <Column isSize={{ mobile: 12, desktop: 6 }}>
               <div className="skills-content-block main-title-wrapper">
                 <Typography className="sitemain-subtitle" tag="h3">
-                  We Lead From The Front
+                  Technical Values
                 </Typography>
                 <div className="sub-title-wrapper">
                   <Typography className="site-subtitle2" tag="h2">
-                    What We Do
+                    We Lead From The Front
                   </Typography>
                 </div>
                 <Typography className="skills-dec" tag="p">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                  Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when
-                  an unknown dummy text of the printing
+                  Since day one, our technique is focused on early results and transparent
+                  communication.
                 </Typography>
                 <div className="progress-outer-block">
                   <Typography className="progress-title" tag="h4">
-                    Our Best Skill
+                    Our Best Skills
                   </Typography>
                   <div className="progressbar-wrapper-block">
                     <div className="progressbar-block">
                       <Progressbar
                         Class="progressbar1"
                         Percenteg="96"
-                        ProgressTitle="Strategies"
+                        ProgressTitle="Cloud based solutions"
                         ProgressClass="progressbar-title"
                       />
                       <Progressbar
                         Class="progressbar2"
-                        Percenteg="88"
-                        ProgressTitle="Planning"
+                        Percenteg="92"
+                        ProgressTitle="Support 24/7"
                         ProgressClass="progressbar-title"
                       />
                       <Progressbar
                         Class="progressbar3"
                         Percenteg="90"
-                        ProgressTitle="Customer Support"
+                        ProgressTitle="Serverless approach"
                         ProgressClass="progressbar-title"
                       />
                       <Progressbar
                         Class="progressbar4"
-                        Percenteg="94"
-                        ProgressTitle="Finance"
+                        Percenteg="95"
+                        ProgressTitle="Agile methodology"
                         ProgressClass="progressbar-title"
                       />
                     </div>

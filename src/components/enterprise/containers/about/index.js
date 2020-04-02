@@ -17,25 +17,60 @@ const About = () => {
                 <div className="about-content-block main-title-wrapper">
                   <div className="sub-title-wrapper">
                     <Typrography tag="h2" className="sitemain-subtitle">
-                      Business solution
+                      Software Development
                     </Typrography>
-                    <Typrography tag="h3" className="site-subtitle2">
-                      We gives you the best
-                    </Typrography>
+                    {/*<Typrography tag="h3" className="about-dec about-dec-1">*/}
+                    {/*  Since 2012 we've focused on developing and combining agile techniques, tools, and technologies to*/}
+                    {/*  increase development speed to deliver faster results!*/}
+                    {/*</Typrography>*/}
+                    {/*<Typrography tag="h3" className="site-subtitle2">*/}
+                    {/*  We give you the best:*/}
+                    {/*</Typrography>*/}
                   </div>
-                  <Typrography tag="h3" className="about-dec about-dec-1">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                    Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
-                    when an unknown dummy text of the printing
-                  </Typrography>
-                  <Typrography tag="h3" className="about-twosub-title">
-                    What we can help you<span className="enterprise-text-orange">Achive</span>
-                  </Typrography>
-                  <Typrography className="about-dec">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                    Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,
-                    when an
-                  </Typrography>
+
+                  <ul>
+                    <li>
+                      <Typrography tag="h3" className="about-twosub-title">
+                        ☛ Quality apps utilizing modern technologies
+                      </Typrography>
+                    </li>
+                    <li>
+                      <Typrography tag="h3" className="about-twosub-title">
+                        ☛ Rapid development and feature-rich
+                      </Typrography>
+                    </li>
+                    <li>
+                      <Typrography tag="h3" className="about-twosub-title">
+                        ☛ Custom mobile and cloud solutions
+                      </Typrography>
+                    </li>
+                    <li>
+                      <Typrography tag="h3" className="about-twosub-title">
+                        ☛ Easy, inspiring development process
+                      </Typrography>
+                    </li>
+                    <li>
+                      <Typrography tag="h3" className="about-twosub-title">
+                        ☛ iOS and Android experience
+                      </Typrography>
+                    </li>
+                    <li>
+                      <Typrography tag="h3" className="about-twosub-title">
+                        ☛ Testing and Survey Services
+                      </Typrography>
+                    </li>
+                    <li>
+                      <Typrography tag="h3" className="about-twosub-title">
+                        ☛ Marketing and Launch Services
+                      </Typrography>
+                    </li>
+                  </ul>
+
+                  {/*<Typrography className="about-dec">*/}
+                  {/*  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem*/}
+                  {/*  Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,*/}
+                  {/*  when an*/}
+                  {/*</Typrography>*/}
                   <div className="about-button-container">
                     <Buttom>See more</Buttom>
                   </div>
