@@ -26,10 +26,7 @@ const Footer = () => {
               <Column isSize={{ mobile: 8, desktop: 4 }}>
                 <div className="footer-logo-wrapper">
                   <Image Path={logo} Class="footer-logo" />
-                  <Typography className="footer-dec" tag="p">
-                    Lorem ipsum, or lipsum as it is sometimes known, is dummy text used 
-                    in laying out print, graphic or web designs. The passage is attributed to an unknown
-                  </Typography>
+                  <Typography className="footer-dec" tag="p"></Typography>
                 </div>
               </Column>
               <Column isSize={{ mobile: 8, desktop: 3 }}>
@@ -142,21 +139,30 @@ const Footer = () => {
                   </Typography>
                   <ul className="social-wrapper">
                     <li>
-                      <a target="_blank" href="https://facebook.com/cobuildlab" rel="noreferrer noopener">
+                      <a
+                        target="_blank"
+                        href="https://facebook.com/cobuildlab"
+                        rel="noreferrer noopener">
                         <span>
                           <PreviewIcon icon={facebookSquare} />
                         </span>
                       </a>
                     </li>
                     <li>
-                      <a target="_blank" href="https://twitter.com/cobuildlab" rel="noreferrer noopener">
+                      <a
+                        target="_blank"
+                        href="https://twitter.com/cobuildlab"
+                        rel="noreferrer noopener">
                         <span>
                           <PreviewIcon icon={twitterSquare} />
                         </span>
                       </a>
                     </li>
                     <li>
-                      <a target="_blank" href="https://linkedin.com/company/cobuildlab" rel="noreferrer noopener">
+                      <a
+                        target="_blank"
+                        href="https://linkedin.com/company/cobuildlab"
+                        rel="noreferrer noopener">
                         <span>
                           <PreviewIcon icon={linkedinSquare} />
                         </span>

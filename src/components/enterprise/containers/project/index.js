@@ -1,10 +1,31 @@
 import React from 'react';
 import { Container, Columns, Column, Section } from 'bloomer';
 import CountUp from 'react-countup';
-import Counterdata from '../../../../data/project';
 import Typography from '../../../2020/Typography';
 import './project.scss';
 
+const COUNTER_DATA = [
+  {
+    id: 1,
+    number: 55,
+    title: 'Clients',
+  },
+  {
+    id: 2,
+    number: 70,
+    title: 'Projects',
+  },
+  {
+    id: 3,
+    number: 36,
+    title: 'Team Experts',
+  },
+  {
+    id: 4,
+    number: 100,
+    title: 'Repositories',
+  },
+];
 
 const Project = () => {
   return (
@@ -13,7 +34,7 @@ const Project = () => {
         <Container>
           <div className="project-content-wrapper">
             <Columns>
-              {Counterdata.map((data, i) => (
+              {COUNTER_DATA.map((data, i) => (
                 <Column isSize={{ mobile: 12, desktop: 3 }} key={data.id}>
                   <div className={`counter-${i} project-box-outer`}>
                     <div className="animated-bg">
