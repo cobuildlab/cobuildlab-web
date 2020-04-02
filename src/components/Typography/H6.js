@@ -9,12 +9,12 @@ import commonStyles from './common-styles';
 
 */
 
-const H6  = styled.h6`
+const H6 = styled.h6`
   ${commonStyles}
   font-weight: normal;
   font-family: 'Lato-regular', sans-serif;
-  font-size: calc(24px + (32 - 24) * ((100vw - 320px) / (1920 - 320)));
-  color: ${colors.indigo}
+  font-size: calc(20px + (32 - 20) * ((100vw - 320px) / (1920 - 320)));
+  color: ${colors.indigo};
 `;
 
 export default H6;
