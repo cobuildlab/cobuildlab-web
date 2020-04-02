@@ -1,12 +1,12 @@
-import React, { useCallback, useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Column, Columns } from 'bloomer';
 import { Icon } from 'react-icons-kit';
-import ModalVideo from 'react-modal-video';
 import { play } from 'react-icons-kit/fa/play';
 import Typography from '../Typography';
 import Button from '../Button';
 import Image from '../Image';
+import VideoPlay from '../VideoPlay';
 import background from '../../../resources/2020/home/background.svg';
 import comic from '../../../resources/2020/home/cobuildlab-home.svg';
 import styles from './css/index.module.scss';
@@ -74,38 +74,24 @@ SubTitle.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
 
-const PlayIcon = ({ onClick }) => (
-  <div onClick={onClick} className={styles.hero_icon_video_container}>
-    <div className={styles.sonar_emitter}>
-      <Icon size={34} icon={play} className={styles.hero_icon} />
+const PlayIcon = () => (
+  <VideoPlay>
+    <div className={styles.hero_icon_video_container}>
+      <div className={styles.sonar_emitter}>
+        <Icon size={34} icon={play} className={styles.hero_icon} />
+      </div>
+      <div className={styles.sonar_wave} />
     </div>
-    <div className={styles.sonar_wave} />
-  </div>
+  </VideoPlay>
 );
 
-PlayIcon.propTypes = {
-  onClick: PropTypes.func.isRequired,
-};
 
-const ImagesContainer = () => {
-  const [visible, setVisible] = useState(false);
-  const onClick = useCallback(() => {
-    setVisible((state) => !state);
-  }, []);
-  return (
-    <div className={styles.hero_image_container}>
-      <PlayIcon onClick={onClick} />
-      <Image alt="main comic" src={comic} />
-      <ModalVideo
-        channel="youtube"
-        autoplay={visible}
-        isOpen={visible}
-        videoId="AlU5h2xrQ5M"
-        onClose={onClick}
-      />
-    </div>
-  );
-};
+const ImagesContainer = () => (
+  <div className={styles.hero_image_container}>
+    <PlayIcon />
+    <Image alt="main comic" src={comic} />
+  </div>
+);
 
 const ReadMore = () => (
   <div className={styles.hero_read_more}>

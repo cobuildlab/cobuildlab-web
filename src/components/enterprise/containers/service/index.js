@@ -35,7 +35,6 @@ Card.propTypes = {
   index: PropTypes.number.isRequired,
   icon: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
 };
 
 /**
