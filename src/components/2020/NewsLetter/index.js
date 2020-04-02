@@ -110,7 +110,7 @@ export default class NewsLetter extends PureComponent {
               </Field>
             </Column>
             <Column isSize={{ mobile: 12, desktop: 2 }}>
-              <Button type="submit">Submit</Button>
+              <Button htmlType="submit">Submit</Button>
             </Column>
           </Columns>
         </form>

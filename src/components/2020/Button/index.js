@@ -39,10 +39,9 @@ Loading.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
 
-
 /**
  * @author github @kikeztw
- * @param {string} to -  Link prop for button, this property adds a label at the same time as a button.
+ * @param {string} to -  Link prop for button, this property adds <a> tag at the same time as a button.
  * @param {string} className -  Styles for the button.
  * @param {bool}   isLoading -   Loading indicator for button.
  * @param {string} type - Button type  default | primary | secondary.
@@ -50,18 +49,10 @@ Loading.propTypes = {
  *                         https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type.
  */
 
-const Button = ({ 
-  to,
-  children, 
-  className, 
-  isLoading, 
-  htmlType, 
-  isBlock,
-  type, 
-  ...rest 
-}) => {
+const Button = ({ to, children, className, isLoading, htmlType, isBlock, type, ...rest }) => {
   const buttonStyles = componse(
-    styles.button, styles[`button_${type}`], 
+    styles.button,
+    styles[`button_${type}`],
     className,
     isBlock ? styles.button_block : '',
   );
@@ -93,7 +84,7 @@ Button.defaultProps = {
 Button.propTypes = {
   isBlock: PropTypes.bool,
   htmlType: PropTypes.string,
-  type:  PropTypes.oneOf(['default','primary', 'secondary']),
+  type: PropTypes.oneOf(['default', 'primary', 'secondary']),
   isLoading: PropTypes.bool,
   to: PropTypes.string,
   className: PropTypes.string,
@@ -101,5 +92,3 @@ Button.propTypes = {
 };
 
 export default memo(Button);
-
-

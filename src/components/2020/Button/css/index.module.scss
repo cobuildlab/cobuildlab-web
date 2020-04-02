@@ -38,11 +38,10 @@
     background: none;
     box-shadow: none;
     text-transform: capitalize;
-    color: $orange;
+    color: $navy;
     .button_text{
       font-size: 20px;
     }
-
     &:hover{
       transform: scale(1.1);
     }

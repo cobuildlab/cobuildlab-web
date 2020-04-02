@@ -7,7 +7,6 @@ import Shape3 from '../../../../assets/images/banner/wave.png';
 import Typrography from '../../../2020/Typography';
 import Button from '../../../2020/Button';
 
-
 import './banner.scss';
 import anim1 from './1-blue.png';
 import anim2 from './2-blue.png';
@@ -50,34 +49,34 @@ const Banner = (props) => {
   //     }
   //   }
   // `);
-  const bannerAnimationImages=[
+  const bannerAnimationImages = [
     {
-      "img": anim1
+      img: anim1,
     },
     {
-      "img": anim2
+      img: anim2,
     },
     {
-      "img": anim3
+      img: anim3,
     },
     {
-      "img": anim4
+      img: anim4,
     },
     {
-      "img": anim5
+      img: anim5,
     },
     {
-      "img": anim6
+      img: anim6,
     },
     {
-      "img": anim7
+      img: anim7,
     },
     {
-      "img": anim8
+      img: anim8,
     },
     {
-      "img": anim9
-    }
+      img: anim9,
+    },
   ];
   return (
     <Section isPaddingless>

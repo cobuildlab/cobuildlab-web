@@ -44,10 +44,10 @@ const description = {
 const Title = () => (
   <div className={styles.contact_title}>
     <Typography tag="h6" size={title} hasTextAlign="left">
-    Write Us!
+      Write Us!
     </Typography>
     <Typography tag="span" size={subTitle} hasTextAlign="left">
-    Your business takes off right now
+      Your business takes off right now
     </Typography>
   </div>
 );
@@ -57,8 +57,7 @@ const Description = () => (
     Where are we?
     <br />
     <Typography tag="span" size={description.subTitle}>
-    66 West Flagler St, Suite 900, Miami, Florida 33130 +1 (786) 991-3467
-    contact@cobuildlab.com
+      66 West Flagler St, Suite 900, Miami, Florida 33130 +1 (786) 991-3467 contact@cobuildlab.com
     </Typography>
   </Typography>
 );
