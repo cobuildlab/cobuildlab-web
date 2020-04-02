@@ -36,6 +36,19 @@ const subTitle = {
 };
 
 const Banner = (props) => {
+  // const BannerAnimationImages = useStaticQuery(graphql`
+  //   query BackgroundImages {
+  //     allDataJson {
+  //       edges {
+  //         node {
+  //           bannerranimation {
+  //             img
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
   const bannerAnimationImages = [
     {
       img: anim1,
@@ -107,6 +120,12 @@ const Banner = (props) => {
                       with experienced Agile developers.
                     </Typrography>
                     <div className="banner-btn-wrapper">
+                      <div className="banner-btn-item">
+                        <Button> GET STARTED </Button>
+                      </div>
+                      <div className="banner-btn-item">
+                        <Button type="primary"> Read more </Button>
+                      </div>
                       <Button>GET STARTED</Button>
                     </div>
                   </div>
