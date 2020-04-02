@@ -8,12 +8,11 @@ import Video from '../../components/enterprise/containers/video';
 import Skills from '../../components/enterprise/containers/skills';
 import Project from '../../components/enterprise/containers/project';
 import Portfolio from '../../components/enterprise/containers/portfolio';
-import Testimonial from '../../components/enterprise/containers/testimonial';
+// import Testimonial from '../../components/enterprise/containers/testimonial';
 import Contact from '../../components/enterprise/containers/contact';
 import Brand from '../../components/enterprise/containers/brands';
 import Footer from '../../components/enterprise/containers/footer';
 import CopyRight from '../../components/enterprise/containers/copyright_text';
-// import ThemeColor from '../../components/enterprise/containers/themecolor';
 import '../../assets/scss/index.scss';
 
 const IndexPage = () => {
@@ -21,7 +20,7 @@ const IndexPage = () => {
     <div className="main-wrapper">
       <Navbar />
       <div id="main-content">
-        <Banner ChangeClass={'demo1'} />
+        <Banner />
         <Service />
         <About />
         <UniqueValueProps />
@@ -29,7 +28,7 @@ const IndexPage = () => {
         <Skills />
         <Project />
         <Portfolio />
-        <Testimonial />
+        {/*<Testimonial />*/}
         <Contact />
         <Brand />
         <Footer />

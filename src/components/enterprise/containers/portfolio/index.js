@@ -4,7 +4,6 @@ import PortfolioData from '../../../../data/portfolio';
 import Typography from '../../../2020/Typography';
 import './portfolio.scss';
 
-
 const Portfolio = () => {
   return (
     <Section isMarginless>
@@ -20,13 +19,12 @@ const Portfolio = () => {
               See Our <span className="enterprise-text-orange">Case Studies</span>
             </Typography>
             <Typography className="site-dec" tag="p">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown
+              Learn from ideas created at Cobuild Lab.
             </Typography>
           </div>
           <Columns isDisplay="flex" isMultiline>
             {PortfolioData.map((data, i) => (
-              <Column isSize={{ mobile: 6, tablet: 4 }} key={data.id} >
+              <Column isSize={{ mobile: 6, tablet: 4 }} key={data.id}>
                 <div className={`portfolio-${i}`}>
                   <div className="portfolio-content">
                     <div className="portfolio-first-block">

@@ -99,13 +99,25 @@ const Banner = (props) => {
               <Column isSize={6}>
                 <div className="row">
                   <div className="banner-content">
+                    <Typrography tag="h2" className="sitemain-subtitle">
+                      SOFTWARE DEVELOPMENT COMPANY
+                    </Typrography>
                     <Typrography size={title} tag="h1">
                       Let’s <span className="enterprise-text-orange">Build</span> a <br />
                       Great<span className=" enterprise-text-orange"> Idea.</span>
                     </Typrography>
                     <Typrography size={subTitle} tag="p" className="banner-dec">
-                      A team or UX/UI Designers, Project Managers, Senior Developers, <br />
-                      and QA Engineers are waiting to make your idea come alive
+                      We transform small and medium size businesses by automating your business
+                      processes into optimized and streamlined workflows with Web and Mobile custom
+                      software.
+                    </Typrography>
+                    <br />
+                    <Typrography size={subTitle} tag="p" className="banner-dec">
+                      At Cobuild Lab, we`ve been helping business owners, CTO`s, COO`s and IT
+                      leaders get past the techno-speak and help them take a business process and
+                      turn it into a custom software solution, whether they need design and build
+                      services, technical assistance or are looking to augment their existing team
+                      with experienced Agile developers.
                     </Typrography>
                     <div className="banner-btn-wrapper">
                       <div className="banner-btn-item">
@@ -114,6 +126,7 @@ const Banner = (props) => {
                       <div className="banner-btn-item">
                         <Button type="primary"> Read more </Button>
                       </div>
+                      <Button>GET STARTED</Button>
                     </div>
                   </div>
                 </div>
@@ -127,11 +140,6 @@ const Banner = (props) => {
               </Column>
             </Columns>
           </Container>
-          {(props.ChangeClass === 'demo2' || props.ChangeClass === 'demo3') && (
-            <div className="bottom-img">
-              {props.ChangeClass === 'demo2' ? <Image Path={Shape2} /> : <Image Path={Shape3} />}
-            </div>
-          )}
         </div>
       </div>
     </Section>
@@ -139,29 +147,3 @@ const Banner = (props) => {
 };
 
 export default Banner;
-
-/**
- * 
- *    <div className={styles.banner_content}>
-                <Titlespan
-                  Class={styles.banner_main_title}
-                  Label="WE ARE"
-                  Name="CREATIVE BUSINESS AGENCY"
-                />
-                <Description
-                  Class={styles.banner_dec}
-                  Name="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever"
-                />
-                <div className="banner-btn-wrapper">
-                  <Button Class="button1 button3 btn" Name="LEARN MORE" />
-                  <Button
-                    Class="button1 button4 btn"
-                    Name="GET STARTED"
-                    Title="gradient-color"
-                    BtnIcon="btn-icon gradient-color1"
-                  />
-                </div>.
-              </div>.
- * 
- * 
- */
