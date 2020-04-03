@@ -4,6 +4,7 @@
   --bannerimg: url("../../../../assets/images/banner/bg-slate.png");
 }
 $bannerimg: var(--bannerimg);
+
 .demo1 {
   &.banner-wrapper {
     background-position: bottom;
@@ -28,6 +29,28 @@ $bannerimg: var(--bannerimg);
     }
   }
 }
+
+
+// buttons
+.banner-btn{
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 42px;
+
+    @media screen and (max-width: 768px) {
+      justify-content: space-between;
+    }
+  }
+
+  &-item{
+     margin-right: 1em;
+     @media screen and (max-width: 768px) {
+      margin-right: 0;
+    }
+  }
+}
+
 .banner-wrapper {
   width: 100%;
   height: 100%;
@@ -42,18 +65,9 @@ $bannerimg: var(--bannerimg);
 }
 
 .banner-content {
-  .banner-main-title {
-    font-size: calc(20px + (60 - 20) * ((100vw - 320px) / (1920 - 320)));
-    line-height: calc(26px + (66 - 26) * ((100vw - 320px) / (1920 - 320)));
-    margin-bottom: calc(10px + (27 - 10) * ((100vw - 320px) / (1920 - 320)));
-    color: $color-white;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
   .banner-dec {
     font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
     line-height: calc(20px + (26 - 20) * ((100vw - 320px) / (1920 - 320)));
-    color: $color-white;
     margin-bottom: 33px;
   }
 }

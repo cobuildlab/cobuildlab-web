@@ -7,6 +7,9 @@
 .testimonial-wrapper {
   background: $color-theme;
   padding-bottom: calc(40px + (120 - 40) * ((100vw - 320px) / (1920 - 320)));
+  & .sub-title{
+    margin-left: .5em;
+  }
 }
 .testimonial-slider {
   max-width: 720px;

@@ -12,24 +12,30 @@
 }
 .about-content-block {
   .about-dec {
-    color: $color-white;
     line-height: 24px;
     &.about-dec-1 {
       margin-bottom: 22px;
     }
   }
   .about-twosub-title {
-    color: $color-white;
     font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 400;
     position: relative;
     margin-bottom: 22px;
+    & .enterprise-text-orange{
+      margin-left: .5em;
+    }
   }
   .button1 {
     margin: 0;
     margin-top: calc(20px + (35 - 20) * ((100vw - 320px) / (1920 - 320)));
   }
 }
+
+.about-button-container{
+  margin-top: 25px;
+}
+
 .about-image {
   text-align: right;
   margin-top: -2%;

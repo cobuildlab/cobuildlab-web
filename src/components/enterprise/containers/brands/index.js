@@ -1,30 +1,23 @@
 import React from 'react';
 import { Container, Section } from 'bloomer';
-import { useStaticQuery, graphql } from 'gatsby';
 import Image from '../../components/image';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './brands.scss';
+import logo1 from '../../../../assets/images/logos/8base-logo.png';
+import logo2 from '../../../../assets/images/logos/aws-logo.png';
+import logo3 from '../../../../assets/images/logos/gc-logo.png';
+import logo4 from '../../../../assets/images/logos/js-logo.png';
+import logo5 from '../../../../assets/images/logos/nodejs-logo.png';
+import logo6 from '../../../../assets/images/logos/python-logo.png';
+import logo7 from '../../../../assets/images/logos/react-logo.png';
 
 /**
  *
  */
 function Brand() {
-  const Branddata = useStaticQuery(graphql`
-    query BrandQuery {
-      allDataJson {
-        edges {
-          node {
-            brands {
-              id
-              img
-            }
-          }
-        }
-      }
-    }
-  `);
+  const BRANDS = [logo1, logo2, logo3, logo4, logo5, logo6, logo7];
 
   const settings = {
     dots: false,
@@ -66,10 +59,10 @@ function Brand() {
         <div className="enterprise-section">
           <Container>
             <Slider {...settings}>
-              {Branddata.allDataJson.edges[0].node.brands.map((data) => (
-                <div className="brand-item" key={data.id}>
+              {BRANDS.map((logo, i) => (
+                <div className="brand-item" key={i}>
                   <div className="brand-content">
-                    <Image Path={data.img} />
+                    <Image Path={logo} />
                   </div>
                 </div>
               ))}

@@ -26,9 +26,9 @@
       position: relative;
       display: block;
       margin-bottom: calc(10px + (25 - 10) * ((100vw - 320px) / (1920 - 320)));
+      color: $cobuild-orange;
     }
     .counters-title {
-      color: $color-dark;
       font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
       font-weight: 500;
       display: block;

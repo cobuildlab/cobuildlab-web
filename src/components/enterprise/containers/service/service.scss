@@ -34,7 +34,7 @@
   }
 }
 .service-dec {
-  margin-bottom: calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320)));
+  line-height: 1.5;
 }
 .service-block2 {
   margin-top: -115px;
@@ -59,7 +59,7 @@
       transition: all 0.5s ease-in-out;
     }
     .service-dec-content {
-      margin: 0;
+      line-height: 1.5;
     }
   }
 }

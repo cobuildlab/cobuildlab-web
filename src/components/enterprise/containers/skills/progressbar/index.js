@@ -1,28 +1,27 @@
 import React from 'react';
-import { Title } from '../../../components/title';
 import { Progress } from 'react-sweet-progress';
 import 'react-sweet-progress/lib/style.css';
+import Typography from '../../../../2020/Typography';
 
-/**
- * @param props
- */
-function Progressbar(props) {
+const Progressbar = ({ ProgressTitle, ProgressClass, Percenteg, Class, Color }) => {
   return (
     <div className="progressbar-wrapper">
-      <Title Class={props.ProgressClass} Name={props.ProgressTitle} />
+      <Typography className={ProgressClass} tag="p">
+        {ProgressTitle}
+      </Typography>
       <Progress
-        percent={props.Percenteg}
-        className={props.Class}
+        percent={Percenteg}
+        className={Class}
         status="error"
         theme={{
           error: {
-            symbol: props.Percenteg + '%',
-            color: props.Color,
+            symbol: Percenteg + '%',
+            color: Color,
           },
         }}
       />
     </div>
   );
-}
+};
 
 export default Progressbar;

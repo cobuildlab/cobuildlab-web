@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Columns, Column, Section } from 'bloomer';
-import { Subtitle, Description, Titlespan2 } from '../../components/title';
-import Button from '../../components/button';
 import Image from '../../components/image';
 import AboutImg from '../../../../assets/images/banner/group-banner.png';
+import Typrography from '../../../2020/Typography';
+import Buttom from '../../../2020/Button';
 import './about.scss';
 
 const About = () => {
@@ -15,24 +15,55 @@ const About = () => {
             <Column isSize={{ mobile: 11, desktop: 6 }}>
               <div className="row">
                 <div className="about-content-block main-title-wrapper">
-                  <Subtitle Class="sitemain-subtitle" Name="Business solution" />
-                  <Subtitle Class="site-subtitle2" Name="We gives you the best" />
+                  <div className="sub-title-wrapper">
+                    <Typrography tag="h2" className="sitemain-subtitle">
+                      Software Development
+                    </Typrography>
+                    {/*<Typrography tag="h3" className="about-dec about-dec-1">*/}
+                    {/*  Since 2012 we've focused on developing and combining agile techniques, tools, and technologies to*/}
+                    {/*  increase development speed to deliver faster results!*/}
+                    {/*</Typrography>*/}
+                    {/*<Typrography tag="h3" className="site-subtitle2">*/}
+                    {/*  We give you the best:*/}
+                    {/*</Typrography>*/}
+                  </div>
 
-                  <Description
-                    Class="about-dec about-dec-1"
-                    Name="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown dummy text of the printing"
-                  />
-                  <Titlespan2 Class="about-twosub-title" Name="What we can help you" Label="Achive" />
-                  <Description
-                    Class="about-dec"
-                    Name="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an"
-                  />
-                  <Button
-                    Class="button1 button4 btn"
-                    Name="HIRE US NOW"
-                    Title="gradient-color"
-                    BtnIcon="btn-icon gradient-color1"
-                  />
+                  <ul>
+                    <li>
+                      <Typrography tag="h3" className="about-twosub-title">
+                        ☛ Quality apps utilizing modern technologies
+                      </Typrography>
+                    </li>
+                    <li>
+                      <Typrography tag="h3" className="about-twosub-title">
+                        ☛ Rapid development and feature-rich
+                      </Typrography>
+                    </li>
+                    <li>
+                      <Typrography tag="h3" className="about-twosub-title">
+                        ☛ Custom mobile and cloud solutions
+                      </Typrography>
+                    </li>
+                    <li>
+                      <Typrography tag="h3" className="about-twosub-title">
+                        ☛ iOS and Android experience
+                      </Typrography>
+                    </li>
+                    <li>
+                      <Typrography tag="h3" className="about-twosub-title">
+                        ☛ Marketing and Launch Services
+                      </Typrography>
+                    </li>
+                  </ul>
+
+                  {/*<Typrography className="about-dec">*/}
+                  {/*  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem*/}
+                  {/*  Ipsum has been the industry&apos;s standard dummy text ever since the 1500s,*/}
+                  {/*  when an*/}
+                  {/*</Typrography>*/}
+                  <div className="about-button-container">
+                    <Buttom to={'/enterprise#css'}>SEE SOME EXAMPLES</Buttom>
+                  </div>
                 </div>
               </div>
             </Column>
