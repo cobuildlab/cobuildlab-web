@@ -7,11 +7,10 @@ import 'bulma';
 import LandingHeader from '../components/2020/LandingHeader';
 import BadgeIndustry from '../components/2020/BadgeIndustry';
 import NewLandingForm from '../components/2020/NewLandingForm';
-import styles from '../components/2020/Hero/css/index.module.scss';
 import Typography from '../components/2020/Typography';
+import BannerBackground from '../components/2020/BannerBackground';
 
 // RESOURCES
-import background from '../resources/2020/home/background.svg';
 import badge1 from '../resources/badges1.png';
 import badge2 from '../resources/badges2.png';
 import badge3 from '../resources/badges3.png';
@@ -78,13 +77,9 @@ const YouTubeVideoContainer = styled.div`
   margin-bottom: 2.5rem;
 `;
 
-const HeroBodyContent = () => (
-  <div style={{ position: 'relative' }}>
-    <div className={styles.overlay_background}>
-      <img src={background} alt="b" />
-    </div>
-  </div>
-);
+const BannerWrapper = styled.div`
+  position: relative;
+`;
 
 class AppsDevDescription extends Component {
   constructor(props) {
@@ -111,8 +106,10 @@ class AppsDevDescription extends Component {
             <HeroHeader>
               <LandingHeader />
             </HeroHeader>
-            <HeroBody style={{ padding: '0' }}>
-              <HeroBodyContent />
+            <HeroBody isPaddingless>
+              <BannerWrapper>
+                <BannerBackground />
+              </BannerWrapper>
             </HeroBody>
           </Hero>
           <StyledSection>
