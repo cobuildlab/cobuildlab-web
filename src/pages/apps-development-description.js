@@ -7,7 +7,7 @@ import 'bulma';
 import LandingHeader from '../components/2020/LandingHeader';
 import BadgeIndustry from '../components/2020/BadgeIndustry';
 import NewLandingForm from '../components/2020/NewLandingForm';
-import styles from '../components/2020/hero/css/index.module.scss';
+import styles from '../components/2020/Hero/css/index.module.scss';
 import Typography from '../components/2020/Typography';
 
 // RESOURCES
