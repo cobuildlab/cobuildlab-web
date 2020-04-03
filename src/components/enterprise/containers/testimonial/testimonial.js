@@ -4,9 +4,6 @@ import Image from '../../components/image';
 import Slider from 'react-slick';
 import Typography from '../../../2020/Typography';
 import './testimonial.scss';
-//TODO move this file to index
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
 const CarouselSlider = () => {
   const TestimonialList = useStaticQuery(graphql`

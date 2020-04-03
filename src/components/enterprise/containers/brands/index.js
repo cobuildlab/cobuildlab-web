@@ -2,8 +2,6 @@ import React from 'react';
 import { Container, Section } from 'bloomer';
 import Image from '../../components/image';
 import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import './brands.scss';
 import logo1 from '../../../../assets/images/logos/8base-logo.png';
 import logo2 from '../../../../assets/images/logos/aws-logo.png';
