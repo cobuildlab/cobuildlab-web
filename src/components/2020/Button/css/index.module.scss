@@ -19,3 +19,101 @@
     color: $white;
   }
 }
+
+.button{
+
+  min-width: 170px;
+  min-height: 42px;
+  border: none;
+  cursor: pointer;
+  transition: all .25s linear;
+  outline-style: none ;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  &_block{
+    width: 100%;
+  }
+
+  &_text{
+    color: inherit !important;
+    font-size: 16px;
+  }
+
+  &_default{
+    background-color: $orange;
+    background: $orange 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 25px $btn-shadow;
+    text-transform: uppercase;
+    color: $white !important;
+
+    &:hover, &:focus{
+      background: $btn-active-bg 0% 0% no-repeat padding-box;
+      box-shadow: 0px 5px 10px $btn-shadow;
+    }
+  }
+
+  &_primary{
+    background: none;
+    box-shadow: none;
+    text-transform: capitalize;
+    color: $navy;
+    .button_text{
+      font-size: 20px;
+    }
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+
+  &_secondary{
+    background: none;
+    box-shadow: none;
+    text-transform: uppercase;
+    color: $dark-slate !important;
+
+    &:hover{
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 5px 15px #2749606C; //TODO add this color to var.scss
+    }
+
+    &:focus{
+      background: #264A60 0% 0% no-repeat padding-box;
+      box-shadow: 0px 5px 15px #2749606C;
+      .button_text{
+        color: $white !important;
+      }
+    }
+
+  }
+
+  &:hover, &:focus{
+    border: none;
+  }
+}
+
+.icon_container{
+  display: inline-block;
+  margin: auto;
+  animation: loading 1.25s linear  infinite;
+
+}
+
+.display{
+  &_block{
+    display: block;
+  }
+  &_hidden{
+    display: none;
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
