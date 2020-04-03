@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Helmet from 'react-helmet';
-import { Section, Hero, HeroBody, HeroHeader, Columns, Column } from 'bloomer';
+import { Container, Section, Hero, HeroBody, HeroHeader, Columns, Column } from 'bloomer';
 import 'bulma';
 
 // COMPONENTS
@@ -23,22 +23,22 @@ import styled from 'styled-components';
 // TYPOGRAPHY CONFIG
 const title = {
   default: {
-    level: 6,
+    level: 7,
     fontWeight: 'bold',
   },
   lg: {
-    level: 3,
+    level: 4,
     fontWeight: 'bold',
   },
 };
 
 const subTitle = {
   default: {
-    level: 7,
+    level: 8,
     fontWeight: 'bold',
   },
   lg: {
-    level: 6,
+    level: 7,
     fontWeight: 'bold',
   },
 };
@@ -69,8 +69,6 @@ const Box = styled.div`
 
 const StyledSection = styled(Section)`
   position: relative;
-  padding-left: 2rem;
-  padding-right: 2rem;
 `;
 
 const YouTubeVideoContainer = styled.div`
@@ -115,9 +113,10 @@ class AppsDevDescription extends Component {
               <HeroBodyContent />
             </HeroBody>
           </Hero>
-          <StyledSection>
+          <Container>
+            <StyledSection>
             <Columns isDesktop>
-              <Column isSize={{ desktop: 8 }}>
+              <Column isSize={{ desktop: 7 }}>
                 <Typography tag="h1" size={title}>
                   Developing new Software Products in Miami
                 </Typography>
@@ -132,7 +131,7 @@ class AppsDevDescription extends Component {
                 </YouTubeVideoContainer>
                 <BadgeIndustry />
               </Column>
-              <Column isSize={{ desktop: 4 }}>
+              <Column isSize={{ desktop: 5 }}>
                 <Box>
                   <div className="has-text-centered">
                     <img src={badge1} className="badge" />
@@ -145,6 +144,7 @@ class AppsDevDescription extends Component {
               </Column>
             </Columns>
           </StyledSection>
+          </Container>
         </Wrapper>
       </Fragment>
     );
