@@ -1,30 +1,97 @@
-import React from 'react';
+import React, { Component, Fragment } from 'react';
 import Helmet from 'react-helmet';
-import 'react-toastify/dist/ReactToastify.min.css';
-import NewLandingForm from '../components/NewLandingForm';
-import BadgeIndustry from '../components/BadgeIndustry';
-import { Title, Subtitle } from 'bloomer';
+import { Section, Hero, HeroBody, HeroHeader, Columns, Column } from 'bloomer';
 import 'bulma';
-import '../assets/fonts/Lato-Black.ttf';
-import '../assets/fonts/Lato-BlackItalic.ttf';
-import '../assets/fonts/Lato-Bold.ttf';
-import '../assets/fonts/Lato-BoldItalic.ttf';
-import '../assets/fonts/Lato-Hairline.ttf';
-import '../assets/fonts/Lato-HairlineItalic.ttf';
-import '../assets/fonts/Lato-Italic.ttf';
-import '../assets/fonts/Lato-Light.ttf';
-import '../assets/fonts/Lato-LightItalic.ttf';
-import '../assets/fonts/Lato-Regular.ttf';
 
-import logo from '../resources/cobuildlab.png';
+// COMPONENTS
+import LandingHeader from '../components/2020/LandingHeader';
+import BadgeIndustry from '../components/2020/BadgeIndustry';
+import NewLandingForm from '../components/2020/NewLandingForm';
+import styles from '../components/2020/hero/css/index.module.scss';
+import Typography from '../components/2020/Typography';
+
+// RESOURCES
+import background from '../resources/2020/home/background.svg';
 import badge1 from '../resources/badges1.png';
 import badge2 from '../resources/badges2.png';
 import badge3 from '../resources/badges3.png';
 import badge4 from '../resources/badges4.png';
-import YouTubeVideo, { YOUTUBE_MOBILE_OPTS } from '../components/YouTubeVideo';
-import YouTube from 'react-youtube';
 
-export default class AppsDevDescription extends React.Component {
+import YouTubeVideo from '../components/YouTubeVideo';
+import styled from 'styled-components';
+
+// TYPOGRAPHY CONFIG
+const title = {
+  default: {
+    level: 6,
+    fontWeight: 'bold',
+  },
+  lg: {
+    level: 3,
+    fontWeight: 'bold',
+  },
+};
+
+const subTitle = {
+  default: {
+    level: 7,
+    fontWeight: 'bold',
+  },
+  lg: {
+    level: 6,
+    fontWeight: 'bold',
+  },
+};
+
+const paragraph = {
+  default: {
+    level: 9,
+    fontWeight: 'normal',
+  },
+  lg: {
+    level: 8,
+    fontWeight: 'normal',
+  },
+};
+
+const Wrapper = styled.div`
+  background-color: #f4f6fb !important;
+  overflow: hidden;
+`;
+
+const Box = styled.div`
+  background-color: #fff;
+  box-shadow: 0px 8px 30px #264a6017;
+  width: 100%;
+  heigth: 100%;
+  padding: 1.25rem;
+`;
+
+const StyledSection = styled(Section)`
+  position: relative;
+  padding-left: 2rem;
+  padding-right: 2rem;
+`;
+
+const YouTubeVideoContainer = styled.div`
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+`;
+
+const HeroBodyContent = () => (
+  <div style={{ position: 'relative' }}>
+    <div className={styles.overlay_background}>
+      <img src={background} alt="b" />
+    </div>
+  </div>
+);
+
+class AppsDevDescription extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   render() {
     const siteTitle = 'Developing new Apps in Miami';
     const siteSubtitle = 'We transform ideas into working Apps';
@@ -33,44 +100,55 @@ export default class AppsDevDescription extends React.Component {
     const landingName = 'Apps Development Description';
 
     return (
-      <React.Fragment>
+      <Fragment>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
         />
-        <section className="hero is-fullheight">
-          <div className="hero-body no-padding-hero">
-            <div className="content">
-              <div className="columns is-desktop">
-                <div className="column is-8 h-100 bg-header-landing">
-                  <div className="view-content-zoom">
-                    <div>
-                      <img src={logo} className="logo" />
-                    </div>
-                    <Title className="title-squeezing">
-                      Developing new Software Products in Miami
-                    </Title>
-                    <Subtitle className="subtitle-squeezing">{siteSubtitle}</Subtitle>
-                    <p className="text-description">{siteDescription}</p>
-                    <YouTubeVideo id={'AlU5h2xrQ5M'} />
-                    <BadgeIndustry />
-                  </div>
-                </div>
-                <div className="column h-100 is-4 bg-form-landing Aligner">
-                  <div className="has-text-centered view-badge">
+        <Wrapper>
+          <Hero>
+            <HeroHeader>
+              <LandingHeader />
+            </HeroHeader>
+            <HeroBody style={{ padding: '0' }}>
+              <HeroBodyContent />
+            </HeroBody>
+          </Hero>
+          <StyledSection>
+            <Columns isDesktop>
+              <Column isSize={{ desktop: 8 }}>
+                <Typography tag="h1" size={title}>
+                  Developing new Software Products in Miami
+                </Typography>
+                <Typography tag="h2" size={subTitle}>
+                  {siteSubtitle}
+                </Typography>
+                <Typography tag="p" size={paragraph}>
+                  {siteDescription}
+                </Typography>
+                <YouTubeVideoContainer>
+                  <YouTubeVideo id={'AlU5h2xrQ5M'} />
+                </YouTubeVideoContainer>
+                <BadgeIndustry />
+              </Column>
+              <Column isSize={{ desktop: 4 }}>
+                <Box>
+                  <div className="has-text-centered">
                     <img src={badge1} className="badge" />
                     <img src={badge2} className="badge" />
                     <img src={badge3} className="badge" />
                     <img src={badge4} className="badge-google" />
                   </div>
                   <NewLandingForm landingName={landingName} />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </React.Fragment>
+                </Box>
+              </Column>
+            </Columns>
+          </StyledSection>
+        </Wrapper>
+      </Fragment>
     );
   }
 }
+
+export default AppsDevDescription;
