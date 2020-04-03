@@ -26,7 +26,6 @@ const Footer = () => {
               <Column isSize={{ mobile: 8, desktop: 4 }}>
                 <div className="footer-logo-wrapper">
                   <Image Path={logo} Class="footer-logo" />
-                  <Typography className="footer-dec" tag="p"></Typography>
                 </div>
               </Column>
               <Column isSize={{ mobile: 8, desktop: 3 }}>
