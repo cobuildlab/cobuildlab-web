@@ -25,8 +25,8 @@ const BadgeIndustry = () => {
       <Title className="subtitle mt-3 mb-2 is-marginless">
         <b>We specialize in these industries:</b>
       </Title>
-      
-      <Columns isDesktop  style={{ alignItems: 'center' }}>
+
+      <Columns isDesktop style={{ alignItems: 'center' }}>
         <Column>
           <StyledBox>
             <Badge>Advertising and Retailling</Badge>
@@ -48,7 +48,6 @@ const BadgeIndustry = () => {
           </StyledBox>
         </Column>
       </Columns>
-      
     </Fragment>
   );
 };

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Title, Subtitle, Field, Label, Control, Input } from 'bloomer';
-import Button from '../Button'; 
+import Button from './Button';
 import { navigate, Link } from 'gatsby';
-import Loading from '../../Loading';
+import Loading from '../Loading';
 import { toast } from 'react-toastify';
 
 export default class NewLandingForm extends Component {
@@ -112,20 +112,20 @@ export default class NewLandingForm extends Component {
     const { isLoading } = this.state;
     return (
       <Container>
-        <div className="colunm is-6 has-text-centered" >
-          <Title >
+        <div className="colunm is-6 has-text-centered">
+          <Title>
             Contact us for a <span className="free">FREE</span> <br /> consultation!
           </Title>
           <p>
             Call Us to: <span className="free">(786) 991-3467</span> or <br /> fill out this form
-              and we will get in touch with you.
+            and we will get in touch with you.
           </p>
         </div>
-          
-        <form onSubmit={(e) => this.onSubmit(e, landingName) }>
+
+        <form onSubmit={(e) => this.onSubmit(e, landingName)}>
           <Field>
             <Control>
-              <Input 
+              <Input
                 type="text"
                 required
                 name="firstName"
@@ -137,7 +137,7 @@ export default class NewLandingForm extends Component {
           </Field>
           <Field>
             <Control>
-              <Input 
+              <Input
                 type="text"
                 required
                 name="lastName"
@@ -149,7 +149,7 @@ export default class NewLandingForm extends Component {
           </Field>
           <Field>
             <Control>
-              <Input 
+              <Input
                 type="email"
                 required
                 name="email"
@@ -161,7 +161,7 @@ export default class NewLandingForm extends Component {
           </Field>
           <Field>
             <Control>
-              <Input 
+              <Input
                 type="number"
                 required
                 name="phone"
@@ -173,7 +173,7 @@ export default class NewLandingForm extends Component {
           </Field>
           <Field>
             <Control>
-              <Input 
+              <Input
                 type="text"
                 required
                 name="comment"
@@ -184,16 +184,9 @@ export default class NewLandingForm extends Component {
             </Control>
           </Field>
 
-          {isLoading ? (
-            <Loading loading={isLoading} />
-          ) : (
-            <Button htmlType="submit">
-              Submit
-            </Button>
-          )}
-
+          {isLoading ? <Loading loading={isLoading} /> : <Button htmlType="submit">Submit</Button>}
         </form>
-          
+
         <div className="has-text-centered">
           <Subtitle className=" mt-20">Privacy Policy</Subtitle>
           <Link to="/privacy-policy" className="is-marginless">
