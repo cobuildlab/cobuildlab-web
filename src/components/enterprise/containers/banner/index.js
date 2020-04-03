@@ -2,8 +2,6 @@ import React from 'react';
 import { Container, Columns, Column, Section } from 'bloomer';
 import Image from '../../components/image';
 import BannerImg1 from '../../../../assets/images/banner/group-banner-2.png';
-import Shape2 from '../../../../assets/images/banner/bg-wave.svg';
-import Shape3 from '../../../../assets/images/banner/wave.png';
 import Typrography from '../../../2020/Typography';
 import Button from '../../../2020/Button';
 
@@ -87,27 +85,24 @@ const Banner = (props) => {
                 <div className="row">
                   <div className="banner-content">
                     <Typrography tag="h2" className="sitemain-subtitle">
-                      SOFTWARE DEVELOPMENT COMPANY
+                      A PROCESS AND WORKFLOW AUTOMATION COMPANY
                     </Typrography>
                     <Typrography size={title} tag="h1">
                       Let’s <span className="enterprise-text-orange">Build</span> a <br />
                       Great<span className=" enterprise-text-orange"> Idea.</span>
                     </Typrography>
                     <Typrography size={subTitle} tag="p" className="banner-dec">
-                      We transform small and medium size businesses by automating your business
-                      processes into optimized and streamlined workflows with Web and Mobile custom
-                      software.
+                      We transform Small and Medium size businesses by automating your processes
+                      into optimized, and streamlined workflows with Web and Mobile custom software.
                     </Typrography>
                     <br />
                     <Typrography size={subTitle} tag="p" className="banner-dec">
                       At Cobuild Lab, we`ve been helping business owners, CTO`s, COO`s and IT
                       leaders get past the techno-speak and help them take a business process and
-                      turn it into a custom software solution, whether they need design and build
-                      services, technical assistance or are looking to augment their existing team
-                      with experienced Agile developers.
+                      turn it into a custom software solution.
                     </Typrography>
                     <div className="banner-btn-wrapper">
-                      <Button>GET STARTED</Button>
+                      <Button to={'/enterprise#services'}>EXPLORE OUR SERVICES</Button>
                     </div>
                   </div>
                 </div>

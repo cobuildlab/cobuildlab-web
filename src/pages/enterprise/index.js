@@ -15,6 +15,11 @@ import Footer from '../../components/enterprise/containers/footer';
 import CopyRight from '../../components/enterprise/containers/copyright_text';
 import '../../assets/scss/index.scss';
 
+if (typeof window !== 'undefined') {
+  // eslint-disable-next-line global-require
+  require('smooth-scroll')('a[href*="#"]', { offset: 100 });
+}
+
 const IndexPage = () => {
   return (
     <div className="main-wrapper">

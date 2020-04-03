@@ -46,17 +46,7 @@ const About = () => {
                     </li>
                     <li>
                       <Typrography tag="h3" className="about-twosub-title">
-                        ☛ Easy, inspiring development process
-                      </Typrography>
-                    </li>
-                    <li>
-                      <Typrography tag="h3" className="about-twosub-title">
                         ☛ iOS and Android experience
-                      </Typrography>
-                    </li>
-                    <li>
-                      <Typrography tag="h3" className="about-twosub-title">
-                        ☛ Testing and Survey Services
                       </Typrography>
                     </li>
                     <li>
@@ -72,7 +62,7 @@ const About = () => {
                   {/*  when an*/}
                   {/*</Typrography>*/}
                   <div className="about-button-container">
-                    <Buttom>See more</Buttom>
+                    <Buttom to={'/enterprise#css'}>SEE SOME EXAMPLES</Buttom>
                   </div>
                 </div>
               </div>
