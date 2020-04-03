@@ -18,7 +18,7 @@ const PortfolioData = [
     img: img2,
     subtitle: 'Massone',
     subcontent:
-        'Massone Mechanical Massone Mechanical offers maintenance and installation services to commercial refrigeration companies. Offering high…',
+      'Massone Mechanical Massone Mechanical offers maintenance and installation services to commercial refrigeration companies. Offering high…',
   },
   {
     id: 3,

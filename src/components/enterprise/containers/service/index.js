@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Columns, Column, Section } from 'bloomer';
-import { objectGroup, areaChart, trophy, cogs, users } from 'react-icons-kit/fa';
+import { objectGroup, areaChart, cogs, users } from 'react-icons-kit/fa';
 import PreviewIcon from '../../components/icon';
 import Typrography from '../../../2020/Typography';
 import Button from '../../../2020/Button';
@@ -35,6 +35,7 @@ Card.propTypes = {
   index: PropTypes.number.isRequired,
   icon: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
+  children: PropTypes.object.isRequired,
 };
 
 /**
@@ -44,11 +45,11 @@ Card.propTypes = {
  */
 const Service = () => {
   return (
-    <Section>
+    <Section id={'services'}>
       <div className="service-wrapper">
         <Container>
           <Columns>
-            <Column isMarginless isPaddingless isSize={{ mobile: 12, tablet: 4, desktop: 5 }}>
+            <Column isMarginless isPaddingless isSize={{ mobile: 12, tablet: 4, desktop: 4 }}>
               <ConentContainer>
                 <div className="service-content-1 main-title-wrapper">
                   <Typrography tag="h2" className="sitemain-subtitle">
@@ -62,14 +63,14 @@ const Service = () => {
                   <Typrography tag="h3" className="service-title">
                     From Web and Mobile Apps to Cloud Solutions and Staff Augmentation.
                   </Typrography>
-                  <Typrography tag="p" className="service-dec">
-                    Technology and Business are more intertwined than ever, in fact, Technology has
-                    impacted every business process you can imagine - and with razor-thin margins
-                    the norm, the only way to increase revenue is to revolutionize those processes
-                    used to conduct business.
-                  </Typrography>
+                  {/*<Typrography tag="p" className="service-dec">*/}
+                  {/*  Technology and Business are more intertwined than ever, in fact, Technology has*/}
+                  {/*  impacted every business process you can imagine - and with razor-thin margins*/}
+                  {/*  the norm, the only way to increase revenue is to revolutionize those processes*/}
+                  {/*  used to conduct business.*/}
+                  {/*</Typrography>*/}
                   <Typrography tag="h3" className="about-twosub-title">
-                    <span className="enterprise-text-orange">Pains:</span>
+                    <span className="enterprise-text-orange">Custom Software solutions can:</span>
                   </Typrography>
                   <Typrography tag="p" className="service-dec-content">
                     - Reduce Costs
@@ -86,11 +87,12 @@ const Service = () => {
                   <Typrography tag="p" className="service-dec-content">
                     - Lack of the necessary expertise
                   </Typrography>
-                  <Button>Explore</Button>
+                  <br />
+                  <Button to={'/enterprise#contact'}>GET A FREE CONSULTATION</Button>
                 </div>
               </ConentContainer>
             </Column>
-            <Column isSize={{ mobile: 12, tablet: 8, desktop: 7 }} isMarginless isPaddingless>
+            <Column isSize={{ mobile: 12, tablet: 8, desktop: 8 }} isMarginless isPaddingless>
               <div className="service-block-content">
                 <Columns isDisplay="flex-tablet">
                   <Column isMarginless isPaddingless isSize={{ mobile: 12, tablet: 6 }}>
@@ -105,7 +107,7 @@ const Service = () => {
                       <Card index={1} key={1} icon={cogs} title={'Process and Workflow Automation'}>
                         <Typrography tag="p" className="service-dec-content">
                           {
-                            'Custom software and application development can be the solution you need. A solution that not only revolutionizes your processes but can become an additional revenue stream itself by selling it for use by other businesses.'
+                            'Custom software development can be the solution that revolutionizes your processes and become an additional revenue stream itself by selling it to others businesses.'
                           }
                         </Typrography>
                       </Card>
