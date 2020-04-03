@@ -10,8 +10,14 @@ import Paragraph from '../../Typography/Paragraph';
 import { TextOrange } from '../../Typography/TextHelpers';
 import BannerBackground from '../BannerBackground';
 import comic from '../../../resources/2020/home/cobuildlab-home.svg';
-import styles from './css/index.module.scss';
 
+const HeroContainer = styled.div`
+  position: relative;
+  padding-top: 2.5em;
+  @media all and (max-width: 767.99px){
+    padding-top: 0em;
+  }
+`;
 
 const HeroWrapper = styled.div`
   padding: 1em 0;
@@ -40,7 +46,7 @@ const ButtonWrapper = styled.div`
 `;
 
 const HeroSection = () => (
-  <div className={styles.hero_body}>
+  <HeroContainer>
     <BannerBackground />
     <Container>
       <Columns isCentered>
@@ -76,7 +82,7 @@ const HeroSection = () => (
         </Column>
       </Columns>
     </Container>
-  </div>
+  </HeroContainer>
 );
 
 export default HeroSection;

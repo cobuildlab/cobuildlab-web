@@ -3,8 +3,6 @@ import { Icon } from 'react-icons-kit';
 import { play } from 'react-icons-kit/fa/play';
 import VideoPlay from '../VideoPlay';
 import styled, { keyframes } from 'styled-components';
-import styles from './css/index.module.scss';
-
 
 
 const PlayIconContainer = styled.div`
@@ -56,14 +54,16 @@ const SonarWave = styled.div`
   animation: ${waves} 2s linear infinite;
 `;
 
-
+const IconPlay = styled(Icon)`
+  color: #fff;
+`;
 
 //TODO move this to other file and use styled components
 const HeroPlayIcon = () => (
   <VideoPlay>
     <PlayIconContainer>
       <SonarEmitter>
-        <Icon size={34} icon={play} className={styles.hero_icon} />
+        <IconPlay size={34} icon={play} />
       </SonarEmitter>
       <SonarWave />
     </PlayIconContainer>

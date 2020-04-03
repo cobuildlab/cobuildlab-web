@@ -9,6 +9,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   &_block{
     width: 100%;
@@ -72,18 +73,24 @@
 }
 
 .icon_container{
+  position: absolute;
   display: inline-block;
   margin: auto;
-  animation: loading 1.25s linear  infinite;
-
+  animation: loading .5s linear  infinite;
+  border-radius: 290486px;
+  border: 2px solid white;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  width: 20px;
+  height: 20px;
 }
 
 .display{
   &_block{
-    display: block;
+    visibility: visible;
   }
   &_hidden{
-    display: none;
+    visibility: hidden;
   }
 }
 
