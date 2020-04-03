@@ -6,7 +6,7 @@ import './portfolio.scss';
 
 const Portfolio = () => {
   return (
-    <Section isMarginless id={'css'}>
+    <Section isMarginless id="customer-success-stories">
       <div className="portfolio-wrapper" id="portfolio">
         <Container isFluid>
           <div className="main-title-wrapper">

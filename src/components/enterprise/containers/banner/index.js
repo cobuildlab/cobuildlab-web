@@ -64,7 +64,7 @@ const Banner = (props) => {
     },
   ];
   return (
-    <Section isPaddingless>
+    <Section isPaddingless id="banner">
       <div className="banner-wrapper demo1">
         <div className="banner-outer">
           <div className="slider-animation-images">

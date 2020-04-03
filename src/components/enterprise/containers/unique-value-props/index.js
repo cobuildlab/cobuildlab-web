@@ -43,7 +43,7 @@ const BLOG_DATA = [
 
 const UniqueValueProps = () => {
   return (
-    <Section>
+    <Section id="unique-value-props">
       <div className="blog-wrapper">
         <div className="enterprise-section">
           <Container>
