@@ -66,6 +66,10 @@ const DrawerHeader = styled.div`
   color: #264A60;
   letter-spacing: 1.2px;
   cursor: pointer;
+  transition: all .2s linear;
+  &:hover {
+    color: #E76C29
+  }
 `;
 
 const ArrowIcon = styled(Icon)`

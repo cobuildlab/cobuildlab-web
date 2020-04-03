@@ -8,7 +8,7 @@ import './video.scss';
 
 
 const Video = () => (
-  <Section isPaddingless>
+  <Section isPaddingless id="video">
     <div className="video-wrapper enterprise-section">
       <div className="gradient-color overlay" />
       <Container>

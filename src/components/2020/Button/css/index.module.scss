@@ -23,13 +23,13 @@
   &_default{
     background-color: $orange;
     background: $orange 0% 0% no-repeat padding-box;
-    box-shadow: 0px 8px 25px $btn-shadow;
+    box-shadow: 0px 8px 25px $btn-shadow !important;
     text-transform: uppercase;
     color: $white !important;
 
     &:hover, &:focus{
       background: $btn-active-bg 0% 0% no-repeat padding-box;
-      box-shadow: 0px 5px 10px $btn-shadow;
+      box-shadow: 0px 5px 10px $btn-shadow !important;
     }
   }
 
@@ -54,12 +54,12 @@
 
     &:hover{
       background: #FFFFFF 0% 0% no-repeat padding-box;
-      box-shadow: 0px 5px 15px #2749606C; //TODO add this color to var.scss
+      box-shadow: 0px 5px 15px #2749606C !important; //TODO add this color to var.scss
     }
 
     &:focus{
       background: #264A60 0% 0% no-repeat padding-box;
-      box-shadow: 0px 5px 15px #2749606C;
+      box-shadow: 0px 5px 15px #2749606C !important;
       .button_text{
         color: $white !important;
       }

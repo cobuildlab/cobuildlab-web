@@ -8,7 +8,7 @@ import './about.scss';
 
 const About = () => {
   return (
-    <Section isPaddingless>
+    <Section isPaddingless id="about">
       <div className="about-wrapper gradient-color">
         <Container>
           <Columns isDisplay="flex-mobile" isCentered>

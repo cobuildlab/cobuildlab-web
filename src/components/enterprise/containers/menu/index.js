@@ -1,6 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import Drawer from './Drawer';
 import styled from 'styled-components';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const MenuContainer = styled.div`
   margin-left: auto;
@@ -77,6 +78,18 @@ const MenuItem = styled.li`
   border-bottom: 1px solid #e2e2e2;
 `;
 
+const MenuLink = styled(AnchorLink)`
+  padding: .5em 1em;
+  display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: inherit;
+  transition: all .2s linear;
+  &:hover {
+    color: #E76C29
+  }
+`;
+
 
 const Menu = () => {
   const [isVisible, setVisible] = useState(false);
@@ -93,7 +106,51 @@ const Menu = () => {
       </ToggleContainer>
       <Drawer visible={isVisible} onClose={handleOpen}>
         <MenuWrapper>
-          <MenuItem>hola</MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href='#banner'>
+              Home
+            </MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href='#services'>
+              Service
+            </MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href='#about'>
+              About
+            </MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href='#unique-value-props'>
+              OUR MAIN MISSION
+            </MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href='#video'>
+              Video
+            </MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href='#skills'>
+              Skills
+            </MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href='#project'>
+              Project
+            </MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href='#customer-success-stories'>
+              Portfolio
+            </MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href='#contact'>
+              Contact
+            </MenuLink>
+          </MenuItem>
         </MenuWrapper>
       </Drawer>
     </MenuContainer>
