@@ -1,8 +1,6 @@
 import React, { memo, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
-import { Icon } from 'react-icons-kit';
-import { loadC } from 'react-icons-kit/ionicons/loadC';
 import Typography from '../Typography';
 import componse from '../../../utils/styles-componse';
 import styles from './css/index.module.scss';
@@ -22,9 +20,7 @@ const Loading = ({ isLoading, children }) => {
 
   return (
     <Fragment>
-      <span className={iconContainerStyles}>
-        <Icon size={20} icon={loadC} />
-      </span>
+      <span className={iconContainerStyles} />
       <div className={childrenContainerStyle}>
         <Typography tag="span" size={text} className={styles.button_text}>
           {children}
