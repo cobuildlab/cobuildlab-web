@@ -69,6 +69,8 @@ const Box = styled.div`
 
 const StyledSection = styled(Section)`
   position: relative;
+  padding-left: 1.5rem;
+  padding-right: 1.rem
 `;
 
 const YouTubeVideoContainer = styled.div`
