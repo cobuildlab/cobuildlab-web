@@ -18,7 +18,7 @@ function Brand() {
   const BRANDS = [logo8Base, logoAws, logoGc, logoJs, logoNode, logoPython, logoReact];
 
   const settings = {
-    autoplaySpeed:3000,
+    autoplaySpeed: 3000,
     autoplay: true,
     dots: false,
     infinite: true,
@@ -35,8 +35,7 @@ function Brand() {
       },
       {
         breakpoint: 600,
-        settings: {
-        },
+        settings: {},
       },
       {
         breakpoint: 480,
@@ -51,7 +50,7 @@ function Brand() {
   return (
     <Section isPaddingless>
       <div className="brand-slider">
-        <div className="enterprise-section" style={{paddingTop:0}}>
+        <div className="enterprise-section" style={{ paddingTop: 0 }}>
           <Container>
             <Slider {...settings}>
               {BRANDS.map((logo, i) => (
