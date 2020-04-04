@@ -2,54 +2,6 @@
 
 /* contact section css start */
 .contact-wrapper {
-  .contact-content-block {
-    &.main-title-wrapper {
-      text-align: left;
-      margin: 0;
-    }
-    .contact-title {
-      color: $color-dark;
-      font-weight: 700;
-      font-size: calc(22px + (36 - 22) * ((100vw - 320px) / (1920 - 320)));
-      margin-bottom: 13px;
-      text-transform: capitalize;
-    }
-    .contact-dec {
-      font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
-      font-weight: 400;
-      position: relative;
-      margin-bottom: calc(12px + (20 - 12) * ((100vw - 320px) / (1920 - 320)));
-    }
-    .form {
-      .form-label {
-        color: $color-dark;
-        font-weight: 400;
-        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
-      }
-      .form-group {
-        margin-bottom: calc(15px + (30 - 15) * ((100vw - 320px) / (1920 - 320)));
-        .form-control {
-          border: 1px solid #cccccc;
-          border-radius: 5px;
-          padding: 0 15px;
-          height: calc(38px + (50 - 38) * ((100vw - 320px) / (1920 - 320)));
-          font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
-          color: #9c9c9c;
-          &::placeholder {
-            color: #9c9c9c;
-          }
-          &:focus {
-            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
-          }
-        }
-        .textbox.form-control {
-          line-height: normal;
-          padding: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
-          height: calc(80px + (160 - 80) * ((100vw - 320px) / (1920 - 320)));
-        }
-      }
-    }
-  }
   .contact-animation-images {
     span {
       display: block;
@@ -134,14 +86,3 @@
     }
   }
 }
-.valid-feedback {
-  font-size: 14px;
-}
-/* responsive css */
-@media (max-width: 767px) {
-  .contact-image {
-    display: none;
-  }
-}
-
-/* contact section css end */

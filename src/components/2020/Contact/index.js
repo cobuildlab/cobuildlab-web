@@ -1,45 +1,38 @@
 import React from 'react';
 import { Container, Column, Columns } from 'bloomer';
-import Typography from '../Typography';
 import ContactForm from '../ContactForm';
+import styled from 'styled-components';
+import H2 from '../../Typography/H2';
+import Paragraph from '../../Typography/Paragraph';
+import { TextOrange } from '../../Typography/TextHelpers';
+
+
 import Image from '../Image';
-import styles from './css/index.module.scss';
 import img from '../../../resources/2020/home/coubuild-v.svg';
 
-const title = {
-  default: {
-    level: 4,
-    fontWeight: 'bold',
-  },
-  lg: {
-    level: 2,
-    fontWeight: 'bold',
-  },
-};
+const SubTitle = styled(Paragraph)`
+  font-size: 20px;
+  margin-bottom: 1em;
+  margin-top: .7em;
+`;
 
-const subTitle = {
-  default: {
-    level: 9,
-    fontWeight: 'lighter',
-  },
-};
+const Description = styled(Paragraph)`
+  font-size: 14px;
+  & > span {
+    display: block;
+    margin-bottom: .5em;
+  }
+`;
 
-const description = {
-  title: {
-    default: {
-      level: 11,
-      fontWeight: 'bold',
-    },
-  },
-  subTitle: {
-    default: {
-      level: 13,
-      fontWeight: 'lighter',
-    },
-  },
-};
+const LeftColumn = styled(Column)`
+  order: 2;
+`;
 
-const Title = () => (
+const RightColumn = styled(Column)`
+  order: 1;
+`;
+
+/* const Title = () => (
   <div className={styles.contact_title}>
     <Typography tag="h6" size={title} hasTextAlign="left">
       Write Us!
@@ -48,27 +41,36 @@ const Title = () => (
       Your business takes off right now
     </Typography>
     <Typography tag="p" size={description.title}>
-      Where are we?
-      <br />
+     
+      
       <Typography tag="span" size={description.subTitle}>
-        66 West Flagler St, Suite 900, Miami, Florida 33130 +1 (786) 991-3467 contact@cobuildlab.com
+       
       </Typography>
     </Typography>
   </div>
-);
+);*/
 
 
 
 const Contact = () => (
   <Container>
     <Columns isCentered>
-      <Column className={styles.contact_column} isSize={{ mobile: 12, desktop: 6 }}>
-        <Title />
+      <LeftColumn  isSize={{ mobile: 12, desktop: 6 }}>
+        <H2>Let’s Talk!</H2>
+        <SubTitle>
+          Your business takes off right now
+        </SubTitle>
+        <Description>
+          <TextOrange>
+            Where are we?
+          </TextOrange>
+          66 West Flagler St, Suite 900, Miami, Florida 33130 +1 (786) 991-3467 contact@cobuildlab.com
+        </Description>
         <ContactForm />
-      </Column>
-      <Column className={styles.contact_column} isSize={{ mobile: 12, desktop: 6 }}>
+      </LeftColumn>
+      <RightColumn  isSize={{ mobile: 12, desktop: 6 }}>
         <Image src={img} alt="contact form" />
-      </Column>
+      </RightColumn>
     </Columns>
   </Container>
 );

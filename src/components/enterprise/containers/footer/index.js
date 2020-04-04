@@ -13,6 +13,7 @@ import PreviewIcon from '../../components/icon';
 import Image from '../../components/image';
 import logo from '../../../../assets/images/cobuild-white-logo.png';
 import { arrowRightCircle } from 'react-icons-kit/feather/arrowRightCircle';
+import GoodFirms from '../../../2020/GoodFirms';
 import Typography from '../../../2020/Typography';
 import './footer.scss';
 
@@ -23,9 +24,10 @@ const Footer = () => {
         <Container>
           <div className="footer-content-wrapper">
             <Columns>
-              <Column isSize={{ mobile: 8, desktop: 4 }}>
+              <Column isSize={{ mobile: 8, desktop: 3 }}>
                 <div className="footer-logo-wrapper">
                   <Image Path={logo} Class="footer-logo" />
+                  <GoodFirms />
                 </div>
               </Column>
               <Column isSize={{ mobile: 8, desktop: 3 }}>
