@@ -116,7 +116,7 @@ const Contact = () => {
                   </Field>
                   <Field>
                     <Control>
-                      <Button>REQUEST APPOINTMENT</Button>
+                      <Button>Request Appointment</Button>
                     </Control>
                   </Field>
                 </form>
