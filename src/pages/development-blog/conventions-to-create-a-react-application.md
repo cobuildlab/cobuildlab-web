@@ -1,6 +1,6 @@
 ---
 title: Conventions to create a React or React Native Application
-date: 2019-12-26T01:00:00+00:00
+date: 2020-12-31T01:00:00+00:00
 tags: 
 template: development-post
 permalink: /conventions-to-create-a-react-web-or-mobile-application/

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import { Container, Columns, Column } from 'bloomer';
-import Menu from '../menu';
+import Menu from '../Menu';
 import Image from '../../components/image';
 import logo from '../../../../assets/images/cobuild-logo.png';
 import componse from '../../../../utils/styles-componse';

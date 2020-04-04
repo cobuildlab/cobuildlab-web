@@ -22,6 +22,8 @@ import './2019/assets/fonts/Lato-Light.ttf';
 import './2019/assets/fonts/Lato-LightItalic.ttf';
 import './2019/assets/fonts/Lato-Regular.ttf';
 import 'react-modal-video/scss/modal-video.scss';
+import 'slick-carousel/slick/slick.scss';
+import 'slick-carousel/slick/slick-theme.scss';
 import alan from './2019/resources/alan-cobuild-profile.jpg';
 import angel from './2019/resources/angel-lacret-cobuild-lab.jpg';
 import defaultImg from './2019/resources/default-post.jpg';
