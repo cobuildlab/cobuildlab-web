@@ -88,7 +88,7 @@ const Service = () => {
                     - Lack of the necessary expertise
                   </Typrography>
                   <br />
-                  <Button to={'/enterprise#contact'}>GET A FREE CONSULTATION</Button>
+                  <Button to={'/enterprise#contact'}>Get a Free Consultation</Button>
                 </div>
               </ConentContainer>
             </Column>
