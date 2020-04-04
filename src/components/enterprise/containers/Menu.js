@@ -7,25 +7,6 @@ const MenuContainer = styled.div`
   margin-left: auto;
 `;
 
-const ToggleContainer = styled.span`
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  font-size: 1.25rem;
-  line-height: 1;
-  cursor: pointer;
-  &:hover{
-    & ${BurgerIcon}:before {
-      width: 24px;
-    }
-    & ${BurgerIcon}:after {
-      width: 36px;
-    }
-  }
-`;
-
 const BurgerIcon = styled.span`
   width: 36px;
   height: 2px;
@@ -48,6 +29,26 @@ const BurgerIcon = styled.span`
     top: auto;
     bottom: -8px;
     width: 24px;
+  }
+`;
+
+
+const ToggleContainer = styled.span`
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  &:hover{
+    & ${BurgerIcon}:before {
+      width: 24px;
+    }
+    & ${BurgerIcon}:after {
+      width: 36px;
+    }
   }
 `;
 
