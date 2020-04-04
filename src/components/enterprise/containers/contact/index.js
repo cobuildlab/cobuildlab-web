@@ -12,7 +12,7 @@ import {
 } from 'bloomer';
 // import Img from "gatsby-image"
 import Image from '../../components/image';
-import ContactImg from '../../../../assets/images/contact/cobuild-lab-form.jpg';
+import ContactImg from '../../../../assets/images/contact/cobuild-contact4.png';
 import Button from '../../../2020/Button';
 import Typography from '../../../2020/Typography';
 import ContactBackgroundImages from '../../../../data/contact';
@@ -67,14 +67,14 @@ const Contact = () => {
               <div className="contact-content-block main-title-wrapper">
                 <div className="sub-title-wrapper">
                   <Typography className="sitemain-subtitle" tag="h6">
-                    Send us mesage for any Info
+                    Let's get started!
                   </Typography>
-                  <Typography className="site-subtitle2" tag="h6">
-                    Call us for any emergency
+                  <Typography className="site-subtitle2" tag="h6" style="">
+                    Call us or message us to get your next project started
                   </Typography>
                 </div>
                 <Typography className="contact-dec" tag="p">
-                  +1 123 - 456 - 7890
+                  +1 (786) 991-3467
                 </Typography>
                 <form className="form">
                   <Field>
@@ -85,7 +85,7 @@ const Contact = () => {
                         onChange={setName}
                         name="name"
                         type="text"
-                        placeholder="John Doe"
+                        placeholder="First and Last Name"
                         isColor={errors && errors.name && 'danger'}
                       />
                     </Control>
@@ -110,7 +110,7 @@ const Contact = () => {
                         value={message}
                         onChange={setMessage}
                         name="message"
-                        placeholder="write your message"
+                        placeholder="Write your message"
                       />
                     </Control>
                   </Field>
