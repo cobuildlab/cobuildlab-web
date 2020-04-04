@@ -10,9 +10,10 @@ const Badge = styled.p`
 `;
 
 const Title = styled.p`
-  text-align: center
+  text-align: center;
   color: #244a62;
   font-wight: bold;
+  font-size: 1.25rem;
 `;
 
 const StyledBox = styled(Box)`
@@ -22,11 +23,11 @@ const StyledBox = styled(Box)`
 const BadgeIndustry = () => {
   return (
     <Fragment>
-      <Title className="subtitle mt-3 mb-2 is-marginless">
+      <Title className="mb-2">
         <b>We specialize in these industries:</b>
       </Title>
 
-      <Columns isDesktop style={{ alignItems: 'center' }}>
+      <Columns isDesktop hasTextAlign="centered">
         <Column>
           <StyledBox>
             <Badge>Advertising and Retailling</Badge>
