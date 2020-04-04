@@ -2,37 +2,9 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { navigate } from 'gatsby';
 import { ToastContainer, toast } from 'react-toastify';
-import { Column, Columns, Field, Control, Input, TextArea } from 'bloomer';
-import Typography from './Typography';
+import { Field, Control, Input, TextArea } from 'bloomer';
 import Button from './Button';
 
-
-const description = {
-  title: {
-    default: {
-      level: 11,
-      fontWeight: 'bold',
-    },
-  },
-  subTitle: {
-    default: {
-      level: 13,
-      fontWeight: 'lighter',
-    },
-  },
-};
-
-
-
-const Description = () => (
-  <Typography tag="p" size={description.title}>
-    Where are we?
-    <br />
-    <Typography tag="span" size={description.subTitle}>
-      66 West Flagler St, Suite 900, Miami, Florida 33130 +1 (786) 991-3467 contact@cobuildlab.com
-    </Typography>
-  </Typography>
-);
 
 export default class Contact extends PureComponent {
 
@@ -79,7 +51,7 @@ export default class Contact extends PureComponent {
 
     if (!name.length) {
       toast.dismiss();
-      toast.error("Last name can't be empty", {
+      toast.error("name can't be empty", {
         position: 'bottom-right',
       });
       return;
@@ -125,6 +97,7 @@ export default class Contact extends PureComponent {
     fetch(this.url, settings)
       .then((res) => res.json())
       .then((response) => {
+
         if (response.statusCode >= 400) {
           toast.dismiss();
 
@@ -201,18 +174,11 @@ export default class Contact extends PureComponent {
           </Control>
         </Field>
         <Field isGrouped>
-          <Columns>
-            <Column isSize={{ mobile: 12, desktop: 4 }}>
-              <Control>
-                <Button isLoading={isLoading} htmlType="submit">
-                  {btnText}
-                </Button>
-              </Control>
-            </Column>
-            <Column isSize={{ mobile: 12, desktop: 6 }}>
-              <Description />
-            </Column>
-          </Columns>
+          <Control>
+            <Button isLoading={isLoading} htmlType="submit">
+              {btnText}
+            </Button>
+          </Control>
         </Field>
       </form>
     );

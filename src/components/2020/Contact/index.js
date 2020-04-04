@@ -24,16 +24,39 @@ const subTitle = {
   },
 };
 
+const description = {
+  title: {
+    default: {
+      level: 11,
+      fontWeight: 'bold',
+    },
+  },
+  subTitle: {
+    default: {
+      level: 13,
+      fontWeight: 'lighter',
+    },
+  },
+};
+
 const Title = () => (
   <div className={styles.contact_title}>
     <Typography tag="h6" size={title} hasTextAlign="left">
       Write Us!
     </Typography>
-    <Typography tag="span" size={subTitle} hasTextAlign="left">
+    <Typography tag="p" size={subTitle} hasTextAlign="left">
       Your business takes off right now
+    </Typography>
+    <Typography tag="p" size={description.title}>
+      Where are we?
+      <br />
+      <Typography tag="span" size={description.subTitle}>
+        66 West Flagler St, Suite 900, Miami, Florida 33130 +1 (786) 991-3467 contact@cobuildlab.com
+      </Typography>
     </Typography>
   </div>
 );
+
 
 
 const Contact = () => (
