@@ -32,7 +32,6 @@ const BurgerIcon = styled.span`
   }
 `;
 
-
 const ToggleContainer = styled.span`
   background-color: transparent;
   border: none;
