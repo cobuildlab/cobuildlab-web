@@ -47,7 +47,6 @@ html {
 
 /*Link and buttom*/
 a {
-    box-shadow: none !important;
     text-decoration: none;
 }
 
@@ -581,6 +580,10 @@ hr {
 
 .section {
     padding: 4.5rem 3rem;
+}
+
+.section#contact{
+    padding-bottom: 2rem;
 }
 
 .section-blog {

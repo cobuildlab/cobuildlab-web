@@ -64,7 +64,7 @@ const Banner = (props) => {
     },
   ];
   return (
-    <Section isPaddingless>
+    <Section isPaddingless id="banner">
       <div className="banner-wrapper demo1">
         <div className="banner-outer">
           <div className="slider-animation-images">
@@ -102,7 +102,7 @@ const Banner = (props) => {
                       turn it into a custom software solution.
                     </Typrography>
                     <div className="banner-btn-wrapper">
-                      <Button to={'/enterprise#services'}>EXPLORE OUR SERVICES</Button>
+                      <Button to={'/enterprise#services'}>Explore Our Services</Button>
                     </div>
                   </div>
                 </div>

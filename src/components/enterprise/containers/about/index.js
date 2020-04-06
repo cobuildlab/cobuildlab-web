@@ -3,12 +3,12 @@ import { Container, Columns, Column, Section } from 'bloomer';
 import Image from '../../components/image';
 import AboutImg from '../../../../assets/images/banner/group-banner.png';
 import Typrography from '../../../2020/Typography';
-import Buttom from '../../../2020/Button';
+import Button from '../../../2020/Button';
 import './about.scss';
 
 const About = () => {
   return (
-    <Section isPaddingless>
+    <Section isPaddingless id="about">
       <div className="about-wrapper gradient-color">
         <Container>
           <Columns isDisplay="flex-mobile" isCentered>
@@ -62,7 +62,7 @@ const About = () => {
                   {/*  when an*/}
                   {/*</Typrography>*/}
                   <div className="about-button-container">
-                    <Buttom to={'/enterprise#css'}>SEE SOME EXAMPLES</Buttom>
+                    <Button type="primary" to={'/enterprise#css'}>See Our Portfolio</Button>
                   </div>
                 </div>
               </div>

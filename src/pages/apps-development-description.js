@@ -13,7 +13,6 @@ import H2 from '../components/Typography/H2';
 import Paragraph from '../components/Typography/Paragraph';
 
 // RESOURCES
-import background from '../resources/2020/home/background.svg';
 import badge1 from '../resources/badges1.png';
 import badge2 from '../resources/badges2.png';
 import badge3 from '../resources/badges3.png';
@@ -46,6 +45,7 @@ const YouTubeVideoContainer = styled.div`
   margin-bottom: 2.5rem;
 `;
 
+<<<<<<< HEAD
 const StyledH1 = styled(H1)`
   font-size: calc(32px + (50 - 37) * ((100vw - 320px) / (1920 - 320)));
   margin-bottom: 1.5rem;
@@ -67,6 +67,11 @@ const HeroBodyContent = () => (
     </div>
   </div>
 );
+=======
+const BannerWrapper = styled.div`
+  position: relative;
+`;
+>>>>>>> 2668fe7a44fc0bc27a598ded8c16bb8a2cb6ff8f
 
 class AppsDevDescription extends Component {
   constructor(props) {
@@ -93,8 +98,10 @@ class AppsDevDescription extends Component {
             <HeroHeader>
               <LandingHeader />
             </HeroHeader>
-            <HeroBody style={{ padding: '0' }}>
-              <HeroBodyContent />
+            <HeroBody isPaddingless>
+              <BannerWrapper>
+                <BannerBackground />
+              </BannerWrapper>
             </HeroBody>
           </Hero>
           <Container>

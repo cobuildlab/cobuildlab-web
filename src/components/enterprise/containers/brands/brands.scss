@@ -5,10 +5,10 @@
   padding-top: 0;
   .brand-content {
     padding: 0 15px;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    cursor: default;
+    transition: padding 0.3s ease-in-out;
     &:hover {
-      filter: hue-rotate(100deg);
+      padding:0 19px;
     }
   }
 }

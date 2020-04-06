@@ -1,5 +1,5 @@
 ---
-title: " COVID-19 Update: We’re sending our employees home "
+title: "COVID-19 Update: We’re sending our employees home"
 date: "2020-03-31T16:24:04.000Z"
 template: blog
 tags: News

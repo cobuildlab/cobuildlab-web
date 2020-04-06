@@ -29,7 +29,7 @@ const COUNTER_DATA = [
 
 const Project = () => {
   return (
-    <Section isPaddingless>
+    <Section isPaddingless id="project">
       <div className="project-wrapper gradient-color">
         <Container>
           <div className="project-content-wrapper">
