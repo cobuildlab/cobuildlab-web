@@ -80,7 +80,6 @@ const BannerWrapper = styled.div`
   position: relative;
 `;
 
-
 export default class AppsDevGraphic extends Component {
   render() {
     const siteTitle = 'Mobile Application Development in Miami';
@@ -110,35 +109,35 @@ export default class AppsDevGraphic extends Component {
           </Hero>
           <Container>
             <StyledSection>
-            <Columns isDesktop>
-              <Column isSize={{ desktop: 7 }}>
-                <Typography tag="h1" size={title}>
-                  Developing new Software Products in Miami
-                </Typography>
-                <Typography tag="h2" size={subTitle}>
-                  {siteSubtitle}
-                </Typography>
-                <Typography tag="p" size={paragraph}>
-                  {siteDescription}
-                </Typography>
-                <GraphicContainer>
-                  <img src={graphic} className="img-graphic" />
-                </GraphicContainer>
-                <BadgeIndustry />
-              </Column>
-              <Column isSize={{ desktop: 5 }}>
-                <Box>
-                  <div className="has-text-centered">
-                    <img src={badge1} className="badge" />
-                    <img src={badge2} className="badge" />
-                    <img src={badge3} className="badge" />
-                    <img src={badge4} className="badge-google" />
-                  </div>
-                  <NewLandingForm landingName={landingName} />
-                </Box>
-              </Column>
-            </Columns>
-          </StyledSection>
+              <Columns isDesktop>
+                <Column isSize={{ desktop: 7 }}>
+                  <Typography tag="h1" size={title}>
+                    Developing new Software Products in Miami
+                  </Typography>
+                  <Typography tag="h2" size={subTitle}>
+                    {siteSubtitle}
+                  </Typography>
+                  <Typography tag="p" size={paragraph}>
+                    {siteDescription}
+                  </Typography>
+                  <GraphicContainer>
+                    <img src={graphic} className="img-graphic" />
+                  </GraphicContainer>
+                  <BadgeIndustry />
+                </Column>
+                <Column isSize={{ desktop: 5 }}>
+                  <Box>
+                    <div className="has-text-centered">
+                      <img src={badge1} className="badge" />
+                      <img src={badge2} className="badge" />
+                      <img src={badge3} className="badge" />
+                      <img src={badge4} className="badge-google" />
+                    </div>
+                    <NewLandingForm landingName={landingName} />
+                  </Box>
+                </Column>
+              </Columns>
+            </StyledSection>
           </Container>
         </Wrapper>
       </Fragment>
