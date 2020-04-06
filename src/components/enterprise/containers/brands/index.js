@@ -19,12 +19,12 @@ function Brand() {
 
   const settings = {
     autoplaySpeed: 3000,
-    autoplay: true,
+    autoplay: false,
     dots: false,
     infinite: true,
     speed: 1500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 5,
+    slidesToScroll: 5,
     responsive: [
       {
         breakpoint: 1024,
