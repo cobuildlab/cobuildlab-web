@@ -6,16 +6,19 @@ import './brands.scss';
 import logo8Base from '../../../../assets/images/logos/8base-logo.png';
 import logoAws from '../../../../assets/images/logos/aws-logo.png';
 import logoGc from '../../../../assets/images/logos/gc-logo.png';
-import logoJs from '../../../../assets/images/logos/js-logo.png';
-import logoNode from '../../../../assets/images/logos/nodejs-logo.png';
-import logoPython from '../../../../assets/images/logos/python-logo.png';
-import logoReact from '../../../../assets/images/logos/react-logo.png';
+import logoFacebookReact from '../../../../assets/images/logos/facebook-react-logo.png';
+import logoAndroid from '../../../../assets/images/logos/android-logo.png';
+import logoIOS from '../../../../assets/images/logos/ios-logo.png';
+// import logoReact from '../../../../assets/images/logos/react-logo.png';
+// import logoNodeJs from '../../../../assets/images/logos/nodejs-logo.png';
+// import logoPython from '../../../../assets/images/logos/python-logo.png';
+// import logoAndroidIOS from '../../../../assets/images/logos/android-ios-logo.png';
 
 /**
  *
  */
 function Brand() {
-  const BRANDS = [logo8Base, logoAws, logoGc, logoJs, logoNode, logoPython, logoReact];
+  const BRANDS = [logoIOS,logoAndroid,logoFacebookReact,logoAws,logoGc,logo8Base ];
 
   const settings = {
     autoplaySpeed: 3000,
@@ -23,8 +26,8 @@ function Brand() {
     dots: false,
     infinite: true,
     speed: 1500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 6,
+    slidesToScroll: 6,
     responsive: [
       {
         breakpoint: 1024,
@@ -35,13 +38,16 @@ function Brand() {
       },
       {
         breakpoint: 600,
-        settings: {},
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 3,
+          slidesToScroll: 3,
         },
       },
     ],

@@ -1,14 +1,12 @@
 import React from 'react';
 import { Container, Column, Columns } from 'bloomer';
-import ContactForm from '../ContactForm';
+import ContactForm from './ContactForm';
 import styled from 'styled-components';
-import H2 from '../../Typography/H2';
-import Paragraph from '../../Typography/Paragraph';
-import { TextOrange } from '../../Typography/TextHelpers';
-
-
-import Image from '../Image';
-import img from '../../../resources/2020/home/coubuild-v.svg';
+import H2 from '../Typography/H2';
+import Paragraph from '../Typography/Paragraph';
+import { TextOrange } from '../Typography/TextHelpers';
+import Image from './Image';
+import img from '../../resources/2020/home/coubuild-v.svg';
 
 const SubTitle = styled(Paragraph)`
   font-size: 20px;
@@ -32,27 +30,7 @@ const RightColumn = styled(Column)`
   order: 1;
 `;
 
-/* const Title = () => (
-  <div className={styles.contact_title}>
-    <Typography tag="h6" size={title} hasTextAlign="left">
-      Write Us!
-    </Typography>
-    <Typography tag="p" size={subTitle} hasTextAlign="left">
-      Your business takes off right now
-    </Typography>
-    <Typography tag="p" size={description.title}>
-     
-      
-      <Typography tag="span" size={description.subTitle}>
-       
-      </Typography>
-    </Typography>
-  </div>
-);*/
-
-
-
-const Contact = () => (
+const HomePageContact = () => (
   <Container>
     <Columns isCentered>
       <LeftColumn  isSize={{ mobile: 12, desktop: 6 }}>
@@ -76,4 +54,4 @@ const Contact = () => (
 );
 
 
-export default Contact;
+export default HomePageContact;

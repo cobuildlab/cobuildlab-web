@@ -14,7 +14,7 @@ const H2  = styled.h2`
   font-weight: bold;
   font-family: 'Lato-bold', sans-serif;
   font-size: calc(50px + (80 - 50) * ((100vw - 320px) / (1920 - 320)));
-  color: ${colors.indigo}
+  color: ${colors.indigo};
 `;
 
 export default H2;

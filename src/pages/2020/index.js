@@ -10,7 +10,7 @@ import Service from '../../components/2020/Service';
 import BusinessValue from '../../components/2020/BusinessValue';
 import CustomerSuccessStories from '../../components/2020/CustomerSuccessStories';
 import OurTeam from '../../components/2020/OurTeam';
-import Contact from '../../components/2020/Contact';
+import Contact from '../../components/2020/HomePageContact';
 import Newsletter from '../../components/2020/NewsLetter';
 
 import 'react-toastify/dist/ReactToastify.min.css';
