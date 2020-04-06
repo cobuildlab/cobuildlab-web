@@ -8,7 +8,6 @@ import LandingHeader from '../components/2020/LandingHeader';
 import BadgeIndustry from '../components/2020/BadgeIndustry';
 import NewLandingForm from '../components/2020/NewLandingForm';
 import BannerBackground from '../components/2020/BannerBackground';
-import YouTubeVideo from '../components/YouTubeVideo';
 import H1 from '../components/Typography/H1';
 import H2 from '../components/Typography/H2';
 import Paragraph from '../components/Typography/Paragraph';
@@ -68,8 +67,8 @@ export default class AppsDevGraphic extends React.Component {
     const siteTitle = 'Mobile Application Development in Miami';
     const siteSubtitle = 'We transform ideas into working Mobile Applications';
     const siteDescription = "Let's create amazing Mobile Applications";
-    const siteLongDescription =
-      'We transform requirements into working Software Products. We specialize in building web and mobile applications for Small and Medium Businesses.';
+    // const siteLongDescription =
+    //   'We transform requirements into working Software Products. We specialize in building web and mobile applications for Small and Medium Businesses.';
     const landingName = 'Mobile Application Development Graphic';
 
     return (
