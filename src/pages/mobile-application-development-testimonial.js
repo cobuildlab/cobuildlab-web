@@ -13,10 +13,13 @@ import H1 from '../components/Typography/H1';
 import H2 from '../components/Typography/H2';
 import Paragraph from '../components/Typography/Paragraph';
 
+// RESOURCES
 import badge1 from '../resources/badges1.png';
 import badge2 from '../resources/badges2.png';
 import badge3 from '../resources/badges3.png';
 import badge4 from '../resources/badges4.png';
+
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
   background-color: #f4f6fb !important;
