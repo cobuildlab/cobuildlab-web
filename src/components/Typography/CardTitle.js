@@ -14,7 +14,7 @@ const CardTitlte  = styled.h6`
   font-weight: bold;
   font-family: 'Lato-bold', sans-serif;
   font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
-  color: ${colors.indigo}
+  color: ${colors.indigo};
 `;
 
 export default CardTitlte;

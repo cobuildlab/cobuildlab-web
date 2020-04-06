@@ -14,7 +14,7 @@ const H4  = styled.h4`
   font-weight: bold;
   font-family: 'Lato-bold', sans-serif;
   font-size: calc(40px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
-  color: ${colors.indigo}
+  color: ${colors.indigo};
 `;
 
 export default H4;
