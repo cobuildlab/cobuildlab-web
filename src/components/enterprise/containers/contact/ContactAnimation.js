@@ -127,16 +127,3 @@ const AnimationBackground = () => (
 
 export default AnimationBackground;
 
-
-/*   
-
-  <div className="contact-wrapper">
-    <div className="contact-animation-images">
-      {ContactBackgroundImages.map((img, index) => (
-        <span key={`contact-img-${index}`} className={`image${index + 1}`}>
-          <Image Path={img.img} />
-        </span>
-      ))}
-  </div>
-
-*/
