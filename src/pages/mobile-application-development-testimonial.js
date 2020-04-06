@@ -13,7 +13,6 @@ import H1 from '../components/Typography/H1';
 import H2 from '../components/Typography/H2';
 import Paragraph from '../components/Typography/Paragraph';
 
-import logo from '../resources/cobuildlab.png';
 import badge1 from '../resources/badges1.png';
 import badge2 from '../resources/badges2.png';
 import badge3 from '../resources/badges3.png';
@@ -59,13 +58,13 @@ const StyledParagraph = styled(Paragraph)`
   font-size: calc(25px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
 `;
 
-export default class AppsDevTestimonial extends React.Component {
+export default class AppsDevTestimonial extends Component {
   render() {
     const siteTitle = 'Mobile Application Development in Miami';
     const siteSubtitle = 'We transform ideas into working Mobile Applications';
     const siteDescription = "Let's create amazing Mobile Applications";
-    const siteLongDescription =
-      'We transform requirements into working Software Products. We specialize in building web and mobile applications for Small and Medium Businesses.';
+    // const siteLongDescription =
+    //   'We transform requirements into working Software Products. We specialize in building web and mobile applications for Small and Medium Businesses.';
     const landingName = 'Mobile Application Development Testimonial';
 
     return (
