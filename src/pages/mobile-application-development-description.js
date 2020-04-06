@@ -87,7 +87,7 @@ export default class AppsDevDescription extends Component {
     const landingName = 'Mobile Application Development Description';
 
     return (
-<Fragment>
+      <Fragment>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
@@ -106,35 +106,35 @@ export default class AppsDevDescription extends Component {
           </Hero>
           <Container>
             <StyledSection>
-            <Columns isDesktop>
-              <Column isSize={{ desktop: 7 }}>
-                <Typography tag="h1" size={title}>
-                  Developing new Software Products in Miami
-                </Typography>
-                <Typography tag="h2" size={subTitle}>
-                  {siteSubtitle}
-                </Typography>
-                <Typography tag="p" size={paragraph}>
-                  {siteDescription}
-                </Typography>
-                <YouTubeVideoContainer>
-                  <YouTubeVideo id={'AlU5h2xrQ5M'} />
-                </YouTubeVideoContainer>
-                <BadgeIndustry />
-              </Column>
-              <Column isSize={{ desktop: 5 }}>
-                <Box>
-                  <div className="has-text-centered">
-                    <img src={badge1} className="badge" />
-                    <img src={badge2} className="badge" />
-                    <img src={badge3} className="badge" />
-                    <img src={badge4} className="badge-google" />
-                  </div>
-                  <NewLandingForm landingName={landingName} />
-                </Box>
-              </Column>
-            </Columns>
-          </StyledSection>
+              <Columns isDesktop>
+                <Column isSize={{ desktop: 7 }}>
+                  <Typography tag="h1" size={title}>
+                    Developing new Software Products in Miami
+                  </Typography>
+                  <Typography tag="h2" size={subTitle}>
+                    {siteSubtitle}
+                  </Typography>
+                  <Typography tag="p" size={paragraph}>
+                    {siteDescription}
+                  </Typography>
+                  <YouTubeVideoContainer>
+                    <YouTubeVideo id={'AlU5h2xrQ5M'} />
+                  </YouTubeVideoContainer>
+                  <BadgeIndustry />
+                </Column>
+                <Column isSize={{ desktop: 5 }}>
+                  <Box>
+                    <div className="has-text-centered">
+                      <img src={badge1} className="badge" />
+                      <img src={badge2} className="badge" />
+                      <img src={badge3} className="badge" />
+                      <img src={badge4} className="badge-google" />
+                    </div>
+                    <NewLandingForm landingName={landingName} />
+                  </Box>
+                </Column>
+              </Columns>
+            </StyledSection>
           </Container>
         </Wrapper>
       </Fragment>
