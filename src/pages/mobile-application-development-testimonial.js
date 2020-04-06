@@ -88,35 +88,29 @@ export default class AppsDevTestimonial extends React.Component {
           </Hero>
           <Container>
             <StyledSection>
-            <Columns isDesktop>
-              <Column isSize={{ desktop: 7 }}>
-                <StyledH1>
-                  Developing new Software Products in Miami
-                </StyledH1>
-                <StyledH2>
-                  {siteSubtitle}
-                </StyledH2>
-                <StyledParagraph>
-                  {siteDescription}
-                </StyledParagraph>
-                <TestimonialContainer>
-                  <Testimonial />
-                </TestimonialContainer>
-                <BadgeIndustry />
-              </Column>
-              <Column isSize={{ desktop: 5 }}>
-                <Box>
-                  <div className="has-text-centered">
-                    <img src={badge1} className="badge" />
-                    <img src={badge2} className="badge" />
-                    <img src={badge3} className="badge" />
-                    <img src={badge4} className="badge-google" />
-                  </div>
-                  <NewLandingForm landingName={landingName} />
-                </Box>
-              </Column>
-            </Columns>
-          </StyledSection>
+              <Columns isDesktop>
+                <Column isSize={{ desktop: 7 }}>
+                  <StyledH1>Developing new Software Products in Miami</StyledH1>
+                  <StyledH2>{siteSubtitle}</StyledH2>
+                  <StyledParagraph>{siteDescription}</StyledParagraph>
+                  <TestimonialContainer>
+                    <Testimonial />
+                  </TestimonialContainer>
+                  <BadgeIndustry />
+                </Column>
+                <Column isSize={{ desktop: 5 }}>
+                  <Box>
+                    <div className="has-text-centered">
+                      <img src={badge1} className="badge" />
+                      <img src={badge2} className="badge" />
+                      <img src={badge3} className="badge" />
+                      <img src={badge4} className="badge-google" />
+                    </div>
+                    <NewLandingForm landingName={landingName} />
+                  </Box>
+                </Column>
+              </Columns>
+            </StyledSection>
           </Container>
         </Wrapper>
       </Fragment>
