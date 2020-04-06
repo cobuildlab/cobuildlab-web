@@ -1,31 +1,19 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { useStaticQuery, graphql, Link } from 'gatsby';
-import { Container } from 'bloomer';
+import { Container, Section } from 'bloomer';
 import Slider from 'react-slick';
-import Image from '../Image';
-import Typography from '../Typography';
+import styled from 'styled-components';
+import H2 from '../../Typography/H2';
 import background from '../../../resources/2020/home/background.svg';
 import CustomerSuccessStoriesCard from '../CustomerSuccessStoriesCard';
-import './css/index.scss';
+import data from '../../../data/customer/customer-success-stories';
 
-const title = {
-  default: {
-    level: 7,
-    fontWeight: 'bold',
-  },
-  lg: {
-    level: 2,
-    fontWeight: 'bold',
-  },
-};
 
 const settings = {
   className: 'customer-success-stories-carousel',
-  touchMove: false,
+  touchMove: true,
   centerMode: true,
   infinite: true,
-  autoplay: false, //TODO set this true when finish
+  autoplay: true, //TODO set this true when finish
   slidesToShow: 3,
   speed: 2500,
   variableWidth: true,
@@ -46,82 +34,63 @@ const settings = {
   ],
 };
 
-const OverlayBackground = () => (
-  <div className="overlay_background">
-    <img src={background} alt="b" />
-  </div>
-);
+const Title = styled(H2)`
+  text-align: center;
+  margin-bottom: 2em;
+`;
 
-//TODO add redirect to customer view
-// DONT REMOVE inline styles or react slick is going to overwrite the css class
-const CarouselItem = ({ src, alt, slug }) => (
-  <div style={{ width: 375, height: 450, display: 'flex', alignItems: 'center' }}>
-    <div style={{ width: '100%', height: 375 }}>
-      <CustomerSuccessStoriesCard />
-    </div>
-  </div>
-);
+const OverlayBackgroundContainer = styled.div`
+  position: absolute;
+  top: -40%;
+  right: -40%;
+  width: 100%;
+  height: 100%;
+  @media screen and (max-width: 768px){
+    display: none;
+  }
+`;
 
-CarouselItem.propTypes = {
-  src: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
-  slug: PropTypes.string.isRequired,
-};
+const SectionWrapper = styled.div`
+  position: relative;
+`;
+
+const CarouselItemContainer = styled.div`
+  width: 375px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+`;
+
+const CarouselItem = styled.div`
+  width: 100%;
+  height: 375px;
+`;
 
 const CustomerSuccessStories = () => {
-  const data = useStaticQuery(pageQuery);
 
-  const items = data.customerSuccessStories.edges.map(({ node }) => (
-    <CarouselItem
-      key={node.fields.slug}
-      slug={node.fields.slug}
-      src={node?.frontmatter?.image?.publicURL}
-      alt={node?.frontmatter?.title}
-    />
+  const items = data.map((e, index) => (
+    <div  key={e.title}>
+      <CarouselItemContainer>
+        <CarouselItem>
+          <CustomerSuccessStoriesCard title={e.title} description={e.description} image={e.image} />
+        </CarouselItem>
+      </CarouselItemContainer>
+    </div>
   ));
 
   return (
-    <div className="position-relative">
-      <OverlayBackground />
-      <Container isFluid className="container-full-width">
-        <div className="section-title">
-          <Typography tag="h2" size={title} hasTextAlign="centered">
-            Customer Success Stories
-          </Typography>
-        </div>
-        <Slider {...settings}>{items}</Slider>
-      </Container>
-    </div>
+    <Section isPaddingless isMarginless>
+      <SectionWrapper>
+        <OverlayBackgroundContainer>
+          <img src={background} alt="b" />
+        </OverlayBackgroundContainer>
+        <Container isFluid className="container-full-width">
+          <Title>Customer Success Stories</Title>
+          <Slider {...settings}>{items}</Slider>
+        </Container>
+      </SectionWrapper>
+    </Section>
   );
 };
-
-const pageQuery = graphql`
-  query {
-    customerSuccessStories: allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, filter: {fileAbsolutePath: {regex: "/(pages/customer-success-stories)/.*\\.md$/"}}) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            tags
-            image {
-              publicURL
-              childImageSharp {
-                fluid(maxWidth: 480) {
-                  aspectRatio
-                  src
-                  srcSet
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`;
 
 export default CustomerSuccessStories;
