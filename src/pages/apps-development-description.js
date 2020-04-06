@@ -44,6 +44,10 @@ const YouTubeVideoContainer = styled.div`
   margin-bottom: 2.5rem;
 `;
 
+const BannerWrapper = styled.div`
+  position: relative;
+`;
+
 const StyledH1 = styled(H1)`
   font-size: calc(32px + (50 - 37) * ((100vw - 320px) / (1920 - 320)));
   margin-bottom: 1.5rem;
