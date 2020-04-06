@@ -6,6 +6,7 @@ import Slider from 'react-slick';
 import Image from '../Image';
 import Typography from '../Typography';
 import background from '../../../resources/2020/home/background.svg';
+import CustomerSuccessStoriesCard from '../CustomerSuccessStoriesCard';
 import './css/index.scss';
 
 const title = {
@@ -24,7 +25,7 @@ const settings = {
   touchMove: false,
   centerMode: true,
   infinite: true,
-  autoplay: true, //TODO set this true when finish
+  autoplay: false, //TODO set this true when finish
   slidesToShow: 3,
   speed: 2500,
   variableWidth: true,
@@ -54,19 +55,9 @@ const OverlayBackground = () => (
 //TODO add redirect to customer view
 // DONT REMOVE inline styles or react slick is going to overwrite the css class
 const CarouselItem = ({ src, alt, slug }) => (
-  <div style={{ width: 300 }}>
-    <div
-      style={{
-        width: '100%',
-        height: 385,
-        display: 'flex',
-        alignItems: 'center',
-      }}>
-      <div className="customer-carousel-item">
-        <Link to={slug}>
-          <Image src={src} alt={alt} />
-        </Link>
-      </div>
+  <div style={{ width: 375, height: 450, display: 'flex', alignItems: 'center' }}>
+    <div style={{ width: '100%', height: 375 }}>
+      <CustomerSuccessStoriesCard />
     </div>
   </div>
 );
