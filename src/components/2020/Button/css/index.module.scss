@@ -1,15 +1,17 @@
 @import '../../../../assets/css/2020/var.scss';
 
 .button{
-  padding: 9px 37px;
+  padding: 9px 25px;
   border: none;
   cursor: pointer;
-  transition: all .25s linear;
+  transition: all .2s linear;
   outline-style: none ;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  font-weight: 500;
+  // text-transform: uppercase;
 
   &_block{
     width: 100%;
@@ -24,7 +26,6 @@
     background-color: $orange;
     background: $orange 0% 0% no-repeat padding-box;
     box-shadow: 0px 8px 25px $btn-shadow !important;
-    text-transform: uppercase;
     color: $white !important;
 
     &:hover, &:focus{
@@ -36,20 +37,19 @@
   &_primary{
     background: none;
     box-shadow: none;
-    text-transform: capitalize;
-    color: $navy;
+    color: $orange;
     .button_text{
-      font-size: 20px;
+      font-size: 18px;
     }
     &:hover{
-      transform: scale(1.1);
+      color: $btn-active-bg;
+      transform: scale(1.05);
     }
   }
 
   &_secondary{
     background: none;
     box-shadow: none;
-    text-transform: uppercase;
     color: $dark-slate !important;
 
     &:hover{

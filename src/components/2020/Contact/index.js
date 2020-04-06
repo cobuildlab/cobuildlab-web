@@ -66,7 +66,7 @@ const Contact = () => (
           </TextOrange>
           66 West Flagler St, Suite 900, Miami, Florida 33130 +1 (786) 991-3467 contact@cobuildlab.com
         </Description>
-        <ContactForm />
+        <ContactForm landingName="home-page"  />
       </LeftColumn>
       <RightColumn  isSize={{ mobile: 12, desktop: 6 }}>
         <Image src={img} alt="contact form" />

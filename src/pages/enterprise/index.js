@@ -9,7 +9,7 @@ import Skills from '../../components/enterprise/containers/skills';
 import Project from '../../components/enterprise/containers/project';
 import Portfolio from '../../components/enterprise/containers/portfolio';
 // import Testimonial from '../../components/enterprise/containers/testimonial';
-import Contact from '../../components/enterprise/containers/contact';
+import Contact from '../../components/enterprise/containers/contact/ContactEnterprise';
 import Brand from '../../components/enterprise/containers/brands';
 import Footer from '../../components/enterprise/containers/footer';
 import CopyRight from '../../components/enterprise/containers/copyright_text';

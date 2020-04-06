@@ -9,22 +9,24 @@ import Button from './Button';
 export default class Contact extends PureComponent {
 
   static defaultProps = {
-    btnText: 'submit'
+    btnText: 'submit',
   }
 
   static propTypes = {
     btnText: PropTypes.string,
+    landingName: PropTypes.string.isRequired
   }
 
   constructor(props) {
     super(props);
+    const { landingName } = this.props;
     this.state = {
       data: {
         name: '',
         email: '',
         phone: '',
         message: '',
-        landingName: 'Cobuild Lab',
+        landingName,
       },
       isLoading: false,
     };
@@ -78,9 +80,10 @@ export default class Contact extends PureComponent {
     });
 
     const data = {
-      name,
+      firstName: name,
+      lastName: 'none',
       email,
-      message,
+      comment: message,
       phone,
       landingName,
     };

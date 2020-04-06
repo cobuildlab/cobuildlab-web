@@ -102,7 +102,7 @@ const Banner = (props) => {
                       turn it into a custom software solution.
                     </Typrography>
                     <div className="banner-btn-wrapper">
-                      <Button to={'/enterprise#services'}>EXPLORE OUR SERVICES</Button>
+                      <Button to={'/enterprise#services'}>Explor Our Services</Button>
                     </div>
                   </div>
                 </div>
