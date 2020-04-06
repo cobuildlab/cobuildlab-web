@@ -7,8 +7,10 @@ import 'bulma';
 import LandingHeader from '../components/2020/LandingHeader';
 import BadgeIndustry from '../components/2020/BadgeIndustry';
 import NewLandingForm from '../components/2020/NewLandingForm';
-import styles from '../components/2020/hero/css/index.module.scss';
-import Typography from '../components/2020/Typography';
+import styles from '../components/2020/hero/css/index.module.scss'; 
+import H1 from '../components/Typography/H1';
+import H2 from '../components/Typography/H2';
+import Paragraph from '../components/Typography/Paragraph';
 
 // RESOURCES
 import background from '../resources/2020/home/background.svg';
@@ -19,40 +21,6 @@ import badge4 from '../resources/badges4.png';
 
 import YouTubeVideo from '../components/YouTubeVideo';
 import styled from 'styled-components';
-
-// TYPOGRAPHY CONFIG
-const title = {
-  default: {
-    level: 7,
-    fontWeight: 'bold',
-  },
-  lg: {
-    level: 4,
-    fontWeight: 'bold',
-  },
-};
-
-const subTitle = {
-  default: {
-    level: 8,
-    fontWeight: 'bold',
-  },
-  lg: {
-    level: 7,
-    fontWeight: 'bold',
-  },
-};
-
-const paragraph = {
-  default: {
-    level: 9,
-    fontWeight: 'normal',
-  },
-  lg: {
-    level: 8,
-    fontWeight: 'normal',
-  },
-};
 
 const Wrapper = styled.div`
   background-color: #f4f6fb !important;
@@ -76,6 +44,20 @@ const StyledSection = styled(Section)`
 const YouTubeVideoContainer = styled.div`
   margin-top: 3rem;
   margin-bottom: 2.5rem;
+`;
+
+const StyledH1 = styled(H1)`
+  font-size: calc(32px + (50 - 37) * ((100vw - 320px) / (1920 - 320)));
+  margin-bottom: 1.5rem;
+`;
+
+const StyledH2 = styled(H2)`
+  font-size: calc(26px + (32 - 26) * ((100vw - 320px) / (1920 - 320)));
+  margin-bottom: 1.5rem;
+`;
+
+const StyledParagraph = styled(Paragraph)`
+  font-size: calc(25px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
 `;
 
 const HeroBodyContent = () => (
@@ -119,15 +101,15 @@ class AppsDevDescription extends Component {
             <StyledSection>
             <Columns isDesktop>
               <Column isSize={{ desktop: 7 }}>
-                <Typography tag="h1" size={title}>
+                <StyledH1>
                   Developing new Software Products in Miami
-                </Typography>
-                <Typography tag="h2" size={subTitle}>
+                </StyledH1>
+                <StyledH2>
                   {siteSubtitle}
-                </Typography>
-                <Typography tag="p" size={paragraph}>
+                </StyledH2>
+                <StyledParagraph>
                   {siteDescription}
-                </Typography>
+                </StyledParagraph>
                 <YouTubeVideoContainer>
                   <YouTubeVideo id={'AlU5h2xrQ5M'} />
                 </YouTubeVideoContainer>
