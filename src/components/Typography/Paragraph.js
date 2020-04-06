@@ -15,7 +15,7 @@ const Paragraph  = styled.p`
   font-weight: normal;
   font-family: 'Lato-regular', sans-serif;
   font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
-  color: ${colors.indigo}
+  color: ${colors.indigo};
 `;
 
 export default Paragraph;

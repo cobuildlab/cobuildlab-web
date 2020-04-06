@@ -15,7 +15,7 @@ const H3  = styled.h3`
   font-weight: lighter;
   font-family: 'Lato-light', sans-serif;
   font-size: calc(41px + (60 - 41) * ((100vw - 320px) / (1920 - 320)));
-  color: ${colors.indigo}
+  color: ${colors.indigo};
 `;
 
 export default H3;

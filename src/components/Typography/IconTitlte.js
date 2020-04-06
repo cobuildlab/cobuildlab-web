@@ -9,7 +9,7 @@ const CardTitlte  = styled.span`
   font-weight: normal;
   font-family: 'Lato-regular', sans-serif;
   font-size: 12px;
-  color: ${colors.indigo}
+  color: ${colors.indigo};
 `;
 
 export default CardTitlte;

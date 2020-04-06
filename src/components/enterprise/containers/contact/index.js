@@ -67,7 +67,7 @@ const Contact = () => {
               <div className="contact-content-block main-title-wrapper">
                 <div className="sub-title-wrapper">
                   <Typography className="sitemain-subtitle" tag="h6">
-                    Let's get started!
+                    Let's get <span className="enterprise-text-orange">Started!</span>
                   </Typography>
                   <Typography className="site-subtitle2" tag="h6" style="">
                     Call us or message us to get your next project started

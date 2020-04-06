@@ -582,6 +582,10 @@ hr {
     padding: 4.5rem 3rem;
 }
 
+.section#contact{
+    padding-bottom: 2rem;
+}
+
 .section-blog {
     padding: 0 3rem 3rem 3rem;
 }

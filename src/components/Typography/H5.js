@@ -13,7 +13,7 @@ const H5  = styled.h5`
   font-weight: normal;
   font-family: 'Lato-regular', sans-serif;
   font-size: calc(40px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
-  color: ${colors.orange}
+  color: ${colors.orange};
 `;
 
 export default H5;

@@ -2,11 +2,11 @@ import styled from 'styled-components';
 import colors from './colors.json';
 
 export const TextOrange  = styled.span`
-  color: ${colors.orange}
+  color: ${colors.orange};
 `;
 
 export const TextIndigo  = styled.span`
-  color: ${colors.indigo}
+  color: ${colors.indigo};
 `;
 
 export const AlignRight  = styled.span`
