@@ -10,6 +10,7 @@ const Testimonial = () => {
     <Media className="component-changes">
       <MediaLeft
         className="testimonial-image"
+        
         style={{
           backgroundImage: `url(${image})`,
         }}
