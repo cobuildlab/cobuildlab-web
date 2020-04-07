@@ -7,7 +7,7 @@ import UniqueValueProps from '../../components/enterprise/containers/unique-valu
 import Video from '../../components/enterprise/containers/video';
 import Skills from '../../components/enterprise/containers/skills';
 import Project from '../../components/enterprise/containers/project';
-import Portfolio from '../../components/enterprise/containers/portfolio';
+import EnterprisePortfolio from '../../components/enterprise/containers/EnterprisePortfolio';
 // import Testimonial from '../../components/enterprise/containers/testimonial';
 import Contact from '../../components/enterprise/containers/contact/ContactEnterprise';
 import Brand from '../../components/enterprise/containers/brands';
@@ -27,7 +27,7 @@ const IndexPage = () => {
         <Video />
         <Skills />
         <Project />
-        <Portfolio />
+        <EnterprisePortfolio />
         {/*<Testimonial />*/}
         <Contact />
         <Brand />
