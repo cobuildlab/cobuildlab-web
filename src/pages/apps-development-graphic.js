@@ -7,7 +7,6 @@ import 'bulma';
 import LandingHeader from '../components/2020/LandingHeader';
 import BadgeIndustry from '../components/2020/BadgeIndustry';
 import NewLandingForm from '../components/2020/NewLandingForm';
-import Typography from '../components/2020/Typography';
 import BannerBackground from '../components/2020/BannerBackground';
 import H1 from '../components/Typography/H1';
 import H2 from '../components/Typography/H2';

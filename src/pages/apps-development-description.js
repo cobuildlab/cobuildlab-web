@@ -7,7 +7,7 @@ import 'bulma';
 import LandingHeader from '../components/2020/LandingHeader';
 import BadgeIndustry from '../components/2020/BadgeIndustry';
 import NewLandingForm from '../components/2020/NewLandingForm';
-import styles from '../components/2020/hero/css/index.module.scss';
+import BannerBackground from '../components/2020/BannerBackground';
 import H1 from '../components/Typography/H1';
 import H2 from '../components/Typography/H2';
 import Paragraph from '../components/Typography/Paragraph';
@@ -45,6 +45,10 @@ const YouTubeVideoContainer = styled.div`
   margin-bottom: 2.5rem;
 `;
 
+const BannerWrapper = styled.div`
+  position: relative;
+`;
+
 const StyledH1 = styled(H1)`
   font-size: calc(32px + (50 - 37) * ((100vw - 320px) / (1920 - 320)));
   margin-bottom: 1.5rem;
@@ -58,14 +62,6 @@ const StyledH2 = styled(H2)`
 const StyledParagraph = styled(Paragraph)`
   font-size: calc(25px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
 `;
-
-const HeroBodyContent = () => (
-  <div style={{ position: 'relative' }}>
-    <div className={styles.overlay_background}>
-      <img src={background} alt="b" />
-    </div>
-  </div>
-);
 
 class AppsDevDescription extends Component {
   constructor(props) {
