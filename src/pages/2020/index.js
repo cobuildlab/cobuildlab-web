@@ -8,7 +8,7 @@ import Header from '../../components/2020/Header';
 import HeroBodyContent from '../../components/2020/Hero';
 import Service from '../../components/2020/Service';
 import BusinessValue from '../../components/2020/BusinessValue';
-import CustomerSuccessStories from '../../components/2020/CustomerSuccessStories';
+import HomePagePortfolio from '../../components/2020/HomePagePortfolio';
 import OurTeam from '../../components/2020/OurTeam';
 import Contact from '../../components/2020/Contact';
 import Newsletter from '../../components/2020/NewsLetter';
@@ -57,7 +57,7 @@ export default class HomePage extends PureComponent {
           <BusinessValue />
         </Section>
         <Section className="section-not-padding">
-          <CustomerSuccessStories />
+          <HomePagePortfolio />
         </Section>
         <Section className="section-not-padding">
           <OurTeam />

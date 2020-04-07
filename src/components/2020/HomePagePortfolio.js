@@ -1,11 +1,11 @@
 import React from 'react';
-import { Container, Section } from 'bloomer';
+import { Container } from 'bloomer';
 import Slider from 'react-slick';
 import styled from 'styled-components';
-import H2 from '../../Typography/H2';
-import background from '../../../resources/2020/home/background.svg';
-import CustomerSuccessStoriesCard from '../CustomerSuccessStoriesCard';
-import data from '../../../data/customer/customer-success-stories';
+import H2 from '../Typography/H2';
+import background from '../../resources/2020/home/background.svg';
+import CustomerSuccessStoriesCard from './CustomerSuccessStoriesCard';
+import data from '../../data/customer/customer-success-stories';
 
 
 const settings = {
@@ -66,7 +66,7 @@ const CarouselItem = styled.div`
   height: 375px;
 `;
 
-const CustomerSuccessStories = () => {
+const HomePagePortfolio = () => {
 
   const items = data.map((e, index) => (
     <div  key={e.title}>
@@ -79,18 +79,16 @@ const CustomerSuccessStories = () => {
   ));
 
   return (
-    <Section isPaddingless isMarginless>
-      <SectionWrapper>
-        <OverlayBackgroundContainer>
-          <img src={background} alt="b" />
-        </OverlayBackgroundContainer>
-        <Container isFluid className="container-full-width">
-          <Title>Customer Success Stories</Title>
-          <Slider {...settings}>{items}</Slider>
-        </Container>
-      </SectionWrapper>
-    </Section>
+    <SectionWrapper>
+      <OverlayBackgroundContainer>
+        <img src={background} alt="b" />
+      </OverlayBackgroundContainer>
+      <Container isFluid className="container-full-width">
+        <Title>Customer Success Stories</Title>
+        <Slider {...settings}>{items}</Slider>
+      </Container>
+    </SectionWrapper>
   );
 };
 
-export default CustomerSuccessStories;
+export default HomePagePortfolio;

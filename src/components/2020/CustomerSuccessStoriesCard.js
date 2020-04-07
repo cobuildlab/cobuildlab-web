@@ -27,7 +27,7 @@ const CardContainer = styled.div`
   transition: transform .1s linear;
   cursor: pointer;
   z-index: ${ ({ isVisible }) => ( isVisible ? '100' : '0' )};
-  transform: ${ ({ isVisible }) => ( isVisible ? 'scale(1.08)' : 'scale(1)' )};
+  transform: ${ ({ isVisible }) => ( isVisible ? 'scale(1.2)' : 'scale(1)' )};
   border: none;
   &:hover, &:focus{
     transform: scale(1.08);

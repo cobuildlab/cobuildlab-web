@@ -1,33 +1,39 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
 import get from 'lodash/get';
 import Helmet from 'react-helmet';
-import Layout from '../../components/layout';
-import {
-  Hero,
-  HeroBody,
+import styled from 'styled-components';
+import { 
+  HeroHeader, 
+  HeroBody, 
+  Hero, 
+  Section, 
   Container,
-  Title,
-  Subtitle,
   Columns,
-  Column,
-  Card,
-  CardContent,
-  Content,
+  Column
 } from 'bloomer';
-import 'bulma';
-import '../../assets/fonts/Lato-Black.ttf';
-import '../../assets/fonts/Lato-BlackItalic.ttf';
-import '../../assets/fonts/Lato-Bold.ttf';
-import '../../assets/fonts/Lato-BoldItalic.ttf';
-import '../../assets/fonts/Lato-Hairline.ttf';
-import '../../assets/fonts/Lato-HairlineItalic.ttf';
-import '../../assets/fonts/Lato-Italic.ttf';
-import '../../assets/fonts/Lato-Light.ttf';
-import '../../assets/fonts/Lato-LightItalic.ttf';
-import '../../assets/fonts/Lato-Regular.ttf';
 
-class BlogIndex extends React.Component {
+
+import H1 from '../../components/Typography/H1';
+import Paragraph from '../../components/Typography/Paragraph';
+import { TextOrange } from '../../components/Typography/TextHelpers';
+
+
+import Layout from '../../components/2020/Layout';
+import Header from '../../components/2020/Header';
+import CustomerSuccessStoriesCard from '../../components/2020/CustomerSuccessStoriesCard';
+
+import data from '../../data/customer/customer-success-stories';
+
+
+const TitleContainer = styled.div`
+  margin-top: 6.5em;
+  & > p {
+    margin-top: 3em;
+    width: 50%;
+  }
+`;
+
+export default class CustomerSuccessStories extends React.Component {
   constructor(props) {
     super(props);
 
@@ -48,100 +54,54 @@ class BlogIndex extends React.Component {
           meta={[{ name: 'description', content: 'Success Cases for the Cobuild Lab in Miami' }]}
           title={siteTitle}
         />
-
-        <Hero isColor="white" isSize="small">
+        <Hero>
+          <HeroHeader>
+            <Header />
+          </HeroHeader>
           <HeroBody>
-            <Container hasTextAlign="centered">
-              <Columns isCentered>
-                <Column>
-                  <Title className="title-blog" isSize={1}>
-                    New ideas, forged in Cobuild Lab
-                  </Title>
-                  <Subtitle isSize={5}>
-                    Many enter, others leave. In the end, the most restless and daring to undertake
-                    the digital world have found them perfect place because they have been cared for
-                    and understood in the particularities of their local businesses. The
-                    laboratories in Miami by Cobuild Lab has allowed creating new and better ideas,
-                    born of other ideas.
-                  </Subtitle>
-                  <br />
-                  <hr />
-                </Column>
-              </Columns>
+            <Container>
+              <TitleContainer>
+                <H1>
+                  New <TextOrange>Ideas</TextOrange>, forged <br />
+                  at <TextOrange>Cobuild Lab</TextOrange> 
+                </H1>
+                <Paragraph>
+                  Many enter, others leave. In the end, the most restless and daring to undertake the digital 
+                  world have found them perfect place because they have been cared for and understood
+                  in the particularities of their local businesses. The laboratories in Miami by Cobuild Lab has 
+                  allowed creating new and better ideas, born of other ideas.
+                </Paragraph>
+              </TitleContainer>
             </Container>
           </HeroBody>
         </Hero>
-        <section className="section">
+        <Section>
           <Container>
-            <Columns className="is-multiline">
-              {posts.map(({ node }) => {
-                const title = get(node, 'frontmatter.title') || node.fields.slug;
-                console.log(`DEBUG:`, node);
-                return (
-                  <Column key={node.fields.slug} isSize="1/3">
-                    <Link to={node.fields.slug}>
-                      <Card className="card-p">
-                        <CardContent
-                          className="card-post"
-                          style={{
-                            backgroundImage: `url(${node.frontmatter.image.publicURL})`,
-                          }}>
-                          <Content className="title-post">
-                            <Subtitle hasTextColor="white">{title}</Subtitle>
-                          </Content>
-                        </CardContent>
-                      </Card>
-                    </Link>
-                  </Column>
-                );
-              })}
+            <Columns isMultiline>
+              <Column isSize={3} isPaddingless>
+                <CustomerSuccessStoriesCard title={data[0].title} description={data[0].description} image={data[0].image} />
+              </Column>
+              <Column isSize={3} isPaddingless>
+                <CustomerSuccessStoriesCard title={data[1].title} description={data[1].description} image={data[1].image} />
+              </Column>
+              <Column isSize={3} isPaddingless>
+                <CustomerSuccessStoriesCard title={data[2].title} description={data[2].description} image={data[2].image} />
+              </Column>
+              <Column isSize={3} isPaddingless>
+                <CustomerSuccessStoriesCard title={data[3].title} description={data[3].description} image={data[3].image} />
+              </Column>
+              <Column isSize={3} isPaddingless>
+                <CustomerSuccessStoriesCard title={data[4].title} description={data[4].description} image={data[4].image} />
+              </Column>
+              <Column isSize={3} isPaddingless>
+                <CustomerSuccessStoriesCard title={data[5].title} description={data[5].description} image={data[5].image} />
+              </Column>
             </Columns>
           </Container>
-        </section>
+        </Section>
       </Layout>
     );
   }
 }
 
-export default BlogIndex;
 
-export const pageQuery = graphql`
-    query {
-        site {
-            siteMetadata {
-                title
-                description
-            }
-        }
-        allMarkdownRemark(
-            sort: { fields: [frontmatter___date], order: DESC }
-            limit: 12
-            filter: {fileAbsolutePath: {regex: "/(customer-success-stories)/.*\\.md$/"}}
-        ) {
-            edges {
-                node {
-                    excerpt
-                    fields {
-                        slug
-                    }
-                    frontmatter {
-                        date(formatString: "MMMM DD, YYYY")
-                        title
-                        image {
-                            publicURL
-                            childImageSharp {
-                                fluid(maxWidth: 720) {
-                                    aspectRatio
-                                    base64
-                                    sizes
-                                    src
-                                    srcSet
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-`;
