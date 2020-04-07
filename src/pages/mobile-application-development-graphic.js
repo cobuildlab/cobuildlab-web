@@ -21,7 +21,6 @@ import graphic from '../resources/graficas-1.png';
 
 import styled from 'styled-components';
 
-
 const Wrapper = styled.div`
   background-color: #f4f6fb !important;
   overflow: hidden;

@@ -90,15 +90,9 @@ export default class AppsDevDescription extends Component {
             <StyledSection>
               <Columns isDesktop>
                 <Column isSize={{ desktop: 7 }}>
-                  <StyledH1>
-                    Developing new Software Products in Miami
-                  </StyledH1>
-                  <StyledH2>
-                    {siteSubtitle}
-                  </StyledH2>
-                  <StyledParagraph>
-                    {siteDescription}
-                  </StyledParagraph>
+                  <StyledH1>Developing new Software Products in Miami</StyledH1>
+                  <StyledH2>{siteSubtitle}</StyledH2>
+                  <StyledParagraph>{siteDescription}</StyledParagraph>
                   <YouTubeVideoContainer>
                     <YouTubeVideo id={'AlU5h2xrQ5M'} />
                   </YouTubeVideoContainer>
