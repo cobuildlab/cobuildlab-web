@@ -14,21 +14,18 @@ const StudyCase = () => {
 
   return (
     <Fragment>
-    <Media className="component-changes">
-      <MediaLeft
-        className="study-logo"
-        style={{
-          backgroundImage: `url(${logo})`,
-        }}
-      />
-      <MediaContent>
-        <p className="study-text">{text}</p>
-      </MediaContent>
-        
-    </Media>
-      <StudySubtitle className="study-subtitle">
-        Metrics:
-      </StudySubtitle>
+      <Media className="component-changes">
+        <MediaLeft
+          className="study-logo"
+          style={{
+            backgroundImage: `url(${logo})`,
+          }}
+        />
+        <MediaContent>
+          <p className="study-text">{text}</p>
+        </MediaContent>
+      </Media>
+      <StudySubtitle className="study-subtitle">Metrics:</StudySubtitle>
       <Columns className="study-case-metrics">
         <Column className="study-subtext has-text-centered">
           Time to Market

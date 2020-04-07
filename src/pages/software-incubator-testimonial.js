@@ -1,25 +1,25 @@
-import React, { Component, Fragment } from 'react';
-import Helmet from 'react-helmet';
-import { Container, Section, Hero, HeroBody, HeroHeader, Columns, Column } from 'bloomer';
-import H1 from '../components/Typography/H1';
-import H2 from '../components/Typography/H2';
-import Paragraph from '../components/Typography/Paragraph';
-import 'bulma';
+import React, { Fragment } from "react";
+import Helmet from "react-helmet";
+import { Container, Section, Hero, HeroBody, HeroHeader, Columns, Column } from "bloomer";
+import H1 from "../components/Typography/H1";
+import H2 from "../components/Typography/H2";
+import Paragraph from "../components/Typography/Paragraph";
+import "bulma";
 
 // COMPONENTS
-import LandingHeader from '../components/2020/LandingHeader';
-import BadgeIndustry from '../components/2020/BadgeIndustry';
-import NewLandingForm from '../components/2020/NewLandingForm';
-import BannerBackground from '../components/2020/BannerBackground';
-import Testimonial from '../components/2020/Testimonial';
+import LandingHeader from "../components/2020/LandingHeader";
+import BadgeIndustry from "../components/2020/BadgeIndustry";
+import NewLandingForm from "../components/2020/NewLandingForm";
+import BannerBackground from "../components/2020/BannerBackground";
+import Testimonial from "../components/2020/Testimonial";
 
 // RESOURCES
-import badge1 from '../resources/badges1.png';
-import badge2 from '../resources/badges2.png';
-import badge3 from '../resources/badges3.png';
-import badge4 from '../resources/badges4.png';
+import badge1 from "../resources/badges1.png";
+import badge2 from "../resources/badges2.png";
+import badge3 from "../resources/badges3.png";
+import badge4 from "../resources/badges4.png";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
 // STYLED COMPONENTS
 const Wrapper = styled.div`
@@ -64,61 +64,55 @@ const StyledParagraph = styled(Paragraph)`
 
 export default class SoftwareIncTestimonial extends React.Component {
   render() {
-    const siteTitle = 'Developing new Software Products in Miami';
-    const siteSubtitle = 'We incubate new Software Products';
+    const siteTitle = "Developing new Software Products in Miami";
+    const siteSubtitle = "We incubate new Software Products";
     const siteDescription =
-      'We help entrepreneurs create amazing Products with our streamlined, lean and phased Software Development Process. Since day one, our technique is focused on early results and transparent communication.';
-    const landingName = 'Software Incubator Testimonial';
+      "We help entrepreneurs create amazing Products with our streamlined, lean and phased Software Development Process. Since day one, our technique is focused on early results and transparent communication.";
+    const landingName = "Software Incubator Testimonial";
 
     return (
       <Fragment>
         <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
+          htmlAttributes={{ lang: "en" }}
+          meta={[{ name: "description", content: siteDescription }]}
           title={siteTitle}
         />
         <Wrapper>
           <Hero>
             <HeroHeader>
-              <LandingHeader />
+              <LandingHeader/>
             </HeroHeader>
             <HeroBody isPaddingless>
               <BannerWrapper>
-                <BannerBackground />
+                <BannerBackground/>
               </BannerWrapper>
             </HeroBody>
           </Hero>
           <Container>
             <StyledSection>
-            <Columns isDesktop>
-              <Column isSize={{ desktop: 7 }}>
-                <StyledH1>
-                  Developing new Software Products in Miami
-                </StyledH1>
-                <StyledH2>
-                  {siteSubtitle}
-                </StyledH2>
-                <StyledParagraph>
-                  {siteDescription}
-                </StyledParagraph>
-                <TestimonialContainer>
-                  <Testimonial />
-                </TestimonialContainer>
-                <BadgeIndustry />
-              </Column>
-              <Column isSize={{ desktop: 5 }}>
-                <Box>
-                  <div className="has-text-centered">
-                    <img src={badge1} className="badge" />
-                    <img src={badge2} className="badge" />
-                    <img src={badge3} className="badge" />
-                    <img src={badge4} className="badge-google" />
-                  </div>
-                  <NewLandingForm landingName={landingName} />
-                </Box>
-              </Column>
-            </Columns>
-          </StyledSection>
+              <Columns isDesktop>
+                <Column isSize={{ desktop: 7 }}>
+                  <StyledH1>Developing new Software Products in Miami</StyledH1>
+                  <StyledH2>{siteSubtitle}</StyledH2>
+                  <StyledParagraph>{siteDescription}</StyledParagraph>
+                  <TestimonialContainer>
+                    <Testimonial/>
+                  </TestimonialContainer>
+                  <BadgeIndustry/>
+                </Column>
+                <Column isSize={{ desktop: 5 }}>
+                  <Box>
+                    <div className="has-text-centered">
+                      <img src={badge1} className="badge"/>
+                      <img src={badge2} className="badge"/>
+                      <img src={badge3} className="badge"/>
+                      <img src={badge4} className="badge-google"/>
+                    </div>
+                    <NewLandingForm landingName={landingName}/>
+                  </Box>
+                </Column>
+              </Columns>
+            </StyledSection>
           </Container>
         </Wrapper>
       </Fragment>
