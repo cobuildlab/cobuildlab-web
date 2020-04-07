@@ -51,7 +51,6 @@ const ToggleContainer = styled.span`
   }
 `;
 
-
 const MenuTitle = styled.span`
   color: #264A60;
   line-height: 40px;
