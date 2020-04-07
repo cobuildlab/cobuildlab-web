@@ -31,6 +31,7 @@ import '../assets/fonts/Lato-LightItalic.ttf';
 import '../assets/fonts/Lato-Regular.ttf';
 import { Hero, Container, Title, Columns, Column, Card, CardContent, Content } from 'bloomer';
 import TTSVoice from '../components/TTSVoice';
+import PropTypes from 'prop-types';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -59,10 +60,8 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = 'Cobuild Lab';
     const siteDescription = post.excerpt;
     const { previous, next } = this.props.pageContext;
-    const image = get(post, 'frontmatter.image.publicURL') || defaultImg;
     const previousImage = get(previous, 'frontmatter.image.publicURL') || defaultImg;
     const nextImage = get(next, 'frontmatter.image.publicURL') || defaultImg;
-    let speech;
 
     return (
       <LayoutPost>
@@ -171,6 +170,11 @@ class BlogPostTemplate extends React.Component {
     );
   }
 }
+
+BlogPostTemplate.propTypes = {
+  data: PropTypes.object.isRequired,
+  pageContext: PropTypes.object.isRequired,
+};
 
 export default BlogPostTemplate;
 
