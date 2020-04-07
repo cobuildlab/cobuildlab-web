@@ -62,7 +62,7 @@ const StyledParagraph = styled(Paragraph)`
   font-size: calc(25px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
 `;
 
-export default class AppsDevGraphic extends React.Component {
+export default class AppsDevGraphic extends Component {
   render() {
     const siteTitle = 'Mobile Application Development in Miami';
     const siteSubtitle = 'We transform ideas into working Mobile Applications';
