@@ -1,17 +1,11 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import { Description, Title } from '../../components/title';
 import Image from '../../components/image';
 import Slider from 'react-slick';
-//TODO move this file to index
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import Typography from '../../../2020/Typography';
 import './testimonial.scss';
 
-/**
- *
- */
-function CarouselSlider() {
+const CarouselSlider = () => {
   const TestimonialList = useStaticQuery(graphql`
     query TestimonialQuery {
       allDataJson {
@@ -50,9 +44,15 @@ function CarouselSlider() {
                   <i></i>
                   <i></i>
                 </div>
-                <Description Class="testimonial-dec" Name={data.content} />
-                <Title Class="testimonial-title" Name={data.title} />
-                <Title Class="testimonial-subtitle" Name={data.subtitle} />
+                <Typography className="testimonial-dec" tag="p">
+                  {data.content}
+                </Typography>
+                <Typography className="testimonial-title" tag="p">
+                  {data.title}
+                </Typography>
+                <Typography className="testimonial-subtitle" tag="p">
+                  {data.subtitle}
+                </Typography>
                 <div className="testimonial-images">
                   <Image Path={data.img} />
                 </div>
@@ -63,6 +63,6 @@ function CarouselSlider() {
       </div>
     </div>
   );
-}
+};
 
 export default CarouselSlider;

@@ -1,16 +1,46 @@
+
+@import "./variable.scss";
+
+$color1: linear-gradient(to right, $cobuild-light-slate 0%, #d2dfe6 100%);
+$cobuild-indigo: #264A60;
+$cobuild-orange: #E76C29;
+$cobuild-dark-slate: #90a2ad;
+$cobuild-med-slate: #d2dfe6;
+$cobuild-light-slate: #f6f6fb;
 :root {
-  --primary: linear-gradient(to right, #e100ff 0%, #7f00ff 100%);
-  --primary1: #8200ff;
-  --primary2: #e000ff;
-  --primary3: rgba(183, 41, 255, 0.1);
+  // Blue / Gray Slate
+  // --primary: linear-gradxient(to right, #264A60 0%, rgb(77, 157, 218) 100%);  ;
+  --primary: linear-gradient(to right, #d2dfe6 100%, #f6f6fb 0%);
+  --primary1: #264A60;
+  --primary2: #E76C29;
+  --primary3:  #d2dfe6;
+  --primary4:  #f6f6fb;
 }
+// :root {
+  // Cobuild Lab Orange
+//   --primary: linear-gradient(to right, rgb(202, 89, 29) 0%, #E76C29 100%);  ;
+//   --primary2: rgb(202, 89, 29);
+//   --primary1: #E76C29;
+//   --primary3: #E76C29;
+// }
+// :root {
+  // Original Purple
+//   --primary: linear-gradient(to right, #e100ff 0%, #7f00ff 100%);
+//   --primary1: #8200ff;
+//   --primary2: #e000ff;
+//   --primary3: rgba(183, 41, 255, 0.1);
+// }
 
 $primary: var(--primary);
 $primary1: var(--primary1);
 $primary2: var(--primary2);
 $primary3: var(--primary3);
+$primary4: var(--primary4);
 
-.project-wrapper .project-box-outer .counters-number,
+.project-wrapper .project-box-outer .counters-number, .counters-number{
+  color: $primary2;
+}
+
 .navbar-link-wrapper ul > li.active > a span,
 .navbar-link-wrapper ul > li:hover > a span,
 .navbar-link-wrapper ul > li.active > a i,
@@ -27,8 +57,8 @@ $primary3: var(--primary3);
   .forget-password,
 .service-content:hover .service-title,
 .blog-second-block:hover .blog-title,
-.skills-content-block .progress-outer-block .progress-title,
-.project-wrapper .project-box-outer .counters-number,
+.skills-content-block .progress-outer-block,
+.project-wrapper .project-box-outer,
 .service-content:hover .service-content-dec .service-title,
 .contact-wrapper .contact-content-block .contact-dec,
 .video-wrapper .video-btn span svg,
@@ -46,7 +76,7 @@ $primary3: var(--primary3);
   .forget-password,
 .menu-right-1 .login-register-wrapper .login-register-outer .react-tabs__tab-list li.react-tabs__tab--selected,
 .footer-wrapper .footer-content-wrapper .footer-contact-us ul li a span {
-  color: $primary1;
+  color: $primary2;
 }
 ::selection,
 #slidebar-close-btn i:hover::after,
@@ -56,8 +86,9 @@ $primary3: var(--primary3);
   background-color: $primary1;
 }
 .animated-bg i {
-  background: $primary;
+  background: $primary1;
 }
+
 .main-title-wrapper .site-subtitle {
   background-color: $primary3;
 }
@@ -133,7 +164,7 @@ header.header-sticky.sticky,
 .gradient-color,
 .demo2,
 .demo3 {
-  background: $primary;
+  background: $primary4;
 }
 .gradient-color1 {
   background-image: linear-gradient(white, white), $primary;

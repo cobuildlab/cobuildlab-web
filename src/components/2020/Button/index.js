@@ -1,42 +1,88 @@
-import React, { memo } from 'react';
+import React, { memo, Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { Button as BloomerButton } from 'bloomer';
 import { Link } from 'gatsby';
+import Typography from '../Typography';
 import componse from '../../../utils/styles-componse';
 import styles from './css/index.module.scss';
 
-const Button = ({ children, to, onClick, className, ...rest }) => {
-  if (to) {
+const text = {
+  default: {
+    fontWeight: 'normal',
+  },
+};
+
+const Loading = ({ isLoading, children }) => {
+  const childrenContainerStyle = styles[`display_${isLoading ? 'hidden' : 'block'}`];
+  const iconContainerStyles = componse(
+    styles.icon_container,
+    !isLoading ? styles.display_hidden : '',
+  );
+
+  return (
+    <Fragment>
+      <span className={iconContainerStyles} />
+      <div className={childrenContainerStyle}>
+        <Typography tag="span" size={text} className={styles.button_text}>
+          {children}
+        </Typography>
+      </div>
+    </Fragment>
+  );
+};
+
+Loading.propTypes = {
+  isLoading: PropTypes.bool.isRequired,
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+};
+
+/**
+ * @author github @kikeztw
+ * @param {string} to -  Link prop for button, this property adds <a> tag at the same time as a button.
+ * @param {string} className -  Styles for the button.
+ * @param {bool}   isLoading -   Loading indicator for button.
+ * @param {string} type - Button type  default | primary | secondary.
+ * @param {string} htmlType - Set the original html type of button see:
+ *                         https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type.
+ */
+
+const Button = ({ to, children, className, isLoading, htmlType, isBlock, type, ...rest }) => {
+  const buttonStyles = componse(
+    styles.button,
+    styles[`button_${type}`],
+    className,
+    isBlock ? styles.button_block : '',
+  );
+
+  if (to && to.length) {
     return (
-      <BloomerButton
-        {...rest}
-        render={(props) => (
-          <Link {...props} to={to} className={componse(styles.button_primary, props.className)} />
-        )}>
-        {children}
-      </BloomerButton>
+      <Link {...rest} to={to} className={buttonStyles}>
+        <Loading isLoading={isLoading}>{children}</Loading>
+      </Link>
     );
   }
 
   return (
-    <BloomerButton
-      {...rest}
-      onClick={onClick}
-      className={className ? componse(styles.button_primary, className) : styles.button_primary}>
-      {children}
-    </BloomerButton>
+    <button type={htmlType} {...rest} className={buttonStyles}>
+      <Loading isLoading={isLoading}>{children}</Loading>
+    </button>
   );
 };
 
 Button.defaultProps = {
   to: '',
-  onClick: () => null,
   className: '',
+  isLoading: false,
+  type: 'default',
+  htmlType: 'button',
+  isBlock: false,
 };
 
 Button.propTypes = {
+  isBlock: PropTypes.bool,
+  htmlType: PropTypes.string,
+  type: PropTypes.oneOf(['default', 'primary', 'secondary']),
+  isLoading: PropTypes.bool,
   to: PropTypes.string,
-  onClick: PropTypes.func,
   className: PropTypes.string,
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };

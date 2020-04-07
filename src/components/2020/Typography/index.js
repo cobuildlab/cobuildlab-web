@@ -1,6 +1,5 @@
-import React, { memo } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { Title } from 'bloomer';
 import componse from '../../../utils/styles-componse';
 import styles from './css/index.module.scss';
 
@@ -23,27 +22,20 @@ const Typography = ({ children, size, hasTextAlign, className, tag }) => {
   });
 
   const result = componse(
-    styles.font, 
-    classNameSelect, 
-    className, 
-    fontWeightSelect
+    styles.font,
+    classNameSelect,
+    fontWeightSelect,
+    className,
+    hasTextAlign.length ? styles[`text_align_${hasTextAlign}`] : '',
   );
 
-  return (
-    <Title
-      tag={tag}
-      hasTextAlign={hasTextAlign}
-      className={result}>
-      {children}
-    </Title>
-  );
+  return React.createElement(tag, { className: result }, children);
 };
 
 Typography.defaultProps = {
   size: {
     default: {
-      level: 10,
-      fontWeight: 'bold',
+      // not config for default props
     },
   },
   tag: 'span',
@@ -59,4 +51,4 @@ Typography.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
 
-export default memo(Typography);
+export default React.memo(Typography);

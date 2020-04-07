@@ -7,6 +7,9 @@
 .testimonial-wrapper {
   background: $color-theme;
   padding-bottom: calc(40px + (120 - 40) * ((100vw - 320px) / (1920 - 320)));
+  & .sub-title{
+    margin-left: .5em;
+  }
 }
 .testimonial-slider {
   max-width: 720px;
@@ -38,14 +41,14 @@
         }
         .testimonial-title {
           font-weight: 700;
-          color: $color-black;
+          color: $color-dark;
           text-transform: capitalize;
           margin-bottom: 5px;
           font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1920 - 320)));
         }
         .testimonial-subtitle {
           font-weight: 400;
-          color: $color-black;
+          color: $color-dark;
           text-transform: capitalize;
           margin: 0;
           font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
@@ -180,12 +183,12 @@
 .testimonial-content:before {
   left: 15px;
   top: 15px;
-  background: url(../../../../assets/images/testimonial/left-box.png) no-repeat 0;
+  background: url(../../../../assets/images/testimonial/left-box-blue.png) no-repeat 0;
 }
 .testimonial-content:after {
   right: 15px;
   bottom: 15px;
-  background: url(../../../../assets/images/testimonial/right-box.png) no-repeat 0;
+  background: url(../../../../assets/images/testimonial/right-box-blue.png) no-repeat 0;
 }
 
 @keyframes bounce-1 {

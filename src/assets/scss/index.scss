@@ -7,11 +7,18 @@
   padding-bottom: calc(40px + (100 - 40) * ((100vw - 320px) / (1920 - 320)));
   position: relative;
 }
+
+.enterprise{ 
+  &-text-orange{
+    color: $cobuild-orange;
+  }
+}
+
 /* common css */
 .enterprise-body {
   background-color: $color-white;
   font-size: 14px;
-  color: $color-black;
+  color: $color-dark;
   width: 100%;
   position: relative;
   font-family: "Nunito", sans-serif;
@@ -129,11 +136,6 @@
   overflow: hidden;
 }
 
-// buttons
-.banner-btn-wrapper {
-  display: flex;
-}
-
 .button1 {
   background-color: #ffffff;
   border-radius: 100px;
@@ -224,7 +226,7 @@
   .site-subtitle {
     font-weight: 400;
     font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
-    color: $color-black;
+    color: $color-dark;
     margin-bottom: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
     display: inline-block;
     vertical-align: middle;
@@ -233,29 +235,23 @@
     padding: 7px 30px 5px;
   }
   .site-subtitle2 {
-    color: $color-defult1;
     font-size: calc(18px + (36 - 18) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 500;
     position: relative;
     margin-bottom: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
-    text-transform: capitalize;
   }
   .sitemain-subtitle {
     font-weight: 600;
     font-size: calc(24px + (42 - 24) * ((100vw - 320px) / (1920 - 320)));
-    color: $color-black;
     margin-bottom: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
     text-transform: capitalize;
-    span {
-      display: inline-block;
-      vertical-align: middle;
-    }
   }
   .site-dec {
     margin-bottom: 10px;
     text-transform: capitalize;
     max-width: 650px;
     margin: 0 auto;
+    line-height: 1.5;
   }
 }
 .about-content-block {
@@ -321,7 +317,6 @@
       margin: 0;
     }
   }
-  .sitemain-subtitle,
   .site-dec {
     color: $color-white;
   }

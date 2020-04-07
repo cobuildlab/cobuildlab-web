@@ -3,11 +3,11 @@
 /* video-wrapper css start */
 .video-wrapper {
   position: relative;
-  background: url(../../../../assets/images/video/bg-img.png) center no-repeat;
+  background: url(../../../../assets/images/video-back.jpg) center no-repeat;
   background-size: cover;
   .video-dec {
+    line-height: 1.5;
     margin-bottom: calc(15px + (50 - 15) * ((100vw - 320px) / (1920 - 320))) !important;
-    color: $color-white;
   }
   .video-btn {
     text-align: center;

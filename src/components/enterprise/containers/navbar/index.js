@@ -2,19 +2,16 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import { Container, Columns, Column } from 'bloomer';
-import Menu from '../menu';
+import Menu from '../Menu';
 import Image from '../../components/image';
-import logo from '../../../../assets/images/Logo.png';
+import logo from '../../../../assets/images/cobuild-logo.png';
 import componse from '../../../../utils/styles-componse';
 import styles from './css/index.module.scss';
-
-
 
 const Header = ({ children }) => {
   const [activeClass, setactiveClass] = useState(false);
 
   useEffect(() => {
-
     const handleScroll = (e) => {
       let scoll = null;
       if (window.scrollY === 0) {
@@ -28,36 +25,26 @@ const Header = ({ children }) => {
     if (typeof window !== 'undefined') {
       window.addEventListener('scroll', handleScroll);
     }
-   
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
 
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
-  const headerStyles = componse(styles.header, 
-    activeClass ? styles.sticky : ''
-  );
+  const headerStyles = componse(styles.header, activeClass ? styles.sticky : '');
 
   return (
     <div className={styles.app_header}>
-      <header className={headerStyles}>
-        {children}
-      </header>
+      <header className={headerStyles}>{children}</header>
     </div>
   );
 };
 
 Header.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
-  ]).isRequired,
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
 
-
-
-const  Navbar = () => (
+const Navbar = () => (
   <Header>
     <Container>
       <Columns isDisplay="flex" isMarginless>

@@ -54,9 +54,11 @@
 }
 
 .font{
+  line-height: 1.125;
   color: $navy;
   letter-spacing: 0;
   opacity: 1;
+  margin-bottom: .5em;
 
   @for $i from 1 through 13 {
     &_size_default_#{$i} { 
@@ -98,7 +100,7 @@
 
   &_normal{
     font-family: $font-regular !important;
-    font-weight: normal !important;
+    // font-weight: normal !important;
   }
 
   &_bold{
@@ -110,4 +112,20 @@
     font-family: $font-light !important;
     font-weight: lighter !important;
   }
+}
+
+.text_align{
+
+  &_left{
+    text-align: left;
+  }
+
+  &_centered{
+    text-align: center;
+  }
+
+  &_right{
+    text-align: right;
+  }
+
 }

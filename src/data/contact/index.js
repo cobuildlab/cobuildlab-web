@@ -1,7 +1,7 @@
-import Img1 from '../../assets/images/contact/animation/1.png';
-import Img2 from '../../assets/images/contact/animation/2.png';
-import Img4 from '../../assets/images/contact/animation/4.png';
-import Img5 from '../../assets/images/contact/animation/5.png';
+import Img1 from '../../assets/images/contact/animation/1-blue.png';
+import Img2 from '../../assets/images/contact/animation/2-blue.png';
+import Img4 from '../../assets/images/contact/animation/4-blue.png';
+import Img5 from '../../assets/images/contact/animation/5-blue.png';
 
 const ContactBackgroundImages = [
   {

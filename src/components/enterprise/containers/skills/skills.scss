@@ -9,7 +9,6 @@
 
 .skills-content-block {
   .skills-title {
-    color: $color-defult1;
     font-size: calc(20px + (36 - 20) * ((100vw - 320px) / (1920 - 320)));
     line-height: calc(32px + (46 - 32) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 500;
@@ -23,10 +22,9 @@
   .progress-outer-block {
     text-align: left;
     .progress-title {
-      color: $color-theme;
       position: relative;
       text-transform: capitalize;
-      margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
+      margin-bottom: 1.5em;
       font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
       font-weight: 400;
     }
@@ -36,7 +34,6 @@
         margin-bottom: 0;
       }
       .progressbar-title {
-        color: $color-black;
         font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
         font-weight: 400;
         position: relative;
@@ -54,7 +51,6 @@
             &:after {
               content: "";
               font-weight: 400;
-              color: $color-defult;
               font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1920 - 320)));
               display: block;
               width: auto;

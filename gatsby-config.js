@@ -11,13 +11,9 @@ module.exports = {
     twitterHandle: '@cobuildlab',
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        implementation: require('sass'),
-      },
-    },
+    `gatsby-plugin-sass`,
     `gatsby-transformer-json`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
