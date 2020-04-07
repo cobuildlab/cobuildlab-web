@@ -5,7 +5,7 @@ import H2 from '../../Typography/H2';
 import H3 from '../../Typography/H3';
 import { TextOrange } from '../../Typography/TextHelpers';
 import Paragraph from '../../Typography/Paragraph';
-import Portfolio from '../../Portfolio/Portfolio';
+import CustomerSuccessStories from '../../CustomerSuccessStories/CustomerSuccessStories';
 
 const Wrapper = styled.div`
   text-align: center;
@@ -42,7 +42,7 @@ const EnterprisePortfolio = () => {
           </SubTitle>
           <Paragraph>Learn from ideas created at Cobuild Lab.</Paragraph>
         </Wrapper>
-        <Portfolio />
+        <CustomerSuccessStories />
       </Container>
     </Section>
   );

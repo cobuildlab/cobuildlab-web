@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Container } from 'bloomer';
 import H2 from '../Typography/H2';
-import Portfolio from '../Portfolio/Portfolio';
+import CustomerSuccessStories from '../CustomerSuccessStories/CustomerSuccessStories';
 import background from '../../resources/2020/home/background.svg';
 
 const Wrapper = styled.div`
@@ -32,7 +32,7 @@ const HomePagePortfolio = () => (
     </OverlayBackground>
     <Container>
       <Titlte>Customer Success Stories</Titlte>
-      <Portfolio />
+      <CustomerSuccessStories />
     </Container>
   </Wrapper>
 );

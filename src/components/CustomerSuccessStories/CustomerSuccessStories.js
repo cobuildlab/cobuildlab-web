@@ -3,17 +3,17 @@
 import React from 'react';
 import { Columns, Column } from 'bloomer';
 import styled from 'styled-components';
-import PortfolioHover from './PortfolioHover';
-import { PortfolioDescription } from './PortfolioHover';
+import Hover from './Hover';
+import { Description } from './Hover';
 
 import data from '../../data/portfolio';
 
-const PortfolioContainer = styled.div`
+const Container = styled.div`
   margin-bottom: 30px;
   text-align: center;
 `;
 
-const PorftfolioWrapper = styled.div`
+const Wrapper = styled.div`
   position: relative;
   overflow: hidden;
   display: inline-block;
@@ -21,7 +21,7 @@ const PorftfolioWrapper = styled.div`
   border-radius: 5px;
   cursor: pointer;
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     right: 0;
     bottom: 0;
@@ -33,7 +33,7 @@ const PorftfolioWrapper = styled.div`
     opacity: 0.5;
   }
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     height: 0;
@@ -50,7 +50,7 @@ const PorftfolioWrapper = styled.div`
     &:after {
       opacity: 0;
     }
-    ${PortfolioDescription}{
+    ${Description} {
       opacity: 1;
       height: 65px;
       margin-top: calc(8px + (15 - 8) * ((100vw - 320px) / (1920 - 320)));
@@ -66,23 +66,24 @@ const Image = styled.img`
   height: 100%;
 `;
 
-
-const Portfolio = () => {
-
+const CustomerSuccessStories = () => {
   const items = data.map((data, i) => (
     <Column isSize={{ mobile: 6, tablet: 4 }} key={data.id}>
-      <PortfolioContainer>
-        <PorftfolioWrapper>
-          <Image src={data.img} alt="" title=""  />
-          <PortfolioHover title={data.subtitle} description={data.subcontent} />
-        </PorftfolioWrapper>
-      </PortfolioContainer>
+      <Container>
+        <Wrapper>
+          <Image src={data.img} alt="" title="" />
+          <Hover title={data.subtitle} description={data.subcontent} />
+        </Wrapper>
+      </Container>
     </Column>
   ));
 
   return (
-    <Columns isDisplay="flex" isMultiline> {items}</Columns>
+    <Columns isDisplay="flex" isMultiline>
+      {' '}
+      {items}
+    </Columns>
   );
 };
 
-export default Portfolio;
+export default CustomerSuccessStories;

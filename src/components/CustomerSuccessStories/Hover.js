@@ -4,8 +4,7 @@ import React from 'react';
 import Proptypes from 'prop-types';
 import styled from 'styled-components';
 
-
-const PortfolioHoverContainer = styled.div`
+const HoverContainer = styled.div`
   position: absolute;
   text-align: left;
   padding: calc(10px + (30 - 10) * ((100vw - 320px) / (1920 - 320)));
@@ -20,7 +19,7 @@ const PortfolioHoverContainer = styled.div`
   color: #fff;
 `;
 
-const PortfolioTitle = styled.div`
+const Title = styled.div`
   font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
   font-weight: 400;
   display: block;
@@ -29,8 +28,7 @@ const PortfolioTitle = styled.div`
   margin-bottom: 0;
 `;
 
-
-export const PortfolioDescription = styled.div`
+export const Description = styled.div`
   font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
   font-weight: 500;
   opacity: 0;
@@ -39,17 +37,16 @@ export const PortfolioDescription = styled.div`
   transition: all 0.5s ease-in-out;
 `;
 
-
-const PortfolioHover = ({ title, description }) => (
-  <PortfolioHoverContainer>
-    <PortfolioTitle>{title}</PortfolioTitle>
-    <PortfolioDescription>{description}</PortfolioDescription>
-  </PortfolioHoverContainer>
+const Hover = ({ title, description }) => (
+  <HoverContainer>
+    <Title>{title}</Title>
+    <Description>{description}</Description>
+  </HoverContainer>
 );
 
-PortfolioHover.propTypes = {
+Hover.propTypes = {
   title: Proptypes.string.isRequired,
-  description: Proptypes.string.isRequired
+  description: Proptypes.string.isRequired,
 };
 
-export default PortfolioHover;
+export default Hover;
