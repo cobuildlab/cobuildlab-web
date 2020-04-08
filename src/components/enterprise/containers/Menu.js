@@ -127,7 +127,10 @@ const Menu = () => {
             <MenuLink href="#project">Project</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
-            <MenuLink href="#enterprise-portfolio">Portfolio</MenuLink>
+            <MenuLink href="#enterprise-css">Case Studies</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#testimonials">Testimonials</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
             <MenuLink href="#contact">Contact</MenuLink>

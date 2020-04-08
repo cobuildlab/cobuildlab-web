@@ -9,16 +9,16 @@ import logoGc from '../../../../assets/images/logos/gc-logo.png';
 import logoFacebookReact from '../../../../assets/images/logos/facebook-react-logo.png';
 import logoAndroid from '../../../../assets/images/logos/android-logo.png';
 import logoIOS from '../../../../assets/images/logos/ios-logo.png';
-// import logoReact from '../../../../assets/images/logos/react-logo.png';
-// import logoNodeJs from '../../../../assets/images/logos/nodejs-logo.png';
-// import logoPython from '../../../../assets/images/logos/python-logo.png';
-// import logoAndroidIOS from '../../../../assets/images/logos/android-ios-logo.png';
+import H4 from '../../../Typography/H4';
 
 /**
+ * Brand Component.
  *
+ * @returns {*} - The Brand Component.
+ * @class
  */
 function Brand() {
-  const BRANDS = [logoIOS,logoAndroid,logoFacebookReact,logoAws,logoGc,logo8Base ];
+  const BRANDS = [logoIOS, logoAndroid, logoFacebookReact, logoAws, logoGc, logo8Base];
 
   const settings = {
     autoplaySpeed: 3000,
@@ -58,6 +58,10 @@ function Brand() {
       <div className="brand-slider">
         <div className="enterprise-section" style={{ paddingTop: 0 }}>
           <Container>
+            <H4>
+              Battle proof <span className="enterprise-text-orange sub-title">Stack</span>{' '}
+            </H4>
+
             <Slider {...settings}>
               {BRANDS.map((logo, i) => (
                 <div className="brand-item" key={i}>
