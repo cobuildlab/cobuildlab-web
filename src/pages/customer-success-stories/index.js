@@ -38,7 +38,6 @@ class BlogIndex extends React.Component {
 
   render() {
     const siteTitle = 'Customer Success Stories - Miami Labs | Cobuild Lab';
-    const siteDescription = get(this, 'props.data.site.siteMetadata.description');
     const posts = get(this, 'props.data.allMarkdownRemark.edges');
 
     return (

@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react';
 import { graphql } from 'gatsby';
-import get from 'lodash/get';
 import Helmet from 'react-helmet';
 import { Columns, Column, Subtitle } from 'bloomer';
 import 'bulma';
@@ -29,11 +28,6 @@ const Section = Styled.div`
 class Services extends Component {
   render() {
     const siteTitle = 'Services | Cobuild Lab';
-    const siteDescription = get(
-      this,
-      'props.data.site.siteMetadata.description'
-    );
-
     return (
       <LandingPageLayout
         withFooter
@@ -135,9 +129,9 @@ class Services extends Component {
                 Let our experience drive the success of your projects.
               </SubTitle2>
               <Paragraph>
-                Our senior's product managers and agile coaches work with you to build and deliver software
-                effectively. Your team would be transformed through education of the most appropriate agile techniques
-                and best practices
+                Our senior&rsquo;s product managers and agile coaches work with you to build and
+                deliver software effectively. Your team would be transformed through education of
+                the most appropriate agile techniques and best practices
               </Paragraph>
             </Column>
           </Columns>

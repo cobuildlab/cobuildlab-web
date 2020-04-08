@@ -112,7 +112,10 @@ const H4Blue = (props) => (
 );
 
 /**
- * @param props
+ *
+ * @param props - The Props.
+ * @returns {*} - The Read More Component.
+ * @class
  */
 function ReadMore(props) {
   return (

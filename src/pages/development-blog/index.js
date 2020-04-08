@@ -13,7 +13,6 @@ import {
   Column,
   Card,
   Content,
-  Tag,
 } from 'bloomer';
 import { Icon } from 'react-icons-kit';
 import { clockO } from 'react-icons-kit/fa/clockO';
