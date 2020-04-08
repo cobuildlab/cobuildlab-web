@@ -12,7 +12,7 @@ import {
 } from 'bloomer';
 // import Img from "gatsby-image"
 import Image from '../../components/image';
-import ContactImg from '../../../../assets/images/contact/cobuild-contact4.png';
+import ContactImg from '../../../../assets/images/contact/cobuild-form-image_4x.png';
 import Button from '../../../2020/Button';
 import Typography from '../../../2020/Typography';
 import ContactBackgroundImages from '../../../../data/contact';
