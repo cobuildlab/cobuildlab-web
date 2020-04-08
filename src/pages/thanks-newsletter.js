@@ -18,6 +18,7 @@ import '../assets/fonts/Lato-Italic.ttf';
 import '../assets/fonts/Lato-Light.ttf';
 import '../assets/fonts/Lato-LightItalic.ttf';
 import '../assets/fonts/Lato-Regular.ttf';
+import { PropTypes } from 'prop-types';
 
 class Index extends React.Component {
   constructor(props) {
@@ -27,16 +28,13 @@ class Index extends React.Component {
       lastName: '',
       email: '',
       comment: '',
-      landingName: 'Cobuild Lab'
+      landingName: 'Cobuild Lab',
     };
   }
 
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title');
-    const siteDescription = get(
-      this,
-      'props.data.site.siteMetadata.description'
-    );
+    const siteDescription = get(this, 'props.data.site.siteMetadata.description');
 
     return (
       <Layout location={this.props.location}>
@@ -57,43 +55,34 @@ class Index extends React.Component {
                   <Link
                     className="button is-primary is-medium is-rounded"
                     to="/"
-                    style={{ marginRight: 15 }}
-                  >
+                    style={{ marginRight: 15 }}>
                     Go Back
                   </Link>
                   <Link
                     className="button is-primary is-medium is-rounded"
                     to="/blog"
-                    style={{ marginRight: 15 }}
-                  >
+                    style={{ marginRight: 15 }}>
                     Blog
                   </Link>
                 </Column>
               </Columns>
             </Container>
 
-            <Container
-              isFluid
-              className="is-hidden-desktop is-hidden-tablet-only"
-            >
+            <Container isFluid className="is-hidden-desktop is-hidden-tablet-only">
               <Title className="title-logo-mobile">Cobuild Lab</Title>
-              <Title className="subtitle-logo-mobile">
-                Thanks for Subscribing!
-              </Title>
+              <Title className="subtitle-logo-mobile">Thanks for Subscribing!</Title>
               <Columns>
                 <Column isSize="1/2">
                   <Link
                     className="button is-primary is-medium is-rounded"
                     to="/"
-                    style={{ marginRight: 15 }}
-                  >
+                    style={{ marginRight: 15 }}>
                     Go Back
                   </Link>
                   <Link
                     className="button is-primary is-medium is-rounded"
                     to="/blog"
-                    style={{ marginRight: 15 }}
-                  >
+                    style={{ marginRight: 15 }}>
                     Blog
                   </Link>
                 </Column>
@@ -104,12 +93,16 @@ class Index extends React.Component {
         {/*HEADER*/}
 
         {/*Section Where we are? and Write Us! */}
-        <Contact/>
+        <Contact />
         {/*Section Where we are? and Write Us! */}
       </Layout>
     );
   }
 }
+
+Index.propTypes = {
+  location: PropTypes.object.isRequired,
+};
 
 export default Index;
 
