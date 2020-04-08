@@ -4,24 +4,6 @@ import get from 'lodash/get';
 import Helmet from 'react-helmet';
 import Layout from '../../../components/layout';
 import BlogIndexAlt from '../../../components/BlogIndexAlt';
-import {
-  Hero,
-  HeroBody,
-  Container,
-  Title,
-  HeroFooter,
-  Tabs,
-  TabList,
-  Tab,
-  TabLink,
-  Subtitle,
-  Columns,
-  Column,
-  Card,
-  CardContent,
-  Content,
-  Tag,
-} from 'bloomer';
 
 class ToolsIndex extends React.Component {
   render() {

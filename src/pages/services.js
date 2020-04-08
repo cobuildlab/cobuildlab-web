@@ -1,17 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import get from 'lodash/get';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
-import {
-  Hero,
-  HeroBody,
-  Container,
-  Title,
-  Subtitle,
-  Columns,
-  Column
-} from 'bloomer';
+import { Hero, HeroBody, Container, Title, Subtitle, Columns, Column } from 'bloomer';
 import { Icon } from 'react-icons-kit';
 import { checkmark } from 'react-icons-kit/icomoon/checkmark';
 import 'bulma';
@@ -29,11 +20,6 @@ import '../assets/fonts/Lato-Regular.ttf';
 class ServicesIndex extends React.Component {
   render() {
     const siteTitle = 'Services | Cobuild Lab';
-    const siteDescription = get(
-      this,
-      'props.data.site.siteMetadata.description'
-    );
-
     return (
       <Layout>
         <Helmet
@@ -50,8 +36,8 @@ class ServicesIndex extends React.Component {
                   <Title isSize={1} hasTextColor="black">
                     Our Services
                   </Title>
-                  <br/>
-                  <hr/>
+                  <br />
+                  <hr />
                 </Column>
               </Columns>
             </Container>
@@ -62,25 +48,23 @@ class ServicesIndex extends React.Component {
             <Columns>
               <Column>
                 <Title isSize={2} hasTextColor="black" className="mb-2">
-                  <Icon size={32} icon={checkmark}/>
+                  <Icon size={32} icon={checkmark} />
                   Cobuild: Product Development
                 </Title>
                 <Subtitle isSize={4}>
                   <strong>
-                    Cobuild Is the process of transforming an idea in a sustainable
-                    business, through the combination and collaboration of the areas
-                    of Lean Entrepreneurship, Business Strategy, Technological
-                    Innovation, and Exponential Growth.
+                    Cobuild Is the process of transforming an idea in a sustainable business,
+                    through the combination and collaboration of the areas of Lean Entrepreneurship,
+                    Business Strategy, Technological Innovation, and Exponential Growth.
                   </strong>
                 </Subtitle>
                 <p>
-                  In this process, we evaluate your idea and help you shape it
-                  into a Value Proposition, and test it if necessary. After that,
-                  we design together the first version of your product with the
-                  purpose of Market Validation, or Product Market Fit to test if
-                  we satisfy the need that we intend to satisfy and to acquire our
-                  first Customers. From this point and forward we focus on
-                  improving the experience, acquire customer and growth.
+                  In this process, we evaluate your idea and help you shape it into a Value
+                  Proposition, and test it if necessary. After that, we design together the first
+                  version of your product with the purpose of Market Validation, or Product Market
+                  Fit to test if we satisfy the need that we intend to satisfy and to acquire our
+                  first Customers. From this point and forward we focus on improving the experience,
+                  acquire customer and growth.
                 </p>
               </Column>
             </Columns>
@@ -88,27 +72,24 @@ class ServicesIndex extends React.Component {
             <Columns>
               <Column>
                 <Title isSize={2} hasTextColor="black" className="mb-2">
-                  <Icon size={32} icon={checkmark}/>
+                  <Icon size={32} icon={checkmark} />
                   Software Development
                 </Title>
                 <Subtitle isSize={5}>
                   <strong>
-                    We transform requirements into computer programs. We specialize
-                    in building websites, web applications, and mobiles
-                    applications.
+                    We transform requirements into computer programs. We specialize in building
+                    websites, web applications, and mobiles applications.
                   </strong>
                 </Subtitle>
                 <p>
-                  Software development is the process of conceiving, specifying,
-                  designing, programming, documenting, testing, and bug fixing
-                  involved in creating and maintaining applications, frameworks,
-                  or other software components. Software development is a process
-                  of writing and maintaining the source code, but in a broader
-                  sense, it includes all that is involved between the conception
-                  of the desired software through to the final manifestation of
-                  the software, sometimes in a planned and structured process With
-                  our streamlined, lean and phased Process we achieve incredible
-                  results. Since day one, our technique is focused on early
+                  Software development is the process of conceiving, specifying, designing,
+                  programming, documenting, testing, and bug fixing involved in creating and
+                  maintaining applications, frameworks, or other software components. Software
+                  development is a process of writing and maintaining the source code, but in a
+                  broader sense, it includes all that is involved between the conception of the
+                  desired software through to the final manifestation of the software, sometimes in
+                  a planned and structured process With our streamlined, lean and phased Process we
+                  achieve incredible results. Since day one, our technique is focused on early
                   results and transparent communication.
                 </p>
               </Column>
@@ -117,11 +98,12 @@ class ServicesIndex extends React.Component {
             <Columns>
               <Column>
                 <Title isSize={2} hasTextColor="black" className="mb-2">
-                  <Icon size={32} icon={checkmark}/> Training
+                  <Icon size={32} icon={checkmark} /> Training
                 </Title>
                 <Subtitle isSize={5}>
                   <strong>
-                    With over 10 years of experience developing web and mobile applications with our agile techniques we can drive success to your Software Development Team.
+                    With over 10 years of experience developing web and mobile applications with our
+                    agile techniques we can drive success to your Software Development Team.
                   </strong>
                 </Subtitle>
                 <p>
@@ -139,17 +121,15 @@ class ServicesIndex extends React.Component {
             <Columns>
               <Column>
                 <Title isSize={2} hasTextColor="black" className="mb-2">
-                  <Icon size={32} icon={checkmark}/> Agile Project Management
+                  <Icon size={32} icon={checkmark} /> Agile Project Management
                 </Title>
                 <Subtitle isSize={5}>
-                  <strong>
-                    Let our experience drive the success of your projects.
-                  </strong>
+                  <strong>Let our experience drive the success of your projects.</strong>
                 </Subtitle>
                 <p>
-                  Our senior's product managers and agile coaches work with you to build and deliver software
-                  effectively. Your team would be transformed through education of the most appropriate agile techniques
-                  and best practices
+                  Our senior&rsquo;s product managers and agile coaches work with you to build and
+                  deliver software effectively. Your team would be transformed through education of
+                  the most appropriate agile techniques and best practices
                 </p>
               </Column>
             </Columns>

@@ -1,9 +1,11 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 import Image from '../../components/image';
 import Slider from 'react-slick';
 import Typography from '../../../2020/Typography';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import './testimonial.scss';
+import { graphql, useStaticQuery } from 'gatsby';
 
 const CarouselSlider = () => {
   const TestimonialList = useStaticQuery(graphql`
@@ -32,6 +34,7 @@ const CarouselSlider = () => {
     slidesToScroll: 1,
     arrows: false,
   };
+
   return (
     <div className="testimonial-slider">
       <div className="testimonial-outer-box">

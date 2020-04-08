@@ -7,9 +7,9 @@ import UniqueValueProps from '../../components/enterprise/containers/unique-valu
 import Video from '../../components/enterprise/containers/video';
 import Skills from '../../components/enterprise/containers/skills';
 import Project from '../../components/enterprise/containers/project';
-import Portfolio from '../../components/enterprise/containers/portfolio';
-// import Testimonial from '../../components/enterprise/containers/testimonial';
-import Contact from '../../components/enterprise/containers/contact';
+import EnterpriseCustomerSuccessStories from '../../components/enterprise/containers/EnterpriseCustomerSuccessStories';
+import Testimonial from '../../components/enterprise/containers/testimonial/Testimonial';
+import Contact from '../../components/enterprise/containers/contact/ContactEnterprise';
 import Brand from '../../components/enterprise/containers/brands';
 import Footer from '../../components/enterprise/containers/footer';
 import CopyRight from '../../components/enterprise/containers/copyright_text';
@@ -27,8 +27,8 @@ const IndexPage = () => {
         <Video />
         <Skills />
         <Project />
-        <Portfolio />
-        {/*<Testimonial />*/}
+        <EnterpriseCustomerSuccessStories />
+        <Testimonial />
         <Contact />
         <Brand />
         <Footer />

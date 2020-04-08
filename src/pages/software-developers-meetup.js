@@ -17,6 +17,7 @@ import '../assets/fonts/Lato-LightItalic.ttf';
 import '../assets/fonts/Lato-Regular.ttf';
 import { ClipLoader } from 'react-spinners';
 import meetupImage from '../resources/meetup.jpeg';
+import { PropTypes } from 'prop-types';
 
 class Index extends React.Component {
   componentDidMount() {
@@ -108,6 +109,10 @@ class Index extends React.Component {
     );
   }
 }
+
+Index.propTypes = {
+  location: PropTypes.object.isRequired,
+};
 
 export default Index;
 

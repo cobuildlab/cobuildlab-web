@@ -29,17 +29,8 @@ import '../assets/fonts/Lato-Light.ttf';
 import '../assets/fonts/Lato-LightItalic.ttf';
 import '../assets/fonts/Lato-Regular.ttf';
 
-import {
-  Hero,
-  HeroBody,
-  Container,
-  Title,
-  Columns,
-  Column,
-  Card,
-  CardContent,
-  Content,
-} from 'bloomer';
+import { Hero, Container, Title, Columns, Column, Card, CardContent, Content } from 'bloomer';
+import PropTypes from 'prop-types';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -169,6 +160,11 @@ class BlogPostTemplate extends React.Component {
 }
 
 export default BlogPostTemplate;
+
+BlogPostTemplate.propTypes = {
+  data: PropTypes.object.isRequired,
+  pageContext: PropTypes.object.isRequired,
+};
 
 export const pageQuery = graphql`
   query($slug: String!) {
