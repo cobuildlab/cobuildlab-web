@@ -8,9 +8,9 @@ import Header from '../../components/2020/Header';
 import HeroBodyContent from '../../components/2020/Hero';
 import Service from '../../components/2020/Service';
 import BusinessValue from '../../components/2020/BusinessValue';
-import HomePagePortfolio from '../../components/2020/HomePagePortfolio';
+import HomePageCustomerSuccessStories from '../../components/2020/HomePageCustomerSuccessStories';
 import OurTeam from '../../components/2020/OurTeam';
-import Contact from '../../components/2020/Contact';
+import Contact from '../../components/2020/HomePageContact';
 import Newsletter from '../../components/2020/NewsLetter';
 
 import 'react-toastify/dist/ReactToastify.min.css';
@@ -56,16 +56,16 @@ export default class HomePage extends PureComponent {
         <Section>
           <BusinessValue />
         </Section>
-        <Section className="section-not-padding">
-          <HomePagePortfolio />
+        <Section>
+          <HomePageCustomerSuccessStories />
         </Section>
-        <Section className="section-not-padding">
+        <Section isPaddingless>
           <OurTeam />
         </Section>
         <Section>
           <Contact />
         </Section>
-        <Section className="section-bg-white">
+        <Section isPaddingless>
           <Newsletter />
         </Section>
       </Layout>

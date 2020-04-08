@@ -1,58 +1,22 @@
-import img1 from '../../assets/images/testimonial/1.png';
-import img2 from '../../assets/images/testimonial/2.png';
-import img3 from '../../assets/images/testimonial/3.png';
-import img4 from '../../assets/images/testimonial/4.png';
-import img5 from '../../assets/images/testimonial/5.png';
-import img6 from '../../assets/images/testimonial/6.png';
+import img1 from '../../assets/images/testimonial/andres-wegacha.jpeg.png';
+import img2 from '../../assets/images/testimonial/ale.jpg.png';
 
 const Testimonialdata = [
   {
     id: 1,
-    title: 'John one',
-    subtitle: 'Client of example Project',
+    title: 'Andres Aguerrevere',
+    subtitle: 'Internal Dashboard Dev for Digital Marketing Agency',
     img: img1,
     content:
-      'Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web                 designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have                  scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book.',
+      'Cobuild Lab Inc performed admirably in every aspect of the engagement, delivering a high-quality final product. Communicative and dedicated, the team developed a good understanding of the project and exceeded expectations in terms of quality and work ethic.',
   },
   {
     id: 2,
-    title: 'Innovatory Two',
-    subtitle: 'Wed Censtoriya',
+    title: 'Alejandro Sanchez',
+    subtitle: 'Jobs Marketplace Mobile App Dev for Hospitality Platform',
     img: img2,
     content:
-      'Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web                 designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have                  scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book.',
-  },
-  {
-    id: 3,
-    title: 'John three',
-    subtitle: 'Client of example Project',
-    img: img3,
-    content:
-      'Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web                 designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have                  scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book.',
-  },
-  {
-    id: 4,
-    title: 'John Four',
-    subtitle: 'Client of example Project',
-    img: img4,
-    content:
-      'Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web                 designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have                  scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book.',
-  },
-  {
-    id: 5,
-    title: 'John five',
-    subtitle: 'Client of example Project',
-    img: img5,
-    content:
-      'Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web                 designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have                  scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book.',
-  },
-  {
-    id: 6,
-    title: 'John six',
-    subtitle: 'Client of example Project',
-    img: img6,
-    content:
-      'Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web                 designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have                  scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book.',
+      'Cobuild Lab Inc delivered the product and continues to provide support to facilitate the release of new versions. The team identifies platform challenges and provides solutions to build a high-quality final product. They offer cost-effective services, which leads to continued collaboration.',
   },
 ];
 
