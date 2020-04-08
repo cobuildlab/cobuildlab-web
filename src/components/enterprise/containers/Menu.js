@@ -13,7 +13,7 @@ const BurgerIcon = styled.span`
   position: relative;
   margin-right: 15px;
   transition: all 0.5s ease-in-out;
-  background-color: #E76C29;
+  background-color: #e76c29;
   &:after,
   &:before {
     content: '';
@@ -23,7 +23,7 @@ const BurgerIcon = styled.span`
     width: 36px;
     height: 2px;
     transition: all 0.5s ease-in-out;
-    background-color: #E76C29;
+    background-color: #e76c29;
   }
   &:after {
     top: auto;
@@ -41,7 +41,7 @@ const ToggleContainer = styled.span`
   font-size: 1.25rem;
   line-height: 1;
   cursor: pointer;
-  &:hover{
+  &:hover {
     & ${BurgerIcon}:before {
       width: 24px;
     }
@@ -52,13 +52,13 @@ const ToggleContainer = styled.span`
 `;
 
 const MenuTitle = styled.span`
-  color: #264A60;
+  color: #264a60;
   line-height: 40px;
   margin: 0;
   display: inline-block;
   vertical-align: middle;
   font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -69,7 +69,7 @@ const MenuWrapper = styled.ul`
 
 const MenuItem = styled.li`
   width: 100%;
-  color: #264A60;
+  color: #264a60;
   line-height: 40px;
   margin: 0;
   display: inline-block;
@@ -79,17 +79,16 @@ const MenuItem = styled.li`
 `;
 
 const MenuLink = styled(AnchorLink)`
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   display: block;
   text-transform: uppercase;
   font-size: 16px;
   color: inherit;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
   &:hover {
-    color: #E76C29
+    color: #e76c29;
   }
 `;
-
 
 const Menu = () => {
   const [isVisible, setVisible] = useState(false);
@@ -107,49 +106,31 @@ const Menu = () => {
       <Drawer visible={isVisible} onClose={handleOpen}>
         <MenuWrapper>
           <MenuItem onClick={handleOpen}>
-            <MenuLink href='#banner'>
-              Home
-            </MenuLink>
+            <MenuLink href="#banner">Home</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
-            <MenuLink href='#services'>
-              Service
-            </MenuLink>
+            <MenuLink href="#services">Service</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
-            <MenuLink href='#about'>
-              About
-            </MenuLink>
+            <MenuLink href="#about">About</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
-            <MenuLink href='#unique-value-props'>
-              OUR MAIN MISSION
-            </MenuLink>
+            <MenuLink href="#unique-value-props">OUR MAIN MISSION</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
-            <MenuLink href='#video'>
-              Video
-            </MenuLink>
+            <MenuLink href="#video">Video</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
-            <MenuLink href='#skills'>
-              Skills
-            </MenuLink>
+            <MenuLink href="#skills">Skills</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
-            <MenuLink href='#project'>
-              Project
-            </MenuLink>
+            <MenuLink href="#project">Project</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
-            <MenuLink href='#customer-success-stories'>
-              Portfolio
-            </MenuLink>
+            <MenuLink href="#enterprise-portfolio">Portfolio</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
-            <MenuLink href='#contact'>
-              Contact
-            </MenuLink>
+            <MenuLink href="#contact">Contact</MenuLink>
           </MenuItem>
         </MenuWrapper>
       </Drawer>
