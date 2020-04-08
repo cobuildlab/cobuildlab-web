@@ -4,6 +4,16 @@ import Button from './Button';
 import { navigate, Link } from 'gatsby';
 import Loading from '../Loading';
 import { toast } from 'react-toastify';
+import LandingFormBadges from './LandingFormBadges';
+import styled from 'styled-components';
+
+const Box = styled.div`
+  background-color: #fff;
+  box-shadow: 0px 8px 30px #264a6017;
+  width: 100%;
+  heigth: 100%;
+  padding: 1.25rem;
+`;
 
 export default class NewLandingForm extends Component {
   constructor(props) {
@@ -111,89 +121,92 @@ export default class NewLandingForm extends Component {
     const { landingName } = this.props;
     const { isLoading } = this.state;
     return (
-      <Container>
-        <div className="colunm is-6 has-text-centered">
-          <Title>
-            Contact us for a <span className="free">FREE</span> <br /> consultation!
-          </Title>
-          <p>
-            Call Us to: <span className="free">(786) 991-3467</span> or <br /> fill out this form
-            and we will get in touch with you.
-          </p>
-        </div>
+      <Box>
+        <LandingFormBadges />
+        <Container>
+          <div className="colunm is-6 has-text-centered">
+            <Title>
+              Contact us for a <span className="free">FREE</span> <br /> consultation!
+            </Title>
+            <p>
+              Call Us to: <span className="free">(786) 991-3467</span> or <br /> fill out this form
+              and we will get in touch with you.
+            </p>
+          </div>
 
-        <form onSubmit={(e) => this.onSubmit(e, landingName)}>
-          <Field>
-            <Control>
-              <Input
-                type="text"
-                required
-                name="firstName"
-                placeholder="First Name"
-                value={this.state.firstName}
-                onChange={(e) => this.handleChange(e)}
-              />
-            </Control>
-          </Field>
-          <Field>
-            <Control>
-              <Input
-                type="text"
-                required
-                name="lastName"
-                placeholder="Last Name"
-                value={this.state.lastName}
-                onChange={(e) => this.handleChange(e)}
-              />
-            </Control>
-          </Field>
-          <Field>
-            <Control>
-              <Input
-                type="email"
-                required
-                name="email"
-                placeholder="Email"
-                value={this.state.email}
-                onChange={(e) => this.handleChange(e)}
-              />
-            </Control>
-          </Field>
-          <Field>
-            <Control>
-              <Input
-                type="number"
-                required
-                name="phone"
-                placeholder="Phone"
-                value={this.state.phone}
-                onChange={(e) => this.handleChange(e)}
-              />
-            </Control>
-          </Field>
-          <Field>
-            <Control>
-              <Input
-                type="text"
-                required
-                name="comment"
-                placeholder="Comment or Message"
-                value={this.state.comment}
-                onChange={(e) => this.handleChange(e)}
-              />
-            </Control>
-          </Field>
+          <form onSubmit={(e) => this.onSubmit(e, landingName)}>
+            <Field>
+              <Control>
+                <Input
+                  type="text"
+                  required
+                  name="firstName"
+                  placeholder="First Name"
+                  value={this.state.firstName}
+                  onChange={(e) => this.handleChange(e)}
+                />
+              </Control>
+            </Field>
+            <Field>
+              <Control>
+                <Input
+                  type="text"
+                  required
+                  name="lastName"
+                  placeholder="Last Name"
+                  value={this.state.lastName}
+                  onChange={(e) => this.handleChange(e)}
+                />
+              </Control>
+            </Field>
+            <Field>
+              <Control>
+                <Input
+                  type="email"
+                  required
+                  name="email"
+                  placeholder="Email"
+                  value={this.state.email}
+                  onChange={(e) => this.handleChange(e)}
+                />
+              </Control>
+            </Field>
+            <Field>
+              <Control>
+                <Input
+                  type="number"
+                  required
+                  name="phone"
+                  placeholder="Phone"
+                  value={this.state.phone}
+                  onChange={(e) => this.handleChange(e)}
+                />
+              </Control>
+            </Field>
+            <Field>
+              <Control>
+                <Input
+                  type="text"
+                  required
+                  name="comment"
+                  placeholder="Comment or Message"
+                  value={this.state.comment}
+                  onChange={(e) => this.handleChange(e)}
+                />
+              </Control>
+            </Field>
 
-          {isLoading ? <Loading loading={isLoading} /> : <Button htmlType="submit">Submit</Button>}
-        </form>
+            {isLoading ? <Loading loading={isLoading} /> : <Button htmlType="submit">Submit</Button>}
+          </form>
 
-        <div className="has-text-centered">
-          <Subtitle className=" mt-20">Privacy Policy</Subtitle>
-          <Link to="/privacy-policy" className="is-marginless">
-            Here you can access the information about how we treat your data.
-          </Link>
-        </div>
-      </Container>
+          <div className="has-text-centered">
+            <Subtitle className=" mt-20">Privacy Policy</Subtitle>
+            <Link to="/privacy-policy" className="is-marginless">
+              Here you can access the information about how we treat your data.
+            </Link>
+          </div>
+        </Container>
+      </Box>
     );
   }
 }
