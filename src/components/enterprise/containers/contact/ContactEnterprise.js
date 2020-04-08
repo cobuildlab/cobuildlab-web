@@ -6,7 +6,7 @@ import Paragraph from '../../../Typography/Paragraph';
 
 // import Img from "gatsby-image"
 import Image from '../../components/image';
-import contactImage from '../../../../assets/images/contact/cobuild-form-image_4x.jpg';
+import contactImage from '../../../../assets/images/contact/cobuild-form-image_4x.png';
 import ContactForm from '../../../2020/ContactForm';
 import AnimationBackground from './ContactAnimation';
 import H4 from '../../../Typography/H4';
