@@ -2,12 +2,12 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { HeroHeader, HeroBody, Hero, Section, Container, Columns, Column } from 'bloomer';
 
-import Layout from '../../components/2020/Layout';
-import Header from '../../components/2020/Header';
-import Banner from '../../components/CustomerSuccessStories/Banner';
-import Card from '../../components/CustomerSuccessStories/Card';
+import Layout from '../components/2020/Layout';
+import Header from '../components/2020/Header';
+import Banner from '../components/CustomerSuccessStories/Banner';
+import Card from '../components/CustomerSuccessStories/Card';
 
-import data from '../../data/portfolio';
+import data from '../data/portfolio';
 
 const siteTitle = 'Customer Success Stories - Miami Labs | Cobuild Lab';
 
