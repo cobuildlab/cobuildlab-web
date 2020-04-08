@@ -31,7 +31,7 @@ const SubTitle = styled(H3)`
   text-transform: capitalize;
 `;
 
-const EnterprisePortfolio = () => {
+const EnterpriseCustomerSuccessStories = () => {
   return (
     <Section isMarginless id="enterprise-portfolio">
       <Container isFluid>
@@ -48,4 +48,4 @@ const EnterprisePortfolio = () => {
   );
 };
 
-export default EnterprisePortfolio;
+export default EnterpriseCustomerSuccessStories;

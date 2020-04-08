@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import Hover from './Hover';
 import { Description } from './Hover';
 
-import data from '../../data/portfolio';
+import data from '../../data/customer-success-stories-data';
 
 const Container = styled.div`
   margin-bottom: 30px;

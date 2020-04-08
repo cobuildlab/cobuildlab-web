@@ -1,9 +1,9 @@
-import img1 from '../../assets/images/portfolio/jobcore.jpg';
-import img2 from '../../assets/images/portfolio/Massone.jpg';
-import img3 from '../../assets/images/portfolio/Weedmatch.jpg';
-import img4 from '../../assets/images/portfolio/4geeks.jpg';
-import img5 from '../../assets/images/portfolio/Payklever.jpg';
-import img6 from '../../assets/images/portfolio/Propagad.jpg';
+import img1 from '../assets/images/customers/jobcore.jpg';
+import img2 from '../assets/images/customers/Massone.jpg';
+import img3 from '../assets/images/customers/Weedmatch.jpg';
+import img4 from '../assets/images/customers/4geeks.jpg';
+import img5 from '../assets/images/customers/Payklever.jpg';
+import img6 from '../assets/images/customers/Propagad.jpg';
 
 const PortfolioData = [
   {

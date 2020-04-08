@@ -25,7 +25,7 @@ const OverlayBackground = styled.div`
   }
 `;
 
-const HomePagePortfolio = () => (
+const HomePageCustomerSuccessStories = () => (
   <Wrapper>
     <OverlayBackground>
       <img src={background} alt="b" />
@@ -37,4 +37,4 @@ const HomePagePortfolio = () => (
   </Wrapper>
 );
 
-export default HomePagePortfolio;
+export default HomePageCustomerSuccessStories;
