@@ -47,7 +47,7 @@ const CardHoverContainer = styled.div`
 const CardContainer = styled.div`
   position: relative;
   width: 100%;
-  height: 100%;
+  min-height: 300px;
   overflow: hidden;
   transition: transform 0.1s linear;
   cursor: pointer;
@@ -66,6 +66,9 @@ const CardContainer = styled.div`
     & ${CardDescription}, & ${ButtonWrapper} {
       opacity: 1;
     }
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 0.5em;
   }
 `;
 
