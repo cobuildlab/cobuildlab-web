@@ -3,7 +3,7 @@ import { Container, Columns, Column, Section } from 'bloomer';
 import Image from '../../components/image';
 import BannerImg1 from '../../../../assets/images/banner/group-banner-2.png';
 import Typrography from '../../../2020/Typography';
-import Button from '../../../2020/Button';
+import SmoothScrollingButton from '../../../SmoothScrollingButton';
 
 import './banner.scss';
 import anim1 from './1-blue.png';
@@ -102,7 +102,9 @@ const Banner = (props) => {
                       turn it into a custom software solution.
                     </Typrography>
                     <div className="banner-btn-wrapper">
-                      <Button to={'/enterprise#services'}>Explore Our Services</Button>
+                      <SmoothScrollingButton href="#services">
+                        Explore Our Services
+                      </SmoothScrollingButton>
                     </div>
                   </div>
                 </div>
