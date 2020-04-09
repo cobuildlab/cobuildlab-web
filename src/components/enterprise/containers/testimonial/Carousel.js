@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Item from './Item';
 import img1 from '../../../../assets/images/testimonial/andres-wegacha.jpeg';
 import img2 from '../../../../assets/images/testimonial/ale.jpg';
+import img3 from '../../../../assets/images/testimonial/robert-mitchell.png';
 import './testimonial.scss';
 
 const DATA = [
@@ -22,6 +23,16 @@ const DATA = [
     img: img2,
     content:
       'Cobuild Lab Inc delivered the product and continues to provide support to facilitate the release of new versions. The team identifies platform challenges and provides solutions to build a high-quality final product. They offer cost-effective services, which leads to continued collaboration.',
+  },
+  {
+    id: 3,
+    title: 'Robert Mitchell',
+    subtitle: 'Fieldworker Management for the HVAC Industry',
+    img: img3,
+    content:
+      'Coubild Labs software development process has delivered for our organization. Our proprietary software through developments allows our mobile workforce to Invoice Customers within a day or service. \n' +
+      '\n' +
+      'Cobuild Labs process gave our organizations an opportunity to transform our workflow and find productivity. We are justified in our decision to work with them after trying several out of the box software solutions. We view Cobuild Labs as an integral part of our technology strategy going forward.',
   },
 ];
 

@@ -6,6 +6,10 @@ import Button from './2020/Button';
 
 const Link = styled(AnchorLink)`
   color: inherit;
+  &:hover,
+  &:focus {
+    color: inherit;
+  }
 `;
 
 const SmoothScrollingButton = ({ href, children, type }) => (
