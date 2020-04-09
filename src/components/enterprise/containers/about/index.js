@@ -3,7 +3,7 @@ import { Container, Columns, Column, Section } from 'bloomer';
 import Image from '../../components/image';
 import AboutImg from '../../../../assets/images/banner/group-banner.png';
 import Typrography from '../../../2020/Typography';
-import Button from '../../../2020/Button';
+import SmoothScrollingButton from '../../../SmoothScrollingButton';
 import './about.scss';
 
 const About = () => {
@@ -62,7 +62,9 @@ const About = () => {
                   {/*  when an*/}
                   {/*</Typrography>*/}
                   <div className="about-button-container">
-                    <Button type="primary" to={'/enterprise#css'}>See Our Portfolio</Button>
+                    <SmoothScrollingButton href="#enterprise-css" type="primary">
+                      See Our Portfolio
+                    </SmoothScrollingButton>
                   </div>
                 </div>
               </div>
