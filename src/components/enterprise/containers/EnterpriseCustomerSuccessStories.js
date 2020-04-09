@@ -21,7 +21,7 @@ const SubTitle = styled(H3)`
 const EnterpriseCustomerSuccessStories = () => {
   return (
     <Section isMarginless id="enterprise-css">
-      <Container isFluid>
+      <Container>
         <Wrapper>
           <SubTitle>
             See Our <TextOrange>Case Studies</TextOrange>

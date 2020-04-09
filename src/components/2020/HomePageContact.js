@@ -11,14 +11,14 @@ import img from '../../resources/2020/home/coubuild-v.svg';
 const SubTitle = styled(Paragraph)`
   font-size: 20px;
   margin-bottom: 1em;
-  margin-top: .7em;
+  margin-top: 0.7em;
 `;
 
 const Description = styled(Paragraph)`
   font-size: 14px;
   & > span {
     display: block;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
   }
 `;
 
@@ -33,25 +33,21 @@ const RightColumn = styled(Column)`
 const HomePageContact = () => (
   <Container>
     <Columns isCentered>
-      <LeftColumn  isSize={{ mobile: 12, desktop: 6 }}>
+      <LeftColumn isSize={{ mobile: 12, desktop: 6 }}>
         <H2>Let’s Talk!</H2>
-        <SubTitle>
-          Your business takes off right now
-        </SubTitle>
+        <SubTitle>Your business takes off right now</SubTitle>
         <Description>
-          <TextOrange>
-            Where are we?
-          </TextOrange>
-          66 West Flagler St, Suite 900, Miami, Florida 33130 +1 (786) 991-3467 contact@cobuildlab.com
+          <TextOrange>Where are we?</TextOrange>
+          66 West Flagler St, Suite 900, Miami, Florida 33130 +1 (786) 991-3467
+          contact@cobuildlab.com
         </Description>
-        <ContactForm landingName="home-page"  />
+        <ContactForm landingName="home-page" />
       </LeftColumn>
-      <RightColumn  isSize={{ mobile: 12, desktop: 6 }}>
+      <RightColumn isSize={{ mobile: 12, desktop: 6 }}>
         <Image src={img} alt="contact form" />
       </RightColumn>
     </Columns>
   </Container>
 );
-
 
 export default HomePageContact;
