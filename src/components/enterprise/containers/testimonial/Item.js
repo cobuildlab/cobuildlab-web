@@ -126,7 +126,7 @@ const Container = styled.div`
   }
 `;
 
-const TestimonialItem = ({ description, title, subtitle, img }) => (
+const Item = ({ description, title, subtitle, img }) => (
   <Container>
     <Contenct>
       <AnimationBackground>
@@ -146,11 +146,11 @@ const TestimonialItem = ({ description, title, subtitle, img }) => (
   </Container>
 );
 
-TestimonialItem.propTypes = {
+Item.propTypes = {
   description: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
 };
 
-export default TestimonialItem;
+export default Item;
