@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container, Section } from 'bloomer';
-import CarouselSlider from './Carousel';
-import Typography from '../../../2020/Typography';
-import './testimonial.scss';
 import styled from 'styled-components';
 import H2 from '../../../Typography/H2';
+import H4 from '../../../Typography/H4';
+import { TextOrange, AlignCenter } from '../../../Typography/TextHelpers';
+import Carousel from './Carousel';
 
 const Title = styled(H2)`
   font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
@@ -18,19 +18,28 @@ const Title = styled(H2)`
   font-weight: 400;
 `;
 
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: calc(20px + 30 * (100vw - 320px) / 1600);
+`;
+
 const Testimonial = () => {
   return (
     <Section isPaddingless id={'testimonials'}>
       <div className="testimonial-wrapper gradient-color" id="testimonial">
         <div className="enterprise-section">
           <Container isFluid>
-            <div className="main-title-wrapper">
+            <Wrapper>
               <Title>Testimonals</Title>
-              <Typography className="sitemain-subtitle" tag="h3">
-                Clients<span className="enterprise-text-orange sub-title">Feedback</span>
-              </Typography>
-            </div>
-            <CarouselSlider />
+              <H4>
+                <AlignCenter>
+                  Clients<TextOrange>Feedback</TextOrange>
+                </AlignCenter>
+              </H4>
+            </Wrapper>
+            <Carousel />
           </Container>
         </div>
       </div>
