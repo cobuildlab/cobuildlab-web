@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Footer as FooterContainer } from 'bloomer';
-import Footer from '../Footer';
+import Footer from '../enterprise/containers/footer';
 import styled from 'styled-components';
-import '../../../assets/css/2020/common.scss';
+import '../../assets/css/2020/common.scss';
 import 'bulma';
 
 const Container = styled.div`
@@ -18,9 +17,7 @@ const Wrapper = styled.div`
 const Layout = ({ children }) => (
   <Container>
     <Wrapper>{children}</Wrapper>
-    <FooterContainer className="custom-footer">
-      <Footer />
-    </FooterContainer>
+    <Footer />
   </Container>
 );
 

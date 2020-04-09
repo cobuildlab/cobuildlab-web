@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
 import styled, { css } from 'styled-components';
 import Button from '../2020/Button';
 
@@ -44,15 +45,16 @@ const CardHoverContainer = styled.div`
   }
 `;
 
-const CardContainer = styled.div`
+const CardContainer = styled(Link)`
+  display: block;
   position: relative;
   width: 100%;
   min-height: 300px;
   overflow: hidden;
   transition: transform 0.1s linear;
   cursor: pointer;
-  z-index: ${({ isVisible }) => (isVisible ? '100' : '0')};
-  transform: ${({ isVisible }) => (isVisible ? 'scale(1.2)' : 'scale(1)')};
+  z-index: 0;
+  transform: scale(1);
   border: none;
   &:hover,
   &:focus {
@@ -90,10 +92,10 @@ const CardTitle = styled.div`
   }
 `;
 
-const CustomerSuccessStoriesCard = ({ isVisible, title, description, image }) => (
-  <CardContainer isVisible={isVisible}>
+const CustomerSuccessStoriesCard = ({ title, description, image, to }) => (
+  <CardContainer to={to}>
     <CardImage image={image} />
-    <CardHoverContainer isVisible={isVisible}>
+    <CardHoverContainer>
       <CardTitle>{title}</CardTitle>
       <CardDescription>{description}</CardDescription>
       <ButtonWrapper>
@@ -104,14 +106,14 @@ const CustomerSuccessStoriesCard = ({ isVisible, title, description, image }) =>
 );
 
 CustomerSuccessStoriesCard.defaultProps = {
-  isVisible: false,
+  to: 'customer-success-stories',
 };
 
 CustomerSuccessStoriesCard.propTypes = {
-  isVisible: PropTypes.bool,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
+  to: PropTypes.string,
 };
 
 export default CustomerSuccessStoriesCard;
