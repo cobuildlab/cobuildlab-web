@@ -1,12 +1,10 @@
 import React from 'react';
-import Image from '../../components/image';
 import Slider from 'react-slick';
-import Typography from '../../../2020/Typography';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import './testimonial.scss';
+import styled from 'styled-components';
+import Item from './Item';
 import img1 from '../../../../assets/images/testimonial/andres-wegacha.jpeg';
 import img2 from '../../../../assets/images/testimonial/ale.jpg';
+import './testimonial.scss';
 
 const DATA = [
   {
@@ -27,42 +25,52 @@ const DATA = [
   },
 ];
 
-const CarouselSlider = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-  };
+const Button = styled.button`
+  .slick-dots li:nth-child(1) & {
+    background: url(${({ index }) => (DATA[index] ? DATA[index].img : '')}) no-repeat center;
+  }
+  .slick-dots li:nth-child(2) & {
+    background: url(${({ index }) => (DATA[index] ? DATA[index].img : '')}) no-repeat center;
+  }
+  .slick-dots li:nth-child(3) & {
+    background: url(${({ index }) => (DATA[index] ? DATA[index].img : '')}) no-repeat center;
+  }
+  .slick-dots li:nth-child(4) & {
+    background: url(${({ index }) => (DATA[index] ? DATA[index].img : '')}) no-repeat center;
+  }
+  .slick-dots li:nth-child(5) & {
+    background: url(${({ index }) => (DATA[index] ? DATA[index].img : '')}) no-repeat center;
+  }
+  .slick-dots li:nth-child(6) & {
+    background: url(${({ index }) => (DATA[index] ? DATA[index].img : '')}) no-repeat center;
+  }
+`;
 
+const customPaging = (index) => <Button index={index} />;
+
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  customPaging,
+};
+
+const Testimonial = () => {
   return (
-    <div className="testimonial-slider">
+    <div className="testimonial-slider ">
       <div className="testimonial-outer-box">
         <Slider {...settings}>
           {DATA.map((data, index) => (
-            <div className="testimonial-item" key={index}>
-              <div className="testimonial-content">
-                <div className="animated-bg">
-                  <i></i>
-                  <i></i>
-                  <i></i>
-                </div>
-                <Typography className="testimonial-dec" tag="p">
-                  {data.content}
-                </Typography>
-                <Typography className="testimonial-title" tag="p">
-                  {data.title}
-                </Typography>
-                <Typography className="testimonial-subtitle" tag="p">
-                  {data.subtitle}
-                </Typography>
-                <div className="testimonial-images">
-                  <Image Path={data.img} />
-                </div>
-              </div>
-            </div>
+            <Item
+              key={data.title}
+              title={data.title}
+              subtitle={data.subtitle}
+              description={data.content}
+              img={data.img}
+            />
           ))}
         </Slider>
       </div>
@@ -70,4 +78,4 @@ const CarouselSlider = () => {
   );
 };
 
-export default CarouselSlider;
+export default Testimonial;
