@@ -5,7 +5,6 @@ import { play } from 'react-icons-kit/fa/play';
 import VideoPlay from './VideoPlay';
 import styled, { keyframes } from 'styled-components';
 
-
 const PlayIconContainer = styled.div`
   position: absolute;
   width: 70px;
@@ -17,7 +16,7 @@ const PlayIconContainer = styled.div`
 const SonarEmitter = styled.div`
   position: relative;
   margin: 0 auto;
-  width:  70px;
+  width: 70px;
   height: 70px;
   border-radius: 9999px;
   background-color: hsla(21, 79%, 53%, 1);
@@ -66,7 +65,7 @@ const VideoPlayIcon = ({ videoId }) => (
 );
 
 VideoPlayIcon.defaultProps = {
-  videoId: 'AlU5h2xrQ5M'
+  videoId: 'AlU5h2xrQ5M',
 };
 
 VideoPlayIcon.propTypes = {

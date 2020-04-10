@@ -13,6 +13,7 @@ import DetailCarousel from '../../components/customer-success-stories/DetailCaro
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
 import DetailImageLogo from '../../components/customer-success-stories/DetailImageLogo';
 import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
+import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
@@ -20,13 +21,12 @@ import img1 from '../../assets/images/customers/laptop-left.png';
 import img2 from '../../assets/images/customers/laptop-right.png';
 import logo from '../../assets/images/customers/collabtogrow-logo.png';
 
-
 const Collabtogrow = () => (
   <DetailLayout>
     <Section>
       <Container>
         <Columns isMultiline>
-          <Column isSize={{ mobile: 12, desktop: 6}}>
+          <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailTitle>collabtogrow™</DetailTitle>
             <DetailParagraph>
               is a Boston-based technology-enabled managed services and advisory firm that
@@ -218,6 +218,9 @@ const Collabtogrow = () => (
       <DetailCarousel />
     </Section>
 
+    <Section isPaddingless>
+      <DetailsOtherStories />
+    </Section>
   </DetailLayout>
 );
 

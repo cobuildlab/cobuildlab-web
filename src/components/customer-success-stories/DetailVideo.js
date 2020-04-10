@@ -15,7 +15,7 @@ const IconContainer = styled.div`
   margin: auto;
   top: 35%;
   left: 45%;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     top: 25%;
     left: 40%;
   }

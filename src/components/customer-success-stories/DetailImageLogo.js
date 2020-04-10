@@ -11,25 +11,25 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding: 1em;
-  transition: transform .3s linear;
-  &:hover{
+  transition: transform 0.3s linear;
+  &:hover {
     transform: scale(1.05);
   }
 `;
 
 const Image = styled.img`
   width: 100%;
-  height:  auto;
+  height: auto;
 `;
 
 const DetailImageLogo = ({ src }) => (
   <Container>
-    <Image  src={src} alt="logo" />
+    <Image src={src} alt="logo" />
   </Container>
 );
 
 DetailImageLogo.propTypes = {
-  src: PropTypes.string.isRequired
+  src: PropTypes.string.isRequired,
 };
 
 export default DetailImageLogo;

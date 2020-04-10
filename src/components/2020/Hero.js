@@ -14,7 +14,7 @@ import comic from '../../resources/2020/home/cobuildlab-home.svg';
 const HeroContainer = styled.div`
   position: relative;
   padding-top: 2.5em;
-  @media all and (max-width: 767.99px){
+  @media all and (max-width: 767.99px) {
     padding-top: 0em;
   }
 `;
@@ -28,7 +28,7 @@ const HeroBody = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   height: 100%;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     text-align: center;
   }
 `;
@@ -39,7 +39,7 @@ const ImagesContainer = styled.div`
 
 const ButtonWrapper = styled.div`
   margin-top: 25px;
-  @media all and (max-width: 767.99px){
+  @media all and (max-width: 767.99px) {
     display: flex;
     justify-content: center;
   }
@@ -49,7 +49,7 @@ const IconPlayContainer = styled.div`
   position: absolute;
   top: calc(50% + 35px);
   left: calc(50% - 70px);
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     left: calc(50% - 35px);
   }
 `;
@@ -63,23 +63,20 @@ const HeroSection = () => (
           <HeroBody>
             <H6>Software Development Company</H6>
             <HeroWrapper>
-              <Hero >
-                Let’s <TextOrange >Build</TextOrange> a <br />
-                Great <TextOrange > Idea.</TextOrange>
+              <Hero>
+                Let’s <TextOrange>Build</TextOrange> a <br />
+                Great <TextOrange> Idea.</TextOrange>
               </Hero>
             </HeroWrapper>
             <Paragraph>
               We partner with new and early-stage entrepreneurs and industry experts to transforms
-              ideas into{' '}
-              <br />
+              ideas into <br />
               <br />
               Since day one, our technique is focused on early results and transparent
               communication.
             </Paragraph>
             <ButtonWrapper>
-              <Button to="/blog/best-software-development-process/">
-                Read More
-              </Button>
+              <Button to="/blog/best-software-development-process/">Read More</Button>
             </ButtonWrapper>
           </HeroBody>
         </Column>
@@ -97,7 +94,6 @@ const HeroSection = () => (
 );
 
 export default HeroSection;
-
 
 /* 
 

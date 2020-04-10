@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Slider from 'react-slick';
 import styled from 'styled-components';
 import img from '../../assets/images/customers/carousel-laptop.png';
@@ -18,7 +19,7 @@ const GrayBackground = styled.div`
   height: 50%;
   background-color: #707070;
   opacity: 0.58;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -27,7 +28,7 @@ const Wrapper = styled.div`
   position: relative;
   max-width: 1223px;
   height: 100%;
-  background-color: #F4F6FB;
+  background-color: #f4f6fb;
   margin: auto;
 `;
 
@@ -45,7 +46,7 @@ const SliderContainer = styled.div`
 const SliderWrapper = styled.div`
   max-width: 900px;
   max-height: 500px;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     width: 70%;
   }
 `;
@@ -58,7 +59,8 @@ const Icon = styled.img`
 const IconContainer = styled.div`
   width: auto;
   height: auto;
-  &:before, &after{
+  &:before,
+  &after {
     display: none;
   }
 `;
@@ -77,12 +79,35 @@ const NextArrow = ({ className, style, onClick }) => (
   </Right>
 );
 
+NextArrow.defaultProps = {
+  className: '',
+  style: {},
+  onClick: () => null,
+};
+
+NextArrow.propTypes = {
+  className: PropTypes.string,
+  style: PropTypes.object,
+  onClick: PropTypes.func,
+};
 
 const PrevArrow = ({ className, style, onClick }) => (
   <Left className={className} style={style} onClick={onClick}>
     <Icon src={leftIcon} alt="prev-icon" />
   </Left>
 );
+
+PrevArrow.propTypes = {
+  className: PropTypes.string,
+  style: PropTypes.object,
+  onClick: PropTypes.func,
+};
+
+PrevArrow.defaultProps = {
+  className: '',
+  style: {},
+  onClick: () => null,
+};
 
 const settings = {
   infinite: true,
@@ -92,23 +117,25 @@ const settings = {
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
   draggable: false,
-  responsive: [{
-    breakpoint: 768,
-    settings: {
-      arrows: false,
-      draggable: true,
-      autoplay: true,
-      speed: 2000,
-      infinite: true,
-    }
-  }],
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        draggable: true,
+        autoplay: true,
+        speed: 2000,
+        infinite: true,
+      },
+    },
+  ],
 };
 
 const DetailCarousel = () => (
   <Container>
     <GrayBackground />
     <Wrapper>
-      <img src={img} alt="carousel" /> 
+      <img src={img} alt="carousel" />
       <SliderContainer>
         <SliderWrapper>
           <Slider {...settings}>
