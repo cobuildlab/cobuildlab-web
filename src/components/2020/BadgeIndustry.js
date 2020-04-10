@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { Columns, Column, Box } from 'bloomer';
 
@@ -25,36 +25,34 @@ const StyledBox = styled(Box)`
   padding: 5px 10px;
 `;
 
-const BadgeIndustry = () => {
-  return (
-    <BadgeContent>
-      <Title className="mb-2">
-        <b>We specialize in these industries:</b>
-      </Title>
+const BadgeIndustry = () => (
+  <BadgeContent>
+    <Title className="mb-2">
+      <b>We specialize in these industries:</b>
+    </Title>
+    <Columns isDesktop hasTextAlign="centered">
+      <Column>
+        <StyledBox>
+          <Badge>Advertising and Retailling</Badge>
+        </StyledBox>
+      </Column>
+      <Column>
+        <StyledBox>
+          <Badge>Fitness and Fashion</Badge>
+        </StyledBox>
+      </Column>
+      <Column>
+        <StyledBox>
+          <Badge>Communities and Lifestyle</Badge>
+        </StyledBox>
+      </Column>
+      <Column>
+        <StyledBox>
+          <Badge>ERP Software</Badge>
+        </StyledBox>
+      </Column>
+    </Columns>
+  </BadgeContent>
+);
 
-      <Columns isDesktop hasTextAlign="centered">
-        <Column>
-          <StyledBox>
-            <Badge>Advertising and Retailling</Badge>
-          </StyledBox>
-        </Column>
-        <Column>
-          <StyledBox>
-            <Badge>Fitness and Fashion</Badge>
-          </StyledBox>
-        </Column>
-        <Column>
-          <StyledBox>
-            <Badge>Communities and Lifestyle</Badge>
-          </StyledBox>
-        </Column>
-        <Column>
-          <StyledBox>
-            <Badge>ERP Software</Badge>
-          </StyledBox>
-        </Column>
-      </Columns>
-    </BadgeContent>
-  );
-};
 export default BadgeIndustry;

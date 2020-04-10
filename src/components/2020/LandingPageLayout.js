@@ -6,6 +6,7 @@ import BannerBackground from './BannerBackground';
 import Footer from '../enterprise/containers/footer';
 import CopyRight from '../enterprise/containers/copyright_text';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Wrapper = styled.div`
   background-color: #f4f6fb !important;
@@ -26,22 +27,22 @@ const StyledContainer = styled(Container)`
 
 const LandingPageLayout = ({ siteDescription, siteTitle, withFooter, children }) => {
   let footer = null;
-  
-  if(withFooter)
+
+  if (withFooter)
     footer = (
       <Fragment>
-          <Footer />
-          <CopyRight />
+        <Footer />
+        <CopyRight />
       </Fragment>
     );
 
-  return ( 
+  return (
     <Fragment>
       <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
-          title={siteTitle}
-        />
+        htmlAttributes={{ lang: 'en' }}
+        meta={[{ name: 'description', content: siteDescription }]}
+        title={siteTitle}
+      />
       <Wrapper>
         <Hero>
           <HeroHeader>
@@ -53,13 +54,18 @@ const LandingPageLayout = ({ siteDescription, siteTitle, withFooter, children })
             </BannerWrapper>
           </HeroBody>
         </Hero>
-        <StyledContainer>
-          { children }
-        </StyledContainer>
-        { footer }
+        <StyledContainer>{children}</StyledContainer>
+        {footer}
       </Wrapper>
     </Fragment>
   );
-}
+};
+
+LandingPageLayout.propTypes = {
+  siteDescription: PropTypes.string.isRequired,
+  siteTitle: PropTypes.string.isRequired,
+  withFooter: PropTypes.bool.isRequired,
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+};
 
 export default LandingPageLayout;
