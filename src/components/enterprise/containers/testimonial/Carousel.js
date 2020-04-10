@@ -7,7 +7,7 @@ import img2 from '../../../../assets/images/testimonial/ale.jpg';
 import img3 from '../../../../assets/images/testimonial/robert-mitchell.png';
 import './testimonial.scss';
 
-const DATA = [
+export const DATA = [
   {
     id: 1,
     title: 'Andres Aguerrevere',

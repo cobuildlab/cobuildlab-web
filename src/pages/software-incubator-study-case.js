@@ -1,29 +1,30 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import 'react-toastify/dist/ReactToastify.min.css';
-import StudyCase from '../components/StudyCase';
-import NewLandingForm from '../components/NewLandingForm';
-import BadgeIndustry from '../components/BadgeIndustry';
-import { Title } from 'bloomer';
+import React, { Component } from 'react';
+import { Columns, Column } from 'bloomer';
 import 'bulma';
-import '../assets/fonts/Lato-Black.ttf';
-import '../assets/fonts/Lato-BlackItalic.ttf';
-import '../assets/fonts/Lato-Bold.ttf';
-import '../assets/fonts/Lato-BoldItalic.ttf';
-import '../assets/fonts/Lato-Hairline.ttf';
-import '../assets/fonts/Lato-HairlineItalic.ttf';
-import '../assets/fonts/Lato-Italic.ttf';
-import '../assets/fonts/Lato-Light.ttf';
-import '../assets/fonts/Lato-LightItalic.ttf';
-import '../assets/fonts/Lato-Regular.ttf';
 
-import logo from '../resources/cobuildlab.png';
-import badge1 from '../resources/badges1.png';
-import badge2 from '../resources/badges2.png';
-import badge3 from '../resources/badges3.png';
-import badge4 from '../resources/badges4.png';
+// COMPONENTS
+import LandingPageLayout from '../components/2020/LandingPageLayout';
+import YouTubeVideo from '../components/YouTubeVideo';
+import BadgeIndustry from '../components/2020/BadgeIndustry';
+import NewLandingForm from '../components/2020/NewLandingForm';
+import StudyCase from '../components/2020/StudyCase';
+import Testimonial from '../components/Testimonial';
 
-export default class SoftwareIncStudy extends React.Component {
+import styled from 'styled-components';
+
+// TYPOGRAPHY
+import { 
+  CustomH1 as H1, 
+  CustomH2 as H2, 
+  CustomParagraph as Paragraph 
+} from '../components/2020/LandingTypography';
+
+const StudyCaseContainer = styled.div`
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+`;
+
+export default class SoftwareIncStudy extends Component {
   render() {
     const siteTitle = 'Developing new Software Products in Miami';
     const siteSubtitle = 'We incubate new Software Products';
@@ -32,45 +33,41 @@ export default class SoftwareIncStudy extends React.Component {
     const landingName = 'Software Incubator Study Case';
 
     return (
-      <React.Fragment>
-        <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
-          title={siteTitle}
-        />
-        <section className="hero is-fullheight">
-          <div className="hero-body no-padding-hero">
-            <div className="content">
-              <div className="columns is-desktop">
-                <div className="column is-8 h-100 bg-header-study">
-                  <div className="view-content-zoom">
-                    <div>
-                      <img src={logo} className="logo" />
-                    </div>
-                    <Title className="title-squeezing">
-                      Developing new Software Products in Miami
-                    </Title>
-                    <h2 className="subtitle-squeezing">{siteSubtitle}</h2>
-                    <p className="text-description-all">{siteDescription}</p>
-                    <StudyCase />
-                    <BadgeIndustry />
-                  </div>
-                </div>
+      <LandingPageLayout
+        siteDescription={siteDescription}
+        siteTitle={siteTitle}>
+        
+        <Columns isDesktop>
+          <Column isSize={{ desktop: 7 }}>
+            <H1>Developing new Software Products in Miami</H1>
+            <H2>{siteSubtitle}</H2>
+            <Paragraph>{siteDescription}</Paragraph>
+            <StudyCaseContainer>
+              <StudyCase />
+            </StudyCaseContainer>
+          </Column>
 
-                <div className="column h-100 is-4 bg-form-landing Aligner">
-                  <div className="has-text-centered view-badge">
-                    <img src={badge1} className="badge" />
-                    <img src={badge2} className="badge" />
-                    <img src={badge3} className="badge" />
-                    <img src={badge4} className="badge-google" />
-                  </div>
-                  <NewLandingForm landingName={landingName} />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </React.Fragment>
+          <Column>
+            <YouTubeVideo id={'AlU5h2xrQ5M'} />  
+          </Column>
+        </Columns>
+
+        <Columns>
+          <Column>
+            <BadgeIndustry />
+          </Column>
+        </Columns>
+
+        <Columns isVCentered>
+          <Column isSize={{ desktop: 6 }}>
+            <Testimonial />
+          </Column>
+          <Column >
+            <NewLandingForm landingName={landingName} />
+          </Column>
+        </Columns>
+        
+      </LandingPageLayout>
     );
   }
 }
