@@ -7,7 +7,7 @@ import LandingPageLayout from '../components/2020/LandingPageLayout';
 import BadgeIndustry from '../components/2020/BadgeIndustry';
 import NewLandingForm from '../components/2020/NewLandingForm';
 import YouTubeVideo from '../components/YouTubeVideo';
-import styled from 'styled-components';
+import Testimonial from '../components/Testimonial';
 
 // TYPOGRAPHY
 import { 
@@ -15,11 +15,6 @@ import {
   CustomH2 as H2, 
   CustomParagraph as Paragraph 
 } from '../components/2020/LandingTypography';
-
-const YouTubeVideoContainer = styled.div`
-  margin-top: 3rem;
-  margin-bottom: 2.5rem;
-`;
 
 class AppsDevDescription extends Component {
   constructor(props) {
@@ -44,13 +39,24 @@ class AppsDevDescription extends Component {
             <H1>Developing new Software Products in Miami</H1>
             <H2>{siteSubtitle}</H2>
             <Paragraph>{siteDescription}</Paragraph>
-            <YouTubeVideoContainer>
-              <YouTubeVideo id={'AlU5h2xrQ5M'} />
-            </YouTubeVideoContainer>
-            <BadgeIndustry />
           </Column>
           
-          <Column isSize={{ desktop: 5 }}>      
+          <Column>    
+            <YouTubeVideo id={'AlU5h2xrQ5M'} />
+          </Column>
+        </Columns>
+
+        <Columns>
+          <Column>
+            <BadgeIndustry />
+          </Column>
+        </Columns>
+
+        <Columns isVCentered>
+          <Column isSize={{ desktop: 6 }}>
+            <Testimonial />
+          </Column>
+          <Column >
             <NewLandingForm landingName={landingName} />
           </Column>
         </Columns>

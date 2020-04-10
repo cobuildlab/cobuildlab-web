@@ -4,9 +4,11 @@ import 'bulma';
 
 // COMPONENTS
 import LandingPageLayout from '../components/2020/LandingPageLayout';
+import YouTubeVideo from '../components/YouTubeVideo';
 import BadgeIndustry from '../components/2020/BadgeIndustry';
 import NewLandingForm from '../components/2020/NewLandingForm';
 import StudyCase from '../components/2020/StudyCase';
+import Testimonial from '../components/Testimonial';
 
 import styled from 'styled-components';
 
@@ -43,10 +45,24 @@ export default class AppsDevStudy extends Component {
             <StudyCaseContainer>
               <StudyCase />
             </StudyCaseContainer>
+          </Column>
+
+          <Column>
+            <YouTubeVideo id={'AlU5h2xrQ5M'} />  
+          </Column>
+        </Columns>
+
+        <Columns>
+          <Column>
             <BadgeIndustry />
           </Column>
-          
-          <Column isSize={{ desktop: 5 }}>
+        </Columns>
+
+        <Columns isVCentered>
+          <Column isSize={{ desktop: 6 }}>
+            <Testimonial />
+          </Column>
+          <Column >
             <NewLandingForm landingName={landingName} />
           </Column>
         </Columns>

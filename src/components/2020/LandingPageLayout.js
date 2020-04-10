@@ -21,6 +21,7 @@ const StyledContainer = styled(Container)`
   padding-top: 4.5rem;
   padding-left: 1.5rem;
   padding-right: 1rem;
+  padding-bottom: 3.5rem;
 `;
 
 const LandingPageLayout = ({ siteDescription, siteTitle, withFooter, children }) => {

@@ -6,6 +6,8 @@ import 'bulma';
 import LandingPageLayout from '../components/2020/LandingPageLayout';
 import BadgeIndustry from '../components/2020/BadgeIndustry';
 import NewLandingForm from '../components/2020/NewLandingForm';
+import Testimonial from '../components/Testimonial';
+import YouTubeVideo from '../components/YouTubeVideo';
 
 // GRAPHIC
 import graphic from '../resources/graficas-1.png';
@@ -21,8 +23,12 @@ import {
 
 const GraphicContainer = styled.div`
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-bottom: 2.5rem;
+  & img {
+    width: 300px;
+    height: 300px;
+  }
 `;
 
 export default class AppsDevGraphic extends Component {
@@ -47,10 +53,24 @@ export default class AppsDevGraphic extends Component {
             <GraphicContainer>
               <img src={graphic} className="img-graphic" />
             </GraphicContainer>
+          </Column>
+
+          <Column>
+            <YouTubeVideo id={'AlU5h2xrQ5M'} /> 
+          </Column>
+        </Columns>
+
+        <Columns>
+          <Column>
             <BadgeIndustry />
           </Column>
-          
-          <Column isSize={{ desktop: 5 }}>
+        </Columns>
+
+        <Columns isVCentered>
+          <Column  isSize={{ desktop: 6 }}>
+            <Testimonial />
+          </Column>
+          <Column>
             <NewLandingForm landingName={landingName} />
           </Column>
         </Columns>

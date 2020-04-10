@@ -2,6 +2,11 @@ import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import { Columns, Column, Box } from 'bloomer';
 
+const BadgeContent = styled.div`
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+`;
+
 const Badge = styled.p`
   font-size: 1rem;
   font-weight: bold;
@@ -22,7 +27,7 @@ const StyledBox = styled(Box)`
 
 const BadgeIndustry = () => {
   return (
-    <Fragment>
+    <BadgeContent>
       <Title className="mb-2">
         <b>We specialize in these industries:</b>
       </Title>
@@ -49,7 +54,7 @@ const BadgeIndustry = () => {
           </StyledBox>
         </Column>
       </Columns>
-    </Fragment>
+    </BadgeContent>
   );
 };
 export default BadgeIndustry;
