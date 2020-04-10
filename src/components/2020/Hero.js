@@ -1,15 +1,15 @@
 import React from 'react';
 import { Container, Column, Columns } from 'bloomer';
 import styled from 'styled-components';
-import Button from '../Button';
-import Image from '../Image';
-import HeroPlayIcon from './HeroPlayIcon';
-import Hero from '../../Typography/H1';
-import H6 from '../../Typography/H6';
-import Paragraph from '../../Typography/Paragraph';
-import { TextOrange } from '../../Typography/TextHelpers';
-import BannerBackground from '../BannerBackground';
-import comic from '../../../resources/2020/home/cobuildlab-home.svg';
+import Button from './Button';
+import Image from './Image';
+import VideoPlayIcon from './VideoPlayIcon';
+import Hero from '../Typography/H1';
+import H6 from '../Typography/H6';
+import Paragraph from '../Typography/Paragraph';
+import { TextOrange } from '../Typography/TextHelpers';
+import BannerBackground from './BannerBackground';
+import comic from '../../resources/2020/home/cobuildlab-home.svg';
 
 const HeroContainer = styled.div`
   position: relative;
@@ -45,6 +45,15 @@ const ButtonWrapper = styled.div`
   }
 `;
 
+const IconPlayContainer = styled.div`
+  position: absolute;
+  top: calc(50% + 35px);
+  left: calc(50% - 70px);
+  @media screen and (max-width: 768px){
+    left: calc(50% - 35px);
+  }
+`;
+
 const HeroSection = () => (
   <HeroContainer>
     <BannerBackground />
@@ -76,7 +85,9 @@ const HeroSection = () => (
         </Column>
         <Column isSize={{ mobile: 12, desktop: 6 }}>
           <ImagesContainer>
-            <HeroPlayIcon />
+            <IconPlayContainer>
+              <VideoPlayIcon />
+            </IconPlayContainer>
             <Image alt="main comic" src={comic} />
           </ImagesContainer>
         </Column>

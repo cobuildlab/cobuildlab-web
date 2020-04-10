@@ -1,21 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Icon } from 'react-icons-kit';
 import { play } from 'react-icons-kit/fa/play';
-import VideoPlay from '../VideoPlay';
+import VideoPlay from './VideoPlay';
 import styled, { keyframes } from 'styled-components';
 
 
 const PlayIconContainer = styled.div`
   position: absolute;
-  top: calc(50% + 35px);
-  left: calc(50% - 70px);
   width: 70px;
   height: 70px;
   z-index: 100;
   cursor: pointer;
-  @media screen and (max-width: 768px){
-    left: calc(50% - 35px);
-  }
 `;
 
 const SonarEmitter = styled.div`
@@ -58,9 +54,8 @@ const IconPlay = styled(Icon)`
   color: #fff;
 `;
 
-//TODO move this to other file and use styled components
-const HeroPlayIcon = () => (
-  <VideoPlay>
+const VideoPlayIcon = ({ videoId }) => (
+  <VideoPlay videoId={videoId}>
     <PlayIconContainer>
       <SonarEmitter>
         <IconPlay size={34} icon={play} />
@@ -70,5 +65,12 @@ const HeroPlayIcon = () => (
   </VideoPlay>
 );
 
+VideoPlayIcon.defaultProps = {
+  videoId: 'AlU5h2xrQ5M'
+};
 
-export default HeroPlayIcon;
+VideoPlayIcon.propTypes = {
+  videoId: PropTypes.string,
+};
+
+export default VideoPlayIcon;
