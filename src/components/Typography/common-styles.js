@@ -1,9 +1,15 @@
 import { css } from 'styled-components';
+import colors from './colors.json';
 
-const commonStyles  = css`
+const commonStyles = css`
   line-height: 1.125;
   letter-spacing: 0;
   opacity: 1;
+`;
+
+export const baseTextColor = css`
+  color: ${colors.indigo};
+  font-weight: bold;
 `;
 
 export default commonStyles;

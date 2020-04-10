@@ -10,7 +10,7 @@ import { TextOrange } from '../components/Typography/TextHelpers';
 import Layout from '../components/2020/Layout';
 import Header from '../components/2020/Header';
 import BannerBackground from '../components/2020/BannerBackground';
-import CustomerSuccessStories from '../components/CustomerSuccessStories/CustomerSuccessStories';
+import CustomerSuccessStories from '../components/customer-success-stories/CustomerSuccessStories';
 
 const siteTitle = 'Customer Success Stories - Miami Labs | Cobuild Lab';
 
