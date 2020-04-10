@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import H3 from '../../Typography/H3';
 import { TextOrange } from '../../Typography/TextHelpers';
 import Paragraph from '../../Typography/Paragraph';
-import CustomerSuccessStories from '../../CustomerSuccessStories/CustomerSuccessStories';
+import CustomerSuccessStories from '../../customer-success-stories/CustomerSuccessStories';
 
 const Wrapper = styled.div`
   text-align: center;

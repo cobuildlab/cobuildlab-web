@@ -8,22 +8,16 @@ const Container = styled.div`
   margin-bottom: 1.5em;
 `;
 
-
 const DetailsTitle = ({ children }) => (
   <Container>
     <H1>
-      <TextOrange>
-        {children}
-      </TextOrange>
+      <TextOrange>{children}</TextOrange>
     </H1>
   </Container>
 );
 
 DetailsTitle.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
 
 export default DetailsTitle;
