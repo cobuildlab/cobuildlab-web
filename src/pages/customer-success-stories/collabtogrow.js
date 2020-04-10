@@ -8,6 +8,7 @@ import DetailContentSeparation from '../../components/customer-success-stories/D
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
 import DetailSectionImageRight from '../../components/customer-success-stories/DetailSectionImageRight';
+import DetailTeam from '../../components/customer-success-stories/DetailTeam';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
@@ -194,6 +195,12 @@ const Collabtogrow = () => (
         </DetailParagraph>
       </DetailContentSeparation>
     </DetailSectionImageLeft>
+
+    <Section>
+      <Container>
+        <DetailTeam />
+      </Container>
+    </Section>
   </DetailLayout>
 );
 

@@ -6,6 +6,9 @@ import Header from '../2020/Header';
 
 const Container = styled.div`
   margin-top: 5em;
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+  }
 `;
 
 const DetailLayout = ({ children }) => (

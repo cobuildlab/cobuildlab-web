@@ -8,11 +8,18 @@ const Container = styled.div`
   margin-bottom: 1.5em;
 `;
 
+const Title = styled(H1)`
+  font-size: calc(35px + (100 - 35) * ((100vw - 320px) / (1920 - 320)));
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+`;
+
 const DetailsTitle = ({ children }) => (
   <Container>
-    <H1>
+    <Title>
       <TextOrange>{children}</TextOrange>
-    </H1>
+    </Title>
   </Container>
 );
 

@@ -1,19 +1,38 @@
 import React from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { Section, Container, Columns, Column } from 'bloomer';
 import DetailImage from './DetailImage';
 
+const SectionContainer = styled(Section)`
+  @media screen and (max-width: 768px) {
+    padding: 1em 3rem;
+  }
+`;
+
+const Right = styled(Column)`
+  @media screen and (max-width: 768px) {
+    order: 2;
+  }
+`;
+
+const Left = styled(Column)`
+  @media screen and (max-width: 768px) {
+    order: 1;
+  }
+`;
+
 const DetailSectionImageRight = ({ children, src, alt }) => (
-  <Section>
+  <SectionContainer>
     <Container>
-      <Columns isMultiline>
-        <Column isSize={{ mobile: 12, desktop: 6 }}>{children}</Column>
-        <Column isSize={{ mobile: 12, desktop: 6 }}>
+      <Columns isDisplay="flex-mobile" isMultiline>
+        <Left isSize={{ mobile: 12, desktop: 6 }}>{children}</Left>
+        <Right isSize={{ mobile: 12, desktop: 6 }}>
           <DetailImage src={src} alt={alt} />
-        </Column>
+        </Right>
       </Columns>
     </Container>
-  </Section>
+  </SectionContainer>
 );
 
 DetailSectionImageRight.defaultProps = {
