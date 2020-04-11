@@ -15,7 +15,7 @@ The main idea is<block-quote>"Creating an application capable of helping people 
 
 The application will provide a physical training platform based on programs initially for Crossfit, conventional Gymnasiums, and outdoor training. Its main goal is to take you by the hand through this entire transformation process, seeking to facilitate the arrival at the goal and that this change lasts in you. 
 
-![software-development](./media/elemental-platform.png)
+![software-development](media/elemental-platform.png)
 Source: [Elemental Platform](https://josechirinos3.wixsite.com/misitio)
 
 Its purpose is to shield you from long-term illnesses, with excellent programming, coaching, nutrition tips, and a whole community of people looking for a better lifestyle. Stay tuned for more Elemental App updates.

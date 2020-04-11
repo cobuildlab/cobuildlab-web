@@ -18,7 +18,7 @@ If you are in this situation, relax, we Will give you some tips you should follo
 
 <title-3>1. Get ready enough </title-3>
 
-![raise-funds-tip1](./media/raise-funds-tip1.jpg)
+![raise-funds-tip1](media/raise-funds-tip1.jpg)
 
 Source: [Pexels](https://www.pexels.com/)
 
@@ -30,7 +30,7 @@ It is vital for you having enough information for answer questions or just looki
 
 <title-3>2. Keep clear the solution that you offer</title-3>
 
-![raise-funds-tip2](./media/raise-funds-tip2.jpg)
+![raise-funds-tip2](media/raise-funds-tip2.jpg)
 
 Source: [Pexels](https://www.pexels.com/)
 
@@ -40,7 +40,7 @@ If you have an amazing branding, your brand has an amazing image and a personali
 
 <title-3>3. Be sure of scalability of your project and say it!</title-3>
 
-![raise-funds-tip3](./media/raise-funds-tip3.jpg)
+![raise-funds-tip3](media/raise-funds-tip3.jpg)
 
 Source: [Pexels](https://www.pexels.com/)
 
@@ -53,7 +53,7 @@ If you plan to make an startup, you have to guarantee the project scalability be
 
 <title-3>4. Seeks, generates, and test traction</title-3>
 
-![raise-funds-tip4](./media/raise-funds-tip4.jpg)
+![raise-funds-tip4](media/raise-funds-tip4.jpg)
 
 Source: [Pexels](https://www.pexels.com/)
 
@@ -65,7 +65,7 @@ If you are in early stages, you would use your [idea validation](https://cobuild
 
 <title-3>5. Choose a financing method</title-3>
 
-![raise-funds-tip5](./media/raise-funds-tip5.png)
+![raise-funds-tip5](media/raise-funds-tip5.png)
 
 Source: [Pexels](https://www.pexels.com/)
 
@@ -77,7 +77,7 @@ So, choose your method and go for it.
 
 <title-3>6. Make a pitch deck if it necessary</title-3>
 
-![raise-funds-tip6](./media/raise-funds-tip6.jpeg)
+![raise-funds-tip6](media/raise-funds-tip6.jpeg)
 
 Source: [Pexels](https://www.pexels.com/)
 
@@ -89,7 +89,7 @@ We make a post before where there are pieces of advices, tips, steps, and everyt
 
 <title-3>7. Known clearly the amount of funds that you need</title-3>
 
-![raise-funds-tip7](./media/raise-funds-tip7.jpeg)
+![raise-funds-tip7](media/raise-funds-tip7.jpeg)
 
 Source: [Pexels](https://www.pexels.com/)
 
@@ -101,7 +101,7 @@ Talk or show this information as clearest as possible when you are raising funds
 
 <title-3>8. Try to get funding in the same coin you will earn money</title-3>
 
-![raise-funds-tip8](./media/raise-funds-tip8.jpeg)
+![raise-funds-tip8](media/raise-funds-tip8.jpeg)
 
 Source: [Pexels](https://www.pexels.com/)
 
@@ -109,7 +109,7 @@ This is just a protection of exchange risks. If your product is for US and you w
 
 <title-3>9. Always sell</title-3>
 
-![raise-funds-tip9](./media/raise-funds-tip9.jpeg)
+![raise-funds-tip9](media/raise-funds-tip9.jpeg)
 
 Source: [Pexels](https://www.pexels.com/)
 
@@ -119,7 +119,7 @@ Sell ideas, sell your benefits, sell yourself, and sell your product as much as 
 
 <title-3>10. Use the right and necessary resources in favor</title-3>
 
-![raise-funds-tip10](./media/raise-funds-tip10.jpeg)
+![raise-funds-tip10](media/raise-funds-tip10.jpeg)
 
 Source: [Pexels](https://www.pexels.com/)
 

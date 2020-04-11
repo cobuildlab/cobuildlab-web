@@ -47,7 +47,7 @@ Twilio capabilities include:
 - Marketing Automation
 - Programmable Chats
 
-![Show me the code](./media/show-me-the-code.jpeg)
+![Show me the code](media/show-me-the-code.jpeg)
 
 
 These instructions are based on the [Official Python Twilio Site](https://www.twilio.com/docs/libraries/python)

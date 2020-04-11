@@ -12,10 +12,10 @@ TechStars is a mentorship-driven seed startup accelerator for Internet companies
 
 8base founder <a target="_blank" href="https://www.linkedin.com/in/albertsantalo/"> Albert Santalo</a> shared his excitement on his Linked In profile 
 
-<a href="https://www.linkedin.com/posts/albertsantalo_meet-techstars-newest-companies-activity-6607478783811346433-ISq-" target="_blank"> <img src="./media/santalo1.jpg"> </a>
+<a href="https://www.linkedin.com/posts/albertsantalo_meet-techstars-newest-companies-activity-6607478783811346433-ISq-" target="_blank"> <img src="media/santalo1.jpg"> </a>
 
 <a target="_blank" href="https://www.8base.com/"> 8base</a> is a Backend-as-a-Service that combines computing, application services, and integrations for building SaaS and market-facing applications. Founded by <a target="_blank" href="https://www.linkedin.com/in/albertsantalo/"> Albert Santalo</a> in 2017, 8base’s mission is to democratize software development and unlock the power of digital transformation for businesses worldwide. They achieve this by providing the industry’s most modern low-code technology platform, operating environment, and toolset. With 8base, users can build enterprise-grade applications faster, more efficiently, and less expensively than with legacy IT alternatives.
 
-<a href="https://www.linkedin.com/in/alacret/" target="_blank"> <img src="./media/quote1.png"> </a>
+<a href="https://www.linkedin.com/in/alacret/" target="_blank"> <img src="media/quote1.png"> </a>
 
 Congratulations to Santalo and all the 8base team, hard work has paid off. We are so proud to get to know such a successful team!

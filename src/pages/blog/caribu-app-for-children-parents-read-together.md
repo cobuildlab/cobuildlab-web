@@ -16,14 +16,14 @@ Caribu won third place in the [Miami Herald Business Plan Challenge](https://www
 
 **Maxeme Tuchman**, CEO, and Co-Founder of Caribu-Inc. is the daughter of Cuban immigrants who fled the Bolshevik revolution and the Holocaust. Her family history made her understand that education is the only thing that lasts.
 
-![Maxeme Tuchman](./media/caribu2.png)
+![Maxeme Tuchman](media/caribu2.png)
 <credits>Photo by Medium</credits>
 
 Thanks to her perseverance, she obtained a privileged education and graduated from the Coro Fellowship in Public Affairs, the Leadership Program of Miami Fellows. He received his bachelor's degree from **New College of Florida**, an MBA from **Harvard Business School** and an MBA from Harvard Kennedy School of Government.
 
 Among his experiences, he worked in Mayor Bloomberg's office, where he co-created the New York City Civic Corps and directed the art installation The NYC Waterfalls. She then joined **Teach for America Miami-Dade** as executive director, the Gates Foundation and was part of Ex-President Obama's White House Scholarship. And so it was that among so many experiences and her passion for educational equity launched her **Caribu application**.
 
-![Caribu app](./media/caribu3.png)
+![Caribu app](media/caribu3.png)
 <credits>Photo by Miami Herald</credits>
 
 Caribu started as an MBA class project at Imperial College London. Alvaro Sabido's group saw a soldier reading to his daughter with just a webcam and thought they could do better. After this, they split up and Sabido later decided to turn it into a company and form a team in **Miami**, where he grew up. It took him five months, until the fall of 2016, to find Maxeme Tuchman, It took him five months, until the fall of 2016, to find Maxeme Tuchman, who joined as CEO at **FounderDating.com**, platform which facilitates a meeting of minds for CEOs and CTOs.
@@ -32,7 +32,7 @@ And so together, they positioned Caribu as an educational platform that helps pa
 
 Caribu also **supports military families** through the **Blue Star Family association** which gives free access to military families, helping military children strengthen connections with their parents through distance reading.
 
-![Caribu](./media/caribu4.png)
+![Caribu](media/caribu4.png)
 <credits>Photo by Inc</credits>
 
 <title-2>And how does this application work?</title-2>

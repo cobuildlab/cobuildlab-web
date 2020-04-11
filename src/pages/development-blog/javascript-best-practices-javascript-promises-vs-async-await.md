@@ -14,7 +14,7 @@ image: "./media/blocks.jpg"
 ## Javascript specification history:
 <br>
 
-![Javascript Specification History](./media/javascript-version-history.png)
+![Javascript Specification History](media/javascript-version-history.png)
 <br>
 
 [Source] (https://www.w3schools.com/js/js_versions.asp)
@@ -29,7 +29,7 @@ In Javascript a function never really 'blocks', it always continues it's executi
 
 <br>
 
-![Node event loop](./media/node-event-loop.png)
+![Node event loop](media/node-event-loop.png)
 <br>
 
 
@@ -123,7 +123,7 @@ This did improve readability in the code, but somehow it wasn't enough:
 
 <br>
 
-![Callback Hell](./media/callback-hell.jpeg)
+![Callback Hell](media/callback-hell.jpeg)
 <br>
 
 **So, introducing Async / Await**

@@ -29,7 +29,7 @@ create an account in 8base is easy just go to this [link](https://app.8base.com/
 
 when you create an account 8base give you a free workspace for 30, but if you want to create a new workspace just click on the drop down menu "New workspace". Name it however you want, select the plan you want and you're done.
 
-![new workspace](./media/newworkspace.png)
+![new workspace](media/newworkspace.png)
 
 ### 3. Create the Authentication provider
 
@@ -41,7 +41,7 @@ To create the authentication profile, go to Settings > Authentication and press 
 the following fields described.
 Once the authentication profile is created, ClientID and Domain are generated, which will allow us to connect the 8base back-end to any application.
 
-![auth provider](./media/test.png)
+![auth provider](media/test.png)
 
 ### 4. Create table
 
@@ -49,7 +49,7 @@ Once the authentication profile is created, ClientID and Domain are generated, w
 
 to create a table go to Data you click on +add table and we name it tasks.Next we will create the fields and we will fill them manually that will serve us to execute the Query
 
-![new workspace](./media/createtable.png)
+![new workspace](media/createtable.png)
 
 ### 5. Cloning repository
 
@@ -135,5 +135,5 @@ export { Home }
 
 ### 11. Showing the data
 
-![tasksList](./media/tasksList.png)
+![tasksList](media/tasksList.png)
 Siéntase libre de darle los estilos que desee

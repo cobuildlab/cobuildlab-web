@@ -32,7 +32,7 @@ There more than[ 80% of employed professionals are willing to listen to you](htt
 <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Miami-Fort1.jpg). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![From south America](./media/talents/image2.jpg)
+![From south America](media/talents/image2.jpg)
 
 <credits>Photo by Alex Kotliarskyi on Unsplash</credits>
 

@@ -39,7 +39,7 @@ On Facebook, **one of the brands that AR try on news feed is Michael Kors**, to 
 designed by the creator.  In addition, Sephora, a business of cosmetics, beauty products, and fragrances, will allow people to try
 cosmetics virtually.
 
-![facebook augmented reality](./media/facebookar_2.jpg)
+![facebook augmented reality](media/facebookar_2.jpg)
 <credits>Photo by Zedinteractive on [Pixabay](https://pixabay.com/)</credits>
 <credits">You can use Augmented Reality in science or education. Its applications are endless.</credits>
 
@@ -54,7 +54,7 @@ The benefits of this technology in this social network are the same as those obt
 
 Undoubtedly, Facebook ads and Augmented Reality will revolutionize the way that brands advertise on Facebook until now, to increase their sales and grow in followers.
 
-![facebook augmented reality](./media/facebookar_3.png)
+![facebook augmented reality](media/facebookar_3.png)
 <credits>Photo on [VRScout](https://vrscout.com/)</credits>
 <credits>CEO Facebook, Mark Zuckerberg, explained for first time this new technology at Facebook Inc's annual F8 developers conference.</credits>
 

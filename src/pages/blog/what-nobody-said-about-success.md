@@ -8,7 +8,7 @@ tags:
 
 If you look up the definition of **[success](https://dictionary.cambridge.org/es/diccionario/ingles/success)**, you will probably see "the favorable outcome of something attempted" or "achieving an aim or objective", but when we get started, immediately, the common denominators await with expectations, and to them, the best evidence of entrepreneurship are money and luxury.
 
-![](./media/pasted-image-0-1.png)
+![](media/pasted-image-0-1.png)
 
 <title-2>**Ok. Let's see. What does success look like?**</title-2>
 
@@ -18,7 +18,7 @@ Secondly, as entrepreneurs, we need to decide on which of these we are going to 
 
 NO! Do what you are passionate about! Remember this: **Success looks like and means whatever you want it to**.
 
-![](./media/brendan-church-182747-unsplash.jpg)
+![](media/brendan-church-182747-unsplash.jpg)
 
 <title-3>[**If you are fourth, it's OK!** ](https://www.forbes.com/sites/shavonlindley/2018/08/08/four-questions-to-define-real-success-at-work/#63d20f085ae7)</title-3>
 
@@ -36,4 +36,4 @@ The little things you achieve on the way don't disappear, they add up, and these
 
 Never give up! Success is **the little goals** you accomplish until you make your dreams become reality.
 
-![](./media/nonsap-visuals-760215-unsplash.jpg)
+![](media/nonsap-visuals-760215-unsplash.jpg)

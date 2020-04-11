@@ -51,7 +51,7 @@ This passion for healthcare [software development](https://cobuildlab.com/blog/b
 
 This year an example of a startup that we can follow in this industry is Nurx. It is an app that aims to give women better and faster access to birth control.
 
-[![healthcare](./media/NURX.png)](#)
+[![healthcare](media/NURX.png)](#)
 
 Women can request the prescription and receive it directly to their door at no cost if they have health insurance.
 
@@ -93,7 +93,7 @@ So what do you need to get started? Raise a lot of capital, you will need it to 
 
 Business Insider shared this visual showing some of this year’s top players in the FinTech ecosystem.
 
-[![FinTech-ecosystem](./media/fintech-ecosystem.jpg)](#)
+[![FinTech-ecosystem](media/fintech-ecosystem.jpg)](#)
 
 Source: [Business Insider](https://www.businessinsider.com/fintech-ecosystem-report)
 
@@ -133,7 +133,7 @@ Cobuild Lab actually had the pleasure of accelerating and developing an app call
 
 It’s an industry that has a proven growth record, and most importantly its still in its infancy stage, primed for even more growth. Will you be the next to join?
 
-[![Cannabis-industry](./media/weedmatch.jpg)](#)
+[![Cannabis-industry](media/weedmatch.jpg)](#)
 
 <title-3>AdTech or Advertising Technology Industry</title-3>
 

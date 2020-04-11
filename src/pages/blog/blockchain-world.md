@@ -111,7 +111,7 @@ This is enough reason to consider providing software for this necessity. It can 
 
 <title-3>* Canadian Imperial Bank of Commerce (CBIC), Royal Bank of Canada (RBC), Scotiabank, Toronto–Dominion (TD), and Bank and Desjardins Group</title-3>
 
-[![blockchain-app](./media/verified.me.png)](#)
+[![blockchain-app](media/verified.me.png)](#)
 
 Five banks from Canada recognize and take advantage of the blockchain security for the identity verifying of their employees. 
 
@@ -123,7 +123,7 @@ This app was created for the Canadian government in coordination with the Digita
 
 <title-3>* Ethereum</title-3>
 
-[![blockchain-app](./media/ethereum.png)](#)
+[![blockchain-app](media/ethereum.png)](#)
 
 This blockchain network has been used for several purposes, but one of the most important is to run smart contracts on a custom-built blockchain. 
 
@@ -133,7 +133,7 @@ The [Ethereum Enterprise Alliance (EEA)](https://entethalliance.org/) is a non-p
 
 <title-3>* Welwaze Medical</title-3>
 
-[![blockchain-app](./media/welwaze-medical.png)](#)
+[![blockchain-app](media/welwaze-medical.png)](#)
 
 This is a local startup, founded in Miami. [Welwaze Medical](https://welwaze.com/) provides a blockchain-based health management platform. It integrates a medical device, an app, and AI on a blockchain on the same platform.
 
@@ -143,13 +143,13 @@ All this data is stored in Welwaze's HIPAA-compliant database, tagged, and valid
 
 <title-3>* dexfreight</title-3>
 
-[![blockchain-app](./media/dexfreight.png)](#)
+[![blockchain-app](media/dexfreight.png)](#)
 
 [dexFreight](https://dexfreight.io/) is another startup in Miami. It was founded in 2017, and its product used blockchain technology for smart contracts, invoicing, and more. It is a collaborative marketplace (open source software) that enables users (freight forwarders, carriers, etc.) to collaborate and offer shared services to customers. It uses a blockchain network and artificial intelligence too. 
 
 <title-3>* Tokenpay</title-3>
 
-[![blockchain-app](./media/tokenpay.png)](#)
+[![blockchain-app](media/tokenpay.png)](#)
 
 [Tokenpay](https://www.tokenpay.com/) is another (of many) startups founded in our city. It is a decentralized payment platform that offers merchant service tools, Bitcoin and TokenPay wallets, online escrow, and international banking services, all of that, using blockchain technology. 
 

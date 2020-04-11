@@ -11,7 +11,7 @@ teach technology**, and provide an amazing day for them. The goal is to provide 
 **Andrew Parker** graduated from Florida State University with a Bachelor of Science, Finance. He worked in different companies as an account
 manager and executive and was vice president of health systems in the telehealth company MDLIVE for five years before launching Papa.
 
-![Andrew Parker](./media/papa_1.png)
+![Andrew Parker](media/papa_1.png)
 <credits>Photo by [Miami Herald](https://www.miamiherald.com/)</credits>
 
 Parker lived close to his grandfather, who had early-onset dementia and often went to help him with his errands. As his workload grew,
@@ -22,7 +22,7 @@ independent and didn't need a caregiver, but still required special help from a 
 a business called Papa, which connects students with seniors for domestic or driving tasks, but the company's real goal is its slogan:
 **Grandkids on-Demand**.
 
-![Andrew Parker](./media/papa_2.png)
+![Andrew Parker](media/papa_2.png)
 <credits>Photo by [Join Papa](https://www.joinpapa.com/)</credits>
 
 Papa's mission is to support the elderly and their family. They have a clear objective that focuses on curing loneliness in the elderly.
@@ -47,7 +47,7 @@ The service is currently available only in Florida, but Parker plans to expand t
 **Pennsylvania**, at the end of the year. **Medicare** and **Medicaid** will begin covering this type of service in 2019, so
 beneficiaries will be able to use it at no cost.
 
-![Andrew Parker](./media/papa_3.png)
+![Andrew Parker](media/papa_3.png)
 <credits>Photo by [@join_papa](https://twitter.com/join_papa)</credits>
 
 <block-quote>“Humana Inc. has partnered with a startup called Papa Inc. to provide "grandkids-on-demand" for qualifying members of its

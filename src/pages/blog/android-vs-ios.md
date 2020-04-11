@@ -44,21 +44,21 @@ Whenever you decide to focus your efforts on one single platform it’s common t
 
 * Android covers more people in general in the world. In some places, iOS is the winner, but if we take a general view in the world, Android is a little higher than iOS, and this could mean more people can have access to your product. These numbers have been the same since 2007. 
 
-![Android-App](./media/android-iOS.png)
+![Android-App](media/android-iOS.png)
 
 Source: [AppAnnie](https://www.appannie.com/en/)
 
 * More reviews and contact with customers’ opinions. It is possible this could be thanks to the number of people using it or maybe thanks to the tools on Android and the Play Store to make reviews. But it has shown in many cases that apps on the Google Play Store have more reviews, comments, and interaction from users. 
 	For example:
 
-![Android-App](./media/android-iOS2.png)
+![Android-App](media/android-iOS2.png)
 
 Source: [Diegolaballos](https://diegolaballos.com/blog/por-que-crear-una-aplicacion-para-android/) 
 
 * More developer options
 This advantage is related to all developers and people who work with this technology. There are more people nowadays with Android than iOS. This means more people opt to work with you and you can select the best options.
 
-![Android-App](./media/android-iOS3.png)
+![Android-App](media/android-iOS3.png)
 
 Source: [Vision Mobile](https://www.visionmobile.com/reports/developer-economics-state-developer-nation-q3-2016)
 

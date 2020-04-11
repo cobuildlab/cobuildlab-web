@@ -31,7 +31,7 @@ Also, Facebook had an MVP called TheFacebook. This MVP was only available for Ha
 
 <title-2>For building your MVP you need</title-2>
 
-![MVP](./media/mvp_featured-768x403.jpg)
+![MVP](media/mvp_featured-768x403.jpg)
 
 Source: [Innofield](https://www.innofied.com/updated-mobile-app-development-mvp-strategy-for-startup/)
 

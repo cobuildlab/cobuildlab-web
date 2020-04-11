@@ -549,43 +549,5 @@ export const pageQuery = graphql`
         }
       }
     }
-    customerSuccessStories:allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: 3
-      filter: {fileAbsolutePath: {regex: "/(pages/customer-success-stories)/.*\\.md$/"}}
-    ) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            tags
-            image {
-              publicURL
-              childImageSharp {
-                fluid(maxWidth: 480) {
-                  aspectRatio
-                  base64
-                  sizes
-                  src
-                  srcSet
-                }
-              }
-            }
-          }
-        }
-      }
-    }
   }
 `;
-/* <Columns isCentered>
-    <Column>
-      <Link className="button is-primary is-medium is-rounded">
-        <small>Learn more</small>
-      </Link>
-    </Column>
-  </Columns> */

@@ -76,7 +76,7 @@ This is the best software development process to business that needs an adaptive
 Also, this is the best software development methodology for ideas that need direct communication and feedback from customer constantly.
 
 
-![Agile Software Development](./media/agile-software-development.png)
+![Agile Software Development](media/agile-software-development.png)
 
 
 #### 2. Dynamic system development model
@@ -91,7 +91,7 @@ This process has the quality of developing software that is not perfect (but fas
 Some advantages of this process are direct access from users to developers and also their participation in the development process, which is really positive because they are the final customer.
 
 
-![Dynamic Software Development](./media/dynamic-system-development-model.png)
+![Dynamic Software Development](media/dynamic-system-development-model.png)
 
 
 #### 3. Waterfall model
@@ -108,7 +108,7 @@ This model is simple, easy to understand and it is developed in a linear sequenc
 This software development process is used generally in medium or small projects.
 
 
-![Waterfall Software Development](./media/waterfall-model.png)
+![Waterfall Software Development](media/waterfall-model.png)
 
 
 #### 4. Scrum
@@ -122,7 +122,7 @@ Moreover, this is considered like the best software development process to some 
 
 
 
-![Scrum Software Development](./media/scrum.png)
+![Scrum Software Development](media/scrum.png)
 
 
 ### 5) Support: Maintenance and support

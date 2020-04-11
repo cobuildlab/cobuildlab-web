@@ -41,7 +41,7 @@ For entrepreneurs, this kind of tool can help to improve efficiency and effectiv
  
 We recommend Trello, one of the most famous entrepreneur tools in the world. There, you can create, share and edit dashboards, enabling you to organize everything you need, from your day-to-day to your next family vacation, as well as where all activities, descriptions, processes, responsibilities and the complete information of each method is stored. Both mobile and web versions are available, so you or any member of your team can collaborate by creating tasks and lists; upon completion of an activity, they can eliminate or mark the event as solved, from the palm of their hand.
 
-[![trello](./media/tools-entrepreneur.gif)](#)
+[![trello](media/tools-entrepreneur.gif)](#)
 
 In this sense, when finishing each and every activity, you or any member of the team can change the status of such activity upon completion. This is the main working principle of the app.
  
@@ -63,7 +63,7 @@ If it is a web app, an Android App or an iOS app; the UI, UX and every detail yo
 
 Communication is essential for every interaction in this world: relations, partnerships, teams, processes and all things related to human interactions. That is why you have to improve it within your team, not only in person or e-mail.
 
-[![Slack](./media/Slack-Excel.jpg)](#)
+[![Slack](media/Slack-Excel.jpg)](#)
 
 You have to think about tools for video conferences, meetings, corporative chats (private and public) and many actions that involve communication inside of your team, and with external personnel. [Slack](https://slack.com/intl/en-ve/) is one example of these tools that incorporates all of that functionality. It has a paid and free version, and is a tool that has become popular over the last few years across the world. We use it, and we recommend it.
  
@@ -82,7 +82,7 @@ They are known for their excellent products and services. The founders were init
 
 A positive aspect of this tool is that it has a free and a paid version, and both of them are good. Also, it provides you the opportunity to choose if a personal option works for you or if you need G-Suite to be able to better collaborate as a business. 
 
-[![Google-tools](./media/google-services.jpg)](#)
+[![Google-tools](media/google-services.jpg)](#)
 
 
 <title-3>3. The need to analyze and connect</title-3>

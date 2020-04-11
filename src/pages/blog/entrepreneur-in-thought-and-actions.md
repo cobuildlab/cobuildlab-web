@@ -24,7 +24,7 @@ An excellent technique to help you discover your weaknesses and strengths, even 
 
 This will be something that you’ll be able to use your entire life as an entrepreneur, from before you start your project to even after you launch it. 
 
-![SWOT](./media/SWOT-analysis.jpeg)
+![SWOT](media/SWOT-analysis.jpeg)
 
 In this analysis, you can visualize the internal strengths and weaknesses that you have as a person, and also the opportunities and internal threats that you have as an entrepreneur.
 

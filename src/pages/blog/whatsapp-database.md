@@ -9,7 +9,7 @@ image: "./media/whatsapp-database.jpg"
 
 Have you made your WhatsApp backup? If not, It is time to do it. The reason is simple; WhatsApp database is going to turn it off.
 
-![whatsapp](./media/whatsapp.gif)
+![whatsapp](media/whatsapp.gif)
 
 At least those you didn’t save in Google Drive. So Don’t fear.
 
@@ -40,9 +40,9 @@ First of all, making the backup on Google Drive.
 
 Let’s tap on menu bottom, settings, chats, Backups. Choose Google Drive as memory source, how often do you want a backup, even you can program this action to be executed only when you are connected for wifi.
 
-![whatsapp-backup-android](./media/whatsapp-backup-android.png)
+![whatsapp-backup-android](media/whatsapp-backup-android.png)
 
-![whatsapp-backup-android](./media/whatsapp-backup-android-2.png)
+![whatsapp-backup-android](media/whatsapp-backup-android-2.png)
 
 Source:[fonepaw](https://www.fonepaw.es/tutorial/copia-de-seguridad-whatsapp-iphone.html)
 
@@ -54,7 +54,7 @@ In the last option, you can select how often you can do it.
 
 But remember,   will erase everything that’s not on the cloud. It is better to be sure.
 
-![whatsapp-backup-iphone](./media/whatsapp-backup-iphone.png)
+![whatsapp-backup-iphone](media/whatsapp-backup-iphone.png)
 
 Source: [fonepaw](https://www.fonepaw.es/tutorial/copia-de-seguridad-whatsapp-iphone.html)
 

@@ -31,7 +31,7 @@ In combination with [Django Rest Framework](https://www.django-rest-framework.or
 
 ## My JSON REST API with Django
 
-![Show me the code](./media/show-me-the-code.jpeg)
+![Show me the code](media/show-me-the-code.jpeg)
 
 
 This instructions are based on the [Oficial Django Documentation](https://docs.djangoproject.com/)

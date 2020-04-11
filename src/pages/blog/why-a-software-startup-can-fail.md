@@ -81,7 +81,7 @@ If you do not have enough knowledge about these, results can be disastrous.
 
 Below you will see a study by CBInsides where you can see that this is the main reason why startups fail. Specifically, 42% of startups do it for the same reason.
 
-![why-a-startup-can-fail](./media/startups-failures.png)
+![why-a-startup-can-fail](media/startups-failures.png)
 
 Source: [CBInsights](https://www.cbinsights.com/research/startup-failure-reasons-top/)
 

@@ -4,7 +4,7 @@ date: 2018-09-29T01:00:00+00:00
 tags: 
 template: development-post
 permalink: /blocks-architecture-for-api-development/
-image: /media/blocks.jpg
+image: ./media/blocks.jpg
 ---
 
 Blocks architecture is an architectural implementation proposal based on the Service Oriented Architecture design pattern for building APIs.
@@ -13,7 +13,7 @@ This architecture is also based on our experience developing software on the las
 
 In a nutshell, the implementation looks like this:
 
-![blocks architecture](./media/BLOCKS.png)
+![blocks architecture](media/BLOCKS.png)
 
 ## Principles:
     

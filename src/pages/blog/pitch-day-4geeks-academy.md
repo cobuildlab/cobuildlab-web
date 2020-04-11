@@ -12,7 +12,7 @@ On these days were Technology and Entrepreneurship are in every corner of Miami 
 
 <title-4>4Geeks Academy since 2015</title-4>
 
-![4Geeks Academy Members](./media/4geeks-academy-300x200.jpg)
+![4Geeks Academy Members](media/4geeks-academy-300x200.jpg)
 
 4Geeks Academy is a Miami based coding Bootcamp with the most update full stackÂ syllabus, focused on part-time studies, graduating developers for almost 3 years now.
 

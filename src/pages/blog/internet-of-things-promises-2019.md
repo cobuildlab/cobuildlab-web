@@ -35,7 +35,7 @@ In addition, the team of [Eclipse Foundation realized a survey the last year](ht
 
 You can see the results of this survey in the next images with the list of programming languages more use in this kind of project in 2018. 
 
-![iot](./media/iot1.jpg)
+![iot](media/iot1.jpg)
 
 Talking of that, we made a post about the [most popular programming languages](https://cobuildlab.com/blog/most-popular-programming-language/) in the last year in general terms. You can visit it if you want to find out more information about it. 
 
@@ -93,7 +93,7 @@ Home automation is the most known. Also, self-drive cars, there is a concept cal
 
 **6. These are the top of Operating system used for the internet of things projects**
 
-![iot](./media/iot3.png)
+![iot](media/iot3.png)
 
 Linux is the absolute king. 
 

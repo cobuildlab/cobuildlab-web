@@ -12,7 +12,7 @@ It does not matter if it is a local company, professional services, medical inst
 
 Just like the app, that you can use it socially, WhatsApp Business has the same particularities to talk and interact, with other characteristics which you can get many benefits.
 
-![WhatsApp Business](./media/Whatsapp-Business1.png)
+![WhatsApp Business](media/Whatsapp-Business1.png)
 
 <credits>Know about the alternatives that WhatsApp Business offers to your company.</credits>
 
@@ -38,7 +38,7 @@ You have to be so careful to not become a spam. Do not abuse sending messages 
 
 Just like your company has a schedule to work and to attend to the clients, in WhatsApp Business you can establish a schedule to respond to the doubts of your clients and to send messages. Do not do this outside of office hours because can bother them. In addition, this accustoms them to fact that there is a schedule for attention; even when you are working 24 hours a day. 
 
-![Smartphone](./media/Whatsapp-Business2-christian-wiediger-626857-unsplash.jpg)
+![Smartphone](media/Whatsapp-Business2-christian-wiediger-626857-unsplash.jpg)
 <credits>Prepare the content that you are going to send by WhatsApp Business, same as you do it for social media.  
 Photo by Christian Wiediger on [Unsplash](https://unsplash.com/).</credits>
 
@@ -50,7 +50,7 @@ Prepare the content that you are going to send by WhatsApp Business, same as you
 
 The good language is paramount in this communication channel. The person that goes to manage the WhatsApp Business has to know the rules of the language, write excellently and abide by the rules of spelling and writing because he/she will become the voice of your company.
 
-![WhatsApp Mockup](./media/whatsapp-business3-by-blog-mailrelay.png)
+![WhatsApp Mockup](media/whatsapp-business3-by-blog-mailrelay.png)
 <credits>WhatsApp Business let you solve fast the customer’s need.  
 Photo by [Blog Mailrelay](https://blog.mailrelay.com/es)</credits>
 

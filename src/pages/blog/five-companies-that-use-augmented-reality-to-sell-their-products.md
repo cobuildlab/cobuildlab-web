@@ -14,7 +14,7 @@ Now, we bring you five companies and successful cases that have used Augmented R
 
 **1.- KLM Royal Dutch Airlines.** Recently, [KLM airlines incorporated augmented reality](https://www.youtube.com/watch?v=LAvRIFN_hNc) to **check if the size of the customer's suitcase meets the necessary conditions**. In the app, they offer other services with AR which the passengers can interact and verified their flights from home.
 
-![Suitcases](./media/image3-asd4231sda.jpg)  
+![Suitcases](media/image3-asd4231sda.jpg)  
 <credits>Photo by [Los Angeles Times](https://www.latimes.com/)</credits>
 
 Also, KLM has an application to fly with them through virtual reality. This is the [KLM Flight Upgrader](https://www.youtube.com/watch?v=PwTFsXDmHx0), which can be downloaded for both Android and iOS. The passengers can use it even when they are not flying with KLM. The app gives them a visual experience of a KLM flight; they can watch movies or eat a virtual meal, all without paying anything.   
@@ -41,7 +41,7 @@ But if your company does not offer a product or service specifically, something 
 
 The news presenters used Augmented Reality to start a traditional live report of the subject. Very briefly, they show us the building and then make a scale of one of the apartments, where they indicate the square meters and the distribution of the space. Without a doubt, it was a very innovative and creative way to present news.  
 
-![Antena 3](./media/unnamed-23221-1.jpg)
+![Antena 3](media/unnamed-23221-1.jpg)
 <credits>Photo by [Antena 3](https://www.antena3.com/)</credits>
 
 Augmented Reality gives the users and sellers a new shopping experience and a very different way to interact with the brand. Surely, you are thinking that this costs a fortune; but also you have to think about all the return that you will get from this investment. 

@@ -48,7 +48,7 @@ You can literally pivot within the same board.
 
 * **Hypothesis and iterations (pivots)**
 
-![validation-board](./media/validation1.png)
+![validation-board](media/validation1.png)
 
 **Source:** [Javier Megias](https://javiermegias.com/blog/2013/05/validation-board-herramienta-validar-hipotesis-pivotar/)
 
@@ -56,7 +56,7 @@ If you didn't know, by hypothesis we mean the hypotheses of the customers (who i
 
 * **Design Experiment**
 
-![validation-board](./media/validation2.png)
+![validation-board](media/validation2.png)
 
 This is the most dreamy and risky area. Here you are going to place all the assumptions or risks that you are going to run with the business model. 
 
@@ -70,7 +70,7 @@ Forget at this point the optimism and entrepreneurial idealism.
 
 * **Results Area**
 
-![validation-board](./media/validation3.png)
+![validation-board](media/validation3.png)
 
 After completing all the previous steps, what will come will be to separate those assumptions that were valid and those that were not.
 
@@ -80,7 +80,7 @@ So if you don't overcome it, it means that you will be in the area of an invalid
 
 That's what it how it should look at the end:
 
-![validation-board](./media/validation.png)
+![validation-board](media/validation.png)
 
 This tool to validate a business idea is fantastic! but there are also others that we will show you below.
 
@@ -118,7 +118,7 @@ People often use infographics to represent a Customer Journey Map but also is po
 This is what a Customer Journey Map looks like.
 
 
-![validation-board](./media/validation4.jpg)
+![validation-board](media/validation4.jpg)
 
 **Source:** [Bright Vessel](https://www.brightvessel.com/customer-journey-map-2018/)
 

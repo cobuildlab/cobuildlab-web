@@ -45,7 +45,7 @@ Flask is a micro web framework written in Python. It is classified as a microfra
 
 MongoDB is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schemata. MongoDB is developed by MongoDB Inc. and licensed under the Server Side Public License (SSPL).
 
-![Show me the code](./media/show-me-the-code.jpeg)
+![Show me the code](media/show-me-the-code.jpeg)
 
 
 These instructions are based on the [Oficial Flask Documentation](http://flask.pocoo.org/)

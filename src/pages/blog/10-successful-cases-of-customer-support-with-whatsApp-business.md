@@ -23,7 +23,7 @@ The business communication provider, Infobip, presented, in August of this year,
 "Infobip is enabling this communication in an efficient and convenient way that helps companies to scale their communications, increase brand loyalty and encourage commitment which is vital in today's business world. The messaging channels are key to interact and get involved with customers", says Silvio Kutic, Infobip CEO.
 
 
-![InfoBip](./media/10-success-whatsapp-business-images/image4.png)
+![InfoBip](media/10-success-whatsapp-business-images/image4.png)
 
 
 
@@ -42,7 +42,7 @@ Absa is one of the first banks to try WhatsApp Business to process the requireme
 With this service, you can obtain the actual balance in your account, buy airtime, data or SMS bundles for the cell phone registered in your account, make payments, get a mini statement with the last three transactions, among other options.
 
 
-![Absa Example](./media/10-success-whatsapp-business-images/image3.png)
+![Absa Example](media/10-success-whatsapp-business-images/image3.png)
 
 
 
@@ -57,7 +57,7 @@ With this service, you can obtain the actual balance in your account, buy airtim
 A relatively new company, Russsh is an on-demand delivery service in Mumbai, India, to send cake, clothes, groceries, food, gifts, flowers, documents, cash, checks and other things, but if you want to ask them if they can send a specific article, you can write them to trough Whatsapp Business. This type of attention provides greater confidence and security to customers since you can track your delivery by this application.
 
 
-![Russsh Delivery](./media/10-success-whatsapp-business-images/image6.png)
+![Russsh Delivery](media/10-success-whatsapp-business-images/image6.png)
  
 
 
@@ -72,7 +72,7 @@ One of the five largest banks in Nigeria that wants to communicate with their pr
 Just Herbs is a brand from India that sells Ayurvedic products online, for skin, hair and body. They know that women take their time to buy beauty products. Then, they open to WhatsApp Business to answer all the questions of their clients. If you want to ask them if any particular cream is the right for your skin type, send a message through WhatsApp Business before buying.
 
 
-![Just Herbs](./media/10-success-whatsapp-business-images/image5.png)
+![Just Herbs](media/10-success-whatsapp-business-images/image5.png)
  
 
 
@@ -88,7 +88,7 @@ If you are looking for a good series or movies and you do not know who to ask, y
 Imagine how wonderful it would be to get your booking confirmation, check-in notification, boarding pass and flight status updates in a WhatsApp message. Well, this is what KLM Royal Dutch Airlines offers you on its website. This company includes WhatsApp Business in its official and verified passengers service channels, besides Twitter, Facebook, Messenger and phone calls, which give you the closeness to request all the information about your flight.
 
 
-![KLM Royal Dutch Airlines](./media/10-success-whatsapp-business-images/image1.png)
+![KLM Royal Dutch Airlines](media/10-success-whatsapp-business-images/image1.png)
 
 
 

@@ -21,7 +21,7 @@ Also, enterprise software improves productivity and efficiency through business 
 
 <title-3>1. Payment Processing</title-3>
 
-[![payment-processing](./media/payment-enterprise-software.jpg)](#)
+[![payment-processing](media/payment-enterprise-software.jpg)](#)
 
 The term used to describe the process and service that automates payment transactions between the customer and merchant. It is usually a third-party service that is a set of computer systems that process, verify, and accept or decline credit card transactions on behalf of the merchant through secure Internet connections.
 
@@ -33,7 +33,7 @@ The Credit Card Interchange then routes the transaction to the customer's credit
 
 <title-3>2. Email Marketing Systems</title-3>
 
-[![Email-Marketing-Systems](./media/email-marketing-system.jpg)](#)
+[![Email-Marketing-Systems](media/email-marketing-system.jpg)](#)
 
 Email marketing is the act of sending a commercial message, typically to a group of people, via email. In its broadest sense, every email sent to a potential or current customer could be considered email marketing. It usually involves using email to send advertisements, request business, or solicit sales or donations, and is meant to build loyalty, trust, or brand awareness. Marketing emails can be sent to a purchased lead list or a current customer database. 
 
@@ -41,7 +41,7 @@ The term usually refers to sending email messages with the purpose of enhancing 
 
 <title-3>3. Customer Relationship Management (CRM)</title-3>
 
-[![Customer-Relationship-Management](./media/customer-relationship-management.jpg)](#)
+[![Customer-Relationship-Management](media/customer-relationship-management.jpg)](#)
 
 Customer relationship management (CRM) describes all aspects of sales, marketing, and service-related interactions that a company has with its customers or potential customers. Both business-to-consumer (B2C) and business-to-business (B2B) companies often use CRM systems to track and manage communications through the web, email, telephone, mobile apps, chat, social media, and corporate marketing materials. 
 
@@ -61,7 +61,7 @@ Storing all the data from all departments (e.g., sales, marketing, customer serv
 
 <title-3>4. Enterprise Resource Planning (ERP)</title-3>
 
-[![Enterprise-Resource-Planning](./media/ERP.jpg)](#)
+[![Enterprise-Resource-Planning](media/ERP.jpg)](#)
 
 Enterprise resource planning (ERP) is a business process management software that allows an organization to use a system of integrated applications to manage the business and automate many back-office functions related to technology, services, and human resources. ERP software typically integrates all facets of an operation — including product planning, development, manufacturing, sales, and marketing — in a single database, application, and user interface.
 
@@ -74,7 +74,7 @@ The ERP field can be slow to change, but the last couple of years have unleashed
 
 <title-3>5. Business intelligence (BI)</title-3>
 
-[![Business-intelligence](./media/business-intelligence.jpg)](#)
+[![Business-intelligence](media/business-intelligence.jpg)](#)
 
 Business intelligence (BI) represents the tools and systems that play a crucial role in the strategic planning process within a corporation. These BI systems allow a company to gather, store, access, and analyze corporate data to aid in decision-making. Generally, these systems will illustrate business intelligence in the areas of customer profiling, customer support, market research, market segmentation, product profitability, statistical analysis, and inventory and distribution analysis, to name a few.
 
@@ -82,13 +82,13 @@ Business intelligence software is designed with the primary goal of extracting e
 
 <title-3>6. Business Continuity Planning</title-3>
 
-[![Business-Continuity-Planning](./media/business-continuity-planning.jpg)](#)
+[![Business-Continuity-Planning](media/business-continuity-planning.jpg)](#)
 
 Business Continuity Planning, BCP a term that covers both disaster recovery planning (DRP) and business resumption planning. BCP is the preparation and testing of measures that protect business operations and also provide the means for the recovery of technologies in the event of any loss, damage, or failure of facilities.
 
 <title-3>7. Enterprise application integration (EAI)</title-3>
 
-[![Enterprise-application-integration](./media/enterprise-application-integration.jpg)](#)
+[![Enterprise-application-integration](media/enterprise-application-integration.jpg)](#)
 
 It is the unrestricted sharing of data and business processes throughout networked applications or data sources in an organization. New software programs in areas such as inventory control, human resources, sales automation, and database management were designed to run independently, with no interaction between the systems. They were custom built in the technology of the day for a specific need being addressed and were often proprietary systems.
 
@@ -96,19 +96,19 @@ As enterprises grow and recognize the need for their information and application
 
 <title-3>8. Enterprise Content Management (ECM)</title-3>
 
-[![Enterprise-Content-Management](./media/enterprise-content-management.jpg)](#)
+[![Enterprise-Content-Management](media/enterprise-content-management.jpg)](#)
 
 Enterprise Content Management (ECM) is the document management term that describes the technologies used by organizations to capture, manage, store, and control enterprise-wide content, including documents, images, email messages, instant messages, social media messages, video, and more. ECM software is used to assist in content control associated with the business process and can be used to assure compliance (Sarbanes-Oxley, HIPPA, etc.). ECM has emerged from the convergence of many related technologies such as document management, Web content management, and collaboration.
 
 <title-3>9. Enterprise Search</title-3>
 
-[![Enterprise-Search](./media/enterprise-search.jpg)](#)
+[![Enterprise-Search](media/enterprise-search.jpg)](#)
 
 This is basically an extensive search system that provides the means to search both structured and unstructured data sources with a single query. It addresses the needs of businesses that need to store, retrieve, and track digital information of all kinds. Data sources in enterprise search systems include information stored in many different containers such as email servers, application databases, content management systems, file systems, intranet sites, and external Web sites. Enterprise search systems provide users with fast query times and search results that are often categorized in such a way that the information needed is easily accessible. 
 
 <title-3>10. Enterprise Messaging System</title-3>
 
-[![Enterprise-Messaging-System](./media/enterprise-messaging-system.jpg)](#)
+[![Enterprise-Messaging-System](media/enterprise-messaging-system.jpg)](#)
 
 This  is an enterprise-grade system that enables "program-to-program" messaging between applications and systems throughout an enterprise.  Enterprise messaging is widely used today for integrating various disparate enterprise applications. It is a software interface that allows a program to send freely coupled asynchronous data (messages) to be sent by one program and stored in a message queue until the receiving program is able to process it.
 
@@ -116,7 +116,7 @@ The utilization of Enterprise software allows companies to decrease the time it 
 
 <title-3>11. Custom Software Development</title-3>
 
-[![Custom-software-development](./media/custom-software-development.jpg)](#)
+[![Custom-software-development](media/custom-software-development.jpg)](#)
 
 Custom software development is the designing of software applications for a specific user or group of users within an organization. Such software is designed to address these users' needs better than more traditional specially and widespread off-the-shelf software can. Custom software is typically created just for these specific users by a third-party or in-house group of developers and is not packaged for resale. 
  

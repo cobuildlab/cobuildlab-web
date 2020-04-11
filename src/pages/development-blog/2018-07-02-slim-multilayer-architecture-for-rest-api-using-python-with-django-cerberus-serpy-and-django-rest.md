@@ -4,7 +4,7 @@ title: SLIM Multilayer Architecture for REST API using Python with Django, Cerbe
 date: 2018-07-02T17:32:18+00:00
 tags: 
 template: development-post
-image: /wp-content/uploads/2018/04/1_6WSm4DEcxYwf4-wDuh_wLQ.png
+image: ./media/04/1_6WSm4DEcxYwf4-wDuh_wLQ.png
 ---
 This is a very SLIM architecture proposal for API REST with Python using Django.
 

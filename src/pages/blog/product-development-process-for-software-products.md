@@ -50,7 +50,7 @@ In this phase, it is common to perform practices such as [SWOT analysis](https:/
 
 In this image, you can clearly see this practice which is almost like a religious practice that is done to a business model that is just being formulated. 
 
-![SWOT-analysis](./media/swot-analysis.jpg)
+![SWOT-analysis](media/swot-analysis.jpg)
 
 It is also common at this stage to clearly define the investment you must make, how much it will cost you to start and develop the project, how much profit you can achieve, you can think about the segmentation of your target audience and what strategy you will use to reach them, and even visualize marketing strategies.
 

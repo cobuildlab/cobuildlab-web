@@ -4,7 +4,7 @@ date: 2019-04-22T01:00:00+00:00
 tags: 
 template: development-post
 permalink: /deploying-a-flask-application-on-heroku/
-image: /media/blocks.jpg
+image: ./media/blocks.jpg
 ---
 
 On previous posts we talk about how to build a very simple [Flask REST JSON API](https://cobuildlab.com/development-blog/my-first-json-rest-api-with-flask/), and now we are going to show you how to introduce your API to the outside world on the internet using [Heroku](https://www.heroku.com/).
@@ -23,7 +23,7 @@ In this case our app will work with in memory data, no database connection yet, 
 Heroku makes particularly easy to deploy applications, and with it system of plugins, even easier connect external services like Redis, Postgresql, Mongo, etc
 
 
-![Show me the code](./media/show-me-the-code.jpeg)
+![Show me the code](media/show-me-the-code.jpeg)
 
 Pre requisites:
 

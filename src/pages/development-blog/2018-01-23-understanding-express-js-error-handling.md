@@ -4,11 +4,9 @@ title: Understanding Express.js Error handling
 date: 2018-01-23T15:31:26+00:00
 tags: 
 template: development-post
-image: /wp-content/uploads/2018/04/2352018077814181368-1024x683.jpg
+image: ./media/04/2352018077814181368-1024x683.jpg
 ---
 Today we are going to discuss Express [error handling](http://expressjs.com/en/guide/error-handling.html), this is a vital part of the express framework, handling errors manually makes our application hard to maintain, plus makes it difficult to reuse the code, you can keep your application clean and scalable by using the express error handler middleware function.
-
-Before reading this you need to understand what is an Express middleware and how it works, if you want to learn more about express middleware function I suggest you go to my previous post: [**&#8220;Understanding Express middleware function&#8221;**](https://community.4geeks.co/?p=629&preview=true).
 
 The express error handler is a middleware function, but this middleware takes four parameters **(err, req, res, next)**, unlike the common middleware which takes three parameters. The first parameter will be the error we pass from the common middleware&nbsp;**next(err).**
 

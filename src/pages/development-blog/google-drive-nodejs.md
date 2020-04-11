@@ -3,7 +3,7 @@ title: "How to create a folder and a file using the googledrive api in nodejs"
 date: 2019-07-15T01:00:00+00:00
 tags: 
 template: development-post
-image: /media/blocks.jpg
+image: ./media/blocks.jpg
 ---
 
 ## 1) Create a Gmail account:

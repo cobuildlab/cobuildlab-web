@@ -10,7 +10,7 @@ We all can picture how we want our <a target="_blank" href="https://cobuildlab.c
 
 That all sounds good on paper, and once we get funding, the dream comes true. But not every Startup reaches a happy ending with an Initial public offering where the founders celebrate it with their kids and family. <br> </br>
 
-<img src="./media/rokk3r-1.png"> <br> </br>
+<img src="media/rokk3r-1.png"> <br> </br>
 
 Sometimes it is circumstances that we can't control or just our own mistakes that might lead one's companies to failure. One thing is for sure, we can only learn from experience, and the things you learn yourself from failure stay with you for life. <br> </br>
 
@@ -38,13 +38,13 @@ Rokk3r proposes a system a little bit more focused without that much risk expans
 
 <title-3 align="centered"> INTRODUCING ROKK3R VENTURE BUILDERS </title-3> <br> </br>
 
-<img src="./media/rokk3r-2.png"> <br> </br>
+<img src="media/rokk3r-2.png"> <br> </br>
 
 <a target="_blank" href="https://www.rokk3r.com/venture-builders/"> Rokk3r </a> is a platform for entrepreneurs to create startups that perform at least 10x greater than competitors and a strategic partner for investors and organizations to increase value, mitigate risks, and stay at the edge of innovation. <br> </br>
 
 In today's world, where there are so many technological advances, so many new opportunities, we ask ourselves, how do I create a new company without taking the risk of exploding? What Rokk3r does is try to use new technologies to create new value propositions by mitigating risk at every step of the way. They look for the best way to attack the market, always trying to mitigate the risk, and Rokk3r participates as partners or <a target="_blank" href="https://cobuildlab.com/blog/co-founders/"> co-founders </a> of the new companies.  <br> </br>
 
-<img src="./media/rokk3r-3.jpg"> <br> </br>
+<img src="media/rokk3r-3.jpg"> <br> </br>
  
 When Rokk3r started in 2012, there was a lot of technological need by the entrepreneurs, and they realized that it was not so much the technology or the capital but validating the idea that would make a real difference on the way to success. <br> </br>
 
@@ -52,7 +52,7 @@ The <a target="_blank" href="https://cobuildlab.com/blog/practices-for-validatin
 
 <title-3 align="centered"> Transforming the current companies </title-3> <br> </br>
 
-<img src="./media/rokk3r-4.jpg "> <br> </br>
+<img src="media/rokk3r-4.jpg "> <br> </br>
 
 Taking into account that Rokk3r's model differs a little from incubators and accelerators, the model they propose consists of first looking for the company's ally, then looking for the business opportunity and finally hiring the team. <br> </br>
 
@@ -64,7 +64,7 @@ This is why Rokk3r is so unique; they look for traditional companies like yours,
 
 It happens that most companies have developed an immune system for change. Once the opportunity is presented just at the moment of making the final decision, this immune system activates, and the founder or some board member hesitates and wonders why we get into this, although it seems to be a pretty good deal? And when it comes to business, the only thing worse than starting something and failing is not starting anything at all so, if the process is working, let them innovate the edge of your company. <br> </br>
 
-<img src="./media/rokk3r-5.png"> <br> </br>
+<img src="media/rokk3r-5.png"> <br> </br>
 
 Founded by <a target="_blank" href="https://www.crunchbase.com/person/brian-sanchez"> Brian Sanchez </a>, <a target="_blank" href="https://www.crunchbase.com/person/charles-irizarry"> Charles Irizarry </a>, <a target="_blank" href="https://www.linkedin.com/in/germanmontoya/"> German Montoya </a>, <a target="_blank" href="https://www.crunchbase.com/person/juan-montoya"> Juan Montoya </a>, and <a target="_blank" href="https://www.linkedin.com/in/nabylcharania/"> Nabyl Charania</a>, Rokk3r Labs became the best place in the world to launch game-changer companies. It has co-built over 40 companies worth over $50 million with returns of over 100 times the investment, which speaks volumes about their process of defining startups. <br> </br>
 
@@ -72,16 +72,16 @@ Based in Miami, this company is looking to investing in Mexico and Latin America
 
 For more info please visit <a target="_blank" href="https://www.rokk3r.com/"> https://www.rokk3r.com/ </a> <br> </br>
 
-<img src="./media/rokk3r-6.jpg">
+<img src="media/rokk3r-6.jpg">
 Rokk3r was honored in <a target="_blank" href="http://thetechtribune.com/2019-best-tech-startups-in-miami/"> 2019 Best Tech Startups in Miami </a> and <a target="_blank" href="http://thetechtribune.com/10-best-tech-startups-in-miami/"> 2020 Best Tech Startups in Miami </a>. <br> </br>
 
 <title-3 align="centered"> Rokk3r Fuel </title-3> <br> </br>
 
-<img src="./media/rokk3r-7.png"> <br> </br>
+<img src="media/rokk3r-7.png"> <br> </br>
 
 In March 2017, it was announced the launch of Rokk3r Fuel, a +240 million dollar dedicated investment fund designed to give investors access to Rokk3r Labs' proprietary approach of identifying and co-building innovative new companies. Rokk3r Fuel is led by founding partners Jeff Ransdell and Jonas Tempel in partnership with Rokk3r Labs managing founders Nabyl Charania and Germán Montoya. <br> </br>
 
-<img src="./media/rokk3r-8.png"> <br> </br>
+<img src="media/rokk3r-8.png"> <br> </br>
 
 The firm uses a tested methodology of risk mitigated early-stage investing by working with Rokk3R Labs and their global network of professional company builders, to help the next generation of innovators access the resources needed to grow. <br> </br>
 

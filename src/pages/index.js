@@ -160,7 +160,6 @@ class Index extends React.Component {
       'We partner with new and early-stage non-technical entrepreneurs and industry experts to transforms ideas into Web and Mobile Software Products.\n' +
       'Since day one, our technique is focused on early results and transparent communication.';
     const posts = get(this, 'props.data.allMarkdownRemark.edges');
-    const customerSuccessStories = get(this, 'props.data.customerSuccessStories.edges');
     const siteKey = process.env.RECAPTCHA_SITEKEY;
 
     return (
@@ -345,35 +344,35 @@ class Index extends React.Component {
         {/*Section Latest News*/}
 
         {/*Section Latest News*/}
-        <section className="section">
-          <Container hasTextAlign="centered">
-            <Link to="/customer-success-stories">
-              <Title className="title-section">Customer Success Stories</Title>
-            </Link>
-            <Columns isCentered>
-              {customerSuccessStories.map(({ node }) => {
-                const title = get(node, 'frontmatter.title') || node.fields.slug;
-                const image = get(node, 'frontmatter.image.publicURL') || defaultImg;
-                return (
-                  <Column isSize="1/3" key={node.fields.slug}>
-                    <Link to={node.fields.slug}>
-                      <CardImage>
-                        <Image isRatio="4:8" src={image} />
-                        <Content className="title-post">
-                          <small>
-                            {' '}
-                            <Icon icon={clockO} style={{ paddingTop: 5 }} /> {node.frontmatter.date}
-                          </small>
-                          <Subtitle hasTextColor="white">{title}</Subtitle>
-                        </Content>
-                      </CardImage>
-                    </Link>
-                  </Column>
-                );
-              })}
-            </Columns>
-          </Container>
-        </section>
+        {/*<section className="section">*/}
+        {/*  <Container hasTextAlign="centered">*/}
+        {/*    <Link to="/customer-success-stories">*/}
+        {/*      <Title className="title-section">Customer Success Stories</Title>*/}
+        {/*    </Link>*/}
+        {/*    <Columns isCentered>*/}
+        {/*      {customerSuccessStories.map(({ node }) => {*/}
+        {/*        const title = get(node, 'frontmatter.title') || node.fields.slug;*/}
+        {/*        const image = get(node, 'frontmatter.image.publicURL') || defaultImg;*/}
+        {/*        return (*/}
+        {/*          <Column isSize="1/3" key={node.fields.slug}>*/}
+        {/*            <Link to={node.fields.slug}>*/}
+        {/*              <CardImage>*/}
+        {/*                <Image isRatio="4:8" src={image} />*/}
+        {/*                <Content className="title-post">*/}
+        {/*                  <small>*/}
+        {/*                    {' '}*/}
+        {/*                    <Icon icon={clockO} style={{ paddingTop: 5 }} /> {node.frontmatter.date}*/}
+        {/*                  </small>*/}
+        {/*                  <Subtitle hasTextColor="white">{title}</Subtitle>*/}
+        {/*                </Content>*/}
+        {/*              </CardImage>*/}
+        {/*            </Link>*/}
+        {/*          </Column>*/}
+        {/*        );*/}
+        {/*      })}*/}
+        {/*    </Columns>*/}
+        {/*  </Container>*/}
+        {/*</section>*/}
         {/*Section Latest News*/}
 
         <section className="section">
@@ -554,43 +553,5 @@ export const pageQuery = graphql`
         }
       }
     }
-    customerSuccessStories:allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: 3
-      filter: {fileAbsolutePath: {regex: "/(pages/customer-success-stories)/.*\\.md$/"}}
-    ) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            tags
-            image {
-              publicURL
-              childImageSharp {
-                fluid(maxWidth: 480) {
-                  aspectRatio
-                  base64
-                  sizes
-                  src
-                  srcSet
-                }
-              }
-            }
-          }
-        }
-      }
-    }
   }
 `;
-/* <Columns isCentered>
-    <Column>
-      <Link className="button is-primary is-medium is-rounded">
-        <small>Learn more</small>
-      </Link>
-    </Column>
-  </Columns> */

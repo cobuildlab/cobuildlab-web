@@ -10,7 +10,7 @@ Octopi, it's a Miami-based software startup that builds and sells a modern and s
 
 "Our target market are the small to medium port terminal that might still be doing a lot of work using pen and paper or Excel spreadsheets because there are not good commercial solutions that fits their needs." Said Octopi's CEO, Luc Castera, for Startup Miami.
 
-![software-development](./media/octopi-1.jpg)
+![software-development](media/octopi-1.jpg)
 **SOURCE:** [StartUp Miami](http://startup.miami/spotlight/octopi/)
 
 The company was founded in 2015 by Luc Castera and Guille Carlos, two software engineers with more than 25 years of combined experience in software development whom strongly believe that quality software should be elegant and easy to use. Miles Varghese joined the team to head up sales in 2017.
@@ -24,7 +24,7 @@ That was a crucial lesson Castera learned after his first attempt at starting hi
 
 The largely bootstrapped Octopi won the eMerge Americas Startup Showcase early-stage competition in 2016, winning $50,000. That year it also participated in the Venture Hive accelerator class and has been growing its revenues and customer base since.
 
-![software-development](./media/octopi-2.jpg)
+![software-development](media/octopi-2.jpg)
 **SOURCE:** [Octopi](https://octopi.co/about_us)
 
 On March 2019,  Navis, a California subsidiary of Helsinki-based Cargotec,  purchased Octopi.  The entire team will be staying with the company and in Miami, where the company will continue leading the product for the new owners, said Octopi CEO Luc Castera.

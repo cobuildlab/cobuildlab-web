@@ -8,7 +8,7 @@ image: "./media/Banner-title-blogs-cobuild-01-4.jpg"
 
 The Cobuild Process consists in a series of phases that have the goal of transforming an idea in a sustainable business, through the combination and collaboration of the areas of Lean Entrepreneurship, Business Strategy, Technological Innovation, and Exponential Growth Cobuild Lab divides this process into 4 phases: Validate, Cobuild, Plan and Prepare and Accelerate.
 
-![Cobuild Phases](./media/Screen-Shot-2018-09-20-at-9.57.22-AM.png)
+![Cobuild Phases](media/Screen-Shot-2018-09-20-at-9.57.22-AM.png)
 
 <title-2>Phase 1: Validate</title-2>
 
@@ -34,7 +34,7 @@ Once we had established ground, we build our first version of our Startup Hypoth
 
 <title-2>Phase 2: Cobuild</title-2>
 
-![Cobuild Power](./media/rawpixel-669610-unsplash.jpg)
+![Cobuild Power](media/rawpixel-669610-unsplash.jpg)
 
 <title-4>Step 1: Prototyping</title-4>
 

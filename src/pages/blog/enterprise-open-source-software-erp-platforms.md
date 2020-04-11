@@ -24,7 +24,7 @@ Today in our companies there is a more significant workload, and as our company 
 It is essential to say dear user that ERP systems integrate all your activities in one single platform so we can say that the information will be kept organized and will be carried out step by step. Another positive aspect of ERP systems is that they facilitate communication between workers, whether from the same or different departments; this generates a greater and more efficient response to a possible problem, reducing operational risks.    
 
 
-[![erp-software](./media/ERP-software.jpg)](#)
+[![erp-software](media/ERP-software.jpg)](#)
 
 **Source:** [Fiscgroup](http://fiscgroup.com/enterprise-resource-planning/)
 
@@ -36,19 +36,19 @@ It is essential to say dear user that ERP systems integrate all your activities 
  
 Dolibarr also has a network of very active users, which facilitates the repair of any problem and allows a discussion. We can also highlight that dolibar is a very well known system worldwide, so it is available in several languages.   
 
-[![dolibarr-erp-software](./media/dolibarr-erp-software.jpg)](#)
+[![dolibarr-erp-software](media/dolibarr-erp-software.jpg)](#)
 
 <title-3>* ERPNext</title-3>
 
 [ERPNext](https://erpnext.com/) is a system that was designed for small and medium enterprises, which has a different package and tools to make life easier for the user. The simplicity of this system allows us to configure it, using simple forms to enter information about your company and guiding you through the whole process in a typical wizard-style configuration.
 
-[![erp-next](./media/erp-next.png)](#)
+[![erp-next](media/erp-next.png)](#)
 
 <title-3>* iDempiere</title-3>
 
 [iDempiere](https://www.idempiere.org/) is a full-fledged ERP, with everything from invoicing to POS integration to warehouse management to forecasting. While iDempiere is open source, installing an ERP is never truly free.  iDempiere, like most open-source programs, relies on community support for troubleshooting. Businesses may also call in specialists with experience in iDempiere.
 
-[![idempiere-erp-software](./media/idempiere-erp-software.png)](#)
+[![idempiere-erp-software](media/idempiere-erp-software.png)](#)
 
 <title-3>* ODOO</title-3>
 
@@ -56,12 +56,12 @@ Dolibarr also has a network of very active users, which facilitates the repair o
 
 This software has two versions. First, the Community version (open source) called LGPLv3, which is supplemented on features and services by the Enterprise version's (proprietary).
 
-[![ODOO](./media/odoo-erp.png)](#)
+[![ODOO](media/odoo-erp.png)](#)
 
 <title-3>* OpenBravo</title-3>
 
 [Openbravo](https://www.openbravo.com/) is an international business software company focused on helping retailers and restaurateurs through their internal processes.  The omnibus platform is one of their most significant proposals, which is the most flexible mobile and cloud-based.  
 
-[![Open-bravo](./media/open-bravo-erp.png)](#)
+[![Open-bravo](media/open-bravo-erp.png)](#)
 
 The **Free and open-source software** are undoubtedly a great advantage for companies since they allow them to reduce their operating costs because they do not have a license to use them, in the same way, they speed up the activities within the company and facilitate the work of users. They also allow you to make modifications to fit your needs, so they are an excellent option for small or medium-sized businesses that are growing.  If you want, we can develop another option for you or just introduce you to new options. Contact us and you will see. 

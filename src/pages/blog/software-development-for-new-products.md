@@ -114,7 +114,7 @@ Developing new software products is our major expertise, and beyond commenting o
 
 <title-3>Weedmatch</title-3>
 
-![weedmatch](./media/weedmatch.jpg)
+![weedmatch](media/weedmatch.jpg)
 
 [This project](https://weedmatch.cl/) was enjoyable and different. Weedmatch is the first free cannabis social network for Latin America. It was developed by a group of Venezuelans led by Oscar Lopez. 
 
@@ -128,7 +128,7 @@ We made an application for Android and iOS using React Native and Django framewo
 
 <title-3>Ezonseller</title-3>
 
-![Ezonseller](./media/ezonseller-logo.png)
+![Ezonseller](media/ezonseller-logo.png)
 
 The need to sell something and make a profit for it is the oldest trade in the world. This principle has governed trade for years, and as markets grow, there is more competition, and the profit margin may not be the same, diminish or be altered in some way. 
 

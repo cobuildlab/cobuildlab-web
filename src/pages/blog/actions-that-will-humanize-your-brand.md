@@ -54,7 +54,7 @@ An example of that is the next: “Buffer thanked one of its stand-out customers
 
 This was the answer:
 
-![humanize-your-brand](./media/humanize-your-brand1.png)
+![humanize-your-brand](media/humanize-your-brand1.png)
 Source: [Open.Buffer](https://open.buffer.com/community-delight/)
 
 <youtube-video id="AiCwm8Gf-ts"></youtube-video>
@@ -76,7 +76,7 @@ Especially on the internet.
 
 “Instead of being asked to blindly trust a company’s claims, consumers will see real-life people falling in love with your products, which will promote trust in your brand”.
 
-![starbucks](./media/starbucks1.jpg)
+![starbucks](media/starbucks1.jpg)
 
 <title-3>4. Show your team members as much as you can</title-3>
 
@@ -86,7 +86,7 @@ Bigger brands in the world do it and they have gotten an amazing result with thi
 
 This example of Starbucks sums it up well. 
 
-![starbucks](./media/starbucks2.jpg)
+![starbucks](media/starbucks2.jpg)
 
 Is not necessary that the information you bring has been about the work. It could be about their life. But don’t get confused. It is necessary that you tell the employees’ story related to their work and your brand. 
 
@@ -104,9 +104,9 @@ But remember, this funny content should be related to your product or service. A
 
 This is a good example of this. 
 
-![netflix](./media/netflix.jpg)
+![netflix](media/netflix.jpg)
 
-![netflix](./media/netflix2.jpg)
+![netflix](media/netflix2.jpg)
 
 Netflix is the best brand to understand it. 
 
