@@ -4,7 +4,7 @@ title: 'Agile methodology: What is agility?'
 date: 2018-03-14T20:47:29+00:00
 tags:
 template: development-post
-image: /wp-content/uploads/2018/03/large_1471354288_don_t-lose-your-head-with-agile.png
+image: ./media/03/large_1471354288_don_t-lose-your-head-with-agile.png
 ---
 <span style="font-weight: 400;">Currently, we who are in the world of software development hear about agile methodology, we must be agile, we must adopt SCRUM but what is an agile methodology? agility? what does it mean?</span>
 

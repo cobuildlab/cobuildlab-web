@@ -10,7 +10,7 @@ In  the entrepreneurship world, the term startup is increasingly used to refer t
 
 That is why startups continue to have an exponential growth -practically  unstoppable- due to the innovative component that characterizes them. 
 
-[![startup-definition](./media/startups-definition.png)](#)
+[![startup-definition](media/startups-definition.png)](#)
 
 For Steve Blank, a startup is a temporary organization in search of a scalable and replicable business model. However, this definition contrasts with the ideas of Nelson (2015), who points out that there is no concept associated with its meaning, but the different conceptions require elements in common in each of them, emphasizing on their scalability, approach, philosophy and the market to which they are focused.
 On his part,   Román (2016) states that a startup is a company in its initial stage, based on its literal translation, which is “set in motion.” This author points to an important differentiation, where not all startups are created by entrepreneurs and not all start-ups by entrepreneurs are startups; this is where a key element comes into play: innovation.

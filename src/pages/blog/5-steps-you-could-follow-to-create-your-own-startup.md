@@ -6,7 +6,7 @@ tags: Education
 image: "./media/prueba-3-0112312.jpg"
 ---
 
-![Initial Steps](./media/image2123as.jpg)
+![Initial Steps](media/image2123as.jpg)
 <credits>Photo by: [William Iven](https://unsplash.com/@firmbee) on [Unsplash](https://unsplash.com/)</credits>
 
 Sometimes happens that you think you have a millionaire idea or a great project that will earn you a lot of money. All the excitement goes to the floor when you realize that it implicates so much money to do it. But sometimes we are wrong and this is not exactly as we think.
@@ -35,7 +35,7 @@ This is like your map. **You have to write the production and distribution plan 
 
 Do a very realistic and convincing project in time and resources that you need. Do not discourage if you see that you need so many things. Therefore, be honest, simple and focus taking off your idea.
 
-![Business Plan](./media/image121asd21.jpg)
+![Business Plan](media/image121asd21.jpg)
 <credits>Photo by [Rawpixel](https://unsplash.com/@rawpixel) on [Unsplash](https://unsplash.com/)</credits>
 
 **4.-Establish a marketing plan** 
@@ -52,7 +52,7 @@ On the Internet, there are many. [Tyler Denk](https://www.forbes.com/sites/quora
 
 **5.- Do co-working** 
 
-![Co-working](./media/image312312312.jpg)
+![Co-working](media/image312312312.jpg)
 <credits>Photo by [Rawpixel](https://unsplash.com/@rawpixel) on [Unsplash](https://unsplash.com/)</credits>
 
 **Tyler Denk says that you have to go to events of your area and meet people** that have the skills that you need. They can help you, contribute you or work for you. 

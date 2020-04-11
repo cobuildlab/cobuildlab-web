@@ -62,7 +62,7 @@ They always tend to get better the product performance.
  
 <title-4>1. Less is more:</tittle-4>
 
-![user-stories-tip-1](./media/less-is-more.jpg)
+![user-stories-tip-1](media/less-is-more.jpg)
 
 <credits>fuente:pexels</credits>
 
@@ -73,7 +73,7 @@ This rule applies to ideas, business ideas, goals and lots of things that need t
 
 <title-4>2. More user stories collaboratives</tittle-4>
 
-![user-stories-tip-2](./media/collaborative-user-stories.jpg)
+![user-stories-tip-2](media/collaborative-user-stories.jpg)
 
 <credits>fuente:pexels</credits>
 
@@ -83,7 +83,7 @@ This tip also applies to customers.
 
 <title-4>3. Use experts and customers</tittle-4>
 
-![user-stories-tip-3](./media/experts-and-customers.jpg)
+![user-stories-tip-3](media/experts-and-customers.jpg)
 
 <credits>fuente:pexels</credits>
 
@@ -91,7 +91,7 @@ We recommend you use testers, team's members, customers and different kind of pe
 
 <title-4>4. Focus on what and why</tittle-4>
 
-![user-stories-tip-4](./media/what-and-why-user-stories.jpg)
+![user-stories-tip-4](media/what-and-why-user-stories.jpg)
 
 <credits>fuente:pexels</credits>
 
@@ -101,7 +101,7 @@ To have more information, you can describe in a few words the person profile. Th
 
 <title-4>5. Make it public</tittle-4>
 
-![user-stories-tip-5](./media/make-public-user-stories.jpg)
+![user-stories-tip-5](media/make-public-user-stories.jpg)
 
 <credits>fuente:pexels</credits>
 

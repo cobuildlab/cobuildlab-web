@@ -4,7 +4,7 @@ title: Write a more readable code with Express.js
 date: 2018-02-15T19:58:35+00:00
 tags:
 template: development-post
-image: /wp-content/uploads/2018/04/Expressjs.jpg
+image: ./media/04/Expressjs.jpg
 ---
 Keeping your code clean is very important, maintaining a repository with different code styles is a pain, but sometimes it’s difficult to find how you should organize your code in express, because there are too many ways of doing it. Today i’ll provide you some tips on how to write a more readable code for your express application.
 
@@ -21,7 +21,6 @@ Consistency is the key to keep your code readable, you should always use linter 
 }
 </pre>
 
-The most important part of a express application are the middleware functions and express routers which uses chained middlewares, that’s what we are focusing of, if you don’t know what a middleware is, i encourage you to go to my previous post: [“Understanding Express.js middleware function”](https://community.4geeks.co/understanding-express-js-middleware-function/).
 
 Let’s start with some examples of what you should and what you should not do when you define some routes in express. You should start with dependence libraries, followed by your internal requires like database models or other middlewares you made. 
 

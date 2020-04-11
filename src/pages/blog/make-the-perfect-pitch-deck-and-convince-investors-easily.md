@@ -16,7 +16,7 @@ If you need investment for achieving a business idea, well, organize your ideas,
 
 <title-2>Structuring the perfect pitch deck</title-2>
 
-![pitcj-deck](./media/pitch-deck1.jpg)
+![pitcj-deck](media/pitch-deck1.jpg)
 
 Source: [Pitch Deck.improve presentation](https://pitchdeck.improvepresentation.com/what-is-a-pitch-deck)
 
@@ -130,7 +130,7 @@ For doing a pitch deck a convince effectively to investors you do not just have 
 
 * **Don't use too many bullet points that will bore your audience**
 
-![pitcj-deck](./media/pitch-deck2.jpg)
+![pitcj-deck](media/pitch-deck2.jpg)
 
 Source: [Pitch Deck.improve presentation](https://pitchdeck.improvepresentation.com/what-is-a-pitch-deck)
 
@@ -138,7 +138,7 @@ This would confuse to investors and they will pay more attention to understand t
 
 * **Don't talk too much and use your own words to explain**
 
-![pitcj-deck](./media/pitch-deck3.jpg)
+![pitcj-deck](media/pitch-deck3.jpg)
 
 Source: [Pitch Deck.improve presentation](https://pitchdeck.improvepresentation.com/what-is-a-pitch-deck)
 
@@ -148,7 +148,7 @@ Also, read keywords and explain in your own words. That will demonstrate more co
 
 * **Don't use many texts. Take advantage of images**
 
-![pitcj-deck](./media/pitch-deck4.jpg)
+![pitcj-deck](media/pitch-deck4.jpg)
 
 Source: [Pitch Deck.improve presentation](https://pitchdeck.improvepresentation.com/what-is-a-pitch-deck)
 
@@ -158,7 +158,7 @@ Use them more than text for your presentation. Write only keywords that can help
 
 * **Don't use small fonts and prepare with time your speech**
 
-![pitcj-deck](./media/pitch-deck5.jpg)
+![pitcj-deck](media/pitch-deck5.jpg)
 
 Source: [Pitch Deck.improve presentation](https://pitchdeck.improvepresentation.com/what-is-a-pitch-deck)
 
@@ -202,75 +202,75 @@ The best way to understand something is looking some examples. Today we made it 
 
 This time, we select an Uber Pitch Deck. Enjoy it and take every note you can.
 
-![pitcj-deck](./media/uber-pitch-deck1.jpg)
+![pitcj-deck](media/uber-pitch-deck1.jpg)
 
 <Br>
 
-![pitcj-deck](./media/uber-pitch-deck2.jpg)
+![pitcj-deck](media/uber-pitch-deck2.jpg)
 
 <Br>
 
-![pitcj-deck](./media/uber-pitch-deck3.jpg)
+![pitcj-deck](media/uber-pitch-deck3.jpg)
 
 <Br>
 
-![pitcj-deck](./media/uber-pitch-deck4.jpg)
+![pitcj-deck](media/uber-pitch-deck4.jpg)
 
 <Br>
 
-![pitcj-deck](./media/uber-pitch-deck5.jpg)
+![pitcj-deck](media/uber-pitch-deck5.jpg)
 
 <Br>
 
-![pitcj-deck](./media/uber-pitch-deck6.jpg)
+![pitcj-deck](media/uber-pitch-deck6.jpg)
 
 <Br>
 
-![pitcj-deck](./media/uber-pitch-deck7.jpg)
+![pitcj-deck](media/uber-pitch-deck7.jpg)
 
 <Br>
 
-![pitcj-deck](./media/uber-pitch-deck8.jpg)
+![pitcj-deck](media/uber-pitch-deck8.jpg)
 
 <Br>
 
-![pitcj-deck](./media/uber-pitch-deck9.jpg)
+![pitcj-deck](media/uber-pitch-deck9.jpg)
 
 <Br>
 
-![pitcj-deck](./media/uber-pitch-deck10.jpg)
+![pitcj-deck](media/uber-pitch-deck10.jpg)
 
 <Br>
 
-![pitcj-deck](./media/uber-pitch-deck11.jpg)
+![pitcj-deck](media/uber-pitch-deck11.jpg)
 
 <Br>
 
-![pitcj-deck](./media/uber-pitch-deck12.jpg)
+![pitcj-deck](media/uber-pitch-deck12.jpg)
 
 <Br>
 
-![pitcj-deck](./media/uber-pitch-deck13.jpg)
+![pitcj-deck](media/uber-pitch-deck13.jpg)
 
 <Br>
 
-![pitcj-deck](./media/uber-pitch-deck14.jpg)
+![pitcj-deck](media/uber-pitch-deck14.jpg)
 
 <Br>
 
-![pitcj-deck](./media/uber-pitch-deck15.jpg)
+![pitcj-deck](media/uber-pitch-deck15.jpg)
 
 <Br>
 
-![pitcj-deck](./media/uber-pitch-deck16.jpg)
+![pitcj-deck](media/uber-pitch-deck16.jpg)
 
 <Br>
 
-![pitcj-deck](./media/uber-pitch-deck17.jpg)
+![pitcj-deck](media/uber-pitch-deck17.jpg)
 
 <Br>
 
-![pitcj-deck](./media/uber-pitch-deck18.jpg)
+![pitcj-deck](media/uber-pitch-deck18.jpg)
 
 <Br>
 

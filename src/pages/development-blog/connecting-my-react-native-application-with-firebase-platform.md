@@ -30,7 +30,7 @@ React Native lets you build mobile apps using only JavaScript. It uses the same 
 
 [Official React Native Documentation](https://facebook.github.io/react-native/)
 
-![Show me the code](./media/show-me-the-code.jpeg)
+![Show me the code](media/show-me-the-code.jpeg)
 
 
 ## Connecting my React Native Application with Firebase

@@ -58,7 +58,7 @@ To be more specific, this plan should have:
 
 Source: [Method 123](https://www.method123.com/resource-plan.php)
 
-![resource-plan](./media/resource-plan.png)
+![resource-plan](media/resource-plan.png)
 
 Source: [Business resource](https://business-docs.co.uk/downloads/agile-resource-plan-template/)
 
@@ -86,7 +86,7 @@ In this plan you should:
 
 Source: [Method 123](https://www.method123.com/quality-plan.php)
 
-![quality-plan](./media/quality-plan.jpg)
+![quality-plan](media/quality-plan.jpg)
 
 Source: [Sled guide](http://sledguide.info/tmpl/)
 
@@ -104,7 +104,7 @@ In a risk plan, you should:
 
 Source: [Method 123](https://www.method123.com/risk-management-plan.php)
 
-![risk-plan](./media/risk-plan.jpg)
+![risk-plan](media/risk-plan.jpg)
 
 Source: [James Griffin](http://jamesgriffin.co/server-risk-assessment-template/)
 
@@ -114,7 +114,7 @@ This plan helps you to gain the customer's acceptance for deliverables you have 
 
 Don’t forget, include acceptance test methods and resources for achieving customer acceptance. 
 
-![acceptance-criteria](./media/acceptance-criteria.jpg)
+![acceptance-criteria](media/acceptance-criteria.jpg)
 
 Source: [Warexone](http://warexone.info/sample-uat-test-plan-template/)
 
@@ -137,7 +137,7 @@ In this plan you have to be sure of:
 
 Source: [Method 123](https://www.method123.com/communication-plan.php)
 
-![communication-plan](./media/communication-plan.png)
+![communication-plan](media/communication-plan.png)
 
 Source: [Pinterest](https://www.pinterest.com/pin/303218987409875020/)
 

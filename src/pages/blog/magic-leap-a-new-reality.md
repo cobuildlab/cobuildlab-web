@@ -9,7 +9,7 @@ image: "./media/magic-leap.jpg"
 Magic Leap is an American company, located in Miami that is revolutionizing the technology scene. 
 Founded by **Rony Abovitz** in 2010 has raised $1.4 billion, with large-scale investors such as _Google_ and the _Alibaba Group_. **Magic Leap** has been working on a virtual retinal screen as well as an augmented reality headset.  
 
-![Thumbs up](./media/magic-leap-3.jpg)
+![Thumbs up](media/magic-leap-3.jpg)
 <credits>
 By [Sarah Tew/CNET](https://www.cnet.com/pictures/magic-leap-one-photos/)
 </credits>

@@ -75,17 +75,17 @@ You have to create your team on the Xcode and the Bundler Identifier.
 
 You can do it in a next way: 
 
-![ios-app](./media/ios-app1.png)
+![ios-app](media/ios-app1.png)
 
-![ios-app](./media/ios-app2.png)
+![ios-app](media/ios-app2.png)
 
-![ios-app](./media/ios-app3.png)
+![ios-app](media/ios-app3.png)
 
-![ios-app](./media/ios-app4.png)
+![ios-app](media/ios-app4.png)
 
-![ios-app](./media/ios-app5.png)
+![ios-app](media/ios-app5.png)
 
-![ios-app](./media/ios-app6.png)
+![ios-app](media/ios-app6.png)
 
 Source: [Medium](https://medium.com/devschile/publicando-en-la-app-store-y-no-morir-en-el-intento-1f17553dc8b8)
 

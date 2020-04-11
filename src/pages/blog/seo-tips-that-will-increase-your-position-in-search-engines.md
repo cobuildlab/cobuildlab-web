@@ -42,10 +42,10 @@ It can be using a better server, eliminating all elements that you are not using
 
 Here is the proof
 
-![seo-tip1](./media/image10-10.png)
+![seo-tip1](media/image10-10.png)
 Source: [Neilpatel](https://neilpatel.com/blog/10-most-important-seo-tips-you-need-to-know/)
 
-![seo-tip2](./media/image06-12.png)
+![seo-tip2](media/image06-12.png)
 
 Source: [Neilpatel](https://neilpatel.com/blog/10-most-important-seo-tips-you-need-to-know/)
 
@@ -69,7 +69,7 @@ In this 2019 if a website doesn’t have a mobile version including a responsive
 
 There are studies like the one who made the [Blue Corona team](https://www.bluecorona.com/blog/mobile-marketing-statistics) that show that customers feel better with the mobile experience. That applies to searches and sells. 
 
-![seo-tip3](./media/Mobile-Marketing-usage-b2b-768x434.png)
+![seo-tip3](media/Mobile-Marketing-usage-b2b-768x434.png)
 
 Most searches on Google are made for mobile devices, that’s why Google is supporting and positioning these brands that understand it, and are producing content to consume on mobile. 
 
@@ -97,7 +97,7 @@ That happened before. People tended to write for Google and search engines, and 
 
 That is the last you want now. Google actually penalize this content that looked forced and it is not friendly or natural. 
 
-![seo-tip5](./media/image13-8.png)
+![seo-tip5](media/image13-8.png)
 
 Source: [Neilpatel](https://neilpatel.com/blog/10-most-important-seo-tips-you-need-to-know/)
 

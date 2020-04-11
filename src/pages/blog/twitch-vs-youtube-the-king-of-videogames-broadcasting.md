@@ -16,7 +16,7 @@ It is increasingly common for content creators to replicate the TV formulas on t
 
 
 
-![Video Game Streaming Platforms](./media/twitch-vs-youtube/image2.jpg)
+![Video Game Streaming Platforms](media/twitch-vs-youtube/image2.jpg)
 
 
 <credits>Photo by [Caspar Rubin](https://unsplash.com/photos/HUBNTCzE-R8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/twitch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)</credits>

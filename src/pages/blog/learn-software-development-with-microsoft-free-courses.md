@@ -15,7 +15,7 @@ Keep in mind that these are initiation courses, so will be a good option if you 
 
 <title-4>ENTRY LEVEL SOFTWARE DEVELOPMENT</title-4>
 
-![](./media/image3asd324d.jpg)
+![](media/image3asd324d.jpg)
 <credits>Photo by [Fabian Grohs](https://unsplash.com/photos/dC6Pb2JdAqs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/course?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)</credits>
 
 This curriculum is designed for those that have never attempted programming. You will learn how to think logically and systematically through creating basic programs, developing **interactive web pages**, and understanding how to keep the user in mind in design, as well as analyzing algorithms and data for efficiency. There are 13 sub-courses from 8 to 16 hours each. 
@@ -30,7 +30,7 @@ Link:[https://academy.microsoft.com/en-us/professional-program/tracks/cloud-admi
 
 <title-4>DATA SCIENCE</title-4>
 
-![](./media/image42asdas.jpg)
+![](media/image42asdas.jpg)
 <credits>Photo by [Carlos Muza](https://unsplash.com/photos/hpjSkU2UYSU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/course?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)</credits>
 
 Learn to work and explore **data** using a variety of visualization, analytical, and statistical techniques. Companies hire data scientists to find insights and to solve meaningful business problems. It has 11 sub-courses which take from 8 to 12 hours to complete each one. 
@@ -45,7 +45,7 @@ Link: [https://academy.microsoft.com/en-us/professional-program/tracks/devops/](
 
 <title-4>BIG DATA</title-4>
 
-![](./media/image7-p-1.jpg)
+![](media/image7-p-1.jpg)
 <credits>Photo by [Samuel Zeller](https://unsplash.com/photos/vpR0oc4X8Mk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/microsoft?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 </credits>
 
@@ -55,7 +55,7 @@ Link: [https://academy.microsoft.com/en-us/professional-program/tracks/big-data/
 
 <title-4>FRONT-END WEB DEVELOPMENT</title-4>
 
-![](./media/image221312sasa.jpg)
+![](media/image221312sasa.jpg)
 <credits>Photo by [Pankaj Patel](https://unsplash.com/photos/u2Ru4QBXA5Q?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/front-end-code?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)</credits>
 
 Learn the various technologies that computer programmers use when creating websites like HTML, CSS, and JavaScript, the web development on Angular. Students will learn, practice and prove they have the skills employers are looking for in a series of online courses with hands-on labs. It has 12 sub-courses which take from 15 to 30 hours to complete each one. 
@@ -64,7 +64,7 @@ Link: [https://academy.microsoft.com/en-us/professional-program/tracks/front-end
 
 <title-4>IT SUPPORT</title-4>
 
-![](./media/image5213sad.jpg)
+![](media/image5213sad.jpg)
 <credits>Photo by [imgix](https://unsplash.com/photos/klWUhr-wPJ8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/it-support?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)</credits>
 
 Expand your skills to become more effective and efficient troubleshooting including tricks on developing **analytical** solutions, best practices, how to manage customer expectations and handle customer objections to proposed solutions regardless of product. It has 14 sub-courses from 8 to 16 hours each. 
@@ -79,7 +79,7 @@ Link: [https://academy.microsoft.com/en-us/professional-program/tracks/artificia
 
 <title-3>_You can work on these skills at the pace that is right for you._</title-3>
 
-![](./media/unnamedasdas.jpg)
+![](media/unnamedasdas.jpg)
 <credits>Photo by [Riccardo Annandale](https://unsplash.com/photos/7e2pe9wjL9M?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/course?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)</credits>
 
 <title-3>We Hope You Enjoy!</title-3>

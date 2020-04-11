@@ -14,7 +14,7 @@ cover and emergency expense like a **traffic ticket**. From there we have turned
 interacts with citizens and businesses. Since 2016, TIKD is providing drivers with a simpler, more cost effective way to handle traffic
 tickets directly from their smartphones.
 
-![TIKD](./media/tikd2.png)
+![TIKD](media/tikd2.png)
 <credits>Photo by [Miami Herald](https://www.miamiherald.com/)</credits>
 
 TIKD´s founder and CEO, **Chris Riley**, Served as on Officer in the United States Navy where he studied Political science at United State
@@ -27,7 +27,7 @@ said it was the result of bad luck and random, punitive penalties. But TIKD, cou
 Now he is determined to revolutionize the industry for all those who don't have the time to deal with traffic tickets so they just Snap,
 Pay and Forget. All from their smartphones.
 
-![TIKD](./media/tikd3.png)
+![TIKD](media/tikd3.png)
 <credits>Photo by [The Business Journal](https://thebusinessjournal.com/)</credits>
 
 They are disruptors using technology, big data and the law of large numbers to offer customers a multitude of benefits including

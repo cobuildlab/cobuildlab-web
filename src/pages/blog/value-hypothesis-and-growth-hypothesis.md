@@ -67,7 +67,7 @@ So, growth and value hypothesis are too much related with the Cobuild’s proces
 
 A good and proven way to test a hypothesis is to use the Build-Measure-Learn feedback loop, proposed by [the Lean Startup]( http://theleanstartup.com/principles).  Here the goal is to design experiments and create small tests to apply to potential customers, to acquire results, measure, and learn from them to achieve **Validated Learning**
 
-![VALUE-HYPOTHESIS-AND-GROWTH-HYPOTHESIS]( ./media/example-one.png)
+![VALUE-HYPOTHESIS-AND-GROWTH-HYPOTHESIS]( media/example-one.png)
 
 [Source](https://youexec.com/book-summaries/hjy7654kl/the-startup-way-by-eric-ries)
 
@@ -103,7 +103,7 @@ You can make many hypotheses of your business idea as you want, but here, we wil
 
 <title-3>Let’s see an example</title-3>
 
-![VALUE-HYPOTHESIS-AND-GROWTH-HYPOTHESIS]( ./media/example-two.png)
+![VALUE-HYPOTHESIS-AND-GROWTH-HYPOTHESIS]( media/example-two.png)
 
 [Source](https://youexec.com/book-summaries/hjy7654kl/the-startup-way-by-eric-ries)
 

@@ -97,7 +97,7 @@ In the future this will help to build faster your applications by reusing it. Im
 
 [Source](https://realpython.com/python-testing/#choosing-a-test-runner)
 
-![Show me the code](./media/show-me-the-code.jpeg)
+![Show me the code](media/show-me-the-code.jpeg)
 
 ## My first PyTest tests:
 

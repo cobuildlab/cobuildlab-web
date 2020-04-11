@@ -4,7 +4,7 @@ title: 'Inherent  Difficulty VS. Instrumental Difficulty'
 date: 2018-03-05T20:36:43+00:00
 tags: 
 template: development-post
-image: /wp-content/uploads/2018/04/project-planning-852x568.jpg
+image: ./media/04/project-planning-852x568.jpg
 ---
 ## Importance of measuring the inherent difficulty and instrumental difficulty when planning a computer project. {.postTitle.entry-title}
 

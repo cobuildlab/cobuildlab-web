@@ -30,4 +30,4 @@ Github still as an open platform, now committed to supporting developers at ever
 
 Many developers are concerned that this acquisition will give Microsoft a million projects currently private, however, Microsoft recognizes the responsibility of GitHub community and this new agreement, engaging in retain their motivation to grow and cultivate further improvements focused on developers feedback and capabilities.
 
-![Github and Microsoft CEOs](./media/image312sad21.jpg)
+![Github and Microsoft CEOs](media/image312sad21.jpg)

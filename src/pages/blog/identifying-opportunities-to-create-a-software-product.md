@@ -115,7 +115,7 @@ The result of the innovation process is an opportunity (or several), a software 
 
 Only when an idea meets these requirements we can say that it is a real opportunity.
 
-![innovation](./media/innovation-for-identifying-opportunities.png)
+![innovation](media/innovation-for-identifying-opportunities.png)
 
 <title-3>Techniques and practices for innovate</title-3>
 
@@ -263,11 +263,11 @@ And so on. All of these tools can help you with the innovation process at the ti
 
 We share in images some of the benefits you can get with this innovation management tool. 
 
-![innovation](./media/innovation1.png)
+![innovation](media/innovation1.png)
 
-![innovation](./media/innovation2.png)
+![innovation](media/innovation2.png)
 
-![innovation](./media/innovation3.png)
+![innovation](media/innovation3.png)
 
 **Source:**[Capaterra](https://www.capterra.com/p/148239/CrowdWorx-Innovation-Engine/)
 

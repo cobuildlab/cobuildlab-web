@@ -28,7 +28,7 @@ A study from 2013 revealed that [8 out of 10 ideas fail](https://www.forbes.com/
 
 <title-3>Step 2: Marketing strategy</title-3>
 
-![Market Research](./media/image1asd21.png)
+![Market Research](media/image1asd21.png)
 
 In this step, the market analysis is carried out, an implicit element in the **competition analysis**, jointly with the value proposal. **Validate the demand for your product is the most important part**, even more, important than technology, equipment, design, and price. Without validating the market, you will have a product that nobody is willing to pay for, so you will spend a lot of time, energy and money unnecessarily. 
 
@@ -40,7 +40,7 @@ Once you have completed the previous step, you can start where many entrepreneur
 
 It's time to define the MVPs. The MVP depends on the level of criteria and product context, prior to funding. It represents the first version of your product, so you can consider **beta testing** as part of this step to let the people know about your product and to fix possible bugs that may arise.
 
-![Minimum Viable Product](./media/image2asdasd21.png)
+![Minimum Viable Product](media/image2asdasd21.png)
 
 **Source:** [https://lvivity.com/minimum-viable-product](https://lvivity.com/minimum-viable-product)
 
@@ -58,7 +58,7 @@ For this, the **analytical vision is fundamental**, especially in the current co
 
 <title-2 align="centered">Six Pillars of Startup Success</title-2>
 
-![Six Pillars of Startup Success](./media/image3asdas2a.png)
+![Six Pillars of Startup Success](media/image3asdas2a.png)
 
 **Source:** [https://10xu.com/pitch-deck-roadmap/cb-insights-six-pillars-of-startup-success-10xu-2/](https://10xu.com/pitch-deck-roadmap/cb-insights-six-pillars-of-startup-success-10xu-2/)
 

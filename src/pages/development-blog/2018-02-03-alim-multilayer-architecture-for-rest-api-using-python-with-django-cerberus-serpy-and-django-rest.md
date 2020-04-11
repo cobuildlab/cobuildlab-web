@@ -4,7 +4,7 @@ title: SLIM architecture for a REST API using Python with Django, Cerberus, Serp
 date: 2018-02-03T02:33:03+00:00
 tags: 
 template: development-post
-image: /wp-content/uploads/2018/04/photo-1461749280684-dccba630e2f6.jpg
+image: ./media/04/photo-1461749280684-dccba630e2f6.jpg
 ---
 This is a very SLIM architecture proposal for API REST with Python using Django.
 

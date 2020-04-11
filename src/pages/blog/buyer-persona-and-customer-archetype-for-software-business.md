@@ -117,7 +117,7 @@ What causes the customer segment gain?
 All of this with the product you are planning to develop. 
 It would look more or less like this.
 
-![empathy-map](./media/empathy-map.png)
+![empathy-map](media/empathy-map.png)
 
 <title-2>Now it is time for the Customer Archetype</title-2>
 
@@ -195,4 +195,4 @@ Choose any of these, and give personality to your Buyer Persona. This way, you w
 
 **At the end of the day, such would look like a Buyer Persona and Customer Archetypes properly.**
 
-![buyer-persona](./media/buyer-persona-examples-good.png)
+![buyer-persona](media/buyer-persona-examples-good.png)

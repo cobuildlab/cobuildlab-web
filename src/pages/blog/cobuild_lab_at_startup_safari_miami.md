@@ -14,5 +14,5 @@ On Saturday 26th, [Cobuild Lab](https://cobuildlab.com/) founder, [Ángel Lacret
 There will be different topic tracks like blockchain, edtech, startup how-to's, digital health, deep tech, cybersecurity, and many more. Check out the [agenda here](https://miami.startupsafari.com/agenda/), so you don't miss anything!.
 
 Are you ready to network with the entire Miami startup community? See you at Startup Safari!
-[![Startup Safari Tracks](./media/startup-safari-tracks.png)](#)
+[![Startup Safari Tracks](media/startup-safari-tracks.png)](#)
 

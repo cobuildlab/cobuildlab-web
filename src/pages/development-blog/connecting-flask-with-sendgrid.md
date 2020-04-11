@@ -42,7 +42,7 @@ SendGrid provides a cloud-based email delivery service that assists businesses w
 
 From [Wikipedia](https://en.wikipedia.org/wiki/SendGrid)
 
-![Show me the code](./media/show-me-the-code.jpeg)
+![Show me the code](media/show-me-the-code.jpeg)
 
 
 These instructions are based on the [Official Python SendGrid Repo](https://github.com/sendgrid/sendgrid-python)

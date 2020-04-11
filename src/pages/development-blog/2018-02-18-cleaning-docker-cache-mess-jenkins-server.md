@@ -4,7 +4,7 @@ title: Cleaning the docker cache (mess) in my Jenkins server
 date: 2018-02-18T00:33:13+00:00
 tags: 
 template: development-post
-image: /wp-content/uploads/2018/02/docker-travis-composer-packagist.png
+image: ./media/02/docker-travis-composer-packagist.png
 ---
 Every 4-5 weeks i need to do service to my Jenkins because we haven&#8217;t found the way that Docker stop accumulating so much containers, images and volumes, so i give you the specific commands that i use: (For bash)
 

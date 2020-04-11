@@ -34,7 +34,7 @@ Delimits the components of the User Interface in three big groups: Models to mod
 
 It has been around since the 70s and it has set the bases for all the further presented patterns. 
 
-![MVVM](./media/mvc.png)
+![MVVM](media/mvc.png)
 
 ## MVVM: Model View View-Model
 
@@ -43,7 +43,7 @@ Here, the Model remains the domain or Data Objects, the View-Model is now in cha
 https://www.wintellect.com/model-view-viewmodel-mvvm-explained/
 
 
-![MVVM](./media/mvvm.png)
+![MVVM](media/mvvm.png)
 
 ## Others MV*:
 
@@ -63,7 +63,7 @@ Introducing a new iteration on the MVC architectural pattern: Flux
 
 [Flux Overview](https://facebook.github.io/flux/)
 
-![MVVM](./media/flux.png)
+![MVVM](media/flux.png)
 
 
 ### Single Way Communication Architectural Pattern Rules and Elements

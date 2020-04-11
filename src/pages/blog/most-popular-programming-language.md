@@ -19,7 +19,7 @@ Know Them.
 
 <title-3>1. JavaScript</title-3>
 
-![javascript](./media/javascript.png)
+![javascript](media/javascript.png)
 
 Source: [Tutorial republic](https://www.tutorialrepublic.com/javascript-tutorial/)
 
@@ -31,7 +31,7 @@ This language is universal, and also it is very friendly. That’s why many begi
 
 [JavaScript is the most used on Github](https://www.businessinsider.com/the-10-most-popular-programming-languages-according-to-github-2018-10#1-javascript-10) with most contributions in its private and public repository, actually, they make the next graphic to prove it.
 
-![javascript](./media/javascript2.png)
+![javascript](media/javascript2.png)
 
 Source: [Hackernoon](https://hackernoon.com/top-3-most-popular-programming-languages-in-2018-and-their-annual-salaries-51b4a7354e06)
 
@@ -39,7 +39,7 @@ It is for much the programming language most used in the world in Github, and it
 
 <title-3>2. Java</title-3>
 
-![java](./media/java.jpeg)
+![java](media/java.jpeg)
 
 Source: [Hackernoon](https://hackernoon.com/is-java-good-for-your-web-application-development-83c5b2d0344a)
 
@@ -57,7 +57,7 @@ Stack Overflow made a survey where they discovered that Java popularity in 2017 
 
 <title-3>3. Python</title-3>
 
-![python](./media/python.png)
+![python](media/python.png)
 
 Source: [Python](https://www.python.org/)
 
@@ -75,7 +75,7 @@ The [Stack OverFlow](https://stackoverflow.blog/) team found that [38;8% of its 
 
 This has been the growth of this language of code the last year
 
-![python2](./media/python2.png)
+![python2](media/python2.png)
 
 Source: [Hackernoon](https://hackernoon.com/top-3-most-popular-programming-languages-in-2018-and-their-annual-salaries-51b4a7354e06)
 
@@ -83,7 +83,7 @@ Incredible! Don’t you believe it?
 
 <title-3>4. C++</title-3>
 
-![c++](./media/c++.jpg)
+![c++](media/c++.jpg)
 
 Source: [Incapp](http://www.incapp.in/cpp-language-training-institute-greater-noida)
 
@@ -93,13 +93,13 @@ This language is hybrid, and it is very particular because it was created as an 
 
 We located it in the fourth position of this list because there are some statistics like one realized by [TIOBE](https://www.tiobe.com/tiobe-index/) team where we can see the popularity of this programming language between 2017 and 2018.
 
-![c++](./media/c++.png)
+![c++](media/c++.png)
 
 Source: [TIOBE](https://www.tiobe.com/tiobe-index/)
 
 <title-3>5. Go</title-3>
 
-![c++](./media/go.png)
+![c++](media/go.png)
 
 It is the newer of this list and it is inspired on the C syntax. Go also is called Golang and it was developed in 2007 for, nothing more and nothing less, than Google. And it was created for Robert Griesemer, Rob Pike y Ken Thompson. 
 

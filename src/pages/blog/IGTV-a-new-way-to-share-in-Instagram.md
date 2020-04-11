@@ -32,7 +32,7 @@ You can post live or edited videos. For this last option you have to manage vide
 
 Probably, Instagram understood that to upload a video of such magnitude you need a very good Internet service provider.
 
-![](./media/IGTV-Modo-pc.jpg)
+![](media/IGTV-Modo-pc.jpg)
 
 <title-3>Disadvantages</title-3>
 

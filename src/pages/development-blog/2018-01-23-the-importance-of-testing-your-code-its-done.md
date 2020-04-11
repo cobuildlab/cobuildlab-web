@@ -4,7 +4,7 @@ title: 'The importance of testing your code.  (It’s Done!)'
 date: 2018-01-23T15:31:26+00:00
 tags: 
 template: development-post
-image: /wp-content/uploads/2018/04/1_6WSm4DEcxYwf4-wDuh_wLQ.png
+image: ./media/04/1_6WSm4DEcxYwf4-wDuh_wLQ.png
 ---
 <span style="color: #000000;"><span style="font-family: 'Liberation Serif';"><span style="font-size: medium;"><i>&#8211; “Nothing is done until is tested.”</i></span></span></span>
 

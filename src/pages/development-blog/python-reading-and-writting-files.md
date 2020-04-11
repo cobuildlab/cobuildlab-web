@@ -3,7 +3,7 @@ title: "Python Development: Reading and Writing Files"
 date: 2019-09-02T01:00:00+00:00
 tags: 
 template: development-post
-image: /media/blocks.jpg
+image: ./media/blocks.jpg
 ---
 
 Today, we will talk about Python way of handling files.

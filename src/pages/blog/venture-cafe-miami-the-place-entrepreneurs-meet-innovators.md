@@ -14,7 +14,7 @@ Miami’s innovation community by working to make it more inclusive, accessible,
 **Leigh-Ann Buchanan** is the founding executive director of Venture Café Miami. She as a lawyer, specializing in complex commercial and
 financial litigation focusing on white-collar defense.
 
-![Leigh-Ann Buchanan](./media/venturecafe2.png)
+![Leigh-Ann Buchanan](media/venturecafe2.png)
 <credits>Photo by [Black Wall Street](https://bwshomecoming.com/)</credits>
 
 Ms. Buchanan, in 2014, founded the Nyah Project, a nonprofit fellowship that gives underserved youths in **Miami-Dade** transformative
@@ -27,7 +27,7 @@ Tokyo, and Sydney, with more on the way.
 
 <title-2>How did the startup start?</title-2>
 
-![Venture Cafe Miami](./media/venturecafe3.png)
+![Venture Cafe Miami](media/venturecafe3.png)
 <credits>Photo by [Knight Foundation](https://knightfoundation.org/)</credits>
 
 Venture Café began in 2009 as an experiment by **the Cambridge Innovation Center** (The home for great entrepreneurs leading fast-growing

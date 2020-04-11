@@ -4,7 +4,7 @@ title: Finding the Biggest files in my server
 date: 2018-02-18T00:16:20+00:00
 tags: 
 template: development-post
-image: /wp-content/uploads/2018/02/server.png
+image: ./media/02/server.png
 ---
 Every 5 weeks more or less our Jenkins server stop working. This is for disk space consumption, some how we can&#8217;t figure out how to prevent the machine to cache docker images.
 

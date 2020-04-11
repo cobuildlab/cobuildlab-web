@@ -31,7 +31,7 @@ And these videos take you to one place: your website where you should have more 
 
 <title-3>Data and statistics that show the importance of video marketing</title-3>
 
-![video-marketing](./media/video-marketing.1.jpg)
+![video-marketing](media/video-marketing.1.jpg)
 
 Source: [Optimonster](https://optinmonster.com/video-marketing-statistics-what-you-must-know/)
 
@@ -59,7 +59,7 @@ Google said that 50% of web users look for a video before visiting a store too.
 
 And all of this information doesn’t apply to mobile videos, that are consumed much more than others. Because of millions of people in the world have one and use them almost the whole day.
 
-![video-marketing](./media/video-marketing2.png)
+![video-marketing](media/video-marketing2.png)
 
 Source: [Optimonster](https://optinmonster.com/video-marketing-statistics-what-you-must-know/)
 

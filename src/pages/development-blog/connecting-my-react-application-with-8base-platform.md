@@ -46,7 +46,7 @@ Part of the tools that they provide are:
 - A UI designer to create screens and UI components
 - A GraphQL API to interact with your Business Model
 
-![Show me the code](./media/show-me-the-code.jpeg)
+![Show me the code](media/show-me-the-code.jpeg)
 
 ## Connecting my React Application with 8base
 

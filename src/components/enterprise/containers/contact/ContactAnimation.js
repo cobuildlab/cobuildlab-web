@@ -2,14 +2,12 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 // import Img from "gatsby-image"
 import Image from '../../components/image';
-import ContactBackgroundImages from '../../../../data/contact';
 // background animation required this
 
 import img1 from '../../../../assets/images/contact/animation/1-blue.png';
 import img2 from '../../../../assets/images/contact/animation/2-blue.png';
 import img3 from '../../../../assets/images/contact/animation/4-blue.png';
 import img4 from '../../../../assets/images/contact/animation/5-blue.png';
-
 
 const animationFrameOne = keyframes`
   0% {
@@ -73,7 +71,7 @@ const AnimationBase = styled.div`
 const Item1 = styled(AnimationBase)`
   left: 3%;
   animation: ${animationFrameOne} 15s infinite linear;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -82,31 +80,28 @@ const Item2 = styled(AnimationBase)`
   bottom: 10%;
   left: 3%;
   animation: ${animationFrameTwo} 13s infinite linear;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
-
 
 const Item3 = styled(AnimationBase)`
   left: 35.5%;
   top: 25%;
   animation: ${animationFrameOne} 15s infinite linear;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
-
 
 const Item4 = styled(AnimationBase)`
   right: 13%;
   top: 5%;
   animation: ${animationFrameTwo} 14s infinite linear;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
-
 
 const AnimationBackground = () => (
   <>
@@ -126,4 +121,3 @@ const AnimationBackground = () => (
 );
 
 export default AnimationBackground;
-

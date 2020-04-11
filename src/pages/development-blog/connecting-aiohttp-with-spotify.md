@@ -36,7 +36,7 @@ Spotify is a super popular service to listen to music on your mobile device or c
 
 [Wikipedia](https://en.wikipedia.org/wiki/Spotify)
 
-![Show me the code](./media/show-me-the-code.jpeg)
+![Show me the code](media/show-me-the-code.jpeg)
 
 Prequisites:
 

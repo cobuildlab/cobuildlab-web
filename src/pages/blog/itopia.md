@@ -13,7 +13,7 @@ We've all used or heard about the cloud; we know it allows us to store and acces
 The term 'cloud' is just a metaphor from the Internet. It goes back to the days of flowcharts and presentations that depicted the giant Internet server infrastructure as nothing more than a white, bloated cluster, accepting connections and delivering information while it floats.
 
 
-<img src="./media/itopia-cloud.png">
+<img src="media/itopia-cloud.png">
 
 
 There are three types of clouds: Private, public, and a hybrid between the two. A private cloud enables the user to their own infrastructure or site. It is ideal for businesses that deal with private data such as bank accounts or want to have privacy within the network. The public cloud, on the other hand, is very similar to how a power company provides its service as a utility, and the hybrid cloud combines features of both private and public clouds.
@@ -25,7 +25,7 @@ The founders of Itopia, <a target="_blank" href="https://www.linkedin.com/in/uba
 Ubaldo and Jonathan sought to enable IT managers to deliver Windows desktops and virtual applications to workers on any device, in the world's fastest and most secure hyperscale cloud, and that's how they founded <a target="_blank" href="https://www.itopia.com/"> Itopia, Inc.</a> in late 2013. 
 
 
-<img src="./media/itopia-founders.png">
+<img src="media/itopia-founders.png">
 
 They developed a software to automate the migration process and orchestrate the management of Windows workloads in the <a target="_blank" href="https://cloud.google.com/"> Google Cloud</a> to help companies transition from legacy VDI environments in their facilities.
 
@@ -37,7 +37,7 @@ Based in Miami, Itopia empowers enterprises to modernize IT by automating the co
 
 Their flagship product - <a target="_blank" href="https://www.itopia.com/desktop-as-a-service/"> itopia Cloud Automation Stack</a>  - is a SaaS offering used by IT teams to deliver Desktop-as-a-Service (DaaS) to their organizations in the Google Cloud, all from a single control panel.  <a target="_blank" href="https://www.itopia.com/schedule-a-demo/"><button type="button" class="button is-primary">Request a Demo</button></a>
 
-<img src="./media/itopia-screen.png">
+<img src="media/itopia-screen.png">
 
 Here's a tutorial that shows you <a target="_blank" href="https://cloud.google.com/solutions/partners/deploying-windows-rds-itopia"> how to use Itopia's cloud automation stack (CAS)</a> to deploy and manage <a target="_blank" href="https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/welcome-to-rds"> Windows Remote Desktop Services (RDS)</a> integrated into various Google Cloud services. 
 

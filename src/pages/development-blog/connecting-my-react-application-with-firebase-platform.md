@@ -23,7 +23,7 @@ Services:
 - Hosting 
 - Cloud Storage
 
-![Show me the code](./media/show-me-the-code.jpeg)
+![Show me the code](media/show-me-the-code.jpeg)
 
 ## Connecting my React Application with Firebase
 

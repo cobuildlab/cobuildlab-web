@@ -17,7 +17,7 @@ To prove this fact, we prepare this post where you will find the **startups that
 
 <title-3>1. ParkJockey for Softbank</title-3>
 
-![ParkJockey-for-Softbank](./media/parkjockey.png)
+![ParkJockey-for-Softbank](media/parkjockey.png)
 
 Source: [Parkjockey](https://www.parkjockey.com/)
 
@@ -43,7 +43,7 @@ The most important reality is that ParkJockey is more than a promise for local e
 
 <title-3>2. Caribu</title-3>
 
-![Caribu](./media/caribu.jpg)
+![Caribu](media/caribu.jpg)
 
 Source: [Caribu](https://caribu.com/)
 
@@ -61,7 +61,7 @@ Read more about this Startup in our [blog post](https://cobuildlab.com/blog/cari
 
 <title-3>3. Yellow Pepper</title-3>
 
-![Yellow Pepper](./media/yellowpepper.jpg)
+![Yellow Pepper](media/yellowpepper.jpg)
 
 Source: [Yellow Pepper](https://www.businesswire.com/news/home/20180524005278/en/YellowPepper-Announces-12.5M-Additional-Funding-Drive-Latin)
 
@@ -77,7 +77,7 @@ And for sure a hit from startups raised on Miami.
 
 <title-3>4. MD Live</title-3>
 
-![MD Live](./media/mdlive.jpg)
+![MD Live](media/mdlive.jpg)
 
 Source: [MD Live](https://www.mdlive.com/doctor-phone/)
 
@@ -95,7 +95,7 @@ In 2018, specifically in August, investors like Signa, Health Care Service Corpo
 
 <title-3>5. Streann Media</title-3>
 
-![Streann Media](./media/streann.jpg)
+![Streann Media](media/streann.jpg)
 
 Source: [Produ](https://www.produ.com/noticias/gio-punzo-de-streann-media-lideramos-soluciones-ott-con-mas-del-70--de-los-clientes-en-a)
 
