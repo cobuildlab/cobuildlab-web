@@ -64,8 +64,12 @@ const LandingPageLayout = ({ siteDescription, siteTitle, withFooter, children })
 LandingPageLayout.propTypes = {
   siteDescription: PropTypes.string.isRequired,
   siteTitle: PropTypes.string.isRequired,
-  withFooter: PropTypes.bool.isRequired,
+  withFooter: PropTypes.bool,
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+};
+
+LandingPageLayout.defaultProps = {
+  withFooter: false,
 };
 
 export default LandingPageLayout;

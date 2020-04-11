@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { Container, Title, Subtitle, Field, Label, Control, Input } from 'bloomer';
+import { Container, Title, Subtitle, Field, Control, Input } from 'bloomer';
 import Button from './Button';
 import { navigate, Link } from 'gatsby';
 import Loading from '../Loading';
 import { toast } from 'react-toastify';
 import LandingFormBadges from './LandingFormBadges';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Box = styled.div`
   background-color: #fff;
@@ -121,7 +122,7 @@ export default class NewLandingForm extends Component {
     const { landingName } = this.props;
     const { isLoading } = this.state;
     return (
-      <Box>
+      <Box id={'landing-contact-form'}>
         <LandingFormBadges />
         <Container>
           <div className="colunm is-6 has-text-centered">
@@ -196,7 +197,11 @@ export default class NewLandingForm extends Component {
               </Control>
             </Field>
 
-            {isLoading ? <Loading loading={isLoading} /> : <Button htmlType="submit">Submit</Button>}
+            {isLoading ? (
+              <Loading loading={isLoading} />
+            ) : (
+              <Button htmlType="submit">Submit</Button>
+            )}
           </form>
 
           <div className="has-text-centered">
@@ -210,3 +215,7 @@ export default class NewLandingForm extends Component {
     );
   }
 }
+
+NewLandingForm.propTypes = {
+  landingName: PropTypes.string.isRequired,
+};

@@ -10,11 +10,13 @@ import YouTubeVideo from '../components/YouTubeVideo';
 import Testimonial from '../components/Testimonial';
 
 // TYPOGRAPHY
-import { 
-  CustomH1 as H1, 
-  CustomH2 as H2, 
-  CustomParagraph as Paragraph 
+import {
+  CustomH1 as H1,
+  CustomH2 as H2,
+  CustomParagraph as Paragraph,
 } from '../components/2020/LandingTypography';
+import SmoothScrollingButton from '../components/SmoothScrollingButton';
+import Skills from '../components/enterprise/containers/skills';
 
 class AppsDevDescription extends Component {
   constructor(props) {
@@ -23,31 +25,40 @@ class AppsDevDescription extends Component {
   }
 
   render() {
-    const siteTitle = 'Developing new Apps in Miami';
-    const siteSubtitle = 'We transform ideas into working Apps';
+    const siteTitle = 'Developing Web and Mobile Applications Fast and Effective';
     const siteDescription =
-      'We transform requirements into working software. We specialize in building web and mobile applications for Small and Medium Businesses.';
+      'We partner with Entrepreneurs, Small and Medium Businesses to transform ideas into working Apps.';
     const landingName = 'Apps Development Description';
 
     return (
-      <LandingPageLayout
-        siteDescription={siteDescription}
-        siteTitle={siteTitle}>
-
+      <LandingPageLayout siteDescription={siteDescription} siteTitle={siteTitle}>
         <Columns isDesktop>
           <Column isSize={{ desktop: 7 }}>
-            <H1>Developing new Software Products in Miami</H1>
-            <H2>{siteSubtitle}</H2>
-            <Paragraph>{siteDescription}</Paragraph>
+            <H1>{siteTitle}</H1>
+            <H2>{siteDescription}</H2>
+            <ul>
+              <li>
+                <Paragraph>- Transform your ideas into working Software</Paragraph>
+                <Paragraph>- Find the formula to Scale your business rapidly</Paragraph>
+                <Paragraph>
+                  - Provide differentiators values to your Customers to stand over your competitors
+                </Paragraph>
+                <Paragraph>- Reduce your costs</Paragraph>
+              </li>
+            </ul>
+            <SmoothScrollingButton href="#landing-contact-form">
+              Set an APPOINTMENT
+            </SmoothScrollingButton>
           </Column>
-          
-          <Column>    
+
+          <Column isVCentered>
             <YouTubeVideo id={'AlU5h2xrQ5M'} />
           </Column>
         </Columns>
 
         <Columns>
           <Column>
+            <Skills />
             <BadgeIndustry />
           </Column>
         </Columns>
@@ -56,11 +67,10 @@ class AppsDevDescription extends Component {
           <Column isSize={{ desktop: 6 }}>
             <Testimonial />
           </Column>
-          <Column >
+          <Column>
             <NewLandingForm landingName={landingName} />
           </Column>
         </Columns>
-
       </LandingPageLayout>
     );
   }
