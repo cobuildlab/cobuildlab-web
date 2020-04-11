@@ -52,7 +52,7 @@
 
 ## Components for blog post (titles and such)
 
-![Example components in use](./src/pages/blog/media/example1.jpg)
+![Example components in use](src/pages/blog/media/example1.jpg)
 
 |          Name          | Description                                                  |                                             Use                                             |                                            Text Align                                             |
 | :--------------------: | ------------------------------------------------------------ | :-----------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |

@@ -67,7 +67,7 @@ In addition, Google Chrome activated some years ago an unknown mode to browse th
 that we visit, which means that it will not download files in your computer or cookies but still share some details, such as your
 provider Internet or your location. It is not 100% anonymous either.
 
-![Cookies](./media/cookies_3.jpg)
+![Cookies](media/cookies_3.jpg)
 
 <title-3>Control cookies</title-3>
 

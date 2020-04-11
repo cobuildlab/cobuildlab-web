@@ -40,7 +40,7 @@ Google nowadays has a Big Data study of Ethereum Blockchain. In this way, people
 For example, they show that CryptoKitty is the company with the higher number of ERC-721 contracts on the Ethereum network. 
 
 
-![Google-ethereum-data](./media/google-data-ethereum-image.png)
+![Google-ethereum-data](media/google-data-ethereum-image.png)
 
 Source: [Coindesk](https://www.coindesk.com/google-now-provides-a-big-data-view-of-the-ethereum-blockchain)
 
@@ -54,7 +54,7 @@ Consesys, Tradewind, R3, and Luxoft are some of the allies of Amazon Web Service
 
 Between its services on blockchain market we can find distributed ledger solutions and the best, they offer pure blockchain built on its structures, tools, and technologies. 
 
-![Amazon-blockchain](./media/amazon-blockchain.png)
+![Amazon-blockchain](media/amazon-blockchain.png)
 Source: [Amazon](https://aws.amazon.com/es/partners/blockchain/#)
 
 In this way, they explain its services on the Blockchain’s market. And also, they offer with this solutions framework: flexibility, one-click deployment, and the best, a global reach. 
@@ -95,7 +95,7 @@ You can save the most common crypto coins there in a safe way.
 
 All of this is possible thanks to a fork called Sirin OS of Android. This tool makes possible to have the opportunity to have a wallet, encrypted communication, etc.
 
-![blockchain-smartphone](./media/finney.jpg)
+![blockchain-smartphone](media/finney.jpg)
 Source: [Omicono](https://omicrono.elespanol.com/2018/04/primer-telefono-con-blockchain/)
 
 And as if this were not enough, Sirin Labs also is working on a [PC all in one](https://medium.com/@ViktorCrypto/smartphone-and-pc-on-blockchain-sirin-labs-5080ee371d3f) specialized in the same market; cryptocurrencies. 
@@ -104,7 +104,7 @@ Some information about that it leaked on the internet the last year, and that’
 
 This image has been on the internet since 2017. 
 
-![blockchain-smartphone-and-pc](./media/finney-and-pc.jpg)
+![blockchain-smartphone-and-pc](media/finney-and-pc.jpg)
 Source: [Omicono](https://omicrono.elespanol.com/2018/04/primer-telefono-con-blockchain/)
 
 But the truth is that none of these products are on the market now, we only have promises and the information that the brand’s agent give us or people hung up on the internet.
@@ -115,7 +115,7 @@ This is an index market which used this technology for protecting its operation,
 
 Blockchain has been so good for this company that they were able to predict the performance and value of Bitcoin in some years.
 
-![nasdaq-blockchain](./media/nasdaq-blockchain.jpg)
+![nasdaq-blockchain](media/nasdaq-blockchain.jpg)
 Source: [Reality Shares](https://twitter.com/realityshares?lang=en)    
 
 

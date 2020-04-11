@@ -43,7 +43,7 @@ If you didn’t know it cyber attacks are made generally with malware or how we 
 
 November is the [National Critical Infrastructure Security and Resilience Month](https://www.dhs.gov/cisa/critical-infrastructure-security-and-resilience-month) and the team of [“We live security”](https://www.welivesecurity.com/2018/11/30/cyberattack-financial-sector-worries-americans/) made a survey to know what is the biggest afraid of Americans in relation to cyber attacks. The answer was really clear: the financial and banking cyber attacks.
 
-![banking-cyberattacks](./media/banking-cyberattacks.jpg)
+![banking-cyberattacks](media/banking-cyberattacks.jpg)
 
 Source: [We live security](https://www.welivesecurity.com/2018/11/30/cyberattack-financial-sector-worries-americans/)
 

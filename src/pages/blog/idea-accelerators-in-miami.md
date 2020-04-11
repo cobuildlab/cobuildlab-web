@@ -53,7 +53,7 @@ All of that we can do it from your hand. Actually, we talk about idea accelerati
 
 Continuously we are making meetups, and some events to create a really nice community where we can help us, and build nice things together until making of Miami, the capital of entrepreneurship.  
 
-![idea-acceleration](./media/cobuild-lab-in-miami.jpg)
+![idea-acceleration](media/cobuild-lab-in-miami.jpg)
 <credits>Photo by [Cobuild Lab](https://cobuildlab.com/)<credits>  
 
 * **Venture Hive:** this is a startup accelerator in Miami that bet for innovation. They were founded by Susan Amat in 2013, and now, they have a team of 6 members in different areas to bring acceleration. And not only this, they also offer the next:
@@ -66,7 +66,7 @@ What is it the difference between us? Venture Hive can help you with the concept
 
 This accelerator is one option you can use to create and incubate your idea in Miami. 
 
-![idea-acceleration](./media/Venture-Hive.jpg)
+![idea-acceleration](media/Venture-Hive.jpg)
 <credits>Photo by [Venture Hive](https://www.venturehive.com/)<credits>  
   
 * **Rokk3r Labs:** They only want a thing, make exponential every startup or small business that goes to him. 
@@ -82,7 +82,7 @@ If you want to know the life.cycle of your small company, here, you can find out
 
 They have been in the market from 2012.
     
-![idea-acceleration](./media/rokk3rlabs.jpg)
+![idea-acceleration](media/rokk3rlabs.jpg)
 <credits>Photo by [Rokk3r Labs](https://www.rokk3rlabs.com/)<credits>   
   
 * **Endeavor Miami:** Entrepreneurship is changing world economies, and team members of Endeavor Miami believe that and we agree with them. 
@@ -102,7 +102,7 @@ But we keep thinking that’s not enough to launch your product or service in th
 Linda Rottenberg and Peter Kellner are the founders of this amazing company which in some countries in the world, including Miami. The first company was founded in 1997.
 
 
-![idea-acceleration](./media/endeavor.jpg)
+![idea-acceleration](media/endeavor.jpg)
 <credits>Photo by [Endeavor](https://endeavormiami.org/)<credits>  
   
 <title-2>Idea acceleration vs Startup acceleration</title-2>

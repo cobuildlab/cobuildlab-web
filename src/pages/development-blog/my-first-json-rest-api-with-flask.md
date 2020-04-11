@@ -20,7 +20,7 @@ Flask is a micro web framework written in Python. It is classified as a microfra
 
 ## My JSON REST API with Flask
 
-![Show me the code](./media/show-me-the-code.jpeg)
+![Show me the code](media/show-me-the-code.jpeg)
 
 
 This instructions are based on the [Oficial Flask Documentation](http://flask.pocoo.org/)

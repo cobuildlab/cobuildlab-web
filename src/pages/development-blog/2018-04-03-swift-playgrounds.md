@@ -26,4 +26,4 @@ With this new App, Apple links training in programming for all the types of user
 
 Both children and adults can use items such as Sphero SPRK (robot ball, also used in BB-8, Star Wars robot), Lego Mindstorms Educations EV3, brand of drones Parrot and more. That is, we can connect the device with our Smart Phone via Bluetooth. In this way you can see the code and control the different robots, drones or any instrument that you want to code.
 
-![Swift Playgrounds](./wp-content/uploads/2018/04/images-1.jpeg)
+![Swift Playgrounds](media/04/images-1.jpeg)

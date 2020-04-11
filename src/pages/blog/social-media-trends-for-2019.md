@@ -18,7 +18,7 @@ Predictions for the next year show more power and more video content as the key 
 
 Statistics say that more than 80% of content on the internet will be videos. Also, brands that use videos catch better the attention of its customers. Google will continue loving them, and social media will be the first platforms to consume them.
 
-![videomarketing](./media/video-marketing-stats-2.1-768x399.jpg)
+![videomarketing](media/video-marketing-stats-2.1-768x399.jpg)
 
 Source: [Blue corona](https://www.bluecorona.com/blog/video-marketing-statistics-must-see/)
 
@@ -33,7 +33,7 @@ The [Digital Marketing Institute](https://digitalmarketinginstitute.com/blog/20-
 
 In the same study, they post statistics of Tomson about the money you can gain spending resources on influencers. They say you can get $6,50 for each dollar spent on influencers.
 
-![influencer-marketing](./media/influencer-marketing-open-graph.jpg)
+![influencer-marketing](media/influencer-marketing-open-graph.jpg)
 
 Source: [Sales Force](https://www.salesforce.com/ca/blog/2017/03/2017-state-of-influencer-marketing)
 
@@ -47,13 +47,13 @@ This technology helps to reinforce and facilitate the direct and instant contact
 
 That’s why the next year, chatbots will be on demand.
 
-![chatbots](./media/1_BWZp1CB1u7QE1CAr6eewrA.jpeg)
+![chatbots](media/1_BWZp1CB1u7QE1CAr6eewrA.jpeg)
 
 Source: [Medium](https://medium.com/botsupply/chatbot-101-everything-you-ever-wanted-to-know-about-chatbots-478c0b825dd0)
 
 If you want to be sure of this, we share this statistic and this study made for the [Chatbot Magazine's team](https://chatbotsmagazine.com/chatbot-report-2018-global-trends-and-analysis-4d8bbe4d924b) where we can see how people prefer bots for chatting than apps. And that's just the beginning.
 
-![chatbots](./media/0_9W95LgPh_6we4qNP.png)
+![chatbots](media/0_9W95LgPh_6we4qNP.png)
 
 Source: [Chatbots Magazine](https://chatbotsmagazine.com/chatbot-report-2018-global-trends-and-analysis-4d8bbe4d924b)
 
@@ -67,12 +67,12 @@ People love “lives” on social media because they bring a personal face on ev
 
 If you don’t know what to talk about, we share these topics that people of MarketingCharts suggest for being a brand more transparent and convince everyone with that.
 
-![lives](./media/Sprout-Topics-Demonstrating-Brand-Transparency-on-Social-Aug2018.png)
+![lives](media/Sprout-Topics-Demonstrating-Brand-Transparency-on-Social-Aug2018.png)
 Source: [Marketing Chart](https://www.marketingcharts.com)
 
 This statistic explains better why we say that video lives are the trend and It will continue being.
 
-![lives-on-social-media](./media/Screen-Shot-2017-03-06-at-10.16.26-AM.png)
+![lives-on-social-media](media/Screen-Shot-2017-03-06-at-10.16.26-AM.png)
 
 Source: [livestream](https://livestream.com/blog/live-video-statistics-livestream)
 
@@ -84,7 +84,7 @@ This trend for 2019 is about videos on a vertical format, as the Instagram TV (I
 
 Statistics maybe convince you.
 
-![vertical-videos](./media/Case-Study-1170x500.jpg)
+![vertical-videos](media/Case-Study-1170x500.jpg)
 
 Source: [Blog Animaker](https://blog.animaker.com/vertical-video-facebook-ads-case-study/)
 
@@ -100,7 +100,7 @@ Can you imagine seeing a video like this on Instagram or Facebook?
 
 Well, these are some statistics that show the effect of videos in 360 degrees. Especially in ads.
 
-![videos-360-degree](./media/360-video-advertising-stats-part-1.png)
+![videos-360-degree](media/360-video-advertising-stats-part-1.png)
 
 Source: [Advrtas](https://advrtas.com/360-video-ads-better/)
 
@@ -126,10 +126,10 @@ For the next year. If a social media account is humanized it will sell a lot.
 
 Big brands as Google confirm it.
 
-![google1](./media/IMG_20190102_181017_407.JPG)
-![google2](./media/IMG_20190102_181103_580.JPG)
-![google3](./media/IMG_20190102_181130_471.JPG)
-![google4](./media/IMG_20190102_181152_422.JPG)
+![google1](media/IMG_20190102_181017_407.JPG)
+![google2](media/IMG_20190102_181103_580.JPG)
+![google3](media/IMG_20190102_181130_471.JPG)
+![google4](media/IMG_20190102_181152_422.JPG)
 
 * **Feeds super organized**
 
@@ -137,7 +137,7 @@ This trend was on Instagram, and every expert or influencer called it according 
 
 For example, you had to choose three types of content as an image, a phrase with a lettering design, and a video, to publish it in a specific order. Suppose that you selected first the image, then the phrase, and last, the video. People followed this publication format religiously, and as a result, you could see all feeds super organized, and the content categorized by the format used.
 
-![Hilda-Besson](./media/IMG_20181227_145548_171.JPG)
+![Hilda-Besson](media/IMG_20181227_145548_171.JPG)
 
 
 Though It is so difficult to know with precision what people will love in the future, if you study, read, and pay attention to what they are doing now on social media, and which promises make the influencers, it is a little bit easier to predict some trends that will be on fire the next year. 
@@ -153,13 +153,13 @@ As Snapchat, this feature was a success. In part thanks to the more human and au
 
 Let's see some statistics. 
 
-![stories](./media/IMG_20190103_202405_551.jpg)
+![stories](media/IMG_20190103_202405_551.jpg)
 
 Source: [Brandwatch](https://www.google.com/amp/s/www.brandwatch.com/blog/infographic-instagram-stories-facts-stats/%3famp)
 
 * **Messaging platforms are more than needed**
 
-![drake-meme](./media/top-social-media-trends-2018.png)
+![drake-meme](media/top-social-media-trends-2018.png)
 
 Source:[plannhat](https://www.plannthat.com/top-social-media-trends-2018/)
 

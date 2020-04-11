@@ -61,7 +61,7 @@ In general, it composes of the following steps:
 
 <title-2>Customer Development Stages</title-2>
 
-![customer-development](./media/customer-development-process.jpg)
+![customer-development](media/customer-development-process.jpg)
 
 Source: [Cleverism](https://www.cleverism.com/how-customer-development-model-work/)
 

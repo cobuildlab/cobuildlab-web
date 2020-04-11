@@ -16,11 +16,11 @@ DevFest Miami is organized by different Google Developers Groups (GDG) across th
 Each DevFest is inspired by and uniquely tailored to the needs of the developer community and region that hosts it.
 For this Miami 2019 edition, will be hosted at the Wix.com offices, on September 28 from 9:00 am to 5:00 pm.
 
-[![leader-management](./media/devfest-alacret.jpg)](#)
+[![leader-management](media/devfest-alacret.jpg)](#)
 
 Cobuild Lab, as a sponsor of DevFest, is excited to announce that founder, Angel Lacret, will be one of the speaker attendees, sharing his experience as a technical Product Manager. Also, we will be giving away a coupon for a Fully Designed One-Page-Website Valued at $2000!
 
-[![leader-management](./media/dev-fest-cupon.jpg)](#)
+[![leader-management](media/dev-fest-cupon.jpg)](#)
 
 This event is Sold Out!
 

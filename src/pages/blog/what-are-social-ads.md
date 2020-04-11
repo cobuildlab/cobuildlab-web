@@ -35,13 +35,13 @@ This is perhaps one of the most important, as it is multiplatform, not only work
 
 The good thing about [Facebook](https://www.facebook.com/business/ads) Ads is also that it is ideal if you want to reach your potential in the same social network, which is not too much to say that it is the one that has more subscribers in the world. To be a little more exact, [more than 2 billion people by 2019.](https://www.juancmejia.com/marketing-digital/estadisticas-de-redes-sociales-usuarios-de-facebook-instagram-linkedin-twitter-whatsapp-y-otros-infografia/)
 
-![facebook-use](./media/facebook-use.jpg)
+![facebook-use](media/facebook-use.jpg)
 
 What does this mean? that you could capitalize as a brand in the social network with the highest demand in the whole world. 
 
 Facebook Ads offers you three types of targets for your ad campaigns, such as awareness, consideration, and conversion.
 
-![facebook-ads-manager](./media/facebook-ads-manager.png)
+![facebook-ads-manager](media/facebook-ads-manager.png)
 
 Depending on the intentions or goals you want to achieve with your campaigns, select any of these options, and your investment, the type of ad, the segmentation, the elements you must integrate, and the overall behavior of the campaign will be different to achieve the goal you set.
 
@@ -99,7 +99,7 @@ This is also one of the most used social media networks in the world, where the 
 
 In Youtube Ads, you can make display ads,   that are skippable or unskippable, overlay ads, sponsored cards, and even shoppable ads as you can see in the next image. 
 
-![youtube-advertising-formats](./media/youtube-advertising-formats.png)
+![youtube-advertising-formats](media/youtube-advertising-formats.png)
 
 **Source: [Influencer Marketing Hub](https://influencermarketinghub.com/how-much-do-youtube-ads-cost/)**
 
@@ -124,7 +124,7 @@ For example, if you want to be very concise and you are using Instagram and your
 
 <title-3>Think in the next…</title-3>
 
-![social-media-remarketing](./media/social-media-remarketing.png)
+![social-media-remarketing](media/social-media-remarketing.png)
 
 **Source: [Lyfe Marketing](https://www.lyfemarketing.com/blog/paid-social-ads/)**
 

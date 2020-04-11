@@ -18,7 +18,7 @@ We thank our partners and clients for supporting our decisions, and we’ll cont
 
 Thank you so much for reading and stay home to keep yourself and your loved ones safe. <br> </br>
 
-<img src="./media/diseño1.png"> <br> </br>
+<img src="media/diseño1.png"> <br> </br>
 
 <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/community/index.html"> Learn more about preventing COVID-19 spread </a> to keep ourselves and our coworkers safe. <br> </br>
 

@@ -21,7 +21,7 @@ For startup founders, keeping up with the latest trends can be crucial for succe
 
 <title-3>Software trend #1 More dependence on AI technology</title-3>
 
-[![artificial-intelligence-technology](./media/artificial-intelligence-technology.jpg)](#)
+[![artificial-intelligence-technology](media/artificial-intelligence-technology.jpg)](#)
 
 It’s been a long time since the onset of Artificial technology in software development services. But the ways of its adoption are revolving and enhancing every year drastically. Most businesses are adopting this technology in their software to offer a little extra to their customers.
 
@@ -33,13 +33,13 @@ Chatbots have become a new trend included in every app or website. Chatbots, AI 
 
 <title-3>Software trend #2 5G network</title-3>
 
-[![5G-technology](./media/5G.jpg)](#)
+[![5G-technology](media/5G.jpg)](#)
 
 Soon a hundred times faster network than 4G will hit the ground to amaze us! It is the 5G network that is expected to enter the market by the end of the year 2020. Speculated to provide a wider range of connectivity,  5G is alluring a lot of software development companies. It has been presumed that 5G will provide better data security. Moreover, the virtual reality app development like 3D gaming will also improve along with augmented reality enabled apps. Not only business persons but laypersons are also eagerly waiting for this network.
 
 <title-3>Software trend #3 Edge computing</title-3>
 
-[![Edge-computing](./media/edge-computing.jpg)](#)
+[![Edge-computing](media/edge-computing.jpg)](#)
 
 It is expected that the market of edge computing is not going to increase by two-three or four folds! Edge computing global market is predicted to rise by approximately 28 times by 2025.  
 
@@ -49,7 +49,7 @@ How is edge computing better than cloud computing? Edge computing has an advanta
 
 <title-3>Software trend #4 Instant Apps</title-3>
 
-[![Instant-apps](./media/instant-app.jpg)](#)
+[![Instant-apps](media/instant-app.jpg)](#)
 
 It was in 2016 when introduced instant apps to the software development world. These apps have features of an app but run like a website. You do not have to download them, which means there is no need to provide them memory from your device. Instant apps can also be used for testing purposes. Mobile app developers launch these apps to test their mobile apps before their launch. They are smaller in size than usual apps and offer a better user experience.
 Another advantage of these apps can provide better conversion rates. Hence looking at its strategic importance, it is expected that there will be a rise in the number of instant apps in 2020 and beyond. 
@@ -58,7 +58,7 @@ Another advantage of these apps can provide better conversion rates. Hence looki
 
 Just like software development trends, its programming tools’ trends are also of great value. A number of new programming languages or frameworks are launched and some disappear almost every year. Along with dynamic software technologies, their development tools are also unsteady in their market presence.  Although in every other survey, Javascript and PHP are the most used programming languages for front-end and back-end programming languages. Many different tools are gaining constant popularity. One such language is python, which is most used for AI and ML development. It showcases a steady growth among other major programming languages.
 
-[![programming-trends](./media/common-programming-languages.png)](#)
+[![programming-trends](media/common-programming-languages.png)](#)
 
 **Source:** [condinginfinitive](https://codinginfinite.com/best-programming-languages-to-learn-2019/)
 
@@ -66,7 +66,7 @@ Just like software development trends, its programming tools’ trends are also 
 
 As per research by iResearch, revenue from paid mobile app downloads and in-app advertising alone would reach up to 581 billion dollars in 2020, and reach almost near the trillion-dollar mark by 2023.
 
-[![worldwide-mobile-app-revenue](./media/worldwide-mobile-app-revenue.png)](#)
+[![worldwide-mobile-app-revenue](media/worldwide-mobile-app-revenue.png)](#)
 
 So yes, the market and statistics point towards substantial benefits from app development provided that businesses invest it in today. But it's easier said than done. What sets apart good apps from the best ones is who builds them. As a business leader or a CEO, you surely wouldn’t want a shoddy application to help customers reach your services, or to help make your business processes easier. This is why it’s essential to find the best among the list of app development companies to get the job done and deliver a bug-free, robust, scalable app that serves all your needs.
 

@@ -125,7 +125,7 @@ You can make static animations really professional using this tool.
 
 Do you want to make this? 
 
-![facebook-animation](./media/fb-animation.gif)
+![facebook-animation](media/fb-animation.gif)
 
 This is possible thanks to this software developed by Facebook. 
 

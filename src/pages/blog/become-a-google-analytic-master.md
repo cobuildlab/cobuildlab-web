@@ -45,9 +45,9 @@ The options for you to use this report are as follows:
 if you select **Acquisition + Overview**, you will see all the channels where you are receiving visits, the number of sessions in which it happened, the percentage of bounce you had, if you did not know, the percentage of bounce are all those people who entered your page, and they haven't performed any action or interaction with your website, and they're gone. 
 
 
-![traffic-acquisition](./media/google-analytic-traffic-report.png)
+![traffic-acquisition](media/google-analytic-traffic-report.png)
 
-![traffic-acquisition](./media/google-analytic-traffic-report1.png)
+![traffic-acquisition](media/google-analytic-traffic-report1.png)
 
 <Br>
 
@@ -55,16 +55,16 @@ Now if you select the route **Acquisition  + All Traffic + Channels** you will g
 
 <Br>
 
-![traffic-acquisition](./media/google-analytic-traffic-report2.png)
+![traffic-acquisition](media/google-analytic-traffic-report2.png)
 
-![traffic-acquisition](./media/google-analytic-traffic-report3.png)
+![traffic-acquisition](media/google-analytic-traffic-report3.png)
 <Br>
 
 There is another variant in this report with the following route: **Acquisition + All traffic + Referrals**. 
 <Br>
-![traffic-acquisition](./media/google-analytic-traffic-report4.png)
+![traffic-acquisition](media/google-analytic-traffic-report4.png)
 
-![traffic-acquisition](./media/google-analytic-traffic-report5.png)
+![traffic-acquisition](media/google-analytic-traffic-report5.png)
 <Br>
 With this route you will have the possibility to know the external websites that are giving you traffic, for example, when you were linked in one of their post, etc.. If you know this information, you can propose linkbuilding campaigns or just say thank you. 
 
@@ -78,7 +78,7 @@ When you have access to this report of keywords what you will be able to disting
 
 The route to access it is **Acquisition + Search Console + Queries**.
 
-![keyword-report](./media/keyword-report.png)
+![keyword-report](media/keyword-report.png)
 
  
 **3. Landing Page Report**
@@ -90,9 +90,9 @@ It can even work so that you know which of your pages are not having the best ef
 The route for you to visit it is **Behavior + Site Content + Landing Pages**
 
  
-![landing-page-report](./media/landing-pages-report.png)
+![landing-page-report](media/landing-pages-report.png)
 
-![landing-page-report](./media/landing-pages-report1.png)
+![landing-page-report](media/landing-pages-report1.png)
 
 
 <title-3>Other things you should know are the customized reports...</title-3>
@@ -110,22 +110,22 @@ It's a pretty easy process that you can follow with this step by step.
 2. Click on **Customization**, specifically on **Custom Reports**, and select the **New Custom Report** option.
 <Br>
 
-![custom-report-google-analytics](./media/custom-report1.png)
+![custom-report-google-analytics](media/custom-report1.png)
 
 
-![custom-report-google-analytics](./media/custom-report2.png)
+![custom-report-google-analytics](media/custom-report2.png)
 
 
 3. Give a title to that report you're creating.
 <Br>
 
-![custom-report-google-analytics](./media/custom-report3.png)
+![custom-report-google-analytics](media/custom-report3.png)
 <Br>
 
 4. If you wish, you can select the add report tab option.
 <Br>
 
-![custom-report-google-analytics](./media/custom-report4.png)
+![custom-report-google-analytics](media/custom-report4.png)
 <Br>
 
 5. Select one of the report types available to you. 
@@ -137,25 +137,25 @@ The report types are:
 * **Conversion Funnel** that you define yourself.
 <Br>
  
-![custom-report-google-analytics](./media/custom-report5.png)
+![custom-report-google-analytics](media/custom-report5.png)
 <Br>
 
 6. Defines the properties of the report. Metrics and dimensions. 
 <Br>
 
-![custom-report-google-analytics](./media/custom-report6.png)
+![custom-report-google-analytics](media/custom-report6.png)
 <Br>
 
 7. If you add a filter you can limit the report to only a few properties. 
 <Br>
 
-![custom-report-google-analytics](./media/custom-report7.png)
+![custom-report-google-analytics](media/custom-report7.png)
 <Br>
 
 8. Then, the time will come for you to select the specific view option or the All Views associated with the account option, so that you can choose in which views or spaces the custom report you are creating will appear.
 <Br>
  
-![custom-report-google-analytics](./media/custom-report8.png)
+![custom-report-google-analytics](media/custom-report8.png)
 <Br>
 
 9. Click on save and your report is created. 
@@ -164,7 +164,7 @@ Remember that you can merge information from several default report types, all i
 
 If you want to access your customized reports or if you want to manage them, all you need to do is log into your Google Analytics account, go to the view you previously chose for the reports, click on customization, and there you will have a view of all the customized reports you have created. 
 
-![custom-report-google-analytics](./media/custom-report9.png)
+![custom-report-google-analytics](media/custom-report9.png)
 
 The management is very simple. If you activate the **“Actions”** option, you will have a complete menu to copy, edit, delete and even share your customized reports. But you can feel safe, what you will share with others, in this case, is the configuration you decided to give to the report since the information and data in your reports will continue to be private. This tool is quite secure. 
 

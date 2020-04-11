@@ -31,7 +31,7 @@ When the website is build, gatsby generates static HTML, CSS and JS files per ea
 The Architecture of a gatsby application is focused on three major elements:
  
 
-![gatsby architecture](./media/gatsby.png)
+![gatsby architecture](media/gatsby.png)
 
 ### 1. The Data Layer
 

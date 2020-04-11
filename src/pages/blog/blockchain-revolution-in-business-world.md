@@ -13,7 +13,7 @@ Each block of information contains a cryptographic hash of the previous block, t
 transactions between two parties. The blockchain by its original design is resistant to modification of data, which makes it a made it the
 world's most trusted **financial technology**.
 
-![Blockchain](./media/block2.jpg)
+![Blockchain](media/block2.jpg)
 
 <title-2>How Blockchain Has Helped The Business World</title-2>
 
@@ -32,7 +32,7 @@ Blockchain came out to be the invention of a new type of technology and internet
 This is one good reason its original creation to hold [bitcoin](https://www.bitcoin.com/) has allowed for bitcoins’ value to continually
 increase and inspire for other types of digital currencies and assets.
 
-![Blockchain](./media/block3.jpg)
+![Blockchain](media/block3.jpg)
 
 <title-2>Future of Blockchain</title-2>
 

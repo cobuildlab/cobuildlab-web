@@ -60,7 +60,7 @@ Filestack is a solution that allows us from our frontend application, to upload,
 
 [Source](https://www.filestack.com/)
 
-![Show me the code](./media/show-me-the-code.jpeg)
+![Show me the code](media/show-me-the-code.jpeg)
 
 ## Uploading files with my React Application using File Stack
 

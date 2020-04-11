@@ -15,8 +15,8 @@ With a very topic-oriented program, Miami Software Developers provides weekly me
 
 September Monthly Edition is focused on best practices and technologies for capturing metrics on Web and Mobile Applications from both a technical point of view, as well as practical.
 
-[![Monthly Meet-Up 2](./media/monthlyseptember2.jpg)](#)
-[![Monthly Meet-Up 3](./media/monthlyseptember3.jpg)](#)
+[![Monthly Meet-Up 2](media/monthlyseptember2.jpg)](#)
+[![Monthly Meet-Up 3](media/monthlyseptember3.jpg)](#)
 
 Want to [become a member](https://www.meetup.com/Miami-Software-Developers/discussions/)?Just bring your laptop and whatever problem you are working on! They will help you in any way they can. Become a developer with Miami Software Developers!  
 

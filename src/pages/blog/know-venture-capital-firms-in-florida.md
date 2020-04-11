@@ -71,7 +71,7 @@ They not only bring funding. Also, They work for that every entrepreneur can hav
 
 This company also bet for global networks of investment. That’s why they work closely with other funding companies like:
 
-![Miami-Angels](./media/3.JPG)
+![Miami-Angels](media/3.JPG)
 
 Source: [Miami Angels](https://www.miamiangels.vc/home)
 
@@ -89,9 +89,9 @@ They prefer software companies but they are not exclusive to this. Actually, the
 
 These are its numbers:
 
-![Venture-city](./media/2.JPG)
+![Venture-city](media/2.JPG)
 
-![Venture-city](./media/4.JPG)
+![Venture-city](media/4.JPG)
 
 Source: [Venture City](https://theventure.city/)
 

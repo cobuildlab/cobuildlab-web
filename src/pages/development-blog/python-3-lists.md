@@ -3,7 +3,7 @@ title: "Python 3 Data Structures: Lists"
 date: 2019-07-16T01:00:00+00:00
 tags: 
 template: development-post
-image: /media/blocks.jpg
+image: ./media/blocks.jpg
 ---
 
 In Python 3 exists 5 fundamentals data structures to store multiple values:

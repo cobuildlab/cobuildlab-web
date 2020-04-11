@@ -108,7 +108,7 @@ And last, the **conversion rate**. This is all people who made some conversion f
 
 * **Mail Chimp**
 
-![Mail-chimp](./media/mailchimp.jpg)
+![Mail-chimp](media/mailchimp.jpg)
 
 - Integration with almost any WordPress plugin to collect emails.
 - Create our forms.
@@ -131,7 +131,7 @@ And last, the **conversion rate**. This is all people who made some conversion f
 
 * **Active Campaign**
 
-![Active-campaign](./media/active-campaign.jpg)
+![Active-campaign](media/active-campaign.jpg)
 
 - 14 days of testing that allows you to tune the tool with 100 contacts.
 - Automation.
@@ -147,7 +147,7 @@ And last, the **conversion rate**. This is all people who made some conversion f
 
 * **Mail Relay**
 
-![Mail-relay](./media/mail-relay.jpg)
+![Mail-relay](media/mail-relay.jpg)
 
 - Sending 15,000 free emails per month or up to 3,000 subscribers. This number increases to 75,000 emails or 15,000 subscribers just for the fact of following them on their social networks.
 - Technical support for all accounts.
@@ -168,7 +168,7 @@ And last, the **conversion rate**. This is all people who made some conversion f
 
 * **MDirector**
 
-![MDirector](./media/mdirector.jpg)
+![MDirector](media/mdirector.jpg)
 
 - 5,000 free emails per month.
 - Test A / B to check the fidelity of your newsletters. 
@@ -187,7 +187,7 @@ And last, the **conversion rate**. This is all people who made some conversion f
 
 * **Doppler**
 
-![Doppler](./media/doppler.jpg)
+![Doppler](media/doppler.jpg)
 
 - Maximum 500 contacts but no shipping limit for your emails.
 - Programming emails with designated dates.

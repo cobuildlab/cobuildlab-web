@@ -25,7 +25,7 @@ Market forecasts vary, but all consistently predict explosive growth. IDC predic
 
 **Source:** [Forbes](https://www.forbes.com/sites/louiscolumbus/2017/06/11/how-artificial-intelligence-is-revolutionizing-enterprise-software-in-2017/#7ac473e82463)
 
-[![erp-software](./media/artificial-intelligence-revenue.jpg)](#)
+[![erp-software](media/artificial-intelligence-revenue.jpg)](#)
 
 <title-2>The benefits of AI: is it necessary?</title-2>
 

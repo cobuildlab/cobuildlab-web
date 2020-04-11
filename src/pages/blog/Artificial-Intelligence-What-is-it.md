@@ -31,7 +31,7 @@ A collection of advanced technologies that allow machines** to sense, comprehend
 *   Robots as effective weapons.
 *   Economic problems.
 
-[![artificialintelligence](./media/artificial-intelligence.png)](#)
+[![artificialintelligence](media/artificial-intelligence.png)](#)
 
 <title-3>Have you heard about the Turing test?</title-3>
 

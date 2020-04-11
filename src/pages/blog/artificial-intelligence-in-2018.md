@@ -41,13 +41,13 @@ Artificial intelligence is so developed on this 2018 that can detect your emotio
 
 An example of that is [Affectiva](https://www.affectiva.com/). A technology measure emotion through sensing and analyzing facial expressions, and nowadays they are working to get better this technology and achieve the emotion detection through human speech.
 
-![Affectiva-artificial-intelligence](./media/affectiva-artificial-intelligence.jpg)
+![Affectiva-artificial-intelligence](media/affectiva-artificial-intelligence.jpg)
 
 Source: [the next web](https://thenextweb.com/artificial-intelligence/2018/07/05/companies-work-ai-technology/)
 
 AI is on education also, that's why we find some robots that educate interacting with students and professors. IBM was one of the pioneers in this creating teachers’ assistant as this robot that teaches in Javeriana University.
 
-![teacher-robots](./media/teacher-robots.jpg)
+![teacher-robots](media/teacher-robots.jpg)
 
 Source: [Semana](https://www.semana.com/educacion/articulo/el-uso-de-la-inteligencia-artificial-en-la-educacion/578735)
 
@@ -125,7 +125,7 @@ Another American company that is betting for self-driving cars is Uber. But its 
 
 These cars have around 20 cameras, 7 lasers, GPS, radars, a technology that measures the distance reached, and the necessary equipment to bring its service in a safe way. Of course, using self-driving cars.
 
-![Uber-artificial-intelligence](./media/uber-artificial-intelligence.jpg)
+![Uber-artificial-intelligence](media/uber-artificial-intelligence.jpg)
 
 Source: [techradar](https://www.techradar.com/news/uber-self-driving-cars)
 

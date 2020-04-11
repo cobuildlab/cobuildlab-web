@@ -28,28 +28,28 @@ Miami has now found an alternative to having to face more pollution, congestion,
 <title-3 align="left">Uber's Jump</title-3>
 [Uber’s Jump Scooters](https://www.uber.com/us/en/ride/scooters/) are a fantastic way to commute and get around your city. You can easily reserve one up to 30 minutes before you need it by opening the [Uber app](https://apps.apple.com/us/app/uber/id368677368?mat_click_id=9408884673334e3ab26abe029e270262-20190902-7336&referrer=mat_click_id%3D9408884673334e3ab26abe029e270262-20190902-7336%26link_click_id%3D697080359816490203) which brings you to the map of all available bikes near you as well its charge level. Once you reserve a Scooter, you walk to it, unlock it by scanning the code, and enjoy the ride.
 
-[micromobility](./media/MICROMOBILIDAD-01.jpg)
+[micromobility](media/MICROMOBILIDAD-01.jpg)
 Source: [Alex Millauer](https://www.shutterstock.com/g/AlexMillauer)/Shutterstock
 
 
 <title-3 align="left">Dashee</title-3>
 [Dashee](https://www.dashee.com/) is an electric scooter sharing company that is based in Miami Beach, they are the innovative, fast, fun way to get around. They are eco-friendly, easy to ride, fast, and at the perfect budget price point. Just download the app and go! It's THAT easy!.
 
-[micromobility](./media/MICROMOBILIDAD-02.jpg)
+[micromobility](media/MICROMOBILIDAD-02.jpg)
 Source: [Dashee](https://www.dashee.com/)
 
 
 <title-3 align="left">Lime</title-3>
 Through the equitable distribution of shared scooters, bikes and transit vehicles, [Lime](https://www.li.me/en-us/home) aims to reduce dependence on personal automobiles for short distance transportation and leave future generations with a cleaner, healthier planet. Available at [Play Store](https://play.google.com/store/apps/details?id=com.limebike&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1) and [Apple Store](https://apps.apple.com/us/app/limebike-your-ride-anytime/id1199780189?ls=1).
 
-[micromobility](./media/MICROMOBILIDAD-03.jpg)
+[micromobility](media/MICROMOBILIDAD-03.jpg)
 Source: [Lime](https://www.li.me/en-us/home)
 
 
 <title-3 align="left">Bird</title-3>
 [Bird](https://www.bird.co/#charge) shares a mission with cities to reduce traffic congestion and carbon emissions by providing people with a safe, affordable, and environmentally friendly alternative to cars. 
 
-[micromobility](./media/MICROMOBILIDAD-04.jpg)
+[micromobility](media/MICROMOBILIDAD-04.jpg)
 Source: [Bird](https://www.bird.co/#charge)
 
 Have you used one of them? Share your experience with us in the comments below.

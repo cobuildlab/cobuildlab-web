@@ -18,13 +18,13 @@ Its main objective is to help us plan, buy ads and also measure their performanc
 
 The Google platform integrates Google Analytics 360 Suite services and Doubleclick products as well.
 
-![google-marketing-platform](./media/google-marketing-platform-gif.gif)
+![google-marketing-platform](media/google-marketing-platform-gif.gif)
 
 Source: [Analityc.googleblog](https://analytics.googleblog.com/2018/06/introducing-google-marketing-platform.html) 
 
 And to be more specific, it includes the [Display & Video 360](https://support.google.com/displayvideo/answer/9059464?hl=en) and [Search Ads 360 advertising products](https://support.google.com/searchads/answer/1187512?hl=en), as well as [Analytics 360](https://marketingplatform.google.com/home), [Data Studio](https://datastudio.google.com/u/0/navigation/reporting), [Optimize 360](https://support.google.com/optimize/answer/7084762?hl=en), [Surveys 360](https://surveys.withgoogle.com/) and [Tag Manager 360 analytics products](https://support.google.com/marketingplatform/answer/6365892?hl=en).
 
-![Google-marketing-platform-options](./media/google-marketing-platform-options.png)
+![Google-marketing-platform-options](media/google-marketing-platform-options.png)
 
 Source: [Aukera](https://aukera.es/blog/que-es-google-marketing-platform/)
 
@@ -36,7 +36,7 @@ Of course, no one could introduce you better to [this platform than Google itsel
 
 When you log in to your Google Marketing platform account, the first option you'll see will be an integration center that will allow you to connect several products that are part of the tools mentioned above, and that this Google proposal brings them together in one place. 
 
-![interagtion-center-of-Google-marketing-platform](./media/integration-center-of-google-marketing-platform.png)
+![interagtion-center-of-Google-marketing-platform](media/integration-center-of-google-marketing-platform.png)
 
 Source: [Rockcontent](https://rockcontent.com/es/blog/google-marketing-platform/)
 

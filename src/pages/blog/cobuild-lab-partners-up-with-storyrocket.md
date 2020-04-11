@@ -14,5 +14,5 @@ According to <a href="https://www.storyrocket.com/" target="_blank">Storyrocket<
 Now Cobuild Lab has the mission of building a Version 2.0 of the platform, upgrading the look and feel as well, as well as many of its core functionalities and backend technologies. 
 
 Stay tuned for more Storyrocket updates!
-[![Storyrocket Early Mock-Ups](./media/storyrocket-ux-samples.jpg)](#)
-<div style="display:none;"><img src="./media/storyrocket-cover-linkedin.jpg" style="display:none;"></div>
+[![Storyrocket Early Mock-Ups](media/storyrocket-ux-samples.jpg)](#)
+<div style="display:none;"><img src="media/storyrocket-cover-linkedin.jpg" style="display:none;"></div>

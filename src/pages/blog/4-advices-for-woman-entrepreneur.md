@@ -43,7 +43,7 @@ Although sexism may not always be so outstanding, it can be present in little th
 
 Diverse cases as Marie's are described in **Thecut.com** in an amazing article who describe every aspect of sexism in **Silicon Valley**. They even describe how wider is the gap with black female founders who make up point two percent (.**2%**) of all venture funding according to a recent study that also shows up that "more than **60.000 start-ups** found that only 88 had **back female founders**". It also says that "Black-female-founded **start-ups** raised an average of **$36.000**, while the white-male-led **start-ups** that _failed_ raised an average of **$1.3 million.** 
 
-![Business owned by women of color](./media/woman1.jpg)
+![Business owned by women of color](media/woman1.jpg)
 <credits>Source: Womenable.com</credits>
 
 In other hand, the **Women Owned Businesses’ Report** shows a big **growth** for businesses owned by women of color between the years 2007 and 2016, which can translate into a shortening in the gap of racism and sexism on **start-up** businesses. 
@@ -73,7 +73,7 @@ You shouldn't start any business unless you will be doing something you are real
 
 If you’re really thinking about starting as an entrepreneur you must know that over **30% of all US businesses are majority female owned**, and what is even wonderful is that this number continues to grow at twice the rate of all US firms, and they are **increasing** over the years.  
 
-![Women owned business boom](./media/woman2.jpg)
+![Women owned business boom](media/woman2.jpg)
 <credits>Source: Womenable.com</credits>
 
 The **Womenable and American Express OPEN** took a look at the state of women-owned businesses across the U.S in the past years and in these charts you can really appreciate the huge growth between 2007 and 2016. Based on that we can assume that this will continue growing over the years and we are not so far from business parity. 

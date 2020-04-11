@@ -39,7 +39,7 @@ Another characteristic of a unicorn startup is a particular commercial strategy 
 
 **1. Magic Leap**
 
-![magic-leap](./media/magic-leap.png)
+![magic-leap](media/magic-leap.png)
 
 <credits>Photo by [variety](https://variety.com/)<credits>
 
@@ -48,7 +48,7 @@ It is a really nice startup that is valued over 4.5 billion this year. They are 
 
 **2. JetSmarter**
 
-![jetsmarter](./media/jetsmarter.png)
+![jetsmarter](media/jetsmarter.png)
 
 <credits>Photo by [JetSmarter](https://jetsmarter.com/)<credits>
   
@@ -65,7 +65,7 @@ Source:[Wikipedia](https://en.wikipedia.org/wiki/JetSmarter)
 
 **1. Kangaru App**
 
-![kangaru](./media/kangaru-app.png)
+![kangaru](media/kangaru-app.png)
 
 <credits>Photo by [Kangaru App](https://kangaruapp.com/)<credits>
   
@@ -75,7 +75,7 @@ His specialty is shipments that they are around Panama cities. They have a mobil
 
 **2. Uber**
 
-![uber](./media/uber.png)
+![uber](media/uber.png)
 
 <credits>Photo by [Uber](https://venezuela.as.com/venezuela/)<credits>
   
@@ -85,7 +85,7 @@ When someone needs a taxi, it is possible to find it in a fast and easy way. It 
 
 **3. GitHub**
 
-![github](./media/github.png)
+![github](media/github.png)
 
 <credits>Photo by [Medium](https://medium.com/)<credits>
 
@@ -95,7 +95,7 @@ It is a repository of software projects in git’s versions. They are working fr
 
 **4. GitLab**
 
-![gitlab](./media/gitlab.png)
+![gitlab](media/gitlab.png)
 
 <credits>Photo by [Medium](https://medium.com/)<credits>
   
@@ -105,7 +105,7 @@ It is a platform of collaborative software development process that also uses gi
 
 **5. Canva**
 
-![canva](./media/canva.png)
+![canva](media/canva.png)
 
 <credits>Photo by [Canva](https://www.canva.com/)<credits>
  

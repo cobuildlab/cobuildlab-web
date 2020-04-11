@@ -19,7 +19,7 @@ In the beginning no one could possible imagine the amount of success of **Snapch
 
 <title-3>The undeniable growth</title-3>
 
-![](./media/chartoftheday_7951_snapchat_user_growth_n.jpg)
+![](media/chartoftheday_7951_snapchat_user_growth_n.jpg)
 
 Source: [Statista](https://www.statista.com/topics/2882/snapchat)
 
@@ -43,13 +43,13 @@ Investors and brands took the opportunity to **engage** with their audience and 
 
 As imitation is the sincerest form of flattery, **Facebook** and **Instagram** has included some of Snapchat's best features, including expiring video and even geofilters. 
 
-![](./media/stories_snapchat_vs_instagram2.png)
+![](media/stories_snapchat_vs_instagram2.png)
 
 Source: [BussinessInsider](http://www.businessinsider.com/instagram-is-ruining-snapchats-story-2017-2)
 
 However, the penetration of both **Snapchat Stories** and **Instagram Stories** among to 18-34 years old users is incomparable, **Snapchat’s** still the winner with 45% of the interviewed people preferring it over its competitors.
 
-![](./media/snapchat_stories_vs_instagram_stories_dau-1-625x380.jpg)
+![](media/snapchat_stories_vs_instagram_stories_dau-1-625x380.jpg)
 
 Source: [Statista](https://www.statista.com/chart/9086/daily-active-users-instagram-stories-snapchat/)
 

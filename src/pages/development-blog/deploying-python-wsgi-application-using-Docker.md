@@ -21,7 +21,7 @@ In December of that year the [PEP 333] (https://www.python.org/dev/peps/pep-0333
 
 In a glance, a production architecture of a Python web application should look like this:
 
-![Python WSGI using Docker](./media/python-wsgi-docker.png)
+![Python WSGI using Docker](media/python-wsgi-docker.png)
 
 1) Setup a Django WSGI Application (a normal Django Application)
 2) Setup a WSGI compliant Web Server

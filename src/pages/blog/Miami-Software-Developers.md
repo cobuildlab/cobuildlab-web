@@ -10,13 +10,13 @@ Miami, FL. Aug 20, 2019 - [Miami Software Developers](https://www.meetup.com/Mia
 
 The group was started in November 2018 by [Cobuild Lab's](https://cobuildlab.com) Chief of Product Development, Angel Lacret. *“I moved to Miami a couple of years ago, and since I love coding, I looked for a place to meet other developers like me. Some space where one could come, go networking while learning more about coding, but I didnt find any. So my failed quest motivated me to start this space.”* he said.
 
-![Meetup 1](./media/meetups-01.png)
+![Meetup 1](media/meetups-01.png)
 
 Miami Software Developers is a space for developers to learn, connect, and share with one another. With a very topic-oriented programming, the group provides weekly meetups every Monday with not only something new to learn but also new skills to develop through Coding Challenges where a problem is presented to participants who must write code in order to solve it.  
 
 Their calendar also includes a monthly event where the goal is helping developers grow in their environment and giving them the tools to solve everyday problems they can find in any project.
 
-![Meetup 2](./media/meetups-02.jpeg)
+![Meetup 2](media/meetups-02.jpeg)
 
 Globally, there is an enormous demand for software developers, but not enough supply. This situation has led to the creation of numerous Bootcamps, which are intensive courses to train developers in a few weeks. The biggest problem is that the participants who finish the courses are not apt to opt for a job position at once because of their lack of experience and knowledge. So there is a considerable gap between Bootcamps graduates, novice developers, self-learners and job positions.
 
@@ -28,7 +28,7 @@ So, all efforts are centered in allowing its members to learn the essential skil
 
 Firstly, to build a good portfolio and make it attractive for those companies as well as to learn new tools and frameworks that are useful to them in the labor field. Members also have the opportunity to learn the soft skills to become someone who can be employed and learn the hard skills that can be acquired with the Coding Challenges.
 
-![Meetup 3](./media/meetups-03.jpeg)
+![Meetup 3](media/meetups-03.jpeg)
 
 Want to become a member? Just bring your laptop and whatever problem you are working on! They will help you in any way they can. Become a developer with Miami Software Developers!  
 

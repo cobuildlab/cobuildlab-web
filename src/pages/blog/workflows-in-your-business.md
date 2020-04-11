@@ -23,7 +23,7 @@ But now, thanks to technology everyone forgot those tools and now we have digita
 
 <title-2>How to improve an efficient workflow</title-2>
 
-![efficient-workflow](./media/workflow1.png)
+![efficient-workflow](media/workflow1.png)
 Source: [digital project manager](https://thedigitalprojectmanager.com/workflow-management-software/)
 
 <title-3>1. Say goodbye to multitasking</title-3>
@@ -96,7 +96,7 @@ There you will have messaging services, where you can create groups, communities
 
 “Slack for teams is ideal for small- to medium- sized companies or teams who only need a single Slack workspace. You can use Slack with a limited number of features for free, but if you need more features and functionality, they offer two paid plans.” [Slack](https://get.slack.help/hc/en-us/articles/115003205446-Planes-productos-y-funciones-)
 
-![Slack](./media/slack.JPG)
+![Slack](media/slack.JPG)
 Source: [Slack](https://get.slack.help/hc/en-us/articles/115003205446-Planes-productos-y-funciones-)
 
 * **Google Keep**
@@ -111,13 +111,13 @@ Even users can set reminders, which are integrated with Google Now, with options
 
 In Google keep you also can organize data, create to-do lists, draw on images, and capture thoughts.
 
-![google-keep](./media/google-keep1.jpg)
+![google-keep](media/google-keep1.jpg)
 
-![google-keep](./media/google-keep2.jpg)
+![google-keep](media/google-keep2.jpg)
 
-![google-keep](./media/google-keep3.jpg)
+![google-keep](media/google-keep3.jpg)
 
-![google-keep](./media/google-keep4.jpg)
+![google-keep](media/google-keep4.jpg)
 
 Source: [SoftwareAdvice](https://www.softwareadvice.com/project-management/google-keep-profile/)
 

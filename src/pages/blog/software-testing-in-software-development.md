@@ -57,7 +57,7 @@ Functional testing has three components:
 * System integration testing 
 * User Acceptance Test
 
-![functional-testing](./media/functional-testing.png)
+![functional-testing](media/functional-testing.png)
 
 Source: [Medium](https://medium.com/@khaidir.kamil/usability-testing-vs-functional-testing-which-one-should-you-invest-more-bfa2a0e66b6)
 

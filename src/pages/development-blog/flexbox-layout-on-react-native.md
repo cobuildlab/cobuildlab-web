@@ -97,8 +97,8 @@ baseline Align children of a container along a common baseline. Individual child
 
 ## Examples
 
-![Example 1](./media/rn-flex/rn-flex-1.png)
-![Example 1](./media/rn-flex/rn-flex-2.png)
-![Example 1](./media/rn-flex/rn-flex-3.png)
-![Example 1](./media/rn-flex/rn-flex-4.png)
-![Example 1](./media/rn-flex/rn-flex-5.png)
+![Example 1](media/rn-flex/rn-flex-1.png)
+![Example 1](media/rn-flex/rn-flex-2.png)
+![Example 1](media/rn-flex/rn-flex-3.png)
+![Example 1](media/rn-flex/rn-flex-4.png)
+![Example 1](media/rn-flex/rn-flex-5.png)

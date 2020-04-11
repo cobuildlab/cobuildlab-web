@@ -29,7 +29,7 @@ From [Wikipedia](https://en.wikipedia.org/wiki/Dropbox
 Dropbox initially offer was to sync files between different devices. Now, it offers a more complete solution for businesses to work collaborative using both the filesytem and office tools.
 
 
-![Show me the code](./media/show-me-the-code.jpeg)
+![Show me the code](media/show-me-the-code.jpeg)
 
 Prequisites:
 

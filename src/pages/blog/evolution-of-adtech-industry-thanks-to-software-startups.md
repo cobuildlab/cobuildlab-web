@@ -59,7 +59,7 @@ The decision we refer to is the choice of the industry in which you will develop
 
 [According to Nielsen's 'Measurement Breakthroughs' report, 56% of advertising campaign impressions are lost](https://innovecs.com/blog/adtech-trends/) due to fraud or off-target audiences. This number could affect your customers without necessarily being your and your solution's responsibility.
 
-[![](./media/adtech1.png)](#)
+[![](media/adtech1.png)](#)
 
 **Source:**[Innovecs](https://innovecs.com/blog/adtech-trends/)
 

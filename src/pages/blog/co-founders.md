@@ -86,7 +86,7 @@ A really good co-founder needs to have the next skills:
 
 **1. Bill Gates and Paul Allen**
 
-![bill-gates-and-paul-allen](./media/paul-allen-bill-gates.png)
+![bill-gates-and-paul-allen](media/paul-allen-bill-gates.png)
 
 <credits>Photo by [News.culturacolestiva](https://news.culturacolectiva.com/ciencia/muere-paul-allen-cofundador-de-microsoft/)<credits>
 
@@ -99,7 +99,7 @@ For a long time, they were listed as the top rich men in the U.S. and the world,
 
 **2. Steve Jobs, Steve Wozniak y Ronald Wayne**
 
-![Apple-cofounders](./media/apple-cofounders.png)
+![Apple-cofounders](media/apple-cofounders.png)
 
 <credits>Photo by [Iphoneros](https://iphoneros.com/52161/por-que-es-genial-el-video-conmemorativo-de-los-40-anos-de-historia-de-apple)<credits>
 
@@ -112,7 +112,7 @@ If they could, for sure you can.
 
 **3. Larry Page and Sergei Brin**
 
-![Google-cofounders](./media/google-cofounders.png)
+![Google-cofounders](media/google-cofounders.png)
 
 <credits>Photo by [Lifestyle.buorsorama](http://lifestyle.boursorama.com/high-tech/larry-page-et-sergey-brin-qui-sont-les-papas-de-google/)<credits>
   
@@ -125,7 +125,7 @@ Can you imagine that you and your co-founder would be the next Larry Page and Se
 
 **4. Matthew Prince, Michelle Zatlyn, and Lee Holloway**
 
-![cloudflare-cofounders](./media/cloudflare-cofounders.png)
+![cloudflare-cofounders](media/cloudflare-cofounders.png)
 
 <credits>Photo by [Wired](https://www.wired.co.uk/article/server-samurai)<credits>
   

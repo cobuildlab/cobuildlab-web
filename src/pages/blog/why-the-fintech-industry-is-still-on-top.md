@@ -93,13 +93,13 @@ FinTech's significant companies in the world can get multi-billion dollar valuat
 
 <title-3>Ant Financial</title-3>
 
-[![ant-fintech](./media/ant-financial.jpg)](#)
+[![ant-fintech](media/ant-financial.jpg)](#)
 
 China-based Ant Financial is a spin-off from the Alibaba Group ([BABA](https://www.investopedia.com/markets/quote?tvwidgetsymbol=baba)). Officially founded in 2014, it originated from Alipay, the world’s leading third-party payment platform founded in 2004. Today, Ant Financial runs Alipay, Ant Fortune, Ant Financial Cloud, and other financial services. Together, Ant Financial and its affiliates cover wealth management, credit reporting, private bank, payments, and cloud computing. Its business value was an estimate at a whopping $75 billion in 2016. Ant Financial tops the list of the most anticipated IPOs.
 
 <title-3>Robinhood</title-3>
 
-[![Robinhood](./media/robinhood.jpg)](#)
+[![Robinhood](media/robinhood.jpg)](#)
 
 [Robinhood](https://robinhood.com/) is a mobile app and website that offers the opportunity to manage your stocks, ETFs and finances (even cryptocurrencies) with the Robinhood Financial and Robinhood Crypto.
 
@@ -116,7 +116,7 @@ They also obtained a banking license, checking and savings accounts, with debit 
 
 <title-3>Home Lending Pal</title-3>
 
-[![Home-Lending-Pal](./media/home-lending-pal.png)](#)
+[![Home-Lending-Pal](media/home-lending-pal.png)](#)
 
 [Home Lending Pal](https://www.homelendingpal.com/) is an automated mortgage lending platform that has the particularity of using Artificial Intelligence for predicting mortgage approval odds for research and lender comparison.
 
@@ -128,13 +128,13 @@ This software uses data for knowing mortgage affordability and makes it personal
 
 <title-3>Mambu</title-3>
 
-[![Mambu](./media/mambu.png)](#)
+[![Mambu](media/mambu.png)](#)
 
 [Mambu](https://www.mambu.com/) is a SaaS-based platform that offers digital banking, loan, and deposit management solutions for financial institutions.  Mambu started with the ambition to bring banking technology into the digital-first world and to make it accessible for any market opportunity. Dreaming big but wisely, Mambu began with servicing microfinance institutions and fintech startups. Within two years,  Mambu was adopted by 100 microfinance organizations in 26 countries worldwide. 
 
 <title-3>CreditNinja </title-3>
 
-[![CreditNinja](./media/credit-ninja.png)](#)
+[![CreditNinja](media/credit-ninja.png)](#)
 
 [CreditNinja](https://www.creditninja.com/) is a FinTech company founded in 2017 by veteran, serial entrepreneurs who were part of the core team behind Enova (NYSE: ENVA), a leading publicly traded consumer financial services company. CreditNinja's mission is to provide hard working Americans with financial solutions when unexpected expenses arise. Unlike traditional banks, CreditNinja works hard to ensure that people with less-than-perfect credit can have quick access to the money they need. Our innovative underwriting allows us to offer online loans without any need to post home or car as collateral. 
 

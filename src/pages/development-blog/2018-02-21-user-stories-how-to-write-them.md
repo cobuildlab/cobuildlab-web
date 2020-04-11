@@ -4,7 +4,7 @@ title: 'User Stories: How to write them?'
 date: 2018-02-21T20:47:48+00:00
 tags: 
 template: development-post
-image: /wp-content/uploads/2018/04/4geeks.jpg
+image: ./media/04/4geeks.jpg
 ---
 <span style="font-weight: 400;">User stories are part of many agile development methodologies. These arise in eXtremme Programing (XP) in response to one of the usual situations in the software development: the documentation of the requirements or the functional specifications, in this type of documents, everything that is needed to do the software is described, in traditional models, do not exist or there is very little communication between the team members and the client, each requirement or functional specification of the software is made up of interpretations made by the project leader of a need, each of these is established fixed way, that is to say in the course of the execution of the project this does not change since on this one a previous planning was realized, and a modification can alter the risk of the project. &nbsp;&nbsp;&nbsp;&nbsp;</span>
 

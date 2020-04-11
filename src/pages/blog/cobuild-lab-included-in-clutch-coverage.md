@@ -22,7 +22,7 @@ interviews with Clutch analysts that can be viewed in their entirety on our prof
 
 Here is an example what our clients have had to say so far:
 
-![Clutch](./media/clutch_2.png)
+![Clutch](media/clutch_2.png)
 
 Our first review on Clutch also qualified our team to be featured on their sister website, The Manifest, amongst their list of the best
 [software developers in Miami](https://themanifest.com/software-development/companies/miami) in 2018!
@@ -31,4 +31,4 @@ We’d like to thank our friends at Clutch for including us in their ongoing eff
 design industries. We’re motivated to make sure we continue to develop our presence on both Clutch and The Manifest until we rise to the
 top.
 
-![Clutch](./media/clutch_1.png)
+![Clutch](media/clutch_1.png)

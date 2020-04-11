@@ -101,7 +101,7 @@ Some companies that are in the Edtech industry we have:
 
 <title-3>[BYJU’S](https://byjus.com/)</title-3>
 
-[![BIJUS](./media/BIJU1.png)](#)
+[![BIJUS](media/BIJU1.png)](#)
 
 The first we want to show you is [BYJU’S](https://play.google.com/store/apps/details?id=com.byjus.thelearningapp&hl=en). Their main product is a mobile app launched in August 2015. 
 
@@ -113,7 +113,7 @@ There is an example of the market you can get.
 
 <title-3>BLACKBOARD</title-3>
 
-[![BLACKBOARD](./media/BLACKBOARD.jpg)](#)
+[![BLACKBOARD](media/BLACKBOARD.jpg)](#)
 
 Blackboard: Dr. William Ballhaus is the founder of Blackboard. An app which seeks to close the gap between the evolving work environment, educators, and students. 
 
@@ -123,7 +123,7 @@ The platform offers insightful analysis that can help students and teachers conn
 
 <title-3>MIAMI EDTECH</title-3>
 
-[![MIAMI-EDTECH](./media/miami-edtech.jpg)](#)
+[![MIAMI-EDTECH](media/miami-edtech.jpg)](#)
 
 Here in Miami, you have the success example of [Miami EdTech](https://miamiedtech.com/). A company dedicated to providing innovative technologies to the educational institutes of the city. 
 

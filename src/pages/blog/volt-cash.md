@@ -10,7 +10,7 @@ There is no need to go to a check cashing store again, this Miami based startup 
 
 Founded in 2014, <a target="_blank" href="https://voltcash.com/"> VoltCash </a>  is a financial technology company that provides an alternative to check cashing for all its users in addition to providing immediate cash availability by partnering with local retailers. Anyone with a valid ID can bring in their cash or checks to their local retailer and instantly gain access to full financial services. It is that quick and easy. <br> </br>
 
-<img src="./media/voltcash1.jpg"> <br> </br>
+<img src="media/voltcash1.jpg"> <br> </br>
 
 <title-3 align="centered"> Partner with VoltCash </title-3> <br> </br>
 
@@ -29,7 +29,7 @@ As it’s shown on the video,  you will  receive a VoltCash debit card that you 
 
 Get an insight into all your transactions info from your phone with the <a target="_blank" href="https://voltcash.com/features/mobile-app/"> VoltCash Mobile App </a>. You'll be able to see when, where and what you're buying so you can keep track of your spendings. You can also get offers for discounts at your favorite stores and even request a card. <br> </br>
 
-<img src="./media/voltcash2.jpg"> <br> </br>
+<img src="media/voltcash2.jpg"> <br> </br>
 
 The VoltCash Mobile App lets you  find store locations near you and set custom alerts to notify you when a certain spending event occurs, like when you have a Low Balance or Zero Balance. It can present you a Weekly Balance giving you more control over your money and a better understanding of how you’re spending. You can also automate when you pay your bills setting up Online Bill Pay with VoltCash and keep track of them with the VoltCash Mobile App. <br> </br>
 

@@ -37,7 +37,7 @@ In the same way, these enterprise apps serve a large number of users who are usu
 
 <title-2>Particularities and characteristics of the Enterprise Software Development</title-2>
 
-![enterprise-software-development-components](./media/entreprise-software-development-components.jpg)
+![enterprise-software-development-components](media/entreprise-software-development-components.jpg)
 
 Enterprise Software Development not only has a clear goal. Also, it has certain aspects that characterize it and doing it differently from standard or particular processes as well. 
 
@@ -111,7 +111,7 @@ It must be stored and stored well. The cloud may be a good option, but today the
 
 <title-3>Difference between Enterprise software Development and New Software Product Development</title-3>
 
-![enterprise-software-development-vs-standard-software-development](./media/enterprise-software-development-vs-standard-software-development.jpg)
+![enterprise-software-development-vs-standard-software-development](media/enterprise-software-development-vs-standard-software-development.jpg)
 
 We have already mentioned the main difference between the development of startup software or new products concerning enterprise software development. And this is that, when it comes to startups, a product is created that meets the needs of a particular person or a group of people who have similar qualities or rather a profile on an environment of high uncertainty, while business software meets the needs of an organization. More than people, this software is designed for companies, processes, work environments, and automation. This is the starting point for all of the differences listed below:
 

@@ -10,7 +10,7 @@ Android came to stay in our life. In some countries, it is most common than othe
 
 Some statistics show that Android is a little higher os iOS if we consider the hall world. So, developing an Android App can make your business dreams come true, but you have to be sure of doing it in the right way.
 
-![Android-use](./media/android-use.jpg)
+![Android-use](media/android-use.jpg)
 
 Source: [TechSpot](https://www.techspot.com/news/75658-iphone-sales-help-ios-grow-us-market-share.html)
 

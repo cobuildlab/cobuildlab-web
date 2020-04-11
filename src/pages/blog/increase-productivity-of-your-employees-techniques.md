@@ -31,7 +31,7 @@ Pilates is more dynamic than yoga; it uses the same posture but incorporates exe
 
 Liberty also organized and identified several places in its building to make a circuit of training, more complex and active that pilates and yoga, but equally beneficial to its workers.
 
-![Productivity](./media/productivity_2.jpg)
+![Productivity](media/productivity_2.jpg)
 
 <credits>Photo on [Why not pilates](https://whynotpilates.net/)</credits>
 
@@ -45,7 +45,7 @@ Google, Reebok, Medtronic, Bridgewater, General Mills, BMW, and Coca-Cola are no
 
 <title-2>4. Powernap</title-2>
 
-![Productivity](./media/productivity_3.jpg)
+![Productivity](media/productivity_3.jpg)
 
 <credits>Photo on [Taringa](https://www.taringa.net/)</credits>
 

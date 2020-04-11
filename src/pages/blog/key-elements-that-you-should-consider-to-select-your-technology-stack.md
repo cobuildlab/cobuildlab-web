@@ -13,7 +13,7 @@ What is promised is debt and this post is proof of that. In the last post, we ta
 
 A technology stack is a group of software, programming languages, and tools used to create and develop a website, web, mobile or desktop application, etc, in all of its sides, we mean on the client-side and server-side.
 
-![tech-stack1](./media/tech-stack1.jpg)
+![tech-stack1](media/tech-stack1.jpg)
 
 Source: [svgs](https://svsg.co/how-to-choose-your-tech-stack/)
 

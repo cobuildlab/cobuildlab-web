@@ -34,7 +34,7 @@ Is a Python +3.5 package to handle concurrency with a single-threaded architectu
 
 
 
-![Show me the code](./media/show-me-the-code.jpeg)
+![Show me the code](media/show-me-the-code.jpeg)
 
 Prequisites:
 
