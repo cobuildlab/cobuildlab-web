@@ -113,7 +113,7 @@ const H4Blue = (props) => (
 
 /**
  *
- * @param props - The Props.
+ * @param props - {Object} - The Props.
  * @returns {*} - The Read More Component.
  * @class
  */
@@ -341,38 +341,6 @@ class Index extends React.Component {
             </Columns>
           </Container>
         </section>
-        {/*Section Latest News*/}
-
-        {/*Section Latest News*/}
-        {/*<section className="section">*/}
-        {/*  <Container hasTextAlign="centered">*/}
-        {/*    <Link to="/customer-success-stories">*/}
-        {/*      <Title className="title-section">Customer Success Stories</Title>*/}
-        {/*    </Link>*/}
-        {/*    <Columns isCentered>*/}
-        {/*      {customerSuccessStories.map(({ node }) => {*/}
-        {/*        const title = get(node, 'frontmatter.title') || node.fields.slug;*/}
-        {/*        const image = get(node, 'frontmatter.image.publicURL') || defaultImg;*/}
-        {/*        return (*/}
-        {/*          <Column isSize="1/3" key={node.fields.slug}>*/}
-        {/*            <Link to={node.fields.slug}>*/}
-        {/*              <CardImage>*/}
-        {/*                <Image isRatio="4:8" src={image} />*/}
-        {/*                <Content className="title-post">*/}
-        {/*                  <small>*/}
-        {/*                    {' '}*/}
-        {/*                    <Icon icon={clockO} style={{ paddingTop: 5 }} /> {node.frontmatter.date}*/}
-        {/*                  </small>*/}
-        {/*                  <Subtitle hasTextColor="white">{title}</Subtitle>*/}
-        {/*                </Content>*/}
-        {/*              </CardImage>*/}
-        {/*            </Link>*/}
-        {/*          </Column>*/}
-        {/*        );*/}
-        {/*      })}*/}
-        {/*    </Columns>*/}
-        {/*  </Container>*/}
-        {/*</section>*/}
         {/*Section Latest News*/}
 
         <section className="section">
