@@ -32,7 +32,7 @@ class AppsDevDescription extends Component {
 
     return (
       <LandingPageLayout siteDescription={siteDescription} siteTitle={siteTitle}>
-        <Columns isDesktop>
+        <Columns isDesktop isVCentered>
           <Column isSize={{ desktop: 7 }}>
             <H1>{siteTitle}</H1>
             <H2>{siteDescription}</H2>
@@ -47,11 +47,11 @@ class AppsDevDescription extends Component {
               </li>
             </ul>
             <SmoothScrollingButton href="#landing-contact-form">
-              Set an APPOINTMENT
+              Set a FREE 1 hour Consultation
             </SmoothScrollingButton>
           </Column>
 
-          <Column isVCentered>
+          <Column>
             <YouTubeVideo id={'AlU5h2xrQ5M'} />
           </Column>
         </Columns>
