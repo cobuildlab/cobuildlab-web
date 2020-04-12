@@ -5,6 +5,7 @@ import H4 from '../Typography/H4';
 
 const Container = styled.div`
   margin-bottom: 1.5em;
+  margin-top: 2.5em;
 `;
 
 const Title = styled(H4)`

@@ -12,7 +12,7 @@ const Container = styled.li`
   color: #264a60;
   &::before {
     content: '\\2022';
-    color: red;
+    color: #e76c29;
     font-weight: bold;
     display: inline-block;
     width: 1em;
