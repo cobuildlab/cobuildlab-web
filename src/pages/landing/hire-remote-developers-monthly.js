@@ -61,7 +61,7 @@ export default class AppsDevStudy extends Component {
           </Column>
 
           <Column>
-            <YouTubeVideo id={'Nvv23NcRntE'} />
+            <YouTubeVideo id={'6H2PCeUpvVc'} />
           </Column>
         </Columns>
 
