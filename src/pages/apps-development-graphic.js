@@ -53,6 +53,8 @@ export default class AppsDevGraphic extends Component {
           </Column>
         </Columns>
 
+        <br />
+        <br />
         <AgileGraphic />
 
         <Columns>
