@@ -15,6 +15,7 @@ import GoodFirms from '../../../2020/GoodFirms';
 import Typography from '../../../2020/Typography';
 import NewsLetterForm from '../../../2020/NewsLetterForm';
 import FooterNavigation from './FooterNavigation';
+
 import './footer.scss';
 
 const Footer = () => {
