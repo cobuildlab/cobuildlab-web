@@ -37,9 +37,10 @@ const Jobcore = () => (
             </DetailSubTitle>
             <DetailParagraphTitle>Alejandro Sanchez</DetailParagraphTitle>
             <DetailParagraph>
-              Alejandro Sánchez has a certificate in business administration
-              Entrepreneurship/Entrepreneurial Studies, he has dedicated his life to coding since he
-              was 13 years old and now he makes a living out of building and teaching code to others
+              <a href="(https://www.linkedin.com/in/alesanchezr/?locale=es_ES">Alejandro Sánchez</a>{' '}
+              has a certificate in business administration Entrepreneurship/Entrepreneurial Studies,
+              he has dedicated his life to coding since he was 13 years old and now he makes a
+              living out of building and teaching code to others
             </DetailParagraph>
             <DetailParagraph>
               He is founder of Geeks Developers Community, a company specialized in developing Web
