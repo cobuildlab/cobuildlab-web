@@ -11,10 +11,10 @@ import {
 import PreviewIcon from '../../components/icon';
 import Image from '../../components/image';
 import logo from '../../../../assets/images/cobuild-white-logo.png';
-import { arrowRightCircle } from 'react-icons-kit/feather/arrowRightCircle';
 import GoodFirms from '../../../2020/GoodFirms';
 import Typography from '../../../2020/Typography';
 import NewsLetterForm from '../../../2020/NewsLetterForm';
+import FooterNavigation from './FooterNavigation';
 import './footer.scss';
 
 const Footer = () => {
@@ -78,48 +78,7 @@ const Footer = () => {
                       About Us
                     </Typography>
                     <div className="footer-details-link">
-                      <ul>
-                        <li>
-                          <a href="/">
-                            <PreviewIcon icon={arrowRightCircle} />
-                            <Typography className="footer-link footer-arrow" tag="span">
-                              Home
-                            </Typography>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/">
-                            <PreviewIcon icon={arrowRightCircle} />
-                            <Typography className="footer-link footer-arrow" tag="span">
-                              About Us
-                            </Typography>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/">
-                            <PreviewIcon icon={arrowRightCircle} />
-                            <Typography className="footer-link footer-arrow" tag="span">
-                              Features
-                            </Typography>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/">
-                            <PreviewIcon icon={arrowRightCircle} />
-                            <Typography className="footer-link footer-arrow" tag="span">
-                              Services
-                            </Typography>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/">
-                            <PreviewIcon icon={arrowRightCircle} />
-                            <Typography className="footer-link footer-arrow" tag="span">
-                              Contact
-                            </Typography>
-                          </a>
-                        </li>
-                      </ul>
+                      <FooterNavigation />
                     </div>
                   </div>
                 </div>
