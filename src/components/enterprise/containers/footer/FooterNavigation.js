@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { Link } from 'gatsby';
 
-const Link = styled(AnchorLink)`
+const LinkItem = styled(Link)`
   color: #fff;
   &:hover {
     color: rgba(255, 255, 255, 0.6);
@@ -12,34 +12,13 @@ const Link = styled(AnchorLink)`
 const FooterNavigation = () => (
   <ul>
     <li>
-      <Link href="#banner">Home</Link>
+      <LinkItem to="/services">Services</LinkItem>
     </li>
     <li>
-      <Link href="#services">Service</Link>
+      <LinkItem to="/customer-success-stories">Customer Success Stories</LinkItem>
     </li>
     <li>
-      <Link href="#about">About</Link>
-    </li>
-    <li>
-      <Link href="#unique-value-props">Our Main Mission</Link>
-    </li>
-    <li>
-      <Link href="#video">Video</Link>
-    </li>
-    <li>
-      <Link href="#skills">Skills</Link>
-    </li>
-    <li>
-      <Link href="#project">Project</Link>
-    </li>
-    <li>
-      <Link href="#enterprise-css">Case Studies</Link>
-    </li>
-    <li>
-      <Link href="#testimonials">Testimonials</Link>
-    </li>
-    <li>
-      <Link href="#contact">Contact</Link>
+      <LinkItem to="/blog">Blog</LinkItem>
     </li>
   </ul>
 );
