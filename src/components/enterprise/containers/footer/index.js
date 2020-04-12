@@ -1,7 +1,6 @@
 import React from 'react';
-import { Container, Columns, Column, Footer as SectionFooter, Input } from 'bloomer';
+import { Container, Columns, Column, Footer as SectionFooter } from 'bloomer';
 import {
-  paperPlane,
   mapMarker,
   envelopeOpen,
   volumeControlPhone,
@@ -15,6 +14,7 @@ import logo from '../../../../assets/images/cobuild-white-logo.png';
 import { arrowRightCircle } from 'react-icons-kit/feather/arrowRightCircle';
 import GoodFirms from '../../../2020/GoodFirms';
 import Typography from '../../../2020/Typography';
+import NewsLetterForm from '../../../2020/NewsLetterForm';
 import './footer.scss';
 
 const Footer = () => {
@@ -129,12 +129,7 @@ const Footer = () => {
                   <Typography className="footer-title" tag="h6">
                     Stay with us
                   </Typography>
-                  <div className="form-group">
-                    <Input type="text" placeholder="Enter email" className="input-search" />
-                    <span className="search-icon gradient-color">
-                      <PreviewIcon icon={paperPlane} />
-                    </span>
-                  </div>
+                  <NewsLetterForm />
                   <Typography className="footer-social-title" tag="h6">
                     Social icon
                   </Typography>
