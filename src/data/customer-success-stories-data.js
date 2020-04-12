@@ -12,7 +12,7 @@ export default [
     title: 'Jobcore',
     description:
       'Get work fast and get paid the same day with Jobcore. This is a web platform that allows employers to post job applications for candidates…  ',
-    slug: '/customer-success-stories/jobcore',
+    slug: 'customer-success-stories/jobcore',
   },
   {
     id: 2,

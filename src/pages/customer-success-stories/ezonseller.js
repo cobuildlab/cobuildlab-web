@@ -3,7 +3,6 @@ import { Section, Container, Columns, Column } from 'bloomer';
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
-import DetailContentSeparation from '../../components/customer-success-stories/DetailContentSeparation';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
 import DetailSectionImageRight from '../../components/customer-success-stories/DetailSectionImageRight';
@@ -35,27 +34,25 @@ const Ezonseller = () => (
               them and sell them at a profit. At Ezonseller the idea is to make that research
               process easier and something that anyone can do.
             </DetailParagraph>
-            <DetailContentSeparation>
-              <DetailSubTitle>
-                Introducing Steve Rogers, <TextOrange>the founder</TextOrange>
-              </DetailSubTitle>
+            <DetailSubTitle>
+              Introducing Steve Rogers, <TextOrange>the founder</TextOrange>
+            </DetailSubTitle>
+            <DetailParagraph>
+              Started in 2006 in Brighton, when **Steve Rogers** attended a Bootcamp from a
+              well-known salesman, and after three days realized that things weren&apos;t as they
+              wanted to make it seem.
               <DetailParagraph>
-                Started in 2006 in Brighton, when **Steve Rogers** attended a Bootcamp from a
-                well-known salesman, and after three days realized that things weren&apos;t as they
-                wanted to make it seem.
-                <DetailParagraph>
-                  After many months he still hadn&apos;t won his first dollar, and five years later,
-                  after many searches, he was even worse than when he started. The training programs
-                  promised him so much that in the end they only generated great doubts and worries.
-                </DetailParagraph>
-                <DetailParagraph>
-                  In 2011 because of fate, Steve talked to a good friend, who told him that a large
-                  retail store had a store that sold quality items at low prices, that&apos;s how he
-                  made his first investment of 10 HD webcams and managed to sell them in a few days.
-                  And that&apos;s how the whole idea started and became what we see today.
-                </DetailParagraph>
+                After many months he still hadn&apos;t won his first dollar, and five years later,
+                after many searches, he was even worse than when he started. The training programs
+                promised him so much that in the end they only generated great doubts and worries.
               </DetailParagraph>
-            </DetailContentSeparation>
+              <DetailParagraph>
+                In 2011 because of fate, Steve talked to a good friend, who told him that a large
+                retail store had a store that sold quality items at low prices, that&apos;s how he
+                made his first investment of 10 HD webcams and managed to sell them in a few days.
+                And that&apos;s how the whole idea started and became what we see today.
+              </DetailParagraph>
+            </DetailParagraph>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroRightContainer>

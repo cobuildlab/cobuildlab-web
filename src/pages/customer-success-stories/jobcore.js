@@ -4,7 +4,6 @@ import DetailLayout from '../../components/customer-success-stories/DetailLayout
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraphTitle from '../../components/customer-success-stories/DetailParagraphTitle';
-import DetailContentSeparation from '../../components/customer-success-stories/DetailContentSeparation';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
 import DetailSectionImageRight from '../../components/customer-success-stories/DetailSectionImageRight';
@@ -33,50 +32,46 @@ const Jobcore = () => (
               allows employers to post job applications for candidates using the mobile and web app.
               It is the first distributed talent pool for the hospitality industry.
             </DetailParagraph>
-            <DetailContentSeparation>
-              <DetailSubTitle>
-                Introducing the <TextOrange>founders:</TextOrange>
-              </DetailSubTitle>
-              <DetailParagraphTitle>Alejandro Sanchez</DetailParagraphTitle>
-              <DetailParagraph>
-                Alejandro Sánchez has a certificate in business administration
-                Entrepreneurship/Entrepreneurial Studies, he has dedicated his life to coding since
-                he was 13 years old and now he makes a living out of building and teaching code to
-                others
-              </DetailParagraph>
-              <DetailParagraph>
-                He is founder of Geeks Developers Community, a company specialized in developing Web
-                Apps and Mobile Apps. With offices in 7 different countries, 300 employees and more
-                than $8,000,000 in revenues; this company connects developers from all over Latin
-                America to share technology knowledge and a geek&apos;s own interests.
-              </DetailParagraph>
-              <DetailParagraph>
-                He is passionate about teaching others to code, that&apos;s how he created{' '}
-                <a href="https://www.4geeksacademy.co/es/inicio/">4Geeks Academy</a> The academy has
-                500+ alumni worldwide, 87% of the graduates had an average 20% increase in salary
-                after completing the program. It managed to generate $1,000,000+ in annual revenues
-                in 5 locations. Then he launched a Not-for-profit open source community.{' '}
-                <a href="https://breatheco.de/">BreatheCode</a> aims to accelerate the way junior
-                developers learn and evolve using technology.
-              </DetailParagraph>
-              <DetailParagraph>
-                Source: <a href="https://www.linkedin.com/in/alesanchezr/?locale=es_ES">LinkedIn</a>
-              </DetailParagraph>
-              <DetailParagraphTitle>Juan Carlos</DetailParagraphTitle>
-              <DetailParagraph>
-                <a href="https://www.linkedin.com/in/juan-carlos-miranda-8494a3aa/">
-                  Juan Carlos Alvarez-Miranda{' '}
-                </a>
-                is the CEO and founder of{' '}
-                <a href="https://bestmiamiweddings.com/?gclid=CjwKCAjwr8zoBRA0EiwANmvpYEvMKSx01ODW0kTooBv-sSfNwl6ODH0OKORoHKnIA_lRbOsE-UM8JRoCP7IQAvD_BwE">
-                  Fetes & Events
-                </a>
-                , a full-service event planning and management company based in Coral Gables,
-                Florida. With more than 10 years of experience in event planning, business
-                development, and management, he began “Best Miami Weddings” in 2004, now known as
-                Fetes & Events.
-              </DetailParagraph>
-            </DetailContentSeparation>
+            <DetailSubTitle>
+              Introducing the <TextOrange>founders:</TextOrange>
+            </DetailSubTitle>
+            <DetailParagraphTitle>Alejandro Sanchez</DetailParagraphTitle>
+            <DetailParagraph>
+              Alejandro Sánchez has a certificate in business administration
+              Entrepreneurship/Entrepreneurial Studies, he has dedicated his life to coding since he
+              was 13 years old and now he makes a living out of building and teaching code to others
+            </DetailParagraph>
+            <DetailParagraph>
+              He is founder of Geeks Developers Community, a company specialized in developing Web
+              Apps and Mobile Apps. With offices in 7 different countries, 300 employees and more
+              than $8,000,000 in revenues; this company connects developers from all over Latin
+              America to share technology knowledge and a geek&apos;s own interests.
+            </DetailParagraph>
+            <DetailParagraph>
+              He is passionate about teaching others to code, that&apos;s how he created{' '}
+              <a href="https://www.4geeksacademy.co/es/inicio/">4Geeks Academy</a> The academy has
+              500+ alumni worldwide, 87% of the graduates had an average 20% increase in salary
+              after completing the program. It managed to generate $1,000,000+ in annual revenues in
+              5 locations. Then he launched a Not-for-profit open source community.{' '}
+              <a href="https://breatheco.de/">BreatheCode</a> aims to accelerate the way junior
+              developers learn and evolve using technology.
+            </DetailParagraph>
+            <DetailParagraph>
+              Source: <a href="https://www.linkedin.com/in/alesanchezr/?locale=es_ES">LinkedIn</a>
+            </DetailParagraph>
+            <DetailParagraphTitle>Juan Carlos</DetailParagraphTitle>
+            <DetailParagraph>
+              <a href="https://www.linkedin.com/in/juan-carlos-miranda-8494a3aa/">
+                Juan Carlos Alvarez-Miranda{' '}
+              </a>
+              is the CEO and founder of{' '}
+              <a href="https://bestmiamiweddings.com/?gclid=CjwKCAjwr8zoBRA0EiwANmvpYEvMKSx01ODW0kTooBv-sSfNwl6ODH0OKORoHKnIA_lRbOsE-UM8JRoCP7IQAvD_BwE">
+                Fetes & Events
+              </a>
+              , a full-service event planning and management company based in Coral Gables, Florida.
+              With more than 10 years of experience in event planning, business development, and
+              management, he began “Best Miami Weddings” in 2004, now known as Fetes & Events.
+            </DetailParagraph>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroRightContainer>

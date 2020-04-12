@@ -3,7 +3,6 @@ import { Section, Container, Columns, Column } from 'bloomer';
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
-import DetailContentSeparation from '../../components/customer-success-stories/DetailContentSeparation';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
 import DetailSectionImageRight from '../../components/customer-success-stories/DetailSectionImageRight';
@@ -34,29 +33,27 @@ const PaykleverCampaignManager = () => (
               to provide a hands-free payment method using RFID technology in garages, drive-thrus
               and gas stations.
             </DetailParagraph>
-            <DetailContentSeparation>
-              <DetailSubTitle>
-                Introducing Alexis and Kabir,<TextOrange> the founders:</TextOrange>
-              </DetailSubTitle>
-              <DetailParagraph>
-                <TextOrange>Alexis Jonama</TextOrange>, the founder of Payklever, has a Master of
-                Business Administration from INSEAD, a Bachelor of Engineering degree from Faculté
-                Polytechnique de Mons and also has an Engineer`s degree from the Universitat
-                Politècnica de Catalunya. He has over two years experience as an engagement manager
-                at McKinsey & Company. INSEAD (SG).
-              </DetailParagraph>
-              <DetailParagraph>
-                <TextOrange>Kabir Frutos</TextOrange>, the founder of Payklever, has a Master of
-                Business Administration from INSEAD, a Bachelor of Engineering degree from Faculté
-                Polytechnique de Mons and also has an Engineer`s degree from the Universitat
-                Politècnica de Catalunya. He has over two years experience as an engagement manager
-                at McKinsey & Company. INSEAD (SG).
-              </DetailParagraph>
-              <DetailParagraph>
-                With Kabir and Alexis we work building a Campaign Manager for the current Payklever
-                platform.
-              </DetailParagraph>
-            </DetailContentSeparation>
+            <DetailSubTitle>
+              Introducing Alexis and Kabir,<TextOrange> the founders:</TextOrange>
+            </DetailSubTitle>
+            <DetailParagraph>
+              <TextOrange>Alexis Jonama</TextOrange>, the founder of Payklever, has a Master of
+              Business Administration from INSEAD, a Bachelor of Engineering degree from Faculté
+              Polytechnique de Mons and also has an Engineer`s degree from the Universitat
+              Politècnica de Catalunya. He has over two years experience as an engagement manager at
+              McKinsey & Company. INSEAD (SG).
+            </DetailParagraph>
+            <DetailParagraph>
+              <TextOrange>Kabir Frutos</TextOrange>, the founder of Payklever, has a Master of
+              Business Administration from INSEAD, a Bachelor of Engineering degree from Faculté
+              Polytechnique de Mons and also has an Engineer`s degree from the Universitat
+              Politècnica de Catalunya. He has over two years experience as an engagement manager at
+              McKinsey & Company. INSEAD (SG).
+            </DetailParagraph>
+            <DetailParagraph>
+              With Kabir and Alexis we work building a Campaign Manager for the current Payklever
+              platform.
+            </DetailParagraph>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroRightContainer>

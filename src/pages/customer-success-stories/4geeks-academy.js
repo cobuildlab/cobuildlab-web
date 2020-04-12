@@ -12,7 +12,6 @@ import DetailVideo from '../../components/customer-success-stories/DetailVideo';
 import DetailImageLogo from '../../components/customer-success-stories/DetailImageLogo';
 import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
-import DetailContentSeparation from '../../components/customer-success-stories/DetailContentSeparation';
 import { List, ListItem } from '../../components/Typography/List';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
@@ -28,48 +27,45 @@ const GeeksAcademy = () => (
         <Columns isMultiline>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailTitle>4Geeks Academy</DetailTitle>
-            <DetailContentSeparation>
-              <DetailSubTitle>
-                <TextOrange> Beginning </TextOrange> of 4GeeksSucceed Platform?
-              </DetailSubTitle>
-              <DetailParagraph>
-                The idea of an academy of programmers was an idea in Alejandro Sanchez mind since
-                2009. By then, the Co-Founder and former CEO of some of the most important
-                Accelerators in Venezuela had already met with all the challenges that the
-                application development market when trying to find the best talent This company,
-                already positioned at the forefront of software development, was constantly in the
-                situation of finding new members for its projects, which by 2009 had been
-                complicated by the shortage of trained personnel in the software developer market.
-                Given this situation, a series of initiatives around the company’s activities are
-                beginning to be developed to begin to recognize and attract the surrounding talent
-                in the software world:
-              </DetailParagraph>
-              <List>
-                <ListItem>
-                  <TextOrange>
-                    The Tech Meetup: Event to gather entrepreneurs and developers
-                  </TextOrange>
-                </ListItem>
-                <ListItem>
-                  <TextOrange>
-                    Workshops: Workshops in the company offices to train developers
-                  </TextOrange>
-                </ListItem>
-                <ListItem>
-                  <TextOrange>La Carta: The community newsletter</TextOrange>
-                </ListItem>
-                <ListItem>
-                  <TextOrange>
-                    All these initiatives product of the experience of the company, but especially
-                    the tastes and needs of its members will constitute 4Geeks Developers Community.
-                  </TextOrange>
-                </ListItem>
-              </List>
-              <DetailParagraph>
-                All these initiatives product of the experience of the company, but especially the
-                tastes and needs of its members will constitute 4Geeks Developers Community.
-              </DetailParagraph>
-            </DetailContentSeparation>
+            <DetailSubTitle>
+              <TextOrange> Beginning </TextOrange> of 4GeeksSucceed Platform?
+            </DetailSubTitle>
+            <DetailParagraph>
+              The idea of an academy of programmers was an idea in Alejandro Sanchez mind since
+              2009. By then, the Co-Founder and former CEO of some of the most important
+              Accelerators in Venezuela had already met with all the challenges that the application
+              development market when trying to find the best talent This company, already
+              positioned at the forefront of software development, was constantly in the situation
+              of finding new members for its projects, which by 2009 had been complicated by the
+              shortage of trained personnel in the software developer market. Given this situation,
+              a series of initiatives around the company’s activities are beginning to be developed
+              to begin to recognize and attract the surrounding talent in the software world:
+            </DetailParagraph>
+            <List>
+              <ListItem>
+                <TextOrange>
+                  The Tech Meetup: Event to gather entrepreneurs and developers
+                </TextOrange>
+              </ListItem>
+              <ListItem>
+                <TextOrange>
+                  Workshops: Workshops in the company offices to train developers
+                </TextOrange>
+              </ListItem>
+              <ListItem>
+                <TextOrange>La Carta: The community newsletter</TextOrange>
+              </ListItem>
+              <ListItem>
+                <TextOrange>
+                  All these initiatives product of the experience of the company, but especially the
+                  tastes and needs of its members will constitute 4Geeks Developers Community.
+                </TextOrange>
+              </ListItem>
+            </List>
+            <DetailParagraph>
+              All these initiatives product of the experience of the company, but especially the
+              tastes and needs of its members will constitute 4Geeks Developers Community.
+            </DetailParagraph>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroRightContainer>

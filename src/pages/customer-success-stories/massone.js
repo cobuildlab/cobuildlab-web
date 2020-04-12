@@ -3,7 +3,6 @@ import { Section, Container, Columns, Column } from 'bloomer';
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
-import DetailContentSeparation from '../../components/customer-success-stories/DetailContentSeparation';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
 import DetailTeam from '../../components/customer-success-stories/DetailTeam';
@@ -38,17 +37,15 @@ const Massone = () => (
               The Owner of Massone was born and raised in the East Bay and is an advocate of
               community-based partnerships
             </DetailParagraph>
-            <DetailContentSeparation>
-              <DetailSubTitle>
-                What is the Massone <TextOrange> platform? </TextOrange>
-              </DetailSubTitle>
-              <DetailParagraph>
-                Massone Mechanical sought to improve its processes in terms of customer service
-                delivery and information management, mainly needed to automate the recording of
-                calls or service orders maintenance or installation of refrigeration equipment,
-                improve communication of services and reception of them to field workers.
-              </DetailParagraph>
-            </DetailContentSeparation>
+            <DetailSubTitle>
+              What is the Massone <TextOrange> platform? </TextOrange>
+            </DetailSubTitle>
+            <DetailParagraph>
+              Massone Mechanical sought to improve its processes in terms of customer service
+              delivery and information management, mainly needed to automate the recording of calls
+              or service orders maintenance or installation of refrigeration equipment, improve
+              communication of services and reception of them to field workers.
+            </DetailParagraph>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroRightContainer>
