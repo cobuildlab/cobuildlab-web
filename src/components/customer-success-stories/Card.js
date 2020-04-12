@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
+import { navigate } from 'gatsby';
 import styled, { css } from 'styled-components';
 import Button from '../2020/Button';
 
@@ -45,7 +45,7 @@ const CardHoverContainer = styled.div`
   }
 `;
 
-const CardContainer = styled(Link)`
+const CardContainer = styled.div`
   display: block;
   position: relative;
   width: 100%;
@@ -92,21 +92,26 @@ const CardTitle = styled.div`
   }
 `;
 
-const CustomerSuccessStoriesCard = ({ title, description, image, to }) => (
-  <CardContainer to={to}>
-    <CardImage image={image} />
-    <CardHoverContainer>
-      <CardTitle>{title}</CardTitle>
-      <CardDescription>{description}</CardDescription>
-      <ButtonWrapper>
-        <Button>READ MORE</Button>
-      </ButtonWrapper>
-    </CardHoverContainer>
-  </CardContainer>
-);
+const CustomerSuccessStoriesCard = ({ title, description, image, to }) => {
+  const handleClick = useCallback(() => {
+    navigate(to);
+  }, [to]);
+  return (
+    <CardContainer onClick={handleClick}>
+      <CardImage image={image} />
+      <CardHoverContainer>
+        <CardTitle>{title}</CardTitle>
+        <CardDescription>{description}</CardDescription>
+        <ButtonWrapper>
+          <Button>READ MORE</Button>
+        </ButtonWrapper>
+      </CardHoverContainer>
+    </CardContainer>
+  );
+};
 
 CustomerSuccessStoriesCard.defaultProps = {
-  to: 'customer-success-stories',
+  to: '',
 };
 
 CustomerSuccessStoriesCard.propTypes = {

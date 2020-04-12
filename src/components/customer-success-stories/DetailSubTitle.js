@@ -10,9 +10,6 @@ const Container = styled.div`
 const Title = styled(H4)`
   font-size: calc(30px + (40 - 30) * ((100vw - 320px) / (1920 - 320)));
   line-height: 1.2;
-  & > strong {
-    padding: 0 0.2em;
-  }
 `;
 
 const DetailsTitle = ({ children }) => (
