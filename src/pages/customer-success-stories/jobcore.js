@@ -4,7 +4,6 @@ import DetailLayout from '../../components/customer-success-stories/DetailLayout
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraphTitle from '../../components/customer-success-stories/DetailParagraphTitle';
-import DetailContentSeparation from '../../components/customer-success-stories/DetailContentSeparation';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
 import DetailSectionImageRight from '../../components/customer-success-stories/DetailSectionImageRight';
@@ -29,43 +28,50 @@ const Jobcore = () => (
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailTitle>Jobcore</DetailTitle>
             <DetailParagraph>
-              is a Boston-based technology-enabled managed services and advisory firm that
-              specializes in improving the performance of strategic alliances. Leveraging their
-              proven framework of industry-leading practices, standards, and tools, we help our
-              clients unlock the growth potential of collaborative relationships. collabtogrow™ was
-              founded by senior consulting executives with diverse industry backgrounds. Whether
-              you&aposre a business that&aposs new to strategic alliances, or you&aposre looking to
-              revitalize your existing strategic alliance programs, collabtogrow’s services and
-              tools can help you expand market share, increase revenue, and establish meaningful
-              relationships with your strategic partners. collabtogrow™ combines the best of the ISO
-              44001 Collaborative Relationship framework with real-world alliance know-how to
-              provide our clients with technology and services that deliver operational excellence
-              with experience-based insights and focus. We provide tangible value to clients by
-              improving performance and enabling clients to grow and be successful. Storytelling of
-              how the idea was conceived and moved forward
-              <DetailParagraphTitle>Founders</DetailParagraphTitle>
-              Founders: Ken Coppins es cofundador de collabtogrow ™ y un distinguido ejecutivo de
-              servicios profesionales globales, consultor de gestión y emprendedor. Tiene una amplia
-              experiencia en negocios, tecnología y consultoría, habiendo desempeñado cargos de
-              liderazgo sénior para KPMG, Answerthink (Hackett Group), Kanbay y Capgemini. Ken ha
-              estado asociado con servicios profesionales durante más de 30 años, habiendo sido
-              responsable de numerosas alianzas y asociaciones, incluidas Oracle y SAP. Bob Jones is
-              a Co-founder of collabtogrow™ and a highly experienced corporate executive and
-              management consultant. He possesses extensive experience in Business Transformation,
-              IT Management, and Management Consulting. Bob is a proven executive who works well
-              combining business and technology to deliver complex programs. He is a highly
-              sought-after Large-Scale Program Manager who is often called upon to resolve complex
-              issues facing business information technology programs. Bob has been a CIO and was the
-              Business Unit Executive running Xerox’s largest BPO contract, a $2.3 billion program
-              with the US Department of Education. As a management consultant, Bob has provided IT
-              advisory, diagnostic, and benchmarking services to C-level executives from Fortune 500
-              companies around the world. Jerry Harris is an original member of the collabtogrow™
-              team and an experienced alliance executive with over twenty years of experience
-              working for global consulting services firms. His extensive experience includes
-              leading the Global IBM Alliance for Capgemini Financial Services, a $100 million,
-              strategic-alliance relationship. Jerry also has extensive experience driving
-              innovative enterprise business solutions in complex multi-provider environments.
-              Source https://collabtogrow.com/team-1
+              Get work fast and get paid the same day with Jobcore. This is a web platform that
+              allows employers to post job applications for candidates using the mobile and web app.
+              It is the first distributed talent pool for the hospitality industry.
+            </DetailParagraph>
+            <DetailSubTitle>
+              Introducing the <TextOrange>founders:</TextOrange>
+            </DetailSubTitle>
+            <DetailParagraphTitle>Alejandro Sanchez</DetailParagraphTitle>
+            <DetailParagraph>
+              <a href="(https://www.linkedin.com/in/alesanchezr/?locale=es_ES">Alejandro Sánchez</a>{' '}
+              has a certificate in business administration Entrepreneurship/Entrepreneurial Studies,
+              he has dedicated his life to coding since he was 13 years old and now he makes a
+              living out of building and teaching code to others
+            </DetailParagraph>
+            <DetailParagraph>
+              He is founder of Geeks Developers Community, a company specialized in developing Web
+              Apps and Mobile Apps. With offices in 7 different countries, 300 employees and more
+              than $8,000,000 in revenues; this company connects developers from all over Latin
+              America to share technology knowledge and a geek&apos;s own interests.
+            </DetailParagraph>
+            <DetailParagraph>
+              He is passionate about teaching others to code, that&apos;s how he created{' '}
+              <a href="https://www.4geeksacademy.co/es/inicio/">4Geeks Academy</a> The academy has
+              500+ alumni worldwide, 87% of the graduates had an average 20% increase in salary
+              after completing the program. It managed to generate $1,000,000+ in annual revenues in
+              5 locations. Then he launched a Not-for-profit open source community.{' '}
+              <a href="https://breatheco.de/">BreatheCode</a> aims to accelerate the way junior
+              developers learn and evolve using technology.
+            </DetailParagraph>
+            <DetailParagraph>
+              Source: <a href="https://www.linkedin.com/in/alesanchezr/?locale=es_ES">LinkedIn</a>
+            </DetailParagraph>
+            <DetailParagraphTitle>Juan Carlos</DetailParagraphTitle>
+            <DetailParagraph>
+              <a href="https://www.linkedin.com/in/juan-carlos-miranda-8494a3aa/">
+                Juan Carlos Alvarez-Miranda{' '}
+              </a>
+              is the CEO and founder of{' '}
+              <a href="https://bestmiamiweddings.com/?gclid=CjwKCAjwr8zoBRA0EiwANmvpYEvMKSx01ODW0kTooBv-sSfNwl6ODH0OKORoHKnIA_lRbOsE-UM8JRoCP7IQAvD_BwE">
+                Fetes & Events
+              </a>
+              , a full-service event planning and management company based in Coral Gables, Florida.
+              With more than 10 years of experience in event planning, business development, and
+              management, he began “Best Miami Weddings” in 2004, now known as Fetes & Events.
             </DetailParagraph>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
@@ -80,133 +86,46 @@ const Jobcore = () => (
 
     <DetailSectionImageLeft src={img1} alt="What is the Succeed Platform?">
       <DetailSubTitle>
-        What is the <TextOrange>Succeed Platform?</TextOrange>
+        What is the <TextOrange>Jobcore</TextOrange> platform?
       </DetailSubTitle>
       <DetailParagraph>
-        Collabtogrow™ Succeed platform is a unique collaboration tool to manage strategic alliances.
-        A one-of-a-kind SaaS platform incorporating industry-leading practices, workflows, and tools
-        to help executives unlock the growth potential of their strategic alliances. Collabtogrow™
-        Succeed is built to automate and enable the processes and deliverables across eight key
-        alliance dimensions. Companies that consistently succeed in getting value from strategic
-        alliances demonstrate high capability across all dimensions measured and tracked within the
-        platform.
+        Jobcore is a web and mobile platform where employers can create a job opening to search
+        talent in the hospitality industry. The talent by using the mobile app is able to apply and
+        work using this incredible platform and get paid faster than ever.
       </DetailParagraph>
-      <DetailContentSeparation>
-        <DetailSubTitle>
-          How to <TextOrange>relationship</TextOrange>started
-        </DetailSubTitle>
-        <DetailParagraph>
-          Collabtogrow™ Succeed platform is a unique collaboration tool to manage strategic
-          alliances. A one-of-a-kind SaaS platform incorporating industry-leading practices,
-          workflows, and tools to help executives unlock the growth potential of their strategic
-          alliances. Collabtogrow™ Succeed is built to automate and enable the processes and
-          deliverables across eight key alliance dimensions. Companies that consistently succeed in
-          getting value from strategic alliances demonstrate high capability across all dimensions
-          measured and tracked within the platform.
-        </DetailParagraph>
-      </DetailContentSeparation>
+      <DetailParagraph>
+        The Employer interface is a website where he can plan his shifts and invite talents to work
+        for them. This interface allows you not only to manage your schedules but also to see the
+        activity for the specific job, and track the time that your talents work on each shift. In
+        the next release, the capabilities of making payroll will become available.
+      </DetailParagraph>
+      <DetailParagraph>
+        For the talent, the mobile app allows them to get notifications for open positions, apply,
+        and full fill the shift and track payments all in one place.
+      </DetailParagraph>
     </DetailSectionImageLeft>
 
     <DetailSectionImageRight src={img2} alt="What is the Succeed Platform?">
       <DetailSubTitle>
-        Starting from <TextOrange>Zero</TextOrange>
+        How everything <TextOrange>started:</TextOrange>
       </DetailSubTitle>
       <DetailParagraph>
-        The initial plan for developing the app was created by the 8base executive team, Albert
-        Santalo and Oscar Perez. Carlos Arevalo worked on the technical designs and wireframes of
-        the application, and Cobuild Lab led the architecture and development of the platform. When
-        Cobuild Lab joined the project, we began having weekly meetings to define the priorities and
-        the strategy that we would use for creating the product. During these meetings, Bob and
-        Jerry’s practical know-how was directly taken into account when developing features which
-        they wanted to manage inside the application, and from there early designs and proposals
-        were created to solve each of those features that were needed.
+        The idea comes from Alejandro and Juan Carlos. Juan Carlos is the owner of Best Miami
+        Weddings and for years he has had problems keeping track of how his workers report hours,
+        because the applications on the market don&apos;t work for him. Alejandro, his director of
+        marketing and technology proposed this idea about building a web and mobile platform custom
+        made to its needs, and so the project began.
       </DetailParagraph>
-      <DetailContentSeparation>
-        <DetailSubTitle>
-          Cobuild Lab’s<TextOrange>Collaborative</TextOrange>
-          <br />
-          Approach
-        </DetailSubTitle>
-        <DetailParagraph>
-          One of the reasons why Cobuild Lab was brought to the team was for our extensive
-          experience building web applications, especially with the ReactJS framework, which is a
-          core element in the 8base stack.
-        </DetailParagraph>
-        <DetailParagraph>
-          By using 8base Platform services and low-code Platform, collabtogrow™ will accelerate the
-          delivery of a robust, cloud-based SaaS solution to more effectively structure, organize
-          and govern corporate strategic alliances.
-        </DetailParagraph>
-        <DetailParagraph>
-          By using 8base Platform services and low-code Platform, collabtogrow™ will accelerate the
-          delivery of a robust, cloud-based SaaS solution to more effectively structure, organize
-          and govern corporate strategic alliances. “With the 8base Platform, we are able to rapidly
-          bring to market an innovative new system that is cost-effective and improves strategic
-          alliance performance. We carefully investigated development alternatives including
-          existing “no code” vendors. 8base was the only company that could equip our subject matter
-          experts with powerful and agile tools to deliver a solution that will be capable of
-          scaling and evolving with collabtogrow™ itself.”
-        </DetailParagraph>
-        <DetailParagraph>
-          Our developers are battle-tested React frontend experts with great skills in coding HTML,
-          CSS, and Javascript.
-        </DetailParagraph>
-        <DetailParagraph>
-          Cobuild Lab’s collaborative approach is something that sets us apart, we are not simply a
-          development shop that produces mass-produced projects. We take the time and effort to
-          really understand the problems that need to be solved in a user and business centric
-          approach.
-        </DetailParagraph>
-      </DetailContentSeparation>
+      <DetailParagraph>
+        Alejandro has known <a href="https://www.linkedin.com/in/alacret/">Angel Lacret</a> , Chief
+        of Product Development at <a href="https://cobuildlab.com/">Cobuild Lab</a> for about 6
+        years now from working together in a software company and in 4Geeks Academy. Sánchez gets in
+        touch with Lacret so that he can put a team together and start developing this project
+        together with them. After several iteration, the concept was expanded to create a complete
+        marketplace for the industry, where employer can publish their position needs to a wider
+        audience.
+      </DetailParagraph>
     </DetailSectionImageRight>
-
-    <DetailSectionImageLeft src={img1} alt="What is the Succeed Platform?">
-      <DetailSubTitle>
-        Target <TextOrange>Demographic</TextOrange>
-      </DetailSubTitle>
-      <DetailParagraph>
-        CollabtogrowTM Succeed platform is a tool that enables executives to leverage all the power
-        of modern technologies to effectively execute and manage strategic alliances.
-      </DetailParagraph>
-      <DetailContentSeparation>
-        <DetailSubTitle>
-          Product <TextOrange>Development</TextOrange>
-        </DetailSubTitle>
-        <DetailParagraph>
-          After dozens of alpha product iterations, we are excited to present the first full version
-          of the platform. Almost a year later we have created an amazing dynamic. between all the
-          participants on the project.
-        </DetailParagraph>
-        <DetailParagraph>
-          Early in the development process, we started with bi-weekly meetings for creating all the
-          basic features, once we started creating more specialized features and powerful tools we
-          decided to meet 3 times a week to have a more iterative approach solving small pieces at a
-          time, creating more agile and efficient development cycles.
-        </DetailParagraph>
-        <DetailParagraph>
-          During these meetings, we discussed along with Bob, Jerry, Oscar, and Carlos the features
-          to be developed, the business requirements, and how this should be implemented in the
-          product.
-        </DetailParagraph>
-        <DetailParagraph>
-          Carlos was in charge of creating the visual representations of the features, validating
-          those ideas with the team, which would be implemented in the following weeks.
-        </DetailParagraph>
-        <DetailParagraph>
-          During the later sprints, another development team was added in order to complete the more
-          robust features to the platform in a timely manner, those features included the “balanced
-          scorecard”, a summary view of the status of the alliance designed by the collabtogrowTM
-          team; and a powerful “reports system” to query real time data and analytics, both unique
-          values of how collabtogrowTM handles the process of strategic alliances. Technology Stack
-          To develop the product we used the 8base Platform, which is a complete set of backend
-          tools to enable Frontend developers to create amazing products faster. This also included
-          the 8base boost kit, a ReactJS components library focused on simplicity, 8base Graphql API
-          and Cloud Functions, Auth0 as an authentication provider, and SendGrid for email
-          notifications. During the development over 6 Cobuild Lab developers participated in the
-          coding process, all frontend specialists on Javascript and ReactJs.
-        </DetailParagraph>
-      </DetailContentSeparation>
-    </DetailSectionImageLeft>
 
     <Section>
       <Container>

@@ -4,16 +4,17 @@ import DetailLayout from '../../components/customer-success-stories/DetailLayout
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraphTitle from '../../components/customer-success-stories/DetailParagraphTitle';
-import DetailContentSeparation from '../../components/customer-success-stories/DetailContentSeparation';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
 import DetailSectionImageRight from '../../components/customer-success-stories/DetailSectionImageRight';
+
 import DetailTeam from '../../components/customer-success-stories/DetailTeam';
 import DetailCarousel from '../../components/customer-success-stories/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
 import DetailImageLogo from '../../components/customer-success-stories/DetailImageLogo';
 import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
+import { List, ListItem } from '../../components/Typography/List';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
@@ -29,43 +30,25 @@ const Weedmatch = () => (
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailTitle>Weedmatch</DetailTitle>
             <DetailParagraph>
-              is a Boston-based technology-enabled managed services and advisory firm that
-              specializes in improving the performance of strategic alliances. Leveraging their
-              proven framework of industry-leading practices, standards, and tools, we help our
-              clients unlock the growth potential of collaborative relationships. collabtogrow™ was
-              founded by senior consulting executives with diverse industry backgrounds. Whether
-              you&aposre a business that&aposs new to strategic alliances, or you&aposre looking to
-              revitalize your existing strategic alliance programs, collabtogrow’s services and
-              tools can help you expand market share, increase revenue, and establish meaningful
-              relationships with your strategic partners. collabtogrow™ combines the best of the ISO
-              44001 Collaborative Relationship framework with real-world alliance know-how to
-              provide our clients with technology and services that deliver operational excellence
-              with experience-based insights and focus. We provide tangible value to clients by
-              improving performance and enabling clients to grow and be successful. Storytelling of
-              how the idea was conceived and moved forward
-              <DetailParagraphTitle>Founders</DetailParagraphTitle>
-              Founders: Ken Coppins es cofundador de collabtogrow ™ y un distinguido ejecutivo de
-              servicios profesionales globales, consultor de gestión y emprendedor. Tiene una amplia
-              experiencia en negocios, tecnología y consultoría, habiendo desempeñado cargos de
-              liderazgo sénior para KPMG, Answerthink (Hackett Group), Kanbay y Capgemini. Ken ha
-              estado asociado con servicios profesionales durante más de 30 años, habiendo sido
-              responsable de numerosas alianzas y asociaciones, incluidas Oracle y SAP. Bob Jones is
-              a Co-founder of collabtogrow™ and a highly experienced corporate executive and
-              management consultant. He possesses extensive experience in Business Transformation,
-              IT Management, and Management Consulting. Bob is a proven executive who works well
-              combining business and technology to deliver complex programs. He is a highly
-              sought-after Large-Scale Program Manager who is often called upon to resolve complex
-              issues facing business information technology programs. Bob has been a CIO and was the
-              Business Unit Executive running Xerox’s largest BPO contract, a $2.3 billion program
-              with the US Department of Education. As a management consultant, Bob has provided IT
-              advisory, diagnostic, and benchmarking services to C-level executives from Fortune 500
-              companies around the world. Jerry Harris is an original member of the collabtogrow™
-              team and an experienced alliance executive with over twenty years of experience
-              working for global consulting services firms. His extensive experience includes
-              leading the Global IBM Alliance for Capgemini Financial Services, a $100 million,
-              strategic-alliance relationship. Jerry also has extensive experience driving
-              innovative enterprise business solutions in complex multi-provider environments.
-              Source https://collabtogrow.com/team-1
+              <TextOrange>Weedmatch </TextOrange> is the <TextOrange>first</TextOrange> free
+              cannabis social network made by a group of Venezuelans led by its founder Oscar Lopez
+              in Chile where you can interact with other people and be aware of events and news
+              about the culture of cannabis. The part of the match is specially dedicated to
+              cannabis relationships or encounters, which will eventually expand the networks of
+              consumers and brands.
+            </DetailParagraph>
+            <DetailSubTitle>Founding History</DetailSubTitle>
+            <DetailParagraph>
+              <TextOrange>Oscar López </TextOrange> was born in Maracaibo, Venezuela. Graduated in
+              Computer Engineering at the University Doctor Rafael Belloso Chacin. He has six years
+              of experience developing internet projects in a wide range of areas, from websites to
+              digital marketing agencies and managing a news conglomerate with 15 million Facebook
+              fans all over Latin America. Prior to this, he worked for several years as a web
+            </DetailParagraph>
+            <DetailParagraphTitle>software developer</DetailParagraphTitle>
+            <DetailParagraph>
+              At the moment he is dedicated to change the Latin American Cannabis reality creating
+              the first Cannabis social network in Chile and Latin America.
             </DetailParagraph>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
@@ -80,133 +63,66 @@ const Weedmatch = () => (
 
     <DetailSectionImageLeft src={img1} alt="What is the Succeed Platform?">
       <DetailSubTitle>
-        What is the <TextOrange>Succeed Platform?</TextOrange>
+        Biography of <TextOrange> weedmatch</TextOrange>
       </DetailSubTitle>
       <DetailParagraph>
-        Collabtogrow™ Succeed platform is a unique collaboration tool to manage strategic alliances.
-        A one-of-a-kind SaaS platform incorporating industry-leading practices, workflows, and tools
-        to help executives unlock the growth potential of their strategic alliances. Collabtogrow™
-        Succeed is built to automate and enable the processes and deliverables across eight key
-        alliance dimensions. Companies that consistently succeed in getting value from strategic
-        alliances demonstrate high capability across all dimensions measured and tracked within the
-        platform.
+        Born as an idea on April 20, 2017, to attend a national cannabis march in Chile, surprised
+        with the call and massiveness, Oscar Lopez decided to create something to unite all the
+        community, and from there emerged the idea of a social network. As he delved deeper into the
+        idea and the Chilean cannabis culture he realized that the market and opportunity were much
+        bigger than he expected and at the same time the worldwide cannabis culture begins to have
+        high traction: it was a case of perfect timing.
       </DetailParagraph>
-      <DetailContentSeparation>
-        <DetailSubTitle>
-          How to <TextOrange>relationship</TextOrange>started
-        </DetailSubTitle>
-        <DetailParagraph>
-          Collabtogrow™ Succeed platform is a unique collaboration tool to manage strategic
-          alliances. A one-of-a-kind SaaS platform incorporating industry-leading practices,
-          workflows, and tools to help executives unlock the growth potential of their strategic
-          alliances. Collabtogrow™ Succeed is built to automate and enable the processes and
-          deliverables across eight key alliance dimensions. Companies that consistently succeed in
-          getting value from strategic alliances demonstrate high capability across all dimensions
-          measured and tracked within the platform.
-        </DetailParagraph>
-      </DetailContentSeparation>
+      <DetailSubTitle>
+        How <TextOrange>everything</TextOrange>started
+      </DetailSubTitle>
+      <DetailParagraph>
+        Oscar met Angel Lacret in the university, he knew that he was programming but they lost
+        contact, sometime later they retaken contact by Facebook and Oscar remembered that he had a
+        development company and decided to contact him to develop the Weedmatch project through
+        Cobuild. During several months we chat about the Cannabis industry and its trends, and how
+        the lifestyle world was in debt of tools for this community.
+      </DetailParagraph>
     </DetailSectionImageLeft>
-
     <DetailSectionImageRight src={img2} alt="What is the Succeed Platform?">
-      <DetailSubTitle>
-        Starting from <TextOrange>Zero</TextOrange>
-      </DetailSubTitle>
       <DetailParagraph>
-        The initial plan for developing the app was created by the 8base executive team, Albert
-        Santalo and Oscar Perez. Carlos Arevalo worked on the technical designs and wireframes of
-        the application, and Cobuild Lab led the architecture and development of the platform. When
-        Cobuild Lab joined the project, we began having weekly meetings to define the priorities and
-        the strategy that we would use for creating the product. During these meetings, Bob and
-        Jerry’s practical know-how was directly taken into account when developing features which
-        they wanted to manage inside the application, and from there early designs and proposals
-        were created to solve each of those features that were needed.
+        lifestyle world was in debt of tools for this community. After a couple of meeting Oscar
+        develop the concept of the brand with several of its partners and the shape of the Weedmatch
+        app started arising. It was until beginnings of 2018 were we setup a team and start working
+        in this project.
       </DetailParagraph>
-      <DetailContentSeparation>
-        <DetailSubTitle>
-          Cobuild Lab’s<TextOrange>Collaborative</TextOrange>
-          <br />
-          Approach
-        </DetailSubTitle>
-        <DetailParagraph>
-          One of the reasons why Cobuild Lab was brought to the team was for our extensive
-          experience building web applications, especially with the ReactJS framework, which is a
-          core element in the 8base stack.
-        </DetailParagraph>
-        <DetailParagraph>
-          By using 8base Platform services and low-code Platform, collabtogrow™ will accelerate the
-          delivery of a robust, cloud-based SaaS solution to more effectively structure, organize
-          and govern corporate strategic alliances.
-        </DetailParagraph>
-        <DetailParagraph>
-          By using 8base Platform services and low-code Platform, collabtogrow™ will accelerate the
-          delivery of a robust, cloud-based SaaS solution to more effectively structure, organize
-          and govern corporate strategic alliances. “With the 8base Platform, we are able to rapidly
-          bring to market an innovative new system that is cost-effective and improves strategic
-          alliance performance. We carefully investigated development alternatives including
-          existing “no code” vendors. 8base was the only company that could equip our subject matter
-          experts with powerful and agile tools to deliver a solution that will be capable of
-          scaling and evolving with collabtogrow™ itself.”
-        </DetailParagraph>
-        <DetailParagraph>
-          Our developers are battle-tested React frontend experts with great skills in coding HTML,
-          CSS, and Javascript.
-        </DetailParagraph>
-        <DetailParagraph>
-          Cobuild Lab’s collaborative approach is something that sets us apart, we are not simply a
-          development shop that produces mass-produced projects. We take the time and effort to
-          really understand the problems that need to be solved in a user and business centric
-          approach.
-        </DetailParagraph>
-      </DetailContentSeparation>
+      <DetailParagraph>
+        We made an application for mobile Android and iPhone that allows you to contact the people
+        closest to you, interested in the cannabis culture. Allows you to match and create a chat to
+        chat and know the interests of those people.
+      </DetailParagraph>
+      <DetailParagraph>
+        The application was develop using React Native and Django frameworks.
+      </DetailParagraph>
+      <DetailParagraph>
+        The project lasted approximately four and a half months with a back-end programmer, a
+        front-end programmer, a typesetter, and a Qa. Working as a team with the client and holding
+        daily meetings, the first beta of the application was developed and then functionalities
+        were added. Currently, the project is already live and all the Chilean community loving
+        cannabis enjoys it.
+      </DetailParagraph>
+      <div>
+        <List>
+          <ListItem>
+            <TextOrange>Contact Person:</TextOrange>
+            {'  '}Oscar Lopez
+          </ListItem>
+          <ListItem>
+            <TextOrange>Location:</TextOrange>
+            {'  '}Chile, Santiago
+          </ListItem>
+          <ListItem>
+            <TextOrange>Industry:</TextOrange>
+            {'  '}Lifestyle and Commnunities
+          </ListItem>
+        </List>
+      </div>
     </DetailSectionImageRight>
-
-    <DetailSectionImageLeft src={img1} alt="What is the Succeed Platform?">
-      <DetailSubTitle>
-        Target <TextOrange>Demographic</TextOrange>
-      </DetailSubTitle>
-      <DetailParagraph>
-        CollabtogrowTM Succeed platform is a tool that enables executives to leverage all the power
-        of modern technologies to effectively execute and manage strategic alliances.
-      </DetailParagraph>
-      <DetailContentSeparation>
-        <DetailSubTitle>
-          Product <TextOrange>Development</TextOrange>
-        </DetailSubTitle>
-        <DetailParagraph>
-          After dozens of alpha product iterations, we are excited to present the first full version
-          of the platform. Almost a year later we have created an amazing dynamic. between all the
-          participants on the project.
-        </DetailParagraph>
-        <DetailParagraph>
-          Early in the development process, we started with bi-weekly meetings for creating all the
-          basic features, once we started creating more specialized features and powerful tools we
-          decided to meet 3 times a week to have a more iterative approach solving small pieces at a
-          time, creating more agile and efficient development cycles.
-        </DetailParagraph>
-        <DetailParagraph>
-          During these meetings, we discussed along with Bob, Jerry, Oscar, and Carlos the features
-          to be developed, the business requirements, and how this should be implemented in the
-          product.
-        </DetailParagraph>
-        <DetailParagraph>
-          Carlos was in charge of creating the visual representations of the features, validating
-          those ideas with the team, which would be implemented in the following weeks.
-        </DetailParagraph>
-        <DetailParagraph>
-          During the later sprints, another development team was added in order to complete the more
-          robust features to the platform in a timely manner, those features included the “balanced
-          scorecard”, a summary view of the status of the alliance designed by the collabtogrowTM
-          team; and a powerful “reports system” to query real time data and analytics, both unique
-          values of how collabtogrowTM handles the process of strategic alliances. Technology Stack
-          To develop the product we used the 8base Platform, which is a complete set of backend
-          tools to enable Frontend developers to create amazing products faster. This also included
-          the 8base boost kit, a ReactJS components library focused on simplicity, 8base Graphql API
-          and Cloud Functions, Auth0 as an authentication provider, and SendGrid for email
-          notifications. During the development over 6 Cobuild Lab developers participated in the
-          coding process, all frontend specialists on Javascript and ReactJs.
-        </DetailParagraph>
-      </DetailContentSeparation>
-    </DetailSectionImageLeft>
 
     <Section>
       <Container>

@@ -15,12 +15,7 @@ const CustomerSuccessStories = ({ numberOfItems }) => {
   const newData = data.slice(0, numberOfItems < data.length ? numberOfItems : 6);
   const items = newData.map(({ title, img, description, slug }) => (
     <Column isSize={{ mobile: 12, tablet: 4 }} key={title} isPaddingless>
-      <Card
-        title={title}
-        description={description}
-        image={img}
-        to={`customer-success-stories/${slug}`}
-      />
+      <Card title={title} description={description} image={img} to={slug} />
     </Column>
   ));
 

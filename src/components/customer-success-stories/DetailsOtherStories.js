@@ -58,12 +58,7 @@ const TitleContainer = styled.div`
 const items = data.map(({ title, img, description, slug }) => (
   <CardContainer key={title}>
     <CardWrapper>
-      <Card
-        title={title}
-        description={description}
-        image={img}
-        to={`customer-success-stories/${slug}`}
-      />
+      <Card title={title} description={description} image={img} to={slug} />
     </CardWrapper>
   </CardContainer>
 ));
