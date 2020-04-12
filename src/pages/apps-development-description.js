@@ -47,7 +47,7 @@ class AppsDevDescription extends Component {
               </li>
             </ul>
             <SmoothScrollingButton href="#landing-contact-form">
-              Set an APPOINTMENT
+              Set a FREE 1 hour Consultation
             </SmoothScrollingButton>
           </Column>
 

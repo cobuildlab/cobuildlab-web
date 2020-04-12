@@ -30,7 +30,7 @@ export default class AppsDevStudy extends Component {
       <LandingPageLayout siteDescription={siteDescription} siteTitle={siteTitle}>
         <Columns isDesktop isVCentered>
           <Column isSize={{ desktop: 7 }}>
-            <H1>Developing new Software Products in Miami</H1>
+            <H1>{siteTitle}</H1>
             <H2>{siteDescription}</H2>
             <ul>
               <li>
@@ -43,7 +43,7 @@ export default class AppsDevStudy extends Component {
               </li>
             </ul>
             <SmoothScrollingButton href="#landing-contact-form">
-              Set an APPOINTMENT
+              Set a FREE 1 hour Consultation
             </SmoothScrollingButton>
           </Column>
 
