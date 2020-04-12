@@ -5,7 +5,6 @@ import 'bulma';
 // COMPONENTS
 import LandingPageLayout from '../../components/2020/LandingPageLayout';
 import YouTubeVideo from '../../components/YouTubeVideo';
-import BadgeIndustry from '../../components/2020/BadgeIndustry';
 import NewLandingForm from '../../components/2020/NewLandingForm';
 import Testimonial from '../../components/Testimonial';
 
@@ -20,6 +19,8 @@ import { TextOrange } from '../../components/Typography/TextHelpers';
 import H3 from '../../components/Typography/H3';
 import { H4Blue } from '../../components/text/H4Blue';
 import { SkillsDevelopers } from '../../components/2020/skills/SkillsDevelopers';
+import Brand from '../../components/enterprise/containers/brands';
+import { Stack } from '../../components/2020/Stack';
 
 export default class AppsDevStudy extends Component {
   render() {
@@ -27,7 +28,7 @@ export default class AppsDevStudy extends Component {
     const siteDescription = `
       Solve your technical needs by hiring remote developers at affordable rates.
       `;
-    const landingName = 'Apps Development Study Case';
+    const landingName = 'Hire remote developers hourly';
 
     return (
       <LandingPageLayout siteDescription={siteDescription} siteTitle={siteTitle}>
@@ -60,7 +61,7 @@ export default class AppsDevStudy extends Component {
           </Column>
 
           <Column>
-            <YouTubeVideo id={'iZGno1K3ufM'} />
+            <YouTubeVideo id={'v1dZCJnOqb0'} />
           </Column>
         </Columns>
 
@@ -69,6 +70,14 @@ export default class AppsDevStudy extends Component {
 
         <Columns>
           <Column>
+            <SkillsDevelopers />
+          </Column>
+        </Columns>
+
+        <Columns>
+          <Column>
+            <Brand />
+            <Stack />
             <SkillsDevelopers />
           </Column>
         </Columns>
