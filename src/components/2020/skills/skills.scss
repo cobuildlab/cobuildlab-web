@@ -1,0 +1,134 @@
+@import "../../../assets/scss/variable";
+
+/* skills section css start */
+.skills-wrapper {
+  .row {
+    align-items: center;
+  }
+}
+
+.skills-content-block {
+  .skills-title {
+    font-size: calc(20px + (36 - 20) * ((100vw - 320px) / (1920 - 320)));
+    line-height: calc(32px + (46 - 32) * ((100vw - 320px) / (1920 - 320)));
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 13px;
+    text-transform: capitalize;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 50px;
+  }
+  .progress-outer-block {
+    text-align: left;
+    .progress-title {
+      position: relative;
+      text-transform: capitalize;
+      margin-bottom: 1.5em;
+      font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+      font-weight: 400;
+    }
+    .progressbar-wrapper {
+      margin-bottom: calc(15px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .progressbar-title {
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 400;
+        position: relative;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+      }
+      .react-sweet-progress {
+        display: block;
+        position: relative;
+        .react-sweet-progress-line {
+          border-radius: 0;
+          .react-sweet-progress-line-inner {
+            border-radius: 0;
+            min-height: 8px;
+            &:after {
+              content: "";
+              font-weight: 400;
+              font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1920 - 320)));
+              display: block;
+              width: auto;
+              padding: 0;
+              height: auto;
+              position: absolute;
+              top: -32px;
+              right: 0;
+            }
+
+            &:before {
+              position: absolute;
+              content: "";
+              top: -8px;
+              right: 0;
+              border-left: 5px solid transparent;
+              border-right: 5px solid transparent;
+            }
+          }
+        }
+        .react-sweet-progress-symbol {
+          display: none;
+        }
+        &.progressbar1 {
+          .react-sweet-progress-line-inner {
+            &:after {
+              content: "96%";
+            }
+          }
+        }
+        &.progressbar2 {
+          .react-sweet-progress-line-inner {
+            &:after {
+              content: "88%";
+            }
+          }
+        }
+        &.progressbar3 {
+          .react-sweet-progress-line-inner {
+            &:after {
+              content: "90%";
+            }
+          }
+        }
+        &.progressbar4 {
+          .react-sweet-progress-line-inner {
+            &:after {
+              content: "94%";
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* responsive css */
+@media (min-width: 992px) {
+  .skills-image {
+    text-align: left;
+    img {
+      max-width: 90%;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .skills-dec {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .skills-image {
+    display: none;
+  }
+  .skills-content-block {
+    .skills-subtitle {
+      line-height: normal;
+    }
+  }
+}
+
+/* skills section css end */

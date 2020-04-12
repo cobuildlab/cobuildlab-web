@@ -8,6 +8,8 @@ export const YOUTUBE_MOBILE_OPTS = {
   playerVars: {
     // https://developers.google.com/youtube/player_parameters
     autoplay: 0,
+    controls: 0,
+    loop: 1,
   },
 };
 export const YOUTUBE_OPTS = {
@@ -16,6 +18,8 @@ export const YOUTUBE_OPTS = {
   playerVars: {
     // https://developers.google.com/youtube/player_parameters
     autoplay: 0,
+    controls: 0,
+    loop: 1,
   },
 };
 
