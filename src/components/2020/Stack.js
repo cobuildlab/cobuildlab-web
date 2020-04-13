@@ -3,12 +3,12 @@ import { Container, Section } from 'bloomer';
 import Image from '../../components/enterprise/components/image';
 import Slider from 'react-slick';
 import '../enterprise/containers/brands/brands.scss';
-import logoAngular from '../../assets/images/logos/logoAngularJS.png';
-import logoBS from '../../assets/images/logos/logoBS.png';
-import logoDjango from '../../assets/images/logos/logoDjango.png';
-import logoHtmlCSS from '../../assets/images/logos/logoHtmlCSS.png';
-import logoNodeJs from '../../assets/images/logos/logoNodeJs.png';
-import logoPython from '../../assets/images/logos/logoPython.png';
+import logoAngular from '../../assets/images/logos/angularjs-logo.png';
+import logoBS from '../../assets/images/logos/bootstrap-logo.png';
+import logoDjango from '../../assets/images/logos/django-logo.png';
+import logoHtmlCSS from '../../assets/images/logos/html-css-js-logo.png';
+import logoNodeJs from '../../assets/images/logos/nodejs-logo.png';
+import logoPython from '../../assets/images/logos/python-logo.png';
 
 /**
  * Stack Component.
