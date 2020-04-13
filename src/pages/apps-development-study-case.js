@@ -21,9 +21,9 @@ import { CaseStudy } from '../components/2020/CaseStudy';
 
 export default class AppsDevStudy extends Component {
   render() {
-    const siteTitle = 'Developing Web and Mobile Applications Fast and Effective';
+    const siteTitle = 'Developing Web and Mobile Applications Fast and Effectively';
     const siteDescription =
-      'We partner with Entrepreneurs, Small and Medium Businesses to transform ideas into working Apps.';
+      'We partner with Entrepreneurs, Small and Medium-sized Businesses, to transform ideas into working Apps.';
     const landingName = 'Apps Development Study Case';
 
     return (

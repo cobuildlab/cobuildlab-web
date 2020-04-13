@@ -34,6 +34,7 @@ import { slideshare } from 'react-icons-kit/fa/slideshare';
 import { envelopeO } from 'react-icons-kit/fa/envelopeO';
 import { linkedinSquare } from 'react-icons-kit/fa/linkedinSquare';
 import { clockO } from 'react-icons-kit/fa/clockO';
+import PropTypes from 'prop-types';
 
 import {
   Container,
@@ -48,7 +49,6 @@ import {
   CardContent,
   Hero,
   HeroBody,
-  Tag,
 } from 'bloomer';
 
 class Backup extends React.Component {
@@ -63,7 +63,7 @@ class Backup extends React.Component {
             {
               name: 'description',
               content:
-                'We help entrepreneurs create amazing Products with our streamlined, lean and phased Software Development Process. Since day one, our technique is focused on early results and transparent communication.',
+                'We help entrepreneurs create amazing Products with our streamlined, lean and phased Software Development Process. From day one,  our technique is focused on early results and transparent communication.',
             },
           ]}
           title={'Cobuild Lab | Miami Accelerator'}
@@ -78,8 +78,8 @@ class Backup extends React.Component {
                 <Column isSize="1/2">
                   <Title isSize={4}>
                     We help entrepreneurs create amazing Products with our streamlined, lean and
-                    phased <span style={{ color: '#fff' }}>Software Development Process.</span>{' '}
-                    Since day one, our technique is focused on early results and transparent
+                    phased <span style={{ color: '#fff' }}>Software Development Process.</span> From
+                    day one, our technique is focused on early results and transparent
                     communication.
                   </Title>
                   <Link
@@ -99,8 +99,8 @@ class Backup extends React.Component {
                 <Column isSize="1/2">
                   <Title isSize={6}>
                     We help entrepreneurs create amazing Products with our streamlined, lean and
-                    phased <span style={{ color: '#fff' }}>Software Development Process.</span>{' '}
-                    Since day one, our technique is focused on early results and transparent
+                    phased <span style={{ color: '#fff' }}>Software Development Process.</span> From
+                    day one, our technique is focused on early results and transparent
                     communication.
                   </Title>
                   <Link className="button is-primary is-small is-rounded" to="#">
@@ -132,9 +132,9 @@ class Backup extends React.Component {
                 </div>
                 <Title isSize={3}>Validation</Title>
                 <p>
-                  Plain and simple: Don't offer what people doesn't want. - Idea Validation:
-                  (Technical and Economical) - Market Validation: (Estimation and Competitors
-                  Analysis) - Value and Growth Hypothesis.
+                  Plain and simple: Don&rsquot offer what people doesn&rsquot want. - Idea
+                  Validation: (Technical and Economical) - Market Validation: (Estimation and
+                  Competitors Analysis) - Value and Growth Hypothesis.
                 </p>
               </Column>
               <Column isSize="1/4">
@@ -143,9 +143,9 @@ class Backup extends React.Component {
                 </div>
                 <Title isSize={3}>CoBuild</Title>
                 <p>
-                  It's time to build!. In this phase we combine a multidisciplinary team to actually
-                  build the idea. - Prototyping - Customers Archetypes - Minimum Viable Product
-                  (MVP) - Live testing - A/B Testing - Product Market Fit - Value and Growth
+                  It&rsquos time to build!. In this phase we combine a multidisciplinary team to
+                  actually build the idea. - Prototyping - Customers Archetypes - Minimum Viable
+                  Product (MVP) - Live testing - A/B Testing - Product Market Fit - Value and Growth
                   Hypothesis (Again)
                 </p>
               </Column>
@@ -168,9 +168,9 @@ class Backup extends React.Component {
                 <Title isSize={3}>Accelerate</Title>
                 <p>
                   Congratulations! We have proved to have a sustainable business with a healthy
-                  growth rate. It's time to accelerate. At this point our business strategy and
-                  marketing strategy must be on the right track, so it's time to create High Impact.
-                  - Growth Hacking: Short-Term Exponential Growth
+                  growth rate. It&rsquos time to accelerate. At this point our business strategy and
+                  marketing strategy must be on the right track, so it&rsquos time to create High
+                  Impact. - Growth Hacking: Short-Term Exponential Growth
                 </p>
               </Column>
             </Columns>
@@ -271,7 +271,10 @@ class Backup extends React.Component {
             <Columns isCentered>
               <Column isSize="1/3">
                 <Card>
-                  <a href="https://www.linkedin.com/in/marcelo-ricigliano-32440379" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/in/marcelo-ricigliano-32440379"
+                    target="_blank"
+                    rel={'noopener noreferrer'}>
                     <CardImage>
                       <Image isRatio="4:8" src={marcelo} />
                       <p className="name-team">
@@ -291,14 +294,18 @@ class Backup extends React.Component {
                   <a
                     className="icon-link"
                     href="https://www.linkedin.com/in/marcelo-ricigliano-32440379"
-                    target="_blank">
+                    target="_blank"
+                    rel={'noopener noreferrer'}>
                     <Icon size="18" icon={linkedinSquare} />
                   </a>
                 </Content>
               </Column>
               <Column isSize="1/3">
                 <Card>
-                  <a href="https://www.linkedin.com/in/alacret/" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/in/alacret/"
+                    target="_blank"
+                    rel={'noopener noreferrer'}>
                     <CardImage>
                       <Image isRatio="4:8" src={angel} />
                       <p className="name-team">
@@ -315,14 +322,18 @@ class Backup extends React.Component {
                   <a
                     className="icon-link"
                     href="https://www.linkedin.com/in/alacret/"
-                    target="_blank">
+                    target="_blank"
+                    rel={'noopener noreferrer'}>
                     <Icon size="18" icon={linkedinSquare} />
                   </a>
                 </Content>
               </Column>
               <Column isSize="1/3">
                 <Card>
-                  <a href="https://www.linkedin.com/in/alesanchezr/" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/in/alesanchezr/"
+                    target="_blank"
+                    rel={'noopener noreferrer'}>
                     <CardImage>
                       <Image isRatio="4:8" src={alejandro} />
                       <p className="name-team">
@@ -335,7 +346,7 @@ class Backup extends React.Component {
                 <Content>
                   <br />
                   <small>
-                    I'm a computer engineer with all my life dedicated to the coding industry
+                    I&rsquo;m a computer engineer with all my life dedicated to the coding industry
                     through several initiatives.
                   </small>
                   <br />
@@ -343,7 +354,8 @@ class Backup extends React.Component {
                   <a
                     className="icon-link"
                     href="https://www.linkedin.com/in/alesanchezr/"
-                    target="_blank">
+                    target="_blank"
+                    rel={'noopener noreferrer'}>
                     <Icon size="18" icon={linkedinSquare} />
                   </a>
                 </Content>
@@ -359,6 +371,10 @@ class Backup extends React.Component {
     );
   }
 }
+
+Backup.propTypes = {
+  location: PropTypes.object.isRequired,
+};
 
 export default Backup;
 
@@ -403,10 +419,3 @@ export const pageQuery = graphql`
     }
   }
 `;
-/* <Columns isCentered>
-    <Column>
-      <Link className="button is-primary is-medium is-rounded">
-        <small>Learn more</small>
-      </Link>
-    </Column>
-  </Columns> */

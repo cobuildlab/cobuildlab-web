@@ -21,6 +21,6 @@ Cobuild Lab’s collaborative approach is something that sets us apart, we are n
 
 We help entrepreneurs and industry experts to transform ideas into Web and Mobile Software Products. <br> </br>
 
-Since day one, our technique is focused on early results and transparent communication. <br> </br>
+From day one,  our technique is focused on early results and transparent communication. <br> </br>
 
 Follow us on Instagram <a target="_blank" href="https://www.instagram.com/cobuildlab/"> @cobuildlab </a>

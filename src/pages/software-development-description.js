@@ -20,9 +20,9 @@ import Skills from '../components/enterprise/containers/skills';
 
 export default class SoftwareDevDescription extends Component {
   render() {
-    const siteTitle = 'Developing new Software Products Fast and Effective';
+    const siteTitle = 'Developing new Software Products Fast and Effectively';
     const siteDescription =
-      'We partner with Entrepreneurs, Small and Medium Businesses to transform ideas into working Software Products.';
+      'We partner with Entrepreneurs, Small and Medium-sized Businesses, to transform ideas into working Software Products.';
     const landingName = 'Software Development Description';
 
     return (
