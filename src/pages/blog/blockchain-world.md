@@ -1,5 +1,5 @@
 ---
-title: "How Blockchain Technology Move the World Economy"
+title: "How Blockchain Technology Moves the World Economy"
 date: "2020-03-21T16:24:04.000Z"
 template: blog
 tags: Education
