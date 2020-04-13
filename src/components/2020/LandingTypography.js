@@ -24,7 +24,7 @@ const CustomParagraph = Styled(Paragraph)`
 const Title = Styled(H3)`
   font-weight: bold;
   margin-bottom: 3rem;
-` ;
+`;
 
 const SubTitle = Styled(H4)`
   font-weight: bold;
@@ -38,11 +38,4 @@ const SubTitle2 = Styled(H5)`
   margin-bottom: 1.5rem;
 `;
 
-export { 
-  CustomH1,
-  CustomH2,
-  CustomParagraph,
-  Title,
-  SubTitle,
-  SubTitle2
-}
+export { CustomH1, CustomH2, CustomParagraph, Title, SubTitle, SubTitle2 };

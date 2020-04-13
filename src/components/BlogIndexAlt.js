@@ -20,6 +20,7 @@ import {
 } from 'bloomer';
 import { Icon } from 'react-icons-kit';
 import { clockO } from 'react-icons-kit/fa/clockO';
+import PropTypes from 'prop-types';
 
 class headerBlog extends React.Component {
   render() {
@@ -115,7 +116,7 @@ class headerBlog extends React.Component {
               ) : (
                 <Column hasTextAlign="centered">
                   <Title isSize={3} tag="h3">
-                    There's no posts in this category
+                    There&rsquo;s no posts in this category
                   </Title>
                 </Column>
               )}
@@ -126,4 +127,11 @@ class headerBlog extends React.Component {
     );
   }
 }
+
+headerBlog.propTypes = {
+  activeTab: PropTypes.string.isRequired,
+  siteTitle: PropTypes.string.isRequired,
+  posts: PropTypes.array.isRequired,
+};
+
 export default headerBlog;
