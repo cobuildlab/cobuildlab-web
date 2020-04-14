@@ -4,18 +4,17 @@ import { navigate } from 'gatsby';
 import { ToastContainer, toast } from 'react-toastify';
 import { Field, Control, Input, TextArea } from 'bloomer';
 import Button from './Button';
-
-
+import Error from '../Toast/Error';
+import Success from '../Toast/Success';
 export default class Contact extends PureComponent {
-
   static defaultProps = {
     btnText: 'submit',
-  }
+  };
 
   static propTypes = {
     btnText: PropTypes.string,
-    landingName: PropTypes.string.isRequired
-  }
+    landingName: PropTypes.string.isRequired,
+  };
 
   constructor(props) {
     super(props);
@@ -53,24 +52,27 @@ export default class Contact extends PureComponent {
 
     if (!name.length) {
       toast.dismiss();
-      toast.error("name can't be empty", {
+      toast(<Error message="name can't be empty" />, {
         position: 'bottom-right',
+        hideProgressBar: true,
       });
       return;
     }
 
     if (!email.length) {
       toast.dismiss();
-      toast.error("Email can't be empty", {
+      toast(<Error message="Email can't be empty" />, {
         position: 'bottom-right',
+        hideProgressBar: true,
       });
       return;
     }
 
     if (!message.length) {
       toast.dismiss();
-      toast.error("Message can't be empty", {
+      toast(<Error message="Message can't be empty" />, {
         position: 'bottom-right',
+        hideProgressBar: true,
       });
       return;
     }
@@ -100,12 +102,12 @@ export default class Contact extends PureComponent {
     fetch(this.url, settings)
       .then((res) => res.json())
       .then((response) => {
-
         if (response.statusCode >= 400) {
           toast.dismiss();
 
-          toast.error(response.message, {
+          toast(<Error message={response.message} />, {
             position: 'bottom-right',
+            hideProgressBar: true,
           });
 
           this.setState({
@@ -114,8 +116,9 @@ export default class Contact extends PureComponent {
         } else {
           toast.dismiss();
 
-          toast.success(response.message, {
+          toast(<Success message={response.message} />, {
             position: 'bottom-right',
+            hideProgressBar: true,
           });
 
           navigate('/thanks-contact');

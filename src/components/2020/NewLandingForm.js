@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import { Container, Title, Subtitle, Field, Control, Input } from 'bloomer';
 import Button from './Button';
 import { navigate, Link } from 'gatsby';
-import Loading from '../Loading';
-import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import LandingFormBadges from './LandingFormBadges';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import Error from '../Toast/Error';
+import Success from '../Toast/Success';
 
 const Box = styled.div`
   background-color: #fff;
@@ -36,41 +37,46 @@ export default class NewLandingForm extends Component {
     });
   };
 
-  onSubmit = (e, landingName) => {
+  onSubmit = (e) => {
     e.preventDefault();
+    const { landingName } = this.props;
 
-    if (this.state.firstName.length <= 0) {
+    if (!this.state.firstName.length) {
       toast.dismiss();
 
-      toast.error("First name can't be empty", {
+      toast(<Error message="First name can't be empty" />, {
         position: 'bottom-right',
+        hideProgressBar: true,
       });
       return;
     }
 
-    if (this.state.lastName.length <= 0) {
+    if (!this.state.lastName.length) {
       toast.dismiss();
 
-      toast.error("Last name can't be empty", {
+      toast(<Error message="Last name can't be empty" />, {
         position: 'bottom-right',
+        hideProgressBar: true,
       });
       return;
     }
 
-    if (this.state.email.length <= 0) {
+    if (!this.state.email.length) {
       toast.dismiss();
 
-      toast.error("Email can't be empty", {
+      toast(<Error message="Email can't be empty" />, {
         position: 'bottom-right',
+        hideProgressBar: true,
       });
       return;
     }
 
-    if (this.state.comment.length <= 0) {
+    if (!this.state.comment.length) {
       toast.dismiss();
 
-      toast.error("Comment can't be empty", {
+      toast(<Error message="Comment can't be empty" />, {
         position: 'bottom-right',
+        hideProgressBar: true,
       });
       return;
     }
@@ -99,7 +105,7 @@ export default class NewLandingForm extends Component {
         if (response.statusCode >= 400) {
           toast.dismiss();
 
-          toast.error(response.message, {
+          toast(<Error message={response.message} />, {
             position: 'bottom-right',
           });
 
@@ -109,8 +115,9 @@ export default class NewLandingForm extends Component {
         } else {
           toast.dismiss();
 
-          toast.success(response.message, {
+          toast(<Success message={response.message} />, {
             position: 'bottom-right',
+            hideProgressBar: true,
           });
 
           navigate('/thanks-contact');
@@ -119,10 +126,10 @@ export default class NewLandingForm extends Component {
   };
 
   render() {
-    const { landingName } = this.props;
     const { isLoading } = this.state;
     return (
       <Box id={'landing-contact-form'}>
+        <ToastContainer />
         <LandingFormBadges />
         <Container>
           <div className="colunm is-6 has-text-centered">
@@ -135,12 +142,11 @@ export default class NewLandingForm extends Component {
             </p>
           </div>
 
-          <form onSubmit={(e) => this.onSubmit(e, landingName)}>
+          <form onSubmit={this.onSubmit}>
             <Field>
               <Control>
                 <Input
                   type="text"
-                  required
                   name="firstName"
                   placeholder="First Name"
                   value={this.state.firstName}
@@ -152,7 +158,6 @@ export default class NewLandingForm extends Component {
               <Control>
                 <Input
                   type="text"
-                  required
                   name="lastName"
                   placeholder="Last Name"
                   value={this.state.lastName}
@@ -164,7 +169,6 @@ export default class NewLandingForm extends Component {
               <Control>
                 <Input
                   type="email"
-                  required
                   name="email"
                   placeholder="Email"
                   value={this.state.email}
@@ -176,7 +180,6 @@ export default class NewLandingForm extends Component {
               <Control>
                 <Input
                   type="number"
-                  required
                   name="phone"
                   placeholder="Phone"
                   value={this.state.phone}
@@ -188,7 +191,6 @@ export default class NewLandingForm extends Component {
               <Control>
                 <Input
                   type="text"
-                  required
                   name="comment"
                   placeholder="Comment or Message"
                   value={this.state.comment}
@@ -196,12 +198,13 @@ export default class NewLandingForm extends Component {
                 />
               </Control>
             </Field>
-
-            {isLoading ? (
-              <Loading loading={isLoading} />
-            ) : (
-              <Button htmlType="submit">Submit</Button>
-            )}
+            <Field>
+              <Control>
+                <Button htmlType="submit" isLoading={isLoading}>
+                  Submit
+                </Button>
+              </Control>
+            </Field>
           </form>
 
           <div className="has-text-centered">
