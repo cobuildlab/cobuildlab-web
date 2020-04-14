@@ -107,6 +107,7 @@ export default class NewLandingForm extends Component {
 
           toast(<Error message={response.message} />, {
             position: 'bottom-right',
+            hideProgressBar: true,
           });
 
           this.setState({
