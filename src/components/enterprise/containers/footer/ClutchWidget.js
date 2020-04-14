@@ -7,19 +7,11 @@ const Container = styled.div`
   padding-left: 0.5em;
 `;
 
-const Title = styled.span`
-  color: #fff;
-  font-weight: bold;
-  margin-bottom: 0.5em;
-  display: block;
-`;
-
 const ClutchWidget = () => {
   const [loaded, error] = useScript('https://widget.clutch.co/static/js/widget.js');
 
   return (
     <Container>
-      <Title>CLUTCH:</Title>
       {loaded && (
         <div
           className="clutch-widget"

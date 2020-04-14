@@ -5,8 +5,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import addToMailchimp from 'gatsby-plugin-mailchimp';
 import SocialMedia from './SocialMedia';
 import styled from 'styled-components';
-import Button from './Button';
-import Error from '../Toast/Error';
+import Button from '../../../2020/Button';
+import Error from '../../../Toast/Error';
 import { FooterTitleContainer, FooterTitle, FooterColumnContent } from './FooterComponents';
 
 const Container = styled.div`
