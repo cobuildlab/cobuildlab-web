@@ -2,6 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
+import {
+  FooterTitleContainer,
+  FooterTitle,
+  FooterListItem,
+  FooterColumnContent,
+} from './FooterComponents';
+
 const LinkItem = styled(Link)`
   color: #fff;
   &:hover {
@@ -10,17 +17,22 @@ const LinkItem = styled(Link)`
 `;
 
 const FooterNavigation = () => (
-  <ul>
-    <li>
-      <LinkItem to="/services">Services</LinkItem>
-    </li>
-    <li>
-      <LinkItem to="/customer-success-stories">Customer Success Stories</LinkItem>
-    </li>
-    <li>
-      <LinkItem to="/blog">Blog</LinkItem>
-    </li>
-  </ul>
+  <FooterColumnContent>
+    <FooterTitleContainer>
+      <FooterTitle>Explorer</FooterTitle>
+    </FooterTitleContainer>
+    <ul>
+      <FooterListItem>
+        <LinkItem to="/services">Services</LinkItem>
+      </FooterListItem>
+      <FooterListItem>
+        <LinkItem to="/customer-success-stories">Customer Success Stories</LinkItem>
+      </FooterListItem>
+      <FooterListItem>
+        <LinkItem to="/blog">Blog</LinkItem>
+      </FooterListItem>
+    </ul>
+  </FooterColumnContent>
 );
 
 export default FooterNavigation;

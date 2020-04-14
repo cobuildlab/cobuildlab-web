@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Footer from '../enterprise/containers/footer';
+import Footer from '../enterprise/containers/footer/Footer';
 import styled from 'styled-components';
 import '../../assets/css/2020/common.scss';
 import 'bulma';
