@@ -11,8 +11,7 @@ import EnterpriseCustomerSuccessStories from '../../components/enterprise/contai
 import Testimonial from '../../components/enterprise/containers/testimonial/Testimonial';
 import Contact from '../../components/enterprise/containers/contact/ContactEnterprise';
 import Brand from '../../components/enterprise/containers/brands';
-import Footer from '../../components/enterprise/containers/footer';
-import CopyRight from '../../components/enterprise/containers/copyright_text';
+import Footer from '../../components/enterprise/containers/footer/Footer';
 import '../../assets/scss/index.scss';
 
 const IndexPage = () => {
@@ -32,7 +31,6 @@ const IndexPage = () => {
         <Contact />
         <Brand />
         <Footer />
-        <CopyRight />
         {/* <ThemeColor /> */}
       </div>
     </div>
