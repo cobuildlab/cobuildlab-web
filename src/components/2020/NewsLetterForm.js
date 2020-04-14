@@ -4,6 +4,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import addToMailchimp from 'gatsby-plugin-mailchimp';
 import styled from 'styled-components';
 import Button from './Button';
+import Error from '../Toast/Error';
+import Success from '../Toast/Success';
 
 const Container = styled.div`
   margin-top: 1em;
@@ -27,8 +29,9 @@ const NewsLetterForm = () => {
         event.preventDefault();
 
         if (!email.length) {
-          toast.error("Email can't be empty", {
+          toast.error(<Error message="Email can't be empty" />, {
             position: 'bottom-right',
+            hideProgressBar: true,
           });
           return;
         }
@@ -37,14 +40,16 @@ const NewsLetterForm = () => {
 
         const request = await addToMailchimp(email);
         if (request.result === 'success') {
-          toast.success(request.msg, {
+          toast(<Success message={request.msg} />, {
             position: 'bottom-right',
+            hideProgressBar: true,
           });
         }
 
         if (request.result === 'error') {
-          toast.error(request.msg, {
+          toast(<Error message={request.msg} />, {
             position: 'bottom-right',
+            hideProgressBar: true,
           });
         }
         setLoading(false);
