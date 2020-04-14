@@ -24,7 +24,7 @@ const Icon = ({ icon, href }) => (
 );
 
 Icon.propTypes = {
-  icon: PropTypes.string.isRequired,
+  icon: PropTypes.object.isRequired,
   href: PropTypes.string.isRequired,
 };
 

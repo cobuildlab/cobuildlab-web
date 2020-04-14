@@ -2,6 +2,7 @@ import React from 'react';
 import Scroll from '../scroll';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import moment from 'moment';
 import img from '../../../../assets/images/footer/footer-bg.png';
 
 const ContainerCopy = styled.div`
@@ -52,7 +53,7 @@ const CopyRightFooter = () => (
   <ContainerCopy>
     <CopyText>
       <CopyLink>
-        <span>© Copyright 2020 Business. All Rights Reserved</span>
+        <span>© Copyright {moment().year()} Business. All Rights Reserved</span>
         <span>
           <Redirect to="/privacy-policy">Privacy & Policy</Redirect>
         </span>
