@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import logo from '../../assets/images/customers/jobcore.jpg';
 import CountUp from 'react-countup';
 import Typography from './Typography';
+import { H3Blue } from '../text/H3Blue';
 
 const STUDY_DATA = [
   {
@@ -50,6 +51,7 @@ const StudyCase = () => {
           <img alt={'Logo'} src={logo} width={500} height={500} />
         </MediaLeft>
         <MediaContent>
+          <H3Blue>Jobcore</H3Blue>
           <p className="study-text">{text}</p>
         </MediaContent>
       </Media>

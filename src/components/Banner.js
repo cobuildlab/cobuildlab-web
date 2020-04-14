@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Columns, Column, Image } from 'bloomer';
+import PropTypes from 'prop-types';
 
 class Banner extends React.Component {
   render() {
@@ -15,4 +16,9 @@ class Banner extends React.Component {
     );
   }
 }
+
+Banner.propTypes = {
+  src: PropTypes.string.isRequired,
+};
+
 export default Banner;

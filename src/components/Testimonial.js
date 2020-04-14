@@ -12,9 +12,8 @@ import H6 from './Typography/H6';
 import Paragraph from './Typography/Paragraph';
 import { TextOrange } from './Typography/TextHelpers';
 
-
 const Card = styled.div`
-  background-color: #FFFF;
+  background-color: #ffff;
   border-radius: 5px;
   padding: 45px 15px;
   text-align: center;
@@ -37,7 +36,7 @@ const Card = styled.div`
     bottom: 15px;
     background: url(${QueteRight}) no-repeat 0;
   }
-`
+`;
 
 const SubTitle = styled(Paragraph)`
   font-weight: 400;
@@ -83,7 +82,7 @@ const StyledSlider = styled(Slider)`
         height: 100%;
         border-radius: 50%;
         background-size: cover;
-        img { 
+        img {
           border: 4px solid transparent;
           border-radius: 50%;
           padding: 1px;
@@ -94,7 +93,7 @@ const StyledSlider = styled(Slider)`
       }
       &.slick-active {
         button img {
-          border-color: #264A60;
+          border-color: #264a60;
         }
       }
     }
@@ -108,11 +107,12 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
-  customPaging: id => (
+  // eslint-disable-next-line react/display-name
+  customPaging: (id) => (
     <button>
-      <img src={ DATA[id].img || '' } />
+      <img src={DATA[id].img || ''} />
     </button>
-  )
+  ),
 };
 
 const Testimonial = () => (

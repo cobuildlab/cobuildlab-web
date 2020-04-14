@@ -32,7 +32,7 @@ function Skills() {
                   </Typography>
                 </div>
                 <Typography className="skills-dec" tag="p">
-                  Since day one, our technique is focused on early results and transparent
+                  From day one, our technique is focused on early results and transparent
                   communication.
                 </Typography>
                 <div className="progress-outer-block">

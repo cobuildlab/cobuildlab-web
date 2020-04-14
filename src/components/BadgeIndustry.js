@@ -10,7 +10,7 @@ const BadgeIndustry = (props) => {
       </p>
       <div className="columns is-desktop is-mobile has-text-centered is-hidden-mobile is-marginless">
         <div className="column">
-          <p className="badge-industry">Advertising and Retailling</p>
+          <p className="badge-industry">Advertising and Retailing</p>
         </div>
         <div className="column">
           <p className="badge-industry">Fitness and Fashion</p>
@@ -24,7 +24,7 @@ const BadgeIndustry = (props) => {
       </div>
       <div className="columns is-desktop is-mobile has-text-centered is-hidden-tablet is-marginless">
         <div className="column is-paddingless">
-          <p className="badge-industry">Advertising and Retailling</p>
+          <p className="badge-industry">Advertising and Retailing</p>
         </div>
         <div className="column is-paddingless">
           <p className="badge-industry">Fitness and Fashion</p>

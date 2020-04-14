@@ -72,8 +72,7 @@ const HeroSection = () => (
               We partner with new and early-stage entrepreneurs and industry experts to transforms
               ideas into <br />
               <br />
-              Since day one, our technique is focused on early results and transparent
-              communication.
+              From day one, our technique is focused on early results and transparent communication.
             </Paragraph>
             <ButtonWrapper>
               <Button to="/blog/best-software-development-process/">Read More</Button>
@@ -95,7 +94,7 @@ const HeroSection = () => (
 
 export default HeroSection;
 
-/* 
+/*
 
 
               <TextOrange>Web and Mobile Software Products.</TextOrange>

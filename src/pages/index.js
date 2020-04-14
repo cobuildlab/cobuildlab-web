@@ -113,9 +113,8 @@ const H4Blue = (props) => (
 
 /**
  *
- * @param props - {Object} - The Props.
+ * @param {object} props -  - The Props.
  * @returns {*} - The Read More Component.
- * @class
  */
 function ReadMore(props) {
   return (
@@ -158,7 +157,7 @@ class Index extends React.Component {
     const siteTitle = 'Cobuild Lab | Software Development Company in Miami, Florida';
     const siteDescription =
       'We partner with new and early-stage non-technical entrepreneurs and industry experts to transforms ideas into Web and Mobile Software Products.\n' +
-      'Since day one, our technique is focused on early results and transparent communication.';
+      'From day one,  our technique is focused on early results and transparent communication.';
     const posts = get(this, 'props.data.allMarkdownRemark.edges');
     const siteKey = process.env.RECAPTCHA_SITEKEY;
 
@@ -197,7 +196,7 @@ class Index extends React.Component {
                     <span className={'orange-text'}>Web and Mobile Software Products.</span>
                     <br />
                     <br />
-                    Since day one, our technique is focused on early results and transparent
+                    From day one, our technique is focused on early results and transparent
                     communication.
                   </H4Blue>
                   <ReadMore onClick={this.openModal} />
@@ -228,7 +227,7 @@ class Index extends React.Component {
                     <span className={'orange-text'}>Web and Mobile Software Products.</span>
                     <br />
                     <br />
-                    Since day one, our technique is focused on early results and transparent
+                    From day one, our technique is focused on early results and transparent
                     communication.
                   </H4Blue>
                   <ReadMore onClick={this.openModal} />

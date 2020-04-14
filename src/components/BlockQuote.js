@@ -2,7 +2,8 @@ import React from 'react';
 import { Title, Container, Columns, Column } from 'bloomer';
 import { Icon } from 'react-icons-kit';
 import { ic_format_quote } from 'react-icons-kit/md/ic_format_quote';
-// library.add(faStroopwafel, faCheck, faCode, faLayerGroup, faTachometerAlt, faEnvelope,)
+import PropTypes from 'prop-types';
+
 class BlockQuote extends React.Component {
   render() {
     const { children, align } = this.props;
@@ -24,4 +25,10 @@ class BlockQuote extends React.Component {
     );
   }
 }
+
+BlockQuote.propTypes = {
+  children: PropTypes.node.isRequired,
+  align: PropTypes.string.isRequired,
+};
+
 export default BlockQuote;
