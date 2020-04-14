@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import { Container, Columns, Column, Footer as BloomerFooter } from 'bloomer';
-
 import Image from '../../components/image';
 import GoodFirms from '../../../2020/GoodFirms';
 import NewsLetterFormFooter from './NewsLetterFormFooter';
@@ -8,6 +7,7 @@ import FooterNavigation from './FooterNavigation';
 import ContactUsColumn from './ContactUsColumn';
 import { FooterWrapper, FooterLogoContainer } from './FooterComponents';
 import CopyRightFooter from './CopyRightFooter';
+import ClutchWidget from './ClutchWidget';
 
 import logo from '../../../../assets/images/cobuild-white-logo.png';
 
@@ -21,6 +21,7 @@ const Footer = () => (
               <FooterLogoContainer>
                 <Image Path={logo} Class="footer-logo" />
                 <GoodFirms />
+                <ClutchWidget />
               </FooterLogoContainer>
             </Column>
             <Column isSize={{ mobile: 12, desktop: 3 }}>
