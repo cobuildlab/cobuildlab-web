@@ -17,8 +17,11 @@ import NewsLetterForm from '../../../2020/NewsLetterForm';
 import FooterNavigation from './FooterNavigation';
 
 import './footer.scss';
+import { useScript } from '../../../../utils/hooks';
 
 const Footer = () => {
+  const [loaded, error] = useScript('https://widget.clutch.co/static/js/widget.js');
+
   return (
     <SectionFooter isPaddingless>
       <div className="footer-wrapper">
@@ -29,6 +32,17 @@ const Footer = () => {
                 <div className="footer-logo-wrapper">
                   <Image Path={logo} Class="footer-logo" />
                   <GoodFirms />
+                  CLUTCH:
+                  {loaded && (
+                    <div
+                      className="clutch-widget"
+                      data-url="https://widget.clutch.co"
+                      data-widget-type="1"
+                      data-height="500"
+                      data-darkbg="1"
+                      data-clutchcompany-id="615903"></div>
+                  )}
+                  {error ? error : ''}
                 </div>
               </Column>
               <Column isSize={{ mobile: 8, desktop: 3 }}>
