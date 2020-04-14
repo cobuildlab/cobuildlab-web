@@ -6,6 +6,7 @@ import addToMailchimp from 'gatsby-plugin-mailchimp';
 import SocialMedia from './SocialMedia';
 import styled from 'styled-components';
 import Button from '../../../2020/Button';
+import Error from '../../../Toast/Error';
 import { FooterTitleContainer, FooterTitle, FooterColumnContent } from './FooterComponents';
 
 const Container = styled.div`
@@ -30,8 +31,10 @@ const NewsLetterFormFooter = () => {
         event.preventDefault();
 
         if (!email.length) {
-          toast.error("Email can't be empty", {
+          toast.dismiss();
+          toast(<Error message="Email can't be empty" />, {
             position: 'bottom-right',
+            hideProgressBar: true,
           });
           return;
         }
@@ -44,8 +47,10 @@ const NewsLetterFormFooter = () => {
         }
 
         if (request.result === 'error') {
-          toast.error(request.msg, {
+          toast.dismiss();
+          toast(<Error message={request.msg} />, {
             position: 'bottom-right',
+            hideProgressBar: true,
           });
         }
         setLoading(false);
