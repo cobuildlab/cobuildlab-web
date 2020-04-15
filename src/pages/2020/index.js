@@ -2,7 +2,6 @@ import React, { PureComponent } from 'react';
 import Helmet from 'react-helmet';
 import get from 'lodash/get';
 import { HeroHeader, HeroBody, Hero, Section } from 'bloomer';
-
 import Layout from '../../components/2020/Layout';
 import Header from '../../components/2020/Header';
 import HeroBodyContent from '../../components/2020/Hero';
@@ -11,7 +10,7 @@ import BusinessValue from '../../components/2020/BusinessValue';
 import HomePageCustomerSuccessStories from '../../components/2020/HomePageCustomerSuccessStories';
 import OurTeam from '../../components/2020/OurTeam';
 import Contact from '../../components/2020/HomePageContact';
-
+import TestimonialHomePage from '../../components/2020/TestimonialHomePage';
 import 'react-toastify/dist/ReactToastify.min.css';
 import 'react-modal-video/scss/modal-video.scss';
 import 'bulma';
@@ -60,6 +59,9 @@ export default class HomePage extends PureComponent {
         </Section>
         <Section isPaddingless>
           <OurTeam />
+        </Section>
+        <Section isPaddingless>
+          <TestimonialHomePage />
         </Section>
         <Section>
           <Contact />
