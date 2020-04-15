@@ -12,6 +12,7 @@ import HomePageCustomerSuccessStories from '../../components/2020/HomePageCustom
 import OurTeam from '../../components/2020/OurTeam';
 import Contact from '../../components/2020/HomePageContact';
 import Newsletter from '../../components/2020/NewsLetter';
+import TestimonialHomePage from '../../components/2020/TestimonialHomePage';
 
 import 'react-toastify/dist/ReactToastify.min.css';
 import 'react-modal-video/scss/modal-video.scss';
@@ -61,6 +62,9 @@ export default class HomePage extends PureComponent {
         </Section>
         <Section isPaddingless>
           <OurTeam />
+        </Section>
+        <Section isPaddingless>
+          <TestimonialHomePage />
         </Section>
         <Section>
           <Contact />
