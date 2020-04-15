@@ -17,6 +17,11 @@ import { BtnOrange } from './ui-v3/btn/BtnOrange';
 import { BtnWhite } from './ui-v3/btn/BtnWhite';
 import { LabelTitle } from './ui-v3/LabelTitle';
 import { H2Subtitle } from './ui-v3/H2Subtitle';
+import Styled from 'styled-components';
+
+const StyledModal = Styled(Modal)`
+  z-index: 1000;
+`;
 
 class NewsletterModal extends React.Component {
   constructor(props) {
@@ -32,18 +37,26 @@ class NewsletterModal extends React.Component {
   }
 
   componentDidMount() {
-    const oldWeek = localStorage.getItem('week');
-    const toDay = Date.now();
+    const localOldDay = localStorage.getItem('oldDay');
+    if (localOldDay) {
+      const oldDay = new Date(JSON.parse(localOldDay));
+      const today = new Date();
+      const formToCalc3Months = 24 * 60 * 60 * 1000 * 30 * 3;
+      const threeMonthsBeforeToday = new Date(today.getTime() - formToCalc3Months);
+      const threeMonthsHavePassed = oldDay.getTime() - threeMonthsBeforeToday.getTime() <= 0;
 
-    window.onscroll = () => {
-      if (
-        this.calculateScrollDistance() === 50 &&
-        (oldWeek < toDay - 1 * 24 * 60 * 60 * 1000 || oldWeek === undefined)
-      ) {
-        localStorage.setItem('week', toDay);
-        this.handleModal(true);
-      }
-    };
+      if (threeMonthsHavePassed) this.handleModal(true);
+    } else this.handleModal(true);
+
+    // window.onscroll = () => {
+    //   if (
+    //     this.calculateScrollDistance() === 50 &&
+    //     (oldWeek < toDay - 1 * 24 * 60 * 60 * 1000 || oldWeek === undefined)
+    //   ) {
+    //     localStorage.setItem('week', toDay);
+    //     this.handleModal(true);
+    //   }
+    // };
   }
 
   calculateScrollDistance = () => {
@@ -96,6 +109,7 @@ class NewsletterModal extends React.Component {
       }
     });
     this.handleModal(false);
+    localStorage.setItem('oldDay', new Date().getTime());
   };
 
   handleModal = (showModal) => {
@@ -104,11 +118,16 @@ class NewsletterModal extends React.Component {
     });
   };
 
+  handleNoThanks = () => {
+    this.handleModal(false);
+    localStorage.setItem('oldDay', new Date().getTime());
+  };
+
   render() {
     const { showModal } = this.state;
 
     return (
-      <Modal isActive={showModal}>
+      <StyledModal isActive={showModal}>
         <ModalBackground style={{ backgroundColor: 'rgba(118, 132, 141, 1)', opacity: '0.5' }} />
         <ModalCard>
           <ModalCardBody
@@ -147,7 +166,7 @@ class NewsletterModal extends React.Component {
               <Field isGrouped style={{ justifyContent: 'flex-end' }}>
                 <Control>
                   <br />
-                  <BtnWhite handleModal={this.handleModal}>No Thanks</BtnWhite>
+                  <BtnWhite handleModal={this.handleNoThanks}>No Thanks</BtnWhite>
                 </Control>
                 <Control>
                   <br />
@@ -157,7 +176,7 @@ class NewsletterModal extends React.Component {
             </Container>
           </ModalCardBody>
         </ModalCard>
-      </Modal>
+      </StyledModal>
     );
   }
 }
