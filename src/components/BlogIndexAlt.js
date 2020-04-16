@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import get from 'lodash/get';
 import defaultImg from '../resources/default-post.jpg';
+import Header from './2020/Header';
 import {
   Hero,
+  HeroHeader,
   HeroBody,
   Container,
   Title,
@@ -21,13 +23,23 @@ import {
 import { Icon } from 'react-icons-kit';
 import { clockO } from 'react-icons-kit/fa/clockO';
 import PropTypes from 'prop-types';
+import Styled from 'styled-components';
 
-class headerBlog extends React.Component {
+const StyledTabs = Styled(Tabs)`
+  & ul li.is-active a {
+    background-color: transparent !important;
+  }
+`;
+
+class HeaderBlog extends Component {
   render() {
     const { activeTab, siteTitle, posts } = this.props;
     return (
       <React.Fragment>
-        <Hero isColor="white" isSize="small">
+        <Hero isSize="small">
+          <HeroHeader>
+            <Header />
+          </HeroHeader>
           <HeroBody>
             <Container hasTextAlign="centered">
               <Columns isCentered>
@@ -49,7 +61,7 @@ class headerBlog extends React.Component {
         </Hero>
         <section className="section-blog">
           <Container>
-            <Tabs isBoxed isFullWidth>
+            <StyledTabs isBoxed isFullWidth>
               <TabList>
                 <Tab>
                   <Link to="/blog">All</Link>
@@ -70,7 +82,7 @@ class headerBlog extends React.Component {
                   <Link to="/blog/tools">Tools</Link>
                 </Tab>
               </TabList>
-            </Tabs>
+            </StyledTabs>
             <Columns className="is-multiline">
               {posts ? (
                 posts.map(({ node }) => {
@@ -128,10 +140,10 @@ class headerBlog extends React.Component {
   }
 }
 
-headerBlog.propTypes = {
+HeaderBlog.propTypes = {
   activeTab: PropTypes.string.isRequired,
   siteTitle: PropTypes.string.isRequired,
   posts: PropTypes.array.isRequired,
 };
 
-export default headerBlog;
+export default HeaderBlog;
