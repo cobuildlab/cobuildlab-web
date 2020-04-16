@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Title, Subtitle, Field, Control, Input } from 'bloomer';
-import Button from './Button';
+import ButtonPrimary from './Button/ButtonPrimary';
 import { navigate, Link } from 'gatsby';
 import { toast, ToastContainer } from 'react-toastify';
 import LandingFormBadges from './LandingFormBadges';
@@ -201,9 +201,9 @@ export default class NewLandingForm extends Component {
             </Field>
             <Field>
               <Control>
-                <Button htmlType="submit" isLoading={isLoading}>
+                <ButtonPrimary type="submit" isLoading={isLoading}>
                   Submit
-                </Button>
+                </ButtonPrimary>
               </Control>
             </Field>
           </form>
