@@ -1,39 +1,42 @@
-import React, { memo, Fragment } from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
-import Typography from '../Typography';
-import componse from '../../../utils/styles-componse';
-import styles from './css/index.module.scss';
+import styled from 'styled-components';
+import ButtonLoading from './ButtonLoading';
+import { defaultStyle, primaryStyle, secondaryStyle } from './common-css';
 
-const text = {
-  default: {
-    fontWeight: 'normal',
-  },
-};
+const ButtonDefault = styled.button`
+  ${defaultStyle}
+  width: ${({ isBlock }) => (isBlock ? '100%' : 'auto')}
+`;
 
-const Loading = ({ isLoading, children }) => {
-  const childrenContainerStyle = styles[`display_${isLoading ? 'hidden' : 'block'}`];
-  const iconContainerStyles = componse(
-    styles.icon_container,
-    !isLoading ? styles.display_hidden : '',
-  );
+const ButtonPrimary = styled.button`
+  ${primaryStyle}
+  width: ${({ isBlock }) => (isBlock ? '100%' : 'auto')}
+`;
 
-  return (
-    <Fragment>
-      <span className={iconContainerStyles} />
-      <div className={childrenContainerStyle}>
-        <Typography tag="span" size={text} className={styles.button_text}>
-          {children}
-        </Typography>
-      </div>
-    </Fragment>
-  );
-};
+const ButtonSecondary = styled.button`
+  ${secondaryStyle}
+  width: ${({ isBlock }) => (isBlock ? '100%' : 'auto')}
+`;
 
-Loading.propTypes = {
-  isLoading: PropTypes.bool.isRequired,
-  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
-};
+const LinkContainer = styled.div`
+  & > a {
+    width: ${({ isBlock }) => (isBlock ? '100%' : 'auto')};
+  }
+`;
+
+const LinkDefault = styled(Link)`
+  ${defaultStyle}
+`;
+
+const LinkPrimary = styled(Link)`
+  ${primaryStyle}
+`;
+
+const LinkSecondary = styled(Link)`
+  ${secondaryStyle}
+`;
 
 /**
  * @author github @kikeztw
@@ -46,26 +49,61 @@ Loading.propTypes = {
  */
 
 const Button = ({ to, children, className, isLoading, htmlType, isBlock, type, ...rest }) => {
-  const buttonStyles = componse(
-    styles.button,
-    styles[`button_${type}`],
-    className,
-    isBlock ? styles.button_block : '',
-  );
-
   if (to && to.length) {
+    if (type === 'default') {
+      return (
+        <LinkContainer isBlock={isBlock}>
+          <LinkDefault to={to} {...rest} type={htmlType}>
+            <ButtonLoading isLoading={isLoading}>{children}</ButtonLoading>
+          </LinkDefault>
+        </LinkContainer>
+      );
+    }
+
+    if (type === 'primary') {
+      return (
+        <LinkContainer isBlock={isBlock}>
+          <LinkPrimary to={to} {...rest} type={htmlType}>
+            <ButtonLoading isLoading={isLoading}>{children}</ButtonLoading>
+          </LinkPrimary>
+        </LinkContainer>
+      );
+    }
+
+    if (type === 'secondary') {
+      return (
+        <LinkContainer isBlock={isBlock}>
+          <LinkSecondary to={to} {...rest} type={htmlType}>
+            <ButtonLoading isLoading={isLoading}>{children}</ButtonLoading>
+          </LinkSecondary>
+        </LinkContainer>
+      );
+    }
+  }
+
+  if (type === 'default') {
     return (
-      <Link {...rest} to={to} className={buttonStyles}>
-        <Loading isLoading={isLoading}>{children}</Loading>
-      </Link>
+      <ButtonDefault type={htmlType} isBlock={isBlock}>
+        <ButtonLoading isLoading={isLoading}>{children}</ButtonLoading>
+      </ButtonDefault>
     );
   }
 
-  return (
-    <button type={htmlType} {...rest} className={buttonStyles}>
-      <Loading isLoading={isLoading}>{children}</Loading>
-    </button>
-  );
+  if (type === 'primary') {
+    return (
+      <ButtonPrimary type={htmlType} isBlock={isBlock}>
+        <ButtonLoading isLoading={isLoading}>{children}</ButtonLoading>
+      </ButtonPrimary>
+    );
+  }
+
+  if (type === 'secondary') {
+    return (
+      <ButtonSecondary type={htmlType} isBlock={isBlock}>
+        <ButtonLoading isLoading={isLoading}>{children}</ButtonLoading>
+      </ButtonSecondary>
+    );
+  }
 };
 
 Button.defaultProps = {
