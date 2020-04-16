@@ -5,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import addToMailchimp from 'gatsby-plugin-mailchimp';
 import SocialMedia from './SocialMedia';
 import styled from 'styled-components';
-import Button from '../../../2020/Button';
+import ButtonDefault from '../../../2020/Button/ButtonDefault';
 import Error from '../../../Toast/Error';
 import { FooterTitleContainer, FooterTitle, FooterColumnContent } from './FooterComponents';
 
@@ -85,9 +85,9 @@ const NewsLetterFormFooter = () => {
           </Field>
           <Field>
             <Control>
-              <Button isLoading={loading} htmlType="submit" isBlock>
+              <ButtonDefault isLoading={loading} type="submit" isBlock>
                 Submit
-              </Button>
+              </ButtonDefault>
             </Control>
           </Field>
         </form>

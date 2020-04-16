@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { navigate } from 'gatsby';
 import styled, { css } from 'styled-components';
-import Button from '../2020/Button';
+import ButtonDefault from '../2020/Button/ButtonDefault';
 
 // max-width: 510px;
 // max-height: 468px;
@@ -103,7 +103,7 @@ const CustomerSuccessStoriesCard = ({ title, description, image, to }) => {
         <CardTitle>{title}</CardTitle>
         <CardDescription>{description}</CardDescription>
         <ButtonWrapper>
-          <Button>READ MORE</Button>
+          <ButtonDefault>READ MORE</ButtonDefault>
         </ButtonWrapper>
       </CardHoverContainer>
     </CardContainer>

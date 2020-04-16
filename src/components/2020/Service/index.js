@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Columns, Column } from 'bloomer';
-import Button from '../Button';
+import ButtonDefault from '../Button/ButtonDefault';
 import Typography from '../Typography';
 import styles from './css/index.module.scss';
 
@@ -40,21 +40,15 @@ const paragraph = {
 
 const Card = ({ children }) => (
   <Column className={styles.service_column} isSize={4}>
-    <div className={styles.service_item}>
-      {children}
-    </div>
+    <div className={styles.service_item}>{children}</div>
   </Column>
 );
 
 Card.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node), 
-    PropTypes.node
-  ]).isRequired,
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
 
-
-const CardImage= ({ src }) => (
+const CardImage = ({ src }) => (
   <div className={styles.service_icon_container}>
     <img src={src} alt="service-icon" className={styles.service_img} />
   </div>
@@ -64,48 +58,39 @@ CardImage.propTypes = {
   src: PropTypes.string.isRequired,
 };
 
-
 const CardTitle = ({ children }) => (
   <Typography tag="h4" size={subTitle} hasTextAlign="left">
     {children}
   </Typography>
-); 
+);
 
 CardTitle.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node), 
-    PropTypes.node
-  ]).isRequired,
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
-
 
 const CartCaption = ({ children }) => (
   <Typography tag="p" size={paragraph}>
     {children}
   </Typography>
-); 
+);
 
 CartCaption.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node), 
-    PropTypes.node
-  ]).isRequired,
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
 
 const CardFooter = ({ to }) => (
   <div className={styles.service_item_footer}>
-    <Button>Read more</Button>
+    <ButtonDefault>Read more</ButtonDefault>
   </div>
 );
 
-CardFooter.defaultProps =  {
-  to: ''
+CardFooter.defaultProps = {
+  to: '',
 };
 
 CardFooter.propTypes = {
-  to: PropTypes.string
+  to: PropTypes.string,
 };
-
 
 const Services = () => (
   <Container>
@@ -118,37 +103,29 @@ const Services = () => (
       <Columns>
         <Card>
           <CardImage src={icon1} />
-          <CardTitle>
-              Product development
-          </CardTitle>
-          <CartCaption >
-              Problem-solution fit: Observe the Customer, 
-              think as the Customer, be the Customer.
+          <CardTitle>Product development</CardTitle>
+          <CartCaption>
+            Problem-solution fit: Observe the Customer, think as the Customer, be the Customer.
           </CartCaption>
           <CardFooter />
         </Card>
         <Card>
           <CardImage src={icon2} />
-          <CardTitle>
-              Software development
-          </CardTitle>
+          <CardTitle>Software development</CardTitle>
           <CartCaption>
-              It&apos;s time to build!. We combine a 
-              multidisciplinary team to build the idea.
-              Minimum Viable Product (MVP)
+            It&apos;s time to build!. We combine a multidisciplinary team to build the idea. Minimum
+            Viable Product (MVP)
           </CartCaption>
           <CardFooter />
         </Card>
         <Card>
           <CardImage src={icon3} />
           <CardTitle>
-              Education <br /> and training
+            Education <br /> and training
           </CardTitle>
           <CartCaption>
-              Identity, purpose, values, and the correct 
-              tools for launching are the main purpose
-              of this step. - Branding - WebSite and 
-              Social Networks - Strategy
+            Identity, purpose, values, and the correct tools for launching are the main purpose of
+            this step. - Branding - WebSite and Social Networks - Strategy
           </CartCaption>
           <CardFooter />
         </Card>

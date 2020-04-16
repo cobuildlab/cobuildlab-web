@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Column, Columns } from 'bloomer';
 import styled from 'styled-components';
-import Button from './Button';
+import LinkButtonDefault from './Button/LinkButtonDefault';
 import Image from './Image';
 import VideoPlayIcon from './VideoPlayIcon';
 import Hero from '../Typography/H1';
@@ -75,7 +75,9 @@ const HeroSection = () => (
               From day one, our technique is focused on early results and transparent communication.
             </Paragraph>
             <ButtonWrapper>
-              <Button to="/blog/best-software-development-process/">Read More</Button>
+              <LinkButtonDefault to="/blog/best-software-development-process/">
+                Read More
+              </LinkButtonDefault>
             </ButtonWrapper>
           </HeroBody>
         </Column>

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { navigate } from 'gatsby';
 import { ToastContainer, toast } from 'react-toastify';
 import { Field, Control, Input, TextArea } from 'bloomer';
-import Button from './Button';
+import ButtonDefault from './Button/ButtonDefault';
 import Error from '../Toast/Error';
 import Success from '../Toast/Success';
 export default class Contact extends PureComponent {
@@ -181,9 +181,9 @@ export default class Contact extends PureComponent {
         </Field>
         <Field isGrouped>
           <Control>
-            <Button isLoading={isLoading} htmlType="submit">
+            <ButtonDefault isLoading={isLoading} type="submit">
               {btnText}
-            </Button>
+            </ButtonDefault>
           </Control>
         </Field>
       </form>

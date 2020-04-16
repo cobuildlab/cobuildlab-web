@@ -4,7 +4,7 @@ import { Container, Columns, Column, Section } from 'bloomer';
 import { objectGroup, areaChart, cogs, users } from 'react-icons-kit/fa';
 import PreviewIcon from '../../components/icon';
 import Typrography from '../../../2020/Typography';
-import SmoothScrollingButton from '../../../SmoothScrollingButton';
+import ButtonSmoothScrolling from '../../../2020/Button/ButtonSmoothScrolling';
 import './service.scss';
 
 const ConentContainer = ({ children }) => (
@@ -88,9 +88,9 @@ const Service = () => {
                     - Lack of the necessary expertise
                   </Typrography>
                   <br />
-                  <SmoothScrollingButton href="#contact">
+                  <ButtonSmoothScrolling href="#contact">
                     Get a Free Consultation
-                  </SmoothScrollingButton>
+                  </ButtonSmoothScrolling>
                 </div>
               </ConentContainer>
             </Column>
