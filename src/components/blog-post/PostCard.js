@@ -9,6 +9,9 @@ const Contaner = styled.div`
   width: 100%;
   height: 100%;
   padding: 2em;
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
 `;
 
 const Redirect = styled(Link)`

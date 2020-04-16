@@ -37,6 +37,7 @@ const RecentPosts = () => {
         to={node.fields.slug}
         src={node.frontmatter.image.publicURL}
         title={node.frontmatter.title}
+        alt={node.frontmatter.title}
         description={node.excerpt}
       />
     </Column>
