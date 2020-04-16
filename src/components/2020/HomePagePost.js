@@ -13,7 +13,7 @@ const TitleContainer = styled.div`
 const HomePagePost = () => (
   <Container>
     <TitleContainer>
-      <H2>Recent Post</H2>
+      <H2>Recent Posts</H2>
     </TitleContainer>
     <RecentPost />
   </Container>
