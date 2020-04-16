@@ -37,26 +37,14 @@ class NewsletterModal extends React.Component {
   }
 
   componentDidMount() {
-    const localOldDay = localStorage.getItem('oldDay');
-    if (localOldDay) {
-      const oldDay = new Date(JSON.parse(localOldDay));
+    const localNextTime = localStorage.getItem('nextTime');
+    if (localNextTime) {
+      const nextTime = new Date(JSON.parse(localNextTime));
       const today = new Date();
-      const formToCalc3Months = 24 * 60 * 60 * 1000 * 30 * 3;
-      const threeMonthsBeforeToday = new Date(today.getTime() - formToCalc3Months);
-      const threeMonthsHavePassed = oldDay.getTime() - threeMonthsBeforeToday.getTime() <= 0;
+      const timeExpired = today.getTime() >= nextTime.getTime();
 
-      if (threeMonthsHavePassed) this.handleModal(true);
+      if (timeExpired) this.handleModal(true);
     } else this.handleModal(true);
-
-    // window.onscroll = () => {
-    //   if (
-    //     this.calculateScrollDistance() === 50 &&
-    //     (oldWeek < toDay - 1 * 24 * 60 * 60 * 1000 || oldWeek === undefined)
-    //   ) {
-    //     localStorage.setItem('week', toDay);
-    //     this.handleModal(true);
-    //   }
-    // };
   }
 
   calculateScrollDistance = () => {
@@ -109,7 +97,8 @@ class NewsletterModal extends React.Component {
       }
     });
     this.handleModal(false);
-    localStorage.setItem('oldDay', new Date().getTime());
+    const formToCalcYear = 24 * 60 * 60 * 1000 * 30 * 12;
+    localStorage.setItem('nextTime', new Date().getTime() + formToCalcYear);
   };
 
   handleModal = (showModal) => {
@@ -120,7 +109,8 @@ class NewsletterModal extends React.Component {
 
   handleNoThanks = () => {
     this.handleModal(false);
-    localStorage.setItem('oldDay', new Date().getTime());
+    const formToCalcMonth = 24 * 60 * 60 * 1000 * 30;
+    localStorage.setItem('nextTime', new Date().getTime() + formToCalcMonth);
   };
 
   render() {
