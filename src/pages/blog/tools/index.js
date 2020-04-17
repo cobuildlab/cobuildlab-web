@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { graphql } from 'gatsby';
 import get from 'lodash/get';
 import Helmet from 'react-helmet';
-import Layout from '../../../components/layout';
+import Layout from '../../../components/2020/Layout';
 import BlogIndexAlt from '../../../components/BlogIndexAlt';
 
-class ToolsIndex extends React.Component {
+class Tools extends Component {
   render() {
     const siteTitle = 'The Blog for Software Entrepreneurs';
     const siteDescription = get(this, 'props.data.site.siteMetadata.description');
@@ -25,7 +25,7 @@ class ToolsIndex extends React.Component {
   }
 }
 
-export default ToolsIndex;
+export default Tools;
 
 export const pageQuery = graphql`
   query {

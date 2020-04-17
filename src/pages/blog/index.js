@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link, graphql } from 'gatsby';
 import get from 'lodash/get';
 import Helmet from 'react-helmet';
-import Layout from '../../components/layout';
+import Layout from '../../components/2020/Layout';
+import Header from '../../components/2020/Header';
 import {
   Hero,
+  HeroHeader,
   HeroBody,
   Container,
   Title,
@@ -22,18 +24,8 @@ import {
 import { Icon } from 'react-icons-kit';
 import { clockO } from 'react-icons-kit/fa/clockO';
 import 'bulma';
-import '../../assets/fonts/Lato-Black.ttf';
-import '../../assets/fonts/Lato-BlackItalic.ttf';
-import '../../assets/fonts/Lato-Bold.ttf';
-import '../../assets/fonts/Lato-BoldItalic.ttf';
-import '../../assets/fonts/Lato-Hairline.ttf';
-import '../../assets/fonts/Lato-HairlineItalic.ttf';
-import '../../assets/fonts/Lato-Italic.ttf';
-import '../../assets/fonts/Lato-Light.ttf';
-import '../../assets/fonts/Lato-LightItalic.ttf';
-import '../../assets/fonts/Lato-Regular.ttf';
 
-class BlogIndex extends React.Component {
+class Blog extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -43,7 +35,7 @@ class BlogIndex extends React.Component {
 
   render() {
     const siteTitle = 'The Blog for Software Entrepreneurs';
-    const siteDescription = get(this, 'props.data.site.siteMetadata.description');
+    // const siteDescription = get(this, 'props.data.site.siteMetadata.description');
     const posts = get(this, 'props.data.allMarkdownRemark.edges');
 
     return (
@@ -54,7 +46,10 @@ class BlogIndex extends React.Component {
           title={siteTitle}
         />
 
-        <Hero isColor="white" isSize="small">
+        <Hero isSize="small">
+          <HeroHeader>
+            <Header />
+          </HeroHeader>
           <HeroBody>
             <Container hasTextAlign="centered">
               <Columns isCentered>
@@ -145,7 +140,7 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex;
+export default Blog;
 
 export const pageQuery = graphql`
   query {

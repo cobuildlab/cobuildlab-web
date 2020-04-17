@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import LayoutPost from '../components/layoutPost';
 import { Link, graphql } from 'gatsby';
@@ -19,19 +19,21 @@ import get from 'lodash/get';
 import defaultImg from '../resources/default-post.jpg';
 import rehypeReact from 'rehype-react';
 import 'bulma';
-import '../assets/fonts/Lato-Black.ttf';
-import '../assets/fonts/Lato-BlackItalic.ttf';
-import '../assets/fonts/Lato-Bold.ttf';
-import '../assets/fonts/Lato-BoldItalic.ttf';
-import '../assets/fonts/Lato-Hairline.ttf';
-import '../assets/fonts/Lato-HairlineItalic.ttf';
-import '../assets/fonts/Lato-Italic.ttf';
-import '../assets/fonts/Lato-Light.ttf';
-import '../assets/fonts/Lato-LightItalic.ttf';
-import '../assets/fonts/Lato-Regular.ttf';
+
 import { Hero, Container, Title, Columns, Column, Card, CardContent, Content } from 'bloomer';
 import TTSVoice from '../components/TTSVoice';
 import PropTypes from 'prop-types';
+
+// TODO: NEW TYPOGRAPHY
+// import H1 from '../components/Typography/H1';
+// import Paragraph from '../components/Typography/Paragraph';
+
+import Styled from 'styled-components';
+
+const StyledContainer = Styled(Container)`
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+`;
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -49,7 +51,7 @@ const renderAst = new rehypeReact({
   },
 }).Compiler;
 
-class BlogPostTemplate extends React.Component {
+class BlogPostTemplate extends Component {
   render() {
     const post = this.props.data.markdownRemark;
     const twitterHandle = get(this.props, 'data.site.siteMetadata.twitterHandle');
@@ -71,14 +73,14 @@ class BlogPostTemplate extends React.Component {
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
 
-        <Hero isColor="white" isSize="large">
-          <Container hasTextAlign="centered">
+        <Hero isSize="large">
+          <StyledContainer hasTextAlign="centered">
             <Title tag="h3" isSize={1} hasTextColor="Black">
               {post.frontmatter.title}
             </Title>
             <br />
             <hr />
-          </Container>
+          </StyledContainer>
           {/* WITH GATSBY ALWAYS USE <IMG fluid={}>
             Because it handles the device size img for you*/}
           {/* <HeroBody

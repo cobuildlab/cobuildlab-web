@@ -1,21 +1,24 @@
 import React from 'react';
-import { Link, withPrefix } from 'gatsby';
 import '../assets/css/index.css';
 import HeaderPost from './headerPost';
-import MyFooter from './footer';
+import Layout from './2020/Layout';
+import PropTypes from 'prop-types';
 
 class LayoutPost extends React.Component {
   render() {
     const { children } = this.props;
-    const siteKey = process.env.RECAPTCHA_SITEKEY;
+    // const siteKey = process.env.RECAPTCHA_SITEKEY;
     return (
-      <div className="content">
-        <HeaderPost/>
+      <Layout>
+        <HeaderPost />
         {children}
-        <MyFooter siteKey={siteKey} />
-      </div>
+      </Layout>
     );
   }
 }
+
+LayoutPost.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+};
 
 export default LayoutPost;
