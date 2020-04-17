@@ -10,7 +10,7 @@ import {
   NavbarMenu,
   NavbarEnd,
 } from 'bloomer';
-import Button from '../Button';
+import LinkButtonDefault from '../Button/LinkButtonDefault';
 import Image from '../Image';
 
 import logo from '../../../resources/cobuildlab.png';
@@ -97,9 +97,7 @@ const Header = () => {
               </NavbarItem>
               <NavbarItem>
                 <div className={styles.nav_item}>
-                  <Button to="/#contact" className={styles.nav_link_spacing}>
-                    Contact Us
-                  </Button>
+                  <LinkButtonDefault to="/#contact">Contact Us</LinkButtonDefault>
                 </div>
               </NavbarItem>
               <SocialIcon isHidden="mobile" />

@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Footer from '../enterprise/containers/footer';
+import Footer from '../enterprise/containers/footer/Footer';
 import styled from 'styled-components';
 import '../../assets/css/2020/common.scss';
 import 'bulma';
+import NewsletterModal from '../NewsletterModal';
 
 const Container = styled.div`
   background-color: #f4f6fb !important;
@@ -16,6 +17,7 @@ const Wrapper = styled.div`
 
 const Layout = ({ children }) => (
   <Container>
+    <NewsletterModal />
     <Wrapper>{children}</Wrapper>
     <Footer />
   </Container>

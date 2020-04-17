@@ -37,7 +37,7 @@ const HomePageContact = () => (
         <H2>Let’s Talk!</H2>
         <SubTitle>Your business takes off right now</SubTitle>
         <Description>
-          <TextOrange>Where are we?</TextOrange>
+          <TextOrange>Where are we? </TextOrange>
           66 West Flagler St, Suite 900, Miami, Florida 33130 +1 (786) 991-3467
           contact@cobuildlab.com
         </Description>

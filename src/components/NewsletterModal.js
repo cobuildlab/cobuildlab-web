@@ -17,6 +17,11 @@ import { BtnOrange } from './ui-v3/btn/BtnOrange';
 import { BtnWhite } from './ui-v3/btn/BtnWhite';
 import { LabelTitle } from './ui-v3/LabelTitle';
 import { H2Subtitle } from './ui-v3/H2Subtitle';
+import Styled from 'styled-components';
+
+const StyledModal = Styled(Modal)`
+  z-index: 1000;
+`;
 
 class NewsletterModal extends React.Component {
   constructor(props) {
@@ -32,18 +37,14 @@ class NewsletterModal extends React.Component {
   }
 
   componentDidMount() {
-    const oldWeek = localStorage.getItem('week');
-    const toDay = Date.now();
+    const localNextTime = localStorage.getItem('nextTime');
+    if (localNextTime) {
+      const nextTime = new Date(JSON.parse(localNextTime));
+      const today = new Date();
+      const timeExpired = today.getTime() >= nextTime.getTime();
 
-    window.onscroll = () => {
-      if (
-        this.calculateScrollDistance() === 50 &&
-        (oldWeek < toDay - 1 * 24 * 60 * 60 * 1000 || oldWeek === undefined)
-      ) {
-        localStorage.setItem('week', toDay);
-        this.handleModal(true);
-      }
-    };
+      if (timeExpired) this.handleModal(true);
+    } else this.handleModal(true);
   }
 
   calculateScrollDistance = () => {
@@ -96,6 +97,8 @@ class NewsletterModal extends React.Component {
       }
     });
     this.handleModal(false);
+    const formToCalcYear = 24 * 60 * 60 * 1000 * 30 * 12;
+    localStorage.setItem('nextTime', new Date().getTime() + formToCalcYear);
   };
 
   handleModal = (showModal) => {
@@ -104,11 +107,17 @@ class NewsletterModal extends React.Component {
     });
   };
 
+  handleNoThanks = () => {
+    this.handleModal(false);
+    const formToCalcMonth = 24 * 60 * 60 * 1000 * 30;
+    localStorage.setItem('nextTime', new Date().getTime() + formToCalcMonth);
+  };
+
   render() {
     const { showModal } = this.state;
 
     return (
-      <Modal isActive={showModal}>
+      <StyledModal isActive={showModal}>
         <ModalBackground style={{ backgroundColor: 'rgba(118, 132, 141, 1)', opacity: '0.5' }} />
         <ModalCard>
           <ModalCardBody
@@ -147,7 +156,7 @@ class NewsletterModal extends React.Component {
               <Field isGrouped style={{ justifyContent: 'flex-end' }}>
                 <Control>
                   <br />
-                  <BtnWhite handleModal={this.handleModal}>No Thanks</BtnWhite>
+                  <BtnWhite handleModal={this.handleNoThanks}>No Thanks</BtnWhite>
                 </Control>
                 <Control>
                   <br />
@@ -157,7 +166,7 @@ class NewsletterModal extends React.Component {
             </Container>
           </ModalCardBody>
         </ModalCard>
-      </Modal>
+      </StyledModal>
     );
   }
 }

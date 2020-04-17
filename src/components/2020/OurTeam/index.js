@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Columns, Column } from 'bloomer';
-import Button from '../Button';
+import ButtonDefault from '../Button/ButtonDefault';
 import Typography from '../Typography';
 import Image from '../Image';
 import styles from './css/index.module.scss';
@@ -41,7 +41,7 @@ const OurTeam = () => (
         </Column>
       </Columns>
       <div className={styles.our_team_redirect}>
-        <Button>read more</Button>
+        <ButtonDefault>read more</ButtonDefault>
       </div>
     </div>
   </Container>

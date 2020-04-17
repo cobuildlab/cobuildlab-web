@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Columns, Column } from 'bloomer';
 import Typography from '../Typography';
-import Button from '../Button';
+import ButtonDefault from '../Button/ButtonDefault';
 import Image from '../Image';
 
 import styles from './css/index.module.scss';
@@ -124,7 +124,7 @@ const ContentFooter = ({ direction, to }) => {
   );
   return (
     <div className={className}>
-      <Button to={to}>read more</Button>
+      <ButtonDefault to={to}>read more</ButtonDefault>
     </div>
   );
 };

@@ -32,7 +32,7 @@ const Testimonial = () => {
         <div className="enterprise-section">
           <Container isFluid>
             <Wrapper>
-              <Title>Testimonals</Title>
+              <Title>Testimonials</Title>
               <H4>
                 <AlignCenter>
                   Clients<TextOrange>Feedback</TextOrange>

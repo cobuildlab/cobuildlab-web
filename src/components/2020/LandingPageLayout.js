@@ -3,8 +3,8 @@ import Helmet from 'react-helmet';
 import { Container, Hero, HeroBody, HeroHeader } from 'bloomer';
 import LandingHeader from './LandingHeader';
 import BannerBackground from './BannerBackground';
-import Footer from '../enterprise/containers/footer';
-import CopyRight from '../enterprise/containers/copyright_text';
+import Footer from '../enterprise/containers/footer/Footer';
+import NewsletterModal from '../NewsletterModal';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
@@ -32,7 +32,6 @@ const LandingPageLayout = ({ siteDescription, siteTitle, withFooter, children })
     footer = (
       <Fragment>
         <Footer />
-        <CopyRight />
       </Fragment>
     );
 
@@ -43,6 +42,7 @@ const LandingPageLayout = ({ siteDescription, siteTitle, withFooter, children })
         meta={[{ name: 'description', content: siteDescription }]}
         title={siteTitle}
       />
+      <NewsletterModal />
       <Wrapper>
         <Hero>
           <HeroHeader>
