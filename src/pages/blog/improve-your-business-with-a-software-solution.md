@@ -11,7 +11,7 @@ And history has taught us that every major crisis gives us opportunities to grow
 
 Can a <a target="_blank" href="https://cobuildlab.com/blog/enterprise-software-solutions-tools/"> software solution </a> improve your business?  Everything from using email autoresponders to automated workflow can help you redefine your relationship with the customer and open up new revenue streams for you. It's time for you to use technology and automation to make your business more efficient. <br> </br>
 
-We transform Small and Medium size businesses by automating manual processes and task
+We transform Small and Medium-sized businesses by automating manual processes and task
 into optimized and streamlined workflows with Web and Mobile custom software.<br> </br>
 
 Write to us, and we'll help you define your goals,  get in touch with your audience, seize the opportunity, and get real results. Let's build an app! <br> </br>

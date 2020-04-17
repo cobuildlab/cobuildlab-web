@@ -24,7 +24,7 @@ import { Stack } from '../../components/2020/Stack';
 
 export default class AppsDevStudy extends Component {
   render() {
-    const siteTitle = 'Hire Remote Javascript and Python Developers';
+    const siteTitle = 'Hire Remote Software Developers for Javascript and Python';
     const siteDescription = `
       Solve your technical needs by hiring remote developers at affordable rates.
       `;
@@ -56,7 +56,7 @@ export default class AppsDevStudy extends Component {
               </li>
             </ul>
             <SmoothScrollingButton href="#landing-contact-form">
-              Set a FREE 1 hour Consultation
+              Book a FREE 1 hour Consultation
             </SmoothScrollingButton>
           </Column>
 

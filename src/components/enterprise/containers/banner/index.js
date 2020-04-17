@@ -92,7 +92,7 @@ const Banner = (props) => {
                       Great<span className=" enterprise-text-orange"> Idea.</span>
                     </Typrography>
                     <Typrography size={subTitle} tag="p" className="banner-dec">
-                      We transform Small and Medium size businesses by automating your processes
+                      We transform Small and Medium-sized businesses by automating your processes
                       into optimized, and streamlined workflows with Web and Mobile custom software.
                     </Typrography>
                     <br />

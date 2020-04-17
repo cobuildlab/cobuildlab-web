@@ -43,7 +43,7 @@ export default class AppsDevStudy extends Component {
               </li>
             </ul>
             <SmoothScrollingButton href="#landing-contact-form">
-              Set a FREE 1 hour Consultation
+              Book a FREE 1 hour Consultation
             </SmoothScrollingButton>
           </Column>
 
