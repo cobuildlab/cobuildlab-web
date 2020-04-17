@@ -20,7 +20,10 @@ import { H2Subtitle } from './ui-v3/H2Subtitle';
 import Styled from 'styled-components';
 
 const StyledModal = Styled(Modal)`
-  z-index: 1000;
+  z-index: -1;
+  &.is-active {
+    z-index: 1000;
+  }
 `;
 
 class NewsletterModal extends React.Component {
