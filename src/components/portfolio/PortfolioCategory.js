@@ -1,19 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Tag = styled.li`
   display: inline;
-  padding: .25em 2.5em;
-  border: ${ ({ isActive }) => isActive ? 'none' : ' 1px solid #406073'  };
+  padding: 0.25em 2.5em;
+  border: ${({ isActive }) => (isActive ? 'none' : ' 1px solid #406073')};
   font-weight: bold;
   font-size: 18px;
-  color: #${({ isActive }) => isActive ? 'fff' : '406073' };
+  color: #${({ isActive }) => (isActive ? 'fff' : '406073')};
   text-align: center;
-  margin-bottom: .5em;
-  background-color: ${({ isActive }) => isActive ? '#E76C29' : 'transparent' };
-  box-shadow: ${({ isActive }) => isActive ? '0px 8px 25px #E76C2999' : 'none' };
+  margin-bottom: 0.5em;
+  background-color: ${({ isActive }) => (isActive ? '#E76C29' : 'transparent')};
+  box-shadow: ${({ isActive }) => (isActive ? '0px 8px 25px #E76C2999' : 'none')};
 `;
-
 
 const Container = styled.ul`
   display: inline-flex;
@@ -23,18 +23,25 @@ const Container = styled.ul`
   margin-bottom: 2.5em;
 `;
 
-const PortfolioCategory = () => (
+/**
+ *
+ * @property {string} - Type enum -> web | web/app | app.
+ */
+
+const PortfolioCategory = ({ type }) => (
   <Container>
-    <Tag>
-      Web
-    </Tag>
-    <Tag>
-      Web/App
-    </Tag>
-    <Tag isActive>
-      App
-    </Tag>
+    <Tag isActive={type === 'web'}>Web</Tag>
+    <Tag isActive={type === 'web/app'}>Web/App</Tag>
+    <Tag isActive={type === 'app'}>App</Tag>
   </Container>
 );
+
+PortfolioCategory.defaultProps = {
+  type: 'app',
+};
+
+PortfolioCategory.propTypes = {
+  type: PropTypes.oneOf(['web', 'web/app', 'app']),
+};
 
 export default PortfolioCategory;

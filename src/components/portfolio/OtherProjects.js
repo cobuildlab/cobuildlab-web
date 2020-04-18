@@ -3,15 +3,14 @@ import styled from 'styled-components';
 
 const List = styled.li`
   display: inline;
-  padding: .25em 0;
+  padding: 0.25em 0;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   color: #406073;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   cursor: pointer;
   font-weight: lighter;
 `;
-
 
 const Container = styled.ul`
   display: inline-flex;
