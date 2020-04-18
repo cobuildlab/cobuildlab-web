@@ -3,15 +3,15 @@ import Helmet from 'react-helmet';
 import { Container, Columns, Column, HeroHeader, HeroBody, Hero, Section } from 'bloomer';
 import styled from 'styled-components';
 
-import Layout from '../components/2020/Layout';
-import Header from '../components/2020/Header';
-import BannerBackground from '../components/2020/BannerBackground';
+import Layout from '../../components/2020/Layout';
+import Header from '../../components/2020/Header';
+import BannerBackground from '../../components/2020/BannerBackground';
 
-import HeroTitle from '../components/portfolio/HeroTitle';
-import H6 from '../components/Typography/H6';
-import PortfolioDescription from '../components/portfolio/PortfolioDescription';
-import PortfolioCategory from '../components/portfolio/PortfolioCategory';
-import OtherProjects from '../components/portfolio/OtherProjects';
+import HeroTitle from '../../components/portfolio/HeroTitle';
+import H6 from '../../components/Typography/H6';
+import PortfolioDescription from '../../components/portfolio/PortfolioDescription';
+import PortfolioCategory from '../../components/portfolio/PortfolioCategory';
+import OtherProjects from '../../components/portfolio/OtherProjects';
 
 const siteTitle = 'Portfolio | Cobuild Lab';
 
@@ -45,7 +45,7 @@ const Portfolio = () => (
               <H6>Category</H6>
               <PortfolioCategory type="app" />
               <H6>More Projects</H6>
-              <OtherProjects />
+              <OtherProjects current="Okroo" />
             </Column>
             <Column isSize={{ mobile: 12, desktop: 9 }}>
               <PortfolioDescription title="Okroo">

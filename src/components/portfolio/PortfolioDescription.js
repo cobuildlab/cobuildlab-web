@@ -12,17 +12,21 @@ const TitleContainer = styled.div`
   margin-bottom: 2em;
 `;
 
-const PortfolioDescription = ({ description, title }) => (
+const Content = styled(Paragraph)`
+  line-height: 1.5;
+`;
+
+const PortfolioDescription = ({ children, title }) => (
   <Container>
     <TitleContainer>
       <H1>{title}</H1>
     </TitleContainer>
-    <Paragraph>{description}</Paragraph>
+    <Content>{children}</Content>
   </Container>
 );
 
 PortfolioDescription.propTypes = {
-  description: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
   title: PropTypes.string.isRequired,
 };
 
