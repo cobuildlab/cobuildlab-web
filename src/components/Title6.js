@@ -1,14 +1,31 @@
 import React from 'react';
 import { Title } from 'bloomer';
-// library.add(faStroopwafel, faCheck, faCode, faLayerGroup, faTachometerAlt, faEnvelope,)
+import Styled from 'styled-components';
+import PropTypes from 'prop-types';
+
+const StyledTitle = Styled(Title)`
+  color: #264A60;
+  font-family: 'Lato-bold',sans-serif;
+`;
+
 class Title6 extends React.Component {
   render() {
     const { children, align } = this.props;
     return (
-      <Title tag="h6" isSize={6} style={{ marginBottom: 15, marginTop: 15 }} hasTextAlign={align}>
+      <StyledTitle
+        tag="h6"
+        isSize={6}
+        style={{ marginBottom: 15, marginTop: 15 }}
+        hasTextAlign={align}>
         {children}
-      </Title>
+      </StyledTitle>
     );
   }
 }
+
+Title6.propTypes = {
+  children: PropTypes.object.isRequired,
+  align: PropTypes.string.isRequired,
+};
+
 export default Title6;

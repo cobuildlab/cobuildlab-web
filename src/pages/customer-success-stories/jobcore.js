@@ -16,9 +16,14 @@ import DetailsOtherStories from '../../components/customer-success-stories/Detai
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
-import img1 from '../../assets/images/customers/laptop-left.png';
-import img2 from '../../assets/images/customers/laptop-right.png';
 import logo from '../../assets/images/customers/collabtogrow-logo.png';
+
+import textImg2 from '../../assets/images/customers/jobcore/slider/joc1.jpg';
+import textImg1 from '../../assets/images/customers/jobcore/text-img-1.png';
+//slider images
+import slider2 from '../../assets/images/customers/jobcore/slider/joc2.jpg';
+import slider3 from '../../assets/images/customers/jobcore/slider/joc3.jpg';
+import slider4 from '../../assets/images/customers/jobcore/slider/joc4.jpg';
 
 const Jobcore = () => (
   <DetailLayout>
@@ -84,7 +89,7 @@ const Jobcore = () => (
       </Container>
     </Section>
 
-    <DetailSectionImageLeft src={img1} alt="What is the Succeed Platform?">
+    <DetailSectionImageLeft src={textImg1} alt="What is the Succeed Platform?">
       <DetailSubTitle>
         What is the <TextOrange>Jobcore</TextOrange> platform?
       </DetailSubTitle>
@@ -105,7 +110,7 @@ const Jobcore = () => (
       </DetailParagraph>
     </DetailSectionImageLeft>
 
-    <DetailSectionImageRight src={img2} alt="What is the Succeed Platform?">
+    <DetailSectionImageRight src={textImg2} alt="What is the Succeed Platform?">
       <DetailSubTitle>
         How everything <TextOrange>started:</TextOrange>
       </DetailSubTitle>
@@ -134,9 +139,18 @@ const Jobcore = () => (
     </Section>
 
     <Section isPaddingless>
-      <DetailCarousel />
+      <DetailCarousel>
+        <div>
+          <img src={slider2} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider3} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider4} alt="jobcore app" />
+        </div>
+      </DetailCarousel>
     </Section>
-
     <Section isPaddingless>
       <DetailsOtherStories />
     </Section>
