@@ -40,12 +40,21 @@ const SliderContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  z-index: 100px;
+  padding-top: 3em;
+  @media screen and (max-width: 768px) {
+    padding-top: 1em;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    padding-top: 2em;
+  }
 `;
 
 const SliderWrapper = styled.div`
   max-width: 900px;
   max-height: 500px;
+  width: 100%;
+  height: 100%;
   @media screen and (max-width: 768px) {
     width: 70%;
   }
@@ -117,6 +126,7 @@ const settings = {
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
   draggable: false,
+  autoplay: false,
   responsive: [
     {
       breakpoint: 768,
@@ -131,22 +141,22 @@ const settings = {
   ],
 };
 
-const DetailCarousel = () => (
+const DetailCarousel = ({ children }) => (
   <Container>
     <GrayBackground />
     <Wrapper>
       <img src={img} alt="carousel" />
       <SliderContainer>
         <SliderWrapper>
-          <Slider {...settings}>
-            <div>uno</div>
-            <div>dos</div>
-            <div>tres</div>
-          </Slider>
+          <Slider {...settings}>{children}</Slider>
         </SliderWrapper>
       </SliderContainer>
     </Wrapper>
   </Container>
 );
+
+DetailCarousel.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+};
 
 export default DetailCarousel;
