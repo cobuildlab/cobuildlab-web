@@ -46,8 +46,8 @@ class NewsletterModal extends React.Component {
       const today = new Date();
       const timeExpired = today.getTime() >= nextTime.getTime();
 
-      if (timeExpired) this.handleModal(true);
-    } else this.handleModal(true);
+      if (timeExpired) setTimeout(() => this.handleModal(true), 30000);
+    } else setTimeout(() => this.handleModal(true), 30000);
   }
 
   calculateScrollDistance = () => {
