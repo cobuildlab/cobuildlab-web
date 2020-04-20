@@ -42,7 +42,7 @@ const LandingPageLayout = ({ siteDescription, siteTitle, withFooter, children })
         meta={[{ name: 'description', content: siteDescription }]}
         title={siteTitle}
       />
-      <NewsletterModal />
+      {/*<NewsletterModal />*/}
       <Wrapper>
         <Hero>
           <HeroHeader>
