@@ -1,5 +1,6 @@
 import React from 'react';
-import { Title, Subtitle } from 'bloomer';
+import { Subtitle } from 'bloomer';
+import PropTypes from 'prop-types';
 
 class Credits extends React.Component {
   render() {
@@ -11,4 +12,9 @@ class Credits extends React.Component {
     );
   }
 }
+
+Credits.propTypes = {
+  children: PropTypes.object.isRequired,
+};
+
 export default Credits;

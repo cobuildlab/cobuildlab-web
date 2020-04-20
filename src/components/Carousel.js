@@ -1,7 +1,8 @@
 import React from 'react';
-import { Container, Columns, Column, Image } from 'bloomer';
+import { Container, Columns, Column } from 'bloomer';
 import { StaticQuery, graphql } from 'gatsby';
-import { getOrientation } from '../utils/getOrientation';
+import PropTypes from 'prop-types';
+
 class Carousel extends React.Component {
   render() {
     const { children, folder } = this.props;
@@ -34,7 +35,7 @@ class Carousel extends React.Component {
                 if (allImages.includes(path) === true)
                   return (
                     <Column key={index}>
-                      <img src={node.node.publicURL} />
+                      <img alt={'slide'} src={node.node.publicURL} />
                       {/* <Image isRatio="4:3" src={node.node.publicURL} /> */}
                       {/* <Image src={node.node.publicURL} /> */}
                     </Column>
@@ -48,5 +49,10 @@ class Carousel extends React.Component {
     );
   }
 }
+
+Carousel.propTypes = {
+  children: PropTypes.object.isRequired,
+  folder: PropTypes.string.isRequired,
+};
 
 export default Carousel;
