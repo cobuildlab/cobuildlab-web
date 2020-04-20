@@ -50,6 +50,6 @@ Next, look for a comfortable workspace that lets you alternate between sitting a
 
 Drastic times frequently call for drastic measures, and few situations are more dire than realizing you don’t have the cash flow to make ends meet. While sudden unemployment can be a shock to the system, don’t let it paralyze you into inaction. Whether it’s cutting expenses, earning income on the side, or a little bit of both, these tips will help you keep your head above water until the coronavirus crisis is over.
 
-
+<block-quote>By: Womenled.org</block-quote>	
 
 
