@@ -24,6 +24,12 @@ import {
 import { Icon } from 'react-icons-kit';
 import { clockO } from 'react-icons-kit/fa/clockO';
 import 'bulma';
+import Styled from 'styled-components';
+
+const StyledSubtitle = Styled(Subtitle)`
+  color: #254a61 !important; 
+`;
+
 
 class Blog extends Component {
   constructor(props) {
@@ -57,11 +63,11 @@ class Blog extends Component {
                   <Title className="title-blog" isSize={1}>
                     {siteTitle}
                   </Title>
-                  <Subtitle isSize={5}>
+                  <StyledSubtitle isSize={5}>
                     Ideas, advice, value and above all, entrepreneurship. <br /> Unique content made
                     as a guide for entrepreneurs that intend to offer new opportunities in the
                     Startup World.
-                  </Subtitle>
+                  </StyledSubtitle>
                   <br />
                   <hr />
                 </Column>

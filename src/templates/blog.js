@@ -23,12 +23,17 @@ import 'bulma';
 import { Hero, Container, Title, Columns, Column, Card, CardContent, Content } from 'bloomer';
 import TTSVoice from '../components/TTSVoice';
 import PropTypes from 'prop-types';
-
-// TODO: NEW TYPOGRAPHY
-// import H1 from '../components/Typography/H1';
-// import Paragraph from '../components/Typography/Paragraph';
-
 import Styled from 'styled-components';
+
+const StyledTitle = Styled(Title)`
+  color: #264A60;
+  font-family: 'Lato-bold',sans-serif;
+`;
+
+const SectionPost = Styled.section`
+  color: #264A60;
+  font-family: 'Lato-bold',sans-serif;
+`;
 
 const StyledContainer = Styled(Container)`
   margin-top: 6rem;
@@ -75,9 +80,9 @@ class BlogPostTemplate extends Component {
 
         <Hero isSize="large">
           <StyledContainer hasTextAlign="centered">
-            <Title tag="h3" isSize={1} hasTextColor="Black">
+            <StyledTitle tag="h3" isSize={1} hasTextColor="Black">
               {post.frontmatter.title}
-            </Title>
+            </StyledTitle>
             <br />
             <hr />
           </StyledContainer>
@@ -92,7 +97,7 @@ class BlogPostTemplate extends Component {
           <Img className="bg-post" fluid={post.frontmatter.image.childImageSharp.fluid} />
         </Hero>
 
-        <section id="section-post" className="section">
+        <SectionPost id="section-post" className="section">
           <Container>
             <Columns isCentered>
               <Column hasTextAlign="left">
@@ -112,18 +117,18 @@ class BlogPostTemplate extends Component {
 
             <Columns style={{ marginTop: 30 }} isCentered>
               <Column hasTextAlign="centered">
-                <Title tag="h6" isSize={3}>
+                <StyledTitle tag="h6" isSize={3}>
                   READ MORE
-                </Title>
+                </StyledTitle>
               </Column>
             </Columns>
 
             <Columns isCentered>
               {previous ? (
                 <Column isSize="1/3">
-                  <Title tag="h6" isSize={5} hasTextColor="Black" hasTextAlign="centered">
+                  <StyledTitle tag="h6" isSize={5} hasTextColor="Black" hasTextAlign="centered">
                     Previous Post
-                  </Title>
+                  </StyledTitle>
                   <Link to={previous.fields.slug} rel="prev">
                     <Card className="card-p">
                       <CardContent
@@ -140,9 +145,9 @@ class BlogPostTemplate extends Component {
 
               {next ? (
                 <Column isSize="1/3">
-                  <Title tag="h6" isSize={5} hasTextColor="Black" hasTextAlign="centered">
+                  <StyledTitle tag="h6" isSize={5} hasTextColor="Black" hasTextAlign="centered">
                     Next Post
-                  </Title>
+                  </StyledTitle>
                   <Link to={next.fields.slug} rel="next">
                     <Card className="card-p">
                       <CardContent
@@ -167,7 +172,7 @@ class BlogPostTemplate extends Component {
               </Column>
             </Columns>
           </Container>
-        </section>
+        </SectionPost>
       </LayoutPost>
     );
   }
