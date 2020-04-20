@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 
 const Layout = ({ children }) => (
   <Container>
-    {/*<NewsletterModal />*/}
+    <NewsletterModal />
     <Wrapper>{children}</Wrapper>
     <Footer />
   </Container>
