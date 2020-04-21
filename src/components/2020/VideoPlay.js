@@ -2,20 +2,16 @@ import React, { useCallback, useState, cloneElement, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import ModalVideo from 'react-modal-video';
 
-
 const VideoPlay = ({ videoId, children, ...rest }) => {
   const [visible, setVisible] = useState(false);
   const handleClick = useCallback(() => {
     setVisible((state) => !state);
   }, []);
 
-  const clone = cloneElement(
-    children,
-    {
-      onClick: handleClick,
-      ...rest
-    }
-  );
+  const clone = cloneElement(children, {
+    onClick: handleClick,
+    ...rest,
+  });
 
   return (
     <Fragment>
@@ -32,13 +28,12 @@ const VideoPlay = ({ videoId, children, ...rest }) => {
 };
 
 VideoPlay.defaultProps = {
-  videoId: 'AlU5h2xrQ5M',
+  videoId: '5fbYxQNgJ7s',
 };
 
 VideoPlay.propTypes = {
   videoId: PropTypes.string,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
-
 
 export default VideoPlay;
