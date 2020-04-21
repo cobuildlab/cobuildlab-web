@@ -8,16 +8,15 @@ const Container = styled.div`
 `;
 
 const PortfolioCarousel = ({ children }) => {
-
   const settings = {
-    className: "center",
+    className: 'center',
     centerMode: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
     slidesToScroll: 1,
     draggable: true,
-    autoplay: false,
+    autoplay: true,
+    slidesToShow: 3,
     responsive: [
       {
         breakpoint: 768,
@@ -27,27 +26,35 @@ const PortfolioCarousel = ({ children }) => {
           autoplay: true,
           speed: 2000,
           infinite: true,
+          slidesToShow: 1,
         },
       },
     ],
   };
 
-
   return (
     <Container>
-      <Slider {...settings} >
-        {children}    
-      </Slider>
+      <Slider {...settings}>{children}</Slider>
     </Container>
   );
+};
 
+PortfolioCarousel.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
 
 export const CarouselItem = styled.div`
   padding: 1.5em;
-  transition: all .2s linear;
-  .slick-current &{
+  transition: all 0.2s linear;
+  height: 600px;
+  .slick-current & {
     padding: 0;
+  }
+
+  & > img {
+    width: auto;
+    height: 100%;
+    margin: auto;
   }
 `;
 
