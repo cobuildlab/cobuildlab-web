@@ -12,6 +12,8 @@ import './themecolor.scss';
 
 /**
  *
+ * @returns {*} - The Component.
+ * @class
  */
 function ThemeColor() {
   const [color, setColor] = useState(false);

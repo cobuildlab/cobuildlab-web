@@ -5,6 +5,8 @@ import './scroll.scss';
 
 /**
  *
+ * @returns {*} - The Scroll Component.
+ * @class
  */
 export default function Scroll() {
   const [showClass, setshowClass] = useState(false);
