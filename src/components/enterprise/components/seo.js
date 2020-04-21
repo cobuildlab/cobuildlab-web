@@ -7,12 +7,12 @@ import { useStaticQuery, graphql } from 'gatsby';
  *
  * @param {string} description - The description.
  * @param {string} lang - The Language.
- * @param {string} meta - The Meta.
+ * @param {object} meta - The Meta.
  * @param {string} title - The Title.
  * @returns {*} - The SE Component.
- * @class
  */
-function SEO({ description, lang, meta, title }) {
+
+const SEO = ({ description, lang, meta, title }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -72,7 +72,7 @@ function SEO({ description, lang, meta, title }) {
       ].concat(meta)}
     />
   );
-}
+};
 
 SEO.defaultProps = {
   lang: `en`,

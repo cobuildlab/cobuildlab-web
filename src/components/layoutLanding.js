@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import '../assets/css/index.css';
 import HeaderLanding from './headerLanding';
 import 'bulma';
@@ -13,16 +15,15 @@ import '../assets/fonts/Lato-Light.ttf';
 import '../assets/fonts/Lato-LightItalic.ttf';
 import '../assets/fonts/Lato-Regular.ttf';
 
-class Template extends React.Component {
-  render() {
-    const { children } = this.props;
-    return (
-      <div>
-        <HeaderLanding />
-        {children}
-      </div>
-    );
-  }
-}
+const Template = ({ children }) => (
+  <div>
+    <HeaderLanding />
+    {children}
+  </div>
+);
+
+Template.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+};
 
 export default Template;

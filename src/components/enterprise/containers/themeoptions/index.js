@@ -6,6 +6,7 @@ const ThemeOption = () => {
   return (
     <div id="framework-button">
       <a
+        rel="noopener noreferrer"
         href="https://themeforest.net/item/busline-react-next-business-landing-page/25270135"
         target="_blank">
         <span>
@@ -13,6 +14,7 @@ const ThemeOption = () => {
         </span>
       </a>
       <a
+        rel="noopener noreferrer"
         href="https://themeforest.net/item/busline-business-landing-page-html-rtl/25581077"
         target="_blank">
         <span>
