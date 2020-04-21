@@ -14,7 +14,7 @@ function PreviewIcon(props) {
 }
 
 PreviewIcon.propTypes = {
-  icon: PropTypes.string.isRequired,
+  icon: PropTypes.object.isRequired,
 };
 
 export default PreviewIcon;
