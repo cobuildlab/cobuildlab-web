@@ -2,15 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const List = styled.li`
+
+const Tag = styled.li`
   display: inline;
-  padding: 0.25em 0;
+  padding: 0.25em 2.5em;
+  border: ${({ isActive }) => (isActive ? 'none' : ' 1px solid #406073')};
   font-weight: bold;
-  font-size: ${({ current }) => (current ? '18px' : '16px')};
-  color: #406073;
+  font-size: 18px;
+  color: #${({ isActive }) => (isActive ? 'fff' : '406073')};
+  text-align: center;
   margin-bottom: 0.5em;
-  cursor: pointer;
-  font-weight: ${({ current }) => (current ? 'bold' : 'lighter')};
+  background-color: ${({ isActive }) => (isActive ? '#E76C29' : 'transparent')};
+  box-shadow: ${({ isActive }) => (isActive ? '0px 8px 25px #E76C2999' : 'none')};
 `;
 
 const Container = styled.ul`
@@ -18,26 +21,29 @@ const Container = styled.ul`
   flex-direction: column;
   justify-content: center;
   margin-top: 1.5em;
+  margin-bottom: 2.5em;
 `;
+
+/**
+ *
+ * @property {string} - Type enum -> web | web/app | app.
+ */
 
 const data = ['Okroo', 'Balz', 'TuVueloVip', 'other'];
 
-const OtherProjects = ({ current }) => (
+const OtherProject = ({ current }) => (
   <Container>
-    {data.map((e) => (
-      <List current={current === e} key={e}>
-        {e}
-      </List>
+    {data.map((e)=>(
+      <Tag isActive={current === e}>{e}</Tag>
     ))}
   </Container>
 );
 
-OtherProjects.defaultProps = {
+OtherProject.defaultProps = {
   current: '',
 };
 
-OtherProjects.propTypes = {
-  current: PropTypes.string,
+OtherProject.propTypes = {
+  current: PropTypes.oneOf(['web', 'web/app', 'app']),
 };
-
-export default OtherProjects;
+export default OtherProject;

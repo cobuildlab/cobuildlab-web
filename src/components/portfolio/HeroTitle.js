@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import H1 from '../Typography/H1';
-import img from '../../resources/2020/home/coubuild-t.svg';
+import img from '../../assets/images/portfolio/details/title.png';
 
 
 const Container = styled.div`

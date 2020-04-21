@@ -10,8 +10,16 @@ import BannerBackground from '../../components/2020/BannerBackground';
 import HeroTitle from '../../components/portfolio/HeroTitle';
 import H6 from '../../components/Typography/H6';
 import PortfolioDescription from '../../components/portfolio/PortfolioDescription';
-import PortfolioCategory from '../../components/portfolio/PortfolioCategory';
 import OtherProjects from '../../components/portfolio/OtherProjects';
+import PortfolioCarousel, { CarouselItem } from '../../components/portfolio/PortfolioCarousel';
+
+
+import img1 from '../../assets/images/portfolio/details/okree/1.png';
+import img2 from '../../assets/images/portfolio/details/okree/2.png';
+import img3 from '../../assets/images/portfolio/details/okree/3.png';
+import img4 from '../../assets/images/portfolio/details/okree/4.png';
+import img5 from '../../assets/images/portfolio/details/okree/5.png';
+
 
 const siteTitle = 'Portfolio | Cobuild Lab';
 
@@ -42,35 +50,29 @@ const Portfolio = () => (
         <Container>
           <Columns>
             <Column isSize={{ mobile: 12, desktop: 3 }}>
-              <H6>Category</H6>
-              <PortfolioCategory type="app" />
               <H6>More Projects</H6>
               <OtherProjects current="Okroo" />
             </Column>
             <Column isSize={{ mobile: 12, desktop: 9 }}>
-              <PortfolioDescription title="Okroo">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit
-                fermentum tellus, rutrum eleifend tortor fermentum non. Donec a sollicitudin erat,
-                non iaculis nunc. Nullam fermentum, turpis eu elementum ullamcorper, augue diam
-                varius turpis, eu sollicitudin mi augue eu sem. Vivamus eu molestie turpis, et
-                molestie leo. Integer convallis porttitor viverra. Nulla tellus turpis, elementum
-                vel condimentum consectetur, rutrum in dolor. Nulla finibus vulputate dolor. Sed
-                dignissim mi purus, sed iaculis mauris pulvinar ut. Duis consectetur elit sit amet
-                dignissim placerat. Phasellus finibus lacus ante, facilisis imperdiet justo
-                venenatis ac. Morbi facilisis dapibus
-                <br />
-                <br />
-                metus, fringilla consectetur lectus sollicitudin quis. Sed condimentum volutpat
-                nisl, vitae maximus turpis bibendum vel. Vivamus congue suscipit efficitur. Etiam
-                tempor commodo convallis. Donec rutrum viverra venenatis. Etiam risus purus,
-                ullamcorper non sollicitudin sit amet, tempor nec libero. In sit amet eros quis
-                neque pharetra finibus. In hac habitasse platea dictumst. Aenean ac odio tempor,
-                placerat turpis non, maximus massa. Nunc porta ac risus id sollicitudin. Phasellus
-                ut risus nulla. Fusce ac velit vitae odio elementum porttitor. Aliquam iaculis ac
-                lectus a aliquam. Maecenas ullamcorper placerat pulvinar. In dapibus ante quis mi
-                pulvinar ornare. Sed ut dapibus nisl.
-              </PortfolioDescription>
-            </Column>
+              <PortfolioDescription title="Okroo" />
+              <PortfolioCarousel>
+                <CarouselItem>
+                  <img src={img1} alt="okree app" />   
+                </CarouselItem>  
+                <CarouselItem>
+                  <img src={img2} alt="okree app" />   
+                </CarouselItem>
+                <CarouselItem>
+                  <img src={img3} alt="okree app" />   
+                </CarouselItem>
+                <CarouselItem>
+                  <img src={img4} alt="okree app" />   
+                </CarouselItem>
+                <CarouselItem>
+                  <img src={img5} alt="okree app" />   
+                </CarouselItem>
+              </PortfolioCarousel>
+            </Column> 
           </Columns>
         </Container>
       </Section>
