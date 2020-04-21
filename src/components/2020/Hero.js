@@ -13,7 +13,7 @@ import comic from '../../resources/2020/home/cobuildlab-home.svg';
 
 const HeroContainer = styled.div`
   position: relative;
-  padding-top: 2.5em;
+  padding-top: 0em;
   @media all and (max-width: 767.99px) {
     padding-top: 0em;
   }
@@ -26,7 +26,7 @@ const HeroWrapper = styled.div`
 const HeroBody = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   height: 100%;
   @media screen and (max-width: 768px) {
     text-align: center;
@@ -69,15 +69,14 @@ const HeroSection = () => (
               </Hero>
             </HeroWrapper>
             <Paragraph>
-              We partner with new and early-stage entrepreneurs and industry experts to transforms
-              ideas into <br />
+              We partner with entrepreneurs, small and medium-sized business to transform ideas into
+              Web and Mobile Software Products.
+              <br />
               <br />
               From day one, our technique is focused on early results and transparent communication.
             </Paragraph>
             <ButtonWrapper>
-              <LinkButtonDefault to="/blog/best-software-development-process/">
-                Read More
-              </LinkButtonDefault>
+              <LinkButtonDefault to="/enterprise">Business Services</LinkButtonDefault>
             </ButtonWrapper>
           </HeroBody>
         </Column>

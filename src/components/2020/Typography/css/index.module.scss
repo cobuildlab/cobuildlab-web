@@ -58,41 +58,41 @@
   color: $navy;
   letter-spacing: 0;
   opacity: 1;
-  margin-bottom: .5em;
+  margin-bottom: 0.1em;
 
   @for $i from 1 through 13 {
-    &_size_default_#{$i} { 
+    &_size_default_#{$i} {
       font-size: getSize($i);
      }
   }
 
   @for $i from 1 through 13 {
-    &_size_sm_#{$i} { 
-      @media (min-width: 576px) { 
+    &_size_sm_#{$i} {
+      @media (min-width: 576px) {
         font-size: getSize($i);
        }
      }
   }
 
   @for $i from 1 through 13 {
-    &_size_md_#{$i} { 
-      @media (min-width: 768px) { 
+    &_size_md_#{$i} {
+      @media (min-width: 768px) {
         font-size: getSize($i);
        }
      }
   }
 
   @for $i from 1 through 13 {
-    &_size_lg_#{$i} { 
-      @media (min-width: 992px) { 
+    &_size_lg_#{$i} {
+      @media (min-width: 992px) {
         font-size: getSize($i);
        }
      }
   }
 
   @for $i from 1 through 13 {
-    &_size_xl_#{$i} { 
-      @media (min-width: 1200px) { 
+    &_size_xl_#{$i} {
+      @media (min-width: 1200px) {
         font-size: getSize($i);
        }
      }

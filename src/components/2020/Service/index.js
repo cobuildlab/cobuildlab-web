@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Columns, Column } from 'bloomer';
-import ButtonDefault from '../Button/ButtonDefault';
 import Typography from '../Typography';
 import styles from './css/index.module.scss';
 
 import icon1 from '../../../resources/2020/icons/Product-development.svg';
 import icon2 from '../../../resources/2020/icons/Software-development.svg';
 import icon3 from '../../../resources/2020/icons/Education-training.svg';
+import LinkButtonDefault from '../Button/LinkButtonDefault';
 
 const title = {
   default: {
@@ -78,18 +78,20 @@ CartCaption.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
 
-const CardFooter = ({ to }) => (
+const CardFooter = ({ to, text }) => (
   <div className={styles.service_item_footer}>
-    <ButtonDefault>Read more</ButtonDefault>
+    <LinkButtonDefault to={to}>{text}</LinkButtonDefault>
   </div>
 );
 
 CardFooter.defaultProps = {
-  to: '',
+  to: '/',
+  text: 'Read More',
 };
 
 CardFooter.propTypes = {
   to: PropTypes.string,
+  text: PropTypes.string,
 };
 
 const Services = () => (
@@ -103,31 +105,31 @@ const Services = () => (
       <Columns>
         <Card>
           <CardImage src={icon1} />
-          <CardTitle>Product development</CardTitle>
+          <CardTitle>Product development for Startups</CardTitle>
           <CartCaption>
-            Problem-solution fit: Observe the Customer, think as the Customer, be the Customer.
+            We partner with entrepreneurs to transform ideas to Software Products.
           </CartCaption>
-          <CardFooter />
+          <CardFooter to={'/blog/software-development-for-new-products/'} />
         </Card>
         <Card>
           <CardImage src={icon2} />
-          <CardTitle>Software development</CardTitle>
+          <CardTitle>Custom Software Development</CardTitle>
           <CartCaption>
-            It&apos;s time to build!. We combine a multidisciplinary team to build the idea. Minimum
-            Viable Product (MVP)
+            We automate and streamline processes with Custom Software to grow your Company with your
+            unique sauce.
           </CartCaption>
-          <CardFooter />
+          <CardFooter to={'/blog/best-software-development-process/'} />
         </Card>
         <Card>
           <CardImage src={icon3} />
           <CardTitle>
-            Education <br /> and training
+            Staff <br /> Augmentation
           </CardTitle>
           <CartCaption>
-            Identity, purpose, values, and the correct tools for launching are the main purpose of
-            this step. - Branding - WebSite and Social Networks - Strategy
+            We put at your service Senior developers with Javascript and Python technologies to
+            boost your projects.
           </CartCaption>
-          <CardFooter />
+          <CardFooter text={'Contact US'} to={'/#contact'} />
         </Card>
       </Columns>
     </div>

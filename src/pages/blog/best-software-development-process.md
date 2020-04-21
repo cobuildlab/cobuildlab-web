@@ -11,28 +11,28 @@ When we have a [business idea](https://cobuildlab.com/blog/startups-a-new-techno
 We not only say that there are also lots of medium and big companies that have found the key to success with the **best software development process** to their business necessities. If you don’t believe us, we invited you to read the next interesting information about that and discover how to succeed.
 
 
-### What is the best software development process?
+<title-2>What is the best software development process?</title-2>
 
 First of all, you have to know that a software development is basically, how to build a software product. But when we refer to the best, we are talking about the more convenient, practical and effective way to realize it.
 
-### Why it is important?
+<title-3>Why it is important?</title-3>
 
 Discover and select the best process will help you achieve your business goals on time, to be more efficient, to win lots of money and to be successful.
 
 
-## The process:
+<title-3>The process:</title-3>
  
 
 Taking into consideration, that every idea, startup or business it is different, with their objectives, characteristics, and necessities, we have designed, based on our experience a step by step guide on how to build a Software Product.
 
-### 1) Step One: Know what you are doing, I mean really know it
+<title-4>1) Step One: Know what you are doing, I mean really know it</title-4>
  
 
 The first thing you have to know it is what you want and where do you go exactly. You should describe and define very well those aspects to begin the project with the right hand. A good way to achieve this is to write down your goals, the problem that you are solving and how do you plan to solve it and even the values of your solution.
 
 If you know that information, you could be able to explain better to the developer’s team what exactly you need in the next step.
 
-### 2) Step two: A requirements meeting
+<title-4>2) Step two: A requirements meeting</title-4>
  
 
 In this the meeting, you talk about your requirements, stories, and every necessary detail to make real the best version of your software product.
@@ -43,7 +43,7 @@ At this moment that you thought about every detail of your solution, it’s time
 
 It’s important to make clear to everyone involved which are the elements that provide the most value to the solution.
 
-### 3) Step 3: High-level design
+<title-4>3) Step 3: High-level design</title-4>
  
 
 The technical team, that can include developers, designers, architects, UI/UX specialist should build a plan for building the product, that should include a mockup on how the applications it’s gonna look and feel, outline the major components and how they are gonna interact to provide the value desired.
@@ -52,10 +52,12 @@ This high-level design should come with a proposal on time and resources needed 
 
 It’s strongly recommended that this period proposed shouldn’t be more than 12 weeks.
 
-### 4) Step 4: Let’s Build!
+<title-4>4) Step 4: Let’s Build!</title-4>
  
 
 Once the final adjustments are made to the plan, it’s time to start building.
+
+<br/>
 
 Developing a software project it’s a hard task. Specialists have been doing it for decades and still many disagree in the best way to do it.
 
@@ -66,7 +68,7 @@ Here we present some options at a high level:
 
 
 
-#### 1. Agile Software Development:
+<title-3>#### 1. Agile Software Development:</title-3>
  
 
 It is the software development process that has short steps which are achieved from one week to a month. It means you develop software or features or functionality in a short period of time involving the different areas that need to have an opinion in the product with the purpose of delivering soon and get feedback early in the project.
@@ -79,7 +81,7 @@ Also, this is the best software development methodology for ideas that need dire
 ![Agile Software Development](media/agile-software-development.png)
 
 
-#### 2. Dynamic system development model
+<title-3>2. Dynamic system development model</title-3>
  
 
 Dynamic means changes, from there we can understand the dynamic system development model’s essence.
@@ -94,7 +96,7 @@ Some advantages of this process are direct access from users to developers and a
 ![Dynamic Software Development](media/dynamic-system-development-model.png)
 
 
-#### 3. Waterfall model
+<title-3>3. Waterfall model</title-3>
  
 
 This kind of software development methodology is not really common nowadays. Also, it is completely the opposite of previous. Why? In the others, changes can make it in any phase during the developing process, but in this case, developers only can change things during the initial phase. Once they close the step, they shouldn’t go behind. What does it mean? Developers and you have to conclude 100% every detail before going to the next phase.
@@ -111,7 +113,7 @@ This software development process is used generally in medium or small projects.
 ![Waterfall Software Development](media/waterfall-model.png)
 
 
-#### 4. Scrum
+<title-3>4. Scrum</title-3>
  
 
 [This](https://www.scrumalliance.org/get-certified?gclid=EAIaIQobChMIhOiEpIfr3QIVhoizCh1BXAibEAAYAiAAEgK-q_D_BwE) is a really nice framework that is used more and more through the time and the reason is simple: we can develop in short time, with direct and constant communication between developers, coach and you or whoever be the client or stakeholders.
@@ -125,7 +127,7 @@ Moreover, this is considered like the best software development process to some 
 ![Scrum Software Development](media/scrum.png)
 
 
-### 5) Support: Maintenance and support
+<title-3>5) Support: Maintenance and support</title-3>
  
 
 The final step of the process it’s to test it, start using it in the real world, and for this support and maintenance is need it.

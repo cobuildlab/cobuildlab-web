@@ -11,7 +11,7 @@ import componse from '../../../utils/styles-componse';
 //TODO import correct icons
 import img1 from '../../../resources/2020/home/coubuild-b.svg';
 import img2 from '../../../resources/2020/home/coubuild-t.svg';
-import icon1 from '../../../resources/2020/icons/Product-development.svg';
+import Typrography from '../Typography';
 
 const title = {
   default: {
@@ -124,7 +124,7 @@ const ContentFooter = ({ direction, to }) => {
   );
   return (
     <div className={className}>
-      <ButtonDefault to={to}>read more</ButtonDefault>
+      <ButtonDefault to={to}>Contact US!</ButtonDefault>
     </div>
   );
 };
@@ -156,22 +156,54 @@ const BusinessValue = () => (
               Business <span className="text-color-orange">Value</span>
             </ContentTitle>
             <ContentParagraph hasTextAlign="left">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque, sapien at
-              molestie suscipit, sapien leo faucibus ante, quis iaculis mauris nisl nec libero.
-              Suspendisse imperdiet in ex ac varius. Donec elementum libero eu purus euismod, sit
-              amet congue leo bibendum. Donec lacus ipsum, sodales a dignissim quis, placerat eget
-              ex.
+              We differentiate our selves by providing unique value to our customer base.
+              <br />
+              <br />
+              More than 15 years of experience give us the advantage to develop your products with
+              the best techniques.
+              <br />
+              <br />
+              <ul>
+                <li>
+                  <Typrography tag="h3" className="about-twosub-title">
+                    ☛ Quality apps utilizing modern technologies
+                  </Typrography>
+                  <br />
+                </li>
+                <li>
+                  <Typrography tag="h3" className="about-twosub-title">
+                    ☛ Rapid development and feature-rich
+                  </Typrography>
+                  <br />
+                </li>
+                <li>
+                  <Typrography tag="h3" className="about-twosub-title">
+                    ☛ Custom mobile and cloud solutions
+                  </Typrography>
+                  <br />
+                </li>
+                <li>
+                  <Typrography tag="h3" className="about-twosub-title">
+                    ☛ iOS and Android experience
+                  </Typrography>
+                  <br />
+                </li>
+                <li>
+                  <Typrography tag="h3" className="about-twosub-title">
+                    ☛ Marketing and Launch Services
+                  </Typrography>
+                </li>
+              </ul>
             </ContentParagraph>
-            <IconList>
-              <IconItem icon={icon1} direction="right" />
-              <IconItem icon={icon1} direction="right" />
-              <IconItem icon={icon1} direction="right" />
-            </IconList>
-            <ContentFooter direction="left" />
+            {/*<IconList>*/}
+            {/*  <IconItem icon={icon1} direction="right" />*/}
+            {/*  <IconItem icon={icon1} direction="right" />*/}
+            {/*  <IconItem icon={icon1} direction="right" />*/}
+            {/*</IconList>*/}
+            <ContentFooter to={'/#contact'} direction="left" />
           </ContentWrapper>
         </Column>
       </Columns>
-      <br />
       <br />
       <br />
       <br />
@@ -179,21 +211,51 @@ const BusinessValue = () => (
         <Column isSize={{ mobile: 12, desktop: 8 }}>
           <ContentWrapper direction="left">
             <ContentTitle hasTextAlign="right">
-              Business <span className="text-color-orange">Value</span>
+              Technical <span className="text-color-orange">Expertise</span>
             </ContentTitle>
             <ContentParagraph hasTextAlign="right">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque, sapien at
-              molestie suscipit, sapien leo faucibus ante, quis iaculis mauris nisl nec libero.
-              Suspendisse imperdiet in ex ac varius. Donec elementum libero eu purus euismod, sit
-              amet congue leo bibendum. Donec lacus ipsum, sodales a dignissim quis, placerat eget
-              ex.
+              A Software development Company build by developers.
+              <br />
+              <br />
+              <ul>
+                <li>
+                  <Typrography tag="h3" className="about-twosub-title">
+                    ☛ Support 24/7.
+                  </Typrography>
+                  <br />
+                </li>
+                <li>
+                  <Typrography tag="h3" className="about-twosub-title">
+                    ☛ Serverless cloud tooling supported by major vendors like Amazon Web Services
+                    and Google Cloud.
+                  </Typrography>
+                  <br />
+                </li>
+                <li>
+                  <Typrography tag="h3" className="about-twosub-title">
+                    ☛ Quality Insurance in all our releases
+                  </Typrography>
+                  <br />
+                </li>
+                <li>
+                  <Typrography tag="h3" className="about-twosub-title">
+                    ☛ Agile and Lean techniques
+                  </Typrography>
+                  <br />
+                </li>
+                <li>
+                  <Typrography tag="h3" className="about-twosub-title">
+                    ☛ A Full service company.
+                  </Typrography>
+                </li>
+              </ul>
             </ContentParagraph>
-            <IconList isLeft>
-              <IconItem icon={icon1} direction="left" />
-              <IconItem icon={icon1} direction="left" />
-              <IconItem icon={icon1} direction="left" />
-            </IconList>
-            <ContentFooter direction="right" />
+            {/*<IconList isLeft>*/}
+            {/*  <IconItem icon={icon1} direction="left" />*/}
+            {/*  <IconItem icon={icon1} direction="left" />*/}
+            {/*  <IconItem icon={icon1} direction="left" />*/}
+            {/*</IconList>*/}
+            <ContentFooter to={'/#contact'} direction="right" />
           </ContentWrapper>
         </Column>
         <Column isSize={{ mobile: 12, desktop: 4 }}>

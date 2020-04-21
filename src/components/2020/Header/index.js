@@ -20,7 +20,6 @@ import youtube from '../../../resources/icons/youtube.svg';
 
 import styles from './css/index.module.scss';
 
-//TODO add links
 const SocialIcon = ({ isHidden }) => (
   <Fragment>
     <NavbarItem isHidden={isHidden} className={styles.nav_icon}>
@@ -53,10 +52,10 @@ SocialIcon.propTypes = {
 };
 
 const Header = () => {
-  const [isActive, setAtvice] = useState(false);
+  const [isActive, setActive] = useState(false);
 
   const handleActive = useCallback(() => {
-    setAtvice((state) => !state);
+    setActive((state) => !state);
   }, []);
 
   return (
@@ -74,6 +73,13 @@ const Header = () => {
           </NavbarBrand>
           <NavbarMenu isActive={isActive} onClick={handleActive}>
             <NavbarEnd>
+              <NavbarItem>
+                <div className={styles.nav_item}>
+                  <Link to="/enterprise" className={styles.nav_link}>
+                    <u>Businesses Services</u>
+                  </Link>
+                </div>
+              </NavbarItem>
               <NavbarItem>
                 <div className={styles.nav_item}>
                   <Link to="/services" className={styles.nav_link}>
