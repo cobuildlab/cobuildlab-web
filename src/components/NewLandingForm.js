@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Title, Subtitle } from 'bloomer';
 import { navigate, Link } from 'gatsby';
 import Loading from './Loading';
 import { toast } from 'react-toastify';
 
 export default class NewLandingForm extends Component {
+  static defaultProps = {
+    landingName: '',
+  };
+
+  static propTypes = {
+    landingName: PropTypes.string,
+  };
+
   constructor(props) {
     super(props);
 

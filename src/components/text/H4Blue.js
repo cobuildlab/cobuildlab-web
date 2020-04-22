@@ -1,5 +1,5 @@
 import { Title } from 'bloomer';
-
+import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -10,10 +10,14 @@ const StyledTitle = styled(Title)`
   font-family: 'Lato-Black', sans-serif !important;
 `;
 
-const _H2 = (props) => (
+const _H2 = ({ children }) => (
   <StyledTitle isSize={2} tag={'h2'}>
-    {props.children}
+    {children}
   </StyledTitle>
 );
+
+_H2.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+};
 
 export { _H2 as H4Blue };

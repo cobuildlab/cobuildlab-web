@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { ClipLoader } from 'react-spinners';
 import '../assets/css/index.css';
 
@@ -9,5 +10,11 @@ const Loading = (props) => {
     </div>
   );
 };
+
+Loading.propTypes = [
+  {
+    loading: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  },
+];
 
 export default Loading;

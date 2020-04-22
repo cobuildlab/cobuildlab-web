@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link, navigate } from 'gatsby';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
@@ -18,6 +19,14 @@ import {
 } from 'bloomer';
 
 class FormContact extends React.Component {
+  static defaultProps = {
+    landingName: '',
+  };
+
+  static propTypes = {
+    landingName: PropTypes.string,
+  };
+
   state = {
     firstName: '',
     lastName: '',

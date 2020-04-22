@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../assets/css/index.css';
 import 'bulma';
 import '../assets/fonts/Lato-Black.ttf';
@@ -12,11 +13,10 @@ import '../assets/fonts/Lato-Light.ttf';
 import '../assets/fonts/Lato-LightItalic.ttf';
 import '../assets/fonts/Lato-Regular.ttf';
 
-class EmptyLayout extends React.Component {
-  render() {
-    const { children } = this.props;
-    return <div>{children}</div>;
-  }
-}
+const EmptyLayout = ({ children }) => <div>{children}</div>;
+
+EmptyLayout.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+};
 
 export { EmptyLayout };

@@ -150,7 +150,7 @@ export default class Contact extends React.Component {
                   width="600"
                   height="550"
                   frameBorder="0"
-                  title={'Google Maps'}
+                  title="Google Maps"
                   style={{ border: 0, width: '100%' }}
                   allowFullScreen
                 />
