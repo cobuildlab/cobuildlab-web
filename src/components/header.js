@@ -73,7 +73,6 @@ class header extends React.Component {
               <Link className="link-nav" to="/">
                 <img src={logo} style={{ marginRight: 5 }} width="229" height="49" alt="" />
               </Link>
-
               <NavbarBurger isActive={this.state.isActive} onClick={this.onClickNav} />
             </NavbarBrand>
             <NavbarMenu isActive={this.state.isActive} onClick={this.onClickNav}>

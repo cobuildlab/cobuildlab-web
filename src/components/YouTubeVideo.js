@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Container, Columns, Column } from 'bloomer';
 import YouTube from 'react-youtube';
 
@@ -24,6 +25,14 @@ export const YOUTUBE_OPTS = {
 };
 
 class YouTubeVideo extends React.Component {
+  static defaultProps = {
+    id: '',
+  };
+
+  static propTypes = {
+    id: PropTypes.string,
+  };
+
   render() {
     const { id } = this.props;
     return (

@@ -121,6 +121,7 @@ class MyFooter extends React.Component {
                 <Columns isMobile isCentered>
                   <Column className="is-variable is-3" isSize={{ mobile: 3, desktop: '1/4' }}>
                     <a
+                      rel="noopener noreferrer"
                       className="icon-instagram"
                       href="https://www.instagram.com/cobuildlab"
                       target="_blank">
@@ -129,6 +130,7 @@ class MyFooter extends React.Component {
                   </Column>
                   <Column className="is-variable is-3" isSize={{ mobile: 3, desktop: '1/4' }}>
                     <a
+                      rel="noopener noreferrer"
                       className="icon-facebook"
                       href="https://www.facebook.com/cobuildlab"
                       target="_blank">
@@ -137,6 +139,7 @@ class MyFooter extends React.Component {
                   </Column>
                   <Column className="is-variable is-3" isSize={{ mobile: 3, desktop: '1/4' }}>
                     <a
+                      rel="noopener noreferrer"
                       className="icon-twitter"
                       href="https://twitter.com/cobuildlab"
                       target="_blank">
@@ -145,6 +148,7 @@ class MyFooter extends React.Component {
                   </Column>
                   <Column className="is-variable is-3" isSize={{ mobile: 3, desktop: '1/4' }}>
                     <a
+                      rel="noopener noreferrer"
                       className="icon-linkedin"
                       href="https://www.linkedin.com/company/cobuildlab"
                       target="_blank">
