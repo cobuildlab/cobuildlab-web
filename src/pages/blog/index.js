@@ -9,7 +9,6 @@ import {
   HeroHeader,
   HeroBody,
   Container,
-  Title,
   Tabs,
   TabList,
   Tab,
@@ -21,6 +20,7 @@ import {
   Content,
   Tag,
 } from 'bloomer';
+import H1 from '../../components/Typography/H1';
 import { Icon } from 'react-icons-kit';
 import { clockO } from 'react-icons-kit/fa/clockO';
 import 'bulma';
@@ -29,7 +29,6 @@ import Styled from 'styled-components';
 const StyledSubtitle = Styled(Subtitle)`
   color: #254a61 !important; 
 `;
-
 
 class Blog extends Component {
   constructor(props) {
@@ -60,9 +59,9 @@ class Blog extends Component {
             <Container hasTextAlign="centered">
               <Columns isCentered>
                 <Column>
-                  <Title className="title-blog" isSize={1}>
+                  <H1 className="title-blog" isSize={1}>
                     {siteTitle}
-                  </Title>
+                  </H1>
                   <StyledSubtitle isSize={5}>
                     Ideas, advice, value and above all, entrepreneurship. <br /> Unique content made
                     as a guide for entrepreneurs that intend to offer new opportunities in the
