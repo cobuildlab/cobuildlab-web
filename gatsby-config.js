@@ -21,6 +21,20 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'okroo',
+        path: `${__dirname}/src/assets/images/portfolio/okroo`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'accountable',
+        path: `${__dirname}/src/assets/images/portfolio/accountable`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -55,7 +69,6 @@ module.exports = {
         trackingId: 'UA-105326682-1',
       },
     },
-
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
