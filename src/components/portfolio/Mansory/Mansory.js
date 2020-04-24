@@ -7,11 +7,11 @@ import {
   MansoryItem,
   MansoryImage,
   MansorySliderItem,
-  MansorySliderImage,
+  MansorySliderImagesWrapper,
 } from './MansoryLayout';
 
 const settings = {
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 500,
   slidesToShow: 1,
@@ -70,7 +70,14 @@ export default class PortfolioMansory extends PureComponent {
     return data.map((e, i) => (
       <div key={e.node.id}>
         <MansorySliderItem>
-          <MansorySliderImage src={e.node.childImageSharp.sizes.src} alt="" />
+          <MansorySliderImagesWrapper>
+            <img
+              width={e.node.childImageSharp.sizes.presentationWidth}
+              height={e.node.childImageSharp.sizes.presentationHeight}
+              src={e.node.childImageSharp.sizes.src}
+              alt=""
+            />
+          </MansorySliderImagesWrapper>
         </MansorySliderItem>
       </div>
     ));

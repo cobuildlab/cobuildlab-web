@@ -11,6 +11,7 @@ const Content = styled(ModalContent)`
   width: 80%;
   margin: auto;
   padding: 2em;
+  overflow: hidden;
   @media screen and (max-width: 768px) {
     width: 100%;
     padding: 2.3em;

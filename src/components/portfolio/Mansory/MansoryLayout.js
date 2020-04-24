@@ -27,10 +27,18 @@ export const MansoryImage = styled.img`
 
 export const MansorySliderItem = styled.div`
   height: 85vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
-export const MansorySliderImage = styled.img`
-  width: auto;
-  height: 100%;
-  margin: auto;
+export const MansorySliderImagesWrapper = styled.div`
+  position: relative;
+  max-height: 85vh;
+  overflow: scroll;
+  top: 0px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
