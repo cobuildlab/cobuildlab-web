@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import Mansory from './Mansory/Mansory';
+import Mansory from '../Mansory/Mansory';
 
 const query = graphql`
   query {

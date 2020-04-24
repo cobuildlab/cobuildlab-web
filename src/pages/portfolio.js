@@ -10,9 +10,10 @@ import HeroTitle from '../components/portfolio/HeroTitle';
 import PortfolioHeader from '../components/portfolio/PortfolioHeader';
 import PortfolioSection from '../components/portfolio/PortfolioSection';
 import ProjectTitle from '../components/portfolio/ProjectTitle';
+import PorftolioCategory from '../components/portfolio/PortfolioCategory';
 
-import OkrooGallery from '../components/portfolio/OkrooGallery';
-import AccountableGallery from '../components/portfolio/AccountableGallery';
+import OkrooGallery from '../components/portfolio/galleries/Okroo';
+import AccountableGallery from '../components/portfolio/galleries/Accountable';
 
 const siteTitle = 'Portfolio | Cobuild Lab';
 
@@ -48,6 +49,7 @@ const Portfolio = () => (
       <PortfolioSection id="okroo-test-1">
         <Container>
           <ProjectTitle>Okroo</ProjectTitle>
+          <PorftolioCategory type="app" />
           <GalleryContainer>
             <OkrooGallery />
           </GalleryContainer>
@@ -56,6 +58,7 @@ const Portfolio = () => (
       <PortfolioSection id="okroo-test-2" color="white">
         <Container>
           <ProjectTitle>Accountable</ProjectTitle>
+          <PorftolioCategory type="web" />
           <GalleryContainer>
             <AccountableGallery />
           </GalleryContainer>
