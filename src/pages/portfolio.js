@@ -3,16 +3,16 @@ import Helmet from 'react-helmet';
 import { Container, HeroHeader, HeroBody, Hero } from 'bloomer';
 import styled from 'styled-components';
 
-import Layout from '../../components/2020/Layout';
-import BannerBackground from '../../components/2020/BannerBackground';
+import Layout from '../components/2020/Layout';
+import BannerBackground from '../components/2020/BannerBackground';
 
-import HeroTitle from '../../components/portfolio/HeroTitle';
-import PortfolioHeader from '../../components/portfolio/PortfolioHeader';
-import PortfolioSection from '../../components/portfolio/PortfolioSection';
-import ProjectTitle from '../../components/portfolio/ProjectTitle';
+import HeroTitle from '../components/portfolio/HeroTitle';
+import PortfolioHeader from '../components/portfolio/PortfolioHeader';
+import PortfolioSection from '../components/portfolio/PortfolioSection';
+import ProjectTitle from '../components/portfolio/ProjectTitle';
 
-import OkrooGallery from '../../components/portfolio/OkrooGallery';
-import AccountableGallery from '../../components/portfolio/AccountableGallery';
+import OkrooGallery from '../components/portfolio/OkrooGallery';
+import AccountableGallery from '../components/portfolio/AccountableGallery';
 
 const siteTitle = 'Portfolio | Cobuild Lab';
 
