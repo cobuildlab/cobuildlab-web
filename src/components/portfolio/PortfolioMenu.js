@@ -112,13 +112,31 @@ const Menu = () => {
             <MenuLink href="#bazl">Bazl</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
+            <MenuLink href="#collabtogrow">Collabtogrow</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#contentManager">Content Manager</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#ctoFounders">CTO Founders</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
             <MenuLink href="#elemental">Elemental</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#kadem">Kadem</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
             <MenuLink href="#okroo">Okroo</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
+            <MenuLink href="#payklever">Payklever</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
             <MenuLink href="#ryval">Ryval</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#storyRocket">Story Rocket</MenuLink>
           </MenuItem>
         </MenuWrapper>
       </Drawer>

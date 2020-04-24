@@ -13,10 +13,16 @@ import ProjectTitle from '../components/portfolio/ProjectTitle';
 import PorftolioCategory from '../components/portfolio/PortfolioCategory';
 
 import AccountableGallery from '../components/portfolio/galleries/Accountable';
+import CollabtogrowGallery from '../components/portfolio/galleries/Collabtogrow';
+import ContentManagerGallery from '../components/portfolio/galleries/ContentManager';
+import CtoFoundersGallery from '../components/portfolio/galleries/CtoFounders';
 import BazlGallery from '../components/portfolio/galleries/Bazl';
 import ElementalGallery from '../components/portfolio/galleries/Elemental';
+import KademGallery from '../components/portfolio/galleries/Kadem';
 import OkrooGallery from '../components/portfolio/galleries/Okroo';
+import PayKlever from '../components/portfolio/galleries/PayKlever';
 import RyvalGallery from '../components/portfolio/galleries/Ryval';
+import StoryRocket from '../components/portfolio/galleries/StoryRocket';
 
 const siteTitle = 'Portfolio | Cobuild Lab';
 
@@ -52,9 +58,9 @@ const Portfolio = () => (
       <PortfolioSection id="accountable">
         <Container>
           <ProjectTitle>Accountable</ProjectTitle>
-          <PorftolioCategory type="web" />
+          <PorftolioCategory />
           <GalleryContainer>
-            <AccountableGallery />
+            <AccountableGallery search="accountable" />
           </GalleryContainer>
         </Container>
       </PortfolioSection>
@@ -67,12 +73,48 @@ const Portfolio = () => (
           </GalleryContainer>
         </Container>
       </PortfolioSection>
-      <PortfolioSection id="elemental">
+      <PortfolioSection id="collabtogrow">
+        <Container>
+          <ProjectTitle>Collabtogrow</ProjectTitle>
+          <PorftolioCategory type="web" />
+          <GalleryContainer>
+            <CollabtogrowGallery />
+          </GalleryContainer>
+        </Container>
+      </PortfolioSection>
+      <PortfolioSection id="contentManager" color="white">
+        <Container>
+          <ProjectTitle>Content Manager</ProjectTitle>
+          <PorftolioCategory type="web" />
+          <GalleryContainer>
+            <ContentManagerGallery />
+          </GalleryContainer>
+        </Container>
+      </PortfolioSection>
+      <PortfolioSection id="ctoFounders">
+        <Container>
+          <ProjectTitle>CTO Founders</ProjectTitle>
+          <PorftolioCategory type="app" />
+          <GalleryContainer>
+            <CtoFoundersGallery />
+          </GalleryContainer>
+        </Container>
+      </PortfolioSection>
+      <PortfolioSection id="elemental" color="white">
         <Container>
           <ProjectTitle>Elemental</ProjectTitle>
           <PorftolioCategory type="app" />
           <GalleryContainer>
             <ElementalGallery />
+          </GalleryContainer>
+        </Container>
+      </PortfolioSection>
+      <PortfolioSection id="kadem">
+        <Container>
+          <ProjectTitle>Kadem</ProjectTitle>
+          <PorftolioCategory type="web/app" />
+          <GalleryContainer>
+            <KademGallery />
           </GalleryContainer>
         </Container>
       </PortfolioSection>
@@ -85,12 +127,30 @@ const Portfolio = () => (
           </GalleryContainer>
         </Container>
       </PortfolioSection>
-      <PortfolioSection id="ryval">
+      <PortfolioSection id="payklever">
+        <Container>
+          <ProjectTitle>Payklever</ProjectTitle>
+          <PorftolioCategory type="web" />
+          <GalleryContainer>
+            <PayKlever />
+          </GalleryContainer>
+        </Container>
+      </PortfolioSection>
+      <PortfolioSection id="ryval" color="white">
         <Container>
           <ProjectTitle>Ryval</ProjectTitle>
           <PorftolioCategory type="app" />
           <GalleryContainer>
             <RyvalGallery />
+          </GalleryContainer>
+        </Container>
+      </PortfolioSection>
+      <PortfolioSection id="storyRocket">
+        <Container>
+          <ProjectTitle>Story Rocket</ProjectTitle>
+          <PorftolioCategory type="web" />
+          <GalleryContainer>
+            <StoryRocket search="storyRocket" />
           </GalleryContainer>
         </Container>
       </PortfolioSection>
