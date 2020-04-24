@@ -35,6 +35,27 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'bazl',
+        path: `${__dirname}/src/assets/images/portfolio/bazl`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'elemental',
+        path: `${__dirname}/src/assets/images/portfolio/elemental`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'ryval',
+        path: `${__dirname}/src/assets/images/portfolio/ryval`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [

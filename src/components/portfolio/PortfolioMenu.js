@@ -106,10 +106,19 @@ const Menu = () => {
       <Drawer visible={isVisible} onClose={handleOpen}>
         <MenuWrapper>
           <MenuItem onClick={handleOpen}>
-            <MenuLink href="#okroo-test-1">First Section</MenuLink>
+            <MenuLink href="#accountable">Accountable</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
-            <MenuLink href="#okroo-test-2">Second Section</MenuLink>
+            <MenuLink href="#bazl">Bazl</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#elemental">Elemental</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#okroo">Okroo</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#ryval">Ryval</MenuLink>
           </MenuItem>
         </MenuWrapper>
       </Drawer>

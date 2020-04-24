@@ -11,18 +11,19 @@ export const MansoryContainer = styled.div`
 `;
 
 export const MansoryItem = styled.figure`
-  background-color: #eee;
   display: inline-block;
   margin: 0 0 1em;
   width: 100%;
+  padding: 0.5em;
 `;
 
 export const MansoryImage = styled.img`
   max-width: 100%;
   height: auto;
   display: block;
-  border-radius: 15px;
   cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 `;
 
 export const MansorySliderItem = styled.div`

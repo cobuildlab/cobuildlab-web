@@ -12,8 +12,11 @@ import PortfolioSection from '../components/portfolio/PortfolioSection';
 import ProjectTitle from '../components/portfolio/ProjectTitle';
 import PorftolioCategory from '../components/portfolio/PortfolioCategory';
 
-import OkrooGallery from '../components/portfolio/galleries/Okroo';
 import AccountableGallery from '../components/portfolio/galleries/Accountable';
+import BazlGallery from '../components/portfolio/galleries/Bazl';
+import ElementalGallery from '../components/portfolio/galleries/Elemental';
+import OkrooGallery from '../components/portfolio/galleries/Okroo';
+import RyvalGallery from '../components/portfolio/galleries/Ryval';
 
 const siteTitle = 'Portfolio | Cobuild Lab';
 
@@ -46,7 +49,34 @@ const Portfolio = () => (
           </Container>
         </Wrapper>
       </HeroBody>
-      <PortfolioSection id="okroo-test-1">
+      <PortfolioSection id="accountable">
+        <Container>
+          <ProjectTitle>Accountable</ProjectTitle>
+          <PorftolioCategory type="web" />
+          <GalleryContainer>
+            <AccountableGallery />
+          </GalleryContainer>
+        </Container>
+      </PortfolioSection>
+      <PortfolioSection id="bazl" color="white">
+        <Container>
+          <ProjectTitle>Bazl</ProjectTitle>
+          <PorftolioCategory type="web/app" />
+          <GalleryContainer>
+            <BazlGallery />
+          </GalleryContainer>
+        </Container>
+      </PortfolioSection>
+      <PortfolioSection id="elemental">
+        <Container>
+          <ProjectTitle>Elemental</ProjectTitle>
+          <PorftolioCategory type="app" />
+          <GalleryContainer>
+            <ElementalGallery />
+          </GalleryContainer>
+        </Container>
+      </PortfolioSection>
+      <PortfolioSection id="okroo" color="white">
         <Container>
           <ProjectTitle>Okroo</ProjectTitle>
           <PorftolioCategory type="app" />
@@ -55,12 +85,12 @@ const Portfolio = () => (
           </GalleryContainer>
         </Container>
       </PortfolioSection>
-      <PortfolioSection id="okroo-test-2" color="white">
+      <PortfolioSection id="ryval">
         <Container>
-          <ProjectTitle>Accountable</ProjectTitle>
-          <PorftolioCategory type="web" />
+          <ProjectTitle>Ryval</ProjectTitle>
+          <PorftolioCategory type="app" />
           <GalleryContainer>
-            <AccountableGallery />
+            <RyvalGallery />
           </GalleryContainer>
         </Container>
       </PortfolioSection>
