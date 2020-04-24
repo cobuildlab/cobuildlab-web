@@ -33,6 +33,7 @@ export default class PortfolioMansory extends PureComponent {
     // renders
     this.renderMansoryItems = this.renderMansoryItems.bind(this);
     this.renderSliderItems = this.renderSliderItems.bind(this);
+    this.onKeyDown = this.onKeyDown.bind(this);
 
     this.state = {
       visible: false,
@@ -40,7 +41,22 @@ export default class PortfolioMansory extends PureComponent {
     };
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    document.addEventListener('keydown', this.onKeyDown);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this.onKeyDown);
+  }
+
+  onKeyDown(event) {
+    const { visible } = this.state;
+    if (visible && event.keyCode === 27) {
+      this.setState({
+        visible: false,
+      });
+    }
+  }
 
   async checkImagesLoad(index) {
     this.slider.slickGoTo(index);
