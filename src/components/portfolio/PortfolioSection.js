@@ -7,7 +7,8 @@ const SectionWrapper = styled(Section)`
   padding-top: 3em;
   background-color: ${({ color }) => (color === 'white' ? '#fff' : 'transparent')};
   @media screen and (max-width: 768px) {
-    padding: 0 1em;
+    padding-right: 1em;
+    padding-left: 1em;
   }
 `;
 
