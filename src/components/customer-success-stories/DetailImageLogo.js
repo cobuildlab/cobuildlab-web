@@ -11,10 +11,6 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding: 1em;
-  transition: transform 0.3s linear;
-  &:hover {
-    transform: scale(1.05);
-  }
 `;
 
 const Image = styled.img`
