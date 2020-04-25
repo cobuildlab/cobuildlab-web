@@ -8,7 +8,7 @@ import DetailParagraph from '../../components/customer-success-stories/DetailPar
 import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
 import DetailSectionImageRight from '../../components/customer-success-stories/DetailSectionImageRight';
 
-import DetailTeam from '../../components/customer-success-stories/DetailTeam';
+// import DetailTeam from '../../components/customer-success-stories/DetailTeam';
 import DetailCarousel from '../../components/customer-success-stories/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
 import DetailImageLogo from '../../components/customer-success-stories/DetailImageLogo';
@@ -18,9 +18,16 @@ import { List, ListItem } from '../../components/Typography/List';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
-import img1 from '../../assets/images/customers/laptop-left.png';
-import img2 from '../../assets/images/customers/laptop-right.png';
 import logo from '../../assets/images/customers/collabtogrow-logo.png';
+
+import textImg1 from '../../assets/images/customers/weedmatch/text-img-1.png';
+//slider images
+import slider1 from '../../assets/images/customers/weedmatch/slider/1.jpg';
+import slider2 from '../../assets/images/customers/weedmatch/slider/2.jpg';
+import slider3 from '../../assets/images/customers/weedmatch/slider/3.jpg';
+import slider4 from '../../assets/images/customers/weedmatch/slider/4.jpg';
+import slider5 from '../../assets/images/customers/weedmatch/slider/5.jpg';
+import slider6 from '../../assets/images/customers/weedmatch/slider/6.jpg';
 
 const Weedmatch = () => (
   <DetailLayout>
@@ -61,7 +68,7 @@ const Weedmatch = () => (
       </Container>
     </Section>
 
-    <DetailSectionImageLeft src={img1} alt="What is the Succeed Platform?">
+    <DetailSectionImageLeft src={textImg1} alt="What is the Succeed Platform?">
       <DetailSubTitle>
         Biography of <TextOrange> weedmatch</TextOrange>
       </DetailSubTitle>
@@ -84,7 +91,7 @@ const Weedmatch = () => (
         the lifestyle world was in debt of tools for this community.
       </DetailParagraph>
     </DetailSectionImageLeft>
-    <DetailSectionImageRight src={img2} alt="What is the Succeed Platform?">
+    <DetailSectionImageRight src={textImg1} alt="What is the Succeed Platform?">
       <DetailParagraph>
         lifestyle world was in debt of tools for this community. After a couple of meeting Oscar
         develop the concept of the brand with several of its partners and the shape of the Weedmatch
@@ -124,14 +131,33 @@ const Weedmatch = () => (
       </div>
     </DetailSectionImageRight>
 
-    <Section>
+    {/* <Section>
       <Container>
-        <DetailTeam />
+      <DetailTeam />
       </Container>
-    </Section>
+     </Section> */}
 
     <Section isPaddingless>
-      <DetailCarousel />
+      <DetailCarousel>
+        <div>
+          <img src={slider1} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider2} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider3} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider4} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider5} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider6} alt="jobcore app" />
+        </div>
+      </DetailCarousel>
     </Section>
 
     <Section isPaddingless>
