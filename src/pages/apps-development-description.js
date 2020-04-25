@@ -17,6 +17,7 @@ import {
 } from '../components/2020/LandingTypography';
 import ButtonSmoothScrolling from '../components/2020/Button/ButtonSmoothScrolling';
 import Skills from '../components/enterprise/containers/skills';
+import Brand from '../components/enterprise/containers/brands';
 
 class AppsDevDescription extends Component {
   constructor(props) {
@@ -27,7 +28,7 @@ class AppsDevDescription extends Component {
   render() {
     const siteTitle = 'Developing Web and Mobile Applications Fast and Effective';
     const siteDescription =
-      'We partner with Entrepreneurs, Small and Medium Businesses to transform ideas into working Apps.';
+      'We partner with Entrepreneurs, Small and Medium-sized Businesses, to transform ideas into working Web and Mobile Applications.';
     const landingName = 'Apps Development Description';
 
     return (
@@ -44,6 +45,7 @@ class AppsDevDescription extends Component {
                   - Provide differentiators values to your Customers to stand over your competitors
                 </Paragraph>
                 <Paragraph>- Reduce your costs</Paragraph>
+                <Paragraph>- Target Android and IOS users</Paragraph>
               </li>
             </ul>
             <ButtonSmoothScrolling href="#landing-contact-form">
@@ -55,6 +57,8 @@ class AppsDevDescription extends Component {
             <YouTubeVideo id={'AlU5h2xrQ5M'} />
           </Column>
         </Columns>
+
+        <Brand />
 
         <Columns>
           <Column>

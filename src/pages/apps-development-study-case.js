@@ -18,12 +18,13 @@ import {
 import ButtonSmoothScrolling from '../components/2020/Button/ButtonSmoothScrolling';
 import Skills from '../components/enterprise/containers/skills';
 import { CaseStudy } from '../components/2020/CaseStudy';
+import Brand from '../components/enterprise/containers/brands';
 
 export default class AppsDevStudy extends Component {
   render() {
     const siteTitle = 'Developing Web and Mobile Applications Fast and Effectively';
     const siteDescription =
-      'We partner with Entrepreneurs, Small and Medium-sized Businesses, to transform ideas into working Apps.';
+      'We partner with Entrepreneurs, Small and Medium-sized Businesses, to transform ideas into working Web and Mobile Applications.';
     const landingName = 'Apps Development Study Case';
 
     return (
@@ -40,6 +41,7 @@ export default class AppsDevStudy extends Component {
                   - Provide differentiators values to your Customers to stand over your competitors
                 </Paragraph>
                 <Paragraph>- Reduce your costs</Paragraph>
+                <Paragraph>- Target Android and IOS users</Paragraph>
               </li>
             </ul>
             <ButtonSmoothScrolling href="#landing-contact-form">
@@ -54,6 +56,7 @@ export default class AppsDevStudy extends Component {
 
         <br />
         <br />
+        <Brand />
         <CaseStudy />
 
         <Columns>
