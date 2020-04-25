@@ -7,23 +7,27 @@ import DetailParagraphTitle from '../../components/customer-success-stories/Deta
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
 import DetailSectionImageRight from '../../components/customer-success-stories/DetailSectionImageRight';
-import DetailTeam from '../../components/customer-success-stories/DetailTeam';
+import DetailImagesDescription from '../../components/customer-success-stories/DetailImagesDescription';
+// import DetailTeam from '../../components/customer-success-stories/DetailTeam';
 import DetailCarousel from '../../components/customer-success-stories/DetailCarousel';
-import DetailVideo from '../../components/customer-success-stories/DetailVideo';
 import DetailImageLogo from '../../components/customer-success-stories/DetailImageLogo';
 import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
-import logo from '../../assets/images/customers/collabtogrow-logo.png';
+import logo from '../../assets/images/customers/jobcore/job-logo.jpeg';
+import text from '../../assets/images/customers/jobcore/Texto-corto.jpg';
 
-import textImg2 from '../../assets/images/customers/jobcore/slider/joc1.jpg';
 import textImg1 from '../../assets/images/customers/jobcore/text-img-1.png';
+import textImg2 from '../../assets/images/customers/jobcore/text-img-2.jpg';
 //slider images
-import slider2 from '../../assets/images/customers/jobcore/slider/joc2.jpg';
-import slider3 from '../../assets/images/customers/jobcore/slider/joc3.jpg';
-import slider4 from '../../assets/images/customers/jobcore/slider/joc4.jpg';
+import slider1 from '../../assets/images/customers/jobcore/slider/Job1.jpg';
+import slider2 from '../../assets/images/customers/jobcore/slider/Job2.jpg';
+import slider3 from '../../assets/images/customers/jobcore/slider/Job3.jpg';
+import slider4 from '../../assets/images/customers/jobcore/slider/job4.jpg';
+import slider5 from '../../assets/images/customers/jobcore/slider/job5.jpg';
+import slider6 from '../../assets/images/customers/jobcore/slider/job6.jpg';
 
 const Jobcore = () => (
   <DetailLayout>
@@ -82,7 +86,7 @@ const Jobcore = () => (
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroRightContainer>
               <DetailImageLogo src={logo} />
-              <DetailVideo />
+              <DetailImagesDescription src={text} alt="" />
             </DetailHeroRightContainer>
           </Column>
         </Columns>
@@ -132,14 +136,20 @@ const Jobcore = () => (
       </DetailParagraph>
     </DetailSectionImageRight>
 
-    <Section>
+    {/* <Section>
       <Container>
-        <DetailTeam />
+      <DetailTeam />
       </Container>
-    </Section>
+     </Section> */}
 
     <Section isPaddingless>
       <DetailCarousel>
+        <div>
+          <img src={slider4} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider1} alt="jobcore app" />
+        </div>
         <div>
           <img src={slider2} alt="jobcore app" />
         </div>
@@ -147,7 +157,10 @@ const Jobcore = () => (
           <img src={slider3} alt="jobcore app" />
         </div>
         <div>
-          <img src={slider4} alt="jobcore app" />
+          <img src={slider5} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider6} alt="jobcore app" />
         </div>
       </DetailCarousel>
     </Section>

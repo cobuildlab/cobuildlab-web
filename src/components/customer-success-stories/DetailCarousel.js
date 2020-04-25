@@ -13,7 +13,7 @@ const Container = styled.div`
 
 const GrayBackground = styled.div`
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 0;
   width: 100%;
   height: 50%;
