@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import logo from '../../resources/icons/gear.svg';
 
@@ -16,5 +17,9 @@ const _Label = (props) => (
     <StyleNewsletter>{props.children}</StyleNewsletter>
   </div>
 );
+
+_Label.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+};
 
 export { _Label as LabelTitle };

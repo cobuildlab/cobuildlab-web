@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 /**
- * @param props
+ * @param {object} props - Html props.
+ * @returns {React.node} - React node.
  */
 export default function HTML(props) {
   return (
@@ -29,6 +30,15 @@ export default function HTML(props) {
     </html>
   );
 }
+
+HTML.defaultProps = {
+  htmlAttributes: {},
+  headComponents: [],
+  bodyAttributes: {},
+  preBodyComponents: [],
+  body: '',
+  postBodyComponents: [],
+};
 
 HTML.propTypes = {
   htmlAttributes: PropTypes.object,

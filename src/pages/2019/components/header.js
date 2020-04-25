@@ -35,7 +35,7 @@ class header extends React.Component {
             <NavbarBrand>
               <NavbarItem>
                 <Link className="link-nav" to="/">
-                  <img src={logo} style={{ marginRight: 5 }} />
+                  <img src={logo} style={{ marginRight: 5 }} alt="" />
                 </Link>
               </NavbarItem>
               <NavbarBurger isActive={this.state.isActive} onClick={this.onClickNav} />
@@ -71,7 +71,7 @@ class header extends React.Component {
           <Container isFluid className="mt-25">
             <NavbarBrand>
               <Link className="link-nav" to="/">
-                <img src={logo} style={{ marginRight: 5 }} width="229" height="49" />
+                <img src={logo} style={{ marginRight: 5 }} width="229" height="49" alt="" />
               </Link>
 
               <NavbarBurger isActive={this.state.isActive} onClick={this.onClickNav} />

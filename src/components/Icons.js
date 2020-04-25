@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { memo } from 'react';
+import PropTypes from 'prop-types';
 // import { library } from '@fortawesome/fontawesome-svg-core'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faStroopwafel, faCheck, faCode, faLayerGroup, faTachometerAlt, faEnvelope, } from '@fortawesome/free-solid-svg-icons'
 
 import { Icon } from 'react-icons-kit';
-import { home } from 'react-icons-kit/icomoon/home';
 
 // library.add(faStroopwafel, faCheck, faCode, faLayerGroup, faTachometerAlt, faEnvelope,)
-class Icons extends React.Component {
-  render() {
-    return <Icon icon={this.props.icon} />;
-  }
-}
-export default Icons;
+const Icons = ({ icon }) => <Icon icon={icon} />;
+
+Icons.defaultProps = {
+  icon: '',
+};
+
+Icons.propTypes = {
+  icon: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+};
+export default memo(Icons);
