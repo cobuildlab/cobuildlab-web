@@ -5,18 +5,31 @@ import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
-import DetailTeam from '../../components/customer-success-stories/DetailTeam';
+// import DetailTeam from '../../components/customer-success-stories/DetailTeam';
 import DetailCarousel from '../../components/customer-success-stories/DetailCarousel';
-import DetailVideo from '../../components/customer-success-stories/DetailVideo';
 import DetailImageLogo from '../../components/customer-success-stories/DetailImageLogo';
 import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
+import DetailImagesDescription from '../../components/customer-success-stories/DetailImagesDescription';
 import { List, ListItem } from '../../components/Typography/List';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
-import img1 from '../../assets/images/customers/laptop-left.png';
-import logo from '../../assets/images/customers/collabtogrow-logo.png';
+import logo from '../../assets/images/customers/massone/logo.jpg';
+import text from '../../assets/images/customers/massone/text-corto.jpg';
+
+import textImg1 from '../../assets/images/customers/massone/text-img-1.png';
+//slider images
+import slider1 from '../../assets/images/customers/massone/slider/ma-1.jpg';
+import slider2 from '../../assets/images/customers/massone/slider/ma-2.jpg';
+import slider3 from '../../assets/images/customers/massone/slider/ma-3.jpg';
+import slider4 from '../../assets/images/customers/massone/slider/ma-4.jpg';
+import slider5 from '../../assets/images/customers/massone/slider/ma-5.jpg';
+import slider6 from '../../assets/images/customers/massone/slider/ma-6.jpg';
+import slider7 from '../../assets/images/customers/massone/slider/ma-7.jpg';
+import slider8 from '../../assets/images/customers/massone/slider/ma-8.jpg';
+import slider9 from '../../assets/images/customers/massone/slider/ma-9.jpg';
+import slider10 from '../../assets/images/customers/massone/slider/ma-10.jpg';
 
 const Massone = () => (
   <DetailLayout>
@@ -50,14 +63,14 @@ const Massone = () => (
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroRightContainer>
               <DetailImageLogo src={logo} />
-              <DetailVideo />
+              <DetailImagesDescription src={text} />
             </DetailHeroRightContainer>
           </Column>
         </Columns>
       </Container>
     </Section>
 
-    <DetailSectionImageLeft src={img1} alt="What is the Succeed Platform?">
+    <DetailSectionImageLeft src={textImg1} alt="What is the Succeed Platform?">
       <DetailSubTitle>
         How everything <TextOrange>started:</TextOrange>
       </DetailSubTitle>
@@ -90,14 +103,45 @@ const Massone = () => (
       </div>
     </DetailSectionImageLeft>
 
-    <Section>
+    {/* <Section>
       <Container>
-        <DetailTeam />
+      <DetailTeam />
       </Container>
-    </Section>
+     </Section> */}
 
     <Section isPaddingless>
-      <DetailCarousel />
+      <DetailCarousel>
+        <div>
+          <img src={slider1} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider2} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider3} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider4} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider5} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider6} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider7} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider8} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider9} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider10} alt="jobcore app" />
+        </div>
+      </DetailCarousel>
     </Section>
 
     <Section isPaddingless>
