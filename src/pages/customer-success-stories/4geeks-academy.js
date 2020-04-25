@@ -6,7 +6,7 @@ import DetailSubTitle from '../../components/customer-success-stories/DetailSubT
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
 import DetailSectionImageRight from '../../components/customer-success-stories/DetailSectionImageRight';
-import DetailTeam from '../../components/customer-success-stories/DetailTeam';
+// import DetailTeam from '../../components/customer-success-stories/DetailTeam';
 import DetailCarousel from '../../components/customer-success-stories/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
 import DetailImageLogo from '../../components/customer-success-stories/DetailImageLogo';
@@ -16,9 +16,17 @@ import { List, ListItem } from '../../components/Typography/List';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
-import img1 from '../../assets/images/customers/laptop-left.png';
-import img2 from '../../assets/images/customers/laptop-right.png';
-import logo from '../../assets/images/customers/collabtogrow-logo.png';
+import logo from '../../assets/images/customers/4geek/logo.png';
+
+import textImg1 from '../../assets/images/customers/4geek/text-img-1.png';
+//slider images
+import slider1 from '../../assets/images/customers/4geek/slider/1.png';
+import slider2 from '../../assets/images/customers/4geek/slider/2.png';
+import slider3 from '../../assets/images/customers/4geek/slider/3.png';
+import slider4 from '../../assets/images/customers/4geek/slider/4.png';
+import slider5 from '../../assets/images/customers/4geek/slider/5.png';
+import slider6 from '../../assets/images/customers/4geek/slider/6.png';
+import slider7 from '../../assets/images/customers/4geek/slider/7.png';
 
 const GeeksAcademy = () => (
   <DetailLayout>
@@ -77,7 +85,7 @@ const GeeksAcademy = () => (
       </Container>
     </Section>
 
-    <DetailSectionImageLeft src={img1} alt="What is the Succeed Platform?">
+    <DetailSectionImageLeft src={textImg1} alt="What is the Succeed Platform?">
       <DetailSubTitle>
         The Academy in <TextOrange>Venezuela</TextOrange>
       </DetailSubTitle>
@@ -89,7 +97,7 @@ const GeeksAcademy = () => (
       </DetailParagraph>
     </DetailSectionImageLeft>
 
-    <DetailSectionImageRight src={img2} alt="What is the Succeed Platform?">
+    <DetailSectionImageRight src={textImg1} alt="What is the Succeed Platform?">
       <DetailSubTitle>
         4Geeks Academy: <TextOrange> Maturity and experience</TextOrange>
       </DetailSubTitle>
@@ -119,14 +127,36 @@ const GeeksAcademy = () => (
       </List>
     </DetailSectionImageRight>
 
-    <Section>
+    {/* <Section>
       <Container>
-        <DetailTeam />
+      <DetailTeam />
       </Container>
-    </Section>
+     </Section> */}
 
     <Section isPaddingless>
-      <DetailCarousel />
+      <DetailCarousel>
+        <div>
+          <img src={slider1} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider2} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider3} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider4} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider5} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider6} alt="jobcore app" />
+        </div>
+        <div>
+          <img src={slider7} alt="jobcore app" />
+        </div>
+      </DetailCarousel>
     </Section>
 
     <Section isPaddingless>
