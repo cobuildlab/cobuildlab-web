@@ -21,6 +21,83 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'okroo',
+        path: `${__dirname}/src/assets/images/portfolio/okroo`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'accountable',
+        path: `${__dirname}/src/assets/images/portfolio/accountable`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'bazl',
+        path: `${__dirname}/src/assets/images/portfolio/bazl`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'elemental',
+        path: `${__dirname}/src/assets/images/portfolio/elemental`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'ryval',
+        path: `${__dirname}/src/assets/images/portfolio/ryval`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'collabtogrow',
+        path: `${__dirname}/src/assets/images/portfolio/collabtogrow`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'contentManager',
+        path: `${__dirname}/src/assets/images/portfolio/content-manager`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'ctoFounders',
+        path: `${__dirname}/src/assets/images/portfolio/cto-founders`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'kadem',
+        path: `${__dirname}/src/assets/images/portfolio/kadem`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'payklever',
+        path: `${__dirname}/src/assets/images/portfolio/payklever`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'storyRocket',
+        path: `${__dirname}/src/assets/images/portfolio/story-rocket`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -55,7 +132,6 @@ module.exports = {
         trackingId: 'UA-105326682-1',
       },
     },
-
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
