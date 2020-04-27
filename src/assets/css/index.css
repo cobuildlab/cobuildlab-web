@@ -1364,15 +1364,15 @@ input:focus ~ .highlight {
     color: #e76c29;
 }
 
-.modal {
+/*.modal {
     transition: opacity 0.3s linear;
-    opacity: 0!important;
-    display: flex!important;
+    opacity: 0;
+    display: flex;
 }
 
 .modal.is-active {
-    opacity: 1!important;
-}
+    /opacity: 1!important;
+}*/
 
 .p-0 {
     padding: 0px !important;

@@ -106,10 +106,37 @@ const Menu = () => {
       <Drawer visible={isVisible} onClose={handleOpen}>
         <MenuWrapper>
           <MenuItem onClick={handleOpen}>
-            <MenuLink href="#okroo-test-1">First Section</MenuLink>
+            <MenuLink href="#accountable">Accountable</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
-            <MenuLink href="#okroo-test-2">Second Section</MenuLink>
+            <MenuLink href="#bazl">Bazl</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#collabtogrow">Collabtogrow</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#contentManager">Content Manager</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#ctoFounders">CTO Founders</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#elemental">Elemental</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#kadem">Kadem</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#okroo">Okroo</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#payklever">Payklever</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#ryval">Ryval</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#storyRocket">Story Rocket</MenuLink>
           </MenuItem>
         </MenuWrapper>
       </Drawer>
