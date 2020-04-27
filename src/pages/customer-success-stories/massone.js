@@ -9,10 +9,10 @@ import DetailParagraph from '../../components/customer-success-stories/DetailPar
 import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
 // import DetailTeam from '../../components/customer-success-stories/DetailTeam';
 import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
-import DetailImageLogo from '../../components/customer-success-stories/DetailImageLogo';
+import DetailImageLogo from '../../components/customer-success-stories/details-images/DetailImageLogo';
 import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
-import DetailImagesDescription from '../../components/customer-success-stories/DetailImagesDescription';
+import DetailImagesDescription from '../../components/customer-success-stories/details-images/DetailImagesDescription';
 import { List, ListItem } from '../../components/Typography/List';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';

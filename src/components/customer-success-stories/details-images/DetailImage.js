@@ -2,18 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
+import Wrapper from './ImagesWrapper';
+import { Dflex } from './common-styles';
 
 const Container = styled.div`
   padding: 1em;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const Wrapper = styled.div`
-  display: inline;
-  width: 100%;
+  ${Dflex}
 `;
 
 const DetailImage = ({ src }) => (

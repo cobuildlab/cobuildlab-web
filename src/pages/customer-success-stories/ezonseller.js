@@ -11,7 +11,7 @@ import DetailSectionImageRight from '../../components/customer-success-stories/D
 // import DetailTeam from '../../components/customer-success-stories/DetailTeam';
 // import DetailCarousel from '../../components/customer-success-stories/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
-import DetailImageLogo from '../../components/customer-success-stories/DetailImageLogo';
+import DetailImageLogo from '../../components/customer-success-stories/details-images/DetailImageLogo';
 import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
 import { List, ListItem } from '../../components/Typography/List';
