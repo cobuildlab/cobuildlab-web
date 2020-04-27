@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
@@ -9,7 +11,7 @@ import DetailSectionImageLeft from '../../components/customer-success-stories/De
 import DetailSectionImageRight from '../../components/customer-success-stories/DetailSectionImageRight';
 
 // import DetailTeam from '../../components/customer-success-stories/DetailTeam';
-import DetailCarousel from '../../components/customer-success-stories/DetailCarousel';
+import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
 import DetailImageLogo from '../../components/customer-success-stories/DetailImageLogo';
 import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
@@ -19,17 +21,9 @@ import { List, ListItem } from '../../components/Typography/List';
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
 import logo from '../../assets/images/customers/collabtogrow-logo.png';
-
 import textImg1 from '../../assets/images/customers/weedmatch/text-img-1.png';
-//slider images
-import slider1 from '../../assets/images/customers/weedmatch/slider/1.jpg';
-import slider2 from '../../assets/images/customers/weedmatch/slider/2.jpg';
-import slider3 from '../../assets/images/customers/weedmatch/slider/3.jpg';
-import slider4 from '../../assets/images/customers/weedmatch/slider/4.jpg';
-import slider5 from '../../assets/images/customers/weedmatch/slider/5.jpg';
-import slider6 from '../../assets/images/customers/weedmatch/slider/6.jpg';
 
-const Weedmatch = () => (
+const Weedmatch = ({ data }) => (
   <DetailLayout>
     <Section>
       <Container>
@@ -138,26 +132,7 @@ const Weedmatch = () => (
      </Section> */}
 
     <Section isPaddingless>
-      <DetailCarousel>
-        <div>
-          <img src={slider1} alt="jobcore app" />
-        </div>
-        <div>
-          <img src={slider2} alt="jobcore app" />
-        </div>
-        <div>
-          <img src={slider3} alt="jobcore app" />
-        </div>
-        <div>
-          <img src={slider4} alt="jobcore app" />
-        </div>
-        <div>
-          <img src={slider5} alt="jobcore app" />
-        </div>
-        <div>
-          <img src={slider6} alt="jobcore app" />
-        </div>
-      </DetailCarousel>
+      <DetailCarousel data={data.slider.edges} />
     </Section>
 
     <Section isPaddingless>
@@ -165,5 +140,31 @@ const Weedmatch = () => (
     </Section>
   </DetailLayout>
 );
+
+Weedmatch.propTypes = {
+  data: PropTypes.object.isRequired,
+};
+
+export const pageQuery = graphql`
+  query {
+    slider: allFile(filter: { relativeDirectory: { eq: "customers/weedmatch/slider" } }) {
+      edges {
+        node {
+          id
+          name
+          childImageSharp {
+            fluid(quality: 100) {
+              src
+              srcSet
+              sizes
+              aspectRatio
+              base64
+            }
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default Weedmatch;

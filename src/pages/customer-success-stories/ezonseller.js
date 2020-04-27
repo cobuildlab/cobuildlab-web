@@ -6,8 +6,8 @@ import DetailSubTitle from '../../components/customer-success-stories/DetailSubT
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
 import DetailSectionImageRight from '../../components/customer-success-stories/DetailSectionImageRight';
-import DetailTeam from '../../components/customer-success-stories/DetailTeam';
-import DetailCarousel from '../../components/customer-success-stories/DetailCarousel';
+// import DetailTeam from '../../components/customer-success-stories/DetailTeam';
+// import DetailCarousel from '../../components/customer-success-stories/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
 import DetailImageLogo from '../../components/customer-success-stories/DetailImageLogo';
 import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
@@ -116,15 +116,15 @@ const Ezonseller = () => (
       </div>
     </DetailSectionImageRight>
 
-    <Section>
+    {/* <Section>
       <Container>
         <DetailTeam />
       </Container>
     </Section>
 
     <Section isPaddingless>
-      <DetailCarousel />
-    </Section>
+      <DetailCarousel  />
+    </Section>*/}
 
     <Section isPaddingless>
       <DetailsOtherStories />

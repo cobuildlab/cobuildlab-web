@@ -6,8 +6,8 @@ import DetailSubTitle from '../../components/customer-success-stories/DetailSubT
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
 import DetailSectionImageRight from '../../components/customer-success-stories/DetailSectionImageRight';
-import DetailTeam from '../../components/customer-success-stories/DetailTeam';
-import DetailCarousel from '../../components/customer-success-stories/DetailCarousel';
+// import DetailTeam from '../../components/customer-success-stories/DetailTeam';
+// import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
 import DetailImageLogo from '../../components/customer-success-stories/DetailImageLogo';
 import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
@@ -162,7 +162,7 @@ const PaykleverCampaignManager = () => (
       </div>
     </DetailSectionImageRight>
 
-    <Section>
+    {/* <Section>
       <Container>
         <DetailTeam />
       </Container>
@@ -170,7 +170,7 @@ const PaykleverCampaignManager = () => (
 
     <Section isPaddingless>
       <DetailCarousel />
-    </Section>
+    </Section>*/}
 
     <Section isPaddingless>
       <DetailsOtherStories />

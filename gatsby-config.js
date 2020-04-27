@@ -23,17 +23,19 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'okroo',
-        path: `${__dirname}/src/assets/images/portfolio/okroo`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         path: `${__dirname}/src/assets/images`,
         name: 'images',
       },
     },
+    // delete this
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'okroo',
+        path: `${__dirname}/src/assets/images/portfolio/okroo`,
+      },
+    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -104,6 +106,7 @@ module.exports = {
         path: `${__dirname}/src/assets/images/portfolio/story-rocket`,
       },
     },
+    // to here
     {
       resolve: `gatsby-transformer-remark`,
       options: {
