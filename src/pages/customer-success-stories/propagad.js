@@ -16,7 +16,6 @@ import DetailsOtherStories from '../../components/customer-success-stories/Detai
 import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
-import logo from '../../assets/images/customers/collabtogrow-logo.png';
 
 const Propagad = ({ data }) => (
   <DetailLayout>
@@ -76,7 +75,7 @@ const Propagad = ({ data }) => (
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroRightContainer>
-              <DetailImageLogo src={logo} />
+              <DetailImageLogo src={data.logo.childImageSharp.fluid} />
               <DetailVideo />
             </DetailHeroRightContainer>
           </Column>
@@ -106,6 +105,17 @@ Propagad.propTypes = {
 
 export const pageQuery = graphql`
   query {
+    logo: file(relativePath: { eq: "customers/collabtogrow-logo.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
     slider: allFile(filter: { relativeDirectory: { eq: "customers/propagad/slider" } }) {
       edges {
         node {

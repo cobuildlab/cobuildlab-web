@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Img from 'gatsby-image';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -8,24 +9,25 @@ const Container = styled.div`
   overflow: hidden;
   height: calc(400px - 1.5em);
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 1em;
+  justify-content: center;
 `;
 
-const Image = styled.img`
+const Wrapper = styled.div`
   width: 100%;
-  height: auto;
+  display: inline;
 `;
 
 const DetailImageLogo = ({ src }) => (
   <Container>
-    <Image src={src} alt="logo" />
+    <Wrapper>
+      <Img fluid={src} alt="logo" />
+    </Wrapper>
   </Container>
 );
 
 DetailImageLogo.propTypes = {
-  src: PropTypes.string.isRequired,
+  src: PropTypes.object.isRequired,
 };
 
 export default DetailImageLogo;

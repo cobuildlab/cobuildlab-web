@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
@@ -16,11 +18,7 @@ import { List, ListItem } from '../../components/Typography/List';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
-import img1 from '../../assets/images/customers/laptop-left.png';
-import img2 from '../../assets/images/customers/laptop-right.png';
-import logo from '../../assets/images/customers/collabtogrow-logo.png';
-
-const Ezonseller = () => (
+const Ezonseller = ({ data }) => (
   <DetailLayout>
     <Section>
       <Container>
@@ -56,7 +54,7 @@ const Ezonseller = () => (
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroRightContainer>
-              <DetailImageLogo src={logo} />
+              <DetailImageLogo src={data.logo.childImageSharp.fluid} />
               <DetailVideo />
             </DetailHeroRightContainer>
           </Column>
@@ -64,7 +62,9 @@ const Ezonseller = () => (
       </Container>
     </Section>
 
-    <DetailSectionImageLeft src={img1} alt="What is the Succeed Platform?">
+    <DetailSectionImageLeft
+      src={data.textImagesOne.childImageSharp.fluid}
+      alt="What is the Succeed Platform?">
       <DetailSubTitle>
         What is the <TextOrange>Ezonseller platform?</TextOrange>
       </DetailSubTitle>
@@ -83,7 +83,9 @@ const Ezonseller = () => (
         </blockquote>
       </DetailParagraph>
     </DetailSectionImageLeft>
-    <DetailSectionImageRight src={img2} alt="What is the Succeed Platform?">
+    <DetailSectionImageRight
+      src={data.textImagesTwo.childImageSharp.fluid}
+      alt="What is the Succeed Platform?">
       <DetailSubTitle>
         How everything <TextOrange>started:</TextOrange>
       </DetailSubTitle>
@@ -131,5 +133,47 @@ const Ezonseller = () => (
     </Section>
   </DetailLayout>
 );
+
+Ezonseller.propTypes = {
+  data: PropTypes.object.isRequired,
+};
+
+export const pageQuery = graphql`
+  query {
+    textImagesOne: file(relativePath: { eq: "customers/laptop-left.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    textImagesTwo: file(relativePath: { eq: "customers/laptop-right.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    logo: file(relativePath: { eq: "customers/collabtogrow-logo.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+  }
+`;
 
 export default Ezonseller;

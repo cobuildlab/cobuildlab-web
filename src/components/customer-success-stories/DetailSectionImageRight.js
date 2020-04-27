@@ -42,7 +42,7 @@ DetailSectionImageRight.defaultProps = {
 DetailSectionImageRight.propTypes = {
   alt: PropTypes.string,
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
-  src: PropTypes.string.isRequired,
+  src: PropTypes.object.isRequired,
 };
 
 export default DetailSectionImageRight;

@@ -17,11 +17,6 @@ import { List, ListItem } from '../../components/Typography/List';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
-import logo from '../../assets/images/customers/massone/logo.jpg';
-import text from '../../assets/images/customers/massone/text-corto.jpg';
-
-import textImg1 from '../../assets/images/customers/massone/text-img-1.png';
-
 const Massone = ({ data }) => (
   <DetailLayout>
     <Section>
@@ -53,15 +48,17 @@ const Massone = ({ data }) => (
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroRightContainer>
-              <DetailImageLogo src={logo} />
-              <DetailImagesDescription src={text} />
+              <DetailImageLogo src={data.logo.childImageSharp.fluid} />
+              <DetailImagesDescription src={data.text.childImageSharp.fluid} alt="" />
             </DetailHeroRightContainer>
           </Column>
         </Columns>
       </Container>
     </Section>
 
-    <DetailSectionImageLeft src={textImg1} alt="What is the Succeed Platform?">
+    <DetailSectionImageLeft
+      src={data.textImagesOne.childImageSharp.fluid}
+      alt="What is the Succeed Platform?">
       <DetailSubTitle>
         How everything <TextOrange>started:</TextOrange>
       </DetailSubTitle>
@@ -116,6 +113,39 @@ Massone.propTypes = {
 
 export const pageQuery = graphql`
   query {
+    logo: file(relativePath: { eq: "customers/massone/logo.jpg" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    text: file(relativePath: { eq: "customers/massone/text-corto.jpg" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    textImagesOne: file(relativePath: { eq: "customers/massone/text-img-1.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
     slider: allFile(filter: { relativeDirectory: { eq: "customers/massone/slider" } }) {
       edges {
         node {

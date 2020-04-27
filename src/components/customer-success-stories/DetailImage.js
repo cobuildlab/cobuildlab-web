@@ -1,33 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Img from 'gatsby-image';
 import styled from 'styled-components';
 
 const Container = styled.div`
   padding: 1em;
   height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 `;
 
-const Image = styled.img`
+const Wrapper = styled.div`
+  display: inline;
   width: 100%;
-  height: auto;
 `;
 
-const DetailImage = ({ src, alt }) => (
+const DetailImage = ({ src }) => (
   <Container>
-    <Image src={src} alt={alt} />
+    <Wrapper>
+      <Img fluid={src} alt="" />
+    </Wrapper>
   </Container>
 );
 
-DetailImage.defaultProps = {
-  alt: '',
-};
-
 DetailImage.propTypes = {
-  src: PropTypes.string.isRequired,
-  alt: PropTypes.string,
+  src: PropTypes.object.isRequired,
 };
 
 export default DetailImage;

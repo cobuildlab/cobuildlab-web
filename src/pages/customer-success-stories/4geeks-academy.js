@@ -18,9 +18,6 @@ import { List, ListItem } from '../../components/Typography/List';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
-import logo from '../../assets/images/customers/4geek/logo.png';
-import textImg1 from '../../assets/images/customers/4geek/text-img-1.png';
-
 const GeeksAcademy = ({ data }) => (
   <DetailLayout>
     <Section>
@@ -70,7 +67,7 @@ const GeeksAcademy = ({ data }) => (
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroRightContainer>
-              <DetailImageLogo src={logo} />
+              <DetailImageLogo src={data.logo.childImageSharp.fluid} />
               <DetailVideo />
             </DetailHeroRightContainer>
           </Column>
@@ -78,7 +75,9 @@ const GeeksAcademy = ({ data }) => (
       </Container>
     </Section>
 
-    <DetailSectionImageLeft src={textImg1} alt="What is the Succeed Platform?">
+    <DetailSectionImageLeft
+      src={data.textImagesOne.childImageSharp.fluid}
+      alt="What is the Succeed Platform?">
       <DetailSubTitle>
         The Academy in <TextOrange>Venezuela</TextOrange>
       </DetailSubTitle>
@@ -90,7 +89,9 @@ const GeeksAcademy = ({ data }) => (
       </DetailParagraph>
     </DetailSectionImageLeft>
 
-    <DetailSectionImageRight src={textImg1} alt="What is the Succeed Platform?">
+    <DetailSectionImageRight
+      src={data.textImagesOne.childImageSharp.fluid}
+      alt="What is the Succeed Platform?">
       <DetailSubTitle>
         4Geeks Academy: <TextOrange> Maturity and experience</TextOrange>
       </DetailSubTitle>
@@ -156,6 +157,28 @@ export const pageQuery = graphql`
               base64
             }
           }
+        }
+      }
+    }
+    textImagesOne: file(relativePath: { eq: "customers/4geek/text-img-1.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    logo: file(relativePath: { eq: "customers/4geek/logo.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
         }
       }
     }

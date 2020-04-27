@@ -18,12 +18,6 @@ import DetailsOtherStories from '../../components/customer-success-stories/Detai
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
-import logo from '../../assets/images/customers/jobcore/job-logo.jpeg';
-import text from '../../assets/images/customers/jobcore/Texto-corto.jpg';
-
-import textImg1 from '../../assets/images/customers/jobcore/text-img-1.png';
-import textImg2 from '../../assets/images/customers/jobcore/text-img-2.jpg';
-
 const Jobcore = ({ data }) => (
   <DetailLayout>
     <Section>
@@ -80,15 +74,17 @@ const Jobcore = ({ data }) => (
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroRightContainer>
-              <DetailImageLogo src={logo} />
-              <DetailImagesDescription src={text} alt="" />
+              <DetailImageLogo src={data.logo.childImageSharp.fluid} />
+              <DetailImagesDescription src={data.text.childImageSharp.fluid} alt="" />
             </DetailHeroRightContainer>
           </Column>
         </Columns>
       </Container>
     </Section>
 
-    <DetailSectionImageLeft src={textImg1} alt="What is the Succeed Platform?">
+    <DetailSectionImageLeft
+      src={data.textImagesOne.childImageSharp.fluid}
+      alt="What is the Succeed Platform?">
       <DetailSubTitle>
         What is the <TextOrange>Jobcore</TextOrange> platform?
       </DetailSubTitle>
@@ -109,7 +105,9 @@ const Jobcore = ({ data }) => (
       </DetailParagraph>
     </DetailSectionImageLeft>
 
-    <DetailSectionImageRight src={textImg2} alt="What is the Succeed Platform?">
+    <DetailSectionImageRight
+      src={data.textImagesTwo.childImageSharp.fluid}
+      alt="What is the Succeed Platform?">
       <DetailSubTitle>
         How everything <TextOrange>started:</TextOrange>
       </DetailSubTitle>
@@ -152,6 +150,50 @@ Jobcore.propTypes = {
 
 export const pageQuery = graphql`
   query {
+    logo: file(relativePath: { eq: "customers/jobcore/job-logo.jpeg" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    text: file(relativePath: { eq: "customers/jobcore/Texto-corto.jpg" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    textImagesOne: file(relativePath: { eq: "customers/jobcore/text-img-1.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    textImagesTwo: file(relativePath: { eq: "customers/jobcore/text-img-2.jpg" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
     slider: allFile(filter: { relativeDirectory: { eq: "customers/jobcore/slider" } }) {
       edges {
         node {

@@ -20,9 +20,6 @@ import { List, ListItem } from '../../components/Typography/List';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
-import logo from '../../assets/images/customers/collabtogrow-logo.png';
-import textImg1 from '../../assets/images/customers/weedmatch/text-img-1.png';
-
 const Weedmatch = ({ data }) => (
   <DetailLayout>
     <Section>
@@ -54,7 +51,7 @@ const Weedmatch = ({ data }) => (
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroRightContainer>
-              <DetailImageLogo src={logo} />
+              <DetailImageLogo src={data.logo.childImageSharp.fluid} />
               <DetailVideo />
             </DetailHeroRightContainer>
           </Column>
@@ -62,7 +59,9 @@ const Weedmatch = ({ data }) => (
       </Container>
     </Section>
 
-    <DetailSectionImageLeft src={textImg1} alt="What is the Succeed Platform?">
+    <DetailSectionImageLeft
+      src={data.textImagesOne.childImageSharp.fluid}
+      alt="What is the Succeed Platform?">
       <DetailSubTitle>
         Biography of <TextOrange> weedmatch</TextOrange>
       </DetailSubTitle>
@@ -85,7 +84,9 @@ const Weedmatch = ({ data }) => (
         the lifestyle world was in debt of tools for this community.
       </DetailParagraph>
     </DetailSectionImageLeft>
-    <DetailSectionImageRight src={textImg1} alt="What is the Succeed Platform?">
+    <DetailSectionImageRight
+      src={data.textImagesOne.childImageSharp.fluid}
+      alt="What is the Succeed Platform?">
       <DetailParagraph>
         lifestyle world was in debt of tools for this community. After a couple of meeting Oscar
         develop the concept of the brand with several of its partners and the shape of the Weedmatch
@@ -147,6 +148,28 @@ Weedmatch.propTypes = {
 
 export const pageQuery = graphql`
   query {
+    logo: file(relativePath: { eq: "customers/collabtogrow-logo.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    textImagesOne: file(relativePath: { eq: "customers/weedmatch/text-img-1.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
     slider: allFile(filter: { relativeDirectory: { eq: "customers/weedmatch/slider" } }) {
       edges {
         node {
