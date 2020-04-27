@@ -4,7 +4,7 @@ import Mansory from '../Mansory/Mansory';
 
 const query = graphql`
   query {
-    allFile(filter: { sourceInstanceName: { eq: "ryval" } }) {
+    allFile(filter: { relativeDirectory: { eq: "portfolio/ryval" } }) {
       edges {
         node {
           id
