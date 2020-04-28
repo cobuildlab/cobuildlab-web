@@ -1,9 +1,9 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 import LayoutPost from '../components/layoutPost';
 import { Link, graphql } from 'gatsby';
 import { DiscussionEmbed } from 'disqus-react';
 import Share from '../components/Share';
+import SeoMetaTags from '../components/SeoMetaTags';
 import Carousel from '../components/Carousel';
 import Title2 from '../components/Title2';
 import Title3 from '../components/Title3';
@@ -62,12 +62,13 @@ class BlogPostTemplate extends React.Component {
     // const image = get(post, 'frontmatter.image.publicURL') || defaultImg
     const previousImage = get(previous, 'frontmatter.image.publicURL') || defaultImg;
     const nextImage = get(next, 'frontmatter.image.publicURL') || defaultImg;
+
     return (
       <LayoutPost>
-        <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
-          title={`${post.frontmatter.title} | ${siteTitle}`}
+        <SeoMetaTags
+          title={post.frontmatter.title}
+          titleTemplate="Cobuild Lab"
+          description={siteDescription}
         />
 
         <Hero isColor="white" isSize="large">

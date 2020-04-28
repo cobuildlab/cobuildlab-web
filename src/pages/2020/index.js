@@ -1,6 +1,4 @@
 import React, { PureComponent } from 'react';
-import Helmet from 'react-helmet';
-import get from 'lodash/get';
 import { HeroHeader, HeroBody, Hero, Section } from 'bloomer';
 import Layout from '../../components/2020/Layout';
 import Header from '../../components/2020/Header';
@@ -12,6 +10,7 @@ import OurTeam from '../../components/2020/OurTeam';
 import Contact from '../../components/2020/HomePageContact';
 import TestimonialHomePage from '../../components/2020/TestimonialHomePage';
 import HomePagePost from '../../components/2020/HomePagePost';
+import SeoMetaTags from '../../components/SeoMetaTags';
 import 'react-toastify/dist/ReactToastify.min.css';
 import 'react-modal-video/scss/modal-video.scss';
 import 'bulma';
@@ -32,15 +31,9 @@ export default class HomePage extends PureComponent {
   }
 
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title');
-    const siteDescription = get(this, 'props.data.site.siteMetadata.description');
     return (
       <Layout>
-        <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
-          title={siteTitle}
-        />
+        <SeoMetaTags />
         <Hero>
           <HeroHeader>
             <Header />

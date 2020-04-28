@@ -13,7 +13,7 @@ import { useStaticQuery, graphql } from 'gatsby';
  * @returns {*} - The SE Component.
  */
 
-const SeoMetaTags = ({ description, meta, title, lang, image, pathname }) => {
+const SeoMetaTags = ({ description, meta, title, lang, image, pathname, titleTemplate }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -32,9 +32,9 @@ const SeoMetaTags = ({ description, meta, title, lang, image, pathname }) => {
 
   const siteTitle = title || site.siteMetadata.title;
   const metaDescription = description || site.siteMetadata.description;
-  const metaImage = image && image.src ? `${site.siteMetadata.siteUrl}${image.src}` : null;
+  const metaImageUrl = image && image.src ? `${site.siteMetadata.siteUrl}${image.src}` : null;
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null;
-
+  const siteTitleTemplate = titleTemplate ? titleTemplate : site.siteMetadata.titleTemplate;
   // basic defailt metas
   const defaultMetas = [
     {
@@ -72,35 +72,36 @@ const SeoMetaTags = ({ description, meta, title, lang, image, pathname }) => {
   ];
 
   // metas tags this check is a images is pass for props
-  const metas = metaImage
-    ? defaultMetas
-      .concat([
-        {
-          property: 'og:image',
-          content: image,
-        },
-        {
-          property: 'og:image:width',
-          content: metaImage.width,
-        },
-        {
-          property: 'og:image:height',
-          content: metaImage.height,
-        },
-        {
-          name: 'twitter:card',
-          content: 'summary_large_image',
-        },
-      ])
-      .concat(meta)
-    : defaultMetas
-      .concat([
-        {
-          name: 'twitter:card',
-          content: 'summary',
-        },
-      ])
-      .concat(meta);
+  const metas =
+    metaImageUrl && metaImageUrl.length
+      ? defaultMetas
+        .concat([
+          {
+            property: 'og:image',
+            content: metaImageUrl,
+          },
+          {
+            property: 'og:image:width',
+            content: image.width,
+          },
+          {
+            property: 'og:image:height',
+            content: image.height,
+          },
+          {
+            name: 'twitter:card',
+            content: 'summary_large_image',
+          },
+        ])
+        .concat(meta)
+      : defaultMetas
+        .concat([
+          {
+            name: 'twitter:card',
+            content: 'summary',
+          },
+        ])
+        .concat(meta);
 
   const canonicalLink = canonical
     ? [
@@ -117,7 +118,7 @@ const SeoMetaTags = ({ description, meta, title, lang, image, pathname }) => {
         lang,
       }}
       title={siteTitle}
-      titleTemplate={`%s | ${site.siteMetadata.titleTemplate}`}
+      titleTemplate={`%s | ${siteTitleTemplate}`}
       meta={metas}
       link={canonicalLink}
     />
@@ -128,25 +129,27 @@ SeoMetaTags.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
-  image: null,
-  pathname: null,
-  title: null,
+  image: false,
+  pathname: false,
+  title: false,
+  titleTemplate: false,
 };
 
 SeoMetaTags.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.oneOfType([null, PropTypes.string]),
+  title: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   image: PropTypes.oneOfType([
-    null,
+    PropTypes.bool,
     PropTypes.shape({
       src: PropTypes.string.isRequired,
       height: PropTypes.number.isRequired,
       width: PropTypes.number.isRequired,
     }),
   ]),
-  pathname: PropTypes.oneOfType([null, PropTypes.string]),
+  pathname: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  titleTemplate: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
 };
 
 export default SeoMetaTags;

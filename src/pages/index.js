@@ -1,5 +1,5 @@
 import React from 'react';
-import SetMetaTags from '../components/SeoMetaTags';
+import SeoMetaTags from '../components/SeoMetaTags';
 import Navbar from '../components/enterprise/containers/navbar';
 import Banner from '../components/enterprise/containers/banner';
 import Service from '../components/enterprise/containers/service';
@@ -22,7 +22,7 @@ import '../assets/scss/index.scss';
 
 const IndexPage = () => (
   <div className="main-wrapper">
-    <SetMetaTags />
+    <SeoMetaTags />
     <Navbar />
     <div id="main-content">
       <Banner />
