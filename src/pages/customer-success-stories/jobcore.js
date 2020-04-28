@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
@@ -7,29 +9,16 @@ import DetailParagraphTitle from '../../components/customer-success-stories/Deta
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
 import DetailSectionImageRight from '../../components/customer-success-stories/DetailSectionImageRight';
-import DetailImagesDescription from '../../components/customer-success-stories/DetailImagesDescription';
+import DetailImagesDescription from '../../components/customer-success-stories/details-images/DetailImagesDescription';
 // import DetailTeam from '../../components/customer-success-stories/DetailTeam';
-import DetailCarousel from '../../components/customer-success-stories/DetailCarousel';
-import DetailImageLogo from '../../components/customer-success-stories/DetailImageLogo';
+import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
+import DetailImageLogo from '../../components/customer-success-stories/details-images/DetailImageLogo';
 import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
-import logo from '../../assets/images/customers/jobcore/job-logo.jpeg';
-import text from '../../assets/images/customers/jobcore/Texto-corto.jpg';
-
-import textImg1 from '../../assets/images/customers/jobcore/text-img-1.png';
-import textImg2 from '../../assets/images/customers/jobcore/text-img-2.jpg';
-//slider images
-import slider1 from '../../assets/images/customers/jobcore/slider/Job1.jpg';
-import slider2 from '../../assets/images/customers/jobcore/slider/Job2.jpg';
-import slider3 from '../../assets/images/customers/jobcore/slider/Job3.jpg';
-import slider4 from '../../assets/images/customers/jobcore/slider/job4.jpg';
-import slider5 from '../../assets/images/customers/jobcore/slider/job5.jpg';
-import slider6 from '../../assets/images/customers/jobcore/slider/job6.jpg';
-
-const Jobcore = () => (
+const Jobcore = ({ data }) => (
   <DetailLayout>
     <Section>
       <Container>
@@ -85,15 +74,17 @@ const Jobcore = () => (
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroRightContainer>
-              <DetailImageLogo src={logo} />
-              <DetailImagesDescription src={text} alt="" />
+              <DetailImageLogo src={data.logo.childImageSharp.fluid} />
+              <DetailImagesDescription src={data.text.childImageSharp.fluid} alt="" />
             </DetailHeroRightContainer>
           </Column>
         </Columns>
       </Container>
     </Section>
 
-    <DetailSectionImageLeft src={textImg1} alt="What is the Succeed Platform?">
+    <DetailSectionImageLeft
+      src={data.textImagesOne.childImageSharp.fluid}
+      alt="What is the Succeed Platform?">
       <DetailSubTitle>
         What is the <TextOrange>Jobcore</TextOrange> platform?
       </DetailSubTitle>
@@ -114,7 +105,9 @@ const Jobcore = () => (
       </DetailParagraph>
     </DetailSectionImageLeft>
 
-    <DetailSectionImageRight src={textImg2} alt="What is the Succeed Platform?">
+    <DetailSectionImageRight
+      src={data.textImagesTwo.childImageSharp.fluid}
+      alt="What is the Succeed Platform?">
       <DetailSubTitle>
         How everything <TextOrange>started:</TextOrange>
       </DetailSubTitle>
@@ -143,31 +136,82 @@ const Jobcore = () => (
      </Section> */}
 
     <Section isPaddingless>
-      <DetailCarousel>
-        <div>
-          <img src={slider4} alt="jobcore app" />
-        </div>
-        <div>
-          <img src={slider1} alt="jobcore app" />
-        </div>
-        <div>
-          <img src={slider2} alt="jobcore app" />
-        </div>
-        <div>
-          <img src={slider3} alt="jobcore app" />
-        </div>
-        <div>
-          <img src={slider5} alt="jobcore app" />
-        </div>
-        <div>
-          <img src={slider6} alt="jobcore app" />
-        </div>
-      </DetailCarousel>
+      <DetailCarousel data={data.slider.edges} />
     </Section>
     <Section isPaddingless>
       <DetailsOtherStories />
     </Section>
   </DetailLayout>
 );
+
+Jobcore.propTypes = {
+  data: PropTypes.object.isRequired,
+};
+
+export const pageQuery = graphql`
+  query {
+    logo: file(relativePath: { eq: "customers/jobcore/job-logo.jpeg" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    text: file(relativePath: { eq: "customers/jobcore/Texto-corto.jpg" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    textImagesOne: file(relativePath: { eq: "customers/jobcore/text-img-1.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    textImagesTwo: file(relativePath: { eq: "customers/jobcore/text-img-2.jpg" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    slider: allFile(filter: { relativeDirectory: { eq: "customers/jobcore/slider" } }) {
+      edges {
+        node {
+          id
+          name
+          childImageSharp {
+            fluid(quality: 100) {
+              src
+              srcSet
+              sizes
+              aspectRatio
+              base64
+            }
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default Jobcore;

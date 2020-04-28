@@ -1,17 +1,21 @@
 import React from 'react';
+import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Image = styled.img`
+const Container = styled.div`
   margin-top: 2.5em;
-  display: block;
   box-shadow: 0px 15px 30px #00000040;
 `;
 
-const DetailImagesDescription = ({ src }) => <Image src={src} alt="" />;
+const DetailImagesDescription = ({ src }) => (
+  <Container>
+    <Img fluid={src} alt="" />
+  </Container>
+);
 
 DetailImagesDescription.propTypes = {
-  src: PropTypes.string.isRequired,
+  src: PropTypes.object.isRequired,
 };
 
 export default DetailImagesDescription;

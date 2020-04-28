@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
@@ -7,20 +9,16 @@ import DetailParagraphTitle from '../../components/customer-success-stories/Deta
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
 import DetailSectionImageRight from '../../components/customer-success-stories/DetailSectionImageRight';
-import DetailTeam from '../../components/customer-success-stories/DetailTeam';
-import DetailCarousel from '../../components/customer-success-stories/DetailCarousel';
+// import DetailTeam from '../../components/customer-success-stories/DetailTeam';
+// import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
-import DetailImageLogo from '../../components/customer-success-stories/DetailImageLogo';
+import DetailImageLogo from '../../components/customer-success-stories/details-images/DetailImageLogo';
 import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
-import img1 from '../../assets/images/customers/laptop-left.png';
-import img2 from '../../assets/images/customers/laptop-right.png';
-import logo from '../../assets/images/customers/collabtogrow-logo.png';
-
-const Collabtogrow = () => (
+const Collabtogrow = ({ data }) => (
   <DetailLayout>
     <Section>
       <Container>
@@ -69,7 +67,7 @@ const Collabtogrow = () => (
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroRightContainer>
-              <DetailImageLogo src={logo} />
+              <DetailImageLogo src={data.logo.childImageSharp.fluid} />
               <DetailVideo />
             </DetailHeroRightContainer>
           </Column>
@@ -77,7 +75,9 @@ const Collabtogrow = () => (
       </Container>
     </Section>
 
-    <DetailSectionImageLeft src={img1} alt="What is the Succeed Platform?">
+    <DetailSectionImageLeft
+      src={data.textImagesOne.childImageSharp.fluid}
+      alt="What is the Succeed Platform?">
       <DetailSubTitle>
         What is the <TextOrange>Succeed Platform?</TextOrange>
       </DetailSubTitle>
@@ -104,7 +104,9 @@ const Collabtogrow = () => (
       </DetailParagraph>
     </DetailSectionImageLeft>
 
-    <DetailSectionImageRight src={img2} alt="What is the Succeed Platform?">
+    <DetailSectionImageRight
+      src={data.textImagesOne.childImageSharp.fluid}
+      alt="What is the Succeed Platform?">
       <DetailSubTitle>
         Starting from <TextOrange>Zero</TextOrange>
       </DetailSubTitle>
@@ -154,7 +156,9 @@ const Collabtogrow = () => (
       </DetailParagraph>
     </DetailSectionImageRight>
 
-    <DetailSectionImageLeft src={img1} alt="What is the Succeed Platform?">
+    <DetailSectionImageLeft
+      src={data.textImagesOne.childImageSharp.fluid}
+      alt="What is the Succeed Platform?">
       <DetailSubTitle>
         Target <TextOrange>Demographic</TextOrange>
       </DetailSubTitle>
@@ -199,20 +203,52 @@ const Collabtogrow = () => (
       </DetailParagraph>
     </DetailSectionImageLeft>
 
-    <Section>
+    {/* <Section>
       <Container>
-        <DetailTeam />
+      <DetailTeam />
       </Container>
-    </Section>
+     </Section> 
 
+  
     <Section isPaddingless>
-      <DetailCarousel />
-    </Section>
+      <DetailCarousel  />
+    </Section>*/}
 
     <Section isPaddingless>
       <DetailsOtherStories />
     </Section>
   </DetailLayout>
 );
+
+Collabtogrow.propTypes = {
+  data: PropTypes.object.isRequired,
+};
+
+export const pageQuery = graphql`
+  query {
+    textImagesOne: file(relativePath: { eq: "customers/laptop-left.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    logo: file(relativePath: { eq: "customers/4geek/logo.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+  }
+`;
 
 export default Collabtogrow;

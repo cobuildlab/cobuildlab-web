@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { Section, Container, Columns, Column } from 'bloomer';
-import DetailImage from './DetailImage';
+import DetailImage from './details-images/DetailImage';
 
 const SectionContainer = styled(Section)`
   @media screen and (max-width: 768px) {
@@ -42,7 +42,7 @@ DetailSectionImageLeft.defaultProps = {
 DetailSectionImageLeft.propTypes = {
   alt: PropTypes.string,
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
-  src: PropTypes.string.isRequired,
+  src: PropTypes.object.isRequired,
 };
 
 export default DetailSectionImageLeft;
