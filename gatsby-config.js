@@ -4,7 +4,8 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: 'Cobuild Lab | Software development in Miami, Florida',
+    title: 'Cobuild Lab',
+    titleTemplate: 'Software development',
     author: '4geeks.co',
     description: 'Software development in Miami, Florida',
     siteUrl: process.env.URL,
