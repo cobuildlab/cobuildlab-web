@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
 import { List, ListItem } from '../../components/Typography/List';
@@ -10,10 +11,9 @@ import DetailSubTitle from '../../components/customer-success-stories/DetailSubT
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 // import DetailTeam from '../../components/customer-success-stories/DetailTeam';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
-import DetailImageLogo from '../../components/customer-success-stories/details-images/DetailImageLogo';
-import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
 import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
+import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
@@ -74,10 +74,12 @@ const Propagad = ({ data }) => (
             </div>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
-            <DetailHeroRightContainer>
-              <DetailImageLogo src={data.logo.childImageSharp.fluid} />
-              <DetailVideo />
-            </DetailHeroRightContainer>
+            <DetailHeroImagesContent>
+              <Img fluid={data.logo.childImageSharp.fluid} alt="" />
+            </DetailHeroImagesContent>
+            <DetailHeroImagesContent>
+              <DetailVideo id="zG_UIMOHgBI" />
+            </DetailHeroImagesContent>
           </Column>
         </Columns>
       </Container>

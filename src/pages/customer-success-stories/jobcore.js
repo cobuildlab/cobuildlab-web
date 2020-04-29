@@ -1,4 +1,5 @@
 import React from 'react';
+import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
@@ -7,15 +8,11 @@ import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraphTitle from '../../components/customer-success-stories/DetailParagraphTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
-import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
-import DetailSectionImageRight from '../../components/customer-success-stories/DetailSectionImageRight';
-import DetailImagesDescription from '../../components/customer-success-stories/details-images/DetailImagesDescription';
 // import DetailTeam from '../../components/customer-success-stories/DetailTeam';
 import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
-import DetailImageLogo from '../../components/customer-success-stories/details-images/DetailImageLogo';
-import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
-
+import DetailSection from '../../components/customer-success-stories/DetailSection';
+import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
 const Jobcore = ({ data }) => (
@@ -73,18 +70,18 @@ const Jobcore = ({ data }) => (
             </DetailParagraph>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
-            <DetailHeroRightContainer>
-              <DetailImageLogo src={data.logo.childImageSharp.fluid} />
-              <DetailImagesDescription src={data.text.childImageSharp.fluid} alt="" />
-            </DetailHeroRightContainer>
+            <DetailHeroImagesContent>
+              <Img fluid={data.logo.childImageSharp.fluid} alt="" />
+            </DetailHeroImagesContent>
+            <DetailHeroImagesContent>
+              <Img fluid={data.text.childImageSharp.fluid} alt="" />
+            </DetailHeroImagesContent>
           </Column>
         </Columns>
       </Container>
     </Section>
 
-    <DetailSectionImageLeft
-      src={data.textImagesOne.childImageSharp.fluid}
-      alt="What is the Succeed Platform?">
+    <DetailSection src={data.textImagesOne.childImageSharp.fluid}>
       <DetailSubTitle>
         What is the <TextOrange>Jobcore</TextOrange> platform?
       </DetailSubTitle>
@@ -103,11 +100,9 @@ const Jobcore = ({ data }) => (
         For the talent, the mobile app allows them to get notifications for open positions, apply,
         and full fill the shift and track payments all in one place.
       </DetailParagraph>
-    </DetailSectionImageLeft>
+    </DetailSection>
 
-    <DetailSectionImageRight
-      src={data.textImagesTwo.childImageSharp.fluid}
-      alt="What is the Succeed Platform?">
+    <DetailSection src={data.textImagesTwo.childImageSharp.fluid} left>
       <DetailSubTitle>
         How everything <TextOrange>started:</TextOrange>
       </DetailSubTitle>
@@ -127,7 +122,7 @@ const Jobcore = ({ data }) => (
         marketplace for the industry, where employer can publish their position needs to a wider
         audience.
       </DetailParagraph>
-    </DetailSectionImageRight>
+    </DetailSection>
 
     {/* <Section>
       <Container>

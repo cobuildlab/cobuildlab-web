@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import videoImg from '../../assets/images/customers/video.png';
 import VideoPlayIcon from '../2020/VideoPlayIcon';
@@ -25,13 +26,21 @@ const Image = styled.img`
   width: 100%;
 `;
 
-const DetailVideo = () => (
+const DetailVideo = ({ id }) => (
   <Container>
     <Image src={videoImg} alt="video" />
     <IconContainer>
-      <VideoPlayIcon />
+      <VideoPlayIcon videoId={id} />
     </IconContainer>
   </Container>
 );
+
+DetailVideo.defaultProps = {
+  id: '',
+};
+
+DetailVideo.propTypes = {
+  id: PropTypes.string,
+};
 
 export default DetailVideo;
