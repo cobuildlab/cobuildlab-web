@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: 'Cobuild Lab | Software development in Miami, Florida',
     seoTitle: 'Software development in Miami, Florida', // site title  ouput --> Cobuild Lab | Software development in Miami, Florida
-    author: '4geeks.co',
+    author: '@cobuildlab',
     description: 'Software development in Miami, Florida',
     siteUrl: process.env.URL,
     twitterHandle: '@cobuildlab',

@@ -43,7 +43,7 @@ const CustomesWrapper = styled.div`
 const CustomerSuccessStoriesIndex = ({ data }) => (
   <Layout>
     <SeoMetaTags
-      title="Customer Success Stories - Miami Labs"
+      title="Customer Success Stories"
       description="Success Cases for the Cobuild Lab in Miami"
       image={data.seoImages.childImageSharp.resize}
     />
