@@ -10,6 +10,7 @@ import DetailSectionImageLeft from '../../components/customer-success-stories/De
 import DetailSectionImageRight from '../../components/customer-success-stories/DetailSectionImageRight';
 // import DetailTeam from '../../components/customer-success-stories/DetailTeam';
 // import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
+import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
 import DetailImageLogo from '../../components/customer-success-stories/details-images/DetailImageLogo';
 import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
@@ -171,6 +172,10 @@ const PaykleverCampaignManager = ({ data }) => (
     </Section>*/}
 
     <Section isPaddingless>
+      <DetailCarousel data={data.slider.edges} />
+    </Section>
+
+    <Section isPaddingless>
       <DetailsOtherStories />
     </Section>
   </DetailLayout>
@@ -212,6 +217,23 @@ export const pageQuery = graphql`
           sizes
           src
           srcSet
+        }
+      }
+    }
+    slider: allFile(filter: { relativeDirectory: { eq: "customers/payklever/slider" } }) {
+      edges {
+        node {
+          id
+          name
+          childImageSharp {
+            fluid(quality: 100) {
+              src
+              srcSet
+              sizes
+              aspectRatio
+              base64
+            }
+          }
         }
       }
     }
