@@ -56,6 +56,10 @@ const SeoMetaTags = ({ description, meta, title, lang, image, pathname, titleTem
       content: `website`,
     },
     {
+      name: `og:url`,
+      content: typeof window !== 'undefined' ? window.location.href : '',
+    },
+    {
       name: `twitter:creator`,
       content: site.siteMetadata.author,
     },
