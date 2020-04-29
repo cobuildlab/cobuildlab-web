@@ -26,7 +26,7 @@ const description =
 
 const Collabtogrow = ({ data }) => (
   <DetailLayout>
-    <SeoMetaTags title={title} titleTemplate="Cobuild Lab" description={description} />
+    <SeoMetaTags title={title} description={description} />
     <Section>
       <Container>
         <Columns isMultiline>

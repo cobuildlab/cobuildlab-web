@@ -24,7 +24,6 @@ const PaykleverCampaignManager = ({ data }) => (
   <DetailLayout>
     <SeoMetaTags
       title="Payklever Campaign Manager"
-      titleTemplate="Cobuild Lab"
       description="With Payklever you can turn your car into a payment method."
       image={data.seoImages.childImageSharp.resize}
     />

@@ -24,8 +24,7 @@ const GeeksAcademy = ({ data }) => (
   <DetailLayout>
     <SeoMetaTags
       title="4Geeks Academy"
-      titleTemplate="Cobuild Lab"
-      description="Beginning of 4GeeksSucceed Platform"
+      description="Beginning of 4Geeks"
       image={data.seoImages.childImageSharp.resize}
     />
     <Section>

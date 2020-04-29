@@ -42,7 +42,6 @@ const Portfolio = ({ data }) => (
       title="Portfolio"
       description="Portfolio"
       image={data.seoImages.childImageSharp.resize}
-      titleTemplate="Cobuild Lab"
     />
     <Hero>
       <HeroHeader>

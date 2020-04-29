@@ -19,22 +19,20 @@ const SeoMetaTags = ({ description, meta, title, lang, image, pathname, titleTem
       query {
         site {
           siteMetadata {
-            title
+            seoTitle
             description
             author
             siteUrl
-            titleTemplate
           }
         }
       }
     `,
   );
 
-  const siteTitle = title || site.siteMetadata.title;
+  const siteTitle = title || site.siteMetadata.seoTitle;
   const metaDescription = description || site.siteMetadata.description;
   const metaImageUrl = image && image.src ? `${site.siteMetadata.siteUrl}${image.src}` : null;
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null;
-  const siteTitleTemplate = titleTemplate ? titleTemplate : site.siteMetadata.titleTemplate;
   // basic defailt metas
   const defaultMetas = [
     {
@@ -118,7 +116,7 @@ const SeoMetaTags = ({ description, meta, title, lang, image, pathname, titleTem
         lang,
       }}
       title={siteTitle}
-      titleTemplate={`%s | ${siteTitleTemplate}`}
+      titleTemplate={`${titleTemplate} | %s `}
       meta={metas}
       link={canonicalLink}
     />
@@ -132,7 +130,7 @@ SeoMetaTags.defaultProps = {
   image: false,
   pathname: false,
   title: false,
-  titleTemplate: false,
+  titleTemplate: 'Cobuild Lab',
 };
 
 SeoMetaTags.propTypes = {
@@ -149,7 +147,7 @@ SeoMetaTags.propTypes = {
     }),
   ]),
   pathname: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
-  titleTemplate: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  titleTemplate: PropTypes.string,
 };
 
 export default SeoMetaTags;

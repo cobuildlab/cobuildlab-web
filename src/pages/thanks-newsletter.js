@@ -22,11 +22,10 @@ class ThanksNewLetters extends Component {
   }
 
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title');
     const siteDescription = get(this, 'props.data.site.siteMetadata.description');
 
     return (
-      <LandingPageLayout withFooter siteTitle={siteTitle} siteDescription={siteDescription}>
+      <LandingPageLayout withFooter siteDescription={siteDescription}>
         <Title className="title-logo">Cobuild Lab</Title>
         <Title className="subtitle-logo">Thanks for Subscribing!</Title>
         <StyledColumns>
@@ -58,7 +57,6 @@ export const pageQuery = graphql`
   query {
     site {
       siteMetadata {
-        title
         description
       }
     }

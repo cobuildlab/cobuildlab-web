@@ -24,7 +24,6 @@ const Jobcore = ({ data }) => (
   <DetailLayout>
     <SeoMetaTags
       title="Jobcore"
-      titleTemplate="Cobuild Lab"
       description="Get work fast and get paid the same day with Jobcore"
       image={data.seoImages.childImageSharp.resize}
     />

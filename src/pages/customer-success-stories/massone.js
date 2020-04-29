@@ -23,7 +23,6 @@ const Massone = ({ data }) => (
   <DetailLayout>
     <SeoMetaTags
       title="Massone Mechanical"
-      titleTemplate="Cobuild Lab"
       description="Massone Mechanical offers maintenance and installation services to commercial
       refrigeration companies."
       image={data.seoImages.childImageSharp.resize}

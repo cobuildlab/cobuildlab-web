@@ -44,7 +44,6 @@ const CustomerSuccessStoriesIndex = ({ data }) => (
   <Layout>
     <SeoMetaTags
       title="Customer Success Stories - Miami Labs"
-      titleTemplate="Cobuild Lab"
       description="Success Cases for the Cobuild Lab in Miami"
       image={data.seoImages.childImageSharp.resize}
     />

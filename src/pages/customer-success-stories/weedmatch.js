@@ -26,7 +26,6 @@ const Weedmatch = ({ data }) => (
   <DetailLayout>
     <SeoMetaTags
       title="Weedmatch"
-      titleTemplate="Cobuild Lab"
       description="First free cannabis social network"
       image={data.seoImages.childImageSharp.resize}
     />

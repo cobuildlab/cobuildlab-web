@@ -56,11 +56,7 @@ class StoryCommon extends React.Component {
 
     return (
       <LayoutPost>
-        <SeoMetaTags
-          title={post.frontmatter.title}
-          titleTemplate="Cobuild Lab"
-          description={siteDescription}
-        />
+        <SeoMetaTags title={post.frontmatter.title} description={siteDescription} />
         <Hero isColor="white" isSize="large">
           <Container hasTextAlign="centered">
             <Title tag="h3" isSize={1} hasTextColor="Black">

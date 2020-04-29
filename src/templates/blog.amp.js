@@ -69,7 +69,6 @@ class BlogPostTemplate extends React.Component {
       <LayoutPost>
         <SeoMetaTags
           title={post.frontmatter.title}
-          titleTemplate="Cobuild Lab"
           description={siteDescription}
           image={seoImages}
         />
