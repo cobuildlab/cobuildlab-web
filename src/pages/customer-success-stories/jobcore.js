@@ -3,6 +3,8 @@ import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
+import SeoMetaTags from '../../components/SeoMetaTags';
+
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
@@ -17,6 +19,11 @@ import { TextOrange } from '../../components/Typography/TextHelpers';
 
 const Jobcore = ({ data }) => (
   <DetailLayout>
+    <SeoMetaTags
+      title="Jobcore"
+      description="Get work fast and get paid the same day with Jobcore"
+      image={data.seoImages.childImageSharp.resize}
+    />
     <Section>
       <Container>
         <Columns isMultiline>
@@ -145,6 +152,15 @@ Jobcore.propTypes = {
 
 export const pageQuery = graphql`
   query {
+    seoImages: file(relativePath: { eq: "customers/jobcore.jpg" }) {
+      childImageSharp {
+        resize(width: 1200, height: 1200) {
+          width
+          height
+          src
+        }
+      }
+    }
     logo: file(relativePath: { eq: "customers/jobcore/job-logo.jpeg" }) {
       childImageSharp {
         fluid {

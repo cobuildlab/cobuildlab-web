@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import { Section, Container, Columns, Column } from 'bloomer';
+import SeoMetaTags from '../../components/SeoMetaTags';
+
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
@@ -18,6 +20,12 @@ import { TextOrange } from '../../components/Typography/TextHelpers';
 
 const Massone = ({ data }) => (
   <DetailLayout>
+    <SeoMetaTags
+      title="Massone Mechanical"
+      description="Massone Mechanical offers maintenance and installation services to commercial
+      refrigeration companies."
+      image={data.seoImages.childImageSharp.resize}
+    />
     <Section>
       <Container>
         <Columns isMultiline>
@@ -112,6 +120,15 @@ Massone.propTypes = {
 
 export const pageQuery = graphql`
   query {
+    seoImages: file(relativePath: { eq: "customers/Massone.jpg" }) {
+      childImageSharp {
+        resize(width: 1200, height: 1200) {
+          width
+          height
+          src
+        }
+      }
+    }
     logo: file(relativePath: { eq: "customers/massone/logo.jpg" }) {
       childImageSharp {
         fluid {

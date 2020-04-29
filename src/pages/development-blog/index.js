@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import get from 'lodash/get';
-import Helmet from 'react-helmet';
+import SeoMetaTags from '../../components/SeoMetaTags';
 import Layout from '../../components/layout';
 import {
   Hero,
@@ -38,16 +38,16 @@ class BlogIndex extends React.Component {
   }
 
   render() {
-    const siteTitle = 'Software Development Blog';
+    const titleTemplate = 'Software Development Blog';
     const siteDescription = get(this, 'props.data.site.siteMetadata.description');
     const posts = get(this, 'props.data.allMarkdownRemark.edges');
 
     return (
       <Layout>
-        <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
-          title={siteTitle}
+        <SeoMetaTags
+          title="Cobuild Lab"
+          titleTemplate={titleTemplate}
+          description={siteDescription}
         />
 
         <Hero isColor="white" isSize="small">
@@ -56,7 +56,7 @@ class BlogIndex extends React.Component {
               <Columns isCentered>
                 <Column>
                   <Title className="title-blog" isSize={1}>
-                    {siteTitle}
+                    {titleTemplate}
                   </Title>
                   <Subtitle isSize={5}>Development team playground.</Subtitle>
                   <br />

@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
+import SeoMetaTags from '../../components/SeoMetaTags';
+
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
@@ -20,6 +22,11 @@ import { TextOrange } from '../../components/Typography/TextHelpers';
 
 const GeeksAcademy = ({ data }) => (
   <DetailLayout>
+    <SeoMetaTags
+      title="4Geeks Academy"
+      description="Beginning of 4Geeks"
+      image={data.seoImages.childImageSharp.resize}
+    />
     <Section>
       <Container>
         <Columns isMultiline>
@@ -141,6 +148,15 @@ GeeksAcademy.propTypes = {
 
 export const pageQuery = graphql`
   query {
+    seoImages: file(relativePath: { eq: "customers/Weedmatch.jpg" }) {
+      childImageSharp {
+        resize(width: 1200, height: 1200) {
+          width
+          height
+          src
+        }
+      }
+    }
     slider: allFile(filter: { relativeDirectory: { eq: "customers/4geek/slider" } }) {
       edges {
         node {

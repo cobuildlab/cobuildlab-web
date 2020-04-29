@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import { Section, Container, Columns, Column } from 'bloomer';
+import SeoMetaTags from '../../components/SeoMetaTags';
+
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
@@ -18,13 +20,18 @@ import DetailHeroImagesContent from '../../components/customer-success-stories/D
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
+const title = 'Collabtogrow™';
+const description =
+  'collabtogrow™ is a Boston-based technology-enabled managed services and advisory firm that specializes in improving the performance of strategic alliances.';
+
 const Collabtogrow = ({ data }) => (
   <DetailLayout>
+    <SeoMetaTags title={title} description={description} />
     <Section>
       <Container>
         <Columns isMultiline>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
-            <DetailTitle>collabtogrow™</DetailTitle>
+            <DetailTitle>{title}</DetailTitle>
             <DetailParagraph>
               is a Boston-based technology-enabled managed services and advisory firm that
               specializes in improving the performance of strategic alliances. Leveraging their

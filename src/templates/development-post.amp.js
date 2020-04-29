@@ -1,5 +1,5 @@
 import React from 'react';
-import Helmet from 'react-helmet';
+import SeoMetaTags from '../components/SeoMetaTags';
 import LayoutPost from '../components/layoutPost';
 import { Link, graphql } from 'gatsby';
 import { DiscussionEmbed } from 'disqus-react';
@@ -64,12 +64,7 @@ class BlogPostTemplate extends React.Component {
     const nextImage = get(next, 'frontmatter.image.publicURL') || defaultImg;
     return (
       <LayoutPost>
-        <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
-          title={`${post.frontmatter.title} | ${siteTitle}`}
-        />
-
+        <SeoMetaTags title={post.frontmatter.title} description={siteDescription} />
         <Hero isColor="white" isSize="large">
           <Container hasTextAlign="centered">
             <Title tag="h3" isSize={1} hasTextColor="Black">
