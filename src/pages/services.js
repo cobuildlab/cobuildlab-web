@@ -22,7 +22,7 @@ const Section = Styled.div`
 
 class Services extends Component {
   render() {
-    const siteTitle = 'Services | Cobuild Lab';
+    const siteTitle = 'Services';
     return (
       <LandingPageLayout
         withFooter

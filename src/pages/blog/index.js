@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link, graphql } from 'gatsby';
 import get from 'lodash/get';
-import Helmet from 'react-helmet';
 import Layout from '../../components/2020/Layout';
 import Header from '../../components/2020/Header';
 import {
@@ -23,6 +22,7 @@ import {
 import H1 from '../../components/Typography/H1';
 import { Icon } from 'react-icons-kit';
 import { clockO } from 'react-icons-kit/fa/clockO';
+import SeoMetaTags from '../../components/SeoMetaTags';
 import 'bulma';
 import Styled from 'styled-components';
 
@@ -40,17 +40,17 @@ class Blog extends Component {
 
   render() {
     const siteTitle = 'The Blog for Software Entrepreneurs';
+    const description = 'The Blog for Software Entrepreneurs of Miami';
     // const siteDescription = get(this, 'props.data.site.siteMetadata.description');
     const posts = get(this, 'props.data.allMarkdownRemark.edges');
-
+    const opGraphImages = get(this, 'props.data.ogImages.edges');
     return (
       <Layout>
-        <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: 'The Blog for Software Entrepreneurs of Miami' }]}
+        <SeoMetaTags
           title={siteTitle}
+          description={description}
+          image={opGraphImages[0].node.frontmatter.image.childImageSharp.resize}
         />
-
         <Hero isSize="small">
           <HeroHeader>
             <Header />
@@ -153,6 +153,23 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         description
+      }
+    }
+    ogImages: allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, limit: 1, filter: {fileAbsolutePath: {regex: "/(pages/blog)/.*\\.md$/"}}) {
+      edges {
+        node {
+          frontmatter {
+            image {
+              childImageSharp {
+                resize(width: 1200, height: 1200) {
+                  width
+                  src
+                  height
+                }
+              }
+            }
+          }
+        }
       }
     }
     allMarkdownRemark(

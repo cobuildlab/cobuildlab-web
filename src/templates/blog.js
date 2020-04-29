@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import Helmet from 'react-helmet';
 import LayoutPost from '../components/layoutPost';
 import { Link, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import { DiscussionEmbed } from 'disqus-react';
+import SeoMetaTags from '../components/SeoMetaTags';
+
 import Share from '../components/Share';
 import Carousel from '../components/Carousel';
 import Title2 from '../components/Title2';
@@ -69,13 +70,13 @@ class BlogPostTemplate extends Component {
     const { previous, next } = this.props.pageContext;
     const previousImage = get(previous, 'frontmatter.image.publicURL') || defaultImg;
     const nextImage = get(next, 'frontmatter.image.publicURL') || defaultImg;
-
+    const seoImages = get(this, 'props.data.seoImages.frontmatter.image.childImageSharp.resize');
     return (
       <LayoutPost>
-        <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
-          title={`${post.frontmatter.title} | ${siteTitle}`}
+        <SeoMetaTags
+          title={post.frontmatter.title}
+          description={siteDescription}
+          image={seoImages}
         />
 
         <Hero isSize="large">
@@ -193,6 +194,20 @@ export const pageQuery = graphql`
         siteUrl
         author
         twitterHandle
+      }
+    }
+    seoImages: markdownRemark(fields: { slug: { eq: $slug } }) {
+      frontmatter {
+        image {
+          publicURL
+          childImageSharp {
+            resize(width: 1200, height: 1200) {
+              width
+              height
+              src
+            }
+          }
+        }
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

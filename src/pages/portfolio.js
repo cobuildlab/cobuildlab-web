@@ -1,8 +1,10 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 import { Container, HeroHeader, HeroBody, Hero } from 'bloomer';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 import styled from 'styled-components';
 
+import SeoMetaTags from '../components/SeoMetaTags';
 import Layout from '../components/2020/Layout';
 import BannerBackground from '../components/2020/BannerBackground';
 
@@ -24,8 +26,6 @@ import PayKlever from '../components/portfolio/galleries/PayKlever';
 import RyvalGallery from '../components/portfolio/galleries/Ryval';
 import StoryRocket from '../components/portfolio/galleries/StoryRocket';
 
-const siteTitle = 'Portfolio | Cobuild Lab';
-
 const Wrapper = styled.div`
   position: relative;
   padding-top: 6em;
@@ -36,12 +36,12 @@ const GalleryContainer = styled.div`
   margin: auto;
 `;
 
-const Portfolio = () => (
+const Portfolio = ({ data }) => (
   <Layout>
-    <Helmet
-      htmlAttributes={{ lang: 'en' }}
-      meta={[{ name: 'description', content: 'Okroo Portfolio' }]}
-      title={siteTitle}
+    <SeoMetaTags
+      title="Portfolio"
+      description="Portfolio"
+      image={data.seoImages.childImageSharp.resize}
     />
     <Hero>
       <HeroHeader>
@@ -157,5 +157,23 @@ const Portfolio = () => (
     </Hero>
   </Layout>
 );
+
+Portfolio.propTypes = {
+  data: PropTypes.object.isRequired,
+};
+
+export const pageQuery = graphql`
+  query {
+    seoImages: file(relativePath: { eq: "customers/jobcore.jpg" }) {
+      childImageSharp {
+        resize(width: 1200, height: 1200) {
+          width
+          height
+          src
+        }
+      }
+    }
+  }
+`;
 
 export default Portfolio;

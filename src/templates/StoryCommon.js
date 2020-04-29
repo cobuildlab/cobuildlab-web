@@ -1,5 +1,5 @@
 import React from 'react';
-import Helmet from 'react-helmet';
+import SeoMetaTags from '../components/SeoMetaTags';
 import LayoutPost from '../components/layoutPost';
 import Share from '../components/Share';
 import Title2 from '../components/Title2';
@@ -56,12 +56,7 @@ class StoryCommon extends React.Component {
 
     return (
       <LayoutPost>
-        <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
-          title={`${post.frontmatter.title} | ${siteTitle}`}
-        />
-
+        <SeoMetaTags title={post.frontmatter.title} description={siteDescription} />
         <Hero isColor="white" isSize="large">
           <Container hasTextAlign="centered">
             <Title tag="h3" isSize={1} hasTextColor="Black">
