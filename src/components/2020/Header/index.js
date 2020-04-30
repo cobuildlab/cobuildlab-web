@@ -14,31 +14,19 @@ import LinkButtonDefault from '../Button/LinkButtonDefault';
 import Image from '../Image';
 
 import logo from '../../../resources/cobuildlab.png';
-import facebook from '../../../resources/icons/facebook.svg';
-import instagram from '../../../resources/icons/instagram.svg';
-import youtube from '../../../resources/icons/youtube.svg';
-
+import { FacebookLink, InstagramLink, YoutubeLink } from '../SocialMediaLinks';
 import styles from './css/index.module.scss';
 
 const SocialIcon = ({ isHidden }) => (
   <Fragment>
     <NavbarItem isHidden={isHidden} className={styles.nav_icon}>
-      <a href="https://www.facebook.com/cobuildlab/" rel="noreferrer noopener" target="_blank">
-        <Image src={facebook} alt="facebook-icon" />
-      </a>
+      <FacebookLink color="indigo" />
     </NavbarItem>
     <NavbarItem isHidden={isHidden} className={styles.nav_icon}>
-      <a href="https://www.instagram.com/cobuildlab/" rel="noreferrer noopener" target="_blank">
-        <Image src={instagram} alt="instagram-icon" />
-      </a>
+      <InstagramLink color="indigo" />
     </NavbarItem>
     <NavbarItem isHidden={isHidden} className={styles.nav_icon}>
-      <a
-        href="https://www.youtube.com/channel/UCdI6t05TWyASVdT_H0Sqt3A"
-        rel="noreferrer noopener"
-        target="_blank">
-        <Image src={youtube} alt="youtube-icon" />
-      </a>
+      <YoutubeLink color="indigo" />
     </NavbarItem>
   </Fragment>
 );

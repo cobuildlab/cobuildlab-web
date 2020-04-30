@@ -5,6 +5,7 @@ import Img from 'gatsby-image';
 import { DiscussionEmbed } from 'disqus-react';
 import SeoMetaTags from '../components/SeoMetaTags';
 
+import BlogPostCallAction from '../components/blog-post/BlogPostCallAction';
 import Share from '../components/Share';
 import Carousel from '../components/Carousel';
 import Title2 from '../components/Title2';
@@ -163,6 +164,7 @@ class BlogPostTemplate extends Component {
                 </Column>
               ) : null}
             </Columns>
+            <BlogPostCallAction postTitle={post.frontmatter.title} />
             <Columns isCentered>
               <Column>
                 <DiscussionEmbed

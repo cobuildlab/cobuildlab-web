@@ -19,8 +19,8 @@ const Container = styled.button`
  *                         https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type.
  */
 
-const ButtonDefault = ({ children, isLoading, isBlock, type }) => (
-  <Container type={type} isBlock={isBlock}>
+const ButtonDefault = ({ children, isLoading, isBlock, type, onClick }) => (
+  <Container onClick={onClick} type={type} isBlock={isBlock}>
     <ButtonLoading isLoading={isLoading}>{children}</ButtonLoading>
   </Container>
 );
@@ -29,9 +29,11 @@ ButtonDefault.defaultProps = {
   isLoading: false,
   type: 'button',
   isBlock: false,
+  onClick: () => null,
 };
 
 ButtonDefault.propTypes = {
+  onClick: PropTypes.func,
   isBlock: PropTypes.bool,
   type: PropTypes.string,
   isLoading: PropTypes.bool,
