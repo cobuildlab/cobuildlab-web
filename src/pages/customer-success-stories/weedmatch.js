@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
 import SeoMetaTags from '../../components/SeoMetaTags';
@@ -9,16 +10,13 @@ import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraphTitle from '../../components/customer-success-stories/DetailParagraphTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
-import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
-import DetailSectionImageRight from '../../components/customer-success-stories/DetailSectionImageRight';
-
 // import DetailTeam from '../../components/customer-success-stories/DetailTeam';
 import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
-import DetailImageLogo from '../../components/customer-success-stories/details-images/DetailImageLogo';
-import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
 import { List, ListItem } from '../../components/Typography/List';
+import DetailSection from '../../components/customer-success-stories/DetailSection';
+import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
@@ -57,18 +55,18 @@ const Weedmatch = ({ data }) => (
             </DetailParagraph>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
-            <DetailHeroRightContainer>
-              <DetailImageLogo src={data.logo.childImageSharp.fluid} />
+            <DetailHeroImagesContent>
+              <Img fluid={data.logo.childImageSharp.fluid} alt="" />
+            </DetailHeroImagesContent>
+            <DetailHeroImagesContent>
               <DetailVideo />
-            </DetailHeroRightContainer>
+            </DetailHeroImagesContent>
           </Column>
         </Columns>
       </Container>
     </Section>
 
-    <DetailSectionImageLeft
-      src={data.textImagesOne.childImageSharp.fluid}
-      alt="What is the Succeed Platform?">
+    <DetailSection src={data.textImagesOne.childImageSharp.fluid} left>
       <DetailSubTitle>
         Biography of <TextOrange> weedmatch</TextOrange>
       </DetailSubTitle>
@@ -90,10 +88,8 @@ const Weedmatch = ({ data }) => (
         Cobuild. During several months we chat about the Cannabis industry and its trends, and how
         the lifestyle world was in debt of tools for this community.
       </DetailParagraph>
-    </DetailSectionImageLeft>
-    <DetailSectionImageRight
-      src={data.textImagesOne.childImageSharp.fluid}
-      alt="What is the Succeed Platform?">
+    </DetailSection>
+    <DetailSection src={data.textImagesOne.childImageSharp.fluid}>
       <DetailParagraph>
         lifestyle world was in debt of tools for this community. After a couple of meeting Oscar
         develop the concept of the brand with several of its partners and the shape of the Weedmatch
@@ -131,7 +127,7 @@ const Weedmatch = ({ data }) => (
           </ListItem>
         </List>
       </div>
-    </DetailSectionImageRight>
+    </DetailSection>
 
     {/* <Section>
       <Container>

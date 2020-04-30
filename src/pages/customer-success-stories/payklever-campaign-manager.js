@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import { Section, Container, Columns, Column } from 'bloomer';
 import SeoMetaTags from '../../components/SeoMetaTags';
 
@@ -8,14 +9,13 @@ import DetailLayout from '../../components/customer-success-stories/DetailLayout
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
-import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
-import DetailSectionImageRight from '../../components/customer-success-stories/DetailSectionImageRight';
 // import DetailTeam from '../../components/customer-success-stories/DetailTeam';
 // import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
+import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
-import DetailImageLogo from '../../components/customer-success-stories/details-images/DetailImageLogo';
-import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
+import DetailSection from '../../components/customer-success-stories/DetailSection';
+import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 import { List, ListItem } from '../../components/Typography/List';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
@@ -61,18 +61,18 @@ const PaykleverCampaignManager = ({ data }) => (
             </DetailParagraph>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
-            <DetailHeroRightContainer>
-              <DetailImageLogo src={data.logo.childImageSharp.fluid} />
+            <DetailHeroImagesContent>
+              <Img fluid={data.logo.childImageSharp.fluid} alt="" />
+            </DetailHeroImagesContent>
+            <DetailHeroImagesContent>
               <DetailVideo />
-            </DetailHeroRightContainer>
+            </DetailHeroImagesContent>
           </Column>
         </Columns>
       </Container>
     </Section>
 
-    <DetailSectionImageLeft
-      src={data.textImagesOne.childImageSharp.fluid}
-      alt="What is the Succeed Platform?">
+    <DetailSection src={data.textImagesOne.childImageSharp.fluid}>
       <DetailSubTitle>
         What is the <TextOrange> Payklever Campaign </TextOrange> platform?
       </DetailSubTitle>
@@ -99,10 +99,9 @@ const PaykleverCampaignManager = ({ data }) => (
         the campaign manager, and how they had already been developing the payklever platform. In
         this way, work began on this great project.
       </DetailParagraph>
-    </DetailSectionImageLeft>
-    <DetailSectionImageRight
-      src={data.textImagesTwo.childImageSharp.fluid}
-      alt="What is the Succeed Platform?">
+    </DetailSection>
+
+    <DetailSection src={data.textImagesTwo.childImageSharp.fluid} left>
       <DetailParagraph>
         Starting working on the project was very exciting, after all it was a new client, new
         challenges in a great idea.
@@ -169,13 +168,17 @@ const PaykleverCampaignManager = ({ data }) => (
           </ListItem>
         </List>
       </div>
-    </DetailSectionImageRight>
+    </DetailSection>
 
     {/* <Section>
       <Container>
         <DetailTeam />
       </Container>
     </Section>*/}
+
+    <Section isPaddingless>
+      <DetailCarousel data={data.slider.edges} />
+    </Section>
 
     <Section isPaddingless>
       <DetailsOtherStories />
@@ -228,6 +231,23 @@ export const pageQuery = graphql`
           sizes
           src
           srcSet
+        }
+      }
+    }
+    slider: allFile(filter: { relativeDirectory: { eq: "customers/payklever/slider" } }) {
+      edges {
+        node {
+          id
+          name
+          childImageSharp {
+            fluid(quality: 100) {
+              src
+              srcSet
+              sizes
+              aspectRatio
+              base64
+            }
+          }
         }
       }
     }

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import { Section, Container, Columns, Column } from 'bloomer';
 import SeoMetaTags from '../../components/SeoMetaTags';
 
@@ -8,13 +9,11 @@ import DetailLayout from '../../components/customer-success-stories/DetailLayout
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
-import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
 // import DetailTeam from '../../components/customer-success-stories/DetailTeam';
 import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
-import DetailImageLogo from '../../components/customer-success-stories/details-images/DetailImageLogo';
-import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
-import DetailImagesDescription from '../../components/customer-success-stories/details-images/DetailImagesDescription';
+import DetailSection from '../../components/customer-success-stories/DetailSection';
+import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 import { List, ListItem } from '../../components/Typography/List';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
@@ -55,18 +54,18 @@ const Massone = ({ data }) => (
             </DetailParagraph>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
-            <DetailHeroRightContainer>
-              <DetailImageLogo src={data.logo.childImageSharp.fluid} />
-              <DetailImagesDescription src={data.text.childImageSharp.fluid} alt="" />
-            </DetailHeroRightContainer>
+            <DetailHeroImagesContent>
+              <Img fluid={data.logo.childImageSharp.fluid} alt="" />
+            </DetailHeroImagesContent>
+            <DetailHeroImagesContent>
+              <Img fluid={data.text.childImageSharp.fluid} alt="" />
+            </DetailHeroImagesContent>
           </Column>
         </Columns>
       </Container>
     </Section>
 
-    <DetailSectionImageLeft
-      src={data.textImagesOne.childImageSharp.fluid}
-      alt="What is the Succeed Platform?">
+    <DetailSection src={data.textImagesOne.childImageSharp.fluid} left>
       <DetailSubTitle>
         How everything <TextOrange>started:</TextOrange>
       </DetailSubTitle>
@@ -97,7 +96,7 @@ const Massone = ({ data }) => (
           </ListItem>
         </List>
       </div>
-    </DetailSectionImageLeft>
+    </DetailSection>
 
     {/* <Section>
       <Container>

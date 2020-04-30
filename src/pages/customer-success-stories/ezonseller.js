@@ -1,4 +1,5 @@
 import React from 'react';
+import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
@@ -6,14 +7,12 @@ import DetailLayout from '../../components/customer-success-stories/DetailLayout
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
-import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
-import DetailSectionImageRight from '../../components/customer-success-stories/DetailSectionImageRight';
 // import DetailTeam from '../../components/customer-success-stories/DetailTeam';
 // import DetailCarousel from '../../components/customer-success-stories/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
-import DetailImageLogo from '../../components/customer-success-stories/details-images/DetailImageLogo';
-import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
+import DetailSection from '../../components/customer-success-stories/DetailSection';
+import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 import { List, ListItem } from '../../components/Typography/List';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
@@ -53,18 +52,18 @@ const Ezonseller = ({ data }) => (
             </DetailParagraph>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
-            <DetailHeroRightContainer>
-              <DetailImageLogo src={data.logo.childImageSharp.fluid} />
+            <DetailHeroImagesContent>
+              <Img fuild={data.logo.childImageSharp.fluid} alt="" />
+            </DetailHeroImagesContent>
+            <DetailHeroImagesContent>
               <DetailVideo />
-            </DetailHeroRightContainer>
+            </DetailHeroImagesContent>
           </Column>
         </Columns>
       </Container>
     </Section>
 
-    <DetailSectionImageLeft
-      src={data.textImagesOne.childImageSharp.fluid}
-      alt="What is the Succeed Platform?">
+    <DetailSection src={data.textImagesOne.childImageSharp.fluid} left>
       <DetailSubTitle>
         What is the <TextOrange>Ezonseller platform?</TextOrange>
       </DetailSubTitle>
@@ -82,10 +81,8 @@ const Ezonseller = ({ data }) => (
           your business grow.
         </blockquote>
       </DetailParagraph>
-    </DetailSectionImageLeft>
-    <DetailSectionImageRight
-      src={data.textImagesTwo.childImageSharp.fluid}
-      alt="What is the Succeed Platform?">
+    </DetailSection>
+    <DetailSection src={data.textImagesTwo.childImageSharp.fluid}>
       <DetailSubTitle>
         How everything <TextOrange>started:</TextOrange>
       </DetailSubTitle>
@@ -116,7 +113,7 @@ const Ezonseller = ({ data }) => (
           </ListItem>
         </List>
       </div>
-    </DetailSectionImageRight>
+    </DetailSection>
 
     {/* <Section>
       <Container>

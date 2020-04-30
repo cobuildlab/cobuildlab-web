@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import { Section, Container, Columns, Column } from 'bloomer';
 import SeoMetaTags from '../../components/SeoMetaTags';
 
@@ -9,14 +10,13 @@ import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraphTitle from '../../components/customer-success-stories/DetailParagraphTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
-import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
-import DetailSectionImageRight from '../../components/customer-success-stories/DetailSectionImageRight';
+
 // import DetailTeam from '../../components/customer-success-stories/DetailTeam';
 // import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
-import DetailImageLogo from '../../components/customer-success-stories/details-images/DetailImageLogo';
-import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
+import DetailSection from '../../components/customer-success-stories/DetailSection';
+import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
@@ -73,18 +73,18 @@ const Collabtogrow = ({ data }) => (
             </DetailParagraph>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
-            <DetailHeroRightContainer>
-              <DetailImageLogo src={data.logo.childImageSharp.fluid} />
+            <DetailHeroImagesContent>
+              <Img fuild={data.logo.childImageSharp.fluid} alt="" />
+            </DetailHeroImagesContent>
+            <DetailHeroImagesContent>
               <DetailVideo />
-            </DetailHeroRightContainer>
+            </DetailHeroImagesContent>
           </Column>
         </Columns>
       </Container>
     </Section>
 
-    <DetailSectionImageLeft
-      src={data.textImagesOne.childImageSharp.fluid}
-      alt="What is the Succeed Platform?">
+    <DetailSection src={data.textImagesOne.childImageSharp.fluid} left>
       <DetailSubTitle>
         What is the <TextOrange>Succeed Platform?</TextOrange>
       </DetailSubTitle>
@@ -109,11 +109,9 @@ const Collabtogrow = ({ data }) => (
         alliances demonstrate high capability across all dimensions measured and tracked within the
         platform.
       </DetailParagraph>
-    </DetailSectionImageLeft>
+    </DetailSection>
 
-    <DetailSectionImageRight
-      src={data.textImagesOne.childImageSharp.fluid}
-      alt="What is the Succeed Platform?">
+    <DetailSection src={data.textImagesOne.childImageSharp.fluid}>
       <DetailSubTitle>
         Starting from <TextOrange>Zero</TextOrange>
       </DetailSubTitle>
@@ -161,11 +159,9 @@ const Collabtogrow = ({ data }) => (
         development shop that produces mass-produced projects. We take the time and effort to really
         understand the problems that need to be solved in a user and business centric approach.
       </DetailParagraph>
-    </DetailSectionImageRight>
+    </DetailSection>
 
-    <DetailSectionImageLeft
-      src={data.textImagesOne.childImageSharp.fluid}
-      alt="What is the Succeed Platform?">
+    <DetailSection src={data.textImagesOne.childImageSharp.fluid} left>
       <DetailSubTitle>
         Target <TextOrange>Demographic</TextOrange>
       </DetailSubTitle>
@@ -208,7 +204,7 @@ const Collabtogrow = ({ data }) => (
         the development over 6 Cobuild Lab developers participated in the coding process, all
         frontend specialists on Javascript and ReactJs.
       </DetailParagraph>
-    </DetailSectionImageLeft>
+    </DetailSection>
 
     {/* <Section>
       <Container>
