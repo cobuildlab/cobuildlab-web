@@ -5,6 +5,7 @@ import Img from 'gatsby-image';
 import { DiscussionEmbed } from 'disqus-react';
 import SeoMetaTags from '../components/SeoMetaTags';
 
+import BlogPostContactUs from '../components/blog-post/BlogPostContactUs';
 import Share from '../components/Share';
 import Carousel from '../components/Carousel';
 import Title2 from '../components/Title2';
@@ -54,6 +55,7 @@ const renderAst = new rehypeReact({
     banner: Banner,
     credits: Credits,
     carousel: Carousel,
+    'contact-us': BlogPostContactUs,
   },
 }).Compiler;
 
