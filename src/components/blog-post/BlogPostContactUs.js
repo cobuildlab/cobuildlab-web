@@ -82,12 +82,14 @@ const ListItem = styled.li`
   padding: 0.5em;
 `;
 
-const BlogPostCallAction = ({ children }) => {
+const BlogPostContactUs = ({ children }) => {
   const [isVisible, setVisible] = useState(false);
 
   const handleVisible = useCallback(() => {
     setVisible((state) => !state);
   }, []);
+
+  const content = children ? children : 'If you want to know more information contact us';
 
   return (
     <Fragment>
@@ -95,7 +97,7 @@ const BlogPostCallAction = ({ children }) => {
         <Columns>
           <Column isSize={{ mobile: 12, desktop: 8 }}>
             <TextContainer>
-              <Text>Contact us to know more about {children}</Text>
+              <Text>{content}</Text>
             </TextContainer>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 4 }}>
@@ -134,8 +136,16 @@ const BlogPostCallAction = ({ children }) => {
   );
 };
 
-BlogPostCallAction.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+BlogPostContactUs.defaultProps = {
+  children: false,
 };
 
-export default BlogPostCallAction;
+BlogPostContactUs.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
+};
+
+export default BlogPostContactUs;
