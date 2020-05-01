@@ -15,16 +15,25 @@ import ProjectTitle from '../components/portfolio/ProjectTitle';
 import PorftolioCategory from '../components/portfolio/PortfolioCategory';
 
 import AccountableGallery from '../components/portfolio/galleries/Accountable';
+import BazlGallery from '../components/portfolio/galleries/Bazl';
+import Charter from '../components/portfolio/galleries/Charter';
 import CollabtogrowGallery from '../components/portfolio/galleries/Collabtogrow';
 import ContentManagerGallery from '../components/portfolio/galleries/ContentManager';
 import CtoFoundersGallery from '../components/portfolio/galleries/CtoFounders';
-import BazlGallery from '../components/portfolio/galleries/Bazl';
 import ElementalGallery from '../components/portfolio/galleries/Elemental';
+import ElPitazo from '../components/portfolio/galleries/ElPitazo';
+import Gurupia from '../components/portfolio/galleries/Gurupia';
+import Jobcore from '../components/portfolio/galleries/Jobcore';
 import KademGallery from '../components/portfolio/galleries/Kadem';
+import LeadVolt from '../components/portfolio/galleries/LeadVolt';
+import Mama from '../components/portfolio/galleries/Mama';
+import Massone from '../components/portfolio/galleries/Massone';
+import MiamiSoftwareDevelopers from '../components/portfolio/galleries/MiamiSoftwareDevelopers';
 import OkrooGallery from '../components/portfolio/galleries/Okroo';
 import PayKlever from '../components/portfolio/galleries/PayKlever';
 import RyvalGallery from '../components/portfolio/galleries/Ryval';
 import StoryRocket from '../components/portfolio/galleries/StoryRocket';
+import Zonia from '../components/portfolio/galleries/Zonia';
 
 const Wrapper = styled.div`
   position: relative;
@@ -73,7 +82,16 @@ const Portfolio = ({ data }) => (
           </GalleryContainer>
         </Container>
       </PortfolioSection>
-      <PortfolioSection id="collabtogrow">
+      <PortfolioSection id="charter">
+        <Container>
+          <ProjectTitle>Charter</ProjectTitle>
+          <PorftolioCategory type="app" />
+          <GalleryContainer>
+            <Charter />
+          </GalleryContainer>
+        </Container>
+      </PortfolioSection>
+      <PortfolioSection id="collabtogrow" color="white">
         <Container>
           <ProjectTitle>Collabtogrow</ProjectTitle>
           <PorftolioCategory type="web" />
@@ -82,7 +100,7 @@ const Portfolio = ({ data }) => (
           </GalleryContainer>
         </Container>
       </PortfolioSection>
-      <PortfolioSection id="contentManager" color="white">
+      <PortfolioSection id="contentManager">
         <Container>
           <ProjectTitle>Content Manager</ProjectTitle>
           <PorftolioCategory type="web" />
@@ -91,12 +109,21 @@ const Portfolio = ({ data }) => (
           </GalleryContainer>
         </Container>
       </PortfolioSection>
-      <PortfolioSection id="ctoFounders">
+      <PortfolioSection id="ctoFounders" color="white">
         <Container>
           <ProjectTitle>CTO Founders</ProjectTitle>
           <PorftolioCategory type="app" />
           <GalleryContainer>
             <CtoFoundersGallery />
+          </GalleryContainer>
+        </Container>
+      </PortfolioSection>
+      <PortfolioSection id="elpitazo">
+        <Container>
+          <ProjectTitle>El Pitazo</ProjectTitle>
+          <PorftolioCategory type="app" />
+          <GalleryContainer>
+            <ElPitazo />
           </GalleryContainer>
         </Container>
       </PortfolioSection>
@@ -109,12 +136,66 @@ const Portfolio = ({ data }) => (
           </GalleryContainer>
         </Container>
       </PortfolioSection>
+      <PortfolioSection id="gurupia">
+        <Container>
+          <ProjectTitle>Gurupia</ProjectTitle>
+          <PorftolioCategory type="web" />
+          <GalleryContainer>
+            <Gurupia />
+          </GalleryContainer>
+        </Container>
+      </PortfolioSection>
+      <PortfolioSection id="jobcore" color="white">
+        <Container>
+          <ProjectTitle>Jobcore</ProjectTitle>
+          <PorftolioCategory type="web/app" />
+          <GalleryContainer>
+            <Jobcore />
+          </GalleryContainer>
+        </Container>
+      </PortfolioSection>
       <PortfolioSection id="kadem">
         <Container>
           <ProjectTitle>Kadem</ProjectTitle>
           <PorftolioCategory type="web/app" />
           <GalleryContainer>
             <KademGallery />
+          </GalleryContainer>
+        </Container>
+      </PortfolioSection>
+      <PortfolioSection id="leadvold" color="white">
+        <Container>
+          <ProjectTitle>Lead Vold</ProjectTitle>
+          <PorftolioCategory type="web" />
+          <GalleryContainer>
+            <LeadVolt />
+          </GalleryContainer>
+        </Container>
+      </PortfolioSection>
+      <PortfolioSection id="mama">
+        <Container>
+          <ProjectTitle>Mama</ProjectTitle>
+          <PorftolioCategory type="app" />
+          <GalleryContainer>
+            <Mama />
+          </GalleryContainer>
+        </Container>
+      </PortfolioSection>
+      <PortfolioSection id="massone" color="white">
+        <Container>
+          <ProjectTitle>Massone</ProjectTitle>
+          <PorftolioCategory type="web/app" />
+          <GalleryContainer>
+            <Massone />
+          </GalleryContainer>
+        </Container>
+      </PortfolioSection>
+      <PortfolioSection id="miamisoftwaredevelopers">
+        <Container>
+          <ProjectTitle>Miami Software Developers</ProjectTitle>
+          <PorftolioCategory type="web" />
+          <GalleryContainer>
+            <MiamiSoftwareDevelopers />
           </GalleryContainer>
         </Container>
       </PortfolioSection>
@@ -150,7 +231,16 @@ const Portfolio = ({ data }) => (
           <ProjectTitle>Story Rocket</ProjectTitle>
           <PorftolioCategory type="web" />
           <GalleryContainer>
-            <StoryRocket search="storyRocket" />
+            <StoryRocket />
+          </GalleryContainer>
+        </Container>
+      </PortfolioSection>
+      <PortfolioSection id="zonia" color="white">
+        <Container>
+          <ProjectTitle>Zonia</ProjectTitle>
+          <PorftolioCategory type="app" />
+          <GalleryContainer>
+            <Zonia />
           </GalleryContainer>
         </Container>
       </PortfolioSection>
