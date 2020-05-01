@@ -112,6 +112,9 @@ const Menu = () => {
             <MenuLink href="#bazl">Bazl</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
+            <MenuLink href="#chater">Chater</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
             <MenuLink href="#collabtogrow">Collabtogrow</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
@@ -121,10 +124,31 @@ const Menu = () => {
             <MenuLink href="#ctoFounders">CTO Founders</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
+            <MenuLink href="#elpitazo">El Pitazo</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
             <MenuLink href="#elemental">Elemental</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
+            <MenuLink href="#gurupia">Gurupia</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#jobcore">Jobcore</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
             <MenuLink href="#kadem">Kadem</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#leadvold">Lead Vold</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#mama">Mama</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#massone">Massone</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#miamisoftwaredevelopers">Miami Software Developers</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
             <MenuLink href="#okroo">Okroo</MenuLink>
@@ -137,6 +161,9 @@ const Menu = () => {
           </MenuItem>
           <MenuItem onClick={handleOpen}>
             <MenuLink href="#storyRocket">Story Rocket</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#zonia">Zonia</MenuLink>
           </MenuItem>
         </MenuWrapper>
       </Drawer>
