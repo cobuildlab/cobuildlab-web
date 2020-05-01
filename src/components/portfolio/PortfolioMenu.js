@@ -1,10 +1,13 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useState, useEffect } from 'react';
 import Drawer from '../enterprise/containers/Drawer';
 import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const MenuContainer = styled.div`
-  margin-left: auto;
+  position: relative;
+  z-index: 70;
+  padding-top: 1em;
+  
 `;
 
 const BurgerIcon = styled.span`
@@ -53,7 +56,6 @@ const ToggleContainer = styled.span`
 
 const MenuTitle = styled.span`
   color: #264a60;
-  line-height: 40px;
   margin: 0;
   display: inline-block;
   vertical-align: middle;
@@ -64,18 +66,19 @@ const MenuTitle = styled.span`
 `;
 
 const MenuWrapper = styled.ul`
-  border-top: 1px solid #e2e2e2;
+  max-width: 200px;
+  position: ${ ({ isFixed }) => isFixed ? 'fixed' : 'relative'};
+  top: 0;
+  border-right: ${ ({ isFixed }) => isFixed ? '1px solid #f0f0f0' : 'none'} ;
 `;
 
 const MenuItem = styled.li`
   width: 100%;
   color: #264a60;
-  line-height: 40px;
   margin: 0;
   display: inline-block;
   vertical-align: middle;
   font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
-  border-bottom: 1px solid #e2e2e2;
 `;
 
 const MenuLink = styled(AnchorLink)`
@@ -90,8 +93,28 @@ const MenuLink = styled(AnchorLink)`
   }
 `;
 
-const Menu = () => {
+const PortfolioMenu = () => {
   const [isVisible, setVisible] = useState(false);
+  const [isFixed, setFixed] = useState(false);
+
+
+  useEffect(() => {
+
+    const onScroll = () => {
+      if(window.scrollY > 64 && !isFixed){
+        setFixed(true);
+      }else{
+        setFixed(false);
+      }
+    };
+
+    document.addEventListener("scroll", onScroll);
+
+    return () => {
+      document.removeEventListener("scroll", onScroll);
+    };
+
+  }, []);
 
   const handleOpen = useCallback(() => {
     setVisible((state) => !state);
@@ -99,76 +122,81 @@ const Menu = () => {
 
   return (
     <MenuContainer>
-      <ToggleContainer type="button" onClick={handleOpen}>
-        <BurgerIcon />
-        <MenuTitle>Other Projects</MenuTitle>
-      </ToggleContainer>
-      <Drawer visible={isVisible} onClose={handleOpen}>
-        <MenuWrapper>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#accountable">Accountable</MenuLink>
-          </MenuItem>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#bazl">Bazl</MenuLink>
-          </MenuItem>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#chater">Chater</MenuLink>
-          </MenuItem>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#collabtogrow">Collabtogrow</MenuLink>
-          </MenuItem>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#contentManager">Content Manager</MenuLink>
-          </MenuItem>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#ctoFounders">CTO Founders</MenuLink>
-          </MenuItem>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#elpitazo">El Pitazo</MenuLink>
-          </MenuItem>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#elemental">Elemental</MenuLink>
-          </MenuItem>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#gurupia">Gurupia</MenuLink>
-          </MenuItem>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#jobcore">Jobcore</MenuLink>
-          </MenuItem>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#kadem">Kadem</MenuLink>
-          </MenuItem>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#leadvold">Lead Vold</MenuLink>
-          </MenuItem>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#mama">Mama</MenuLink>
-          </MenuItem>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#massone">Massone</MenuLink>
-          </MenuItem>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#miamisoftwaredevelopers">Miami Software Developers</MenuLink>
-          </MenuItem>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#okroo">Okroo</MenuLink>
-          </MenuItem>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#payklever">Payklever</MenuLink>
-          </MenuItem>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#ryval">Ryval</MenuLink>
-          </MenuItem>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#storyRocket">Story Rocket</MenuLink>
-          </MenuItem>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#zonia">Zonia</MenuLink>
-          </MenuItem>
-        </MenuWrapper>
-      </Drawer>
+      <MenuWrapper isFixed={isFixed}>
+        <MenuItem onClick={handleOpen}>
+          <MenuLink href="#accountable">Accountable</MenuLink>
+        </MenuItem>
+        <MenuItem onClick={handleOpen}>
+          <MenuLink href="#bazl">Bazl</MenuLink>
+        </MenuItem>
+        <MenuItem onClick={handleOpen}>
+          <MenuLink href="#chater">Chater</MenuLink>
+        </MenuItem>
+        <MenuItem onClick={handleOpen}>
+          <MenuLink href="#collabtogrow">Collabtogrow</MenuLink>
+        </MenuItem>
+        <MenuItem onClick={handleOpen}>
+          <MenuLink href="#contentManager">Content Manager</MenuLink>
+        </MenuItem>
+        <MenuItem onClick={handleOpen}>
+          <MenuLink href="#ctoFounders">CTO Founders</MenuLink>
+        </MenuItem>
+        <MenuItem onClick={handleOpen}>
+          <MenuLink href="#elpitazo">El Pitazo</MenuLink>
+        </MenuItem>
+        <MenuItem onClick={handleOpen}>
+          <MenuLink href="#elemental">Elemental</MenuLink>
+        </MenuItem>
+        <MenuItem onClick={handleOpen}>
+          <MenuLink href="#gurupia">Gurupia</MenuLink>
+        </MenuItem>
+        <MenuItem onClick={handleOpen}>
+          <MenuLink href="#jobcore">Jobcore</MenuLink>
+        </MenuItem>
+        <MenuItem onClick={handleOpen}>
+          <MenuLink href="#kadem">Kadem</MenuLink>
+        </MenuItem>
+        <MenuItem onClick={handleOpen}>
+          <MenuLink href="#leadvolt">Lead Volt</MenuLink>
+        </MenuItem>
+        <MenuItem onClick={handleOpen}>
+          <MenuLink href="#mama">Mama</MenuLink>
+        </MenuItem>
+        <MenuItem onClick={handleOpen}>
+          <MenuLink href="#massone">Massone</MenuLink>
+        </MenuItem>
+        <MenuItem onClick={handleOpen}>
+          <MenuLink href="#miamisoftwaredevelopers">Miami Software Developers</MenuLink>
+        </MenuItem>
+        <MenuItem onClick={handleOpen}>
+          <MenuLink href="#okroo">Okroo</MenuLink>
+        </MenuItem>
+        <MenuItem onClick={handleOpen}>
+          <MenuLink href="#payklever">Payklever</MenuLink>
+        </MenuItem>
+        <MenuItem onClick={handleOpen}>
+          <MenuLink href="#ryval">Ryval</MenuLink>
+        </MenuItem>
+        <MenuItem onClick={handleOpen}>
+          <MenuLink href="#storyRocket">Story Rocket</MenuLink>
+        </MenuItem>
+        <MenuItem onClick={handleOpen}>
+          <MenuLink href="#zonia">Zonia</MenuLink>
+        </MenuItem>
+      </MenuWrapper>
     </MenuContainer>
   );
 };
 
-export default Menu;
+export default PortfolioMenu;
+
+
+// <Drawer visible={isVisible} onClose={handleOpen}>
+
+
+/* 
+  <ToggleContainer type="button" onClick={handleOpen}>
+        <BurgerIcon />
+        <MenuTitle>Other Projects</MenuTitle>
+      </ToggleContainer>
+*/

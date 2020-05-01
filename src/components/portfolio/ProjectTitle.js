@@ -1,17 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import H2 from '../Typography/H2';
+import H3 from '../Typography/H3';
 
 const Container = styled.div`
-  text-align: center;
   margin-top: 3em;
-  margin-bottom: 2.5em;
+  margin-bottom: 1em;
 `;
 
 const ProjectTitle = ({ children }) => (
   <Container>
-    <H2>{children}</H2>
+    <H3>{children}</H3>
   </Container>
 );
 
