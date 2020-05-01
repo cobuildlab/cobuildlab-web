@@ -9,16 +9,16 @@ import { FacebookLink, InstagramLink, YoutubeLink } from '../2020/SocialMediaLin
 import H4 from '../Typography/H4';
 
 const Container = styled.div`
-  padding: 2em 0;
+  padding: 1.5em 0;
   box-sizing: border-box;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
   background-color: #264a60;
 `;
 
 const TextContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
   height: 100%;
 `;
 
@@ -58,6 +58,14 @@ const ButtonContainer = styled.div`
   }
 `;
 
+const ActionsContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
 const List = styled.ul`
   display: flex;
   align-items: center;
@@ -66,6 +74,7 @@ const List = styled.ul`
   @media screen and (max-width: 768px) {
     justify-content: center;
     padding-right: 0;
+    margin-top: 1em;
   }
 `;
 
@@ -73,7 +82,7 @@ const ListItem = styled.li`
   padding: 0.5em;
 `;
 
-const BlogPostCallAction = ({ postTitle }) => {
+const BlogPostCallAction = ({ children }) => {
   const [isVisible, setVisible] = useState(false);
 
   const handleVisible = useCallback(() => {
@@ -86,30 +95,26 @@ const BlogPostCallAction = ({ postTitle }) => {
         <Columns>
           <Column isSize={{ mobile: 12, desktop: 8 }}>
             <TextContainer>
-              <Text>Contact us to know more about {postTitle}</Text>
+              <Text>Contact us to know more about {children}</Text>
             </TextContainer>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 4 }}>
-            <Columns>
-              <Column isSize={{ mobile: 12, desktop: 6 }}>
-                <ButtonContainer>
-                  <ButtonDefault onClick={handleVisible}>Contact Us</ButtonDefault>
-                </ButtonContainer>
-              </Column>
-              <Column isSize={{ mobile: 12, desktop: 6 }}>
-                <List>
-                  <ListItem>
-                    <FacebookLink color="white" />
-                  </ListItem>
-                  <ListItem>
-                    <InstagramLink color="white" />
-                  </ListItem>
-                  <ListItem>
-                    <YoutubeLink color="white" />
-                  </ListItem>
-                </List>
-              </Column>
-            </Columns>
+            <ActionsContainer>
+              <ButtonContainer>
+                <ButtonDefault onClick={handleVisible}>Contact Us</ButtonDefault>
+              </ButtonContainer>
+              <List>
+                <ListItem>
+                  <FacebookLink color="white" />
+                </ListItem>
+                <ListItem>
+                  <InstagramLink color="white" />
+                </ListItem>
+                <ListItem>
+                  <YoutubeLink color="white" />
+                </ListItem>
+              </List>
+            </ActionsContainer>
           </Column>
         </Columns>
       </Container>
@@ -130,7 +135,7 @@ const BlogPostCallAction = ({ postTitle }) => {
 };
 
 BlogPostCallAction.propTypes = {
-  postTitle: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
 
 export default BlogPostCallAction;

@@ -55,6 +55,7 @@ const renderAst = new rehypeReact({
     banner: Banner,
     credits: Credits,
     carousel: Carousel,
+    'call-action': BlogPostCallAction,
   },
 }).Compiler;
 
@@ -164,7 +165,6 @@ class BlogPostTemplate extends Component {
                 </Column>
               ) : null}
             </Columns>
-            <BlogPostCallAction postTitle={post.frontmatter.title} />
             <Columns isCentered>
               <Column>
                 <DiscussionEmbed
