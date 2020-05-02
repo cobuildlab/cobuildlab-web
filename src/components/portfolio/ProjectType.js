@@ -2,31 +2,32 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Icon } from 'react-icons-kit';
-import {mobilePhone} from 'react-icons-kit/fa/mobilePhone';
-import {desktop} from 'react-icons-kit/fa/desktop';
+import { mobilePhone } from 'react-icons-kit/fa/mobilePhone';
+import { desktop } from 'react-icons-kit/fa/desktop';
 
 const Container = styled.ul`
-   display: flex;
-   align-items: center;
-   justify-content: flex-end;
-   margin-bottom: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  @media screen and (max-widht: 768px) {
+    justify-content: center;
+  }
 `;
 
 const Type = styled.li`
-   display: flex;
-   align-items: center;
-   padding: 0 1em;
-   color: ${( { isActive }) => isActive ? '#E76C29' : '#264A60'};
+  display: flex;
+  align-items: center;
+  color: ${({ isActive }) => (isActive ? '#E76C29' : '#90A2AD')};
 `;
 
 const TextContainer = styled.span`
-   color: inherit;
-   padding: 0 .5em;
+  color: inherit;
+  padding-left: 0.5em;
 `;
 
 const IconContainer = styled(Icon)`
   color: inherit;
-`;  
+`;
 
 /**
  *
@@ -34,13 +35,12 @@ const IconContainer = styled(Icon)`
  */
 
 const ProjectType = ({ type }) => {
-
   const isWeb = type.includes('web');
   const isApp = type.includes('app');
 
-  return(
+  return (
     <Container>
-      <Type isActive={isWeb} >
+      <Type isActive={isWeb}>
         <IconContainer icon={desktop} size={22} />
         <TextContainer>Web</TextContainer>
       </Type>
@@ -57,7 +57,7 @@ ProjectType.defaultProps = {
 };
 
 ProjectType.propTypes = {
-  type: PropTypes.arrayOf(PropTypes.oneOf(['web','app'])),
+  type: PropTypes.arrayOf(PropTypes.oneOf(['web', 'app'])),
 };
 
 export default ProjectType;

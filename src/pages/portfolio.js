@@ -12,7 +12,6 @@ import Header from '../components/2020/Header';
 import PortfolioMenu from '../components/portfolio/PortfolioMenu';
 import PortfolioSection from '../components/portfolio/PortfolioSection';
 import ProjectTitle from '../components/portfolio/ProjectTitle';
-import ProjectType from '../components/portfolio/ProjectType';
 
 import AccountableGallery from '../components/portfolio/galleries/Accountable';
 import BazlGallery from '../components/portfolio/galleries/Bazl';
@@ -39,6 +38,9 @@ import Zonia from '../components/portfolio/galleries/Zonia';
 const Wrapper = styled.div`
   position: relative;
   padding-top: 6em;
+  @media screen and (max-width: 768px) {
+    padding-top: 1em;
+  }
 `;
 
 const Portfolio = ({ data }) => (
@@ -59,108 +61,87 @@ const Portfolio = ({ data }) => (
             <HeroTitle />
           </Wrapper>
           <PortfolioSection id="accountable">
-            <ProjectTitle>Accountable</ProjectTitle>
-            <ProjectType type={["app"]} />
+            <ProjectTitle type={['app']}>Accountable</ProjectTitle>
             <AccountableGallery search="accountable" />
           </PortfolioSection>
           <PortfolioSection id="bazl" color="white">
-            <ProjectTitle>Bazl</ProjectTitle>
-            <ProjectType type={["app", "web"]} />
+            <ProjectTitle type={['app', 'web']}>Bazl</ProjectTitle>
             <BazlGallery />
           </PortfolioSection>
           <PortfolioSection id="charter">
-            <ProjectTitle>Charter</ProjectTitle>
-            <ProjectType type={["app"]} />
+            <ProjectTitle type={['app']}>Charter</ProjectTitle>
             <Charter />
           </PortfolioSection>
           <PortfolioSection id="collabtogrow" color="white">
-            <ProjectTitle>Collabtogrow</ProjectTitle>
-            <ProjectType type={["web"]} />
+            <ProjectTitle type={['web']}>Collabtogrow</ProjectTitle>
             <CollabtogrowGallery />
           </PortfolioSection>
           <PortfolioSection id="contentManager">
-            <ProjectTitle>Content Manager</ProjectTitle>
-            <ProjectType type={["web"]} />
+            <ProjectTitle type={['web']}>Content Manager</ProjectTitle>
             <ContentManagerGallery />
           </PortfolioSection>
           <PortfolioSection id="ctoFounders" color="white">
-            <ProjectTitle>CTO Founders</ProjectTitle>
-            <ProjectType type={["app"]} />
+            <ProjectTitle type={['app']}>CTO Founders</ProjectTitle>
             <CtoFoundersGallery />
           </PortfolioSection>
           <PortfolioSection id="elpitazo">
-            <ProjectTitle>El Pitazo</ProjectTitle>
-            <ProjectType type={["app"]} />
+            <ProjectTitle type={['app']}>El Pitazo</ProjectTitle>
             <ElPitazo />
           </PortfolioSection>
           <PortfolioSection id="elemental" color="white">
-            <ProjectTitle>Elemental</ProjectTitle>
-            <ProjectType type={["app"]} />
+            <ProjectTitle type={['app']}>Elemental</ProjectTitle>
             <ElementalGallery />
           </PortfolioSection>
           <PortfolioSection id="gurupia">
-            <ProjectTitle>Gurupia</ProjectTitle>
-            <ProjectType type={["web"]} />
+            <ProjectTitle type={['web']}>Gurupia</ProjectTitle>
             <Gurupia />
           </PortfolioSection>
           <PortfolioSection id="jobcore" color="white">
-            <ProjectTitle>Jobcore</ProjectTitle>
-            <ProjectType type={["web","app"]} />
+            <ProjectTitle type={['web', 'app']}>Jobcore</ProjectTitle>
             <Jobcore />
           </PortfolioSection>
           <PortfolioSection id="kadem">
-            <ProjectTitle>Kadem</ProjectTitle>
-            <ProjectType type={["web","app"]} />
+            <ProjectTitle type={['web', 'app']}>Kadem</ProjectTitle>
             <KademGallery />
           </PortfolioSection>
           <PortfolioSection id="leadvolt" color="white">
-            <ProjectTitle>LeadVolt</ProjectTitle>
-            <ProjectType type={["web"]} />
+            <ProjectTitle type={['web']}>LeadVolt</ProjectTitle>
             <LeadVolt />
           </PortfolioSection>
           <PortfolioSection id="mama">
-            <ProjectTitle>Mama</ProjectTitle>
-            <ProjectType type={["app"]} />
+            <ProjectTitle type={['app']}>Mama</ProjectTitle>
             <Mama />
           </PortfolioSection>
           <PortfolioSection id="massone" color="white">
-            <ProjectTitle>Massone</ProjectTitle>
-            <ProjectType type={["web","app"]} />
+            <ProjectTitle type={['web', 'app']}>Massone</ProjectTitle>
             <Massone />
           </PortfolioSection>
           <PortfolioSection id="miamisoftwaredevelopers">
-            <ProjectTitle>Miami Software Developers</ProjectTitle>
-            <ProjectType type={["web"]} />
+            <ProjectTitle type={['web']}>Miami Software Developers</ProjectTitle>
             <MiamiSoftwareDevelopers />
           </PortfolioSection>
           <PortfolioSection id="okroo" color="white">
-            <ProjectTitle>Okroo</ProjectTitle>
-            <ProjectType type={["app"]} />
+            <ProjectTitle type={['app']}>Okroo</ProjectTitle>
             <OkrooGallery />
           </PortfolioSection>
           <PortfolioSection id="payklever">
-            <ProjectTitle>Payklever</ProjectTitle>
-            <ProjectType type={["web"]} />
+            <ProjectTitle type={['web']}>Payklever</ProjectTitle>
             <PayKlever />
           </PortfolioSection>
           <PortfolioSection id="ryval" color="white">
-            <ProjectTitle>Ryval</ProjectTitle>
-            <ProjectType type={["app"]} />
+            <ProjectTitle type={['app']}>Ryval</ProjectTitle>
             <RyvalGallery />
           </PortfolioSection>
           <PortfolioSection id="storyRocket">
-            <ProjectTitle>Storyrocket</ProjectTitle>
-            <ProjectType type={["web"]} />
+            <ProjectTitle type={['web']}>Storyrocket</ProjectTitle>
             <StoryRocket />
           </PortfolioSection>
           <PortfolioSection id="weedmatch" color="white">
-            <ProjectTitle>Weedmatch</ProjectTitle>
-            <ProjectType type={["app" ]}/>
+            <ProjectTitle type={['app']}>Weedmatch</ProjectTitle>
             <Weedmatch />
           </PortfolioSection>
           <PortfolioSection id="zonia">
-            <ProjectTitle>Zonia</ProjectTitle>
-            <ProjectType type={["app"]} />
+            <ProjectTitle type={['app']}>Zonia</ProjectTitle>
             <Zonia />
           </PortfolioSection>
         </Column>
