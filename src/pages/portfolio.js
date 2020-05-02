@@ -10,7 +10,7 @@ import Layout from '../components/2020/Layout';
 import HeroTitle from '../components/portfolio/HeroTitle';
 import Header from '../components/2020/Header';
 import PortfolioMenu from '../components/portfolio/PortfolioMenu';
-import PortfolioSection from '../components/portfolio/PortfolioSection';
+import ProjectContainer from '../components/portfolio/ProjectContainer';
 import ProjectTitle from '../components/portfolio/ProjectTitle';
 
 import AccountableGallery from '../components/portfolio/galleries/Accountable';
@@ -60,90 +60,90 @@ const Portfolio = ({ data }) => (
           <Wrapper>
             <HeroTitle />
           </Wrapper>
-          <PortfolioSection id="accountable">
+          <ProjectContainer id="accountable">
             <ProjectTitle type={['app']}>Accountable</ProjectTitle>
             <AccountableGallery search="accountable" />
-          </PortfolioSection>
-          <PortfolioSection id="bazl" color="white">
+          </ProjectContainer>
+          <ProjectContainer id="bazl" color="white">
             <ProjectTitle type={['app', 'web']}>Bazl</ProjectTitle>
             <BazlGallery />
-          </PortfolioSection>
-          <PortfolioSection id="charter">
+          </ProjectContainer>
+          <ProjectContainer id="charter">
             <ProjectTitle type={['app']}>Charter</ProjectTitle>
             <Charter />
-          </PortfolioSection>
-          <PortfolioSection id="collabtogrow" color="white">
+          </ProjectContainer>
+          <ProjectContainer id="collabtogrow" color="white">
             <ProjectTitle type={['web']}>Collabtogrow</ProjectTitle>
             <CollabtogrowGallery />
-          </PortfolioSection>
-          <PortfolioSection id="contentManager">
+          </ProjectContainer>
+          <ProjectContainer id="contentManager">
             <ProjectTitle type={['web']}>Content Manager</ProjectTitle>
             <ContentManagerGallery />
-          </PortfolioSection>
-          <PortfolioSection id="ctoFounders" color="white">
+          </ProjectContainer>
+          <ProjectContainer id="ctoFounders" color="white">
             <ProjectTitle type={['app']}>CTO Founders</ProjectTitle>
             <CtoFoundersGallery />
-          </PortfolioSection>
-          <PortfolioSection id="elpitazo">
+          </ProjectContainer>
+          <ProjectContainer id="elpitazo">
             <ProjectTitle type={['app']}>El Pitazo</ProjectTitle>
             <ElPitazo />
-          </PortfolioSection>
-          <PortfolioSection id="elemental" color="white">
+          </ProjectContainer>
+          <ProjectContainer id="elemental" color="white">
             <ProjectTitle type={['app']}>Elemental</ProjectTitle>
             <ElementalGallery />
-          </PortfolioSection>
-          <PortfolioSection id="gurupia">
+          </ProjectContainer>
+          <ProjectContainer id="gurupia">
             <ProjectTitle type={['web']}>Gurupia</ProjectTitle>
             <Gurupia />
-          </PortfolioSection>
-          <PortfolioSection id="jobcore" color="white">
+          </ProjectContainer>
+          <ProjectContainer id="jobcore" color="white">
             <ProjectTitle type={['web', 'app']}>Jobcore</ProjectTitle>
             <Jobcore />
-          </PortfolioSection>
-          <PortfolioSection id="kadem">
+          </ProjectContainer>
+          <ProjectContainer id="kadem">
             <ProjectTitle type={['web', 'app']}>Kadem</ProjectTitle>
             <KademGallery />
-          </PortfolioSection>
-          <PortfolioSection id="leadvolt" color="white">
+          </ProjectContainer>
+          <ProjectContainer id="leadvolt" color="white">
             <ProjectTitle type={['web']}>LeadVolt</ProjectTitle>
             <LeadVolt />
-          </PortfolioSection>
-          <PortfolioSection id="mama">
+          </ProjectContainer>
+          <ProjectContainer id="mama">
             <ProjectTitle type={['app']}>Mama</ProjectTitle>
             <Mama />
-          </PortfolioSection>
-          <PortfolioSection id="massone" color="white">
+          </ProjectContainer>
+          <ProjectContainer id="massone" color="white">
             <ProjectTitle type={['web', 'app']}>Massone</ProjectTitle>
             <Massone />
-          </PortfolioSection>
-          <PortfolioSection id="miamisoftwaredevelopers">
+          </ProjectContainer>
+          <ProjectContainer id="miamisoftwaredevelopers">
             <ProjectTitle type={['web']}>Miami Software Developers</ProjectTitle>
             <MiamiSoftwareDevelopers />
-          </PortfolioSection>
-          <PortfolioSection id="okroo" color="white">
+          </ProjectContainer>
+          <ProjectContainer id="okroo" color="white">
             <ProjectTitle type={['app']}>Okroo</ProjectTitle>
             <OkrooGallery />
-          </PortfolioSection>
-          <PortfolioSection id="payklever">
+          </ProjectContainer>
+          <ProjectContainer id="payklever">
             <ProjectTitle type={['web']}>Payklever</ProjectTitle>
             <PayKlever />
-          </PortfolioSection>
-          <PortfolioSection id="ryval" color="white">
+          </ProjectContainer>
+          <ProjectContainer id="ryval" color="white">
             <ProjectTitle type={['app']}>Ryval</ProjectTitle>
             <RyvalGallery />
-          </PortfolioSection>
-          <PortfolioSection id="storyRocket">
+          </ProjectContainer>
+          <ProjectContainer id="storyRocket">
             <ProjectTitle type={['web']}>Storyrocket</ProjectTitle>
             <StoryRocket />
-          </PortfolioSection>
-          <PortfolioSection id="weedmatch" color="white">
+          </ProjectContainer>
+          <ProjectContainer id="weedmatch" color="white">
             <ProjectTitle type={['app']}>Weedmatch</ProjectTitle>
             <Weedmatch />
-          </PortfolioSection>
-          <PortfolioSection id="zonia">
+          </ProjectContainer>
+          <ProjectContainer id="zonia">
             <ProjectTitle type={['app']}>Zonia</ProjectTitle>
             <Zonia />
-          </PortfolioSection>
+          </ProjectContainer>
         </Column>
       </Columns>
     </Container>

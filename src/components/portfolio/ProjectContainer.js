@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SectionWrapper = styled.article`
+const ProjectContainer = styled.article`
   max-width: 1000px;
   margin-left: auto;
   @media screen and (max-width: 768px) {
@@ -9,4 +9,4 @@ const SectionWrapper = styled.article`
   }
 `;
 
-export default SectionWrapper;
+export default ProjectContainer;
