@@ -59,7 +59,7 @@ const Weedmatch = ({ data }) => (
               <Img fluid={data.logo.childImageSharp.fluid} alt="" />
             </DetailHeroImagesContent>
             <DetailHeroImagesContent>
-              <DetailVideo />
+              <DetailVideo id="5iLg-xUIlvo" images={data.videoImages.childImageSharp.fluid} />
             </DetailHeroImagesContent>
           </Column>
         </Columns>
@@ -89,7 +89,7 @@ const Weedmatch = ({ data }) => (
         the lifestyle world was in debt of tools for this community.
       </DetailParagraph>
     </DetailSection>
-    <DetailSection src={data.textImagesOne.childImageSharp.fluid}>
+    <DetailSection src={data.textImagesTwo.childImageSharp.fluid}>
       <DetailParagraph>
         lifestyle world was in debt of tools for this community. After a couple of meeting Oscar
         develop the concept of the brand with several of its partners and the shape of the Weedmatch
@@ -160,7 +160,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    logo: file(relativePath: { eq: "customers/collabtogrow-logo.png" }) {
+    logo: file(relativePath: { eq: "customers/weedmatch/logo.png" }) {
       childImageSharp {
         fluid {
           aspectRatio
@@ -171,7 +171,29 @@ export const pageQuery = graphql`
         }
       }
     }
-    textImagesOne: file(relativePath: { eq: "customers/weedmatch/text-img-1.png" }) {
+    textImagesOne: file(relativePath: { eq: "customers/weedmatch/1.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    textImagesTwo: file(relativePath: { eq: "customers/weedmatch/2.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    videoImages: file(relativePath: { eq: "customers/weedmatch/video-cover.jpg" }) {
       childImageSharp {
         fluid {
           aspectRatio

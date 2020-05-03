@@ -77,14 +77,14 @@ const GeeksAcademy = ({ data }) => (
               <Img fluid={data.logo.childImageSharp.fluid} alt="" />
             </DetailHeroImagesContent>
             <DetailHeroImagesContent>
-              <DetailVideo id="sJrH4f7Df8g" />
+              <DetailVideo id="sJrH4f7Df8g" images={data.videoImages.childImageSharp.fluid} />
             </DetailHeroImagesContent>
           </Column>
         </Columns>
       </Container>
     </Section>
 
-    <DetailSection left src={data.textImagesOne.childImageSharp.fluid}>
+    <DetailSection src={data.textImagesOne.childImageSharp.fluid}>
       <DetailSubTitle>
         The Academy in <TextOrange>Venezuela</TextOrange>
       </DetailSubTitle>
@@ -96,7 +96,7 @@ const GeeksAcademy = ({ data }) => (
       </DetailParagraph>
     </DetailSection>
 
-    <DetailSection src={data.textImagesOne.childImageSharp.fluid}>
+    <DetailSection src={data.textImagesTwo.childImageSharp.fluid} left>
       <DetailSubTitle>
         4Geeks Academy: <TextOrange> Maturity and experience</TextOrange>
       </DetailSubTitle>
@@ -174,7 +174,29 @@ export const pageQuery = graphql`
         }
       }
     }
-    textImagesOne: file(relativePath: { eq: "customers/4geek/text-img-1.png" }) {
+    textImagesTwo: file(relativePath: { eq: "customers/4geek/1.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    textImagesOne: file(relativePath: { eq: "customers/4geek/2.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    videoImages: file(relativePath: { eq: "customers/4geek/video-cover.jpg" }) {
       childImageSharp {
         fluid {
           aspectRatio
