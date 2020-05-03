@@ -78,7 +78,7 @@ const Propagad = ({ data }) => (
               <Img fluid={data.logo.childImageSharp.fluid} alt="" />
             </DetailHeroImagesContent>
             <DetailHeroImagesContent>
-              <DetailVideo id="zG_UIMOHgBI" />
+              <DetailVideo id="zG_UIMOHgBI" images={data.videoImages.childImageSharp.fluid} />
             </DetailHeroImagesContent>
           </Column>
         </Columns>
@@ -107,7 +107,18 @@ Propagad.propTypes = {
 
 export const pageQuery = graphql`
   query {
-    logo: file(relativePath: { eq: "customers/collabtogrow-logo.png" }) {
+    logo: file(relativePath: { eq: "customers/propagad/logo.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    videoImages: file(relativePath: { eq: "customers/propagad/video-cover.jpg" }) {
       childImageSharp {
         fluid {
           aspectRatio

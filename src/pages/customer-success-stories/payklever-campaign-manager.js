@@ -65,7 +65,7 @@ const PaykleverCampaignManager = ({ data }) => (
               <Img fluid={data.logo.childImageSharp.fluid} alt="" />
             </DetailHeroImagesContent>
             <DetailHeroImagesContent>
-              <DetailVideo />
+              <DetailVideo id="QAEOiEdZOUM" images={data.videoImages.childImageSharp.fluid} />
             </DetailHeroImagesContent>
           </Column>
         </Columns>
@@ -201,7 +201,18 @@ export const pageQuery = graphql`
         }
       }
     }
-    logo: file(relativePath: { eq: "customers/collabtogrow-logo.png" }) {
+    logo: file(relativePath: { eq: "customers/payklever/logo.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    videoImages: file(relativePath: { eq: "customers/payklever/cover-video.jpg" }) {
       childImageSharp {
         fluid {
           aspectRatio
