@@ -5,6 +5,8 @@ import Item from './Item';
 import img1 from '../../../../assets/images/testimonial/andres-wegacha.jpeg';
 import img2 from '../../../../assets/images/testimonial/ale.jpg';
 import img3 from '../../../../assets/images/testimonial/robert-mitchell.png';
+import img4 from '../../../../assets/images/testimonial/anna.jpeg';
+
 import './testimonial.scss';
 
 export const DATA = [
@@ -33,6 +35,14 @@ export const DATA = [
       'Coubild Labs software development process has delivered for our organization. Our proprietary software through developments allows our mobile workforce to Invoice Customers within a day or service. \n' +
       '\n' +
       'Cobuild Labs process gave our organizations an opportunity to transform our workflow and find productivity. We are justified in our decision to work with them after trying several out of the box software solutions. We view Cobuild Labs as an integral part of our technology strategy going forward.',
+  },
+  {
+    id: 4,
+    title: 'Anna Keeler',
+    subtitle: 'Fieldworker Management for the HVAC Industry',
+    img: img4,
+    content:
+      'Mama Matchmaking is incredibly impressed with Cobuild Lab`s work on our application. The team is providing a complete scope of work and clear solutions for the launch of our project. We are excited about the results, timeline, and budget so far achieved, and look forward to continuing our partnership.',
   },
 ];
 
