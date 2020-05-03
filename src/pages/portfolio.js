@@ -1,18 +1,17 @@
 import React from 'react';
-import { Container, HeroHeader, HeroBody, Hero } from 'bloomer';
+import { Container, Columns, Column } from 'bloomer';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
 
 import SeoMetaTags from '../components/SeoMetaTags';
 import Layout from '../components/2020/Layout';
-import BannerBackground from '../components/2020/BannerBackground';
 
 import HeroTitle from '../components/portfolio/HeroTitle';
-import PortfolioHeader from '../components/portfolio/PortfolioHeader';
-import PortfolioSection from '../components/portfolio/PortfolioSection';
+import Header from '../components/2020/Header';
+import PortfolioMenu from '../components/portfolio/PortfolioMenu';
+import ProjectContainer from '../components/portfolio/ProjectContainer';
 import ProjectTitle from '../components/portfolio/ProjectTitle';
-import PorftolioCategory from '../components/portfolio/PortfolioCategory';
 
 import AccountableGallery from '../components/portfolio/galleries/Accountable';
 import BazlGallery from '../components/portfolio/galleries/Bazl';
@@ -33,16 +32,15 @@ import OkrooGallery from '../components/portfolio/galleries/Okroo';
 import PayKlever from '../components/portfolio/galleries/PayKlever';
 import RyvalGallery from '../components/portfolio/galleries/Ryval';
 import StoryRocket from '../components/portfolio/galleries/StoryRocket';
+import Weedmatch from '../components/portfolio/galleries/Weedmatch';
 import Zonia from '../components/portfolio/galleries/Zonia';
 
 const Wrapper = styled.div`
   position: relative;
   padding-top: 6em;
-`;
-
-const GalleryContainer = styled.div`
-  max-width: 1000px;
-  margin: auto;
+  @media screen and (max-width: 768px) {
+    padding-top: 1em;
+  }
 `;
 
 const Portfolio = ({ data }) => (
@@ -52,199 +50,103 @@ const Portfolio = ({ data }) => (
       description="Portfolio"
       image={data.seoImages.childImageSharp.resize}
     />
-    <Hero>
-      <HeroHeader>
-        <PortfolioHeader />
-      </HeroHeader>
-      <HeroBody isPaddingless>
-        <Wrapper>
-          <BannerBackground />
-          <Container>
+    <Header />
+    <Container>
+      <Columns>
+        <Column isSize={{ mobile: 12, desktop: 2 }}>
+          <PortfolioMenu />
+        </Column>
+        <Column isSize={{ mobile: 12, desktop: 10 }}>
+          <Wrapper>
             <HeroTitle />
-          </Container>
-        </Wrapper>
-      </HeroBody>
-      <PortfolioSection id="accountable">
-        <Container>
-          <ProjectTitle>Accountable</ProjectTitle>
-          <PorftolioCategory />
-          <GalleryContainer>
+          </Wrapper>
+          <ProjectContainer id="accountable">
+            <ProjectTitle type={['app']}>Accountable</ProjectTitle>
             <AccountableGallery search="accountable" />
-          </GalleryContainer>
-        </Container>
-      </PortfolioSection>
-      <PortfolioSection id="bazl" color="white">
-        <Container>
-          <ProjectTitle>Bazl</ProjectTitle>
-          <PorftolioCategory type="web/app" />
-          <GalleryContainer>
+          </ProjectContainer>
+          <ProjectContainer id="bazl" color="white">
+            <ProjectTitle type={['app', 'web']}>Bazl</ProjectTitle>
             <BazlGallery />
-          </GalleryContainer>
-        </Container>
-      </PortfolioSection>
-      <PortfolioSection id="charter">
-        <Container>
-          <ProjectTitle>Charter</ProjectTitle>
-          <PorftolioCategory type="app" />
-          <GalleryContainer>
+          </ProjectContainer>
+          <ProjectContainer id="charter">
+            <ProjectTitle type={['app']}>Charter</ProjectTitle>
             <Charter />
-          </GalleryContainer>
-        </Container>
-      </PortfolioSection>
-      <PortfolioSection id="collabtogrow" color="white">
-        <Container>
-          <ProjectTitle>Collabtogrow</ProjectTitle>
-          <PorftolioCategory type="web" />
-          <GalleryContainer>
+          </ProjectContainer>
+          <ProjectContainer id="collabtogrow" color="white">
+            <ProjectTitle type={['web']}>Collabtogrow</ProjectTitle>
             <CollabtogrowGallery />
-          </GalleryContainer>
-        </Container>
-      </PortfolioSection>
-      <PortfolioSection id="contentManager">
-        <Container>
-          <ProjectTitle>Content Manager</ProjectTitle>
-          <PorftolioCategory type="web" />
-          <GalleryContainer>
+          </ProjectContainer>
+          <ProjectContainer id="contentManager">
+            <ProjectTitle type={['web']}>Content Manager</ProjectTitle>
             <ContentManagerGallery />
-          </GalleryContainer>
-        </Container>
-      </PortfolioSection>
-      <PortfolioSection id="ctoFounders" color="white">
-        <Container>
-          <ProjectTitle>CTO Founders</ProjectTitle>
-          <PorftolioCategory type="app" />
-          <GalleryContainer>
+          </ProjectContainer>
+          <ProjectContainer id="ctoFounders" color="white">
+            <ProjectTitle type={['app']}>CTO Founders</ProjectTitle>
             <CtoFoundersGallery />
-          </GalleryContainer>
-        </Container>
-      </PortfolioSection>
-      <PortfolioSection id="elpitazo">
-        <Container>
-          <ProjectTitle>El Pitazo</ProjectTitle>
-          <PorftolioCategory type="app" />
-          <GalleryContainer>
+          </ProjectContainer>
+          <ProjectContainer id="elpitazo">
+            <ProjectTitle type={['app']}>El Pitazo</ProjectTitle>
             <ElPitazo />
-          </GalleryContainer>
-        </Container>
-      </PortfolioSection>
-      <PortfolioSection id="elemental" color="white">
-        <Container>
-          <ProjectTitle>Elemental</ProjectTitle>
-          <PorftolioCategory type="app" />
-          <GalleryContainer>
+          </ProjectContainer>
+          <ProjectContainer id="elemental" color="white">
+            <ProjectTitle type={['app']}>Elemental</ProjectTitle>
             <ElementalGallery />
-          </GalleryContainer>
-        </Container>
-      </PortfolioSection>
-      <PortfolioSection id="gurupia">
-        <Container>
-          <ProjectTitle>Gurupia</ProjectTitle>
-          <PorftolioCategory type="web" />
-          <GalleryContainer>
+          </ProjectContainer>
+          <ProjectContainer id="gurupia">
+            <ProjectTitle type={['web']}>Gurupia</ProjectTitle>
             <Gurupia />
-          </GalleryContainer>
-        </Container>
-      </PortfolioSection>
-      <PortfolioSection id="jobcore" color="white">
-        <Container>
-          <ProjectTitle>Jobcore</ProjectTitle>
-          <PorftolioCategory type="web/app" />
-          <GalleryContainer>
+          </ProjectContainer>
+          <ProjectContainer id="jobcore" color="white">
+            <ProjectTitle type={['web', 'app']}>Jobcore</ProjectTitle>
             <Jobcore />
-          </GalleryContainer>
-        </Container>
-      </PortfolioSection>
-      <PortfolioSection id="kadem">
-        <Container>
-          <ProjectTitle>Kadem</ProjectTitle>
-          <PorftolioCategory type="web/app" />
-          <GalleryContainer>
+          </ProjectContainer>
+          <ProjectContainer id="kadem">
+            <ProjectTitle type={['web', 'app']}>Kadem</ProjectTitle>
             <KademGallery />
-          </GalleryContainer>
-        </Container>
-      </PortfolioSection>
-      <PortfolioSection id="leadvold" color="white">
-        <Container>
-          <ProjectTitle>Lead Vold</ProjectTitle>
-          <PorftolioCategory type="web" />
-          <GalleryContainer>
+          </ProjectContainer>
+          <ProjectContainer id="leadvolt" color="white">
+            <ProjectTitle type={['web']}>LeadVolt</ProjectTitle>
             <LeadVolt />
-          </GalleryContainer>
-        </Container>
-      </PortfolioSection>
-      <PortfolioSection id="mama">
-        <Container>
-          <ProjectTitle>Mama</ProjectTitle>
-          <PorftolioCategory type="app" />
-          <GalleryContainer>
+          </ProjectContainer>
+          <ProjectContainer id="mama">
+            <ProjectTitle type={['app']}>Mama</ProjectTitle>
             <Mama />
-          </GalleryContainer>
-        </Container>
-      </PortfolioSection>
-      <PortfolioSection id="massone" color="white">
-        <Container>
-          <ProjectTitle>Massone</ProjectTitle>
-          <PorftolioCategory type="web/app" />
-          <GalleryContainer>
+          </ProjectContainer>
+          <ProjectContainer id="massone" color="white">
+            <ProjectTitle type={['web', 'app']}>Massone</ProjectTitle>
             <Massone />
-          </GalleryContainer>
-        </Container>
-      </PortfolioSection>
-      <PortfolioSection id="miamisoftwaredevelopers">
-        <Container>
-          <ProjectTitle>Miami Software Developers</ProjectTitle>
-          <PorftolioCategory type="web" />
-          <GalleryContainer>
+          </ProjectContainer>
+          <ProjectContainer id="miamisoftwaredevelopers">
+            <ProjectTitle type={['web']}>Miami Software Developers</ProjectTitle>
             <MiamiSoftwareDevelopers />
-          </GalleryContainer>
-        </Container>
-      </PortfolioSection>
-      <PortfolioSection id="okroo" color="white">
-        <Container>
-          <ProjectTitle>Okroo</ProjectTitle>
-          <PorftolioCategory type="app" />
-          <GalleryContainer>
+          </ProjectContainer>
+          <ProjectContainer id="okroo" color="white">
+            <ProjectTitle type={['app']}>Okroo</ProjectTitle>
             <OkrooGallery />
-          </GalleryContainer>
-        </Container>
-      </PortfolioSection>
-      <PortfolioSection id="payklever">
-        <Container>
-          <ProjectTitle>Payklever</ProjectTitle>
-          <PorftolioCategory type="web" />
-          <GalleryContainer>
+          </ProjectContainer>
+          <ProjectContainer id="payklever">
+            <ProjectTitle type={['web']}>Payklever</ProjectTitle>
             <PayKlever />
-          </GalleryContainer>
-        </Container>
-      </PortfolioSection>
-      <PortfolioSection id="ryval" color="white">
-        <Container>
-          <ProjectTitle>Ryval</ProjectTitle>
-          <PorftolioCategory type="app" />
-          <GalleryContainer>
+          </ProjectContainer>
+          <ProjectContainer id="ryval" color="white">
+            <ProjectTitle type={['app']}>Ryval</ProjectTitle>
             <RyvalGallery />
-          </GalleryContainer>
-        </Container>
-      </PortfolioSection>
-      <PortfolioSection id="storyRocket">
-        <Container>
-          <ProjectTitle>Story Rocket</ProjectTitle>
-          <PorftolioCategory type="web" />
-          <GalleryContainer>
+          </ProjectContainer>
+          <ProjectContainer id="storyRocket">
+            <ProjectTitle type={['web']}>Storyrocket</ProjectTitle>
             <StoryRocket />
-          </GalleryContainer>
-        </Container>
-      </PortfolioSection>
-      <PortfolioSection id="zonia" color="white">
-        <Container>
-          <ProjectTitle>Zonia</ProjectTitle>
-          <PorftolioCategory type="app" />
-          <GalleryContainer>
+          </ProjectContainer>
+          <ProjectContainer id="weedmatch" color="white">
+            <ProjectTitle type={['app']}>Weedmatch</ProjectTitle>
+            <Weedmatch />
+          </ProjectContainer>
+          <ProjectContainer id="zonia">
+            <ProjectTitle type={['app']}>Zonia</ProjectTitle>
             <Zonia />
-          </GalleryContainer>
-        </Container>
-      </PortfolioSection>
-    </Hero>
+          </ProjectContainer>
+        </Column>
+      </Columns>
+    </Container>
   </Layout>
 );
 
