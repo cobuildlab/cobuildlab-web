@@ -29,7 +29,7 @@ const PortfolioMenuItem = ({ onClick }) => (
       <MenuLink href="#bazl">Bazl</MenuLink>
     </MenuItem>
     <MenuItem onClick={onClick}>
-      <MenuLink href="#chater">Charter</MenuLink>
+      <MenuLink href="#charter">Charter</MenuLink>
     </MenuItem>
     <MenuItem onClick={onClick}>
       <MenuLink href="#collabtogrow">Collabtogrow</MenuLink>
@@ -56,7 +56,7 @@ const PortfolioMenuItem = ({ onClick }) => (
       <MenuLink href="#kadem">Kadem</MenuLink>
     </MenuItem>
     <MenuItem onClick={onClick}>
-      <MenuLink href="#leadvolt">Lead Volt</MenuLink>
+      <MenuLink href="#leadvolt">LeadVolt</MenuLink>
     </MenuItem>
     <MenuItem onClick={onClick}>
       <MenuLink href="#mama">Mama</MenuLink>
