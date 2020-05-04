@@ -2,13 +2,13 @@ import React, { Fragment, useState, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import {
-  Container,
   Navbar,
   NavbarBrand,
   NavbarItem,
   NavbarBurger,
   NavbarMenu,
   NavbarEnd,
+  Container,
 } from 'bloomer';
 import LinkButtonDefault from '../Button/LinkButtonDefault';
 import Image from '../Image';
@@ -39,7 +39,7 @@ SocialIcon.propTypes = {
   isHidden: PropTypes.string,
 };
 
-const Header = () => {
+const Header = ({ isFluid }) => {
   const [isActive, setActive] = useState(false);
 
   const handleActive = useCallback(() => {
@@ -48,7 +48,7 @@ const Header = () => {
 
   return (
     <div className={styles.nav_divider}>
-      <Container>
+      <Container isFluid={isFluid}>
         <Navbar>
           <NavbarBrand>
             <NavbarItem>
@@ -101,6 +101,14 @@ const Header = () => {
       </Container>
     </div>
   );
+};
+
+Header.defaultProps = {
+  isFluid: false,
+};
+
+Header.propTypes = {
+  isFluid: PropTypes.bool,
 };
 
 export default Header;

@@ -6,9 +6,14 @@ import { list } from 'react-icons-kit/fa/list';
 import PortfolioMenuItems from './PortfolioMenuItems';
 
 const MenuContainer = styled.div`
-  position: relative;
-  z-index: 70;
   padding-top: 1em;
+  position: ${({ isFixed }) => (isFixed ? 'fixed' : 'relative')};
+  top: 0;
+  @media screen and (max-width: 768px) {
+    padding-top: 0em;
+    width: 100%;
+    z-index: 100;
+  }
 `;
 
 const MenuTitle = styled.li`
@@ -28,18 +33,7 @@ const MenuTitle = styled.li`
 
 const Menu = styled.ul`
   transition: all 0.3s ease-in;
-  border-right: ${({ isFixed }) => (isFixed ? '1px solid #f0f0f0' : 'none')};
-  position: ${({ isFixed }) => (isFixed ? 'fixed' : 'relative')};
   top: 0;
-`;
-
-const SiderMenuWrapper = styled(Menu)`
-  max-width: 200px;
-`;
-
-const MobileMenu = styled(Menu)`
-  max-width: 100%;
-  width: 100%;
 `;
 
 const OnlyMobile = styled.div`
@@ -92,23 +86,23 @@ const PortfolioMenu = () => {
   }, []);
 
   return (
-    <MenuContainer>
+    <MenuContainer isFixed={isFixed}>
       <OnlyDesktop>
-        <SiderMenuWrapper isFixed={isFixed}>
+        <Menu>
           <MenuTitle>
             <IconList size={20} icon={list} />
             Projects
           </MenuTitle>
           <PortfolioMenuItems />
-        </SiderMenuWrapper>
+        </Menu>
       </OnlyDesktop>
       <OnlyMobile>
-        <MobileMenu isFixed={isFixed}>
+        <Menu>
           <MenuTitle onClick={handleOpen} isFixed={isFixed}>
             <IconList size={20} icon={list} />
             Projects
           </MenuTitle>
-        </MobileMenu>
+        </Menu>
       </OnlyMobile>
       <Drawer visible={isVisible} onClose={handleOpen}>
         <DrawerMenuContainer>
