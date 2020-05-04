@@ -1,341 +1,20 @@
 ---
-title: Conventions to create a React or React Native Application
+title: Conventions to create a NodeJs Application
 date: 2020-12-31T01:00:00+00:00
 tags: 
 template: development-post
-permalink: /conventions-to-create-a-react-web-or-mobile-application/
+permalink: /conventions-to-create-a-nodejs-application/
 image: null
 ---
 
-This document aims to reduce the friction between patterns and ways of doing common tasks during the development of a React Web or React Native Mobile Application.
+This document aims to reduce the friction between patterns and ways of doing common tasks during the development of a NodeJS Application.
 
-This document is heavily based on the Convention proposed by [Airbnb](https://github.com/airbnb/javascript), [StandardJs](https://standardjs.com/) and our own experience developing front end javascript applications since 2008 and React Applications since late 2016.
+This document is heavily based on the Convention proposed by [Airbnb](https://github.com/airbnb/javascript), [StandardJs](https://standardjs.com/) and our own experience developing backend and cloud functions javascript applications since 2008.
 
 Here, we explain the problem, choose a convention, and explain the reasons:
 
 # 1) General Best Practices for Code Style
-
-## **1.1)<Placeholder>**
-
-## **1.2) Use constructor to initialize state instead of `static` members**
-
-*PREFER THIS:*
-
-```javascript
-export default class SwiperView extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            cards: [],
-            isLoaded: false,
-            latitude: 0,
-            longitude: 0,
-            numPage: 0,
-            urlPage: '',
-        };
-        this.cardIndex = 0;
-    }
-...
-```
-
-*AND NOT THIS:*
-
-```javascript
-export default class SwiperView extends Component {
-    static getInitialState() {
-        return {
-            cards: [],
-            isLoaded: false,
-            latitude: 0,
-            longitude: 0,
-            numPage: 0,
-            urlPage: '',
-        }
-    }
-
-    constructor(props) {
-        super(props);
-        this.state = SwiperView.getInitialState();
-        this.cardIndex = 0;
-    }
-...
-```
-
-### Justification:
-
-* Code readability
-* Consistency: Initialization should always be in the constructor
-
-## **1.3) Components should not include styling props**
-
-Avoid using `style` or `className` for Components in Views to reduce visual noise, unless it is completely necessary.
-
-Rely on abstractions for defining styles for your components.
-
-See: [Proxy Pattern](https://cobuildlab.com/development-blog/react-patterns-proxy-pattern-for-components/)
-
-
-*PREFER THIS:*
-
-```javascript
-const NormalText = ({children}) => (
-    <p className='blue-text'>
-        {children}
-    </p>
-);
-
-const H1 = ({children, icon}) => (
-    <div className='inline-block'>
-        <h1 className='header-note'>
-            {children}
-            <span class='icon-header-note'>
-                <img src={icon} />
-            </span> 
-        </h1>
-    </div>
-);
-
-export class View extends Component {
-    render(){
-        <section>
-            <H1 icon={plus}>Note Header</H1>
-            <NormalText>Note Text</NormalText>
-        </section>
-    }
-}
-...
-```
-
-*AND NOT THIS:*
-
-```javascript
-export class View extends Component {
-    render(){
-        <section>
-            <div className='inline-block'>
-                <h1 className='header-note'>
-                    Note Header
-                    <span class='icon-header-note'>
-                        <img src={plus} />
-                    </span> 
-                </h1>
-            </div>
-        <p className='blue-text'>
-            Note Text
-        </p>
-        </section>
-    }
-}
-...
-```
-### Justification:
-
-* Reduce Visual Noise
-* Increase component readability
-* Increase speed of development avoiding design decisions
-* Maintainability by isolation of the styling options
-
-### **1.4) Separate LAYOUT Components from UI Components**
-
-Avoid mixing in components layout properties with look and feel properties unless is strictly necessary.
-
-*PREFER THIS:*
-
-```javascript 1.8
-const View = () => {
-    return (<div className='float-right'>
-              <OptionButton text='Create' onClick='' icon='new' />
-          </div>);
-};
-```
-
-*AND NOT THIS:*
-```javascript 1.8
-const View = () => {
-    return (
-          <Button onClick={this.goToImportDeals} style={{ position: 'absolute', right: '0px' }}>
-                Import Deals
-          </Button>);
-};
-```
-
-### **1.5) Keep complex rendering logic on the render method with local variables **
-
-Avoid clutter your rendering markup with complex conditional logic.
-
-const employee = job.employee && job.employee.firstName ? `${job.employee.first_name} ${job.employee.last_name}` : t('JOBS.notAsigned');
-
-**Complex manipulation**
-
-*PREFER THIS:*
-
-```javascript 1.8
-const View = () => {
-    const employee = job.employee && job.employee.firstName ? `${job.employee.first_name} ${job.employee.last_name}` : t('JOBS.notAsigned');
-    return (<Text>
-              {employee}
-          </Text>);
-};
-```
-
-*AND NOT THIS:*
-```javascript 1.8
-const View = () => {
-    return (<Text>
-              {job.employee && job.employee.firstName ? `${job.employee.first_name} ${job.employee.last_name}` : t('JOBS.notAsigned')}
-          </Text>);
-};
-```
-
-
-**Complex conditional rendering**
-
-*PREFER THIS:*
-
-```javascript 1.8
-const View = () => {
-    let content = "No rows to show!";
-    
-    if(condition){
-        // complex calculations
-        content = items.map((item, i ) => <Job key={i}></Job>);
-    }
-    return (<Content>
-              {content}
-          </Content>);
-};
-```
-
-*AND NOT THIS:*
-```javascript 1.8
-const View = () => {
-
-    return (<Content>
-              {condition ? {
-                // COMPLEX 
-                // MULTIPLE
-                // CALCULATIONS
-                // AND LOGIC
-              } : `No rows to show`}
-          </Content>);
-};
-```
-
-### Justification:
-
-* Increase component reusability 
-* Increase component  portability
-
-
-## **1.6) Return Early pattern for methods and functions instead of conditionals**
-
-
-Enforce  **Return Early** pattern in functions and methods, including the render method of React components.
-
-Return early pattern forces you to first consider exceptional situations or error conditions in your functions like validations and variables or input inconsistencies on the first lines of a function or method.
-
-
-*PREFER THIS:*
-
-```javascript
-const isValidString = (text, allowEmpty = false) => (
-	if(text === null) 
-		return false;
-	if(text === undefined) 
-		return false;
-	if(text === '' && allowEmpty === false) 
-		return false;
-	return true;
-);
-
-const isDivisibleBy = (value, divisor) => (
-	if(value === 0) 
-		return true;
-	if(divisor === 0) 
-		return false;
-	if(value === divisor) 
-		return true;
-	return value % divisor === 0;
-);
-
-const TableView = ({children, loading}) => {
-	if(loading)
-		return <Loading size={10} />;
-
-	//... logic
-	return (
-	    <div className='inline-block'>
-	        <h1 className='header-note'>
-	            {children}
-	            <span class='icon-header-note'>
-	                <img src={icon} />
-	            </span> 
-	        </h1>
-	    </div>
-	);
-}
-```
-
-*AND NOT THIS:*
-
-```javascript
-const isValidString = (text, allowEmpty = false) => (
-	if(text !== null){
-		if(text !== undefined){
-			if(allowEmpty === false){
-				if (text === ''){
-					return false;
-				}else{
-					return true
-				}					
-			}
-			else...
-		}
-	}else{
-		return false;
-	}
-);
-
-const TableView = ({children, loading}) => {
-	//	... logic
-	return (
-		{loading ? <Loading size={10}> :
-	    <div className='inline-block'>
-	        <h1 className='header-note'>
-	            {children}
-	            <span class='icon-header-note'>
-	                <img src={icon} />
-	            </span> 
-	        </h1>
-	    </div>}
-	);
-}
-```
-### Justification:
-
-* Reduce Visual Noice
-* Reduce complexity of conditionals
-* Increase readibility by excluding error and edge conditions early on the code and letting focusing on the complex part of the function
-
-
-## **1.7) Enforce the difference Between Presentational Components and Container Components (Views) **
-
-Reference: [React Patterns Presentational and Container Components]([https://cobuildlab.com/development-blog/react-patterns-container-and-presentational-components/](https://cobuildlab.com/development-blog/react-patterns-container-and-presentational-components/))
-
-React components can be clasified in 2 major groups depending on how they fit in the Architecture of your application, and how they interact with the App and the User:
-
-1) **Presentational Components** or just Components are responsible present or render the user interface, they interface the communication between the User and the Application State only through the **Container Components**.
-2) **Container Componets** or Views are responsible of "connecting" the application state with the User Interface by listening to changes to the Application State and rendering **Presentational Components**. The way they interact with the Application State or stores depends of the technology used (Redux, Flux, MobX, Context API)
-
-
-| Feature |   Presentational Components (Components) |  Container Components (Views) |
-|---|---|---|
-| **External Communication** |  Thet are not connected directly to the Application State. Their communication in handled via props | They subscribe and react to the Application State and its changes  |
-| **Internal State** |Normally relies on the Store connection|Handle internally with Component level state or Hooks|
-| **Renders**| Mostly understands **WHAT** to render   | It understands **WHAT** and **HOW** to render  |
-
-
-## **1.8) Avoid module exporting from index.js**
+## **1.1) Avoid module exporting from index.js**
 
 **NOTE: This rule is not applicable to libraries shared node packages, just for Application Development**
 
@@ -344,42 +23,37 @@ Avoid module exports from index.js in the codebase. For some developers this is 
 Having these components:
 
 ```shell script
-modules/A/View1.js
-modules/A/View2.js
-modules/B/View3.js
+modules/module-a/file-1.js
+modules/module-a/file-2.js
+modules/module-b/file-3.js
 ```
 
-To use `View1.js` and `View2.js` in `View3.js`
+To use `file-1.js` and `file-2.js` in `file-3.js`
 
 *PREFER THIS:*
 
-`modules/B/View3.js`
-```jsx harmony
-import {View1} from "../A/View1";
-import {View2} from "../A/View2";
+`modules/module1/file-3.js`
+```javascript
+import {something} from "../module-a/file-1";
+import {somethingElse} from "../module-a/file-2";
 
-const View3 = ()=> {
-  return ...
-}
+...
 ```
 
 *AND NOT THIS:*
 
-`modules/A/index.js`
-```jsx harmony
-import {View1} from "View1";
-import {View2} from "View2";
+`modules/module-a/index.js`
+```javascript
+import * from "file-1";
+import * from "file-2";
 ```
 
-`modules/B/View3.js`
-```jsx harmony
-import {View1, View2} from "../A";
+`modules/module-b/file-3.js`
+```javascript
+import {something, somethingElse} from "../module-a";
 
-const View3 = ()=> {
-  return ...
-}
+...
 ```
-
 
 ### Justification
 
