@@ -1,27 +1,32 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import { Section, Container, Columns, Column } from 'bloomer';
+import SeoMetaTags from '../../components/SeoMetaTags';
+
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
-import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
-import DetailSectionImageRight from '../../components/customer-success-stories/DetailSectionImageRight';
-import DetailTeam from '../../components/customer-success-stories/DetailTeam';
-import DetailCarousel from '../../components/customer-success-stories/DetailCarousel';
+// import DetailTeam from '../../components/customer-success-stories/DetailTeam';
+// import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
+import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
-import DetailImageLogo from '../../components/customer-success-stories/DetailImageLogo';
-import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
+import DetailSection from '../../components/customer-success-stories/DetailSection';
+import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 import { List, ListItem } from '../../components/Typography/List';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
-import img1 from '../../assets/images/customers/laptop-left.png';
-import img2 from '../../assets/images/customers/laptop-right.png';
-import logo from '../../assets/images/customers/collabtogrow-logo.png';
-
-const PaykleverCampaignManager = () => (
+const PaykleverCampaignManager = ({ data }) => (
   <DetailLayout>
+    <SeoMetaTags
+      title="Payklever Campaign Manager"
+      description="With Payklever you can turn your car into a payment method."
+      image={data.seoImages.childImageSharp.resize}
+    />
     <Section>
       <Container>
         <Columns isMultiline>
@@ -56,16 +61,18 @@ const PaykleverCampaignManager = () => (
             </DetailParagraph>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
-            <DetailHeroRightContainer>
-              <DetailImageLogo src={logo} />
-              <DetailVideo />
-            </DetailHeroRightContainer>
+            <DetailHeroImagesContent>
+              <Img fluid={data.logo.childImageSharp.fluid} alt="" />
+            </DetailHeroImagesContent>
+            <DetailHeroImagesContent>
+              <DetailVideo id="QAEOiEdZOUM" images={data.videoImages.childImageSharp.fluid} />
+            </DetailHeroImagesContent>
           </Column>
         </Columns>
       </Container>
     </Section>
 
-    <DetailSectionImageLeft src={img1} alt="What is the Succeed Platform?">
+    <DetailSection src={data.textImagesOne.childImageSharp.fluid}>
       <DetailSubTitle>
         What is the <TextOrange> Payklever Campaign </TextOrange> platform?
       </DetailSubTitle>
@@ -92,8 +99,9 @@ const PaykleverCampaignManager = () => (
         the campaign manager, and how they had already been developing the payklever platform. In
         this way, work began on this great project.
       </DetailParagraph>
-    </DetailSectionImageLeft>
-    <DetailSectionImageRight src={img2} alt="What is the Succeed Platform?">
+    </DetailSection>
+
+    <DetailSection src={data.textImagesTwo.childImageSharp.fluid} left>
       <DetailParagraph>
         Starting working on the project was very exciting, after all it was a new client, new
         challenges in a great idea.
@@ -160,16 +168,16 @@ const PaykleverCampaignManager = () => (
           </ListItem>
         </List>
       </div>
-    </DetailSectionImageRight>
+    </DetailSection>
 
-    <Section>
+    {/* <Section>
       <Container>
         <DetailTeam />
       </Container>
-    </Section>
+    </Section>*/}
 
     <Section isPaddingless>
-      <DetailCarousel />
+      <DetailCarousel data={data.slider.edges} />
     </Section>
 
     <Section isPaddingless>
@@ -177,5 +185,84 @@ const PaykleverCampaignManager = () => (
     </Section>
   </DetailLayout>
 );
+
+PaykleverCampaignManager.propTypes = {
+  data: PropTypes.object.isRequired,
+};
+
+export const pageQuery = graphql`
+  query {
+    seoImages: file(relativePath: { eq: "customers/Payklever.jpg" }) {
+      childImageSharp {
+        resize(width: 1200, height: 1200) {
+          width
+          height
+          src
+        }
+      }
+    }
+    logo: file(relativePath: { eq: "customers/payklever/logo.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    videoImages: file(relativePath: { eq: "customers/payklever/cover-video.jpg" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    textImagesOne: file(relativePath: { eq: "customers/laptop-left.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    textImagesTwo: file(relativePath: { eq: "customers/laptop-right.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    slider: allFile(filter: { relativeDirectory: { eq: "customers/payklever/slider" } }) {
+      edges {
+        node {
+          id
+          name
+          childImageSharp {
+            fluid(quality: 100) {
+              src
+              srcSet
+              sizes
+              aspectRatio
+              base64
+            }
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default PaykleverCampaignManager;

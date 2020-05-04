@@ -5,7 +5,8 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: 'Cobuild Lab | Software development in Miami, Florida',
-    author: '4geeks.co',
+    seoTitle: 'Software development in Miami, Florida', // site title  ouput --> Cobuild Lab | Software development in Miami, Florida
+    author: '@cobuildlab',
     description: 'Software development in Miami, Florida',
     siteUrl: process.env.URL,
     twitterHandle: '@cobuildlab',
@@ -18,6 +19,13 @@ module.exports = {
       options: {
         path: `${__dirname}/src/pages`,
         name: 'pages',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/assets/images`,
+        name: 'images',
       },
     },
     {
@@ -55,7 +63,6 @@ module.exports = {
         trackingId: 'UA-105326682-1',
       },
     },
-
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

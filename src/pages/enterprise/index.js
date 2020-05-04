@@ -1,4 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+import SetMetaTags from '../../components/SeoMetaTags';
 import Navbar from '../../components/enterprise/containers/navbar';
 import Banner from '../../components/enterprise/containers/banner';
 import Service from '../../components/enterprise/containers/service';
@@ -14,9 +17,12 @@ import Brand from '../../components/enterprise/containers/brands';
 import Footer from '../../components/enterprise/containers/footer/Footer';
 import '../../assets/scss/index.scss';
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+  const title = data.site.siteMetadata.title;
+  const description = data.site.siteMetadata.description;
   return (
     <div className="main-wrapper">
+      <SetMetaTags title={title} description={description} />
       <Navbar />
       <div id="main-content">
         <Banner />
@@ -36,6 +42,21 @@ const IndexPage = () => {
     </div>
   );
 };
+
+IndexPage.propTypes = {
+  data: PropTypes.object.isRequired,
+};
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
+  }
+`;
 
 /*
   <ThemeColor />

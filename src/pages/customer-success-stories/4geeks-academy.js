@@ -1,35 +1,32 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import Img from 'gatsby-image';
+import { graphql } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
+import SeoMetaTags from '../../components/SeoMetaTags';
+
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
-import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
-import DetailSectionImageRight from '../../components/customer-success-stories/DetailSectionImageRight';
+
 // import DetailTeam from '../../components/customer-success-stories/DetailTeam';
-import DetailCarousel from '../../components/customer-success-stories/DetailCarousel';
+import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
-import DetailImageLogo from '../../components/customer-success-stories/DetailImageLogo';
-import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
+import DetailSection from '../../components/customer-success-stories/DetailSection';
+import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 import { List, ListItem } from '../../components/Typography/List';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
-import logo from '../../assets/images/customers/4geek/logo.png';
-
-import textImg1 from '../../assets/images/customers/4geek/text-img-1.png';
-//slider images
-import slider1 from '../../assets/images/customers/4geek/slider/1.png';
-import slider2 from '../../assets/images/customers/4geek/slider/2.png';
-import slider3 from '../../assets/images/customers/4geek/slider/3.png';
-import slider4 from '../../assets/images/customers/4geek/slider/4.png';
-import slider5 from '../../assets/images/customers/4geek/slider/5.png';
-import slider6 from '../../assets/images/customers/4geek/slider/6.png';
-import slider7 from '../../assets/images/customers/4geek/slider/7.png';
-
-const GeeksAcademy = () => (
+const GeeksAcademy = ({ data }) => (
   <DetailLayout>
+    <SeoMetaTags
+      title="4Geeks Academy"
+      description="Beginning of 4Geeks"
+      image={data.seoImages.childImageSharp.resize}
+    />
     <Section>
       <Container>
         <Columns isMultiline>
@@ -76,16 +73,18 @@ const GeeksAcademy = () => (
             </DetailParagraph>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
-            <DetailHeroRightContainer>
-              <DetailImageLogo src={logo} />
-              <DetailVideo />
-            </DetailHeroRightContainer>
+            <DetailHeroImagesContent>
+              <Img fluid={data.logo.childImageSharp.fluid} alt="" />
+            </DetailHeroImagesContent>
+            <DetailHeroImagesContent>
+              <DetailVideo id="sJrH4f7Df8g" images={data.videoImages.childImageSharp.fluid} />
+            </DetailHeroImagesContent>
           </Column>
         </Columns>
       </Container>
     </Section>
 
-    <DetailSectionImageLeft src={textImg1} alt="What is the Succeed Platform?">
+    <DetailSection src={data.textImagesOne.childImageSharp.fluid}>
       <DetailSubTitle>
         The Academy in <TextOrange>Venezuela</TextOrange>
       </DetailSubTitle>
@@ -95,9 +94,9 @@ const GeeksAcademy = () => (
         result was amazing, in October of 2014 Hack opens with an incredible demand, being the first
         success of the dream of having an academy for developers.
       </DetailParagraph>
-    </DetailSectionImageLeft>
+    </DetailSection>
 
-    <DetailSectionImageRight src={textImg1} alt="What is the Succeed Platform?">
+    <DetailSection src={data.textImagesTwo.childImageSharp.fluid} left>
       <DetailSubTitle>
         4Geeks Academy: <TextOrange> Maturity and experience</TextOrange>
       </DetailSubTitle>
@@ -125,7 +124,7 @@ const GeeksAcademy = () => (
           <TextOrange>A CODING CAREER AND YOU – TOP CODING SCHOOLS 2017</TextOrange>
         </ListItem>
       </List>
-    </DetailSectionImageRight>
+    </DetailSection>
 
     {/* <Section>
       <Container>
@@ -134,29 +133,7 @@ const GeeksAcademy = () => (
      </Section> */}
 
     <Section isPaddingless>
-      <DetailCarousel>
-        <div>
-          <img src={slider1} alt="jobcore app" />
-        </div>
-        <div>
-          <img src={slider2} alt="jobcore app" />
-        </div>
-        <div>
-          <img src={slider3} alt="jobcore app" />
-        </div>
-        <div>
-          <img src={slider4} alt="jobcore app" />
-        </div>
-        <div>
-          <img src={slider5} alt="jobcore app" />
-        </div>
-        <div>
-          <img src={slider6} alt="jobcore app" />
-        </div>
-        <div>
-          <img src={slider7} alt="jobcore app" />
-        </div>
-      </DetailCarousel>
+      <DetailCarousel data={data.slider.edges} />
     </Section>
 
     <Section isPaddingless>
@@ -164,5 +141,84 @@ const GeeksAcademy = () => (
     </Section>
   </DetailLayout>
 );
+
+GeeksAcademy.propTypes = {
+  data: PropTypes.object.isRequired,
+};
+
+export const pageQuery = graphql`
+  query {
+    seoImages: file(relativePath: { eq: "customers/Weedmatch.jpg" }) {
+      childImageSharp {
+        resize(width: 1200, height: 1200) {
+          width
+          height
+          src
+        }
+      }
+    }
+    slider: allFile(filter: { relativeDirectory: { eq: "customers/4geek/slider" } }) {
+      edges {
+        node {
+          id
+          name
+          childImageSharp {
+            fluid(quality: 100) {
+              src
+              srcSet
+              sizes
+              aspectRatio
+              base64
+            }
+          }
+        }
+      }
+    }
+    textImagesTwo: file(relativePath: { eq: "customers/4geek/1.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    textImagesOne: file(relativePath: { eq: "customers/4geek/2.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    videoImages: file(relativePath: { eq: "customers/4geek/video-cover.jpg" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    logo: file(relativePath: { eq: "customers/4geek/logo.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+  }
+`;
 
 export default GeeksAcademy;

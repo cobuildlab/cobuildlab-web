@@ -1,22 +1,35 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import H2 from '../Typography/H2';
+import H3 from '../Typography/H3';
+import ProjectType from './ProjectType';
 
 const Container = styled.div`
-  text-align: center;
   margin-top: 3em;
-  margin-bottom: 2.5em;
+  margin-bottom: 1.5em;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: flex-end;
+  justify-content: space-between;
 `;
 
-const ProjectTitle = ({ children }) => (
+const Title = styled(H3)`
+  @media screen and (max-width: 768px) {
+    font-size: 25px;
+  }
+`;
+
+const ProjectTitle = ({ children, type }) => (
   <Container>
-    <H2>{children}</H2>
+    <Title>{children}</Title>
+    <ProjectType type={type} />
   </Container>
 );
 
 ProjectTitle.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+  type: PropTypes.array.isRequired,
 };
 
 export default ProjectTitle;

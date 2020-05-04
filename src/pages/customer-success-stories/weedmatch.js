@@ -1,36 +1,32 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import Img from 'gatsby-image';
+import { graphql } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
+import SeoMetaTags from '../../components/SeoMetaTags';
+
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraphTitle from '../../components/customer-success-stories/DetailParagraphTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
-import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
-import DetailSectionImageRight from '../../components/customer-success-stories/DetailSectionImageRight';
-
 // import DetailTeam from '../../components/customer-success-stories/DetailTeam';
-import DetailCarousel from '../../components/customer-success-stories/DetailCarousel';
+import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
-import DetailImageLogo from '../../components/customer-success-stories/DetailImageLogo';
-import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
 import { List, ListItem } from '../../components/Typography/List';
+import DetailSection from '../../components/customer-success-stories/DetailSection';
+import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
-import logo from '../../assets/images/customers/collabtogrow-logo.png';
-
-import textImg1 from '../../assets/images/customers/weedmatch/text-img-1.png';
-//slider images
-import slider1 from '../../assets/images/customers/weedmatch/slider/1.jpg';
-import slider2 from '../../assets/images/customers/weedmatch/slider/2.jpg';
-import slider3 from '../../assets/images/customers/weedmatch/slider/3.jpg';
-import slider4 from '../../assets/images/customers/weedmatch/slider/4.jpg';
-import slider5 from '../../assets/images/customers/weedmatch/slider/5.jpg';
-import slider6 from '../../assets/images/customers/weedmatch/slider/6.jpg';
-
-const Weedmatch = () => (
+const Weedmatch = ({ data }) => (
   <DetailLayout>
+    <SeoMetaTags
+      title="Weedmatch"
+      description="First free cannabis social network"
+      image={data.seoImages.childImageSharp.resize}
+    />
     <Section>
       <Container>
         <Columns isMultiline>
@@ -59,16 +55,18 @@ const Weedmatch = () => (
             </DetailParagraph>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
-            <DetailHeroRightContainer>
-              <DetailImageLogo src={logo} />
-              <DetailVideo />
-            </DetailHeroRightContainer>
+            <DetailHeroImagesContent>
+              <Img fluid={data.logo.childImageSharp.fluid} alt="" />
+            </DetailHeroImagesContent>
+            <DetailHeroImagesContent>
+              <DetailVideo id="5iLg-xUIlvo" images={data.videoImages.childImageSharp.fluid} />
+            </DetailHeroImagesContent>
           </Column>
         </Columns>
       </Container>
     </Section>
 
-    <DetailSectionImageLeft src={textImg1} alt="What is the Succeed Platform?">
+    <DetailSection src={data.textImagesOne.childImageSharp.fluid} left>
       <DetailSubTitle>
         Biography of <TextOrange> weedmatch</TextOrange>
       </DetailSubTitle>
@@ -90,8 +88,8 @@ const Weedmatch = () => (
         Cobuild. During several months we chat about the Cannabis industry and its trends, and how
         the lifestyle world was in debt of tools for this community.
       </DetailParagraph>
-    </DetailSectionImageLeft>
-    <DetailSectionImageRight src={textImg1} alt="What is the Succeed Platform?">
+    </DetailSection>
+    <DetailSection src={data.textImagesTwo.childImageSharp.fluid}>
       <DetailParagraph>
         lifestyle world was in debt of tools for this community. After a couple of meeting Oscar
         develop the concept of the brand with several of its partners and the shape of the Weedmatch
@@ -129,7 +127,7 @@ const Weedmatch = () => (
           </ListItem>
         </List>
       </div>
-    </DetailSectionImageRight>
+    </DetailSection>
 
     {/* <Section>
       <Container>
@@ -138,26 +136,7 @@ const Weedmatch = () => (
      </Section> */}
 
     <Section isPaddingless>
-      <DetailCarousel>
-        <div>
-          <img src={slider1} alt="jobcore app" />
-        </div>
-        <div>
-          <img src={slider2} alt="jobcore app" />
-        </div>
-        <div>
-          <img src={slider3} alt="jobcore app" />
-        </div>
-        <div>
-          <img src={slider4} alt="jobcore app" />
-        </div>
-        <div>
-          <img src={slider5} alt="jobcore app" />
-        </div>
-        <div>
-          <img src={slider6} alt="jobcore app" />
-        </div>
-      </DetailCarousel>
+      <DetailCarousel data={data.slider.edges} />
     </Section>
 
     <Section isPaddingless>
@@ -165,5 +144,84 @@ const Weedmatch = () => (
     </Section>
   </DetailLayout>
 );
+
+Weedmatch.propTypes = {
+  data: PropTypes.object.isRequired,
+};
+
+export const pageQuery = graphql`
+  query {
+    seoImages: file(relativePath: { eq: "customers/Weedmatch.jpg" }) {
+      childImageSharp {
+        resize(width: 1200, height: 1200) {
+          width
+          height
+          src
+        }
+      }
+    }
+    logo: file(relativePath: { eq: "customers/weedmatch/logo.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    textImagesOne: file(relativePath: { eq: "customers/weedmatch/1.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    textImagesTwo: file(relativePath: { eq: "customers/weedmatch/2.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    videoImages: file(relativePath: { eq: "customers/weedmatch/video-cover.jpg" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    slider: allFile(filter: { relativeDirectory: { eq: "customers/weedmatch/slider" } }) {
+      edges {
+        node {
+          id
+          name
+          childImageSharp {
+            fluid(quality: 100) {
+              src
+              srcSet
+              sizes
+              aspectRatio
+              base64
+            }
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default Weedmatch;
