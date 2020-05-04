@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from 'react';
+import PropTypes from 'prop-types';
 import {
   Container,
   Navbar,
@@ -13,7 +14,7 @@ import SocialIcons from './SocialIcons';
 import { NavDivider, NavBrand, NavBrandImages, NavItem, NavLink } from './HeaderLayout';
 import logo from '../../../resources/cobuildlab.png';
 
-const Header = () => {
+const Header = ({ isFluid }) => {
   const [isActive, setActive] = useState(false);
 
   const handleActive = useCallback(() => {
@@ -22,7 +23,7 @@ const Header = () => {
 
   return (
     <NavDivider>
-      <Container>
+      <Container isFluid={isFluid}>
         <Navbar>
           <NavbarBrand>
             <NavbarItem>
@@ -69,6 +70,14 @@ const Header = () => {
       </Container>
     </NavDivider>
   );
+};
+
+Header.defaultProps = {
+  isFluid: false,
+};
+
+Header.propTypes = {
+  isFluid: PropTypes.bool,
 };
 
 export default Header;

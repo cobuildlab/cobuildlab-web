@@ -34,7 +34,7 @@ export const NavItem = styled.div`
   padding: 0 10px;
 `;
 
-export const NavLink = styled.div`
+export const NavLink = styled(Link)`
   color: #254a60;
   font-weight: 600;
 `;
