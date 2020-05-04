@@ -8,7 +8,7 @@ import SeoMetaTags from '../components/SeoMetaTags';
 import Layout from '../components/2020/Layout';
 
 import HeroTitle from '../components/portfolio/HeroTitle';
-import Header from '../components/2020/Header';
+import Header from '../components/2020/header/Header';
 import PortfolioMenu from '../components/portfolio/PortfolioMenu';
 import ProjectContainer from '../components/portfolio/ProjectContainer';
 import ProjectTitle from '../components/portfolio/ProjectTitle';
