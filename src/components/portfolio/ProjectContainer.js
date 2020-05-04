@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 
 const ProjectContainer = styled.article`
-  max-width: 1000px;
+  max-width: 1400px;
   margin-left: auto;
-  @media screen and (max-width: 768px) {
-    padding-right: 1em;
-    padding-left: 1em;
-  }
+  padding-left: 1em;
+  padding-right: 32px;
 `;
 
 export default ProjectContainer;

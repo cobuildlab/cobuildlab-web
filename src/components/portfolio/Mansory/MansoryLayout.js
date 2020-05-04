@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MansoryContainer = styled.div`
-  column-count: 3;
+  column-count: 5;
   column-gap: 1em;
   @media (max-width: 575.98px) {
     column-count: 2;

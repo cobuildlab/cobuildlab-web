@@ -1,14 +1,12 @@
 import React from 'react';
-import { Container, Columns, Column } from 'bloomer';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import styled from 'styled-components';
 
 import SeoMetaTags from '../components/SeoMetaTags';
-import Layout from '../components/2020/Layout';
+import { Layout, Sider, Content } from '../components/portfolio/PortfolioLayout';
+import Footer from '../components/enterprise/containers/footer/Footer';
 
 import HeroTitle from '../components/portfolio/HeroTitle';
-import Header from '../components/2020/header/Header';
 import PortfolioMenu from '../components/portfolio/PortfolioMenu';
 import ProjectContainer from '../components/portfolio/ProjectContainer';
 import ProjectTitle from '../components/portfolio/ProjectTitle';
@@ -35,14 +33,6 @@ import StoryRocket from '../components/portfolio/galleries/StoryRocket';
 import Weedmatch from '../components/portfolio/galleries/Weedmatch';
 import Zonia from '../components/portfolio/galleries/Zonia';
 
-const Wrapper = styled.div`
-  position: relative;
-  padding-top: 6em;
-  @media screen and (max-width: 768px) {
-    padding-top: 1em;
-  }
-`;
-
 const Portfolio = ({ data }) => (
   <Layout>
     <SeoMetaTags
@@ -50,103 +40,97 @@ const Portfolio = ({ data }) => (
       description="Portfolio"
       image={data.seoImages.childImageSharp.resize}
     />
-    <Header />
-    <Container>
-      <Columns>
-        <Column isSize={{ mobile: 12, desktop: 2 }}>
-          <PortfolioMenu />
-        </Column>
-        <Column isSize={{ mobile: 12, desktop: 10 }}>
-          <Wrapper>
-            <HeroTitle />
-          </Wrapper>
-          <ProjectContainer id="accountable">
-            <ProjectTitle type={['app']}>Accountable</ProjectTitle>
-            <AccountableGallery search="accountable" />
-          </ProjectContainer>
-          <ProjectContainer id="bazl" color="white">
-            <ProjectTitle type={['app', 'web']}>Bazl</ProjectTitle>
-            <BazlGallery />
-          </ProjectContainer>
-          <ProjectContainer id="charter">
-            <ProjectTitle type={['app']}>Charter</ProjectTitle>
-            <Charter />
-          </ProjectContainer>
-          <ProjectContainer id="collabtogrow" color="white">
-            <ProjectTitle type={['web']}>Collabtogrow</ProjectTitle>
-            <CollabtogrowGallery />
-          </ProjectContainer>
-          <ProjectContainer id="contentManager">
-            <ProjectTitle type={['web']}>Content Manager</ProjectTitle>
-            <ContentManagerGallery />
-          </ProjectContainer>
-          <ProjectContainer id="ctoFounders" color="white">
-            <ProjectTitle type={['app']}>CTO Founders</ProjectTitle>
-            <CtoFoundersGallery />
-          </ProjectContainer>
-          <ProjectContainer id="elpitazo">
-            <ProjectTitle type={['app']}>El Pitazo</ProjectTitle>
-            <ElPitazo />
-          </ProjectContainer>
-          <ProjectContainer id="elemental" color="white">
-            <ProjectTitle type={['app']}>Elemental</ProjectTitle>
-            <ElementalGallery />
-          </ProjectContainer>
-          <ProjectContainer id="gurupia">
-            <ProjectTitle type={['web']}>Gurupia</ProjectTitle>
-            <Gurupia />
-          </ProjectContainer>
-          <ProjectContainer id="jobcore" color="white">
-            <ProjectTitle type={['web', 'app']}>Jobcore</ProjectTitle>
-            <Jobcore />
-          </ProjectContainer>
-          <ProjectContainer id="kadem">
-            <ProjectTitle type={['web', 'app']}>Kadem</ProjectTitle>
-            <KademGallery />
-          </ProjectContainer>
-          <ProjectContainer id="leadvolt" color="white">
-            <ProjectTitle type={['web']}>LeadVolt</ProjectTitle>
-            <LeadVolt />
-          </ProjectContainer>
-          <ProjectContainer id="mama">
-            <ProjectTitle type={['app']}>Mama</ProjectTitle>
-            <Mama />
-          </ProjectContainer>
-          <ProjectContainer id="massone" color="white">
-            <ProjectTitle type={['web', 'app']}>Massone</ProjectTitle>
-            <Massone />
-          </ProjectContainer>
-          <ProjectContainer id="miamisoftwaredevelopers">
-            <ProjectTitle type={['web']}>Miami Software Developers</ProjectTitle>
-            <MiamiSoftwareDevelopers />
-          </ProjectContainer>
-          <ProjectContainer id="okroo" color="white">
-            <ProjectTitle type={['app']}>Okroo</ProjectTitle>
-            <OkrooGallery />
-          </ProjectContainer>
-          <ProjectContainer id="payklever">
-            <ProjectTitle type={['web']}>Payklever</ProjectTitle>
-            <PayKlever />
-          </ProjectContainer>
-          <ProjectContainer id="ryval" color="white">
-            <ProjectTitle type={['app']}>Ryval</ProjectTitle>
-            <RyvalGallery />
-          </ProjectContainer>
-          <ProjectContainer id="storyRocket">
-            <ProjectTitle type={['web']}>Storyrocket</ProjectTitle>
-            <StoryRocket />
-          </ProjectContainer>
-          <ProjectContainer id="weedmatch" color="white">
-            <ProjectTitle type={['app']}>Weedmatch</ProjectTitle>
-            <Weedmatch />
-          </ProjectContainer>
-          <ProjectContainer id="zonia">
-            <ProjectTitle type={['app']}>Zonia</ProjectTitle>
-            <Zonia />
-          </ProjectContainer>
-        </Column>
-      </Columns>
-    </Container>
+    <Sider>
+      <PortfolioMenu />
+    </Sider>
+    <Content>
+      <HeroTitle />
+      <ProjectContainer id="accountable">
+        <ProjectTitle type={['app']}>Accountable</ProjectTitle>
+        <AccountableGallery search="accountable" />
+      </ProjectContainer>
+      <ProjectContainer id="bazl" color="white">
+        <ProjectTitle type={['app', 'web']}>Bazl</ProjectTitle>
+        <BazlGallery />
+      </ProjectContainer>
+      <ProjectContainer id="charter">
+        <ProjectTitle type={['app']}>Charter</ProjectTitle>
+        <Charter />
+      </ProjectContainer>
+      <ProjectContainer id="collabtogrow" color="white">
+        <ProjectTitle type={['web']}>Collabtogrow</ProjectTitle>
+        <CollabtogrowGallery />
+      </ProjectContainer>
+      <ProjectContainer id="contentManager">
+        <ProjectTitle type={['web']}>Content Manager</ProjectTitle>
+        <ContentManagerGallery />
+      </ProjectContainer>
+      <ProjectContainer id="ctoFounders" color="white">
+        <ProjectTitle type={['app']}>CTO Founders</ProjectTitle>
+        <CtoFoundersGallery />
+      </ProjectContainer>
+      <ProjectContainer id="elpitazo">
+        <ProjectTitle type={['app']}>El Pitazo</ProjectTitle>
+        <ElPitazo />
+      </ProjectContainer>
+      <ProjectContainer id="elemental" color="white">
+        <ProjectTitle type={['app']}>Elemental</ProjectTitle>
+        <ElementalGallery />
+      </ProjectContainer>
+      <ProjectContainer id="gurupia">
+        <ProjectTitle type={['web']}>Gurupia</ProjectTitle>
+        <Gurupia />
+      </ProjectContainer>
+      <ProjectContainer id="jobcore" color="white">
+        <ProjectTitle type={['web', 'app']}>Jobcore</ProjectTitle>
+        <Jobcore />
+      </ProjectContainer>
+      <ProjectContainer id="kadem">
+        <ProjectTitle type={['web', 'app']}>Kadem</ProjectTitle>
+        <KademGallery />
+      </ProjectContainer>
+      <ProjectContainer id="leadvolt" color="white">
+        <ProjectTitle type={['web']}>LeadVolt</ProjectTitle>
+        <LeadVolt />
+      </ProjectContainer>
+      <ProjectContainer id="mama">
+        <ProjectTitle type={['app']}>Mama</ProjectTitle>
+        <Mama />
+      </ProjectContainer>
+      <ProjectContainer id="massone" color="white">
+        <ProjectTitle type={['web', 'app']}>Massone</ProjectTitle>
+        <Massone />
+      </ProjectContainer>
+      <ProjectContainer id="miamisoftwaredevelopers">
+        <ProjectTitle type={['web']}>Miami Software Developers</ProjectTitle>
+        <MiamiSoftwareDevelopers />
+      </ProjectContainer>
+      <ProjectContainer id="okroo" color="white">
+        <ProjectTitle type={['app']}>Okroo</ProjectTitle>
+        <OkrooGallery />
+      </ProjectContainer>
+      <ProjectContainer id="payklever">
+        <ProjectTitle type={['web']}>Payklever</ProjectTitle>
+        <PayKlever />
+      </ProjectContainer>
+      <ProjectContainer id="ryval" color="white">
+        <ProjectTitle type={['app']}>Ryval</ProjectTitle>
+        <RyvalGallery />
+      </ProjectContainer>
+      <ProjectContainer id="storyRocket">
+        <ProjectTitle type={['web']}>Storyrocket</ProjectTitle>
+        <StoryRocket />
+      </ProjectContainer>
+      <ProjectContainer id="weedmatch" color="white">
+        <ProjectTitle type={['app']}>Weedmatch</ProjectTitle>
+        <Weedmatch />
+      </ProjectContainer>
+      <ProjectContainer id="zonia">
+        <ProjectTitle type={['app']}>Zonia</ProjectTitle>
+        <Zonia />
+      </ProjectContainer>
+      <Footer />
+    </Content>
   </Layout>
 );
 
