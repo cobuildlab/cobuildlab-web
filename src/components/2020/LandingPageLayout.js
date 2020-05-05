@@ -5,7 +5,7 @@ import Footer from '../enterprise/containers/footer/Footer';
 import NewsletterModal from '../NewsletterModal';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import Header from './Header';
+import Header from './header/Header';
 import SeoMetaTags from '../SeoMetaTags';
 
 const Wrapper = styled.div`

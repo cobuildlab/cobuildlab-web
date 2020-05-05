@@ -23,13 +23,16 @@ const FooterNavigation = () => (
     </FooterTitleContainer>
     <ul>
       <FooterListItem>
-        <LinkItem to="/services">Services</LinkItem>
+        <LinkItem to="/blog">Blog</LinkItem>
       </FooterListItem>
       <FooterListItem>
         <LinkItem to="/customer-success-stories">Customer Success Stories</LinkItem>
       </FooterListItem>
       <FooterListItem>
-        <LinkItem to="/blog">Blog</LinkItem>
+        <LinkItem to="/portfolio">Porftolio</LinkItem>
+      </FooterListItem>
+      <FooterListItem>
+        <LinkItem to="/services">Services</LinkItem>
       </FooterListItem>
     </ul>
   </FooterColumnContent>

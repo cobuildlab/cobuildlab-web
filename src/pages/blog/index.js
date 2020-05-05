@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link, graphql } from 'gatsby';
 import get from 'lodash/get';
 import Layout from '../../components/2020/Layout';
-import Header from '../../components/2020/Header';
+import Header from '../../components/2020/header/Header';
 import {
   Hero,
   HeroHeader,
