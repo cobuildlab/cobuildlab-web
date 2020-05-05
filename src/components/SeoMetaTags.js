@@ -56,7 +56,7 @@ const SeoMetaTags = ({ description, meta, title, lang, image, pathname, titleTem
       content: `website`,
     },
     {
-      name: `og:url`,
+      property: `og:url`,
       content: typeof window !== 'undefined' ? window.location.href : '',
     },
     {
