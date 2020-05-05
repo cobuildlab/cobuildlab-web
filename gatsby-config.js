@@ -121,6 +121,7 @@ module.exports = {
         excludedPaths: ['/404*', '/'],
         pathIdentifier: '/amp/',
         relAmpHtmlPattern: '{{canonicalBaseUrl}}{{pathname}}{{pathIdentifier}}',
+        relCanonicalPattern: '{{canonicalBaseUrl}}{{pathname}}',
         useAmpClientIdApi: true,
       },
     },

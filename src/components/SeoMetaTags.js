@@ -13,7 +13,7 @@ import { useStaticQuery, graphql } from 'gatsby';
  * @returns {*} - The SE Component.
  */
 
-const SeoMetaTags = ({ description, meta, title, lang, image, pathname, titleTemplate }) => {
+const SeoMetaTags = ({ description, meta, title, lang, image, canonical, titleTemplate }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -32,7 +32,7 @@ const SeoMetaTags = ({ description, meta, title, lang, image, pathname, titleTem
   const siteTitle = title || site.siteMetadata.seoTitle;
   const metaDescription = description || site.siteMetadata.description;
   const metaImageUrl = image && image.src ? `${site.siteMetadata.siteUrl}${image.src}` : null;
-  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null;
+  const canonicalRef = canonical ? `${site.siteMetadata.siteUrl}${canonical}` : null;
   // basic defailt metas
   const defaultMetas = [
     {
@@ -105,11 +105,11 @@ const SeoMetaTags = ({ description, meta, title, lang, image, pathname, titleTem
         ])
         .concat(meta);
 
-  const canonicalLink = canonical
+  const canonicalLink = canonicalRef
     ? [
       {
         rel: 'canonical',
-        href: canonical,
+        href: canonicalRef,
       },
     ]
     : [];
@@ -132,7 +132,7 @@ SeoMetaTags.defaultProps = {
   meta: [],
   description: ``,
   image: false,
-  pathname: false,
+  canonical: false,
   title: false,
   titleTemplate: 'Cobuild Lab',
 };
@@ -150,7 +150,7 @@ SeoMetaTags.propTypes = {
       width: PropTypes.number.isRequired,
     }),
   ]),
-  pathname: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  canonical: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   titleTemplate: PropTypes.string,
 };
 

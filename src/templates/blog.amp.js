@@ -60,7 +60,7 @@ class BlogPostTemplate extends React.Component {
     const url = get(this.props, 'data.site.siteMetadata.siteUrl');
     const siteTitle = 'Cobuild Lab';
     const siteDescription = post.excerpt;
-    const { previous, next } = this.props.pageContext;
+    const { previous, next, slug: origanlPath } = this.props.pageContext;
     const previousImage = get(previous, 'frontmatter.image.publicURL') || defaultImg;
     const nextImage = get(next, 'frontmatter.image.publicURL') || defaultImg;
 
@@ -73,6 +73,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={siteDescription}
           image={seoImages}
+          canonical={origanlPath}
         />
         <Hero isColor="white" isSize="large">
           <Container hasTextAlign="centered">
