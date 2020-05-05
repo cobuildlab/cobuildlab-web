@@ -59,9 +59,7 @@ const Header = ({ isFluid }) => {
                 </NavItem>
               </NavbarItem>
               <NavbarItem>
-                <NavLink>
-                  <LinkButtonDefault to="/#contact">Contact Us</LinkButtonDefault>
-                </NavLink>
+                <LinkButtonDefault to="/#contact">Contact Us</LinkButtonDefault>
               </NavbarItem>
               <SocialIcons isHidden="mobile" />
             </NavbarEnd>
