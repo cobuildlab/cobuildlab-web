@@ -7,13 +7,19 @@ const Container = styled.div`
 `;
 
 const Images = styled.img`
-  width: 85%;
+  width: 100%;
 `;
 
 const GoodFirms = () => (
   <Container>
-    <a target="_blank" href="https://www.goodfirms.co/company/cobuild-lab-inc" rel="noreferrer noopener">
-      <Images src="https://goodfirms.s3.amazonaws.com/badges/blue-button/app-development.svg" alt="GoodFirms Badge" />
+    <a
+      target="_blank"
+      href="https://www.goodfirms.co/company/cobuild-lab-inc"
+      rel="noreferrer noopener">
+      <Images
+        src="https://goodfirms.s3.amazonaws.com/badges/blue-button/app-development.svg"
+        alt="GoodFirms Badge"
+      />
     </a>
   </Container>
 );

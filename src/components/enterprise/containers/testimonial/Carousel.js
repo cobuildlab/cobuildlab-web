@@ -46,7 +46,7 @@ export const DATA = [
   },
 ];
 
-const Button = styled.button`
+const Avatar = styled.div`
   .slick-dots li:nth-child(1) & {
     background: url(${({ index }) => (DATA[index] ? DATA[index].img : '')}) no-repeat center;
   }
@@ -67,7 +67,7 @@ const Button = styled.button`
   }
 `;
 
-const customPaging = (index) => <Button index={index} />;
+const customPaging = (index) => <Avatar index={index} />;
 
 const settings = {
   dots: true,

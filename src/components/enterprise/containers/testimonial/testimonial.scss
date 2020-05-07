@@ -6,8 +6,8 @@
   margin: 0 auto;
   overflow: hidden;
 }
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before {
+.slick-dots li div:hover:before,
+.slick-dots li div:focus:before {
   opacity: 0;
 }
 .testimonial-slider {
@@ -23,7 +23,7 @@
           position: initial;
           width: auto;
           height: auto;
-          button {
+          div {
             width: auto;
             height: auto;
             padding: 0;
@@ -34,7 +34,7 @@
             border: 4px solid transparent;
           }
           &.slick-active {
-            button {
+            div {
               box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.35);
               animation-name: bounce-1;
               animation-timing-function: linear;
@@ -45,7 +45,7 @@
             }
           }
           &:nth-child(1) {
-            button {
+            div {
               width: 120px;
               height: 120px;
               left: 115px;
@@ -54,7 +54,7 @@
             }
           }
           &:nth-child(2) {
-            button {
+            div {
               width: 100px;
               height: 100px;
               top: 148px;
@@ -63,7 +63,7 @@
             }
           }
           &:nth-child(3) {
-            button {
+            div {
               width: 75px;
               height: 75px;
               bottom: 142px;
@@ -72,7 +72,7 @@
             }
           }
           &:nth-child(4) {
-            button {
+            div {
               width: 120px;
               height: 120px;
               right: 161px;
@@ -81,7 +81,7 @@
             }
           }
           &:nth-child(5) {
-            button {
+            div {
               width: 100px;
               height: 100px;
               bottom: 187px;
@@ -90,7 +90,7 @@
             }
           }
           &:nth-child(6) {
-            button {
+            div {
               width: 75px;
               height: 75px;
               bottom: 142px;
@@ -124,36 +124,36 @@
         .slick-dots {
           li {
             &:nth-child(1) {
-              button {
+              div {
                 left: 40px;
               }
             }
             &:nth-child(2) {
-              button {
+              div {
                 top: 145px;
                 left: 205px;
               }
             }
             &:nth-child(3) {
-              button {
+              div {
                 bottom: 80px;
                 left: 240px;
               }
             }
             &:nth-child(4) {
-              button {
+              div {
                 right: 95px;
                 top: 120px;
               }
             }
             &:nth-child(5) {
-              button {
+              div {
                 bottom: 187px;
                 right: 220px;
               }
             }
             &:nth-child(6) {
-              button {
+              div {
                 bottom: 90px;
                 right: 50px;
               }
@@ -172,36 +172,36 @@
         .slick-dots {
           li {
             &:nth-child(1) {
-              button {
+              div {
                 left: 15px;
               }
             }
             &:nth-child(2) {
-              button {
+              div {
                 top: 50px;
                 left: 150px;
               }
             }
             &:nth-child(3) {
-              button {
+              div {
                 bottom: 40px;
                 left: 140px;
               }
             }
             &:nth-child(4) {
-              button {
+              div {
                 right: 60px;
                 top: 55px;
               }
             }
             &:nth-child(5) {
-              button {
+              div {
                 bottom: 225px;
                 right: 126px;
               }
             }
             &:nth-child(6) {
-              button {
+              div {
                 bottom: 35px;
                 right: 45px;
               }
@@ -221,7 +221,7 @@
           margin-top: 15px;
           li {
             margin: 0 7.5px;
-            button {
+            div {
               position: initial;
               top: auto;
               left: auto;
