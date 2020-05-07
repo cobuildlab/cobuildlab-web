@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 /**
  *
@@ -8,13 +8,20 @@ import PropTypes from "prop-types";
  * @class
  */
 function Image(props) {
-  return <img src={props.Path} className={props.Class} title={props.Title} alt={props.Alt}/>;
+  return <img src={props.Path} className={props.Class} title={props.Title} alt={props.Alt} />;
 }
 
+Image.defaultProps = {
+  Path: '',
+  Class: '',
+  Title: '',
+  Alt: '',
+};
+
 Image.propTypes = {
-  Path: PropTypes.string.isRequired,
-  Class: PropTypes.string.isRequired,
-  Title: PropTypes.string.isRequired,
-  Alt: PropTypes.string.isRequired
+  Path: PropTypes.string,
+  Class: PropTypes.string,
+  Title: PropTypes.string,
+  Alt: PropTypes.string,
 };
 export default Image;

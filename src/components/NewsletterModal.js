@@ -50,6 +50,7 @@ class NewsletterModal extends React.Component {
     this.onSubmitModal = this.onSubmitModal.bind(this);
     this.handleModal = this.handleModal.bind(this);
     this.calculateScrollDistance = this.calculateScrollDistance.bind(this);
+    this.timeOutID = null;
   }
 
   componentDidMount() {
@@ -61,11 +62,15 @@ class NewsletterModal extends React.Component {
       const timeExpired = today.getTime() >= nextTime.getTime();
 
       if (timeExpired) {
-        setTimeout(() => this.handleModal(true), timeToShow);
+        this.timeOutID = setTimeout(() => this.handleModal(true), timeToShow);
       } else {
-        setTimeout(() => this.handleModal(true), timeToShow);
+        this.timeOutID = setTimeout(() => this.handleModal(true), timeToShow);
       }
     }
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.timeOutID);
   }
 
   calculateScrollDistance = () => {

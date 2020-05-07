@@ -76,7 +76,7 @@ ContentTitle.propTypes = {
 
 const ContentParagraph = ({ children, hasTextAlign }) => (
   <div className={styles.business_value_paragraph}>
-    <Typography tag="p" size={paragraph} hasTextAlign={hasTextAlign}>
+    <Typography tag="span" size={paragraph} hasTextAlign={hasTextAlign}>
       {children}
     </Typography>
   </div>
