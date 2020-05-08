@@ -73,7 +73,7 @@ const query = graphql`
         node {
           id
           childImageSharp {
-            fluid {
+            fluid(quality: 30) {
               src
               base64
               srcSet

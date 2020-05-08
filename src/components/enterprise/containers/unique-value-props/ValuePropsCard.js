@@ -32,7 +32,7 @@ const ValuePropsCard = ({ image, icon, title, content, index }) => (
 );
 
 ValuePropsCard.propTypes = {
-  image: PropTypes.string.isRequired,
+  image: PropTypes.object.isRequired,
   icon: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,

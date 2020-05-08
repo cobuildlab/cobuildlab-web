@@ -2,6 +2,7 @@ import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { navigate } from 'gatsby';
 import styled, { css } from 'styled-components';
+import Img from 'gatsby-image';
 import ButtonDefault from '../2020/Button/ButtonDefault';
 
 // max-width: 510px;
@@ -46,7 +47,7 @@ const CardHoverContainer = styled.div`
 `;
 
 const CardContainer = styled.div`
-  display: block;
+  display: flex;
   position: relative;
   width: 100%;
   min-height: 300px;
@@ -74,12 +75,8 @@ const CardContainer = styled.div`
   }
 `;
 
-const CardImage = styled.div`
+const CardImage = styled(Img)`
   width: 100%;
-  min-height: 300px;
-  background-image: ${({ image }) => `url(${image})`};
-  background-size: cover;
-  background-position: center;
 `;
 
 const CardTitle = styled.div`
@@ -98,7 +95,7 @@ const CustomerSuccessStoriesCard = ({ title, description, image, to }) => {
   }, [to]);
   return (
     <CardContainer onClick={handleClick}>
-      <CardImage image={image} />
+      <CardImage fluid={image} alt="" />
       <CardHoverContainer>
         <CardTitle>{title}</CardTitle>
         <CardDescription>{description}</CardDescription>
@@ -117,7 +114,7 @@ CustomerSuccessStoriesCard.defaultProps = {
 CustomerSuccessStoriesCard.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  image: PropTypes.object.isRequired,
   to: PropTypes.string,
 };
 

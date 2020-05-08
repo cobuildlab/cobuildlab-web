@@ -1,21 +1,45 @@
 // April 2020
 // this is used in the new design dont delete
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useStaticQuery, graphql } from 'gatsby';
 import { Columns, Column } from 'bloomer';
 import Card from './Card';
 
-import data from '../../data/customer-success-stories-data';
+const query = graphql`
+  query {
+    allCustomerSuccessStoriesDataJson {
+      edges {
+        node {
+          image {
+            childImageSharp {
+              fluid(quality: 30) {
+                src
+                srcSet
+                sizes
+                base64
+                aspectRatio
+              }
+            }
+          }
+          slug
+          title
+          description
+        }
+      }
+    }
+  }
+`;
 
-/**
- * @param {number} numberOfItems -Number of items for render, check data length.
- * @returns {import('react').ReactChildren} -React children.
- */
-const CustomerSuccessStories = ({ numberOfItems }) => {
-  const newData = data.slice(0, numberOfItems < data.length ? numberOfItems : 6);
-  const items = newData.map(({ title, img, description, slug }) => (
-    <Column isSize={{ mobile: 12, tablet: 4 }} key={title} isPaddingless>
-      <Card title={title} description={description} image={img} to={slug} />
+const CustomerSuccessStories = () => {
+  const data = useStaticQuery(query);
+  const items = data.allCustomerSuccessStoriesDataJson.edges.map(({ node }) => (
+    <Column isSize={{ mobile: 12, tablet: 4 }} key={node.title} isPaddingless>
+      <Card
+        title={node.title}
+        description={node.description}
+        image={node.image.childImageSharp.fluid}
+        to={node.slug}
+      />
     </Column>
   ));
 
@@ -24,14 +48,6 @@ const CustomerSuccessStories = ({ numberOfItems }) => {
       {items}
     </Columns>
   );
-};
-
-CustomerSuccessStories.defaultProps = {
-  numberOfItems: 6,
-};
-
-CustomerSuccessStories.propTypes = {
-  numberOfItems: PropTypes.number,
 };
 
 export default CustomerSuccessStories;

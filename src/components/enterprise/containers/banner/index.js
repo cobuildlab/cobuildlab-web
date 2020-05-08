@@ -97,7 +97,7 @@ const query = graphql`
     }
     heroImages: file(relativePath: { eq: "banner/group-banner-2.png" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 30) {
           src
           base64
           srcSet
