@@ -97,7 +97,7 @@ class BlogPostTemplate extends React.Component {
             src={imageAmp.src}
             width={imageAmp.width}
             height={imageAmp.height}
-            alt={imageAmp.altText}
+            alt={post.frontmatter.title}
             layout="responsive"
           />
         </Hero>

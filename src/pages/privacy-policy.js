@@ -8,6 +8,7 @@ import LandingPageLayout from '../components/2020/LandingPageLayout';
 
 // TYPOGRAPHY
 import { Title, SubTitle, SubTitle2 } from '../components/2020/LandingTypography';
+import H1 from '../components/Typography/H1';
 import Paragraph from '../components/Typography/Paragraph';
 
 import Styled from 'styled-components';
@@ -26,7 +27,7 @@ class PrivacyPolicy extends Component {
         <Section>
           <Columns>
             <Column>
-              <Title className="mb-2">Privacy Policy</Title>
+              <H1 className="mb-2">Privacy Policy</H1>
               <Paragraph>
                 <small>Effective date: September 06, 2018</small>
               </Paragraph>
