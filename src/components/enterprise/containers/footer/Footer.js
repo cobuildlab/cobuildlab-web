@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 import { Container, Columns, Column, Footer as BloomerFooter } from 'bloomer';
 import Image from '../../components/image';
 import GoodFirms from '../../../2020/GoodFirms';
@@ -11,11 +12,11 @@ import ClutchWidget from './ClutchWidget';
 
 import logo from '../../../../assets/images/cobuild-white-logo.png';
 
-const Footer = () => (
+const Footer = ({ isFluid }) => (
   <Fragment>
     <BloomerFooter isPaddingless>
       <FooterWrapper>
-        <Container>
+        <Container isFluid={isFluid}>
           <Columns>
             <Column isSize={{ mobile: 12, desktop: 3 }}>
               <FooterLogoContainer>
@@ -40,5 +41,13 @@ const Footer = () => (
     <CopyRightFooter />
   </Fragment>
 );
+
+Footer.defaultProps = {
+  isFluid: false,
+};
+
+Footer.propTypes = {
+  isFluid: PropTypes.bool,
+};
 
 export default Footer;

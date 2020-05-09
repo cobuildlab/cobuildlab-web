@@ -223,7 +223,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    textImagesOne: file(relativePath: { eq: "customers/laptop-left.png" }) {
+    textImagesOne: file(relativePath: { eq: "customers/payklever/1.png" }) {
       childImageSharp {
         fluid {
           aspectRatio
@@ -234,7 +234,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    textImagesTwo: file(relativePath: { eq: "customers/laptop-right.png" }) {
+    textImagesTwo: file(relativePath: { eq: "customers/payklever/2.png" }) {
       childImageSharp {
         fluid {
           aspectRatio

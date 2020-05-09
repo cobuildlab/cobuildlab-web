@@ -5,7 +5,6 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const MenuItem = styled.li`
   color: #264a60;
-  font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
   list-style: none;
 `;
 
@@ -13,7 +12,7 @@ const MenuLink = styled(AnchorLink)`
   padding: 0.5em 1em;
   display: block;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
   color: inherit;
   transition: all 0.2s linear;
   &:hover {
@@ -30,7 +29,7 @@ const PortfolioMenuItem = ({ onClick }) => (
       <MenuLink href="#bazl">Bazl</MenuLink>
     </MenuItem>
     <MenuItem onClick={onClick}>
-      <MenuLink href="#chater">Chater</MenuLink>
+      <MenuLink href="#charter">Charter</MenuLink>
     </MenuItem>
     <MenuItem onClick={onClick}>
       <MenuLink href="#collabtogrow">Collabtogrow</MenuLink>
@@ -57,7 +56,7 @@ const PortfolioMenuItem = ({ onClick }) => (
       <MenuLink href="#kadem">Kadem</MenuLink>
     </MenuItem>
     <MenuItem onClick={onClick}>
-      <MenuLink href="#leadvolt">Lead Volt</MenuLink>
+      <MenuLink href="#leadvolt">LeadVolt</MenuLink>
     </MenuItem>
     <MenuItem onClick={onClick}>
       <MenuLink href="#mama">Mama</MenuLink>
@@ -78,7 +77,10 @@ const PortfolioMenuItem = ({ onClick }) => (
       <MenuLink href="#ryval">Ryval</MenuLink>
     </MenuItem>
     <MenuItem onClick={onClick}>
-      <MenuLink href="#storyRocket">Story Rocket</MenuLink>
+      <MenuLink href="#storyRocket">Storyrocket</MenuLink>
+    </MenuItem>
+    <MenuItem onClick={onClick}>
+      <MenuLink href="#weedmatch">Weedmatch</MenuLink>
     </MenuItem>
     <MenuItem onClick={onClick}>
       <MenuLink href="#zonia">Zonia</MenuLink>
