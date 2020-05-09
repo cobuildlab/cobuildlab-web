@@ -6,8 +6,8 @@ template: development-post
 image: null
 ---
 
-> This are a set of commonalities and practices learn from my experience with Java, Python and Javascript development over near 20 years of experience. Angel Lacret
-
+> These are a set of commonalities and practices learn from my experience with Java, Python and Javascript development over near 20 years of experience. Angel Lacret
+    
 This set of practices are heavily based on this books:
 
 For Java:
@@ -45,7 +45,7 @@ This document aims to reduce the friction between patterns, conventions and best
 - Does more than 1 thing
 
 
-# 1. General Best Practices for Code Style
+# 1. General Best Practices for Code Style.
 
 ## 1.1 Don't use more than one sentence in a try/catch block
 
@@ -64,6 +64,14 @@ Keep your code predictable, robust, solid and **effective** by:
 - For easier bug hunting, make sure to handle different Exceptional scenarios appropriately  
 
 
-## 1.2 Promote the **Return Early** pattern
+## 1.2 Prefer the use of `constants` over `variables`.
+
+Prefer the use of `constants` over `variables` for holding values always that is possible.
+
+- The use of constants reduces the occurrences of bugs by reducing the origins of errors like: assignments, loops, contexts, etc.
+- Code readability, constants values by definition cannot change, making the code easier to read and to debug.
+- Efficiency: Many Runtimes promise faster access to constant values than to variables values.
+
+## 1.3 Promote the **Return Early** pattern
 
 TODO:

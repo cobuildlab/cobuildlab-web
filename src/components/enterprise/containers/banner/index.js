@@ -47,12 +47,13 @@ const Banner = () => {
                       A PROCESS AND WORKFLOW AUTOMATION COMPANY
                     </Typrography>
                     <Typrography size={title} tag="h1">
-                      Let’s <span className="enterprise-text-orange">Build</span> a <br />
+                      Let’s <span className="entegitrprise-text-orange">Build</span> a <br />
                       Great<span className=" enterprise-text-orange"> Idea.</span>
                     </Typrography>
                     <Typrography size={subTitle} tag="p" className="banner-dec">
-                      We transform Small and Medium-sized businesses by automating your processes
-                      into optimized, and streamlined workflows with Web and Mobile custom software.
+                      We transform Small and Medium-sized businesses by automating manual processes
+                      and task into optimized and streamlined workflows with Web and Mobile custom
+                      software.
                     </Typrography>
                     <br />
                     <Typrography size={subTitle} tag="p" className="banner-dec">

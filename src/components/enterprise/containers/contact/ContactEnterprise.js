@@ -30,6 +30,7 @@ const ContactEnterprise = () => {
               <span className="enterprise-text-orange sub-title">FREE 1 hour Consultation</span>{' '}
             </H4>
             <P>+1 786 - 991 - 3467</P>
+              <P>66 West Flagler St, suite 900, Miami, Florida</P>
             <ContactForm btnText="REQUEST APPOINTMENT" landingName="enterprise" />
           </Column>
         </Columns>
