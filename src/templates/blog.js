@@ -77,6 +77,7 @@ class BlogPostTemplate extends Component {
       <LayoutPost>
         <SeoMetaTags
           title={post.frontmatter.title}
+          titleTemplate=""
           description={siteDescription}
           image={seoImages}
         />

@@ -120,7 +120,7 @@ const SeoMetaTags = ({ description, meta, title, lang, image, canonical, titleTe
         lang,
       }}
       title={siteTitle}
-      titleTemplate={`${titleTemplate} | %s `}
+      titleTemplate={`${titleTemplate} %s `}
       meta={metas}
       link={canonicalLink}
     />
@@ -134,7 +134,7 @@ SeoMetaTags.defaultProps = {
   image: false,
   canonical: false,
   title: false,
-  titleTemplate: 'Cobuild Lab',
+  titleTemplate: 'Cobuild Lab |',
 };
 
 SeoMetaTags.propTypes = {
