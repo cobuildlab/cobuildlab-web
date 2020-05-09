@@ -52,7 +52,7 @@ The <a target="_blank" href="https://cobuildlab.com/blog/practices-for-validatin
 
 <title-3 align="centered"> Transforming the current companies </title-3> <br> </br>
 
-<img src="media/rokk3r-4.jpg "> <br> </br>
+<img src="media/rokk3r-4.jpg"> <br> </br>
 
 Taking into account that Rokk3r's model differs a little from incubators and accelerators, the model they propose consists of first looking for the company's ally, then looking for the business opportunity and finally hiring the team. <br> </br>
 

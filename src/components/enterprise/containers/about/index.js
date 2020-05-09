@@ -1,12 +1,13 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import { Container, Columns, Column, Section } from 'bloomer';
-import Image from '../../components/image';
-import AboutImg from '../../../../assets/images/banner/group-banner.png';
+import Img from 'gatsby-image';
 import Typrography from '../../../2020/Typography';
 import ButtonSmoothScrolling from '../../../2020/Button/ButtonSmoothScrolling';
 import './about.scss';
 
 const About = () => {
+  const data = useStaticQuery(query);
   return (
     <Section isPaddingless id="about">
       <div className="about-wrapper gradient-color">
@@ -70,11 +71,7 @@ const About = () => {
               </div>
             </Column>
             <Column isSize={{ mobile: 11, desktop: 6 }} isHidden="mobile">
-              <div className="row">
-                <div className="about-image">
-                  <Image Path={AboutImg} Class="about-img" />
-                </div>
-              </div>
+              <Img fluid={data.file.childImageSharp.fluid} alt="" />
             </Column>
           </Columns>
         </Container>
@@ -82,5 +79,21 @@ const About = () => {
     </Section>
   );
 };
+
+const query = graphql`
+  query {
+    file(relativePath: { eq: "about/group-banner.png" }) {
+      childImageSharp {
+        fluid(quality: 30) {
+          src
+          base64
+          srcSet
+          sizes
+          aspectRatio
+        }
+      }
+    }
+  }
+`;
 
 export default About;

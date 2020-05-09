@@ -15,8 +15,8 @@ const IconContainer = styled.li`
   }
 `;
 
-const Icon = ({ icon, href }) => (
-  <a target="_blank" href={href} rel="noreferrer noopener">
+const Icon = ({ icon, href, name }) => (
+  <a target="_blank" href={href} rel="noreferrer noopener" aria-label={name}>
     <span>
       <PreviewIcon icon={icon} />
     </span>
@@ -26,18 +26,19 @@ const Icon = ({ icon, href }) => (
 Icon.propTypes = {
   icon: PropTypes.object.isRequired,
   href: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
 };
 
 const NewsLetterFormFooter = () => (
   <SocialWrapper>
     <IconContainer>
-      <Icon icon={facebookSquare} href="https://facebook.com/cobuildlab" />
+      <Icon icon={facebookSquare} name="Facebook" href="https://facebook.com/cobuildlab" />
     </IconContainer>
     <IconContainer>
-      <Icon icon={twitterSquare} href="https://twitter.com/cobuildlab" />
+      <Icon icon={twitterSquare} name="Twitter" href="https://twitter.com/cobuildlab" />
     </IconContainer>
     <IconContainer>
-      <Icon icon={linkedinSquare} href="https://linkedin.com/company/cobuildlab" />
+      <Icon icon={linkedinSquare} name="Linked In" href="https://linkedin.com/company/cobuildlab" />
     </IconContainer>
   </SocialWrapper>
 );

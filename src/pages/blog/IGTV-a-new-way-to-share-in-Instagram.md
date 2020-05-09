@@ -16,8 +16,6 @@ That’s what happened this week when Kevin Systrom, co-founder & CEO of Instagr
 
 _In this application, you can see large videos of people that you already follow on Instagram. Beside it shows you content classified according to your interest and the most popular videos on this social network._
 
-![](IGTV2-copia.jpg)
-
 <title-3>What can companies/brands/startup/entrepreneurs do with IGTV?</title-3>
 
 Now, the brands, companies or startup have **major possibilities to develop storytelling through IGTV**, because you have more minutes (60 minutes) to hook your audience. 

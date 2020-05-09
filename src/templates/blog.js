@@ -77,13 +77,14 @@ class BlogPostTemplate extends Component {
       <LayoutPost>
         <SeoMetaTags
           title={post.frontmatter.title}
+          titleTemplate=""
           description={siteDescription}
           image={seoImages}
         />
 
         <Hero isSize="large">
           <StyledContainer hasTextAlign="centered">
-            <StyledTitle tag="h3" isSize={1} hasTextColor="Black">
+            <StyledTitle tag="h1" isSize={1} hasTextColor="Black">
               {post.frontmatter.title}
             </StyledTitle>
             <br />
@@ -97,7 +98,11 @@ class BlogPostTemplate extends Component {
               backgroundImage: `url(${image})`
             }}
           /> */}
-          <Img className="bg-post" fluid={post.frontmatter.image.childImageSharp.fluid} />
+          <Img
+            className="bg-post"
+            fluid={post.frontmatter.image.childImageSharp.fluid}
+            alt={post.frontmatter.title}
+          />
         </Hero>
 
         <SectionPost id="section-post" className="section">

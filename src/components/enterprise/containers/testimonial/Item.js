@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
 
-import Image from '../../components/image';
 import Paragraph from '../../../Typography/Paragraph';
 import { TextOrange } from '../../../Typography/TextHelpers';
 import H6 from '../../../Typography/H6';
@@ -68,12 +67,6 @@ const AnimationBackground = styled.div`
   }
 `;
 
-const ImagesContainer = styled.div`
-  padding-top: 20px;
-  visibility: hidden;
-  display: none;
-`;
-
 const SubTitle = styled(Paragraph)`
   font-weight: 400;
   font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
@@ -126,7 +119,7 @@ const Container = styled.div`
   }
 `;
 
-const Item = ({ description, title, subtitle, img }) => (
+const Item = ({ description, title, subtitle }) => (
   <Container>
     <Contenct>
       <AnimationBackground>
@@ -139,9 +132,6 @@ const Item = ({ description, title, subtitle, img }) => (
         <TextOrange>{title}</TextOrange>
       </Title>
       <SubTitle>{subtitle}</SubTitle>
-      <ImagesContainer>
-        <Image Path={img} />
-      </ImagesContainer>
     </Contenct>
   </Container>
 );
@@ -150,7 +140,6 @@ Item.propTypes = {
   description: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
-  img: PropTypes.string.isRequired,
 };
 
 export default Item;

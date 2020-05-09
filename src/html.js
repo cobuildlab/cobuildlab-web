@@ -18,6 +18,12 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
+        <link rel="preconnect" href="https://snap.licdn.com"></link>
+        <link rel="preconnect" href="https://stats.g.doubleclick.net"></link>
+        <link rel="preconnect" href="https://connect.facebook.net"></link>
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link rel="preconnect" href="https://www.facebook.com"></link>
+        <link rel="preconnect" href="https://www.google-analytics.com"></link>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}

@@ -121,7 +121,15 @@ module.exports = {
         excludedPaths: ['/404*', '/'],
         pathIdentifier: '/amp/',
         relAmpHtmlPattern: '{{canonicalBaseUrl}}{{pathname}}{{pathIdentifier}}',
+        relCanonicalPattern: '{{canonicalBaseUrl}}{{pathname}}',
         useAmpClientIdApi: true,
+      },
+    },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
       },
     },
   ],
