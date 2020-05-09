@@ -88,7 +88,7 @@ const Banner = (props) => {
                       A PROCESS AND WORKFLOW AUTOMATION COMPANY
                     </Typrography>
                     <Typrography size={title} tag="h1">
-                      Let’s <span className="enterprise-text-orange">Build</span> a <br />
+                      Let’s <span className="entegitrprise-text-orange">Build</span> a <br />
                       Great<span className=" enterprise-text-orange"> Idea.</span>
                     </Typrography>
                     <Typrography size={subTitle} tag="p" className="banner-dec">
