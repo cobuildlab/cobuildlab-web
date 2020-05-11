@@ -98,33 +98,33 @@ const query = graphql`
     imagesCardOne: file(relativePath: { eq: "blog/css1.jpg" }) {
       childImageSharp {
         fluid {
-          src
           base64
-          srcSet
           sizes
           aspectRatio
+          srcWebp
+          srcSetWebp
         }
       }
     }
     imagesCardTwo: file(relativePath: { eq: "blog/css2.jpg" }) {
       childImageSharp {
         fluid {
-          src
           base64
-          srcSet
           sizes
           aspectRatio
+          srcWebp
+          srcSetWebp
         }
       }
     }
     imagesCardThree: file(relativePath: { eq: "blog/css3.jpg" }) {
       childImageSharp {
         fluid {
-          src
           base64
-          srcSet
           sizes
           aspectRatio
+          srcWebp
+          srcSetWebp
         }
       }
     }

@@ -78,11 +78,11 @@ const query = graphql`
     imagesCardOne: file(relativePath: { eq: "skills/cobuild-lab-customers.png" }) {
       childImageSharp {
         fluid(quality: 30) {
-          src
-          srcSet
-          sizes
           base64
+          sizes
           aspectRatio
+          srcWebp
+          srcSetWebp
         }
       }
     }
