@@ -1,25 +1,31 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import { Section, Container, Columns, Column } from 'bloomer';
+import SeoMetaTags from '../../components/SeoMetaTags';
+
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
-import DetailSectionImageLeft from '../../components/customer-success-stories/DetailSectionImageLeft';
-import DetailTeam from '../../components/customer-success-stories/DetailTeam';
-import DetailCarousel from '../../components/customer-success-stories/DetailCarousel';
-import DetailVideo from '../../components/customer-success-stories/DetailVideo';
-import DetailImageLogo from '../../components/customer-success-stories/DetailImageLogo';
-import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
+// import DetailTeam from '../../components/customer-success-stories/DetailTeam';
+import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
+import DetailSection from '../../components/customer-success-stories/DetailSection';
+import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 import { List, ListItem } from '../../components/Typography/List';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 
-import img1 from '../../assets/images/customers/laptop-left.png';
-import logo from '../../assets/images/customers/collabtogrow-logo.png';
-
-const Massone = () => (
+const Massone = ({ data }) => (
   <DetailLayout>
+    <SeoMetaTags
+      title="Massone Mechanical"
+      description="Massone Mechanical offers maintenance and installation services to commercial
+      refrigeration companies."
+      image={data.seoImages.childImageSharp.resize}
+    />
     <Section>
       <Container>
         <Columns isMultiline>
@@ -48,16 +54,18 @@ const Massone = () => (
             </DetailParagraph>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
-            <DetailHeroRightContainer>
-              <DetailImageLogo src={logo} />
-              <DetailVideo />
-            </DetailHeroRightContainer>
+            <DetailHeroImagesContent>
+              <Img fluid={data.logo.childImageSharp.fluid} alt="" />
+            </DetailHeroImagesContent>
+            <DetailHeroImagesContent>
+              <Img fluid={data.text.childImageSharp.fluid} alt="" />
+            </DetailHeroImagesContent>
           </Column>
         </Columns>
       </Container>
     </Section>
 
-    <DetailSectionImageLeft src={img1} alt="What is the Succeed Platform?">
+    <DetailSection src={data.textImagesOne.childImageSharp.fluid} left>
       <DetailSubTitle>
         How everything <TextOrange>started:</TextOrange>
       </DetailSubTitle>
@@ -88,16 +96,16 @@ const Massone = () => (
           </ListItem>
         </List>
       </div>
-    </DetailSectionImageLeft>
+    </DetailSection>
 
-    <Section>
+    {/* <Section>
       <Container>
-        <DetailTeam />
+      <DetailTeam />
       </Container>
-    </Section>
+     </Section> */}
 
     <Section isPaddingless>
-      <DetailCarousel />
+      <DetailCarousel data={data.slider.edges} />
     </Section>
 
     <Section isPaddingless>
@@ -105,5 +113,73 @@ const Massone = () => (
     </Section>
   </DetailLayout>
 );
+
+Massone.propTypes = {
+  data: PropTypes.object.isRequired,
+};
+
+export const pageQuery = graphql`
+  query {
+    seoImages: file(relativePath: { eq: "customers/Massone.jpg" }) {
+      childImageSharp {
+        resize(width: 1200, height: 1200) {
+          width
+          height
+          src
+        }
+      }
+    }
+    logo: file(relativePath: { eq: "customers/massone/logo.jpg" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    text: file(relativePath: { eq: "customers/massone/text-corto.jpg" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    textImagesOne: file(relativePath: { eq: "customers/massone/text-img-1.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    slider: allFile(filter: { relativeDirectory: { eq: "customers/massone/slider" } }) {
+      edges {
+        node {
+          id
+          name
+          childImageSharp {
+            fluid(quality: 100) {
+              src
+              srcSet
+              sizes
+              aspectRatio
+              base64
+            }
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default Massone;

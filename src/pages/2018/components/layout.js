@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../assets/css/index.css';
 import Header from './header';
 import MyFooter from './footer';
@@ -15,12 +16,16 @@ import '../assets/fonts/Lato-LightItalic.ttf';
 import '../assets/fonts/Lato-Regular.ttf';
 
 class Template extends React.Component {
+  static propTypes = {
+    children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+  };
+
   render() {
     const { children } = this.props;
     const siteKey = process.env.RECAPTCHA_SITEKEY;
     return (
       <div>
-        <Header/>
+        <Header />
         {children}
         <MyFooter siteKey={siteKey} />
       </div>

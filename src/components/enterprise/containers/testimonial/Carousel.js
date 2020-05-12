@@ -1,11 +1,63 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import Slider from 'react-slick';
-import styled from 'styled-components';
 import Item from './Item';
+import Avatar from './Avatar';
+import './testimonial.scss';
+
+//TODO remove this
 import img1 from '../../../../assets/images/testimonial/andres-wegacha.jpeg';
 import img2 from '../../../../assets/images/testimonial/ale.jpg';
 import img3 from '../../../../assets/images/testimonial/robert-mitchell.png';
-import './testimonial.scss';
+import img4 from '../../../../assets/images/testimonial/anna.jpeg';
+
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+};
+
+const Testimonial = () => {
+  const data = useStaticQuery(query);
+
+  const items = data.allTestimonialJson.nodes.map(({ id, content, title, subtitle, image }) => (
+    <Item key={id} title={title} subtitle={subtitle} description={content} />
+  ));
+
+  return (
+    <div className="testimonial-slider ">
+      <div className="testimonial-outer-box">
+        <Slider
+          {...settings}
+          customPaging={(index) => <Avatar index={index} data={data.allTestimonialJson.nodes} />}>
+          {items}
+        </Slider>
+      </div>
+    </div>
+  );
+};
+
+const query = graphql`
+  query {
+    allTestimonialJson {
+      nodes {
+        image {
+          id
+          publicURL
+        }
+        content
+        id
+        title
+        subtitle
+      }
+    }
+  }
+`;
+
+export default Testimonial;
 
 export const DATA = [
   {
@@ -34,59 +86,12 @@ export const DATA = [
       '\n' +
       'Cobuild Labs process gave our organizations an opportunity to transform our workflow and find productivity. We are justified in our decision to work with them after trying several out of the box software solutions. We view Cobuild Labs as an integral part of our technology strategy going forward.',
   },
+  {
+    id: 4,
+    title: 'Anna Keeler',
+    subtitle: 'Fieldworker Management for the HVAC Industry',
+    img: img4,
+    content:
+      'Mama Matchmaking is incredibly impressed with Cobuild Lab`s work on our application. The team is providing a complete scope of work and clear solutions for the launch of our project. We are excited about the results, timeline, and budget so far achieved, and look forward to continuing our partnership.',
+  },
 ];
-
-const Button = styled.button`
-  .slick-dots li:nth-child(1) & {
-    background: url(${({ index }) => (DATA[index] ? DATA[index].img : '')}) no-repeat center;
-  }
-  .slick-dots li:nth-child(2) & {
-    background: url(${({ index }) => (DATA[index] ? DATA[index].img : '')}) no-repeat center;
-  }
-  .slick-dots li:nth-child(3) & {
-    background: url(${({ index }) => (DATA[index] ? DATA[index].img : '')}) no-repeat center;
-  }
-  .slick-dots li:nth-child(4) & {
-    background: url(${({ index }) => (DATA[index] ? DATA[index].img : '')}) no-repeat center;
-  }
-  .slick-dots li:nth-child(5) & {
-    background: url(${({ index }) => (DATA[index] ? DATA[index].img : '')}) no-repeat center;
-  }
-  .slick-dots li:nth-child(6) & {
-    background: url(${({ index }) => (DATA[index] ? DATA[index].img : '')}) no-repeat center;
-  }
-`;
-
-const customPaging = (index) => <Button index={index} />;
-
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  customPaging,
-};
-
-const Testimonial = () => {
-  return (
-    <div className="testimonial-slider ">
-      <div className="testimonial-outer-box">
-        <Slider {...settings}>
-          {DATA.map((data, index) => (
-            <Item
-              key={data.title}
-              title={data.title}
-              subtitle={data.subtitle}
-              description={data.content}
-              img={data.img}
-            />
-          ))}
-        </Slider>
-      </div>
-    </div>
-  );
-};
-
-export default Testimonial;

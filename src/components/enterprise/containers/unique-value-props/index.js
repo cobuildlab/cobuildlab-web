@@ -1,17 +1,14 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import { Container, Columns, Column, Section } from 'bloomer';
-import PreviewIcon from '../../components/icon';
 import Typography from '../../../2020/Typography';
 import './unique-value-props.scss';
-import Img1 from '../../../../assets/images/blog/css1.jpg';
 import { money, bolt, bullhorn } from 'react-icons-kit/fa';
-import Img2 from '../../../../assets/images/blog/css2.jpg';
-import Img3 from '../../../../assets/images/blog/css3.jpg';
+import ValuePropsCard from './ValuePropsCard';
 
 const BLOG_DATA = [
   {
     id: 1,
-    img: Img1,
     Icon: bolt,
     title: 'Scale your Business Faster',
     subtitle: 'Williamson',
@@ -21,7 +18,6 @@ const BLOG_DATA = [
   },
   {
     id: 2,
-    img: Img2,
     Icon: bullhorn,
     title: 'Differentiate From Competitors',
     subtitle: 'Miranda Roy',
@@ -31,7 +27,6 @@ const BLOG_DATA = [
   },
   {
     id: 3,
-    img: Img3,
     Icon: money,
     title: 'Offer more value to your Customers',
     subtitle: 'Steve Thomas',
@@ -42,6 +37,7 @@ const BLOG_DATA = [
 ];
 
 const UniqueValueProps = () => {
+  const data = useStaticQuery(query);
   return (
     <Section id="unique-value-props">
       <div className="blog-wrapper">
@@ -62,34 +58,33 @@ const UniqueValueProps = () => {
               </Typography>
             </div>
             <Columns>
-              {BLOG_DATA.map((data, i) => (
-                <Column isSize={{ mobile: 12, desktop: 4 }} key={data.id}>
-                  <div className={`blog-${i}`}>
-                    <div className="blog-content">
-                      <div className="blog-first-block">
-                        <img src={data.img} alt="" title="" />
-                      </div>
-                      <div className="blog-second-block">
-                        <div className="blog-left-content">
-                          <div className="blog-icon">
-                            <span>
-                              <PreviewIcon icon={data.Icon} />
-                            </span>
-                          </div>
-                        </div>
-                        <div className="blog-right-content">
-                          <Typography className="blog-title" tag="h5">
-                            {data.title}
-                          </Typography>
-                          <Typography className="blog-dec" tag="p">
-                            {data.content}
-                          </Typography>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </Column>
-              ))}
+              <Column isSize={{ mobile: 12, desktop: 4 }}>
+                <ValuePropsCard
+                  image={data.imagesCardOne.childImageSharp.fluid}
+                  title={BLOG_DATA[0].title}
+                  icon={BLOG_DATA[0].Icon}
+                  content={BLOG_DATA[0].content}
+                  index={BLOG_DATA[0].id}
+                />
+              </Column>
+              <Column isSize={{ mobile: 12, desktop: 4 }}>
+                <ValuePropsCard
+                  image={data.imagesCardTwo.childImageSharp.fluid}
+                  title={BLOG_DATA[1].title}
+                  icon={BLOG_DATA[1].Icon}
+                  content={BLOG_DATA[1].content}
+                  index={BLOG_DATA[1].id}
+                />
+              </Column>
+              <Column isSize={{ mobile: 12, desktop: 4 }}>
+                <ValuePropsCard
+                  image={data.imagesCardThree.childImageSharp.fluid}
+                  title={BLOG_DATA[2].title}
+                  icon={BLOG_DATA[2].Icon}
+                  content={BLOG_DATA[2].content}
+                  index={BLOG_DATA[2].id}
+                />
+              </Column>
             </Columns>
           </Container>
         </div>
@@ -97,5 +92,43 @@ const UniqueValueProps = () => {
     </Section>
   );
 };
+
+const query = graphql`
+  query {
+    imagesCardOne: file(relativePath: { eq: "blog/css1.jpg" }) {
+      childImageSharp {
+        fluid {
+          src
+          base64
+          srcSet
+          sizes
+          aspectRatio
+        }
+      }
+    }
+    imagesCardTwo: file(relativePath: { eq: "blog/css2.jpg" }) {
+      childImageSharp {
+        fluid {
+          src
+          base64
+          srcSet
+          sizes
+          aspectRatio
+        }
+      }
+    }
+    imagesCardThree: file(relativePath: { eq: "blog/css3.jpg" }) {
+      childImageSharp {
+        fluid {
+          src
+          base64
+          srcSet
+          sizes
+          aspectRatio
+        }
+      }
+    }
+  }
+`;
 
 export default UniqueValueProps;

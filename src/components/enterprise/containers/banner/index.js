@@ -1,20 +1,11 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import { Container, Columns, Column, Section } from 'bloomer';
-import Image from '../../components/image';
-import BannerImg1 from '../../../../assets/images/banner/group-banner-2.png';
+import Img from 'gatsby-image';
 import Typrography from '../../../2020/Typography';
 import ButtonSmoothScrolling from '../../../2020/Button/ButtonSmoothScrolling';
-
+import AnimationImages from './AnimationImages';
 import './banner.scss';
-import anim1 from './1-blue.png';
-import anim2 from './2-blue.png';
-import anim3 from './3-blue.png';
-import anim4 from './4-blue.png';
-import anim5 from './5-blue.png';
-import anim6 from './6-orange.png';
-import anim7 from './7-blue.png';
-import anim8 from './8-blue.png';
-import anim9 from './9-blue.png';
 
 const title = {
   default: {
@@ -33,52 +24,20 @@ const subTitle = {
   },
 };
 
-const Banner = (props) => {
-  const bannerAnimationImages = [
-    {
-      img: anim1,
-    },
-    {
-      img: anim2,
-    },
-    {
-      img: anim3,
-    },
-    {
-      img: anim4,
-    },
-    {
-      img: anim5,
-    },
-    {
-      img: anim6,
-    },
-    {
-      img: anim7,
-    },
-    {
-      img: anim8,
-    },
-    {
-      img: anim9,
-    },
-  ];
+const Banner = () => {
+  const data = useStaticQuery(query);
+
+  const animation = data.animation.edges.map(({ node }, index) => (
+    <AnimationImages node={node} key={node.id} index={index} />
+  ));
+
+  console.log(data);
+
   return (
     <Section isPaddingless id="banner">
       <div className="banner-wrapper demo1">
         <div className="banner-outer">
-          <div className="slider-animation-images">
-            {bannerAnimationImages.map((img, index) => (
-              <span className={`image${index + 1}`} key={`banner-${index}`}>
-                <Image Path={img.img} />
-              </span>
-            ))}
-            {/* {BannerAnimationImages.allDataJson.edges[0].node.bannerranimation.map((img, index) => (
-              <span className={`image${index + 1}`} key={`banner-${index}`}>
-                <Image Path={img.img} />
-              </span>
-            ))} */}
-          </div>
+          <div className="slider-animation-images">{animation}</div>
           <Container>
             <Columns isDisplay="flex">
               <Column isSize={6}>
@@ -88,12 +47,13 @@ const Banner = (props) => {
                       A PROCESS AND WORKFLOW AUTOMATION COMPANY
                     </Typrography>
                     <Typrography size={title} tag="h1">
-                      Let’s <span className="enterprise-text-orange">Build</span> a <br />
+                      Let’s <span className="entegitrprise-text-orange">Build</span> a <br />
                       Great<span className=" enterprise-text-orange"> Idea.</span>
                     </Typrography>
                     <Typrography size={subTitle} tag="p" className="banner-dec">
-                      We transform Small and Medium-sized businesses by automating your processes
-                      into optimized, and streamlined workflows with Web and Mobile custom software.
+                      We transform Small and Medium-sized businesses by automating manual processes
+                      and task into optimized and streamlined workflows with Web and Mobile custom
+                      software.
                     </Typrography>
                     <br />
                     <Typrography size={subTitle} tag="p" className="banner-dec">
@@ -110,11 +70,7 @@ const Banner = (props) => {
                 </div>
               </Column>
               <Column isHidden="mobile" isSize={6}>
-                <div className="row">
-                  <div className="banner-image">
-                    <Image Path={BannerImg1} Class="banner-img" />
-                  </div>
-                </div>
+                <Img fluid={data.heroImages.childImageSharp.fluid} alt="" />
               </Column>
             </Columns>
           </Container>
@@ -123,5 +79,35 @@ const Banner = (props) => {
     </Section>
   );
 };
+
+const query = graphql`
+  query {
+    animation: allFile(filter: { relativeDirectory: { eq: "banner/animation" } }) {
+      edges {
+        node {
+          id
+          childImageSharp {
+            resolutions(quality: 10) {
+              height
+              src
+              width
+            }
+          }
+        }
+      }
+    }
+    heroImages: file(relativePath: { eq: "banner/group-banner-2.png" }) {
+      childImageSharp {
+        fluid(quality: 30) {
+          src
+          base64
+          srcSet
+          sizes
+          aspectRatio
+        }
+      }
+    }
+  }
+`;
 
 export default Banner;

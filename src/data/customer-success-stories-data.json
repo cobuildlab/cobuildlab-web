@@ -1,0 +1,38 @@
+[
+  {
+    "image": "../assets/images/customers/jobcore.jpg",
+    "title": "Jobcore",
+    "description": "Get work fast and get paid the same day with Jobcore. This is a web platform that allows employers to post job applications for candidates…  ",
+    "slug": "customer-success-stories/jobcore"
+  },
+  {
+    "image": "../assets/images/customers/Massone.jpg",
+    "title": "Massone",
+    "description": "Massone Mechanical Massone Mechanical offers maintenance and installation services to commercial refrigeration companies. Offering high…",
+    "slug": "/customer-success-stories/massone"
+  },
+  {
+    "image": "../assets/images/customers/Weedmatch.jpg",
+    "title": "Weedmatch",
+    "description":"Weedmatch Weedmatch  is the  first free cannabis social network  made by a group of Venezuelans led by its founder Oscar Lopez in Chile…",
+    "slug": "/customer-success-stories/weedmatch"
+  },
+  {
+    "image": "../assets/images/customers/4geeks.jpg",
+    "title": "4Geeks Academy",
+    "description": "4Geeks Academy Contact Person:  Marcelo Ricigliano Location:  Miami, US, Caracas and Maracaibo, Venezuela Industry:  Education Web Site…",
+    "slug": "/customer-success-stories/4geeks-academy"
+  },
+  {
+    "image": "../assets/images/customers/Payklever.jpg",
+    "title": "Payklever Campaign Manager",
+    "description": "Payklever Campaign Manager With Payklever you can turn your car into a payment method. You can drive quietly and never handle your cash or…",
+    "slug": "/customer-success-stories/payklever-campaign-manager"
+  },
+  {
+    "image": "../assets/images/customers/Propagad.jpg",
+    "title": "Propagad",
+    "description": "Propagad Contact Person:  Cesar Lang Location:  Miami, US Industry:  Marketing and Advertising Web Site:  www.propagad.com Introducing Cesar…",
+    "slug": "/customer-success-stories/propagad"
+  }
+]

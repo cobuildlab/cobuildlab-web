@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, Title } from 'bloomer';
+import PropTypes from 'prop-types';
+import { Button } from 'bloomer';
 import playCircleIcon from '../resources/icons/play-circle-solid.svg';
 import stopCircleIcon from '../resources/icons/stop-circle-solid.svg';
 
@@ -40,7 +41,11 @@ const TTSVoice = (props) => {
             cancel(stripped);
             setIsPlaying(false);
           }}>
-          <img style={{ maxWidth: 35, height: '100%', color: 'white' }} src={stopCircleIcon}></img>{' '}
+          <img
+            style={{ maxWidth: 35, height: '100%', color: 'white' }}
+            src={stopCircleIcon}
+            alt=""
+          />{' '}
           Cancel{' '}
         </Button>
       ) : (
@@ -50,12 +55,24 @@ const TTSVoice = (props) => {
             speech(stripped);
             setIsPlaying(true);
           }}>
-          <img style={{ maxWidth: 35, height: '100%', color: 'white' }} src={playCircleIcon}></img>{' '}
+          <img
+            style={{ maxWidth: 35, height: '100%', color: 'white' }}
+            src={playCircleIcon}
+            alt=""
+          />{' '}
           Text to Speech{' '}
         </Button>
       )}
     </div>
   );
+};
+
+TTSVoice.defaultProps = {
+  text: '',
+};
+
+TTSVoice.propTypes = {
+  text: PropTypes.string,
 };
 
 export default TTSVoice;

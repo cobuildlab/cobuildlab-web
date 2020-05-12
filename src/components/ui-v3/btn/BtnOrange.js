@@ -1,5 +1,5 @@
 import { Button } from 'bloomer';
-
+import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -25,5 +25,14 @@ const StyledButton = styled(Button)`
 const _Btn = (props) => (
   <StyledButton onClick={(e) => props.onSubmitModal(e)}>{props.children}</StyledButton>
 );
+
+_Btn.defaultProps = {
+  onSubmitModal: () => null,
+};
+
+_Btn.propTypes = {
+  onSubmitModal: PropTypes.func,
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+};
 
 export { _Btn as BtnOrange };

@@ -26,9 +26,13 @@ class BlockQuote extends React.Component {
   }
 }
 
+BlockQuote.defaultProps = {
+  align: 'left',
+};
+
 BlockQuote.propTypes = {
   children: PropTypes.node.isRequired,
-  align: PropTypes.string.isRequired,
+  align: PropTypes.string,
 };
 
 export default BlockQuote;

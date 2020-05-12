@@ -110,7 +110,7 @@ const settings = {
   // eslint-disable-next-line react/display-name
   customPaging: (id) => (
     <button>
-      <img src={DATA[id].img || ''} />
+      <img src={DATA[id].img || ''} alt="" />
     </button>
   ),
 };

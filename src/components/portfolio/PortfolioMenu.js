@@ -1,120 +1,125 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useState, useEffect } from 'react';
 import Drawer from '../enterprise/containers/Drawer';
 import styled from 'styled-components';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { Icon } from 'react-icons-kit';
+import { list } from 'react-icons-kit/fa/list';
+import PortfolioMenuItems from './PortfolioMenuItems';
 
 const MenuContainer = styled.div`
-  margin-left: auto;
-`;
-
-const BurgerIcon = styled.span`
-  width: 36px;
-  height: 2px;
-  position: relative;
-  margin-right: 15px;
-  transition: all 0.5s ease-in-out;
-  background-color: #e76c29;
-  &:after,
-  &:before {
-    content: '';
-    position: absolute;
-    top: -8px;
-    right: 0;
-    width: 36px;
-    height: 2px;
-    transition: all 0.5s ease-in-out;
-    background-color: #e76c29;
-  }
-  &:after {
-    top: auto;
-    bottom: -8px;
-    width: 24px;
+  padding-top: 1em;
+  position: ${({ isFixed }) => (isFixed ? 'fixed' : 'relative')};
+  top: 0;
+  @media screen and (max-width: 768px) {
+    padding-top: 0em;
+    width: 100%;
+    z-index: 100;
   }
 `;
 
-const ToggleContainer = styled.span`
-  background-color: transparent;
-  border: none;
-  padding: 0;
+const MenuTitle = styled.li`
+  color: #264a60;
+  font-size: 20px;
+  padding: 0.5em 0.8em;
+  font-weight: normal;
+  letter-spacing: 1px;
   display: flex;
   align-items: center;
-  font-size: 1.25rem;
-  line-height: 1;
-  cursor: pointer;
-  &:hover {
-    & ${BurgerIcon}:before {
-      width: 24px;
-    }
-    & ${BurgerIcon}:after {
-      width: 36px;
-    }
-  }
-`;
-
-const MenuTitle = styled.span`
-  color: #264a60;
-  line-height: 40px;
-  margin: 0;
-  display: inline-block;
-  vertical-align: middle;
-  font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
   @media screen and (max-width: 768px) {
-    display: none;
+    background-color: ${({ isFixed }) => (isFixed ? '#E76C29' : 'transparent')};
+    color: ${({ isFixed }) => (isFixed ? '#fff' : '#E76C29')};
+    justify-content: center;
   }
 `;
 
-const MenuWrapper = styled.ul`
-  border-top: 1px solid #e2e2e2;
+const Menu = styled.ul`
+  transition: all 0.3s ease-in;
+  top: 0;
 `;
 
-const MenuItem = styled.li`
-  width: 100%;
-  color: #264a60;
-  line-height: 40px;
-  margin: 0;
-  display: inline-block;
-  vertical-align: middle;
-  font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
-  border-bottom: 1px solid #e2e2e2;
+const OnlyMobile = styled.div`
+  display: none;
+  @media screen and (max-width: 991.98px) {
+    display: block;
+  }
 `;
 
-const MenuLink = styled(AnchorLink)`
-  padding: 0.5em 1em;
-  display: block;
-  text-transform: uppercase;
-  font-size: 16px;
+const DrawerMenuContainer = styled.ul`
+  height: 100vh;
+  overflow: scroll;
+  padding-bottom: 3em;
+`;
+
+const OnlyDesktop = styled.div`
+  display: none;
+  @media (min-width: 992px) {
+    display: block;
+  }
+`;
+
+const IconList = styled(Icon)`
   color: inherit;
-  transition: all 0.2s linear;
-  &:hover {
-    color: #e76c29;
-  }
+  margin-right: 0.5em;
 `;
 
-const Menu = () => {
+const PortfolioMenu = () => {
   const [isVisible, setVisible] = useState(false);
+  const [isFixed, setFixed] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 64 && !isFixed) {
+        setFixed(true);
+      } else {
+        setFixed(false);
+      }
+    };
+
+    document.addEventListener('scroll', onScroll);
+
+    return () => {
+      document.removeEventListener('scroll', onScroll);
+    };
+  }, []);
 
   const handleOpen = useCallback(() => {
     setVisible((state) => !state);
   }, []);
 
   return (
-    <MenuContainer>
-      <ToggleContainer type="button" onClick={handleOpen}>
-        <BurgerIcon />
-        <MenuTitle>Other Projects</MenuTitle>
-      </ToggleContainer>
+    <MenuContainer isFixed={isFixed}>
+      <OnlyDesktop>
+        <Menu>
+          <MenuTitle>
+            <IconList size={20} icon={list} />
+            Projects
+          </MenuTitle>
+          <PortfolioMenuItems />
+        </Menu>
+      </OnlyDesktop>
+      <OnlyMobile>
+        <Menu>
+          <MenuTitle onClick={handleOpen} isFixed={isFixed}>
+            <IconList size={20} icon={list} />
+            Projects
+          </MenuTitle>
+        </Menu>
+      </OnlyMobile>
       <Drawer visible={isVisible} onClose={handleOpen}>
-        <MenuWrapper>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#okroo-test-1">First Section</MenuLink>
-          </MenuItem>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#okroo-test-2">Second Section</MenuLink>
-          </MenuItem>
-        </MenuWrapper>
+        <DrawerMenuContainer>
+          <PortfolioMenuItems onClick={handleOpen} />
+        </DrawerMenuContainer>
       </Drawer>
     </MenuContainer>
   );
 };
 
-export default Menu;
+export default PortfolioMenu;
+
+// <Drawer visible={isVisible} onClose={handleOpen}>
+
+/* 
+  <ToggleContainer type="button" onClick={handleOpen}>
+        <BurgerIcon />
+        <MenuTitle>Other Projects</MenuTitle>
+      </ToggleContainer>
+*/

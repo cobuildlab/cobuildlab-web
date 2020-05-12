@@ -17,12 +17,25 @@ import { BtnOrange } from './ui-v3/btn/BtnOrange';
 import { BtnWhite } from './ui-v3/btn/BtnWhite';
 import { LabelTitle } from './ui-v3/LabelTitle';
 import { H2Subtitle } from './ui-v3/H2Subtitle';
-import Styled from 'styled-components';
+import styled from 'styled-components';
 
-const StyledModal = Styled(Modal)`
+const StyledModal = styled(Modal)`
   z-index: -1;
   &.is-active {
     z-index: 1000;
+  }
+`;
+
+const Body = styled(ModalCardBody)`
+  padding: 37px 58px 59px 56px;
+  max-width: 600px;
+  min-height: 470px;
+  width: 100%;
+  margin: auto;
+  @media screen and (max-width: 768px) {
+    padding: 1em;
+    display: flex;
+    align-items: center;
   }
 `;
 
@@ -37,17 +50,27 @@ class NewsletterModal extends React.Component {
     this.onSubmitModal = this.onSubmitModal.bind(this);
     this.handleModal = this.handleModal.bind(this);
     this.calculateScrollDistance = this.calculateScrollDistance.bind(this);
+    this.timeOutID = null;
   }
 
   componentDidMount() {
     const localNextTime = localStorage.getItem('nextTime');
     if (localNextTime) {
+      const timeToShow = 60000;
       const nextTime = new Date(JSON.parse(localNextTime));
       const today = new Date();
       const timeExpired = today.getTime() >= nextTime.getTime();
 
-      if (timeExpired) setTimeout(() => this.handleModal(true), 30000);
-    } else setTimeout(() => this.handleModal(true), 30000);
+      if (timeExpired) {
+        this.timeOutID = setTimeout(() => this.handleModal(true), timeToShow);
+      } else {
+        this.timeOutID = setTimeout(() => this.handleModal(true), timeToShow);
+      }
+    }
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.timeOutID);
   }
 
   calculateScrollDistance = () => {
@@ -123,15 +146,7 @@ class NewsletterModal extends React.Component {
       <StyledModal isActive={showModal}>
         <ModalBackground style={{ backgroundColor: 'rgba(118, 132, 141, 1)', opacity: '0.5' }} />
         <ModalCard>
-          <ModalCardBody
-            style={{
-              paddingTop: '37px',
-              paddingBottom: '59px',
-              paddingLeft: '56px',
-              paddingRight: '58px',
-              width: '600px',
-              height: '470px',
-            }}>
+          <Body>
             <Container>
               <LabelTitle>Newsletter</LabelTitle>
               <H2Subtitle>
@@ -167,7 +182,7 @@ class NewsletterModal extends React.Component {
                 </Control>
               </Field>
             </Container>
-          </ModalCardBody>
+          </Body>
         </ModalCard>
       </StyledModal>
     );

@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
-import Helmet from 'react-helmet';
 import { Container, Hero, HeroBody, HeroHeader } from 'bloomer';
-import LandingHeader from './LandingHeader';
 import BannerBackground from './BannerBackground';
 import Footer from '../enterprise/containers/footer/Footer';
 import NewsletterModal from '../NewsletterModal';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import Header from './header/Header';
+import SeoMetaTags from '../SeoMetaTags';
 
 const Wrapper = styled.div`
   background-color: #f4f6fb !important;
@@ -37,16 +37,12 @@ const LandingPageLayout = ({ siteDescription, siteTitle, withFooter, children })
 
   return (
     <Fragment>
-      <Helmet
-        htmlAttributes={{ lang: 'en' }}
-        meta={[{ name: 'description', content: siteDescription }]}
-        title={siteTitle}
-      />
+      <SeoMetaTags title={siteTitle} description={siteDescription} />
       <NewsletterModal />
       <Wrapper>
         <Hero>
           <HeroHeader>
-            <LandingHeader />
+            <Header />
           </HeroHeader>
           <HeroBody isPaddingless>
             <BannerWrapper>

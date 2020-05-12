@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import videoImg from '../../assets/images/customers/video.png';
+import Img from 'gatsby-image';
 import VideoPlayIcon from '../2020/VideoPlayIcon';
 
 const Container = styled.div`
@@ -21,17 +22,28 @@ const IconContainer = styled.div`
   }
 `;
 
-const Image = styled.img`
+const ImagesContainer = styled.div`
   width: 100%;
 `;
 
-const DetailVideo = () => (
+const DetailVideo = ({ id, images }) => (
   <Container>
-    <Image src={videoImg} alt="video" />
+    <ImagesContainer>
+      <Img fluid={images} alt="" />
+    </ImagesContainer>
     <IconContainer>
-      <VideoPlayIcon />
+      <VideoPlayIcon videoId={id} />
     </IconContainer>
   </Container>
 );
+
+DetailVideo.defaultProps = {
+  id: '',
+};
+
+DetailVideo.propTypes = {
+  id: PropTypes.string,
+  images: PropTypes.object.isRequired,
+};
 
 export default DetailVideo;

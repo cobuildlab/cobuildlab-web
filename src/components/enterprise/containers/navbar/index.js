@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import { Container, Columns, Column } from 'bloomer';
 import Menu from '../Menu';
-import Image from '../../components/image';
 import logo from '../../../../assets/images/cobuild-logo.png';
 import componse from '../../../../utils/styles-componse';
 import styles from './css/index.module.scss';
@@ -52,7 +51,7 @@ const Navbar = () => (
           <div className={styles.content}>
             <div className={styles.logo_wrapper}>
               <Link to="/">
-                <Image Path={logo} />
+                <img src={logo} alt="logo" />
               </Link>
             </div>
           </div>

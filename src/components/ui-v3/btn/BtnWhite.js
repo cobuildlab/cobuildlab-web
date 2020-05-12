@@ -1,5 +1,5 @@
 import { Button } from 'bloomer';
-
+import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -18,5 +18,14 @@ const StyledButton = styled(Button)`
 const _Btn = (props) => (
   <StyledButton onClick={() => props.handleModal(false)}>{props.children}</StyledButton>
 );
+
+_Btn.defaultProps = {
+  handleModal: () => null,
+};
+
+_Btn.propTypes = {
+  handleModal: PropTypes.func,
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+};
 
 export { _Btn as BtnWhite };

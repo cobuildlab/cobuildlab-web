@@ -1,5 +1,5 @@
 import { Title } from 'bloomer';
-
+import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -16,5 +16,9 @@ const _H1 = ({ children, ...props }) => (
     {children}
   </StyledTitle>
 );
+
+_H1.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+};
 
 export { _H1 as H1Blue };

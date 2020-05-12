@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import get from 'lodash/get';
 import defaultImg from '../resources/default-post.jpg';
-import Header from './2020/Header';
+import Header from './2020/header/Header';
 import {
   Hero,
   HeroHeader,

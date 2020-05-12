@@ -74,8 +74,11 @@ const NewsLetterFormFooter = () => {
         <form onSubmit={onSubmit}>
           <Field>
             <Control>
-              <Label hasTextColor="white">Email</Label>
+              <Label for="newsLetterEmail" hasTextColor="white">
+                Email
+              </Label>
               <Input
+                id="newsLetterEmail"
                 value={email}
                 onChange={onChange}
                 placeholder="Enter your email"

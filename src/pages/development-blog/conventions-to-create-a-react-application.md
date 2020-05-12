@@ -15,49 +15,7 @@ Here, we explain the problem, choose a convention, and explain the reasons:
 
 # 1) General Best Practices for Code Style
 
-## **1.1) Always prefer constants over variables**
-
-*PREFER THIS:*
-
-```javascript
-export const updateStateFromObject = (state, object) => {
-  const newState = {};
-  Object.keys(state).forEach((key) => {
-    const newValue = object[key];
-    const oldValue = state[key];
-    if (newValue === undefined) {
-      newState[key] = oldValue;
-      return;
-    }
-    newState[key] = newValue;
-  }
-}
-...
-```
-
-*AND NOT THIS:*
-
-```javascript
-export const updateStateFromObject = (state, object) => {
-  let newState = {};
-  Object.keys(state).forEach((key) => {
-    let newValue = object[key];
-    let oldValue = state[key];
-    if (newValue === undefined) {
-      newState[key] = oldValue;
-      return;
-    }
-    newState[key] = newValue;
-  }
-}
-...
-```
-
-#### Justification:
-
-* Code readability, constants values by definition cannot change, making the code easier to read and to debug.
-* Efficiency: Many Runtimes promise faster access to constant values than to variables values.
-
+## **1.1)<Placeholder>**
 
 ## **1.2) Use constructor to initialize state instead of `static` members**
 

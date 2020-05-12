@@ -2,10 +2,16 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { navigate } from 'gatsby';
 import { ToastContainer, toast } from 'react-toastify';
-import { Field, Control, Input, TextArea } from 'bloomer';
+import { Field, Control, Input, TextArea, Label as BloomerLabel } from 'bloomer';
+import styled from 'styled-components';
 import ButtonDefault from './Button/ButtonDefault';
 import Error from '../Toast/Error';
 import Success from '../Toast/Success';
+
+const Label = styled(BloomerLabel)`
+  color: #264a60;
+`;
+
 export default class Contact extends PureComponent {
   static defaultProps = {
     btnText: 'submit',
@@ -138,10 +144,11 @@ export default class Contact extends PureComponent {
         <ToastContainer />
         <Field>
           <Control>
+            <Label for="contanctFormName">Name</Label>
             <Input
+              id="contanctFormName"
               type="text"
               name="name"
-              placeholder="Name"
               value={name}
               onChange={this.handleChange}
             />
@@ -149,7 +156,9 @@ export default class Contact extends PureComponent {
         </Field>
         <Field>
           <Control>
+            <Label for="contanctFormPhone">Phone</Label>
             <Input
+              id="contanctFormPhone"
               type="number"
               name="phone"
               placeholder="Phone number is optional"
@@ -160,7 +169,9 @@ export default class Contact extends PureComponent {
         </Field>
         <Field>
           <Control>
+            <Label for="contanctFormEmail">Email</Label>
             <Input
+              id="contanctFormEmail"
               type="email"
               name="email"
               placeholder="Email"
@@ -171,7 +182,9 @@ export default class Contact extends PureComponent {
         </Field>
         <Field>
           <Control>
+            <Label for="contanctFormMessage">Message</Label>
             <TextArea
+              id="contanctFormMessage"
               name="message"
               placeholder="Message"
               value={message}

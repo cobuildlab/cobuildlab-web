@@ -1,21 +1,23 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import Img from 'gatsby-image';
+import { graphql } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
+import { List, ListItem } from '../../components/Typography/List';
+
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
-import DetailTeam from '../../components/customer-success-stories/DetailTeam';
-import DetailCarousel from '../../components/customer-success-stories/DetailCarousel';
+// import DetailTeam from '../../components/customer-success-stories/DetailTeam';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
-import DetailImageLogo from '../../components/customer-success-stories/DetailImageLogo';
-import DetailHeroRightContainer from '../../components/customer-success-stories/DetailHeroRightContainer';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
-import { List, ListItem } from '../../components/Typography/List';
+import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
+import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
-import logo from '../../assets/images/customers/collabtogrow-logo.png';
 
-const Propagad = () => (
+const Propagad = ({ data }) => (
   <DetailLayout>
     <Section>
       <Container>
@@ -72,23 +74,25 @@ const Propagad = () => (
             </div>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
-            <DetailHeroRightContainer>
-              <DetailImageLogo src={logo} />
-              <DetailVideo />
-            </DetailHeroRightContainer>
+            <DetailHeroImagesContent>
+              <Img fluid={data.logo.childImageSharp.fluid} alt="" />
+            </DetailHeroImagesContent>
+            <DetailHeroImagesContent>
+              <DetailVideo id="zG_UIMOHgBI" images={data.videoImages.childImageSharp.fluid} />
+            </DetailHeroImagesContent>
           </Column>
         </Columns>
       </Container>
     </Section>
 
-    <Section>
+    {/* <Section>
       <Container>
-        <DetailTeam />
+      <DetailTeam />
       </Container>
-    </Section>
+     </Section> */}
 
     <Section isPaddingless>
-      <DetailCarousel />
+      <DetailCarousel data={data.slider.edges} />
     </Section>
 
     <Section isPaddingless>
@@ -96,5 +100,53 @@ const Propagad = () => (
     </Section>
   </DetailLayout>
 );
+
+Propagad.propTypes = {
+  data: PropTypes.object.isRequired,
+};
+
+export const pageQuery = graphql`
+  query {
+    logo: file(relativePath: { eq: "customers/propagad/logo.png" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    videoImages: file(relativePath: { eq: "customers/propagad/video-cover.jpg" }) {
+      childImageSharp {
+        fluid {
+          aspectRatio
+          base64
+          sizes
+          src
+          srcSet
+        }
+      }
+    }
+    slider: allFile(filter: { relativeDirectory: { eq: "customers/propagad/slider" } }) {
+      edges {
+        node {
+          id
+          name
+          childImageSharp {
+            fluid(quality: 100) {
+              src
+              srcSet
+              sizes
+              aspectRatio
+              base64
+            }
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default Propagad;

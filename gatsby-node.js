@@ -76,7 +76,7 @@ exports.createPages = ({ graphql, actions }) => {
           });
           // AMP
           createPage({
-            path: post.node.fields.slug + `/amp`,
+            path: `${post.node.fields.slug}amp/`,
             component: path.resolve(
               `src/templates/${String(post.node.frontmatter.template)}.amp.js`,
             ),

@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Title } from 'bloomer';
 import Styled from 'styled-components';
-import PropTypes from 'prop-types';
 
 const StyledTitle = Styled(Title)`
   color: #264A60;
@@ -23,9 +23,13 @@ class Title6 extends React.Component {
   }
 }
 
+Title6.defaultProps = {
+  align: '',
+};
+
 Title6.propTypes = {
-  children: PropTypes.object.isRequired,
-  align: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+  align: PropTypes.string,
 };
 
 export default Title6;

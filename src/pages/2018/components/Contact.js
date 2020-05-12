@@ -149,6 +149,7 @@ export default class Contact extends React.Component {
                   frameBorder="0"
                   style={{ border: 0, width: '100%' }}
                   allowFullScreen
+                  title="Google map"
                 />
               </Card>
             </Column>

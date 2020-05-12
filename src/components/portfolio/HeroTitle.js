@@ -1,15 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 import H1 from '../Typography/H1';
-import img from '../../assets/images/portfolio/details/title.png';
+import img from '../../assets/images/portfolio/title.png';
 
 const Container = styled.div`
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  padding-top: 6em;
+  padding-left: 1em;
+  padding-right: 32px;
+  max-width: 1400px;
+  margin-left: auto;
   @media screen and (max-width: 768px) {
     justify-content: center;
+    padding-top: 1em;
   }
 `;
 
