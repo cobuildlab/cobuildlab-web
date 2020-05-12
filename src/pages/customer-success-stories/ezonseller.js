@@ -140,33 +140,33 @@ export const pageQuery = graphql`
     textImagesOne: file(relativePath: { eq: "customers/laptop-left.png" }) {
       childImageSharp {
         fluid {
-          aspectRatio
           base64
           sizes
-          src
-          srcSet
+          aspectRatio
+          srcWebp
+          srcSetWebp
         }
       }
     }
     textImagesTwo: file(relativePath: { eq: "customers/laptop-right.png" }) {
       childImageSharp {
         fluid {
-          aspectRatio
           base64
           sizes
-          src
-          srcSet
+          aspectRatio
+          srcWebp
+          srcSetWebp
         }
       }
     }
     logo: file(relativePath: { eq: "customers/collabtogrow-logo.png" }) {
       childImageSharp {
         fluid {
-          aspectRatio
           base64
           sizes
-          src
-          srcSet
+          aspectRatio
+          srcWebp
+          srcSetWebp
         }
       }
     }

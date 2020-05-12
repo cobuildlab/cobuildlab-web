@@ -9,8 +9,8 @@ const AnimationImages = ({ src, width, height, index }) => (
 
 AnimationImages.propTypes = {
   src: PropTypes.string.isRequired,
-  width: PropTypes.string.isRequired,
-  height: PropTypes.string.isRequired,
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
   index: PropTypes.number.isRequired,
 };
 

@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import '../../assets/css/2020/common.scss';
 import 'bulma';
 import NewsletterModal from '../NewsletterModal';
+// import GlobalStyle from '../GlobalStyled';
 
 const Container = styled.div`
   background-color: #f4f6fb !important;

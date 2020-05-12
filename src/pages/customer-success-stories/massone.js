@@ -132,33 +132,33 @@ export const pageQuery = graphql`
     logo: file(relativePath: { eq: "customers/massone/logo.jpg" }) {
       childImageSharp {
         fluid {
-          aspectRatio
           base64
           sizes
-          src
-          srcSet
+          aspectRatio
+          srcWebp
+          srcSetWebp
         }
       }
     }
     text: file(relativePath: { eq: "customers/massone/text-corto.jpg" }) {
       childImageSharp {
         fluid {
-          aspectRatio
           base64
           sizes
-          src
-          srcSet
+          aspectRatio
+          srcWebp
+          srcSetWebp
         }
       }
     }
     textImagesOne: file(relativePath: { eq: "customers/massone/text-img-1.png" }) {
       childImageSharp {
         fluid {
-          aspectRatio
           base64
           sizes
-          src
-          srcSet
+          aspectRatio
+          srcWebp
+          srcSetWebp
         }
       }
     }
@@ -169,11 +169,11 @@ export const pageQuery = graphql`
           name
           childImageSharp {
             fluid(quality: 100) {
-              src
-              srcSet
+              base64
               sizes
               aspectRatio
-              base64
+              srcWebp
+              srcSetWebp
             }
           }
         }

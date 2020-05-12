@@ -163,44 +163,44 @@ export const pageQuery = graphql`
     logo: file(relativePath: { eq: "customers/weedmatch/logo.png" }) {
       childImageSharp {
         fluid {
-          aspectRatio
           base64
           sizes
-          src
-          srcSet
+          aspectRatio
+          srcWebp
+          srcSetWebp
         }
       }
     }
     textImagesOne: file(relativePath: { eq: "customers/weedmatch/1.png" }) {
       childImageSharp {
         fluid {
-          aspectRatio
           base64
           sizes
-          src
-          srcSet
+          aspectRatio
+          srcWebp
+          srcSetWebp
         }
       }
     }
     textImagesTwo: file(relativePath: { eq: "customers/weedmatch/2.png" }) {
       childImageSharp {
         fluid {
-          aspectRatio
           base64
           sizes
-          src
-          srcSet
+          aspectRatio
+          srcWebp
+          srcSetWebp
         }
       }
     }
     videoImages: file(relativePath: { eq: "customers/weedmatch/video-cover.jpg" }) {
       childImageSharp {
         fluid {
-          aspectRatio
           base64
           sizes
-          src
-          srcSet
+          aspectRatio
+          srcWebp
+          srcSetWebp
         }
       }
     }
@@ -211,11 +211,11 @@ export const pageQuery = graphql`
           name
           childImageSharp {
             fluid(quality: 100) {
-              src
-              srcSet
+              base64
               sizes
               aspectRatio
-              base64
+              srcWebp
+              srcSetWebp
             }
           }
         }

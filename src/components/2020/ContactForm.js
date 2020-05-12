@@ -144,7 +144,7 @@ export default class Contact extends PureComponent {
         <ToastContainer />
         <Field>
           <Control>
-            <Label for="contanctFormName">Name</Label>
+            <Label htmlFor="contanctFormName">Name</Label>
             <Input
               id="contanctFormName"
               type="text"
@@ -156,7 +156,7 @@ export default class Contact extends PureComponent {
         </Field>
         <Field>
           <Control>
-            <Label for="contanctFormPhone">Phone</Label>
+            <Label htmlFor="contanctFormPhone">Phone</Label>
             <Input
               id="contanctFormPhone"
               type="number"
@@ -169,7 +169,7 @@ export default class Contact extends PureComponent {
         </Field>
         <Field>
           <Control>
-            <Label for="contanctFormEmail">Email</Label>
+            <Label htmlFor="contanctFormEmail">Email</Label>
             <Input
               id="contanctFormEmail"
               type="email"
@@ -182,7 +182,7 @@ export default class Contact extends PureComponent {
         </Field>
         <Field>
           <Control>
-            <Label for="contanctFormMessage">Message</Label>
+            <Label htmlFor="contanctFormMessage">Message</Label>
             <TextArea
               id="contanctFormMessage"
               name="message"

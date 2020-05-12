@@ -1,4 +1,5 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Slider from 'react-slick';
 import Card from './Card';
@@ -55,21 +56,55 @@ const TitleContainer = styled.div`
   }
 `;
 
-const items = data.map(({ title, img, description, slug }) => (
-  <CardContainer key={title}>
-    <CardWrapper>
-      <Card title={title} description={description} image={img} to={slug} />
-    </CardWrapper>
-  </CardContainer>
-));
+const DetailsOtherStories = () => {
+  const data = useStaticQuery(query);
 
-const DetailsOtherStories = () => (
-  <SliderContainer>
-    <TitleContainer>
-      <SubTitle>Other stories that may interest you</SubTitle>
-    </TitleContainer>
-    <Slider {...settings}>{items}</Slider>
-  </SliderContainer>
-);
+  const items = data.allCustomerSuccessStoriesDataJson.edges.map(({ node }) => (
+    <CardContainer key={node.title}>
+      <CardWrapper>
+        <Card
+          title={node.title}
+          description={node.description}
+          image={node.image.childImageSharp.fluid}
+          to={node.slug}
+        />
+      </CardWrapper>
+    </CardContainer>
+  ));
+
+  return (
+    <SliderContainer>
+      <TitleContainer>
+        <SubTitle>Other stories that may interest you</SubTitle>
+      </TitleContainer>
+      <Slider {...settings}>{items}</Slider>
+    </SliderContainer>
+  );
+};
+
+const query = graphql`
+  query {
+    allCustomerSuccessStoriesDataJson {
+      edges {
+        node {
+          image {
+            childImageSharp {
+              fluid(quality: 30) {
+                base64
+                sizes
+                aspectRatio
+                srcWebp
+                srcSetWebp
+              }
+            }
+          }
+          slug
+          title
+          description
+        }
+      }
+    }
+  }
+`;
 
 export default DetailsOtherStories;

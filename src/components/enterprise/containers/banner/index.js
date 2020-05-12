@@ -37,8 +37,6 @@ const Banner = () => {
     />
   ));
 
-  console.log(data);
-
   return (
     <Section isPaddingless id="banner">
       <div className="banner-wrapper demo1">
