@@ -7,7 +7,6 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Header from './header/Header';
 import SeoMetaTags from '../SeoMetaTags';
-// import GlobalStyle from '../GlobalStyled';
 
 const Wrapper = styled.div`
   background-color: #f4f6fb !important;

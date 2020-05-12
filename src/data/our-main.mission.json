@@ -1,0 +1,26 @@
+[
+  {
+    "icon": "bolt",
+    "title": "Scale your Business Faster",
+    "subtitle": "Williamson",
+    "subcontent": "Web designer",
+    "content": "The problem reveals itself when you try to locate a software solution that takes the various spreadsheets, emails, web bots and website utilities that you regularly use and combine them into a solid, reliable, yet still intuitive and accessible software package.",
+    "images": "../assets/images/blog/css1.jpg"
+  },
+  {
+    "icon": "bullhorn",
+    "title": "Differentiate From Competitors",
+    "subtitle": "Miranda Roy",
+    "subcontent": "Web developer",
+    "content": "Find your unique space in the market. Leverage your knowledge and expertise by building the tools that will make you stand and attract your customers.",
+    "images": "../assets/images/blog/css2.jpg"
+  },
+  {
+    "icon": "money",
+    "title": "Offer more value to your Customers",
+    "subtitle": "Steve Thomas",
+    "subcontent": "Web developer",
+    "content": "Be the reference in your industry by providing cutting edge value. Saas products, remote support, mobile presence. etc",
+    "images": "../assets/images/blog/css3.jpg"
+  }
+]
