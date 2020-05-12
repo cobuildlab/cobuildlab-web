@@ -84,7 +84,7 @@ const query = graphql`
   query {
     file(relativePath: { eq: "about/group-banner.png" }) {
       childImageSharp {
-        fluid {
+        fluid(webpQuality: 72) {
           base64
           sizes
           aspectRatio

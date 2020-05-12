@@ -15,14 +15,14 @@ const icons = {
 const UniqueValueProps = () => {
   const data = useStaticQuery(query);
 
-  const items = data.allOurMainMissionJson.edges.map(({ node }) => (
-    <Column key={node.id} isSize={{ mobile: 12, desktop: 4 }}>
+  const items = data.allOurMainMissionJson.edges.map((data, index) => (
+    <Column key={data.node.id} isSize={{ mobile: 12, desktop: 4 }}>
       <ValuePropsCard
-        image={node.images.childImageSharp.fluid}
-        title={node.title}
-        icon={icons[node.icon]}
-        content={node.content}
-        index={node.id}
+        image={data.node.images.childImageSharp.fluid}
+        title={data.node.title}
+        icon={icons[data.node.icon]}
+        content={data.node.content}
+        index={index}
       />
     </Column>
   ));

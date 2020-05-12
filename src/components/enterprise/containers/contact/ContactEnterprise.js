@@ -42,7 +42,7 @@ const query = graphql`
   query {
     file(relativePath: { eq: "contact/1.png" }) {
       childImageSharp {
-        fluid {
+        fluid(webpQuality: 72) {
           base64
           sizes
           aspectRatio
