@@ -59,7 +59,7 @@ const NewsLetterFormFooter = () => {
         setLoading(false);
         // unnecessary because Mailchimp only ever
         // returns a 200 status code
-        // see below for how to handle errors
+        // see below htmlFor how to handle errors
       }
     },
     [email],
@@ -74,7 +74,7 @@ const NewsLetterFormFooter = () => {
         <form onSubmit={onSubmit}>
           <Field>
             <Control>
-              <Label for="newsLetterEmail" hasTextColor="white">
+              <Label htmlFor="newsLetterEmail" hasTextColor="white">
                 Email
               </Label>
               <Input

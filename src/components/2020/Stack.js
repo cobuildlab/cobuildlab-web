@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Section } from 'bloomer';
-import Image from '../../components/enterprise/components/image';
 import Slider from 'react-slick';
 import '../enterprise/containers/brands/brands.scss';
 import logoAngular from '../../assets/images/logos/angularjs-logo.png';
@@ -60,7 +59,7 @@ function Stack() {
               {BRANDS.map((logo, i) => (
                 <div className="brand-item" key={i}>
                   <div className="brand-content">
-                    <Image Path={logo} />
+                    <img src={logo} alt="" />
                   </div>
                 </div>
               ))}

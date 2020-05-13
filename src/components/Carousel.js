@@ -51,7 +51,7 @@ class Carousel extends React.Component {
 }
 
 Carousel.propTypes = {
-  children: PropTypes.object.isRequired,
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
   folder: PropTypes.string.isRequired,
 };
 

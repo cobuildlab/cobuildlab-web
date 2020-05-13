@@ -14,20 +14,7 @@ import { useStaticQuery, graphql } from 'gatsby';
  */
 
 const SeoMetaTags = ({ description, meta, title, lang, image, canonical, titleTemplate }) => {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            seoTitle
-            description
-            author
-            siteUrl
-          }
-        }
-      }
-    `,
-  );
+  const { site, seoImages } = useStaticQuery(query);
 
   const siteTitle = title || site.siteMetadata.seoTitle;
   const metaDescription = description || site.siteMetadata.description;
@@ -73,37 +60,43 @@ const SeoMetaTags = ({ description, meta, title, lang, image, canonical, titleTe
     },
   ];
 
-  // metas tags this check is a images is pass for props
-  const metas =
-    metaImageUrl && metaImageUrl.length
-      ? defaultMetas
-        .concat([
-          {
-            property: 'og:image',
-            content: metaImageUrl,
-          },
-          {
-            property: 'og:image:width',
-            content: image.width,
-          },
-          {
-            property: 'og:image:height',
-            content: image.height,
-          },
-          {
-            name: 'twitter:card',
-            content: 'summary_large_image',
-          },
-        ])
-        .concat(meta)
-      : defaultMetas
-        .concat([
-          {
-            name: 'twitter:card',
-            content: 'summary',
-          },
-        ])
-        .concat(meta);
+  const imagesMetaTags = [
+    {
+      property: 'og:image',
+      content:
+        metaImageUrl && metaImageUrl.length
+          ? metaImageUrl
+          : `${site.siteMetadata.siteUrl}${seoImages.childImageSharp.original.src}`,
+    },
+    {
+      property: 'og:image:width',
+      content:
+        metaImageUrl && metaImageUrl.length
+          ? image.width
+          : seoImages.childImageSharp.original.width,
+    },
+    {
+      property: 'og:image:height',
+      content:
+        metaImageUrl && metaImageUrl.length
+          ? image.height
+          : seoImages.childImageSharp.original.height,
+    },
+    {
+      name: 'twitter:card',
+      content: 'summary_large_image',
+    },
+  ];
+
+  const metas = defaultMetas
+    .concat(imagesMetaTags)
+    .concat([
+      {
+        name: 'twitter:card',
+        content: 'summary',
+      },
+    ])
+    .concat(meta);
 
   const canonicalLink = canonicalRef
     ? [
@@ -126,6 +119,28 @@ const SeoMetaTags = ({ description, meta, title, lang, image, canonical, titleTe
     />
   );
 };
+
+const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        seoTitle
+        description
+        author
+        siteUrl
+      }
+    }
+    seoImages: file(relativePath: { eq: "default-images-seo.png" }) {
+      childImageSharp {
+        original {
+          width
+          src
+          height
+        }
+      }
+    }
+  }
+`;
 
 SeoMetaTags.defaultProps = {
   lang: `en`,

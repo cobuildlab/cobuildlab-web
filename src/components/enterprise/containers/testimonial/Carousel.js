@@ -23,7 +23,7 @@ const settings = {
 const Testimonial = () => {
   const data = useStaticQuery(query);
 
-  const items = data.allTestimonialJson.nodes.map(({ id, content, title, subtitle, image }) => (
+  const items = data.allTestimonialJson.nodes.map(({ id, content, title, subtitle }) => (
     <Item key={id} title={title} subtitle={subtitle} description={content} />
   ));
 
@@ -46,7 +46,11 @@ const query = graphql`
       nodes {
         image {
           id
-          publicURL
+          childImageSharp {
+            fluid {
+              srcWebp
+            }
+          }
         }
         content
         id

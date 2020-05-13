@@ -21,10 +21,10 @@ const ContactEnterprise = () => {
     <Section id="contact">
       <Container>
         <Columns>
-          <Column isHidden="mobile" isSize={4}>
+          <Column isHidden="mobile" isSize={5}>
             <Img fluid={data.file.childImageSharp.fluid} alt="" />
           </Column>
-          <Column isSize={{ mobile: 12, desktop: 6 }} isOffset={{ mobile: 0, desktop: 2 }}>
+          <Column isSize={{ mobile: 12, desktop: 6 }} isOffset={{ mobile: 0, desktop: 1 }}>
             <H4>
               Contact US for a{' '}
               <span className="enterprise-text-orange sub-title">FREE 1 hour Consultation</span>{' '}
@@ -43,12 +43,12 @@ const query = graphql`
   query {
     file(relativePath: { eq: "contact/1.png" }) {
       childImageSharp {
-        fluid(quality: 30) {
-          srcSet
-          src
+        fluid(webpQuality: 72) {
+          base64
           sizes
           aspectRatio
-          base64
+          srcWebp
+          srcSetWebp
         }
       }
     }

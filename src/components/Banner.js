@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 class Banner extends React.Component {
   render() {
     const { src } = this.props;
+    console.log(this.props);
     return (
       <Container>
         <Columns>

@@ -1,19 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const AnimationImages = ({ node, index }) => (
+const AnimationImages = ({ src, width, height, index }) => (
   <span className={`image${index + 1}`}>
-    <img
-      alt=""
-      src={node.childImageSharp.resolutions.src}
-      width={node.childImageSharp.resolutions.width}
-      height={node.childImageSharp.resolutions.height}
-    />
+    <img alt="" src={src} width={width} height={height} />
   </span>
 );
 
 AnimationImages.propTypes = {
-  node: PropTypes.object.isRequired,
+  src: PropTypes.string.isRequired,
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
   index: PropTypes.number.isRequired,
 };
 

@@ -164,11 +164,11 @@ export const pageQuery = graphql`
           name
           childImageSharp {
             fluid(quality: 100) {
-              src
-              srcSet
+              base64
               sizes
               aspectRatio
-              base64
+              srcWebp
+              srcSetWebp
             }
           }
         }
@@ -177,44 +177,44 @@ export const pageQuery = graphql`
     textImagesTwo: file(relativePath: { eq: "customers/4geek/1.png" }) {
       childImageSharp {
         fluid {
-          aspectRatio
           base64
           sizes
-          src
-          srcSet
+          aspectRatio
+          srcWebp
+          srcSetWebp
         }
       }
     }
     textImagesOne: file(relativePath: { eq: "customers/4geek/2.png" }) {
       childImageSharp {
         fluid {
-          aspectRatio
           base64
           sizes
-          src
-          srcSet
+          aspectRatio
+          srcWebp
+          srcSetWebp
         }
       }
     }
     videoImages: file(relativePath: { eq: "customers/4geek/video-cover.jpg" }) {
       childImageSharp {
         fluid {
-          aspectRatio
           base64
           sizes
-          src
-          srcSet
+          aspectRatio
+          srcWebp
+          srcSetWebp
         }
       }
     }
     logo: file(relativePath: { eq: "customers/4geek/logo.png" }) {
       childImageSharp {
         fluid {
-          aspectRatio
           base64
           sizes
-          src
-          srcSet
+          aspectRatio
+          srcWebp
+          srcSetWebp
         }
       }
     }
