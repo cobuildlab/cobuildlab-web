@@ -26,7 +26,7 @@ Small and medium businesses can have challenges with the commercialization and i
 
 <title-3>2. Stay healthy and safe</title-3>
 
-[![Stay-healthy-and-safe](media/3.png)](#)
+[![Stay-healthy-and-safe](media/1.1.png)](#)
 
 While many businesses can transfer most of their work online, some aren’t so lucky. For those who still need people in the office or another working environment during the coronavirus outbreak, you must undertake a comprehensive health & safety risk assessment.
 On a fundamental level, this will mean more frequent cleaning, as well as limiting physical contact between people. All of this could impact on your routine, and compromise the safety of your facilities and employees.
