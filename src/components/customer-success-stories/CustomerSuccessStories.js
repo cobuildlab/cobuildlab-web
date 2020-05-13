@@ -12,12 +12,12 @@ const query = graphql`
         node {
           image {
             childImageSharp {
-              fluid(quality: 30) {
-                src
-                srcSet
-                sizes
+              fluid(webpQuality: 72) {
                 base64
+                sizes
                 aspectRatio
+                srcWebp
+                srcSetWebp
               }
             }
           }

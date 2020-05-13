@@ -74,11 +74,11 @@ const query = graphql`
           id
           childImageSharp {
             fluid(quality: 30) {
-              src
               base64
-              srcSet
               sizes
               aspectRatio
+              srcWebp
+              srcSetWebp
             }
           }
         }

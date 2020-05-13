@@ -28,10 +28,14 @@ const Banner = () => {
   const data = useStaticQuery(query);
 
   const animation = data.animation.edges.map(({ node }, index) => (
-    <AnimationImages node={node} key={node.id} index={index} />
+    <AnimationImages
+      width={node.childImageSharp.resolutions.width}
+      height={node.childImageSharp.resolutions.height}
+      src={node.childImageSharp.resolutions.srcWebp}
+      key={node.id}
+      index={index}
+    />
   ));
-
-  console.log(data);
 
   return (
     <Section isPaddingless id="banner">
@@ -89,8 +93,8 @@ const query = graphql`
           childImageSharp {
             resolutions(quality: 10) {
               height
-              src
               width
+              srcWebp
             }
           }
         }
@@ -98,12 +102,12 @@ const query = graphql`
     }
     heroImages: file(relativePath: { eq: "banner/group-banner-2.png" }) {
       childImageSharp {
-        fluid(quality: 30) {
-          src
+        fluid(webpQuality: 72) {
           base64
-          srcSet
           sizes
           aspectRatio
+          srcWebp
+          srcSetWebp
         }
       }
     }

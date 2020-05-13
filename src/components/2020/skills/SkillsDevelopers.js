@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Columns, Column, Section } from 'bloomer';
-import Image from '../../enterprise/components/image';
 import Skills_img from '../../../assets/images/skills/cobuild-lab-customers.png';
 import { Progressbar } from './ProgressBar';
 import Typography from '../../2020/Typography';
@@ -18,7 +17,7 @@ function SkillsDevelopers() {
           <Columns>
             <Column isHidden="mobile" isSize={6}>
               <div className="skills-image">
-                <Image Path={Skills_img} Class="logo-img" />
+                <img src={Skills_img} Class="logo-img" alt="" />
               </div>
             </Column>
             <Column isSize={{ mobile: 12, desktop: 6 }}>

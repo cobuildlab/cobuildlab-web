@@ -6,7 +6,7 @@ span.token.numer{
     padding: 0px !important;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Lato-Regular';
     src: url(../fonts/Lato-Regular.ttf);
     font-weight: normal;
@@ -28,7 +28,7 @@ span.token.numer{
     font-weight: normal;
     font-variant: normal;
     text-rendering: optimizeLegibility;
-}
+}*/
 
 html {
     overflow-x: hidden;

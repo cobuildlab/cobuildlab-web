@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&display=swap");
+// @import url("https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&display=swap");
 @import "colors/color1";
 @import "variable";
+
 
 .enterprise-section {
   padding-top: calc(40px + (100 - 40) * ((100vw - 320px) / (1920 - 320)));
@@ -21,7 +22,6 @@
   color: $color-dark;
   width: 100%;
   position: relative;
-  font-family: "Nunito", sans-serif;
   font-weight: 400;
   letter-spacing: 0.5px;
 }

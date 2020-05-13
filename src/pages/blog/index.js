@@ -43,14 +43,9 @@ class Blog extends Component {
     const description = 'The Blog for Software Entrepreneurs of Miami';
     // const siteDescription = get(this, 'props.data.site.siteMetadata.description');
     const posts = get(this, 'props.data.allMarkdownRemark.edges');
-    const opGraphImages = get(this, 'props.data.ogImages.edges');
     return (
       <Layout>
-        <SeoMetaTags
-          title={siteTitle}
-          description={description}
-          image={opGraphImages[0].node.frontmatter.image.childImageSharp.resize}
-        />
+        <SeoMetaTags title={siteTitle} description={description} />
         <Hero isSize="small">
           <HeroHeader>
             <Header />
@@ -153,23 +148,6 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         description
-      }
-    }
-    ogImages: allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}, limit: 1, filter: {fileAbsolutePath: {regex: "/(pages/blog)/.*\\.md$/"}}) {
-      edges {
-        node {
-          frontmatter {
-            image {
-              childImageSharp {
-                resize(width: 1200, height: 1200) {
-                  width
-                  src
-                  height
-                }
-              }
-            }
-          }
-        }
       }
     }
     allMarkdownRemark(

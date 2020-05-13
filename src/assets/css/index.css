@@ -11,6 +11,7 @@ span.token.numer{
     font-weight: lighter;
     font-variant: normal;
     text-rendering: optimizeLegibility;
+    font-display: swap;
 }
 
 @font-face {
@@ -19,6 +20,7 @@ span.token.numer{
     font-weight: normal;
     font-variant: normal;
     text-rendering: optimizeLegibility;
+    font-display: swap;
 }
 
 @font-face {
@@ -27,6 +29,7 @@ span.token.numer{
     font-weight: bold;
     font-variant: normal;
     text-rendering: optimizeLegibility;
+    font-display: swap;
 }
 
 @font-face {
@@ -35,6 +38,7 @@ span.token.numer{
     font-weight: normal;
     font-variant: normal;
     text-rendering: optimizeLegibility;
+    font-display: swap;
 }
 
 html {

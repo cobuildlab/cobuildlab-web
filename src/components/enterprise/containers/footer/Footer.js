@@ -49,11 +49,11 @@ const query = graphql`
     whiteLogo: file(relativePath: { eq: "logos/cobuild-white-logo.png" }) {
       childImageSharp {
         fluid {
-          src
-          srcSet
-          sizes
           base64
+          sizes
           aspectRatio
+          srcWebp
+          srcSetWebp
         }
       }
     }

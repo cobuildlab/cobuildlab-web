@@ -1,6 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
 import { HeroHeader, HeroBody, Hero, Section, Container } from 'bloomer';
 import styled from 'styled-components';
 import SeoMetaTags from '../components/SeoMetaTags';
@@ -40,12 +38,11 @@ const CustomesWrapper = styled.div`
   margin-bottom: 4.5em;
 `;
 
-const CustomerSuccessStoriesIndex = ({ data }) => (
+const CustomerSuccessStoriesIndex = () => (
   <Layout>
     <SeoMetaTags
       title="Customer Success Stories"
       description="Success Cases for the Cobuild Lab in Miami"
-      image={data.seoImages.childImageSharp.resize}
     />
     <Hero>
       <HeroHeader>
@@ -80,23 +77,5 @@ const CustomerSuccessStoriesIndex = ({ data }) => (
     </Section>
   </Layout>
 );
-
-CustomerSuccessStoriesIndex.propTypes = {
-  data: PropTypes.object.isRequired,
-};
-
-export const pageQuery = graphql`
-  query {
-    seoImages: file(relativePath: { eq: "customers/jobcore.jpg" }) {
-      childImageSharp {
-        resize(width: 1200, height: 1200) {
-          width
-          height
-          src
-        }
-      }
-    }
-  }
-`;
 
 export default CustomerSuccessStoriesIndex;
