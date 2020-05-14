@@ -8,6 +8,7 @@ const CalculatorCell = styled.div`
   background: ${({ isColor }) => (isColor === 'white' ? '#fff' : '#264A60')};
   display: ${({ isDisplay }) => isDisplay || 'block'};
   justify-content: ${({ isJustify }) => isJustify || 'flex-start'};
+  align-items: ${({ isAlign }) => isAlign || 'flex-start'};
 `;
 
 export default CalculatorCell;

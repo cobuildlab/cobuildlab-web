@@ -1,8 +1,7 @@
-import React from 'react';
 import styled from 'styled-components';
 
-const Text = styled.span`
-  color: #264a60;
+const CalculatorCellTitle = styled.span`
+  color: ${({ indigo }) => (indigo ? '#264a60' : '#fff')};
   font-size: 28px;
   width: 100%;
   height: 100%;
@@ -12,7 +11,5 @@ const Text = styled.span`
   justify-content: center;
   padding: 20px;
 `;
-
-const CalculatorCellTitle = () => <Text>Amount</Text>;
 
 export default CalculatorCellTitle;

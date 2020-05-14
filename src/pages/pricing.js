@@ -1,15 +1,21 @@
 import React from 'react';
 import { Hero, HeroHeader, HeroBody, Container, Column, Columns, Section } from 'bloomer';
+import { Icon } from 'react-icons-kit';
+import { android } from 'react-icons-kit/fa/android';
 import SeoMetaTags from '../components/SeoMetaTags';
 import Layout from '../components/2020/Layout';
 import Header from '../components/2020/header/Header';
 import PricingHero from '../components/pricing/PricingHero';
+
 import CalculatorWrapper from '../components/calculator/CalculatorWrapper';
-import CalculatorCell from '../components/calculator/CalculatorCell';
-import CalculatorHeader from '../components/calculator/CalculatorHeader';
-import CalculatorCellTitle from '../components/calculator/CalculatorCellTitle';
+
+import CalculatorCellTitle from '../components/calculator/cell/CalculatorCellTitle';
+import CalculatorCell from '../components/calculator/cell/CalculatorCell';
+
+import CalculatorFeatureName from '../components/calculator/feature/CalculatorFeatureName';
 import CalculatorFeatureDescription from '../components/calculator/feature/CalculatorFeatureDescription';
 import CalculatorFeatureCard from '../components/calculator/feature/CalculatorFeatureCard';
+import CalculatorFeatureCost from '../components/calculator/feature/CalculatorFeatureCost';
 
 const Pricing = () => {
   return (
@@ -28,65 +34,80 @@ const Pricing = () => {
               <Columns isMarginless>
                 <Column isSize={9} isPaddingless>
                   <CalculatorCell isColor="white">
-                    <CalculatorCellTitle>Platform</CalculatorCellTitle>
+                    <CalculatorCellTitle indigo>Platform</CalculatorCellTitle>
                   </CalculatorCell>
                 </Column>
                 <Column isSize={3} isPaddingless>
                   <CalculatorCell>
-                    <CalculatorHeader />
+                    <CalculatorCellTitle>Amount</CalculatorCellTitle>
                   </CalculatorCell>
                 </Column>
               </Columns>
               <Columns isMarginless isMultiline>
-                <Column isSize={9} isMultiline>
-                  <Column isSize={12} isPaddingless isDisplay="flex">
-                    <Column isSize={4} isPaddingless>
-                      <CalculatorCell isColor="white">
-                        <CalculatorFeatureDescription>
-                          Select the platform to your project
-                        </CalculatorFeatureDescription>
-                      </CalculatorCell>
-                    </Column>
-                    <Column isSize={8} isPaddingless>
-                      <CalculatorCell isColor="white" isDisplay="flex" isJustify="space-between">
-                        <CalculatorFeatureCard>
-                          <p>hola</p>
-                        </CalculatorFeatureCard>
-                        <CalculatorFeatureCard>
-                          <p>hola</p>
-                        </CalculatorFeatureCard>
-                        <CalculatorFeatureCard>
-                          <p>hola</p>
-                        </CalculatorFeatureCard>
-                      </CalculatorCell>
-                    </Column>
-                  </Column>
-                  <Column isSize={12} isPaddingless isDisplay="flex">
-                    <Column isSize={4} isPaddingless>
-                      <CalculatorCell isColor="white">
-                        <CalculatorFeatureDescription>
-                          Select the platform to your project
-                        </CalculatorFeatureDescription>
-                      </CalculatorCell>
-                    </Column>
-                    <Column isSize={8} isPaddingless>
-                      <CalculatorCell isColor="white" isDisplay="flex" isJustify="space-between">
-                        <CalculatorFeatureCard>
-                          <p>hola</p>
-                        </CalculatorFeatureCard>
-                        <CalculatorFeatureCard>
-                          <p>hola</p>
-                        </CalculatorFeatureCard>
-                        <CalculatorFeatureCard>
-                          <p>hola</p>
-                        </CalculatorFeatureCard>
-                      </CalculatorCell>
-                    </Column>
-                  </Column>
+                <Column isSize={3} isPaddingless>
+                  <CalculatorCell isColor="white" isDisplay="flex" isAlign="center">
+                    <CalculatorFeatureDescription>
+                      Select the platform to your project
+                    </CalculatorFeatureDescription>
+                  </CalculatorCell>
+                </Column>
+                <Column isSize={6} isPaddingless>
+                  <CalculatorCell isColor="white" isDisplay="flex" isJustify="space-between">
+                    <CalculatorFeatureCard>
+                      <Icon icon={android} size={30} />
+                      <CalculatorFeatureName>Android</CalculatorFeatureName>
+                    </CalculatorFeatureCard>
+                    <CalculatorFeatureCard>
+                      <Icon icon={android} size={30} />
+                      <CalculatorFeatureName>Android</CalculatorFeatureName>
+                    </CalculatorFeatureCard>
+                    <CalculatorFeatureCard>
+                      <Icon icon={android} size={30} />
+                      <CalculatorFeatureName>Android</CalculatorFeatureName>
+                    </CalculatorFeatureCard>
+                  </CalculatorCell>
                 </Column>
                 <Column isSize={3} isPaddingless>
-                  <CalculatorCell isColor="indigo">
-                    <h1>hola</h1>
+                  <CalculatorCell
+                    isColor="indigo"
+                    isDisplay="flex"
+                    isAlign="center"
+                    isJustify="center">
+                    <CalculatorFeatureCost cost="120" />
+                  </CalculatorCell>
+                </Column>
+              </Columns>
+              <Columns isMarginless isMultiline>
+                <Column isSize={3} isPaddingless>
+                  <CalculatorCell isColor="white" isDisplay="flex" isAlign="center">
+                    <CalculatorFeatureDescription>
+                      Select the platform to your project
+                    </CalculatorFeatureDescription>
+                  </CalculatorCell>
+                </Column>
+                <Column isSize={6} isPaddingless>
+                  <CalculatorCell isColor="white" isDisplay="flex" isJustify="space-between">
+                    <CalculatorFeatureCard>
+                      <Icon icon={android} size={30} />
+                      <CalculatorFeatureName>Android</CalculatorFeatureName>
+                    </CalculatorFeatureCard>
+                    <CalculatorFeatureCard>
+                      <Icon icon={android} size={30} />
+                      <CalculatorFeatureName>Android</CalculatorFeatureName>
+                    </CalculatorFeatureCard>
+                    <CalculatorFeatureCard>
+                      <Icon icon={android} size={30} />
+                      <CalculatorFeatureName>Android</CalculatorFeatureName>
+                    </CalculatorFeatureCard>
+                  </CalculatorCell>
+                </Column>
+                <Column isSize={3} isPaddingless>
+                  <CalculatorCell
+                    isColor="indigo"
+                    isDisplay="flex"
+                    isAlign="center"
+                    isJustify="center">
+                    <CalculatorFeatureCost cost="120" />
                   </CalculatorCell>
                 </Column>
               </Columns>
