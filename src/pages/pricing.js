@@ -17,6 +17,8 @@ import CalculatorFeatureDescription from '../components/calculator/feature/Calcu
 import CalculatorFeatureCard from '../components/calculator/feature/CalculatorFeatureCard';
 import CalculatorFeatureCost from '../components/calculator/feature/CalculatorFeatureCost';
 
+import PricingContact from '../components/pricing/PricingContact';
+
 const Pricing = () => {
   return (
     <Layout>
@@ -113,6 +115,9 @@ const Pricing = () => {
               </Columns>
             </CalculatorWrapper>
           </Container>
+        </Section>
+        <Section>
+          <PricingContact />
         </Section>
       </Hero>
     </Layout>
