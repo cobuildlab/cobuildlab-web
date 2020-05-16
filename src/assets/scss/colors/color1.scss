@@ -84,6 +84,7 @@ $primary4: var(--primary4);
 .progressbar2 .progress-bar,
 .custom-control-input:checked ~ .custom-control-label::before {
   background-color: $primary1;
+  color: #fff;
 }
 .animated-bg i {
   background: $primary1;
