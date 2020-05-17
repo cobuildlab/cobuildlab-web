@@ -53,7 +53,7 @@ const CalculatorSectionDesign = ({ onPlatformSelect }) => {
           <CalculatorLayoutDescripcion>
             <CalculatorCell isDisplay="flex" isAlign="center" isJustify="center">
               <CalculatorFeatureDescription>
-                Select the platform to your project
+                What would your UI theme be?
               </CalculatorFeatureDescription>
             </CalculatorCell>
           </CalculatorLayoutDescripcion>
