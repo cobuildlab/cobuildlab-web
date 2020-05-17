@@ -1,6 +1,8 @@
+import React, { useCallback } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const CalculatorFeatureCard = styled.div`
+const Container = styled.div`
   width: 140px;
   height: 135px;
   margin: 10px;
@@ -23,5 +25,24 @@ const CalculatorFeatureCard = styled.div`
     padding: 5px 0;
   }
 `;
+
+const CalculatorFeatureCard = ({ children, onSelect, data, isActive }) => {
+  const handleClick = useCallback(() => {
+    onSelect(data);
+  }, []);
+
+  return (
+    <Container onClick={handleClick} isActive={isActive}>
+      {children}
+    </Container>
+  );
+};
+
+CalculatorFeatureCard.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+  data: PropTypes.object.isRequired,
+  onSelect: PropTypes.func.isRequired,
+  isActive: PropTypes.bool.isRequired,
+};
 
 export default CalculatorFeatureCard;

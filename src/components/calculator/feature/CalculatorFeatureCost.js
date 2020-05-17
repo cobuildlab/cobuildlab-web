@@ -13,10 +13,15 @@ const Container = styled.span`
   }
 `;
 
-const CalculatorFeatureCost = ({ cost }) => <Container>{cost}</Container>;
+const CalculatorFeatureCost = ({ max, min }) => (
+  <Container>
+    {min} - {max}
+  </Container>
+);
 
 CalculatorFeatureCost.propTypes = {
-  cost: PropTypes.string.isRequired,
+  max: PropTypes.number.isRequired,
+  min: PropTypes.number.isRequired,
 };
 
 export default CalculatorFeatureCost;

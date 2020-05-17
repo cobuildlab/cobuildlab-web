@@ -9,7 +9,6 @@ const CalculatorSection = () => {
     <Container>
       <CalculatorWrapper>
         <CalculatorCellPlatform />
-        <CalculatorCellPlatform />
       </CalculatorWrapper>
     </Container>
   );
