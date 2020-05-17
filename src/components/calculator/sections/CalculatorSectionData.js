@@ -2,9 +2,10 @@ import React, { useState, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { Columns } from 'bloomer';
 import { Icon } from 'react-icons-kit';
-import { android } from 'react-icons-kit/fa/android';
-import { apple } from 'react-icons-kit/fa/apple';
 import { globe } from 'react-icons-kit/fa/globe';
+import { shoppingCart } from 'react-icons-kit/fa/shoppingCart';
+import { photo } from 'react-icons-kit/fa/photo';
+import { tasks } from 'react-icons-kit/fa/tasks';
 
 import CalculatorLayoutLeftSection from '../layout/CalculatorLayoutLeftSection';
 import CalculatorLayoutRightSection from '../layout/CalculatorLayoutRightSection';
@@ -19,26 +20,56 @@ import CalculatorFeatureDescription from '../feature/CalculatorFeatureDescriptio
 import CalculatorFeatureCard from '../feature/CalculatorFeatureCard';
 import CalculatorFeatureCost from '../feature/CalculatorFeatureCost';
 
-const data = {
-  android: {
-    name: 'android',
-    min: 1500,
-    max: 2500,
+/*const data = {
+  'social-network': {
+    name: 'social-network',
+    min: 4000,
+    max: 6000,
   },
-  apple: {
-    name: 'apple',
-    min: 1500,
-    max: 2500,
+  eCommerce: {
+    name: 'eCommerce',
+    min: 3500,
+    max: 5500,
   },
-  'cross-platform': {
-    name: 'cross-platform',
-    min: 2000,
-    max: 2800,
+  'media-manager':{
+    name: 'media-manager',
+    min: 3000,
+    max: 5000,
   },
-};
+  'content-manager':{
+    name: 'content-manager',
+    min: 4000,
+    max: 5500,
+  }
+}*/ const data = [
+  {
+    name: 'social network',
+    icon: globe,
+    min: 4000,
+    max: 6000,
+  },
+  {
+    name: 'eCommerce',
+    icon: shoppingCart,
+    min: 3500,
+    max: 5500,
+  },
+  {
+    name: 'media manager',
+    icon: photo,
+    min: 3000,
+    max: 5000,
+  },
+  {
+    name: 'content manager',
+    icon: tasks,
+    min: 4000,
+    max: 5500,
+  },
+];
 
-const CalculatorSectionPlatform = ({ onPlatformSelect }) => {
-  const [currentPlatform, setCurrentPlatform] = useState(data.android);
+const CalculatorSectionData = ({ onPlatformSelect }) => {
+  const [currentPlatform, setCurrentPlatform] = useState(data[0]);
 
   const onClick = useCallback(
     (platform) => {
@@ -47,49 +78,38 @@ const CalculatorSectionPlatform = ({ onPlatformSelect }) => {
     [currentPlatform],
   );
 
+  const items = data.map((item) => (
+    <CalculatorFeatureCard
+      key={item.name}
+      isActive={currentPlatform.name === item.name}
+      data={item}
+      onSelect={onClick}>
+      <Icon icon={item.icon} size={30} />
+      <CalculatorFeatureName>{item.name}</CalculatorFeatureName>
+    </CalculatorFeatureCard>
+  ));
+
   return (
-    <Columns isMarginless isMultiline>
+    <Columns isMarginless>
       <CalculatorLayoutLeftSection>
         <CalculatorLayoutCellTitle>
           <CalculatorCell>
-            <CalculatorCellTitle indigo>Platform</CalculatorCellTitle>
+            <CalculatorCellTitle indigo>Design</CalculatorCellTitle>
           </CalculatorCell>
         </CalculatorLayoutCellTitle>
         <CalculatorLayoutDescripcion>
           <CalculatorCell isDisplay="flex" isAlign="center" isJustify="center">
             <CalculatorFeatureDescription>
-              Select the platform to your project
+              What would your UI theme be?
             </CalculatorFeatureDescription>
           </CalculatorCell>
         </CalculatorLayoutDescripcion>
         <CalculatorLayoutCards>
-          <CalculatorCell isDisplay="flex">
-            <CalculatorFeatureCard
-              isActive={currentPlatform.name === 'android'}
-              data={data['android']}
-              onSelect={onClick}>
-              <Icon icon={android} size={30} />
-              <CalculatorFeatureName>Android</CalculatorFeatureName>
-            </CalculatorFeatureCard>
-            <CalculatorFeatureCard
-              isActive={currentPlatform.name === 'apple'}
-              data={data['apple']}
-              onSelect={onClick}>
-              <Icon icon={apple} size={30} />
-              <CalculatorFeatureName>Apple</CalculatorFeatureName>
-            </CalculatorFeatureCard>
-            <CalculatorFeatureCard
-              isActive={currentPlatform.name === 'cross-platform'}
-              data={data['cross-platform']}
-              onSelect={onClick}>
-              <Icon icon={globe} size={30} />
-              <CalculatorFeatureName>Cross-platform</CalculatorFeatureName>
-            </CalculatorFeatureCard>
-          </CalculatorCell>
+          <CalculatorCell isDisplay="flex">{items}</CalculatorCell>
         </CalculatorLayoutCards>
       </CalculatorLayoutLeftSection>
       <CalculatorLayoutRightSection>
-        <CalculatorCell isDisplay="flex" isBackground>
+        <CalculatorCell isDisplay="flex" isAlign="center" isBackground>
           <CalculatorFeatureCost max={currentPlatform.max} min={currentPlatform.min} />
         </CalculatorCell>
       </CalculatorLayoutRightSection>
@@ -97,12 +117,12 @@ const CalculatorSectionPlatform = ({ onPlatformSelect }) => {
   );
 };
 
-CalculatorSectionPlatform.defaultProps = {
+CalculatorSectionData.defaultProps = {
   onPlatformSelect: () => null,
 };
 
-CalculatorSectionPlatform.propTypes = {
+CalculatorSectionData.propTypes = {
   onPlatformSelect: PropTypes.func,
 };
 
-export default CalculatorSectionPlatform;
+export default CalculatorSectionData;

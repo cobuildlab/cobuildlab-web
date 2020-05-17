@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { Columns } from 'bloomer';
 import { Icon } from 'react-icons-kit';
@@ -42,47 +42,45 @@ const CalculatorSectionDesign = ({ onPlatformSelect }) => {
   );
 
   return (
-    <Fragment>
-      <Columns isMarginless>
-        <CalculatorLayoutLeftSection>
-          <CalculatorLayoutCellTitle>
-            <CalculatorCell>
-              <CalculatorCellTitle indigo>Design</CalculatorCellTitle>
-            </CalculatorCell>
-          </CalculatorLayoutCellTitle>
-          <CalculatorLayoutDescripcion>
-            <CalculatorCell isDisplay="flex" isAlign="center" isJustify="center">
-              <CalculatorFeatureDescription>
-                What would your UI theme be?
-              </CalculatorFeatureDescription>
-            </CalculatorCell>
-          </CalculatorLayoutDescripcion>
-          <CalculatorLayoutCards>
-            <CalculatorCell isDisplay="flex">
-              <CalculatorFeatureCard
-                isActive={currentPlatform.name === 'custom-ui'}
-                data={data['custom-ui']}
-                onSelect={onClick}>
-                <Icon icon={thLarge} size={30} />
-                <CalculatorFeatureName>Custom UI</CalculatorFeatureName>
-              </CalculatorFeatureCard>
-              <CalculatorFeatureCard
-                isActive={currentPlatform.name === 'template'}
-                data={data['template']}
-                onSelect={onClick}>
-                <Icon icon={colIcon} size={30} />
-                <CalculatorFeatureName>Template</CalculatorFeatureName>
-              </CalculatorFeatureCard>
-            </CalculatorCell>
-          </CalculatorLayoutCards>
-        </CalculatorLayoutLeftSection>
-        <CalculatorLayoutRightSection>
-          <CalculatorCell isDisplay="flex" isAlign="center" isBackground>
-            <CalculatorFeatureCost max={currentPlatform.max} min={currentPlatform.min} />
+    <Columns isMarginless>
+      <CalculatorLayoutLeftSection>
+        <CalculatorLayoutCellTitle>
+          <CalculatorCell>
+            <CalculatorCellTitle indigo>Design</CalculatorCellTitle>
           </CalculatorCell>
-        </CalculatorLayoutRightSection>
-      </Columns>
-    </Fragment>
+        </CalculatorLayoutCellTitle>
+        <CalculatorLayoutDescripcion>
+          <CalculatorCell isDisplay="flex" isAlign="center" isJustify="center">
+            <CalculatorFeatureDescription>
+              What would your UI theme be?
+            </CalculatorFeatureDescription>
+          </CalculatorCell>
+        </CalculatorLayoutDescripcion>
+        <CalculatorLayoutCards>
+          <CalculatorCell isDisplay="flex">
+            <CalculatorFeatureCard
+              isActive={currentPlatform.name === 'custom-ui'}
+              data={data['custom-ui']}
+              onSelect={onClick}>
+              <Icon icon={thLarge} size={30} />
+              <CalculatorFeatureName>Custom UI</CalculatorFeatureName>
+            </CalculatorFeatureCard>
+            <CalculatorFeatureCard
+              isActive={currentPlatform.name === 'template'}
+              data={data['template']}
+              onSelect={onClick}>
+              <Icon icon={colIcon} size={30} />
+              <CalculatorFeatureName>Template</CalculatorFeatureName>
+            </CalculatorFeatureCard>
+          </CalculatorCell>
+        </CalculatorLayoutCards>
+      </CalculatorLayoutLeftSection>
+      <CalculatorLayoutRightSection>
+        <CalculatorCell isDisplay="flex" isAlign="center" isBackground>
+          <CalculatorFeatureCost max={currentPlatform.max} min={currentPlatform.min} />
+        </CalculatorCell>
+      </CalculatorLayoutRightSection>
+    </Columns>
   );
 };
 

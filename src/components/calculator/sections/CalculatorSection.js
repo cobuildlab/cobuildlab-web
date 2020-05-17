@@ -6,6 +6,7 @@ import CalculatorHeader from './CalculatorHeader';
 import CalculatorSectionPlatform from './CalculatorSectionPlatform';
 import CalculatorSectionDesign from './CalculatorSectionDesign';
 import CalculatorSectionSecutiry from './CalculatorSectionSecutiry';
+import CalculatorSectionData from './CalculatorSectionData';
 
 const CalculatorSection = () => {
   return (
@@ -15,6 +16,7 @@ const CalculatorSection = () => {
         <CalculatorSectionPlatform />
         <CalculatorSectionDesign />
         <CalculatorSectionSecutiry />
+        <CalculatorSectionData />
       </CalculatorWrapper>
     </Container>
   );

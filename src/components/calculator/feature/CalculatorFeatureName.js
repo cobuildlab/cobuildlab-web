@@ -12,6 +12,7 @@ const Text = styled.span`
   display: block;
   padding: 0 0.5em;
   color: inherit;
+  text-transform: capitalize;
 `;
 
 const CalculatorFeatureName = ({ children }) => (
