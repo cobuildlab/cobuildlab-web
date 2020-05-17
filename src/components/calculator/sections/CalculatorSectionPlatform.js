@@ -19,26 +19,32 @@ import CalculatorFeatureDescription from '../feature/CalculatorFeatureDescriptio
 import CalculatorFeatureCard from '../feature/CalculatorFeatureCard';
 import CalculatorFeatureCost from '../feature/CalculatorFeatureCost';
 
-const data = {
-  android: {
+const data = [
+  {
+    id: 1,
     name: 'android',
+    icon: android,
     min: 1500,
     max: 2500,
   },
-  apple: {
+  {
+    id: 2,
     name: 'apple',
+    icon: apple,
     min: 1500,
     max: 2500,
   },
-  'cross-platform': {
-    name: 'cross-platform',
+  {
+    id: 3,
+    name: 'cross platform',
+    icon: globe,
     min: 2000,
     max: 2800,
   },
-};
+];
 
 const CalculatorSectionPlatform = ({ onPlatformSelect }) => {
-  const [currentPlatform, setCurrentPlatform] = useState(data.android);
+  const [currentPlatform, setCurrentPlatform] = useState(data[0]);
 
   const onClick = useCallback(
     (platform) => {
@@ -46,6 +52,17 @@ const CalculatorSectionPlatform = ({ onPlatformSelect }) => {
     },
     [currentPlatform],
   );
+
+  const items = data.map((item) => (
+    <CalculatorFeatureCard
+      key={item.name}
+      isActive={currentPlatform.id === item.id}
+      data={item}
+      onSelect={onClick}>
+      <Icon icon={item.icon} size={30} />
+      <CalculatorFeatureName>{item.name}</CalculatorFeatureName>
+    </CalculatorFeatureCard>
+  ));
 
   return (
     <Columns isMarginless isMultiline>
@@ -63,29 +80,7 @@ const CalculatorSectionPlatform = ({ onPlatformSelect }) => {
           </CalculatorCell>
         </CalculatorLayoutDescripcion>
         <CalculatorLayoutCards>
-          <CalculatorCell isDisplay="flex">
-            <CalculatorFeatureCard
-              isActive={currentPlatform.name === 'android'}
-              data={data['android']}
-              onSelect={onClick}>
-              <Icon icon={android} size={30} />
-              <CalculatorFeatureName>Android</CalculatorFeatureName>
-            </CalculatorFeatureCard>
-            <CalculatorFeatureCard
-              isActive={currentPlatform.name === 'apple'}
-              data={data['apple']}
-              onSelect={onClick}>
-              <Icon icon={apple} size={30} />
-              <CalculatorFeatureName>Apple</CalculatorFeatureName>
-            </CalculatorFeatureCard>
-            <CalculatorFeatureCard
-              isActive={currentPlatform.name === 'cross-platform'}
-              data={data['cross-platform']}
-              onSelect={onClick}>
-              <Icon icon={globe} size={30} />
-              <CalculatorFeatureName>Cross-platform</CalculatorFeatureName>
-            </CalculatorFeatureCard>
-          </CalculatorCell>
+          <CalculatorCell isDisplay="flex">{items}</CalculatorCell>
         </CalculatorLayoutCards>
       </CalculatorLayoutLeftSection>
       <CalculatorLayoutRightSection>

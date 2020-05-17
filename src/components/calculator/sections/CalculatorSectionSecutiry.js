@@ -2,9 +2,9 @@ import React, { Fragment, useState, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { Columns } from 'bloomer';
 import { Icon } from 'react-icons-kit';
-import { android } from 'react-icons-kit/fa/android';
-import { apple } from 'react-icons-kit/fa/apple';
+import { envelope } from 'react-icons-kit/fa/envelope';
 import { globe } from 'react-icons-kit/fa/globe';
+import { codeFork } from 'react-icons-kit/fa/codeFork';
 
 import CalculatorLayoutLeftSection from '../layout/CalculatorLayoutLeftSection';
 import CalculatorLayoutRightSection from '../layout/CalculatorLayoutRightSection';
@@ -19,26 +19,32 @@ import CalculatorFeatureDescription from '../feature/CalculatorFeatureDescriptio
 import CalculatorFeatureCard from '../feature/CalculatorFeatureCard';
 import CalculatorFeatureCost from '../feature/CalculatorFeatureCost';
 
-const data = {
-  'email-password': {
-    name: 'email-password',
+const data = [
+  {
+    id: 1,
+    name: 'email password',
+    icon: envelope,
     min: 1000,
     max: 2500,
   },
-  'social-networks': {
-    name: 'social-networks',
+  {
+    id: 2,
+    name: 'social networks',
+    icon: globe,
     min: 1000,
     max: 1500,
   },
-  '2-factor': {
-    name: '2-factor',
+  {
+    id: 3,
+    name: '2 factor',
+    icon: codeFork,
     min: 500,
     max: 1000,
   },
-};
+];
 
 const CalculatorSectionSecutiry = ({ onPlatformSelect }) => {
-  const [currentPlatform, setCurrentPlatform] = useState(data['email-password']);
+  const [currentPlatform, setCurrentPlatform] = useState(data[0]);
 
   const onClick = useCallback(
     (platform) => {
@@ -46,6 +52,17 @@ const CalculatorSectionSecutiry = ({ onPlatformSelect }) => {
     },
     [currentPlatform],
   );
+
+  const items = data.map((item) => (
+    <CalculatorFeatureCard
+      key={item.name}
+      isActive={currentPlatform.id === item.id}
+      data={item}
+      onSelect={onClick}>
+      <Icon icon={item.icon} size={30} />
+      <CalculatorFeatureName>{item.name}</CalculatorFeatureName>
+    </CalculatorFeatureCard>
+  ));
 
   return (
     <Fragment>
@@ -64,29 +81,7 @@ const CalculatorSectionSecutiry = ({ onPlatformSelect }) => {
             </CalculatorCell>
           </CalculatorLayoutDescripcion>
           <CalculatorLayoutCards>
-            <CalculatorCell isDisplay="flex">
-              <CalculatorFeatureCard
-                isActive={currentPlatform.name === 'email-password'}
-                data={data['email-password']}
-                onSelect={onClick}>
-                <Icon icon={android} size={30} />
-                <CalculatorFeatureName>Email & Password</CalculatorFeatureName>
-              </CalculatorFeatureCard>
-              <CalculatorFeatureCard
-                isActive={currentPlatform.name === 'social-networks'}
-                data={data['social-networks']}
-                onSelect={onClick}>
-                <Icon icon={apple} size={30} />
-                <CalculatorFeatureName>Social Networks</CalculatorFeatureName>
-              </CalculatorFeatureCard>
-              <CalculatorFeatureCard
-                isActive={currentPlatform.name === '2-factor'}
-                data={data['2-factor']}
-                onSelect={onClick}>
-                <Icon icon={globe} size={30} />
-                <CalculatorFeatureName>2-Factor</CalculatorFeatureName>
-              </CalculatorFeatureCard>
-            </CalculatorCell>
+            <CalculatorCell isDisplay="flex">{items}</CalculatorCell>
           </CalculatorLayoutCards>
         </CalculatorLayoutLeftSection>
         <CalculatorLayoutRightSection>

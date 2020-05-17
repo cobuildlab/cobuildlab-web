@@ -18,21 +18,25 @@ import CalculatorFeatureDescription from '../feature/CalculatorFeatureDescriptio
 import CalculatorFeatureCard from '../feature/CalculatorFeatureCard';
 import CalculatorFeatureCost from '../feature/CalculatorFeatureCost';
 
-const data = {
-  'custom-ui': {
+const data = [
+  {
+    id: 1,
     name: 'custom-ui',
+    icon: thLarge,
     min: 2000,
     max: 2500,
   },
-  template: {
+  {
+    id: 2,
     name: 'template',
+    icon: colIcon,
     min: 1000,
     max: 1500,
   },
-};
+];
 
 const CalculatorSectionDesign = ({ onPlatformSelect }) => {
-  const [currentPlatform, setCurrentPlatform] = useState(data['custom-ui']);
+  const [currentPlatform, setCurrentPlatform] = useState(data[0]);
 
   const onClick = useCallback(
     (platform) => {
@@ -40,6 +44,17 @@ const CalculatorSectionDesign = ({ onPlatformSelect }) => {
     },
     [currentPlatform],
   );
+
+  const items = data.map((item) => (
+    <CalculatorFeatureCard
+      key={item.name}
+      isActive={currentPlatform.id === item.id}
+      data={item}
+      onSelect={onClick}>
+      <Icon icon={item.icon} size={30} />
+      <CalculatorFeatureName>{item.name}</CalculatorFeatureName>
+    </CalculatorFeatureCard>
+  ));
 
   return (
     <Columns isMarginless>
@@ -57,22 +72,7 @@ const CalculatorSectionDesign = ({ onPlatformSelect }) => {
           </CalculatorCell>
         </CalculatorLayoutDescripcion>
         <CalculatorLayoutCards>
-          <CalculatorCell isDisplay="flex">
-            <CalculatorFeatureCard
-              isActive={currentPlatform.name === 'custom-ui'}
-              data={data['custom-ui']}
-              onSelect={onClick}>
-              <Icon icon={thLarge} size={30} />
-              <CalculatorFeatureName>Custom UI</CalculatorFeatureName>
-            </CalculatorFeatureCard>
-            <CalculatorFeatureCard
-              isActive={currentPlatform.name === 'template'}
-              data={data['template']}
-              onSelect={onClick}>
-              <Icon icon={colIcon} size={30} />
-              <CalculatorFeatureName>Template</CalculatorFeatureName>
-            </CalculatorFeatureCard>
-          </CalculatorCell>
+          <CalculatorCell isDisplay="flex">{items}</CalculatorCell>
         </CalculatorLayoutCards>
       </CalculatorLayoutLeftSection>
       <CalculatorLayoutRightSection>

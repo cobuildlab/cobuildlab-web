@@ -20,47 +20,30 @@ import CalculatorFeatureDescription from '../feature/CalculatorFeatureDescriptio
 import CalculatorFeatureCard from '../feature/CalculatorFeatureCard';
 import CalculatorFeatureCost from '../feature/CalculatorFeatureCost';
 
-/*const data = {
-  'social-network': {
-    name: 'social-network',
-    min: 4000,
-    max: 6000,
-  },
-  eCommerce: {
-    name: 'eCommerce',
-    min: 3500,
-    max: 5500,
-  },
-  'media-manager':{
-    name: 'media-manager',
-    min: 3000,
-    max: 5000,
-  },
-  'content-manager':{
-    name: 'content-manager',
-    min: 4000,
-    max: 5500,
-  }
-}*/ const data = [
+const data = [
   {
+    id: 1,
     name: 'social network',
     icon: globe,
     min: 4000,
     max: 6000,
   },
   {
+    id: 2,
     name: 'eCommerce',
     icon: shoppingCart,
     min: 3500,
     max: 5500,
   },
   {
+    id: 3,
     name: 'media manager',
     icon: photo,
     min: 3000,
     max: 5000,
   },
   {
+    id: 4,
     name: 'content manager',
     icon: tasks,
     min: 4000,
@@ -81,7 +64,7 @@ const CalculatorSectionData = ({ onPlatformSelect }) => {
   const items = data.map((item) => (
     <CalculatorFeatureCard
       key={item.name}
-      isActive={currentPlatform.name === item.name}
+      isActive={currentPlatform.id === item.id}
       data={item}
       onSelect={onClick}>
       <Icon icon={item.icon} size={30} />

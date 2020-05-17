@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, memo } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -11,7 +11,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transition: all 0.3s ease-out;
+  transition: all 0.15s ease-in;
   color: ${({ isActive }) => (isActive ? '#E76C29' : '#406073')};
   cursor: pointer;
   &:hover {
@@ -45,4 +45,4 @@ CalculatorFeatureCard.propTypes = {
   isActive: PropTypes.bool.isRequired,
 };
 
-export default CalculatorFeatureCard;
+export default memo(CalculatorFeatureCard);
