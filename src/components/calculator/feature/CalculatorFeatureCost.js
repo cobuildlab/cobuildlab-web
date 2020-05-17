@@ -6,9 +6,14 @@ const Container = styled.span`
   font-size: 36px;
   color: #fff;
   font-weight: bold;
+  margin: 0 auto;
+  &:before {
+    content: '$';
+    color: #fff;
+  }
 `;
 
-const CalculatorFeatureCost = ({ cost }) => <Container>$ {cost}</Container>;
+const CalculatorFeatureCost = ({ cost }) => <Container>{cost}</Container>;
 
 CalculatorFeatureCost.propTypes = {
   cost: PropTypes.string.isRequired,

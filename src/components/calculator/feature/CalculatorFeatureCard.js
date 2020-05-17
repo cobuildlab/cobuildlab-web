@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 const CalculatorFeatureCard = styled.div`
-  width: 30%;
-  height: 150px;
+  width: 140px;
+  height: 135px;
+  margin: 10px;
   border: ${({ isActive }) => (isActive ? '1px solid #E76C29' : '1px solid #406073')};
   display: flex;
   justify-content: center;
@@ -15,6 +16,11 @@ const CalculatorFeatureCard = styled.div`
     transform: scale(1.05);
     color: #e76c29;
     border: 1px solid #e76c29;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    padding: 5px 0;
   }
 `;
 

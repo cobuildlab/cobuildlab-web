@@ -1,14 +1,22 @@
+import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import { withHelpersModifiers } from 'bloomer';
 
-const CalculatorCell = styled.div`
+const Container = styled.div`
   width: 100%;
   height: 100%;
-  padding: 10px 40px;
-  border-bottom: ${({ isColor }) => (isColor === 'white' ? '1px solid #fff' : '1px solid #264a60')};
-  background: ${({ isColor }) => (isColor === 'white' ? '#fff' : '#264A60')};
-  display: ${({ isDisplay }) => isDisplay || 'block'};
+  padding: 1em;
+  background-color: ${({ isBackground }) => (isBackground ? '#d05b1b' : 'transparent')};
   justify-content: ${({ isJustify }) => isJustify || 'flex-start'};
   align-items: ${({ isAlign }) => isAlign || 'flex-start'};
+  flex-wrap: wrap;
 `;
 
-export default CalculatorCell;
+const CalculatorCell = ({ children, ...rest }) => <Container {...rest}>{children}</Container>;
+
+CalculatorCell.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+};
+
+export default withHelpersModifiers(CalculatorCell);

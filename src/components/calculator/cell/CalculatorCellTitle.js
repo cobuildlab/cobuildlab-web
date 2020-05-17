@@ -1,10 +1,12 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import { withHelpersModifiers } from 'bloomer';
 import styled from 'styled-components';
 
-const CalculatorCellTitle = styled.span`
+const Container = styled.span`
   color: ${({ indigo }) => (indigo ? '#264a60' : '#fff')};
   font-size: 28px;
   width: 100%;
-  height: 100%;
   border-bottom: 1px solid #fff;
   display: flex;
   align-items: center;
@@ -12,4 +14,10 @@ const CalculatorCellTitle = styled.span`
   padding: 20px;
 `;
 
-export default CalculatorCellTitle;
+const CalculatorCellTitle = ({ children, ...rest }) => <Container {...rest}>{children}</Container>;
+
+CalculatorCellTitle.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+};
+
+export default withHelpersModifiers(CalculatorCellTitle);
