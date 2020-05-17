@@ -7,6 +7,7 @@ const Container = styled.span`
   color: #fff;
   font-weight: bold;
   margin: 0 auto;
+  align-self: center;
   &:before {
     content: '$';
     color: #fff;

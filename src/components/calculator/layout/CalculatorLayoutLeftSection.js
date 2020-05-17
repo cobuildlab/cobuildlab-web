@@ -4,7 +4,7 @@ import { Column, Columns } from 'bloomer';
 import styled from 'styled-components';
 
 const Wrapper = styled(Column)`
-  border-bottom: 1px solid #406073;
+  border-bottom: 1px solid #d05b1b;
   @media screen and (max-width: 768px) {
     border-bottom: none;
   }
