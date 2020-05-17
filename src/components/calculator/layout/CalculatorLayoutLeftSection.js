@@ -1,11 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Column, Columns } from 'bloomer';
+import styled from 'styled-components';
+
+const Wrapper = styled(Column)`
+  border-bottom: 1px solid #406073;
+  @media screen and (max-width: 768px) {
+    border-bottom: none;
+  }
+`;
 
 const CalculatorLayoutLeftSection = ({ children }) => (
-  <Column isSize={9}>
-    <Columns isMultiline>{children}</Columns>
-  </Column>
+  <Wrapper isSize={9}>
+    <Columns isMultiline isPaddingless>
+      {children}
+    </Columns>
+  </Wrapper>
 );
 
 CalculatorLayoutLeftSection.propTypes = {

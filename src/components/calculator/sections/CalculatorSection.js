@@ -2,13 +2,15 @@ import React from 'react';
 import { Container } from 'bloomer';
 
 import CalculatorWrapper from '../CalculatorWrapper';
-import CalculatorCellPlatform from './CalculatorCellPlatform';
+import CalculatorSectionPlatform from './CalculatorSectionPlatform';
+import CalculatorSectionDesign from './CalculatorSectionDesign';
 
 const CalculatorSection = () => {
   return (
     <Container>
       <CalculatorWrapper>
-        <CalculatorCellPlatform />
+        <CalculatorSectionPlatform />
+        <CalculatorSectionDesign />
       </CalculatorWrapper>
     </Container>
   );
