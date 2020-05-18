@@ -4,13 +4,12 @@ import { withHelpersModifiers } from 'bloomer';
 import styled from 'styled-components';
 
 const Container = styled.span`
-  color: ${({ indigo }) => (indigo ? '#264a60' : '#fff')};
+  color: #406073;
   font-size: 28px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
 `;
 
 const CalculatorCellTitle = ({ children, ...rest }) => <Container {...rest}>{children}</Container>;

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Column } from 'bloomer';
 
 const CalculatorLayoutDescripcion = ({ children }) => (
-  <Column isSize={4} isPaddingless>
+  <Column isSize={4} isPaddingless isDisplay="flex">
     {children}
   </Column>
 );

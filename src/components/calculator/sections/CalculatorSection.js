@@ -53,13 +53,11 @@ class CalculatorSection extends PureComponent {
 
   getCost(item) {
     const { data } = this.state;
-    console.log(item);
     const newData = data.map((element) => ({
       ...element,
       min: item.feature === element.feature ? item.min : element.min,
       max: item.feature === element.feature ? item.max : element.max,
     }));
-    console.log(newData);
     const max = newData.map((e) => e.max).reduce((total, current) => total + current);
     const min = newData.map((e) => e.min).reduce((total, current) => total + current);
 

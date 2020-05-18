@@ -1,28 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { withHelpersModifiers } from 'bloomer';
 import styled from 'styled-components';
 
-const Container = styled.div`
-  padding-top: 0.5em;
+const Container = styled.span`
+  color: #406073;
+  font-size: 32px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
-const Text = styled.span`
-  font-size: 16px;
-  text-align: center;
-  display: block;
-  padding: 0 0.5em;
-  color: inherit;
-  text-transform: capitalize;
-`;
+const CalculatorCellTitle = ({ children, ...rest }) => <Container {...rest}>{children}</Container>;
 
-const CalculatorFeatureName = ({ children }) => (
-  <Container>
-    <Text>{children}</Text>
-  </Container>
-);
-
-CalculatorFeatureName.propTypes = {
+CalculatorCellTitle.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
 
-export default CalculatorFeatureName;
+export default withHelpersModifiers(CalculatorCellTitle);

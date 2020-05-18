@@ -4,10 +4,7 @@ import { Column } from 'bloomer';
 import styled from 'styled-components';
 
 const Wrapper = styled(Column)`
-  border-bottom: 1px solid #fff;
-  @media screen and (max-width: 768px) {
-    border-bottom: none;
-  }
+  border-bottom: 1px solid #406073;
 `;
 
 const CalculatorLayoutRightSection = ({ children }) => (

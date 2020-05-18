@@ -4,13 +4,14 @@ import styled from 'styled-components';
 
 const Container = styled.span`
   font-size: 36px;
-  color: #fff;
+  color: #406073;
   font-weight: bold;
-  margin: 0 auto;
-  align-self: center;
+  text-align: center;
+  width: 100%;
   &:before {
     content: '$';
-    color: #fff;
+    color: #406073;
+    padding-right: 5px;
   }
 `;
 

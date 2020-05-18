@@ -7,10 +7,10 @@ const Container = styled.div`
   width: 100%;
   height: 100%;
   padding: 1em;
-  background-color: ${({ isBackground }) => (isBackground ? '#d05b1b' : 'transparent')};
   justify-content: ${({ isJustify }) => isJustify || 'flex-start'};
   align-items: ${({ isAlign }) => isAlign || 'flex-start'};
-  flex-wrap: wrap;
+  flex-direction: ${({ isDirection }) => isDirection || 'row'};
+  flex-wrap: ${({ isMultiline }) => (isMultiline ? 'wrap' : 'nowrap')};
 `;
 
 const CalculatorCell = ({ children, ...rest }) => <Container {...rest}>{children}</Container>;

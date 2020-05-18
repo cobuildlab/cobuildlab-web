@@ -9,12 +9,11 @@ import { globe } from 'react-icons-kit/fa/globe';
 import CalculatorLayoutLeftSection from '../layout/CalculatorLayoutLeftSection';
 import CalculatorLayoutRightSection from '../layout/CalculatorLayoutRightSection';
 import CalculatorLayoutDescripcion from '../layout/CalculatorLayoutDescripcion';
-import CalculatorLayoutCellTitle from '../layout/CalculatorLayoutCellTitle';
 import CalculatorLayoutCards from '../layout/CalculatorLayoutCards';
 
-import CalculatorCellTitle from '../cell/CalculatorCellTitle';
 import CalculatorCell from '../cell/CalculatorCell';
 import CalculatorFeatureName from '../feature/CalculatorFeatureName';
+import CalculatorFatureCaption from '../feature/CalculatorFatureCaption';
 import CalculatorFeatureDescription from '../feature/CalculatorFeatureDescription';
 import CalculatorFeatureCard from '../feature/CalculatorFeatureCard';
 import CalculatorFeatureCost from '../feature/CalculatorFeatureCost';
@@ -65,31 +64,29 @@ const CalculatorSectionPlatform = ({ getCost }) => {
       data={item}
       onSelect={onClick}>
       <Icon icon={item.icon} size={30} />
-      <CalculatorFeatureName>{item.name}</CalculatorFeatureName>
+      <CalculatorFatureCaption>{item.name}</CalculatorFatureCaption>
     </CalculatorFeatureCard>
   ));
 
   return (
     <Columns isMarginless isMultiline>
       <CalculatorLayoutLeftSection>
-        <CalculatorLayoutCellTitle>
-          <CalculatorCell>
-            <CalculatorCellTitle indigo>Platform</CalculatorCellTitle>
-          </CalculatorCell>
-        </CalculatorLayoutCellTitle>
         <CalculatorLayoutDescripcion>
-          <CalculatorCell isDisplay="flex" isAlign="center" isJustify="center">
+          <CalculatorCell isDisplay="flex" isDirection="column" isJustify="center" isAlign="center">
+            <CalculatorFeatureName>Platform</CalculatorFeatureName>
             <CalculatorFeatureDescription>
               Select the platform to your project
             </CalculatorFeatureDescription>
           </CalculatorCell>
         </CalculatorLayoutDescripcion>
         <CalculatorLayoutCards>
-          <CalculatorCell isDisplay="flex">{items}</CalculatorCell>
+          <CalculatorCell isDisplay="flex" isMultiline>
+            {items}
+          </CalculatorCell>
         </CalculatorLayoutCards>
       </CalculatorLayoutLeftSection>
       <CalculatorLayoutRightSection>
-        <CalculatorCell isDisplay="flex" isBackground>
+        <CalculatorCell isDisplay="flex" isJustify="center" isAlign="center">
           <CalculatorFeatureCost max={currentPlatform.max} min={currentPlatform.min} />
         </CalculatorCell>
       </CalculatorLayoutRightSection>
