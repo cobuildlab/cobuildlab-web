@@ -172,7 +172,7 @@ class CalculatorSectionAdditionalFeatures extends PureComponent {
               isAlign="center">
               <CalculatorFeatureName>Additional Features</CalculatorFeatureName>
               <CalculatorFeatureDescription>
-                Select additional services for your project
+                Additional services for your project
               </CalculatorFeatureDescription>
             </CalculatorCell>
           </CalculatorLayoutDescripcion>

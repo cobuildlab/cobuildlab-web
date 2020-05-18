@@ -4,9 +4,13 @@ import { Column, Columns } from 'bloomer';
 import styled from 'styled-components';
 
 const Wrapper = styled(Column)`
-  border-bottom: 1px solid #406073;
+  border-bottom: 1px solid #90a2ad;
+  padding-top: 30px;
+  padding-bottom: 50px;
   @media screen and (max-width: 768px) {
     border-bottom: none;
+    padding-top: 30px;
+    padding-bottom: 0;
   }
 `;
 
