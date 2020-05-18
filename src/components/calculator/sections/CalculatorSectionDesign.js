@@ -35,12 +35,17 @@ const data = [
   },
 ];
 
-const CalculatorSectionDesign = ({ onPlatformSelect }) => {
-  const [currentPlatform, setCurrentPlatform] = useState(data[0]);
+const CalculatorSectionDesign = ({ getCost }) => {
+  const [currentPlatform, setCurrentPlatform] = useState({ max: 0, min: 0, id: null });
 
   const onClick = useCallback(
-    (platform) => {
-      setCurrentPlatform(platform);
+    (item) => {
+      setCurrentPlatform(item);
+      getCost({
+        feature: 'design',
+        max: item.max,
+        min: item.min,
+      });
     },
     [currentPlatform],
   );
@@ -85,11 +90,11 @@ const CalculatorSectionDesign = ({ onPlatformSelect }) => {
 };
 
 CalculatorSectionDesign.defaultProps = {
-  onPlatformSelect: () => null,
+  getCost: () => null,
 };
 
 CalculatorSectionDesign.propTypes = {
-  onPlatformSelect: PropTypes.func,
+  getCost: PropTypes.func,
 };
 
 export default CalculatorSectionDesign;

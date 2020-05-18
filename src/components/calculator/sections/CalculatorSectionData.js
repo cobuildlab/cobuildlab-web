@@ -51,12 +51,17 @@ const data = [
   },
 ];
 
-const CalculatorSectionData = ({ onPlatformSelect }) => {
-  const [currentPlatform, setCurrentPlatform] = useState(data[0]);
+const CalculatorSectionData = ({ getCost }) => {
+  const [currentPlatform, setCurrentPlatform] = useState({ max: 0, min: 0, id: null });
 
   const onClick = useCallback(
-    (platform) => {
-      setCurrentPlatform(platform);
+    (item) => {
+      setCurrentPlatform(item);
+      getCost({
+        feature: 'data',
+        max: item.max,
+        min: item.min,
+      });
     },
     [currentPlatform],
   );
@@ -101,11 +106,11 @@ const CalculatorSectionData = ({ onPlatformSelect }) => {
 };
 
 CalculatorSectionData.defaultProps = {
-  onPlatformSelect: () => null,
+  getCost: () => null,
 };
 
 CalculatorSectionData.propTypes = {
-  onPlatformSelect: PropTypes.func,
+  getCost: PropTypes.func,
 };
 
 export default CalculatorSectionData;

@@ -43,12 +43,17 @@ const data = [
   },
 ];
 
-const CalculatorSectionSecutiry = ({ onPlatformSelect }) => {
-  const [currentPlatform, setCurrentPlatform] = useState(data[0]);
+const CalculatorSectionSecurity = ({ getCost }) => {
+  const [currentPlatform, setCurrentPlatform] = useState({ max: 0, min: 0, id: null });
 
   const onClick = useCallback(
-    (platform) => {
-      setCurrentPlatform(platform);
+    (item) => {
+      setCurrentPlatform(item);
+      getCost({
+        feature: 'security',
+        max: item.max,
+        min: item.min,
+      });
     },
     [currentPlatform],
   );
@@ -94,12 +99,12 @@ const CalculatorSectionSecutiry = ({ onPlatformSelect }) => {
   );
 };
 
-CalculatorSectionSecutiry.defaultProps = {
-  onPlatformSelect: () => null,
+CalculatorSectionSecurity.defaultProps = {
+  getCost: () => null,
 };
 
-CalculatorSectionSecutiry.propTypes = {
-  onPlatformSelect: PropTypes.func,
+CalculatorSectionSecurity.propTypes = {
+  getCost: PropTypes.func,
 };
 
-export default CalculatorSectionSecutiry;
+export default CalculatorSectionSecurity;

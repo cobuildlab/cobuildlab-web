@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { Columns } from 'bloomer';
 import { Icon } from 'react-icons-kit';
 import { android } from 'react-icons-kit/fa/android';
@@ -117,6 +117,8 @@ class CalculatorSectionAdditionalFeatures extends PureComponent {
 
   onClick(item) {
     const { data } = this.state;
+    const { getCost } = this.props;
+
     const newState = data.map((element) => ({
       ...element,
       isActive: element.id === item.id ? !element.isActive : element.isActive,
@@ -128,13 +130,22 @@ class CalculatorSectionAdditionalFeatures extends PureComponent {
     const min = onlyActivesItems.length
       ? onlyActivesItems.map((e) => e.min).reduce((total, current) => total + current)
       : 0;
-    this.setState({
-      data: newState,
-      total: {
-        max,
-        min,
+    this.setState(
+      {
+        data: newState,
+        total: {
+          max,
+          min,
+        },
       },
-    });
+      () => {
+        getCost({
+          feature: 'additional-feature',
+          max,
+          min,
+        });
+      },
+    );
   }
 
   render() {
@@ -180,8 +191,12 @@ class CalculatorSectionAdditionalFeatures extends PureComponent {
   }
 }
 
-/*CalculatorSectionAdditionalFeatures.defaultProps = {};
+CalculatorSectionAdditionalFeatures.defaultProps = {
+  getCost: () => null,
+};
 
-CalculatorSectionAdditionalFeatures.propTypes = {};*/
+CalculatorSectionAdditionalFeatures.propTypes = {
+  getCost: PropTypes.func,
+};
 
 export default CalculatorSectionAdditionalFeatures;
