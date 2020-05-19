@@ -373,4 +373,5 @@ sddsf}
 
 ### Justification:
 
-* Single point of control over a user session over redirects, onboardings, profile completion, etc 
+* Single point of control over a user session over redirects, on-boardings, profile completion, etc 
+* In React the Session component can be used for [Error Boundaries](https://reactjs.org/docs/error-boundaries.html). 

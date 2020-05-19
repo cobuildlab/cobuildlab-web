@@ -159,4 +159,11 @@ const TableView = ({children, loading}) => {
 }
 ```
 
+## 1.4 Manage errors and exceptional situations with Exceptions 
+
+ 
+- Meaningful values like false or null or None or void do not represent properly an error scenario.
+- Raising exceptions allows you to be consistent with the result type of the function.
+- Allows the user of the function what to do on each scenario.
+- Avoids confusion comparing return values.
 
