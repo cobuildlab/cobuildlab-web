@@ -72,6 +72,98 @@ Prefer the use of `constants` over `variables` for holding values always that is
 - Code readability, constants values by definition cannot change, making the code easier to read and to debug.
 - Efficiency: Many Runtimes promise faster access to constant values than to variables values.
 
-## 1.3 Promote the **Return Early** pattern
+## 1.3 Prefer use the **Return Early** pattern instead of complex conditionals or nested blocks 
 
-TODO:
+Enforce the **Return Early** pattern in functions and methods.
+
+- Return early pattern forces you to first consider exceptional situations or error conditions in your functions like validations and variables or input inconsistencies on the first lines of a function or method.
+- Reduce Visual Noise
+- Reduce complexity of conditionals
+- Increase readability by excluding error and edge conditions early on the code and letting focusing on the complex part of the function
+
+
+*PREFER THIS:*
+
+```python
+def is_valid_string (text, allow_empty = false):
+	if text === None: 
+		return False
+	if text === '' and allow_empty == False: 
+		return False
+	return True
+);
+```
+
+```javascript
+const isDivisibleBy = (value, divisor) => (
+	if(value === 0) 
+		return true;
+	if(divisor === 0) 
+		return false;
+	if(value === divisor) 
+		return true;
+	return value % divisor === 0;
+);
+
+const TableView = ({children, loading}) => {
+	if(loading)
+		return <Loading size={10} />;
+
+	//... logic
+	return (
+	    <div className='inline-block'>
+	        <h1 className='header-note'>
+	            {children}
+	            <span class='icon-header-note'>
+	                <img src={icon} />
+	            </span> 
+	        </h1>
+	    </div>
+	);
+}
+```
+
+*AND NOT THIS:*
+
+```javascript
+const isValidString = (text, allowEmpty = false) => (
+	if(text !== null){
+		if(text !== undefined){
+			if(allowEmpty === false){
+				if (text === ''){
+					return false;
+				}else{
+					return true
+				}					
+			}
+			else...
+		}
+	}else{
+		return false;
+	}
+);
+
+const TableView = ({children, loading}) => {
+	//	... logic
+	return (
+		{loading ? <Loading size={10}> :
+	    <div className='inline-block'>
+	        <h1 className='header-note'>
+	            {children}
+	            <span class='icon-header-note'>
+	                <img src={icon} />
+	            </span> 
+	        </h1>
+	    </div>}
+	);
+}
+```
+
+## 1.4 Manage errors and exceptional situations with Exceptions 
+
+ 
+- Meaningful values like false or null or None or void do not represent properly an error scenario.
+- Raising exceptions allows you to be consistent with the result type of the function.
+- Allows the user of the function what to do on each scenario.
+- Avoids confusion comparing return values.
+
