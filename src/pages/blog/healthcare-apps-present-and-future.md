@@ -12,6 +12,8 @@ An idea becomes truly successful when it can solve the real-life problems faced 
 Let’s say that you’re suffering from high fever or a very severe headache, and instead of waiting or visiting your doctor, you can instantly set an appointment or even request him/her for a home visit. All of this in just a few minutes on your smartphone. Sounds really convenient, doesn’t it?
 Patients value quick and convenient healthcare services. They seek simpler ways to reach out to healthcare providers and get solutions to their problems.
 
+<Br>
+
 <title-2>Using and On-demand Healthcare App</title-2>
 
 These apps are designed to provide a platform that brings the doctor to your doorstep for medical care using your smartphones from anywhere. Now, there is no need to wait several hours in the emergency or waiting room in the hospital. You can just use the on-demand healthcare app and get your basic medical treatment at home.
@@ -19,7 +21,13 @@ These apps are designed to provide a platform that brings the doctor to your doo
 The process of using an on-demand health care application is very simple. 
 
 1) First of all (using an app or website), you set up a home visit for the time that’s best for you. You provide information about your symptoms, medical history, and insurance information at the time of booking.
+
+<Br>
+
 2) Then, the doctor or a healthcare worker shows up at the given address and time for the house call. They’ll perform physical assessments based on the symptoms and diagnosis. They will then prescribe medications or tests.
+
+<Br>
+
 3) Finally, you pay a set fee to the doctor through the app itself. Usually, an app will show the doctor’s fee for a house call before scheduling an appointment. Some on-demand apps offer a digital report or summary of the service. You can use these documents for record-keeping purposes.
 
 Benefits aren’t limited to the on-demand house calls; these apps can also provide a great alternative to get supplementary care services. With an on-demand app, you can find different services including:
@@ -30,25 +38,47 @@ Benefits aren’t limited to the on-demand house calls; these apps can also prov
 * Annual physical exams
 * Family health assessments
 
+<Br>
+
 <title-2>Here are some on-demand healthcare apps you can check out right now:</title-2>
+
+<Br>
 
 <title-3>[Doctor on Demand](https://www.doctorondemand.com/)</title-3>
 
+<Br>
+
 [![Doctor-on-demand](media/a.png)](#)
+
+<Br>
 
 Headquartered in San Francisco, California, Doctor on Demand provides an online platform where patients can consult with healthcare providers for urgent care. Recently, the startup received $74 million funding and recorded annual revenue of $12 million.
 
+<Br>
+
 <title-3>[Amwell](https://business.amwell.com/)</title-3>
+
+<Br>
 
 [![Amwell](media/b.png)](#)
 
+<Br>
+
 Amwell app makes doctor consultation convenient for the patients. You can book an on-demand video visit with the doctors, therapists, psychologists, and other healthcare providers. You can also choose to send prescriptions to the pharmacy of your choice. The app is funded and supported by the American Well company.
+
+<Br>
 
 <title-3>[2nd.MD](https://www.2nd.md/)</title-3>
 
+<Br>
+
 [![2nd-md/](media/c.png)](#)
 
+<Br>
+
 If you want a second opinion on a medical condition, 2nd.MD app can help you. It connects you to doctors and healthcare providers for online consultations. The company was founded in 2011 and has recently got a $2.29 million investment.
+
+<Br>
 
 <title-2>Other Benefits of Healthcare Apps</title-2>
 
@@ -59,6 +89,8 @@ Another great benefit of using on-demand healthcare apps is the reduced costs in
 On the other hand, an in-house visit allows doctors to spend more time with the patient. When doctors are not pressed for time, they can provide the best care and ensure a proper diagnosis.
 
 On-demand healthcare apps also reduce the burden and costs of the in-office administrative paperwork. It can help doctors save their time, and focus their full attention on their patients.
+
+<Br>
 
 <title-2>The Future of Healthcare Apps and Software</title-2>
 
