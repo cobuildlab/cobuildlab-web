@@ -1,20 +1,19 @@
 ---
-title: Conventions to create a NodeJs Application
+title: Conventions for Javascript / Typescript source code
 date: 2020-12-31T01:00:00+00:00
 tags: 
 template: development-post
-permalink: /conventions-to-create-a-nodejs-application/
 image: null
 ---
 
-This document aims to reduce the friction between patterns and ways of doing common tasks during the development of a NodeJS Application.
+This document aims to reduce the friction between patterns and ways of doing common tasks during the development of Javascript applications.
 
-This document is heavily based on the Convention proposed by [Airbnb](https://github.com/airbnb/javascript), [StandardJs](https://standardjs.com/) and our own experience developing backend and cloud functions javascript applications since 2008.
+This document is heavily based on the Convention proposed by [Airbnb](https://github.com/airbnb/javascript), [StandardJs](https://standardjs.com/) and our own experience developing front end javascript applications since 2008 and React Applications since late 2016.
 
 Here, we explain the problem, choose a convention, and explain the reasons:
 
-# 1) General Best Practices for Code Style
-## **1.1) Avoid module exporting from index.js**
+
+# **1) Avoid import/export from `index.js` on modules**
 
 **NOTE: This rule is not applicable to libraries shared node packages, just for Application Development**
 
@@ -23,37 +22,42 @@ Avoid module exports from index.js in the codebase. For some developers this is 
 Having these components:
 
 ```shell script
-modules/module-a/file-1.js
-modules/module-a/file-2.js
-modules/module-b/file-3.js
+modules/A/View1.js
+modules/A/View2.js
+modules/B/View3.js
 ```
 
-To use `file-1.js` and `file-2.js` in `file-3.js`
+To use `View1.js` and `View2.js` in `View3.js`
 
 *PREFER THIS:*
 
-`modules/module1/file-3.js`
-```javascript
-import {something} from "../module-a/file-1";
-import {somethingElse} from "../module-a/file-2";
+`modules/B/View3.js`
+```jsx harmony
+import {View1} from "../A/View1";
+import {View2} from "../A/View2";
 
-...
+const View3 = ()=> {
+  return ...
+}
 ```
 
 *AND NOT THIS:*
 
-`modules/module-a/index.js`
-```javascript
-import * from "file-1";
-import * from "file-2";
+`modules/A/index.js`
+```jsx harmony
+import {View1} from "View1";
+import {View2} from "View2";
 ```
 
-`modules/module-b/file-3.js`
-```javascript
-import {something, somethingElse} from "../module-a";
+`modules/B/View3.js`
+```jsx harmony
+import {View1, View2} from "../A";
 
-...
+const View3 = ()=> {
+  return ...
+}
 ```
+
 
 ### Justification
 
@@ -64,9 +68,6 @@ import {something, somethingElse} from "../module-a";
 * Introspection tools like type checkers or IDE navigation don't work well with this approach.
 * More than style there is no real gain on do module exporting.
 
-###TODO: 
-## **1.9) Pure functions**
-## **1.10) util functions over methods**
 
 # 2) File Structure
 
@@ -80,11 +81,6 @@ Based on our experience for the last years working with React, we propose this f
 
 ```
 src/ 
-└───assets/
-│   └───images/
-|	|	└───logo.png
-|	|	└───background_main.jpg
-|	|	└───...
 └───modules/
 │   └───login/
 |	│   └───components/
@@ -93,6 +89,8 @@ src/
 |	|	└───login-actions.js
 |	|	└───login-models.js
 |	|	└───login-permissions.js
+|	|	└───login-services.js
+|	|	└───login-handlers.js
 |	|	└───login-queries.js
 |	|	└───login-store.js
 |	|	└───...
@@ -107,6 +105,8 @@ src/
 |	|	|	└───school-actions.js
 |	|	|	└───school-utils.js
 |	|	|	└───school-permissions.js
+|	|	|	└───school-services.js
+|	|	|	└───school-handlers.js
 |	|	|	└───school-queries.js
 |	|	|	└───school-store.js
 |	|	|	└───...
@@ -127,11 +127,15 @@ src/
 │       │   user-types.json
 │   └───typings/
 │       │   ...
-└───graphql/							// Others App specific folders
-|	│   types.js
+    └───assets/
+│   |   └───images/
+|	|   |	└───logo.png
+|	|   |	└───background_main.jpg
+|	|   |	└───...
 │   string-utils.json
 │   validation-utils.json
 │   index.js
+│   routes.js
 │   App.js
 │   index.css
  ```
@@ -140,7 +144,7 @@ src/
 App Specific folder that contains images files like png, svg, jpg, etc
 
 ## *modules* folder
-Main folder to hold the the Module Specific folders
+Main folder to hold the Module Specific folders
 
 ## *shared* folder
 App Specific folder to hold any asset that is not an image and that it should be shared across modules.
@@ -148,7 +152,7 @@ App Specific folder to hold any asset that is not an image and that it should be
 Think about this folder as any potential code that could be put in a node package and be distributed as a library.
 
 ## *components* folder
-React componets that can be App specific under `shared/components/` or module specific under: `modules/<module-name>/components/`
+React components that can be App specific under `shared/components/` or module specific under: `modules/<module-name>/components/`
 
 ## *\*-actions* files
 Module specific files that holds Actions of the module. (See Architecture)
@@ -159,6 +163,9 @@ Module specific files that holds constants and Model Objects or Classes.
 ## *\*-store* files
 Module specific files that that holds the store components. (See Architecture)
 
+## *\*-events* files
+Module specific files that that holds the events constants. (See Architecture)
+
 ## *\*-permissions* files
 Module specific files that that holds functions related to permissions.
 
@@ -166,98 +173,22 @@ Module specific files that that holds functions related to permissions.
 Functions or Classes that can be App specific under `shared/` or module specific under: `modules/<module-name>/`
 
 ## *\*.css* files
-As of this conventions the project should only have one `index.css` file, that holds general purpose styles like: Text, body styles, etc.
+As of these conventions the project should only have one `index.css` file, that holds general purpose styles like: Text, body styles, etc.
 
 Component specific styles should be handled using [Styled Components]([https://www.styled-components.com/](https://www.styled-components.com/))
 
 
+# 3) Formatting and Linting:
 
-# 3) Architecture
-React applications must rely on the [Flux]([https://facebook.github.io/flux/](https://facebook.github.io/flux/)) Architecture propose by Facebook.
-
-The main rules are:
-1) Unidirectional flow always: View -> Actions -> Dispatcher -> Store -> View
-2) The Application State can be divided in separated stores
-3) **Presentational Components** subscribes to changes in any application level state or **store**
-4) **Actions** can dispatch events that modify the state of the **store**
-5) **Presentational components** can trigger **actions** that affect the state of the **store**
-6) **Actions** can be combined in to more complex **actions**
-7) **Stores** propagates changes to all subscribers
-8) Any part of the application can have read only access to the application current state or **store**
-9) Possible events or changes on the application must be declared either on a declarative or programmatically way
-10) Consistency checks must always throw errors: a) A view can't subscribe to an event or change that doesnt exist, b) An action can never dispatch an event or change that doesn' exists c) A store can't handle data of an event or change that doesn't exist
-
-Any library that can comply with this rules is a good fit to handle the Architecture. For convenience, a state library has been created with this set of rules in mind: [Flux State]([https://github.com/cobuildlab/flux-state](https://github.com/cobuildlab/flux-state)) with a convenient React Wrapper: [React Flux State]([https://github.com/cobuildlab/react-flux-state](https://github.com/cobuildlab/react-flux-state))
-
-# 4) Formatting and Linting:
-
-We use one of the most populars libraries standard javascript (eslint)[https://eslint.org/], along with (prettier)[https://prettier.io/] for code formatting.
+We use one of the most populars libraries for javascript linting (eslint)[https://eslint.org/], along with (prettier)[https://prettier.io/] for code formatting.
 
 We enforce this tools by using (husky + lint-staged)[https://github.com/okonet/lint-staged] for files on the staging area when you do a commit to git.
 
 To set it up:
 
-## 1) place `.eslintrc.js` and `.prettierrc.json`
+## 1) place `.eslintrc.js` and `.prettierrc.json` 
 
->>> .eslint.json
-
-```javascript 1.6
-module.exports = {
- "plugins": ["jsdoc"],
-  extends: [
-    'react-app',
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'eslint-config-prettier',
-    'plugin:jsdoc/recommended',
-  ],
-  rules: {
-    indent: ['error', 2],
-    semi: [2, 'always'],
-    'no-console': ['error', { allow: ['warn', 'error', 'log'] }],
-    camelcase: {"properties": "always", "ignoreDestructuring": false, "ignoreImports": false},
-    'no-console': ['error', { allow: ['warn', 'error', 'log'] }],
-    'react/require-default-props': [2, { forbidDefaultForRequired: true }],
-    'react/no-unused-prop-types': [2],
-    'jsdoc/check-alignment': 1, // Recommended
-    'jsdoc/check-param-names': 1, // Recommended
-    'jsdoc/check-tag-names': 1, // Recommended
-    'jsdoc/check-types': 1, // Recommended
-    'jsdoc/implements-on-classes': 1, // Recommended
-    'jsdoc/newline-after-description': 1, // Recommended
-    'jsdoc/no-undefined-types': 1, // Recommended
-    'jsdoc/require-description-complete-sentence': 1,
-    'jsdoc/require-hyphen-before-param-description': 1,
-    'jsdoc/require-jsdoc': 1, // Recommended
-    'jsdoc/require-param': 1, // Recommended
-    'jsdoc/require-param-description': 1, // Recommended
-    'jsdoc/require-param-name': 1, // Recommended
-    'jsdoc/require-param-type': 1, // Recommended
-    'jsdoc/require-returns': 1, // Recommended
-    'jsdoc/require-returns-check': 1, // Recommended
-    'jsdoc/require-returns-description': 1, // Recommended
-    'jsdoc/require-returns-type': 1, // Recommended
-    'jsdoc/valid-types': 1, // Recommended
-  },
-};
-```
-
->>> .prettierrc.json
-
-```json
-{
-  "printWidth": 100,
-  "tabWidth": 2,
-  "useTabs": false,
-  "semi": true,
-  "singleQuote": true,
-  "jsxSingleQuote": false,
-  "bracketSpacing": true,
-  "jsxBracketSameLine": true,
-  "arrowParens": "always",
-  "trailingComma": "all"
-}
-```
+The rules on these files depend on whether you are coding on javascript or typescript, for Frontend applications or for Backend projects.
 
 ## 2) And Add the following sections to your `package.json`:
 
@@ -268,7 +199,7 @@ module.exports = {
     }
   },
   "lint-staged": {
-    "*.js": [
+    "*.{ts,tsx,js,jsx}": [
       "prettier --write",
       "eslint --fix",
       "git add"
@@ -287,7 +218,7 @@ npm i --save-dev eslint-config-prettier husky lint-staged prettier
 
 ## 4) Run `npm i` 
 
-# 5) Naming Conventions
+# 4) Naming Conventions
 
 Naming is important for quickly understand the purpose of an element: Classes, constants, variables or methods.
 
@@ -358,21 +289,3 @@ Example: `_extractKeys`, `_compute`
 - Event names literals and functions callbacks to events must be named on camelCase prefixed by the word `on`
 
 Example: `onClick`, `onLoad`, `onListMembers`
-
-
-#TODO:
-
-# 6) Application Starter
-# 7) Linting and Code Formatting
-# 8) Github templates
-# 9) State Management
-# 10) Props validation
-# 10) Css and Theme
-# 11) HOC vs Composition
-# 12) API communication
-# 13) Notifications
-# 14) Routing
-# 15) State initialization
-# 16) Data Validation
-# 17) Testing
-# 18) Testing
