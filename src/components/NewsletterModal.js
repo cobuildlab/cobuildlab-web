@@ -55,7 +55,7 @@ class NewsletterModal extends React.Component {
   }
 
   showModalOnMount() {
-    const timeToShow = 1000;
+    const timeToShow = 60000;
     const localDuration = localStorage.getItem(this.localStoreKey);
     const currentDate = new moment();
 
