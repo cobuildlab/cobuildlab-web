@@ -1,6 +1,6 @@
 ---
 title: "Effective Programming: A guide to conventions and best practices for software development"
-date: 2020-12-30T01:00:00+00:00
+date: 2021-12-31T01:00:00+00:00
 tags: 
 template: development-post
 image: null
