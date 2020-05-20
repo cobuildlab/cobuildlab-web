@@ -3,8 +3,8 @@ import {
   Container,
   Modal,
   ModalBackground,
-  ModalCard,
-  ModalCardBody,
+  ModalContent,
+  ModalClose,
   Field,
   Label,
   Control,
@@ -13,25 +13,20 @@ import {
 import addToMailchimp from 'gatsby-plugin-mailchimp';
 import { toast } from 'react-toastify';
 import { navigate } from 'gatsby';
+import moment from 'moment';
 import { BtnOrange } from './ui-v3/btn/BtnOrange';
 import { BtnWhite } from './ui-v3/btn/BtnWhite';
 import { LabelTitle } from './ui-v3/LabelTitle';
 import { H2Subtitle } from './ui-v3/H2Subtitle';
 import styled from 'styled-components';
 
-const StyledModal = styled(Modal)`
-  z-index: -1;
-  &.is-active {
-    z-index: 1000;
-  }
-`;
-
-const Body = styled(ModalCardBody)`
+const Body = styled(ModalContent)`
   padding: 37px 58px 59px 56px;
   max-width: 600px;
   min-height: 470px;
   width: 100%;
   margin: auto;
+  background-color: #fff;
   @media screen and (max-width: 768px) {
     padding: 1em;
     display: flex;
@@ -49,22 +44,39 @@ class NewsletterModal extends React.Component {
     };
     this.onSubmitModal = this.onSubmitModal.bind(this);
     this.handleModal = this.handleModal.bind(this);
-    this.calculateScrollDistance = this.calculateScrollDistance.bind(this);
+    this.showModalOnMount = this.showModalOnMount.bind(this);
+    this.onCloseModal = this.onCloseModal.bind(this);
     this.timeOutID = null;
+    this.localStoreKey = 'news-letter-show-time';
   }
 
   componentDidMount() {
-    const localNextTime = localStorage.getItem('nextTime');
-    if (localNextTime) {
-      const timeToShow = 60000;
-      const nextTime = new Date(JSON.parse(localNextTime));
-      const today = new Date();
-      const timeExpired = today.getTime() >= nextTime.getTime();
+    this.showModalOnMount();
+  }
 
-      if (timeExpired) {
+  showModalOnMount() {
+    const timeToShow = 1000;
+    const localDuration = localStorage.getItem(this.localStoreKey);
+    const currentDate = new moment();
+
+    if (!localDuration) {
+      this.timeOutID = setTimeout(() => this.handleModal(true), timeToShow);
+    } else {
+      const storedLocalTime = JSON.parse(localDuration);
+      const { isCancel, date } = storedLocalTime;
+      const cancelDate = moment(date);
+      const duration = moment.duration(currentDate.diff(cancelDate));
+      const { _data } = duration;
+      // check is 30 days is done
+      if (isCancel && _data && _data.days >= 30) {
         this.timeOutID = setTimeout(() => this.handleModal(true), timeToShow);
-      } else {
+        return;
+      }
+
+      // if the user is register show after 1 year
+      if (_data && _data.years >= 1) {
         this.timeOutID = setTimeout(() => this.handleModal(true), timeToShow);
+        return;
       }
     }
   }
@@ -72,28 +84,6 @@ class NewsletterModal extends React.Component {
   componentWillUnmount() {
     clearTimeout(this.timeOutID);
   }
-
-  calculateScrollDistance = () => {
-    const scrollTop = window.pageYOffset;
-    const winHeight = window.innerHeight;
-    const docHeight = this.getDocHeight();
-
-    const totalDocScrollLength = docHeight - winHeight;
-    const scrollPostion = Math.floor((scrollTop / totalDocScrollLength) * 100);
-
-    return scrollPostion;
-  };
-
-  getDocHeight = () => {
-    return Math.max(
-      document.body.scrollHeight,
-      document.documentElement.scrollHeight,
-      document.body.offsetHeight,
-      document.documentElement.offsetHeight,
-      document.body.clientHeight,
-      document.documentElement.clientHeight,
-    );
-  };
 
   handleChange(e) {
     this.setState({
@@ -123,9 +113,12 @@ class NewsletterModal extends React.Component {
       }
     });
     this.handleModal(false);
-    const formToCalcYear = 24 * 60 * 60 * 1000 * 30 * 12;
-    localStorage.setItem('nextTime', new Date().getTime() + formToCalcYear);
+    this.storeDate(false);
   };
+
+  onCloseModal() {
+    this.storeDate(true);
+  }
 
   handleModal = (showModal) => {
     this.setState({
@@ -133,58 +126,64 @@ class NewsletterModal extends React.Component {
     });
   };
 
-  handleNoThanks = () => {
+  storeDate = (isCancel) => {
+    const localDuration = localStorage.getItem(this.localStoreKey);
+    if (localDuration) {
+      localStorage.removeItem(this.localStoreKey);
+    }
+    const data = JSON.stringify({
+      isCancel: isCancel,
+      date: new Date(),
+    });
+    localStorage.setItem(this.localStoreKey, data);
     this.handleModal(false);
-    const formToCalcMonth = 24 * 60 * 60 * 1000 * 30;
-    localStorage.setItem('nextTime', new Date().getTime() + formToCalcMonth);
   };
 
   render() {
     const { showModal } = this.state;
 
     return (
-      <StyledModal isActive={showModal}>
-        <ModalBackground style={{ backgroundColor: 'rgba(118, 132, 141, 1)', opacity: '0.5' }} />
-        <ModalCard>
-          <Body>
-            <Container>
-              <LabelTitle>Newsletter</LabelTitle>
-              <H2Subtitle>
-                Problem-solution fit: Observe the Customer, think as the Customer, be the
-                Customer.Problem-solution fit: Observe the
-              </H2Subtitle>
-              <br />
-              <Field>
-                <Label>E-mail</Label>
-                <Control>
-                  <Input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    value={this.state.email}
-                    onChange={(e) => this.handleChange(e)}
-                    style={{
-                      background: '#F4F6FB 0% 0% no-repeat padding-box',
-                      boxShadow: '0px 8px 20px #264A6052!important',
-                      opacity: '1',
-                    }}
-                  />
-                </Control>
-              </Field>
-              <Field isGrouped style={{ justifyContent: 'flex-end' }}>
-                <Control>
-                  <br />
-                  <BtnWhite handleModal={this.handleNoThanks}>No Thanks</BtnWhite>
-                </Control>
-                <Control>
-                  <br />
-                  <BtnOrange onSubmitModal={(e) => this.onSubmitModal(e)}>Submit</BtnOrange>
-                </Control>
-              </Field>
-            </Container>
-          </Body>
-        </ModalCard>
-      </StyledModal>
+      <Modal isActive={showModal}>
+        <ModalBackground isOverlay onClick={this.onCloseModal} />
+        <Body isOverlay>
+          <Container>
+            <LabelTitle>Newsletter</LabelTitle>
+            <H2Subtitle>
+              Problem-solution fit: Observe the Customer, think as the Customer, be the
+              Customer.Problem-solution fit: Observe the
+            </H2Subtitle>
+            <br />
+            <Field>
+              <Label>E-mail</Label>
+              <Control>
+                <Input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  value={this.state.email}
+                  onChange={this.handleChange}
+                  style={{
+                    background: '#F4F6FB 0% 0% no-repeat padding-box',
+                    boxShadow: '0px 8px 20px #264A6052!important',
+                    opacity: '1',
+                  }}
+                />
+              </Control>
+            </Field>
+            <Field isGrouped style={{ justifyContent: 'flex-end' }}>
+              <Control>
+                <br />
+                <BtnWhite handleModal={this.onCloseModal}>No Thanks</BtnWhite>
+              </Control>
+              <Control>
+                <br />
+                <BtnOrange onSubmitModal={this.onSubmitModal}>Submit</BtnOrange>
+              </Control>
+            </Field>
+          </Container>
+        </Body>
+        <ModalClose onClick={this.onCloseModal} />
+      </Modal>
     );
   }
 }

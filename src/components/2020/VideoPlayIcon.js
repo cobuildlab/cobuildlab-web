@@ -9,7 +9,7 @@ const PlayIconContainer = styled.div`
   position: absolute;
   width: 70px;
   height: 70px;
-  z-index: 100;
+  z-index: 10;
   cursor: pointer;
 `;
 
