@@ -46,7 +46,7 @@ const renderAst = new rehypeReact({
     banner: Banner,
     credits: Credits,
     carousel: Carousel,
-    'contact-us': BlogPostContactUs,
+    // 'contact-us': BlogPostContactUs,
   },
 }).Compiler;
 
@@ -63,8 +63,7 @@ class BlogPostTemplate extends React.Component {
     const { previous, next, slug: origanlPath } = this.props.pageContext;
     const previousImage = get(previous, 'frontmatter.image.publicURL') || defaultImg;
     const nextImage = get(next, 'frontmatter.image.publicURL') || defaultImg;
-
-    const imageAmp = post.frontmatter.image.childImageSharp;
+    const imageAmp = post.frontmatter.image.childImageSharp.resolutions;
     const seoImages = get(this, 'props.data.seoImages.frontmatter.image.childImageSharp.resize');
 
     return (
@@ -93,8 +92,8 @@ class BlogPostTemplate extends React.Component {
           /> */}
           {/*<Img className="bg-post" fluid={post.frontmatter.image.childImageSharp.fluid}/>*/}
           <amp-img
-            src-set={imageAmp.srcSet}
-            src={imageAmp.src}
+            src-set={imageAmp.srcSetWebp}
+            src={imageAmp.srcWebp}
             width={imageAmp.width}
             height={imageAmp.height}
             alt={post.frontmatter.title}
@@ -104,8 +103,14 @@ class BlogPostTemplate extends React.Component {
 
         <section id="section-post" className="section">
           <Container>
-            <Columns isCentered>
-              <Column hasTextAlign="left">{renderAst(post.htmlAst)}</Column>
+            <Columns isMultiline>
+              <Column isSize={12} hasTextAlign="left">
+                <TTSVoice text={post.rawMarkdownBody} />
+                {renderAst(post.htmlAst)}
+              </Column>
+              <Column isSize={12}>
+                <BlogPostContactUs />
+              </Column>
             </Columns>
             <TTSVoice text={post.rawMarkdownBody} />
             <Share
@@ -230,6 +235,12 @@ export const pageQuery = graphql`
               sizes
               src
               srcSet
+            }
+            resolutions {
+              srcWebp
+              srcSetWebp
+              width
+              height
             }
           }
         }

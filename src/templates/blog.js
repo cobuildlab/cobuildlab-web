@@ -55,7 +55,7 @@ const renderAst = new rehypeReact({
     banner: Banner,
     credits: Credits,
     carousel: Carousel,
-    'contact-us': BlogPostContactUs,
+    // 'contact-us': BlogPostContactUs,
   },
 }).Compiler;
 
@@ -107,10 +107,13 @@ class BlogPostTemplate extends Component {
 
         <SectionPost id="section-post" className="section">
           <Container>
-            <Columns isCentered>
-              <Column hasTextAlign="left">
+            <Columns isMultiline>
+              <Column isSize={12} hasTextAlign="left">
                 <TTSVoice text={post.rawMarkdownBody} />
                 {renderAst(post.htmlAst)}
+              </Column>
+              <Column isSize={12}>
+                <BlogPostContactUs />
               </Column>
             </Columns>
             <Share
@@ -122,7 +125,6 @@ class BlogPostTemplate extends Component {
                 },
               }}
             />
-
             <Columns style={{ marginTop: 30 }} isCentered>
               <Column hasTextAlign="centered">
                 <StyledTitle tag="h6" isSize={3}>
