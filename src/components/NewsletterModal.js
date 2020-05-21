@@ -63,18 +63,8 @@ class NewsletterModal extends React.Component {
       this.timeOutID = setTimeout(() => this.handleModal(true), timeToShow);
     } else {
       const storedLocalTime = JSON.parse(localDuration);
-      const { isCancel, date } = storedLocalTime;
-      const cancelDate = moment(date);
-      const duration = moment.duration(currentDate.diff(cancelDate));
-      const { _data } = duration;
-      // check is 30 days is done
-      if (isCancel && _data && _data.days >= 30) {
-        this.timeOutID = setTimeout(() => this.handleModal(true), timeToShow);
-        return;
-      }
-
-      // if the user is register show after 1 year
-      if (_data && _data.years >= 1) {
+      const limitDate = moment(storedLocalTime);
+      if (moment(currentDate).isSame(limitDate)) {
         this.timeOutID = setTimeout(() => this.handleModal(true), timeToShow);
         return;
       }
@@ -113,11 +103,11 @@ class NewsletterModal extends React.Component {
       }
     });
     this.handleModal(false);
-    this.storeDate(false);
+    this.storeDate(1, 'y');
   };
 
   onCloseModal() {
-    this.storeDate(true);
+    this.storeDate(30, 'd');
   }
 
   handleModal = (showModal) => {
@@ -126,15 +116,12 @@ class NewsletterModal extends React.Component {
     });
   };
 
-  storeDate = (isCancel) => {
+  storeDate = (quantity, period) => {
     const localDuration = localStorage.getItem(this.localStoreKey);
     if (localDuration) {
       localStorage.removeItem(this.localStoreKey);
     }
-    const data = JSON.stringify({
-      isCancel: isCancel,
-      date: new Date(),
-    });
+    const data = JSON.stringify(moment().add(quantity, period)._d);
     localStorage.setItem(this.localStoreKey, data);
     this.handleModal(false);
   };

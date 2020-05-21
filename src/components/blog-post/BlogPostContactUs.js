@@ -1,5 +1,4 @@
 import React, { useState, useCallback, Fragment } from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Columns, Column, Modal, ModalBackground, ModalContent, ModalClose } from 'bloomer';
 import ButtonDefault from '../2020/Button/ButtonDefault';
@@ -25,15 +24,9 @@ const TextContainer = styled.div`
 const Text = styled(Paragraph)`
   color: #fff;
   padding: 0 2.5em;
-  word-spacing: 1.6px;
-  line-height: 1.4;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   margin: 0 !important;
+  line-height: 1.5;
   @media screen and (max-width: 768px) {
-    overflow: visible;
-    white-space: pre-wrap;
     text-align: center;
     padding: 1em;
   }
@@ -61,6 +54,7 @@ const ButtonContainer = styled.div`
 const ActionsContainer = styled.div`
   display: flex;
   justify-content: flex-end;
+  height: 100%;
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
@@ -82,14 +76,12 @@ const ListItem = styled.li`
   padding: 0.5em;
 `;
 
-const BlogPostContactUs = ({ children }) => {
+const BlogPostContactUs = () => {
   const [isVisible, setVisible] = useState(false);
 
   const handleVisible = useCallback(() => {
     setVisible((state) => !state);
   }, []);
-
-  const content = children ? children : 'If you want to know more information contact us';
 
   return (
     <Fragment>
@@ -97,7 +89,10 @@ const BlogPostContactUs = ({ children }) => {
         <Columns>
           <Column isSize={{ mobile: 12, desktop: 8 }}>
             <TextContainer>
-              <Text>{content}</Text>
+              <Text>
+                Keep receiving our weekly news and content by subscribing to our newsletter. We
+                promise too only send relevant information.
+              </Text>
             </TextContainer>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 4 }}>
@@ -134,18 +129,6 @@ const BlogPostContactUs = ({ children }) => {
       </Modal>
     </Fragment>
   );
-};
-
-BlogPostContactUs.defaultProps = {
-  children: false,
-};
-
-BlogPostContactUs.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.bool,
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]),
 };
 
 export default BlogPostContactUs;
