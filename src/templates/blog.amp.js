@@ -2,6 +2,7 @@ import React from 'react';
 import LayoutPost from '../components/layoutPost';
 import { Link, graphql } from 'gatsby';
 import { DiscussionEmbed } from 'disqus-react';
+import styled from 'styled-components';
 import SeoMetaTags from '../components/SeoMetaTags';
 import BlogPostContactUs from '../components/blog-post/BlogPostContactUs';
 import Share from '../components/Share';
@@ -33,6 +34,12 @@ import { Hero, Container, Title, Columns, Column, Card, CardContent, Content } f
 import TTSVoice from '../components/TTSVoice';
 import PropTypes from 'prop-types';
 
+const ImagesAmpContainer = styled.div`
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+`;
+
 const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: {
@@ -46,7 +53,7 @@ const renderAst = new rehypeReact({
     banner: Banner,
     credits: Credits,
     carousel: Carousel,
-    'contact-us': BlogPostContactUs,
+    // 'contact-us': BlogPostContactUs,
   },
 }).Compiler;
 
@@ -63,8 +70,7 @@ class BlogPostTemplate extends React.Component {
     const { previous, next, slug: origanlPath } = this.props.pageContext;
     const previousImage = get(previous, 'frontmatter.image.publicURL') || defaultImg;
     const nextImage = get(next, 'frontmatter.image.publicURL') || defaultImg;
-
-    const imageAmp = post.frontmatter.image.childImageSharp;
+    const imageAmp = post.frontmatter.image.childImageSharp.resolutions;
     const seoImages = get(this, 'props.data.seoImages.frontmatter.image.childImageSharp.resize');
 
     return (
@@ -80,32 +86,28 @@ class BlogPostTemplate extends React.Component {
             <Title tag="h3" isSize={1} hasTextColor="Black">
               {post.frontmatter.title}
             </Title>
-            <br />
-            <hr />
+            <ImagesAmpContainer>
+              <amp-img
+                src-set={imageAmp.srcSetWebp}
+                src={imageAmp.srcWebp}
+                width={imageAmp.width}
+                height={imageAmp.height}
+                alt={post.frontmatter.title}
+                layout="responsive"
+              />
+            </ImagesAmpContainer>
           </Container>
-          {/* WITH GATSBY ALWAYS USE <IMG fluid={}>
-            Because it handles the device size img for you*/}
-          {/* <HeroBody
-            className="bg-post"
-            style={{
-              backgroundImage: `url(${image})`
-            }}
-          /> */}
-          {/*<Img className="bg-post" fluid={post.frontmatter.image.childImageSharp.fluid}/>*/}
-          <amp-img
-            src-set={imageAmp.srcSet}
-            src={imageAmp.src}
-            width={imageAmp.width}
-            height={imageAmp.height}
-            alt={post.frontmatter.title}
-            layout="responsive"
-          />
         </Hero>
-
         <section id="section-post" className="section">
           <Container>
-            <Columns isCentered>
-              <Column hasTextAlign="left">{renderAst(post.htmlAst)}</Column>
+            <Columns isMultiline>
+              <Column isSize={12} hasTextAlign="left">
+                <TTSVoice text={post.rawMarkdownBody} />
+                {renderAst(post.htmlAst)}
+              </Column>
+              <Column isSize={12}>
+                <BlogPostContactUs />
+              </Column>
             </Columns>
             <TTSVoice text={post.rawMarkdownBody} />
             <Share
@@ -230,6 +232,12 @@ export const pageQuery = graphql`
               sizes
               src
               srcSet
+            }
+            resolutions {
+              srcWebp
+              srcSetWebp
+              width
+              height
             }
           }
         }

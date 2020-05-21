@@ -20,7 +20,7 @@ const Wrapper = styled.div`
 
 const HeaderContainer = styled.div`
   position: relative;
-  z-index: 100;
+  z-index: 10;
 `;
 
 export const Sider = styled.div`
