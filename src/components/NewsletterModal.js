@@ -62,8 +62,7 @@ class NewsletterModal extends React.Component {
     if (!localDuration) {
       this.timeOutID = setTimeout(() => this.handleModal(true), timeToShow);
     } else {
-      const storedLocalTime = JSON.parse(localDuration);
-      const limitDate = moment(storedLocalTime);
+      const limitDate = moment(localDuration);
       if (moment(currentDate).isSame(limitDate)) {
         this.timeOutID = setTimeout(() => this.handleModal(true), timeToShow);
         return;
@@ -121,7 +120,7 @@ class NewsletterModal extends React.Component {
     if (localDuration) {
       localStorage.removeItem(this.localStoreKey);
     }
-    const data = JSON.stringify(moment().add(quantity, period)._d);
+    const data = moment().add(quantity, period)._d;
     localStorage.setItem(this.localStoreKey, data);
     this.handleModal(false);
   };
