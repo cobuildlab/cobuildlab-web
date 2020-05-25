@@ -1,5 +1,5 @@
-import React from 'react';
-import { Page, Text, View, Document, StyleSheet, PDFDownloadLink } from '@react-pdf/renderer';
+import React, { useCallback } from 'react';
+import { Page, Text, View, Document, StyleSheet, pdf } from '@react-pdf/renderer';
 
 // Create styles
 const styles = StyleSheet.create({
@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
 });
 
 // Create Document Component
-const MyDocument = () => (
+const MyDocument = (
   <Document>
     <Page size="A4" style={styles.page}>
       <View style={styles.section}>
@@ -28,12 +28,23 @@ const MyDocument = () => (
   </Document>
 );
 
-const calculatorPdf = () => (
-  <div>
-    <PDFDownloadLink document={<MyDocument />} fileName="somename.pdf">
-      {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Download now!')}
-    </PDFDownloadLink>
-  </div>
-);
+const calculatorPdf = () => {
+  const onClick = useCallback(async () => {
+    const blob = await pdf(MyDocument).toBlob();
+    console.log('pdf in base64', blob);
+    const reader = new FileReader();
+    reader.readAsDataURL(blob);
+    reader.onloadend = function() {
+      const result = reader.result;
+      console.log('pdf in base64', result);
+    };
+  }, []);
+
+  return (
+    <div>
+      <button onClick={onClick}>get pdf</button>
+    </div>
+  );
+};
 
 export default calculatorPdf;
