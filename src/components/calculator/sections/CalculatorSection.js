@@ -9,6 +9,7 @@ import CalculatorSectionSecurity from './CalculatorSectionSecurity';
 import CalculatorSectionData from './CalculatorSectionData';
 import CalculatorSectionAdditionalFeatures from './CalculatorSectionAdditionalFeatures';
 import CalculatorFooter from './CalculatorFooter';
+import CalculatorPdf from '../pdf/calculatorPdf';
 
 const defaultFeatureCost = [
   {
@@ -83,6 +84,9 @@ class CalculatorSection extends PureComponent {
           <CalculatorSectionData getCost={this.getCost} />
           <CalculatorSectionAdditionalFeatures getCost={this.getCost} />
           <CalculatorFooter max={total.max} min={total.min} />
+          <div>
+            <CalculatorPdf />
+          </div>
         </CalculatorWrapper>
       </Container>
     );
