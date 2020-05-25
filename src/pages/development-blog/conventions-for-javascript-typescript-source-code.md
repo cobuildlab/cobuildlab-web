@@ -1,6 +1,6 @@
 ---
 title: Conventions for Javascript / Typescript source code
-date: 2020-12-31T01:00:00+00:00
+date: 2021-12-31T01:00:00+00:00
 tags: 
 template: development-post
 image: null
