@@ -14,28 +14,38 @@ import CalculatorPdf from '../pdf/calculatorPdf';
 const defaultFeatureCost = [
   {
     feature: 'platform',
+    select: [],
     max: 0,
     min: 0,
+    descripton: "Platform to your project",
   },
   {
     feature: 'design',
+    select: [],
     max: 0,
     min: 0,
+    descripton: "UI theme",
   },
   {
     feature: 'security',
+    select: [],
     max: 0,
     min: 0,
+    descripton: "App Security",
   },
   {
     feature: 'data',
+    select: [],
     max: 0,
     min: 0,
+    descripton: "Integrate which this 3rd party services:",
   },
   {
     feature: 'additional-feature',
+    select: [],
     max: 0,
     min: 0,
+    descripton: "Additional services for your project",
   },
 ];
 
@@ -58,6 +68,7 @@ class CalculatorSection extends PureComponent {
       ...element,
       min: item.feature === element.feature ? item.min : element.min,
       max: item.feature === element.feature ? item.max : element.max,
+      select: item.feature === element.feature ? item.select : element.select,
     }));
     const max = newData.map((e) => e.max).reduce((total, current) => total + current);
     const min = newData.map((e) => e.min).reduce((total, current) => total + current);
@@ -72,8 +83,7 @@ class CalculatorSection extends PureComponent {
   }
 
   render() {
-    const { total } = this.state;
-    console.log(total);
+    const { total, data } = this.state;
     return (
       <Container>
         <CalculatorWrapper>
@@ -85,7 +95,7 @@ class CalculatorSection extends PureComponent {
           <CalculatorSectionAdditionalFeatures getCost={this.getCost} />
           <CalculatorFooter max={total.max} min={total.min} />
           <div>
-            <CalculatorPdf />
+            <CalculatorPdf data={data} />
           </div>
         </CalculatorWrapper>
       </Container>

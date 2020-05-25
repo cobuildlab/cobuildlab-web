@@ -58,6 +58,7 @@ const CalculatorSectionData = ({ getCost }) => {
       setCurrentPlatform(item);
       getCost({
         feature: 'data',
+        select: [item.name],
         max: item.max,
         min: item.min,
       });
@@ -81,9 +82,9 @@ const CalculatorSectionData = ({ getCost }) => {
       <CalculatorLayoutLeftSection>
         <CalculatorLayoutDescripcion>
           <CalculatorCell isDisplay="flex" isDirection="column" isJustify="center" isAlign="center">
-            <CalculatorFeatureName>Design</CalculatorFeatureName>
+            <CalculatorFeatureName>Data</CalculatorFeatureName>
             <CalculatorFeatureDescription>
-              What would your UI theme be?
+              Integrate which this 3rd party services:
             </CalculatorFeatureDescription>
           </CalculatorCell>
         </CalculatorLayoutDescripcion>

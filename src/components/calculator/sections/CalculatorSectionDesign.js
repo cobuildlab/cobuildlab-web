@@ -42,6 +42,7 @@ const CalculatorSectionDesign = ({ getCost }) => {
       setCurrentPlatform(item);
       getCost({
         feature: 'design',
+        select: [item.name],
         max: item.max,
         min: item.min,
       });
