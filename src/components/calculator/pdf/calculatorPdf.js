@@ -15,11 +15,11 @@ const styles = StyleSheet.create({
 });
 
 // Create Document Component
-const MyDocument = (
+const MyDocument = (data) => (
   <Document>
     <Page size="A4" style={styles.page}>
       <View style={styles.section}>
-        <Text>Section #1</Text>
+        <Text>{data.text}</Text>
       </View>
       <View style={styles.section}>
         <Text>Section #2</Text>
@@ -30,7 +30,8 @@ const MyDocument = (
 
 const calculatorPdf = () => {
   const onClick = useCallback(async () => {
-    const blob = await pdf(MyDocument).toBlob();
+    const documentData = MyDocument({ text: 'hola' });
+    const blob = await pdf(documentData).toBlob();
     console.log('pdf in base64', blob);
     const reader = new FileReader();
     reader.readAsDataURL(blob);
