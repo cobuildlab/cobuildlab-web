@@ -7,6 +7,7 @@
     "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
   },
   "dependencies": {
+    "@react-pdf/renderer": "^1.6.9",
     "babel-plugin-styled-components": "^1.10.7",
     "bloomer": "^0.6.3",
     "bulma": "^0.7.5",
@@ -49,13 +50,9 @@
     "react-modal-video": "^1.2.2",
     "react-share": "^2.3.1",
     "react-slick": "^0.25.2",
-    "react-speech": "^0.3.2",
     "react-spinners": "^0.4.8",
-    "react-spinners-kit": "^1.9.1",
     "react-sweet-progress": "^1.1.2",
-    "react-tabs": "^3.1.0",
     "react-toastify": "^4.4.0",
-    "react-transition-group": "^2.9.0",
     "react-youtube": "^7.9.0",
     "rehype-react": "^3.0.3",
     "slick-carousel": "^1.8.1",
