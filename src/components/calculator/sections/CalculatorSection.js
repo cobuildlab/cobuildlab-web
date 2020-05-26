@@ -17,35 +17,35 @@ const defaultFeatureCost = [
     select: [],
     max: 0,
     min: 0,
-    descripton: "Platform to your project",
+    description: 'Platform to your project',
   },
   {
     feature: 'design',
     select: [],
     max: 0,
     min: 0,
-    descripton: "UI theme",
+    description: 'UI theme',
   },
   {
     feature: 'security',
     select: [],
     max: 0,
     min: 0,
-    descripton: "App Security",
+    description: 'App Security',
   },
   {
     feature: 'data',
     select: [],
     max: 0,
     min: 0,
-    descripton: "Integrate which this 3rd party services:",
+    description: 'Integrate which this 3rd party services:',
   },
   {
-    feature: 'additional-feature',
+    feature: 'additional feature',
     select: [],
     max: 0,
     min: 0,
-    descripton: "Additional services for your project",
+    description: 'Additional services for your project',
   },
 ];
 
@@ -84,6 +84,7 @@ class CalculatorSection extends PureComponent {
 
   render() {
     const { total, data } = this.state;
+    console.log(data);
     return (
       <Container>
         <CalculatorWrapper>

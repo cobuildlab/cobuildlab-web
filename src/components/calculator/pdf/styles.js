@@ -1,7 +1,12 @@
-import { StyleSheet } from '@react-pdf/renderer';
+import { StyleSheet, Font } from '@react-pdf/renderer';
 
-const indigoColor = "#264A60";
-const orangeColor = "#E76C29";
+const indigoColor = '#264A60';
+const orangeColor = '#E76C29';
+
+Font.register({
+  family: 'Lato',
+  src: 'http://fonts.gstatic.com/s/lato/v13/v0SdcGFAl2aezM9Vq_aFTQ.ttf',
+});
 
 const styles = StyleSheet.create({
   body: {
@@ -9,27 +14,28 @@ const styles = StyleSheet.create({
     paddingBottom: 40,
     paddingLeft: 50,
     paddingRight: 50,
-    backgroundColor: "#F4F6FB",
-    display: "flex",
-    justifyContent: "space-between"
+    backgroundColor: '#F4F6FB',
+    display: 'flex',
+    justifyContent: 'space-between',
+    fontFamily: 'Lato',
   },
-  header:{
-    display: "flex",
-    alignItems: "center",
-    flexDirection: 'row'
+  header: {
+    display: 'flex',
+    alignItems: 'center',
+    flexDirection: 'row',
   },
-  logo:{
-    width: 90
+  logo: {
+    width: 90,
   },
-  overlay:{
-    position: "absolute",
+  overlay: {
+    position: 'absolute',
     top: 120,
-    left: "-50%",
-    width: 700
+    left: '-50%',
+    width: 700,
   },
-  headerList:{
+  headerList: {
     borderLeft: 1,
-    borderLeftColor: "#D1D3D4",
+    borderLeftColor: '#D1D3D4',
     borderLeftStyle: 'solid',
     paddingLeft: 10,
     marginLeft: 20,
@@ -37,117 +43,121 @@ const styles = StyleSheet.create({
   headerItem: {
     paddingTop: 2.5,
     paddingBottom: 2.5,
-    color: indigoColor, 
+    color: indigoColor,
     fontSize: 8,
   },
   titleContainer: {
-  	paddingTop: 50,
+    paddingTop: 50,
     paddingBottom: 30,
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    flexDirection: "row"
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
   },
-  title:{
+  title: {
     fontSize: 25,
     fontWeight: 'bold',
-  	color: indigoColor,
-  },
-  strongTitle:{
-  	color: orangeColor,
-    fontSize: 25,
-    fontWeight: 'bold',
-  },
-  table:{
-    
-  },
-  tableHeader:{
-    display: "flex",
-    alignItems: "flex-end",
-  },
-  tableHeaderText:{
     color: indigoColor,
-    fontWeight: "bold",
   },
-  tableFeature:{
-    display: "flex",
-    flexDirection: "row",
+  strongTitle: {
+    color: orangeColor,
+    fontSize: 25,
+    fontWeight: 'bold',
+  },
+  table: {},
+  tableHeader: {
+    display: 'flex',
+    alignItems: 'flex-end',
+  },
+  tableHeaderText: {
+    color: indigoColor,
+    fontWeight: 'bold',
+  },
+  tableFeature: {
+    display: 'flex',
+    flexDirection: 'row',
     borderBottom: 1,
-    borderBottomColor: "#D1D3D4",
-    borderBottomStyle: 'solid', 
+    borderBottomColor: '#D1D3D4',
+    borderBottomStyle: 'solid',
     paddingBottom: 15,
     paddingTop: 15,
   },
-  featureRightCol:{
-    width: "25%",
-    display: "flex",
-    alignItems: "flex-end",
+  featureRightCol: {
+    width: '25%',
+    display: 'flex',
+    alignItems: 'flex-end',
+    justifyContent: 'center',
     color: indigoColor,
   },
-  featureMidCol:{
-    width: "50%",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
+  featureMidCol: {
+    width: '50%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
     color: indigoColor,
   },
-  featureLeftCol:{
-    width: "25%",
+  featureLeftCol: {
+    display: 'flex',
+    justifyContent: 'center',
+    width: '25%',
     color: indigoColor,
   },
-  featureTitle:{
+  featureTitle: {
     fontWeight: 'bold',
     fontSize: 14,
-    paddingBottom: 15
+    paddingBottom: 15,
+    textTransform: 'capitalize',
   },
-  featureDescription:{
+  featureDescription: {
     fontSize: 9,
-    marginBottom: 2.5
+    marginBottom: 2.5,
+    textTransform: 'capitalize',
   },
-  featureSelectText:{
-    fontSize: 12
+  featureSelectText: {
+    fontSize: 12,
+    textTransform: 'capitalize',
+    paddingTop: 1,
   },
-  tableFooter:{
-    display: "flex",
-    flexDirection: "row",
+  tableFooter: {
+    display: 'flex',
+    flexDirection: 'row',
     paddingTop: 30,
     paddingBottom: 15,
-    justifyContent: "flex-end",
-    color: indigoColor
+    justifyContent: 'flex-end',
+    color: indigoColor,
   },
-  tableFooterText:{
+  tableFooterText: {
     paddingLeft: 25,
-    fontSize: 20
+    fontSize: 20,
   },
-  description:{
+  description: {
     color: indigoColor,
     paddingTop: 5,
-    paddingBottom: 15
+    paddingBottom: 15,
   },
-  descriptionText:{
+  descriptionText: {
     fontSize: 10,
     paddingTop: 2.5,
-    lineHeight: 1.5
+    lineHeight: 1.5,
   },
-  footer:{
+  footer: {
     paddingBottom: 5,
     borderBottom: 1,
     borderBottomColor: orangeColor,
-    borderBottomStyle: 'solid', 
-   	display: "flex",
-    flexDirection: "row",
-    fontWeight: "bold",
+    borderBottomStyle: 'solid',
+    display: 'flex',
+    flexDirection: 'row',
+    fontWeight: 'bold',
     fontSize: 12,
   },
-  footerText:{
+  footerText: {
     color: indigoColor,
     paddingRight: 5,
   },
-  footerStrong:{
+  footerStrong: {
     color: orangeColor,
     paddingRight: 5,
-  }
+  },
 });
-
 
 export default styles;
