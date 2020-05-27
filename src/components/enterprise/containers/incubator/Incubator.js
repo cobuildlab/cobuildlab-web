@@ -12,14 +12,15 @@ const Right = styled(Column)`
 `;
 
 const SectionContainer = styled(Section)`
-  padding-top: 3.5em;
+  padding-top: 10em;
+  padding-bottom: 5em;
   @media screen and (max-width: 768px) {
     padding-top: 0;
   }
 `;
 
 const IncubatorLink = () => (
-  <SectionContainer>
+  <SectionContainer id="incubator">
     <Container>
       <Columns>
         <Column isSize={{ mobile: 12, desktop: 7 }}>
