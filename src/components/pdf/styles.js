@@ -10,13 +10,11 @@ Font.register({
 
 const styles = StyleSheet.create({
   body: {
-    paddingTop: 40,
-    paddingBottom: 40,
+    paddingTop: 30,
+    paddingBottom: 30,
     paddingLeft: 50,
     paddingRight: 50,
     backgroundColor: '#F4F6FB',
-    display: 'flex',
-    justifyContent: 'space-between',
     fontFamily: 'Lato',
   },
   header: {
@@ -47,8 +45,8 @@ const styles = StyleSheet.create({
     fontSize: 8,
   },
   titleContainer: {
-    paddingTop: 50,
-    paddingBottom: 30,
+    paddingTop: 20,
+    paddingBottom: 10,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -64,7 +62,6 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: 'bold',
   },
-  table: {},
   tableHeader: {
     display: 'flex',
     alignItems: 'flex-end',
@@ -83,23 +80,24 @@ const styles = StyleSheet.create({
     paddingTop: 15,
   },
   featureRightCol: {
-    width: '25%',
+    width: '28vw',
     display: 'flex',
     alignItems: 'flex-end',
     justifyContent: 'center',
     color: indigoColor,
+    fontSize: 14,
   },
   featureMidCol: {
-    width: '50%',
+    width: '25vw',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     color: indigoColor,
   },
   featureLeftCol: {
+    width: '30vw',
     display: 'flex',
     justifyContent: 'center',
-    width: '25%',
     color: indigoColor,
   },
   featureTitle: {

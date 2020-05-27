@@ -22,7 +22,7 @@ const PdfCalculatorTemplate = ({ data, total }) => {
       <View key={e.feature} style={styles.tableFeature}>
         <View style={styles.featureLeftCol}>
           <Text style={styles.featureTitle}>{e.feature}</Text>
-          <Text style={styles.featureDescription}>{e.description}</Text>
+          <Text style={styles.featureDescription}>Platform to your project</Text>
         </View>
         <View style={styles.featureMidCol}>{selectItems}</View>
         <View style={styles.featureRightCol}>
@@ -36,7 +36,7 @@ const PdfCalculatorTemplate = ({ data, total }) => {
 
   return (
     <Document>
-      <Page size="A4" style={styles.body}>
+      <Page wrap={false} style={styles.body}>
         <View style={styles.header}>
           <Image style={styles.logo} src={logo} />
           <View style={styles.headerList}>
@@ -49,33 +49,31 @@ const PdfCalculatorTemplate = ({ data, total }) => {
           <Text style={styles.title}>Budget </Text>
           <Text style={styles.strongTitle}>Builder</Text>
         </View>
-        <View style={styles.table}>
-          <Image src={bg} style={styles.overlay} />
-          <View style={styles.tableHeader}>
-            <Text style={styles.tableHeaderText}>Amount</Text>
-          </View>
-          {items}
-          <View style={styles.tableFooter}>
-            <Text style={styles.tableFooterText}>Total Amount</Text>
-            <Text style={styles.tableFooterText}>
-              $ {total.min} - {total.max}
-            </Text>
-          </View>
-          <View style={styles.description}>
-            <Text style={styles.descriptionText}>
-              We partner with new and early-stage entrepreneurs and industry experts to transforms
-              ideas into Web and Mobile Software Products.{' '}
-            </Text>
-            <Text style={styles.descriptionText}>
-              Since day one, our technique is focused on early results and transparent communication
-            </Text>
-          </View>
-          <View style={styles.footer}>
-            <Text style={styles.footerText}>Lest</Text>
-            <Text style={styles.footerStrong}>build</Text>
-            <Text style={styles.footerText}>a Great</Text>
-            <Text style={styles.footerStrong}>idea</Text>
-          </View>
+        <Image src={bg} style={styles.overlay} />
+        <View style={styles.tableHeader}>
+          <Text style={styles.tableHeaderText}>Amount</Text>
+        </View>
+        {items}
+        <View style={styles.tableFooter}>
+          <Text style={styles.tableFooterText}>Total Amount</Text>
+          <Text style={styles.tableFooterText}>
+            $ {total.min} - {total.max}
+          </Text>
+        </View>
+        <View style={styles.description}>
+          <Text style={styles.descriptionText}>
+            We partner with new and early-stage entrepreneurs and industry experts to transforms
+            ideas into Web and Mobile Software Products.{' '}
+          </Text>
+          <Text style={styles.descriptionText}>
+            Since day one, our technique is focused on early results and transparent communication
+          </Text>
+        </View>
+        <View style={styles.footer}>
+          <Text style={styles.footerText}>Lest</Text>
+          <Text style={styles.footerStrong}>build</Text>
+          <Text style={styles.footerText}>a Great</Text>
+          <Text style={styles.footerStrong}>idea</Text>
         </View>
       </Page>
     </Document>

@@ -35,9 +35,12 @@ class PricingContact extends PureComponent {
     this.transformToBase64 = this.transformToBase64.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.state = {
-      name: '',
-      email: '',
-      message: '',
+      isLoading: false,
+      form: {
+        name: '',
+        email: '',
+        message: '',
+      },
     };
   }
 
@@ -61,8 +64,10 @@ class PricingContact extends PureComponent {
   handleChange(e) {
     const field = { [e.target.name]: e.target.value };
     this.setState((state) => ({
-      ...state,
-      ...field,
+      form: {
+        ...state.form,
+        ...field,
+      },
     }));
   }
 
@@ -71,7 +76,8 @@ class PricingContact extends PureComponent {
       event.preventDefault();
       const { calculatorData } = this.props;
       const { data, total } = calculatorData;
-      const { name, email, message } = this.state;
+      const { form } = this.state;
+      const { name, email, message } = form;
 
       if (!data || !total) {
         toast.dismiss();
@@ -109,6 +115,10 @@ class PricingContact extends PureComponent {
         return;
       }
 
+      this.setState((state) => ({
+        isLoading: !state.isLoading,
+      }));
+
       const documentData = template({ data, total });
       const blob = await pdf(documentData).toBlob();
       const base64 = await this.transformToBase64(blob);
@@ -133,12 +143,19 @@ class PricingContact extends PureComponent {
 
       await fetch(process.env.PRICING_CONTACT_API, settings);
 
+      this.setState((state) => ({
+        isLoading: !state.isLoading,
+      }));
+
       toast.dismiss();
       toast(<Success message="Message sent succesfully" />, {
         position: 'bottom-right',
         hideProgressBar: true,
       });
     } catch (error) {
+      this.setState((state) => ({
+        isLoading: !state.isLoading,
+      }));
       toast(<Error message="Error, the message could not be sent" />, {
         position: 'bottom-right',
         hideProgressBar: true,
@@ -148,6 +165,8 @@ class PricingContact extends PureComponent {
   }
 
   render() {
+    const { isLoading } = this.state;
+
     return (
       <Container>
         <ToastContainer />
@@ -195,7 +214,9 @@ class PricingContact extends PureComponent {
               </Field>
               <Field>
                 <Control>
-                  <ButtonDefault type="submit">Submit</ButtonDefault>
+                  <ButtonDefault isLoading={isLoading} type="submit">
+                    Submit
+                  </ButtonDefault>
                 </Control>
               </Field>
             </Form>
