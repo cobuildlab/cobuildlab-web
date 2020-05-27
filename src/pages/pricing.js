@@ -24,7 +24,10 @@ const Pricing = () => {
 
   return (
     <Layout>
-      <SeoMetaTags />
+      <SeoMetaTags
+        title="Pricing"
+        description="Use your price calculator to get a variation of expenses"
+      />
       <Hero>
         <HeroHeader>
           <Header />
