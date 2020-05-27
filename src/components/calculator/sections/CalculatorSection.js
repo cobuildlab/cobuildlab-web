@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 import { Container } from 'bloomer';
 
 import CalculatorWrapper from '../CalculatorWrapper';
@@ -9,7 +10,6 @@ import CalculatorSectionSecurity from './CalculatorSectionSecurity';
 import CalculatorSectionData from './CalculatorSectionData';
 import CalculatorSectionAdditionalFeatures from './CalculatorSectionAdditionalFeatures';
 import CalculatorFooter from './CalculatorFooter';
-import CalculatorPdf from '../pdf/calculatorPdf';
 
 const defaultFeatureCost = [
   {
@@ -50,6 +50,14 @@ const defaultFeatureCost = [
 ];
 
 class CalculatorSection extends PureComponent {
+  static defaultProps = {
+    getData: () => null,
+  };
+
+  static propTypes = {
+    getData: PropTypes.func,
+  };
+
   constructor(props) {
     super(props);
     this.state = {
@@ -64,6 +72,8 @@ class CalculatorSection extends PureComponent {
 
   getCost(item) {
     const { data } = this.state;
+    const { getData } = this.props;
+
     const newData = data.map((element) => ({
       ...element,
       min: item.feature === element.feature ? item.min : element.min,
@@ -73,12 +83,16 @@ class CalculatorSection extends PureComponent {
     const max = newData.map((e) => e.max).reduce((total, current) => total + current);
     const min = newData.map((e) => e.min).reduce((total, current) => total + current);
 
-    this.setState({
+    const state = {
       data: newData,
       total: {
         max,
         min,
       },
+    };
+
+    this.setState(state, () => {
+      getData(state);
     });
   }
 
@@ -95,9 +109,6 @@ class CalculatorSection extends PureComponent {
           <CalculatorSectionData getCost={this.getCost} />
           <CalculatorSectionAdditionalFeatures getCost={this.getCost} />
           <CalculatorFooter max={total.max} min={total.min} />
-          <div>
-            <CalculatorPdf data={data} />
-          </div>
         </CalculatorWrapper>
       </Container>
     );

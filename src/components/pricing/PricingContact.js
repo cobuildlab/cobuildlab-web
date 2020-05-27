@@ -1,31 +1,213 @@
-import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
-import { Container, Columns, Column } from 'bloomer';
-import PricingForm from './PricingForm';
+import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
+import {
+  Container,
+  Columns,
+  Column,
+  Field,
+  Label as BloomerLabel,
+  Control,
+  Input,
+  TextArea,
+} from 'bloomer';
+import { ToastContainer, toast } from 'react-toastify';
+import { pdf } from '@react-pdf/renderer';
+import styled from 'styled-components';
+import H4 from '../Typography/H4';
+import ButtonDefault from '../2020/Button/ButtonDefault';
+import PricingContactImages from './PricingContactImages';
+import template from '../pdf/PdfCalculatorTemplate';
+import Error from '../Toast/Error';
+import Success from '../Toast/Success';
 
-const PricingContact = () => {
-  const data = useStaticQuery(query);
+const Form = styled.form`
+  margin-top: 2em;
+`;
 
-  return (
-    <Container>
-      <Columns>
-        <Column isSize={6}>
-          <img src={data.file.publicURL} alt="" />
-        </Column>
-        <Column isSize={6}>
-          <PricingForm />
-        </Column>
-      </Columns>
-    </Container>
-  );
-};
+const Label = styled(BloomerLabel)`
+  color: #264a60;
+`;
 
-const query = graphql`
-  query {
-    file(relativePath: { eq: "pricing/contact.svg" }) {
-      publicURL
+class PricingContact extends PureComponent {
+  constructor(props) {
+    super(props);
+    this.onSubmit = this.onSubmit.bind(this);
+    this.transformToBase64 = this.transformToBase64.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.state = {
+      name: '',
+      email: '',
+      message: '',
+    };
+  }
+
+  transformToBase64(blob) {
+    const promise = new Promise((resolve, reject) => {
+      try {
+        const reader = new FileReader();
+        reader.readAsDataURL(blob);
+        reader.onloadend = function() {
+          resolve(reader.result.split(',')[1]);
+        };
+        reader.onerror = reject;
+      } catch (error) {
+        reject(error);
+      }
+    });
+
+    return promise;
+  }
+
+  handleChange(e) {
+    const field = { [e.target.name]: e.target.value };
+    this.setState((state) => ({
+      ...state,
+      ...field,
+    }));
+  }
+
+  async onSubmit(event) {
+    try {
+      event.preventDefault();
+      const { calculatorData } = this.props;
+      const { data, total } = calculatorData;
+      const { name, email, message } = this.state;
+
+      if (!data || !total) {
+        toast.dismiss();
+        toast(<Error message="Select at least one calculator feature" />, {
+          position: 'bottom-right',
+          hideProgressBar: true,
+        });
+        return;
+      }
+
+      if (!name.length) {
+        toast.dismiss();
+        toast(<Error message="name can't be empty" />, {
+          position: 'bottom-right',
+          hideProgressBar: true,
+        });
+        return;
+      }
+
+      if (!email.length) {
+        toast.dismiss();
+        toast(<Error message="Email can't be empty" />, {
+          position: 'bottom-right',
+          hideProgressBar: true,
+        });
+        return;
+      }
+
+      if (!message.length) {
+        toast.dismiss();
+        toast(<Error message="Message can't be empty" />, {
+          position: 'bottom-right',
+          hideProgressBar: true,
+        });
+        return;
+      }
+
+      const documentData = template({ data, total });
+      const blob = await pdf(documentData).toBlob();
+      const base64 = await this.transformToBase64(blob);
+
+      const postData = {
+        form: {
+          email,
+          name,
+          message,
+        },
+        pdfUri: base64,
+      };
+
+      const settings = {
+        method: 'POST',
+        body: JSON.stringify(postData),
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+      };
+
+      await fetch(process.env.PRICING_CONTACT_API, settings);
+
+      toast.dismiss();
+      toast(<Success message="Message sent succesfully" />, {
+        position: 'bottom-right',
+        hideProgressBar: true,
+      });
+    } catch (error) {
+      toast(<Error message="Error, the message could not be sent" />, {
+        position: 'bottom-right',
+        hideProgressBar: true,
+      });
+      throw new Error(error);
     }
   }
-`;
+
+  render() {
+    return (
+      <Container>
+        <ToastContainer />
+        <Columns>
+          <Column isSize={6}>
+            <PricingContactImages />
+          </Column>
+          <Column isSize={6}>
+            <H4>Get your estimate via email</H4>
+            <Form onSubmit={this.onSubmit}>
+              <Field>
+                <Label htmlFor="pricingContactName">Name</Label>
+                <Control>
+                  <Input
+                    name="name"
+                    onChange={this.handleChange}
+                    id="pricingContactName"
+                    type="text"
+                    placeholder="Name"
+                  />
+                </Control>
+              </Field>
+              <Field>
+                <Label htmlFor="pricingContactemail">Email</Label>
+                <Control>
+                  <Input
+                    name="email"
+                    onChange={this.handleChange}
+                    id="pricingContactemail"
+                    type="email"
+                    placeholder="Phone"
+                  />
+                </Control>
+              </Field>
+              <Field>
+                <Control>
+                  <Label htmlFor="contanctFormMessage">Message</Label>
+                  <TextArea
+                    onChange={this.handleChange}
+                    id="contanctFormMessage"
+                    name="message"
+                    placeholder="Message"
+                  />
+                </Control>
+              </Field>
+              <Field>
+                <Control>
+                  <ButtonDefault type="submit">Submit</ButtonDefault>
+                </Control>
+              </Field>
+            </Form>
+          </Column>
+        </Columns>
+      </Container>
+    );
+  }
+}
+
+PricingContact.propTypes = {
+  calculatorData: PropTypes.object.isRequired,
+};
 
 export default PricingContact;
