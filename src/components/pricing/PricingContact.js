@@ -141,7 +141,10 @@ class PricingContact extends PureComponent {
         },
       };
 
-      await fetch(process.env.PRICING_CONTACT_API, settings);
+      await fetch(
+        'https://api.8base.com/cjnp8j12b000i01qm9zu7dug3/webhook/calculator-mail',
+        settings,
+      );
 
       this.setState((state) => ({
         isLoading: !state.isLoading,
@@ -153,6 +156,7 @@ class PricingContact extends PureComponent {
         hideProgressBar: true,
       });
     } catch (error) {
+      console.error(error);
       this.setState((state) => ({
         isLoading: !state.isLoading,
       }));
