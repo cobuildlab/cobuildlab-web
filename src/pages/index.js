@@ -2,6 +2,7 @@ import React from 'react';
 import SeoMetaTags from '../components/SeoMetaTags';
 import Navbar from '../components/enterprise/containers/navbar';
 import Banner from '../components/enterprise/containers/banner';
+import IncubatorLink from '../components/enterprise/containers/incubator/Incubator';
 import Service from '../components/enterprise/containers/service';
 import About from '../components/enterprise/containers/about';
 import UniqueValueProps from '../components/enterprise/containers/unique-value-props';
@@ -27,6 +28,7 @@ const IndexPage = () => (
     <div id="main-content">
       <Banner />
       <Service />
+      <IncubatorLink />
       <About />
       <UniqueValueProps />
       <Video />

@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { Container, Columns, Column, Section } from 'bloomer';
 import Img from 'gatsby-image';
 import Typrography from '../../../2020/Typography';
-import ButtonSmoothScrolling from '../../../2020/Button/ButtonSmoothScrolling';
+import BannerButtons from './BannerButtons';
 import AnimationImages from './AnimationImages';
 import './banner.scss';
 
@@ -66,9 +66,7 @@ const Banner = () => {
                       turn it into a custom software solution.
                     </Typrography>
                     <div className="banner-btn-wrapper">
-                      <ButtonSmoothScrolling href="#services">
-                        Explore Our Services
-                      </ButtonSmoothScrolling>
+                      <BannerButtons />
                     </div>
                   </div>
                 </div>
