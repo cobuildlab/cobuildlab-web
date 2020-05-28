@@ -131,7 +131,7 @@ export class View extends Component {
 * Increase speed of development avoiding design decisions
 * Maintainability by isolation of the styling options
 
-### **3) Separate LAYOUT Components from UI Components**
+## **3) Separate LAYOUT Components from UI Components**
 
 Avoid mixing in components layout properties with look and feel properties unless is strictly necessary.
 
@@ -155,7 +155,7 @@ const View = () => {
 };
 ```
 
-### **4) Keep complex rendering logic on the render method with local variables **
+## **4) Keep complex rendering logic on the render method with local variables**
 
 Avoid clutter your rendering markup with complex conditional logic.
 
@@ -240,7 +240,7 @@ React components can be clasified in 2 major groups depending on how they fit in
 | **Renders**| Mostly understands **WHAT** to render   | It understands **WHAT** and **HOW** to render  |
 
 
-# **6) Architecture**
+## **6) Architecture**
 React applications must rely on the [Flux]([https://facebook.github.io/flux/](https://facebook.github.io/flux/)) Architecture propose by Facebook.
 
 The main rules are:
@@ -257,7 +257,7 @@ The main rules are:
 
 Any library that can comply with this rules is a good fit to handle the Architecture. For convenience, a state library has been created with this set of rules in mind: [Flux State]([https://github.com/cobuildlab/flux-state](https://github.com/cobuildlab/flux-state)) with a convenient React Wrapper: [React Flux State]([https://github.com/cobuildlab/react-flux-state](https://github.com/cobuildlab/react-flux-state))
 
-# **7) Formatting and Linting:**
+## **7) Formatting and Linting:**
 
 For installation see: [Formatting and Linting for Javascript and Typescript applications](/conventions-for-javascript-typescript-source-code) 
 
@@ -321,7 +321,7 @@ module.exports = {
 }
 ```
 
-# **8) Prefer `Session` pattern for managing protected routes instead of `ProtectedRoute` pattern **
+## **8) Prefer `Session` pattern for managing protected routes instead of `ProtectedRoute` pattern**
 
 For declarative routers like [React Router](https://reacttraining.com/react-router/) or [React Reach](https://reach.tech/router) prefer a Parent `Session` component that individuals `ProtectedRoute` components.
 
@@ -375,3 +375,23 @@ sddsf}
 
 * Single point of control over a user session over redirects, on-boardings, profile completion, etc 
 * In React the Session component can be used for [Error Boundaries](https://reactjs.org/docs/error-boundaries.html). 
+
+
+## **9) Use shared permission functions to control access to features and business operations:**
+
+- Isolate permission logic in functions that are easy to share.
+- A permission function should only depend dynamically on Business Objects.
+- All permission functions should maintain the same signature:
+
+```typescript
+export const canApproveProject = (user:User, project:Project): [boolean, string?] => {
+  if(project.status === FROZEN){
+    return [false, "Project is on invalid status and can't be approved"];  
+  }
+
+  if(user.role === ROLE)
+    return [true];
+
+  return [false, "User can't approve this project"];
+}; 
+```
