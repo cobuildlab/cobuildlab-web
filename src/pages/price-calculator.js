@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 import { Hero, HeroHeader, HeroBody, Section as BloomerSection } from 'bloomer';
 import styled from 'styled-components';
 import SeoMetaTags from '../components/SeoMetaTags';
@@ -16,9 +16,18 @@ const Section = styled(BloomerSection)`
 `;
 
 const Pricing = () => {
+  const [calculatorData, setCalculatorData] = useState({});
+
+  const onGetData = useCallback((data) => {
+    setCalculatorData(data);
+  }, []);
+
   return (
     <Layout>
-      <SeoMetaTags />
+      <SeoMetaTags
+        title="Price Calculator"
+        description="Use your price calculator to get a variation of expenses"
+      />
       <Hero>
         <HeroHeader>
           <Header />
@@ -28,10 +37,10 @@ const Pricing = () => {
         </HeroBody>
       </Hero>
       <Section>
-        <CalculatorSection />
+        <CalculatorSection getData={onGetData} />
       </Section>
       <Section>
-        <PricingContact />
+        <PricingContact calculatorData={calculatorData} />
       </Section>
     </Layout>
   );

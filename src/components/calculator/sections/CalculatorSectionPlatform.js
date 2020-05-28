@@ -50,6 +50,7 @@ const CalculatorSectionPlatform = ({ getCost }) => {
       setCurrentPlatform(platform);
       getCost({
         feature: 'platform',
+        select: [platform.name],
         max: platform.max,
         min: platform.min,
       });

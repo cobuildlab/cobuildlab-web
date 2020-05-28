@@ -139,7 +139,8 @@ class CalculatorSectionAdditionalFeatures extends PureComponent {
       },
       () => {
         getCost({
-          feature: 'additional-feature',
+          feature: 'additional feature',
+          select: onlyActivesItems.map((e) => e.name),
           max,
           min,
         });

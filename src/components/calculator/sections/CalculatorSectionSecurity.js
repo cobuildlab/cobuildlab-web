@@ -50,6 +50,7 @@ const CalculatorSectionSecurity = ({ getCost }) => {
       setCurrentPlatform(item);
       getCost({
         feature: 'security',
+        select: [item.name],
         max: item.max,
         min: item.min,
       });
