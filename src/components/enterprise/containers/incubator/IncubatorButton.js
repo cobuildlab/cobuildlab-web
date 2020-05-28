@@ -23,7 +23,7 @@ const Redirect = styled(Link)`
   align-items: center;
   border-radius: 999999999999999999999999999px;
   @media screen and (max-width: 768px) {
-    padding: 1em 2em;
+    padding: 1em 3em;
   }
 `;
 

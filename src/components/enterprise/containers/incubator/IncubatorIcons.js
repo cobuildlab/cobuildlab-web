@@ -1,21 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Icon } from 'react-icons-kit';
-import { desktop } from 'react-icons-kit/fa/desktop';
+import { database } from 'react-icons-kit/fa/database';
+import { shield } from 'react-icons-kit/fa/shield';
+import { group } from 'react-icons-kit/fa/group';
+import { ribbonB } from 'react-icons-kit/ionicons/ribbonB';
 
 const Container = styled.div`
   margin-top: 2rem;
   display: flex;
   justify-content: flex-end;
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
 `;
 
 const List = styled.ul`
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
-  @media screen and (max-width: 768px) {
-    justify-content: center;
-  }
 `;
 
 const Item = styled.li`
@@ -35,24 +38,20 @@ const IncubatorContent = () => (
   <Container>
     <List>
       <Item>
-        <Icon icon={desktop} size={24} />
+        <Icon icon={database} size={24} />
         <IconCaption>Serverless</IconCaption>
       </Item>
       <Item>
-        <Icon icon={desktop} size={24} />
-        <IconCaption>Serverless</IconCaption>
+        <Icon icon={ribbonB} size={24} />
+        <IconCaption>24/7</IconCaption>
       </Item>
       <Item>
-        <Icon icon={desktop} size={24} />
-        <IconCaption>Serverless</IconCaption>
+        <Icon icon={group} size={24} />
+        <IconCaption>Team</IconCaption>
       </Item>
       <Item>
-        <Icon icon={desktop} size={24} />
-        <IconCaption>Serverless</IconCaption>
-      </Item>
-      <Item>
-        <Icon icon={desktop} size={24} />
-        <IconCaption>Serverless</IconCaption>
+        <Icon icon={shield} size={24} />
+        <IconCaption>Security</IconCaption>
       </Item>
     </List>
   </Container>
