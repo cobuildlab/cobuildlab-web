@@ -135,8 +135,8 @@ class NewsletterModal extends React.Component {
           <Container>
             <LabelTitle>Newsletter</LabelTitle>
             <H2Subtitle>
-              Problem-solution fit: Observe the Customer, think as the Customer, be the
-              Customer.Problem-solution fit: Observe the
+              Subscribe to our newsletter to keep you up to date with the latest information about
+              Software and Entrepreneurship.
             </H2Subtitle>
             <br />
             <Field>
