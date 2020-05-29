@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 import { Hero, HeroHeader, HeroBody, Section as BloomerSection, Container } from 'bloomer';
 import styled from 'styled-components';
 import SeoMetaTags from '../components/SeoMetaTags';
@@ -13,12 +15,9 @@ const Section = styled(BloomerSection)`
   }
 `;
 
-const Pricing = () => (
+const Team = ({ data }) => (
   <Layout>
-    <SeoMetaTags
-      title="Price Calculator"
-      description="Use your price calculator to get a variation of expenses"
-    />
+    <SeoMetaTags title="Cobuild Lab Team" description="Team work" />
     <Hero>
       <HeroHeader>
         <Header />
@@ -29,10 +28,41 @@ const Pricing = () => (
     </Hero>
     <Section>
       <Container>
-        <TeamList />
+        <TeamList data={data.allTeamJson.nodes} />
       </Container>
     </Section>
   </Layout>
 );
 
-export default Pricing;
+Team.propTypes = {
+  data: PropTypes.object.isRequired,
+};
+
+export const pageQuery = graphql`
+  query {
+    allTeamJson {
+      nodes {
+        name
+        id
+        descripion
+        social_networks {
+          name
+          src
+        }
+        picture {
+          childImageSharp {
+            fluid {
+              srcWebp
+              srcSetWebp
+              sizes
+              base64
+              aspectRatio
+            }
+          }
+        }
+      }
+    }
+  }
+`;
+
+export default Team;

@@ -1,13 +1,16 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import PropTypes from 'prop-types';
 import { Columns, Column } from 'bloomer';
-// import styled from 'styled-components';
+import styled from 'styled-components';
 import TeamCard from './TeamCard';
 
-const TeamList = () => {
-  const data = useStaticQuery(query);
+const Container = styled.div`
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+`;
 
-  const items = data.allTeamJson.nodes.map(({ id, name, social_networks, picture, descripion }) => (
+const TeamList = ({ data }) => {
+  const items = data.map(({ id, name, social_networks, picture, descripion }) => (
     <Column key={id} isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
       <TeamCard
         src={picture.childImageSharp.fluid}
@@ -18,34 +21,15 @@ const TeamList = () => {
     </Column>
   ));
 
-  return <Columns isMultiline>{items}</Columns>;
+  return (
+    <Container>
+      <Columns isMultiline>{items}</Columns>
+    </Container>
+  );
 };
 
-const query = graphql`
-  query {
-    allTeamJson {
-      nodes {
-        name
-        id
-        descripion
-        social_networks {
-          name
-          src
-        }
-        picture {
-          childImageSharp {
-            fluid {
-              srcWebp
-              srcSetWebp
-              sizes
-              base64
-              aspectRatio
-            }
-          }
-        }
-      }
-    }
-  }
-`;
+TeamList.propTypes = {
+  data: PropTypes.array.isRequired,
+};
 
 export default TeamList;
