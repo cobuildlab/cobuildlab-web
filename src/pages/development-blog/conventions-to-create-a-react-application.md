@@ -395,3 +395,36 @@ export const canApproveProject = (user:User, project:Project): [boolean, string?
   return [false, "User can't approve this project"];
 }; 
 ```
+
+```typescript
+/**
+ * Permission to check If a User can delete an Alliance.
+ * @param {User}user - The User requesting permissions.
+ * @param {Alliance}alliance - The Alliance to be deleted.
+ *
+ * @returns {[boolean, string?]} - If we can execute the deletion or not.
+ */
+export const canDeleteAllianceV2 = (user: User, alliance: Alliance): [boolean, string?] => {
+  if (!isAllianceCompleted(alliance)) {
+    return [false, 'The Alliance is not Completed.'];
+  }
+  const userRole = getRoleOnAlliance(user, alliance);
+  if (userRole === null) {
+    return [false, 'Current User doesn\'t belongs to this alliance.'];
+  }
+  if (!isUserFromClientCompany(user, alliance)) {
+    return [false, 'Only Users from the Client Company can delete an Alliance'];
+  }
+  if (alliance.status === ALLIANCE_IN_PROGRESS) {
+    if (user.id === alliance.createdBy.id) {
+      return [true];
+    }
+    return [false, 'When an Alliance is In Progress only the creator of the Alliance can delete it.'];
+  } else {
+    if (userRole.name === ALLIANCE_SER || userRole.name === ALLIANCE_ADMINISTRATOR) {
+      return [true];
+    }
+    return [false, "Only Alliance SERs and Alliance Administrators can delete an Alliance."]
+  }
+};
+```
