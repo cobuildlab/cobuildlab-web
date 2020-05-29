@@ -1,17 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import fb from '../../assets/images/icons/facebook.svg';
-import ig from '../../assets/images/icons/instagram.svg';
+import TeamSocialNetworks from './TeamSocialNetworks';
 
 const Container = styled.div`
   position: relative;
-  transition: transform 0.3s ease-out;
-  cursor: pointer;
-  &:hover {
-    transform: scale(1.05);
-    z-index: 100;
-  }
 `;
 
 const ImagesWrapper = styled.div`
@@ -58,11 +51,7 @@ const Footer = styled.div`
   padding: 1em;
 `;
 
-const Icon = styled.img`
-  margin: 0 1em;
-`;
-
-const TeamCard = ({ src, alt, name, description }) => (
+const TeamCard = ({ src, alt, name, description, socialNetworks }) => (
   <Container>
     <ImagesWrapper>
       <Image src={src} alt={alt} />
@@ -72,8 +61,7 @@ const TeamCard = ({ src, alt, name, description }) => (
       <Name>{name}</Name>
       <Description>{description}</Description>
       <Footer>
-        <Icon src={fb} alt="fb" />
-        <Icon src={ig} alt="ig" />
+        <TeamSocialNetworks data={socialNetworks} />
       </Footer>
     </Content>
   </Container>
@@ -81,6 +69,12 @@ const TeamCard = ({ src, alt, name, description }) => (
 
 TeamCard.defaultProps = {
   alt: '',
+  socialNetworks: [
+    {
+      src: 'www.github.com',
+      name: 'github',
+    },
+  ],
 };
 
 TeamCard.propTypes = {
@@ -88,6 +82,7 @@ TeamCard.propTypes = {
   src: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  socialNetworks: PropTypes.array,
 };
 
 export default TeamCard;
