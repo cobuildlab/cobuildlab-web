@@ -44,7 +44,7 @@ export const pageQuery = graphql`
       nodes {
         name
         id
-        descripion
+        description
         social_networks {
           name
           src
