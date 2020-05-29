@@ -55,5 +55,480 @@
         "src": "https://github.com"
       }
     ]
+  },
+   {
+    "name": "Ariadna Mora",
+    "picture": "../assets/images/team/team-pictures/Ariadna-Mora.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },   
+  {
+    "name": "Carlos Febres",
+    "picture": "../assets/images/team/team-pictures/Carlos-Febres.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "name": "Carlos Hurtado",
+    "picture": "../assets/images/team/team-pictures/Carlos-Hurtado.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "name": "Carolina Barcelo",
+    "picture": "../assets/images/team/team-pictures/Carolina-Barcelo.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "name": "Cesar Morales",
+    "picture": "../assets/images/team/team-pictures/Cesar-Morales.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "name": "Dany Leonel Lima",
+    "picture": "../assets/images/team/team-pictures/Dany-Leonel-Lima.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "name": "Edgar Espinetti",
+    "picture": "../assets/images/team/team-pictures/Edgar-Espinetti.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "name": "Ernesto Morales",
+    "picture": "../assets/images/team/team-pictures/Ernesto-Morales.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "name": "Gerardo Garcia",
+    "picture": "../assets/images/team/team-pictures/Gerardo-Garcia.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "name": "Jesús Rodriguez",
+    "picture": "../assets/images/team/team-pictures/Jesus-Rodriguez.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "name": "Jorge Soto",
+    "picture": "../assets/images/team/team-pictures/Jorge-Soto.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "name": "Jose Agustín Villalobos",
+    "picture": "../assets/images/team/team-pictures/Jose-Agustín-Villalobos.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "name": "Julmer Olivero",
+    "picture": "../assets/images/team/team-pictures/Julmer-Olivero.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "name": "kevin",
+    "picture": "../assets/images/team/team-pictures/kevin.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "name": "Luis Eulacio",
+    "picture": "../assets/images/team/team-pictures/Luis-Eulacio.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "name": "Maite Quijada",
+    "picture": "../assets/images/team/team-pictures/Maite-Quijada.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "name": "Manuel Briceno",
+    "picture": "../assets/images/team/team-pictures/Manuel-Briceno.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "name": "Marco Maldonado",
+    "picture": "../assets/images/team/team-pictures/MarcoMaldonado.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "name": "Mayela Marin",
+    "picture": "../assets/images/team/team-pictures/Mayela-Marin.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "name": "Moises Marquina",
+    "picture": "../assets/images/team/team-pictures/Moises-Marquina.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "name": "Ricardo Moreno",
+    "picture": "../assets/images/team/team-pictures/Ricardo-Moreno.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "name": "Salomon Martinez",
+    "picture": "../assets/images/team/team-pictures/Salomon-Martinez.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "name": "Willian Mata",
+    "picture": "../assets/images/team/team-pictures/Willian-Mata.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "name": "Xavier Romero",
+    "picture": "../assets/images/team/team-pictures/Xavier-Romero.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "name": "Yanisel Barreto",
+    "picture": "../assets/images/team/team-pictures/Yanisel-Barreto.jpg",
+    "descripion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem.",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
   }
 ]

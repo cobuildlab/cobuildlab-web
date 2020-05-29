@@ -8,7 +8,7 @@ import { twitter } from 'react-icons-kit/fa/twitter';
 import { github } from 'react-icons-kit/fa/github';
 
 const icons = {
-  fabebook: facebook,
+  facebook: facebook,
   instagram: instagram,
   twitter: twitter,
   github: github,
@@ -26,7 +26,7 @@ const IconContainer = styled.a`
 const TeamSocialNetworks = ({ data }) => {
   const items = data.map((item, index) => (
     <IconContainer target="_blank" rel="nofollow noopener noreferrer" href={item.src} key={index}>
-      <Icon size={24} icon={icons[item.name]} />
+      <Icon size={24} icon={icons[item.name] || github} />
     </IconContainer>
   ));
 

@@ -49,7 +49,7 @@ const Footer = styled.div`
 const TeamCard = ({ src, name, description, socialNetworks }) => (
   <Container>
     <ImagesWrapper>
-      <Img fluid={src} alt="" />
+      <Img fluid={src} alt={name} />
       <ImageOverlay />
     </ImagesWrapper>
     <Content>
@@ -63,16 +63,11 @@ const TeamCard = ({ src, name, description, socialNetworks }) => (
 );
 
 TeamCard.defaultProps = {
-  socialNetworks: [
-    {
-      src: 'www.github.com',
-      name: 'github',
-    },
-  ],
+  socialNetworks: [],
 };
 
 TeamCard.propTypes = {
-  src: PropTypes.string.isRequired,
+  src: PropTypes.object.isRequired,
   description: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   socialNetworks: PropTypes.array,

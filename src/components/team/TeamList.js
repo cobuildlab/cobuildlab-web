@@ -9,7 +9,12 @@ const TeamList = () => {
 
   const items = data.allTeamJson.nodes.map(({ id, name, social_networks, picture, descripion }) => (
     <Column key={id} isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
-      <TeamCard src={picture.childImageSharp.fluid} name={name} description={descripion} />
+      <TeamCard
+        src={picture.childImageSharp.fluid}
+        name={name}
+        description={descripion}
+        socialNetworks={social_networks}
+      />
     </Column>
   ));
 
