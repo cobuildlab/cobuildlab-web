@@ -56,7 +56,7 @@ const Banner = () => {
                     </Typrography>
                     <Typrography size={subTitle} tag="p" className="banner-dec">
                       We transform Small and Medium-sized businesses by automating manual processes
-                      and task into optimized and streamlined workflows with Web and Mobile custom
+                      and tasks into optimized and streamlined workflows with Web and Mobile custom
                       software.
                     </Typrography>
                     <br />
