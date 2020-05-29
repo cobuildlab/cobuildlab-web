@@ -1,21 +1,9 @@
-import React, { useState, useCallback } from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
-import { Columns } from 'bloomer';
-import { Icon } from 'react-icons-kit';
 import { thLarge } from 'react-icons-kit/fa/thLarge';
 import { columns as colIcon } from 'react-icons-kit/fa/columns';
 
-import CalculatorLayoutLeftSection from '../layout/CalculatorLayoutLeftSection';
-import CalculatorLayoutRightSection from '../layout/CalculatorLayoutRightSection';
-import CalculatorLayoutDescripcion from '../layout/CalculatorLayoutDescripcion';
-import CalculatorLayoutCards from '../layout/CalculatorLayoutCards';
-import CalculatorCell from '../cell/CalculatorCell';
-
-import CalculatorFatureCaption from '../feature/CalculatorFatureCaption';
-import CalculatorFeatureName from '../feature/CalculatorFeatureName';
-import CalculatorFeatureDescription from '../feature/CalculatorFeatureDescription';
-import CalculatorFeatureCard from '../feature/CalculatorFeatureCard';
-import CalculatorFeatureCost from '../feature/CalculatorFeatureCost';
+import CalculatorSingleSelectionFeature from './CalculatorSingleSelectionFeature';
 
 const data = [
   {
@@ -34,58 +22,15 @@ const data = [
   },
 ];
 
-const CalculatorSectionDesign = ({ getCost }) => {
-  const [currentPlatform, setCurrentPlatform] = useState({ max: 0, min: 0, id: null });
-
-  const onClick = useCallback(
-    (item) => {
-      setCurrentPlatform(item);
-      getCost({
-        feature: 'design',
-        select: [item.name],
-        max: item.max,
-        min: item.min,
-      });
-    },
-    [currentPlatform],
-  );
-
-  const items = data.map((item) => (
-    <CalculatorFeatureCard
-      key={item.name}
-      isActive={currentPlatform.id === item.id}
-      data={item}
-      onSelect={onClick}>
-      <Icon icon={item.icon} size={30} />
-      <CalculatorFatureCaption>{item.name}</CalculatorFatureCaption>
-    </CalculatorFeatureCard>
-  ));
-
-  return (
-    <Columns isMarginless>
-      <CalculatorLayoutLeftSection>
-        <CalculatorLayoutDescripcion>
-          <CalculatorCell isDisplay="flex" isDirection="column" isJustify="center" isAlign="center">
-            <CalculatorFeatureName>Design</CalculatorFeatureName>
-            <CalculatorFeatureDescription>
-              What would your UI theme be?
-            </CalculatorFeatureDescription>
-          </CalculatorCell>
-        </CalculatorLayoutDescripcion>
-        <CalculatorLayoutCards>
-          <CalculatorCell isDisplay="flex" isMultiline>
-            {items}
-          </CalculatorCell>
-        </CalculatorLayoutCards>
-      </CalculatorLayoutLeftSection>
-      <CalculatorLayoutRightSection>
-        <CalculatorCell isDisplay="flex" isJustify="center" isAlign="center">
-          <CalculatorFeatureCost max={currentPlatform.max} min={currentPlatform.min} />
-        </CalculatorCell>
-      </CalculatorLayoutRightSection>
-    </Columns>
-  );
-};
+const CalculatorSectionDesign = ({ getCost }) => (
+  <CalculatorSingleSelectionFeature
+    title="Design"
+    description="What would your UI theme be?"
+    featureCost={getCost}
+    data={data}
+    featureId="design"
+  />
+);
 
 CalculatorSectionDesign.defaultProps = {
   getCost: () => null,
@@ -95,4 +40,4 @@ CalculatorSectionDesign.propTypes = {
   getCost: PropTypes.func,
 };
 
-export default CalculatorSectionDesign;
+export default memo(CalculatorSectionDesign);

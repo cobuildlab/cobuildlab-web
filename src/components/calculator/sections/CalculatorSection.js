@@ -97,8 +97,7 @@ class CalculatorSection extends PureComponent {
   }
 
   render() {
-    const { total, data } = this.state;
-    console.log(data);
+    const { total } = this.state;
     return (
       <Container>
         <CalculatorWrapper>
