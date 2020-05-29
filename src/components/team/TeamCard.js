@@ -62,7 +62,7 @@ const Icon = styled.img`
   margin: 0 1em;
 `;
 
-const DetailTeamCard = ({ src, alt, name, description }) => (
+const TeamCard = ({ src, alt, name, description }) => (
   <Container>
     <ImagesWrapper>
       <Image src={src} alt={alt} />
@@ -79,15 +79,15 @@ const DetailTeamCard = ({ src, alt, name, description }) => (
   </Container>
 );
 
-DetailTeamCard.defaultProps = {
+TeamCard.defaultProps = {
   alt: '',
 };
 
-DetailTeamCard.propTypes = {
+TeamCard.propTypes = {
   alt: PropTypes.string,
   src: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
 };
 
-export default DetailTeamCard;
+export default TeamCard;
