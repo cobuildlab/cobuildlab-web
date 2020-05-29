@@ -1,50 +1,46 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import { Columns, Column } from 'bloomer';
 // import styled from 'styled-components';
 import TeamCard from './TeamCard';
 
-import img from '../../assets/images/team/1.png';
-
 const TeamList = () => {
-  return (
-    <Columns isMultiline>
-      <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
-        <TeamCard
-          src={img}
-          name="carlos"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem."
-          socialNetworks={[
-            {
-              name: 'twitter',
-              src: 'https://twitter.com/Kike_Suh',
-            },
-            {
-              name: 'twitter',
-              src: 'https://twitter.com/Kike_Suh',
-            },
-            {
-              name: 'twitter',
-              src: 'https://twitter.com/Kike_Suh',
-            },
-          ]}
-        />
-      </Column>
-      <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
-        <TeamCard
-          src={img}
-          name="carlos"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem."
-        />
-      </Column>
-      <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
-        <TeamCard
-          src={img}
-          name="carlos"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in neque auctor, molestie sapien sit amet, tristique risus. Mauris pellentesque risus quis sem dignissim eleifend. Nullam a lacus consequat, interdum ex vitae, pellentesque sem."
-        />
-      </Column>
-    </Columns>
-  );
+  const data = useStaticQuery(query);
+
+  const items = data.allTeamJson.nodes.map(({ id, name, social_networks, picture, descripion }) => (
+    <Column key={id} isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
+      <TeamCard src={picture.childImageSharp.fluid} name={name} description={descripion} />
+    </Column>
+  ));
+
+  return <Columns isMultiline>{items}</Columns>;
 };
+
+const query = graphql`
+  query {
+    allTeamJson {
+      nodes {
+        name
+        id
+        descripion
+        social_networks {
+          name
+          src
+        }
+        picture {
+          childImageSharp {
+            fluid {
+              srcWebp
+              srcSetWebp
+              sizes
+              base64
+              aspectRatio
+            }
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default TeamList;

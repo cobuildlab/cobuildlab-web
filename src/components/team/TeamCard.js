@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Img from 'gatsby-image';
 import TeamSocialNetworks from './TeamSocialNetworks';
 
 const Container = styled.div`
@@ -9,7 +10,6 @@ const Container = styled.div`
 
 const ImagesWrapper = styled.div`
   position: relative;
-  display: flex;
 `;
 
 const ImageOverlay = styled.div`
@@ -20,11 +20,6 @@ const ImageOverlay = styled.div`
   left: 0;
   background-color: #264a60;
   opacity: 0.55;
-`;
-
-const Image = styled.img`
-  width: 100%;
-  height: auto;
 `;
 
 const Content = styled.div`
@@ -51,10 +46,10 @@ const Footer = styled.div`
   padding: 1em;
 `;
 
-const TeamCard = ({ src, alt, name, description, socialNetworks }) => (
+const TeamCard = ({ src, name, description, socialNetworks }) => (
   <Container>
     <ImagesWrapper>
-      <Image src={src} alt={alt} />
+      <Img fluid={src} alt="" />
       <ImageOverlay />
     </ImagesWrapper>
     <Content>
@@ -68,7 +63,6 @@ const TeamCard = ({ src, alt, name, description, socialNetworks }) => (
 );
 
 TeamCard.defaultProps = {
-  alt: '',
   socialNetworks: [
     {
       src: 'www.github.com',
@@ -78,7 +72,6 @@ TeamCard.defaultProps = {
 };
 
 TeamCard.propTypes = {
-  alt: PropTypes.string,
   src: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
