@@ -1,6 +1,6 @@
 ---
 title: "Planning a Digital Marketing Strategy is the key to success for your New Software Application or Small Business in the US during COVID time"
-date: "2020-29-05T16:24:04.000Z"
+date: "2020-05-29T16:24:04.000Z"
 template: blog
 tags: Small Business
 image: "./media/marketing-plan-software-business.jpg"
