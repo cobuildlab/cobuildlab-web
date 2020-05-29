@@ -1,11 +1,12 @@
 import { StyleSheet, Font } from '@react-pdf/renderer';
+import font from '../../assets/fonts/Lato-Regular.ttf';
 
 const indigoColor = '#264A60';
 const orangeColor = '#E76C29';
 
 Font.register({
   family: 'Lato',
-  src: 'http://fonts.gstatic.com/s/lato/v13/v0SdcGFAl2aezM9Vq_aFTQ.ttf',
+  src: font,
 });
 
 const styles = StyleSheet.create({

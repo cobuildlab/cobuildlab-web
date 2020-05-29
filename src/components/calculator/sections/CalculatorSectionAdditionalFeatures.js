@@ -1,28 +1,23 @@
-import React, { PureComponent } from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
-import { Columns } from 'bloomer';
-import { Icon } from 'react-icons-kit';
-import { android } from 'react-icons-kit/fa/android';
-import { apple } from 'react-icons-kit/fa/apple';
+import { creditCardAlt } from 'react-icons-kit/fa/creditCardAlt';
 import { globe } from 'react-icons-kit/fa/globe';
+import { comments } from 'react-icons-kit/fa/comments';
+import { bell } from 'react-icons-kit/fa/bell';
+import { desktop } from 'react-icons-kit/fa/desktop';
+import { list } from 'react-icons-kit/fa/list';
+import { barChart } from 'react-icons-kit/fa/barChart';
+import { commentO } from 'react-icons-kit/fa/commentO';
+import { camera } from 'react-icons-kit/fa/camera';
+import { map } from 'react-icons-kit/fa/map';
 
-import CalculatorLayoutLeftSection from '../layout/CalculatorLayoutLeftSection';
-import CalculatorLayoutRightSection from '../layout/CalculatorLayoutRightSection';
-import CalculatorLayoutDescripcion from '../layout/CalculatorLayoutDescripcion';
-import CalculatorLayoutCards from '../layout/CalculatorLayoutCards';
-import CalculatorCell from '../cell/CalculatorCell';
-
-import CalculatorFatureCaption from '../feature/CalculatorFatureCaption';
-import CalculatorFeatureName from '../feature/CalculatorFeatureName';
-import CalculatorFeatureDescription from '../feature/CalculatorFeatureDescription';
-import CalculatorFeatureCard from '../feature/CalculatorFeatureCard';
-import CalculatorFeatureCost from '../feature/CalculatorFeatureCost';
+import CalculatorMultiSelectionFeature from './CalculatorMultiSelectionFeature';
 
 const data = [
   {
     id: 0,
     name: 'Payments',
-    icon: android,
+    icon: creditCardAlt,
     min: 1000,
     max: 1500,
     isActive: false,
@@ -30,7 +25,7 @@ const data = [
   {
     id: 1,
     name: 'Geolocalization',
-    icon: apple,
+    icon: globe,
     min: 1000,
     max: 1500,
     isActive: false,
@@ -38,7 +33,7 @@ const data = [
   {
     id: 2,
     name: 'chat',
-    icon: globe,
+    icon: comments,
     min: 1000,
     max: 1500,
     isActive: false,
@@ -46,7 +41,7 @@ const data = [
   {
     id: 3,
     name: 'Notifications',
-    icon: globe,
+    icon: bell,
     min: 1000,
     max: 1500,
     isActive: false,
@@ -54,7 +49,7 @@ const data = [
   {
     id: 4,
     name: 'Backoffice',
-    icon: globe,
+    icon: desktop,
     min: 2500,
     max: 4500,
     isActive: false,
@@ -62,7 +57,7 @@ const data = [
   {
     id: 5,
     name: 'Reports',
-    icon: globe,
+    icon: list,
     min: 2000,
     max: 2500,
     isActive: false,
@@ -70,7 +65,7 @@ const data = [
   {
     id: 6,
     name: 'Analitycs',
-    icon: globe,
+    icon: barChart,
     min: 1000,
     max: 1500,
     isActive: false,
@@ -78,7 +73,7 @@ const data = [
   {
     id: 7,
     name: 'Comments',
-    icon: globe,
+    icon: commentO,
     min: 1000,
     max: 1500,
     isActive: false,
@@ -86,7 +81,7 @@ const data = [
   {
     id: 8,
     name: 'Camera',
-    icon: globe,
+    icon: camera,
     min: 1000,
     max: 1500,
     isActive: false,
@@ -94,104 +89,22 @@ const data = [
   {
     id: 9,
     name: 'Maps',
-    icon: globe,
+    icon: map,
     min: 2000,
     max: 4500,
     isActive: false,
   },
 ];
 
-class CalculatorSectionAdditionalFeatures extends PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data,
-      total: {
-        max: 0,
-        min: 0,
-      },
-    };
-    this.onClick = this.onClick.bind(this);
-  }
-
-  onClick(item) {
-    const { data } = this.state;
-    const { getCost } = this.props;
-
-    const newState = data.map((element) => ({
-      ...element,
-      isActive: element.id === item.id ? !element.isActive : element.isActive,
-    }));
-    const onlyActivesItems = newState.filter((e) => e.isActive);
-    const max = onlyActivesItems.length
-      ? onlyActivesItems.map((e) => e.max).reduce((total, current) => total + current)
-      : 0;
-    const min = onlyActivesItems.length
-      ? onlyActivesItems.map((e) => e.min).reduce((total, current) => total + current)
-      : 0;
-    this.setState(
-      {
-        data: newState,
-        total: {
-          max,
-          min,
-        },
-      },
-      () => {
-        getCost({
-          feature: 'additional feature',
-          select: onlyActivesItems.map((e) => e.name),
-          max,
-          min,
-        });
-      },
-    );
-  }
-
-  render() {
-    const { data, total } = this.state;
-
-    const items = data.map((item) => (
-      <CalculatorFeatureCard
-        key={item.name}
-        isActive={item.isActive}
-        data={item}
-        onSelect={this.onClick}>
-        <Icon icon={item.icon} size={30} />
-        <CalculatorFatureCaption>{item.name}</CalculatorFatureCaption>
-      </CalculatorFeatureCard>
-    ));
-
-    return (
-      <Columns isMarginless isMultiline>
-        <CalculatorLayoutLeftSection>
-          <CalculatorLayoutDescripcion>
-            <CalculatorCell
-              isDisplay="flex"
-              isDirection="column"
-              isJustify="center"
-              isAlign="center">
-              <CalculatorFeatureName>Additional Features</CalculatorFeatureName>
-              <CalculatorFeatureDescription>
-                Additional services for your project
-              </CalculatorFeatureDescription>
-            </CalculatorCell>
-          </CalculatorLayoutDescripcion>
-          <CalculatorLayoutCards>
-            <CalculatorCell isDisplay="flex" isMultiline>
-              {items}
-            </CalculatorCell>
-          </CalculatorLayoutCards>
-        </CalculatorLayoutLeftSection>
-        <CalculatorLayoutRightSection>
-          <CalculatorCell isDisplay="flex" isJustify="center" isAlign="center">
-            <CalculatorFeatureCost max={total.max} min={total.min} />
-          </CalculatorCell>
-        </CalculatorLayoutRightSection>
-      </Columns>
-    );
-  }
-}
+const CalculatorSectionAdditionalFeatures = ({ getCost }) => (
+  <CalculatorMultiSelectionFeature
+    title="Additional Features"
+    description="Additional services for your project"
+    featureCost={getCost}
+    data={data}
+    featureId="additional feature"
+  />
+);
 
 CalculatorSectionAdditionalFeatures.defaultProps = {
   getCost: () => null,
@@ -201,4 +114,4 @@ CalculatorSectionAdditionalFeatures.propTypes = {
   getCost: PropTypes.func,
 };
 
-export default CalculatorSectionAdditionalFeatures;
+export default memo(CalculatorSectionAdditionalFeatures);
