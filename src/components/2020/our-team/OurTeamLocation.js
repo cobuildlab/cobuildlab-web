@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
+import OurTeamPopOver from './OurTeamPopOver';
 
-const Image = styled.img`
+const Container = styled.div`
   position: absolute;
   z-index: 10;
   width: 45px;
@@ -32,8 +33,12 @@ const Image = styled.img`
 
 const OurTeamLocation = ({ lg, md, sm }) => {
   const data = useStaticQuery(query);
-
-  return <Image lg={lg} md={md} sm={sm} src={data.file.publicURL} alt="" />;
+  return (
+    <Container lg={lg} md={md} sm={sm}>
+      <img src={data.file.publicURL} alt="" />
+      <OurTeamPopOver />
+    </Container>
+  );
 };
 
 const query = graphql`
