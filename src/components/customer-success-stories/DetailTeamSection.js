@@ -24,7 +24,7 @@ const DetailTeamSection = () => {
       </TitleContainer>
       <TeamList data={data.allTeamJson.nodes} />
       <ButtonContainer>
-        <LinkButtonDefault to="/team">SEE MORE</LinkButtonDefault>
+        <LinkButtonDefault to="/team">See all our team</LinkButtonDefault>
       </ButtonContainer>
     </Fragment>
   );
