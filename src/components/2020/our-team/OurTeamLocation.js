@@ -31,12 +31,20 @@ const Container = styled.div`
   }
 `;
 
+const Images = styled.img`
+  transition: transform 0.25s ease-out;
+  &:hover {
+    transform: translateY(-4px);
+  }
+`;
+
 const OurTeamLocation = ({ lg, md, sm }) => {
   const data = useStaticQuery(query);
   return (
     <Container lg={lg} md={md} sm={sm}>
-      <img src={data.file.publicURL} alt="" />
-      <OurTeamPopOver />
+      <OurTeamPopOver text="Merida, Venezuela">
+        <Images src={data.file.publicURL} alt="" />
+      </OurTeamPopOver>
     </Container>
   );
 };

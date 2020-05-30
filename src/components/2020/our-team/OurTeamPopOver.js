@@ -1,16 +1,28 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Container = styled.div`
+const PopOverContainer = styled.div`
   width: 200px;
   position: absolute;
-  top: -40px;
-  left: 22px;
+  top: -31px;
+  left: 27px;
   background-color: #264a60;
   background-clip: padding-box;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
+  opacity: 0;
+  transition: all 0.15s ease-in;
+  min-height: 20px;
+  min-width: 15px;
+`;
+
+const Container = styled.div`
+  cursor: pointer;
+  &:hover ${PopOverContainer} {
+    opacity: 1;
+  }
 `;
 
 const Arrow = styled.div`
@@ -37,11 +49,23 @@ const Content = styled.div`
   padding: 0.05rem 0.5em;
 `;
 
-const OurTeamPopOver = () => (
+const OurTeamPopOver = ({ children, text }) => (
   <Container>
-    <Arrow />
-    <Content>Maracaibo, Venezuela</Content>
+    <PopOverContainer>
+      <Arrow />
+      <Content>{text}</Content>
+    </PopOverContainer>
+    {children}
   </Container>
 );
+
+OurTeamPopOver.defaultProps = {
+  text: ' ',
+};
+
+OurTeamPopOver.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+  text: PropTypes.string,
+};
 
 export default OurTeamPopOver;
