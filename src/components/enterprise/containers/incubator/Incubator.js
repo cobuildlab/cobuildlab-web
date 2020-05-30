@@ -12,7 +12,7 @@ const Right = styled(Column)`
 `;
 
 const SectionContainer = styled(Section)`
-  padding-top: 10em;
+  padding-top: 7em;
   padding-bottom: 5em;
   @media screen and (max-width: 768px) {
     padding-top: 0;

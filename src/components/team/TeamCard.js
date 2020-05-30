@@ -1,22 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import fb from '../../assets/images/icons/facebook.svg';
-import ig from '../../assets/images/icons/instagram.svg';
+import Img from 'gatsby-image';
+import TeamSocialNetworks from './TeamSocialNetworks';
 
 const Container = styled.div`
   position: relative;
-  transition: transform 0.3s ease-out;
-  cursor: pointer;
-  &:hover {
-    transform: scale(1.05);
-    z-index: 100;
-  }
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 `;
 
 const ImagesWrapper = styled.div`
   position: relative;
-  display: flex;
 `;
 
 const ImageOverlay = styled.div`
@@ -29,13 +25,12 @@ const ImageOverlay = styled.div`
   opacity: 0.55;
 `;
 
-const Image = styled.img`
-  width: 100%;
-  height: auto;
-`;
-
 const Content = styled.div`
   padding: 1em;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 
 const Name = styled.div`
@@ -58,36 +53,33 @@ const Footer = styled.div`
   padding: 1em;
 `;
 
-const Icon = styled.img`
-  margin: 0 1em;
-`;
-
-const DetailTeamCard = ({ src, alt, name, description }) => (
+const TeamCard = ({ src, name, description, socialNetworks }) => (
   <Container>
     <ImagesWrapper>
-      <Image src={src} alt={alt} />
+      <Img fluid={src} alt={name} />
       <ImageOverlay />
     </ImagesWrapper>
     <Content>
-      <Name>{name}</Name>
-      <Description>{description}</Description>
+      <div>
+        <Name>{name}</Name>
+        <Description>{description}</Description>
+      </div>
       <Footer>
-        <Icon src={fb} alt="fb" />
-        <Icon src={ig} alt="ig" />
+        <TeamSocialNetworks data={socialNetworks} />
       </Footer>
     </Content>
   </Container>
 );
 
-DetailTeamCard.defaultProps = {
-  alt: '',
+TeamCard.defaultProps = {
+  socialNetworks: [],
 };
 
-DetailTeamCard.propTypes = {
-  alt: PropTypes.string,
-  src: PropTypes.string.isRequired,
+TeamCard.propTypes = {
+  src: PropTypes.object.isRequired,
   description: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  socialNetworks: PropTypes.array,
 };
 
-export default DetailTeamCard;
+export default TeamCard;
