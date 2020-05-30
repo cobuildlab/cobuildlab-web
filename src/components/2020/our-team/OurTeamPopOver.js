@@ -4,39 +4,37 @@ import styled from 'styled-components';
 const Container = styled.div`
   width: 200px;
   position: absolute;
-  top: -33px;
-  left: 10px;
+  top: -40px;
+  left: 22px;
   background-color: #264a60;
   background-clip: padding-box;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 `;
 
 const Arrow = styled.div`
   position: absolute;
   z-index: -1;
-  bottom: -7px;
-  left: 3px;
+  bottom: -6.7px;
+  left: -10px;
   display: block;
-  width: 5px;
-  height: 5px;
+  width: 2px;
+  height: 2px;
   background: 0 0;
   border-width: 3px;
   border-style: solid;
-  border-width: 7.242641px;
+  border-width: 10.242641px;
   border-right-color: #264a60;
   border-top-color: transparent;
   border-bottom-color: #264a60;
   border-left-color: transparent;
-  -ms-transform: rotate(45deg);
-  -ms-transform: rotate(-46deg);
-  transform: rotate(46deg);
+  transform: rotate(-37deg);
 `;
 
 const Content = styled.div`
   color: #fff;
-  padding: 0 0.5em;
+  padding: 0.05rem 0.5em;
 `;
 
 const OurTeamPopOver = () => (
