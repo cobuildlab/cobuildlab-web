@@ -6,6 +6,9 @@ import TeamSocialNetworks from './TeamSocialNetworks';
 
 const Container = styled.div`
   position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 `;
 
 const ImagesWrapper = styled.div`
@@ -24,6 +27,10 @@ const ImageOverlay = styled.div`
 
 const Content = styled.div`
   padding: 1em;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 
 const Name = styled.div`
@@ -53,8 +60,10 @@ const TeamCard = ({ src, name, description, socialNetworks }) => (
       <ImageOverlay />
     </ImagesWrapper>
     <Content>
-      <Name>{name}</Name>
-      <Description>{description}</Description>
+      <div>
+        <Name>{name}</Name>
+        <Description>{description}</Description>
+      </div>
       <Footer>
         <TeamSocialNetworks data={socialNetworks} />
       </Footer>
