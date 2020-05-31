@@ -9,7 +9,14 @@ const Container = styled.div`
   z-index: 10;
   width: 45px;
 
-  @media (max-width: 767.98px) {
+  @media (max-width: 360px) {
+    top: ${({ xs }) => xs.top || 'initial'};
+    left: ${({ xs }) => xs.left || 'initial'};
+    right: ${({ xs }) => xs.right || 'initial'};
+    bottom: ${({ xs }) => xs.bottom || 'initial'};
+  }
+
+  @media (min-width: 361px) and (max-width: 576px) {
     top: ${({ sm }) => sm.top || 'initial'};
     left: ${({ sm }) => sm.left || 'initial'};
     right: ${({ sm }) => sm.right || 'initial'};
@@ -43,16 +50,16 @@ const Images = styled.img`
   &:hover {
     transform: translateY(-4px);
   }
-  @media (max-width: 767.98px) {
+  @media (max-width: 1200px) {
     width: 25px;
   }
 `;
 
-const OurTeamLocation = ({ xl, lg, md, sm }) => {
+const OurTeamLocation = ({ xl, lg, md, sm, xs, placeholder }) => {
   const data = useStaticQuery(query);
   return (
-    <Container xl={xl} lg={lg} md={md} sm={sm}>
-      <OurTeamPopOver text="Merida, Venezuela">
+    <Container xl={xl} lg={lg} md={md} sm={sm} xs={xs}>
+      <OurTeamPopOver text={placeholder}>
         <Images src={data.file.publicURL} alt="" />
       </OurTeamPopOver>
     </Container>
@@ -68,6 +75,7 @@ const query = graphql`
 `;
 
 OurTeamLocation.defaultProps = {
+  xs: {},
   xl: {},
   lg: {},
   md: {},
@@ -75,6 +83,13 @@ OurTeamLocation.defaultProps = {
 };
 
 OurTeamLocation.propTypes = {
+  placeholder: PropTypes.string.isRequired,
+  xs: PropTypes.shape({
+    top: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    right: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    left: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    bottom: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  }),
   xl: PropTypes.shape({
     top: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     right: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),

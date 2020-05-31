@@ -16,12 +16,14 @@ const PopOverContainer = styled.div`
   transition: all 0.15s ease-in;
   min-height: 20px;
   min-width: 15px;
+  transform: scale(0);
 `;
 
 const Container = styled.div`
   cursor: pointer;
   &:hover ${PopOverContainer} {
     opacity: 1;
+    transform: scale(1);
   }
 `;
 
