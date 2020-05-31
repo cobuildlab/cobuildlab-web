@@ -51,7 +51,7 @@ export default class HomePage extends PureComponent {
         <Section>
           <HomePageCustomerSuccessStories />
         </Section>
-        <Section>
+        <Section isPaddingless>
           <OurTeam />
         </Section>
         <Section isPaddingless>

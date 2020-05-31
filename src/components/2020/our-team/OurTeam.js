@@ -11,12 +11,18 @@ const TitleContainer = styled.div`
   margin-bottom: 3.5rem;
 `;
 
+const Wrapper = styled.div`
+  padding: 1rem;
+`;
+
 const OurTeam = () => (
   <Container>
-    <TitleContainer>
-      <H2>Our Team</H2>
-    </TitleContainer>
-    <OurTeamMap />
+    <Wrapper>
+      <TitleContainer>
+        <H2>Our Team</H2>
+      </TitleContainer>
+      <OurTeamMap />
+    </Wrapper>
   </Container>
 );
 
