@@ -1,5 +1,5 @@
 const POSITIONS = {
-  venezuela: {
+  position1: {
     lx: {
       top: '50.5%',
       left: '26.5%',
@@ -21,7 +21,7 @@ const POSITIONS = {
       left: '56%',
     },
   },
-  eeuu1: {
+  position2: {
     lx: {
       top: '29.5%',
       left: '26.5%',
@@ -43,7 +43,7 @@ const POSITIONS = {
       left: '57%',
     },
   },
-  eeuu2: {
+  position3: {
     lx: {
       top: '35%',
       left: '23.5%',
@@ -65,7 +65,7 @@ const POSITIONS = {
       left: '49%',
     },
   },
-  eeuu3: {
+  position4: {
     lx: {
       top: '40.5%',
       left: '24.5%',
@@ -87,7 +87,7 @@ const POSITIONS = {
       left: '53%',
     },
   },
-  eeuu4: {
+  position5: {
     lx: {
       top: '41%',
       left: '16.5%',
@@ -109,7 +109,7 @@ const POSITIONS = {
       left: '37%',
     },
   },
-  eeuu5: {
+  position6: {
     lx: {
       top: '36%',
       left: '14.5%',
@@ -131,7 +131,7 @@ const POSITIONS = {
       left: '31%',
     },
   },
-  eeuu6: {
+  position7: {
     lx: {
       top: '44%',
       left: '20.5%',
@@ -153,92 +153,114 @@ const POSITIONS = {
       left: '42%',
     },
   },
-  colombia: {
+  position8: {
     lx: {
-      top: '56%',
+      top: '54.8%',
       left: '24.5%',
     },
     lg: {
-      top: '23.4%',
+      top: '52.4%',
       left: '25%',
     },
     md: {
-      top: '52.5%',
-      left: '25%',
+      top: '52%',
+      left: '24.5%',
     },
     sm: {
-      top: '53%',
-      left: '45%',
+      top: '52%',
+      left: '44%',
     },
     xs: {
       top: '52%',
       left: '52%',
     },
   },
-  peru: {
+  position9: {
     lx: {
-      top: '44%',
-      left: '20.5%',
+      top: '62%',
+      left: '23.5%',
     },
     lg: {
-      top: '46.4%',
-      left: '20%',
+      top: '57.4%',
+      left: '24%',
     },
     md: {
-      top: '46.5%',
-      left: '20%',
+      top: '55.5%',
+      left: '23%',
     },
     sm: {
-      top: '46%',
-      left: '36%',
+      top: '56%',
+      left: '43%',
     },
     xs: {
-      top: '46%',
-      left: '42%',
+      top: '56%',
+      left: '50%',
     },
   },
-  chile: {
+  position10: {
     lx: {
-      top: '44%',
-      left: '20.5%',
+      top: '75%',
+      left: '25%',
     },
     lg: {
-      top: '46.4%',
-      left: '20%',
+      top: '67.4%',
+      left: '25%',
     },
     md: {
-      top: '46.5%',
-      left: '20%',
+      top: '62.5%',
+      left: '25%',
     },
     sm: {
-      top: '46%',
-      left: '36%',
+      top: '62%',
+      left: '46%',
     },
     xs: {
-      top: '46%',
-      left: '42%',
+      top: '63%',
+      left: '53%',
     },
   },
-  argentina: {
+  position11: {
     lx: {
-      top: '44%',
-      left: '20.5%',
+      top: '78%',
+      left: '28.5%',
     },
     lg: {
-      top: '46.4%',
-      left: '20%',
+      top: '70.4%',
+      left: '29%',
     },
     md: {
-      top: '46.5%',
-      left: '20%',
+      top: '65.5%',
+      left: '29%',
     },
     sm: {
-      top: '46%',
-      left: '36%',
+      top: '65%',
+      left: '53%',
     },
     xs: {
-      top: '46%',
-      left: '42%',
+      top: '65%',
+      left: '61%',
+    },
+  },
+  position12: {
+    lx: {
+      top: '25%',
+      left: '44%',
+    },
+    lg: {
+      top: '32.4%',
+      left: '44.5%',
+    },
+    md: {
+      top: '35.5%',
+      left: '44%',
+    },
+    sm: {
+      top: '36%',
+      left: '87%',
+    },
+    xs: {
+      top: '37%',
+      left: '94%',
     },
   },
 };

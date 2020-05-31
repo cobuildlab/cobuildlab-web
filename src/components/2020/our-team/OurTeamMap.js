@@ -16,68 +16,100 @@ const OurTeamMap = () => (
   <Container>
     <OurTeamMapImage />
     <OurTeamLocation
-      placeholder="Venezuela"
-      xl={POSITIONS.venezuela.lx}
-      lg={POSITIONS.venezuela.lg}
-      md={POSITIONS.venezuela.md}
-      sm={POSITIONS.venezuela.sm}
-      xs={POSITIONS.venezuela.xs}
+      placeholder="Position 1"
+      xl={POSITIONS.position1.lx}
+      lg={POSITIONS.position1.lg}
+      md={POSITIONS.position1.md}
+      sm={POSITIONS.position1.sm}
+      xs={POSITIONS.position1.xs}
     />
     <OurTeamLocation
-      placeholder="EEUU 1"
-      xl={POSITIONS.eeuu1.lx}
-      lg={POSITIONS.eeuu1.lg}
-      md={POSITIONS.eeuu1.md}
-      sm={POSITIONS.eeuu1.sm}
-      xs={POSITIONS.eeuu1.xs}
+      placeholder="Position 2"
+      xl={POSITIONS.position2.lx}
+      lg={POSITIONS.position2.lg}
+      md={POSITIONS.position2.md}
+      sm={POSITIONS.position2.sm}
+      xs={POSITIONS.position2.xs}
     />
     <OurTeamLocation
-      placeholder="EEUU 2"
-      xl={POSITIONS.eeuu2.lx}
-      lg={POSITIONS.eeuu2.lg}
-      md={POSITIONS.eeuu2.md}
-      sm={POSITIONS.eeuu2.sm}
-      xs={POSITIONS.eeuu2.xs}
+      placeholder="Position 3"
+      xl={POSITIONS.position3.lx}
+      lg={POSITIONS.position3.lg}
+      md={POSITIONS.position3.md}
+      sm={POSITIONS.position3.sm}
+      xs={POSITIONS.position3.xs}
     />
     <OurTeamLocation
-      placeholder="EEUU 3"
-      xl={POSITIONS.eeuu3.lx}
-      lg={POSITIONS.eeuu3.lg}
-      md={POSITIONS.eeuu3.md}
-      sm={POSITIONS.eeuu3.sm}
-      xs={POSITIONS.eeuu3.xs}
+      placeholder="Position 4"
+      xl={POSITIONS.position4.lx}
+      lg={POSITIONS.position4.lg}
+      md={POSITIONS.position4.md}
+      sm={POSITIONS.position4.sm}
+      xs={POSITIONS.position4.xs}
     />
     <OurTeamLocation
-      placeholder="EEUU 4"
-      xl={POSITIONS.eeuu4.lx}
-      lg={POSITIONS.eeuu4.lg}
-      md={POSITIONS.eeuu4.md}
-      sm={POSITIONS.eeuu4.sm}
-      xs={POSITIONS.eeuu4.xs}
+      placeholder="Position 5"
+      xl={POSITIONS.position5.lx}
+      lg={POSITIONS.position5.lg}
+      md={POSITIONS.position5.md}
+      sm={POSITIONS.position5.sm}
+      xs={POSITIONS.position5.xs}
     />
     <OurTeamLocation
-      placeholder="EEUU 5"
-      xl={POSITIONS.eeuu5.lx}
-      lg={POSITIONS.eeuu5.lg}
-      md={POSITIONS.eeuu5.md}
-      sm={POSITIONS.eeuu5.sm}
-      xs={POSITIONS.eeuu5.xs}
+      placeholder="Position 6"
+      xl={POSITIONS.position6.lx}
+      lg={POSITIONS.position6.lg}
+      md={POSITIONS.position6.md}
+      sm={POSITIONS.position6.sm}
+      xs={POSITIONS.position6.xs}
     />
     <OurTeamLocation
-      placeholder="EEUU 6"
-      xl={POSITIONS.eeuu6.lx}
-      lg={POSITIONS.eeuu6.lg}
-      md={POSITIONS.eeuu6.md}
-      sm={POSITIONS.eeuu6.sm}
-      xs={POSITIONS.eeuu6.xs}
+      placeholder="Position 7"
+      xl={POSITIONS.position7.lx}
+      lg={POSITIONS.position7.lg}
+      md={POSITIONS.position7.md}
+      sm={POSITIONS.position7.sm}
+      xs={POSITIONS.position7.xs}
     />
     <OurTeamLocation
-      placeholder="EEUU 6"
-      xl={POSITIONS.colombia.lx}
-      lg={POSITIONS.colombia.lg}
-      md={POSITIONS.colombia.md}
-      sm={POSITIONS.colombia.sm}
-      xs={POSITIONS.colombia.xs}
+      placeholder="Position 8"
+      xl={POSITIONS.position8.lx}
+      lg={POSITIONS.position8.lg}
+      md={POSITIONS.position8.md}
+      sm={POSITIONS.position8.sm}
+      xs={POSITIONS.position8.xs}
+    />
+    <OurTeamLocation
+      placeholder="Position 9"
+      xl={POSITIONS.position9.lx}
+      lg={POSITIONS.position9.lg}
+      md={POSITIONS.position9.md}
+      sm={POSITIONS.position9.sm}
+      xs={POSITIONS.position9.xs}
+    />
+    <OurTeamLocation
+      placeholder="Position 10"
+      xl={POSITIONS.position10.lx}
+      lg={POSITIONS.position10.lg}
+      md={POSITIONS.position10.md}
+      sm={POSITIONS.position10.sm}
+      xs={POSITIONS.position10.xs}
+    />
+    <OurTeamLocation
+      placeholder="Position 11"
+      xl={POSITIONS.position11.lx}
+      lg={POSITIONS.position11.lg}
+      md={POSITIONS.position11.md}
+      sm={POSITIONS.position11.sm}
+      xs={POSITIONS.position11.xs}
+    />
+    <OurTeamLocation
+      placeholder="Position 11"
+      xl={POSITIONS.position12.lx}
+      lg={POSITIONS.position12.lg}
+      md={POSITIONS.position12.md}
+      sm={POSITIONS.position12.sm}
+      xs={POSITIONS.position12.xs}
     />
   </Container>
 );
