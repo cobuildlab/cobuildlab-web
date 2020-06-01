@@ -9,6 +9,10 @@ const TitleContainer = styled.div`
   text-align: center;
   margin-top: 2.5rem;
   margin-bottom: 3.5rem;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
 `;
 
 const Wrapper = styled.div`

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import OurTeamMapImage from './OurtTeamMapImage';
 import OurTeamLocation from './OurTeamLocation';
+import OurTeamMapTitle from './OurTeamMapTitle';
 import POSITIONS from './locations-positions';
 
 const Container = styled.div`
@@ -15,6 +16,7 @@ const Container = styled.div`
 const OurTeamMap = () => (
   <Container>
     <OurTeamMapImage />
+    <OurTeamMapTitle />
     <OurTeamLocation
       placeholder="Position 1"
       xl={POSITIONS.position1.lx}

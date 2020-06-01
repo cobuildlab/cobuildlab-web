@@ -17,6 +17,10 @@ const PopOverContainer = styled.div`
   min-height: 20px;
   min-width: 15px;
   transform: scale(0);
+  @media screen and (max-width: 768px) {
+    top: -40px;
+    left: 18px;
+  }
 `;
 
 const Container = styled.div`
