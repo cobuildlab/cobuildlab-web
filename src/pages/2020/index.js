@@ -3,7 +3,7 @@ import { HeroHeader, HeroBody, Hero, Section } from 'bloomer';
 import Layout from '../../components/2020/Layout';
 import Header from '../../components/2020/header/Header';
 import HeroBodyContent from '../../components/2020/Hero';
-import Service from '../../components/2020/Service';
+import Service from '../../components/2020/service/Service';
 import BusinessValue from '../../components/2020/BusinessValue';
 import HomePageCustomerSuccessStories from '../../components/2020/HomePageCustomerSuccessStories';
 // import OurTeam from '../../components/2020/our-team/OurTeam';
