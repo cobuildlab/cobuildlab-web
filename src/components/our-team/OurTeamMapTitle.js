@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import H4 from '../../Typography/H4';
+import H4 from '../Typography/H4';
 
 const Container = styled.div`
   position: absolute;
-
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   @media (max-width: 767.9px) {
     top: 10%;
     left: 12%;

@@ -6,7 +6,7 @@ import HeroBodyContent from '../../components/2020/Hero';
 import Service from '../../components/2020/service/Service';
 import Value from '../../components/2020/value/Value';
 import HomePageCustomerSuccessStories from '../../components/2020/HomePageCustomerSuccessStories';
-import OurTeam from '../../components/2020/our-team/OurTeam';
+import OurTeam from '../../components/our-team/OurTeam';
 import Contact from '../../components/2020/HomePageContact';
 import TestimonialHomePage from '../../components/2020/TestimonialHomePage';
 import HomePagePost from '../../components/2020/HomePagePost';
