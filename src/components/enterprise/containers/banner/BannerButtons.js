@@ -15,9 +15,6 @@ const BannerButtons = () => (
     <ButtonContainer>
       <ButtonSmoothScrolling href="#services">Explore Our Services</ButtonSmoothScrolling>
     </ButtonContainer>
-    <ButtonContainer>
-      <ButtonSmoothScrolling href="#incubator">StartUp Services</ButtonSmoothScrolling>
-    </ButtonContainer>
   </Container>
 );
 
