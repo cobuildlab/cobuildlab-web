@@ -27,8 +27,8 @@ const Container = styled(Link)`
     background-color: rgba(0, 0, 0, 0.5);
   }
   @media screen and (max-width: 768px) {
-    width: 320px;
-    height: 180px;
+    width: 90%;
+    height: 200px;
   }
 `;
 

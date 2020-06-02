@@ -5,10 +5,10 @@ import BlogPostCard from './BlogPostCard';
 
 const BlogList = ({ data }) => {
   const items = data.map(({ node }) => (
-    <Column key={node.frontmatter.title}>
+    <Column isSize={{ desktop: 4, tablet: 6, mobile: 12 }} key={node.frontmatter.title}>
       <BlogPostCard
         date={node.frontmatter.date}
-        category={node.frontmatter.tags}
+        category={node.frontmatter.tags || 'Blog Post'}
         to={node.fields.slug}
         src={node.frontmatter.image.childImageSharp.fixed}
         title={node.frontmatter.title}
