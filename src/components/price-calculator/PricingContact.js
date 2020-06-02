@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import { navigate } from 'gatsby';
 import {
   Container,
   Columns,
@@ -18,7 +19,6 @@ import ButtonDefault from '../2020/Button/ButtonDefault';
 import PricingContactImages from './PricingContactImages';
 import template from '../pdf/PdfCalculatorTemplate';
 import Error from '../Toast/Error';
-import Success from '../Toast/Success';
 
 const Form = styled.form`
   margin-top: 2em;
@@ -149,12 +149,7 @@ class PricingContact extends PureComponent {
       this.setState((state) => ({
         isLoading: !state.isLoading,
       }));
-
-      toast.dismiss();
-      toast(<Success message="Message sent succesfully" />, {
-        position: 'bottom-right',
-        hideProgressBar: true,
-      });
+      navigate('/thanks-contact');
     } catch (error) {
       console.error(error);
       this.setState((state) => ({
