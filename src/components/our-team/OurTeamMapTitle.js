@@ -10,6 +10,9 @@ const Container = styled.div`
   @media (max-width: 767.9px) {
     top: 10%;
     left: 12%;
+    padding: 0;
+    box-shadow: none;
+    background-color: transparent;
   }
   @media (min-width: 768px) {
     top: 63%;
@@ -25,7 +28,7 @@ const Title = styled(H4)`
   line-height: 1.3;
   letter-spacing: 2px;
   @media (min-width: 768px) {
-    font-size: 38px;
+    font-size: 22px;
   }
   @media (max-width: 767.9px) {
     font-size: 20px;

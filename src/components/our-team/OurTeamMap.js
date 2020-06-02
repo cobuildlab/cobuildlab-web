@@ -50,7 +50,7 @@ const OurTeamMap = () => (
       xs={POSITIONS.position4.xs}
     />
     <OurTeamLocation
-      placeholder="Position 5"
+      placeholder="Alberta, Canada"
       xl={POSITIONS.position5.lx}
       lg={POSITIONS.position5.lg}
       md={POSITIONS.position5.md}
@@ -66,7 +66,7 @@ const OurTeamMap = () => (
       xs={POSITIONS.position6.xs}
     />
     <OurTeamLocation
-      placeholder="Position 7"
+      placeholder="Bogota, Colombia"
       xl={POSITIONS.position7.lx}
       lg={POSITIONS.position7.lg}
       md={POSITIONS.position7.md}
@@ -74,7 +74,7 @@ const OurTeamMap = () => (
       xs={POSITIONS.position7.xs}
     />
     <OurTeamLocation
-      placeholder="Bogota, Colombia"
+      placeholder="Santiago, Chile"
       xl={POSITIONS.position8.lx}
       lg={POSITIONS.position8.lg}
       md={POSITIONS.position8.md}
@@ -82,7 +82,7 @@ const OurTeamMap = () => (
       xs={POSITIONS.position8.xs}
     />
     <OurTeamLocation
-      placeholder="Position 9"
+      placeholder="Buenos Aires, Argentina"
       xl={POSITIONS.position9.lx}
       lg={POSITIONS.position9.lg}
       md={POSITIONS.position9.md}
@@ -90,28 +90,12 @@ const OurTeamMap = () => (
       xs={POSITIONS.position9.xs}
     />
     <OurTeamLocation
-      placeholder="Santiago, Chile"
+      placeholder="Madrid, Spain"
       xl={POSITIONS.position10.lx}
       lg={POSITIONS.position10.lg}
       md={POSITIONS.position10.md}
       sm={POSITIONS.position10.sm}
       xs={POSITIONS.position10.xs}
-    />
-    <OurTeamLocation
-      placeholder="Buenos Aires, Argentina"
-      xl={POSITIONS.position11.lx}
-      lg={POSITIONS.position11.lg}
-      md={POSITIONS.position11.md}
-      sm={POSITIONS.position11.sm}
-      xs={POSITIONS.position11.xs}
-    />
-    <OurTeamLocation
-      placeholder="Madrid, Spain"
-      xl={POSITIONS.position12.lx}
-      lg={POSITIONS.position12.lg}
-      md={POSITIONS.position12.md}
-      sm={POSITIONS.position12.sm}
-      xs={POSITIONS.position12.xs}
     />
   </Container>
 );
