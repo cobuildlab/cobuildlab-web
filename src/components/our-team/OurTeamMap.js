@@ -18,7 +18,7 @@ const OurTeamMap = () => (
     <OurTeamMapImage />
     <OurTeamMapTitle />
     <OurTeamLocation
-      placeholder="Caracas, Venezuela"
+      placeholder={['Maracaibo, Venezuela', 'Merida, Venezuela', 'Caracas, Venezuela']}
       xl={POSITIONS.position1.lx}
       lg={POSITIONS.position1.lg}
       md={POSITIONS.position1.md}
@@ -66,7 +66,7 @@ const OurTeamMap = () => (
       xs={POSITIONS.position6.xs}
     />
     <OurTeamLocation
-      placeholder="Bogota, Colombia"
+      placeholder={['Bogota, Colombia', 'Medellin, Colombia']}
       xl={POSITIONS.position7.lx}
       lg={POSITIONS.position7.lg}
       md={POSITIONS.position7.md}

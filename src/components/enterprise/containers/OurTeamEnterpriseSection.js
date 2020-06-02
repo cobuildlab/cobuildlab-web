@@ -8,7 +8,7 @@ const Section = styled(BloomerSection)`
 `;
 
 const OurTeamEnterpriseSection = () => (
-  <Section>
+  <Section isPaddingless>
     <OurTeam />
   </Section>
 );
