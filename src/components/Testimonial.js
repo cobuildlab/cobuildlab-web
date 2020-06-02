@@ -1,11 +1,12 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import Slider from 'react-slick';
 import styled from 'styled-components';
+import Img from 'gatsby-image';
 
 // RESOURCES
 import QuoteLeft from '../assets/images/testimonial/left-box-blue.png';
 import QueteRight from '../assets/images/testimonial/right-box-blue.png';
-import { DATA } from './enterprise/containers/testimonial/Carousel';
 
 // TYPOGRAPHY
 import H6 from './Typography/H6';
@@ -100,6 +101,11 @@ const StyledSlider = styled(Slider)`
   }
 `;
 
+const Images = styled(Img)`
+  height: 100%;
+  width: 100%;
+`;
+
 const settings = {
   dots: true,
   infinite: true,
@@ -108,25 +114,58 @@ const settings = {
   slidesToScroll: 1,
   arrows: false,
   // eslint-disable-next-line react/display-name
-  customPaging: (id) => (
-    <button>
-      <img src={DATA[id].img || ''} alt="" />
-    </button>
-  ),
 };
 
-const Testimonial = () => (
-  <StyledSlider {...settings}>
-    {DATA.map((item, index) => (
-      <Card key={index}>
-        <Description>{item.content}</Description>
-        <Title>
-          <TextOrange>{item.title}</TextOrange>
-        </Title>
-        <SubTitle>{item.subtitle}</SubTitle>
-      </Card>
-    ))}
-  </StyledSlider>
-);
+const Testimonial = () => {
+  const data = useStaticQuery(query);
+  const list = data.allTestimonialJson.nodes;
+
+  const items = list.map((item) => (
+    <Card key={item.id}>
+      <Description>{item.content}</Description>
+      <Title>
+        <TextOrange>{item.title}</TextOrange>
+      </Title>
+      <SubTitle>{item.subtitle}</SubTitle>
+    </Card>
+  ));
+
+  return (
+    <StyledSlider
+      {...settings}
+      customPaging={(id) => (
+        <button>
+          <Images fluid={list[id].image.childImageSharp.fluid} alt="" />
+        </button>
+      )}>
+      {items}
+    </StyledSlider>
+  );
+};
+
+const query = graphql`
+  query {
+    allTestimonialJson {
+      nodes {
+        image {
+          id
+          childImageSharp {
+            fluid {
+              srcWebp
+              srcSetWebp
+              sizes
+              base64
+              aspectRatio
+            }
+          }
+        }
+        content
+        id
+        title
+        subtitle
+      }
+    }
+  }
+`;
 
 export default Testimonial;

@@ -8,6 +8,7 @@ import About from '../components/enterprise/containers/about';
 import UniqueValueProps from '../components/enterprise/containers/unique-value-props';
 import Video from '../components/enterprise/containers/video';
 import Skills from '../components/enterprise/containers/skills';
+import OurTeamEnterpriseSection from '../components/enterprise/containers/OurTeamEnterpriseSection';
 import Project from '../components/enterprise/containers/project';
 import EnterpriseCustomerSuccessStories from '../components/enterprise/containers/EnterpriseCustomerSuccessStories';
 import Testimonial from '../components/enterprise/containers/testimonial/Testimonial';
@@ -36,6 +37,7 @@ const IndexPage = () => (
       <Project />
       <EnterpriseCustomerSuccessStories />
       <Testimonial />
+      <OurTeamEnterpriseSection />
       <Contact />
       <Brand />
       <Footer />

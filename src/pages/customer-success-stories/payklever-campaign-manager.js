@@ -9,8 +9,8 @@ import DetailLayout from '../../components/customer-success-stories/DetailLayout
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
-// import DetailTeam from '../../components/customer-success-stories/DetailTeam';
-// import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
+
+import DetailTeamSection from '../../components/customer-success-stories/DetailTeamSection';
 import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
@@ -170,11 +170,11 @@ const PaykleverCampaignManager = ({ data }) => (
       </div>
     </DetailSection>
 
-    {/* <Section>
+    <Section>
       <Container>
-        <DetailTeam />
+        <DetailTeamSection />
       </Container>
-    </Section>*/}
+    </Section>
 
     <Section isPaddingless>
       <DetailCarousel data={data.slider.edges} />

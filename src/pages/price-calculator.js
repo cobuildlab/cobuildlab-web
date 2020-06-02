@@ -4,10 +4,10 @@ import styled from 'styled-components';
 import SeoMetaTags from '../components/SeoMetaTags';
 import Layout from '../components/2020/Layout';
 import Header from '../components/2020/header/Header';
-import PricingHero from '../components/pricing/PricingHero';
+import PricingHero from '../components/price-calculator/PricingHero';
 
 import CalculatorSection from '../components/calculator/sections/CalculatorSection';
-import PricingContact from '../components/pricing/PricingContact';
+import PricingContact from '../components/price-calculator/PricingContact';
 
 const Section = styled(BloomerSection)`
   @media screen and (max-width: 768px) {
@@ -15,7 +15,7 @@ const Section = styled(BloomerSection)`
   }
 `;
 
-const Pricing = () => {
+const PriceCalculator = () => {
   const [calculatorData, setCalculatorData] = useState({});
 
   const onGetData = useCallback((data) => {
@@ -46,4 +46,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default PriceCalculator;
