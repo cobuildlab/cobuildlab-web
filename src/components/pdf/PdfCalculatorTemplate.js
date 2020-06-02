@@ -33,7 +33,6 @@ const PdfCalculatorTemplate = ({ data, total }) => {
       </View>
     );
   });
-
   return (
     <Document>
       <Page wrap={false} style={styles.body}>
@@ -46,8 +45,8 @@ const PdfCalculatorTemplate = ({ data, total }) => {
           </View>
         </View>
         <View style={styles.titleContainer}>
-          <Text style={styles.title}>Budget </Text>
-          <Text style={styles.strongTitle}>Builder</Text>
+          <Text style={styles.title}>Price </Text>
+          <Text style={styles.strongTitle}>Calculator</Text>
         </View>
         <Image src={bg} style={styles.overlay} />
         <View style={styles.tableHeader}>
