@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'bloomer';
 import styled from 'styled-components';
-import H2 from '../../Typography/H2';
+import H2 from '../Typography/H2';
 import OurTeamMap from './OurTeamMap';
 
 const TitleContainer = styled.div`

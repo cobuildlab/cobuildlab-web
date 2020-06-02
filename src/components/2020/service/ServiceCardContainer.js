@@ -6,7 +6,7 @@ const Container = styled.div`
   width: 100%;
   margin: 0 auto;
   background: #fff 0% 0% no-repeat padding-box;
-  box-shadow: 0px 8px 30px $box-shadow;
+  box-shadow: 0px 8px 30px #264a6017;
   margin-top: 105px;
 `;
 

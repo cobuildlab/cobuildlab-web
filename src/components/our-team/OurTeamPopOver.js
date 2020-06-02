@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const PopOverContainer = styled.div`
   width: 200px;
   position: absolute;
-  top: -31px;
+  top: ${({ isArray }) => (isArray ? '-75px' : '-31px')};
   left: 27px;
   background-color: #264a60;
   background-clip: padding-box;
@@ -55,15 +55,27 @@ const Content = styled.div`
   padding: 0.05rem 0.5em;
 `;
 
-const OurTeamPopOver = ({ children, text }) => (
-  <Container>
-    <PopOverContainer>
-      <Arrow />
-      <Content>{text}</Content>
-    </PopOverContainer>
-    {children}
-  </Container>
-);
+const OurTeamPopOver = ({ children, text }) => {
+  const isArray = Array.isArray(text);
+  const items = isArray
+    ? text.map((item, index) => (
+      <span key={index}>
+        {item}
+        <br />
+      </span>
+    ))
+    : text;
+
+  return (
+    <Container>
+      <PopOverContainer isArray={isArray}>
+        <Arrow />
+        <Content>{items}</Content>
+      </PopOverContainer>
+      {children}
+    </Container>
+  );
+};
 
 OurTeamPopOver.defaultProps = {
   text: ' ',
@@ -71,7 +83,7 @@ OurTeamPopOver.defaultProps = {
 
 OurTeamPopOver.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
-  text: PropTypes.string,
+  text: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.string), PropTypes.string]),
 };
 
 export default OurTeamPopOver;
