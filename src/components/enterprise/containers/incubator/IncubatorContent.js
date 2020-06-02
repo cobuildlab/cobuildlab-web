@@ -8,7 +8,9 @@ const Container = styled.div`
   padding-top: 1em;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 `;
 
 const Title = styled(H3)`

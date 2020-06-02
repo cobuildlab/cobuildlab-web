@@ -4,16 +4,9 @@ import Img from 'gatsby-image';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  position: absolute;
-  left: 0;
-  bottom: 15%;
-  width: 90%;
-  @media screen and (max-width: 768px) {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-  }
+  height: 100%;
+  display: flex;
+  align-items: center;
 `;
 
 const Redirect = styled(Link)`
