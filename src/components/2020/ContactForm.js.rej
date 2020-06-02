@@ -1,0 +1,6 @@
+diff a/src/components/2020/ContactForm.js b/src/components/2020/ContactForm.js	(rejected hunks)
+@@ -108,2 +107,2 @@ export default class Contact extends PureComponent {
+-    try{
+-      const response =  await fetch(this.url, settings);
++    try {
++      const response = await fetch(this.url, settings);

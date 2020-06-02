@@ -35,7 +35,7 @@ export default class Contact extends PureComponent {
       },
       isLoading: false,
     };
-    this.url = 'https://api.8base.com/cjnp8j12b000i01qm9zu7dug3/webhook/form-contact';
+    this.url = '';
     this.handleChange = this.handleChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
@@ -105,8 +105,7 @@ export default class Contact extends PureComponent {
     };
 
     try {
-      const response = await fetch(this.url, settings);
-      console.log(response);
+      await fetch(process.env.CONTACT_FORM_API, settings);
       navigate('/thanks-contact');
     } catch (error) {
       this.setState(
