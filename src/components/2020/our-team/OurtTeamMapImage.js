@@ -1,11 +1,16 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-// import styled from 'styled-components';
+import styled from 'styled-components';
+
+const Images = styled.img`
+  min-width: 700px;
+  min-height: 500px;
+`;
 
 const OurTeamMapImage = () => {
   const data = useStaticQuery(query);
 
-  return <img src={data.file.publicURL} alt="" />;
+  return <Images src={data.file.publicURL} alt="" />;
 };
 
 const query = graphql`
