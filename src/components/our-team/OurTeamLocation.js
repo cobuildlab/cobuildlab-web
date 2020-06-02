@@ -83,7 +83,8 @@ OurTeamLocation.defaultProps = {
 };
 
 OurTeamLocation.propTypes = {
-  placeholder: PropTypes.string.isRequired,
+  placeholder: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.string), PropTypes.string])
+    .isRequired,
   xs: PropTypes.shape({
     top: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     right: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),

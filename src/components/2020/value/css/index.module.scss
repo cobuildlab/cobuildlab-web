@@ -3,22 +3,11 @@
 .business_value{
 
   &_content{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    padding: 40px;
-    @media all and (max-width: 767.99px){
-      padding: 15px;
-    }
+   
   }
 
   &_overlay{
-    position: absolute;
-    top: 50px;
-    height: 479px;
-    background-color: #fff;
-    box-shadow: 0px 8px 30px #264A6017;
-
+   
     &_right{
       left: 0;
       right: -100%;
@@ -29,17 +18,13 @@
       right: 0;
     }
 
-    @media all and (max-width: 767.99px){
-      height: 100%;
-    }
+
   }
 
 
 
   &_content_container{
-    position: relative;
-    z-index: 100;
-    padding-top: 2.5em;
+   
   }
 
   &_paragraph{

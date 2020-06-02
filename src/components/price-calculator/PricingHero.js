@@ -19,7 +19,7 @@ const Text = styled(Paragraph)`
 const PricingHero = () => (
   <Container>
     <Title>
-      Budget <TextOrange>Builder</TextOrange>
+      Price <TextOrange>Calculator</TextOrange>
     </Title>
     <Text>
       We partner with new and early-stage entrepreneurs and industry experts to transforms ideas
