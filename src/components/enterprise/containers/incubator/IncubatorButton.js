@@ -7,10 +7,11 @@ const Container = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 `;
 
 const Redirect = styled(Link)`
-  padding: 1.5em 4em;
+  padding: 1em 4em;
   background-color: #e76c29;
   display: inline-flex;
   align-items: center;
