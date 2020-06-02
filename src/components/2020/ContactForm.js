@@ -108,6 +108,7 @@ export default class Contact extends PureComponent {
       await fetch(process.env.CONTACT_FORM_API, settings);
       navigate('/thanks-contact');
     } catch (error) {
+      console.log(error);
       this.setState(
         {
           isLoading: false,

@@ -5,7 +5,6 @@ import Paragraph from '../../../Typography/Paragraph';
 import { TextOrange } from '../../../Typography/TextHelpers';
 
 const Container = styled.div`
-  padding-top: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,6 +13,7 @@ const Container = styled.div`
 `;
 
 const Title = styled(H3)`
+  color: #fff;
   @media screen and (max-width: 768px) {
     text-align: center;
     font-size: 35px;
@@ -25,6 +25,7 @@ const Text = styled(Paragraph)`
   text-align: right;
   margin-top: 1em;
   line-height: 1.5;
+  color: #fff;
   @media screen and (max-width: 768px) {
     text-align: center;
   }
