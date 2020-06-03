@@ -1,9 +1,9 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import { Container } from 'bloomer';
-import H2 from '../Typography/H2';
+import { Container, Section } from 'bloomer';
 import styled from 'styled-components';
-import BlogList from '../blog-post/BlogList';
+import H4 from '../../Typography/H4';
+import BlogList from '../../blog-post/BlogList';
 
 const Wrapper = styled.div`
   padding-top: 3rem;
@@ -20,19 +20,21 @@ const TitleContainer = styled.div`
   margin-top: 1.5em;
 `;
 
-const HomePagePost = () => {
+const EnterpriseRecentPost = () => {
   const data = useStaticQuery(query);
   return (
-    <Container>
-      <Wrapper>
-        <TitleContainer>
-          <H2>Recent Posts</H2>
-        </TitleContainer>
-        <Container>
-          <BlogList data={data.allMarkdownRemark.edges} />
-        </Container>
-      </Wrapper>
-    </Container>
+    <Section>
+      <Container id="blog">
+        <Wrapper>
+          <TitleContainer>
+            <H4>Recent Posts</H4>
+          </TitleContainer>
+          <Container>
+            <BlogList data={data.allMarkdownRemark.edges} />
+          </Container>
+        </Wrapper>
+      </Container>
+    </Section>
   );
 };
 
@@ -67,4 +69,4 @@ const query = graphql`
   }
 `;
 
-export default HomePagePost;
+export default EnterpriseRecentPost;

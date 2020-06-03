@@ -32,6 +32,9 @@ const FooterNavigation = () => (
         <LinkItem to="/customer-success-stories">Customer Success Stories</LinkItem>
       </FooterListItem>
       <FooterListItem>
+        <LinkItem to="/team">Our Team</LinkItem>
+      </FooterListItem>
+      <FooterListItem>
         <LinkItem to="/portfolio">Porftolio</LinkItem>
       </FooterListItem>
       <FooterListItem>

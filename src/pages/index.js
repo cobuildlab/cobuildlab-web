@@ -15,6 +15,7 @@ import Testimonial from '../components/enterprise/containers/testimonial/Testimo
 import Contact from '../components/enterprise/containers/contact/ContactEnterprise';
 import Brand from '../components/enterprise/containers/brands';
 import Footer from '../components/enterprise/containers/footer/Footer';
+import EnterpriseRecentPost from '../components/enterprise/containers/EnterpriseRecentPost';
 
 import 'bulma';
 import 'slick-carousel/slick/slick.scss';
@@ -39,16 +40,11 @@ const IndexPage = () => (
       <Testimonial />
       <OurTeamEnterpriseSection />
       <Contact />
+      <EnterpriseRecentPost />
       <Brand />
       <Footer />
-      {/* <ThemeColor /> */}
     </div>
   </div>
 );
-
-/*
-  <ThemeColor />
-  <ThemeOption />.
- */
 
 export default IndexPage;

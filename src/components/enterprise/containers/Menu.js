@@ -109,6 +109,9 @@ const Menu = () => {
             <MenuLink href="#banner">Home</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
+            <MenuLink href="#blog">Blog</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
             <MenuLink href="#services">Service</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
@@ -122,6 +125,9 @@ const Menu = () => {
           </MenuItem>
           <MenuItem onClick={handleOpen}>
             <MenuLink href="#skills">Skills</MenuLink>
+          </MenuItem>
+          <MenuItem onClick={handleOpen}>
+            <MenuLink href="#our-team">Our Team</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
             <MenuLink href="#project">Project</MenuLink>
