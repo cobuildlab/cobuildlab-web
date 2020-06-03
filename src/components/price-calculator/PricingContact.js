@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import { navigate } from 'gatsby';
 import {
   Container,
   Columns,
@@ -18,7 +19,6 @@ import ButtonDefault from '../2020/Button/ButtonDefault';
 import PricingContactImages from './PricingContactImages';
 import template from '../pdf/PdfCalculatorTemplate';
 import Error from '../Toast/Error';
-import Success from '../Toast/Success';
 
 const Form = styled.form`
   margin-top: 2em;
@@ -34,6 +34,7 @@ class PricingContact extends PureComponent {
     this.onSubmit = this.onSubmit.bind(this);
     this.transformToBase64 = this.transformToBase64.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.handleError = this.handleError.bind(this);
     this.state = {
       isLoading: false,
       form: {
@@ -71,101 +72,111 @@ class PricingContact extends PureComponent {
     }));
   }
 
+  handleError(error) {
+    console.error(error);
+    this.setState((state) => ({
+      isLoading: !state.isLoading,
+    }));
+    toast(<Error message="Error, the message could not be sent" />, {
+      position: 'bottom-right',
+      hideProgressBar: true,
+    });
+  }
+
   async onSubmit(event) {
-    try {
-      event.preventDefault();
-      const { calculatorData } = this.props;
-      const { data, total } = calculatorData;
-      const { form } = this.state;
-      const { name, email, message } = form;
+    event.preventDefault();
+    const { calculatorData } = this.props;
+    const { data, total } = calculatorData;
+    const { form } = this.state;
+    const { name, email, message } = form;
+    let base64 = null;
+    let blob = null;
 
-      if (!data || !total) {
-        toast.dismiss();
-        toast(<Error message="Select at least one calculator feature" />, {
-          position: 'bottom-right',
-          hideProgressBar: true,
-        });
-        return;
-      }
-
-      if (!name.length) {
-        toast.dismiss();
-        toast(<Error message="name can't be empty" />, {
-          position: 'bottom-right',
-          hideProgressBar: true,
-        });
-        return;
-      }
-
-      if (!email.length) {
-        toast.dismiss();
-        toast(<Error message="Email can't be empty" />, {
-          position: 'bottom-right',
-          hideProgressBar: true,
-        });
-        return;
-      }
-
-      if (!message.length) {
-        toast.dismiss();
-        toast(<Error message="Message can't be empty" />, {
-          position: 'bottom-right',
-          hideProgressBar: true,
-        });
-        return;
-      }
-
-      this.setState((state) => ({
-        isLoading: !state.isLoading,
-      }));
-
-      const documentData = template({ data, total });
-      const blob = await pdf(documentData).toBlob();
-      const base64 = await this.transformToBase64(blob);
-
-      const postData = {
-        form: {
-          email,
-          name,
-          message,
-        },
-        pdfUri: base64,
-      };
-
-      const settings = {
-        method: 'POST',
-        body: JSON.stringify(postData),
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-        },
-      };
-
-      await fetch(
-        'https://api.8base.com/cjnp8j12b000i01qm9zu7dug3/webhook/calculator-mail',
-        settings,
-      );
-
-      this.setState((state) => ({
-        isLoading: !state.isLoading,
-      }));
-
+    if (!data || !total) {
       toast.dismiss();
-      toast(<Success message="Message sent succesfully" />, {
+      toast(<Error message="Select at least one calculator feature" />, {
         position: 'bottom-right',
         hideProgressBar: true,
       });
-    } catch (error) {
-      console.error(error);
-      this.setState((state) => ({
-        isLoading: !state.isLoading,
-      }));
-      toast(<Error message="Error, the message could not be sent" />, {
-        position: 'bottom-right',
-        hideProgressBar: true,
-      });
-      throw new Error(error);
+      return;
     }
+
+    if (!name.length) {
+      toast.dismiss();
+      toast(<Error message="name can't be empty" />, {
+        position: 'bottom-right',
+        hideProgressBar: true,
+      });
+      return;
+    }
+
+    if (!email.length) {
+      toast.dismiss();
+      toast(<Error message="Email can't be empty" />, {
+        position: 'bottom-right',
+        hideProgressBar: true,
+      });
+      return;
+    }
+
+    if (!message.length) {
+      toast.dismiss();
+      toast(<Error message="Message can't be empty" />, {
+        position: 'bottom-right',
+        hideProgressBar: true,
+      });
+      return;
+    }
+
+    this.setState((state) => ({
+      isLoading: !state.isLoading,
+    }));
+
+    const documentData = template({ data, total });
+
+    try {
+      blob = await pdf(documentData).toBlob();
+    } catch (err) {
+      this.handleError(err);
+      return;
+    }
+
+    try {
+      base64 = await this.transformToBase64(blob);
+    } catch (err) {
+      this.handleError(err);
+      return;
+    }
+
+    const postData = {
+      form: {
+        email,
+        name,
+        message,
+      },
+      pdfUri: base64,
+    };
+
+    const settings = {
+      method: 'POST',
+      body: JSON.stringify(postData),
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+    };
+
+    try {
+      await fetch(process.env.PRICING_CONTACT_API, settings);
+    } catch (error) {
+      this.handleError(error);
+      return;
+    }
+
+    this.setState((state) => ({
+      isLoading: !state.isLoading,
+    }));
+    navigate('/thanks-contact');
   }
 
   render() {
