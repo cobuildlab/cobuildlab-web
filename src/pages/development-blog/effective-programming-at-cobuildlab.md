@@ -8,7 +8,7 @@ image: null
 
 > These are a set of commonalities and practices learn from my experience with Java, Python and Javascript development over near 20 years of experience. Angel Lacret
     
-This set of practices are heavily based on this books:
+This set of practices are heavily based on these books:
 
 For Java:
 
@@ -45,9 +45,11 @@ This document aims to reduce the friction between patterns, conventions and best
 - Does more than 1 thing
 
 
-# 1. General Best Practices for Code Style.
+# **1. General Best Practices for Code Style.**
 
-## 1.1 Don't use more than one sentence in a try/catch block
+<br/>
+
+## **1.1 Don't use more than one sentence in a try/catch block**
 
 Is a common mistake for new developers to surround long function calls or views inside try-catch blocks as a failsafe or catch all exception handling. But in fact, this is one sign of ineffective code.
 
@@ -64,7 +66,8 @@ Keep your code predictable, robust, solid and **effective** by:
 - For easier bug hunting, make sure to handle different Exceptional scenarios appropriately  
 
 
-## 1.2 Prefer the use of `constants` over `variables`.
+<br/>
+## **1.2 Prefer the use of `constants` over `variables`.**
 
 Prefer the use of `constants` over `variables` for holding values always that is possible.
 
@@ -72,7 +75,10 @@ Prefer the use of `constants` over `variables` for holding values always that is
 - Code readability, constants values by definition cannot change, making the code easier to read and to debug.
 - Efficiency: Many Runtimes promise faster access to constant values than to variables values.
 
-## 1.3 Prefer use the **Return Early** pattern instead of complex conditionals or nested blocks 
+
+<br/>
+
+## **1.3 Prefer use the **Return Early** pattern instead of complex conditionals or nested blocks** 
 
 Enforce the **Return Early** pattern in functions and methods.
 
@@ -124,6 +130,22 @@ const TableView = ({children, loading}) => {
 ```
 
 *AND NOT THIS:*
+
+```python
+def is_valid_string (text, allow_empty = false):
+	if text !== None :
+        #
+        #
+            if ...
+                #
+                #
+                #
+                return True
+    else:
+	    return False
+);
+
+```
 
 ```javascript
 const isValidString = (text, allowEmpty = false) => (
