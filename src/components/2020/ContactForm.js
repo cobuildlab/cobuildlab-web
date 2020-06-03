@@ -6,7 +6,7 @@ import { Field, Control, Input, TextArea, Label as BloomerLabel } from 'bloomer'
 import styled from 'styled-components';
 import ButtonDefault from './Button/ButtonDefault';
 import Error from '../Toast/Error';
-import Success from '../Toast/Success';
+// import Success from '../Toast/Success';
 
 const Label = styled(BloomerLabel)`
   color: #264a60;
@@ -35,7 +35,7 @@ export default class Contact extends PureComponent {
       },
       isLoading: false,
     };
-    this.url = 'https://api.cobuild-lab.com/landing/contact';
+    this.url = '';
     this.handleChange = this.handleChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
@@ -50,8 +50,8 @@ export default class Contact extends PureComponent {
     }));
   }
 
-  onSubmit(e) {
-    e.preventDefault();
+  async onSubmit(event) {
+    event.preventDefault();
     const {
       data: { name, email, message, phone, landingName },
     } = this.state;
@@ -88,12 +88,11 @@ export default class Contact extends PureComponent {
     });
 
     const data = {
-      firstName: name,
-      lastName: 'none',
+      name,
       email,
-      comment: message,
+      message,
       phone,
-      landingName,
+      landing: landingName,
     };
 
     const settings = {
@@ -105,31 +104,23 @@ export default class Contact extends PureComponent {
       },
     };
 
-    fetch(this.url, settings)
-      .then((res) => res.json())
-      .then((response) => {
-        if (response.statusCode >= 400) {
-          toast.dismiss();
-
-          toast(<Error message={response.message} />, {
+    try {
+      await fetch(process.env.CONTACT_FORM_API, settings);
+      navigate('/thanks-contact');
+    } catch (error) {
+      console.log(error);
+      this.setState(
+        {
+          isLoading: false,
+        },
+        () => {
+          toast(<Error message="An error has occurred" />, {
             position: 'bottom-right',
             hideProgressBar: true,
           });
-
-          this.setState({
-            isLoading: false,
-          });
-        } else {
-          toast.dismiss();
-
-          toast(<Success message={response.message} />, {
-            position: 'bottom-right',
-            hideProgressBar: true,
-          });
-
-          navigate('/thanks-contact');
-        }
-      });
+        },
+      );
+    }
   }
 
   render() {

@@ -3,10 +3,10 @@ import { HeroHeader, HeroBody, Hero, Section } from 'bloomer';
 import Layout from '../../components/2020/Layout';
 import Header from '../../components/2020/header/Header';
 import HeroBodyContent from '../../components/2020/Hero';
-import Service from '../../components/2020/Service';
-import BusinessValue from '../../components/2020/BusinessValue';
+import Service from '../../components/2020/service/Service';
+import Value from '../../components/2020/value/Value';
 import HomePageCustomerSuccessStories from '../../components/2020/HomePageCustomerSuccessStories';
-// import OurTeam from '../../components/2020/our-team/OurTeam';
+import OurTeam from '../../components/our-team/OurTeam';
 import Contact from '../../components/2020/HomePageContact';
 import TestimonialHomePage from '../../components/2020/TestimonialHomePage';
 import HomePagePost from '../../components/2020/HomePagePost';
@@ -46,12 +46,14 @@ export default class HomePage extends PureComponent {
           <Service />
         </Section>
         <Section>
-          <BusinessValue />
+          <Value />
         </Section>
         <Section>
           <HomePageCustomerSuccessStories />
         </Section>
-        <Section>{/* <OurTeam /> */}</Section>
+        <Section isPaddingless>
+          <OurTeam />
+        </Section>
         <Section isPaddingless>
           <TestimonialHomePage />
         </Section>
