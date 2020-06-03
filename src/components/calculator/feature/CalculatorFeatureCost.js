@@ -15,11 +15,17 @@ const Container = styled.span`
   }
 `;
 
-const CalculatorFeatureCost = ({ max, min }) => (
-  <Container>
-    {min} - {max}
-  </Container>
-);
+const CalculatorFeatureCost = ({ max, min }) => {
+  if (max === 0 && min === 0) {
+    return <Container>0</Container>;
+  }
+
+  return (
+    <Container>
+      {min} - {max}
+    </Container>
+  );
+};
 
 CalculatorFeatureCost.propTypes = {
   max: PropTypes.number.isRequired,
