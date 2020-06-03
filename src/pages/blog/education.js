@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
+import { Section, Container } from 'bloomer';
 import get from 'lodash/get';
 import Layout from '../../components/2020/Layout';
-import { Section, Container } from 'bloomer';
 import BlogMetaTags from '../../components/blog-post/BlogMetaTags';
 import BlogHero from '../../components/blog-post/BlogHero';
 import BlogTag from '../../components/blog-post/BlogTag';
 import BlogList from '../../components/blog-post/BlogList';
 import BlogPostContainer from '../../components/blog-post/BlogPostContainer';
 
-const Blog = ({ data }) => {
+const Education = ({ data }) => {
   const posts = get(data, 'allMarkdownRemark.edges');
   return (
     <Layout>
@@ -18,7 +18,7 @@ const Blog = ({ data }) => {
       <BlogHero />
       <Section isPaddingless>
         <Container>
-          <BlogTag activeTag="all" />
+          <BlogTag activeTag="education" />
           <BlogPostContainer>
             <BlogList data={posts} />
           </BlogPostContainer>
@@ -28,7 +28,7 @@ const Blog = ({ data }) => {
   );
 };
 
-Blog.propTypes = {
+Education.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
@@ -42,8 +42,8 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 1000
-      filter: {fileAbsolutePath: {regex: "/(pages/blog)/.*\\.md$/"}}
+      limit: 20
+      filter: { frontmatter: { tags: { regex: "/Education/" } }, fileAbsolutePath: {regex: "/(blog)/.*\\.md$/"} }
     ) {
       edges {
         node {
@@ -73,4 +73,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default Blog;
+export default Education;
