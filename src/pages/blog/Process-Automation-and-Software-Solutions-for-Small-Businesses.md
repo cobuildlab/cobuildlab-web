@@ -1,5 +1,5 @@
 ---
-title: "B2B in this age: Process Automation and Software Solutions for Small Businesses in Miami"
+title: "B2B in this age: Process Automation and Software Solutions for Small Businesses"
 date: '2020-06-02T16:24:04.000Z'
 template: blog
 tags: Small Business
@@ -178,7 +178,7 @@ Document Sharing and Access.
 
 <Br>
 
-<title-2>Software Solutions for Your Small Business in Miami</title-2>
+<title-2>Software Solutions for Your Small Business</title-2>
 
 There’s a lot of options in Florida for small businesses and B2B companies looking for a software solution in some area of their work.
 
