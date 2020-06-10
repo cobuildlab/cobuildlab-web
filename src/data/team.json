@@ -1,6 +1,7 @@
 [
   {
-  "name": "Angel Lacret",
+  "first": "Angel",
+  "last": "Lacret",
   "picture": "../assets/images/team/team-pictures/angel.jpg",
   "description": "Chief of Product Development",
   "social-networks": [
@@ -19,9 +20,10 @@
     ]
   },
   {
-    "name": "Alexander Romero",
+    "first": "Alexander",
+    "last": "Romero",
     "picture": "../assets/images/team/team-pictures/Alexander-Romero.jpg",
-    "description": "Full-stack Javascript Developer",
+    "description": "Full Stack Javascript Developer",
     "social-networks": [
       {
         "name": "twitter",
@@ -38,7 +40,8 @@
     ]
   },
   {
-    "name": "Aracelis Acosta",
+    "first": "Aracelis",
+    "last": "Acosta",
     "picture": "../assets/images/team/team-pictures/araceli.jpg",
     "description": "Administrator",
     "social-networks": [
@@ -57,7 +60,8 @@
     ]
   },
    {
-    "name": "Ariadna Mora",
+    "first": "Ariadna",
+    "last": "Mora",
     "picture": "../assets/images/team/team-pictures/Ariadna-Mora.jpg",
     "description": "Community Manager",
     "social-networks": [
@@ -76,9 +80,10 @@
     ]
   },
   {
-    "name": "Carlos Febres",
+    "first": "Carlos",
+    "last": "Febres",
     "picture": "../assets/images/team/team-pictures/Carlos-Febres.jpg",
-    "description": "Full-stack Javascript Developer",
+    "description": "Full Stack Javascript Developer",
     "social-networks": [
       {
         "name": "twitter",
@@ -95,9 +100,10 @@
     ]
   },
   {
-    "name": "Carlos Hurtado",
+    "first": "Carlos",
+    "last": "Hurtado",
     "picture": "../assets/images/team/team-pictures/Carlos-Hurtado.jpg",
-    "description": "Full-stack Javascript Developer",
+    "description": "Full Stack Javascript Developer",
     "social-networks": [
       {
         "name": "twitter",
@@ -114,7 +120,8 @@
     ]
   },
   {
-    "name": "Carolina Barcelo",
+    "first": "Carolina",
+    "last": "Barcelo",
     "picture": "../assets/images/team/team-pictures/Carolina-Barcelo.jpg",
     "description": "Content Writer.",
     "social-networks": [
@@ -133,7 +140,8 @@
     ]
   },
   {
-    "name": "Cesar Morales",
+    "first": "Cesar",
+    "last": "Morales",
     "picture": "../assets/images/team/team-pictures/Cesar-Morales.jpg",
     "description": "QA Analyst",
     "social-networks": [
@@ -152,9 +160,10 @@
     ]
   },
   {
-    "name": "Dany Leonel Lima",
+    "first": "Dany Leonel",
+    "last": "Lima",
     "picture": "../assets/images/team/team-pictures/Dany-Leonel-Lima.jpg",
-    "description": "Full-stack Javascript/Python Developer",
+    "description": "Full Stack Javascript/Python Developer",
     "social-networks": [
       {
         "name": "twitter",
@@ -171,9 +180,10 @@
     ]
   },
   {
-    "name": "Edgar Espinetti",
+    "first": "Edgar",
+    "last": "Espinetti",
     "picture": "../assets/images/team/team-pictures/Edgar-Espinetti.jpg",
-    "description": "Full-stack Javascript Developer",
+    "description": "Full Stack Javascript Developer",
     "social-networks": [
       {
         "name": "twitter",
@@ -190,7 +200,8 @@
     ]
   },
   {
-    "name": "Ernesto Morales",
+    "first": "Ernesto",
+    "last": "Morales",
     "picture": "../assets/images/team/team-pictures/Ernesto-Morales.jpg",
     "description": "UI/UX Designer",
     "social-networks": [
@@ -209,9 +220,10 @@
     ]
   },
   {
-    "name": "Gerardo Garcia",
+    "first": "Gerardo",
+    "last": "Garcia",
     "picture": "../assets/images/team/team-pictures/Gerardo-Garcia.jpg",
-    "description": "Full-stack Javascript Developer",
+    "description": "Full Stack Javascript Developer",
     "social-networks": [
       {
         "name": "twitter",
@@ -228,9 +240,10 @@
     ]
   },
   {
-    "name": "Jesús Rodriguez",
+    "first": "Jesús",
+    "last": "Rodriguez",
     "picture": "../assets/images/team/team-pictures/Jesus-Rodriguez.jpg",
-    "description": "Full-stack Javascript Developer",
+    "description": "Full Stack Javascript Developer",
     "social-networks": [
       {
         "name": "twitter",
@@ -247,9 +260,10 @@
     ]
   },
   {
-    "name": "Jorge Soto",
+    "first": "Jorge",
+    "last": "Soto",
     "picture": "../assets/images/team/team-pictures/Jorge-Soto.jpg",
-    "description": "Full-stack Javascript Developer",
+    "description": "Full Stack Javascript Developer",
     "social-networks": [
       {
         "name": "twitter",
@@ -266,9 +280,10 @@
     ]
   },
   {
-    "name": "Jose Agustín Villalobos",
+    "first": "Jose Agustín",
+    "last": "Villalobos",
     "picture": "../assets/images/team/team-pictures/Jose-Agustín-Villalobos.jpg",
-    "description": "Full-stack Javascript Developer",
+    "description": "Full Stack Javascript Developer",
     "social-networks": [
       {
         "name": "twitter",
@@ -285,9 +300,10 @@
     ]
   },
   {
-    "name": "Julmer Olivero",
+    "first": "Julmer",
+    "last": "Olivero",
     "picture": "../assets/images/team/team-pictures/Julmer-Olivero.jpg",
-    "description": "Full-stack Javascript Developer",
+    "description": "Full Stack Javascript Developer",
     "social-networks": [
       {
         "name": "twitter",
@@ -304,7 +320,8 @@
     ]
   },
   {
-    "name": "Kevin Hernández",
+    "first": "Kevin",
+    "last": "Hernández",
     "picture": "../assets/images/team/team-pictures/kevin.jpg",
     "description": "Chief Finantial Officer",
     "social-networks": [
@@ -323,9 +340,10 @@
     ]
   },
   {
-    "name": "Luis Eulacio",
+    "first": "Luis",
+    "last": "Eulacio",
     "picture": "../assets/images/team/team-pictures/Luis-Eulacio.jpg",
-    "description": "Full-stack Javascript Developer",
+    "description": "Full Stack Javascript Developer",
     "social-networks": [
       {
         "name": "twitter",
@@ -342,7 +360,8 @@
     ]
   },
   {
-    "name": "Maite Quijada",
+    "first": "Maite",
+    "last": "Quijada",
     "picture": "../assets/images/team/team-pictures/Maite-Quijada.jpg",
     "description": "Content Writer.",
     "social-networks": [
@@ -361,7 +380,8 @@
     ]
   },
   {
-    "name": "Manuel Briceno",
+    "first": "Manuel",
+    "last": "Briceno",
     "picture": "../assets/images/team/team-pictures/Manuel-Briceno.jpg",
     "description": "UI/UX Designer",
     "social-networks": [
@@ -380,7 +400,8 @@
     ]
   },
   {
-    "name": "Marco Maldonado",
+    "first": "Marco",
+    "last": "Maldonado",
     "picture": "../assets/images/team/team-pictures/MarcoMaldonado.jpg",
     "description": "UI/UX Designer.",
     "social-networks": [
@@ -399,7 +420,8 @@
     ]
   },
   {
-    "name": "Mayela Marin",
+    "first": "Mayela",
+    "last": "Marin",
     "picture": "../assets/images/team/team-pictures/Mayela-Marin.jpg",
     "description": "Project Manager",
     "social-networks": [
@@ -418,9 +440,10 @@
     ]
   },
   {
-    "name": "Moises Marquina",
+    "first": "Moises",
+    "last": "Marquina",
     "picture": "../assets/images/team/team-pictures/Moises-Marquina.jpg",
-    "description": "Full-stack Javascript Developer",
+    "description": "Full Stack Javascript Developer",
     "social-networks": [
       {
         "name": "twitter",
@@ -437,9 +460,10 @@
     ]
   },
   {
-    "name": "Ricardo Moreno",
+    "first": "Ricardo",
+    "last": "Moreno",
     "picture": "../assets/images/team/team-pictures/Ricardo-Moreno.jpg",
-    "description": "Full-stack Javascript Developer",
+    "description": "Full Stack Javascript Developer",
     "social-networks": [
       {
         "name": "twitter",
@@ -456,9 +480,10 @@
     ]
   },
   {
-    "name": "Salomon Martinez",
+    "first": "Salomon",
+    "last": "Martinez",
     "picture": "../assets/images/team/team-pictures/Salomon-Martinez.jpg",
-    "description": "Full-stack Javascript Developer",
+    "description": "Full Stack Javascript Developer",
     "social-networks": [
       {
         "name": "twitter",
@@ -475,9 +500,10 @@
     ]
   },
   {
-    "name": "Willian Mata",
+    "first": "Willian",
+    "last": "Mata",
     "picture": "../assets/images/team/team-pictures/Willian-Mata.jpg",
-    "description": "Full-stack Javascript Developer",
+    "description": "Full Stack Javascript Developer",
     "social-networks": [
       {
         "name": "twitter",
@@ -494,9 +520,10 @@
     ]
   },
   {
-    "name": "Xavier Romero",
+    "first": "Xavier",
+    "last": "Romero",
     "picture": "../assets/images/team/team-pictures/Xavier-Romero.jpg",
-    "description": "Full-stack Javascript Developer",
+    "description": "Full Stack Javascript Developer",
     "social-networks": [
       {
         "name": "twitter",
@@ -513,7 +540,8 @@
     ]
   },
   {
-    "name": "Yanisel Barreto",
+    "first": "Yanisel",
+    "last": "Barreto",
     "picture": "../assets/images/team/team-pictures/Yanisel-Barreto.jpg",
     "description": "Chief of Staff.",
     "social-networks": [

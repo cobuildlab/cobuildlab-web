@@ -42,7 +42,8 @@ export const pageQuery = graphql`
   query {
     allTeamJson {
       nodes {
-        name
+        first
+        last
         id
         description
         social_networks {

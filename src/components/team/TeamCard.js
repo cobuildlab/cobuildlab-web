@@ -53,7 +53,7 @@ const Footer = styled.div`
   padding: 1em;
 `;
 
-const TeamCard = ({ src, name, description, socialNetworks }) => (
+const TeamCard = ({ src, first, last, description, socialNetworks }) => (
   <Container>
     <ImagesWrapper>
       <Img fluid={src} alt={name} />
@@ -61,7 +61,7 @@ const TeamCard = ({ src, name, description, socialNetworks }) => (
     </ImagesWrapper>
     <Content>
       <div>
-        <Name>{name}</Name>
+        <Name>{first + last}</Name>
         <Description>{description}</Description>
       </div>
       <Footer>{/*<TeamSocialNetworks data={socialNetworks} />*/}</Footer>
@@ -76,7 +76,8 @@ TeamCard.defaultProps = {
 TeamCard.propTypes = {
   src: PropTypes.object.isRequired,
   description: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
+  first: PropTypes.string.isRequired,
+  last: PropTypes.string.isRequired,
   socialNetworks: PropTypes.array,
 };
 

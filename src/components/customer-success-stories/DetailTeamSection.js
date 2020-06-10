@@ -34,7 +34,8 @@ const query = graphql`
   query {
     allTeamJson(limit: 8) {
       nodes {
-        name
+        first
+        last
         id
         description
         social_networks {
