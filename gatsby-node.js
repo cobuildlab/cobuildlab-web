@@ -44,20 +44,6 @@ exports.createPages = ({ graphql, actions }) => {
         if (result.errors) {
           return reject(result.errors);
         }
-        console.log(`DEBUG: gatsby-node: processing:`);
-        console.log(`DEBUG: gatsby-node: processing:`);
-        console.log(`DEBUG: gatsby-node: processing:`);
-        console.log(`DEBUG: gatsby-node: processing:`);
-        console.log(`DEBUG: gatsby-node: processing:`);
-        console.log(`DEBUG: gatsby-node: processing:`);
-        console.log(`DEBUG: gatsby-node: processing:`);
-        console.log(`DEBUG: gatsby-node: processing:`, result);
-        console.log(`DEBUG: gatsby-node: processing:`);
-        console.log(`DEBUG: gatsby-node: processing:`);
-        console.log(`DEBUG: gatsby-node: processing:`);
-        console.log(`DEBUG: gatsby-node: processing:`);
-        console.log(`DEBUG: gatsby-node: processing:`);
-        console.log(`DEBUG: gatsby-node: processing:`);
         // Create blog posts pages.
         const posts = result.data.allMarkdownRemark.edges;
 

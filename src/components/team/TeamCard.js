@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
-import TeamSocialNetworks from './TeamSocialNetworks';
+// import TeamSocialNetworks from './TeamSocialNetworks';
 
 const Container = styled.div`
   position: relative;
@@ -64,9 +64,7 @@ const TeamCard = ({ src, name, description, socialNetworks }) => (
         <Name>{name}</Name>
         <Description>{description}</Description>
       </div>
-      <Footer>
-        <TeamSocialNetworks data={socialNetworks} />
-      </Footer>
+      <Footer>{/*<TeamSocialNetworks data={socialNetworks} />*/}</Footer>
     </Content>
   </Container>
 );
