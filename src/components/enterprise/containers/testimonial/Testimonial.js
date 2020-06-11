@@ -35,7 +35,7 @@ const Testimonial = () => {
               <Title>Testimonials</Title>
               <H4>
                 <AlignCenter>
-                  Clients<TextOrange>Feedback</TextOrange>
+                  Client <TextOrange>Feedback</TextOrange>
                 </AlignCenter>
               </H4>
             </Wrapper>
