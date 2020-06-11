@@ -17,7 +17,6 @@ Founded in 2009, <a target="_blank" href="https://www.neocis.com/"> Neocis Inc. 
 
 <title-6 align="centered"> Alon Mozes CEO and Co-founder. </title-6> <br> </br>
 
-<img src="./media/neocis-01.png"> 
 
 As a principal engineer and one of the first 20 employees at MAKO Surgical Corp., <a target="_blank" href="https://www.linkedin.com/in/alonmozes/"> Alon Mozes </a> helped develop the software for their groundbreaking Rio system for orthopedic robotic surgery. Prior to MAKO Surgical Corp., he developed Emmy award-winning technology with <a target="_blank" href="https://www.smt.com/"> Sportvision, Inc. </a> in the area of real-time sports broadcast graphics. <br> </br>
 
