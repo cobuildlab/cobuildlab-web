@@ -11,12 +11,13 @@ const Container = styled.div`
   flex-direction: column;
 
   .team-member-img {
-    transition: filter 0.3s;
-    filter: saturate(0.7);
+    transition: all 0.3s;
+    filter: saturate(0.6);
   }
   &:hover {
     .team-member-img {
-      filter: saturate(1);
+      filter: drop-shadow(0px 0px 20px #e86b2a8c) saturate(1);
+      transform: scale(1.01);
     }
   }
 `;
@@ -33,6 +34,8 @@ const Container = styled.div`
 
 const ImagesWrapper = styled.div`
   position: relative;
+  transition: padding .3s;
+  // ${Container}:hover & { padding: 2px}
 `;
 
 const Content = styled.div`
@@ -54,16 +57,23 @@ const Name = styled.div`
   // ${Container}:hover & { font-size:17px;}
 `;
 const First = styled.span`
-  transition: color 0.3s;
-  ${Container}:hover & {
-    color: #e76c29;
-  }
+  color: #e76c29;
+  // transition: color 0.3s;
+  // ${Container}:hover & {
+  //   color: #e76c29;
+  // }
 `;
 
 const Description = styled.div`
   text-align: center;
   font-size: 14px;
   color: #264a60;
+  transition: color .3s;
+
+  ${Container}:hover & {
+    color: #e76c29;
+    font-weight: 500;
+  }
 }
 `;
 
@@ -77,6 +87,7 @@ const TeamCard = ({ src, first, last, description, socialNetworks }) => (
   <Container>
     <ImagesWrapper>
       <Img fluid={src} alt={first} className={'team-member-img'} />
+      {/* <ImageOverlay /> */}
     </ImagesWrapper>
     <Content>
       <div>
