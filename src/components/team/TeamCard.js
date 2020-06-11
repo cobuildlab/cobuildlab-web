@@ -14,7 +14,10 @@ const Container = styled.div`
     transition: all 0.3s;
     filter: saturate(0.6);
   }
+
   &:hover {
+    z-index: 100;
+
     .team-member-img {
       filter: drop-shadow(0px 0px 20px #e86b2a8c) saturate(1.05);
       transform: scale(1.01);
