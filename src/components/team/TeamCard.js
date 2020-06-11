@@ -21,6 +21,16 @@ const Container = styled.div`
   }
 `;
 
+// const ImageOverlay = styled.div`
+//   height: 100%;
+//   width: 100%;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   background-color: #264a60;
+//   opacity: 0.55;
+// `;
+
 const ImagesWrapper = styled.div`
   position: relative;
 `;
