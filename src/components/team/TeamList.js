@@ -10,11 +10,12 @@ const Container = styled.div`
 `;
 
 const TeamList = ({ data }) => {
-  const items = data.map(({ id, name, social_networks, picture, description }) => (
+  const items = data.map(({ id, first, last, social_networks, picture, description }) => (
     <Column key={id} isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
       <TeamCard
         src={picture.childImageSharp.fluid}
-        name={name}
+        first={first}
+        last={last}
         description={description}
         socialNetworks={social_networks}
       />

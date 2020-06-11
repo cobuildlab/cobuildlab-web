@@ -20,6 +20,26 @@
     ]
   },
   {
+    "first": "Alan",
+    "last": "R. Guevara",
+    "picture": "../assets/images/team/team-pictures/alanthinks.jpg",
+    "description": "Chief of Product Management",
+    "social-networks": [
+        {
+          "name": "twitter",
+          "src": "https://twitter.com/alanthinksnot"
+        },
+        {
+          "name": "facebook",
+          "src": "https://facebook.com/alanthinks"
+        },
+        {
+          "name": "github",
+          "src": "https://github.com/alanthinks"
+        }
+      ]
+    },
+  {
     "first": "Alexander",
     "last": "Romero",
     "picture": "../assets/images/team/team-pictures/Alexander-Romero.jpg",
