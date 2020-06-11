@@ -26,11 +26,11 @@ const ContactEnterprise = () => {
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }} isOffset={{ mobile: 0, desktop: 1 }}>
             <H4>
-              Contact US for a{' '}
+              Contact Us for a{' '}
               <span className="enterprise-text-orange sub-title">FREE 1 hour Consultation</span>{' '}
             </H4>
             <P>+1 786 - 991 - 3467</P>
-              <P>66 West Flagler St, suite 900, Miami, Florida</P>
+            <P>66 West Flagler St, suite 900, Miami, Florida</P>
             <ContactForm btnText="REQUEST APPOINTMENT" landingName="enterprise" />
           </Column>
         </Columns>

@@ -10,8 +10,10 @@ import TeamHero from '../components/team/TeamHero';
 import TeamList from '../components/team/TeamList';
 
 const Section = styled(BloomerSection)`
+  padding-top: 0;
+
   @media screen and (max-width: 768px) {
-    padding: 1em;
+    padding: 0em 1em 1em 1em;
   }
 `;
 
@@ -42,7 +44,8 @@ export const pageQuery = graphql`
   query {
     allTeamJson {
       nodes {
-        name
+        first
+        last
         id
         description
         social_networks {

@@ -66,7 +66,7 @@ const OurTeamMap = () => (
       xs={POSITIONS.position6.xs}
     />
     <OurTeamLocation
-      placeholder={['Bogota, Colombia', 'Medellin, Colombia']}
+      placeholder={['Bogotá, Colombia', 'Medellín, Colombia', 'Santa Marta, Colombia']}
       xl={POSITIONS.position7.lx}
       lg={POSITIONS.position7.lg}
       md={POSITIONS.position7.md}
