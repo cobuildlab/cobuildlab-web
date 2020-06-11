@@ -6,13 +6,10 @@ import OurTeamMap from './OurTeamMap';
 import LinkButtonDefault from '../2020/Button/LinkButtonDefault';
 
 const TitleContainer = styled.div`
-  margin-bottom: 1rem;
+  margin: 0 0 3rem 0;
   text-align: center;
-  margin-top: 2.5rem;
-  margin-bottom: 3.5rem;
   @media screen and (max-width: 768px) {
-    margin-bottom: 0;
-    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -30,7 +27,7 @@ const OurTeam = () => (
       <TitleContainer>
         <H2>Our Team</H2>
         <ButtonContainer>
-          <LinkButtonDefault to="/team">See all our team</LinkButtonDefault>
+          <LinkButtonDefault to="/team">Meet our Team</LinkButtonDefault>
         </ButtonContainer>
       </TitleContainer>
       <OurTeamMap />
