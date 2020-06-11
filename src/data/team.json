@@ -143,7 +143,7 @@
     "first": "Carolina",
     "last": "Barcelo",
     "picture": "../assets/images/team/team-pictures/Carolina-Barcelo.jpg",
-    "description": "Content Writer.",
+    "description": "Content Writer",
     "social-networks": [
       {
         "name": "twitter",
@@ -383,7 +383,7 @@
     "first": "Maite",
     "last": "Quijada",
     "picture": "../assets/images/team/team-pictures/Maite-Quijada.jpg",
-    "description": "Content Writer.",
+    "description": "Content Writer",
     "social-networks": [
       {
         "name": "twitter",
@@ -563,7 +563,7 @@
     "first": "Yanisel",
     "last": "Barreto",
     "picture": "../assets/images/team/team-pictures/Yanisel-Barreto.jpg",
-    "description": "Chief of Staff.",
+    "description": "Chief of Staff",
     "social-networks": [
       {
         "name": "twitter",
