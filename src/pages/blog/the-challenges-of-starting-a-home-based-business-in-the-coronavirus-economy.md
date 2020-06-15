@@ -59,3 +59,4 @@ To ensure longevity, new businesses should consider how they can meet customersâ
 
 Home-based businesses have huge advantages during the coronavirus pandemic when many brick-and-mortar companies have seen revenue dwindle to nothing. However, starting a home-based business is far from a guaranteed path to success. Like any entrepreneurial venture, starting a business from home comes with its fair share of challenges. The entrepreneurs who find success in the home-based economy will be the ones who plan ahead to overcome them.
 
+<block-quote>By: Womenled.org</block-quote>	
