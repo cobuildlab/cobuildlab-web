@@ -9,7 +9,7 @@ import {
   NavbarMenu,
   NavbarEnd,
 } from 'bloomer';
-import LinkButtonDefault from '../Button/LinkButtonDefault';
+import SmoothScrollingButton from '../Button/ButtonSmoothScrolling';
 import SocialIcons from './SocialIcons';
 import { NavDivider, NavBrand, NavBrandImages, NavItem, NavLink } from './HeaderLayout';
 import logo from '../../../resources/cobuildlab.png';
@@ -59,7 +59,7 @@ const Header = ({ isFluid }) => {
                 </NavItem>
               </NavbarItem>
               <NavbarItem>
-                <LinkButtonDefault to="/#contact">Contact Us</LinkButtonDefault>
+                <SmoothScrollingButton href="#contact-2020">Contact Us</SmoothScrollingButton>
               </NavbarItem>
               <SocialIcons isHidden="mobile" />
             </NavbarEnd>
