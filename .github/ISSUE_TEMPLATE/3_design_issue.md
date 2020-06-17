@@ -1,12 +1,11 @@
 ---
-name: 🎨 Design Issue
+name: 🎨 CSS/Design Issue
 about: Visual bugs that need to be fixed
 title: "SCREEN | DETAIL"
 labels: CSS
 
 ---
 ### Summary
-**_View/Screen:_**  
 **_Description:_**  
 
 <!-- Optional -->
