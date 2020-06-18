@@ -1,7 +1,7 @@
 ---
 name: 🏆 Epic | Large Project Goal
 about: Large Project Goal | Should be separated in smaller Issues
-title: "EPIC_NAME"
+title: "[21 34 55 89 144 233] EPIC_NAME"
 labels: EPIC
 
 ---
