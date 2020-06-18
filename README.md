@@ -1,4 +1,9 @@
 # Cobuild Lab Website and Blog
+`DEV`  
+[![buddy pipeline](https://app.buddy.works/cobuildlab/cobuild-website/pipelines/pipeline/155303/badge.svg?token=84d07120af4d4aae81416dfff01db63900e20d4b77264acd38c72d874db05248 "buddy pipeline")](https://app.buddy.works/cobuildlab/cobuild-website/pipelines/pipeline/155303)
+
+`PROD`  
+[![buddy pipeline](https://app.buddy.works/cobuildlab/cobuild-website/pipelines/pipeline/151779/badge.svg?token=84d07120af4d4aae81416dfff01db63900e20d4b77264acd38c72d874db05248 "buddy pipeline")](https://app.buddy.works/cobuildlab/cobuild-website/pipelines/pipeline/151779)
 
 ## Running in development
 
