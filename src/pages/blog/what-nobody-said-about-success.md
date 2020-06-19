@@ -5,7 +5,7 @@ template: blog
 image: "./media/2554.jpg"
 ---
 
-If you look up the definition of **[success](https://dictionary.cambridge.org/es/diccionario/ingles/success)**, you will probably see "the favorable outcome of something attempted" or "achieving an aim or objective", but when we get started, immediately, the common denominators await with expectations, and to them, the best evidence of entrepreneurship are money and luxury.
+If you look up the definition of **[success](https://dictionary.cambridge.org/es/diccionario/ingles/success)**, you will probably see "the favorable outcome of something attempted" or achieving an aim or goal. When we get started, immediately, the common denominators await with expectations for them, the best evidence of entrepreneurship are money and luxury.
 
 <Br>
 
