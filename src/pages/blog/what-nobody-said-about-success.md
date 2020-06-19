@@ -1,14 +1,17 @@
 ---
 title: "What nobody said about success"
-date: "2018-08-28T00:54:10.000Z"
+date: "2020-06-19T00:54:10.000Z"
 template: blog
-image: "./media/OGMT9F0.jpg"
-tags:
+image: "./media/2554.jpg"
 ---
 
 If you look up the definition of **[success](https://dictionary.cambridge.org/es/diccionario/ingles/success)**, you will probably see "the favorable outcome of something attempted" or "achieving an aim or objective", but when we get started, immediately, the common denominators await with expectations, and to them, the best evidence of entrepreneurship are money and luxury.
 
-![](media/pasted-image-0-1.png)
+<Br>
+
+[![success](media/pasted-image-0-1.png)](#)
+
+<Br>
 
 <title-2>**Ok. Let's see. What does success look like?**</title-2>
 
@@ -18,7 +21,11 @@ Secondly, as entrepreneurs, we need to decide on which of these we are going to 
 
 NO! Do what you are passionate about! Remember this: **Success looks like and means whatever you want it to**.
 
-![](media/brendan-church-182747-unsplash.jpg)
+<Br>
+
+[![success](media/brendan-church-182747-unsplash.jpg)](#)
+
+<Br>
 
 <title-3>[**If you are fourth, it's OK!** ](https://www.forbes.com/sites/shavonlindley/2018/08/08/four-questions-to-define-real-success-at-work/#63d20f085ae7)</title-3>
 
@@ -36,4 +43,10 @@ The little things you achieve on the way don't disappear, they add up, and these
 
 Never give up! Success is **the little goals** you accomplish until you make your dreams become reality.
 
-![](media/nonsap-visuals-760215-unsplash.jpg)
+<Br>
+
+[![success](media/nonsap-visuals-760215-unsplash.jpg)](#)
+
+<Br>
+
+
