@@ -2,6 +2,10 @@
 
 /* service section css start */
 .service-wrapper {
+  padding-bottom: 3rem;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 0;
+  }
   .row {
     align-items: center;
   }
