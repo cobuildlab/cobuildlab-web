@@ -27,7 +27,7 @@ Web apps, on the other hand, are accessed by browser and will adapt to any devic
 
 <Br>
 
-[!align="centered"[mobile-app-explaining](media/mobile-app.gif)](#)
+<img src="./media/mobile-app.gif"> <br> </br>
 
 <Br>
 
@@ -81,7 +81,7 @@ A mobile application or “app” -as it’s most commonly known- is a type of a
 
 <title-2>What is a Web App?</title-2>
 
-[![web-app-explaining](media/web-app-1.gif)](#) 
+<img src="./media/web-app-1.gif"> <br> </br>
 
 A web application is a software program that runs on a web server. Unlike the traditional desktop applications that are launched by your operating system, web apps have to be accessed through a web browser.
 Web apps have a lot of advantages over desktop applications. Because they run inside web browsers, developers don’t need to develop web apps for multiple platforms. For example, an app that runs in Chrome will also work on both Mac OS and Windows. Developers do not need to distribute software updates to users when the web app is updated. By updating the application on the server, all users will have access to the latest version.
@@ -163,11 +163,11 @@ Developing a Mobile App tends to be as expensive or more expensive than a web ap
 
 <Br>
 
-[![cross-platform-app-explaining](media/cross-platform.gif)](#)
+<img src="./media/cross-platform.gif"> <br> </br>
 
 <Br>
 
-A cross-platform computer  system, software or product can work across multiple types of operating environments and platforms. Different kinds of cross-platform systems include both software and hardware systems, as well as systems that have a distinct construction for every platform, as well as other larger systems especially designed to work the same way across multiple platforms.
+A cross-platform computer system, software or product can work across multiple types of operating environments and platforms. Different kinds of cross-platform systems include both software and hardware systems, as well as systems that have a distinct construction for every platform, as well as other larger systems especially designed to work the same way across multiple platforms.
 Cross platform is also known as multi platform or platform independent.
 
 <Br>
