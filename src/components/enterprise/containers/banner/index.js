@@ -8,6 +8,18 @@ import AnimationImages from './AnimationImages';
 import { SectionsWrapper } from './banner-styles';
 import './banner.scss';
 
+import img1 from '../../../../assets/images/banner/animation/1.png';
+import img2 from '../../../../assets/images/banner/animation/2.png';
+import img3 from '../../../../assets/images/banner/animation/3.png';
+import img4 from '../../../../assets/images/banner/animation/4.png';
+import img5 from '../../../../assets/images/banner/animation/5.png';
+import img6 from '../../../../assets/images/banner/animation/6.png';
+import img7 from '../../../../assets/images/banner/animation/7.png';
+import img8 from '../../../../assets/images/banner/animation/8.png';
+import img9 from '../../../../assets/images/banner/animation/9.png';
+
+const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
+
 const title = {
   default: {
     level: 4,
@@ -28,14 +40,8 @@ const subTitle = {
 const Banner = () => {
   const data = useStaticQuery(query);
 
-  const animation = data.animation.edges.map(({ node }, index) => (
-    <AnimationImages
-      width={node.childImageSharp.resolutions.width}
-      height={node.childImageSharp.resolutions.height}
-      src={node.childImageSharp.resolutions.srcWebp}
-      key={node.id}
-      index={index}
-    />
+  const animation = images.map((node, index) => (
+    <AnimationImages src={node} key={index} index={index} />
   ));
 
   return (
@@ -87,20 +93,6 @@ const Banner = () => {
 
 const query = graphql`
   query {
-    animation: allFile(filter: { relativeDirectory: { eq: "banner/animation" } }) {
-      edges {
-        node {
-          id
-          childImageSharp {
-            resolutions(quality: 10) {
-              height
-              width
-              srcWebp
-            }
-          }
-        }
-      }
-    }
     heroImages: file(relativePath: { eq: "banner/group-banner-2.png" }) {
       childImageSharp {
         fluid(webpQuality: 72) {
