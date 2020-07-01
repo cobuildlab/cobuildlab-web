@@ -27,7 +27,7 @@ Web apps, on the other hand, are accessed by browser and will adapt to any devic
 
 <Br>
 
-[![mobile-app-explaining](media/mobile-app.mp4)](#)
+[![mobile-app-explaining](media/mobile-app.gif)](#)
 
 <Br>
 
@@ -81,7 +81,7 @@ A mobile application or “app” -as it’s most commonly known- is a type of a
 
 <title-2>What is a Web App?</title-2>
 
-[![web-app-explaining](media/webapp.mp4)](#)
+[![web-app-explaining](media/webapp.gif)](#)
 
 A web application is a software program that runs on a web server. Unlike the traditional desktop applications that are launched by your operating system, web apps have to be accessed through a web browser.
 Web apps have a lot of advantages over desktop applications. Because they run inside web browsers, developers don’t need to develop web apps for multiple platforms. For example, an app that runs in Chrome will also work on both Mac OS and Windows. Developers do not need to distribute software updates to users when the web app is updated. By updating the application on the server, all users will have access to the latest version.
@@ -163,7 +163,7 @@ Developing a Mobile App tends to be as expensive or more expensive than a web ap
 
 <Br>
 
-[![cross-platform-app-explaining](media/cross-platform.mp4)](#)
+[![cross-platform-app-explaining](media/cross-platform.gif)](#)
 
 <Br>
 
