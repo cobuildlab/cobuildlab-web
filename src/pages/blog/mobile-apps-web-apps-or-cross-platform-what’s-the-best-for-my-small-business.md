@@ -27,7 +27,7 @@ Web apps, on the other hand, are accessed by browser and will adapt to any devic
 
 <Br>
 
-[![mobile-app-explaining](media/mobile-app.gif)](#)
+[!align="centered"[mobile-app-explaining](media/mobile-app.gif)](#)
 
 <Br>
 
