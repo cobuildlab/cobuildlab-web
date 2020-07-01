@@ -284,27 +284,6 @@ Works on all platforms
 
 <Br>
   
-<title-3>[Sencha Touch 2](https://www.sencha.com/products/touch/)</title-3>
-
-<Br>
-
-Sencha Touch 2 is the most effective mobile development framework that combines the features of multiple technologies like ExtJS, JavaScript, and HTML. Moreover, it’s ideal for developing dynamic applications that can work on Android, iOS, Kindle Fire, and the rest.
-Many developers recommend Sencha Touch 2 for very complex hybrid apps, especially with the need for an interactive UI. Additionally, it is compatible with many other popular IDEs directly or sometimes with the use of a plugin.
-
-<Br>
-
-**Advantages of Sencha Touch 2**:
-
-<Br>
-
-Fast and responsive hardware acceleration
-Lots of widgets and easy to use APIs
-Effective data management
-Reliable security
-Works on multi-platforms
-
-<Br>
-
 <title-2>What Do We Prefer to Develop? Web or Mobile?</title-2>
 
 <Br>
