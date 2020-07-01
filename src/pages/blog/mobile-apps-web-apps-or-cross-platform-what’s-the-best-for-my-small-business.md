@@ -150,10 +150,16 @@ Some things to take in consideration to make a decision:
 Hardware intensive applications are recommended to be developed as Mobile Native Apps as the tools have a more direct access to the devices Hardware.
 Web Apps still have some limitations accessing device resources like Bluetooth, compass, file system, etc.
 If you want to develop a video call application there is no tool at the moment that can work both in Mobile Apps and Web Apps.
+
+
 **Time to market:**
 Web applications take significantly less time to be released. This is not only true for putting features faster due to the extensive popularity, communities and tools for web resources, but also because they skip the process of approval from the apps stores. 
+
+
 **Product Maturity**:
 If you plan to play a lot with users and features, we recommend going with a web application. Iterate, add or remove features on a Web application is faster than in a Mobile app, even if it is just for Android or iOS. Also the waste is less. 
+
+
 **Budget**:
 Developing a Mobile App tends to be as expensive or more expensive than a web application, both development activities and testing activities.  This depends on the context too, but consider that, there are many more different mobile screens than desktop resolutions, and there are more differences between Android and IOS as operating systems than between different browsers, even in different operating systems. 
 
