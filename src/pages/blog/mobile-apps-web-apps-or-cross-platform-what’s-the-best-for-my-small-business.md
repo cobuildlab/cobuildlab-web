@@ -3,7 +3,7 @@ title: "Mobile Apps, Web Apps, or Cross-Platform. What’s the Best for my Small
 date: "2020-06-30T16:24:04.000Z"
 template: blog
 tags: Small Business
-image: "./media/MOBILE-VS-WEB-APPS_1.png"
+image: "./media/MOBILE-VS-WEB-APPS_1new.png"
 ---
 
 
