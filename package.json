@@ -93,7 +93,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "develop": "gatsby develop",
     "build:dev": "NODE_ENV=development gatsby build",
-    "build": "node --max_old_space_size=4096 ./node_modules/.bin/gatsby build"
+    "build": "node --max_old_space_size=3072 ./node_modules/.bin/gatsby build"
   },
   "husky": {
     "hooks": {
