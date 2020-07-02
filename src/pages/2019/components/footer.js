@@ -157,8 +157,6 @@ class MyFooter extends React.Component {
                 </Columns>
                 <br />
                 <br />
-                <Link to="/development-blog">Development Blog</Link>
-                <br />
               </Column>
               <Column isSize="1/3">
                 <Title hasTextColor="white">Contact Us</Title>

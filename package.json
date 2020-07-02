@@ -14,7 +14,7 @@
     "core-js": "^2.6.9",
     "disqus-react": "^1.0.5",
     "dotenv": "^6.1.0",
-    "gatsby": "^2.20.8",
+    "gatsby": "^2.23.14",
     "gatsby-image": "^2.3.2",
     "gatsby-plugin-amp": "^0.2.2",
     "gatsby-plugin-feed": "^2.2.2",
@@ -25,7 +25,7 @@
     "gatsby-plugin-offline": "^3.2.8",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sass": "^2.2.1",
-    "gatsby-plugin-sharp": "^2.5.3",
+    "gatsby-plugin-sharp": "^2.6.16",
     "gatsby-plugin-sitemap": "^2.1.0",
     "gatsby-plugin-styled-components": "^3.2.1",
     "gatsby-remark-autolink-headers": "^2.1.24",
@@ -37,10 +37,10 @@
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-json": "^2.4.1",
     "gatsby-transformer-remark": "^2.7.1",
-    "gatsby-transformer-sharp": "^2.4.3",
+    "gatsby-transformer-sharp": "^2.5.9",
     "lodash": "^4.17.13",
     "moment": "^2.24.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-countup": "^4.3.3",
@@ -93,7 +93,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "develop": "gatsby develop",
     "build:dev": "NODE_ENV=development gatsby build",
-    "build": "gatsby build"
+    "build": "node --max_old_space_size=4096 ./node_modules/.bin/gatsby build"
   },
   "husky": {
     "hooks": {
