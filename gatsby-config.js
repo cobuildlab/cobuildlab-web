@@ -51,7 +51,6 @@ module.exports = {
             options: { isIconAfterHeader: true, maintainCase: true },
           },
           'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants',
         ],
       },
     },
