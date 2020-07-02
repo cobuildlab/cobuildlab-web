@@ -1,16 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const AnimationImages = ({ src, width, height, index }) => (
+const AnimationImages = ({ src, index }) => (
   <span className={`image${index + 1}`}>
-    <img alt="" src={src} width={width} height={height} />
+    <img alt="" src={src} />
   </span>
 );
 
 AnimationImages.propTypes = {
   src: PropTypes.string.isRequired,
-  width: PropTypes.number.isRequired,
-  height: PropTypes.number.isRequired,
   index: PropTypes.number.isRequired,
 };
 

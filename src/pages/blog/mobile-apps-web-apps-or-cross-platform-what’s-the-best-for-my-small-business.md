@@ -3,7 +3,7 @@ title: "Mobile Apps, Web Apps, or Cross-Platform. What’s the Best for my Small
 date: "2020-06-30T16:24:04.000Z"
 template: blog
 tags: Small Business
-image: "./media/MOBILE-VS-WEB-APPS_1.png"
+image: "./media/MOBILE-VS-WEB-APPS_1new.png"
 ---
 
 
@@ -27,7 +27,7 @@ Web apps, on the other hand, are accessed by browser and will adapt to any devic
 
 <Br>
 
-[![mobile-app-explaining](media/mobile-app.gif)](#)
+<img src="./media/mobile-app.gif"> <br> </br>
 
 <Br>
 
@@ -81,7 +81,7 @@ A mobile application or “app” -as it’s most commonly known- is a type of a
 
 <title-2>What is a Web App?</title-2>
 
-[![web-app-explaining](media/web-app.gif)](#)
+<img src="./media/web-app-1.gif"> <br> </br>
 
 A web application is a software program that runs on a web server. Unlike the traditional desktop applications that are launched by your operating system, web apps have to be accessed through a web browser.
 Web apps have a lot of advantages over desktop applications. Because they run inside web browsers, developers don’t need to develop web apps for multiple platforms. For example, an app that runs in Chrome will also work on both Mac OS and Windows. Developers do not need to distribute software updates to users when the web app is updated. By updating the application on the server, all users will have access to the latest version.
@@ -150,10 +150,16 @@ Some things to take in consideration to make a decision:
 Hardware intensive applications are recommended to be developed as Mobile Native Apps as the tools have a more direct access to the devices Hardware.
 Web Apps still have some limitations accessing device resources like Bluetooth, compass, file system, etc.
 If you want to develop a video call application there is no tool at the moment that can work both in Mobile Apps and Web Apps.
+
+
 **Time to market:**
 Web applications take significantly less time to be released. This is not only true for putting features faster due to the extensive popularity, communities and tools for web resources, but also because they skip the process of approval from the apps stores. 
+
+
 **Product Maturity**:
 If you plan to play a lot with users and features, we recommend going with a web application. Iterate, add or remove features on a Web application is faster than in a Mobile app, even if it is just for Android or iOS. Also the waste is less. 
+
+
 **Budget**:
 Developing a Mobile App tends to be as expensive or more expensive than a web application, both development activities and testing activities.  This depends on the context too, but consider that, there are many more different mobile screens than desktop resolutions, and there are more differences between Android and IOS as operating systems than between different browsers, even in different operating systems. 
 
@@ -163,11 +169,11 @@ Developing a Mobile App tends to be as expensive or more expensive than a web ap
 
 <Br>
 
-[![cross-platform-app-explaining](media/cross-platform.gif)](#)
+<img src="./media/cross-platform.gif"> <br> </br>
 
 <Br>
 
-A cross-platform computer  system, software or product can work across multiple types of operating environments and platforms. Different kinds of cross-platform systems include both software and hardware systems, as well as systems that have a distinct construction for every platform, as well as other larger systems especially designed to work the same way across multiple platforms.
+A cross-platform computer system, software or product can work across multiple types of operating environments and platforms. Different kinds of cross-platform systems include both software and hardware systems, as well as systems that have a distinct construction for every platform, as well as other larger systems especially designed to work the same way across multiple platforms.
 Cross platform is also known as multi platform or platform independent.
 
 <Br>
@@ -284,27 +290,6 @@ Works on all platforms
 
 <Br>
   
-<title-3>[Sencha Touch 2](https://www.sencha.com/products/touch/)</title-3>
-
-<Br>
-
-Sencha Touch 2 is the most effective mobile development framework that combines the features of multiple technologies like ExtJS, JavaScript, and HTML. Moreover, it’s ideal for developing dynamic applications that can work on Android, iOS, Kindle Fire, and the rest.
-Many developers recommend Sencha Touch 2 for very complex hybrid apps, especially with the need for an interactive UI. Additionally, it is compatible with many other popular IDEs directly or sometimes with the use of a plugin.
-
-<Br>
-
-**Advantages of Sencha Touch 2**:
-
-<Br>
-
-Fast and responsive hardware acceleration
-Lots of widgets and easy to use APIs
-Effective data management
-Reliable security
-Works on multi-platforms
-
-<Br>
-
 <title-2>What Do We Prefer to Develop? Web or Mobile?</title-2>
 
 <Br>
