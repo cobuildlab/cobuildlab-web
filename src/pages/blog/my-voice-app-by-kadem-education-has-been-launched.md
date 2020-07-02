@@ -16,7 +16,7 @@ The platform had to be designed to facilitate specific and constructive conversa
 
 As a result, we presented <a target="_blank" href="https://myvoice-edu.com/"> MyVoice™ </a>, the first digital platform of its kind designed to provide specific and constructive conversations, and supporting teachers for the improvement in each school, resulting in solutions developed from the inside. <br> </br>
 
-<img src="./media/myvoice-cognia.png"> <br> </br>
+<img src="./media/myvoice-cognia-2.png"> <br> </br>
 
 The platform has been included in a new initiative by <a target="_blank" href="https://www.cognia.org/"> Cognia™ </a> the leader in accreditation, assessment, and continuous improvement. The  <a target="_blank" href="https://www.cognia.org/the-cognia-difference/trusted-partner-program/"> Trusted Partner Program </a> aims to empower institutions and educators with resources to bring sustainable professional development for remote learning. <br> </br>
 
