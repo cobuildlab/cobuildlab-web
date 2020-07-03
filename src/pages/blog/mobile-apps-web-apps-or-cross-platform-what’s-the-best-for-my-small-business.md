@@ -16,21 +16,22 @@ Let's know the advantages and disadvantages of each kind of [software developmen
 
 <title-2>Mobile Apps vs. Web Apps</title-2>
 
-<Br>
+<br/>
 
 Mobile apps are built for a specific platform, such as Android for a Samsung Galaxy or iOS for the iPhone. You can download them and install them by an app store and they have access to system features like the camera or the GPS. These apps live and run on the device itself. Instagram, Twitter and TikTok are some examples of popular mobile apps.
 Web apps, on the other hand, are accessed by browser and will adapt to any device you’re using them on. They don’t need to be downloaded or installed and they’re not native to any specific system. Due to their responsive nature, they have a similar look and functionality to many mobile applications— which may lead to some confusion.
 
-<Br>
+<br/>
 
 <title-2>What is a Mobile App?</title-2>
-
-<Br>
-
-<img src="./media/mobile-app.gif"> <br> </br>
-
-<Br>
-
+<br/>
+<br/>
+![A Mobile App]("./media/mobile-app.gif")
+<br/>
+<br/>
+<img src="./media/mobile-app.gif" align="center" /> 
+<br/> 
+<br/>
 A mobile application or “app” -as it’s most commonly known- is a type of application software that’s been designed and built to run on a particular piece of hardware, such as a tablet computer or a smartphone. These apps are frequently used to supply its users with services akin to the ones they usually access on their desktops. The widespread use and popularity of this type of software can be traced back to Apple and its App Store, which helped carry the concept to the mainstream with the ever-increasing number of apps available for their devices. 
 
 <Br>
