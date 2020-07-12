@@ -197,7 +197,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    textImagesTwo: file(relativePath: { eq: "customers/4geek/1.png" }) {
+    textImagesTwo: file(relativePath: { eq: "customers/my-voice/1.png" }) {
       childImageSharp {
         fluid {
           base64
@@ -208,7 +208,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    textImagesOne: file(relativePath: { eq: "customers/4geek/2.png" }) {
+    textImagesOne: file(relativePath: { eq: "customers/my-voice/2.png" }) {
       childImageSharp {
         fluid {
           base64
