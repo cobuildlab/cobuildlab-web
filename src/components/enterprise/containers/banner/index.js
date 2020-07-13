@@ -96,11 +96,7 @@ const query = graphql`
     heroImages: file(relativePath: { eq: "banner/group-banner-2.png" }) {
       childImageSharp {
         fluid(webpQuality: 72) {
-          base64
-          sizes
-          aspectRatio
-          srcWebp
-          srcSetWebp
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
