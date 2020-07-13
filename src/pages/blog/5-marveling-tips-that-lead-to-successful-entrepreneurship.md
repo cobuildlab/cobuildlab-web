@@ -26,10 +26,6 @@ But clearly, research had it that confidence, courage; motivation; intelligence 
 
 <Br>
 
-_To know more about the most powerful asset you can have in entrepreneurship, see [**fortune.com/2017/06/01/entrepreneurship-advice-success-business/**](http://fortune.com/2017/06/01/entrepreneurship-advice-success-business/)_
-
-<Br>
-
 <title-2>The first marveling thing: you need to understand your capability</title-2> 
 
 <Br>
