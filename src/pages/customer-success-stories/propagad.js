@@ -10,7 +10,6 @@ import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 
-import DetailTeamSection from '../../components/customer-success-stories/DetailTeamSection';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
 import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
@@ -83,12 +82,6 @@ const Propagad = ({ data }) => (
             </DetailHeroImagesContent>
           </Column>
         </Columns>
-      </Container>
-    </Section>
-
-    <Section>
-      <Container>
-        <DetailTeamSection />
       </Container>
     </Section>
 

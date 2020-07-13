@@ -10,7 +10,6 @@ import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 
-import DetailTeamSection from '../../components/customer-success-stories/DetailTeamSection';
 import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
 import DetailSection from '../../components/customer-success-stories/DetailSection';
@@ -98,12 +97,6 @@ const Massone = ({ data }) => (
         </List>
       </div>
     </DetailSection>
-
-    <Section>
-      <Container>
-        <DetailTeamSection />
-      </Container>
-    </Section>
 
     <Section isPaddingless>
       <DetailCarousel data={data.slider.edges} />
