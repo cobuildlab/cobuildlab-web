@@ -74,11 +74,7 @@ const query = graphql`
           id
           childImageSharp {
             fluid(quality: 30) {
-              base64
-              sizes
-              aspectRatio
-              srcWebp
-              srcSetWebp
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }

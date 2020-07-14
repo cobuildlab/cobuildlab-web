@@ -26,7 +26,9 @@ const Testimonial = () => {
       <div className="testimonial-outer-box">
         <Slider
           {...settings}
-          customPaging={(index) => <Avatar index={index} data={data.allTestimonialJson.nodes} />}>
+          customPaging={(index) => (
+            <Avatar index={index} sourceData={data.allTestimonialJson.nodes} />
+          )}>
           {items}
         </Slider>
       </div>
@@ -42,7 +44,7 @@ const query = graphql`
           id
           childImageSharp {
             fluid {
-              srcWebp
+              src
             }
           }
         }
