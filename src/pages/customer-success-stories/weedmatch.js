@@ -11,7 +11,6 @@ import DetailSubTitle from '../../components/customer-success-stories/DetailSubT
 import DetailParagraphTitle from '../../components/customer-success-stories/DetailParagraphTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 
-import DetailTeamSection from '../../components/customer-success-stories/DetailTeamSection';
 import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
@@ -129,12 +128,6 @@ const Weedmatch = ({ data }) => (
         </List>
       </div>
     </DetailSection>
-
-    <Section>
-      <Container>
-        <DetailTeamSection />
-      </Container>
-    </Section>
 
     <Section isPaddingless>
       <DetailCarousel data={data.slider.edges} />

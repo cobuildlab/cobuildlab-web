@@ -10,8 +10,6 @@ import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraphTitle from '../../components/customer-success-stories/DetailParagraphTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
-
-// import DetailTeam from '../../components/customer-success-stories/DetailTeam';
 // import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
@@ -206,16 +204,11 @@ const Collabtogrow = ({ data }) => (
       </DetailParagraph>
     </DetailSection>
 
-    {/* <Section>
-      <Container>
-      <DetailTeam />
-      </Container>
-     </Section> 
-
-  
-    <Section isPaddingless>
-      <DetailCarousel  />
-    </Section>*/}
+    {/* 
+      <Section isPaddingless>
+        <DetailCarousel  />
+      </Section>
+    */}
 
     <Section isPaddingless>
       <DetailsOtherStories />
