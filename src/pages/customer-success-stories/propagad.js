@@ -104,22 +104,14 @@ export const pageQuery = graphql`
     logo: file(relativePath: { eq: "customers/propagad/logo.png" }) {
       childImageSharp {
         fluid {
-          base64
-          sizes
-          aspectRatio
-          srcWebp
-          srcSetWebp
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     videoImages: file(relativePath: { eq: "customers/propagad/video-cover.jpg" }) {
       childImageSharp {
         fluid {
-          base64
-          sizes
-          aspectRatio
-          srcWebp
-          srcSetWebp
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -130,11 +122,7 @@ export const pageQuery = graphql`
           name
           childImageSharp {
             fluid(quality: 100) {
-              base64
-              sizes
-              aspectRatio
-              srcWebp
-              srcSetWebp
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }

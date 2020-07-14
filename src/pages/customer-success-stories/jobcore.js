@@ -158,44 +158,28 @@ export const pageQuery = graphql`
     logo: file(relativePath: { eq: "customers/jobcore/job-logo.jpeg" }) {
       childImageSharp {
         fluid {
-          base64
-          sizes
-          aspectRatio
-          srcWebp
-          srcSetWebp
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     text: file(relativePath: { eq: "customers/jobcore/Texto-corto.jpg" }) {
       childImageSharp {
         fluid {
-          base64
-          sizes
-          aspectRatio
-          srcWebp
-          srcSetWebp
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     textImagesOne: file(relativePath: { eq: "customers/jobcore/text-img-1.png" }) {
       childImageSharp {
         fluid {
-          base64
-          sizes
-          aspectRatio
-          srcWebp
-          srcSetWebp
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     textImagesTwo: file(relativePath: { eq: "customers/jobcore/text-img-2.jpg" }) {
       childImageSharp {
         fluid {
-          base64
-          sizes
-          aspectRatio
-          srcWebp
-          srcSetWebp
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -206,11 +190,7 @@ export const pageQuery = graphql`
           name
           childImageSharp {
             fluid(quality: 100) {
-              base64
-              sizes
-              aspectRatio
-              srcWebp
-              srcSetWebp
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }

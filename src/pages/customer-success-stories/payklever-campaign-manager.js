@@ -197,44 +197,28 @@ export const pageQuery = graphql`
     logo: file(relativePath: { eq: "customers/payklever/logo.png" }) {
       childImageSharp {
         fluid {
-          base64
-          sizes
-          aspectRatio
-          srcWebp
-          srcSetWebp
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     videoImages: file(relativePath: { eq: "customers/payklever/cover-video.jpg" }) {
       childImageSharp {
         fluid {
-          base64
-          sizes
-          aspectRatio
-          srcWebp
-          srcSetWebp
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     textImagesOne: file(relativePath: { eq: "customers/payklever/1.png" }) {
       childImageSharp {
         fluid {
-          base64
-          sizes
-          aspectRatio
-          srcWebp
-          srcSetWebp
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     textImagesTwo: file(relativePath: { eq: "customers/payklever/2.png" }) {
       childImageSharp {
         fluid {
-          base64
-          sizes
-          aspectRatio
-          srcWebp
-          srcSetWebp
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -245,11 +229,7 @@ export const pageQuery = graphql`
           name
           childImageSharp {
             fluid(quality: 100) {
-              base64
-              sizes
-              aspectRatio
-              srcWebp
-              srcSetWebp
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
