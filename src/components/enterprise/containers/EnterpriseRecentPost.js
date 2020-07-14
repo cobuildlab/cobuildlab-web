@@ -55,10 +55,7 @@ const query = graphql`
               publicURL
               childImageSharp {
                 fixed(width: 400, height: 290) {
-                  srcWebp
-                  srcSetWebp
-                  aspectRatio
-                  base64
+                  ...GatsbyImageSharpFluid_withWebp
                 }
               }
             }
