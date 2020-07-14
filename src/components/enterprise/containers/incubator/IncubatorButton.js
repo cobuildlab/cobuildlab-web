@@ -1,7 +1,7 @@
 import React from 'react';
-import { useStaticQuery, graphql, Link } from 'gatsby';
-import Img from 'gatsby-image';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
+import img from '../../../../assets/images/icons/cobuild-lab-gear-logo.svg';
 
 const Container = styled.div`
   height: 100%;
@@ -42,38 +42,18 @@ const Text = styled.span`
   }
 `;
 
-const IncubatorButton = () => {
-  const data = useStaticQuery(query);
-
-  return (
-    <Container>
-      <Redirect to="/2020">
-        <ImageContainer>
-          <Img fluid={data.file.childImageSharp.fluid} atl="" />
-        </ImageContainer>
-        <Text>
-          Start Up
-          <strong>Services</strong>
-        </Text>
-      </Redirect>
-    </Container>
-  );
-};
-
-const query = graphql`
-  query {
-    file(relativePath: { eq: "icons/nut-icon.png" }) {
-      childImageSharp {
-        fluid {
-          base64
-          sizes
-          aspectRatio
-          srcWebp
-          srcSetWebp
-        }
-      }
-    }
-  }
-`;
+const IncubatorButton = () => (
+  <Container>
+    <Redirect to="/2020">
+      <ImageContainer>
+        <img src={img} alt="" />
+      </ImageContainer>
+      <Text>
+        Start Up
+        <strong>Services</strong>
+      </Text>
+    </Redirect>
+  </Container>
+);
 
 export default IncubatorButton;
