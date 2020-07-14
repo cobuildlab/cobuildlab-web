@@ -32,19 +32,24 @@ const ChildrenContainer = styled.div`
 const Text = styled.span`
   color: inherit !important;
   font-size: 16px;
-  text-transform: capitalize;
+  text-transform: ${({ isCapitalize }) => (isCapitalize ? 'capitalize' : 'initial')};
 `;
 
-const ButtonLoading = ({ isLoading, children }) => (
+const ButtonLoading = ({ isLoading, children, isCapitalize }) => (
   <Fragment>
     <IconContainer isLoading={isLoading} />
     <ChildrenContainer isLoading={isLoading}>
-      <Text>{children}</Text>
+      <Text isCapitalize={isCapitalize}>{children}</Text>
     </ChildrenContainer>
   </Fragment>
 );
 
+ButtonLoading.defaultProps = {
+  isCapitalize: true,
+};
+
 ButtonLoading.propTypes = {
+  isCapitalize: PropTypes.bool,
   isLoading: PropTypes.bool.isRequired,
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };

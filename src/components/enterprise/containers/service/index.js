@@ -88,7 +88,7 @@ const Service = () => {
                     - Lack of the necessary expertise
                   </Typrography>
                   <br />
-                  <ButtonSmoothScrolling href="#contact">
+                  <ButtonSmoothScrolling href="#contact" isCapitalize={false}>
                     Get a Free Consultation
                   </ButtonSmoothScrolling>
                 </div>
