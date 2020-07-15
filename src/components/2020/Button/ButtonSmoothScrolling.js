@@ -12,15 +12,18 @@ const Link = styled(AnchorLink)`
   }
 `;
 
-const SmoothScrollingButton = ({ href, children }) => (
-  <ButtonDefault>
+const SmoothScrollingButton = ({ href, children, isCapitalize }) => (
+  <ButtonDefault isCapitalize={isCapitalize}>
     <Link href={href}>{children}</Link>
   </ButtonDefault>
 );
-SmoothScrollingButton.defaultProps = {};
+SmoothScrollingButton.defaultProps = {
+  isCapitalize: true,
+};
 SmoothScrollingButton.propTypes = {
   href: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+  isCapitalize: PropTypes.bool,
 };
 
 export default SmoothScrollingButton;
