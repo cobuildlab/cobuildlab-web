@@ -10,7 +10,6 @@ import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 
-import DetailTeamSection from '../../components/customer-success-stories/DetailTeamSection';
 import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
 import DetailSection from '../../components/customer-success-stories/DetailSection';
@@ -99,12 +98,6 @@ const Massone = ({ data }) => (
       </div>
     </DetailSection>
 
-    <Section>
-      <Container>
-        <DetailTeamSection />
-      </Container>
-    </Section>
-
     <Section isPaddingless>
       <DetailCarousel data={data.slider.edges} />
     </Section>
@@ -133,33 +126,21 @@ export const pageQuery = graphql`
     logo: file(relativePath: { eq: "customers/massone/logo.jpg" }) {
       childImageSharp {
         fluid {
-          base64
-          sizes
-          aspectRatio
-          srcWebp
-          srcSetWebp
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     text: file(relativePath: { eq: "customers/massone/text-corto.jpg" }) {
       childImageSharp {
         fluid {
-          base64
-          sizes
-          aspectRatio
-          srcWebp
-          srcSetWebp
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     textImagesOne: file(relativePath: { eq: "customers/massone/text-img-1.png" }) {
       childImageSharp {
         fluid {
-          base64
-          sizes
-          aspectRatio
-          srcWebp
-          srcSetWebp
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -170,11 +151,7 @@ export const pageQuery = graphql`
           name
           childImageSharp {
             fluid(quality: 100) {
-              base64
-              sizes
-              aspectRatio
-              srcWebp
-              srcSetWebp
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }

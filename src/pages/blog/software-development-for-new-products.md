@@ -51,7 +51,7 @@ The same goes for security. In the development of new software products is much 
 
 <title-3>4. Monitoring and Analytics</title-3>
 
-Monitoring in new software product development projects is the key to understand [Customer Behaviour](https://en.wikipedia.org/wiki/Consumer_behaviour). A new product is introduced to the market with a high level of uncertainty, requiring feedback at all stages to understand and drive the development of new features and changes.
+Monitoring in new software product development projects is the key to understand [Customer Behavior](https://en.wikipedia.org/wiki/Consumer_behaviour). A new product is introduced to the market with a high level of uncertainty, requiring feedback at all stages to understand and drive the development of new features and changes.
 
 <title-2>Software Development Process for New Products</title-2>
 
@@ -114,7 +114,7 @@ Developing new software products is our major expertise, and beyond commenting o
 
 <title-3>Weedmatch</title-3>
 
-![weedmatch](media/weedmatch.jpg)
+![weedmatch](media/weedmatch.png)
 
 [This project](https://weedmatch.cl/) was enjoyable and different. Weedmatch is the first free cannabis social network for Latin America. It was developed by a group of Venezuelans led by Oscar Lopez. 
 

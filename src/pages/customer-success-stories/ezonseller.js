@@ -7,7 +7,6 @@ import DetailLayout from '../../components/customer-success-stories/DetailLayout
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
-// import DetailTeam from '../../components/customer-success-stories/DetailTeam';
 // import DetailCarousel from '../../components/customer-success-stories/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
@@ -115,15 +114,11 @@ const Ezonseller = ({ data }) => (
       </div>
     </DetailSection>
 
-    {/* <Section>
-      <Container>
-        <DetailTeam />
-      </Container>
-    </Section>
-
-    <Section isPaddingless>
-      <DetailCarousel  />
-    </Section>*/}
+    {/* 
+      <Section isPaddingless>
+        <DetailCarousel  />
+      </Section>
+    */}
 
     <Section isPaddingless>
       <DetailsOtherStories />
@@ -140,33 +135,21 @@ export const pageQuery = graphql`
     textImagesOne: file(relativePath: { eq: "customers/laptop-left.png" }) {
       childImageSharp {
         fluid {
-          base64
-          sizes
-          aspectRatio
-          srcWebp
-          srcSetWebp
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     textImagesTwo: file(relativePath: { eq: "customers/laptop-right.png" }) {
       childImageSharp {
         fluid {
-          base64
-          sizes
-          aspectRatio
-          srcWebp
-          srcSetWebp
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     logo: file(relativePath: { eq: "customers/collabtogrow-logo.png" }) {
       childImageSharp {
         fluid {
-          base64
-          sizes
-          aspectRatio
-          srcWebp
-          srcSetWebp
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

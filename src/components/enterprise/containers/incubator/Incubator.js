@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Column, Columns, Section } from 'bloomer';
+import { Container, Column, Columns } from 'bloomer';
 import styled from 'styled-components';
 import IncubatorContent from './IncubatorContent';
 import IncubatorImage from './IncubatorImage';
@@ -12,24 +12,28 @@ const Wrapper = styled.div`
   }
 `;
 
+const SectionContainer = styled.section`
+  padding: 2.5rem 0;
+`;
+
 const IncubatorLink = () => (
-  <Section id="incubator" isPaddingless>
+  <SectionContainer id="incubator" isPaddingless>
     <Wrapper>
       <Container>
         <Columns isMarginless>
-          <Column isPaddingless isSize={{ mobile: 12, desktop: 2 }}>
+          <Column isSize={{ mobile: 12, desktop: 2 }} isVCentered>
             <IncubatorImage />
           </Column>
-          <Column isPaddingless isSize={{ mobile: 12, desktop: 7 }}>
+          <Column isSize={{ mobile: 12, desktop: 7 }}>
             <IncubatorContent />
           </Column>
-          <Column isPaddingless isSize={{ mobile: 12, desktop: 3 }}>
+          <Column isSize={{ mobile: 12, desktop: 3 }}>
             <IncubatorButton />
           </Column>
         </Columns>
       </Container>
     </Wrapper>
-  </Section>
+  </SectionContainer>
 );
 
 export default IncubatorLink;

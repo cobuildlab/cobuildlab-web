@@ -42,8 +42,9 @@ const UniqueValueProps = () => {
                 Rapid Application Development
               </Typography>
               <Typography className="site-dec" tag="p">
-                Since 2012 we`ve focused on developing and combining agile techniques, tools, and
-                technologies to increase development speed to deliver faster results!
+                Since 2012 we&apos;ve been focused on developing and combining agile techniques,
+                tools, and technologies to increase development speed in order to deliver faster
+                results!
               </Typography>
             </div>
             <Columns>{items}</Columns>
@@ -68,11 +69,7 @@ const query = graphql`
           images {
             childImageSharp {
               fluid {
-                srcWebp
-                srcSetWebp
-                sizes
-                base64
-                aspectRatio
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }

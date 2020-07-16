@@ -55,11 +55,7 @@ export const pageQuery = graphql`
         picture {
           childImageSharp {
             fluid {
-              srcWebp
-              srcSetWebp
-              sizes
-              base64
-              aspectRatio
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
