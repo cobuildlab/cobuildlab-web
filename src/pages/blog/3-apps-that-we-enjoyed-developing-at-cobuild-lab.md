@@ -8,7 +8,7 @@ image: "./media/3apps-cover.png"
 
 Miami, FL. July 9, 2020 - Here at Cobuild Lab we've been helping business owners, CTO's, COO's and IT leaders get past the techno-speak and help them take a business process and turn it into a custom software solution. <br> </br>
 
-With over 70 projects in our portfolio, we pride ourselves in offering agile techniques, tools, and technologies to increase development speed to deliver faster results. And today we'd like to introduce you to some of the projects we feel proud of so you can get a feel for our work. <br> </br>
+With over 70 projects in our portfolio, we pride ourselves in offering agile techniques, tools, and technologies to increase development speed to deliver faster results. And today we'd like to introduce you to some of the projects we feel proud of so you can get a feel for our work.  <br> </br>
 
 <title-3 align="centered"> Massone Mechanical  </title-3> 
 
@@ -16,7 +16,7 @@ With over 70 projects in our portfolio, we pride ourselves in offering agile tec
 
 <a target="_blank" href="https://www.massonemechanical.com/">  Massone Mechanical </a> is a refrigeration company based on the San Francisco bay area that provides its services and refrigeration solutions to businesses ranging from small convenience stores to large supermarkets. If you need quality products, maintenance or installation anywhere in the bay area, they’re the ones to reach. <br> </br>
 
-They wanted to improve their processes on information management and customer service delivery and they sought to set up a mechanism to automate the recording of calls and service orders for maintenance and installation, and in doing so, improving communication and reception for field workers. <br> </br>
+They wanted to improve their processes on information management and customer service delivery and they sought to set up a mechanism to automate the recording of calls and service orders for maintenance and installation, and in doing so, improving communication and reception for field workers.  <br> </br> 
 
 We met Robert Mitchell, the head of IT for Massone almost four years ago and we started working on possible ways of improving the company’s workflow. We tried different versions of ERP applications and Third Party solutions. Then we decided that the optimal way to speed up Massone’s workflow was to develop a Custom Application. <br> </br>
 
