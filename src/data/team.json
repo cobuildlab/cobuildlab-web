@@ -79,26 +79,6 @@
       }
     ]
   },
-   {
-    "first": "Ariadna",
-    "last": "Mora",
-    "picture": "../assets/images/team/team-pictures/Ariadna-Mora.jpg",
-    "description": "Community Manager",
-    "social-networks": [
-      {
-        "name": "twitter",
-        "src": "https://twitter.com"
-      },
-      {
-        "name": "facebook",
-        "src": "https://facebook.com"
-      },
-      {
-        "name": "github",
-        "src": "https://github.com"
-      }
-    ]
-  },
   {
     "first": "Carlos",
     "last": "Febres",
@@ -203,6 +183,26 @@
     "first": "Edgar",
     "last": "Espinetti",
     "picture": "../assets/images/team/team-pictures/Edgar-Espinetti.jpg",
+    "description": "Full Stack Javascript Developer",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "first": "Eduardo",
+    "last": "Márquez",
+    "picture": "../assets/images/team/team-pictures/Eduardo-Marquez.jpg",
     "description": "Full Stack Javascript Developer",
     "social-networks": [
       {
@@ -424,6 +424,46 @@
     "last": "Maldonado",
     "picture": "../assets/images/team/team-pictures/MarcoMaldonado.jpg",
     "description": "UI/UX Designer",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "first": "María Gabriela",
+    "last": "Moya",
+    "picture": "../assets/images/team/team-pictures/MariaGabrielaMoya.jpg",
+    "description": "Marketing Coordinator",
+    "social-networks": [
+      {
+        "name": "twitter",
+        "src": "https://twitter.com"
+      },
+      {
+        "name": "facebook",
+        "src": "https://facebook.com"
+      },
+      {
+        "name": "github",
+        "src": "https://github.com"
+      }
+    ]
+  },
+  {
+    "first": "Mariana",
+    "last": "Balzan",
+    "picture": "../assets/images/team/team-pictures/MarianaBalzan.jpg",
+    "description": "Community Manager",
     "social-networks": [
       {
         "name": "twitter",

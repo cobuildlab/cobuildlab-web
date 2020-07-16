@@ -19,9 +19,11 @@ const Container = styled.button`
  *                         https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type.
  */
 
-const ButtonDefault = ({ children, isLoading, isBlock, type, onClick }) => (
+const ButtonDefault = ({ children, isLoading, isBlock, type, onClick, isCapitalize }) => (
   <Container onClick={onClick} type={type} isBlock={isBlock}>
-    <ButtonLoading isLoading={isLoading}>{children}</ButtonLoading>
+    <ButtonLoading isLoading={isLoading} isCapitalize={isCapitalize}>
+      {children}
+    </ButtonLoading>
   </Container>
 );
 
@@ -30,6 +32,7 @@ ButtonDefault.defaultProps = {
   type: 'button',
   isBlock: false,
   onClick: () => null,
+  isCapitalize: true,
 };
 
 ButtonDefault.propTypes = {
@@ -38,6 +41,7 @@ ButtonDefault.propTypes = {
   type: PropTypes.string,
   isLoading: PropTypes.bool,
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+  isCapitalize: PropTypes.bool,
 };
 
 export default memo(ButtonDefault);

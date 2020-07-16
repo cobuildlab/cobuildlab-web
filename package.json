@@ -14,8 +14,9 @@
     "core-js": "^2.6.9",
     "disqus-react": "^1.0.5",
     "dotenv": "^6.1.0",
-    "gatsby": "^2.20.8",
-    "gatsby-image": "^2.4.11",
+    "gatsby": "^2.23.14",
+    "gatsby-cli": "^2.12.60",
+    "gatsby-image": "^2.3.2",
     "gatsby-plugin-amp": "^0.2.2",
     "gatsby-plugin-feed": "^2.2.2",
     "gatsby-plugin-google-analytics": "^2.0.20",
@@ -92,7 +93,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "develop": "gatsby develop",
     "build:dev": "NODE_ENV=development gatsby build",
-    "build": "node --max_old_space_size=2048 ./node_modules/.bin/gatsby build"
+    "build": "GATSBY_CPU_COUNT=2 node --max_old_space_size=3072 ./node_modules/.bin/gatsby build"
   },
   "husky": {
     "hooks": {

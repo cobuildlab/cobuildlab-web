@@ -16,21 +16,22 @@ Let's know the advantages and disadvantages of each kind of [software developmen
 
 <title-2>Mobile Apps vs. Web Apps</title-2>
 
-<Br>
+<br/>
 
 Mobile apps are built for a specific platform, such as Android for a Samsung Galaxy or iOS for the iPhone. You can download them and install them by an app store and they have access to system features like the camera or the GPS. These apps live and run on the device itself. Instagram, Twitter and TikTok are some examples of popular mobile apps.
 Web apps, on the other hand, are accessed by browser and will adapt to any device you’re using them on. They don’t need to be downloaded or installed and they’re not native to any specific system. Due to their responsive nature, they have a similar look and functionality to many mobile applications— which may lead to some confusion.
 
-<Br>
+<br/>
 
 <title-2>What is a Mobile App?</title-2>
-
-<Br>
-
-<img src="./media/mobile-app.gif"> <br> </br>
-
-<Br>
-
+<br/>
+<br/>
+<center>
+<img src="./media/mobile-app.gif"/>
+</center> 
+<br/> 
+<br/> 
+<br/>
 A mobile application or “app” -as it’s most commonly known- is a type of application software that’s been designed and built to run on a particular piece of hardware, such as a tablet computer or a smartphone. These apps are frequently used to supply its users with services akin to the ones they usually access on their desktops. The widespread use and popularity of this type of software can be traced back to Apple and its App Store, which helped carry the concept to the mainstream with the ever-increasing number of apps available for their devices. 
 
 <Br>
@@ -80,8 +81,13 @@ A mobile application or “app” -as it’s most commonly known- is a type of a
 <Br>
 
 <title-2>What is a Web App?</title-2>
-
-<img src="./media/web-app-1.gif"> <br> </br>
+<br/>
+<br/>
+<center>
+<img src="./media/web-app-1.gif">
+</center>
+<br/>
+<br/>
 
 A web application is a software program that runs on a web server. Unlike the traditional desktop applications that are launched by your operating system, web apps have to be accessed through a web browser.
 Web apps have a lot of advantages over desktop applications. Because they run inside web browsers, developers don’t need to develop web apps for multiple platforms. For example, an app that runs in Chrome will also work on both Mac OS and Windows. Developers do not need to distribute software updates to users when the web app is updated. By updating the application on the server, all users will have access to the latest version.
@@ -167,12 +173,13 @@ Developing a Mobile App tends to be as expensive or more expensive than a web ap
 
 <title-2>Can I Simultaneously Develop an App in Mobile and Web? Meet the Cross Platforms</title-2>
 
-<Br>
-
-<img src="./media/cross-platform.gif"> <br> </br>
-
-<Br>
-
+<br/>
+<br/>
+<center>
+<img src="./media/cross-platform.gif">
+</center>
+<br/>
+<br/>
 A cross-platform computer system, software or product can work across multiple types of operating environments and platforms. Different kinds of cross-platform systems include both software and hardware systems, as well as systems that have a distinct construction for every platform, as well as other larger systems especially designed to work the same way across multiple platforms.
 Cross platform is also known as multi platform or platform independent.
 

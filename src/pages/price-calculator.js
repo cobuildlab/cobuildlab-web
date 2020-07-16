@@ -26,7 +26,7 @@ const PriceCalculator = () => {
     <Layout>
       <SeoMetaTags
         title="Price Calculator"
-        description="Use your price calculator to get a variation of expenses"
+        description="Estimate the cost of your web or mobile application with this Price Calculator"
       />
       <Hero>
         <HeroHeader>

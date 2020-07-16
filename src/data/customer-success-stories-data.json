@@ -3,7 +3,7 @@
     "image": "../assets/images/customers/jobcore.jpg",
     "title": "Jobcore",
     "description": "Get work fast and get paid the same day with Jobcore. This is a web platform that allows employers to post job applications for candidates…  ",
-    "slug": "customer-success-stories/jobcore"
+    "slug": "/customer-success-stories/jobcore"
   },
   {
     "image": "../assets/images/customers/Massone.jpg",
@@ -34,5 +34,11 @@
     "title": "Propagad",
     "description": "Propagad Contact Person:  Cesar Lang Location:  Miami, US Industry:  Marketing and Advertising Web Site:  www.propagad.com Introducing Cesar…",
     "slug": "/customer-success-stories/propagad"
+  },
+  {
+    "image": "../assets/images/customers/my-voice.jpg",
+    "title": "MyVoice",
+    "description": "Cobuild Lab partnered up with Kadem Education to raise teacher’s voices by building a software solution.",
+    "slug": "/customer-success-stories/my-voice"
   }
 ]

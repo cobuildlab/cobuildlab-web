@@ -10,7 +10,6 @@ import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 
-import DetailTeamSection from '../../components/customer-success-stories/DetailTeamSection';
 import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
 import DetailSection from '../../components/customer-success-stories/DetailSection';
@@ -149,12 +148,6 @@ const MyVoice = ({ data }) => (
       </List>
     </DetailSection>
 
-    <Section>
-      <Container>
-        <DetailTeamSection />
-      </Container>
-    </Section>
-
     <Section isPaddingless>
       <DetailCarousel data={data.slider.edges} />
     </Section>
@@ -187,46 +180,30 @@ export const pageQuery = graphql`
           name
           childImageSharp {
             fluid(quality: 100) {
-              base64
-              sizes
-              aspectRatio
-              srcWebp
-              srcSetWebp
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
       }
     }
-    textImagesTwo: file(relativePath: { eq: "customers/4geek/1.png" }) {
+    textImagesTwo: file(relativePath: { eq: "customers/my-voice/1.png" }) {
       childImageSharp {
         fluid {
-          base64
-          sizes
-          aspectRatio
-          srcWebp
-          srcSetWebp
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-    textImagesOne: file(relativePath: { eq: "customers/4geek/2.png" }) {
+    textImagesOne: file(relativePath: { eq: "customers/my-voice/2.png" }) {
       childImageSharp {
         fluid {
-          base64
-          sizes
-          aspectRatio
-          srcWebp
-          srcSetWebp
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     logo: file(relativePath: { eq: "customers/my-voice/logo.png" }) {
       childImageSharp {
         fluid {
-          base64
-          sizes
-          aspectRatio
-          srcWebp
-          srcSetWebp
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

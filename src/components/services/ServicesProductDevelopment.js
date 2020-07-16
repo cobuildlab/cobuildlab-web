@@ -40,11 +40,7 @@ const query = graphql`
     file(relativePath: { eq: "service/product-development.png" }) {
       childImageSharp {
         fluid {
-          base64
-          sizes
-          aspectRatio
-          srcWebp
-          srcSetWebp
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
