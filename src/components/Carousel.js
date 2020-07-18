@@ -8,7 +8,8 @@ class Carousel extends React.Component {
     const { children, folder } = this.props;
     const allImages = children
       .toString()
-      .split(/\r?\n|\r/)
+      // eslint-disable-next-line no-useless-escape
+      .split(/\n|\r|\s|\,/)
       .filter((text) => text.indexOf('./media') > -1)
       .map((src) => src.replace('./', folder + '/'));
 
