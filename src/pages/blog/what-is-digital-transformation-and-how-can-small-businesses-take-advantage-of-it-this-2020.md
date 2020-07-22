@@ -29,7 +29,7 @@ Among the most important areas covered by the digital transformation this 2020 w
 
 <Br>
 
-|   <img src="./media/mobile-technology,gif">| Everything that involves [mobile software development](https://cobuildlab.com/blog/mobile-apps-web-apps-or-cross-platform-what%E2%80%99s-the-best-for-my-small-business/) to consume internally or externally to provide services and increase the quality of services.
+|   <img src="./media/mobile-technology.gif">| Everything that involves [mobile software development](https://cobuildlab.com/blog/mobile-apps-web-apps-or-cross-platform-what%E2%80%99s-the-best-for-my-small-business/) to consume internally or externally to provide services and increase the quality of services.
 |
 |---|---|
 
