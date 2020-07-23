@@ -19,7 +19,7 @@ Among the most important areas covered by the digital transformation this 2020 w
 
 <br>
 
-|<img src="./media/bigdata.gif" class="img-sm">| It refers to the study and storage of a large amount of data from one industry or market and the entire ecosystem that makes it up, mainly of customers, suppliers, and competitors. This information is useful to take strategic actions within the company.|
+|<img src="./media/bigdata.gif" class="i-s">| It refers to the study and storage of a large amount of data from one industry or market and the entire ecosystem that makes it up, mainly of customers, suppliers, and competitors. This information is useful to take strategic actions within the company.|
 |---|---|
 
 <br>
@@ -28,7 +28,7 @@ Among the most important areas covered by the digital transformation this 2020 w
 
 <br>
 
-|<img src="./media/mobile-technology.gif" class="img-sm">| Everything that involves [mobile software development](https://cobuildlab.com/blog/mobile-apps-web-apps-or-cross-platform-what%E2%80%99s-the-best-for-my-small-business/) to consume internally or externally to provide services and increase the quality of services.|
+|<img src="./media/mobile-technology.gif" class="i-s">| Everything that involves [mobile software development](https://cobuildlab.com/blog/mobile-apps-web-apps-or-cross-platform-what%E2%80%99s-the-best-for-my-small-business/) to consume internally or externally to provide services and increase the quality of services.|
 |---|---|
 
 <br>
@@ -37,7 +37,7 @@ Among the most important areas covered by the digital transformation this 2020 w
 
 <br>
 
-|<img src="./media/cloud.gif" class="img-sm">| The digital transformation is also linked to the storage of information, web services, IT infrastructure in cloud servers (public, private, and mixed).|
+|<img src="./media/cloud.gif" class="i-s">| The digital transformation is also linked to the storage of information, web services, IT infrastructure in cloud servers (public, private, and mixed).|
 |---|---|
 
 <br>
@@ -46,7 +46,7 @@ Among the most important areas covered by the digital transformation this 2020 w
 
 <br>
 
-|<img src="./media/ai.gif" class="img-sm">| [Artificial intelligence](https://cobuildlab.com/blog/artificial-intelligence-for-enterprise-software/) is another area of technology which if we apply it in our small businesses, we will be on the road to digital transformation.|
+|<img src="./media/ai.gif" class="i-s">| [Artificial intelligence](https://cobuildlab.com/blog/artificial-intelligence-for-enterprise-software/) is another area of technology which if we apply it in our small businesses, we will be on the road to digital transformation.|
 |---|---|
 
 <br>
@@ -55,7 +55,7 @@ Among the most important areas covered by the digital transformation this 2020 w
 
 <br>
 
-|<img src="./media/iot.gif" class="img-sm">| When we mix software and hardware development and link the operation of the device to the Internet, not only will we be developing a project of the [Internet of things](https://magazine.wharton.upenn.edu/digital/internet-of-things-the-key-to-digital-transformation/) (IoT), but we will also be directing our small business towards the complete digital transformation.|
+|<img src="./media/iot.gif" class="i-s">| When we mix software and hardware development and link the operation of the device to the Internet, not only will we be developing a project of the [Internet of things](https://magazine.wharton.upenn.edu/digital/internet-of-things-the-key-to-digital-transformation/) (IoT), but we will also be directing our small business towards the complete digital transformation.|
 |---|---|
 
 <br>

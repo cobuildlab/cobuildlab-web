@@ -1382,24 +1382,24 @@ input:focus ~ .highlight {
     padding: 0px !important;
 }
 
-img.img-sm, img.img-md, img.img-lg {
+img.i-s, img.i-m, img.i-l {
     display: block;
     width: auto;
     height: auto;
     margin: 0 25px;
 }
 
-img.img-sm{
+img.i-s{
     max-width: 300px;
     max-height: 300px;
 }
 
-img.img-md {
+img.i-m {
     max-width: 450px;
     max-height: 450px;
 }
 
-img.img-lg {
+img.i-l {
     max-width: 800px;
     max-height: 500px;
 }
