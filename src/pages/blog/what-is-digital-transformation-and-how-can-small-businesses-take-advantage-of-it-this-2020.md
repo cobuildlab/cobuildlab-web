@@ -19,8 +19,11 @@ Among the most important areas covered by the digital transformation this 2020 w
 
 <Br>
 
-|   <img src="./media/bigdata.gif">| It refers to the study and storage of a large amount of data from one industry or market and the entire ecosystem that makes it up, mainly of customers, suppliers, and competitors. This information is useful to take strategic actions within the company.
-|
+|<img src="./media/bigdata.gif" class="i-s">| It refers to the study and storage of a large amount of data from one industry or market and the entire ecosystem that makes it up, mainly of customers, suppliers, and competitors. This information is useful to take strategic actions within the company.|
+|---|---|
+|<img src="./media/bigdata.gif" class="i-m">| It refers to the study and storage of a large amount of data from one industry or market and the entire ecosystem that makes it up, mainly of customers, suppliers, and competitors. This information is useful to take strategic actions within the company.|
+|---|---|
+|<img src="./media/bigdata.gif" class="i-l">| It refers to the study and storage of a large amount of data from one industry or market and the entire ecosystem that makes it up, mainly of customers, suppliers, and competitors. This information is useful to take strategic actions within the company.|
 |---|---|
 
 <Br>
@@ -29,8 +32,11 @@ Among the most important areas covered by the digital transformation this 2020 w
 
 <Br>
 
-|   <img src="./media/mobile-technology.gif">| Everything that involves [mobile software development](https://cobuildlab.com/blog/mobile-apps-web-apps-or-cross-platform-what%E2%80%99s-the-best-for-my-small-business/) to consume internally or externally to provide services and increase the quality of services.
-|
+|<img src="./media/mobile-technology.gif" class="i-s">| Everything that involves [mobile software development](https://cobuildlab.com/blog/mobile-apps-web-apps-or-cross-platform-what%E2%80%99s-the-best-for-my-small-business/) to consume internally or externally to provide services and increase the quality of services.|
+|---|---|
+|<img src="./media/mobile-technology.gif" class="i-m">| Everything that involves [mobile software development](https://cobuildlab.com/blog/mobile-apps-web-apps-or-cross-platform-what%E2%80%99s-the-best-for-my-small-business/) to consume internally or externally to provide services and increase the quality of services.|
+|---|---|
+|<img src="./media/mobile-technology.gif" class="i-l">| Everything that involves [mobile software development](https://cobuildlab.com/blog/mobile-apps-web-apps-or-cross-platform-what%E2%80%99s-the-best-for-my-small-business/) to consume internally or externally to provide services and increase the quality of services.|
 |---|---|
 
 <Br>
@@ -39,18 +45,23 @@ Among the most important areas covered by the digital transformation this 2020 w
 
 <Br>
 
-|   <img src="./media/cloud.gif">| The digital transformation is also linked to the storage of information, web services, IT infrastructure in cloud servers (public, private, and mixed).
-|
+|<img src="./media/cloud.gif" class="i-s">| The digital transformation is also linked to the storage of information, web services, IT infrastructure in cloud servers (public, private, and mixed).|
 |---|---|
-
+|<img src="./media/cloud.gif" class="i-m">| The digital transformation is also linked to the storage of information, web services, IT infrastructure in cloud servers (public, private, and mixed).|
+|---|---|
+|<img src="./media/cloud.gif" class="i-l">| The digital transformation is also linked to the storage of information, web services, IT infrastructure in cloud servers (public, private, and mixed).|
+|---|---|
 <Br>
 
 <title-3>[Artificial Intelligence](https://towardsdatascience.com/3-ways-ai-aids-digital-transformation-4a5965708c45)</title-3>
 
 <Br>
 
-|   <img src="./media/ai.gif">| [Artificial intelligence](https://cobuildlab.com/blog/artificial-intelligence-for-enterprise-software/) is another area of technology which if we apply it in our small businesses, we will be on the road to digital transformation.
-|
+|<img src="./media/ai.gif" class="i-s">| [Artificial intelligence](https://cobuildlab.com/blog/artificial-intelligence-for-enterprise-software/) is another area of technology which if we apply it in our small businesses, we will be on the road to digital transformation.|
+|---|---|
+|<img src="./media/ai.gif" class="i-m">| [Artificial intelligence](https://cobuildlab.com/blog/artificial-intelligence-for-enterprise-software/) is another area of technology which if we apply it in our small businesses, we will be on the road to digital transformation.|
+|---|---|
+|<img src="./media/ai.gif" class="i-l">| [Artificial intelligence](https://cobuildlab.com/blog/artificial-intelligence-for-enterprise-software/) is another area of technology which if we apply it in our small businesses, we will be on the road to digital transformation.|
 |---|---|
 
 <Br>
@@ -59,8 +70,11 @@ Among the most important areas covered by the digital transformation this 2020 w
 
 <Br>
 
-|   <img src="./media/iot.gif">| When we mix software and hardware development and link the operation of the device to the Internet, not only will we be developing a project of the [Internet of things](https://magazine.wharton.upenn.edu/digital/internet-of-things-the-key-to-digital-transformation/) (IoT), but we will also be directing our small business towards the complete digital transformation.
-|
+|<img src="./media/iot.gif" class="i-s">| When we mix software and hardware development and link the operation of the device to the Internet, not only will we be developing a project of the [Internet of things](https://magazine.wharton.upenn.edu/digital/internet-of-things-the-key-to-digital-transformation/) (IoT), but we will also be directing our small business towards the complete digital transformation.|
+|---|---|
+|<img src="./media/iot.gif" class="i-m">| When we mix software and hardware development and link the operation of the device to the Internet, not only will we be developing a project of the [Internet of things](https://magazine.wharton.upenn.edu/digital/internet-of-things-the-key-to-digital-transformation/) (IoT), but we will also be directing our small business towards the complete digital transformation.|
+|---|---|
+|<img src="./media/iot.gif" class="i-l">| When we mix software and hardware development and link the operation of the device to the Internet, not only will we be developing a project of the [Internet of things](https://magazine.wharton.upenn.edu/digital/internet-of-things-the-key-to-digital-transformation/) (IoT), but we will also be directing our small business towards the complete digital transformation.|
 |---|---|
 
 <Br>

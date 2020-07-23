@@ -1,10 +1,11 @@
-span.token.numer{
-    border-radius:0px !important;
-    height:auto !important;
+span.token.numer {
+    border-radius: 0px !important;
+    height: auto !important;
     margin-right: 0rem !important;
     min-width: auto !important;
     padding: 0px !important;
 }
+
 @font-face {
     font-family: 'Lato-light';
     src: url(../fonts/Lato-Light.ttf);
@@ -533,11 +534,11 @@ hr {
     position: absolute;
     bottom: -30px;
     left: 50%;
-    transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     font-family: Lato-Black;
     color: #fff;
-    text-shadow: 1px 1px 8px rgba(0,0,0,.73);
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, .73);
     width: 100%;
     font-size: 18px;
     margin-bottom: 0 !important;
@@ -585,7 +586,7 @@ hr {
     padding: 2.5rem 3rem;
 }
 
-.section#contact{
+.section#contact {
     padding-bottom: 2rem;
 }
 
@@ -1379,4 +1380,28 @@ input:focus ~ .highlight {
 
 .p-0 {
     padding: 0px !important;
+}
+
+img.i-s {
+    display: block;
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+}
+
+img.i-m {
+    display: block;
+    max-width: 450px;
+    max-height: 450px;
+    width: auto;
+    height: auto;
+}
+
+img.i-l {
+    display: block;
+    max-width: 800px;
+    max-height: 500px;
+    width: auto;
+    height: auto;
 }
