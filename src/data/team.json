@@ -39,6 +39,26 @@
         }
       ]
     },
+    {
+      "first": "Jeff",
+      "last": "Leon",
+      "picture": "../assets/images/team/team-pictures/jeff-leon.jpg",
+      "description": "Business Development",
+      "social-networks": [
+        {
+          "name": "twitter",
+          "src": "https://twitter.com"
+        },
+        {
+          "name": "facebook",
+          "src": "https://facebook.com"
+        },
+        {
+          "name": "github",
+          "src": "https://github.com"
+        }
+      ]
+    },
   {
     "first": "Alexander",
     "last": "Romero",
