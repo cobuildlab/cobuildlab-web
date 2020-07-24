@@ -11,14 +11,6 @@ const Container = styled.div`
   }
 `;
 
-const Redirect = styled(Link)`
-  .is-active & {
-    border-color: #dbdbdb;
-    border-bottom-color: transparent !important;
-    background-color: transparent;
-  }
-`;
-
 const Tabs = styled(BloomerTabs)`
   &::-webkit-scrollbar {
     height: 3px;
@@ -26,6 +18,23 @@ const Tabs = styled(BloomerTabs)`
   }
   &::-webkit-scrollbar-thumb {
     background: #e76c29;
+`;
+
+const Redirect = styled(Link)`
+  .container ${Tabs}.tabs.is-boxed li.is-active & {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 39%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    border-bottom-color: #f4f6fb !important;
+  }
+
+  .container ${Tabs}.tabs.is-boxed &:hover {
+    color: #e76c29 !important;
+    background-color: inherit;
+    border-bottom-color: #e76c29 !important;
   }
 `;
 

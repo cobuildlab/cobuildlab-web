@@ -175,7 +175,7 @@ a.navbar-item.is-active,
 }
 
 .tabs li.is-active a {
-    border-bottom-color: #e76c29 !important;
+    /* border-bottom-color: #e76c29 !important; */
     color: #254a61 !important;
 }
 
@@ -1402,4 +1402,9 @@ img.i-m {
 img.i-l {
     max-width: 800px;
     max-height: 500px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 10px 5px;
 }
