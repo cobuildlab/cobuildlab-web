@@ -11,7 +11,9 @@ Miami, FL. July 9, 2020 - Here at Cobuild Lab we've been helping business owners
 With over 70 projects in our portfolio, we pride ourselves in offering agile techniques, tools, and technologies to increase development speed to deliver faster results. And today we'd like to introduce you to some of the projects we feel proud of so you can get a feel for our work.  <br> </br>
 
 <title-3 align="centered"> Massone Mechanical  </title-3> 
-<carousel folder='blog'>./media/3apps-massone-1.png ./media/3apps-massone.jpg</carousel> <br> </br>
+
+<carousel folder='blog'>./media/3apps-massone-1.png
+./media/3apps-massone.jpg</carousel> <br> </br>
 
 <a target="_blank" href="https://www.massonemechanical.com/">  Massone Mechanical </a> is a refrigeration company based on the San Francisco bay area that provides its services and refrigeration solutions to businesses ranging from small convenience stores to large supermarkets. If you need quality products, maintenance or installation anywhere in the bay area, they’re the ones to reach. <br> </br>
 
@@ -22,7 +24,9 @@ We met Robert Mitchell, the head of IT for Massone almost four years ago and we 
 The resulting platform has had a great positive effect within the company, significantly improving the information flow within all levels of the company, making it more competitive and efficient. And it is a perfect example of how a B2B company can scale its operations and reduce costs by implementing a <a target="_blank" href="https://cobuildlab.com/blog/identifying-opportunities-to-create-a-software-product/">  software product. </a>  <br> </br>
 
 <title-3 align="centered"> Jobcore </title-3> 
-<carousel folder='blog'>./media/3apps-jobcore.png ./media/3apps-jobcore-1.jpg</carousel> <br> </br>
+
+<carousel folder='blog'>./media/3apps-jobcore.png
+./media/3apps-jobcore-1.jpg</carousel> <br> </br>
 
 <a target="_blank" href="https://www.jobcore.co/">  Jobcore </a> is a scheduling, hiring, and payment marketplace for the hospitality industry: it's the validated and curated talent pool of workers and hundreds of companies organizing events and hiring every day. <br> </br>
 
@@ -35,7 +39,10 @@ The Employers interface is very user-friendly, it allows them to plan their shif
 Individuals looking for jobs in the service industry such as bartending can apply to jobs via the app. It allows them to get notifications for open positions, apply, fill the shift and track payments, all in one place.  The platform has been released but we are currently working on new versions. <br> </br>
 
 <title-3 align="centered"> Weedmatch </title-3> 
-<carousel folder='blog'>./media/3apps-weedmatch-1.png ./media/3apps-weedmatch.png ./media/3apps-weedmatch-2.jpg</carousel> <br> </br>
+
+<carousel folder='blog'>./media/3apps-weedmatch-1.png
+ ./media/3apps-weedmatch.png
+ ./media/3apps-weedmatch-2.jpg</carousel> <br> </br>
 
 <a target="_blank" href="https://weedmatch.cl/">  Weedmatch </a> is the first free cannabis social network made by a group of Venezuelans led by its founder Oscar Lopez in Chile where you can interact with other people and be aware of events and news about the culture of cannabis. The part of the match is specially dedicated to cannabis relationships or encounters, which will eventually expand the networks of consumers and brands. <br> </br>
 
