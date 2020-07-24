@@ -3,7 +3,7 @@ title: "What is digital transformation? and how can small businesses take advant
 date: "2020-07-22T16:24:04.000Z"
 template: blog
 tags: Small business
-image: "./media/digital-transformation-for-small-business.jpg"
+image: "./media/digital-transformation-for-small-business-corregida.png"
 ---
 
 
