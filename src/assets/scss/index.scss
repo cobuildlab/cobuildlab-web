@@ -773,3 +773,17 @@
     }
   }
 }
+
+table {
+  border-collapse: separate;
+  border-spacing: 20px 10px;
+}
+
+th, td {
+  color: $color-dark;
+  font-weight: 400;
+}
+
+strong {
+color: $cobuild-orange
+}
