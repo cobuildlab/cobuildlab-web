@@ -39,6 +39,7 @@ const Testimonial = () => {
                 </AlignCenter>
               </H4>
             </Wrapper>
+            <div id="our-team-anchor"></div>
             <Carousel />
           </Container>
         </div>

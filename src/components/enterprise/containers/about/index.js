@@ -70,6 +70,7 @@ const About = () => {
                 </div>
               </div>
             </Column>
+            <div id="our-mission-anchor"></div>
             <Column isSize={{ mobile: 11, desktop: 6 }} isHidden="mobile">
               <Img fluid={data.file.childImageSharp.fluid} alt="" />
             </Column>

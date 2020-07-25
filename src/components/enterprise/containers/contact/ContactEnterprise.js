@@ -18,7 +18,7 @@ const P = styled(Paragraph)`
 const ContactEnterprise = () => {
   const data = useStaticQuery(query);
   return (
-    <Section id="contact">
+    <Section>
       <Container>
         <Columns>
           <Column isHidden="mobile" isSize={5}>

@@ -31,6 +31,7 @@ const OurTeam = () => (
         </ButtonContainer>
       </TitleContainer>
       <OurTeamMap />
+      <div id="contact-us-anchor"></div>
     </Wrapper>
   </Container>
 );

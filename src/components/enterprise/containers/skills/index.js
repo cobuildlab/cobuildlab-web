@@ -11,7 +11,7 @@ const Skills = () => {
   const data = useStaticQuery(query);
   return (
     <Section>
-      <div className="skills-wrapper" id="skills">
+      <div className="skills-wrapper">
         <Container>
           <Columns>
             <Column isHidden="mobile" isSize={6}>

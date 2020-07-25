@@ -28,7 +28,7 @@ const UniqueValueProps = () => {
   ));
 
   return (
-    <Section id="unique-value-props">
+    <Section>
       <div className="blog-wrapper">
         <div className="enterprise-section">
           <Container>

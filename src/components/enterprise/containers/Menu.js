@@ -78,10 +78,20 @@ const MenuItem = styled.li`
   border-bottom: 1px solid #e2e2e2;
 `;
 
-const MenuLink = styled(AnchorLink)`
+const AnchorMenuLink = styled(AnchorLink)`
   padding: 0.5em 1em;
   display: block;
-  text-transform: uppercase;
+  font-size: 16px;
+  color: inherit;
+  transition: all 0.2s linear;
+  &:hover {
+    color: #e76c29;
+  }
+`;
+
+const MenuLink = styled.a`
+  padding: 0.5em 1em;
+  display: block;
   font-size: 16px;
   color: inherit;
   transition: all 0.2s linear;
@@ -106,41 +116,41 @@ const Menu = () => {
       <Drawer visible={isVisible} onClose={handleOpen}>
         <MenuWrapper>
           <MenuItem onClick={handleOpen}>
-            <MenuLink href="#banner">Home</MenuLink>
+            <AnchorMenuLink href="#banner">Home</AnchorMenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
-            <MenuLink href="#blog">Blog</MenuLink>
+            <MenuLink href="/blog">Blog</MenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
-            <MenuLink href="#services">Service</MenuLink>
+            <AnchorMenuLink href="#services-anchor">Our Services</AnchorMenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
-            <MenuLink href="#about">About</MenuLink>
+            <AnchorMenuLink href="#our-mission-anchor">Our Main Mission</AnchorMenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
-            <MenuLink href="#unique-value-props">OUR MAIN MISSION</MenuLink>
+            <AnchorMenuLink href="#skills">Our Skills</AnchorMenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
-            <MenuLink href="#video">Video</MenuLink>
+            <AnchorMenuLink href="#our-team-anchor">Our Team</AnchorMenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
-            <MenuLink href="#skills">Skills</MenuLink>
+            <AnchorMenuLink href="#project">Our Experience</AnchorMenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
-            <MenuLink href="#our-team">Our Team</MenuLink>
+            <AnchorMenuLink href="#testimonials">Client Testimonials</AnchorMenuLink>
           </MenuItem>
           <MenuItem onClick={handleOpen}>
-            <MenuLink href="#project">Project</MenuLink>
+            <AnchorMenuLink href="#contact-us-anchor">Contact Us</AnchorMenuLink>
           </MenuItem>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#enterprise-css">Case Studies</MenuLink>
-          </MenuItem>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#testimonials">Testimonials</MenuLink>
-          </MenuItem>
-          <MenuItem onClick={handleOpen}>
-            <MenuLink href="#contact">Contact</MenuLink>
-          </MenuItem>
+          {/* <MenuItem onClick={handleOpen}> */}
+          {/* <AnchorMenuLink href="#enterprise-css">Case Studies</AnchorMenuLink>
+          </MenuItem> */}
+          {/* <MenuItem onClick={handleOpen}>
+            <AnchorMenuLink href="#video">Video</AnchorMenuLink>
+          </MenuItem> */}
+          {/* <MenuItem onClick={handleOpen}>
+            <AnchorMenuLink href="#about">About</AnchorMenuLink>
+          </MenuItem> */}
         </MenuWrapper>
       </Drawer>
     </MenuContainer>

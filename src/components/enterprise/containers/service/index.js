@@ -45,7 +45,7 @@ Card.propTypes = {
  */
 const Service = () => {
   return (
-    <Section id="services">
+    <Section>
       <div className="service-wrapper">
         <Container>
           <Columns>

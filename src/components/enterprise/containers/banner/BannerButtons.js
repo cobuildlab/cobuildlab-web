@@ -13,7 +13,7 @@ const ButtonContainer = styled.div`
 const BannerButtons = () => (
   <Container>
     <ButtonContainer>
-      <ButtonSmoothScrolling href="#services">Explore Our Services</ButtonSmoothScrolling>
+      <ButtonSmoothScrolling href="#services-anchor">Explore Our Services</ButtonSmoothScrolling>
     </ButtonContainer>
   </Container>
 );

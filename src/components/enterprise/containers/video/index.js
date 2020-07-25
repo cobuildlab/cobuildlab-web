@@ -115,6 +115,7 @@ const Video = () => {
           </VideoContent>
         </Container>
       </Wrapper>
+      <div id="skills"></div>
     </Section>
   );
 };
