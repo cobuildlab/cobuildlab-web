@@ -1386,7 +1386,6 @@ img.i-s, img.i-m, img.i-l {
     display: block;
     width: auto;
     height: auto;
-    margin: 0 25px;
 }
 
 img.i-s{
@@ -1402,9 +1401,4 @@ img.i-m {
 img.i-l {
     max-width: 800px;
     max-height: 500px;
-}
-
-table {
-    border-collapse: separate;
-    border-spacing: 10px 5px;
 }
