@@ -38,9 +38,7 @@ const Header = ({ isFluid }) => {
             <NavbarEnd>
               <NavbarItem>
                 <NavItem>
-                  <NavLink to="/2020">
-                    <u>Businesses Services</u>
-                  </NavLink>
+                  <NavLink to="/2020">Business Services</NavLink>
                 </NavItem>
               </NavbarItem>
               <NavbarItem>

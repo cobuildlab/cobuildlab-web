@@ -36,5 +36,8 @@ export const NavItem = styled.div`
 
 export const NavLink = styled(Link)`
   color: #254a60;
-  font-weight: 600;
+  font-weight: 400;
+  &:hover {
+    color: #e76c29;
+  }
 `;
