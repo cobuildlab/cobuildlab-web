@@ -82,7 +82,6 @@ const StyledSlider = styled(Slider)`
         width: 100%;
         height: 100%;
         border-radius: 50%;
-        background-size: cover;
         img {
           border: 4px solid transparent;
           border-radius: 50%;
