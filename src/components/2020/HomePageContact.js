@@ -31,7 +31,7 @@ const RightColumn = styled(Column)`
 `;
 
 const HomePageContact = () => (
-  <Container>
+  <Container id="contact">
     <Columns isCentered>
       <LeftColumn isSize={{ mobile: 12, desktop: 6 }}>
         <H2>Let’s Talk!</H2>

@@ -8,6 +8,7 @@ import Layout from '../components/2020/Layout';
 import Header from '../components/2020/header/Header';
 import TeamHero from '../components/team/TeamHero';
 import TeamList from '../components/team/TeamList';
+import Contact from '../components/2020/HomePageContact';
 
 const Section = styled(BloomerSection)`
   padding-top: 0;
@@ -31,6 +32,11 @@ const Team = ({ data }) => (
     <Section>
       <Container>
         <TeamList data={data.allTeamJson.nodes} />
+      </Container>
+    </Section>
+    <Section>
+      <Container>
+        <Contact />
       </Container>
     </Section>
   </Layout>

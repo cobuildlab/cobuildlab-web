@@ -60,7 +60,7 @@ export default class HomePage extends PureComponent {
         <Section isPaddingless>
           <HomePagePost />
         </Section>
-        <Section id="contact-2020">
+        <Section>
           <Contact />
         </Section>
       </Layout>
