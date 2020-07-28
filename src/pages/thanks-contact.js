@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import { graphql, Link } from 'gatsby';
 import get from 'lodash/get';
 import 'react-toastify/dist/ReactToastify.min.css';
-import { Columns, Column, Section, Container } from 'bloomer';
+import { Columns, Column } from 'bloomer';
 
 import LandingPageLayout from '../components/2020/LandingPageLayout';
-import Contact from '../components/2020/HomePageContact';
+// import Contact from '../components/2020/HomePageContact';
 import Title from '../components/Typography/H2';
 import Styled from 'styled-components';
+import EnterpriseRecentPost from '../components/enterprise/containers/EnterpriseRecentPost';
 
 const StyledColumns = Styled(Columns)`
   margin-top: 15px;
@@ -26,15 +27,15 @@ class ThanksContact extends Component {
 
     return (
       <LandingPageLayout withFooter siteDescription={siteDescription}>
-        <Title className="title-logo">Cobuild Lab</Title>
-        <Title className="subtitle-logo">Thanks for contacting Us!</Title>
+        <Title className="title-logo">Thanks!</Title>
+        <Title className="subtitle-logo">{`We'll get back to you shortly.`}</Title>
         <StyledColumns>
           <Column isSize="1/2">
             <Link
               className="button is-primary is-medium is-rounded"
               to="/"
               style={{ marginRight: 15 }}>
-              Go Back
+              Home
             </Link>
             <Link
               className="button is-primary is-medium is-rounded"
@@ -42,13 +43,20 @@ class ThanksContact extends Component {
               style={{ marginRight: 15 }}>
               Blog
             </Link>
+            <Link
+              className="button is-primary is-medium is-rounded"
+              to="/portfolio"
+              style={{ marginRight: 15 }}>
+              Portfolio
+            </Link>
           </Column>
         </StyledColumns>
-        <Section>
+        <EnterpriseRecentPost />
+        {/* <Section>
           <Container>
             <Contact />
           </Container>
-        </Section>
+        </Section> */}
       </LandingPageLayout>
     );
   }
