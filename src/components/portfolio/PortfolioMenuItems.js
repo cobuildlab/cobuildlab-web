@@ -11,8 +11,7 @@ const MenuItem = styled.li`
 const MenuLink = styled(AnchorLink)`
   padding: 0.5em 1em;
   display: block;
-  text-transform: uppercase;
-  font-size: 14px;
+  font-size: 15px;
   color: inherit;
   transition: all 0.2s linear;
   &:hover {
