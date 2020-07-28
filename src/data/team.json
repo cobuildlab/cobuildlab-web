@@ -40,6 +40,26 @@
       ]
     },
     {
+      "first": "Jacqueline",
+      "last": "Popovich",
+      "picture": "../assets/images/team/team-pictures/jacqueline-popovich.png",
+      "description": "Product Manager",
+      "social-networks": [
+          {
+            "name": "twitter",
+            "src": "https://twitter.com/alanthinksnot"
+          },
+          {
+            "name": "facebook",
+            "src": "https://facebook.com/alanthinks"
+          },
+          {
+            "name": "github",
+            "src": "https://github.com/alanthinks"
+          }
+        ]
+      },
+    {
       "first": "Jeff",
       "last": "Leon",
       "picture": "../assets/images/team/team-pictures/jeff-leon.jpg",

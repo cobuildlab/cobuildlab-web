@@ -19,7 +19,7 @@ const Container = styled.div`
     z-index: 100;
 
     .team-member-img {
-      filter: drop-shadow(0px 0px 20px #e86b2a8c) saturate(1.05);
+      filter: drop-shadow(0px 0px 20px #e86b2a8c) saturate(1.02);
       transform: scale(1.01);
     }
   }
