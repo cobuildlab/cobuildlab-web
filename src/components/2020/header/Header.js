@@ -57,7 +57,7 @@ const Header = ({ isFluid }) => {
                 </NavItem>
               </NavbarItem>
               <NavbarItem>
-                <SmoothScrollingButton href="#contact-2020">Contact Us</SmoothScrollingButton>
+                <SmoothScrollingButton href="#contact">Contact Us</SmoothScrollingButton>
               </NavbarItem>
               <SocialIcons isHidden="mobile" />
             </NavbarEnd>

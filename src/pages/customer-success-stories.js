@@ -11,6 +11,7 @@ import Layout from '../components/2020/Layout';
 import Header from '../components/2020/header/Header';
 import BannerBackground from '../components/2020/BannerBackground';
 import CustomerSuccessStories from '../components/customer-success-stories/CustomerSuccessStories';
+import Contact from '../components/2020/HomePageContact';
 
 const Wrapper = styled.div`
   position: relative;
@@ -73,6 +74,11 @@ const CustomerSuccessStoriesIndex = () => (
         <CustomesWrapper>
           <CustomerSuccessStories />
         </CustomesWrapper>
+      </Container>
+    </Section>
+    <Section>
+      <Container>
+        <Contact />
       </Container>
     </Section>
   </Layout>

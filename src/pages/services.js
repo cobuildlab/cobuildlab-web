@@ -14,6 +14,7 @@ import ServicesAgileProjectManagement from '../components/services/ServicesAgile
 
 import H1 from '../components/Typography/H1';
 import styled from 'styled-components';
+import Contact from '../components/2020/HomePageContact';
 
 const HeroBody = styled(BloomerHeroBody)`
   position: relative;
@@ -55,6 +56,11 @@ const Services = () => (
     <Section>
       <Container>
         <ServicesAgileProjectManagement />
+      </Container>
+    </Section>
+    <Section>
+      <Container>
+        <Contact />
       </Container>
     </Section>
   </Layout>

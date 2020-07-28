@@ -70,7 +70,7 @@ export default class AppsDevStudy extends Component {
           <Column isSize={{ desktop: 6 }}>
             <Testimonial />
           </Column>
-          <Column>
+          <Column id="contact">
             <NewLandingForm landingName={landingName} />
           </Column>
         </Columns>

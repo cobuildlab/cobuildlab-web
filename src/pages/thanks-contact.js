@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { graphql, Link } from 'gatsby';
 import get from 'lodash/get';
 import 'react-toastify/dist/ReactToastify.min.css';
-import { Columns, Column } from 'bloomer';
+import { Columns, Column, Section, Container } from 'bloomer';
 
 import LandingPageLayout from '../components/2020/LandingPageLayout';
 import Contact from '../components/2020/HomePageContact';
@@ -44,8 +44,11 @@ class ThanksContact extends Component {
             </Link>
           </Column>
         </StyledColumns>
-
-        <Contact />
+        <Section>
+          <Container>
+            <Contact />
+          </Container>
+        </Section>
       </LandingPageLayout>
     );
   }

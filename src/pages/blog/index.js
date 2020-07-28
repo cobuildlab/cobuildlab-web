@@ -9,6 +9,7 @@ import BlogHero from '../../components/blog-post/BlogHero';
 import BlogTag from '../../components/blog-post/BlogTag';
 import BlogList from '../../components/blog-post/BlogList';
 import BlogPostContainer from '../../components/blog-post/BlogPostContainer';
+import Contact from '../../components/2020/HomePageContact';
 
 const Blog = ({ data }) => {
   const posts = get(data, 'allMarkdownRemark.edges');
@@ -22,6 +23,11 @@ const Blog = ({ data }) => {
           <BlogPostContainer>
             <BlogList data={posts} />
           </BlogPostContainer>
+        </Container>
+      </Section>
+      <Section>
+        <Container>
+          <Contact />
         </Container>
       </Section>
     </Layout>

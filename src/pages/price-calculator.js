@@ -40,7 +40,7 @@ const PriceCalculator = () => {
         <CalculatorSection getData={onGetData} />
       </Section>
       <Section>
-        <PricingContact calculatorData={calculatorData} />
+        <PricingContact id="#contact" calculatorData={calculatorData} />
       </Section>
     </Layout>
   );
