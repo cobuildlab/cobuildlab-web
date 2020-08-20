@@ -1,37 +1,60 @@
-### Other dependencies required to be merged first?
-- [ ] ☑️ `continue`, This PR does NOT require other dependencies
-- [ ] 🛑  `break`, First merge the following:
-   <!-- PR #222: Dependent Cloud Functions -->
-  - PR # :
-  - PR # :
+### 1️⃣ Describe the work done
+- [x] *`User Stories` for the following Issues have been completed*  
+- [x] *`Bugs` have been fixed and tested*  
+<!-- 
+👉👉 Issue #ISSUE_NUMBER:
+    👉 DETAILED_DESCRIPTION
+     ⏫ EXAMPLE ⏫ -->
+ <!-- ❓Issue is on a SEPARATE REPOSITORY❓
+     - Then copy and past the 🌐 COMPLETE URL of that Issue -->
+- Issue #:
+> <!--DETAILED_DESCRIPTION_OF_WORK_DONE_HERE:👉 --> 
+- Issue #: 
+> <!--DETAILED_DESCRIPTION_OF_WORK_DONE_HERE:👉 --> 
 
-### Describe the work done
-| *`User Stories` for the following Issues have been completed*  
-| *`Bugs` have been fixed and tested*
-<!-- Issue #111: Updated Color Theme -->
-1. Issue # :
-1. Issue # : 
-1. Issue # : 
 
-*Instructions for QA to validate these issues:*
-<!-- Instructions Here-->
+**<ins>Instructions for QA to validate these issues:</ins>**
+  > <!-- Instructions for QA Here-->
 
-### Local Testing and Conventions
-- [ ] I have locally tested the whole platform thoroughly
-  - Windows Browsers: Firefox, Edge, Chrome
-  - In iOS/OSX Safari
-  - Other Mobile Platforms
+### 2️⃣ Other PULL REQUESTS required to be merged first?
+- [x] ☑️ `continue`, This PR does NOT require another dependent Pull Request
+  <!-- 👆 Or 👇 -->
+- [ ] 🛑 `break`, **FIRST** merge the following Pull Request:
+ <!-- ❓Issue is on a SEPARATE REPOSITORY❓
+       - Then copy and past the 🌐 COMPLETE URL of the Pull Request -->
+  - PR #
+    > <!-- PR Description Here -->
+
+### 3️⃣ Code Quality
 - [ ] My Code follows [Cobuild Lab's Code Conventions](https://www.devsup.io/)
-   - I have performed a `self-review` of my own code
-   - I have `commented` my code, particularly in hard-to-understand areas
-   - I have made corresponding changes to the `documentation`
-   - My changes generate no new `warnings`
-   - I have removed `console.log`'s 
+   - [x] I have performed a `self-review` of my own code
+   - [x] I have `commented` my code, particularly in hard-to-understand areas
+   - [x] I have made corresponding changes to the `documentation`
+   - [x] My changes generate no new `warnings`
+   - [x] I have removed `console.log`'s 
 
-### Unit Testing (Optional)
-- [ ] Unit tests pass locally with my changes
-   - [ ] `Did Not` need to add new test
-   - [ ] `Added New` tests that prove **Feature** works or **Bug Fix** is Effective
-     
+### 4️⃣ Developer Testing
+- [ ] **🅰. I have locally tested the platform thoroughly**
+  - **`WEB PROJECTS:`**
+  - [x] Windows: Firefox, Edge, Chrome
+  - [x] Mac: Safari
+  - [x] Mobile Browsers (iOS/Android) or Chrome Mobile Inspector
+<!-- THIS IS NOT A MOBILE PROJECT
+  - **`MOBILE PROJECTS:`**
+  - [x] Tested in Emulators
+  - [x] Tested in iOS Device
+  - [x] Tested in Android Device
+-->
+- [ ] **🅱. I successfully performed the following `TESTING`**
+   - **Optional:** *Depending on Project & Environment*
+   - [ ] `Functional` Testing
+   - [ ] `Smoke` Tests in a Development Environment
+   - [ ] `E2E` Tests
+   - [ ] `Unit` Testing
+- [ ] **🅲. ❗️I understand `NEW TESTS` should be added when adding new features**
+   - [x] *_Did Not_* need to add new test
+      <!-- 👆 Or 👇 -->
+   - [ ] Added these _*New Tests*_:
+      - <!-- Test Type & Details Here -->
 
-### Screenshots
+### 5. Screenshots

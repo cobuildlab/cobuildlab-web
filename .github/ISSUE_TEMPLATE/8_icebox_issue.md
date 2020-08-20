@@ -1,8 +1,8 @@
 ---
-name: 💤 Backlog Item
-about: Nice-to-have items for the future
-title: "SCREEN | DETAIL"
-labels: Backlog
+name: 🟦 | Icebox Item
+about: Items currently out of scope
+title: "MODULE | DETAIL"
+labels: 
 
 ---
 ### Short Description
