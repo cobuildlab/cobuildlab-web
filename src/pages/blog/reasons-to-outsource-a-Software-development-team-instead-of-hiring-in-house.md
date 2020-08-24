@@ -3,7 +3,7 @@ title: "7 reasons to outsource a Software development team instead of hiring in-
 date: "2020-08-23T16:24:04.000Z"
 template: blog
 tags: Small Business
-image: "./media/outsource-a-remote-software-team.jpeg"
+image: "./media/outsource-a-remote-software-team.jpg"
 ---
 
 
