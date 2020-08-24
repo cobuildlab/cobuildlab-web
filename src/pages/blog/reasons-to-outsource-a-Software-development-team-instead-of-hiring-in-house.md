@@ -55,7 +55,7 @@ Source: [ZDnet](https://www.zdnet.com/article/slowing-growth-for-us-tech-budgets
 
 <br>
 
-<title-3>* You relieve direct labor responsibilities because you’re hiring an outside company</title-3>
+<title-3>1. You relieve direct labor responsibilities because you’re hiring an outside company</title-3>
 
 <br>
 
@@ -65,7 +65,7 @@ Also, outsourcing a software team, you won't have labor responsibilities as empl
 
 <br>
 
-<title-3>* It's a challenge to find, hire and maintain within your company the software team that knows the software stack you need to develop the proper tools</title-3>
+<title-3>2. It's a challenge to find, hire and maintain within your company the software team that knows the software stack you need to develop the proper tools</title-3>
 
 <br>
 
@@ -77,7 +77,7 @@ Another challenge to emphasize is the rotation of the personnel if you dedicate 
 
 <br>
 
-<title-3>* You save time</title-3>
+<title-3>3. You save time</title-3>
 
 <br>
 
@@ -85,7 +85,7 @@ In the same way, there is a great saving in time, since you will not lose time l
 
 <br>
 
-<title-3>* You can get the best-qualified team for developing your software projects</title-3>
+<title-3>4. You can get the best-qualified team for developing your software projects</title-3>
 
 <br>
 
@@ -93,7 +93,7 @@ Another advantage of seeking to outsource a company is that you reduce the chanc
 
 <br>
 
-<title-3>* Easy scalability and flexibility</title-3>
+<title-3>5. Easy scalability and flexibility</title-3>
 
 <br>
 
@@ -101,7 +101,7 @@ Your provider can easily scale software products developed to fit your company's
 
 <br>
 
-<title-3>* Proven workflows and processes</title-3>
+<title-3>6. Proven workflows and processes</title-3>
 
 <br>
 
@@ -113,7 +113,7 @@ You can have a single person charged with communications between your business a
 
 <br>
 
-<title-3>* Bring in a fresh perspective</title-3>
+<title-3>7. Bring in a fresh perspective</title-3>
 
 <br>
 
