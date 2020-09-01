@@ -12,7 +12,7 @@ const Container = styled.li`
   color: #264a60;
   &::before {
     content: '\\2022';
-    color: #e76c29;
+    color: #264a60;
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -20,16 +20,17 @@ const Container = styled.li`
   }
 `;
 
+const Link = styled.a`
+  color: #264a60;
+`;
+
 export const ListItem = ({ children, href }) => {
   if (href) {
     return (
       <Container>
-        <a
-          href="https://www.linkedin.com/in/alesanchezr/"
-          target="_blank"
-          rel="noopener noreferrer">
+        <Link href={href} target="_blank" rel="noopener noreferrer">
           {children}
-        </a>
+        </Link>
       </Container>
     );
   }
