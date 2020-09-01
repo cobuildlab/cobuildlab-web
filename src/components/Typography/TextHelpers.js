@@ -20,3 +20,7 @@ export const AlignLeft = styled.span`
 export const AlignCenter = styled.span`
   text-align: center;
 `;
+
+export const LinkOrange = styled.a`
+  color: ${colors.orange};
+`;
