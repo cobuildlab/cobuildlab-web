@@ -1,0 +1,73 @@
+@import "../../../../assets/scss/variable";
+
+/* about section css start */
+.about-wrapper {
+  background: $color-theme;
+  z-index: 1;
+  .row {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
+.about-content-block {
+  .about-dec {
+    line-height: 24px;
+    &.about-dec-1 {
+      margin-bottom: 22px;
+    }
+  }
+  .about-twosub-title {
+    font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 22px;
+    & .enterprise-text-orange{
+      margin-left: .5em;
+    }
+  }
+  .button1 {
+    margin: 0;
+    margin-top: calc(20px + (35 - 20) * ((100vw - 320px) / (1920 - 320)));
+  }
+}
+
+.about-button-container{
+  margin-top: 25px;
+}
+
+.about-image {
+  text-align: right;
+  margin-top: -2%;
+  padding-top: 15px;
+}
+
+/* responsive css*/
+@media (max-width: 991px) {
+  .about-content-block {
+    .button1 {
+      margin-top: 10px;
+    }
+  }
+  .about-image {
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .about-image {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .about-content-block {
+    .about-title,
+    .about-subtitle {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/* about section css end */

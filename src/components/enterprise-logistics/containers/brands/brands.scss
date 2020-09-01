@@ -1,0 +1,15 @@
+@import "../../../../assets/scss/variable";
+
+/* brand section css start */
+.brand-slider {
+  padding-top: 0;
+  .brand-content {
+    padding: 0 15px;
+    cursor: default;
+    transition: padding 0.3s ease-in-out;
+    &:hover {
+      padding:0 19px;
+    }
+  }
+}
+/* brand section css end */
