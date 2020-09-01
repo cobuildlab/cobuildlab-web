@@ -29,6 +29,19 @@ const Okroo = ({ data }) => (
         <Columns isMultiline>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailTitle>Okroo</DetailTitle>
+            <div>
+              <List>
+                <ListItem>
+                  <TextOrange>Location:</TextOrange> Miami, US
+                </ListItem>
+                <ListItem>
+                  <TextOrange>Industry:</TextOrange> Retail
+                </ListItem>
+                <ListItem>
+                  <TextOrange>Product:</TextOrange> Mobile App
+                </ListItem>
+              </List>
+            </div>
             <DetailParagraph>
               Some of Miami&apos;s most interesting dishes are found in the heart of Downtown, and
               its restaurants are a reflection of its melting pot quality. Whether you work Downtown
@@ -206,7 +219,6 @@ const Okroo = ({ data }) => (
         <TextLink to="https://play.google.com/store/apps/details?id=com.okrooapp&hl=en">
           Android
         </TextLink>
-        .
       </DetailParagraph>
     </DetailSection>
 
