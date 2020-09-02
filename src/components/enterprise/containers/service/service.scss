@@ -29,6 +29,10 @@
       width: 56px;
     }
   }
+  .sub-title{
+    margin-bottom: 6px;
+    font-size: calc(10px + (20 - 12) * ((100vw - 320px) / (1920 - 320)));
+  }
 }
 .service-content-1 {
   &.main-title-wrapper {
@@ -36,7 +40,13 @@
     padding-right: 50px;
     text-align: left;
   }
+  & .service-dec-content{
+    padding: 2px 0;
+  }
 }
+
+
+
 .service-dec {
   line-height: 1.5;
 }

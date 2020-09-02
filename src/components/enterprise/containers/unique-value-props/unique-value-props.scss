@@ -10,10 +10,11 @@
   padding-top: 20px;
   .blog-title {
     text-transform: capitalize;
-    font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(12px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 600;
     color: $color-dark;
     transition: all 0.5s ease-in-out;
+    margin-bottom: 5px;
   }
   .blog-dec {
     line-height: 1.5;

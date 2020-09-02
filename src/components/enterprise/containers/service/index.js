@@ -69,7 +69,7 @@ const Service = () => {
                   {/*  the norm, the only way to increase revenue is to revolutionize those processes*/}
                   {/*  used to conduct business.*/}
                   {/*</Typrography>*/}
-                  <Typrography tag="h3" className="about-twosub-title">
+                  <Typrography tag="h3" className="about-two sub-title">
                     <span className="enterprise-text-orange">Custom Software solutions can:</span>
                   </Typrography>
                   <Typrography tag="p" className="service-dec-content">
@@ -79,13 +79,13 @@ const Service = () => {
                     - Scale the business operations
                   </Typrography>
                   <Typrography tag="p" className="service-dec-content">
-                    - High risks and costs of development
+                    - Avoid the high risks and costs of development
                   </Typrography>
                   <Typrography tag="p" className="service-dec-content">
-                    - Difficulty finding talent
+                    - Promote employee development
                   </Typrography>
                   <Typrography tag="p" className="service-dec-content">
-                    - Lack of the necessary expertise
+                    - Provide you with the necessary expertise
                   </Typrography>
                   <br />
                   <ButtonSmoothScrolling href="#contact" isCapitalize={false}>
