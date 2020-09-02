@@ -46,6 +46,9 @@ const VideoContent = styled.div`
   z-index: 1;
   position: relative;
   text-align: center;
+  & > p {
+    margin-top: 5px;
+  }
 `;
 
 const VideoBtn = styled.div`

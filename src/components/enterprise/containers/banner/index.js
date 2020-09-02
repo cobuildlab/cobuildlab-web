@@ -69,7 +69,7 @@ const Banner = () => {
                       </Typrography>
                       <br />
                       <Typrography size={subTitle} tag="p" className="banner-dec">
-                        At Cobuild Lab, we`ve been helping business owners, CTO`s, COO`s and IT
+                        At Cobuild Lab, we’ve been helping business owners, CTO’s, COO’s and IT
                         leaders get past the techno-speak and help them take a business process and
                         turn it into a custom software solution.
                       </Typrography>
