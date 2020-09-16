@@ -20,6 +20,12 @@ Here are three ways to find out whether your business needs an app or not:
 
 <Br>
 
+<center>
+<img src="./media/web-optimized.jpg">
+</center>
+
+<Br>
+
 Before even thinking about designing an application for your business, you should first review your website. Is it optimized for mobile customers? By [implementing proper SEO](https://digitalmarketinginstitute.com/blog/what-is-seo-and-why-is-it-important#:~:text=SEO%20can%20help%20you%20build,more%20growth%20for%20your%20business.) and website design strategies, you can optimize a website for smartphones as well. It will save you from having to build an application. 
 
 It would be best if you also looked at whether the app is bringing any additional features that your website does not have. For example, it may be easier to categorize products or make the checkout process much faster.
@@ -32,6 +38,12 @@ If there is a clear advantage of an application for your businesses' model, you 
 
 <Br>
 
+<center>
+<img src="./media/customer-loyalty.jpg">
+</center>
+
+<Br>
+
 Another thing to consider before designing an application for your business is whether you have a loyal customer base that will always prefer your products over the competitors. While most companies like to think that they already have a [loyal customer](https://www.surveymonkey.com/mp/5-key-metrics-measuring-brand-loyalty/#:~:text=The%20best%20way%20to%20measure,inspiring%20loyalty%E2%80%94and%20retaining%20customers.) following, it is more complicated than that. 
 
 Try and look at whether your customers are so attached to your product or service. Will they prefer to install your app in place of a more exciting game or social media app? You can also check whether any competitors are making use of applications and what is their success rate. It will help you determine whether it is suitable for your business or not.
@@ -39,6 +51,12 @@ Try and look at whether your customers are so attached to your product or servic
 <Br>
 
 <title-2>The nature of your product or service</title-2>
+
+<Br>
+
+<center>
+<img src="./media/product-nature.jpg">
+</center>
 
 <Br>
 
