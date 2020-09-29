@@ -1,9 +1,9 @@
 ---
-title: "AVSEE: A new softare project in the healthcare industry"
+title: "AVSEE: A new software project in the healthcare industry"
 date: "2020-09-24T16:24:04.000Z"
 template: blog
 tags: News
-image: "./media/vsee.jpg"
+image: "./media/avsee.jpg"
 ---
 
 Miami, FL. Sep 24, 2020 - At <a target="_blank" href="https://cobuildlab.com/portfolio">   Cobuild Lab </a> we’re firm believers on the potential of any given crisis as a source for opportunities, and during the current pandemic lots of opportunities are opening up on the healthcare industry. We have a new project on our horizon that’ll give us a thrilling opportunity to put to work all our knowledge in tool development in order to build a  platform that’ll speed up processes to simplify for patients and doctors the task of having a right follow up for every medical consultation. <br> </br>
