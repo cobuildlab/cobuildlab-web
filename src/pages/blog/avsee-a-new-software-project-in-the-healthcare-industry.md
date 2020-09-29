@@ -1,6 +1,6 @@
 ---
 title: "AVSEE: A new softare project in the healthcare industry"
-date: "2020-029-24T16:24:04.000Z"
+date: "2020-09-24T16:24:04.000Z"
 template: blog
 tags: News
 image: "./media/vsee.jpg"
