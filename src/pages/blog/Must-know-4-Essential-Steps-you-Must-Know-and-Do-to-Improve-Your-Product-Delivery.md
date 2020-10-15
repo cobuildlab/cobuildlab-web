@@ -1,5 +1,5 @@
 ---
-title: "Must know: 4 Essential Steps you Must Know and Do to ImproveYour Product Delivery"
+title: "4 Essential Steps you Must Know and Do to Improve Your Product Delivery"
 date: "2020-10-15T16:24:04.000Z"
 template: blog
 tags: Small Business
