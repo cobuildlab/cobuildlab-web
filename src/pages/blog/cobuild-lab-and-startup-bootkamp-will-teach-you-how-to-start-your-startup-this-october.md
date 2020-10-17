@@ -1,6 +1,6 @@
 ---
 title: "Startup Bootkamp will teach you how to start your Startup this October 24-25th!"
-date: "2020-09-14T16:24:04.000Z"
+date: "2020-10-14T16:24:04.000Z"
 template: blog
 tags: News
 image: "./media/sb-1.png"
