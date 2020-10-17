@@ -1,6 +1,6 @@
 ---
 title: "We are members of the Florida Customs Brokers & Forwarders Association!"
-date: "2020-09-13T16:24:04.000Z"
+date: "2020-10-13T16:24:04.000Z"
 template: blog
 tags: News
 image: "./media/fcbf-1.png"
