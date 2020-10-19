@@ -32,7 +32,7 @@ According to the <a target="_blank" href="https://indicators.kauffman.org/">    
 
 **Q: How can a Software Product improve a logistics company?**
 
-*“Everything from using email autoresponders to automate workflow, custom software development can be the solution that revolutionizes the whole industry’s processes. Let’s say your company lacks coordination and you need to keep track of your shipment at every step of the way, we can build an app that links a bunch of processes together, from ordering a load, track and monitor the shipment around the clock to receiving the delivery, our software product could keep you updated at any time with alerts and notifications.** 
+*“Everything from using email autoresponders to automate workflow, custom software development can be the solution that revolutionizes the whole industry’s processes. Let’s say your company lacks coordination and you need to keep track of your shipment at every step of the way, we can build an app that links a bunch of processes together, from ordering a load, track and monitor the shipment around the clock to receiving the delivery, our software product could keep you updated at any time with alerts and notifications.*
 
 *A good example is a solution we built for <a target="_blank" href="https://www.massonemechanical.com/">   Massone Mechanicals</a>, which needed to improve its processes in terms of customer service delivery and information management. For them, we built a platform that allows them to automate every process from the moment someone requests their services, select the technician who will provide that service to track the shipment, and its delivery. Whatever it is, you name it, a software solution will do the job.”* <br> </br>
 
@@ -44,7 +44,7 @@ According to the <a target="_blank" href="https://indicators.kauffman.org/">    
 
 At <a target="_blank" href="https://cobuildlab.com/">  Cobuild Lab</a>, we’ve been helping business owners, CEO's, COO’s and IT leaders get past the techno-speak and help them take a business process and turn it into a custom software solution, whether they need design and build services, technical assistance, or are looking to augment their existing team with experienced agile developers. Since 2012 we've focused on developing and combining cutting-edge techniques, tools, and technologies to increase development speed to deliver faster results. <br> </br>
 
-<youtube-video id="5fbYxQNgJ7s&feature=emb_logo"></youtube-video>  <br> </br>
+<youtube-video id="5fbYxQNgJ7s"></youtube-video>  <br> </br>
 
 Got an idea for a web or mobile app? Let’s build it! Check out our <a target="_blank" href="https://cobuildlab.com/price-calculator/">  price calculator</a> to have an estimate of the cost of your project or email us at contact@cobuildlab.com and get a FREE online consultation. 
 
