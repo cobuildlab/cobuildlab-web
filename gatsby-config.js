@@ -74,14 +74,6 @@ module.exports = {
         icon: `src/resources/icocobuildlab.png`,
       },
     },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        workboxConfig: {
-          cleanupOutdatedCaches: true,
-        },
-      },
-    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-plugin-mailchimp',
