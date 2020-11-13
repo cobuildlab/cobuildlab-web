@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { HeroHeader } from 'bloomer';
-import Header from './2020/Header/Header';
+import Header from '../components/2020/Header/Header';
 import '../assets/css/index.css';
 
-class headerBlog extends Component {
+class HeaderBlog extends Component {
   constructor(props) {
     super(props);
 
@@ -25,4 +25,4 @@ class headerBlog extends Component {
     );
   }
 }
-export default headerBlog;
+export default HeaderBlog;
