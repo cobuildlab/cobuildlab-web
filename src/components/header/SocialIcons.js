@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { NavbarItem } from 'bloomer';
-import { FacebookLink, InstagramLink, YoutubeLink } from '../SocialMediaLinks';
+import { FacebookLink, InstagramLink, YoutubeLink } from '../2020/SocialMediaLinks';
 
 const SocialIcon = ({ isHidden }) => (
   <Fragment>

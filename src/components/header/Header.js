@@ -9,10 +9,10 @@ import {
   NavbarMenu,
   NavbarEnd,
 } from 'bloomer';
-import SmoothScrollingButton from '../Button/ButtonSmoothScrolling';
+import SmoothScrollingButton from '../2020/Button/ButtonSmoothScrolling';
 import SocialIcons from './SocialIcons';
 import { NavDivider, NavBrand, NavBrandImages, NavItem, NavLink } from './HeaderLayout';
-import logo from '../../../resources/cobuildlab.png';
+import logo from '../../resources/cobuildlab.png';
 import { Icon } from 'react-icons-kit';
 import { phone } from 'react-icons-kit/fa/phone';
 

@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { HeroHeader, HeroBody, Hero, Section } from 'bloomer';
 import Layout from '../../components/2020/Layout';
-import Header from '../../components/2020/Header/Header';
+import Header from '../../components/header/Header';
 import HeroBodyContent from '../../components/2020/Hero';
 import Service from '../../components/2020/service/Service';
 import Value from '../../components/2020/value/Value';

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { HeroHeader } from 'bloomer';
-import Header from '../components/2020/Header/Header';
+import Header from './header/Header';
 import '../assets/css/index.css';
 
 class HeaderBlog extends Component {

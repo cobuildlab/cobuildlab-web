@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import '../../assets/css/2020/common.scss';
 import 'bulma/css/bulma.css';
 import NewsletterModal from '../NewsletterModal';
-import Header from '../2020/Header/Header';
+import Header from '../header/Header';
 
 const Container = styled.div`
   background-color: #f4f6fb !important;
