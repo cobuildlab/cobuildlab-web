@@ -19,7 +19,7 @@ import Credits from '../components/Credits';
 import get from 'lodash/get';
 import defaultImg from '../resources/default-post.jpg';
 import rehypeReact from 'rehype-react';
-import 'bulma';
+import 'bulma/css/bulma.css';
 import '../assets/fonts/Lato-Black.ttf';
 import '../assets/fonts/Lato-BlackItalic.ttf';
 import '../assets/fonts/Lato-Bold.ttf';

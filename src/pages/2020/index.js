@@ -13,7 +13,7 @@ import HomePagePost from '../../components/2020/HomePagePost';
 import SeoMetaTags from '../../components/SeoMetaTags';
 import 'react-toastify/dist/ReactToastify.min.css';
 import 'react-modal-video/scss/modal-video.scss';
-import 'bulma';
+import 'bulma/css/bulma.css';
 
 export default class HomePage extends PureComponent {
   constructor(props) {

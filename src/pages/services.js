@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Hero, HeroHeader, Section, HeroBody as BloomerHeroBody } from 'bloomer';
-import 'bulma';
+import 'bulma/css/bulma.css';
 
 // COMPONENTS
 import Layout from '../components/2020/Layout';

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Footer from '../enterprise/containers/footer/Footer';
 import styled from 'styled-components';
 import '../../assets/css/2020/common.scss';
-import 'bulma';
+import 'bulma/css/bulma.css';
 import NewsletterModal from '../NewsletterModal';
 
 const Container = styled.div`

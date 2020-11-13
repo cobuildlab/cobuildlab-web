@@ -10,7 +10,7 @@ import Contact from '../components/enterprise/containers/contact/ContactEnterpri
 import Brand from '../components/enterprise/containers/brands';
 import Footer from '../components/enterprise/containers/footer/Footer';
 
-import 'bulma';
+import 'bulma/css/bulma.css';
 import 'slick-carousel/slick/slick.scss';
 import 'slick-carousel/slick/slick-theme.scss';
 import 'react-toastify/dist/ReactToastify.min.css';

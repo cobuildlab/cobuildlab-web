@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import '../../assets/css/2020/common.scss';
-import 'bulma';
+import 'bulma/css/bulma.css';
 import NewsletterModal from '../NewsletterModal';
 import Header from '../2020/header/Header';
 

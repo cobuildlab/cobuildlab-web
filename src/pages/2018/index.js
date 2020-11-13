@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.min.css';
 
 import Layout from './components/layout';
 import Contact from './components/Contact';
-import 'bulma';
+import 'bulma/css/bulma.css';
 import './assets/fonts/Lato-Black.ttf';
 import './assets/fonts/Lato-BlackItalic.ttf';
 import './assets/fonts/Lato-Bold.ttf';

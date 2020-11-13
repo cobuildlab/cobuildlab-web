@@ -20,7 +20,7 @@ import Credits from "../components/Credits";
 import get from "lodash/get";
 import defaultImg from "../resources/default-post.jpg";
 import rehypeReact from "rehype-react";
-import "bulma";
+import 'bulma/css/bulma.css';
 
 import { Hero, Container, Title, Columns, Column, Card, CardContent, Content } from "bloomer";
 import TTSVoice from "../components/TTSVoice";
