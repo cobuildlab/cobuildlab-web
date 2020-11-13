@@ -5,7 +5,7 @@ import { Hero, HeroHeader, HeroBody, Section as BloomerSection, Container } from
 import styled from 'styled-components';
 import SeoMetaTags from '../components/SeoMetaTags';
 import Layout from '../components/2020/Layout';
-import Header from '../components/2020/header/Header';
+import Header from '../components/2020/Header/Header';
 import TeamHero from '../components/team/TeamHero';
 import TeamList from '../components/team/TeamList';
 import Contact from '../components/2020/HomePageContact';

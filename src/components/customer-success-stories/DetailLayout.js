@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Layout from '../2020/Layout';
-import Header from '../2020/header/Header';
+import Header from '../2020/Header/Header';
 
 const Container = styled.div`
   margin-top: 5em;

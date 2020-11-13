@@ -8,7 +8,7 @@ import Paragraph from '../components/Typography/Paragraph';
 import { TextOrange } from '../components/Typography/TextHelpers';
 
 import Layout from '../components/2020/Layout';
-import Header from '../components/2020/header/Header';
+import Header from '../components/2020/Header/Header';
 import BannerBackground from '../components/2020/BannerBackground';
 import CustomerSuccessStories from '../components/customer-success-stories/CustomerSuccessStories';
 import Contact from '../components/2020/HomePageContact';

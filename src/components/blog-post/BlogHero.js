@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../2020/header/Header';
+import Header from '../2020/Header/Header';
 import { Hero, HeroHeader, HeroBody, Container, Columns, Column } from 'bloomer';
 import styled from 'styled-components';
 import H1 from '../Typography/H1';

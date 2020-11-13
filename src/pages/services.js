@@ -4,7 +4,7 @@ import 'bulma/css/bulma.css';
 
 // COMPONENTS
 import Layout from '../components/2020/Layout';
-import Header from '../components/2020/header/Header';
+import Header from '../components/2020/Header/Header';
 import SeoMetaTags from '../components/SeoMetaTags';
 
 import ServicesProductDevelopment from '../components/services/ServicesProductDevelopment';
