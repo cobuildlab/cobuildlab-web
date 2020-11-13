@@ -13,6 +13,8 @@ import SmoothScrollingButton from '../Button/ButtonSmoothScrolling';
 import SocialIcons from './SocialIcons';
 import { NavDivider, NavBrand, NavBrandImages, NavItem, NavLink } from './HeaderLayout';
 import logo from '../../../resources/cobuildlab.png';
+import { Icon } from 'react-icons-kit';
+import { phone } from 'react-icons-kit/fa/phone';
 
 const Header = ({ isFluid }) => {
   const [isActive, setActive] = useState(false);
@@ -38,22 +40,8 @@ const Header = ({ isFluid }) => {
             <NavbarEnd>
               <NavbarItem>
                 <NavItem>
-                  <NavLink to="/enterprise">Business Services</NavLink>
-                </NavItem>
-              </NavbarItem>
-              <NavbarItem>
-                <NavItem>
-                  <NavLink to="/services">Services</NavLink>
-                </NavItem>
-              </NavbarItem>
-              <NavbarItem>
-                <NavItem>
-                  <NavLink to="/customer-success-stories">Customer Success Stories</NavLink>
-                </NavItem>
-              </NavbarItem>
-              <NavbarItem>
-                <NavItem>
-                  <NavLink to="/blog">Blog</NavLink>
+                  <Icon icon={phone} alt="facebook-icon" size={22} />
+                  <a href="tel:+1 7869913467">+1 786 (991) 3467</a>
                 </NavItem>
               </NavbarItem>
               <NavbarItem>

@@ -53,26 +53,29 @@ const Service = () => {
               <ConentContainer>
                 <div className="service-content-1 main-title-wrapper">
                   <Typrography tag="h2" className="sitemain-subtitle">
-                    Business Solutions
+                    Services:
                   </Typrography>
                   <Typrography tag="h3" className="service-title">
-                    From Web and Mobile Apps to Cloud Solutions to help you:
+                    From Web and Mobile Apps to Cloud Solutions to help you with:
                   </Typrography>
                   <Typrography tag="p" className="service-dec-content">
-                    - Scale business operations
+                    ☛ Quality apps utilizing modern technologies
                   </Typrography>
                   <Typrography tag="p" className="service-dec-content">
-                    - Reduce Errors and Costs
+                    ☛ Rapid and feature-rich development
                   </Typrography>
                   <Typrography tag="p" className="service-dec-content">
-                    - Differentiate from Competitors
+                    ☛ Custom mobile and cloud solutions
                   </Typrography>
                   <Typrography tag="p" className="service-dec-content">
-                    - Create a new REVENUE Stream
+                    ☛ iOS and Android experience
+                  </Typrography>
+                  <Typrography tag="p" className="service-dec-content">
+                    ☛ No code / Low code solutions
                   </Typrography>
                   <br />
-                  <ButtonSmoothScrolling href="#contact" isCapitalize={false}>
-                    Get a Free Consultation
+                  <ButtonSmoothScrolling href="#" isCapitalize={false}>
+                    Contact US!
                   </ButtonSmoothScrolling>
                 </div>
               </ConentContainer>
@@ -82,7 +85,11 @@ const Service = () => {
                 <Columns isDisplay="flex-tablet">
                   <Column isMarginless isPaddingless isSize={{ mobile: 12, tablet: 6 }}>
                     <div className="service-block1">
-                      <Card index={2} key={2} icon={objectGroup} title={'Software Projects'}>
+                      <Card
+                        index={2}
+                        key={2}
+                        icon={objectGroup}
+                        title={'Custom Software Development'}>
                         <Typrography tag="p" className="service-dec-content">
                           {
                             'Cobuild Lab puts together managed teams to develop your most challenging projects.'
@@ -107,7 +114,7 @@ const Service = () => {
                           }
                         </Typrography>
                       </Card>
-                      <Card index={4} key={4} icon={users} title={'Staff augmentation'}>
+                      <Card index={4} key={4} icon={users} title={'Staff Augmentation'}>
                         <Typrography tag="p" className="service-dec-content">
                           {
                             'Web Developers, Mobile Developers, QA Analysts and Product Managers ready to drive success to your existing needs. '

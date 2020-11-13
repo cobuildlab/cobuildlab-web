@@ -30,6 +30,28 @@ const Avatar = styled.div`
     background: url(${({ index, sourceData }) =>
     sourceData[index] ? sourceData[index].image.childImageSharp.fluid.src : ''})
       no-repeat center;
+    height: 100px;
+    width: 100px;
+  }
+  .slick-dots li:nth-child(7) & {
+    background: url(${({ index, sourceData }) =>
+    sourceData[index] ? sourceData[index].image.childImageSharp.fluid.src : ''})
+      no-repeat center;
+  }
+  .slick-dots li:nth-child(8) & {
+    background: url(${({ index, sourceData }) =>
+    sourceData[index] ? sourceData[index].image.childImageSharp.fluid.src : ''})
+      no-repeat center;
+  }
+  .slick-dots li:nth-child(9) & {
+    background: url(${({ index, sourceData }) =>
+    sourceData[index] ? sourceData[index].image.childImageSharp.fluid.src : ''})
+      no-repeat center;
+  }
+  .slick-dots li:nth-child(10) & {
+    background: url(${({ index, sourceData }) =>
+    sourceData[index] ? sourceData[index].image.childImageSharp.fluid.src : ''})
+      no-repeat center;
   }
 `;
 

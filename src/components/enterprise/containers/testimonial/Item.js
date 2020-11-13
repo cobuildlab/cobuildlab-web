@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
+import { Column, Columns } from 'bloomer';
 
 import Paragraph from '../../../Typography/Paragraph';
 import { TextOrange } from '../../../Typography/TextHelpers';
@@ -119,7 +120,7 @@ const Container = styled.div`
   }
 `;
 
-const Item = ({ description, title, subtitle }) => (
+const Item = ({ description, title, subtitle, image }) => (
   <Container>
     <Contenct>
       <AnimationBackground>
@@ -127,6 +128,13 @@ const Item = ({ description, title, subtitle }) => (
         <i></i>
         <i></i>
       </AnimationBackground>
+      <Columns isCentered>
+        <Column />
+        <Column isCentered>
+          <img src={image.childImageSharp.fluid.src} />
+        </Column>
+        <Column />
+      </Columns>
       <Description>{description}</Description>
       <Title>
         <TextOrange>{title}</TextOrange>

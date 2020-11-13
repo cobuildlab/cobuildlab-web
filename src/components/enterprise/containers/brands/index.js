@@ -56,7 +56,7 @@ const Brand = () => {
         <div className="enterprise-section" style={{ paddingTop: 0 }}>
           <Container>
             <H4>
-              Battle Proof <span className="enterprise-text-orange sub-title">Stack</span>{' '}
+              Technology <span className="enterprise-text-orange sub-title">Stack</span>{' '}
             </H4>
             <Slider {...settings}>{items}</Slider>
           </Container>

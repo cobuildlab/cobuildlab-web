@@ -5,9 +5,8 @@ import Img from 'gatsby-image';
 import Typrography from '../../../2020/Typography';
 import BannerButtons from './BannerButtons';
 import AnimationImages from './AnimationImages';
-import { SectionsWrapper } from './banner-styles';
-import styled from 'styled-components';
 import './banner.scss';
+import styled from 'styled-components';
 
 import img1 from '../../../../assets/images/banner/animation/1.png';
 import img2 from '../../../../assets/images/banner/animation/2.png';
@@ -20,15 +19,20 @@ import img8 from '../../../../assets/images/banner/animation/8.png';
 import img9 from '../../../../assets/images/banner/animation/9.png';
 import nut from '../../../../assets/images/team/nut.svg';
 
+export const SectionsWrapper = styled.div`
+  position: relative;
+  padding-bottom: calc(1px + 110 * (100vw - 320px) / 1600);
+`;
+
 const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
 
 const title = {
   default: {
-    level: 4,
+    level: 8,
     fontWeight: 'bold',
   },
   lg: {
-    level: 1,
+    level: 6,
     fontWeight: 'bold',
   },
 };
@@ -39,18 +43,6 @@ const subTitle = {
     fontWeight: 'bold',
   },
 };
-
-const Nut = styled.img`
-  width: 30px;
-  height: 30px;
-`;
-
-const Li = styled.li`
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-`;
 
 const Banner = () => {
   const data = useStaticQuery(query);
@@ -71,56 +63,34 @@ const Banner = () => {
                   <div className="row">
                     <div className="banner-content">
                       <Typrography tag="h2" className="sitemain-subtitle">
-                        A PROCESS AND WORKFLOW AUTOMATION COMPANY
+                        A SOFTWARE DEVELOPMENT COMPANY
                       </Typrography>
-                      <Typrography size={title} tag="h1">
-                        Let’s <span className="entegitrprise-text-orange">Build</span> a <br />
-                        Great<span className=" enterprise-text-orange"> Idea.</span>
+                      <br />
+                      <Typrography size={title} tag="h2">
+                        We partner with{' '}
+                        <span className="enterprise-text-orange">Entrepreneurs</span> and{' '}
+                        <span className="enterprise-text-orange">Industry Experts</span> to
+                        transform ideas into Web and Mobile Custom Software Solutions.
                       </Typrography>
                       <br />
                       <Typrography size={subTitle} tag="h1">
-                        We build Custom Software Solutions to transform logistical and productivity
-                        problems into competitive advantages.
+                        Let’s <span className="enterprise-text-orange">Build</span> a Great
+                        <span className="enterprise-text-orange"> Idea.</span>
                       </Typrography>
                       <br />
-                      <Typrography size={subTitle} tag="p" className="banner-dec">
-                        At Cobuild Lab, we`ve been helping business owners an executives get past
-                        these challenges and turn them into:
-                        <br />
-                        <br />
-                        <ul>
-                          <Li>
-                            <Nut src={nut} alt="nut" title="Nut" />
-                            Competitive Advantages
-                          </Li>
-                          <Li>
-                            <Nut src={nut} alt="nut" title="Nut" />
-                            Increased operational capacity
-                          </Li>
-                          <Li>
-                            <Nut src={nut} alt="nut" title="Nut" />
-                            Errors reduction
-                          </Li>
-                          <Li>
-                            <Nut src={nut} alt="nut" title="Nut" />
-                            Costs optimization
-                          </Li>
-                        </ul>
-                      </Typrography>
                       <div className="banner-btn-wrapper">
                         <BannerButtons />
                       </div>
                     </div>
                   </div>
                 </Column>
-                <Column isHidden="mobile" isSize={6}>
+                <Column isHidden="mobile" isSize={5}>
                   <Img fluid={data.heroImages.childImageSharp.fluid} alt="" />
                 </Column>
               </Columns>
             </Container>
           </div>
         </div>
-        <div id="services-anchor"></div>
       </SectionsWrapper>
     </Section>
   );

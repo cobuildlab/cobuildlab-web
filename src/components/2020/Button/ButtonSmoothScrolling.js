@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import styled from 'styled-components';
 import ButtonDefault from './ButtonDefault';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const Link = styled(AnchorLink)`
   color: inherit;
@@ -13,8 +14,8 @@ const Link = styled(AnchorLink)`
 `;
 
 const SmoothScrollingButton = ({ href, children, isCapitalize }) => (
-  <ButtonDefault isCapitalize={isCapitalize}>
-    <Link href={href}>{children}</Link>
+  <ButtonDefault onClick={() => scrollTo('#contact')} isCapitalize={isCapitalize}>
+    <Link href={'#'}>{children}</Link>
   </ButtonDefault>
 );
 SmoothScrollingButton.defaultProps = {

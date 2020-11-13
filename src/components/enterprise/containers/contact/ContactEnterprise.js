@@ -18,7 +18,7 @@ const P = styled(Paragraph)`
 const ContactEnterprise = () => {
   const data = useStaticQuery(query);
   return (
-    <Section>
+    <Section id={'contact'}>
       <Container>
         <Columns>
           <Column isHidden="mobile" isSize={5}>
@@ -26,12 +26,12 @@ const ContactEnterprise = () => {
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }} isOffset={{ mobile: 0, desktop: 1 }}>
             <H4>
-              Contact Us for a{' '}
-              <span className="enterprise-text-orange sub-title">FREE 1 hour Consultation</span>{' '}
+              Contact Us for a <br />
+              <span className="enterprise-text-orange sub-title">
+                FREE 1 hour Consultation
+              </span>{' '}
             </H4>
-            <P>+1 786 - 991 - 3467</P>
-            <P>66 West Flagler St, suite 900, Miami, Florida</P>
-            <ContactForm btnText="REQUEST APPOINTMENT" landingName="enterprise" />
+            <ContactForm btnText="Submit" landingName="enterprise" />
           </Column>
         </Columns>
       </Container>

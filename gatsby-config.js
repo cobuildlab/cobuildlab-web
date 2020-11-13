@@ -13,6 +13,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,

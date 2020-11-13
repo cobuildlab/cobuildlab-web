@@ -2,35 +2,39 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Slider from 'react-slick';
 import Item from './Item';
-import Avatar from './Avatar';
 import './testimonial.scss';
-
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-};
 
 const Testimonial = () => {
   const data = useStaticQuery(query);
 
-  const items = data.allTestimonialJson.nodes.map(({ id, content, title, subtitle }) => (
-    <Item key={id} title={title} subtitle={subtitle} description={content} />
+  const items = data.allTestimonialJson.nodes.map(({ id, content, title, subtitle, image }) => (
+    <Item key={id} title={title} z subtitle={subtitle} description={content} image={image} />
   ));
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 600,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    customPaging: function(i) {
+      return (
+        <a>
+          <img
+            width={50}
+            height={50}
+            src={data.allTestimonialJson.nodes[i].image.childImageSharp.fluid.src}
+          />
+        </a>
+      );
+    },
+  };
 
   return (
     <div className="testimonial-slider ">
       <div className="testimonial-outer-box">
-        <Slider
-          {...settings}
-          customPaging={(index) => (
-            <Avatar index={index} sourceData={data.allTestimonialJson.nodes} />
-          )}>
-          {items}
-        </Slider>
+        <Slider {...settings}>{items}</Slider>
       </div>
     </div>
   );

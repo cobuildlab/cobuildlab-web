@@ -7,8 +7,8 @@ import styled, { keyframes } from 'styled-components';
 
 const PlayIconContainer = styled.div`
   position: absolute;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   z-index: 10;
   cursor: pointer;
 `;
@@ -16,8 +16,8 @@ const PlayIconContainer = styled.div`
 const SonarEmitter = styled.div`
   position: relative;
   margin: 0 auto;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   border-radius: 9999px;
   background-color: hsla(21, 79%, 53%, 1);
   display: flex;
@@ -57,7 +57,7 @@ const VideoPlayIcon = ({ videoId }) => (
   <VideoPlay videoId={videoId}>
     <PlayIconContainer>
       <SonarEmitter>
-        <IconPlay size={34} icon={play} />
+        <IconPlay size={24} icon={play} />
       </SonarEmitter>
       <SonarWave />
     </PlayIconContainer>
