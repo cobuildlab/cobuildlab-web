@@ -76,17 +76,12 @@ const About = () => {
             <Column isSize={{ mobile: 11, desktop: 6 }}>
               <div className="row">
                 <div className="about-content-block main-title-wrapper">
-                  <div className="sub-title-wrapper">
-                    <Columns>
-                      <Column>
-                        <Typrography tag="h2" className="sitemain-subtitle">
-                          For Startups
-                        </Typrography>
-                      </Column>
-                      <Column>
-                        <VideoPlayIcon />
-                      </Column>
-                    </Columns>
+                  <div className="row mb-2">
+                    <Typrography tag="h2" className="sitemain-subtitle">
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For
+                      Startups
+                    </Typrography>
+                    <VideoPlayIcon/>
                   </div>
                   <ul>
                     <li>
@@ -118,34 +113,29 @@ const About = () => {
             </Column>
             <div id="our-mission-anchor"></div>
             <Column isSize={{ mobile: 10, desktop: 5 }} isHidden="mobile">
-              <Img fluid={data.file.childImageSharp.fluid} alt="" />
+              <Img fluid={data.file.childImageSharp.fluid} alt=""/>
             </Column>
           </Columns>
         </Container>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <br/>
+        <br/>
+        <br/>
         <Container>
           <Columns isDisplay="flex-mobile" isCentered>
             <Column isSize={{ mobile: 10, desktop: 5 }} isHidden="mobile">
-              <Img fluid={data.imagesCardOne.childImageSharp.fluid} alt="" />
+              <Img fluid={data.imagesCardOne.childImageSharp.fluid} alt=""/>
             </Column>
             <Column isSize={{ mobile: 11, desktop: 6 }}>
               <div className="row">
                 <div className="about-content-block main-title-wrapper">
                   <div className="sub-title-wrapper">
-                    <Columns>
-                      <Column>
-                        <Typrography tag="h2" className="sitemain-subtitle">
-                          For Enterprises
-                        </Typrography>
-                      </Column>
-                      <Column>
-                        <VideoPlayIcon videoId={'5fbYxQNgJ7s'} />
-                      </Column>
-                    </Columns>
+                    <div className="row mb-2">
+                      <Typrography tag="h2" className="sitemain-subtitle">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For
+                        Enterprises
+                      </Typrography>
+                      <VideoPlayIcon videoId={'5fbYxQNgJ7s'}/>
+                    </div>
                   </div>
 
                   <ul>

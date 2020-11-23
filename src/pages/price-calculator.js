@@ -3,7 +3,7 @@ import { Hero, HeroHeader, HeroBody, Section as BloomerSection } from 'bloomer';
 import styled from 'styled-components';
 import SeoMetaTags from '../components/SeoMetaTags';
 import Layout from '../components/2020/Layout';
-import Header from '../components/2020/Header/Header';
+import Header from '../components/header/Header';
 import PricingHero from '../components/price-calculator/PricingHero';
 
 import CalculatorSection from '../components/calculator/sections/CalculatorSection';

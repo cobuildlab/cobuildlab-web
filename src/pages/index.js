@@ -15,7 +15,7 @@ import 'slick-carousel/slick/slick.scss';
 import 'slick-carousel/slick/slick-theme.scss';
 import 'react-toastify/dist/ReactToastify.min.css';
 import '../assets/scss/index.scss';
-import Header from '../components/2020/Header/Header';
+import Header from '../components/header/Header';
 
 const IndexPage = () => (
   <div className="main-wrapper">

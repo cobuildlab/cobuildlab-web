@@ -7,6 +7,7 @@
     "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
   },
   "dependencies": {
+    "@babel/core": "^7.12.3",
     "@react-pdf/renderer": "^1.6.9",
     "babel-plugin-styled-components": "^1.10.7",
     "bloomer": "^0.6.3",
@@ -14,7 +15,7 @@
     "core-js": "^2.6.9",
     "disqus-react": "^1.0.5",
     "dotenv": "^6.1.0",
-    "gatsby": "^2.24.53",
+    "gatsby": "^2.26.1",
     "gatsby-cli": "^2.12.60",
     "gatsby-image": "^2.3.2",
     "gatsby-plugin-amp": "^0.2.2",

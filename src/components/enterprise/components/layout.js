@@ -12,15 +12,7 @@ import Header from './header';
 import 'bulma/css/bulma.css';
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+  const data = useStaticQuery(query);
 
   return (
     <>
@@ -45,5 +37,15 @@ const Layout = ({ children }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
+
+const query = graphql`
+  query SiteTitleQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`;
 
 export default Layout;

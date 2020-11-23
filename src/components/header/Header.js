@@ -9,10 +9,10 @@ import {
   NavbarMenu,
   NavbarEnd,
 } from 'bloomer';
-import SmoothScrollingButton from '../Button/ButtonSmoothScrolling';
+import SmoothScrollingButton from '../2020/Button/ButtonSmoothScrolling';
 import SocialIcons from './SocialIcons';
 import { NavDivider, NavBrand, NavBrandImages, NavItem, NavLink } from './HeaderLayout';
-import logo from '../../../resources/cobuildlab.png';
+import logo from '../../resources/cobuildlab.png';
 import { Icon } from 'react-icons-kit';
 import { phone } from 'react-icons-kit/fa/phone';
 
@@ -33,12 +33,17 @@ const Header = ({ isFluid }) => {
                 <NavBrandImages src={logo} alt="logo" />
               </NavBrand>
             </NavbarItem>
-            <SocialIcons isHidden="desktop" />
-            <NavbarBurger isActive={isActive} onClick={handleActive} />
+            <NavbarItem isHidden="desktop">
+              <NavItem>
+                <Icon icon={phone} alt="facebook-icon" size={22} />
+                <a href="tel:+1 7869913467">+1 786 (991) 3467</a>
+              </NavItem>
+            </NavbarItem>
+            {/*<NavbarBurger isActive={isActive} onClick={handleActive} />*/}
           </NavbarBrand>
           <NavbarMenu isActive={isActive} onClick={handleActive}>
             <NavbarEnd>
-              <NavbarItem>
+              <NavbarItem isHidden="mobile">
                 <NavItem>
                   <Icon icon={phone} alt="facebook-icon" size={22} />
                   <a href="tel:+1 7869913467">+1 786 (991) 3467</a>

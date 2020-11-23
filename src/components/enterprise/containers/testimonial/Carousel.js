@@ -15,7 +15,7 @@ const Testimonial = () => {
     dots: true,
     infinite: true,
     speed: 600,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
     customPaging: function(i) {
