@@ -33,7 +33,7 @@ She is the founder of 305 Creative Group, working and consulting with companies 
  *We then decided going for a much more minimalist design, black and white backgrounds with enough free space to avoid creating visual clutter by using subtle line elements, instead using good size texts with a typography that breathes elegance, simplicity and modernism”.* <br> </br>
  
  
- <img src="media/pr.NEF">
+ <img src="media/pr.png">
  <title-6 align="centered"> Photo: <a target="_blank" href="https://www.linkedin.com/in/alacret/"> Angel Lacret</a>, Chief of Product Development and <a target="_blank" href="https://www.linkedin.com/in/jacqueline-popovich/"> Jacqueline Popovich</a>, Product Manager </title-6> <br> </br>
  
  
