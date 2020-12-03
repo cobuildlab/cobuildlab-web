@@ -14,7 +14,7 @@ The program is designed to give entrepreneurs tremendous insight into the world 
 
 
 
-<img src="./media/incubators-2.png"> <br> </br>
+<img src="../pages/blog/media/incubators-2.png"> <br> </br>
 
 <title-4 align="left"> Let’s talk about failure...</title-4>
 
@@ -29,7 +29,7 @@ The second reason why new businesses and startups fail is that they run out of c
 
 
 <title-3 align="centered"> WHAT IS AN INCUBATOR? </title-3>
-<img src="./media/incubators-3.png"> <br> </br>
+<img src="../pages/blog/media/incubators-3.png"> <br> </br>
 
 A business incubator is an organization designed to accelerate the growth and consolidation of companies in their early stages by providing them with a wide range of resources and business services that may include consulting from the initial phase of the project, offering a physical space, legal, financial and accounting guidance, coaching and in some cases promoting contact with potential investors by providing access to a network of contacts. <br> </br>
 

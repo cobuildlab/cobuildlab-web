@@ -12,7 +12,7 @@ But the entrepreneurial route is not for everyone. Many may simply not be able t
 
 Growth Therapy is a communication tool for entrepreneurs in the tech industry. In a video format, this program is intended to serve as a guide to all those visionaries who want to be masters of their own time and want to see their ground-breaking idea materialized. So, we talked to <a target="_blank" href="https://www.linkedin.com/in/alacret/"> Angel Lacret</a>, founder and CEO of <a target="_blank" href="https://cobuildlab.com/"> Cobuild Lab</a> about this new journey. <br> </br> 
 
-<img src="./media/pr-gt-2.png"> <br> </br> 
+<img src="../pages/blog/media/pr-gt-2.png"> <br> </br> 
 
 
 <title-5 align="left">What is Growth Therapy? </title-5>
@@ -22,7 +22,7 @@ Growth Therapy is a communication tool for entrepreneurs in the tech industry. I
 *Alongside <a target="_blank" href="https://www.linkedin.com/in/psostre/">Pedro Sostre</a>, a consultant and author with 20 years of experience in building companies, founder of <a target="_blank" href="https://www.navigate.capital/"> Navigate</a>, we will share our experience and other industry professionals experience so we can communicate success stories that not only inspire others but help them understand better and learn how you can bring your idea to the real world.*  <br> </br> 
 
 
-<img src="./media/pr-gt-3.jpeg"> <br> </br> 
+<img src="../pages/blog/media/pr-gt-3.jpeg"> <br> </br> 
 
 <title-5 align="left">What motivated you to create a space for entrepreneurs in the early stages?</title-5>
 
@@ -32,7 +32,7 @@ Growth Therapy is a communication tool for entrepreneurs in the tech industry. I
 
 *We realized that just like us, there are many visionaries who want to undertake, looking to succeed but don't have a guide to help them move forward, there is no manual with step-by-step instructions. That doesn't exist. Miami is one of the most entrepreneurial cities in the United States today, and tech is taking off in such an incredible way that it could be the next Silicon Valley. We decided to be helpful to other entrepreneurs, to become that guide and that support that we had at the very beginning, and to be able to share our experience with them.* <br> </br> 
 
-<img src="./media/pr-gt-4.png"> <br> </br> 
+<img src="../pages/blog/media/pr-gt-4.png"> <br> </br> 
 
 
 <title-5 align="left">Why Growth Therapy?</title-5>
@@ -45,7 +45,7 @@ Growth Therapy is a communication tool for entrepreneurs in the tech industry. I
 
 *Honesty and transparency. We want to share real cases of real companies with real problems and tangible solutions.*  <br> </br> 
 
-<img src="./media/pr-gt-5.NEF"> <br> </br> 
+<img src="../pages/blog/media/pr-gt-5.NEF"> <br> </br> 
 
 
 

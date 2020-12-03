@@ -34,7 +34,7 @@ Companies that implement CRM solutions can:  <br> </br>
 
 
 <title-4> LEAD VOLT </title-4> <br> </br>
-<img src="./media/pr-leadvolt-1.png">
+<img src="../pages/blog/media/pr-leadvolt-1.png">
 
 The platform will allow Lead Volt to share and maximize the knowledge of a given customer and thus understand their needs and anticipate them.  *“Of course, we are using the Backend-as-a-Service offered by <a target="_blank" href="https://www.8base.com/"> 8base</a> since it allows us to develop a solution to manage three basic areas on the Lead Volt platform: sales management, marketing, and after-sales or customer service,”* said Lacret. CRM software allows us to segment a customer base, so it also makes it easier to plan sales and marketing strategies more effectively and increase revenues. <br> </br>
 

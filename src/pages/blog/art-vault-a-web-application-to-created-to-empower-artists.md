@@ -15,7 +15,7 @@ She is the founder of 305 Creative Group, working and consulting with companies 
 
 <title-4 align="centered"> WE INTRODUCE YOU ART VAULT </title-4>
 
-<img src="./media/pr-art-vaul-1.png"> <br> </br>
+<img src="media/pr-art-vaul-1.png"> <br> </br>
 
 <a target="_blank" href="https://artvault.app/"> Art Vault</a> is a web platform that helps artists keep track of the purchasing of their pieces. Artists can create their profile and use the app as an online inventory of their pieces, display them, and keep track of sales, either weekly, monthly, or year-round. We talked to <a target="_blank" href="https://cobuildlab.com/blog/congratulations-to-jacqueline-popovich-cobuild-lab-new-product-manager/"> Jacqueline Popovich</a>, our Product Manager, who told us more about the challenges faced by the development team during the construction of this <a target="_blank" href="https://cobuildlab.com/blog/software-development-for-new-products/"> Software Product</a>.   <br> </br>
 
@@ -33,7 +33,7 @@ She is the founder of 305 Creative Group, working and consulting with companies 
  *We then decided going for a much more minimalist design, black and white backgrounds with enough free space to avoid creating visual clutter by using subtle line elements, instead using good size texts with a typography that breathes elegance, simplicity and modernism”.* <br> </br>
  
  
- <img src="./media/pr.NEF">
+ <img src="media/pr.NEF">
  <title-6 align="centered"> Photo: <a target="_blank" href="https://www.linkedin.com/in/alacret/"> Angel Lacret</a>, Chief of Product Development and <a target="_blank" href="https://www.linkedin.com/in/jacqueline-popovich/"> Jacqueline Popovich</a>, Product Manager </title-6> <br> </br>
  
  
