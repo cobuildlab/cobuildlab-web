@@ -56,7 +56,9 @@ Though in recent months, dropshipping from China has taken some beating due to C
 <Br>
 
 Teens have some buying power and are always looking for trendy stuff to stay one-up above their peers. This is more common among high school and college students. Teens are also more open to accept or at least try something new, just for the thrill of it. This is one superb idea if you wish, for your ecommerce store.
-These ideas can be easily found in magazines and TV shows that target teenagers. However, you’ll have to be a bit careful about pricing such stuff on your online store since most teens would be spending from their pocket allowance or request their parents to make the purchase. Pricing too high can be a put off to both, teenagers and their parents. You can start a blog and create a demand for teenager and young adults for products that you believe they would like.
+
+These ideas can be easily found in magazines and TV shows that target teenagers. However, you’ll have to be a bit careful about pricing such stuff on your online store since most teens would be spending from their pocket allowance or request their parents to make the purchase. Pricing too high can be a put off to both, teenagers and their parents. You can <a href=”https://moneyconnexion.com/start-a-blog.htm”>start a blog</a> and create a demand for teenager and young adults for products that you believe they would like.
+
 At the same time, teenager tastes are prone to rather sudden changes. Be prepared to meet this challenge. Dropshipping can help here too, if you can identify the teenage tastes and respond quickly. It’s also possible to create a demand among teenagers.
 
 <Br>
