@@ -44,7 +44,7 @@ const Text = styled.span`
 
 const IncubatorButton = () => (
   <Container>
-    <Redirect to="/#contact-us-anchor">
+    <Redirect to="/#contact">
       <ImageContainer>
         <img src={img} alt="" />
       </ImageContainer>

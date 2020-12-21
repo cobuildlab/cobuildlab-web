@@ -24,7 +24,7 @@ Growth Therapy is a communication tool for entrepreneurs in the tech industry. I
 
 <img src="media/pr-gt-3.jpeg"> <br> </br> 
 
-<title-5 align="left">What motivated you to create a space for entrepreneurs in the early stages?</title-5>
+<title-5 align="left">What motivated you to create a space wwwwfor entrepreneurs in the early stages?</title-5>
 
 *The motivation is exactly the same that made me decide to start Cobuild Lab, I have surrounded myself with incredibly passionate and visionary people to help other technology entrepreneurs to take their first steps, to walk with them on their journey, and to provide them with all the tools they need to achieve their goals. We want to support the entrepreneurial community so that we can grow even more in the city.* <br> </br> 
 
