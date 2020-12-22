@@ -19,8 +19,8 @@ import Header from '../components/header/Header';
 
 const IndexPage = () => (
   <div className="main-wrapper">
-    <SeoMetaTags />
-    <Header />
+    {/*<SeoMetaTags />*/}
+    {/*<Header />*/}
     <div id="main-content">
       {"DUMB TEST"}
       {/*<Banner />*/}
