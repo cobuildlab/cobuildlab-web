@@ -19,19 +19,18 @@ import Header from '../components/header/Header';
 
 const IndexPage = () => (
   <div className="main-wrapper">
-    {/*<SeoMetaTags />*/}
-    {/*<Header />*/}
+    <SeoMetaTags />
+    <Header />
     <div id="main-content">
-      {"DUMB TEST"}
-      {/*<Banner />*/}
-      {/*<IncubatorLink />*/}
-      {/*<About />*/}
-      {/*<Service />*/}
-      {/*<Project />*/}
-      {/*<Testimonial />*/}
-      {/*<Contact />*/}
-      {/*<Brand />*/}
-      {/*<Footer />*/}
+      <Banner />
+      <IncubatorLink />
+      <About />
+      <Service />
+      <Project />
+      <Testimonial />
+      <Contact />
+      <Brand />
+      <Footer />
     </div>
   </div>
 );
