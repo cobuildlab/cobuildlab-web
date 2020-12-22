@@ -23,11 +23,11 @@ const IndexPage = () => (
     <Header />
     <div id="main-content">
       <Banner />
-      <IncubatorLink />
-      <About />
-      <Service />
-      <Project />
-      <Testimonial />
+      {/*<IncubatorLink />*/}
+      {/*<About />*/}
+      {/*<Service />*/}
+      {/*<Project />*/}
+      {/*<Testimonial />*/}
       <Contact />
       <Brand />
       <Footer />
