@@ -22,15 +22,16 @@ const IndexPage = () => (
     <SeoMetaTags />
     <Header />
     <div id="main-content">
-      <Banner />
+      {"DUMB TEST"}
+      {/*<Banner />*/}
       {/*<IncubatorLink />*/}
       {/*<About />*/}
       {/*<Service />*/}
       {/*<Project />*/}
       {/*<Testimonial />*/}
-      <Contact />
-      <Brand />
-      <Footer />
+      {/*<Contact />*/}
+      {/*<Brand />*/}
+      {/*<Footer />*/}
     </div>
   </div>
 );
