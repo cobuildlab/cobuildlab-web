@@ -17,7 +17,6 @@ import img6 from '../../../../assets/images/banner/animation/6.png';
 import img7 from '../../../../assets/images/banner/animation/7.png';
 import img8 from '../../../../assets/images/banner/animation/8.png';
 import img9 from '../../../../assets/images/banner/animation/9.png';
-import nut from '../../../../assets/images/team/nut.svg';
 
 export const SectionsWrapper = styled.div`
   position: relative;
