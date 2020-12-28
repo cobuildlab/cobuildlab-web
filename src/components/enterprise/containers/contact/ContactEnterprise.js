@@ -3,17 +3,10 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { Container, Columns, Column, Section } from 'bloomer';
 import Img from 'gatsby-image';
 
-import styled from 'styled-components';
-import Paragraph from '../../../Typography/Paragraph';
-
 // import Img from "gatsby-image"
 import ContactForm from '../../../2020/ContactForm';
 import H4 from '../../../Typography/H4';
 // background animation required this
-
-const P = styled(Paragraph)`
-  margin-top: 0.5em;
-`;
 
 const ContactEnterprise = () => {
   const data = useStaticQuery(query);
