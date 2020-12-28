@@ -5,66 +5,8 @@ import Img from 'gatsby-image';
 import Typrography from '../../../2020/Typography';
 import ButtonSmoothScrolling from '../../../2020/Button/ButtonSmoothScrolling';
 import './about.scss';
-import Typography from '../../../2020/Typography';
-import { caretRight } from 'react-icons-kit/fa/caretRight';
-import VideoPlay from '../../../2020/VideoPlay';
-import styled, { keyframes } from 'styled-components';
-import { Icon } from 'react-icons-kit';
+
 import VideoPlayIcon from '../../../2020/VideoPlayIcon';
-
-const animation = keyframes`
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(240deg);
-    transform: rotate(240deg);
-  }
-`;
-
-const VideoBtn = styled.div`
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  &:before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: url(${({ images }) => `${images}`});
-    background-size: contain;
-    animation-name: ${animation};
-    animation-duration: 2500ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-`;
-
-const ButtonContainer = styled.span`
-  background: url(${({ images }) => `${images}`}) no-repeat center;
-  background-size: contain;
-  width: calc(50px + (76 - 50) * ((100vw - 320px) / (1920 - 320)));
-  height: calc(50px + (76 - 50) * ((100vw - 320px) / (1920 - 320)));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-  cursor: pointer;
-  margin: calc(8px + (14 - 8) * ((100vw - 320px) / (1920 - 320)));
-  svg {
-    width: 31px;
-    height: 30px;
-    margin-left: 2px;
-  }
-`;
-const PlayIcon = styled(Icon)`
-  color: #e76c29;
-`;
 
 const About = () => {
   const data = useStaticQuery(query);
@@ -78,10 +20,10 @@ const About = () => {
                 <div className="about-content-block main-title-wrapper">
                   <div className="row mb-2">
                     <Typrography tag="h2" className="sitemain-subtitle">
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For
-                      Startups
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      For Startups
                     </Typrography>
-                    <VideoPlayIcon/>
+                    <VideoPlayIcon />
                   </div>
                   <ul>
                     <li>
@@ -113,17 +55,17 @@ const About = () => {
             </Column>
             <div id="our-mission-anchor"></div>
             <Column isSize={{ mobile: 10, desktop: 5 }} isHidden="mobile">
-              <Img fluid={data.file.childImageSharp.fluid} alt=""/>
+              <Img fluid={data.file.childImageSharp.fluid} alt="" />
             </Column>
           </Columns>
         </Container>
-        <br/>
-        <br/>
-        <br/>
+        <br />
+        <br />
+        <br />
         <Container>
           <Columns isDisplay="flex-mobile" isCentered>
             <Column isSize={{ mobile: 10, desktop: 5 }} isHidden="mobile">
-              <Img fluid={data.imagesCardOne.childImageSharp.fluid} alt=""/>
+              <Img fluid={data.imagesCardOne.childImageSharp.fluid} alt="" />
             </Column>
             <Column isSize={{ mobile: 11, desktop: 6 }}>
               <div className="row">
@@ -131,10 +73,10 @@ const About = () => {
                   <div className="sub-title-wrapper">
                     <div className="row mb-2">
                       <Typrography tag="h2" className="sitemain-subtitle">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For
-                        Enterprises
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        For Enterprises
                       </Typrography>
-                      <VideoPlayIcon videoId={'5fbYxQNgJ7s'}/>
+                      <VideoPlayIcon videoId={'5fbYxQNgJ7s'} />
                     </div>
                   </div>
 

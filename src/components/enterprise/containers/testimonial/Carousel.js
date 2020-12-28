@@ -18,6 +18,7 @@ const Testimonial = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
+    // eslint-disable-next-line react/display-name
     customPaging: function(i) {
       return (
         <a>
@@ -25,6 +26,7 @@ const Testimonial = () => {
             width={50}
             height={50}
             src={data.allTestimonialJson.nodes[i].image.childImageSharp.fluid.src}
+            alt={'Testimonials images'}
           />
         </a>
       );
