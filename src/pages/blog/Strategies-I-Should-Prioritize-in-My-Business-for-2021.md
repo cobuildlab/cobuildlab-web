@@ -84,7 +84,7 @@ Customized software is made to your needs and requirements, to give solutions to
 
 The development of customized software is a strategy that before was important and now is vital. 
 
-It allows you to solve one or all of your company's challenges with one solution, one tool. And this happens even over time because new challenges that arise, you will be able to solve them and add functionality to the software tool you developed because you are in control. It's 100% scalable. 
+It allows you to solve one or all of your company's challenges with one solution, one tool, working with a  <a target="_blank" href="https://jooble.org/jobs-consulting-software-engineer">  team. </a> And this happens even over time because new challenges that arise, you will be able to solve them and add functionality to the software tool you developed because you are in control. It's 100% scalable. 
 
 This quality means that the development of personalized software allows you to comply with the rest of the strategies and protects you from changes or eventualities that may occur in 2021. 
 
