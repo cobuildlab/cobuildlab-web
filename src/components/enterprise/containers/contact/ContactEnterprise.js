@@ -24,7 +24,7 @@ const ContactEnterprise = () => {
                 FREE 1 hour Consultation
               </span>{' '}
             </H4>
-            <ContactForm btnText="Submit" landingName="enterprise" />
+            <ContactForm btnText="Submit" landingName="enterprise" location={window.location} />
           </Column>
         </Columns>
       </Container>

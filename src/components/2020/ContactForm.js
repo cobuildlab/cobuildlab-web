@@ -6,6 +6,8 @@ import { Field, Control, Input, TextArea, Label as BloomerLabel } from 'bloomer'
 import styled from 'styled-components';
 import ButtonDefault from './Button/ButtonDefault';
 import Error from '../Toast/Error';
+import queryString from 'query-string';
+
 // import Success from '../Toast/Success';
 
 const Label = styled(BloomerLabel)`
@@ -15,16 +17,18 @@ const Label = styled(BloomerLabel)`
 export default class Contact extends PureComponent {
   static defaultProps = {
     btnText: 'submit',
+    location: {},
   };
 
   static propTypes = {
     btnText: PropTypes.string,
     landingName: PropTypes.string.isRequired,
+    location: PropTypes.object,
   };
 
   constructor(props) {
     super(props);
-    const { landingName } = this.props;
+    const { landingName, location } = this.props;
     this.state = {
       data: {
         name: '',
@@ -36,8 +40,17 @@ export default class Contact extends PureComponent {
       isLoading: false,
     };
     this.url = '';
+    this.urlState = queryString.parse(location.hash);
     this.handleChange = this.handleChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
+  }
+
+  componentDidMount() {
+    for (let property in this.urlState) {
+      if (this.urlState[property] !== undefined) {
+        localStorage.setItem('utm_source', this.urlState[property]);
+      }
+    }
   }
 
   handleChange(e) {
@@ -95,6 +108,8 @@ export default class Contact extends PureComponent {
       landing: landingName,
     };
 
+    data.message += ' \nutm_source:' + localStorage.getItem('utm_source');
+
     const settings = {
       method: 'POST',
       body: JSON.stringify(data),
@@ -103,7 +118,6 @@ export default class Contact extends PureComponent {
         'Content-Type': 'application/json',
       },
     };
-
     try {
       await fetch(process.env.CONTACT_FORM_API, settings);
       navigate('/thanks-contact');
