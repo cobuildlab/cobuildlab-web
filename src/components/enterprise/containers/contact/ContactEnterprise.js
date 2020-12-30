@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocation } from '@reach/router';
 import { useStaticQuery, graphql } from 'gatsby';
 import { Container, Columns, Column, Section } from 'bloomer';
 import Img from 'gatsby-image';
@@ -9,6 +10,7 @@ import H4 from '../../../Typography/H4';
 // background animation required this
 
 const ContactEnterprise = () => {
+  const location = useLocation();
   const data = useStaticQuery(query);
   return (
     <Section id={'contact'}>
@@ -24,7 +26,7 @@ const ContactEnterprise = () => {
                 FREE 1 hour Consultation
               </span>{' '}
             </H4>
-            <ContactForm btnText="Submit" landingName="enterprise" location={window.location} />
+            <ContactForm btnText="Submit" landingName="enterprise" location={location} />
           </Column>
         </Columns>
       </Container>
