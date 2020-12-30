@@ -102,20 +102,6 @@ These are form requirements that can make the software you are going to invest i
 
 <Br>
 
-<title-3>Legal aspects</title-3>
-
-<Br>
-
-This is perhaps one of the most delicate areas, taking into account that one activity can be legal in one country and punishable in another. 
-
-Nowadays with the advances of the Internet and technology, you must be certain about the legal aspects of a country or city but if you are going to work with APIs, for example, from Facebook, you have to evaluate if it is allowed by the provider to work with them, and the scope they can have within your application.
-
-If it’s a mobile app, it must comply with the rules of the App Store or Play store too.
-
-These are form requirements that can make the software you are going to invest in unable to publish, or maybe when you decide to invest, it was legal, and in the development process, it stopped being so. This information is vital and is part of the risks you assume as an investor, owner, or head of the startup. 
-
-<Br>
-
 <title-3>Burning rate</title-3>
 
 <Br>
