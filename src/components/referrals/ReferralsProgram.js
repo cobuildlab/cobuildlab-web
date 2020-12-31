@@ -119,7 +119,7 @@ const ReferralsProgram = () => {
   };
 
   return (
-    <Columns className="referrals">
+    <Columns className="referrals-page">
       <Column isSize={6}>
         <Img fluid={data.file.childImageSharp.fluid} alt="" />
       </Column>
