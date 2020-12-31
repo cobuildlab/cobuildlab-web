@@ -43,7 +43,7 @@ This is an example of a huge company supporting smaller as a partnership.
 
 A few reasons why companies might consider forming a strategic alliance:
 
-* Maximize value for customers. Creating partnerships with complementary companies can make your customers more interested in your products and your sales rise. 
+* Maximize value for customers. Creating partnerships with <a target="_blank" href="https://jooble.org/jobs-remote-web-developer">   complementary companies</a> can make your customers more interested in your products and your sales rise. 
 
 * Reduce your risk. Beyond giving customers more value, expanding your offering helps reduce the risk of loss and be a little more protected against future market fluctuations.
 

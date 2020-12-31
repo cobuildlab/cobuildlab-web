@@ -54,7 +54,7 @@ In this image, you can clearly see this practice which is almost like a religiou
 
 It is also common at this stage to clearly define the investment you must make, how much it will cost you to start and develop the project, how much profit you can achieve, you can think about the segmentation of your target audience and what strategy you will use to reach them, and even visualize marketing strategies.
 
-Quantitative market research is an activity that usually is part of this phase on the Product Development Process. Actually, it is necessary making it for this step and during the whole process if it is possible, even when the product is finished and launched. 
+Quantitative market research is an activity that usually is part of this phase on the <a target="_blank" href="https://jooble.org/jobs-new-product-development-engineer">   Product Development </a> Process. Actually, it is necessary making it for this step and during the whole process if it is possible, even when the product is finished and launched. 
 
 This is the analysis phase of concept, of conceiving the action plan. 
 
