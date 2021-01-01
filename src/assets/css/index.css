@@ -1401,3 +1401,12 @@ img.i-l {
     max-width: 800px;
     max-height: 500px;
 }
+
+.referrals-page {
+    background-image: url(../../resources/img-form.png);
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
