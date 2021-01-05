@@ -18,10 +18,13 @@ const ColumnsStyled = styled(Columns)`
 
 const InputStyled = styled(Input)`
   border-radius: 7px !important;
+  box-shadow: 4px 4px 4px -4px rgba(0,0,0,0.75)!important;
+}
 `;
 
 const TextAreaStyled = styled(TextArea)`
   border-radius: 7px !important;
+  box-shadow: 4px 4px 4px -4px rgba(0, 0, 0, 0.75) !important;
 `;
 
 const DivButtonStyled = styled.div`
@@ -125,9 +128,11 @@ const ReferralsProgram = () => {
       </Column>
       <Column>
         <Paragraph>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-          invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-          accusam et justo duo dolores et.
+          Share with your contacts the opportunity to develop a professional, agile, and
+          cost-effective software tool that improves their company and personal life. And you, earn
+          $5000 by bringing them as customers of our software company. It’s simple- refer qualified
+          customers, and as a thank you, you’ll receive a bonus! Payment will send to your account
+          after the first invoice payment has effective.
         </Paragraph>
         <>
           <form onSubmit={onSubmit}>
