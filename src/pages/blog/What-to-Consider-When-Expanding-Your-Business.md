@@ -52,3 +52,5 @@ You’ll also should consider some specialists you may need to hire to expand yo
 
 There’s a lot to keep in mind while expanding your business but focus on finding your path forward. With proper planning, you’ll be able to make your dreams a reality. Enjoy taking your business to the next level: you deserve it!
 
+
+Credit: <a target="_blank" href="http://womenled.org/">   Womenled </a>
