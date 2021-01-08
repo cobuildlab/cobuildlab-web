@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import H4 from '../Typography/H4';
+import H2 from '../Typography/H2';
 
 const Container = styled.div`
   margin-bottom: 1em;
@@ -9,7 +9,7 @@ const Container = styled.div`
 
 const ServicesTitle = ({ children }) => (
   <Container>
-    <H4>{children}</H4>
+    <H2>{children}</H2>
   </Container>
 );
 

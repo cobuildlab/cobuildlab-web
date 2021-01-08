@@ -9,7 +9,7 @@ const Container = styled.div`
 
 const Text = styled(Paragraph)`
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 1.2;
 `;
 
