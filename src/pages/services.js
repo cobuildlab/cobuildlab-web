@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Hero, HeroHeader, Section, HeroBody as BloomerHeroBody } from 'bloomer';
+import { Container, Hero, HeroHeader, Section, Columns } from 'bloomer';
 import 'bulma/css/bulma.css';
 
 // COMPONENTS
@@ -7,23 +7,15 @@ import Layout from '../components/2020/Layout';
 import Header from '../components/header/Header';
 import SeoMetaTags from '../components/SeoMetaTags';
 
-import ServicesProductDevelopment from '../components/services/ServicesProductDevelopment';
-import ServicesSoftwareDevelopment from '../components/services/ServicesSoftwareDevelopment';
-import ServicesTraining from '../components/services/ServicesTraining';
-import ServicesAgileProjectManagement from '../components/services/ServicesAgileProjectManagement';
+import ServicesHeader from '../components/services/ServicesHeader';
+import ServicesCardSoftware from '../components/services/card/ServicesCardSoftware';
+import ServicesCardProduct from '../components/services/card/ServicesCardProduct';
+import ServicesCardTraining from '../components/services/card/ServicesCardTraining';
+import ServicesCardAgile from '../components/services/card/ServicesCardAgile';
 
-import H1 from '../components/Typography/H1';
-import styled from 'styled-components';
 import Contact from '../components/2020/HomePageContact';
-
-const HeroBody = styled(BloomerHeroBody)`
-  position: relative;
-`;
-
-const Title = styled(H1)`
-  text-align: center;
-  margin-top: 0.5em;
-`;
+import ServicesBannerBackgroundTop from '../components/services/ServicesBannerBackgroundTop';
+import ServicesBannerBackgroundBottom from '../components/services/ServicesBannerBackgroundBottom';
 
 const Services = () => (
   <Layout>
@@ -32,31 +24,23 @@ const Services = () => (
       <HeroHeader>
         <Header />
       </HeroHeader>
-      <HeroBody>
-        <Container>
-          <Title>Services</Title>
-        </Container>
-      </HeroBody>
     </Hero>
     <Section>
+      <ServicesBannerBackgroundTop />
+      <ServicesBannerBackgroundBottom />
       <Container>
-        <ServicesProductDevelopment />
+        <ServicesHeader />
       </Container>
     </Section>
     <Section>
-      <Container>
-        <ServicesSoftwareDevelopment />
-      </Container>
-    </Section>
-    <Section>
-      <Container>
-        <ServicesTraining />
-      </Container>
-    </Section>
-    <Section>
-      <Container>
-        <ServicesAgileProjectManagement />
-      </Container>
+      <Columns isCentered>
+        <ServicesCardProduct />
+        <ServicesCardSoftware />
+      </Columns>
+      <Columns isCentered>
+        <ServicesCardTraining />
+        <ServicesCardAgile />
+      </Columns>
     </Section>
     <Section>
       <Container>

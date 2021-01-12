@@ -8,6 +8,7 @@ import ContactUsColumn from './ContactUsColumn';
 import { FooterWrapper, FooterLogoContainer } from './FooterComponents';
 import CopyRightFooter from './CopyRightFooter';
 import ClutchWidget from './ClutchWidget';
+import B2BCompany from './B2BCompany';
 import logo from '../../../../assets/images/logos/cobuild-lab-white-logo.svg';
 
 const Footer = ({ isFluid }) => (
@@ -21,6 +22,7 @@ const Footer = ({ isFluid }) => (
                 <img src={logo} alt="" />
                 <GoodFirms />
                 <ClutchWidget />
+                <B2BCompany />
               </FooterLogoContainer>
             </Column>
             <Column isSize={{ mobile: 12, desktop: 3 }}>
