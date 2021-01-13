@@ -39,7 +39,7 @@ const ServicesCardSoftware = () => {
   const data = useStaticQuery(query);
   return (
     <>
-      <Column isSize={{ mobile: 12, desktop: 3 }}>
+      <Column isSize={{ mobile: 12, desktop: 4 }}>
         <CardStyled>
           <>
             <Img fluid={data.file.childImageSharp.fluid} alt="" />
