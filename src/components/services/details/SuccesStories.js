@@ -1,53 +1,110 @@
-import React from 'react';
-import { Container, Section } from 'bloomer';
-import { Link } from 'gatsby';
+import React, { useCallback } from 'react';
+import { useStaticQuery, graphql, navigate } from 'gatsby';
+import { Columns, Column, Card } from 'bloomer';
 import styled from 'styled-components';
-import H3 from '../../Typography/H3';
+import H4 from '../../Typography/H4';
+import Img from 'gatsby-image';
 
-const Wrapper = styled.div`
-  text-align: center;
-  margin-bottom: calc(20px + (50 - 20) * ((100vw - 320px) / (1920 - 320)));
-`;
-
-const Redirect = styled(Link)`
-  font-weight: 600;
-  font-size: calc(24px + (42 - 24) * ((100vw - 320px) / (1920 - 320)));
-  margin-bottom: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
-  text-transform: capitalize;
-  color: inherit;
-  transition: color 0.15s ease-in;
-  &:hover {
-    color: #e76c29;
+const query = graphql`
+  query {
+    allCustomerSuccessStoriesDataJson {
+      edges {
+        node {
+          image {
+            childImageSharp {
+              fluid(webpQuality: 72) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+          slug
+          title
+          description
+        }
+      }
+    }
   }
 `;
 
-const CardStories = () => {
-  return (
-    <Section isMarginless id="enterprise-css">
-      <Container>
-        <Wrapper>
-          <H3>
-            <Redirect to="/customer-success-stories">Customer Success Stories</Redirect>
-          </H3>
-        </Wrapper>
-      </Container>
-    </Section>
-  );
-};
+const Title = styled(H4)`
+  text-align: left;
+  font-weight: 100;
+  font-family: 'Lato-Light' !important;
+  width: 351px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 5px;
+`;
+
+const CardStyled = styled(Card)`
+  max-height: 480px;
+  min-height: 520px;
+  box-shadow: 0px 10px 20px #0000001a;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 14px;
+`;
+
+const Image = styled(Img)`
+  height: 300px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+`;
+
+const Container = styled.div`
+  width: 351px;
+  overflow: hidden;
+`;
+
+const Paragraph = styled.p`
+  font-size: 17px;
+  font-family: 'Lato-bold' !important;
+  text-align: left;
+  padding-left: 10px;
+  color: #264a60;
+  padding-right: 10px;
+  margin-top: 5px;
+  overflow: hidden;
+`;
+
+const Readmore = styled.p`
+  font-size: 17px;
+  font-family: 'Lato-bold' !important;
+  text-align: left;
+  padding-left: 10px;
+  color: #e76c29;
+  padding-right: 10px;
+  bottom: 18px;
+  position: absolute;
+  right: 18px;
+  cursor: pointer;
+`;
 
 const SuccessStories = () => {
-  return (
-    <Section isMarginless id="enterprise-css">
-      <Container>
-        <Wrapper>
-          <H3>
-            <Redirect to="/customer-success-stories">Customer Success Stories</Redirect>
-          </H3>
-        </Wrapper>
-        <CardStories />
-      </Container>
-    </Section>
-  );
+  const data = useStaticQuery(query);
+
+  const items = data.allCustomerSuccessStoriesDataJson.edges.slice(0, 3).map(({ node }) => {
+    const handleClick = useCallback(() => {
+      navigate(node.slug);
+    }, [node.slug]);
+
+    return (
+      <Column isSize={{ mobile: 12, desktop: 4 }} key={node.title}>
+        <CardStyled>
+          <>
+            <Image fluid={node.image.childImageSharp.fluid} alt="" />
+          </>
+          <Container>
+            <Title>{node.title}</Title>
+          </Container>
+          <Paragraph>{node.description}</Paragraph>
+          <Readmore onClick={handleClick}>Read More</Readmore>
+        </CardStyled>
+      </Column>
+    );
+  });
+
+  return <Columns isCentered>{items}</Columns>;
 };
 
 export default SuccessStories;
