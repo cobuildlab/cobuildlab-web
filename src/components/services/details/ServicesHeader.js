@@ -5,6 +5,7 @@ import Img from 'gatsby-image';
 import ServiceTitle from './../ServicesTitle';
 import ServicesContent from './../ServicesContent';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Paragraph = styled.p`
   font-size: 17px;
@@ -19,27 +20,19 @@ const Paragraph2 = styled.p`
   color: #264a60;
 `;
 
-const ServicesHeader = () => {
+const ServicesHeader = ({ title, paragraph, paragraph2 }) => {
   const data = useStaticQuery(query);
   return (
     <Columns>
       <Column isSize={{ mobile: 12, desktop: 7 }}>
         <ServicesContent>
-          <ServiceTitle>Cobuild: Product Development</ServiceTitle>
+          <ServiceTitle>{title}</ServiceTitle>
           <Paragraph>
-            Cobuild Is the process of transforming an idea in a sustainable business, through the
-            combination and collaboration of the areas of Lean Entrepreneurship, Business Strategy,
-            Technological Innovation, and Exponential Growth.
+            {paragraph}
             <br />
             <br />
           </Paragraph>
-          <Paragraph2>
-            In this process, we evaluate your idea and help you shape it into a Value Proposition,
-            and test it if necessary. After that, we design together the first version of your
-            product with the purpose of Market Validation, or Product Market Fit to test if we
-            satisfy the need that we intend to satisfy and to acquire our first Customers. From this
-            point and forward we focus on improving the experience, acquire customer and growth.
-          </Paragraph2>
+          <Paragraph2>{paragraph2}</Paragraph2>
         </ServicesContent>
       </Column>
       <Column isHidden="mobile" isSize={5}>
@@ -47,6 +40,12 @@ const ServicesHeader = () => {
       </Column>
     </Columns>
   );
+};
+
+ServicesHeader.propTypes = {
+  title: PropTypes.string.isRequired,
+  paragraph: PropTypes.string.isRequired,
+  paragraph2: PropTypes.string.isRequired,
 };
 
 const query = graphql`

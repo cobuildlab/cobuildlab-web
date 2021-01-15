@@ -46,23 +46,27 @@ const Services = () => (
           title={'Web'}
           subtitle={'Development'}
           cover={'We work behind the curtain to make your website gorgeous and engaging'}
+          to={'web-development'}
         />
         <ServicesCard
           title={'APP'}
           subtitle={'Development'}
           cover={'We develop native apps for iOS and Android'}
+          to={'app-development'}
         />
       </Columns>
       <Columns isCentered>
         <ServicesCard
-          title={'CROSS-PLATFORM'}
+          title={'Cross-Platform'}
           subtitle={'Development'}
           cover={'Let us take your app to multiple platforms and devices'}
+          to={'cross-platform-development'}
         />
         <ServicesCard
           title={'Web'}
           subtitle={'Design'}
           cover={'We create appealing and beautiful content for your web'}
+          to={'web-design'}
         />
       </Columns>
     </Section>
@@ -75,20 +79,16 @@ const Services = () => (
           title={'MVP Software'}
           subtitle={'Development'}
           cover={' Validate and launch your product in a speedy and efficacious way'}
+          to={'mvp-software-development'}
         />
         <ServicesCard
           title={'Product'}
           subtitle={'Development'}
           cover={'Let us turn your idea into a viable product'}
+          to={'product-development'}
         />
       </Columns>
-      <Columns isCentered>
-        <ServicesCard
-          title={'Custom'}
-          subtitle={'Software Development'}
-          cover={'Tailor-made software to take care of your business needs'}
-        />
-      </Columns>
+      <Columns isCentered />
     </Section>
     <Section>
       <StyledTitle>
@@ -99,12 +99,28 @@ const Services = () => (
           title={'Custom Software'}
           subtitle={'Development'}
           cover={'Tailor-made software to take care of your business needs'}
+          to={'custom-software-development'}
         />
-        <ServicesCard title={'Custom Customer'} subtitle={'Management System'} cover={''} />
+        <ServicesCard
+          title={'Custom Customer'}
+          subtitle={'Management System'}
+          cover={''}
+          to={'custom-customer-management-system'}
+        />
       </Columns>
       <Columns isCentered>
-        <ServicesCard title={'Field Service'} subtitle={'Management System'} cover={''} />
-        <ServicesCard title={'Custom Learning'} subtitle={'Management System'} cover={''} />
+        <ServicesCard
+          title={'Field Service'}
+          subtitle={'Management System'}
+          cover={''}
+          to={'field-service-management-system'}
+        />
+        <ServicesCard
+          title={'Custom Learning'}
+          subtitle={'Management System'}
+          cover={''}
+          to={'custom-learning-management-system'}
+        />
       </Columns>
     </Section>
     <Section>
@@ -120,11 +136,13 @@ const Services = () => (
             'Risk-costs reduction, more effective tracking, and faster delivery date.\n' +
             'Efficiency rate will increase with the right guidance and assistance.\n'
           }
+          to={'enterprise-software-development'}
         />
         <ServicesCard
           title={'Process'}
           subtitle={'Automation'}
           cover={'Revolutionize your process and save time and money'}
+          to={'process-automation'}
         />
       </Columns>
       <Columns isCentered>
@@ -137,6 +155,7 @@ const Services = () => (
             'Smart guidance / assistance / direction for digital transformation opportunities\n' +
             'Smart digital transformation opportunities guidance\n'
           }
+          to={'digital-transformation'}
         />
       </Columns>
     </Section>
