@@ -1,5 +1,5 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import React, { useCallback } from 'react';
+import { useStaticQuery, graphql, navigate } from 'gatsby';
 import { Column, Card } from 'bloomer';
 import Img from 'gatsby-image';
 import H4 from '../../Typography/H4';
@@ -52,9 +52,13 @@ const Readmore = styled.p`
   bottom: 18px;
   position: absolute;
   right: 18px;
+  cursor: pointer;
 `;
 
-const ServicesCard = ({ title, subtitle, cover }) => {
+const ServicesCard = ({ title, subtitle, cover, to }) => {
+  const handleClick = useCallback(() => {
+    navigate(to);
+  }, [to]);
   const data = useStaticQuery(query);
   return (
     <>
@@ -73,7 +77,7 @@ const ServicesCard = ({ title, subtitle, cover }) => {
           <Paragraph>
             {cover} {'. '}
           </Paragraph>
-          <Readmore>Read More</Readmore>
+          <Readmore onClick={handleClick}>Read More</Readmore>
         </CardStyled>
       </Column>
     </>
@@ -84,6 +88,7 @@ ServicesCard.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   cover: PropTypes.string.isRequired,
+  to: PropTypes.string.isRequired,
 };
 
 const query = graphql`
