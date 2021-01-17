@@ -125,5 +125,7 @@ module.exports = {
         path: `./src/data/`,
       },
     },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
   ],
 };

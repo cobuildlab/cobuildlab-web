@@ -1,19 +1,17 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 import { Container, Columns, Column, Section } from 'bloomer';
-import Img from 'gatsby-image';
 import Typrography from '../../components/2020/Typography';
 import ButtonSmoothScrolling from '../../components/2020/Button/ButtonSmoothScrolling';
 import '../enterprise/containers/about/about.scss';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const About = () => {
-  const data = useStaticQuery(query);
   return (
     <Section isPaddingless id="about">
       <div className="about-wrapper gradient-color">
         <Container>
           <Columns isDisplay="flex-mobile" isCentered>
-            <Column isSize={{ mobile: 11, desktop: 6 }}>
+            <Column isSize={{ mobile: 11, desktop: 7 }}>
               <div className="row">
                 <div className="about-content-block main-title-wrapper">
                   <div className="row mb-2">
@@ -24,22 +22,48 @@ const About = () => {
                   <ul>
                     <li>
                       <Typrography tag="h3" className="about-twosub-title">
-                        ☛ Product driven process
+                        ☛ Shipping Time: Spot potential issues in your order fulfilment process
                       </Typrography>
                     </li>
                     <li>
                       <Typrography tag="h3" className="about-twosub-title">
-                        ☛ Rapid feature-rich development
+                        ☛ Order Accuracy: Monitor the degree of incidents
                       </Typrography>
                     </li>
                     <li>
                       <Typrography tag="h3" className="about-twosub-title">
-                        ☛ Low code / No Code Solutions for faster development.
+                        ☛ Delivery Time: Track your average delivery time in detail
                       </Typrography>
                     </li>
                     <li>
                       <Typrography tag="h3" className="about-twosub-title">
-                        ☛ iOS and Android experience
+                        ☛ Transportation Costs: Analyze all costs from the order placement to
+                        delivery
+                      </Typrography>
+                    </li>
+                    <li>
+                      <Typrography tag="h3" className="about-twosub-title">
+                        ☛ Warehousing Costs: Optimize the expenses of your warehouse
+                      </Typrography>
+                    </li>
+                    <li>
+                      <Typrography tag="h3" className="about-twosub-title">
+                        ☛ Number of Shipments: Understand how many orders are shipped
+                      </Typrography>
+                    </li>
+                    <li>
+                      <Typrography tag="h3" className="about-twosub-title">
+                        ☛ Inventory Accuracy: Avoid problems because of inaccurate inventory
+                      </Typrography>
+                    </li>
+                    <li>
+                      <Typrography tag="h3" className="about-twosub-title">
+                        ☛ Inventory Turnover: Track how many times your entire inventory is sold
+                      </Typrography>
+                    </li>
+                    <li>
+                      <Typrography tag="h3" className="about-twosub-title">
+                        ☛ Inventory to Sales Ratio: Identify a potential overstock
                       </Typrography>
                     </li>
                   </ul>
@@ -49,9 +73,11 @@ const About = () => {
                 </div>
               </div>
             </Column>
-            <div id="our-mission-anchor"></div>
-            <Column isSize={{ mobile: 10, desktop: 5 }} isHidden="mobile">
-              <Img fluid={data.file.childImageSharp.fluid} alt="" />
+            <Column isSize={{ mobile: 10, desktop: 4 }} isHidden="mobile" isVCentered>
+              <StaticImage
+                src="../../assets/images/about/group-banner.png"
+                alt="Logistics and Supply Chain"
+              />
             </Column>
           </Columns>
         </Container>
@@ -60,39 +86,51 @@ const About = () => {
         <br />
         <Container>
           <Columns isDisplay="flex-mobile" isCentered>
-            <Column isSize={{ mobile: 10, desktop: 5 }} isHidden="mobile">
-              <Img fluid={data.imagesCardOne.childImageSharp.fluid} alt="" />
+            <Column isSize={{ mobile: 10, desktop: 4 }} isHidden="mobile">
+              <StaticImage
+                src="../../assets/images/skills/cobuild-lab-customers.png"
+                alt="Productivity Problems"
+              />
             </Column>
-            <Column isSize={{ mobile: 11, desktop: 6 }}>
+            <Column isSize={{ mobile: 11, desktop: 7 }}>
               <div className="row">
                 <div className="about-content-block main-title-wrapper">
                   <div className="sub-title-wrapper">
                     <div className="row mb-2">
                       <Typrography tag="h2" className="sitemain-subtitle">
-                        For Enterprises
+                        Solving Productivity problems
                       </Typrography>
                     </div>
                   </div>
-
                   <ul>
                     <li>
                       <Typrography tag="h3" className="about-twosub-title">
-                        ☛ We turn logistics and productivity problems into competitive advantages.
+                        ☛ Track, Manage and Automate custom processes in your organization
                       </Typrography>
                     </li>
                     <li>
                       <Typrography tag="h3" className="about-twosub-title">
-                        ☛ Reduce risks, errors and costs through process and workflow automation.
+                        ☛ Obtain 360 degrees visibility of your Business
                       </Typrography>
                     </li>
                     <li>
                       <Typrography tag="h3" className="about-twosub-title">
-                        ☛ Low code / No Code Solutions for faster development.
+                        ☛ Identify instantly and Fix errors in your processes.
                       </Typrography>
                     </li>
                     <li>
                       <Typrography tag="h3" className="about-twosub-title">
-                        ☛ iOS and Android experience
+                        ☛ Automate reporting and KPIs
+                      </Typrography>
+                    </li>
+                    <li>
+                      <Typrography tag="h3" className="about-twosub-title">
+                        ☛ Follow and automate compliance
+                      </Typrography>
+                    </li>
+                    <li>
+                      <Typrography tag="h3" className="about-twosub-title">
+                        ☛ Streamline time-consuming approvals workflows
                       </Typrography>
                     </li>
                   </ul>
@@ -108,45 +146,5 @@ const About = () => {
     </Section>
   );
 };
-
-const query = graphql`
-  query {
-    file(relativePath: { eq: "about/group-banner.png" }) {
-      childImageSharp {
-        fluid(webpQuality: 72) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    imagesCardOne: file(relativePath: { eq: "skills/cobuild-lab-customers.png" }) {
-      childImageSharp {
-        fluid(webpQuality: 72) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    background: file(relativePath: { eq: "video/video-back.jpg" }) {
-      childImageSharp {
-        fluid {
-          src
-        }
-      }
-    }
-    videoBtn: file(relativePath: { eq: "video/video-border.png" }) {
-      childImageSharp {
-        fluid(pngQuality: 50) {
-          src
-        }
-      }
-    }
-    btnContainer: file(relativePath: { eq: "video/video-btn.png" }) {
-      childImageSharp {
-        fluid(pngQuality: 10) {
-          src
-        }
-      }
-    }
-  }
-`;
 
 export { About };

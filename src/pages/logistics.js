@@ -2,7 +2,7 @@ import React from 'react';
 import SeoMetaTags from '../components/SeoMetaTags';
 import { Banner } from '../components/logistics-landing/Banner';
 import { About } from '../components/logistics-landing/About';
-import Service from '../components/enterprise-logistics/containers/service';
+import { Service } from '../components/logistics-landing/Service';
 import Project from '../components/enterprise/containers/project';
 import Testimonial from '../components/enterprise/containers/testimonial/Testimonial';
 import Contact from '../components/enterprise/containers/contact/ContactEnterprise';
