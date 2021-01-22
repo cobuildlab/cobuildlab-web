@@ -1,7 +1,6 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 import { Column, Columns } from 'bloomer';
-import Img from 'gatsby-image';
+import { StaticImage } from 'gatsby-plugin-image';
 import ServiceTitle from './ServicesTitle';
 import ServicesSubTitle from './ServicesSubTitle';
 import ServicesContent from './ServicesContent';
@@ -16,7 +15,6 @@ const Paragraph = styled.p`
 `;
 
 const ServicesHeader = () => {
-  const data = useStaticQuery(query);
   return (
     <Columns>
       <Column isSize={{ mobile: 12, desktop: 6 }}>
@@ -35,22 +33,10 @@ const ServicesHeader = () => {
         </ServicesContent>
       </Column>
       <Column isHidden="mobile" isSize={6}>
-        <Img fluid={data.file.childImageSharp.fluid} alt="" />
+        <StaticImage src={'./../../assets/images/service/product-development-new.png'} alt="" />
       </Column>
     </Columns>
   );
 };
-
-const query = graphql`
-  query {
-    file(relativePath: { eq: "service/product-development-new.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`;
 
 export default ServicesHeader;
