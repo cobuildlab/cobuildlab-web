@@ -14,7 +14,7 @@ const Weedmatch = ({ title, description, to }) => {
           'Weedmatch Weedmatch  is the  first free cannabis social network  made by a group of Venezuelans led by its founder Oscar Lopez in Chile…'
         }
         to={'/customer-success-stories/weedmatch'}>
-        <StaticImage src={'./../assets/images/customers/Weedmatch.jpg'} alt="" />
+        <StaticImage src={'./../../../../assets/images/customers/Weedmatch.jpg'} alt="" />
       </Card>
     </Column>
   );

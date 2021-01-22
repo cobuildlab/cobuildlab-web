@@ -39,6 +39,7 @@ const Mama = ({ data }) => (
               lightning-fast introductions. In a time where we are often left to our own devices,
               people can feel isolated and still struggle to make rewarding connections. MAMA is
               here to solve that problem!
+              <br />
             </DetailParagraph>
             <DetailParagraph>
               Its founders{' '}

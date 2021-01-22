@@ -14,7 +14,7 @@ const Mama = ({ title, description, to }) => {
           'The Match-Making app MAMA is a fun and easy-to-use connectivity tool that makes lightning-fast introductions.'
         }
         to={'/customer-success-stories/mama'}>
-        <StaticImage src={'./../assets/images/customers/mama.png'} alt="" />
+        <StaticImage src={'./../../../../assets/images/customers/mama.png'} alt="" />
       </Card>
     </Column>
   );

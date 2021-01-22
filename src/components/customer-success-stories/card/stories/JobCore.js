@@ -14,7 +14,7 @@ const JobCore = ({ title, description, to }) => {
           'Get work fast and get paid the same day with Jobcore. This is a web platform that allows employers to post job applications for candidates…'
         }
         to={'/customer-success-stories/jobcore'}>
-        <StaticImage src={'./../assets/images/customers/jobcore.jpg'} alt="" />
+        <StaticImage src={'./../../../../assets/images/customers/jobcore.jpg'} alt="" />
       </Card>
     </Column>
   );
