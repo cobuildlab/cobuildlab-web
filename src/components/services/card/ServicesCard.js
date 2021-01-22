@@ -36,9 +36,9 @@ const Paragraph = styled.p`
   font-size: 17px;
   font-family: 'Lato-bold' !important;
   text-align: left;
-  padding-left: 10px;
+  padding-left: 28px;
   color: #264a60;
-  padding-right: 10px;
+  padding-right: 24px;
   margin-top: 5px;
 `;
 

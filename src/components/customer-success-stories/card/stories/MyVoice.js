@@ -14,7 +14,7 @@ const MyVoice = ({ title, description, to }) => {
           'Cobuild Lab partnered up with Kadem Education to raise teacher’s voices by building a software solution.'
         }
         to={'/customer-success-stories/my-voice'}>
-        <StaticImage src={'./../assets/images/customers/my-voice.jpg'} alt="" />
+        <StaticImage src={'./../../../../assets/images/customers/my-voice.jpg'} alt="" />
       </Card>
     </Column>
   );

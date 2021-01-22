@@ -11,6 +11,8 @@ const Title = styled(H4)`
   font-weight: 100;
   font-family: 'Lato-Light' !important;
   margin-top: -100px;
+  padding-left: 35px;
+  padding-right: 39px;
 `;
 
 const CardStyled = styled(Card)`
@@ -22,9 +24,10 @@ const Paragraph = styled.p`
   font-size: 17px;
   font-family: 'Lato-regular' !important;
   text-align: left;
-  padding-left: 10px;
+  padding-left: 35px;
   color: #264a60;
-  padding-right: 10px;
+  padding-right: 39px;
+  padding-bottom: 23px;
   margin-top: 5px;
 `;
 

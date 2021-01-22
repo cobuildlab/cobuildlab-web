@@ -90,7 +90,7 @@ const DetailCarousel = ({ children }) => {
       <GrayBackground />
       <Wrapper>
         <StaticImage
-          src={'./../../../assets/images/customers/carousel-laptop.png'}
+          src={'./../../../../assets/images/customers/carousel-laptop.png'}
           alt="carousel"
         />
         <SliderContainer>

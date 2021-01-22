@@ -34,11 +34,14 @@ const Title = styled(H4)`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-left: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  padding-top: 8px;
 `;
 
 const CardStyled = styled(Card)`
-  max-height: 480px;
+  max-height: 565px;
   min-height: 520px;
   box-shadow: 0px 10px 20px #0000001a;
   background: rgba(255, 255, 255, 0.5);
@@ -60,9 +63,10 @@ const Paragraph = styled.p`
   font-size: 17px;
   font-family: 'Lato-bold' !important;
   text-align: left;
-  padding-left: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 12px;
   color: #264a60;
-  padding-right: 10px;
   margin-top: 5px;
   overflow: hidden;
 `;
@@ -70,13 +74,14 @@ const Paragraph = styled.p`
 const Readmore = styled.p`
   font-size: 17px;
   font-family: 'Lato-bold' !important;
-  text-align: left;
+  text-align: right;
   padding-left: 10px;
   color: #e76c29;
   padding-right: 10px;
-  bottom: 18px;
-  position: absolute;
-  right: 18px;
+  margin-bottom: 14px;
+  position: relative;
+  right: 29px;
+  margin-top: 14px;
   cursor: pointer;
 `;
 

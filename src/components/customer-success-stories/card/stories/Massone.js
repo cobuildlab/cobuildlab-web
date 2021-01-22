@@ -14,7 +14,7 @@ const Massone = ({ title, description, to }) => {
           'Massone Mechanical Massone Mechanical offers maintenance and installation services to commercial refrigeration companies. Offering high…'
         }
         to={'/customer-success-stories/massone'}>
-        <StaticImage src={'./../assets/images/customers/Massone.jpg'} alt="" />
+        <StaticImage src={'./../../../../assets/images/customers/Massone.jpg'} alt="" />
       </Card>
     </Column>
   );
