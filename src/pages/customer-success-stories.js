@@ -10,8 +10,8 @@ import { TextOrange } from '../components/Typography/TextHelpers';
 import Layout from '../components/2020/Layout';
 import Header from '../components/header/Header';
 import BannerBackground from '../components/2020/BannerBackground';
-import CustomerSuccessStories from '../components/customer-success-stories/CustomerSuccessStories';
 import Contact from '../components/2020/HomePageContact';
+import SuccessStories from '../components/customer-success-stories/SuccessStories';
 
 const Wrapper = styled.div`
   position: relative;
@@ -72,7 +72,7 @@ const CustomerSuccessStoriesIndex = () => (
     <Section>
       <Container>
         <CustomesWrapper>
-          <CustomerSuccessStories />
+          <SuccessStories />
         </CustomesWrapper>
       </Container>
     </Section>

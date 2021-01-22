@@ -12,6 +12,7 @@ module.exports = {
     twitterHandle: '@cobuildlab',
   },
   plugins: [
+    `gatsby-plugin-image`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-styled-components`,
