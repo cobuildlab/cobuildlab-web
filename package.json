@@ -15,7 +15,7 @@
     "core-js": "3.8.1",
     "disqus-react": "1.0.10",
     "dotenv": "^6.1.0",
-    "gatsby": "^2.30.1",
+    "gatsby": "^2.24.92",
     "gatsby-cli": "2.16.2",
     "gatsby-image": "2.8.0",
     "gatsby-plugin-amp": "^0.2.2",
@@ -90,6 +90,7 @@
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
+    "clean": "gatsby clean",
     "dev": "gatsby develop",
     "eslint": "eslint --ext .js,.jsx --fix --ignore-pattern public --ignore-pattern '!.eslintrc.js' .",
     "test": "echo \"Error: no test specified\" && exit 1",

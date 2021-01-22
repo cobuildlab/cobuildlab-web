@@ -40,6 +40,7 @@ export default class Contact extends PureComponent {
       isLoading: false,
     };
     this.url = '';
+    this.locationJSON = JSON.stringify(location);
     this.urlState = queryString.parse(location.hash);
     this.handleChange = this.handleChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
@@ -108,7 +109,8 @@ export default class Contact extends PureComponent {
       landing: landingName,
     };
 
-    data.message += ' \nutm_source:' + localStorage.getItem('utm_source');
+    data.message += '\nutm_source:' + localStorage.getItem('utm_source');
+    data.message += '\n<br/>location extra:' + this.locationJSON;
 
     const settings = {
       method: 'POST',
