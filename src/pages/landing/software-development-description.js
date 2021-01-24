@@ -3,20 +3,20 @@ import { Columns, Column } from 'bloomer';
 import 'bulma/css/bulma.css';
 
 // COMPONENTS
-import LandingPageLayout from '../components/2020/LandingPageLayout';
-import BadgeIndustry from '../components/2020/BadgeIndustry';
-import NewLandingForm from '../components/2020/NewLandingForm';
-import YouTubeVideo from '../components/YouTubeVideo';
-import Testimonial from '../components/Testimonial';
+import LandingPageLayout from '../../components/2020/LandingPageLayout';
+import BadgeIndustry from '../../components/2020/BadgeIndustry';
+import NewLandingForm from '../../components/2020/NewLandingForm';
+import YouTubeVideo from '../../components/YouTubeVideo';
+import Testimonial from '../../components/Testimonial';
 
 // TYPOGRAPHY
 import {
   CustomH1 as H1,
   CustomH2 as H2,
   CustomParagraph as Paragraph,
-} from '../components/2020/LandingTypography';
-import ButtonSmoothScrolling from '../components/2020/Button/ButtonSmoothScrolling';
-import Skills from '../components/enterprise/containers/skills';
+} from '../../components/2020/LandingTypography';
+import ButtonSmoothScrolling from '../../components/2020/Button/ButtonSmoothScrolling';
+import Skills from '../../components/enterprise/containers/skills';
 
 export default class SoftwareDevDescription extends Component {
   render() {

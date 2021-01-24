@@ -3,29 +3,33 @@ import { Columns, Column } from 'bloomer';
 import 'bulma/css/bulma.css';
 
 // COMPONENTS
-import LandingPageLayout from '../components/2020/LandingPageLayout';
-import YouTubeVideo from '../components/YouTubeVideo';
-import BadgeIndustry from '../components/2020/BadgeIndustry';
-import NewLandingForm from '../components/2020/NewLandingForm';
-import Testimonial from '../components/Testimonial';
+import LandingPageLayout from '../../components/2020/LandingPageLayout';
+import BadgeIndustry from '../../components/2020/BadgeIndustry';
+import NewLandingForm from '../../components/2020/NewLandingForm';
+import YouTubeVideo from '../../components/YouTubeVideo';
+import Testimonial from '../../components/Testimonial';
 
 // TYPOGRAPHY
 import {
   CustomH1 as H1,
   CustomH2 as H2,
   CustomParagraph as Paragraph,
-} from '../components/2020/LandingTypography';
-import ButtonSmoothScrolling from '../components/2020/Button/ButtonSmoothScrolling';
-import Skills from '../components/enterprise/containers/skills';
-import { CaseStudy } from '../components/2020/CaseStudy';
-import Brand from '../components/enterprise/containers/brands';
+} from '../../components/2020/LandingTypography';
+import ButtonSmoothScrolling from '../../components/2020/Button/ButtonSmoothScrolling';
+import Skills from '../../components/enterprise/containers/skills';
+import Brand from '../../components/enterprise/containers/brands';
 
-export default class AppsDevStudy extends Component {
+class AppsDevDescription extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   render() {
-    const siteTitle = 'Developing Web and Mobile Applications Fast and Effectively';
+    const siteTitle = 'Developing Web and Mobile Applications Fast and Effective';
     const siteDescription =
       'We partner with Entrepreneurs, Small and Medium-sized Businesses, to transform ideas into working Web and Mobile Applications.';
-    const landingName = 'Apps Development Study Case';
+    const landingName = 'Apps Development Description';
 
     return (
       <LandingPageLayout siteDescription={siteDescription} siteTitle={siteTitle}>
@@ -54,10 +58,7 @@ export default class AppsDevStudy extends Component {
           </Column>
         </Columns>
 
-        <br />
-        <br />
         <Brand />
-        <CaseStudy />
 
         <Columns>
           <Column>
@@ -78,3 +79,5 @@ export default class AppsDevStudy extends Component {
     );
   }
 }
+
+export default AppsDevDescription;

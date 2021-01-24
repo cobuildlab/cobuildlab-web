@@ -1,7 +1,5 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import { Container, Columns, Column, Section } from 'bloomer';
-import Img from 'gatsby-image';
+import { Container, Columns, Column, Section, HeroBody } from 'bloomer';
 import Typrography from '../2020/Typography';
 import BannerButtons from '../enterprise-logistics/containers/banner/BannerButtons';
 import AnimationImages from '../enterprise-logistics/containers/banner/AnimationImages';
@@ -17,6 +15,8 @@ import img6 from '../../assets/images/banner/animation/6.png';
 import img7 from '../../assets/images/banner/animation/7.png';
 import img8 from '../../assets/images/banner/animation/8.png';
 import img9 from '../../assets/images/banner/animation/9.png';
+import { StaticImage } from 'gatsby-plugin-image';
+import NewLandingForm from '../2020/NewLandingForm';
 
 export const SectionsWrapper = styled.div`
   position: relative;
@@ -24,6 +24,9 @@ export const SectionsWrapper = styled.div`
 `;
 
 const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
+const ANIMATION = images.map((node, index) => (
+  <AnimationImages src={node} key={index} index={index} />
+));
 
 const title = {
   default: {
@@ -44,66 +47,51 @@ const subTitle = {
 };
 
 const Banner = () => {
-  const data = useStaticQuery(query);
-
-  const animation = images.map((node, index) => (
-    <AnimationImages src={node} key={index} index={index} />
-  ));
-
   return (
     <Section isPaddingless id="banner">
       <SectionsWrapper>
-        <div className="banner-wrapper demo1">
-          <div className="banner-outer">
-            <div className="slider-animation-images">{animation}</div>
-            <Container>
-              <Columns isDisplay="flex">
-                <Column isSize={6}>
-                  <div className="row">
-                    <div className="banner-content">
-                      <Typrography tag="h2" className="sitemain-subtitle">
-                        A SOFTWARE DEVELOPMENT COMPANY
-                      </Typrography>
-                      <br />
-                      <Typrography size={title} tag="h2">
-                        We solve <span className="enterprise-text-orange">Logistics</span> and{' '}
-                        <span className="enterprise-text-orange">Productivity</span> problems with
-                        custom software solutions.
-                      </Typrography>
-                      <br />
-                      <Typrography size={subTitle} tag="h1">
-                        Let’s <span className="enterprise-text-orange">Build</span> a Great
-                        <span className="enterprise-text-orange"> Idea.</span>
-                      </Typrography>
-                      <br />
-                      <div className="banner-btn-wrapper">
-                        <BannerButtons />
-                      </div>
-                    </div>
-                  </div>
-                </Column>
-                <Column isHidden="mobile" isSize={5}>
-                  <Img fluid={data.heroImages.childImageSharp.fluid} alt="" />
-                </Column>
-              </Columns>
-            </Container>
-          </div>
-        </div>
+        <div className="slider-animation-images">{ANIMATION}</div>
+        <Container>
+          <Columns isDisplay="flex" isVCentered>
+            <Column isSize={6}>
+              <Typrography tag="h2" className="sitemain-subtitle">
+                A SOFTWARE DEVELOPMENT COMPANY
+              </Typrography>
+              <br />
+              <Typrography size={title} tag="h2">
+                We solve <span className="enterprise-text-orange">Logistics</span> and{' '}
+                <span className="enterprise-text-orange">Productivity</span> problems with custom
+                software solutions.
+              </Typrography>
+              <br />
+              <Typrography size={subTitle} tag="h1">
+                Let’s <span className="enterprise-text-orange">Build</span> a Great
+                <span className="enterprise-text-orange"> Idea.</span>
+              </Typrography>
+              <br />
+              <div className="banner-btn-wrapper">
+                <BannerButtons />
+              </div>
+              <HeroBody>
+                <Container hasTextAlign="centered">
+                  <StaticImage
+                    maxWidth={350}
+                    maxHeight={350}
+                    src={'../../assets/images/banner/group-banner-2.png'}
+                    alt={'banner'}
+                  />
+                </Container>
+              </HeroBody>
+            </Column>
+            <Column isHidden="mobile" isSize={5}>
+              <br />
+              <NewLandingForm landingName={'logistics'} />
+            </Column>
+          </Columns>
+        </Container>
       </SectionsWrapper>
     </Section>
   );
 };
-
-const query = graphql`
-  query {
-    heroImages: file(relativePath: { eq: "banner/group-banner-2.png" }) {
-      childImageSharp {
-        fluid(webpQuality: 72) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`;
 
 export { Banner };

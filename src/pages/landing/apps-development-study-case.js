@@ -3,33 +3,33 @@ import { Columns, Column } from 'bloomer';
 import 'bulma/css/bulma.css';
 
 // COMPONENTS
-import LandingPageLayout from '../components/2020/LandingPageLayout';
-import BadgeIndustry from '../components/2020/BadgeIndustry';
-import NewLandingForm from '../components/2020/NewLandingForm';
-import Testimonial from '../components/Testimonial';
-import YouTubeVideo from '../components/YouTubeVideo';
+import LandingPageLayout from '../../components/2020/LandingPageLayout';
+import YouTubeVideo from '../../components/YouTubeVideo';
+import BadgeIndustry from '../../components/2020/BadgeIndustry';
+import NewLandingForm from '../../components/2020/NewLandingForm';
+import Testimonial from '../../components/Testimonial';
 
 // TYPOGRAPHY
 import {
   CustomH1 as H1,
   CustomH2 as H2,
   CustomParagraph as Paragraph,
-} from '../components/2020/LandingTypography';
-import ButtonSmoothScrolling from '../components/2020/Button/ButtonSmoothScrolling';
-import Skills from '../components/enterprise/containers/skills';
-import { AgileGraphic } from '../components/2020/AgileGraphic';
-import Brand from '../components/enterprise/containers/brands';
+} from '../../components/2020/LandingTypography';
+import ButtonSmoothScrolling from '../../components/2020/Button/ButtonSmoothScrolling';
+import Skills from '../../components/enterprise/containers/skills';
+import { CaseStudy } from '../../components/2020/CaseStudy';
+import Brand from '../../components/enterprise/containers/brands';
 
-export default class AppsDevGraphic extends Component {
+export default class AppsDevStudy extends Component {
   render() {
     const siteTitle = 'Developing Web and Mobile Applications Fast and Effectively';
     const siteDescription =
       'We partner with Entrepreneurs, Small and Medium-sized Businesses, to transform ideas into working Web and Mobile Applications.';
-    const landingName = 'Apps Development Graphic';
+    const landingName = 'Apps Development Study Case';
 
     return (
       <LandingPageLayout siteDescription={siteDescription} siteTitle={siteTitle}>
-        <Columns isDesktop>
+        <Columns isDesktop isVCentered>
           <Column isSize={{ desktop: 7 }}>
             <H1>{siteTitle}</H1>
             <H2>{siteDescription}</H2>
@@ -44,7 +44,6 @@ export default class AppsDevGraphic extends Component {
                 <Paragraph>- Target Android and IOS users</Paragraph>
               </li>
             </ul>
-
             <ButtonSmoothScrolling href="#landing-contact-form">
               Book a FREE 1 hour Consultation
             </ButtonSmoothScrolling>
@@ -58,7 +57,7 @@ export default class AppsDevGraphic extends Component {
         <br />
         <br />
         <Brand />
-        <AgileGraphic />
+        <CaseStudy />
 
         <Columns>
           <Column>
