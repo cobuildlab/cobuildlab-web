@@ -1,7 +1,5 @@
 import React from 'react';
-import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
@@ -10,11 +8,12 @@ import DetailParagraph from '../../components/customer-success-stories/DetailPar
 // import DetailCarousel from '../../components/customer-success-stories/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
-import DetailSection from '../../components/customer-success-stories/DetailSection';
+import DetailSection from '../../components/customer-success-stories/new/DetailSection';
 import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 import { List, ListItem } from '../../components/Typography/List';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Ezonseller = ({ data }) => (
   <DetailLayout>
@@ -52,7 +51,10 @@ const Ezonseller = ({ data }) => (
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroImagesContent>
-              <Img fuild={data.logo.childImageSharp.fluid} alt="" />
+              <StaticImage
+                src={'./../../assets/images/customers/4geek/logo.png'}
+                alt={'4geeks logo'}
+              />
             </DetailHeroImagesContent>
             <DetailHeroImagesContent>
               <DetailVideo />
@@ -62,7 +64,9 @@ const Ezonseller = ({ data }) => (
       </Container>
     </Section>
 
-    <DetailSection src={data.textImagesOne.childImageSharp.fluid} left>
+    <DetailSection
+      image={<StaticImage src={'./../../assets/images/customers/laptop-left.png'} alt="" />}
+      left>
       <DetailSubTitle>
         What is the <TextOrange>Ezonseller platform?</TextOrange>
       </DetailSubTitle>
@@ -81,7 +85,9 @@ const Ezonseller = ({ data }) => (
         </blockquote>
       </DetailParagraph>
     </DetailSection>
-    <DetailSection src={data.textImagesTwo.childImageSharp.fluid}>
+    <DetailSection
+      image={<StaticImage src={'./../../assets/images/customers/laptop-right.png'} alt="" />}
+      right>
       <DetailSubTitle>
         How everything <TextOrange>started:</TextOrange>
       </DetailSubTitle>
@@ -114,7 +120,7 @@ const Ezonseller = ({ data }) => (
       </div>
     </DetailSection>
 
-    {/* 
+    {/*
       <Section isPaddingless>
         <DetailCarousel  />
       </Section>
@@ -129,31 +135,5 @@ const Ezonseller = ({ data }) => (
 Ezonseller.propTypes = {
   data: PropTypes.object.isRequired,
 };
-
-export const pageQuery = graphql`
-  query {
-    textImagesOne: file(relativePath: { eq: "customers/laptop-left.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    textImagesTwo: file(relativePath: { eq: "customers/laptop-right.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    logo: file(relativePath: { eq: "customers/collabtogrow-logo.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`;
 
 export default Ezonseller;

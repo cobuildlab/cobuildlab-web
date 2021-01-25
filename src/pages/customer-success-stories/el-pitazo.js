@@ -61,38 +61,6 @@ const ElPitazo = ({ data }) => (
               give users the possibility of having up-to-date news available in the palm of their
               hands with no restrictions.
             </DetailParagraph>
-            <DetailSubTitle>
-              The <TextOrange> Challenge </TextOrange>
-            </DetailSubTitle>
-            <DetailParagraph>
-              The real challenge lies in the restrictions arbitrarily imposed by the Venezuelan
-              government on some print, audiovisual and digital media, including El Pitazo, which
-              website is currently blocked throughout the national territory.
-              <List>
-                <ListItem>
-                  We had to develop a software solution capable of overcoming all the restrictions
-                  imposed in Venezuela and that would also have a user-friendly interface with an
-                  eye-pleasing design and a very intuitive{' '}
-                  <TextLink to="https://cobuildlab.com/blog/user-experience/amp/">
-                    user experience
-                  </TextLink>
-                  .
-                </ListItem>
-                <ListItem>
-                  Since El Pitazo is a digital news media, it was crucial that the product
-                  simultaneously displayed the same information posted on the web platform.
-                </ListItem>
-                <ListItem>
-                  Users had to be able to download and view content offline and share it through
-                  other channels or apps such as Whatsapp, Twitter, Facebook, etc.{' '}
-                </ListItem>
-                <ListItem>
-                  We also had to build a system for the exclusive use of EL Pitazo{"'"}s technical
-                  team, which would provide data on users{"'"} behavior and thus understand exactly
-                  who is interested in their content.{' '}
-                </ListItem>
-              </List>
-            </DetailParagraph>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroImagesContent>
@@ -102,9 +70,50 @@ const ElPitazo = ({ data }) => (
         </Columns>
       </Container>
     </Section>
+
     <DetailSection
       image={<StaticImage src={'./../../assets/images/customers/el-pitazo/pitazoo-6.png'} alt="" />}
       right>
+      <DetailSubTitle>
+        The <TextOrange> Challenge </TextOrange>
+      </DetailSubTitle>
+      <DetailParagraph>
+        The real challenge lies in the restrictions arbitrarily imposed by the Venezuelan government
+        on some print, audiovisual and digital media, including El Pitazo, which website is
+        currently blocked throughout the national territory.
+      </DetailParagraph>
+      <br />
+      <DetailParagraph>
+        <List>
+          <ListItem>
+            We had to develop a software solution capable of overcoming all the restrictions imposed
+            in Venezuela and that would also have a user-friendly interface with an eye-pleasing
+            design and a very intuitive{' '}
+            <TextLink to="https://cobuildlab.com/blog/user-experience/amp/">
+              user experience
+            </TextLink>
+            .
+          </ListItem>
+          <ListItem>
+            Since El Pitazo is a digital news media, it was crucial that the product simultaneously
+            displayed the same information posted on the web platform.
+          </ListItem>
+          <ListItem>
+            Users had to be able to download and view content offline and share it through other
+            channels or apps such as Whatsapp, Twitter, Facebook, etc.{' '}
+          </ListItem>
+          <ListItem>
+            We also had to build a system for the exclusive use of EL Pitazo{"'"}s technical team,
+            which would provide data on users{"'"} behavior and thus understand exactly who is
+            interested in their content.{' '}
+          </ListItem>
+        </List>
+      </DetailParagraph>
+    </DetailSection>
+
+    <DetailSection
+      image={<StaticImage src={'./../../assets/images/customers/el-pitazo/pitazoo-6.png'} alt="" />}
+      left>
       <DetailSubTitle>
         The <TextOrange>Solution</TextOrange>
       </DetailSubTitle>
@@ -161,7 +170,7 @@ const ElPitazo = ({ data }) => (
 
     <DetailSection
       image={<StaticImage src={'./../../assets/images/customers/el-pitazo/pitazo-2.png'} alt="" />}
-      left>
+      right>
       <DetailSubTitle>
         The <TextOrange>Result</TextOrange>
       </DetailSubTitle>

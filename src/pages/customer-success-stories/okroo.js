@@ -1,5 +1,4 @@
 import React from 'react';
-import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
@@ -11,11 +10,12 @@ import DetailSubTitle from '../../components/customer-success-stories/DetailSubT
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
-import DetailSection from '../../components/customer-success-stories/DetailSection';
+import DetailSection from '../../components/customer-success-stories/new/DetailSection';
 import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 import { TextOrange } from '../../components/Typography/TextHelpers';
 import TextLink from '../../components/Typography/TextLink';
 import { List, ListItem } from '../../components/Typography/List';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Okroo = ({ data }) => (
   <DetailLayout>
@@ -76,14 +76,16 @@ const Okroo = ({ data }) => (
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroImagesContent>
-              <Img fluid={data.logo.childImageSharp.fluid} alt="" />
+              <StaticImage src={'./../../assets/images/customers/okroo/logo.jpg'} alt="" />
             </DetailHeroImagesContent>
           </Column>
         </Columns>
       </Container>
     </Section>
 
-    <DetailSection src={data.textImagesOne.childImageSharp.fluid}>
+    <DetailSection
+      image={<StaticImage src={'./../../assets/images/customers/okroo/1.png'} alt="" />}
+      right>
       <DetailSubTitle>
         THE <TextOrange>CHALLENGES</TextOrange>
       </DetailSubTitle>
@@ -127,7 +129,9 @@ const Okroo = ({ data }) => (
       </List>
     </DetailSection>
 
-    <DetailSection src={data.textImagesTwo.childImageSharp.fluid} left>
+    <DetailSection
+      image={<StaticImage src={'./../../assets/images/customers/okroo/2.png'} alt="" />}
+      left>
       <DetailSubTitle>
         THE <TextOrange>SOLUTION</TextOrange>
       </DetailSubTitle>
@@ -183,7 +187,9 @@ const Okroo = ({ data }) => (
       </List>
     </DetailSection>
 
-    <DetailSection src={data.textImagesThird.childImageSharp.fluid}>
+    <DetailSection
+      image={<StaticImage src={'./../../assets/images/customers/okroo/3.png'} alt="" />}
+      right>
       <DetailSubTitle>
         THE <TextOrange>RESULTS</TextOrange>
       </DetailSubTitle>
@@ -240,34 +246,6 @@ export const pageQuery = graphql`
           width
           height
           src
-        }
-      }
-    }
-    logo: file(relativePath: { eq: "customers/okroo/logo.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    textImagesOne: file(relativePath: { eq: "customers/okroo/1.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    textImagesTwo: file(relativePath: { eq: "customers/okroo/2.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    textImagesThird: file(relativePath: { eq: "customers/okroo/3.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
