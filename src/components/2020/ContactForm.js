@@ -130,14 +130,13 @@ const INDUSTRIES = [
   '  Real Estate',
   '  Recreational Facilities & Services',
   '  Religious Institutions',
-  '  Renewables & Envirnoment',
+  '  Renewables & Environment',
   '  Research',
   '  Restaurants',
   '  Retail',
   '  Security & Investigations',
   '  Semiconducs',
   '  Shipbuilding',
-  '  Sporting Goods',
   '  Sporting Goods',
   '  Staffing & Recruiting',
   '  Supermarkets',
@@ -202,7 +201,9 @@ export default class Contact extends PureComponent {
   }
 
   handleChange(e) {
+    console.log('CHANGE', e);
     const field = { [e.target.name]: e.target.value };
+    console.log('CHANGE', e.target.name, e.target.value);
     this.setState((state) => ({
       data: {
         ...state.data,
@@ -339,7 +340,7 @@ export default class Contact extends PureComponent {
         <Field>
           <Control>
             <Label htmlFor="industry-field">Industry</Label>
-            <Select isSize={'isLarge'}>
+            <Select isSize={'isLarge'} onChange={this.handleChange} name="industry">
               {INDUSTRIES.map((i) => (
                 <option key={i}>{i}</option>
               ))}
