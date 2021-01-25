@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
 import { Section, Container, Columns, Column } from 'bloomer';
 import SeoMetaTags from '../../components/SeoMetaTags';
 
@@ -10,13 +9,14 @@ import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 
-import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
-import DetailSection from '../../components/customer-success-stories/DetailSection';
+import DetailSection from '../../components/customer-success-stories/new/DetailSection';
 import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 import { List, ListItem } from '../../components/Typography/List';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
+import { StaticImage } from 'gatsby-plugin-image';
+import SlidersMassone from '../../components/customer-success-stories/new/sliders/massone/Sliders';
 
 const Massone = ({ data }) => (
   <DetailLayout>
@@ -55,17 +55,25 @@ const Massone = ({ data }) => (
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroImagesContent>
-              <Img fluid={data.logo.childImageSharp.fluid} alt="" />
+              <StaticImage
+                src={'./../../assets/images/customers/massone/logo.jpg'}
+                alt={'Massone logo'}
+              />
             </DetailHeroImagesContent>
             <DetailHeroImagesContent>
-              <Img fluid={data.text.childImageSharp.fluid} alt="" />
+              <StaticImage
+                src={'./../../assets/images/customers/massone/text-corto.jpg'}
+                alt={'Massone text'}
+              />
             </DetailHeroImagesContent>
           </Column>
         </Columns>
       </Container>
     </Section>
 
-    <DetailSection src={data.textImagesOne.childImageSharp.fluid} left>
+    <DetailSection
+      image={<StaticImage src={'./../../assets/images/customers/massone/text-img-1.png'} alt="" />}
+      left>
       <DetailSubTitle>
         How everything <TextOrange>started:</TextOrange>
       </DetailSubTitle>
@@ -99,7 +107,7 @@ const Massone = ({ data }) => (
     </DetailSection>
 
     <Section isPaddingless>
-      <DetailCarousel data={data.slider.edges} />
+      <SlidersMassone />
     </Section>
 
     <Section isPaddingless>
@@ -120,40 +128,6 @@ export const pageQuery = graphql`
           width
           height
           src
-        }
-      }
-    }
-    logo: file(relativePath: { eq: "customers/massone/logo.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    text: file(relativePath: { eq: "customers/massone/text-corto.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    textImagesOne: file(relativePath: { eq: "customers/massone/text-img-1.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    slider: allFile(filter: { relativeDirectory: { eq: "customers/massone/slider" } }) {
-      edges {
-        node {
-          id
-          name
-          childImageSharp {
-            fluid(quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
         }
       }
     }

@@ -28,12 +28,21 @@ const Col = styled.div`
     }
 `;
 
+const StyledImage = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+`;
+
 const DetailSection = ({ children, image, left }) => (
   <SectionContainer>
     <Container>
       <Row>
         <Col direction={left ? 'left' : 'rigth'}>{children}</Col>
-        <Col direction={left ? 'rigth' : 'left'}>{image}</Col>
+        <Col direction={left ? 'rigth' : 'left'}>
+          <StyledImage>{image}</StyledImage>
+        </Col>
       </Row>
     </Container>
   </SectionContainer>
