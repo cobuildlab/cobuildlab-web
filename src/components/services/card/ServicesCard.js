@@ -14,8 +14,8 @@ const Title = styled(H4)`
 `;
 
 const CardStyled = styled(Card)`
-  max-height: 480px;
-  min-height: 520px;
+  max-height: 565px;
+  min-height: 565px;
   box-shadow: 0px 10px 20px #0000001a;
   background: rgba(255, 255, 255, 0.5);
 `;
@@ -44,15 +44,15 @@ const Paragraph = styled.p`
 
 const Readmore = styled.p`
   font-size: 17px;
-  font-family: 'Lato-bold' !important;
-  text-align: left;
+  text-align: right;
   padding-left: 10px;
-  color: #e76c29;
+  color: rgb(231, 108, 41);
   padding-right: 10px;
-  bottom: 18px;
   position: absolute;
-  right: 18px;
+  right: 29px;
   cursor: pointer;
+  font-family: Lato-bold !important;
+  bottom: 18px;
 `;
 
 const ServicesCard = ({ title, subtitle, cover, to }) => {
