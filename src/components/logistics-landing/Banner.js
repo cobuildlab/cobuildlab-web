@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Columns, Column, Section, HeroBody } from 'bloomer';
+import { Container, Columns, Column, Section } from 'bloomer';
 import Typrography from '../2020/Typography';
 import BannerButtons from '../enterprise-logistics/containers/banner/BannerButtons';
 import AnimationImages from '../enterprise-logistics/containers/banner/AnimationImages';
@@ -15,7 +15,7 @@ import img6 from '../../assets/images/banner/animation/6.png';
 import img7 from '../../assets/images/banner/animation/7.png';
 import img8 from '../../assets/images/banner/animation/8.png';
 import img9 from '../../assets/images/banner/animation/9.png';
-import { StaticImage } from 'gatsby-plugin-image';
+// import { StaticImage } from 'gatsby-plugin-image';
 import NewLandingForm from '../2020/NewLandingForm';
 
 export const SectionsWrapper = styled.div`
@@ -72,16 +72,16 @@ const Banner = () => {
               <div className="banner-btn-wrapper">
                 <BannerButtons />
               </div>
-              <HeroBody>
-                <Container hasTextAlign="centered">
-                  <StaticImage
-                    maxWidth={350}
-                    maxHeight={350}
-                    src={'../../assets/images/banner/group-banner-2.png'}
-                    alt={'banner'}
-                  />
-                </Container>
-              </HeroBody>
+              {/*<HeroBody>*/}
+              {/*  <Container hasTextAlign="centered">*/}
+              {/*    <StaticImage*/}
+              {/*      maxWidth={350}*/}
+              {/*      maxHeight={350}*/}
+              {/*      src={'../../assets/images/banner/group-banner-2.png'}*/}
+              {/*      alt={'banner'}*/}
+              {/*    />*/}
+              {/*  </Container>*/}
+              {/*</HeroBody>*/}
             </Column>
             <Column isHidden="mobile" isSize={5}>
               <br />
