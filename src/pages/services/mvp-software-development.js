@@ -13,8 +13,8 @@ import Contact from '../../components/2020/HomePageContact';
 import ServicesBannerBackgroundBottom from '../../components/services/ServicesBannerBackgroundBottom';
 import styled from 'styled-components';
 
-import ServicesHeader2 from '../../components/services/details/ServicesHeader2';
-import ServicesHeader3 from '../../components/services/details/ServicesHeader3';
+import ServicesSection3 from '../../components/services/details/ServicesSection3';
+import ServicesSection4 from '../../components/services/details/ServicesSection4';
 import ServicesCardProduct from '../../components/services/details/card/ServicesCardProduct';
 import ServicesCardSoftware from '../../components/services/details/card/ServicesCardSoftware';
 import ServicesCardTraining from '../../components/services/details/card/ServicesCardTraining';
@@ -60,7 +60,7 @@ const MvpSoftwareDevelopment = () => (
     </StyledSection2>
     <Section>
       <Container>
-        <ServicesHeader2 />
+        <ServicesSection3 />
       </Container>
     </Section>
     <Section>
@@ -72,7 +72,7 @@ const MvpSoftwareDevelopment = () => (
     </Section>
     <Section>
       <Container>
-        <ServicesHeader3 />
+        <ServicesSection4 />
       </Container>
     </Section>
     <StyledSection2>
