@@ -14,6 +14,7 @@ const Paragraph = styled.p`
 
 const StyleList = styled.ul`
   list-style: initial;
+  margin-left: 23px;
 `;
 
 const StyleSubtitle = styled.div`
@@ -30,7 +31,7 @@ const ServicesHeader3 = () => {
         </ServicesSubTitle>
       </StyleSubtitle>
       <Columns>
-        <Column isSize={{ mobile: 12, desktop: 4 }} isOffset={{ desktop: 1 }}>
+        <Column isSize={{ mobile: 12, tablet: 12, desktop: 4 }} isOffset={{ desktop: 1 }}>
           <ServicesContent>
             <Paragraph>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
@@ -40,7 +41,7 @@ const ServicesHeader3 = () => {
             </Paragraph>
           </ServicesContent>
         </Column>
-        <Column isSize={{ mobile: 12, desktop: 5 }} isOffset={{ desktop: 1 }}>
+        <Column isSize={{ mobile: 12, tablet: 12, desktop: 5 }} isOffset={{ desktop: 1 }}>
           <ServicesContent>
             <Paragraph>
               <StyleList>
