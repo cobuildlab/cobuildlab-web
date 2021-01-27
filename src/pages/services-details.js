@@ -58,11 +58,13 @@ const ServicesDetail = () => (
       </Container>
     </Section>
     <Section>
-      <Columns isCentered>
-        <ServicesCardProduct />
-        <ServicesCardSoftware />
-        <ServicesCardTraining />
-      </Columns>
+      <Container>
+        <Columns isCentered>
+          <ServicesCardProduct />
+          <ServicesCardSoftware />
+          <ServicesCardTraining />
+        </Columns>
+      </Container>
     </Section>
     <Section>
       <Container>

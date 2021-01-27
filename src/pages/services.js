@@ -16,6 +16,7 @@ import ServicesBannerBackgroundBottom from '../components/services/ServicesBanne
 import H4 from '../components/Typography/H4';
 
 import styled from 'styled-components';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const StyledTitle = styled.div`
   text-align: center;
@@ -47,12 +48,24 @@ const Services = () => (
           subtitle={'Development'}
           cover={'We work behind the curtain to make your website gorgeous and engaging'}
           to={'web-development'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos-Main-Services-Web-Development.svg'}
+              alt=""
+            />
+          }
         />
         <ServicesCard
           title={'APP'}
           subtitle={'Development'}
           cover={'We develop native apps for iOS and Android'}
           to={'app-development'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos-Main-Services-APP-Development.svg'}
+              alt=""
+            />
+          }
         />
       </Columns>
       <Columns isCentered>
@@ -61,12 +74,26 @@ const Services = () => (
           subtitle={'Development'}
           cover={'Let us take your app to multiple platforms and devices'}
           to={'cross-platform-development'}
+          image={
+            <StaticImage
+              src={
+                './../assets/images/service/card/iconos-Main-Services-Cross-Platform-Development.svg'
+              }
+              alt=""
+            />
+          }
         />
         <ServicesCard
           title={'Web'}
           subtitle={'Design'}
           cover={'We create appealing and beautiful content for your web'}
           to={'web-design'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos-Main-Services-Web-Design.svg'}
+              alt=""
+            />
+          }
         />
       </Columns>
     </Section>
@@ -80,12 +107,21 @@ const Services = () => (
           subtitle={'Development'}
           cover={' Validate and launch your product in a speedy and efficacious way'}
           to={'mvp-software-development'}
+          image={
+            <StaticImage src={'./../assets/images/service/card/iconos-Startup-MVP.svg'} alt="" />
+          }
         />
         <ServicesCard
           title={'Product'}
           subtitle={'Development'}
           cover={'Let us turn your idea into a viable product'}
           to={'product-development'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos-Startup-Product-Development.svg'}
+              alt=""
+            />
+          }
         />
       </Columns>
       <Columns isCentered />
@@ -100,26 +136,64 @@ const Services = () => (
           subtitle={'Development'}
           cover={'Tailor-made software to take care of your business needs'}
           to={'custom-software-development'}
+          image={
+            <StaticImage
+              src={
+                './../assets/images/service/card/iconos-Small-Business-Custom-Software-Development.svg'
+              }
+              alt=""
+            />
+          }
         />
         <ServicesCard
           title={'Custom Customer'}
           subtitle={'Management System'}
-          cover={''}
+          cover={
+            'Centralize, optimize and streamline your customer’s communication. The better you know your customers, the stronger your relationships will be with them'
+          }
           to={'custom-customer-management-system'}
+          image={
+            <StaticImage
+              src={
+                './../assets/images/service/card/iconos-Small-Business-Field-Service-Management-System.svg'
+              }
+              alt=""
+            />
+          }
         />
       </Columns>
       <Columns isCentered>
         <ServicesCard
           title={'Field Service'}
           subtitle={'Management System'}
-          cover={''}
+          cover={
+            'Get automated the field operations of your team and services through mobile systems'
+          }
           to={'field-service-management-system'}
+          image={
+            <StaticImage
+              src={
+                './../assets/images/service/card/iconos-Small-Business-Field-Service-Management-System.svg'
+              }
+              alt=""
+            />
+          }
         />
         <ServicesCard
           title={'Custom Learning'}
           subtitle={'Management System'}
-          cover={''}
+          cover={
+            'Boost the learning performance of your employees on the most recent operational or technological changes'
+          }
           to={'custom-learning-management-system'}
+          image={
+            <StaticImage
+              src={
+                './../assets/images/service/card/iconos-Small-Business-Custom-Learning-Management-System.svg'
+              }
+              alt=""
+            />
+          }
         />
       </Columns>
     </Section>
@@ -137,12 +211,26 @@ const Services = () => (
             'Efficiency rate will increase with the right guidance and assistance.\n'
           }
           to={'enterprise-software-development'}
+          image={
+            <StaticImage
+              src={
+                './../assets/images/service/card/iconos-Logistic-Enterprise-Software-Development.svg'
+              }
+              alt=""
+            />
+          }
         />
         <ServicesCard
           title={'Process'}
           subtitle={'Automation'}
           cover={'Revolutionize your process and save time and money'}
           to={'process-automation'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos-Logistic-Process-Automation.svg'}
+              alt=""
+            />
+          }
         />
       </Columns>
       <Columns isCentered>
@@ -156,6 +244,12 @@ const Services = () => (
             'Smart digital transformation opportunities guidance\n'
           }
           to={'digital-transformation'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos-Logistic-Digital-Transformation.svg'}
+              alt=""
+            />
+          }
         />
       </Columns>
     </Section>

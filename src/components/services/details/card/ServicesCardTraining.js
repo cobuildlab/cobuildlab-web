@@ -18,6 +18,10 @@ const Title = styled(H4)`
 const CardStyled = styled(Card)`
   box-shadow: 0px 10px 20px #0000001a;
   background: rgba(255, 255, 255, 0.5);
+  @media screen and (min-width: 1480px) {
+    max-width: 536px;
+    max-height: 479px;
+  }
 `;
 
 const Paragraph = styled.p`
