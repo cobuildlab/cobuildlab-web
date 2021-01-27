@@ -8,7 +8,7 @@ import logo from '../../resources/cobuildlab.png';
 import { Icon } from 'react-icons-kit';
 import { phone } from 'react-icons-kit/fa/phone';
 
-const Header = ({ isFluid }) => {
+const Header = ({ isFluid, showSocialIcons }) => {
   const [isActive, setActive] = useState(false);
 
   const handleActive = useCallback(() => {
@@ -44,7 +44,7 @@ const Header = ({ isFluid }) => {
               <NavbarItem>
                 <SmoothScrollingButton href="#contact">Contact Us</SmoothScrollingButton>
               </NavbarItem>
-              <SocialIcons isHidden="mobile" />
+              {showSocialIcons && <SocialIcons isHidden="mobile" />}
             </NavbarEnd>
           </NavbarMenu>
         </Navbar>
@@ -55,10 +55,12 @@ const Header = ({ isFluid }) => {
 
 Header.defaultProps = {
   isFluid: false,
+  showSocialIcons: true,
 };
 
 Header.propTypes = {
   isFluid: PropTypes.bool,
+  showSocialIcons: PropTypes.bool,
 };
 
 export default Header;

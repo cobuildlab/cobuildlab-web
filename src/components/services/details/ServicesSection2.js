@@ -1,8 +1,8 @@
 import React from 'react';
 import { Column } from 'bloomer';
-import ServicesSubTitle from './../ServicesSubTitle';
 import styled from 'styled-components';
-import { TextOrange } from '../../Typography/TextHelpers';
+import PropTypes from 'prop-types';
+import Typography from '../../2020/Typography';
 
 const StyledSection = styled.div`
   padding-left: 50px;
@@ -27,27 +27,31 @@ const Paragraph = styled.p`
   }
 `;
 
-const ServicesSection2 = () => {
+const ServicesSection2 = ({ title, text }) => {
   return (
     <>
       <Column isSize={{ mobile: 12, desktop: 12 }}>
         <StyledSection>
           <StyledSubTitle>
-            <ServicesSubTitle>
-              StartUp &nbsp;
-              <TextOrange>your Idea</TextOrange>{' '}
-            </ServicesSubTitle>
+            <Typography tag="h2" className="subtitle-new">
+              {title}
+            </Typography>
           </StyledSubTitle>
-          <Paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque, sapien at
-            molestie suscipit, sapien leo faucibus ante, quis iaculis mauris nisl nec libero.
-            Suspendisse imperdiet in ex ac varius. Donec elementum libero eu purus euismod, sit amet
-            congue leo bibendum. Donec lacus ipsum, sodales a dignissim quis, placerat eget ex.
-          </Paragraph>
+          <Paragraph>{text}</Paragraph>
         </StyledSection>
       </Column>
     </>
   );
+};
+
+ServicesSection2.defaultProps = {
+  title: '',
+  text: '',
+};
+
+ServicesSection2.propTypes = {
+  title: PropTypes.string,
+  text: PropTypes.string,
 };
 
 export default ServicesSection2;
