@@ -13,6 +13,7 @@ import Propagad from './card/stories/Propagad';
 import MyVoice from './card/stories/MyVoice';
 import Pitazo from './card/stories/Pitazo';
 import Mama from './card/stories/Mama';
+import CollabToGrow from './card/stories/CollabToGrow';
 
 const SuccessStories = () => {
   return (
@@ -26,8 +27,8 @@ const SuccessStories = () => {
       <MyVoice />
       <Pitazo />
       <Mama />
+      <CollabToGrow />
     </Columns>
   );
 };
-
 export default SuccessStories;
