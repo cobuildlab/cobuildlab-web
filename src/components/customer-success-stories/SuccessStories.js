@@ -14,10 +14,15 @@ import MyVoice from './card/stories/MyVoice';
 import Pitazo from './card/stories/Pitazo';
 import Mama from './card/stories/Mama';
 import CollabToGrow from './card/stories/CollabToGrow';
+import LeadVolt from './card/stories/LeadVolt';
 
 const SuccessStories = () => {
   return (
     <Columns isDisplay="flex" isMultiline>
+      <LeadVolt />
+      <CollabToGrow />
+      <Mama />
+      <Pitazo />
       <JobCore />
       <Massone />
       <Weedmatch />
@@ -25,9 +30,6 @@ const SuccessStories = () => {
       <Payklever />
       <Propagad />
       <MyVoice />
-      <Pitazo />
-      <Mama />
-      <CollabToGrow />
     </Columns>
   );
 };

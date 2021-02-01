@@ -14,6 +14,7 @@ import { List, ListItem } from '../../components/Typography/List';
 
 import { TextOrange } from '../../components/Typography/TextHelpers';
 import { StaticImage } from 'gatsby-plugin-image';
+import { graphql } from 'gatsby';
 
 const Ezonseller = ({ data }) => (
   <DetailLayout>
@@ -135,5 +136,19 @@ const Ezonseller = ({ data }) => (
 Ezonseller.propTypes = {
   data: PropTypes.object.isRequired,
 };
+
+export const pageQuery = graphql`
+  query {
+    seoImages: file(relativePath: { eq: "customers/jobcore.jpg" }) {
+      childImageSharp {
+        resize(width: 1200, height: 1200) {
+          width
+          height
+          src
+        }
+      }
+    }
+  }
+`;
 
 export default Ezonseller;
