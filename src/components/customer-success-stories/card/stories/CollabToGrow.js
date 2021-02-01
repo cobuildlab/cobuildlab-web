@@ -10,10 +10,13 @@ const CollabToGrow = () => {
       <Card
         title={'Collab To Grow'}
         description={
-          'Is a technology-enabled managed services and advisory firm that specializes in improving the performance of strategic alliances.'
+          'Is a technology-enabled managed services and advisory firm that specializes in improving the performance of strategic alliances...'
         }
         to={'/customer-success-stories/collab-to-grow'}>
-        <StaticImage src={'./../../../../assets/images/customers/collab-logo.jpg'} alt="" />
+        <StaticImage
+          src={'./../../../../assets/images/customers/collab-logo.jpg'}
+          alt="Collab To Grow"
+        />
       </Card>
     </Column>
   );

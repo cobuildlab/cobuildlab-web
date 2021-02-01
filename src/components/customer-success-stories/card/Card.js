@@ -46,6 +46,7 @@ const CardContainer = styled.div`
   display: flex;
   position: relative;
   width: 100%;
+  max-height: 300px;
   min-height: 300px;
   overflow: hidden;
   transition: transform 0.1s linear;

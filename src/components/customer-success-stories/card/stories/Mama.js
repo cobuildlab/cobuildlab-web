@@ -10,10 +10,10 @@ const Mama = () => {
       <Card
         title={'Mama'}
         description={
-          'The Match-Making app MAMA is a fun and easy-to-use connectivity tool that makes lightning-fast introductions.'
+          'The Match-Making app MAMA is a fun and easy-to-use connectivity tool that makes lightning-fast introductions...'
         }
         to={'/customer-success-stories/mama'}>
-        <StaticImage src={'./../../../../assets/images/customers/mama.png'} alt="" />
+        <StaticImage src={'./../../../../assets/images/customers/mama-logo.jpg'} alt="" />
       </Card>
     </Column>
   );

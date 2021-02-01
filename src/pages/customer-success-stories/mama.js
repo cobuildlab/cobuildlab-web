@@ -91,8 +91,8 @@ const Mama = ({ data }) => (
             </DetailParagraph>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
-            <DetailHeroImagesContent>
-              <StaticImage src={'./../../assets/images/customers/mama/mama.png'} alt="" />
+            <DetailHeroImagesContent color={'#ebebeb'}>
+              <StaticImage src={'./../../assets/images/customers/mama/mama-logo.jpg'} alt="" />
             </DetailHeroImagesContent>
           </Column>
         </Columns>
