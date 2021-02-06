@@ -1,5 +1,5 @@
 import React from 'react';
-import SeoMetaTags from '../SeoMetaTags';
+import { SeoMetaTags } from '../2021/SeoMetaTags';
 
 const BlogMetaTags = () => (
   <SeoMetaTags

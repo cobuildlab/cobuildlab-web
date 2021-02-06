@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'bloomer';
 import H2 from '../Typography/H2';
-import { AlignCenter } from '../Typography/TextHelpers';
+import { AlignCenter } from '../2021/text/TextHelpers';
 import Carousel from '../enterprise/containers/testimonial/Carousel';
 import styled from 'styled-components';
 

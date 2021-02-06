@@ -6,7 +6,7 @@ import '../../assets/scss/index.scss';
 // COMPONENTS
 import Layout from '../../components/2020/Layout';
 import Header from '../../components/header/Header';
-import SeoMetaTags from '../../components/SeoMetaTags';
+import { SeoMetaTags } from '../../components/2021/SeoMetaTags';
 
 import ServicesHeader from '../../components/services/details/ServicesHeader';
 

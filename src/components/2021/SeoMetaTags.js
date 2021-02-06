@@ -13,7 +13,16 @@ import { useStaticQuery, graphql } from 'gatsby';
  * @returns {*} - The SE Component.
  */
 
-const SeoMetaTags = ({ description, meta, title, lang, image, canonical, titleTemplate }) => {
+const SeoMetaTags = ({
+  description,
+  meta,
+  title,
+  lang,
+  image,
+  canonical,
+  titleTemplate,
+  keywords,
+}) => {
   const { site, seoImages } = useStaticQuery(query);
 
   const siteTitle = title || site.siteMetadata.seoTitle;
@@ -26,10 +35,10 @@ const SeoMetaTags = ({ description, meta, title, lang, image, canonical, titleTe
       name: `description`,
       content: metaDescription,
     },
-    /*{
-      name: "keywords",
-      content: site.siteMetadata.keywords.join(","),
-    },*/
+    {
+      name: 'keywords',
+      content: keywords.join(','),
+    },
     {
       property: `og:title`,
       content: siteTitle,
@@ -145,6 +154,7 @@ const query = graphql`
 SeoMetaTags.defaultProps = {
   lang: `en`,
   meta: [],
+  keywords: [],
   description: ``,
   image: false,
   canonical: false,
@@ -156,6 +166,7 @@ SeoMetaTags.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
+  keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   image: PropTypes.oneOfType([
     PropTypes.bool,
@@ -169,4 +180,4 @@ SeoMetaTags.propTypes = {
   titleTemplate: PropTypes.string,
 };
 
-export default SeoMetaTags;
+export { SeoMetaTags };

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import H6 from '../../../Typography/H6';
-import background from '../../../../assets/images/footer/footer-bg.png';
+import background from '../../../../assets/2021/images/footer-bg.png';
 
 export const FooterWrapper = styled.div`
   background: #264a60;

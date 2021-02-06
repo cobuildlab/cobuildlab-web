@@ -12,7 +12,7 @@ import DetailSection from '../../components/customer-success-stories/new/DetailS
 import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 import { List, ListItem } from '../../components/Typography/List';
 
-import { TextOrange } from '../../components/Typography/TextHelpers';
+import { TextOrange } from '../../components/2021/text/TextHelpers';
 import { StaticImage } from 'gatsby-plugin-image';
 import { graphql } from 'gatsby';
 

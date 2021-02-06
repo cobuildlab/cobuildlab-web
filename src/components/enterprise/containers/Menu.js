@@ -149,7 +149,7 @@ const Menu = () => {
             <AnchorMenuLink href="#video">Video</AnchorMenuLink>
           </MenuItem> */}
           {/* <MenuItem onClick={handleOpen}>
-            <AnchorMenuLink href="#about">About</AnchorMenuLink>
+            <AnchorMenuLink href="#about">CompetitiveAdvantage</AnchorMenuLink>
           </MenuItem> */}
         </MenuWrapper>
       </Drawer>

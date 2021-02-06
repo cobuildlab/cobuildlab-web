@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import colors from './colors.json';
+import colors from '../colors.json';
 
 export const TextOrange = styled.strong`
   color: ${colors.orange};

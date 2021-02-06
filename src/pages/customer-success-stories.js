@@ -1,11 +1,11 @@
 import React from 'react';
 import { HeroHeader, HeroBody, Hero, Section, Container } from 'bloomer';
 import styled from 'styled-components';
-import SeoMetaTags from '../components/SeoMetaTags';
+import { SeoMetaTags } from '../components/2021/SeoMetaTags';
 
 import H1 from '../components/Typography/H1';
 import Paragraph from '../components/Typography/Paragraph';
-import { TextOrange } from '../components/Typography/TextHelpers';
+import { TextOrange } from '../components/2021/text/TextHelpers';
 
 import Layout from '../components/2020/Layout';
 import Header from '../components/header/Header';

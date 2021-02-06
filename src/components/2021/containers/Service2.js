@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Columns, Column, Section } from 'bloomer';
 import { objectGroup, areaChart, cogs, users, searchPlus } from 'react-icons-kit/fa';
-import PreviewIcon from '../enterprise/components/icon';
-import Typrography from '../2020/Typography';
-import ButtonSmoothScrolling from '../2020/Button/ButtonSmoothScrolling';
-import '../enterprise-logistics/containers/service/service.scss';
+import PreviewIcon from '../../enterprise/components/icon';
+import Typography from '../../2020/Typography';
+import { SmoothScrollingButton } from '../button/SmoothScrollingButton';
+import '../../../assets/2021/scss/service.scss';
 
 const ConentContainer = ({ children }) => (
   <div className="service-content-1 main-title-wrapper">{children}</div>
@@ -23,9 +23,9 @@ const Card = ({ index, icon, title, children }) => (
       </span>
     </div>
     <div className="service-content-dec">
-      <Typrography tag="h5" className="service-title">
+      <Typography tag="h5" className="service-title">
         {title}
-      </Typrography>
+      </Typography>
       {children}
     </div>
   </div>
@@ -43,14 +43,14 @@ Card.propTypes = {
  * @returns {object} - The Services component.
  * @class
  */
-const Service = () => {
+const Service2 = () => {
   return (
     <Section>
       <Container>
         <div className="service-content-1 main-title-wrapper">
-          <Typrography tag="h2" className="sitemain-subtitle">
+          <Typography tag="h2" className="sitemain-subtitle">
             Services:
-          </Typrography>
+          </Typography>
         </div>
         <Columns>
           <Column isSize={{ mobile: 12, tablet: 8, desktop: 8 }} isMarginless isPaddingless>
@@ -63,18 +63,18 @@ const Service = () => {
                       key={2}
                       icon={objectGroup}
                       title={'Custom Software Development'}>
-                      <Typrography tag="p" className="service-dec-content">
+                      <Typography tag="p" className="service-dec-content">
                         {
                           'Cobuild Lab puts together managed teams to develop your most challenging projects.'
                         }
-                      </Typrography>
+                      </Typography>
                     </Card>
                     <Card index={1} key={1} icon={cogs} title={'Process and Workflow Automation'}>
-                      <Typrography tag="p" className="service-dec-content">
+                      <Typography tag="p" className="service-dec-content">
                         {
                           'Custom software development can be the solution that revolutionizes your processes and unlocks your full potential.'
                         }
-                      </Typrography>
+                      </Typography>
                     </Card>
                   </div>
                 </Column>
@@ -85,18 +85,18 @@ const Service = () => {
                       key={3}
                       icon={users}
                       title={'Artificial Intelligence optimization'}>
-                      <Typrography tag="p" className="service-dec-content">
+                      <Typography tag="p" className="service-dec-content">
                         {
                           'We use Machine Learning and Artificial Intelligence to maximize ROI or minimize errors and costs.'
                         }
-                      </Typrography>
+                      </Typography>
                     </Card>
                     <Card index={4} key={4} icon={areaChart} title={'Product Development'}>
-                      <Typrography tag="p" className="service-dec-content">
+                      <Typography tag="p" className="service-dec-content">
                         {
                           'We team up with our clients to explore new and early-stage ideas and transform them into Web and Mobile Software Products.'
                         }
-                      </Typrography>
+                      </Typography>
                     </Card>
                   </div>
                 </Column>
@@ -107,18 +107,18 @@ const Service = () => {
                       key={2}
                       icon={objectGroup}
                       title={'Digital Transformation Assessment'}>
-                      <Typrography tag="p" className="service-dec-content">
+                      <Typography tag="p" className="service-dec-content">
                         {
                           'We put together top of the notch experts to diagnose and explore opportunities to implement technology.'
                         }
-                      </Typrography>
+                      </Typography>
                     </Card>
                     <Card index={1} key={1} icon={searchPlus} title={'IT Infrastructure Support'}>
-                      <Typrography tag="p" className="service-dec-content">
+                      <Typography tag="p" className="service-dec-content">
                         {
                           'Support and Maintenance is critical for any modern organization. Cobuild Lab provide fault tolerant tools to keep your operations going even in the most critical scenarios.'
                         }
-                      </Typrography>
+                      </Typography>
                     </Card>
                   </div>
                 </Column>
@@ -126,12 +126,12 @@ const Service = () => {
             </div>
           </Column>
         </Columns>
-        <ButtonSmoothScrolling href="#" isCapitalize={false}>
+        <SmoothScrollingButton href="#" isCapitalize={false}>
           Contact US!
-        </ButtonSmoothScrolling>
+        </SmoothScrollingButton>
       </Container>
     </Section>
   );
 };
 
-export { Service };
+export { Service2 };

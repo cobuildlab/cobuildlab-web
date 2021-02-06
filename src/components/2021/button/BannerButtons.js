@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ButtonSmoothScrolling from '../../../2020/Button/ButtonSmoothScrolling';
+import { SmoothScrollingButton } from '../../2021/button/SmoothScrollingButton';
 
 const Container = styled.div`
   display: flex;
@@ -13,7 +13,7 @@ const ButtonContainer = styled.div`
 const BannerButtons = () => (
   <Container>
     <ButtonContainer>
-      <ButtonSmoothScrolling href="#contact-us-anchor">Contact Us for FREE</ButtonSmoothScrolling>
+      <SmoothScrollingButton href="#contact-us-anchor">Contact Us for FREE</SmoothScrollingButton>
     </ButtonContainer>
   </Container>
 );

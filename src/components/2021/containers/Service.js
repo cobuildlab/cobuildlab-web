@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Columns, Column, Section } from 'bloomer';
 import { objectGroup, areaChart, cogs, users } from 'react-icons-kit/fa';
-import PreviewIcon from '../../../enterprise/components/icon';
-import Typrography from '../../../2020/Typography';
-import ButtonSmoothScrolling from '../../../2020/Button/ButtonSmoothScrolling';
-import './service.scss';
+import PreviewIcon from '../../enterprise/components/icon';
+import '../../../assets/2021/scss/service.scss';
+import Typography from '../../2020/Typography';
+import { SmoothScrollingButton } from '../button/SmoothScrollingButton';
 
 const ConentContainer = ({ children }) => (
   <div className="service-content-1 main-title-wrapper">{children}</div>
@@ -23,9 +23,9 @@ const Card = ({ index, icon, title, children }) => (
       </span>
     </div>
     <div className="service-content-dec">
-      <Typrography tag="h5" className="service-title">
+      <Typography tag="h5" className="service-title">
         {title}
-      </Typrography>
+      </Typography>
       {children}
     </div>
   </div>
@@ -52,31 +52,31 @@ const Service = () => {
             <Column isMarginless isPaddingless isSize={{ mobile: 12, tablet: 4, desktop: 4 }}>
               <ConentContainer>
                 <div className="service-content-1 main-title-wrapper">
-                  <Typrography tag="h2" className="sitemain-subtitle">
+                  <Typography tag="h2" className="sitemain-subtitle">
                     Services:
-                  </Typrography>
-                  <Typrography tag="h3" className="service-title">
+                  </Typography>
+                  <Typography tag="h3" className="service-title">
                     From Web and Mobile Apps to Cloud Solutions to help you with:
-                  </Typrography>
-                  <Typrography tag="p" className="service-dec-content">
+                  </Typography>
+                  <Typography tag="p" className="service-dec-content">
                     ☛ Quality apps utilizing modern technologies
-                  </Typrography>
-                  <Typrography tag="p" className="service-dec-content">
+                  </Typography>
+                  <Typography tag="p" className="service-dec-content">
                     ☛ Rapid and feature-rich development
-                  </Typrography>
-                  <Typrography tag="p" className="service-dec-content">
+                  </Typography>
+                  <Typography tag="p" className="service-dec-content">
                     ☛ Custom mobile and cloud solutions
-                  </Typrography>
-                  <Typrography tag="p" className="service-dec-content">
+                  </Typography>
+                  <Typography tag="p" className="service-dec-content">
                     ☛ iOS and Android experience
-                  </Typrography>
-                  <Typrography tag="p" className="service-dec-content">
+                  </Typography>
+                  <Typography tag="p" className="service-dec-content">
                     ☛ No code / Low code solutions
-                  </Typrography>
+                  </Typography>
                   <br />
-                  <ButtonSmoothScrolling href="#" isCapitalize={false}>
+                  <SmoothScrollingButton href="#" isCapitalize={false}>
                     Contact US!
-                  </ButtonSmoothScrolling>
+                  </SmoothScrollingButton>
                 </div>
               </ConentContainer>
             </Column>
@@ -90,36 +90,36 @@ const Service = () => {
                         key={2}
                         icon={objectGroup}
                         title={'Custom Software Development'}>
-                        <Typrography tag="p" className="service-dec-content">
+                        <Typography tag="p" className="service-dec-content">
                           {
                             'Cobuild Lab puts together managed teams to develop your most challenging projects.'
                           }
-                        </Typrography>
+                        </Typography>
                       </Card>
-                      <Card index={1} key={1} icon={cogs} title={'Process and Workflow Automation'}>
-                        <Typrography tag="p" className="service-dec-content">
+                      <Card index={1} key={1} icon={cogs} title={'IOS and Android development'}>
+                        <Typography tag="p" className="service-dec-content">
                           {
-                            'Custom software development can be the solution that revolutionizes your processes and become an additional revenue stream itself by selling it to others businesses.'
+                            'Higher customer engagement, strong built awareness and recognition, customer loyalty improvement, and extra revenue-stream are some of the advantages you acquire when developing a mobile app.'
                           }
-                        </Typrography>
+                        </Typography>
                       </Card>
                     </div>
                   </Column>
                   <Column isSize={{ mobile: 12, tablet: 6 }}>
                     <div className="service-block2">
                       <Card index={3} key={3} icon={areaChart} title={'Product Development'}>
-                        <Typrography tag="p" className="service-dec-content">
+                        <Typography tag="p" className="service-dec-content">
                           {
                             'We team up with our clients to explore new and early-stage ideas and transform them into Web and Mobile Software Products.'
                           }
-                        </Typrography>
+                        </Typography>
                       </Card>
-                      <Card index={4} key={4} icon={users} title={'Staff Augmentation'}>
-                        <Typrography tag="p" className="service-dec-content">
+                      <Card index={4} key={4} icon={users} title={'Web Development'}>
+                        <Typography tag="p" className="service-dec-content">
                           {
-                            'Web Developers, Mobile Developers, QA Analysts and Product Managers ready to drive success to your existing needs. '
+                            'More than a website, your business needs a space where your objectives are accomplished by effectively communicating your brand to your potential customers. We will make sure this happens by developing a general application that allows you to connect directly with your clients, using real-time communication, and protect your data. We build for all industries and on any complexity level.'
                           }
-                        </Typrography>
+                        </Typography>
                       </Card>
                     </div>
                   </Column>
@@ -133,4 +133,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export { Service };

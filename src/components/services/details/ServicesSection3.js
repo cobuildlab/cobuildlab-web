@@ -3,7 +3,7 @@ import { Column, Columns } from 'bloomer';
 import ServicesSubTitle from './../ServicesSubTitle';
 import ServicesContent from './../ServicesContent';
 import styled from 'styled-components';
-import { TextOrange } from '../../Typography/TextHelpers';
+import { TextOrange } from '../../2021/text/TextHelpers';
 import PropTypes from 'prop-types';
 import { StaticImage } from 'gatsby-plugin-image';
 

@@ -3,7 +3,7 @@ import Scroll from '../scroll';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import moment from 'moment';
-import img from '../../../../assets/images/footer/footer-bg.png';
+import img from '../../../../assets/2021/images/footer-bg.png';
 
 const ContainerCopy = styled.div`
   background-color: #264a60;

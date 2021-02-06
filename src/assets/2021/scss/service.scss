@@ -1,4 +1,4 @@
-@import "../../../../assets/scss/variable";
+@import "../../scss/variable";
 
 /* service section css start */
 .service-wrapper {
@@ -25,7 +25,7 @@
       position: absolute;
       left: 0;
       bottom: 0;
-      background: url(../../../../assets/images/service/left-line.png) no-repeat left;
+      background: url(../../images/service/left-line.png) no-repeat left;
       height: 6px;
       width: 56px;
     }
@@ -85,7 +85,7 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background: url(../../../../assets/images/service/img5.png) no-repeat center;
+      background: url(../../images/service/img5.png) no-repeat center;
       left: 0;
       right: 0;
       top: 0;

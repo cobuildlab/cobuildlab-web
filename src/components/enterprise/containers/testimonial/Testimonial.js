@@ -3,7 +3,7 @@ import { Container, Section } from 'bloomer';
 import styled from 'styled-components';
 import H2 from '../../../Typography/H2';
 import H4 from '../../../Typography/H4';
-import { TextOrange, AlignCenter } from '../../../Typography/TextHelpers';
+import { TextOrange, AlignCenter } from '../../../2021/text/TextHelpers';
 import Carousel from './Carousel';
 
 const Title = styled(H2)`

@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { Container, Navbar, NavbarBrand, NavbarItem, NavbarMenu, NavbarEnd } from 'bloomer';
-import SmoothScrollingButton from '../2020/Button/ButtonSmoothScrolling';
+import { SmoothScrollingButton } from '../2021/button/SmoothScrollingButton';
 import { NavDivider, NavBrand, NavBrandImages, NavItem } from './HeaderLayout';
 import logo from '../../resources/cobuildlab.png';
 import { Icon } from 'react-icons-kit';

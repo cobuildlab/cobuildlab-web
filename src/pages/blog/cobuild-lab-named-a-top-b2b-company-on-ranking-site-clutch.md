@@ -31,7 +31,7 @@ We feel extremely proud of the efforts of our teams and in the name of everyone 
 
 <img src="./media/pr-clutch-5.png"> <br> </br>
 
-<title-5 align="left"> About Cobuild Lab </title-5>
+<title-5 align="left"> CompetitiveAdvantage Cobuild Lab </title-5>
 
 We transform Small and Medium size businesses by automating manual processes and tasks into optimized and streamlined workflows with Web and Mobile custom software. Everything from using email autoresponders to automated workflow can help you redefine your relationship with the customer and open up new revenue streams for you. It's time for you to use technology and automation to make your business more efficient. <br> </br>
 

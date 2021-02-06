@@ -13,7 +13,7 @@ import DetailVideo from '../../components/customer-success-stories/DetailVideo';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
 import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 
-import { TextOrange } from '../../components/Typography/TextHelpers';
+import { TextOrange } from '../../components/2021/text/TextHelpers';
 import { StaticImage } from 'gatsby-plugin-image';
 import SlidersPropagad from '../../components/customer-success-stories/new/sliders/propagad/Sliders';
 

@@ -4,7 +4,7 @@ import styled, { keyframes } from 'styled-components';
 import { Column, Columns } from 'bloomer';
 
 import Paragraph from '../../../Typography/Paragraph';
-import { TextOrange } from '../../../Typography/TextHelpers';
+import { TextOrange } from '../../../2021/text/TextHelpers';
 import H6 from '../../../Typography/H6';
 
 import img1 from '../../../../assets/images/testimonial/left-box-blue.png';

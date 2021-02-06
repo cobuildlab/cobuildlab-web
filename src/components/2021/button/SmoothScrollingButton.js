@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import styled from 'styled-components';
-import ButtonDefault from './ButtonDefault';
+import ButtonDefault from '../../2020/Button/ButtonDefault';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const Link = styled(AnchorLink)`
@@ -27,4 +27,4 @@ SmoothScrollingButton.propTypes = {
   isCapitalize: PropTypes.bool,
 };
 
-export default SmoothScrollingButton;
+export { SmoothScrollingButton };
