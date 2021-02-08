@@ -1,8 +1,8 @@
 import React from 'react';
-import SeoMetaTags from '../../components/SeoMetaTags';
+import { SeoMetaTags } from '../../components/2021/SeoMetaTags';
+import { Service2 } from '../../components/2021/containers/Service2';
 import { Banner } from '../../components/logistics-landing/Banner';
-import { About } from '../../components/logistics-landing/About';
-import { Service } from '../../components/logistics-landing/Service';
+import { About } from '../../components/2021/containers/About';
 import Project from '../../components/enterprise/containers/project';
 import Testimonial from '../../components/enterprise/containers/testimonial/Testimonial';
 import Contact from '../../components/enterprise/containers/contact/ContactEnterprise';
@@ -23,7 +23,7 @@ const IndexPage = () => (
     <div id="main-content">
       <Banner />
       <About />
-      <Service />
+      <Service2 />
       <Project />
       <Testimonial />
       <Contact />

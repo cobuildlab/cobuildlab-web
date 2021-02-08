@@ -1,30 +1,31 @@
 import React, { useCallback } from 'react';
-import { useStaticQuery, graphql, navigate } from 'gatsby';
+import { navigate } from 'gatsby';
 import { Column, Card } from 'bloomer';
-import Img from 'gatsby-image';
 import H4 from '../../Typography/H4';
 
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const Title = styled(H4)`
+  margin-top: 30px;
   text-align: right;
   font-weight: 100;
   font-family: 'Lato-Light' !important;
 `;
 
 const CardStyled = styled(Card)`
-  max-height: 565px;
+  max-height: 577px;
   min-height: 565px;
+  max-width: 691px;
   box-shadow: 0px 10px 20px #0000001a;
   background: rgba(255, 255, 255, 0.5);
 `;
 
-const Image = styled(Img)`
+const Image = styled.div`
   width: 287px !important;
   height: 276px !important;
-  top: 12px;
-  left: 12px;
+  margin-top: 12px;
+  margin-left: 21px;
 `;
 
 const Container = styled.div`
@@ -55,18 +56,15 @@ const Readmore = styled.p`
   bottom: 18px;
 `;
 
-const ServicesCard = ({ title, subtitle, cover, to }) => {
+const ServicesCard = ({ title, subtitle, cover, to, image }) => {
   const handleClick = useCallback(() => {
     navigate(to);
   }, [to]);
-  const data = useStaticQuery(query);
   return (
     <>
       <Column isSize={{ mobile: 12, desktop: 5 }}>
         <CardStyled>
-          <>
-            <Image fluid={data.file.childImageSharp.fluid} alt="" />
-          </>
+          <Image>{image}</Image>
           <Container>
             <Title>
               {title}
@@ -75,7 +73,8 @@ const ServicesCard = ({ title, subtitle, cover, to }) => {
             </Title>
           </Container>
           <Paragraph>
-            {cover} {'. '}
+            {cover}
+            {'.'}
           </Paragraph>
           <Readmore onClick={handleClick}>Read More</Readmore>
         </CardStyled>
@@ -89,18 +88,7 @@ ServicesCard.propTypes = {
   subtitle: PropTypes.string.isRequired,
   cover: PropTypes.string.isRequired,
   to: PropTypes.string.isRequired,
+  image: PropTypes.element.isRequired,
 };
-
-const query = graphql`
-  query {
-    file(relativePath: { eq: "service/project-management.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`;
 
 export default ServicesCard;

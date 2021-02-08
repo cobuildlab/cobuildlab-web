@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import ServiceTitle from './ServicesTitle';
 import ServicesSubTitle from './ServicesSubTitle';
 import ServicesContent from './ServicesContent';
-import { TextOrange } from '../Typography/TextHelpers';
+import { TextOrange } from '../2021/text/TextHelpers';
 import styled from 'styled-components';
 
 const Paragraph = styled.p`

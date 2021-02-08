@@ -15,7 +15,7 @@ import {
   CustomH2 as H2,
   CustomParagraph as Paragraph,
 } from '../../components/2020/LandingTypography';
-import ButtonSmoothScrolling from '../../components/2020/Button/ButtonSmoothScrolling';
+import { SmoothScrollingButton } from '../../components/2021/button/SmoothScrollingButton';
 import Skills from '../../components/enterprise/containers/skills';
 
 export default class SoftwareDevDescription extends Component {
@@ -41,9 +41,9 @@ export default class SoftwareDevDescription extends Component {
                 <Paragraph>- Reduce your costs</Paragraph>
               </li>
             </ul>
-            <ButtonSmoothScrolling href="#landing-contact-form">
+            <SmoothScrollingButton href="#landing-contact-form">
               Book a FREE 1 hour Consultation
-            </ButtonSmoothScrolling>
+            </SmoothScrollingButton>
           </Column>
 
           <Column>

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
-import SeoMetaTags from '../../components/SeoMetaTags';
+import { SeoMetaTags } from '../../components/2021/SeoMetaTags';
 
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
@@ -13,7 +13,7 @@ import DetailParagraph from '../../components/customer-success-stories/DetailPar
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
 import DetailSection from '../../components/customer-success-stories/new/DetailSection';
 import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
-import { TextOrange } from '../../components/Typography/TextHelpers';
+import { TextOrange } from '../../components/2021/text/TextHelpers';
 import { StaticImage } from 'gatsby-plugin-image';
 import SlidersJobcore from '../../components/customer-success-stories/new/sliders/jobcore/Sliders';
 

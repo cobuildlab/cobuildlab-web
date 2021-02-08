@@ -69,6 +69,11 @@ const Paragraph = styled.p`
   color: #264a60;
   margin-top: 5px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  height: 95px;
 `;
 
 const Readmore = styled.p`

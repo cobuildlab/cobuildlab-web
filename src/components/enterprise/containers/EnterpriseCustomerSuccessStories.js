@@ -3,7 +3,7 @@ import { Container, Section } from 'bloomer';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import H3 from '../../Typography/H3';
-import { TextOrange } from '../../Typography/TextHelpers';
+import { TextOrange } from '../../2021/text/TextHelpers';
 import Paragraph from '../../Typography/Paragraph';
 import CustomerSuccessStories from '../../customer-success-stories/CustomerSuccessStories';
 

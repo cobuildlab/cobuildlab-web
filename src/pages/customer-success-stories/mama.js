@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
-import SeoMetaTags from '../../components/SeoMetaTags';
+import { SeoMetaTags } from '../../components/2021/SeoMetaTags';
 
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
@@ -14,7 +14,7 @@ import DetailSection from '../../components/customer-success-stories/new/DetailS
 import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 import { List, ListItem } from '../../components/Typography/List';
 
-import { TextOrange } from '../../components/Typography/TextHelpers';
+import { TextOrange } from '../../components/2021/text/TextHelpers';
 import TextLink from '../../components/Typography/TextLink';
 import { StaticImage } from 'gatsby-plugin-image';
 import SlidersMama from '../../components/customer-success-stories/new/sliders/mama/Sliders';
@@ -91,8 +91,8 @@ const Mama = ({ data }) => (
             </DetailParagraph>
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
-            <DetailHeroImagesContent>
-              <StaticImage src={'./../../assets/images/customers/mama/mama.png'} alt="" />
+            <DetailHeroImagesContent color={'#ebebeb'}>
+              <StaticImage src={'./../../assets/images/customers/mama/mama-logo.jpg'} alt="" />
             </DetailHeroImagesContent>
           </Column>
         </Columns>

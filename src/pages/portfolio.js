@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
-import SeoMetaTags from '../components/SeoMetaTags';
+import { SeoMetaTags } from '../components/2021/SeoMetaTags';
 import { Layout, Sider, Content } from '../components/portfolio/PortfolioLayout';
 import Footer from '../components/enterprise/containers/footer/Footer';
 

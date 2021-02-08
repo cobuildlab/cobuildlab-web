@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import H3 from '../../../Typography/H3';
 import Paragraph from '../../../Typography/Paragraph';
-import { TextOrange } from '../../../Typography/TextHelpers';
+import { TextOrange } from '../../../2021/text/TextHelpers';
 
 const Container = styled.div`
   display: flex;

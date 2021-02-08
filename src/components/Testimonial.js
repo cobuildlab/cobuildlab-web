@@ -11,7 +11,7 @@ import QueteRight from '../assets/images/testimonial/right-box-blue.png';
 // TYPOGRAPHY
 import H6 from './Typography/H6';
 import Paragraph from './Typography/Paragraph';
-import { TextOrange } from './Typography/TextHelpers';
+import { TextOrange } from './2021/text/TextHelpers';
 
 const Card = styled.div`
   background-color: #ffff;

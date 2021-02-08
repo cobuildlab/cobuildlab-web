@@ -9,7 +9,7 @@ const Pitazo = () => {
     <Column isSize={{ mobile: 12, tablet: 4 }} isPaddingless>
       <Card
         title={'El Pitazo'}
-        description={"El Pitazo is Venezuela's main independent news website."}
+        description={"El Pitazo is Venezuela's main independent news website..."}
         to={'/customer-success-stories/el-pitazo'}>
         <StaticImage src={'./../../../../assets/images/customers/pita.jpg'} alt="" />
       </Card>

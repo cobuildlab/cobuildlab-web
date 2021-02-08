@@ -1,21 +1,19 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 import { Container, Columns, Column, Section } from 'bloomer';
-import Img from 'gatsby-image';
 import Progressbar from './progressbar';
 import Typography from '../../../2020/Typography';
 import './skills.scss';
 import '../../../../assets/scss/variable.scss';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Skills = () => {
-  const data = useStaticQuery(query);
   return (
     <Section>
       <div className="skills-wrapper">
         <Container>
           <Columns>
             <Column isHidden="mobile" isSize={6}>
-              <Img fluid={data.imagesCardOne.childImageSharp.fluid} alt="" />
+              <StaticImage src={'../../../../assets/2021/images/cobuild-lab-customers.png'} />
             </Column>
             <Column isSize={{ mobile: 12, desktop: 6 }}>
               <div className="skills-content-block main-title-wrapper">
@@ -72,17 +70,5 @@ const Skills = () => {
     </Section>
   );
 };
-
-const query = graphql`
-  query {
-    imagesCardOne: file(relativePath: { eq: "skills/cobuild-lab-customers.png" }) {
-      childImageSharp {
-        fluid(webpQuality: 72) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`;
 
 export default Skills;

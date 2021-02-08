@@ -37,3 +37,4 @@ VideoPlay.propTypes = {
 };
 
 export default VideoPlay;
+export { VideoPlay };

@@ -4,7 +4,7 @@ import ContactForm from './ContactForm';
 import styled from 'styled-components';
 import H2 from '../Typography/H2';
 import Paragraph from '../Typography/Paragraph';
-import { TextOrange } from '../Typography/TextHelpers';
+import { TextOrange } from '../2021/text/TextHelpers';
 import Image from './Image';
 import img from '../../resources/2020/home/coubuild-v.svg';
 

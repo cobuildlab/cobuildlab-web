@@ -22,6 +22,9 @@ const Paragraph = styled.p`
   font-family: 'Lato-regular' !important;
   padding-left: 50px;
   color: #264a60;
+  @media screen and (max-width: 768px) {
+    padding: 0px;
+  }
 `;
 
 const ServicesSection2 = ({ title, text }) => {
