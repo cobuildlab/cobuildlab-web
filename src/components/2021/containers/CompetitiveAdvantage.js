@@ -22,7 +22,7 @@ const CompetitiveAdvantage = () => {
             <br />
             <ul>
               <li>
-                <p>☛ Strong engendering background</p>
+                <p>☛ Strong engineering background</p>
               </li>
               <li>
                 <p>☛ Product driven process</p>
