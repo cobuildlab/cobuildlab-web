@@ -46,8 +46,10 @@ const IndexPage = () => (
         title2={
           <Typography size={title} tag="h2">
             We partner with <span className="enterprise-text-orange">Industry Experts</span> to
-            solve Logistics and Productivity problems with{' '}
-            <span className="enterprise-text-orange">Custom Software Solutions.</span>
+            solve Logistical and Productivity problems with{' '}
+            <span className="enterprise-text-orange">
+              Custom Software Solutions, Artificial Intelligence and IOT.
+            </span>
           </Typography>
         }
       />
@@ -55,7 +57,7 @@ const IndexPage = () => (
         videoId={'5fbYxQNgJ7s'}
         text1={'For Small and Medium Sized Businesses'}
         text2={
-          'At Cobuild Lab, we’ve been helping business owners, Managers, CTO’s, COO’s and IT leaders automate business processes custom software solutions.'
+          'At Cobuild Lab, we’ve been helping Business Owners, Managers, CTO’s, COO’s and IT leaders automate business processes with custom software solutions, artificial Intelligence models and IOT hardware.'
         }
       />
       <Service2 />
