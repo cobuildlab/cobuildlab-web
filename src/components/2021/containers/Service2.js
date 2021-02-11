@@ -65,14 +65,14 @@ const Service2 = () => {
                       title={'Custom Software Development'}>
                       <Typography tag="p" className="service-dec-content">
                         {
-                          'Cobuild Lab puts together managed teams to develop your most challenging projects.'
+                          'We will find the solution for lack of agility for decision making, disparate data and systems, communication delays and bottlenecks, incompatibility with new technologies, and more.'
                         }
                       </Typography>
                     </Card>
                     <Card index={1} key={1} icon={cogs} title={'Process and Workflow Automation'}>
                       <Typography tag="p" className="service-dec-content">
                         {
-                          'Custom software development can be the solution that revolutionizes your processes and unlocks your full potential.'
+                          'Reduce monotonous manual data entry with integrated systems and databases. Your customers will enjoy a smooth experience when accessing information at-all times.'
                         }
                       </Typography>
                     </Card>
@@ -87,14 +87,14 @@ const Service2 = () => {
                       title={'Artificial Intelligence optimization'}>
                       <Typography tag="p" className="service-dec-content">
                         {
-                          'We use Machine Learning and Artificial Intelligence to maximize ROI or minimize errors and costs.'
+                          'Machine Learning and Artificial Intelligence helps to prevent overstocking, inadequate inventory, and unexpected outputs. Through the automation of time-consuming and error-prone jobs.\n'
                         }
                       </Typography>
                     </Card>
                     <Card index={4} key={4} icon={areaChart} title={'Product Development'}>
                       <Typography tag="p" className="service-dec-content">
                         {
-                          'We team up with our clients to explore new and early-stage ideas and transform them into Web and Mobile Software Products.'
+                          'Stay ahead with game-changing technologies, and leverage the opportunities of always keeping pace with the customers’ demands and expectations.'
                         }
                       </Typography>
                     </Card>
@@ -109,14 +109,14 @@ const Service2 = () => {
                       title={'Digital Transformation Assessment'}>
                       <Typography tag="p" className="service-dec-content">
                         {
-                          'We put together top of the notch experts to diagnose and explore opportunities to implement technology.'
+                          'Solve the uncertainty of not knowing what your business maturity is regarding its digital blueprint. Before Digital Transformation adoption, you need to know exactly where your strengths and weaknesses lie.'
                         }
                       </Typography>
                     </Card>
                     <Card index={1} key={1} icon={searchPlus} title={'IT Infrastructure Support'}>
                       <Typography tag="p" className="service-dec-content">
                         {
-                          'Support and Maintenance is critical for any modern organization. Cobuild Lab provide fault tolerant tools to keep your operations going even in the most critical scenarios.'
+                          'We will ensure the stability and high performance of your processes with IT infrastructure support. Issues to decode: unproductive employees, costly digital transformation alternatives, and more.'
                         }
                       </Typography>
                     </Card>

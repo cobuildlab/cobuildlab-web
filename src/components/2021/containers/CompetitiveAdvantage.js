@@ -25,15 +25,6 @@ const CompetitiveAdvantage = () => {
                 <p>☛ Strong engineering background</p>
               </li>
               <li>
-                <p>☛ Product driven process</p>
-              </li>
-              <li>
-                <p>☛ Rapid feature-rich development</p>
-              </li>
-              <li>
-                <p>☛ Low code / No Code Solutions for faster development.</p>
-              </li>
-              <li>
                 <p> ☛ iOS and Android experience </p>
               </li>
               <li>
@@ -58,16 +49,13 @@ const CompetitiveAdvantage = () => {
             <SubTitle isSize={4}>Industry Experience:</SubTitle>
             <ul>
               <li>
-                <p> ☛ We turn logistics and productivity problems into competitive advantages. </p>
+                <p> ☛ Logistics and productivity challenges turned into competitive advantages. </p>
               </li>
               <li>
-                <p> ☛ Reduce risks, errors and costs through process and workflow automation. </p>
+                <p> ☛ Process and Workflow Automation. </p>
               </li>
               <li>
-                <p> ☛ Low code / No Code Solutions for faster development. </p>
-              </li>
-              <li>
-                <p> ☛ iOS and Android experience </p>
+                <p> ☛ Risk, errors and cost reduction </p>
               </li>
             </ul>
             <SmoothScrollingButton href="#" isCapitalize={false}>

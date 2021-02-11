@@ -1,50 +1,38 @@
 import React from 'react';
-import { Container, Columns, Column, Section } from 'bloomer';
+import { Container, Columns, Column, Section, Title, Subtitle } from 'bloomer';
 import { SmoothScrollingButton } from '../button/SmoothScrollingButton';
 import '../../../assets/2021/scss/about.scss';
 import { StaticImage } from 'gatsby-plugin-image';
-import { SubTitle } from '../../2020/LandingTypography';
 
 import '../../../assets/images/customers/collabtogrow/collab-1.jpg';
 import '../../../assets/images/customers/jobcore/text-img-2.jpg';
 import '../../../assets/images/customers/my-voice/2.png';
+import { AlignCenter } from '../text/TextHelpers';
 
 const About = () => {
   return (
     <Section>
+      <AlignCenter>
+        <Title isSize={1}>We turn your problems into Advantages</Title>
+      </AlignCenter>
+      <br />
+      <br />
       <Container>
         <Columns isDisplay="flex-mobile" isCentered isVCentered>
           <Column isSize={{ mobile: 11, desktop: 7 }}>
-            <SubTitle isSize={4}>Solving Logistics and Supply Chain Problems:</SubTitle>
+            <Subtitle isSize={2}>We solve Logistics and Supply Chain challenges:</Subtitle>
             <ul>
               <li>
-                <p>☛ Shipping Time: Spot potential issues in your order fulfilment process</p>
+                <p>☛ Improve Shipping time</p>
               </li>
               <li>
-                <p>☛ Order Accuracy: Monitor the degree of incidents</p>
+                <p>☛ Order accuracy enhancement</p>
               </li>
               <li>
-                <p>☛ Delivery Time: Track your average delivery time in detail</p>
+                <p>☛ Delivery time Tracking</p>
               </li>
               <li>
-                <p>
-                  ☛ Transportation Costs: Analyze all costs from the order placement to delivery
-                </p>
-              </li>
-              <li>
-                <p>☛ Warehousing Costs: Optimize the expenses of your warehouse</p>
-              </li>
-              <li>
-                <p>☛ Number of Shipments: Understand how many orders are shipped</p>
-              </li>
-              <li>
-                <p>☛ Inventory Accuracy: Avoid problems because of inaccurate inventory</p>
-              </li>
-              <li>
-                <p>☛ Inventory Turnover: Track how many times your entire inventory is sold</p>
-              </li>
-              <li>
-                <p>☛ Inventory to Sales Ratio: Identify a potential overstock</p>
+                <p>☛ Warehousing and Transportation Costs optimization</p>
               </li>
             </ul>
             <SmoothScrollingButton href="#" isCapitalize={false}>
@@ -62,7 +50,6 @@ const About = () => {
       <br />
       <br />
       <br />
-      <br />
       <Container>
         <Columns isDisplay="flex-mobile" isCentered isVCentered>
           <Column isSize={{ mobile: 10, desktop: 4 }} isHidden="mobile">
@@ -72,7 +59,7 @@ const About = () => {
             />
           </Column>
           <Column isSize={{ mobile: 11, desktop: 7 }}>
-            <SubTitle isSize={4}>Solving Productivity problems</SubTitle>
+            <Subtitle isSize={2}>We solve Productivity challenges</Subtitle>
             <ul>
               <li>
                 <p>☛ Track, Manage and Automate custom processes in your organization</p>
@@ -81,16 +68,10 @@ const About = () => {
                 <p>☛ Obtain 360 degrees visibility of your Business</p>
               </li>
               <li>
-                <p>☛ Identify instantly and Fix errors in your processes.</p>
-              </li>
-              <li>
-                <p>☛ Automate reporting and KPIs</p>
-              </li>
-              <li>
-                <p>☛ Follow and automate compliance</p>
-              </li>
-              <li>
                 <p>☛ Streamline time-consuming approvals workflows</p>
+              </li>
+              <li>
+                <p>☛ Identify instantly and Fix errors in your processes</p>
               </li>
             </ul>
             <SmoothScrollingButton href="#" isCapitalize={false}>
@@ -105,39 +86,19 @@ const About = () => {
       <Container>
         <Columns isDisplay="flex-mobile" isCentered isVCentered>
           <Column isSize={{ mobile: 11, desktop: 7 }}>
-            <SubTitle isSize={4}>Solving Trucking and Transportation Problems:</SubTitle>
+            <Subtitle isSize={2}>We solve Trucking and Transportation troubles:</Subtitle>
             <ul>
               <li>
                 <p>☛ Route optimization </p>
               </li>
               <li>
-                <p>
-                  ☛ Cost-per-Mile: Knowing what your operational costs are on a per-mile basis
-                  allows you to manage expenses efficiently
-                </p>
+                <p>☛ Labor productivity</p>
               </li>
               <li>
                 <p>☛ Loading or unloading time </p>
               </li>
               <li>
-                <p>
-                  ☛ Freight Claim: Analysis of the number of claims filed, resolved and resolution
-                  time
-                </p>
-              </li>
-              <li>
-                <p>☛ Labor productivity </p>
-              </li>
-              <li>
-                <p>
-                  ☛ Equipment Utilization: Efficiency is measured differently in every industry.
-                </p>
-              </li>
-              <li>
-                <p>☛ Track Damages</p>
-              </li>
-              <li>
-                <p>☛ Fuel Efficiency</p>
+                <p>☛ Analysis of the number of claims filed, resolved, and resolution time</p>
               </li>
             </ul>
             <SmoothScrollingButton href="#" isCapitalize={false}>
