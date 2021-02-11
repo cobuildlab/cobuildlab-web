@@ -59,10 +59,31 @@
           }
         ]
       },
+
     {
-      "first": "Jeff",
-      "last": "Leon",
-      "picture": "../assets/images/team/team-pictures/jeff-leon.jpg",
+      "first": "Alessandra",
+      "last": "Lubertino",
+      "picture": "../assets/images/team/team-pictures/alessandra-lubertino.jpg",
+      "description": "Growth and Strategic Partnerships",
+      "social-networks": [
+        {
+          "name": "twitter",
+          "src": "https://twitter.com"
+        },
+        {
+          "name": "facebook",
+          "src": "https://facebook.com"
+        },
+        {
+          "name": "github",
+          "src": "https://github.com"
+        }
+      ]
+    },
+    {
+      "first": "Paul",
+      "last": "Salazar",
+      "picture": "../assets/images/team/team-pictures/paul-salazar.jpg",
       "description": "Business Development",
       "social-networks": [
         {
