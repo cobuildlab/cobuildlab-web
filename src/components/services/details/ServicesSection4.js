@@ -33,7 +33,7 @@ const ServicesSection4 = ({ title, leftText, rightTextList }) => {
       </StyleSubtitle>
       <br />
       <Columns>
-        <Column isSize={{ mobile: 12, desktop: 4 }} isOffset={{ desktop: 1 }}>
+        <Column isSize={{ mobile: 12, desktop: 5 }} isOffset={{ desktop: 1 }}>
           <ServicesContent>
             <Paragraph>{leftText}</Paragraph>
           </ServicesContent>

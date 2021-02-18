@@ -15,10 +15,12 @@ import Pitazo from './card/stories/Pitazo';
 import Mama from './card/stories/Mama';
 import CollabToGrow from './card/stories/CollabToGrow';
 import LeadVolt from './card/stories/LeadVolt';
+import Okroo from './card/stories/Okroo';
 
 const SuccessStories = () => {
   return (
     <Columns isDisplay="flex" isMultiline>
+      <Okroo />
       <LeadVolt />
       <CollabToGrow />
       <Mama />

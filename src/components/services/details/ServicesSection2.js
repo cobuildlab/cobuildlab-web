@@ -5,8 +5,6 @@ import PropTypes from 'prop-types';
 import Typography from '../../2020/Typography';
 
 const StyledSection = styled.div`
-  padding-left: 50px;
-  padding-right: 50px;
   margin-top: 50px;
   margin-bottom: 50px;
 `;
@@ -17,10 +15,8 @@ const StyledSubTitle = styled.div`
 
 const Paragraph = styled.p`
   text-align: justify;
-  padding-right: 50px;
   font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
   font-family: 'Lato-regular' !important;
-  padding-left: 50px;
   color: #264a60;
   @media screen and (max-width: 768px) {
     padding: 0px;
