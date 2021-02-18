@@ -60,16 +60,16 @@ const CustomSoftwareDevelopment = () => (
           paragraph2={
             <>
               <ul>
-                <li> ☛ Increase efficiency in your processes.</li>
-                <li>☛ Reduce or eliminate integration costs.</li>
-                <li>☛ It is scalable.</li>
-                <li>☛ No need for licenses or annoying updates.</li>
-                <li>☛ You can hire an external and remote team.</li>
+                <li>• Increase efficiency in your processes.</li>
+                <li>• Reduce or eliminate integration costs.</li>
+                <li>• It is scalable.</li>
+                <li>• No need for licenses or annoying updates.</li>
+                <li>• You can hire an external and remote team.</li>
                 <li>
-                  ☛ You can commercialize the tools in the medium term and turn them into Saas
+                  • You can commercialize the tools in the medium term and turn them into Saas
                   products.
                 </li>
-                <li>☛ You are the owner of the tool.</li>
+                <li>• You are the owner of the tool.</li>
               </ul>
             </>
           }
@@ -77,15 +77,17 @@ const CustomSoftwareDevelopment = () => (
       </Container>
     </Section>
     <StyledSection2>
-      <ServicesSection2
-        title={'Develop your custom software tool'}
-        text={
-          'In that way, you`ll have a tool that responds to your specific processes and needs' +
-          'and allows you to decide on issues such as gestures, functionalities, updates (if' +
-          'required), changes in the tool (when your processes evolve), and that can' +
-          'monetize in the future converting it into a Saas product.'
-        }
-      />
+      <Container>
+        <ServicesSection2
+          title={'Develop your custom software tool'}
+          text={
+            'In that way, you`ll have a tool that responds to your specific processes and needs' +
+            'and allows you to decide on issues such as gestures, functionalities, updates (if' +
+            'required), changes in the tool (when your processes evolve), and that can' +
+            'monetize in the future converting it into a Saas product.'
+          }
+        />
+      </Container>
     </StyledSection2>
     <Section>
       <Container>
@@ -120,11 +122,13 @@ const CustomSoftwareDevelopment = () => (
     </Section>
 
     <Section>
-      <Columns isCentered>
-        <ServicesCardProduct />
-        <ServicesCardSoftware />
-        <ServicesCardTraining />
-      </Columns>
+      <Container>
+        <Columns isCentered>
+          <ServicesCardProduct />
+          <ServicesCardSoftware />
+          <ServicesCardTraining />
+        </Columns>
+      </Container>
     </Section>
 
     <StyledSection2>

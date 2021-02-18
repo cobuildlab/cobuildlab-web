@@ -7,6 +7,10 @@ import { TextOrange } from '../../2021/text/TextHelpers';
 import PropTypes from 'prop-types';
 import { StaticImage } from 'gatsby-plugin-image';
 
+const Title = styled(TextOrange)`
+  font-size: calc(24px + (42 - 24) * ((100vw - 320px) / (1920 - 320)));
+`;
+
 const Paragraph = styled.p`
   font-size: 20px;
   font-weight: 600;
@@ -23,11 +27,11 @@ const ServicesSection3 = ({ title, textList }) => {
     <>
       <StyleSubtitle>
         <ServicesSubTitle isCentered>
-          <TextOrange>{title}</TextOrange>{' '}
+          <Title>{title}</Title>{' '}
         </ServicesSubTitle>
       </StyleSubtitle>
       <Columns isVCentered>
-        <Column isVCentered isHidden="mobile" isSize={2} isOffset={{ desktop: 2 }}>
+        <Column isVCentered isHidden="mobile" isSize={5}>
           <StaticImage
             src={'../../../assets/images/service/details/services-details.png'}
             alt={'Service Section 3'}

@@ -14,9 +14,9 @@ const Title = styled(H4)`
 `;
 
 const CardStyled = styled(Card)`
-  max-height: 577px;
-  min-height: 565px;
-  max-width: 691px;
+  max-height: 530px;
+  min-height: 530px;
+  max-width: 600px;
   box-shadow: 0px 10px 20px #0000001a;
   background: rgba(255, 255, 255, 0.5);
 `;
