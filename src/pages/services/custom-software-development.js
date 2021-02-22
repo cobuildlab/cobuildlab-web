@@ -104,6 +104,15 @@ const CustomSoftwareDevelopment = () => (
     </Section>
     <Section>
       <Container>
+        <Columns isCentered>
+          <ServicesCardProduct />
+          <ServicesCardSoftware />
+          <ServicesCardTraining />
+        </Columns>
+      </Container>
+    </Section>
+    <Section>
+      <Container>
         <ServicesSection4
           title={"“There is no business that a custom software tool can't help.”"}
           leftText={
@@ -120,17 +129,6 @@ const CustomSoftwareDevelopment = () => (
         />
       </Container>
     </Section>
-
-    <Section>
-      <Container>
-        <Columns isCentered>
-          <ServicesCardProduct />
-          <ServicesCardSoftware />
-          <ServicesCardTraining />
-        </Columns>
-      </Container>
-    </Section>
-
     <StyledSection2>
       <StyledContainer>
         <StyledSubTitle>

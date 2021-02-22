@@ -15,6 +15,9 @@ const Paragraph = styled.p`
 
 const StyleList = styled.ul`
   list-style: initial;
+  & li {
+    padding-bottom: 10px;
+  }
 `;
 
 const StyleSubtitle = styled.div`
