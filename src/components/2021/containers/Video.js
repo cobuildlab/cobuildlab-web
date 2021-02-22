@@ -21,7 +21,7 @@ const Video = ({ videoId, text1, text2 }) => {
     <Section isCentered>
       <Container>
         <Columns isDisplay="flex-mobile" isCentered>
-          <Column isSize={{ mobile: 10, desktop: 6 }} isHidden="mobile">
+          <Column isSize={{ mobile: 10, desktop: 7 }} isHidden="mobile">
             <YouTube
               videoId={videoId}
               opts={YOUTUBE_OPTS}
@@ -29,7 +29,7 @@ const Video = ({ videoId, text1, text2 }) => {
               style={{ width: '100%', minHeight: '390px' }}
             />
           </Column>
-          <Column isSize={{ mobile: 11, desktop: 6 }}>
+          <Column isSize={{ mobile: 11, desktop: 5 }}>
             <Title>{text1}</Title>
             <p>{text2}</p>
             <br />
