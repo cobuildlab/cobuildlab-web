@@ -102,13 +102,12 @@ const DigitalTransformation = () => (
           title={
             '“Digital Transformation and Process Automation For The Logistics and Supply Chain Industries Benefits”'
           }
-          leftText={
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat:'
-          }
-          rightTextList={[
+          leftText={[
             'Leverage the power of Optimization driven by Machine Learning and Artificial Intelligence.',
             'The solution of a wide range of challenges.',
             'Hyper-connectivity among devices with Internet of Things.',
+          ]}
+          rightTextList={[
             'Maximum visibility across factors to improve decision-making.',
             'The satisfaction of the critical needs of the industry, such as optimization, visibility, connectivity, efficiency, and automation.',
           ]}

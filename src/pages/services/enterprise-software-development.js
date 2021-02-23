@@ -49,18 +49,50 @@ const EnterpriseSoftwareDevelopment = () => (
         <ServicesHeader
           title={'Enterprise Software Development'}
           paragraph={
-            'Solutions development for companies need to be tailor-made. A specific system can meet all the requirements established in an enterprise process; the outcome would be an improved quality control, preservation of demand, shipping optimization, and reduction of overhead costs. We use data analysis, an integrated workflow with dedicated Project Managers, and Certified Quality Assurance (QA), without interruption in your current process.'
+            'It is a software developed to meet the needs of an organization, company, enterprise, or business that already exists and has a system available. The main objectives are working in synergy to accomplish the main objective of this organization. ' +
+            'By applying this development, your business gets useful tools to develop the company, such as fleet management, planning supply and demand, processing orders, and control over inventory.'
           }
-          paragraph2={''}
+          paragraph2={
+            <>
+              <ul>
+                <li>• More value for my enterprise.</li>
+                <li>• My enterprise needs this.</li>
+                <li>• Risk reduction for my enterprise.</li>
+                <li>• Learn more about this.</li>
+              </ul>
+            </>
+          }
         />
       </Container>
     </Section>
     <StyledSection2>
-      <ServicesSection2 />
+      <ServicesSection2
+        title={'Challenge-solving software development'}
+        text={
+          '' +
+          'With Logistics or Supply Chain Software Development you will be able to give solutions to many of ' +
+          'the challenges displayed in logistics processes:'
+        }
+        list={[
+          'Supply Chain Complexity: Multiple channels to market.',
+          'Consumer demands: Expected speed, quality requirements met, and services.',
+          'Supply Chain Volatility: Avoiding delays, backlogs, and bottlenecks.',
+        ]}
+        otherText={
+          'From avoiding delays and predicting demand to tracking delivery times, and more, there are many solutions that an Enterprise Software Development will provide.'
+        }
+      />
     </StyledSection2>
     <Section>
       <Container>
-        <ServicesSection3 />
+        <ServicesSection3
+          title={'Reduce risks '}
+          textList={[
+            'With a Software Development, it is possible to modernize and simplify the flow of logistical operations.\n',
+            'This will help your business array with operations with tools for transactions, processes, and suppliers.\n',
+            'Paperwork and spreadsheets to simplify management won’t be needed anymore.',
+          ]}
+        />
       </Container>
     </Section>
     <Section>
@@ -72,7 +104,19 @@ const EnterpriseSoftwareDevelopment = () => (
     </Section>
     <Section>
       <Container>
-        <ServicesSection4 />
+        <ServicesSection4
+          title={'Enterprise Software Development Benefits\n'}
+          leftText={[
+            'Access to customer information.',
+            'Enhanced business reporting tools.',
+            'Uplifted cash flow.',
+          ]}
+          rightTextList={[
+            'Improved data and cloud security.',
+            'Effective demand forecasting and lean inventory.',
+            'Transparency through the business.',
+          ]}
+        />
       </Container>
     </Section>
     <StyledSection2>
