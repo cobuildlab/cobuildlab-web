@@ -46,15 +46,41 @@ const FieldServicesManagementSystem = () => (
     <Section>
       <ServicesBannerBackgroundBottom />
       <Container>
-        <ServicesHeader title={'Field Services Management System'} paragraph={''} paragraph2={''} />
+        <ServicesHeader
+          title={'Field Services Management System'}
+          paragraph={
+            'Track and manage field operations better than you are currently doing with a field service management system customized to your activities. In this new era, real time tracking and communication are the key to maximize earnings and customer satisfaction.'
+          }
+          paragraph2={''}
+        />
       </Container>
     </Section>
     <StyledSection2>
-      <ServicesSection2 />
+      <ServicesSection2
+        title={'Custom your Field Service Management System'}
+        text={'And avoid:'}
+        list={[
+          'Unnecessary or missing features.',
+          'Challenges storing data.',
+          'Security failures.',
+          'Complexity to track all field activities.',
+          'Lack of reports or statistics to make strategic decisions.',
+          'Communication and coordination (schedule)  problems.',
+          'Challenges planning ahead.',
+        ]}
+      />
     </StyledSection2>
     <Section>
       <Container>
-        <ServicesSection3 />
+        <ServicesSection3
+          title={'Improve your field operations by hiring us'}
+          textList={[
+            "We've strong engineering background in solving business problems with software solutions.",
+            'Combined over 50 years of experience developing software products.',
+            'Super goal-oriented (software focuses on their business outcomes, not just a technology shop)',
+            'We have a zero-waste process',
+          ]}
+        />
       </Container>
     </Section>
     <Section>
@@ -66,7 +92,21 @@ const FieldServicesManagementSystem = () => (
     </Section>
     <Section>
       <Container>
-        <ServicesSection4 />
+        <ServicesSection4
+          title={'Who can get the most out of a customized Field Service Management System?\n'}
+          leftText={[
+            'Service Companies',
+            'Transportation Companies',
+            'Logistics or supply chain companies',
+            'Warehouses',
+          ]}
+          rightTextList={[
+            'Factories and industries',
+            'Telecommunications',
+            'Engineering and construction',
+            'Healthcare',
+          ]}
+        />
       </Container>
     </Section>
     <StyledSection2>

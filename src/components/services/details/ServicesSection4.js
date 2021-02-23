@@ -37,9 +37,21 @@ const ServicesSection4 = ({ title, leftText, rightTextList }) => {
       <br />
       <Columns>
         <Column isSize={{ mobile: 12, desktop: 5 }} isOffset={{ desktop: 1 }}>
-          <ServicesContent>
-            <Paragraph>{leftText}</Paragraph>
-          </ServicesContent>
+          {!Array.isArray(leftText) ? (
+            <ServicesContent>
+              <Paragraph>{leftText}</Paragraph>
+            </ServicesContent>
+          ) : (
+            <ServicesContent>
+              <Paragraph>
+                <StyleList>
+                  {leftText.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </StyleList>
+              </Paragraph>
+            </ServicesContent>
+          )}
         </Column>
         <Column isSize={{ mobile: 12, desktop: 5 }} isOffset={{ desktop: 1 }}>
           <ServicesContent>
@@ -65,7 +77,7 @@ ServicesSection4.defaultProps = {
 
 ServicesSection4.propTypes = {
   title: PropTypes.string,
-  leftText: PropTypes.string,
+  leftText: PropTypes.any,
   rightTextList: PropTypes.array,
 };
 

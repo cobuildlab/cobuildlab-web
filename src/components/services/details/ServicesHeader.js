@@ -1,11 +1,10 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 import { Column, Columns } from 'bloomer';
-import Img from 'gatsby-image';
 import ServiceTitle from './../ServicesTitle';
 import ServicesContent from './../ServicesContent';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Paragraph = styled.p`
   font-size: 17px;
@@ -21,7 +20,6 @@ const Paragraph2 = styled.p`
 `;
 
 const ServicesHeader = ({ title, paragraph, paragraph2 }) => {
-  const data = useStaticQuery(query);
   return (
     <Columns>
       <Column isSize={{ mobile: 12, desktop: 7 }}>
@@ -36,7 +34,7 @@ const ServicesHeader = ({ title, paragraph, paragraph2 }) => {
         </ServicesContent>
       </Column>
       <Column isHidden="mobile" isSize={5}>
-        <Img fluid={data.file.childImageSharp.fluid} alt="" />
+        <StaticImage src={'./../../assets/images/service/product-development-new.png'} alt="" />
       </Column>
     </Columns>
   );
@@ -47,17 +45,5 @@ ServicesHeader.propTypes = {
   paragraph: PropTypes.string.isRequired,
   paragraph2: PropTypes.string.isRequired,
 };
-
-const query = graphql`
-  query {
-    file(relativePath: { eq: "service/product-development-new.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`;
 
 export default ServicesHeader;

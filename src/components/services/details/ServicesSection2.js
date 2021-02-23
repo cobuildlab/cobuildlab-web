@@ -23,7 +23,7 @@ const Paragraph = styled.p`
   }
 `;
 
-const ServicesSection2 = ({ title, text }) => {
+const ServicesSection2 = ({ title, text, list, otherText }) => {
   return (
     <>
       <Column isSize={{ mobile: 12, desktop: 12 }}>
@@ -34,6 +34,16 @@ const ServicesSection2 = ({ title, text }) => {
             </Typography>
           </StyledSubTitle>
           <Paragraph>{text}</Paragraph>
+          <>
+            <ul>
+              {list.map((listitem, id) => (
+                <li key={id}>
+                  <Paragraph>• {listitem}</Paragraph>
+                </li>
+              ))}
+            </ul>
+          </>
+          <Paragraph>{otherText}</Paragraph>
         </StyledSection>
       </Column>
     </>
@@ -43,11 +53,15 @@ const ServicesSection2 = ({ title, text }) => {
 ServicesSection2.defaultProps = {
   title: '',
   text: '',
+  list: [],
+  otherText: '',
 };
 
 ServicesSection2.propTypes = {
   title: PropTypes.string,
   text: PropTypes.string,
+  list: PropTypes.array,
+  otherText: PropTypes.string,
 };
 
 export default ServicesSection2;
