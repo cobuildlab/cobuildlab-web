@@ -56,19 +56,21 @@ const FieldServicesManagementSystem = () => (
       </Container>
     </Section>
     <StyledSection2>
-      <ServicesSection2
-        title={'Custom your Field Service Management System'}
-        text={'And avoid:'}
-        list={[
-          'Unnecessary or missing features.',
-          'Challenges storing data.',
-          'Security failures.',
-          'Complexity to track all field activities.',
-          'Lack of reports or statistics to make strategic decisions.',
-          'Communication and coordination (schedule)  problems.',
-          'Challenges planning ahead.',
-        ]}
-      />
+      <Container>
+        <ServicesSection2
+          title={'Custom your Field Service Management System'}
+          text={'And avoid:'}
+          list={[
+            'Unnecessary or missing features.',
+            'Challenges storing data.',
+            'Security failures.',
+            'Complexity to track all field activities.',
+            'Lack of reports or statistics to make strategic decisions.',
+            'Communication and coordination (schedule)  problems.',
+            'Challenges planning ahead.',
+          ]}
+        />
+      </Container>
     </StyledSection2>
     <Section>
       <Container>
@@ -84,11 +86,13 @@ const FieldServicesManagementSystem = () => (
       </Container>
     </Section>
     <Section>
-      <Columns isCentered>
-        <ServicesCardProduct />
-        <ServicesCardSoftware />
-        <ServicesCardTraining />
-      </Columns>
+      <Container>
+        <Columns isCentered>
+          <ServicesCardProduct />
+          <ServicesCardSoftware />
+          <ServicesCardTraining />
+        </Columns>
+      </Container>
     </Section>
     <Section>
       <Container>

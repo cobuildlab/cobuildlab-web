@@ -35,6 +35,12 @@ const StyledContainer = styled(Container)`
   padding-bottom: 75px;
 `;
 
+const Paragraph2 = styled.p`
+  font-size: 17px;
+  text-align: justify;
+  color: #264a60;
+`;
+
 const WebDevelopment = () => (
   <Layout>
     <SeoMetaTags title="Services" description="Privacy Policy for the Cobuild Lab" />
@@ -49,30 +55,73 @@ const WebDevelopment = () => (
         <ServicesHeader
           title={'Web Development'}
           paragraph={
-            'It doesn’t matter if you’ve had an online presence for years or are just getting started, or if you want to build a new web from scratch or if you would like to upgrade and scale the current one We provide intuitive and revenue-driven website development services to make sure your customers keep coming back over and over again. We build for all industries and on any complexity level.'
+            'Aligning a brand, your ideas, and our knowledge will give life to a website that caters to your service and operations. With a professional website, you can increase your revenue flows, and establish business credibility and thrusters with brand consistency.\n'
           }
-          paragraph2={''}
+          paragraph2={
+            <>
+              <ul>
+                <li>• Impact your audience now.</li>
+                <li>• Impress your target.</li>
+                <li>• More business credibility here.</li>
+              </ul>
+              <br />
+              <Paragraph2>
+                Web design includes many processes regarding the production and maintenance of a
+                website. Encompassing web graphic design, user interface design, user experience
+                design, and search engine optimization.
+              </Paragraph2>
+            </>
+          }
         />
       </Container>
     </Section>
     <StyledSection2>
-      <ServicesSection2 />
+      <Container>
+        <ServicesSection2
+          title={'Anything from a simple, single-page presence to a massive, multi-page website.'}
+          text={
+            'Our web design will be flexible and adaptable to your business’ requirements, with the right design, content distribution, and UX.\n' +
+            'Web designing is all about achieving goals by influencing the behavior of your visitors and structuring every element of it around the main goal of the website.\n'
+          }
+        />
+      </Container>
     </StyledSection2>
     <Section>
       <Container>
-        <ServicesSection3 />
+        <ServicesSection3
+          title={'Let’s impact your audience'}
+          otherText={
+            'For whom is a web created? This is the portal that your business will use to directly contact your potential customers. Impress your target with our Web Design service.' +
+            '\n Well-structured web design strengthens your competitive advantages by providing value to the users, with a visually appealing website, a fast load time, and more.\n'
+          }
+          textList={[
+            'Increase your company’s awareness of Web Design.',
+            'Improve the conversions of your web. With Web Design, your business will attract more potential clients.\n',
+            'More competitive advantage. Added value to the main target and strategies applied to your business.',
+          ]}
+        />
       </Container>
     </Section>
     <Section>
-      <Columns isCentered>
-        <ServicesCardProduct />
-        <ServicesCardSoftware />
-        <ServicesCardTraining />
-      </Columns>
+      <Container>
+        <Columns isCentered>
+          <ServicesCardProduct />
+          <ServicesCardSoftware />
+          <ServicesCardTraining />
+        </Columns>
+      </Container>
     </Section>
     <Section>
       <Container>
-        <ServicesSection4 />
+        <ServicesSection4
+          title={'Benefits and Advantages of Web Design'}
+          leftText={[
+            'Improved website loading times.',
+            'Lower bounce rates.',
+            'Higher conversion rates',
+          ]}
+          rightTextList={['More Social Sharing.']}
+        />
       </Container>
     </Section>
     <StyledSection2>
