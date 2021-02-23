@@ -66,22 +66,24 @@ const EnterpriseSoftwareDevelopment = () => (
       </Container>
     </Section>
     <StyledSection2>
-      <ServicesSection2
-        title={'Challenge-solving software development'}
-        text={
-          '' +
-          'With Logistics or Supply Chain Software Development you will be able to give solutions to many of ' +
-          'the challenges displayed in logistics processes:'
-        }
-        list={[
-          'Supply Chain Complexity: Multiple channels to market.',
-          'Consumer demands: Expected speed, quality requirements met, and services.',
-          'Supply Chain Volatility: Avoiding delays, backlogs, and bottlenecks.',
-        ]}
-        otherText={
-          'From avoiding delays and predicting demand to tracking delivery times, and more, there are many solutions that an Enterprise Software Development will provide.'
-        }
-      />
+      <Container>
+        <ServicesSection2
+          title={'Challenge-solving software development'}
+          text={
+            '' +
+            'With Logistics or Supply Chain Software Development you will be able to give solutions to many of ' +
+            'the challenges displayed in logistics processes:'
+          }
+          list={[
+            'Supply Chain Complexity: Multiple channels to market.',
+            'Consumer demands: Expected speed, quality requirements met, and services.',
+            'Supply Chain Volatility: Avoiding delays, backlogs, and bottlenecks.',
+          ]}
+          otherText={
+            'From avoiding delays and predicting demand to tracking delivery times, and more, there are many solutions that an Enterprise Software Development will provide.'
+          }
+        />
+      </Container>
     </StyledSection2>
     <Section>
       <Container>
@@ -96,11 +98,13 @@ const EnterpriseSoftwareDevelopment = () => (
       </Container>
     </Section>
     <Section>
-      <Columns isCentered>
-        <ServicesCardProduct />
-        <ServicesCardSoftware />
-        <ServicesCardTraining />
-      </Columns>
+      <Container>
+        <Columns isCentered>
+          <ServicesCardProduct />
+          <ServicesCardSoftware />
+          <ServicesCardTraining />
+        </Columns>
+      </Container>
     </Section>
     <Section>
       <Container>

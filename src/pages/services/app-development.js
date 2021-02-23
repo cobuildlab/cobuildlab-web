@@ -65,12 +65,14 @@ const AppDevelopment = () => (
       </Container>
     </Section>
     <StyledSection2>
-      <ServicesSection2
-        title={'Essential for your businesses'}
-        text={
-          'Nowadays, a mobile app is a must-have for most businesses. We can turn your idea and transform it into a powerful app for in-house communication, real-time employee contact, workflow, and operations support.'
-        }
-      />
+      <Container>
+        <ServicesSection2
+          title={'Essential for your businesses'}
+          text={
+            'Nowadays, a mobile app is a must-have for most businesses. We can turn your idea and transform it into a powerful app for in-house communication, real-time employee contact, workflow, and operations support.'
+          }
+        />
+      </Container>
     </StyledSection2>
     <Section>
       <Container>
@@ -83,11 +85,13 @@ const AppDevelopment = () => (
       </Container>
     </Section>
     <Section>
-      <Columns isCentered>
-        <ServicesCardProduct />
-        <ServicesCardSoftware />
-        <ServicesCardTraining />
-      </Columns>
+      <Container>
+        <Columns isCentered>
+          <ServicesCardProduct />
+          <ServicesCardSoftware />
+          <ServicesCardTraining />
+        </Columns>
+      </Container>
     </Section>
     <Section>
       <Container>

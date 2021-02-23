@@ -69,12 +69,14 @@ const DigitalTransformation = () => (
       </Container>
     </Section>
     <StyledSection2>
-      <ServicesSection2
-        title={'Unbolt unknown values for your customers'}
-        text={
-          'Cobuild Lab will help you on applying technology for processes to run themselves, making those processes more effective and expanding straightforwardness and reporting abilities. Moreover, unlocking new value features for customers to meet their expectations constantly evolving.'
-        }
-      />
+      <Container>
+        <ServicesSection2
+          title={'Unbolt unknown values for your customers'}
+          text={
+            'Cobuild Lab will help you on applying technology for processes to run themselves, making those processes more effective and expanding straightforwardness and reporting abilities. Moreover, unlocking new value features for customers to meet their expectations constantly evolving.'
+          }
+        />
+      </Container>
     </StyledSection2>
     <Section>
       <Container>
@@ -90,11 +92,13 @@ const DigitalTransformation = () => (
       </Container>
     </Section>
     <Section>
-      <Columns isCentered>
-        <ServicesCardProduct />
-        <ServicesCardSoftware />
-        <ServicesCardTraining />
-      </Columns>
+      <Container>
+        <Columns isCentered>
+          <ServicesCardProduct />
+          <ServicesCardSoftware />
+          <ServicesCardTraining />
+        </Columns>
+      </Container>
     </Section>
     <Section>
       <Container>

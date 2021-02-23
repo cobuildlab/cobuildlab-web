@@ -18,11 +18,18 @@ const Paragraph = styled.p`
   color: #264a60;
 `;
 
+const Paragraph2 = styled.p`
+  font-size: 20px;
+  font-weight: 300;
+  text-align: justify;
+  color: #264a60;
+`;
+
 const StyleSubtitle = styled.div`
   text-align: center;
 `;
 
-const ServicesSection3 = ({ title, textList }) => {
+const ServicesSection3 = ({ title, textList, otherText }) => {
   return (
     <>
       <StyleSubtitle>
@@ -39,6 +46,7 @@ const ServicesSection3 = ({ title, textList }) => {
         </Column>
         <Column isSize={{ mobile: 12, desktop: 7 }}>
           <ServicesContent>
+            {!otherText ? <Paragraph2>{otherText}</Paragraph2> : null}
             {textList.map((t, i) => (
               <React.Fragment key={i}>
                 <Paragraph>☛ {t}</Paragraph>
@@ -53,11 +61,13 @@ const ServicesSection3 = ({ title, textList }) => {
 
 ServicesSection3.defaultProps = {
   title: '',
+  otherText: '',
   textList: [],
 };
 
 ServicesSection3.propTypes = {
   title: PropTypes.string,
+  otherText: PropTypes.string,
   textList: PropTypes.array,
 };
 
