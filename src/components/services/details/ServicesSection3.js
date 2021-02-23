@@ -46,7 +46,7 @@ const ServicesSection3 = ({ title, textList, otherText }) => {
         </Column>
         <Column isSize={{ mobile: 12, desktop: 7 }}>
           <ServicesContent>
-            <Paragraph2>{otherText}</Paragraph2>
+            {!otherText ? <Paragraph2>{otherText}</Paragraph2> : null}
             {textList.map((t, i) => (
               <React.Fragment key={i}>
                 <Paragraph>☛ {t}</Paragraph>
