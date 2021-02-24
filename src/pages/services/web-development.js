@@ -78,7 +78,8 @@ const WebDevelopment = () => (
     <StyledSection2>
       <Container>
         <ServicesSection2
-          title={'Anything from a simple, single-page presence to a massive, multi-page website.'}
+          title={'Anything from a simple, '}
+          titleOrange={'single-page presence to a massive, multi-page website'}
           text={
             'Our web design will be flexible and adaptable to your business’ requirements, with the right design, content distribution, and UX.\n' +
             'Web designing is all about achieving goals by influencing the behavior of your visitors and structuring every element of it around the main goal of the website.\n'
