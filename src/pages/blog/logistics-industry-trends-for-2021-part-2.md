@@ -11,13 +11,13 @@ With heightened levels of consumer demand not looking to slow down any time soon
 
 
  <title-3 align="centered"> Green Logistics  </title-3> <br> </br>
- 
-	Green Logistics is the most anticipated and novel rend for 2021, not only because climate change is a vital part of the social and political discourse but also for the consumer’s ever-increasing awareness of their impact on the environment as they search for cleaner alternatives for the planet.<br> </br>
-  
-	Its main objective is to coordinate the activities within a supply chain in such a way that beneficiary needs are met at "least cost" to the environment. It is a principal component of reverse logistics. In the past “cost” has been defined in purely monetary terms, whereas "cost" can now also be understood as the external costs of logistics associated with: climate change, air pollution, dumping waste (including packaging waste), soil degradation, noise, vibration, and accidents. <br> </br>
-  
-	The challenges ahead are clear: reduced carbon emissions, shift to more sustainable containers and packaging, use of means of transportation with a smaller Co2 footprint, and an increasingly efficient supply chain procedure focused on reducing the company’s impact on the environment. <br> </br>
-  
+
+Green Logistics is the most anticipated and novel rend for 2021, not only because climate change is a vital part of the social and political discourse but also for the consumer’s ever-increasing awareness of their impact on the environment as they search for cleaner alternatives for the planet. <br> </br>
+
+Its main objective is to coordinate the activities within a supply chain in such a way that beneficiary needs are met at "least cost" to the environment. It is a principal component of reverse logistics. In the past “cost” has been defined in purely monetary terms, whereas "cost" can now also be understood as the external costs of logistics associated with: climate change, air pollution, dumping waste (including packaging waste), soil degradation, noise, vibration, and accidents. <br> </br>
+
+The challenges ahead are clear: reduced carbon emissions, shift to more sustainable containers and packaging, use of means of transportation with a smaller Co2 footprint, and an increasingly efficient supply chain procedure focused on reducing the company’s impact on the environment. <br> </br>
+
 <title-6 align="centered"> 👉 Check out: <a target="_blank" href="https://cobuildlab.com/blog/what-do-I-need-to-manage-my-companys-logistics/amp/"> What do I need to manage my company's logistics in-house?</a> </title-6>  <br> </br>
 
 
