@@ -1,8 +1,9 @@
 import React from 'react';
-import { Column } from 'bloomer';
+import { Column, Columns } from 'bloomer';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Typography from '../../2020/Typography';
+import { TextOrange } from '../../2021/text/TextHelpers';
 
 const StyledSection = styled.div`
   margin-top: 50px;
@@ -23,27 +24,42 @@ const Paragraph = styled.p`
   }
 `;
 
-const ServicesSection2 = ({ title, text, list, otherText }) => {
+const ServicesSection2 = ({ title, titleOrange, text, listLeft, listRight, otherText }) => {
   return (
     <>
       <Column isSize={{ mobile: 12, desktop: 12 }}>
         <StyledSection>
           <StyledSubTitle>
             <Typography tag="h2" className="subtitle-new">
-              {title}
+              {title} <TextOrange>{titleOrange}</TextOrange>
             </Typography>
           </StyledSubTitle>
           <Paragraph>{text}</Paragraph>
-          <>
-            <ul>
-              {list.map((listitem, id) => (
-                <li key={id}>
-                  <Paragraph>• {listitem}</Paragraph>
-                </li>
-              ))}
-            </ul>
-          </>
-          <Paragraph>{otherText}</Paragraph>
+          {Array.isArray(listLeft) ? (
+            <>
+              <Columns>
+                <Column isSize={{ mobile: 12, desktop: 6 }}>
+                  <ul>
+                    {listLeft.map((listitem, id) => (
+                      <li key={id}>
+                        <Paragraph>• {listitem}</Paragraph>
+                      </li>
+                    ))}
+                  </ul>
+                </Column>
+                <Column isSize={{ mobile: 12, desktop: 6 }}>
+                  <ul>
+                    {listRight.map((listitem, id) => (
+                      <li key={id}>
+                        <Paragraph>• {listitem}</Paragraph>
+                      </li>
+                    ))}
+                  </ul>
+                </Column>
+              </Columns>
+            </>
+          ) : null}
+          {!otherText ? <Paragraph>{otherText}</Paragraph> : null}
         </StyledSection>
       </Column>
     </>
@@ -52,15 +68,19 @@ const ServicesSection2 = ({ title, text, list, otherText }) => {
 
 ServicesSection2.defaultProps = {
   title: '',
+  titleOrange: '',
   text: '',
-  list: [],
+  listLeft: [],
+  listRight: [],
   otherText: '',
 };
 
 ServicesSection2.propTypes = {
   title: PropTypes.string,
+  titleOrange: PropTypes.string,
   text: PropTypes.string,
-  list: PropTypes.array,
+  listLeft: PropTypes.array,
+  listRight: PropTypes.array,
   otherText: PropTypes.string,
 };
 

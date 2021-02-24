@@ -58,13 +58,16 @@ const FieldServicesManagementSystem = () => (
     <StyledSection2>
       <Container>
         <ServicesSection2
-          title={'Custom your Field Service Management System'}
+          title={'Custom your Field '}
+          titleOrange={'Service Management System'}
           text={'And avoid:'}
-          list={[
+          listLeft={[
             'Unnecessary or missing features.',
             'Challenges storing data.',
             'Security failures.',
             'Complexity to track all field activities.',
+          ]}
+          listRight={[
             'Lack of reports or statistics to make strategic decisions.',
             'Communication and coordination (schedule)  problems.',
             'Challenges planning ahead.',

@@ -1410,3 +1410,7 @@ img.i-l {
     background-position: right;
     background-size: cover;
 }
+
+.slick-slide img {
+    display: initial!important;
+}

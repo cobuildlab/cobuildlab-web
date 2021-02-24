@@ -68,13 +68,14 @@ const EnterpriseSoftwareDevelopment = () => (
     <StyledSection2>
       <Container>
         <ServicesSection2
-          title={'Challenge-solving software development'}
+          title={'Challenge-solving '}
+          titleOrange={'software development'}
           text={
             '' +
             'With Logistics or Supply Chain Software Development you will be able to give solutions to many of ' +
             'the challenges displayed in logistics processes:'
           }
-          list={[
+          listLeft={[
             'Supply Chain Complexity: Multiple channels to market.',
             'Consumer demands: Expected speed, quality requirements met, and services.',
             'Supply Chain Volatility: Avoiding delays, backlogs, and bottlenecks.',
@@ -88,7 +89,7 @@ const EnterpriseSoftwareDevelopment = () => (
     <Section>
       <Container>
         <ServicesSection3
-          title={'Reduce risks '}
+          title={'Reduce risks'}
           textList={[
             'With a Software Development, it is possible to modernize and simplify the flow of logistical operations.\n',
             'This will help your business array with operations with tools for transactions, processes, and suppliers.\n',

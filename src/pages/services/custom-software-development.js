@@ -79,7 +79,8 @@ const CustomSoftwareDevelopment = () => (
     <StyledSection2>
       <Container>
         <ServicesSection2
-          title={'Develop your custom software tool'}
+          title={'Develop your '}
+          titleOrange={'custom software tool'}
           text={
             'In that way, you`ll have a tool that responds to your specific processes and needs' +
             'and allows you to decide on issues such as gestures, functionalities, updates (if' +

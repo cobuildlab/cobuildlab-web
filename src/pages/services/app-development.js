@@ -67,7 +67,8 @@ const AppDevelopment = () => (
     <StyledSection2>
       <Container>
         <ServicesSection2
-          title={'Essential for your businesses'}
+          title={'Essential '}
+          titleOrange={'for your businesses'}
           text={
             'Nowadays, a mobile app is a must-have for most businesses. We can turn your idea and transform it into a powerful app for in-house communication, real-time employee contact, workflow, and operations support.'
           }

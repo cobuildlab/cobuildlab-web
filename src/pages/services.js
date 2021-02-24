@@ -208,7 +208,7 @@ const Services = () => (
           cover={
             'Zero-waste process combined with more than 50 years of experience.\n' +
             'Risk-costs reduction, more effective tracking, and faster delivery date.\n' +
-            'Efficiency rate will increase with the right guidance and assistance.\n'
+            'Efficiency rate will increase with the right guidance and assistance'
           }
           to={'enterprise-software-development'}
           image={
