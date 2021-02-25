@@ -47,32 +47,82 @@ const CustomCustomerManagementSystem = () => (
       <ServicesBannerBackgroundBottom />
       <Container>
         <ServicesHeader
-          title={'Custom Customer Management System'}
+          title={'Customer Relationship Management System'}
           paragraph={
-            'We put together managed teams to develop your most challenging projects. Our developers and designers can help you execute quickly and ship products faster. We specialize in designing, building, and maintaining distributed multi-tenant, secure, and robust custom software solutions.'
+            'A CUSTOMER RELATIONSHIP MANAGEMENT SYSTEM is software where you can organize the details related to your customers, across all departments at your company. Anyone with access to the CRM can track and manage the journey of every lead and customer that interacts with your brand, website, or products.'
           }
-          paragraph2={''}
+          paragraph2={
+            <>
+              <ul>
+                <li>• Get the fastest-growing software on the market today!.</li>
+                <li>• Contact us now.</li>
+                <li>• Get a FREE Consultation.</li>
+              </ul>
+            </>
+          }
         />
       </Container>
     </Section>
     <StyledSection2>
-      <ServicesSection2 />
+      <Container>
+        <ServicesSection2
+          title={'Boosting \n'}
+          titleOrange={'your productivity'}
+          text={
+            'CRMs help your business grow better for several reasons. One of the simplest yet the most effective advantages is its ability to automate time-consuming, manual tasks by leveraging workflows. '
+          }
+          otherText={
+            'Whether you’re just looking to have software to organize and manage all customer-related information, make internal communication easier, convert more leads into customers faster, or improve your relationships with customers, a CRM can help.\n'
+          }
+        />
+      </Container>
     </StyledSection2>
     <Section>
       <Container>
-        <ServicesSection3 />
+        <ServicesSection3
+          title={'Ensuring your key customer-centric strategies\n'}
+          otherText={
+            'Improve your teamwork communication with your consumers. It’s more critical than ever for marketing and sales teams to function as a cohesive unit, and CRM systems are the perfect solution to help scaling organizations achieve that goal.\n'
+          }
+        />
       </Container>
     </Section>
     <Section>
-      <Columns isCentered>
-        <ServicesCardProduct />
-        <ServicesCardSoftware />
-        <ServicesCardTraining />
-      </Columns>
+      <Container>
+        <Columns isCentered>
+          <ServicesCardProduct />
+          <ServicesCardSoftware />
+          <ServicesCardTraining />
+        </Columns>
+      </Container>
     </Section>
     <Section>
       <Container>
-        <ServicesSection4 />
+        <ServicesSection4
+          title={'Why it’s so important to get a CRM System\n'}
+          text={
+            <>
+              <p>
+                Nothing about CRM is new, it is a tried and tested strategy. Businesses who have
+                pursued a CRM system have witnessed an increase in their customer retention rates of
+                up to 27%
+              </p>
+              <p>A CRM System Software provides your business solutions like:</p>
+            </>
+          }
+          leftText={[
+            ' Organize and simplify growth.',
+            'Improve productivity.',
+            'Increase sales',
+            'Resolve the challenges of customer-facing teams.',
+          ]}
+          rightTextList={[
+            'Create workflows to save you time.',
+            'Automate your day-to-day tasks.',
+            'Report on and analyze your processes.',
+            'Real-time / multi-channel communication (Email, SMS, Phone Call)',
+          ]}
+        />
       </Container>
     </Section>
     <StyledSection2>

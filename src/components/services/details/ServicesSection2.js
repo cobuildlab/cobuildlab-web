@@ -24,7 +24,15 @@ const Paragraph = styled.p`
   }
 `;
 
-const ServicesSection2 = ({ title, titleOrange, text, listLeft, listRight, otherText }) => {
+const ServicesSection2 = ({
+  title,
+  titleOrange,
+  text,
+  textList,
+  listLeft,
+  listRight,
+  otherText,
+}) => {
   return (
     <>
       <Column isSize={{ mobile: 12, desktop: 12 }}>
@@ -34,11 +42,18 @@ const ServicesSection2 = ({ title, titleOrange, text, listLeft, listRight, other
               {title} <TextOrange>{titleOrange}</TextOrange>
             </Typography>
           </StyledSubTitle>
-          <Paragraph>{text}</Paragraph>
+          {text !== '' ? <Paragraph>{text}</Paragraph> : null}
+
+          {textList !== '' ? (
+            <Column isSize={{ mobile: 12, desktop: 10 }} isOffset={2}>
+              <Paragraph>{textList}</Paragraph>
+            </Column>
+          ) : null}
+
           {Array.isArray(listLeft) ? (
             <>
               <Columns>
-                <Column isSize={{ mobile: 12, desktop: 6 }}>
+                <Column isSize={{ mobile: 12, desktop: 4 }} isOffset={2}>
                   <ul>
                     {listLeft.map((listitem, id) => (
                       <li key={id}>
@@ -70,6 +85,7 @@ ServicesSection2.defaultProps = {
   title: '',
   titleOrange: '',
   text: '',
+  textList: '',
   listLeft: [],
   listRight: [],
   otherText: '',
@@ -79,6 +95,7 @@ ServicesSection2.propTypes = {
   title: PropTypes.string,
   titleOrange: PropTypes.string,
   text: PropTypes.string,
+  textList: PropTypes.string,
   listLeft: PropTypes.array,
   listRight: PropTypes.array,
   otherText: PropTypes.string,

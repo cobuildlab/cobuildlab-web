@@ -60,7 +60,7 @@ const FieldServicesManagementSystem = () => (
         <ServicesSection2
           title={'Custom your Field '}
           titleOrange={'Service Management System'}
-          text={'And avoid:'}
+          textList={'And avoid:'}
           listLeft={[
             'Unnecessary or missing features.',
             'Challenges storing data.',
