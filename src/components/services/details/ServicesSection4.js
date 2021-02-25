@@ -15,13 +15,16 @@ const Paragraph = styled.p`
 
 const StyleList = styled.ul`
   list-style: initial;
+  & li {
+    padding-bottom: 10px;
+  }
 `;
 
 const StyleSubtitle = styled.div`
   text-align: center;
 `;
 
-const ServicesSection4 = ({ title, leftText, rightTextList }) => {
+const ServicesSection4 = ({ title, leftText, rightTextList, text }) => {
   return (
     <>
       <StyleSubtitle>
@@ -32,11 +35,25 @@ const ServicesSection4 = ({ title, leftText, rightTextList }) => {
         </ServicesSubTitle>
       </StyleSubtitle>
       <br />
+      <Paragraph>{text}</Paragraph>
+      <br />
       <Columns>
-        <Column isSize={{ mobile: 12, desktop: 4 }} isOffset={{ desktop: 1 }}>
-          <ServicesContent>
-            <Paragraph>{leftText}</Paragraph>
-          </ServicesContent>
+        <Column isSize={{ mobile: 12, desktop: 5 }} isOffset={{ desktop: 1 }}>
+          {!Array.isArray(leftText) ? (
+            <ServicesContent>
+              <Paragraph>{leftText}</Paragraph>
+            </ServicesContent>
+          ) : (
+            <ServicesContent>
+              <Paragraph>
+                <StyleList>
+                  {leftText.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </StyleList>
+              </Paragraph>
+            </ServicesContent>
+          )}
         </Column>
         <Column isSize={{ mobile: 12, desktop: 5 }} isOffset={{ desktop: 1 }}>
           <ServicesContent>
@@ -57,12 +74,14 @@ const ServicesSection4 = ({ title, leftText, rightTextList }) => {
 ServicesSection4.defaultProps = {
   title: '',
   leftText: '',
+  text: '',
   rightTextList: [],
 };
 
 ServicesSection4.propTypes = {
   title: PropTypes.string,
-  leftText: PropTypes.string,
+  leftText: PropTypes.any,
+  text: PropTypes.string,
   rightTextList: PropTypes.array,
 };
 

@@ -6,6 +6,11 @@ import '../../../assets/2021/scss/about.scss';
 import { SmoothScrollingButton } from '../button/SmoothScrollingButton';
 import { SubTitle } from '../../2020/LandingTypography';
 import { AlignCenter } from '../text/TextHelpers';
+import styled from 'styled-components';
+
+const StyledSpacing = styled.div`
+  height: 100px;
+`;
 
 const CompetitiveAdvantage = () => {
   return (
@@ -40,6 +45,7 @@ const CompetitiveAdvantage = () => {
           </Column>
         </Columns>
       </Container>
+      <StyledSpacing />
       <Container>
         <Columns isDisplay="flex-mobile" isCentered>
           <Column isSize={{ mobile: 10, desktop: 5 }} isHidden="mobile">

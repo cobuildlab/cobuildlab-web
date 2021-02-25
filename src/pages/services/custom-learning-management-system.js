@@ -48,29 +48,67 @@ const CustomLearningManagmentSystem = () => (
       <Container>
         <ServicesHeader
           title={'Custom Learning Management System'}
-          paragraph={''}
+          paragraph={
+            'For the needs of creating e-learning content, interactive, that you can integrate with other systems of your company (such as CRM), with customized reports or gamification, a custom learning management system is the best option.'
+          }
           paragraph2={''}
         />
       </Container>
     </Section>
     <StyledSection2>
-      <ServicesSection2 />
+      <Container>
+        <ServicesSection2
+          title={'Get a Custom Learning '}
+          titleOrange={'Management System\n'}
+          textList={'In order to don’t have:'}
+          listLeft={[
+            'Too much content to manage.',
+            'Off the shelf or commercial solutions are too complicated to manage and learn.',
+            'Workflows are too confusing for your users',
+          ]}
+          listRight={[
+            'Licensing costs are too expensive.',
+            'Difficulty in data storage. Videos, articles, etc.',
+            'Billing doesn’t adjust to your business model.',
+          ]}
+        />
+      </Container>
     </StyledSection2>
     <Section>
       <Container>
-        <ServicesSection3 />
+        <ServicesSection3
+          title={'Benefits of Custom Learning Management System\n'}
+          textList={[
+            'Improve the performance of your business/learners.',
+            'Features tailored to your vision.',
+            'Get the opportunity to leave the premises of a traditional office.',
+            'Flexibility, scalability, and futureproof.',
+            'Unlimited learners.',
+            'High level of automation of eLearning management, which increases the productivity of trainers and trainees.',
+          ]}
+        />
       </Container>
     </Section>
     <Section>
-      <Columns isCentered>
-        <ServicesCardProduct />
-        <ServicesCardSoftware />
-        <ServicesCardTraining />
-      </Columns>
+      <Container>
+        <Columns isCentered>
+          <ServicesCardProduct />
+          <ServicesCardSoftware />
+          <ServicesCardTraining />
+        </Columns>
+      </Container>
     </Section>
     <Section>
       <Container>
-        <ServicesSection4 />
+        <ServicesSection4
+          title={'Scale your Custom Learning Management System\n'}
+          text={
+            "We've strong engineering background in solving business problems with software solutions.\n" +
+            'Combined over 50 years of experience developing software products.\n' +
+            'Super goal-oriented (software focuses on their business outcomes, not just a technology shop)\n' +
+            'We have a zero-waste process\n'
+          }
+        />
       </Container>
     </Section>
     <StyledSection2>

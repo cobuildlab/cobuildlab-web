@@ -1,11 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container, Columns, Column, Section } from 'bloomer';
+import { Container, Columns, Column, Section, Title } from 'bloomer';
 import { objectGroup, areaChart, cogs, users, searchPlus } from 'react-icons-kit/fa';
 import PreviewIcon from '../../enterprise/components/icon';
 import Typography from '../../2020/Typography';
 import { SmoothScrollingButton } from '../button/SmoothScrollingButton';
 import '../../../assets/2021/scss/service.scss';
+import styled from 'styled-components';
+
+const StyledColumns = styled(Columns)`
+  margin-top: 100px;
+`;
+
+const StyledButtoms = styled.div`
+  text-align: center;
+`;
+
+const StyledCenterTitle = styled(Title)`
+  text-align: center;
+`;
 
 const ConentContainer = ({ children }) => (
   <div className="service-content-1 main-title-wrapper">{children}</div>
@@ -48,11 +61,9 @@ const Service2 = () => {
     <Section>
       <Container>
         <div className="service-content-1 main-title-wrapper">
-          <Typography tag="h2" className="sitemain-subtitle">
-            Services:
-          </Typography>
+          <StyledCenterTitle isSize={1}>Services:</StyledCenterTitle>
         </div>
-        <Columns>
+        <StyledColumns>
           <Column isSize={{ mobile: 12, tablet: 8, desktop: 8 }} isMarginless isPaddingless>
             <div className="service-block-content">
               <Columns isDisplay="flex-tablet">
@@ -125,10 +136,12 @@ const Service2 = () => {
               </Columns>
             </div>
           </Column>
-        </Columns>
-        <SmoothScrollingButton href="#" isCapitalize={false}>
-          Contact US!
-        </SmoothScrollingButton>
+        </StyledColumns>
+        <StyledButtoms>
+          <SmoothScrollingButton href="#" isCapitalize={false}>
+            Contact US!
+          </SmoothScrollingButton>
+        </StyledButtoms>
       </Container>
     </Section>
   );

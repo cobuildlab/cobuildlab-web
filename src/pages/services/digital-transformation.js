@@ -47,32 +47,75 @@ const DigitalTransformation = () => (
       <ServicesBannerBackgroundBottom />
       <Container>
         <ServicesHeader
-          title={'Process Automation'}
+          title={'Digital Transformation'}
           paragraph={
-            'Evaluation of systems, processes, and workflow to assemble data across different areas for a more efficient synergy. Bringing enterprises forward is possible when applying Digital Transformation, by increasing profit, revenue, agility and improving productivity. Cobuild Lab has more than 50 years of experience combined, and a thorough process by doing small and incremental improvements.'
+            'Technology applications are the future of enterprises. \n' +
+            'Process automation allows the restructuring of digital processes to improve efficiency, ' +
+            'unlatching modern value by innovating existing or new processes and products based on the use ' +
+            'of technology.'
           }
-          paragraph2={''}
+          paragraph2={
+            <>
+              <ul>
+                <li>• Transform my enterprise.</li>
+                <li>• Automate my enterprise.</li>
+                <li>• Solve challenges.</li>
+                <li>• Tackle challenges.</li>
+                <li>• Optimize and automate now!.</li>
+              </ul>
+            </>
+          }
         />
       </Container>
     </Section>
     <StyledSection2>
-      <ServicesSection2 />
+      <Container>
+        <ServicesSection2
+          title={'Unbolt unknown values for your customers'}
+          text={
+            'Cobuild Lab will help you on applying technology for processes to run themselves, making those processes more effective and expanding straightforwardness and reporting abilities. Moreover, unlocking new value features for customers to meet their expectations constantly evolving.'
+          }
+        />
+      </Container>
     </StyledSection2>
     <Section>
       <Container>
-        <ServicesSection3 />
+        <ServicesSection3
+          title={'Possibilities of increasing the revenue streams'}
+          textList={[
+            'One of the most important things to do to increase revenue streams is over-delivering on customer service. With automation, your customers will enjoy a smooth experience when accessing information at-all times.',
+            'Forms and workflows will also be automated, avoiding printing, sign, and scan.',
+            'Reduce monotonous manual data entry with integrated systems and databases.',
+            'Automatically support all mobile devices and accelerate the approval process by giving 24/7 access from anywhere.',
+          ]}
+        />
       </Container>
     </Section>
     <Section>
-      <Columns isCentered>
-        <ServicesCardProduct />
-        <ServicesCardSoftware />
-        <ServicesCardTraining />
-      </Columns>
+      <Container>
+        <Columns isCentered>
+          <ServicesCardProduct />
+          <ServicesCardSoftware />
+          <ServicesCardTraining />
+        </Columns>
+      </Container>
     </Section>
     <Section>
       <Container>
-        <ServicesSection4 />
+        <ServicesSection4
+          title={
+            '“Digital Transformation and Process Automation For The Logistics and Supply Chain Industries Benefits”'
+          }
+          leftText={[
+            'Leverage the power of Optimization driven by Machine Learning and Artificial Intelligence.',
+            'The solution of a wide range of challenges.',
+            'Hyper-connectivity among devices with Internet of Things.',
+          ]}
+          rightTextList={[
+            'Maximum visibility across factors to improve decision-making.',
+            'The satisfaction of the critical needs of the industry, such as optimization, visibility, connectivity, efficiency, and automation.',
+          ]}
+        />
       </Container>
     </Section>
     <StyledSection2>
