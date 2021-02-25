@@ -24,7 +24,7 @@ const StyleSubtitle = styled.div`
   text-align: center;
 `;
 
-const ServicesSection4 = ({ title, leftText, rightTextList }) => {
+const ServicesSection4 = ({ title, leftText, rightTextList, text }) => {
   return (
     <>
       <StyleSubtitle>
@@ -34,6 +34,8 @@ const ServicesSection4 = ({ title, leftText, rightTextList }) => {
           </Typography>
         </ServicesSubTitle>
       </StyleSubtitle>
+      <br />
+      <Paragraph>{text}</Paragraph>
       <br />
       <Columns>
         <Column isSize={{ mobile: 12, desktop: 5 }} isOffset={{ desktop: 1 }}>
@@ -72,12 +74,14 @@ const ServicesSection4 = ({ title, leftText, rightTextList }) => {
 ServicesSection4.defaultProps = {
   title: '',
   leftText: '',
+  text: '',
   rightTextList: [],
 };
 
 ServicesSection4.propTypes = {
   title: PropTypes.string,
   leftText: PropTypes.any,
+  text: PropTypes.string,
   rightTextList: PropTypes.array,
 };
 

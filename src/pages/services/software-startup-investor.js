@@ -35,7 +35,7 @@ const StyledContainer = styled(Container)`
   padding-bottom: 75px;
 `;
 
-const SoftwareDevelopment = () => (
+const AppDevelopment = () => (
   <Layout>
     <SeoMetaTags title="Services" description="Privacy Policy for the Cobuild Lab" />
     <Hero>
@@ -47,32 +47,62 @@ const SoftwareDevelopment = () => (
       <ServicesBannerBackgroundBottom />
       <Container>
         <ServicesHeader
-          title={'Custom Software Development'}
+          title={'Technical Analysis For Software Startup Investors'}
           paragraph={
-            'We put together managed teams to develop your most challenging projects. Our developers and designers can help you execute quickly and ship products faster. We specialize in designing, building, and maintaining distributed multi-tenant, secure, and robust custom software solutions.'
+            'In which startup do I invest? What do I need to understand the use and distribution of my resources in the development project?  How to recognize what points to improve in the development of a startup that I supported financially? Those questions have an answer: Technical Analysis for Software Startups Investors which includes the product roadmap, risk, and feasibility analysis, and soft security audit.\n'
           }
           paragraph2={''}
         />
       </Container>
     </Section>
     <StyledSection2>
-      <ServicesSection2 />
+      <Container>
+        <ServicesSection2
+          title={'Get a Technical Analysis '}
+          titleOrange={'for Software Startups Investors'}
+          textList={'And forget about:\n'}
+          listLeft={[
+            'High risks in the business model.',
+            'Supporting not viable ideas.',
+            'Confidentiality and cybersecurity issues with the app.',
+          ]}
+          listRight={[
+            'Uncertainty about the development process.',
+            'Lack of knowledge about the product or industry.',
+          ]}
+        />
+      </Container>
     </StyledSection2>
     <Section>
       <Container>
-        <ServicesSection3 />
+        <ServicesSection3
+          title={'How I benefit from a Technical Analysis for Software Startups Investors\n'}
+          otherText={
+            'Comprehensive knowledge about risks, legal aspects, burning rate, probabilities, industry, and market information. \n' +
+            'Access to the timeline. Estimates, essential data, business goals, development strategies, among other data that you should know. \n'
+          }
+          otherText2={
+            'Check on the status of certificates, backups, encryptions, everything necessary to ensure cybersecurity at a medium level.'
+          }
+        />
       </Container>
     </Section>
     <Section>
-      <Columns isCentered>
-        <ServicesCardProduct />
-        <ServicesCardSoftware />
-        <ServicesCardTraining />
-      </Columns>
+      <Container>
+        <Columns isCentered>
+          <ServicesCardProduct />
+          <ServicesCardSoftware />
+          <ServicesCardTraining />
+        </Columns>
+      </Container>
     </Section>
     <Section>
       <Container>
-        <ServicesSection4 />
+        <ServicesSection4
+          title={'Who would best take advantage of this service?'}
+          leftText={['Banks', 'Government Agencies', 'Angel Investors']}
+          rightTextList={['Accelerators and Incubators', 'Venture Capital firms']}
+        />
       </Container>
     </Section>
     <StyledSection2>
@@ -91,4 +121,4 @@ const SoftwareDevelopment = () => (
   </Layout>
 );
 
-export default SoftwareDevelopment;
+export default AppDevelopment;

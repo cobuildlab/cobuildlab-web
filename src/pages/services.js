@@ -103,6 +103,15 @@ const Services = () => (
       </StyledTitle>
       <Columns isCentered>
         <ServicesCard
+          title={'Technical Analysis'}
+          subtitle={'For Software Startup Investors'}
+          cover={''}
+          to={'software-startup-investor'}
+          image={
+            <StaticImage src={'./../assets/images/service/card/iconos-Startup-MVP.svg'} alt="" />
+          }
+        />
+        <ServicesCard
           title={'MVP Software'}
           subtitle={'Development'}
           cover={' Validate and launch your product in a speedy and efficacious way'}
@@ -111,10 +120,12 @@ const Services = () => (
             <StaticImage src={'./../assets/images/service/card/iconos-Startup-MVP.svg'} alt="" />
           }
         />
+      </Columns>
+      <Columns isCentered>
         <ServicesCard
           title={'Product'}
           subtitle={'Development'}
-          cover={'Let us turn your idea into a viable product'}
+          cover={'We develop your ideas into marketable products'}
           to={'product-development'}
           image={
             <StaticImage
@@ -124,7 +135,6 @@ const Services = () => (
           }
         />
       </Columns>
-      <Columns isCentered />
     </Section>
     <Section>
       <StyledTitle>
@@ -146,7 +156,7 @@ const Services = () => (
           }
         />
         <ServicesCard
-          title={'Custom Customer'}
+          title={'Customer Relationship'}
           subtitle={'Management System'}
           cover={
             'Centralize, optimize and streamline your customer’s communication. The better you know your customers, the stronger your relationships will be with them'

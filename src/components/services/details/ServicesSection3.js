@@ -29,7 +29,7 @@ const StyleSubtitle = styled.div`
   text-align: center;
 `;
 
-const ServicesSection3 = ({ title, textList, otherText }) => {
+const ServicesSection3 = ({ title, textList, otherText, otherText2 }) => {
   return (
     <>
       <StyleSubtitle>
@@ -46,7 +46,8 @@ const ServicesSection3 = ({ title, textList, otherText }) => {
         </Column>
         <Column isSize={{ mobile: 12, desktop: 7 }}>
           <ServicesContent>
-            {!otherText ? <Paragraph2>{otherText}</Paragraph2> : null}
+            {otherText !== '' ? <Paragraph2>{otherText}</Paragraph2> : null}
+            {otherText2 !== '' ? <Paragraph2>{otherText2}</Paragraph2> : null}
             {textList.map((t, i) => (
               <React.Fragment key={i}>
                 <Paragraph>☛ {t}</Paragraph>
@@ -62,12 +63,14 @@ const ServicesSection3 = ({ title, textList, otherText }) => {
 ServicesSection3.defaultProps = {
   title: '',
   otherText: '',
+  otherText2: '',
   textList: [],
 };
 
 ServicesSection3.propTypes = {
   title: PropTypes.string,
   otherText: PropTypes.string,
+  otherText2: PropTypes.string,
   textList: PropTypes.array,
 };
 

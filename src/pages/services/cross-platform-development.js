@@ -49,30 +49,64 @@ const CrossPlatformDevelopment = () => (
         <ServicesHeader
           title={'Cross-Platform Development'}
           paragraph={
-            'Are you planning to hire a multiplatform application development service? Our team builds robust, high-quality, scalable, and interactive mobile apps that offer a “one-code-fits-all” facility and run seamlessly over various platforms and devices.'
+            'Cross-platform development provides the flexibility to build your app using a universal language which can then be exported to various Smartphone platforms. This allows one “app” to work across multiple platforms, like IOS and Android.'
           }
-          paragraph2={''}
+          paragraph2={
+            <>
+              <ul>
+                <li>• Request a Call.</li>
+                <li>• Contact us now.</li>
+                <li>• Get a FREE Consultation.</li>
+              </ul>
+            </>
+          }
         />
       </Container>
     </Section>
     <StyledSection2>
-      <ServicesSection2 />
+      <Container>
+        <ServicesSection2
+          title={'Get faster'}
+          titleOrange={'into the Market'}
+          text={
+            'It is ideal for prototyping because it allows a faster time to market on more than one platform and allows the owner to collect user feedback, establish a position in the market and establish a position with consumers before any other competitor.'
+          }
+        />
+      </Container>
     </StyledSection2>
     <Section>
       <Container>
-        <ServicesSection3 />
+        <ServicesSection3
+          title={'You’ll Only Need One Development Team, Us!'}
+          otherText={
+            'We are a single Development team, who has hands-on experience working with a set of technologies. Having us as a unique team handling all the stages of the project, you avoid a scenario where too many work teams risk sabotaging one another and compromise the app project itself.\n'
+          }
+        />
       </Container>
     </Section>
     <Section>
-      <Columns isCentered>
-        <ServicesCardProduct />
-        <ServicesCardSoftware />
-        <ServicesCardTraining />
-      </Columns>
+      <Container>
+        <Columns isCentered>
+          <ServicesCardProduct />
+          <ServicesCardSoftware />
+          <ServicesCardTraining />
+        </Columns>
+      </Container>
     </Section>
     <Section>
       <Container>
-        <ServicesSection4 />
+        <ServicesSection4
+          title={'Why a Cross-Platform App?'}
+          leftText={[
+            'Launching the software simultaneously on various platforms.',
+            'Time to market is reduced since developing one program takes a lot less time than building two or three apps for each device platform.',
+            'Uniformity increases between different operating systems creating a more seamless user experience',
+          ]}
+          rightTextList={[
+            'Faster and easier updates.',
+            'Since cross-platform applications are Internet-based, Users don’t have to download separate updates.',
+          ]}
+        />
       </Container>
     </Section>
     <StyledSection2>

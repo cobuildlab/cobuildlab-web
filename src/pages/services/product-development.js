@@ -49,30 +49,72 @@ const ProductDevelopment = () => (
         <ServicesHeader
           title={'Product Development'}
           paragraph={
-            "Product development helps in aligning the company's business strategies with its products, as it involves methods and practices that help reduce risks and uncertainties associated with products being envisioned. We believe in providing high-quality product development services. We follow a highly collaborative approach to develop software products, providing innovative ideas, keeping in pace with customers' expectations, and incorporating new technologies to offer all of the software product development benefits to our clients."
+            'Product development covers the complete process of bringing a new product to market. We conceptualize and design product development and Integration processes that plug gaps in functionality, while accomplishing business objectives.'
           }
-          paragraph2={''}
+          paragraph2={
+            <>
+              <br />
+              <ul>
+                <li>• Let’s develop your Idea!.</li>
+                <li>• Contact Us!</li>
+                <li>• Get a FREE Consultation</li>
+              </ul>
+            </>
+          }
         />
       </Container>
     </Section>
     <StyledSection2>
-      <ServicesSection2 />
+      <Container>
+        <ServicesSection2
+          title={'We put your \n'}
+          titleOrange={'Idea in the Market'}
+          text={
+            'We help you to study, design, build your idea and release it as a final product into the market.'
+          }
+          otherText={
+            ' We can help you identify emerging trends, understand market requirements, and create software products that add value for your customers.'
+          }
+        />
+      </Container>
     </StyledSection2>
     <Section>
       <Container>
-        <ServicesSection3 />
+        <ServicesSection3
+          title={'Best Product Development process ever!\n'}
+          otherText={
+            'We’re focused on understanding your users’ needs, validating supposition quickly, reducing risks, and improving our processes to ensure an efficient and fluid product development life cycle, getting into an end-to-end experience.'
+          }
+          otherText2={
+            'Once we understand your vision, we assemble an A-team of engineers, designers, and developers to bring your product to life.'
+          }
+        />
       </Container>
     </Section>
     <Section>
-      <Columns isCentered>
-        <ServicesCardProduct />
-        <ServicesCardSoftware />
-        <ServicesCardTraining />
-      </Columns>
+      <Container>
+        <Columns isCentered>
+          <ServicesCardProduct />
+          <ServicesCardSoftware />
+          <ServicesCardTraining />
+        </Columns>
+      </Container>
     </Section>
     <Section>
       <Container>
-        <ServicesSection4 />
+        <ServicesSection4
+          title={'How can Product Development help you?'}
+          leftText={[
+            'It creates a culture of innovation.',
+            'It helps to drive your higher value proposition.',
+            'It can grow your professional network.',
+          ]}
+          rightTextList={[
+            'Helps in expanding the market for the products.',
+            'Helps in facing competition successfully and effectively.',
+            'Increase the goodwill and profit earning possibilities.',
+          ]}
+        />
       </Container>
     </Section>
     <StyledSection2>

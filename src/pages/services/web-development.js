@@ -81,8 +81,10 @@ const WebDevelopment = () => (
           title={'Anything from a simple, '}
           titleOrange={'single-page presence to a massive, multi-page website'}
           text={
-            'Our web design will be flexible and adaptable to your business’ requirements, with the right design, content distribution, and UX.\n' +
-            'Web designing is all about achieving goals by influencing the behavior of your visitors and structuring every element of it around the main goal of the website.\n'
+            'Our web design will be flexible and adaptable to your business’ requirements, with the right design, content distribution, and UX.'
+          }
+          otherText={
+            'Web designing is all about achieving goals by influencing the behavior of your visitors and structuring every element of it around the main goal of the website.'
           }
         />
       </Container>
@@ -92,8 +94,10 @@ const WebDevelopment = () => (
         <ServicesSection3
           title={'Let’s impact your audience'}
           otherText={
-            'For whom is a web created? This is the portal that your business will use to directly contact your potential customers. Impress your target with our Web Design service.' +
-            '\n Well-structured web design strengthens your competitive advantages by providing value to the users, with a visually appealing website, a fast load time, and more.\n'
+            'For whom is a web created? This is the portal that your business will use to directly contact your potential customers. Impress your target with our Web Design service.'
+          }
+          otherText2={
+            'Well-structured web design strengthens your competitive advantages by providing value to the users, with a visually appealing website, a fast load time, and more.'
           }
           textList={[
             'Increase your company’s awareness of Web Design.',
