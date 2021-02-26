@@ -42,11 +42,23 @@ const TeamList = () => {
           </Card>
         </Column>
         <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
-          <Card first={'Jeff'} last={'Leon'} description={'Business Development'}>
+          <Card
+            first={'Alessandra'}
+            last={'Lubertino'}
+            description={'Growth and Strategic Partnerships'}>
             <StaticImage
               className={'team-member-img'}
-              src={'./../../../assets/images/team/team-pictures/jeff-leon.jpg'}
-              alt="Jeff Leon"
+              src={'./../../../assets/images/team/team-pictures/alessandra-lubertino.jpg'}
+              alt="Alessandra Lubertino"
+            />
+          </Card>
+        </Column>
+        <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
+          <Card first={'Paul'} last={'Salazar'} description={'Business Development'}>
+            <StaticImage
+              className={'team-member-img'}
+              src={'./../../../assets/images/team/team-pictures/paul-salazar.jpg'}
+              alt="Paul Salazar"
             />
           </Card>
         </Column>

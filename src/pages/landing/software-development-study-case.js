@@ -49,7 +49,7 @@ export default class SoftwareDevStudy extends Component {
                 <StaticImage
                   maxWidth={350}
                   maxHeight={350}
-                  src={'../../assets/images/banner/group-banner-2.png'}
+                  src={'./../../assets/2021/images/group-banner-2.png'}
                   alt={'banner'}
                 />
               </Container>
