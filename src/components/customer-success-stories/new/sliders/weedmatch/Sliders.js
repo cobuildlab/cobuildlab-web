@@ -30,12 +30,6 @@ const SlidersWeedmatch = () => (
     </div>
     <div>
       <StaticImage
-        src={'./../../../../../assets/images/customers/weedmatch/slider/5.jpg'}
-        alt={'weedmatch 5'}
-      />
-    </div>
-    <div>
-      <StaticImage
         src={'./../../../../../assets/images/customers/weedmatch/slider/6.jpg'}
         alt={'weedmatch 6'}
       />
