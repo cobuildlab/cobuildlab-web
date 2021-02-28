@@ -117,11 +117,10 @@ const Avsee = ({ data }) => (
           Digital Transformation
         </TextLink>{' '}
         , it is not surprising that a software product is an ideal tool to accelerate these
-        advances; so we manage to put together a top software engineering team to start building a
+        advances; so we manage to put together a top software engineering team to start building a{' '}
         <TextLink to="https://cobuildlab.com/blog/what-is-digital-transformation-and-how-can-small-businesses-take-advantage-of-it-this-2020/amp/">
-          Custom Software Solution
-        </TextLink>{' '}
-        .
+          Custom Software Solution.
+        </TextLink>
       </DetailParagraph>
       <DetailParagraph>
         In order for health centers to be able to keep a dynamic and close follow-up of patients and
