@@ -45,7 +45,7 @@ const GeeksAcademy = ({ data }) => (
               recommendations provided by their doctor. According to a{' '}
               <TextLink to="https://www.paho.org/en">
                 Pan American Health Organization{"'"}s
-              </TextLink>
+              </TextLink>{' '}
               research about adherence to long-term medical treatment, it is estimated that{' '}
               <TextLink to="https://www.paho.org/spanish/ad/dpc/nc/adherencia-largo-plazo.pdf">
                 adherence to long-term treatment of chronic diseases
