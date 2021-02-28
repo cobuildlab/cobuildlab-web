@@ -34,7 +34,7 @@ const ServicesHeader = ({ title, paragraph, paragraph2 }) => {
         </ServicesContent>
       </Column>
       <Column isHidden="mobile" isSize={5}>
-        <StaticImage src={'./../../assets/images/service/product-development-new.png'} alt="" />
+        <StaticImage src={'./../../../assets/images/service/product-development-new.png'} alt="" />
       </Column>
     </Columns>
   );

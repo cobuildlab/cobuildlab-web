@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Currency from './../../../utils/Currency';
 
 const Container = styled.span`
-  font-size: 36px;
+  font-size: 33px;
   color: #406073;
   font-weight: bold;
   text-align: center;
   width: 100%;
   &:before {
-    content: '$';
     color: #406073;
     padding-right: 5px;
   }
@@ -17,12 +17,12 @@ const Container = styled.span`
 
 const CalculatorFeatureCost = ({ max, min }) => {
   if (max === 0 && min === 0) {
-    return <Container>0</Container>;
+    return <Container>{Currency(0)}</Container>;
   }
 
   return (
     <Container>
-      {min} - {max}
+      {Currency(min)} - {Currency(max)}
     </Container>
   );
 };

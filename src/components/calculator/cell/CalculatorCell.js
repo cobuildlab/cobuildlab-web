@@ -6,7 +6,7 @@ import { withHelpersModifiers } from 'bloomer';
 const Container = styled.div`
   width: 100%;
   height: 100%;
-  padding: 1em;
+  padding-bottom: 1em;
   justify-content: ${({ isJustify }) => isJustify || 'flex-start'};
   align-items: ${({ isAlign }) => isAlign || 'flex-start'};
   flex-direction: ${({ isDirection }) => isDirection || 'row'};
