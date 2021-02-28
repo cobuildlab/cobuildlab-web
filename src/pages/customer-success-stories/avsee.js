@@ -19,7 +19,7 @@ import SlidersAvsee from '../../components/customer-success-stories/new/sliders/
 import { StaticImage } from 'gatsby-plugin-image';
 import TextLink from '../../components/Typography/TextLink';
 
-const GeeksAcademy = ({ data }) => (
+const Avsee = ({ data }) => (
   <DetailLayout>
     <SeoMetaTags
       title="AVSEE"
@@ -225,13 +225,13 @@ const GeeksAcademy = ({ data }) => (
   </DetailLayout>
 );
 
-GeeksAcademy.propTypes = {
+Avsee.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
 export const pageQuery = graphql`
   query {
-    seoImages: file(relativePath: { eq: "customers/4geeks.jpg" }) {
+    seoImages: file(relativePath: { eq: "customers/avsee-logo.jpg" }) {
       childImageSharp {
         resize(width: 1200, height: 1200) {
           width
@@ -240,14 +240,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    videoImages: file(relativePath: { eq: "customers/4geek/video-cover.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
   }
 `;
 
-export default GeeksAcademy;
+export default Avsee;
