@@ -29,7 +29,7 @@ const Testimonial = () => {
   return (
     <Section isPaddingless id={'testimonials'}>
       <div className="testimonial-wrapper gradient-color" id="testimonial">
-        <div className="enterprise-section" style={{ 'padding-bottom': '4rem' }}>
+        <div className="enterprise-section" style={{ paddingBottom: '4rem' }}>
           <Container isFluid>
             <Wrapper>
               <Title>Testimonials</Title>

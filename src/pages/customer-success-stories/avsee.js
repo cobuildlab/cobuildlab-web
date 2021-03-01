@@ -19,7 +19,7 @@ import SlidersAvsee from '../../components/customer-success-stories/new/sliders/
 import { StaticImage } from 'gatsby-plugin-image';
 import TextLink from '../../components/Typography/TextLink';
 
-const GeeksAcademy = ({ data }) => (
+const Avsee = ({ data }) => (
   <DetailLayout>
     <SeoMetaTags
       title="AVSEE"
@@ -45,7 +45,7 @@ const GeeksAcademy = ({ data }) => (
               recommendations provided by their doctor. According to a{' '}
               <TextLink to="https://www.paho.org/en">
                 Pan American Health Organization{"'"}s
-              </TextLink>
+              </TextLink>{' '}
               research about adherence to long-term medical treatment, it is estimated that{' '}
               <TextLink to="https://www.paho.org/spanish/ad/dpc/nc/adherencia-largo-plazo.pdf">
                 adherence to long-term treatment of chronic diseases
@@ -117,11 +117,10 @@ const GeeksAcademy = ({ data }) => (
           Digital Transformation
         </TextLink>{' '}
         , it is not surprising that a software product is an ideal tool to accelerate these
-        advances; so we manage to put together a top software engineering team to start building a
+        advances; so we manage to put together a top software engineering team to start building a{' '}
         <TextLink to="https://cobuildlab.com/blog/what-is-digital-transformation-and-how-can-small-businesses-take-advantage-of-it-this-2020/amp/">
-          Custom Software Solution
-        </TextLink>{' '}
-        .
+          Custom Software Solution.
+        </TextLink>
       </DetailParagraph>
       <DetailParagraph>
         In order for health centers to be able to keep a dynamic and close follow-up of patients and
@@ -225,13 +224,13 @@ const GeeksAcademy = ({ data }) => (
   </DetailLayout>
 );
 
-GeeksAcademy.propTypes = {
+Avsee.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
 export const pageQuery = graphql`
   query {
-    seoImages: file(relativePath: { eq: "customers/4geeks.jpg" }) {
+    seoImages: file(relativePath: { eq: "customers/avsee-logo.jpg" }) {
       childImageSharp {
         resize(width: 1200, height: 1200) {
           width
@@ -240,14 +239,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    videoImages: file(relativePath: { eq: "customers/4geek/video-cover.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
   }
 `;
 
-export default GeeksAcademy;
+export default Avsee;

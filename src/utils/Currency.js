@@ -11,4 +11,4 @@ const Currency = (value) => {
   return formatter.format(value);
 };
 
-export default Currency;
+export { Currency };
