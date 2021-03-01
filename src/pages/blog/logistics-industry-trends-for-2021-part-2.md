@@ -3,7 +3,7 @@ title: "Logistics Industry Trends for 2021 (part 2)"
 date: "2020-02-23T16:24:04.000Z"
 template: blog
 tags: Tools
-image: "./media/LEAD_VOLTBlog.jpg"
+image: "./media/industry-trends-part2.png"
 ---
 
 With heightened levels of consumer demand not looking to slow down any time soon, it’s time to continue with our review of 2021’s hottest trends in the logistic industry. <br> </br>
