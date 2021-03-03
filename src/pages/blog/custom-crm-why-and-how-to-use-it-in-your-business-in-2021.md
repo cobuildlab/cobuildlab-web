@@ -6,7 +6,7 @@ tags: Small Business
 image: "./media/custom-CRM.jpg"
 ---
 
-Today’s companies are increasingly implementing custom CRM software, these undoubtedly improve the efficiency of processes within your company and help you leverage even more in the market, and of course, improve communication between their customers, and they can find you easier. But to get started you must know a little more about it and how you can implement it in your business as we show you below:
+Today’s companies are increasingly implementing custom CRM (Customer Relationship Management) software, these undoubtedly improve the efficiency of processes within your company and help you leverage even more in the market, and of course, improve communication between their customers, and they can find you easier. But to get started you must know a little more about it and how you can implement it in your business as we show you below:
 
 <Br>
 
