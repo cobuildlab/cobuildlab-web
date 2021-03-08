@@ -24,6 +24,19 @@ const Paragraph = styled.p`
   }
 `;
 
+const ParagraphText = styled.p`
+  text-align: justify;
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+  font-family: 'Lato-regular' !important;
+  color: #264a60;
+  width: 66%;
+  margin: auto;
+  padding-bottom: 20px;
+  @media screen and (max-width: 768px) {
+    padding: 0px;
+  }
+`;
+
 const ServicesSection2 = ({
   title,
   titleOrange,
@@ -42,7 +55,7 @@ const ServicesSection2 = ({
               {title} <TextOrange>{titleOrange}</TextOrange>
             </Typography>
           </StyledSubTitle>
-          {text !== '' ? <Paragraph>{text}</Paragraph> : null}
+          {text !== '' ? <ParagraphText>{text}</ParagraphText> : null}
 
           {textList !== '' ? (
             <Column isSize={{ mobile: 12, desktop: 10 }} isOffset={2}>
@@ -53,7 +66,9 @@ const ServicesSection2 = ({
           {Array.isArray(listLeft) ? (
             <>
               <Columns>
-                <Column isSize={{ mobile: 12, desktop: 4 }} isOffset={2}>
+                <Column
+                  isSize={{ mobile: 12, desktop: 4 }}
+                  isOffset={listRight.length === 0 ? 2 : 1}>
                   <ul>
                     {listLeft.map((listitem, id) => (
                       <li key={id}>
