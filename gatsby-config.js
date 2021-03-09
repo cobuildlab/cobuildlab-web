@@ -16,6 +16,9 @@ module.exports = {
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-styled-components`,
     {
+      resolve: 'gatsby-plugin-zopfli',
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
