@@ -30,7 +30,11 @@ const title = {
 
 const IndexPage = () => (
   <div className="main-wrapper">
-    <SeoMetaTags />
+    <SeoMetaTags
+      title="A Software Development Company"
+      description="We partner with Entrepreneurs Industry Experts to transform ideas into
+            Web and Mobile Custom Software Solutions"
+    />
     <Header />
     <div id="main-content">
       <Banner

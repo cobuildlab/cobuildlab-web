@@ -13,7 +13,7 @@ const GeeksAcademy = () => {
           '4Geeks Academy Contact Person:  Marcelo Ricigliano Location:  Miami, US, Caracas and Maracaibo, Venezuela Industry:  Education Web Site…'
         }
         to={'/customer-success-stories/4geeks-academy'}>
-        <StaticImage src={'./../../../../assets/images/customers/4geeks.jpg'} alt="" />
+        <StaticImage src={'./../../../../assets/images/customers/4geeks.png'} alt="" />
       </Card>
     </Column>
   );

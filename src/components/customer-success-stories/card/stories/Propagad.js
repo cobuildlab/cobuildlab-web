@@ -13,7 +13,7 @@ const Propagad = () => {
           'Propagad Contact Person:  Cesar Lang Location:  Miami, US Industry:  Marketing and Advertising Web Site:  www.propagad.com Introducing Cesar…'
         }
         to={'/customer-success-stories/propagad'}>
-        <StaticImage src={'./../../../../assets/images/customers/Propagad.jpg'} alt="" />
+        <StaticImage src={'./../../../../assets/images/customers/Propagad.png'} alt="" />
       </Card>
     </Column>
   );

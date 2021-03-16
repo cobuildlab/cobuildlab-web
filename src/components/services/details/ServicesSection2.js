@@ -66,9 +66,7 @@ const ServicesSection2 = ({
           {Array.isArray(listLeft) ? (
             <>
               <Columns>
-                <Column
-                  isSize={{ mobile: 12, desktop: 4 }}
-                  isOffset={listRight.length === 0 ? 2 : 1}>
+                <Column isSize={{ mobile: 12, desktop: 4 }} isOffset={2}>
                   <ul>
                     {listLeft.map((listitem, id) => (
                       <li key={id}>
