@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Hero, HeroHeader, Section, Columns } from 'bloomer';
+import { Container, Hero, HeroHeader, Section } from 'bloomer';
 import 'bulma/css/bulma.css';
 
 // COMPONENTS
@@ -15,9 +15,7 @@ import styled from 'styled-components';
 
 import ServicesSection3 from '../../components/services/details/ServicesSection3';
 import ServicesSection4 from '../../components/services/details/ServicesSection4';
-import ServicesCardProduct from '../../components/services/details/card/ServicesCardProduct';
-import ServicesCardSoftware from '../../components/services/details/card/ServicesCardSoftware';
-import ServicesCardTraining from '../../components/services/details/card/ServicesCardTraining';
+
 import SuccessStories from '../../components/services/details/SuccesStories';
 import Title2 from '../../components/Title2';
 import ServicesSection2 from '../../components/services/details/ServicesSection2';
@@ -51,16 +49,7 @@ const ProductDevelopment = () => (
           paragraph={
             'Product development covers the complete process of bringing a new product to market. We conceptualize and design product development and Integration processes that plug gaps in functionality, while accomplishing business objectives.'
           }
-          paragraph2={
-            <>
-              <br />
-              <ul>
-                <li>• Let’s develop your Idea!.</li>
-                <li>• Contact Us!</li>
-                <li>• Get a FREE Consultation</li>
-              </ul>
-            </>
-          }
+          paragraph2={''}
         />
       </Container>
     </Section>
@@ -89,15 +78,6 @@ const ProductDevelopment = () => (
             'Once we understand your vision, we assemble an A-team of engineers, designers, and developers to bring your product to life.'
           }
         />
-      </Container>
-    </Section>
-    <Section>
-      <Container>
-        <Columns isCentered>
-          <ServicesCardProduct />
-          <ServicesCardSoftware />
-          <ServicesCardTraining />
-        </Columns>
       </Container>
     </Section>
     <Section>

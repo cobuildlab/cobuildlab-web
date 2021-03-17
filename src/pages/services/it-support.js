@@ -32,7 +32,7 @@ const StyledContainer = styled(Container)`
   padding-bottom: 75px;
 `;
 
-const AppDevelopment = () => (
+const WebDevelopment = () => (
   <Layout>
     <SeoMetaTags title="Services" description="Privacy Policy for the Cobuild Lab" />
     <Hero>
@@ -44,19 +44,9 @@ const AppDevelopment = () => (
       <ServicesBannerBackgroundBottom />
       <Container>
         <ServicesHeader
-          title={'App Development'}
+          title={'It Support'}
           paragraph={
-            'Higher customer engagement, strong built awareness and recognition, customer loyalty improvement, and extra revenue-stream are some of the advantages you acquire when developing a mobile app.\n' +
-            'This is the process in which we create an app that can work on several platforms, with the requirements your business has.\n'
-          }
-          paragraph2={
-            <>
-              <ul>
-                <li>• Scale your business now!.</li>
-                <li>• Contact us now.</li>
-                <li>• Free consultation.</li>
-              </ul>
-            </>
+            'From business technology support to strategic consulting, we have IT solutions for your organizational needs..\n'
           }
         />
       </Container>
@@ -64,10 +54,10 @@ const AppDevelopment = () => (
     <StyledSection2>
       <Container>
         <ServicesSection2
-          title={'Essential '}
-          titleOrange={'for your businesses'}
+          title={'Improve your business'}
+          titleOrange={'for the next level'}
           text={
-            'Nowadays, a mobile app is a must-have for most businesses. We can turn your idea and transform it into a powerful app for in-house communication, real-time employee contact, workflow, and operations support.'
+            "Enhance your organization's infrastructure with our industry-leading enterprise IT support services. Whether you have an immediate short-term technical project or are looking for a reliable long-term IT partner, Cobuild Lab is here to help."
           }
         />
       </Container>
@@ -75,21 +65,29 @@ const AppDevelopment = () => (
     <Section>
       <Container>
         <ServicesSection3
-          title={'Every business needs an app'}
-          textList={[
-            'Our team can build a high-quality, scalable, and powerful mobile app that runs seamlessly over various platforms and devices.',
-          ]}
+          title={'Dedicated Support\n'}
+          otherText={
+            'For whom is a web created? This is the portal that your business will use to directly contact your potential customers. Impress your target with our Web Design service.'
+          }
+          otherText2={
+            'Our business IT services provide flexible access to a team of highly motivated and dedicated professionals with in-depth knowledge of a wide range of infrastructure, security, mail systems, and applications. We offer a business IT support service that is trully tailored to your requirements, providing comprehensive backup and support in the event of an IT disaster.'
+          }
         />
       </Container>
     </Section>
     <Section>
       <Container>
         <ServicesSection4
-          title={'Every business needs an app'}
-          leftText={
-            'App and cross-platform development is adapted to any industries, among those are the following:'
-          }
-          rightTextList={['Healthcare', 'Financial', 'Entertainment', 'Fashion and eCommerce']}
+          title={'Benefits of IT Outsourcing Support in your Business'}
+          leftText={[
+            'Reduce business interruptions by upgrading old technology and moving away from the breakdown/repair support model.',
+            'Provide a single point of contact for faster IT support and consistent response time and resolution.',
+            'Ensure your systems and data are safe and backed up.',
+          ]}
+          rightTextList={[
+            'Harnessing the power of cloud infrastructure and applications for your business.',
+            'Save time that would otherwise spent recruiting, training, and managing multiple vendors.',
+          ]}
         />
       </Container>
     </Section>
@@ -109,4 +107,4 @@ const AppDevelopment = () => (
   </Layout>
 );
 
-export default AppDevelopment;
+export default WebDevelopment;

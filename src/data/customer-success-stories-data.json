@@ -1,5 +1,41 @@
 [
   {
+    "image": "../assets/images/customers/avsee-logo.jpg",
+    "title": "Avsee",
+    "description": "The Avsee team chose Cobuild Lab to be their technology partner in developing a platform that helps physicians and patients…  ",
+    "slug": "/customer-success-stories/avsee"
+  },
+  {
+    "image": "../assets/images/customers/okroo.jpg",
+    "title": "Okroo",
+    "description": "Some of Miami's most interesting dishes are found in the heart of Downtown, and its restaurants are a reflection of its melting pot quality…  ",
+    "slug": "/customer-success-stories/okroo"
+  },
+  {
+    "image": "../assets/images/customers/leadvolt-logo.jpg",
+    "title": "LeadVolt",
+    "description": "Leadvolt is a high touch lead management system that closes leads faster, provides full transparency, and empowers your agency to focus on the customer…  ",
+    "slug": "/customer-success-stories/leadvolt"
+  },
+  {
+    "image": "../assets/images/customers/collab-logo.jpg",
+    "title": "Collab To Grow",
+    "description": "Is a technology-enabled managed services and advisory firm that specializes in improving the performance of strategic alliances...  ",
+    "slug": "/customer-success-stories/collab-to-grow"
+  },
+  {
+    "image": "../assets/images/customers/mama-logo.jpg",
+    "title": "Mama",
+    "description": "The Match-Making app MAMA is a fun and easy-to-use connectivity tool that makes lightning-fast introductions...  ",
+    "slug": "/customer-success-stories/mama"
+  },
+  {
+    "image": "../assets/images/customers/pitazo-1.jpg",
+    "title": "El Pitazo",
+    "description": "El Pitazo is Venezuela's main independent news website...  ",
+    "slug": "/customer-success-stories/el-pitazo"
+  },
+  {
     "image": "../assets/images/customers/jobcore.jpg",
     "title": "Jobcore",
     "description": "Get work fast and get paid the same day with Jobcore. This is a web platform that allows employers to post job applications for candidates…  ",
@@ -18,13 +54,13 @@
     "slug": "/customer-success-stories/weedmatch"
   },
   {
-    "image": "../assets/images/customers/4geeks.jpg",
+    "image": "../assets/images/customers/4geeks.png",
     "title": "4Geeks Academy",
     "description": "4Geeks Academy Contact Person:  Marcelo Ricigliano Location:  Miami, US, Caracas and Maracaibo, Venezuela Industry:  Education Web Site…",
     "slug": "/customer-success-stories/4geeks-academy"
   },
   {
-    "image": "../assets/images/customers/Payklever.jpg",
+    "image": "../assets/images/customers/Payklever.png",
     "title": "Payklever Campaign Manager",
     "description": "Payklever Campaign Manager With Payklever you can turn your car into a payment method. You can drive quietly and never handle your cash or…",
     "slug": "/customer-success-stories/payklever-campaign-manager"

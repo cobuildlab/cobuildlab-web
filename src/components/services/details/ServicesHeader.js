@@ -40,10 +40,16 @@ const ServicesHeader = ({ title, paragraph, paragraph2 }) => {
   );
 };
 
+ServicesHeader.defaultProps = {
+  title: '',
+  paragraph: '',
+  paragraph2: '',
+};
+
 ServicesHeader.propTypes = {
-  title: PropTypes.string.isRequired,
-  paragraph: PropTypes.string.isRequired,
-  paragraph2: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  paragraph: PropTypes.string,
+  paragraph2: PropTypes.string,
 };
 
 export default ServicesHeader;

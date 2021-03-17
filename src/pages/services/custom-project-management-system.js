@@ -32,7 +32,7 @@ const StyledContainer = styled(Container)`
   padding-bottom: 75px;
 `;
 
-const AppDevelopment = () => (
+const WebDevelopment = () => (
   <Layout>
     <SeoMetaTags title="Services" description="Privacy Policy for the Cobuild Lab" />
     <Hero>
@@ -44,19 +44,9 @@ const AppDevelopment = () => (
       <ServicesBannerBackgroundBottom />
       <Container>
         <ServicesHeader
-          title={'App Development'}
+          title={'It Support'}
           paragraph={
-            'Higher customer engagement, strong built awareness and recognition, customer loyalty improvement, and extra revenue-stream are some of the advantages you acquire when developing a mobile app.\n' +
-            'This is the process in which we create an app that can work on several platforms, with the requirements your business has.\n'
-          }
-          paragraph2={
-            <>
-              <ul>
-                <li>• Scale your business now!.</li>
-                <li>• Contact us now.</li>
-                <li>• Free consultation.</li>
-              </ul>
-            </>
+            'Create custom workflows that your entire team can adopt to be more productive.\n'
           }
         />
       </Container>
@@ -64,10 +54,10 @@ const AppDevelopment = () => (
     <StyledSection2>
       <Container>
         <ServicesSection2
-          title={'Essential '}
-          titleOrange={'for your businesses'}
+          title={'Customize'}
+          titleOrange={'your workflow'}
           text={
-            'Nowadays, a mobile app is a must-have for most businesses. We can turn your idea and transform it into a powerful app for in-house communication, real-time employee contact, workflow, and operations support.'
+            'Optimize, manage projects and increase productivity with collaboration tools and the web-based project management system customized according to your needs.'
           }
         />
       </Container>
@@ -75,21 +65,28 @@ const AppDevelopment = () => (
     <Section>
       <Container>
         <ServicesSection3
-          title={'Every business needs an app'}
-          textList={[
-            'Our team can build a high-quality, scalable, and powerful mobile app that runs seamlessly over various platforms and devices.',
-          ]}
+          title={'Manage everything!'}
+          otherText={
+            "Tasks, reminders, calendars, to-do lists for you and your teams, all in one place! It's not often that a task jumps directly from open to close. Add custom workflows for your spaces and projects to track the progress of tasks."
+          }
         />
       </Container>
     </Section>
     <Section>
       <Container>
         <ServicesSection4
-          title={'Every business needs an app'}
-          leftText={
-            'App and cross-platform development is adapted to any industries, among those are the following:'
-          }
-          rightTextList={['Healthcare', 'Financial', 'Entertainment', 'Fashion and eCommerce']}
+          title={'Why is it beneficial to have your personalized Project Management System?'}
+          leftText={[
+            'You have full control and access to the software and customizable data, according to your needs.',
+            'Manage customers, suppliers, and prospects.',
+            'Manage tasks and task groups to optimize time management.',
+            'Communication with clients and the team in each task or many tasks.',
+          ]}
+          rightTextList={[
+            'Calendar, notifications, and reminders about due dates, changes, and events.',
+            'Create and manage users and groups with ease.',
+            'Generate productivity reports, team time card reports, team availability reports, project hours, task groups, and due to date reports.',
+          ]}
         />
       </Container>
     </Section>
@@ -109,4 +106,4 @@ const AppDevelopment = () => (
   </Layout>
 );
 
-export default AppDevelopment;
+export default WebDevelopment;

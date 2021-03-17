@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Hero, HeroHeader, Section, Columns, Title } from 'bloomer';
+import { Container, Hero, HeroHeader, Section, Title } from 'bloomer';
 import 'bulma/css/bulma.css';
 
 // COMPONENTS
@@ -15,9 +15,6 @@ import styled from 'styled-components';
 
 import ServicesSection3 from '../../components/services/details/ServicesSection3';
 import ServicesSection4 from '../../components/services/details/ServicesSection4';
-import ServicesCardProduct from '../../components/services/details/card/ServicesCardProduct';
-import ServicesCardSoftware from '../../components/services/details/card/ServicesCardSoftware';
-import ServicesCardTraining from '../../components/services/details/card/ServicesCardTraining';
 import SuccessStories from '../../components/services/details/SuccesStories';
 import Title2 from '../../components/Title2';
 import ServicesSection2 from '../../components/services/details/ServicesSection2';
@@ -102,15 +99,6 @@ const MvpSoftwareDevelopment = () => (
             'With those new changes/functionality, you can make sure that the product will match what users want or expect.'
           }
         />
-      </Container>
-    </Section>
-    <Section>
-      <Container>
-        <Columns isCentered>
-          <ServicesCardProduct />
-          <ServicesCardSoftware />
-          <ServicesCardTraining />
-        </Columns>
       </Container>
     </Section>
     <Section>

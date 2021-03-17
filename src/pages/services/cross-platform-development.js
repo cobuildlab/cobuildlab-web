@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Hero, HeroHeader, Section, Columns } from 'bloomer';
+import { Container, Hero, HeroHeader, Section } from 'bloomer';
 import 'bulma/css/bulma.css';
 
 // COMPONENTS
@@ -15,9 +15,6 @@ import styled from 'styled-components';
 
 import ServicesSection3 from '../../components/services/details/ServicesSection3';
 import ServicesSection4 from '../../components/services/details/ServicesSection4';
-import ServicesCardProduct from '../../components/services/details/card/ServicesCardProduct';
-import ServicesCardSoftware from '../../components/services/details/card/ServicesCardSoftware';
-import ServicesCardTraining from '../../components/services/details/card/ServicesCardTraining';
 import SuccessStories from '../../components/services/details/SuccesStories';
 import Title2 from '../../components/Title2';
 import ServicesSection2 from '../../components/services/details/ServicesSection2';
@@ -82,15 +79,6 @@ const CrossPlatformDevelopment = () => (
             'We are a single Development team, who has hands-on experience working with a set of technologies. Having us as a unique team handling all the stages of the project, you avoid a scenario where too many work teams risk sabotaging one another and compromise the app project itself.\n'
           }
         />
-      </Container>
-    </Section>
-    <Section>
-      <Container>
-        <Columns isCentered>
-          <ServicesCardProduct />
-          <ServicesCardSoftware />
-          <ServicesCardTraining />
-        </Columns>
       </Container>
     </Section>
     <Section>

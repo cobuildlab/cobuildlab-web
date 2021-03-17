@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import H3 from '../../Typography/H3';
 import { TextOrange } from '../../2021/text/TextHelpers';
 import Paragraph from '../../Typography/Paragraph';
-import CustomerSuccessStories from '../../customer-success-stories/CustomerSuccessStories';
+import SuccessStories from '../../customer-success-stories/SuccessStories';
 
 const Wrapper = styled.div`
   text-align: center;
@@ -36,7 +36,7 @@ const EnterpriseCustomerSuccessStories = () => {
           </H3>
           <Paragraph>Learn from ideas created at Cobuild Lab.</Paragraph>
         </Wrapper>
-        <CustomerSuccessStories />
+        <SuccessStories />
       </Container>
     </Section>
   );
