@@ -1,6 +1,6 @@
 ---
 title: "Logistics Industry Trends for 2021 (part 2)"
-date: "2020-03-15T16:24:04.000Z"
+date: "2020-03-04T16:24:04.000Z"
 template: blog
 tags: Tools
 image: "./media/industry-trends-part2.png"
@@ -56,6 +56,8 @@ There is no question that robotic warehouse systems help to increase human worke
  The term “<a target="_blank" href="https://cobuildlab.com/blog/what-startups-develop-by-2020/amp/"> Cloud Computing</a>” refers to shared software and/or information that users access via the web. Rather than storing information on their own physical servers or computer hard drives, users rely on servers that are maintained by the cloud computing software providers. From the user perspective, all information is stored and readily accessible online in a 24/7 format, and from various types of devices, such as desktops, laptops, tablets, and smartphones. That being said, instead of using their own physical servers or hard drives to store the software and information, more and more logistics professionals are subscribing to these software services that are housed and accessible online. <br> </br>
 
 Why does the cloud seem like such an attractive option? For starters, it offers a high degree of flexibility and scalability. In contrast to on-premise storage and software hosting—which could require expensive IT projects to add more storage capacity or processing power—the cloud lets you pay as you go, using as much or as little capacity as you need at any given time. This can help you to achieve a modicum of budget certainty, yes, but it can also help you to navigate unexpected spikes in demand or other scenarios where you might need more computing power than usual. As you potentially beef up your IT infrastructure with new apps and devices, the cloud can make it easy to scale up your capacity while integrating a variety of different data sources (due to the cloud’s accessible, decentralized nature). <br> </br>
+
+Also check: <a target="_blank" href="https://cobuildlab.com/blog/logistics-industry-trends-for-2021/"> Logistics industry trends for 2021 (Part 1)</a> <br> </br>
 
 
 <title-5 align="left"> About Cobuild Lab </title-5>
