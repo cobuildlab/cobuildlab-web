@@ -66,7 +66,7 @@ const Avsee = ({ data }) => (
     </Section>
 
     <DetailSection
-      image={<StaticImage src={'./../../assets/images/customers/4geek/2.png'} alt="" />}
+      image={<StaticImage src={'./../../assets/images/customers/avsee/laptop-left.png'} alt="" />}
       right>
       <DetailSubTitle>
         The <TextOrange> Problem </TextOrange>
@@ -105,7 +105,7 @@ const Avsee = ({ data }) => (
     </DetailSection>
 
     <DetailSection
-      image={<StaticImage src={'./../../assets/images/customers/4geek/1.png'} alt="" />}
+      image={<StaticImage src={'./../../assets/images/customers/avsee/laptop-right.png'} alt="" />}
       left>
       <DetailSubTitle>
         The <TextOrange> Solution </TextOrange>
@@ -166,7 +166,7 @@ const Avsee = ({ data }) => (
     </DetailSection>
 
     <DetailSection
-      image={<StaticImage src={'./../../assets/images/customers/4geek/1.png'} alt="" />}
+      image={<StaticImage src={'./../../assets/images/customers/avsee/laptop-left.png'} alt="" />}
       right>
       <DetailSubTitle>
         The <TextOrange> Result </TextOrange>

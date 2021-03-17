@@ -6,7 +6,7 @@ const SlidersAvsee = () => (
   <DetailCarousel>
     <div>
       <StaticImage
-        src={'./../../../../../assets/images/customers/avsee/slider/1.png'}
+        src={'./../../../../../assets/images/customers/avsee/slider/1.jpg'}
         alt={'Avsee 1'}
       />
     </div>

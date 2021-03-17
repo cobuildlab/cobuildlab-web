@@ -11,7 +11,7 @@ const Pitazo = () => {
         title={'El Pitazo'}
         description={"El Pitazo is Venezuela's main independent news website..."}
         to={'/customer-success-stories/el-pitazo'}>
-        <StaticImage src={'./../../../../assets/images/customers/pita.jpg'} alt="" />
+        <StaticImage src={'./../../../../assets/images/customers/pitazo-1.jpg'} alt="" />
       </Card>
     </Column>
   );
