@@ -86,33 +86,35 @@ const Readmore = styled.p`
   margin-bottom: 14px;
   position: relative;
   right: 29px;
-  margin-top: 14px;
+  top: -10px;
   cursor: pointer;
 `;
 
 const SuccessStories = () => {
   const data = useStaticQuery(query);
+  let random_number = Math.floor(Math.random() * 11);
+  const items = data.allCustomerSuccessStoriesDataJson.edges
+    .slice(random_number, random_number + 3)
+    .map(({ node }) => {
+      const handleClick = useCallback(() => {
+        navigate(node.slug);
+      }, [node.slug]);
 
-  const items = data.allCustomerSuccessStoriesDataJson.edges.slice(0, 3).map(({ node }) => {
-    const handleClick = useCallback(() => {
-      navigate(node.slug);
-    }, [node.slug]);
-
-    return (
-      <Column isSize={{ mobile: 12, desktop: 4 }} key={node.title}>
-        <CardStyled>
-          <>
-            <Image fluid={node.image.childImageSharp.fluid} alt="" />
-          </>
-          <Container>
-            <Title>{node.title}</Title>
-          </Container>
-          <Paragraph>{node.description}</Paragraph>
-          <Readmore onClick={handleClick}>Read More</Readmore>
-        </CardStyled>
-      </Column>
-    );
-  });
+      return (
+        <Column isSize={{ mobile: 12, desktop: 4 }} key={node.title}>
+          <CardStyled>
+            <>
+              <Image fluid={node.image.childImageSharp.fluid} alt="" />
+            </>
+            <Container>
+              <Title>{node.title}</Title>
+            </Container>
+            <Paragraph>{node.description}</Paragraph>
+            <Readmore onClick={handleClick}>Read More</Readmore>
+          </CardStyled>
+        </Column>
+      );
+    });
 
   return <Columns isCentered>{items}</Columns>;
 };

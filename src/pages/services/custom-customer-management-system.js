@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Hero, HeroHeader, Section, Columns } from 'bloomer';
+import { Container, Hero, HeroHeader, Section } from 'bloomer';
 import 'bulma/css/bulma.css';
 
 // COMPONENTS
@@ -15,9 +15,6 @@ import styled from 'styled-components';
 
 import ServicesSection3 from '../../components/services/details/ServicesSection3';
 import ServicesSection4 from '../../components/services/details/ServicesSection4';
-import ServicesCardProduct from '../../components/services/details/card/ServicesCardProduct';
-import ServicesCardSoftware from '../../components/services/details/card/ServicesCardSoftware';
-import ServicesCardTraining from '../../components/services/details/card/ServicesCardTraining';
 import SuccessStories from '../../components/services/details/SuccesStories';
 import Title2 from '../../components/Title2';
 import ServicesSection2 from '../../components/services/details/ServicesSection2';
@@ -85,15 +82,6 @@ const CustomCustomerManagementSystem = () => (
             'Improve your teamwork communication with your consumers. It’s more critical than ever for marketing and sales teams to function as a cohesive unit, and CRM systems are the perfect solution to help scaling organizations achieve that goal.\n'
           }
         />
-      </Container>
-    </Section>
-    <Section>
-      <Container>
-        <Columns isCentered>
-          <ServicesCardProduct />
-          <ServicesCardSoftware />
-          <ServicesCardTraining />
-        </Columns>
       </Container>
     </Section>
     <Section>

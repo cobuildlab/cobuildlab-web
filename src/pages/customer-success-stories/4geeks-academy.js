@@ -148,7 +148,7 @@ GeeksAcademy.propTypes = {
 
 export const pageQuery = graphql`
   query {
-    seoImages: file(relativePath: { eq: "customers/4geeks.jpg" }) {
+    seoImages: file(relativePath: { eq: "customers/4geeks.png" }) {
       childImageSharp {
         resize(width: 1200, height: 1200) {
           width

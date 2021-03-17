@@ -189,7 +189,7 @@ PaykleverCampaignManager.propTypes = {
 
 export const pageQuery = graphql`
   query {
-    seoImages: file(relativePath: { eq: "customers/Payklever.jpg" }) {
+    seoImages: file(relativePath: { eq: "customers/Payklever.png" }) {
       childImageSharp {
         resize(width: 1200, height: 1200) {
           width

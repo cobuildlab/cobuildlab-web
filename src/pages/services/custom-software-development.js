@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Hero, HeroHeader, Section, Columns } from 'bloomer';
+import { Container, Hero, HeroHeader, Section } from 'bloomer';
 import 'bulma/css/bulma.css';
 import '../../assets/scss/index.scss';
 
@@ -16,9 +16,6 @@ import styled from 'styled-components';
 
 import ServicesSection3 from '../../components/services/details/ServicesSection3';
 import ServicesSection4 from '../../components/services/details/ServicesSection4';
-import ServicesCardProduct from '../../components/services/details/card/ServicesCardProduct';
-import ServicesCardSoftware from '../../components/services/details/card/ServicesCardSoftware';
-import ServicesCardTraining from '../../components/services/details/card/ServicesCardTraining';
 import SuccessStories from '../../components/services/details/SuccesStories';
 import Title2 from '../../components/Title2';
 import ServicesSection2 from '../../components/services/details/ServicesSection2';
@@ -101,15 +98,6 @@ const CustomSoftwareDevelopment = () => (
             'Customers perceive that. The result of the same service or the delivery efficiency is better, the quality of the product, etc. All of that without mentioning the tranquility and the perfect coupling of all the team with its software tools.',
           ]}
         />
-      </Container>
-    </Section>
-    <Section>
-      <Container>
-        <Columns isCentered>
-          <ServicesCardProduct />
-          <ServicesCardSoftware />
-          <ServicesCardTraining />
-        </Columns>
       </Container>
     </Section>
     <Section>

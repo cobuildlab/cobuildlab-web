@@ -40,96 +40,54 @@ const Services = () => (
     </Section>
     <Section>
       <StyledTitle>
-        <H4>Main Services</H4>
+        <H4>For Logistics and Supply Chain Enterprises</H4>
       </StyledTitle>
       <Columns isCentered>
         <ServicesCard
-          title={'Web'}
+          title={'Enterprise Software'}
           subtitle={'Development'}
-          cover={'We work behind the curtain to make your website gorgeous and engaging'}
-          to={'web-development'}
-          image={
-            <StaticImage
-              src={'./../assets/images/service/card/iconos-Main-Services-Web-Development.svg'}
-              alt=""
-            />
+          cover={
+            'Zero-waste process combined with more than 50 years of experience.\n' +
+            'Risk-costs reduction, more effective tracking, and faster delivery date.\n' +
+            'Efficiency rate will increase with the right guidance and assistance'
           }
-        />
-        <ServicesCard
-          title={'APP'}
-          subtitle={'Development'}
-          cover={'We develop native apps for iOS and Android'}
-          to={'app-development'}
-          image={
-            <StaticImage
-              src={'./../assets/images/service/card/iconos-Main-Services-APP-Development.svg'}
-              alt=""
-            />
-          }
-        />
-      </Columns>
-      <Columns isCentered>
-        <ServicesCard
-          title={'Cross-Platform'}
-          subtitle={'Development'}
-          cover={'Let us take your app to multiple platforms and devices'}
-          to={'cross-platform-development'}
+          to={'enterprise-software-development'}
           image={
             <StaticImage
               src={
-                './../assets/images/service/card/iconos-Main-Services-Cross-Platform-Development.svg'
+                './../assets/images/service/card/iconos-Logistic-Enterprise-Software-Development.svg'
               }
               alt=""
             />
           }
         />
         <ServicesCard
-          title={'Web'}
-          subtitle={'Design'}
-          cover={'We create appealing and beautiful content for your web'}
-          to={'web-design'}
+          title={'Process'}
+          subtitle={'Automation'}
+          cover={'Revolutionize your process and save time and money'}
+          to={'process-automation'}
           image={
             <StaticImage
-              src={'./../assets/images/service/card/iconos-Main-Services-Web-Design.svg'}
+              src={'./../assets/images/service/card/iconos-Logistic-Process-Automation.svg'}
               alt=""
             />
           }
         />
       </Columns>
-    </Section>
-    <Section>
-      <StyledTitle>
-        <H4>If you’re a Startup</H4>
-      </StyledTitle>
       <Columns isCentered>
         <ServicesCard
-          title={'Technical Analysis'}
-          subtitle={'For Software Startup Investors'}
-          cover={''}
-          to={'software-startup-investor'}
-          image={
-            <StaticImage src={'./../assets/images/service/card/iconos-Startup-MVP.svg'} alt="" />
+          title={'Digital'}
+          subtitle={'Transformation'}
+          cover={
+            'Intelligence processes based on enterprises goals\n' +
+            'Intelligent guidance / assistance / direction for digital transformation opportunities\n' +
+            'Smart guidance / assistance / direction for digital transformation opportunities\n' +
+            'Smart digital transformation opportunities guidance\n'
           }
-        />
-        <ServicesCard
-          title={'MVP Software'}
-          subtitle={'Development'}
-          cover={' Validate and launch your product in a speedy and efficacious way'}
-          to={'mvp-software-development'}
-          image={
-            <StaticImage src={'./../assets/images/service/card/iconos-Startup-MVP.svg'} alt="" />
-          }
-        />
-      </Columns>
-      <Columns isCentered>
-        <ServicesCard
-          title={'Product'}
-          subtitle={'Development'}
-          cover={'We develop your ideas into marketable products'}
-          to={'product-development'}
+          to={'digital-transformation'}
           image={
             <StaticImage
-              src={'./../assets/images/service/card/iconos-Startup-Product-Development.svg'}
+              src={'./../assets/images/service/card/iconos-Logistic-Digital-Transformation.svg'}
               alt=""
             />
           }
@@ -209,35 +167,29 @@ const Services = () => (
     </Section>
     <Section>
       <StyledTitle>
-        <H4>For Logistics and Supply Chain Enterprises</H4>
+        <H4>Main Services</H4>
       </StyledTitle>
       <Columns isCentered>
         <ServicesCard
-          title={'Enterprise Software'}
+          title={'Web'}
           subtitle={'Development'}
-          cover={
-            'Zero-waste process combined with more than 50 years of experience.\n' +
-            'Risk-costs reduction, more effective tracking, and faster delivery date.\n' +
-            'Efficiency rate will increase with the right guidance and assistance'
-          }
-          to={'enterprise-software-development'}
+          cover={'We work behind the curtain to make your website gorgeous and engaging'}
+          to={'web-development'}
           image={
             <StaticImage
-              src={
-                './../assets/images/service/card/iconos-Logistic-Enterprise-Software-Development.svg'
-              }
+              src={'./../assets/images/service/card/iconos-Main-Services-Web-Development.svg'}
               alt=""
             />
           }
         />
         <ServicesCard
-          title={'Process'}
-          subtitle={'Automation'}
-          cover={'Revolutionize your process and save time and money'}
-          to={'process-automation'}
+          title={'APP'}
+          subtitle={'Development'}
+          cover={'We develop native apps for iOS and Android'}
+          to={'app-development'}
           image={
             <StaticImage
-              src={'./../assets/images/service/card/iconos-Logistic-Process-Automation.svg'}
+              src={'./../assets/images/service/card/iconos-Main-Services-APP-Development.svg'}
               alt=""
             />
           }
@@ -245,18 +197,95 @@ const Services = () => (
       </Columns>
       <Columns isCentered>
         <ServicesCard
-          title={'Digital'}
-          subtitle={'Transformation'}
-          cover={
-            'Intelligence processes based on enterprises goals\n' +
-            'Intelligent guidance / assistance / direction for digital transformation opportunities\n' +
-            'Smart guidance / assistance / direction for digital transformation opportunities\n' +
-            'Smart digital transformation opportunities guidance\n'
-          }
-          to={'digital-transformation'}
+          title={'Cross-Platform'}
+          subtitle={'Development'}
+          cover={'Let us take your app to multiple platforms and devices'}
+          to={'cross-platform-development'}
           image={
             <StaticImage
-              src={'./../assets/images/service/card/iconos-Logistic-Digital-Transformation.svg'}
+              src={
+                './../assets/images/service/card/iconos-Main-Services-Cross-Platform-Development.svg'
+              }
+              alt=""
+            />
+          }
+        />
+        <ServicesCard
+          title={'Web'}
+          subtitle={'Design'}
+          cover={'We create appealing and beautiful content for your web'}
+          to={'web-design'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos-Main-Services-Web-Design.svg'}
+              alt=""
+            />
+          }
+        />
+      </Columns>
+      <Columns isCentered>
+        <ServicesCard
+          title={'IT Support'}
+          subtitle={'Services'}
+          cover={'Let us take your app to multiple platforms and devices'}
+          to={'it-support'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos-Main-Services-It-Support.svg'}
+              alt=""
+            />
+          }
+        />
+        <ServicesCard
+          title={'Custom Project'}
+          subtitle={'Management System'}
+          cover={'Fully personalized Project Management'}
+          to={'custom-project-management-system'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos-Main-Services-Agile.svg'}
+              alt=""
+            />
+          }
+        />
+      </Columns>
+    </Section>
+    <Section>
+      <StyledTitle>
+        <H4>If you’re a Startup</H4>
+      </StyledTitle>
+      <Columns isCentered>
+        <ServicesCard
+          title={'Technical Analysis'}
+          subtitle={'For Software Startup Investors'}
+          cover={'Cobuild Lab: Technical Analysis for Software Startups Investors'}
+          to={'software-startup-investor'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos-Technical-Analysis.svg'}
+              alt=""
+            />
+          }
+        />
+        <ServicesCard
+          title={'MVP Software'}
+          subtitle={'Development'}
+          cover={' Validate and launch your product in a speedy and efficacious way'}
+          to={'mvp-software-development'}
+          image={
+            <StaticImage src={'./../assets/images/service/card/iconos-Startup-MVP.svg'} alt="" />
+          }
+        />
+      </Columns>
+      <Columns isCentered>
+        <ServicesCard
+          title={'Product'}
+          subtitle={'Development'}
+          cover={'We develop your ideas into marketable products'}
+          to={'product-development'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos-Startup-Product-Development.svg'}
               alt=""
             />
           }
