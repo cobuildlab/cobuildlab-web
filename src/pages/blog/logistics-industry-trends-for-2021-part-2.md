@@ -57,7 +57,7 @@ There is no question that robotic warehouse systems help to increase human worke
 
 Why does the cloud seem like such an attractive option? For starters, it offers a high degree of flexibility and scalability. In contrast to on-premise storage and software hosting—which could require expensive IT projects to add more storage capacity or processing power—the cloud lets you pay as you go, using as much or as little capacity as you need at any given time. This can help you to achieve a modicum of budget certainty, yes, but it can also help you to navigate unexpected spikes in demand or other scenarios where you might need more computing power than usual. As you potentially beef up your IT infrastructure with new apps and devices, the cloud can make it easy to scale up your capacity while integrating a variety of different data sources (due to the cloud’s accessible, decentralized nature). <br> </br>
 
-Also check: <a target="_blank" href="https://cobuildlab.com/blog/logistics-industry-trends-for-2021/"> Logistics industry trends for 2021 (Part 1)</a> <br> </br>
+👉 Also check: <a target="_blank" href="https://cobuildlab.com/blog/logistics-industry-trends-for-2021/"> Logistics industry trends for 2021 (Part 1)</a> <br> </br>
 
 
 <title-5 align="left"> About Cobuild Lab </title-5>
