@@ -18,6 +18,7 @@ import ServicesSection4 from '../../components/services/details/ServicesSection4
 import SuccessStories from '../../components/services/details/SuccesStories';
 import Title2 from '../../components/Title2';
 import ServicesSection2 from '../../components/services/details/ServicesSection2';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const StyledSubTitle = styled.div`
   text-align: center;
@@ -48,7 +49,14 @@ const CustomLearningManagmentSystem = () => (
           paragraph={
             'For the needs of creating e-learning content, interactive, that you can integrate with other systems of your company (such as CRM), with customized reports or gamification, a custom learning management system is the best option.'
           }
-          paragraph2={''}
+          img={
+            <StaticImage
+              src={
+                './../../assets/images/service/card/iconos-Small-Business-Custom-Learning-Management-System.svg'
+              }
+              alt=""
+            />
+          }
         />
       </Container>
     </Section>

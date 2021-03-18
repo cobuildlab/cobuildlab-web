@@ -4,7 +4,6 @@ import ServiceTitle from './../ServicesTitle';
 import ServicesContent from './../ServicesContent';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { StaticImage } from 'gatsby-plugin-image';
 
 const Paragraph = styled.p`
   font-size: 17px;
@@ -19,7 +18,7 @@ const Paragraph2 = styled.p`
   color: #264a60;
 `;
 
-const ServicesHeader = ({ title, paragraph, paragraph2 }) => {
+const ServicesHeader = ({ title, paragraph, paragraph2, img }) => {
   return (
     <Columns>
       <Column isSize={{ mobile: 12, desktop: 7 }}>
@@ -34,7 +33,7 @@ const ServicesHeader = ({ title, paragraph, paragraph2 }) => {
         </ServicesContent>
       </Column>
       <Column isHidden="mobile" isSize={5}>
-        <StaticImage src={'./../../../assets/images/service/product-development-new.png'} alt="" />
+        {img}
       </Column>
     </Columns>
   );
@@ -50,6 +49,7 @@ ServicesHeader.propTypes = {
   title: PropTypes.string,
   paragraph: PropTypes.string,
   paragraph2: PropTypes.string,
+  img: PropTypes.element.isRequired,
 };
 
 export default ServicesHeader;

@@ -19,6 +19,7 @@ import ServicesSection4 from '../../components/services/details/ServicesSection4
 import SuccessStories from '../../components/services/details/SuccesStories';
 import Title2 from '../../components/Title2';
 import ServicesSection2 from '../../components/services/details/ServicesSection2';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const StyledSubTitle = styled.div`
   text-align: center;
@@ -49,7 +50,12 @@ const ProductDevelopment = () => (
           paragraph={
             'Product development covers the complete process of bringing a new product to market. We conceptualize and design product development and Integration processes that plug gaps in functionality, while accomplishing business objectives.'
           }
-          paragraph2={''}
+          img={
+            <StaticImage
+              src={'./../../assets/images/service/card/iconos-Startup-Product-Development.svg'}
+              alt=""
+            />
+          }
         />
       </Container>
     </Section>

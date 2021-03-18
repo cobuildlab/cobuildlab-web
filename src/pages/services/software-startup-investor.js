@@ -18,6 +18,7 @@ import ServicesSection4 from '../../components/services/details/ServicesSection4
 import SuccessStories from '../../components/services/details/SuccesStories';
 import Title2 from '../../components/Title2';
 import ServicesSection2 from '../../components/services/details/ServicesSection2';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const StyledSubTitle = styled.div`
   text-align: center;
@@ -48,7 +49,12 @@ const AppDevelopment = () => (
           paragraph={
             'In which startup do I invest? What do I need to understand the use and distribution of my resources in the development project?  How to recognize what points to improve in the development of a startup that I supported financially? Those questions have an answer: Technical Analysis for Software Startups Investors which includes the product roadmap, risk, and feasibility analysis, and soft security audit.\n'
           }
-          paragraph2={''}
+          img={
+            <StaticImage
+              src={'./../../assets/images/service/card/iconos-Technical-Analysis.svg'}
+              alt=""
+            />
+          }
         />
       </Container>
     </Section>

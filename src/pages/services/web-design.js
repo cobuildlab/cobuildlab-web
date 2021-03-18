@@ -18,6 +18,7 @@ import ServicesSection4 from '../../components/services/details/ServicesSection4
 import SuccessStories from '../../components/services/details/SuccesStories';
 import Title2 from '../../components/Title2';
 import ServicesSection2 from '../../components/services/details/ServicesSection2';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const StyledSubTitle = styled.div`
   text-align: center;
@@ -69,6 +70,12 @@ const WebDesign = () => (
                 <li>• More business credibility here</li>
               </ul>
             </>
+          }
+          img={
+            <StaticImage
+              src={'./../../assets/images/service/card/iconos-Main-Services-Web-Design.svg'}
+              alt=""
+            />
           }
         />
       </Container>
