@@ -18,6 +18,7 @@ import ServicesSection4 from '../../components/services/details/ServicesSection4
 import SuccessStories from '../../components/services/details/SuccesStories';
 import Title2 from '../../components/Title2';
 import ServicesSection2 from '../../components/services/details/ServicesSection2';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const StyledSubTitle = styled.div`
   text-align: center;
@@ -44,9 +45,15 @@ const WebDevelopment = () => (
       <ServicesBannerBackgroundBottom />
       <Container>
         <ServicesHeader
-          title={'It Support'}
+          title={'Custom Project Management System'}
           paragraph={
             'Create custom workflows that your entire team can adopt to be more productive.\n'
+          }
+          img={
+            <StaticImage
+              src={'./../../assets/images/service/card/iconos-Main-Services-Agile.svg'}
+              alt=""
+            />
           }
         />
       </Container>

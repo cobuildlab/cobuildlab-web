@@ -18,6 +18,7 @@ import ServicesSection4 from '../../components/services/details/ServicesSection4
 import SuccessStories from '../../components/services/details/SuccesStories';
 import Title2 from '../../components/Title2';
 import ServicesSection2 from '../../components/services/details/ServicesSection2';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const StyledSubTitle = styled.div`
   text-align: center;
@@ -47,6 +48,12 @@ const WebDevelopment = () => (
           title={'It Support'}
           paragraph={
             'From business technology support to strategic consulting, we have IT solutions for your organizational needs..\n'
+          }
+          img={
+            <StaticImage
+              src={'./../../assets/images/service/card/iconos-Main-Services-It-Support.svg'}
+              alt=""
+            />
           }
         />
       </Container>

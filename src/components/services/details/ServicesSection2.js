@@ -24,6 +24,16 @@ const Paragraph = styled.p`
   }
 `;
 
+const ParagraphLi = styled.p`
+  text-align: left;
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+  font-family: 'Lato-regular' !important;
+  color: #264a60;
+  @media screen and (max-width: 768px) {
+    padding: 0px;
+  }
+`;
+
 const ParagraphText = styled.p`
   text-align: justify;
   font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
@@ -70,7 +80,7 @@ const ServicesSection2 = ({
                   <ul>
                     {listLeft.map((listitem, id) => (
                       <li key={id}>
-                        <Paragraph>• {listitem}</Paragraph>
+                        <ParagraphLi>• {listitem}</ParagraphLi>
                       </li>
                     ))}
                   </ul>
@@ -79,7 +89,7 @@ const ServicesSection2 = ({
                   <ul>
                     {listRight.map((listitem, id) => (
                       <li key={id}>
-                        <Paragraph>• {listitem}</Paragraph>
+                        <ParagraphLi>• {listitem}</ParagraphLi>
                       </li>
                     ))}
                   </ul>

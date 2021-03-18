@@ -18,6 +18,7 @@ import ServicesSection4 from '../../components/services/details/ServicesSection4
 import SuccessStories from '../../components/services/details/SuccesStories';
 import Title2 from '../../components/Title2';
 import ServicesSection2 from '../../components/services/details/ServicesSection2';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const StyledSubTitle = styled.div`
   text-align: center;
@@ -58,6 +59,14 @@ const EnterpriseSoftwareDevelopment = () => (
                 <li>• Learn more about this.</li>
               </ul>
             </>
+          }
+          img={
+            <StaticImage
+              src={
+                './../../assets/images/service/card/iconos-Logistic-Enterprise-Software-Development.svg'
+              }
+              alt=""
+            />
           }
         />
       </Container>

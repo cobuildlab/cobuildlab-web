@@ -18,6 +18,7 @@ import ServicesSection4 from '../../components/services/details/ServicesSection4
 import SuccessStories from '../../components/services/details/SuccesStories';
 import Title2 from '../../components/Title2';
 import ServicesSection2 from '../../components/services/details/ServicesSection2';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const StyledSubTitle = styled.div`
   text-align: center;
@@ -48,7 +49,14 @@ const FieldServicesManagementSystem = () => (
           paragraph={
             'Track and manage field operations better than you are currently doing with a field service management system customized to your activities. In this new era, real time tracking and communication are the key to maximize earnings and customer satisfaction.'
           }
-          paragraph2={''}
+          img={
+            <StaticImage
+              src={
+                './../../assets/images/service/card/iconos-Small-Business-Field-Service-Management-System.svg'
+              }
+              alt=""
+            />
+          }
         />
       </Container>
     </Section>
