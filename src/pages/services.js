@@ -60,6 +60,7 @@ const Services = () => (
               alt=""
             />
           }
+          three={true}
         />
         <ServicesCard
           title={'Process'}
@@ -72,9 +73,8 @@ const Services = () => (
               alt=""
             />
           }
+          three={true}
         />
-      </Columns>
-      <Columns isCentered>
         <ServicesCard
           title={'Digital'}
           subtitle={'Transformation'}
@@ -91,6 +91,7 @@ const Services = () => (
               alt=""
             />
           }
+          three={true}
         />
       </Columns>
     </Section>
@@ -266,6 +267,7 @@ const Services = () => (
               alt=""
             />
           }
+          three={true}
         />
         <ServicesCard
           title={'MVP Software'}
@@ -275,9 +277,8 @@ const Services = () => (
           image={
             <StaticImage src={'./../assets/images/service/card/iconos-Startup-MVP.svg'} alt="" />
           }
+          three={true}
         />
-      </Columns>
-      <Columns isCentered>
         <ServicesCard
           title={'Product'}
           subtitle={'Development'}
@@ -289,6 +290,7 @@ const Services = () => (
               alt=""
             />
           }
+          three={true}
         />
       </Columns>
     </Section>

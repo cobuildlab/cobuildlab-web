@@ -19,16 +19,17 @@ const ServicesHeader = () => {
     <Columns>
       <Column isSize={{ mobile: 12, desktop: 6 }}>
         <ServicesContent>
-          <ServicesSubTitle>You have a great idea, but how start?</ServicesSubTitle>
+          <ServicesSubTitle>A great idea needs world class assistance.</ServicesSubTitle>
           <ServiceTitle>
             Our <TextOrange>Services</TextOrange>
           </ServiceTitle>
           <Paragraph>
-            We partner with new and early-stage entrepreneurs and industry experts to transforms
-            ideas into Web and Mobile Software Products.
+            We partner with Entrepreneurs and Industry Experts to transform ideas into Web and
+            Mobile Custom Software Solutions.
             <br />
             <br />
-            Since day one, our technique is focused on early results and transparent communication.
+            Zero-waste, early results and transparent communication are our core values since day
+            one.
           </Paragraph>
         </ServicesContent>
       </Column>

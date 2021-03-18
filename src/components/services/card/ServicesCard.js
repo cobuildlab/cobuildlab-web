@@ -21,6 +21,14 @@ const CardStyled = styled(Card)`
   background: rgba(255, 255, 255, 0.5);
 `;
 
+const CardStyledThree = styled(Card)`
+  max-height: 611px;
+  min-height: 611px;
+  max-width: 600px;
+  box-shadow: 0px 10px 20px #0000001a;
+  background: rgba(255, 255, 255, 0.5);
+`;
+
 const Image = styled.div`
   width: 287px !important;
   height: 276px !important;
@@ -56,28 +64,46 @@ const Readmore = styled.p`
   bottom: 18px;
 `;
 
-const ServicesCard = ({ title, subtitle, cover, to, image }) => {
+const ServicesCard = ({ title, subtitle, cover, to, image, three }) => {
   const handleClick = useCallback(() => {
     navigate(to);
   }, [to]);
   return (
     <>
-      <Column isSize={{ mobile: 12, desktop: 5 }}>
-        <CardStyled>
-          <Image>{image}</Image>
-          <Container>
-            <Title>
-              {title}
-              <br />
-              {subtitle}
-            </Title>
-          </Container>
-          <Paragraph>
-            {cover}
-            {'.'}
-          </Paragraph>
-          <Readmore onClick={handleClick}>Read More</Readmore>
-        </CardStyled>
+      <Column isSize={{ mobile: 12, desktop: three ? 4 : 5 }}>
+        {three ? (
+          <CardStyledThree>
+            <Image>{image}</Image>
+            <Container>
+              <Title>
+                {title}
+                <br />
+                {subtitle}
+              </Title>
+            </Container>
+            <Paragraph>
+              {cover}
+              {'.'}
+            </Paragraph>
+            <Readmore onClick={handleClick}>Read More</Readmore>
+          </CardStyledThree>
+        ) : (
+          <CardStyled>
+            <Image>{image}</Image>
+            <Container>
+              <Title>
+                {title}
+                <br />
+                {subtitle}
+              </Title>
+            </Container>
+            <Paragraph>
+              {cover}
+              {'.'}
+            </Paragraph>
+            <Readmore onClick={handleClick}>Read More</Readmore>
+          </CardStyled>
+        )}
       </Column>
     </>
   );
@@ -89,6 +115,7 @@ ServicesCard.propTypes = {
   cover: PropTypes.string.isRequired,
   to: PropTypes.string.isRequired,
   image: PropTypes.element.isRequired,
+  three: PropTypes.bool.isRequired,
 };
 
 export default ServicesCard;
