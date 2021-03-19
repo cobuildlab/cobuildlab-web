@@ -14,7 +14,25 @@ const StyledSubTitle = styled.div`
   text-align: center;
 `;
 
+const StyledOtherText = styled.div`
+  width: 66%;
+  margin: 0 auto;
+  & p {
+    text-align: center;
+  }
+`;
+
 const Paragraph = styled.p`
+  text-align: center;
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+  font-family: 'Lato-regular' !important;
+  color: #264a60;
+  @media screen and (max-width: 768px) {
+    padding: 0px;
+  }
+`;
+
+const ParagraphTextList = styled.p`
   text-align: justify;
   font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
   font-family: 'Lato-regular' !important;
@@ -69,7 +87,7 @@ const ServicesSection2 = ({
 
           {textList !== '' ? (
             <Column isSize={{ mobile: 12, desktop: 10 }} isOffset={2}>
-              <Paragraph>{textList}</Paragraph>
+              <ParagraphTextList>{textList}</ParagraphTextList>
             </Column>
           ) : null}
 
@@ -85,7 +103,7 @@ const ServicesSection2 = ({
                     ))}
                   </ul>
                 </Column>
-                <Column isSize={{ mobile: 12, desktop: 6 }}>
+                <Column isSize={{ mobile: 12, desktop: 4 }}>
                   <ul>
                     {listRight.map((listitem, id) => (
                       <li key={id}>
@@ -97,7 +115,11 @@ const ServicesSection2 = ({
               </Columns>
             </>
           ) : null}
-          {!otherText ? <Paragraph>{otherText}</Paragraph> : null}
+          {otherText !== '' ? (
+            <StyledOtherText>
+              <Paragraph>{otherText}</Paragraph>
+            </StyledOtherText>
+          ) : null}
         </StyledSection>
       </Column>
     </>

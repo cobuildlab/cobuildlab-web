@@ -49,15 +49,7 @@ const CrossPlatformDevelopment = () => (
           paragraph={
             'Cross-platform development provides the flexibility to build your app using a universal language which can then be exported to various Smartphone platforms. This allows one “app” to work across multiple platforms, like IOS and Android.'
           }
-          paragraph2={
-            <>
-              <ul>
-                <li>• Request a Call.</li>
-                <li>• Contact us now.</li>
-                <li>• Get a FREE Consultation.</li>
-              </ul>
-            </>
-          }
+          paragraph2={<>Request a Call, Contact us now, Get a FREE Consultation.</>}
           img={
             <StaticImage
               src={

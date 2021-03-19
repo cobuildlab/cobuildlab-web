@@ -47,7 +47,13 @@ const WebDevelopment = () => (
         <ServicesHeader
           title={'It Support'}
           paragraph={
-            'From business technology support to strategic consulting, we have IT solutions for your organizational needs..\n'
+            <>
+              <>
+                From business technology support to strategic consulting,
+                <br />
+                we have IT solutions for your organizational needs.
+              </>
+            </>
           }
           img={
             <StaticImage
@@ -89,9 +95,9 @@ const WebDevelopment = () => (
           leftText={[
             'Reduce business interruptions by upgrading old technology and moving away from the breakdown/repair support model.',
             'Provide a single point of contact for faster IT support and consistent response time and resolution.',
-            'Ensure your systems and data are safe and backed up.',
           ]}
           rightTextList={[
+            'Ensure your systems and data are safe and backed up.',
             'Harnessing the power of cloud infrastructure and applications for your business.',
             'Save time that would otherwise spent recruiting, training, and managing multiple vendors.',
           ]}

@@ -54,13 +54,8 @@ const DigitalTransformation = () => (
           }
           paragraph2={
             <>
-              <ul>
-                <li>• Transform my enterprise.</li>
-                <li>• Automate my enterprise.</li>
-                <li>• Solve challenges.</li>
-                <li>• Tackle challenges.</li>
-                <li>• Optimize and automate now!.</li>
-              </ul>
+              Transform my enterprise, Automate my enterprise, Solve challenges, ackle challenges,
+              Optimize and automate now!.
             </>
           }
           img={
@@ -75,7 +70,8 @@ const DigitalTransformation = () => (
     <StyledSection2>
       <Container>
         <ServicesSection2
-          title={'Unbolt unknown values for your customers'}
+          title={'Unbolt unknown '}
+          titleOrange={'values for your customers'}
           text={
             'Cobuild Lab will help you on applying technology for processes to run themselves, making those processes more effective and expanding straightforwardness and reporting abilities. Moreover, unlocking new value features for customers to meet their expectations constantly evolving.'
           }
