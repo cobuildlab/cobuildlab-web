@@ -65,10 +65,14 @@ const ProductDevelopment = () => (
           title={'We put your \n'}
           titleOrange={'Idea in the Market'}
           text={
-            'We help you to study, design, build your idea and release it as a final product into the market.'
-          }
-          otherText={
-            ' We can help you identify emerging trends, understand market requirements, and create software products that add value for your customers.'
+            <>
+              We help you to study, design, build your idea and release it as a final product into
+              the market.
+              <br />
+              <br />
+              We can help you identify emerging trends, understand market requirements, and create
+              software products that add value for your customers.
+            </>
           }
         />
       </Container>

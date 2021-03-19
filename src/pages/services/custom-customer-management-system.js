@@ -51,11 +51,8 @@ const CustomCustomerManagementSystem = () => (
           }
           paragraph2={
             <>
-              <ul>
-                <li>• Get the fastest-growing software on the market today!.</li>
-                <li>• Contact us now.</li>
-                <li>• Get a FREE Consultation.</li>
-              </ul>
+              Get the fastest-growing software on the market today!, Contact us now, Get a FREE
+              Consultation.
             </>
           }
           img={
@@ -75,10 +72,16 @@ const CustomCustomerManagementSystem = () => (
           title={'Boosting \n'}
           titleOrange={'your productivity'}
           text={
-            'CRMs help your business grow better for several reasons. One of the simplest yet the most effective advantages is its ability to automate time-consuming, manual tasks by leveraging workflows. '
-          }
-          otherText={
-            'Whether you’re just looking to have software to organize and manage all customer-related information, make internal communication easier, convert more leads into customers faster, or improve your relationships with customers, a CRM can help.\n'
+            <>
+              CRMs help your business grow better for several reasons. One of the simplest yet the
+              most effective advantages is its ability to automate time-consuming, manual tasks by
+              leveraging workflows.
+              <br />
+              <br />
+              Whether you’re just looking to have software to organize and manage all
+              customer-related information, make internal communication easier, convert more leads
+              into customers faster, or improve your relationships with customers, a CRM can help.
+            </>
           }
         />
       </Container>

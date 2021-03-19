@@ -50,15 +50,7 @@ const AppDevelopment = () => (
             'Higher customer engagement, strong built awareness and recognition, customer loyalty improvement, and extra revenue-stream are some of the advantages you acquire when developing a mobile app.\n' +
             'This is the process in which we create an app that can work on several platforms, with the requirements your business has.\n'
           }
-          paragraph2={
-            <>
-              <ul>
-                <li>• Scale your business now!.</li>
-                <li>• Contact us now.</li>
-                <li>• Free consultation.</li>
-              </ul>
-            </>
-          }
+          paragraph2={<>Scale your business now!, Contact us now, Free consultation.</>}
           img={
             <StaticImage
               src={'./../../assets/images/service/card/iconos-Main-Services-APP-Development.svg'}

@@ -64,11 +64,7 @@ const WebDesign = () => (
                 design, and search engine optimization.
               </Paragraph>
               <br />
-              <ul>
-                <li>• Impact your audience now.</li>
-                <li>• Impress your target.</li>
-                <li>• More business credibility here</li>
-              </ul>
+              <>Impact your audience now, Impress your target, More business credibility here.</>
             </>
           }
           img={
@@ -84,12 +80,21 @@ const WebDesign = () => (
       <Container>
         <ServicesSection2
           title={'Anything from a simple, '}
-          titleOrange={'single-page presence to a massive, multi-page website.'}
-          text={
-            'Our web design will be flexible and adaptable to your business’ requirements, with the right design, content distribution, and UX.'
+          titleOrange={
+            <>
+              single-page <br />
+              presence to a massive, multi-page website
+            </>
           }
-          otherText={
-            'Web designing is all about achieving goals by influencing the behavior of your visitors and structuring every element of it around the main goal of the website.'
+          text={
+            <>
+              Our web design will be flexible and adaptable to your business’ requirements, with the
+              right design, content distribution, and UX.
+              <br />
+              <br />
+              Web designing is all about achieving goals by influencing the behavior of your
+              visitors and structuring every element of it around the main goal of the website.
+            </>
           }
         />
       </Container>

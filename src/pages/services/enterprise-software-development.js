@@ -52,12 +52,8 @@ const EnterpriseSoftwareDevelopment = () => (
           }
           paragraph2={
             <>
-              <ul>
-                <li>• More value for my enterprise.</li>
-                <li>• My enterprise needs this.</li>
-                <li>• Risk reduction for my enterprise.</li>
-                <li>• Learn more about this.</li>
-              </ul>
+              More value for my enterprise, My enterprise needs this, Risk reduction for my
+              enterprise, Learn more about this.
             </>
           }
           img={
@@ -84,8 +80,8 @@ const EnterpriseSoftwareDevelopment = () => (
           listLeft={[
             'Supply Chain Complexity: Multiple channels to market.',
             'Consumer demands: Expected speed, quality requirements met, and services.',
-            'Supply Chain Volatility: Avoiding delays, backlogs, and bottlenecks.',
           ]}
+          listRight={['Supply Chain Volatility: Avoiding delays, backlogs, and bottlenecks.']}
           otherText={
             'From avoiding delays and predicting demand to tracking delivery times, and more, there are many solutions that an Enterprise Software Development will provide.'
           }

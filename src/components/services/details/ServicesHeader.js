@@ -18,6 +18,10 @@ const Paragraph2 = styled.p`
   color: #264a60;
 `;
 
+const StyledImage = styled.div`
+  margin-left: 40px;
+`;
+
 const ServicesHeader = ({ title, paragraph, paragraph2, img }) => {
   return (
     <Columns>
@@ -33,7 +37,7 @@ const ServicesHeader = ({ title, paragraph, paragraph2, img }) => {
         </ServicesContent>
       </Column>
       <Column isHidden="mobile" isSize={5}>
-        {img}
+        <StyledImage>{img}</StyledImage>
       </Column>
     </Columns>
   );

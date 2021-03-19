@@ -65,11 +65,7 @@ const MvpSoftwareDevelopment = () => (
                 substantial capital loss.
               </Paragraph>
               <br />
-              <ul>
-                <li>• I want my MVP Now!.</li>
-                <li>• Contact Us!.</li>
-                <li>• Get a FREE Consultation.</li>
-              </ul>
+              <>Get your MVP, contact US and get a FREE consultation!</>
             </>
           }
           img={
@@ -84,10 +80,15 @@ const MvpSoftwareDevelopment = () => (
           title={'Show what \n'}
           titleOrange={'you got!'}
           text={
-            'An MVP allows you to have what you need to get to market faster. That is the very beginning of your incredible company journey to validate an idea for a product without building the entire product.'
-          }
-          otherText={
-            'MVP can also help minimize the time and resources you might otherwise commit to building a product that will not succeed.'
+            <>
+              An MVP allows you to have what you need to get to market faster. That is the very
+              beginning of your incredible company journey to validate an idea for a product without
+              building the entire product.
+              <br />
+              <br />
+              MVP can also help minimize the time and resources you might otherwise commit to
+              building a product that will not succeed.
+            </>
           }
         />
       </Container>
@@ -113,9 +114,9 @@ const MvpSoftwareDevelopment = () => (
             'Acquire a potential client base and find the early adopters.\n',
             'Check whether the project is appealing to potential users.',
             'Attract investors earlier.',
-            'Save time and money on product development by avoiding expensive market research.',
           ]}
           rightTextList={[
+            'Save time and money on product development by avoiding expensive market research.',
             'Open an early testing opportunity.',
             'Gather user intelligence and feedback.',
             'Keep things budget-friendly.',

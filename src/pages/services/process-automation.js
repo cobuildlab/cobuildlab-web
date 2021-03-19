@@ -51,13 +51,8 @@ const ProcessAutomation = () => (
           }
           paragraph2={
             <>
-              <ul>
-                <li>• Transform my enterprise.</li>
-                <li>• Automate my enterprise.</li>
-                <li>• Solve challenges.</li>
-                <li>• Tackle challenges.</li>
-                <li>• Optimize and automate now!.</li>
-              </ul>
+              Transform my enterprise, Automate my enterprise, Solve challenges, Tackle challenges,
+              Optimize and automate now!.
             </>
           }
           img={
@@ -101,7 +96,7 @@ const ProcessAutomation = () => (
           }
           leftText={[
             'Leverage the power of Optimization driven by Machine Learning and Artificial Intelligence.',
-            'The solution of a wide range of challenges\n.',
+            'The solution of a wide range of challenges.',
             'Hyper-connectivity among devices with Internet of Things\n.',
           ]}
           rightTextList={[

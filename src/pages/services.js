@@ -38,67 +38,9 @@ const Services = () => (
         <ServicesHeader />
       </Container>
     </Section>
+
     <Section>
-      <StyledTitle>
-        <H4>For Logistics and Supply Chain Enterprises</H4>
-      </StyledTitle>
-      <Columns isCentered>
-        <ServicesCard
-          title={'Enterprise Software'}
-          subtitle={'Development'}
-          cover={
-            'Zero-waste process combined with more than 50 years of experience.\n' +
-            'Risk-costs reduction, more effective tracking, and faster delivery date.\n' +
-            'Efficiency rate will increase with the right guidance and assistance'
-          }
-          to={'enterprise-software-development'}
-          image={
-            <StaticImage
-              src={
-                './../assets/images/service/card/iconos-Logistic-Enterprise-Software-Development.svg'
-              }
-              alt=""
-            />
-          }
-          three={true}
-        />
-        <ServicesCard
-          title={'Process'}
-          subtitle={'Automation'}
-          cover={'Revolutionize your process and save time and money'}
-          to={'process-automation'}
-          image={
-            <StaticImage
-              src={'./../assets/images/service/card/iconos-Logistic-Process-Automation.svg'}
-              alt=""
-            />
-          }
-          three={true}
-        />
-        <ServicesCard
-          title={'Digital'}
-          subtitle={'Transformation'}
-          cover={
-            'Intelligence processes based on enterprises goals\n' +
-            'Intelligent guidance / assistance / direction for digital transformation opportunities\n' +
-            'Smart guidance / assistance / direction for digital transformation opportunities\n' +
-            'Smart digital transformation opportunities guidance\n'
-          }
-          to={'digital-transformation'}
-          image={
-            <StaticImage
-              src={'./../assets/images/service/card/iconos-Logistic-Digital-Transformation.svg'}
-              alt=""
-            />
-          }
-          three={true}
-        />
-      </Columns>
-    </Section>
-    <Section>
-      <StyledTitle>
-        <H4>If you’re a Small Business Owner</H4>
-      </StyledTitle>
+      <StyledTitle></StyledTitle>
       <Columns isCentered>
         <ServicesCard
           title={'Custom Software'}
@@ -163,6 +105,63 @@ const Services = () => (
               alt=""
             />
           }
+        />
+      </Columns>
+    </Section>
+    <Section>
+      <StyledTitle>
+        <H4>For Logistics and Supply Chain Enterprises</H4>
+      </StyledTitle>
+      <Columns isCentered>
+        <ServicesCard
+          title={'Enterprise Software'}
+          subtitle={'Development'}
+          cover={
+            'Zero-waste process combined with more than 50 years of experience.\n' +
+            'Risk-costs reduction, more effective tracking, and faster delivery date.\n' +
+            'Efficiency rate will increase with the right guidance and assistance'
+          }
+          to={'enterprise-software-development'}
+          image={
+            <StaticImage
+              src={
+                './../assets/images/service/card/iconos-Logistic-Enterprise-Software-Development.svg'
+              }
+              alt=""
+            />
+          }
+          three={true}
+        />
+        <ServicesCard
+          title={'Process'}
+          subtitle={'Automation'}
+          cover={'Revolutionize your process and save time and money'}
+          to={'process-automation'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos-Logistic-Process-Automation.svg'}
+              alt=""
+            />
+          }
+          three={true}
+        />
+        <ServicesCard
+          title={'Digital'}
+          subtitle={'Transformation'}
+          cover={
+            'Intelligence processes based on enterprises goals\n' +
+            'Intelligent guidance / assistance / direction for digital transformation opportunities\n' +
+            'Smart guidance / assistance / direction for digital transformation opportunities\n' +
+            'Smart digital transformation opportunities guidance\n'
+          }
+          to={'digital-transformation'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos-Logistic-Digital-Transformation.svg'}
+              alt=""
+            />
+          }
+          three={true}
         />
       </Columns>
     </Section>
