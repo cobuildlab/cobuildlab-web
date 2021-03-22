@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Hero, HeroHeader, Section } from 'bloomer';
+import { Columns, Container, Hero, HeroHeader, Section } from 'bloomer';
 import 'bulma/css/bulma.css';
 
 // COMPONENTS
@@ -15,10 +15,13 @@ import styled from 'styled-components';
 
 import ServicesSection3 from '../../components/services/details/ServicesSection3';
 import ServicesSection4 from '../../components/services/details/ServicesSection4';
-import SuccessStories from '../../components/services/details/SuccesStories';
 import Title2 from '../../components/Title2';
 import ServicesSection2 from '../../components/services/details/ServicesSection2';
 import { StaticImage } from 'gatsby-plugin-image';
+
+import Propagad from '../../components/services/details/customer-success-stories/card/Propagad';
+import MyVoice from '../../components/services/details/customer-success-stories/card/MyVoice';
+import JobCore from '../../components/services/details/customer-success-stories/card/JobCore';
 
 const StyledSubTitle = styled.div`
   text-align: center;
@@ -134,7 +137,11 @@ const WebDevelopment = () => (
         <StyledSubTitle>
           <Title2>Customer Success Stories</Title2>
         </StyledSubTitle>
-        <SuccessStories />
+        <Columns isCentered>
+          <MyVoice />
+          <JobCore />
+          <Propagad />
+        </Columns>
       </StyledContainer>
     </StyledSection2>
     <Section>
