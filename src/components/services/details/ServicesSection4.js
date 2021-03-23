@@ -57,13 +57,13 @@ const ServicesSection4 = ({ title, leftText, rightTextList, text }) => {
         </Column>
         <Column isSize={{ mobile: 12, desktop: 4 }} isOffset={{ desktop: 1 }}>
           <ServicesContent>
-            <Paragraph>
-              <StyleList>
+            <StyleList>
+              <Paragraph>
                 {rightTextList.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
-              </StyleList>
-            </Paragraph>
+              </Paragraph>
+            </StyleList>
           </ServicesContent>
         </Column>
       </Columns>

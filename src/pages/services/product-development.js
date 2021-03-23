@@ -21,8 +21,8 @@ import ServicesSection2 from '../../components/services/details/ServicesSection2
 import { StaticImage } from 'gatsby-plugin-image';
 
 import Massone from '../../components/services/details/customer-success-stories/card/Massone';
-import Avsee from '../../components/customer-success-stories/card/stories/Avsee';
 import GeeksAcademy from '../../components/services/details/customer-success-stories/card/GeeksAcademy';
+import Avsee from '../../components/services/details/customer-success-stories/card/Avsee';
 
 const StyledSubTitle = styled.div`
   text-align: center;
