@@ -18,9 +18,12 @@ import ServicesSection4 from '../components/services/details/ServicesSection4';
 import ServicesCardProduct from '../components/services/details/card/ServicesCardProduct';
 import ServicesCardSoftware from '../components/services/details/card/ServicesCardSoftware';
 import ServicesCardTraining from '../components/services/details/card/ServicesCardTraining';
-import SuccessStories from '../components/services/details/SuccesStories';
 import Title2 from '../components/Title2';
 import ServicesSection2 from '../components/services/details/ServicesSection2';
+
+import MyVoice from '../components/services/details/customer-success-stories/card/MyVoice';
+import JobCore from '../components/services/details/customer-success-stories/card/JobCore';
+import Propagad from '../components/services/details/customer-success-stories/card/Propagad';
 
 const StyledSubTitle = styled.div`
   text-align: center;
@@ -76,7 +79,11 @@ const ServicesDetail = () => (
         <StyledSubTitle>
           <Title2>Customer Success Stories</Title2>
         </StyledSubTitle>
-        <SuccessStories />
+        <Columns isCentered>
+          <MyVoice />
+          <JobCore />
+          <Propagad />
+        </Columns>
       </StyledContainer>
     </StyledSection2>
     <Section>
