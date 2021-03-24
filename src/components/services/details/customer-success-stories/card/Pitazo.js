@@ -8,8 +8,11 @@ import {
   CardStyled,
   Container,
   Image,
+  ParagraphDivStyled,
   Paragraph,
+  ReadmoreDivStyled,
   Readmore,
+  TitleDivStyled,
   TitleStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
@@ -25,10 +28,16 @@ const Pitazo = () => {
           <StaticImage src={'./../../../../assets/images/customers/pitazo-1.jpg'} alt="" />
         </Image>
         <Container>
-          <TitleStyled>El Pitazo </TitleStyled>
+          <TitleDivStyled>
+            <TitleStyled>El Pitazo </TitleStyled>
+          </TitleDivStyled>
         </Container>
-        <Paragraph>El Pitazo is Venezuela{"'"}s main independent news website...</Paragraph>
-        <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        <ParagraphDivStyled>
+          <Paragraph>El Pitazo is Venezuela{"'"}s main independent news website...</Paragraph>
+        </ParagraphDivStyled>
+        <ReadmoreDivStyled>
+          <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        </ReadmoreDivStyled>
       </CardStyled>
     </Column>
   );

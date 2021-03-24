@@ -8,8 +8,11 @@ import {
   CardStyled,
   Container,
   Image,
+  ParagraphDivStyled,
   Paragraph,
+  ReadmoreDivStyled,
   Readmore,
+  TitleDivStyled,
   TitleStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
@@ -25,13 +28,19 @@ const GeeksAcademy = () => {
           <StaticImage src={'./../../../../assets/images/customers/4geeks.png'} alt="" />
         </Image>
         <Container>
-          <TitleStyled>4Geeks Academy</TitleStyled>
+          <TitleDivStyled>
+            <TitleStyled>4Geeks Academy</TitleStyled>
+          </TitleDivStyled>
         </Container>
-        <Paragraph>
-          4Geeks Academy Contact Person: Marcelo Ricigliano Location: Miami, US, Caracas and
-          Maracaibo, Venezuela Industry: Education Web Site…
-        </Paragraph>
-        <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        <ParagraphDivStyled>
+          <Paragraph>
+            4Geeks Academy Contact Person: Marcelo Ricigliano Location: Miami, US, Caracas and
+            Maracaibo, Venezuela Industry: Education Web Site…
+          </Paragraph>
+        </ParagraphDivStyled>
+        <ReadmoreDivStyled>
+          <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        </ReadmoreDivStyled>
       </CardStyled>
     </Column>
   );

@@ -8,8 +8,11 @@ import {
   CardStyled,
   Container,
   Image,
+  ParagraphDivStyled,
   Paragraph,
+  ReadmoreDivStyled,
   Readmore,
+  TitleDivStyled,
   TitleStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
@@ -25,13 +28,19 @@ const Propagad = () => {
           <StaticImage src={'./../../../../assets/images/customers/Propagad.jpg'} alt="" />
         </Image>
         <Container>
-          <TitleStyled>Propagad</TitleStyled>
+          <TitleDivStyled>
+            <TitleStyled>Propagad</TitleStyled>
+          </TitleDivStyled>
         </Container>
-        <Paragraph>
-          Propagad Contact Person: Cesar Lang Location: Miami, US Industry: Marketing and
-          Advertising Web Site: www.propagad.com Introducing Cesar…
-        </Paragraph>
-        <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        <ParagraphDivStyled>
+          <Paragraph>
+            Propagad Contact Person: Cesar Lang Location: Miami, US Industry: Marketing and
+            Advertising Web Site: www.propagad.com Introducing Cesar…
+          </Paragraph>
+        </ParagraphDivStyled>
+        <ReadmoreDivStyled>
+          <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        </ReadmoreDivStyled>
       </CardStyled>
     </Column>
   );

@@ -8,8 +8,11 @@ import {
   CardStyled,
   Container,
   Image,
+  ParagraphDivStyled,
   Paragraph,
+  ReadmoreDivStyled,
   Readmore,
+  TitleDivStyled,
   TitleStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
@@ -25,13 +28,19 @@ const Weedmatch = () => {
           <StaticImage src={'./../../../../assets/images/customers/Weedmatch.jpg'} alt="" />
         </Image>
         <Container>
-          <TitleStyled>Weedmatch</TitleStyled>
+          <TitleDivStyled>
+            <TitleStyled>Weedmatch</TitleStyled>
+          </TitleDivStyled>
         </Container>
-        <Paragraph>
-          Weedmatch Weedmatch is the first free cannabis social network made by a group of
-          Venezuelans led by its founder Oscar Lopez in Chile…
-        </Paragraph>
-        <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        <ParagraphDivStyled>
+          <Paragraph>
+            Weedmatch Weedmatch is the first free cannabis social network made by a group of
+            Venezuelans led by its founder Oscar Lopez in Chile…
+          </Paragraph>
+        </ParagraphDivStyled>
+        <ReadmoreDivStyled>
+          <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        </ReadmoreDivStyled>
       </CardStyled>
     </Column>
   );

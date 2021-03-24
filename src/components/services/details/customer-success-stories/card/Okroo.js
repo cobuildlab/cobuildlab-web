@@ -8,8 +8,11 @@ import {
   CardStyled,
   Container,
   Image,
+  ParagraphDivStyled,
   Paragraph,
+  ReadmoreDivStyled,
   Readmore,
+  TitleDivStyled,
   TitleStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
@@ -25,13 +28,19 @@ const Okroo = () => {
           <StaticImage src={'./../../../../assets/images/customers/okroo.jpg'} alt="" />
         </Image>
         <Container>
-          <TitleStyled>Okroo</TitleStyled>
+          <TitleDivStyled>
+            <TitleStyled>Okroo</TitleStyled>
+          </TitleDivStyled>
         </Container>
-        <Paragraph>
-          Some of Miami{"'"}s most interesting dishes are found in the heart of Downtown, and its
-          restaurants are a reflection of its melting pot quality…
-        </Paragraph>
-        <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        <ParagraphDivStyled>
+          <Paragraph>
+            Some of Miami{"'"}s most interesting dishes are found in the heart of Downtown, and its
+            restaurants are a reflection of its melting pot quality…
+          </Paragraph>
+        </ParagraphDivStyled>
+        <ReadmoreDivStyled>
+          <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        </ReadmoreDivStyled>
       </CardStyled>
     </Column>
   );

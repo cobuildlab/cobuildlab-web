@@ -8,8 +8,11 @@ import {
   CardStyled,
   Container,
   Image,
+  ParagraphDivStyled,
   Paragraph,
+  ReadmoreDivStyled,
   Readmore,
+  TitleDivStyled,
   TitleStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
@@ -25,13 +28,21 @@ const JobCore = () => {
           <StaticImage src={'./../../../../assets/images/customers/jobcore.jpg'} alt="" />
         </Image>
         <Container>
-          <TitleStyled>JobCore</TitleStyled>
+          <TitleDivStyled>
+            <TitleDivStyled>
+              <TitleStyled>JobCore</TitleStyled>
+            </TitleDivStyled>
+          </TitleDivStyled>
         </Container>
-        <Paragraph>
-          Get work fast and get paid the same day with Jobcore. This is a web platform that allows
-          employers to post job applications for candidates…
-        </Paragraph>
-        <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        <ParagraphDivStyled>
+          <Paragraph>
+            Get work fast and get paid the same day with Jobcore. This is a web platform that allows
+            employers to post job applications for candidates…
+          </Paragraph>
+        </ParagraphDivStyled>
+        <ReadmoreDivStyled>
+          <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        </ReadmoreDivStyled>
       </CardStyled>
     </Column>
   );

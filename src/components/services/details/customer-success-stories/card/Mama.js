@@ -8,8 +8,11 @@ import {
   CardStyled,
   Container,
   Image,
+  ParagraphDivStyled,
   Paragraph,
+  ReadmoreDivStyled,
   Readmore,
+  TitleDivStyled,
   TitleStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
@@ -25,13 +28,19 @@ const Mama = () => {
           <StaticImage src={'./../../../../assets/images/customers/mama-logo.jpg'} alt="" />
         </Image>
         <Container>
-          <TitleStyled>Mama</TitleStyled>
+          <TitleDivStyled>
+            <TitleStyled>Mama</TitleStyled>
+          </TitleDivStyled>
         </Container>
-        <Paragraph>
-          The Match-Making app MAMA is a fun and easy-to-use connectivity tool that makes
-          lightning-fast introductions...
-        </Paragraph>
-        <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        <ParagraphDivStyled>
+          <Paragraph>
+            The Match-Making app MAMA is a fun and easy-to-use connectivity tool that makes
+            lightning-fast introductions...
+          </Paragraph>
+        </ParagraphDivStyled>
+        <ReadmoreDivStyled>
+          <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        </ReadmoreDivStyled>
       </CardStyled>
     </Column>
   );

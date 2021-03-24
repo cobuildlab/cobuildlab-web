@@ -8,8 +8,11 @@ import {
   CardStyled,
   Container,
   Image,
+  ParagraphDivStyled,
   Paragraph,
+  ReadmoreDivStyled,
   Readmore,
+  TitleDivStyled,
   TitleStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
@@ -25,13 +28,19 @@ const Payklever = () => {
           <StaticImage src={'./../../../../assets/images/customers/Payklever.png'} alt="" />
         </Image>
         <Container>
-          <TitleStyled>Payklever Campaign Manager</TitleStyled>
+          <TitleDivStyled>
+            <TitleStyled>Payklever Campaign Manager</TitleStyled>
+          </TitleDivStyled>
         </Container>
-        <Paragraph>
-          Payklever Campaign Manager With Payklever you can turn your car into a payment method. You
-          can drive quietly and never handle your cash or…
-        </Paragraph>
-        <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        <ParagraphDivStyled>
+          <Paragraph>
+            Payklever Campaign Manager With Payklever you can turn your car into a payment method.
+            You can drive quietly and never handle your cash or…
+          </Paragraph>
+        </ParagraphDivStyled>
+        <ReadmoreDivStyled>
+          <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        </ReadmoreDivStyled>
       </CardStyled>
     </Column>
   );

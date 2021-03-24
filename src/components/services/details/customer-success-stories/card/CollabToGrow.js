@@ -8,8 +8,11 @@ import {
   CardStyled,
   Container,
   Image,
+  ParagraphDivStyled,
   Paragraph,
+  ReadmoreDivStyled,
   Readmore,
+  TitleDivStyled,
   TitleStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
@@ -25,13 +28,19 @@ const CollabToGrow = () => {
           <StaticImage src={'./../../../../assets/images/customers/collab-logo.jpg'} alt="" />
         </Image>
         <Container>
-          <TitleStyled>Collab To Grow</TitleStyled>
+          <TitleDivStyled>
+            <TitleStyled>Collab To Grow</TitleStyled>
+          </TitleDivStyled>
         </Container>
-        <Paragraph>
-          Is a technology-enabled managed services and advisory firm that specializes in improving
-          the performance of strategic alliances...
-        </Paragraph>
-        <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        <ParagraphDivStyled>
+          <Paragraph>
+            Is a technology-enabled managed services and advisory firm that specializes in improving
+            the performance of strategic alliances...
+          </Paragraph>
+        </ParagraphDivStyled>
+        <ReadmoreDivStyled>
+          <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        </ReadmoreDivStyled>
       </CardStyled>
     </Column>
   );

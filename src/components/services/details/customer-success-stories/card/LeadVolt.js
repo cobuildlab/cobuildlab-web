@@ -8,8 +8,11 @@ import {
   CardStyled,
   Container,
   Image,
+  ParagraphDivStyled,
   Paragraph,
+  ReadmoreDivStyled,
   Readmore,
+  TitleDivStyled,
   TitleStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
@@ -25,13 +28,19 @@ const LeadVolt = () => {
           <StaticImage src={'./../../../../assets/images/customers/leadvolt-logo.jpg'} alt="" />
         </Image>
         <Container>
-          <TitleStyled>LeadVolt</TitleStyled>
+          <TitleDivStyled>
+            <TitleStyled>LeadVolt</TitleStyled>
+          </TitleDivStyled>
         </Container>
-        <Paragraph>
-          Leadvolt is a high touch lead management system that closes leads faster, provides full
-          transparency, and empowers your agency to focus on the customer…
-        </Paragraph>
-        <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        <ParagraphDivStyled>
+          <Paragraph>
+            Leadvolt is a high touch lead management system that closes leads faster, provides full
+            transparency, and empowers your agency to focus on the customer…
+          </Paragraph>
+        </ParagraphDivStyled>
+        <ReadmoreDivStyled>
+          <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        </ReadmoreDivStyled>
       </CardStyled>
     </Column>
   );

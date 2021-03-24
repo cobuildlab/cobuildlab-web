@@ -8,8 +8,11 @@ import {
   CardStyled,
   Container,
   Image,
+  ParagraphDivStyled,
   Paragraph,
+  ReadmoreDivStyled,
   Readmore,
+  TitleDivStyled,
   TitleStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
@@ -25,13 +28,19 @@ const Massone = () => {
           <StaticImage src={'./../../../../assets/images/customers/Massone.jpg'} alt="" />
         </Image>
         <Container>
-          <TitleStyled>Massone</TitleStyled>
+          <TitleDivStyled>
+            <TitleStyled>Massone</TitleStyled>
+          </TitleDivStyled>
         </Container>
-        <Paragraph>
-          Massone Mechanical Massone Mechanical offers maintenance and installation services to
-          commercial refrigeration companies. Offering high…
-        </Paragraph>
-        <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        <ParagraphDivStyled>
+          <Paragraph>
+            Massone Mechanical Massone Mechanical offers maintenance and installation services to
+            commercial refrigeration companies. Offering high…
+          </Paragraph>
+        </ParagraphDivStyled>
+        <ReadmoreDivStyled>
+          <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        </ReadmoreDivStyled>
       </CardStyled>
     </Column>
   );

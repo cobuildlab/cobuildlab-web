@@ -8,8 +8,11 @@ import {
   CardStyled,
   Container,
   Image,
+  ParagraphDivStyled,
   Paragraph,
+  ReadmoreDivStyled,
   Readmore,
+  TitleDivStyled,
   TitleStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
@@ -25,13 +28,19 @@ const MyVoice = () => {
           <StaticImage src={'./../../../../assets/images/customers/my-voice.jpg'} alt="" />
         </Image>
         <Container>
-          <TitleStyled>MyVoice</TitleStyled>
+          <TitleDivStyled>
+            <TitleStyled>MyVoice</TitleStyled>
+          </TitleDivStyled>
         </Container>
-        <Paragraph>
-          Cobuild Lab partnered up with Kadem Education to raise teacher’s voices by building a
-          software solution.
-        </Paragraph>
-        <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        <ParagraphDivStyled>
+          <Paragraph>
+            Cobuild Lab partnered up with Kadem Education to raise teacher’s voices by building a
+            software solution.
+          </Paragraph>
+        </ParagraphDivStyled>
+        <ReadmoreDivStyled>
+          <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        </ReadmoreDivStyled>
       </CardStyled>
     </Column>
   );

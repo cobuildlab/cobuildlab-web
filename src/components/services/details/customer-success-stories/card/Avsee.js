@@ -8,8 +8,11 @@ import {
   CardStyled,
   Container,
   Image,
+  ParagraphDivStyled,
   Paragraph,
+  ReadmoreDivStyled,
   Readmore,
+  TitleDivStyled,
   TitleStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
@@ -25,13 +28,19 @@ const Avsee = () => {
           <StaticImage src={'./../../../../assets/images/customers/avsee-logo.jpg'} alt="" />
         </Image>
         <Container>
-          <TitleStyled>Avsee</TitleStyled>
+          <TitleDivStyled>
+            <TitleStyled>Avsee</TitleStyled>
+          </TitleDivStyled>
         </Container>
-        <Paragraph>
-          The Avsee team chose Cobuild Lab to be their technology partner in developing a platform
-          that helps physicians and patients…
-        </Paragraph>
-        <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        <ParagraphDivStyled>
+          <Paragraph>
+            The Avsee team chose Cobuild Lab to be their technology partner in developing a platform
+            that helps physicians and patients…
+          </Paragraph>
+        </ParagraphDivStyled>
+        <ReadmoreDivStyled>
+          <Readmore onClick={() => handleClick()}>Read More</Readmore>
+        </ReadmoreDivStyled>
       </CardStyled>
     </Column>
   );
