@@ -3,7 +3,7 @@
  */
 
 import styled from 'styled-components';
-import { Card, Title, Subtitle } from 'bloomer';
+import { Card, Title } from 'bloomer';
 import colors from './../../../2021/colors';
 
 export const TitleStyled = styled(Title)`
@@ -45,7 +45,7 @@ export const Container = styled.div`
   overflow: hidden;
 `;
 
-export const Paragraph = styled(Subtitle)`
+export const Paragraph = styled(Title)`
   font-size: 17px;
   font-family: 'Lato-bold' !important;
   text-align: left;
@@ -74,13 +74,10 @@ export const ReadmoreDivStyled = styled.div`
   cursor: pointer;
 `;
 
-export const Readmore = styled(Subtitle)`
+export const Readmore = styled(Title)`
   font-size: 17px;
   font-family: 'Lato-bold' !important;
   text-align: right;
   color: #e76c29;
-  position: relative;
-  right: 29px;
-  top: -10px;
   cursor: pointer;
 `;

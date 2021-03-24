@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 
 import { StaticImage } from 'gatsby-plugin-image';
-import { Column } from 'bloomer';
+import { Column, Title } from 'bloomer';
 
 import { navigate } from 'gatsby';
 import {
@@ -11,9 +11,7 @@ import {
   ParagraphDivStyled,
   Paragraph,
   ReadmoreDivStyled,
-  Readmore,
   TitleDivStyled,
-  TitleStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const LeadVolt = () => {
@@ -29,7 +27,9 @@ const LeadVolt = () => {
         </Image>
         <Container>
           <TitleDivStyled>
-            <TitleStyled>LeadVolt</TitleStyled>
+            <Title isSize={1} className="title-card-customer-success">
+              Leadvolt
+            </Title>
           </TitleDivStyled>
         </Container>
         <ParagraphDivStyled>
@@ -39,7 +39,12 @@ const LeadVolt = () => {
           </Paragraph>
         </ParagraphDivStyled>
         <ReadmoreDivStyled>
-          <Readmore onClick={() => handleClick()}>Read More</Readmore>
+          <Title
+            isSize={6}
+            className="readmore-card-customer-success"
+            onClick={() => handleClick()}>
+            Read More
+          </Title>
         </ReadmoreDivStyled>
       </CardStyled>
     </Column>
