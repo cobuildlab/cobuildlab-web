@@ -116,6 +116,25 @@ AI is starting to be used in cars to reduce the driving time of the person and h
 
 The AI helps within the logistics of a company so that their products can be found more easily at the time of being sent to its users, and even helps them to be monitored until the time of delivery.  It is widely used by shipping companies and department stores.
 
+More specifically, artificial intelligence is used in logistics processes:
+
+* A more agile, centralized, and controlled planning of supplies, personnel, revenues, expenditures, transfers, errors, among other data relevant to operations. 
+
+* To organize work and teams efficiently. 
+
+* Optimization of vehicles and delivery drivers. 
+
+* To store sensitive and essential information that supports strategic decisions. 
+
+* To increase access to information for all those involved in the process and activities. 
+
+* Inventory management and rotation. 
+
+* Accelerate production times, which translates into customer satisfaction. 
+
+And not to mention that a custom-developed software tool involving AI technology can be updated and integrated as often as you need it. According to your company's evolution. 
+
+
 <Br>
 
 <title-2>For the future:</title-2>
