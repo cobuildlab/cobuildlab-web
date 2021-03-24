@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 
 import { StaticImage } from 'gatsby-plugin-image';
-import { Column, Title } from 'bloomer';
+import { Column, Title, Subtitle } from 'bloomer';
 
 import { navigate } from 'gatsby';
 import {
@@ -9,7 +9,6 @@ import {
   Container,
   Image,
   ParagraphDivStyled,
-  Paragraph,
   ReadmoreDivStyled,
   TitleDivStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
@@ -33,10 +32,10 @@ const LeadVolt = () => {
           </TitleDivStyled>
         </Container>
         <ParagraphDivStyled>
-          <Paragraph>
+          <Subtitle className={'paragraph-card-customer-success'}>
             Leadvolt is a high touch lead management system that closes leads faster, provides full
             transparency, and empowers your agency to focus on the customer…
-          </Paragraph>
+          </Subtitle>
         </ParagraphDivStyled>
         <ReadmoreDivStyled>
           <Title

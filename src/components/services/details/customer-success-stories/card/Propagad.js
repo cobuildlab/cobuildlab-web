@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 
 import { StaticImage } from 'gatsby-plugin-image';
-import { Column, Title } from 'bloomer';
+import { Column, Subtitle, Title } from 'bloomer';
 
 import { navigate } from 'gatsby';
 import {
@@ -9,7 +9,6 @@ import {
   Container,
   Image,
   ParagraphDivStyled,
-  Paragraph,
   ReadmoreDivStyled,
   TitleDivStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
@@ -33,10 +32,10 @@ const Propagad = () => {
           </TitleDivStyled>
         </Container>
         <ParagraphDivStyled>
-          <Paragraph>
+          <Subtitle className={'paragraph-card-customer-success'}>
             Propagad Contact Person: Cesar Lang Location: Miami, US Industry: Marketing and
             Advertising Web Site: www.propagad.com Introducing Cesar…
-          </Paragraph>
+          </Subtitle>
         </ParagraphDivStyled>
         <ReadmoreDivStyled>
           <Title

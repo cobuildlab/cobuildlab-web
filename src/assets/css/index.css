@@ -1414,19 +1414,3 @@ img.i-l {
 .slick-slide img {
     display: initial!important;
 }
-
-.title-card-customer-success {
-    text-align: left;
-    font-weight: 100!important;
-    font-family: 'Lato-Light', serif !important;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.readmore-card-customer-success {
-    font-family: 'Lato-bold', serif !important;
-    text-align: right;
-    color: #e76c29!important;
-    cursor: pointer;
-}

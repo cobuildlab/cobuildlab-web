@@ -3,19 +3,7 @@
  */
 
 import styled from 'styled-components';
-import { Card, Title } from 'bloomer';
-import colors from './../../../2021/colors';
-
-export const TitleStyled = styled(Title)`
-  font-size: calc(40px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
-  color: ${colors.indigo};
-  text-align: left;
-  font-weight: 100;
-  font-family: 'Lato-Light' !important;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-`;
+import { Card } from 'bloomer';
 
 export const TitleDivStyled = styled.div`
   width: 351px;
@@ -45,15 +33,6 @@ export const Container = styled.div`
   overflow: hidden;
 `;
 
-export const Paragraph = styled(Title)`
-  font-size: 17px;
-  font-family: 'Lato-bold' !important;
-  text-align: left;
-  color: #264a60;
-  overflow: hidden;
-  text-overflow: ellipsis;
-`;
-
 export const ParagraphDivStyled = styled.div`
   padding-left: 20px;
   padding-right: 20px;
@@ -70,14 +49,5 @@ export const ReadmoreDivStyled = styled.div`
   margin-bottom: 14px;
   position: relative;
   right: 29px;
-  top: -10px;
-  cursor: pointer;
-`;
-
-export const Readmore = styled(Title)`
-  font-size: 17px;
-  font-family: 'Lato-bold' !important;
-  text-align: right;
-  color: #e76c29;
   cursor: pointer;
 `;

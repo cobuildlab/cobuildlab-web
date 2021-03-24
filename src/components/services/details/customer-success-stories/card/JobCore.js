@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 
 import { StaticImage } from 'gatsby-plugin-image';
-import { Column, Title } from 'bloomer';
+import { Column, Subtitle, Title } from 'bloomer';
 
 import { navigate } from 'gatsby';
 import {
@@ -9,7 +9,6 @@ import {
   Container,
   Image,
   ParagraphDivStyled,
-  Paragraph,
   ReadmoreDivStyled,
   TitleDivStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
@@ -35,10 +34,10 @@ const JobCore = () => {
           </TitleDivStyled>
         </Container>
         <ParagraphDivStyled>
-          <Paragraph>
+          <Subtitle className={'paragraph-card-customer-success'}>
             Get work fast and get paid the same day with Jobcore. This is a web platform that allows
             employers to post job applications for candidates…
-          </Paragraph>
+          </Subtitle>
         </ParagraphDivStyled>
         <ReadmoreDivStyled>
           <Title

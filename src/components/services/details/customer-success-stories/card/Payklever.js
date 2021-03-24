@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 
 import { StaticImage } from 'gatsby-plugin-image';
-import { Column, Title } from 'bloomer';
+import { Column, Title, Subtitle } from 'bloomer';
 
 import { navigate } from 'gatsby';
 import {
@@ -9,7 +9,6 @@ import {
   Container,
   Image,
   ParagraphDivStyled,
-  Paragraph,
   ReadmoreDivStyled,
   TitleDivStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
@@ -33,10 +32,10 @@ const Payklever = () => {
           </TitleDivStyled>
         </Container>
         <ParagraphDivStyled>
-          <Paragraph>
+          <Subtitle className={'paragraph-card-customer-success'}>
             Payklever Campaign Manager With Payklever you can turn your car into a payment method.
             You can drive quietly and never handle your cash or…
-          </Paragraph>
+          </Subtitle>
         </ParagraphDivStyled>
         <ReadmoreDivStyled>
           <Title

@@ -13,6 +13,7 @@ import 'slick-carousel/slick/slick-theme.scss';
 import 'react-toastify/dist/ReactToastify.min.css';
 import '../assets/scss/index.scss';
 import '../assets/2021/scss/2021.scss';
+import '../assets/2021/scss/styles-text.scss';
 import Header from '../components/header/Header';
 import Typography from '../components/2020/Typography';
 import { Video } from '../components/2021/containers/Video';

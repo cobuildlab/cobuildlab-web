@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 
 import { StaticImage } from 'gatsby-plugin-image';
-import { Column, Title } from 'bloomer';
+import { Column, Title, Subtitle } from 'bloomer';
 
 import { navigate } from 'gatsby';
 import {
@@ -9,7 +9,6 @@ import {
   Container,
   Image,
   ParagraphDivStyled,
-  Paragraph,
   ReadmoreDivStyled,
   TitleDivStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
@@ -33,7 +32,9 @@ const Pitazo = () => {
           </TitleDivStyled>
         </Container>
         <ParagraphDivStyled>
-          <Paragraph>El Pitazo is Venezuela{"'"}s main independent news website...</Paragraph>
+          <Subtitle className={'paragraph-card-customer-success'}>
+            El Pitazo is Venezuela{"'"}s main independent news website...
+          </Subtitle>
         </ParagraphDivStyled>
         <ReadmoreDivStyled>
           <Title
