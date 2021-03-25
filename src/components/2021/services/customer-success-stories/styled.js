@@ -34,6 +34,7 @@ export const Container = styled.div`
 `;
 
 export const ParagraphDivStyled = styled.div`
+  position: relative;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 12px;
