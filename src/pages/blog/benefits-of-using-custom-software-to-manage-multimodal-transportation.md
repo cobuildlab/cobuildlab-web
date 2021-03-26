@@ -22,11 +22,12 @@ Yes, many businesses bet on outsource partners to take care of this issue, espec
 
 <center>
 
-<img src="./media/handling-of-your-shipment.jpg![image](https://user-images.githubusercontent.com/43820462/112645247-aac1fb00-8e1c-11eb-93db-6899a2def92f.png)">
+<img src="./media/handling-of-your-shipment.jpg">
 
 </center>
 
 <Br>
+
 
 Many third-party companies that handle multimodal transportation don't do it all themselves. They manage certain instances of the cargo (e.g. overland), but then the river or air transport of the same cargo is managed by other companies that they in turn subcontract. 
 
@@ -48,11 +49,12 @@ It is not a person transcribing the data, but automatically stored and compared 
 
 <center>
 
-<img src="./media/documents.jpg![image](https://user-images.githubusercontent.com/43820462/112645539-f4124a80-8e1c-11eb-8cc3-6a8dba812e69.png))">
+<img src="./media/documents.jpg">
 
 </center>
 
 <Br>
+
 
 If transporting cargo through a single channel is a challenge in terms of documentation and permitting (especially if it is between two countries with different regulations), imagine how challenging it is to transport the same cargo by various means (air, land, and river). Different documents and permits are required for each point of exchange. 
 
@@ -72,7 +74,7 @@ Managing information with technology becomes much easier.
 
 <center>
 
-<img src="./media/cargo-location.jpg![image](https://user-images.githubusercontent.com/43820462/112645794-3a67a980-8e1d-11eb-9fc5-6bd7fdc28542.png))">
+<img src="./media/cargo-location.jpg">
 
 </center>
 
