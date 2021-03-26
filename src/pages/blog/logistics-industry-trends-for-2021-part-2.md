@@ -66,4 +66,4 @@ We partner with Industry Experts to solve Logistical and Productivity problems w
 
 <youtube-video id="5fbYxQNgJ7s&"></youtube-video>  <br> </br>
 
-Does your company needs an agile software solution? Let’s build it! Check out our <a target="_blank" href="https://cobuildlab.com/price-calculator/">  price calculator</a> to have an estimate of the cost of your project or email us at 📩 contact@cobuildlab.com and get a FREE online consultation 
+Does your company needs an agile software solution? Let’s build it! Check out our <a target="_blank" href="https://cobuildlab.com/price-calculator/">  price calculator</a> to have an estimate of the cost of your project or email us at 📩 contact@cobuildlab.com and get a FREE online consultation

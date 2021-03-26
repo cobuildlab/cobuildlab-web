@@ -52,7 +52,7 @@ const Services = () => (
               src={
                 './../assets/images/service/card/iconos-Small-Business-Custom-Software-Development.svg'
               }
-              alt=""
+              alt="Custom Software"
             />
           }
         />
@@ -68,7 +68,7 @@ const Services = () => (
               src={
                 './../assets/images/service/card/iconos-Small-Business-Field-Service-Management-System.svg'
               }
-              alt=""
+              alt="Customer relationship"
             />
           }
         />
@@ -86,7 +86,7 @@ const Services = () => (
               src={
                 './../assets/images/service/card/iconos-Small-Business-Field-Service-Management-System.svg'
               }
-              alt=""
+              alt="Field service"
             />
           }
         />
@@ -102,7 +102,7 @@ const Services = () => (
               src={
                 './../assets/images/service/card/iconos-Small-Business-Custom-Learning-Management-System.svg'
               }
-              alt=""
+              alt="Custom learning"
             />
           }
         />
@@ -127,7 +127,7 @@ const Services = () => (
               src={
                 './../assets/images/service/card/iconos-Logistic-Enterprise-Software-Development.svg'
               }
-              alt=""
+              alt="Enterprise Software"
             />
           }
           three={true}
@@ -140,7 +140,7 @@ const Services = () => (
           image={
             <StaticImage
               src={'./../assets/images/service/card/iconos-Logistic-Process-Automation.svg'}
-              alt=""
+              alt="process automation"
             />
           }
           three={true}
@@ -158,7 +158,7 @@ const Services = () => (
           image={
             <StaticImage
               src={'./../assets/images/service/card/iconos-Logistic-Digital-Transformation.svg'}
-              alt=""
+              alt="digital transformation"
             />
           }
           three={true}
@@ -171,6 +171,32 @@ const Services = () => (
       </StyledTitle>
       <Columns isCentered>
         <ServicesCard
+          title={'IT Support'}
+          subtitle={'Services'}
+          cover={'Let us take your app to multiple platforms and devices'}
+          to={'it-support'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos-Main-Services-It-Support.svg'}
+              alt="It support"
+            />
+          }
+        />
+        <ServicesCard
+          title={'Custom Project'}
+          subtitle={'Management System'}
+          cover={'Fully personalized Project Management'}
+          to={'custom-project-management-system'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos-Main-Services-Agile.svg'}
+              alt="custom project"
+            />
+          }
+        />
+      </Columns>
+      <Columns isCentered>
+        <ServicesCard
           title={'Web'}
           subtitle={'Development'}
           cover={'We work behind the curtain to make your website gorgeous and engaging'}
@@ -178,7 +204,7 @@ const Services = () => (
           image={
             <StaticImage
               src={'./../assets/images/service/card/iconos-Main-Services-Web-Development.svg'}
-              alt=""
+              alt="web development"
             />
           }
         />
@@ -190,7 +216,7 @@ const Services = () => (
           image={
             <StaticImage
               src={'./../assets/images/service/card/iconos-Main-Services-APP-Development.svg'}
-              alt=""
+              alt="App development"
             />
           }
         />
@@ -206,7 +232,7 @@ const Services = () => (
               src={
                 './../assets/images/service/card/iconos-Main-Services-Cross-Platform-Development.svg'
               }
-              alt=""
+              alt="Cross Platform"
             />
           }
         />
@@ -218,33 +244,7 @@ const Services = () => (
           image={
             <StaticImage
               src={'./../assets/images/service/card/iconos-Main-Services-Web-Design.svg'}
-              alt=""
-            />
-          }
-        />
-      </Columns>
-      <Columns isCentered>
-        <ServicesCard
-          title={'IT Support'}
-          subtitle={'Services'}
-          cover={'Let us take your app to multiple platforms and devices'}
-          to={'it-support'}
-          image={
-            <StaticImage
-              src={'./../assets/images/service/card/iconos-Main-Services-It-Support.svg'}
-              alt=""
-            />
-          }
-        />
-        <ServicesCard
-          title={'Custom Project'}
-          subtitle={'Management System'}
-          cover={'Fully personalized Project Management'}
-          to={'custom-project-management-system'}
-          image={
-            <StaticImage
-              src={'./../assets/images/service/card/iconos-Main-Services-Agile.svg'}
-              alt=""
+              alt="Web Design"
             />
           }
         />
@@ -263,7 +263,7 @@ const Services = () => (
           image={
             <StaticImage
               src={'./../assets/images/service/card/iconos-Technical-Analysis.svg'}
-              alt=""
+              alt="Technical Analysis"
             />
           }
           three={true}
@@ -274,7 +274,10 @@ const Services = () => (
           cover={' Validate and launch your product in a speedy and efficacious way'}
           to={'mvp-software-development'}
           image={
-            <StaticImage src={'./../assets/images/service/card/iconos-Startup-MVP.svg'} alt="" />
+            <StaticImage
+              src={'./../assets/images/service/card/iconos-Startup-MVP.svg'}
+              alt="Mvp softwre"
+            />
           }
           three={true}
         />
@@ -286,7 +289,7 @@ const Services = () => (
           image={
             <StaticImage
               src={'./../assets/images/service/card/iconos-Startup-Product-Development.svg'}
-              alt=""
+              alt="Product development"
             />
           }
           three={true}
