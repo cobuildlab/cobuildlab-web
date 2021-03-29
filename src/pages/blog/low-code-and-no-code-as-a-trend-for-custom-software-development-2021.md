@@ -78,7 +78,7 @@ You can create a mobile application and customize the front-end, especially for 
 
 <Br>
 
-<title-2>8 Base partnership: more than a low-code software solution</title-2>
+<title-2><a target="_blank" href="https://www.8base.com/">  8Base partnership: </a> more than a low-code software solution</title-2>
 
 <Br>
 

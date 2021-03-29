@@ -1,6 +1,6 @@
 ---
 title: "Logistics Industry Trends for 2021 (part 2)"
-date: "2020-03-04T16:24:04.000Z"
+date: "2020-03-05T16:24:04.000Z"
 template: blog
 tags: Tools
 image: "./media/industry-trends-part2.png"
