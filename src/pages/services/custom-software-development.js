@@ -52,26 +52,15 @@ const CustomSoftwareDevelopment = () => (
         <ServicesHeader
           title={'Custom Software Development'}
           paragraph={
-            'Having a team of software and technology specialists (Software Developer, UX UI Designers' +
-            ', QA`s, Analysts, Project Managers, Product Owners) available to define the scope' +
-            'of a software tool tailored for your company`s processes and' +
-            'requirements is the perfect definition of custom software development.' +
-            'It’s a process in which we design, develop and maintain a software tool with' +
-            'specific functions and solutions for an organization, like yours, for example.'
+            'A customized software tool optimizes processes, making them more effective and efficient because every function is designed based on your business activities, so there is no need to modify or adjust anything (as is the case of a commercial tool).'
           }
           paragraph2={
             <>
               <ul>
-                <li>• Increase efficiency in your processes.</li>
-                <li>• Reduce or eliminate integration costs.</li>
-                <li>• It is scalable.</li>
-                <li>• No need for licenses or annoying updates.</li>
-                <li>• You can hire an external and remote team.</li>
-                <li>
-                  • You can commercialize the tools in the medium term and turn them into Saas
-                  products.
-                </li>
-                <li>• You are the owner of the tool.</li>
+                <li>• Get my custom software.</li>
+                <li>• Free consultation available.</li>
+                <li>• Start my custom development.</li>
+                <li>• Hiring my software team.</li>
               </ul>
             </>
           }
@@ -92,10 +81,7 @@ const CustomSoftwareDevelopment = () => (
           title={'Develop your '}
           titleOrange={'custom software tool'}
           text={
-            'In that way, you`ll have a tool that responds to your specific processes and needs' +
-            'and allows you to decide on issues such as gestures, functionalities, updates (if' +
-            'required), changes in the tool (when your processes evolve), and that can' +
-            'monetize in the future converting it into a Saas product.'
+            'In that way, you`ll have a tool that responds to your specific processes and needs and allows you to decide on issues such as gestures, functionalities, updates (ifrequired), changes in the tool (when your processes evolve), and that can monetize in the future converting it into a Saas product.'
           }
         />
       </Container>

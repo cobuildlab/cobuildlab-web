@@ -51,7 +51,7 @@ const AppDevelopment = () => (
         <ServicesHeader
           title={'Technical Analysis For Software Startup Investors'}
           paragraph={
-            'In which startup do I invest? What do I need to understand the use and distribution of my resources in the development project?  How to recognize what points to improve in the development of a startup that I supported financially? Those questions have an answer: Technical Analysis for Software Startups Investors which includes the product roadmap, risk, and feasibility analysis, and soft security audit.\n'
+            'This service includes the product roadmap, risk, and feasibility analysis, and soft security audit.'
           }
           img={
             <StaticImage
@@ -67,23 +67,16 @@ const AppDevelopment = () => (
         <ServicesSection2
           title={'Get a Technical Analysis '}
           titleOrange={'for Software Startups Investors'}
-          textList={'And forget about:\n'}
-          listLeft={[
-            'High risks in the business model.',
-            'Supporting not viable ideas.',
-            'Confidentiality and cybersecurity issues with the app.',
-          ]}
-          listRight={[
-            'Uncertainty about the development process.',
-            'Lack of knowledge about the product or industry.',
-          ]}
+          text={
+            'And forget about: high risks in the business model, supporting not viable ideas, confidentiality and cybersecurity issues with the app, uncertainty about the development process, and lack of knowledge about the product or industry.'
+          }
         />
       </Container>
     </StyledSection2>
     <Section>
       <Container>
         <ServicesSection3
-          title={'How I benefit from a Technical Analysis for Software Startups Investors\n'}
+          title={'How I benefit from a Technical Analysis for Software Startups Investors?\n'}
           otherText={
             'Comprehensive knowledge about risks, legal aspects, burning rate, probabilities, industry, and market information. \n' +
             'Access to the timeline. Estimates, essential data, business goals, development strategies, among other data that you should know. \n'
@@ -97,9 +90,14 @@ const AppDevelopment = () => (
     <Section>
       <Container>
         <ServicesSection4
-          title={'Who would best take advantage of this service?'}
-          leftText={['Banks', 'Government Agencies', 'Angel Investors']}
-          rightTextList={['Accelerators and Incubators', 'Venture Capital firms']}
+          title={'Why us?'}
+          leftText={[
+            "We've strong engineering background in solving business problems with software solutions combined with our experience developing software products.",
+          ]}
+          rightTextList={[
+            'A work methodology focused on optimizing your investment and obtaining the best results.',
+            'We have a zero-waste process',
+          ]}
         />
       </Container>
     </Section>

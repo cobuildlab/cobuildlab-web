@@ -50,7 +50,7 @@ const CustomCustomerManagementSystem = () => (
         <ServicesHeader
           title={'Customer Relationship Management System'}
           paragraph={
-            'A CUSTOMER RELATIONSHIP MANAGEMENT SYSTEM is software where you can organize the details related to your customers, across all departments at your company. Anyone with access to the CRM can track and manage the journey of every lead and customer that interacts with your brand, website, or products.'
+            'A CRM is software where you can organize the details related to your customers, across all departments at your company. Anyone with access to the CRM can track and manage the journey of every lead and customer that interacts with your brand, website, or products.'
           }
           paragraph2={
             <>
@@ -94,7 +94,7 @@ const CustomCustomerManagementSystem = () => (
         <ServicesSection3
           title={'Ensuring your key customer-centric strategies\n'}
           otherText={
-            'Improve your teamwork communication with your consumers. It’s more critical than ever for marketing and sales teams to function as a cohesive unit, and CRM systems are the perfect solution to help scaling organizations achieve that goal.\n'
+            'Improve your teamwork communication with your consumers. It’s more critical than ever for marketing and sales teams to function as a cohesive unit, and CRM systems are the perfect solution to help scaling organizations achieve that goal.'
           }
         />
       </Container>
@@ -114,14 +114,11 @@ const CustomCustomerManagementSystem = () => (
             </>
           }
           leftText={[
-            ' Organize and simplify growth.',
-            'Improve productivity.',
-            'Increase sales',
-            'Resolve the challenges of customer-facing teams.',
-          ]}
-          rightTextList={[
+            'Organize and simplify growth, improving productivity and increase sales.',
             'Create workflows to save you time.',
             'Automate your day-to-day tasks.',
+          ]}
+          rightTextList={[
             'Report on and analyze your processes.',
             'Real-time / multi-channel communication (Email, SMS, Phone Call)',
           ]}

@@ -50,8 +50,9 @@ const EnterpriseSoftwareDevelopment = () => (
         <ServicesHeader
           title={'Enterprise Software Development'}
           paragraph={
-            'It is a software developed to meet the needs of an organization, company, enterprise, or business that already exists and has a system available. The main objectives are working in synergy to accomplish the main objective of this organization. ' +
-            'By applying this development, your business gets useful tools to develop the company, such as fleet management, planning supply and demand, processing orders, and control over inventory.'
+            'We develop a software to meet the needs of your organization, company, enterprise, or business that has a system available. By applying this development, your business gets useful tools to improve the company' +
+            "'" +
+            's  specific issues, such as fleet management, planning supply and demand, processing orders, and control over inventory.'
           }
           paragraph2={
             <>
@@ -95,11 +96,9 @@ const EnterpriseSoftwareDevelopment = () => (
       <Container>
         <ServicesSection3
           title={'Reduce risks'}
-          textList={[
-            'With a Software Development, it is possible to modernize and simplify the flow of logistical operations.\n',
-            'This will help your business array with operations with tools for transactions, processes, and suppliers.\n',
-            'Paperwork and spreadsheets to simplify management won’t be needed anymore.',
-          ]}
+          otherText={
+            'With Software Development, it is possible to modernize and simplify the flow of logistical operations. This will help your business array with operations with tools for transactions, processes, and suppliers.'
+          }
         />
       </Container>
     </Section>
