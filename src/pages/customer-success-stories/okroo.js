@@ -87,7 +87,7 @@ const Okroo = ({ data }) => (
       image={<StaticImage src={'./../../assets/images/customers/okroo/1.png'} alt="" />}
       right>
       <DetailSubTitle>
-        THE <TextOrange>CHALLENGES</TextOrange>
+        The <TextOrange>Challenges</TextOrange>
       </DetailSubTitle>
       <DetailParagraph>
         The main problem that most businesses are facing is to get traffic to their stores and to be
@@ -133,7 +133,7 @@ const Okroo = ({ data }) => (
       image={<StaticImage src={'./../../assets/images/customers/okroo/2.png'} alt="" />}
       left>
       <DetailSubTitle>
-        THE <TextOrange>SOLUTION</TextOrange>
+        The <TextOrange>Solution</TextOrange>
       </DetailSubTitle>
       <DetailParagraph>
         Our{' '}
@@ -191,7 +191,7 @@ const Okroo = ({ data }) => (
       image={<StaticImage src={'./../../assets/images/customers/okroo/3.png'} alt="" />}
       right>
       <DetailSubTitle>
-        THE <TextOrange>RESULTS</TextOrange>
+        The <TextOrange>Results</TextOrange>
       </DetailSubTitle>
       <DetailParagraph>
         The result was a software product that serves as a newsfeed or social network to connect

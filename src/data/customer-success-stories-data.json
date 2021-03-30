@@ -1,5 +1,11 @@
 [
   {
+    "image": "../assets/images/customers/story-rocket-logo.jpg",
+    "title": "Story Rocket",
+    "description": "The Story Rocket is the ideal place to connect story writers with producers in the entertainment world… ",
+    "slug": "/customer-success-stories/story-rocket"
+  },
+  {
     "image": "../assets/images/customers/avsee-logo.jpg",
     "title": "Avsee",
     "description": "The Avsee team chose Cobuild Lab to be their technology partner in developing a platform that helps physicians and patients…  ",

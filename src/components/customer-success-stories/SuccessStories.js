@@ -17,10 +17,12 @@ import CollabToGrow from './card/stories/CollabToGrow';
 import LeadVolt from './card/stories/LeadVolt';
 import Okroo from './card/stories/Okroo';
 import Avsee from './card/stories/Avsee';
+import StoryRocket from './card/stories/StoryRocket';
 
 const SuccessStories = () => {
   return (
     <Columns isDisplay="flex" isMultiline>
+      <StoryRocket />
       <Avsee />
       <Okroo />
       <LeadVolt />
