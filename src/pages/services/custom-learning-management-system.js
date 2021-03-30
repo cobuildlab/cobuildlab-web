@@ -69,17 +69,9 @@ const CustomLearningManagmentSystem = () => (
         <ServicesSection2
           title={'Get a Custom Learning '}
           titleOrange={'Management System\n'}
-          textList={'In order to don’t have:'}
-          listLeft={[
-            'Too much content to manage.',
-            'Off the shelf or commercial solutions are too complicated to manage and learn.',
-            'Workflows are too confusing for your users',
-          ]}
-          listRight={[
-            'Licensing costs are too expensive.',
-            'Difficulty in data storage. Videos, articles, etc.',
-            'Billing doesn’t adjust to your business model.',
-          ]}
+          text={
+            'With a CLMS, you can gather all your learning materials in one place and make them available to all learners in just one click. You can even create different groups of learners according to their functions or job positions.'
+          }
         />
       </Container>
     </StyledSection2>
@@ -103,10 +95,7 @@ const CustomLearningManagmentSystem = () => (
         <ServicesSection4
           title={'Scale your Custom Learning Management System\n'}
           text={
-            "We've strong engineering background in solving business problems with software solutions.\n" +
-            'Combined over 50 years of experience developing software products.\n' +
-            'Super goal-oriented (software focuses on their business outcomes, not just a technology shop)\n' +
-            'We have a zero-waste process\n'
+            'Are you planning to expand your business online? We will translate your ideas into intelligent and powerful solutions. Our development will include business analysis, developing a technical specification, estimating the development cost, and planning the project.'
           }
         />
       </Container>

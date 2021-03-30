@@ -59,9 +59,7 @@ const Services = () => (
         <ServicesCard
           title={'Customer Relationship'}
           subtitle={'Management System'}
-          cover={
-            'Centralize, optimize and streamline your customer’s communication. The better you know your customers, the stronger your relationships will be with them'
-          }
+          cover={'Centralize, optimize and streamline your customer’s communication'}
           to={'custom-customer-management-system'}
           image={
             <StaticImage
@@ -116,11 +114,7 @@ const Services = () => (
         <ServicesCard
           title={'Enterprise Software'}
           subtitle={'Development'}
-          cover={
-            'Zero-waste process combined with more than 50 years of experience.\n' +
-            'Risk-costs reduction, more effective tracking, and faster delivery date.\n' +
-            'Efficiency rate will increase with the right guidance and assistance'
-          }
+          cover={'The best solution for a Logistics and Supply Chain Issues'}
           to={'enterprise-software-development'}
           image={
             <StaticImage
@@ -258,7 +252,9 @@ const Services = () => (
         <ServicesCard
           title={'Technical Analysis'}
           subtitle={'For Software Startup Investors'}
-          cover={'Cobuild Lab: Technical Analysis for Software Startups Investors'}
+          cover={
+            'All that you must understand about the use and distribution of your resources in the development project you want to support financially'
+          }
           to={'software-startup-investor'}
           image={
             <StaticImage
