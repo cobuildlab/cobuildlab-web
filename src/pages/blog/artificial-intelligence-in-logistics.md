@@ -1,6 +1,6 @@
 ---
 title: "Artificial Intelligence in Logistics: welcome to the Revolution"
-date: "2020-03-22T16:24:04.000Z"
+date: "2021-03-22T16:24:04.000Z"
 template: blog
 tags: Small Business
 image: "./media/ai-logistics-0.png"
