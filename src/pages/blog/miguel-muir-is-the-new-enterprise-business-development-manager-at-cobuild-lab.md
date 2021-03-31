@@ -1,6 +1,6 @@
 ---
 title: "Miguel Muir is the new Enterprise Business Development Manager at Cobuild Lab!"
-date: "2020-03-11T16:24:04.000Z"
+date: "2021-03-11T16:24:04.000Z"
 template: blog
 tags: News
 image: "./media/pr-miguel.jpg"

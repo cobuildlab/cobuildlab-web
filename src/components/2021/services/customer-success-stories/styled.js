@@ -15,17 +15,21 @@ export const TitleDivStyled = styled.div`
 `;
 
 export const CardStyled = styled(Card)`
-  max-height: 565px;
-  min-height: 520px;
+  max-height: 465px;
+  min-height: 465px;
   box-shadow: 0px 10px 20px #0000001a;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 14px;
 `;
 
 export const Image = styled.div`
-  height: 300px;
+  height: 220px;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
+  img {
+    height: 210px;
+    margin-top: 20px;
+  }
 `;
 
 export const Container = styled.div`
