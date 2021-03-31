@@ -1,6 +1,6 @@
 ---
 title: "Ryan Seron joins Cobuild Lab! "
-date: "2020-03-18T16:24:04.000Z"
+date: "2021-03-18T16:24:04.000Z"
 template: blog
 tags: News
 image: "./media/pr-ryan-seron.png"
