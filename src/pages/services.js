@@ -105,6 +105,32 @@ const Services = () => (
           }
         />
       </Columns>
+      <Columns isCentered>
+        <ServicesCard
+          title={'IT Support'}
+          subtitle={'Services'}
+          cover={'Let us take your app to multiple platforms and devices'}
+          to={'it-support'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos-Main-Services-It-Support.svg'}
+              alt="It support"
+            />
+          }
+        />
+        <ServicesCard
+          title={'Custom Project'}
+          subtitle={'Management System'}
+          cover={'Fully personalized Project Management'}
+          to={'custom-project-management-system'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos-Main-Services-Agile.svg'}
+              alt="custom project"
+            />
+          }
+        />
+      </Columns>
     </Section>
     <Section>
       <StyledTitle>
@@ -163,32 +189,6 @@ const Services = () => (
       <StyledTitle>
         <H4>Main Services</H4>
       </StyledTitle>
-      <Columns isCentered>
-        <ServicesCard
-          title={'IT Support'}
-          subtitle={'Services'}
-          cover={'Let us take your app to multiple platforms and devices'}
-          to={'it-support'}
-          image={
-            <StaticImage
-              src={'./../assets/images/service/card/iconos-Main-Services-It-Support.svg'}
-              alt="It support"
-            />
-          }
-        />
-        <ServicesCard
-          title={'Custom Project'}
-          subtitle={'Management System'}
-          cover={'Fully personalized Project Management'}
-          to={'custom-project-management-system'}
-          image={
-            <StaticImage
-              src={'./../assets/images/service/card/iconos-Main-Services-Agile.svg'}
-              alt="custom project"
-            />
-          }
-        />
-      </Columns>
       <Columns isCentered>
         <ServicesCard
           title={'Web'}
