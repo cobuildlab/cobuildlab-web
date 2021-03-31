@@ -20,7 +20,7 @@
     "gatsby-image": "2.8.0",
     "gatsby-plugin-amp": "^0.2.2",
     "gatsby-plugin-feed": "2.10.0",
-    "gatsby-plugin-google-analytics": "^2.0.20",
+    "gatsby-plugin-google-gtag": "^3.2.0",
     "gatsby-plugin-google-tagmanager": "^2.0.15",
     "gatsby-plugin-image": "^0.5.1",
     "gatsby-plugin-mailchimp": "git+https://github.com/benjaminhoffman/gatsby-plugin-mailchimp.git#master",
