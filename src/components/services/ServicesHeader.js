@@ -24,8 +24,9 @@ const ServicesHeader = () => {
             Our <TextOrange>Services</TextOrange>
           </ServiceTitle>
           <Paragraph>
-            We partner with Entrepreneurs and Industry Experts to transform ideas into Web and
-            Mobile Custom Software Solutions.
+            We partner with Small Business and Industry Experts to transform ideas into Custom
+            Software Solution, Artificial Intelligence, and IoT to solve Logistics and Productivity
+            problems.
             <br />
             <br />
             Zero-waste, early results and transparent communication are our core values since day
