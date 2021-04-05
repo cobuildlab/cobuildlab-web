@@ -84,15 +84,15 @@ This is more consumer-driven as consumers can see in real-time the status of the
 
 <Br>
   
-* Make a predictive analysis (with artificial intelligence) of the possible fluctuations that will have the US dollar or the currency you use to pay your international freight rates (freight) as we understand that these variations are a problem for you as a customer and for external providers of this service because it directly affects the cost of the goods. If we analyze the historical, risks, etc, we can establish a parameter to cover these fluctuations. 
+Make a predictive analysis (with artificial intelligence) of the possible fluctuations that will have the US dollar or the currency you use to pay your international freight rates (freight) as we understand that these variations are a problem for you as a customer and for external providers of this service because it directly affects the cost of the goods. If we analyze the historical, risks, etc, we can establish a parameter to cover these fluctuations. 
 
-* This can also be done with the change of seasons, oil and fuel prices, and even the weather. 
+This can also be done with the change of seasons, oil and fuel prices, and even the weather. 
 
-* Unify and better manage port fees and service charges (regardless of country). 
+Unify and better manage port fees and service charges (regardless of country). 
 
-* Effective handling of international documentation (including environmental regulations and conditions) that increase over time. 
+Effective handling of international documentation (including environmental regulations and conditions) that increase over time. 
 
-* Solve all transportation infrastructure problems that may arise (as a customer and as a supplier).
+Solve all transportation infrastructure problems that may arise (as a customer and as a supplier).
 
 <Br>
 
