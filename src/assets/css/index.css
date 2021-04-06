@@ -1414,3 +1414,10 @@ img.i-l {
 .slick-slide img {
     display: initial!important;
 }
+
+.gatsby-image-wrapper {
+    transition: none!important;
+}
+.gatsby-image-wrapper > div {
+    background-color: transparent!important;
+}

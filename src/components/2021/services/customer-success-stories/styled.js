@@ -23,12 +23,12 @@ export const CardStyled = styled(Card)`
 `;
 
 export const Image = styled.div`
-  height: 220px;
+  height: 230px;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
   img {
-    height: 210px;
-    margin-top: 20px;
+    height: 230px;
+    margin-top: 30px;
   }
 `;
 
