@@ -40,7 +40,7 @@ It also handles quotations, reservations, and pick-up orders. As well as determi
 
 <Br>
   
-<title-3>Invoicing:</title-2>
+<title-3>Invoicing:</title-3>
 
 <Br>
 
@@ -48,7 +48,7 @@ Invoicing is one of the most important aspects to consider in shipping activitie
 
 <Br>
   
-<title-3>Quotations:</title-2>
+<title-3>Quotations:</title-3>
 
 <Br>
   
@@ -56,7 +56,7 @@ Streamline the generation and transport of quotations by any means of transport,
 
 <Br>
   
-<title-3>Order management:</title-2>
+<title-3>Order management:</title-3>
 
 <Br>
   
@@ -64,7 +64,7 @@ Capture, track, and fulfill orders across multiple sales channels. Track the sta
 
 <Br>
   
-<title-3>Warehouse management:</title-2>
+<title-3>Warehouse management:</title-3>
 
 <Br>
   
@@ -72,7 +72,7 @@ Manage and coordinate inventory and actions throughout a warehouse or distributi
 
 <Br>
   
-<title-3>Tracking:</title-2>
+<title-3>Tracking:</title-3>
 
 <Br>
   
