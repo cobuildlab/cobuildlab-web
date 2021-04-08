@@ -56,7 +56,7 @@ const WebDevelopment = () => (
         <ServicesHeader
           title={'Web Development'}
           paragraph={
-            'Aligning a brand, your ideas, and our knowledge will give life to a website that caters to your service and operations. With a professional website, you can increase your revenue flows, and establish business credibility and thrusters with brand consistency.\n'
+            'We align our knowledge with your brand and ideas to construct websites that cater to your services and operations in order to engage and impress potential customers. Establish business credibility, brand consistency, and create more revenue with a superb web presence.'
           }
           paragraph2={
             <>
@@ -122,13 +122,17 @@ const WebDevelopment = () => (
     <Section>
       <Container>
         <ServicesSection4
-          title={'Benefits and Advantages of Web Design'}
+          title={'Benefits and advantages of Web Development for your business'}
           leftText={[
-            'Improved website loading times.',
-            'Lower bounce rates.',
-            'Higher conversion rates',
+            'Improved online presence.',
+            'Customer relationship builder.',
+            'Application capacity to grow with your business.',
           ]}
-          rightTextList={['More Social Sharing.']}
+          rightTextList={[
+            'More Social Sharing.',
+            'New software and upgrades implemented easily.',
+            'Innovation and digital undertake.',
+          ]}
         />
       </Container>
     </Section>

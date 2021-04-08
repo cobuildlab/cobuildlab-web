@@ -59,7 +59,9 @@ const Services = () => (
         <ServicesCard
           title={'Customer Relationship'}
           subtitle={'Management System'}
-          cover={'Centralize, optimize and streamline your customer’s communication'}
+          cover={
+            'Centralize, optimize and streamline all interactions and communications with your clients'
+          }
           to={'custom-customer-management-system'}
           image={
             <StaticImage
@@ -75,9 +77,7 @@ const Services = () => (
         <ServicesCard
           title={'Field Service'}
           subtitle={'Management System'}
-          cover={
-            'Get automated the field operations of your team and services through mobile systems'
-          }
+          cover={'Automate your team’s field operations and services through mobile systems'}
           to={'field-service-management-system'}
           image={
             <StaticImage
@@ -109,7 +109,9 @@ const Services = () => (
         <ServicesCard
           title={'IT Support'}
           subtitle={'Services'}
-          cover={'Let us take your app to multiple platforms and devices'}
+          cover={
+            'Let us solve your technology issues with our IT Support Services so you can grow your business'
+          }
           to={'it-support'}
           image={
             <StaticImage
@@ -155,7 +157,7 @@ const Services = () => (
         <ServicesCard
           title={'Process'}
           subtitle={'Automation'}
-          cover={'Revolutionize your process and save time and money'}
+          cover={'Save time and money transforming your processes'}
           to={'process-automation'}
           image={
             <StaticImage
@@ -168,12 +170,7 @@ const Services = () => (
         <ServicesCard
           title={'Digital'}
           subtitle={'Transformation'}
-          cover={
-            'Intelligence processes based on enterprises goals\n' +
-            'Intelligent guidance / assistance / direction for digital transformation opportunities\n' +
-            'Smart guidance / assistance / direction for digital transformation opportunities\n' +
-            'Smart digital transformation opportunities guidance\n'
-          }
+          cover={'We’ll help you find out exactly where you are and what you need'}
           to={'digital-transformation'}
           image={
             <StaticImage
@@ -193,7 +190,7 @@ const Services = () => (
         <ServicesCard
           title={'Web'}
           subtitle={'Development'}
-          cover={'We work behind the curtain to make your website gorgeous and engaging'}
+          cover={'We work behind the curtain to build gorgeous and engaging websites'}
           to={'web-development'}
           image={
             <StaticImage
@@ -267,7 +264,7 @@ const Services = () => (
         <ServicesCard
           title={'MVP Software'}
           subtitle={'Development'}
-          cover={' Validate and launch your product in a speedy and efficacious way'}
+          cover={'Receive your customer’s feedback before releasing a fully-fledged product'}
           to={'mvp-software-development'}
           image={
             <StaticImage

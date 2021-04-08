@@ -6,11 +6,9 @@ import { Column, Title, Subtitle } from 'bloomer';
 import { navigate } from 'gatsby';
 import {
   CardStyled,
-  Container,
   Image,
   ParagraphDivStyled,
   ReadmoreDivStyled,
-  TitleDivStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const Pitazo = () => {
@@ -24,13 +22,6 @@ const Pitazo = () => {
         <Image>
           <StaticImage src={'./../../../../assets/images/customers/pitazo-1.jpg'} alt="" />
         </Image>
-        <Container>
-          <TitleDivStyled>
-            <Title isSize={1} className="title-card-customer-success">
-              El Pitazo
-            </Title>
-          </TitleDivStyled>
-        </Container>
         <ParagraphDivStyled>
           <Subtitle className={'paragraph-card-customer-success'}>
             El Pitazo is Venezuela{"'"}s main independent news website...

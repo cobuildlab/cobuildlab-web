@@ -52,7 +52,9 @@ const CustomSoftwareDevelopment = () => (
         <ServicesHeader
           title={'Custom Software Development'}
           paragraph={
-            'A customized software tool optimizes processes, making them more effective and efficient because every function is designed based on your business activities, so there is no need to modify or adjust anything (as is the case of a commercial tool).'
+            'A customized software tool optimizes processes, making them more effective and\n' +
+            'efficient because every function is designed based on your business activities, so\n' +
+            'there is no need to modify or adjust anything (as is the case of a commercial tool).'
           }
           paragraph2={
             <>
@@ -81,7 +83,10 @@ const CustomSoftwareDevelopment = () => (
           title={'Develop your '}
           titleOrange={'custom software tool'}
           text={
-            'In that way, you`ll have a tool that responds to your specific processes and needs and allows you to decide on issues such as gestures, functionalities, updates (ifrequired), changes in the tool (when your processes evolve), and that can monetize in the future converting it into a Saas product.'
+            'In that way, you’ll have a tool that responds to your specific processes and needs\n' +
+            'allowing you to decide on issues such as gestures, functionalities, updates (if\n' +
+            'required), changes in the tool (when your processes evolve), and that can be\n' +
+            'monetized in the future converting it into a Saas product.'
           }
         />
       </Container>
@@ -91,10 +96,17 @@ const CustomSoftwareDevelopment = () => (
         <ServicesSection3
           title={'Benefits: Optimize your processes'}
           textList={[
-            'A customized software tool optimizes processes, making them more effective and efficient because every function is designed based on your business activities, so there is no need to modify or adjust anything (as is the case of a commercial tool).',
-            'Also is possible to improve and adapt it as your business processes grow or change.',
-            'Your competitive advantages over the competition are mainly those: control over the tool and the savings in time, personnel, and resources involved.',
-            'Customers perceive that. The result of the same service or the delivery efficiency is better, the quality of the product, etc. All of that without mentioning the tranquility and the perfect coupling of all the team with its software tools.',
+            'A customized software tool optimizes processes, making them more\n' +
+              'effective and efficient because every function is designed based on your\n' +
+              'business activities, so there is no need to modify or adjust anything (as is\n' +
+              'the case of a commercial tool).',
+            'It’s also possible to improve and adapt it as your business processes\n' +
+              'grow or change.',
+            'It gives you advantages over your competitors such as control over the\n' +
+              'tool and savings in time, personnel, and resources involved.',
+            'Customers perceive that. The overall service results are better: delivery\n' +
+              'efficiency, the quality of the product, etc. All of that without mentioning the\n' +
+              'tranquility and the perfect coupling of all the team with its software tools.',
           ]}
         />
       </Container>
@@ -104,7 +116,7 @@ const CustomSoftwareDevelopment = () => (
         <ServicesSection4
           title={"“There is no business that a custom software tool can't help.”"}
           leftText={
-            'Custom software development is a process applied in any industry, process, and activity. Some of the most common are:'
+            'Custom software development can be applied in any industry, process, or activity. Some of the most common are:'
           }
           rightTextList={[
             'Time and productivity management',

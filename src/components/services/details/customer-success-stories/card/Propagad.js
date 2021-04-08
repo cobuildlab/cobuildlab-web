@@ -6,11 +6,9 @@ import { Column, Subtitle, Title } from 'bloomer';
 import { navigate } from 'gatsby';
 import {
   CardStyled,
-  Container,
   Image,
   ParagraphDivStyled,
   ReadmoreDivStyled,
-  TitleDivStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const Propagad = () => {
@@ -24,13 +22,6 @@ const Propagad = () => {
         <Image>
           <StaticImage src={'./../../../../assets/images/customers/Propagad.jpg'} alt="" />
         </Image>
-        <Container>
-          <TitleDivStyled>
-            <Title isSize={1} className="title-card-customer-success">
-              Propagad
-            </Title>
-          </TitleDivStyled>
-        </Container>
         <ParagraphDivStyled>
           <Subtitle className={'paragraph-card-customer-success'}>
             Propagad Contact Person: Cesar Lang Location: Miami, US Industry: Marketing and

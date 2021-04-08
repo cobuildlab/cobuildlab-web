@@ -50,7 +50,7 @@ const FieldServicesManagementSystem = () => (
         <ServicesHeader
           title={'Field Services Management System'}
           paragraph={
-            'Track and manage field operations better than you are currently doing with a field service management system customized to your activities. In this new era, real time tracking and communication are the key to maximize earnings and customer satisfaction.'
+            'Track and manage field operations more accurately with a field service management system customized for your activities. In this new era, real-time tracking and communications are the keys to maximize earnings and customer satisfaction.'
           }
           img={
             <StaticImage
@@ -66,51 +66,41 @@ const FieldServicesManagementSystem = () => (
     <StyledSection2>
       <Container>
         <ServicesSection2
-          title={'Custom your Field '}
-          titleOrange={'Service Management System'}
-          textList={'And avoid:'}
-          listLeft={[
-            'Unnecessary or missing features.',
-            'Challenges storing data.',
-            'Security failures.',
-            'Complexity to track all field activities.',
-          ]}
-          listRight={[
-            'Lack of reports or statistics to make strategic decisions.',
-            'Communication and coordination (schedule)  problems.',
-            'Challenges planning ahead.',
-          ]}
+          title={'Customize your Field '}
+          titleOrange={'Services Management System'}
+          text={
+            'A custom-developed field service management system is synonymous with endless improvement opportunities for your field service activities, giving you a significant advantage in the market.'
+          }
+          otherText={
+            'Avoid unnecessary or missing features, challenges storing data, security failures, complexity to track all field activities, lack of reports or statistics to make strategic decisions, communication issues, and challenges planning.'
+          }
         />
       </Container>
     </StyledSection2>
     <Section>
       <Container>
         <ServicesSection3
-          title={'Improve your field operations by hiring us'}
-          textList={[
-            "We've strong engineering background in solving business problems with software solutions.",
-            'Combined over 50 years of experience developing software products.',
-            'Super goal-oriented (software focuses on their business outcomes, not just a technology shop)',
-            'We have a zero-waste process',
-          ]}
+          title={'Improve your field operations to the next step.'}
+          otherText={
+            'You can incorporate technology (such as artificial intelligence) to make improvement estimates, detect weaknesses in processes, activity analysis, statistical reports, and many more functionalities that would help you make strategic decisions and improve performance.'
+          }
         />
       </Container>
     </Section>
     <Section>
       <Container>
         <ServicesSection4
-          title={'Who can get the most out of a customized Field Service Management System?\n'}
+          title={'A field service management system allows you to:'}
           leftText={[
-            'Service Companies',
-            'Transportation Companies',
-            'Logistics or supply chain companies',
-            'Warehouses',
+            'Automate part of your logistics and supply chain processes.',
+            'Simplify activities and operations in the field.',
+            'Have a backup with the records and data in a safe place.',
           ]}
           rightTextList={[
-            'Factories and industries',
-            'Telecommunications',
-            'Engineering and construction',
-            'Healthcare',
+            'Improve your operations.',
+            'Facilitate access to data and activities (planned, in execution, and completed).',
+            'Improve the coordination of your team.',
+            'Full scalability.',
           ]}
         />
       </Container>

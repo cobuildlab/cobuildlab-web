@@ -74,10 +74,10 @@ const DigitalTransformation = () => (
     <StyledSection2>
       <Container>
         <ServicesSection2
-          title={'Unbolt unknown '}
-          titleOrange={'values for your customers'}
+          title={'What is '}
+          titleOrange={'it?'}
           text={
-            'Cobuild Lab will help you on applying technology for processes to run themselves, making those processes more effective and expanding straightforwardness and reporting abilities. Moreover, unlocking new value features for customers to meet their expectations constantly evolving.'
+            'Digital Transformation Assessment is the process through which we determine your company’s baseline or where it exactly stands regarding its digital blueprint. Before embarking on a Digital Transformation you need to know exactly where your strengths and weaknesses lie.'
           }
         />
       </Container>
