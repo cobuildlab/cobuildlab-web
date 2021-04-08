@@ -53,7 +53,6 @@ const AppDevelopment = () => (
           paragraph={
             'A great mobile app gives you an extra revenue stream, higher customer engagement, and strong built brand awareness and recognition. We’ll build for you an app that responds to every single one of your business requirements and works across several platforms.'
           }
-          paragraph2={<>Scale your business now!, Contact us now, Free consultation.</>}
           img={
             <StaticImage
               src={'./../../assets/images/service/card/iconos-Main-Services-APP-Development.svg'}
