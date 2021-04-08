@@ -69,8 +69,6 @@ const MvpSoftwareDevelopment = () => (
                 build better features that meet their needs and it helps avoid failure and
                 substantial capital loss.
               </Paragraph>
-              <br />
-              <>Get your MVP, contact US and get a FREE consultation!</>
             </>
           }
           img={
