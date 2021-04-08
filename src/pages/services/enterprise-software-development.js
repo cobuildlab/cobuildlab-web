@@ -53,16 +53,6 @@ const EnterpriseSoftwareDevelopment = () => (
           paragraph={
             "We develop software that meets the needs of your organization. Through Enterprise Software Development we help you build useful tools to improve your company's specific issues, such as fleet management, planning supply and demand, processing orders, and control over inventory."
           }
-          paragraph2={
-            <>
-              <ul>
-                <li>• More value for my enterprise.</li>
-                <li>• My enterprise needs this.</li>
-                <li>• Risk reduction for my enterprise.</li>
-                <li>• Learn more about this.</li>
-              </ul>
-            </>
-          }
           img={
             <StaticImage
               src={
