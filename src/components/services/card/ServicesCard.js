@@ -35,8 +35,7 @@ const Image = styled.div`
   margin-top: 12px;
   margin-left: 21px;
   & img {
-    margin-top: 14px;
-    height: 95%;
+    padding-top: 14px;
   }
 `;
 

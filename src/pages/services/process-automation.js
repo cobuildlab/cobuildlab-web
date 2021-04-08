@@ -30,6 +30,7 @@ const StyledSubTitle = styled.div`
 
 const StyledSection2 = styled(Section)`
   background: #fff;
+  box-shadow: 0px 10px 20px #0000001a;
 `;
 
 const StyledContainer = styled(Container)`

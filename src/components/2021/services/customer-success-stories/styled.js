@@ -18,8 +18,8 @@ export const Image = styled.div`
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
   img {
-    height: 210px;
-    margin-top: 30px;
+    height: 240px !important;
+    margin-top: 30px !important;
   }
 `;
 
@@ -33,7 +33,7 @@ export const ParagraphDivStyled = styled.div`
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 12px;
-  margin-top: 25px;
+  margin-top: 50px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
