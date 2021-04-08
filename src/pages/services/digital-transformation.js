@@ -86,7 +86,7 @@ const DigitalTransformation = () => (
         <ServicesSection3
           title={'How does it work?'}
           otherText={
-            'Our own Digital Transformation Assessment tool helps us determine through a simple questionnaire what’s the level of digital maturity of your business and what are your priorities and opportunities.'
+            'Our own Digital Transformation Assessment tool helps you determine through a simple questionnaire what’s the level of digital maturity of your business and what are your priorities and opportunities.'
           }
         />
       </Container>
