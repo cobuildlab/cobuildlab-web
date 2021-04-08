@@ -5,29 +5,20 @@
 import styled from 'styled-components';
 import { Card } from 'bloomer';
 
-export const TitleDivStyled = styled.div`
-  width: 351px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 12px;
-  padding-top: 8px;
-  position: relative;
-`;
-
 export const CardStyled = styled(Card)`
-  max-height: 465px;
-  min-height: 465px;
+  max-height: 395px;
+  min-height: 395px;
   box-shadow: 0px 10px 20px #0000001a;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 14px;
 `;
 
 export const Image = styled.div`
-  height: 230px;
+  height: 210px;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
   img {
-    height: 230px;
+    height: 210px;
     margin-top: 30px;
   }
 `;
@@ -42,7 +33,7 @@ export const ParagraphDivStyled = styled.div`
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 12px;
-  margin-top: 5px;
+  margin-top: 25px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;

@@ -51,7 +51,7 @@ const CustomLearningManagmentSystem = () => (
         <ServicesHeader
           title={'Custom Learning Management System'}
           paragraph={
-            'For the needs of creating e-learning content, interactive, that you can integrate with other systems of your company (such as CRM), with customized reports or gamification, a custom learning management system is the best option.'
+            'When you need to create interactive e-learning content that you can integrate with other company systems (such as CRMs), with customized reports or gamification, a Custom Learning Management system is the way to go.'
           }
           img={
             <StaticImage
@@ -78,14 +78,14 @@ const CustomLearningManagmentSystem = () => (
     <Section>
       <Container>
         <ServicesSection3
-          title={'Benefits of Custom Learning Management System\n'}
+          title={'Benefits of a Custom Learning Management System'}
           textList={[
             'Improve the performance of your business/learners.',
             'Features tailored to your vision.',
-            'Get the opportunity to leave the premises of a traditional office.',
-            'Flexibility, scalability, and futureproof.',
+            'Allows you to leave the premises of a traditional office.',
+            'Flexible, scalable, and futureproof.',
             'Unlimited learners.',
-            'High level of automation of eLearning management, which increases the productivity of trainers and trainees.',
+            'High level of automation of e-Learning management, which increases the productivity of trainers and trainees.',
           ]}
         />
       </Container>
@@ -93,9 +93,9 @@ const CustomLearningManagmentSystem = () => (
     <Section>
       <Container>
         <ServicesSection4
-          title={'Scale your Custom Learning Management System\n'}
+          title={'You need your own Custom Learning Management System'}
           text={
-            'Are you planning to expand your business online? We will translate your ideas into intelligent and powerful solutions. Our development will include business analysis, developing a technical specification, estimating the development cost, and planning the project.'
+            'In the case of online teaching platforms and employee training systems, a custom LMS might be the only option for your business for security concerns, copyright protection and the need for compliance.'
           }
         />
       </Container>

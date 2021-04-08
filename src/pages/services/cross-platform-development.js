@@ -50,7 +50,7 @@ const CrossPlatformDevelopment = () => (
         <ServicesHeader
           title={'Cross-Platform Development'}
           paragraph={
-            'Cross-platform development provides the flexibility to build your app using a universal language which can then be exported to various Smartphone platforms. This allows one “app” to work across multiple platforms, like IOS and Android.'
+            'Only cross-platform development provides you with the flexibility to build your app and use it in various devices. Let your app work across multiple platforms like Android or IOS.'
           }
           paragraph2={<>Request a Call, Contact us now, Get a FREE Consultation.</>}
           img={
@@ -78,9 +78,9 @@ const CrossPlatformDevelopment = () => (
     <Section>
       <Container>
         <ServicesSection3
-          title={'You’ll Only Need One Development Team, Us!'}
+          title={'You’ll only need one development team, Us!'}
           otherText={
-            'We are a single Development team, who has hands-on experience working with a set of technologies. Having us as a unique team handling all the stages of the project, you avoid a scenario where too many work teams risk sabotaging one another and compromise the app project itself.\n'
+            'We are a single development team with hands-on experience working with different sets of technologies. Having us as a unique team handling all the stages of the project, you avoid a scenario where too many work teams risk sabotaging one another and compromise the app project itself.'
           }
         />
       </Container>
@@ -90,13 +90,13 @@ const CrossPlatformDevelopment = () => (
         <ServicesSection4
           title={'Why a Cross-Platform App?'}
           leftText={[
-            'Launching the software simultaneously on various platforms.',
+            'Launch your software simultaneously on various platforms.',
             'Time to market is reduced since developing one program takes a lot less time than building two or three apps for each device platform.',
-            'Uniformity increases between different operating systems creating a more seamless user experience',
+            'Faster and easier updates.',
           ]}
           rightTextList={[
-            'Faster and easier updates.',
-            'Since cross-platform applications are Internet-based, Users don’t have to download separate updates.',
+            'Uniformity increases between different operating systems creating a more seamless user experience.',
+            'Cross-platform apps are internet-based, so users don’t have to download separate updates.',
           ]}
         />
       </Container>

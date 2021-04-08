@@ -6,11 +6,9 @@ import { Column, Subtitle, Title } from 'bloomer';
 import { navigate } from 'gatsby';
 import {
   CardStyled,
-  Container,
   Image,
   ParagraphDivStyled,
   ReadmoreDivStyled,
-  TitleDivStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const JobCore = () => {
@@ -24,15 +22,6 @@ const JobCore = () => {
         <Image>
           <StaticImage src={'./../../../../assets/images/customers/jobcore.jpg'} alt="" />
         </Image>
-        <Container>
-          <TitleDivStyled>
-            <TitleDivStyled>
-              <Title isSize={1} className="title-card-customer-success">
-                JobCore
-              </Title>
-            </TitleDivStyled>
-          </TitleDivStyled>
-        </Container>
         <ParagraphDivStyled>
           <Subtitle className={'paragraph-card-customer-success'}>
             Get work fast and get paid the same day with Jobcore. This is a web platform that allows

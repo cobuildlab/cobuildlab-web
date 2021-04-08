@@ -6,11 +6,9 @@ import { Column, Title, Subtitle } from 'bloomer';
 import { navigate } from 'gatsby';
 import {
   CardStyled,
-  Container,
   Image,
   ParagraphDivStyled,
   ReadmoreDivStyled,
-  TitleDivStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const GeeksAcademy = () => {
@@ -24,13 +22,6 @@ const GeeksAcademy = () => {
         <Image>
           <StaticImage src={'./../../../../assets/images/customers/4geeks.png'} alt="" />
         </Image>
-        <Container>
-          <TitleDivStyled>
-            <Title isSize={1} className="title-card-customer-success">
-              4Geeks Academy
-            </Title>
-          </TitleDivStyled>
-        </Container>
         <ParagraphDivStyled>
           <Subtitle className={'paragraph-card-customer-success'}>
             4Geeks Academy Contact Person: Marcelo Ricigliano Location: Miami, US, Caracas and
