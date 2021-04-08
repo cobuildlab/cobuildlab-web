@@ -1421,3 +1421,10 @@ img.i-l {
 .gatsby-image-wrapper > div {
     background-color: transparent!important;
 }
+
+@media screen and (max-width: 780px) {
+    .services-content-styles {
+        margin-top: -46px
+    }
+}
+

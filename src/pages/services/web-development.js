@@ -37,12 +37,6 @@ const StyledContainer = styled(Container)`
   padding-bottom: 75px;
 `;
 
-const Paragraph2 = styled.p`
-  font-size: 17px;
-  text-align: justify;
-  color: #264a60;
-`;
-
 const WebDevelopment = () => (
   <Layout>
     <SeoMetaTags title="Services" description="Privacy Policy for the Cobuild Lab" />
@@ -58,17 +52,6 @@ const WebDevelopment = () => (
           title={'Web Development'}
           paragraph={
             'We align our knowledge with your brand and ideas to construct websites that cater to your services and operations in order to engage and impress potential customers. Establish business credibility, brand consistency, and create more revenue with a superb web presence.'
-          }
-          paragraph2={
-            <>
-              <>Impact your audience now, Impress your target, More business credibility here.</>
-              <br />
-              <Paragraph2>
-                Web design includes many processes regarding the production and maintenance of a
-                website. Encompassing web graphic design, user interface design, user experience
-                design, and search engine optimization.
-              </Paragraph2>
-            </>
           }
           img={
             <StaticImage

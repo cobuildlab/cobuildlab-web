@@ -57,16 +57,6 @@ const CustomSoftwareDevelopment = () => (
             'efficient because every function is designed based on your business activities, so\n' +
             'there is no need to modify or adjust anything (as is the case of a commercial tool).'
           }
-          paragraph2={
-            <>
-              <ul>
-                <li>• Get my custom software.</li>
-                <li>• Free consultation available.</li>
-                <li>• Start my custom development.</li>
-                <li>• Hiring my software team.</li>
-              </ul>
-            </>
-          }
           img={
             <StaticImage
               src={
