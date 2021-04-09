@@ -53,7 +53,6 @@ const CrossPlatformDevelopment = () => (
           paragraph={
             'Only cross-platform development provides you with the flexibility to build your app and use it in various devices. Let your app work across multiple platforms like Android or IOS.'
           }
-          paragraph2={<>Request a Call, Contact us now, Get a FREE Consultation.</>}
           img={
             <StaticImage
               src={
