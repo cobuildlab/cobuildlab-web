@@ -6,11 +6,9 @@ import { Column, Title, Subtitle } from 'bloomer';
 import { navigate } from 'gatsby';
 import {
   CardStyled,
-  Container,
   Image,
   ParagraphDivStyled,
   ReadmoreDivStyled,
-  TitleDivStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const CollabToGrow = () => {
@@ -24,13 +22,6 @@ const CollabToGrow = () => {
         <Image>
           <StaticImage src={'./../../../../assets/images/customers/collab-logo.jpg'} alt="" />
         </Image>
-        <Container>
-          <TitleDivStyled>
-            <Title isSize={1} className="title-card-customer-success">
-              Collab To Grow
-            </Title>
-          </TitleDivStyled>
-        </Container>
         <ParagraphDivStyled>
           <Subtitle className={'paragraph-card-customer-success'}>
             Is a technology-enabled managed services and advisory firm that specializes in improving

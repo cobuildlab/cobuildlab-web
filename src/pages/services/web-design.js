@@ -30,6 +30,7 @@ const StyledSubTitle = styled.div`
 
 const StyledSection2 = styled(Section)`
   background: #fff;
+  box-shadow: 0px 10px 20px #0000001a;
 `;
 
 const StyledContainer = styled(Container)`
@@ -58,7 +59,7 @@ const WebDesign = () => (
         <ServicesHeader
           title={'Web Design'}
           paragraph={
-            'Aligning a brand, your ideas, and our knowledge will give life to a website that caters to your service and operations. With a professional website, you can increase your revenue flows, and establish business credibility and thrusters with brand consistency.\n'
+            'Aligning a brand, your ideas, and our knowledge will give life to a website that caters to your service and operations. With a professional website, you can increase your revenue flows, and establish business credibility and thrusters with brand consistency.'
           }
           paragraph2={
             <>
@@ -67,8 +68,6 @@ const WebDesign = () => (
                 website. Encompassing web graphic design, user interface design, user experience
                 design, and search engine optimization.
               </Paragraph>
-              <br />
-              <>Impact your audience now, Impress your target, More business credibility here.</>
             </>
           }
           img={
@@ -83,13 +82,8 @@ const WebDesign = () => (
     <StyledSection2>
       <Container>
         <ServicesSection2
-          title={'Anything from a simple, '}
-          titleOrange={
-            <>
-              single-page <br />
-              presence to a massive, multi-page website
-            </>
-          }
+          title={'Increase your company’s '}
+          titleOrange={<>awareness of Web Design.</>}
           text={
             <>
               Our web design will be flexible and adaptable to your business’ requirements, with the
@@ -106,7 +100,9 @@ const WebDesign = () => (
     <Section>
       <Container>
         <ServicesSection3
-          title={'Let’s impact your audience'}
+          title={
+            'Improve the conversions of your web. With Web Design, your business will attract more potential clients'
+          }
           otherText={
             'For whom is a web created? This is the portal that your business will use to directly contact your potential customers. Impress your target with our Web Design service.'
           }
@@ -120,6 +116,9 @@ const WebDesign = () => (
       <Container>
         <ServicesSection4
           title={'Benefits and Advantages of Web Design'}
+          text={
+            'More competitive advantage. Added value to the main target and strategies applied to your business:'
+          }
           leftText={['Improved website loading times', 'Lower bounce rates']}
           rightTextList={['Higher conversion rates', 'More Social Sharing']}
         />

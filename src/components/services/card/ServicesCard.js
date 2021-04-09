@@ -34,6 +34,9 @@ const Image = styled.div`
   height: 276px !important;
   margin-top: 12px;
   margin-left: 21px;
+  & img {
+    padding-top: 14px !important;
+  }
 `;
 
 const Container = styled.div`
@@ -48,7 +51,7 @@ const Paragraph = styled.p`
   padding-left: 28px;
   color: #264a60;
   padding-right: 24px;
-  margin-top: 5px;
+  margin-top: 20px;
 `;
 
 const Readmore = styled.p`

@@ -1414,3 +1414,22 @@ img.i-l {
 .slick-slide img {
     display: initial!important;
 }
+
+.gatsby-image-wrapper {
+    transition: none!important;
+}
+.gatsby-image-wrapper > div {
+    background-color: transparent!important;
+}
+
+.youtube-container, .youtube-div {
+    height: 410px;
+    width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+    .services-content-styles {
+        margin-top: -46px
+    }
+}
+

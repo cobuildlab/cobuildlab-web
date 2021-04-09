@@ -6,11 +6,9 @@ import { Column, Title, Subtitle } from 'bloomer';
 import { navigate } from 'gatsby';
 import {
   CardStyled,
-  Container,
   Image,
   ParagraphDivStyled,
   ReadmoreDivStyled,
-  TitleDivStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const MyVoice = () => {
@@ -24,13 +22,6 @@ const MyVoice = () => {
         <Image>
           <StaticImage src={'./../../../../assets/images/customers/my-voice.jpg'} alt="" />
         </Image>
-        <Container>
-          <TitleDivStyled>
-            <Title isSize={1} className="title-card-customer-success">
-              MyVoice
-            </Title>
-          </TitleDivStyled>
-        </Container>
         <ParagraphDivStyled>
           <Subtitle className={'paragraph-card-customer-success'}>
             Cobuild Lab partnered up with Kadem Education to raise teacher’s voices by building a

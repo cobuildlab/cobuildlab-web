@@ -30,6 +30,7 @@ const StyledSubTitle = styled.div`
 
 const StyledSection2 = styled(Section)`
   background: #fff;
+  box-shadow: 0px 10px 20px #0000001a;
 `;
 
 const StyledContainer = styled(Container)`
@@ -51,15 +52,13 @@ const DigitalTransformation = () => (
         <ServicesHeader
           title={'Digital Transformation'}
           paragraph={
-            'Technology applications are the future of enterprises. \n' +
-            'Process automation allows the restructuring of digital processes to improve efficiency, ' +
-            'unlatching modern value by innovating existing or new processes and products based on the use ' +
-            'of technology.'
+            'Bringing enterprises forward is possible when applying Digital Transformation, by increasing profit, revenue, agility and improving productivity.'
           }
           paragraph2={
             <>
-              Transform my enterprise, Automate my enterprise, Solve challenges, ackle challenges,
-              Optimize and automate now!.
+              Solve the uncertainty of not knowing what your business maturity is regarding its
+              digital blueprint. Before Digital Transformation adoption, you need to know exactly
+              where your strengths and weaknesses lie.
             </>
           }
           img={
@@ -74,10 +73,10 @@ const DigitalTransformation = () => (
     <StyledSection2>
       <Container>
         <ServicesSection2
-          title={'Unbolt unknown '}
-          titleOrange={'values for your customers'}
+          title={'What is '}
+          titleOrange={'it?'}
           text={
-            'Cobuild Lab will help you on applying technology for processes to run themselves, making those processes more effective and expanding straightforwardness and reporting abilities. Moreover, unlocking new value features for customers to meet their expectations constantly evolving.'
+            'Digital Transformation Assessment is the process through which we determine your company’s baseline or where it exactly stands regarding its digital blueprint. Before embarking on a Digital Transformation you need to know exactly where your strengths and weaknesses lie.'
           }
         />
       </Container>
@@ -85,31 +84,30 @@ const DigitalTransformation = () => (
     <Section>
       <Container>
         <ServicesSection3
-          title={'Possibilities of increasing the revenue streams'}
-          textList={[
-            'One of the most important things to do to increase revenue streams is over-delivering on customer service. With automation, your customers will enjoy a smooth experience when accessing information at-all times.',
-            'Forms and workflows will also be automated, avoiding printing, sign, and scan.',
-            'Reduce monotonous manual data entry with integrated systems and databases.',
-            'Automatically support all mobile devices and accelerate the approval process by giving 24/7 access from anywhere.',
-          ]}
+          title={'How does it work?'}
+          otherText={
+            'Our own Digital Transformation Assessment tool helps you determine through a simple questionnaire what’s the level of digital maturity of your business and what are your priorities and opportunities.'
+          }
         />
       </Container>
     </Section>
     <Section>
       <Container>
         <ServicesSection4
-          title={
-            '“Digital Transformation and Process Automation For The Logistics and Supply Chain Industries Benefits”'
-          }
+          title={'How can digital transformation help me and benefit me ?'}
+          text={'It will let you establish key points like:\n'}
           leftText={[
-            'Leverage the power of Optimization driven by Machine Learning and Artificial Intelligence.',
-            'The solution of a wide range of challenges.',
-            'Hyper-connectivity among devices with Internet of Things.',
+            'What your clients want.',
+            'What are your competitors doing.',
+            'What are your existing technologies.',
           ]}
           rightTextList={[
-            'Maximum visibility across factors to improve decision-making.',
-            'The satisfaction of the critical needs of the industry, such as optimization, visibility, connectivity, efficiency, and automation.',
+            'What skills you’ll need for the future.',
+            'What processes you need to improve.',
           ]}
+          otherText={
+            'Any decision regarding your digital transformation process will be based on the exact level of investment required to accomplish your goals efficiently and without wasting any time or resources.'
+          }
         />
       </Container>
     </Section>

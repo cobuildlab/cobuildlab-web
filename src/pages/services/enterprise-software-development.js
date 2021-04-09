@@ -29,6 +29,7 @@ const StyledSubTitle = styled.div`
 
 const StyledSection2 = styled(Section)`
   background: #fff;
+  box-shadow: 0px 10px 20px #0000001a;
 `;
 
 const StyledContainer = styled(Container)`
@@ -50,15 +51,7 @@ const EnterpriseSoftwareDevelopment = () => (
         <ServicesHeader
           title={'Enterprise Software Development'}
           paragraph={
-            'We develop a software to meet the needs of your organization, company, enterprise, or business that has a system available. By applying this development, your business gets useful tools to improve the company' +
-            "'" +
-            's  specific issues, such as fleet management, planning supply and demand, processing orders, and control over inventory.'
-          }
-          paragraph2={
-            <>
-              More value for my enterprise, My enterprise needs this, Risk reduction for my
-              enterprise, Learn more about this.
-            </>
+            "We develop software that meets the needs of your organization. Through Enterprise Software Development we help you build useful tools to improve your company's specific issues, such as fleet management, planning supply and demand, processing orders, and control over inventory."
           }
           img={
             <StaticImage

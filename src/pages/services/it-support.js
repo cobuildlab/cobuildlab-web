@@ -30,6 +30,7 @@ const StyledSubTitle = styled.div`
 
 const StyledSection2 = styled(Section)`
   background: #fff;
+  box-shadow: 0px 10px 20px #0000001a;
 `;
 
 const StyledContainer = styled(Container)`
@@ -51,13 +52,7 @@ const WebDevelopment = () => (
         <ServicesHeader
           title={'It Support'}
           paragraph={
-            <>
-              <>
-                From business technology support to strategic consulting,
-                <br />
-                we have IT solutions for your organizational needs.
-              </>
-            </>
+            'From business technology support to strategic consulting, we have IT solutions for your organizational needs.'
           }
           img={
             <StaticImage
@@ -71,8 +66,8 @@ const WebDevelopment = () => (
     <StyledSection2>
       <Container>
         <ServicesSection2
-          title={'Improve your business'}
-          titleOrange={'for the next level'}
+          title={'Take your business'}
+          titleOrange={'to the next level'}
           text={
             "Enhance your organization's infrastructure with our industry-leading enterprise IT support services. Whether you have an immediate short-term technical project or are looking for a reliable long-term IT partner, Cobuild Lab is here to help."
           }
@@ -82,12 +77,9 @@ const WebDevelopment = () => (
     <Section>
       <Container>
         <ServicesSection3
-          title={'Dedicated Support\n'}
+          title={'Dedicated Support'}
           otherText={
-            'For whom is a web created? This is the portal that your business will use to directly contact your potential customers. Impress your target with our Web Design service.'
-          }
-          otherText2={
-            'Our business IT services provide flexible access to a team of highly motivated and dedicated professionals with in-depth knowledge of a wide range of infrastructure, security, mail systems, and applications. We offer a business IT support service that is trully tailored to your requirements, providing comprehensive backup and support in the event of an IT disaster.'
+            'Our business IT services provide flexible access to a team of highly motivated and dedicated professionals with in-depth knowledge of a wide range of infrastructure, security, mail systems, and applications. We offer a  100% autonomous and automated IT Infrastructure Support service that is truly tailored to your requirements, providing comprehensive backup and support in the event of an IT disaster.'
           }
         />
       </Container>
@@ -95,7 +87,7 @@ const WebDevelopment = () => (
     <Section>
       <Container>
         <ServicesSection4
-          title={'Benefits of IT Outsourcing Support in your Business'}
+          title={'Benefits of outsourcing IT support for your business'}
           leftText={[
             'Reduce business interruptions by upgrading old technology and moving away from the breakdown/repair support model.',
             'Provide a single point of contact for faster IT support and consistent response time and resolution.',
@@ -103,7 +95,7 @@ const WebDevelopment = () => (
           rightTextList={[
             'Ensure your systems and data are safe and backed up.',
             'Harnessing the power of cloud infrastructure and applications for your business.',
-            'Save time that would otherwise spent recruiting, training, and managing multiple vendors.',
+            'Save time that would otherwise be spent on recruiting, training, or managing multiple vendors.',
           ]}
         />
       </Container>

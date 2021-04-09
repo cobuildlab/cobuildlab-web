@@ -6,14 +6,14 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const Paragraph = styled.p`
-  font-size: 17px;
+  font-size: 22px;
   font-weight: 600;
   text-align: justify;
   color: #264a60;
 `;
 
 const Paragraph2 = styled.p`
-  font-size: 17px;
+  font-size: 22px;
   text-align: justify;
   color: #264a60;
 `;

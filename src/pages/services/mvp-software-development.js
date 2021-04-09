@@ -30,6 +30,7 @@ const StyledSubTitle = styled.div`
 
 const StyledSection2 = styled(Section)`
   background: #fff;
+  box-shadow: 0px 10px 20px #0000001a;
 `;
 
 const StyledContainer = styled(Container)`
@@ -64,12 +65,10 @@ const MvpSoftwareDevelopment = () => (
             <>
               <Paragraph>
                 By getting an MVP, you can collect feedback from the initial customers having a
-                better understanding of the user&apos;s expectations. With that information, we can
+                better understanding of the user{"'"}s expectations. With that information, we can
                 build better features that meet their needs and it helps avoid failure and
                 substantial capital loss.
               </Paragraph>
-              <br />
-              <>Get your MVP, contact US and get a FREE consultation!</>
             </>
           }
           img={
@@ -100,12 +99,12 @@ const MvpSoftwareDevelopment = () => (
     <Section>
       <Container>
         <ServicesSection3
-          title={'Start from Minimal to Success\n'}
+          title={'Start from Minimal to Success'}
           otherText={
-            'Starting MVP development is, initially, adding the essential functions for the project. Additional required functionality can present itself during the testing process and from user feedback.'
+            'Starting MVP development is, initially, adding the essential functions for the project.'
           }
           otherText2={
-            'With those new changes/functionality, you can make sure that the product will match what users want or expect.'
+            'Additional required functionality can present itself during the testing process and from user feedback. With those new changes/functionality, you can make sure that the product will match what users want or expect.'
           }
         />
       </Container>
@@ -113,9 +112,9 @@ const MvpSoftwareDevelopment = () => (
     <Section>
       <Container>
         <ServicesSection4
-          title={'With using s MVP, you…'}
+          title={'With MVP Software Development you…'}
           leftText={[
-            'Acquire a potential client base and find the early adopters.\n',
+            'Acquire a potential client base and find the early adopters.',
             'Check whether the project is appealing to potential users.',
             'Attract investors earlier.',
           ]}

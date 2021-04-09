@@ -6,11 +6,9 @@ import { Column, Title, Subtitle } from 'bloomer';
 import { navigate } from 'gatsby';
 import {
   CardStyled,
-  Container,
   Image,
   ParagraphDivStyled,
   ReadmoreDivStyled,
-  TitleDivStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const Mama = () => {
@@ -24,13 +22,6 @@ const Mama = () => {
         <Image>
           <StaticImage src={'./../../../../assets/images/customers/mama-logo.jpg'} alt="" />
         </Image>
-        <Container>
-          <TitleDivStyled>
-            <Title isSize={1} className="title-card-customer-success">
-              Mama
-            </Title>
-          </TitleDivStyled>
-        </Container>
         <ParagraphDivStyled>
           <Subtitle className={'paragraph-card-customer-success'}>
             The Match-Making app MAMA is a fun and easy-to-use connectivity tool that makes

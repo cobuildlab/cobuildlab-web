@@ -24,7 +24,7 @@ const StyleSubtitle = styled.div`
   text-align: center;
 `;
 
-const ServicesSection4 = ({ title, leftText, rightTextList, text }) => {
+const ServicesSection4 = ({ title, leftText, rightTextList, text, otherText }) => {
   return (
     <>
       <StyleSubtitle>
@@ -38,7 +38,7 @@ const ServicesSection4 = ({ title, leftText, rightTextList, text }) => {
       <Paragraph>{text}</Paragraph>
       <br />
       <Columns>
-        <Column isSize={{ mobile: 12, desktop: 4 }} isOffset={{ desktop: 2 }}>
+        <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} isOffset={{ desktop: 2 }}>
           {!Array.isArray(leftText) ? (
             <ServicesContent>
               <Paragraph>{leftText}</Paragraph>
@@ -55,8 +55,8 @@ const ServicesSection4 = ({ title, leftText, rightTextList, text }) => {
             </ServicesContent>
           )}
         </Column>
-        <Column isSize={{ mobile: 12, desktop: 4 }} isOffset={{ desktop: 1 }}>
-          <ServicesContent>
+        <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} isOffset={{ desktop: 1 }}>
+          <ServicesContent className="services-content-styles">
             <StyleList>
               <Paragraph>
                 {rightTextList.map((item, i) => (
@@ -67,6 +67,7 @@ const ServicesSection4 = ({ title, leftText, rightTextList, text }) => {
           </ServicesContent>
         </Column>
       </Columns>
+      {otherText !== '' ? <Paragraph>{otherText}</Paragraph> : null}
     </>
   );
 };
@@ -75,6 +76,7 @@ ServicesSection4.defaultProps = {
   title: '',
   leftText: '',
   text: '',
+  otherText: '',
   rightTextList: [],
 };
 
@@ -82,6 +84,7 @@ ServicesSection4.propTypes = {
   title: PropTypes.string,
   leftText: PropTypes.any,
   text: PropTypes.string,
+  otherText: PropTypes.string,
   rightTextList: PropTypes.array,
 };
 

@@ -29,6 +29,7 @@ const StyledSubTitle = styled.div`
 
 const StyledSection2 = styled(Section)`
   background: #fff;
+  box-shadow: 0px 10px 20px #0000001a;
 `;
 
 const StyledContainer = styled(Container)`
@@ -50,7 +51,7 @@ const WebDevelopment = () => (
         <ServicesHeader
           title={'Custom Project Management System'}
           paragraph={
-            'Create custom workflows that your entire team can adopt to be more productive.\n'
+            'Take your company’s productivity through the roof with custom workflows that your entire team can adopt.'
           }
           img={
             <StaticImage
@@ -64,10 +65,10 @@ const WebDevelopment = () => (
     <StyledSection2>
       <Container>
         <ServicesSection2
-          title={'Customize'}
-          titleOrange={'your workflow'}
+          title={'Customize your'}
+          titleOrange={'workflow'}
           text={
-            'Optimize, manage projects and increase productivity with collaboration tools and the web-based project management system customized according to your needs.'
+            'Optimize and manage your projects with collaborative tools and a web-based project management system tailor-made exactly for your needs.'
           }
         />
       </Container>
@@ -85,9 +86,9 @@ const WebDevelopment = () => (
     <Section>
       <Container>
         <ServicesSection4
-          title={'Why is it beneficial to have your personalized Project Management System?'}
+          title={'What are the benefits of having your own Project Management System?'}
           leftText={[
-            'You have full control and access to the software and customizable data, according to your needs.',
+            'Full control and access to the software and customizable data.',
             'Manage customers, suppliers, and prospects.',
             'Manage tasks and task groups to optimize time management.',
             'Communication with clients and the team in each task or many tasks.',

@@ -29,17 +29,12 @@ const StyledSubTitle = styled.div`
 
 const StyledSection2 = styled(Section)`
   background: #fff;
+  box-shadow: 0px 10px 20px #0000001a;
 `;
 
 const StyledContainer = styled(Container)`
   padding-top: 4px;
   padding-bottom: 75px;
-`;
-
-const Paragraph2 = styled.p`
-  font-size: 17px;
-  text-align: justify;
-  color: #264a60;
 `;
 
 const WebDevelopment = () => (
@@ -56,18 +51,7 @@ const WebDevelopment = () => (
         <ServicesHeader
           title={'Web Development'}
           paragraph={
-            'Aligning a brand, your ideas, and our knowledge will give life to a website that caters to your service and operations. With a professional website, you can increase your revenue flows, and establish business credibility and thrusters with brand consistency.\n'
-          }
-          paragraph2={
-            <>
-              <>Impact your audience now, Impress your target, More business credibility here.</>
-              <br />
-              <Paragraph2>
-                Web design includes many processes regarding the production and maintenance of a
-                website. Encompassing web graphic design, user interface design, user experience
-                design, and search engine optimization.
-              </Paragraph2>
-            </>
+            'We align our knowledge with your brand and ideas to construct websites that cater to your services and operations in order to engage and impress potential customers. Establish business credibility, brand consistency, and create more revenue with a superb web presence.'
           }
           img={
             <StaticImage
@@ -122,13 +106,17 @@ const WebDevelopment = () => (
     <Section>
       <Container>
         <ServicesSection4
-          title={'Benefits and Advantages of Web Design'}
+          title={'Benefits and advantages of Web Development for your business'}
           leftText={[
-            'Improved website loading times.',
-            'Lower bounce rates.',
-            'Higher conversion rates',
+            'Improved online presence.',
+            'Customer relationship builder.',
+            'Application capacity to grow with your business.',
           ]}
-          rightTextList={['More Social Sharing.']}
+          rightTextList={[
+            'More Social Sharing.',
+            'New software and upgrades implemented easily.',
+            'Innovation and digital undertake.',
+          ]}
         />
       </Container>
     </Section>

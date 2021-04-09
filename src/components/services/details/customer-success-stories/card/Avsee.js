@@ -6,11 +6,9 @@ import { Column, Title, Subtitle } from 'bloomer';
 import { navigate } from 'gatsby';
 import {
   CardStyled,
-  Container,
   Image,
   ParagraphDivStyled,
   ReadmoreDivStyled,
-  TitleDivStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const Avsee = () => {
@@ -24,13 +22,6 @@ const Avsee = () => {
         <Image>
           <StaticImage src={'./../../../../assets/images/customers/avsee-logo.jpg'} alt="" />
         </Image>
-        <Container>
-          <TitleDivStyled>
-            <Title isSize={1} className="title-card-customer-success">
-              Avsee
-            </Title>
-          </TitleDivStyled>
-        </Container>
         <ParagraphDivStyled>
           <Subtitle className={'paragraph-card-customer-success'}>
             The Avsee team chose Cobuild Lab to be their technology partner in developing a platform

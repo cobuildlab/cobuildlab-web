@@ -30,6 +30,7 @@ const StyledSubTitle = styled.div`
 
 const StyledSection2 = styled(Section)`
   background: #fff;
+  box-shadow: 0px 10px 20px #0000001a;
 `;
 
 const StyledContainer = styled(Container)`
@@ -51,13 +52,7 @@ const ProcessAutomation = () => (
         <ServicesHeader
           title={'Process Automation'}
           paragraph={
-            'With process automation software, you’re able to achieve new levels of productivity and reduce the costs and errors associated with manual tasks. Introducing efficiency to workflows across your business is the key to maximizing valuable employee time, particularly in areas where resources have more projects to complete than hours in the day.'
-          }
-          paragraph2={
-            <>
-              Transform my enterprise, Automate my enterprise, Solve challenges, Tackle challenges,
-              Optimize and automate now!.
-            </>
+            'Reach new heights of productivity and reduce the costs and errors of manual tasks with a Process Automation Software.  Make the most of valuable employee time introducing efficiency to workflows across your business. Automate your enterprise and take full advantage of your resources.'
           }
           img={
             <StaticImage
@@ -70,24 +65,22 @@ const ProcessAutomation = () => (
     </Section>
     <StyledSection2>
       <ServicesSection2
-        title={'Unbolt unknown'}
-        titleOrange={' values for your customers'}
+        title={'Discover New'}
+        titleOrange={' value for your customers'}
         text={
-          'Cobuild Lab will help you on applying technology for processes to run themselves, making those processes more effective and expanding straightforwardness and reporting abilities. Moreover, unlocking new value features for customers to meet their expectations constantly evolving.'
+          'We’ll help you integrate new technology that’ll make your processes run smoothly on their own, increasing their effectiveness and simplicity while expanding their reporting abilities. That will unlock new value features that meet the constantly evolving expectations of your customers.'
         }
       />
     </StyledSection2>
     <Section>
       <Container>
         <ServicesSection3
-          title={'Possibilities of increasing the revenue streams'}
+          title={'Increase your Revenue Streams'}
           otherText={
-            'One of the most important things to do to increase revenue streams is over-delivering on customer service. With automation, your customers will enjoy a smooth experience when accessing information at-all times.\n' +
-            '        Forms and workflows will also be automated, avoiding printing, sign, and scan.'
+            'Over-delivering on customer service is the key to increasing your revenue streams. With automation, they’ll enjoy a smooth experience accessing information at any given time. Avoid printing, sign and scan with automated forms and workflows.'
           }
           otherText2={
-            'Reduce monotonous manual data entry with integrated systems and databases.\n' +
-            '       Automatically support all mobile devices and accelerate the approval process by giving 24/7 access from anywhere.'
+            'Get rid of monotonous manual data entry with integrated systems and databases. Automatically support all mobile devices and accelerate approval processes with 24/7 access from anywhere.'
           }
         />
       </Container>
@@ -95,13 +88,11 @@ const ProcessAutomation = () => (
     <Section>
       <Container>
         <ServicesSection4
-          title={
-            'Digital Transformation and Process Automation For The Logistics and Supply Chain Industries Benefits'
-          }
+          title={'Process Automation For The Logistics and Supply Chain Industries Benefits'}
           leftText={[
             'Leverage the power of Optimization driven by Machine Learning and Artificial Intelligence.',
             'The solution of a wide range of challenges.',
-            'Hyper-connectivity among devices with Internet of Things\n.',
+            'Hyper-connectivity among devices with Internet of Things.',
           ]}
           rightTextList={[
             'Maximum visibility across factors to improve decision-making.',

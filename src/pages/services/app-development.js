@@ -29,6 +29,7 @@ const StyledSubTitle = styled.div`
 
 const StyledSection2 = styled(Section)`
   background: #fff;
+  box-shadow: 0px 10px 20px #0000001a;
 `;
 
 const StyledContainer = styled(Container)`
@@ -50,10 +51,8 @@ const AppDevelopment = () => (
         <ServicesHeader
           title={'App Development'}
           paragraph={
-            'Higher customer engagement, strong built awareness and recognition, customer loyalty improvement, and extra revenue-stream are some of the advantages you acquire when developing a mobile app.\n' +
-            'This is the process in which we create an app that can work on several platforms, with the requirements your business has.\n'
+            'A great mobile app gives you an extra revenue stream, higher customer engagement, and strong built brand awareness and recognition. We’ll build for you an app that responds to every single one of your business requirements and works across several platforms.'
           }
-          paragraph2={<>Scale your business now!, Contact us now, Free consultation.</>}
           img={
             <StaticImage
               src={'./../../assets/images/service/card/iconos-Main-Services-APP-Development.svg'}
@@ -69,7 +68,7 @@ const AppDevelopment = () => (
           title={'Essential '}
           titleOrange={'for your businesses'}
           text={
-            'Nowadays, a mobile app is a must-have for most businesses. We can turn your idea and transform it into a powerful app for in-house communication, real-time employee contact, workflow, and operations support.'
+            'A mobile app is a most-have for most businesses. We can transform your idea into a powerful app for in-house communications, real-time employee contact, workflow and operations support.'
           }
         />
       </Container>
@@ -77,21 +76,24 @@ const AppDevelopment = () => (
     <Section>
       <Container>
         <ServicesSection3
-          title={'Every business needs an app'}
-          textList={[
-            'Our team can build a high-quality, scalable, and powerful mobile app that runs seamlessly over various platforms and devices.',
-          ]}
+          title={'Every business needs an App'}
+          otherText={
+            'App and cross-platform development is adapted to any industries, among those are the following:'
+          }
+          textList={['Healthcare.', 'Financial.', 'Entertainment.', 'Fashion and eCommerce.']}
         />
       </Container>
     </Section>
     <Section>
       <Container>
         <ServicesSection4
-          title={'Every business needs an app'}
-          leftText={
-            'App and cross-platform development is adapted to any industries, among those are the following:'
-          }
-          rightTextList={['Healthcare', 'Financial', 'Entertainment', 'Fashion and eCommerce']}
+          title={'Benefits and Advantages of App Development'}
+          leftText={[
+            'Increased user interaction.',
+            'Increased customer loyalty.',
+            'Employee productivity improvement',
+          ]}
+          rightTextList={['Cost reduction', 'Competitive advantage']}
         />
       </Container>
     </Section>

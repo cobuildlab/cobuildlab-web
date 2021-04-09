@@ -29,6 +29,7 @@ const StyledSubTitle = styled.div`
 
 const StyledSection2 = styled(Section)`
   background: #fff;
+  box-shadow: 0px 10px 20px #0000001a;
 `;
 
 const StyledContainer = styled(Container)`
@@ -50,13 +51,7 @@ const CustomCustomerManagementSystem = () => (
         <ServicesHeader
           title={'Customer Relationship Management System'}
           paragraph={
-            'A CRM is software where you can organize the details related to your customers, across all departments at your company. Anyone with access to the CRM can track and manage the journey of every lead and customer that interacts with your brand, website, or products.'
-          }
-          paragraph2={
-            <>
-              Get the fastest-growing software on the market today!, Contact us now, Get a FREE
-              Consultation.
-            </>
+            'A CRM system is a software that helps you organize the details related to your customers across all departments at your company. Anyone with access to the CRM system can track and manage the journey of every lead and customer that interacts with your brand, website, or products.'
           }
           img={
             <StaticImage
@@ -76,14 +71,15 @@ const CustomCustomerManagementSystem = () => (
           titleOrange={'your productivity'}
           text={
             <>
-              CRMs help your business grow better for several reasons. One of the simplest yet the
-              most effective advantages is its ability to automate time-consuming, manual tasks by
+              CRMs help your business grow better for several reasons. One of its simplest yet most
+              effective advantages is its ability to automate time-consuming, manual tasks by
               leveraging workflows.
               <br />
               <br />
               Whether you’re just looking to have software to organize and manage all
               customer-related information, make internal communication easier, convert more leads
-              into customers faster, or improve your relationships with customers, a CRM can help.
+              into customers faster, or improve your relationships with customers, a CRM system will
+              help.{' '}
             </>
           }
         />
@@ -102,7 +98,7 @@ const CustomCustomerManagementSystem = () => (
     <Section>
       <Container>
         <ServicesSection4
-          title={'Why it’s so important to get a CRM System\n'}
+          title={'Why it’s so important to get a CRM System'}
           text={
             <>
               <p>
