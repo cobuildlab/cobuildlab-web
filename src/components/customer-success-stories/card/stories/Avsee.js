@@ -10,7 +10,10 @@ const Avsee = () => {
       <Card
         title={'Avsee'}
         description={
-          'The Avsee team chose Cobuild Lab to be their technology partner in developing a platform that helps physicians and patients…'
+          <p>
+            A <b>Web platform</b> that helps physicians and patients by facilitating the follow-up
+            of their medical plan.
+          </p>
         }
         to={'/customer-success-stories/avsee'}>
         <StaticImage src={'./../../../../assets/images/customers/avsee-logo.jpg'} alt="" />

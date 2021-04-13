@@ -10,7 +10,10 @@ const MyVoice = () => {
       <Card
         title={'MyVoice'}
         description={
-          'Cobuild Lab partnered up with Kadem Education to raise teacher’s voices by building a software solution.'
+          <p>
+            A <b>Survey Management System</b> designed to raise teachers{"'"} voices to accomplish
+            improvements in the educational system from within.
+          </p>
         }
         to={'/customer-success-stories/my-voice'}>
         <StaticImage src={'./../../../../assets/images/customers/my-voice.jpg'} alt="" />

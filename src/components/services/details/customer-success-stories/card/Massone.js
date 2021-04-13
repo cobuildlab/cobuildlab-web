@@ -17,7 +17,7 @@ const Massone = () => {
   });
 
   return (
-    <Column isSize={{ mobile: 12, desktop: 4 }} key="Massone">
+    <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} key="Massone">
       <CardStyled>
         <Image>
           <StaticImage src={'./../../../../assets/images/customers/Massone.jpg'} alt="" />

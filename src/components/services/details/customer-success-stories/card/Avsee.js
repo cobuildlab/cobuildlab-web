@@ -17,7 +17,7 @@ const Avsee = () => {
   });
 
   return (
-    <Column isSize={{ mobile: 12, desktop: 4 }} key="Avsee">
+    <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} key="Avsee">
       <CardStyled>
         <Image>
           <StaticImage src={'./../../../../assets/images/customers/avsee-logo.jpg'} alt="" />

@@ -17,10 +17,16 @@ const ButtonWrapper = styled.div`
 
 const CardDescription = styled.div`
   ${textCSS}
-  font-size: 14px;
+  font-size: 15px;
   text-align: left;
   margin-top: 1.5em;
+  text-align: justify;
   opacity: 0;
+  & p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+  }
   @media screen and (max-width: 768px) {
     font-size: 12px;
   }

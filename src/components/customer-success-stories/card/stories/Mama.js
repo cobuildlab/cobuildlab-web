@@ -10,7 +10,11 @@ const Mama = () => {
       <Card
         title={'Mama'}
         description={
-          'The Match-Making app MAMA is a fun and easy-to-use connectivity tool that makes lightning-fast introductions...'
+          <p>
+            A <b>Mobile App</b> that works as a connectivity tool that gives its users the
+            opportunity to create new business connections, friendships, romantic relationships, and
+            grow their contact network.
+          </p>
         }
         to={'/customer-success-stories/mama'}>
         <StaticImage src={'./../../../../assets/images/customers/mama-logo.jpg'} alt="" />

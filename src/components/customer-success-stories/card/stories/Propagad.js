@@ -10,7 +10,10 @@ const Propagad = () => {
       <Card
         title={'Propagad'}
         description={
-          'Propagad Contact Person:  Cesar Lang Location:  Miami, US Industry:  Marketing and Advertising Web Site:  www.propagad.com Introducing Cesar…'
+          <p>
+            A marketplace to buy and sell ad spaces on any media, anywhere. Their AdMach algorithm
+            give a relevance score between audiences and ad offers.
+          </p>
         }
         to={'/customer-success-stories/propagad'}>
         <StaticImage src={'./../../../../assets/images/customers/Propagad.jpg'} alt="" />
