@@ -6,9 +6,11 @@ import { Column, Title, Subtitle } from 'bloomer';
 import { navigate } from 'gatsby';
 import {
   CardStyled,
+  DivTagStyled,
   Image,
   ParagraphDivStyled,
   ReadmoreDivStyled,
+  TagStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const Payklever = () => {
@@ -23,9 +25,19 @@ const Payklever = () => {
           <StaticImage src={'./../../../../assets/images/customers/Payklever.png'} alt="" />
         </Image>
         <ParagraphDivStyled>
+          <DivTagStyled>
+            <TagStyled>
+              <p>Payments</p>
+            </TagStyled>
+            <TagStyled>
+              <p>Application</p>
+            </TagStyled>
+          </DivTagStyled>
           <Subtitle className={'paragraph-card-customer-success'}>
-            Payklever Campaign Manager With Payklever you can turn your car into a payment method.
-            You can drive quietly and never handle your cash or…
+            <p>
+              An innovative <b>hands-free payment method</b> that uses RFID technology to allow
+              users to pay at parking lots, drive-thrus, and gas stations while driving.
+            </p>
           </Subtitle>
         </ParagraphDivStyled>
         <ReadmoreDivStyled>

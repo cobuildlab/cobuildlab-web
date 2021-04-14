@@ -6,9 +6,11 @@ import { Column, Title, Subtitle } from 'bloomer';
 import { navigate } from 'gatsby';
 import {
   CardStyled,
+  DivTagStyled,
   Image,
   ParagraphDivStyled,
   ReadmoreDivStyled,
+  TagStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const Okroo = () => {
@@ -23,9 +25,22 @@ const Okroo = () => {
           <StaticImage src={'./../../../../assets/images/customers/okroo.jpg'} alt="" />
         </Image>
         <ParagraphDivStyled>
+          <DivTagStyled>
+            <TagStyled>
+              <p>Retail</p>
+            </TagStyled>
+            <TagStyled>
+              <p>Lifestyle</p>
+            </TagStyled>
+            <TagStyled>
+              <p>Mobile</p>
+            </TagStyled>
+          </DivTagStyled>
           <Subtitle className={'paragraph-card-customer-success'}>
-            Some of Miami{"'"}s most interesting dishes are found in the heart of Downtown, and its
-            restaurants are a reflection of its melting pot quality…
+            <p>
+              A <b>Mobile App</b> that works like a news feed or a social network to connect
+              customers with the promotions of restaurants near them.
+            </p>
           </Subtitle>
         </ParagraphDivStyled>
         <ReadmoreDivStyled>

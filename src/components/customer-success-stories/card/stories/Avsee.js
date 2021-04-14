@@ -10,10 +10,15 @@ const Avsee = () => {
       <Card
         title={'Avsee'}
         description={
-          <p>
-            A <b>Web platform</b> that helps physicians and patients by facilitating the follow-up
-            of their medical plan.
-          </p>
+          <>
+            <p>
+              A <b>Web platform</b> that helps physicians and patients by facilitating the follow-up
+              of their medical plan.
+            </p>
+            <span>
+              <b>Healthcare</b>
+            </span>
+          </>
         }
         to={'/customer-success-stories/avsee'}>
         <StaticImage src={'./../../../../assets/images/customers/avsee-logo.jpg'} alt="" />

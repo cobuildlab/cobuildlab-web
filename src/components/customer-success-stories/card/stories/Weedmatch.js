@@ -10,10 +10,15 @@ const Weedmatch = () => {
       <Card
         title={'Weedmatch'}
         description={
-          <p>
-            World{"'"}s first free cannabis social network to connect the community through a{' '}
-            <b>Mobile App</b>.
-          </p>
+          <>
+            <p>
+              World{"'"}s first free cannabis social network to connect the community through a{' '}
+              <b>Mobile App</b>.
+            </p>
+            <span>
+              <b>Social Media | Mobile</b>
+            </span>
+          </>
         }
         to={'/customer-success-stories/weedmatch'}>
         <StaticImage src={'./../../../../assets/images/customers/Weedmatch.jpg'} alt="" />

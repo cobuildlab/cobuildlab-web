@@ -10,10 +10,15 @@ const Okroo = () => {
       <Card
         title={'Okroo'}
         description={
-          <p>
-            A <b>Mobile App </b> that works like a news feed or a social network to connect
-            customers with the promotions of restaurants near them .
-          </p>
+          <>
+            <p>
+              A <b>Mobile App </b> that works like a news feed or a social network to connect
+              customers with the promotions of restaurants near them .
+            </p>
+            <span>
+              <b>Retail | Lifestyle | Mobile</b>
+            </span>
+          </>
         }
         to={'/customer-success-stories/okroo'}>
         <StaticImage src={'./../../../../assets/images/customers/okroo.jpg'} alt="" />

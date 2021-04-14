@@ -6,9 +6,11 @@ import { Column, Subtitle, Title } from 'bloomer';
 import { navigate } from 'gatsby';
 import {
   CardStyled,
+  DivTagStyled,
   Image,
   ParagraphDivStyled,
   ReadmoreDivStyled,
+  TagStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const JobCore = () => {
@@ -23,9 +25,19 @@ const JobCore = () => {
           <StaticImage src={'./../../../../assets/images/customers/jobcore.jpg'} alt="" />
         </Image>
         <ParagraphDivStyled>
+          <DivTagStyled>
+            <TagStyled>
+              <p>Recruiting</p>
+            </TagStyled>
+            <TagStyled>
+              <p>Web and Mobile</p>
+            </TagStyled>
+          </DivTagStyled>
           <Subtitle className={'paragraph-card-customer-success'}>
-            Get work fast and get paid the same day with Jobcore. This is a web platform that allows
-            employers to post job applications for candidates…
+            <p>
+              America’s first distributed talent pool for the hospitality industry that allows
+              employers to post job openings for candidates using the <b>Web and Mobile App</b>.
+            </p>
           </Subtitle>
         </ParagraphDivStyled>
         <ReadmoreDivStyled>

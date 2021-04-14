@@ -9,6 +9,8 @@ import {
   Image,
   ParagraphDivStyled,
   ReadmoreDivStyled,
+  DivTagStyled,
+  TagStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const Pitazo = () => {
@@ -23,8 +25,22 @@ const Pitazo = () => {
           <StaticImage src={'./../../../../assets/images/customers/pitazo-1.jpg'} alt="" />
         </Image>
         <ParagraphDivStyled>
+          <DivTagStyled>
+            <TagStyled>
+              <p>News</p>
+            </TagStyled>
+            <TagStyled>
+              <p>Cloud App</p>
+            </TagStyled>
+            <TagStyled>
+              <p>Mobile</p>
+            </TagStyled>
+          </DivTagStyled>
           <Subtitle className={'paragraph-card-customer-success'}>
-            El Pitazo is Venezuela{"'"}s main independent news website...
+            <p>
+              Venezuela{"'"}s main independent news website with a powerful <b>Mobile App</b> that
+              provides a channel of information for all the users in and out of the country.
+            </p>
           </Subtitle>
         </ParagraphDivStyled>
         <ReadmoreDivStyled>
