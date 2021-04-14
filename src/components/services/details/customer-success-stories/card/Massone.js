@@ -6,9 +6,11 @@ import { Column, Title, Subtitle } from 'bloomer';
 import { navigate } from 'gatsby';
 import {
   CardStyled,
+  DivTagStyled,
   Image,
   ParagraphDivStyled,
   ReadmoreDivStyled,
+  TagStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const Massone = () => {
@@ -23,9 +25,22 @@ const Massone = () => {
           <StaticImage src={'./../../../../assets/images/customers/Massone.jpg'} alt="" />
         </Image>
         <ParagraphDivStyled>
+          <DivTagStyled>
+            <TagStyled>
+              <p>Transport</p>
+            </TagStyled>
+            <TagStyled>
+              <p>Enterprise </p>
+            </TagStyled>
+            <TagStyled>
+              <p>Web and Mobile</p>
+            </TagStyled>
+          </DivTagStyled>
           <Subtitle className={'paragraph-card-customer-success'}>
-            Massone Mechanical Massone Mechanical offers maintenance and installation services to
-            commercial refrigeration companies. Offering high…
+            <p>
+              A <b>Fleet Management System</b> that allows the tracking of their products, staff,
+              and services.
+            </p>
           </Subtitle>
         </ParagraphDivStyled>
         <ReadmoreDivStyled>

@@ -10,10 +10,15 @@ const Massone = () => {
       <Card
         title={'Massone'}
         description={
-          <p>
-            A <b>Fleet Management System</b> that allows the tracking of their products, staff, and
-            services.
-          </p>
+          <>
+            <p>
+              A <b>Fleet Management System</b> that allows the tracking of their products, staff,
+              and services.
+            </p>
+            <span>
+              <b>Transport | Enterprise | Web and Mobile </b>
+            </span>
+          </>
         }
         to={'/customer-success-stories/massone'}>
         <StaticImage src={'./../../../../assets/images/customers/Massone.jpg'} alt="" />

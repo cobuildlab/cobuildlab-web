@@ -6,9 +6,11 @@ import { Column, Title, Subtitle } from 'bloomer';
 import { navigate } from 'gatsby';
 import {
   CardStyled,
+  DivTagStyled,
   Image,
   ParagraphDivStyled,
   ReadmoreDivStyled,
+  TagStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const Weedmatch = () => {
@@ -23,9 +25,19 @@ const Weedmatch = () => {
           <StaticImage src={'./../../../../assets/images/customers/Weedmatch.jpg'} alt="" />
         </Image>
         <ParagraphDivStyled>
+          <DivTagStyled>
+            <TagStyled>
+              <p>Social Media</p>
+            </TagStyled>
+            <TagStyled>
+              <p>Mobile</p>
+            </TagStyled>
+          </DivTagStyled>
           <Subtitle className={'paragraph-card-customer-success'}>
-            Weedmatch Weedmatch is the first free cannabis social network made by a group of
-            Venezuelans led by its founder Oscar Lopez in Chile…
+            <p>
+              World{"'"}s first free cannabis social network to connect the community through a{' '}
+              <b>Mobile App</b>.
+            </p>
           </Subtitle>
         </ParagraphDivStyled>
         <ReadmoreDivStyled>

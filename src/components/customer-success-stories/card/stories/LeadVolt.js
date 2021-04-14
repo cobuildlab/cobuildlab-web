@@ -10,10 +10,15 @@ const LeadVolt = () => {
       <Card
         title={'LeadVolt'}
         description={
-          <p>
-            It{"'"}s a high-touch <b>Lead Management System</b> that closes leads faster, provides
-            full transparency, and empowers any company to focus only on the customer.
-          </p>
+          <>
+            <p>
+              It{"'"}s a high-touch <b>Lead Management System</b> that closes leads faster, provides
+              full transparency, and empowers any company to focus only on the customer.
+            </p>
+            <span>
+              <b>SaaS | Enterprise Software</b>
+            </span>
+          </>
         }
         to={'/customer-success-stories/leadvolt'}>
         <StaticImage

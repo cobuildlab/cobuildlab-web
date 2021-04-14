@@ -10,10 +10,15 @@ const MyVoice = () => {
       <Card
         title={'MyVoice'}
         description={
-          <p>
-            A <b>Survey Management System</b> designed to raise teachers{"'"} voices to accomplish
-            improvements in the educational system from within.
-          </p>
+          <>
+            <p>
+              A <b>Survey Management System</b> designed to raise teacher{"'"}s voices to accomplish
+              improvements in the educational system from within.
+            </p>
+            <span>
+              <b>Survey | Education | Application</b>
+            </span>
+          </>
         }
         to={'/customer-success-stories/my-voice'}>
         <StaticImage src={'./../../../../assets/images/customers/my-voice.jpg'} alt="" />

@@ -11,8 +11,9 @@ const textCSS = css`
 `;
 
 const ButtonWrapper = styled.div`
-  margin-top: 1.5em;
+  margin-top: 0.5em;
   opacity: 0;
+  float: right;
 `;
 
 const CardDescription = styled.div`
@@ -26,6 +27,9 @@ const CardDescription = styled.div`
     color: #fff;
     font-size: 16px;
     line-height: 20px;
+  }
+  & span {
+    margin-top: 15px;
   }
   @media screen and (max-width: 768px) {
     font-size: 12px;
