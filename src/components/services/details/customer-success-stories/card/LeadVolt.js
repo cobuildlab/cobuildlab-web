@@ -17,7 +17,7 @@ const LeadVolt = () => {
   });
 
   return (
-    <Column isSize={{ mobile: 12, desktop: 4 }} key="LeadVolt">
+    <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} key="LeadVolt">
       <CardStyled>
         <Image>
           <StaticImage src={'./../../../../assets/images/customers/leadvolt-logo.jpg'} alt="" />

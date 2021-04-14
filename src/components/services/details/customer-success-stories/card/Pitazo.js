@@ -17,7 +17,7 @@ const Pitazo = () => {
   });
 
   return (
-    <Column isSize={{ mobile: 12, desktop: 4 }} key="Weedmatch">
+    <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} key="Weedmatch">
       <CardStyled>
         <Image>
           <StaticImage src={'./../../../../assets/images/customers/pitazo-1.jpg'} alt="" />

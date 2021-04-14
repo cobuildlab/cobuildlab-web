@@ -10,7 +10,10 @@ const Massone = () => {
       <Card
         title={'Massone'}
         description={
-          'Massone Mechanical Massone Mechanical offers maintenance and installation services to commercial refrigeration companies. Offering high…'
+          <p>
+            A <b>Fleet Management System</b> that allows the tracking of their products, staff, and
+            services.
+          </p>
         }
         to={'/customer-success-stories/massone'}>
         <StaticImage src={'./../../../../assets/images/customers/Massone.jpg'} alt="" />

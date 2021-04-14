@@ -14,24 +14,6 @@ const StyledSubTitle = styled.div`
   text-align: center;
 `;
 
-const StyledOtherText = styled.div`
-  width: 66%;
-  margin: 0 auto;
-  & p {
-    text-align: center;
-  }
-`;
-
-const Paragraph = styled.p`
-  text-align: center;
-  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
-  font-family: 'Lato-regular' !important;
-  color: #264a60;
-  @media screen and (max-width: 768px) {
-    padding: 0px;
-  }
-`;
-
 const ParagraphTextList = styled.p`
   text-align: justify;
   font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
@@ -44,7 +26,8 @@ const ParagraphTextList = styled.p`
 
 const ParagraphLi = styled.p`
   text-align: left;
-  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+  font-size: 28px;
+  line-height: 36px;
   font-family: 'Lato-regular' !important;
   color: #264a60;
   @media screen and (max-width: 768px) {
@@ -54,7 +37,8 @@ const ParagraphLi = styled.p`
 
 const ParagraphText = styled.p`
   text-align: justify;
-  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+  font-size: 28px;
+  line-height: 46px;
   font-family: 'Lato-regular' !important;
   color: #264a60;
   width: 66%;
@@ -115,11 +99,7 @@ const ServicesSection2 = ({
               </Columns>
             </>
           ) : null}
-          {otherText !== '' ? (
-            <StyledOtherText>
-              <Paragraph>{otherText}</Paragraph>
-            </StyledOtherText>
-          ) : null}
+          {otherText !== '' ? <ParagraphText>{otherText}</ParagraphText> : null}
         </StyledSection>
       </Column>
     </>
