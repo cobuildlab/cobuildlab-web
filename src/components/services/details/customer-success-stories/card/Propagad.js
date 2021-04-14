@@ -6,9 +6,11 @@ import { Column, Subtitle, Title } from 'bloomer';
 import { navigate } from 'gatsby';
 import {
   CardStyled,
+  DivTagStyled,
   Image,
   ParagraphDivStyled,
   ReadmoreDivStyled,
+  TagStyled,
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const Propagad = () => {
@@ -23,9 +25,22 @@ const Propagad = () => {
           <StaticImage src={'./../../../../assets/images/customers/Propagad.jpg'} alt="" />
         </Image>
         <ParagraphDivStyled>
+          <DivTagStyled>
+            <TagStyled>
+              <p>Marketing</p>
+            </TagStyled>
+            <TagStyled>
+              <p>e-commerce</p>
+            </TagStyled>
+            <TagStyled>
+              <p>AI</p>
+            </TagStyled>
+          </DivTagStyled>
           <Subtitle className={'paragraph-card-customer-success'}>
-            Propagad Contact Person: Cesar Lang Location: Miami, US Industry: Marketing and
-            Advertising Web Site: www.propagad.com Introducing Cesar…
+            <p>
+              A marketplace to buy and sell ad spaces on any media, anywhere. Their AdMach algorithm
+              give a relevance score between audiences and ad offers.
+            </p>
           </Subtitle>
         </ParagraphDivStyled>
         <ReadmoreDivStyled>

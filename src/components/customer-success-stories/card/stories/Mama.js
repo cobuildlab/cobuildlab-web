@@ -10,11 +10,16 @@ const Mama = () => {
       <Card
         title={'Mama'}
         description={
-          <p>
-            A <b>Mobile App</b> that works as a connectivity tool that gives its users the
-            opportunity to create new business connections, friendships, romantic relationships, and
-            grow their contact network.
-          </p>
+          <>
+            <p>
+              A <b>Mobile App</b> that works as a connectivity tool that gives its users the
+              opportunity to create new business connections, friendships, romantic relationships,
+              and grow their contact network.
+            </p>
+            <span>
+              <b>Social Media | Mobile</b>
+            </span>
+          </>
         }
         to={'/customer-success-stories/mama'}>
         <StaticImage src={'./../../../../assets/images/customers/mama-logo.jpg'} alt="" />

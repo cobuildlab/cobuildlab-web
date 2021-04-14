@@ -6,8 +6,8 @@ import styled from 'styled-components';
 import { Card } from 'bloomer';
 
 export const CardStyled = styled(Card)`
-  max-height: 410px;
-  min-height: 410px;
+  max-height: 520px;
+  min-height: 488px;
   box-shadow: 0px 10px 20px #0000001a;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 14px;
@@ -38,6 +38,11 @@ export const ParagraphDivStyled = styled.div`
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   height: 95px;
+  & p {
+    font-size: 17px;
+    line-height: 25px;
+    text-align: justify;
+  }
 `;
 
 export const ReadmoreDivStyled = styled.div`
@@ -45,5 +50,29 @@ export const ReadmoreDivStyled = styled.div`
   margin-bottom: 14px;
   position: relative;
   cursor: pointer;
-  margin-top: 15px;
+  margin-top: 93px;
+`;
+
+export const DivTagStyled = styled.div`
+  display: flex;
+  }
+`;
+
+export const TagStyled = styled.div`
+  height: 20px;
+  background-color: #d2dfe6;
+  border-radius: 22px;
+  padding: 0px 9px;
+  margin: 15px 4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  & p {
+    font-family: 'Lato-Black', sans-serif !important;
+    font-weight: bold;
+    font-size: 12px;
+    color: #264a60;
+    text-align: center;
+    line-height: 20px;
+  }
 `;

@@ -10,10 +10,15 @@ const GeeksAcademy = () => {
       <Card
         title={'4Geeks Academy'}
         description={
-          <p>
-            A <b>Learning Management System</b> that train and turn their students around the globe
-            into software developers with an innovative study program.
-          </p>
+          <>
+            <p>
+              A <b>Learning Management System</b> that train and turn their students around the
+              globe into software developers with an innovative study program.
+            </p>
+            <span>
+              <b>Education | e-learning</b>
+            </span>
+          </>
         }
         to={'/customer-success-stories/4geeks-academy'}>
         <StaticImage src={'./../../../../assets/images/customers/4geeks.png'} alt="" />
