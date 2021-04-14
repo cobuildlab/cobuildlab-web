@@ -6,8 +6,8 @@ import styled from 'styled-components';
 import { Card } from 'bloomer';
 
 export const CardStyled = styled(Card)`
-  max-height: 395px;
-  min-height: 395px;
+  max-height: 410px;
+  min-height: 410px;
   box-shadow: 0px 10px 20px #0000001a;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 14px;
@@ -41,9 +41,9 @@ export const ParagraphDivStyled = styled.div`
 `;
 
 export const ReadmoreDivStyled = styled.div`
-  padding-right: 10px;
+  padding-right: 15px;
   margin-bottom: 14px;
   position: relative;
-  right: 29px;
   cursor: pointer;
+  margin-top: 15px;
 `;

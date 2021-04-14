@@ -32,6 +32,7 @@ const TitleContainer = styled.div`
 `;
 
 const Description = styled(Paragraph)`
+  text-align: justify;
   line-height: 1.5;
 `;
 
@@ -55,14 +56,13 @@ const CustomerSuccessStoriesIndex = () => (
           <Container>
             <TitleContainer>
               <H1>
-                New <TextOrange>Ideas</TextOrange>, forged <br />
-                at <TextOrange>Cobuild Lab</TextOrange>
+                Our <TextOrange>Custom Software</TextOrange> <br />
+                Success Stories
               </H1>
               <Description>
-                Many enter, others leave. In the end, the most restless and daring to undertake the
-                digital world have found them perfect place because they have been cared for and
-                understood in the particularities of their local businesses. The laboratories in
-                Miami by Cobuild Lab has allowed creating new and better ideas, born of other ideas.
+                We are proud to work alongside innovative people transforming groundbreaking ideas
+                into sustainable software products. Here are some of the web platforms, mobile apps,
+                custom enterprise software, and cross-platforms developed at Cobuild Lab.
               </Description>
             </TitleContainer>
           </Container>

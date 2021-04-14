@@ -10,7 +10,10 @@ const Weedmatch = () => {
       <Card
         title={'Weedmatch'}
         description={
-          'Weedmatch Weedmatch  is the  first free cannabis social network  made by a group of Venezuelans led by its founder Oscar Lopez in Chile…'
+          <p>
+            World{"'"}s first free cannabis social network to connect the community through a{' '}
+            <b>Mobile App</b>.
+          </p>
         }
         to={'/customer-success-stories/weedmatch'}>
         <StaticImage src={'./../../../../assets/images/customers/Weedmatch.jpg'} alt="" />

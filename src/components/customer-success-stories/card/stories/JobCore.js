@@ -10,7 +10,10 @@ const JobCore = () => {
       <Card
         title={'Jobcore'}
         description={
-          'Get work fast and get paid the same day with Jobcore. This is a web platform that allows employers to post job applications for candidates…'
+          <p>
+            America’s first distributed talent pool for the hospitality industry that allows
+            employers to post job openings for candidates using the <b>Web and Mobile App</b>.
+          </p>
         }
         to={'/customer-success-stories/jobcore'}>
         <StaticImage src={'./../../../../assets/images/customers/jobcore.jpg'} alt="" />

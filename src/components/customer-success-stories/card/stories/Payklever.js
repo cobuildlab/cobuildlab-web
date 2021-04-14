@@ -10,7 +10,10 @@ const Payklever = () => {
       <Card
         title={'Payklever Campaign Manager'}
         description={
-          'Payklever Campaign Manager With Payklever you can turn your car into a payment method. You can drive quietly and never handle your cash or…'
+          <p>
+            An innovative <b>hands-free payment method</b> that uses RFID technology to allow users
+            to pay at parking lots, drive-thrus, and gas stations while driving.
+          </p>
         }
         to={'/customer-success-stories/payklever-campaign-manager'}>
         <StaticImage src={'./../../../../assets/images/customers/Payklever.png'} alt="" />

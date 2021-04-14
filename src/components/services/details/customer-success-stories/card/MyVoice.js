@@ -17,7 +17,7 @@ const MyVoice = () => {
   });
 
   return (
-    <Column isSize={{ mobile: 12, desktop: 4 }} key="MyVoice">
+    <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} key="MyVoice">
       <CardStyled>
         <Image>
           <StaticImage src={'./../../../../assets/images/customers/my-voice.jpg'} alt="" />

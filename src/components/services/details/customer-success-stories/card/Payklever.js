@@ -17,7 +17,7 @@ const Payklever = () => {
   });
 
   return (
-    <Column isSize={{ mobile: 12, desktop: 4 }} key="Payklever">
+    <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} key="Payklever">
       <CardStyled>
         <Image>
           <StaticImage src={'./../../../../assets/images/customers/Payklever.png'} alt="" />

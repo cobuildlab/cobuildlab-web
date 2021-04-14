@@ -17,7 +17,7 @@ const CollabToGrow = () => {
   });
 
   return (
-    <Column isSize={{ mobile: 12, desktop: 4 }} key="Collab To Grow">
+    <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} key="Collab To Grow">
       <CardStyled>
         <Image>
           <StaticImage src={'./../../../../assets/images/customers/collab-logo.jpg'} alt="" />

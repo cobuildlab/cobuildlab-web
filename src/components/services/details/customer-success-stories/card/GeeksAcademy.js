@@ -17,7 +17,7 @@ const GeeksAcademy = () => {
   });
 
   return (
-    <Column isSize={{ mobile: 12, desktop: 4 }} key="4Geeks Academy">
+    <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} key="4Geeks Academy">
       <CardStyled>
         <Image>
           <StaticImage src={'./../../../../assets/images/customers/4geeks.png'} alt="" />

@@ -10,7 +10,10 @@ const StoryRocket = () => {
       <Card
         title={'Story Rocket'}
         description={
-          'is the ideal place to connect story writers with producers in the entertainment world…'
+          <p>
+            An <b>Web platform</b> that connects great writers with the global production community
+            to make film, television, theater, or web.
+          </p>
         }
         to={'/customer-success-stories/story-rocket'}>
         <StaticImage src={'./../../../../assets/images/customers/story-rocket-logo.jpg'} alt="" />
