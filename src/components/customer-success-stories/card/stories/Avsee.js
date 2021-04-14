@@ -16,7 +16,7 @@ const Avsee = () => {
               of their medical plan.
             </p>
             <span>
-              <b>Healthcare | Healthcare</b>
+              <b>Healthcare</b>
             </span>
           </>
         }

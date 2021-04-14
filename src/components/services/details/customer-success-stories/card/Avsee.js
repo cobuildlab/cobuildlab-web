@@ -29,9 +29,6 @@ const Avsee = () => {
             <TagStyled>
               <p>Healthcare</p>
             </TagStyled>
-            <TagStyled>
-              <p>Healthcare</p>
-            </TagStyled>
           </DivTagStyled>
           <Subtitle className={'paragraph-card-customer-success'}>
             <p>
