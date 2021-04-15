@@ -16,7 +16,8 @@ const StyledSubTitle = styled.div`
 
 const ParagraphTextList = styled.p`
   text-align: justify;
-  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+  font-size: 20px;
+  line-height: 26px;
   font-family: 'Lato-regular' !important;
   color: #264a60;
   @media screen and (max-width: 768px) {
@@ -26,8 +27,8 @@ const ParagraphTextList = styled.p`
 
 const ParagraphLi = styled.p`
   text-align: left;
-  font-size: 28px;
-  line-height: 36px;
+  font-size: 20px;
+  line-height: 26px;
   font-family: 'Lato-regular' !important;
   color: #264a60;
   @media screen and (max-width: 768px) {
@@ -37,8 +38,8 @@ const ParagraphLi = styled.p`
 
 const ParagraphText = styled.p`
   text-align: justify;
-  font-size: 28px;
-  line-height: 46px;
+  font-size: 20px;
+  line-height: 26px;
   font-family: 'Lato-regular' !important;
   color: #264a60;
   width: 66%;

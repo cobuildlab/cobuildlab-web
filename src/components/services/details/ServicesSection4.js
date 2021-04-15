@@ -8,6 +8,7 @@ import PropTypes from 'prop-types';
 
 const Paragraph = styled.p`
   font-size: 20px;
+  line-height: 26px;
   font-weight: 100;
   text-align: justify;
   color: #264a60;
@@ -22,6 +23,10 @@ const StyleList = styled.ul`
 
 const StyleSubtitle = styled.div`
   text-align: center;
+`;
+
+const StyledServicesContent = styled(ServicesContent)`
+  display: inline-table;
 `;
 
 const ServicesSection4 = ({ title, leftText, rightTextList, text, otherText }) => {
@@ -44,7 +49,7 @@ const ServicesSection4 = ({ title, leftText, rightTextList, text, otherText }) =
               <Paragraph>{leftText}</Paragraph>
             </ServicesContent>
           ) : (
-            <ServicesContent>
+            <StyledServicesContent>
               <Paragraph>
                 <StyleList>
                   {leftText.map((item, i) => (
@@ -52,11 +57,11 @@ const ServicesSection4 = ({ title, leftText, rightTextList, text, otherText }) =
                   ))}
                 </StyleList>
               </Paragraph>
-            </ServicesContent>
+            </StyledServicesContent>
           )}
         </Column>
         <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} isOffset={{ desktop: 1 }}>
-          <ServicesContent className="services-content-styles">
+          <StyledServicesContent className="services-content-styles">
             <StyleList>
               <Paragraph>
                 {rightTextList.map((item, i) => (
@@ -64,7 +69,7 @@ const ServicesSection4 = ({ title, leftText, rightTextList, text, otherText }) =
                 ))}
               </Paragraph>
             </StyleList>
-          </ServicesContent>
+          </StyledServicesContent>
         </Column>
       </Columns>
       {otherText !== '' ? <Paragraph>{otherText}</Paragraph> : null}

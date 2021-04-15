@@ -12,8 +12,8 @@ const StoryRocket = () => {
         description={
           <>
             <p>
-              An <b>Web platform</b> that connects great writers with the global production
-              community to make film, television, theater, or web.
+              A <b>Web platform</b> that connects great writers with the global production community
+              to make film, television, theater, or web.
             </p>
             <span>
               <b>Social Media | Web</b>

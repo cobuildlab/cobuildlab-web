@@ -1,5 +1,5 @@
 import React from 'react';
-import { Columns, Container, Hero, HeroHeader, Section, Title } from 'bloomer';
+import { Columns, Container, Hero, HeroHeader, Section } from 'bloomer';
 import 'bulma/css/bulma.css';
 
 // COMPONENTS
@@ -38,13 +38,6 @@ const StyledContainer = styled(Container)`
   padding-bottom: 75px;
 `;
 
-const Paragraph = styled(Title)`
-  font-size: 17px;
-  font-weight: 500;
-  text-align: justify;
-  color: #264a60;
-`;
-
 const MvpSoftwareDevelopment = () => (
   <Layout>
     <SeoMetaTags title="Services" description="Privacy Policy for the Cobuild Lab" />
@@ -62,14 +55,10 @@ const MvpSoftwareDevelopment = () => (
             'Minimum Viable Product (MVP) can be described as a midpoint between the earlier stages of the development process and the final product. An MVP is the best way to start any project because it allows for agile development cycles. It means finding the right balance between minimal design, and maximum value.'
           }
           paragraph2={
-            <>
-              <Paragraph>
-                By getting an MVP, you can collect feedback from the initial customers having a
-                better understanding of the user{"'"}s expectations. With that information, we can
-                build better features that meet their needs and it helps avoid failure and
-                substantial capital loss.
-              </Paragraph>
-            </>
+            'By getting an MVP, you can collect feedback from the initial customers having a\n' +
+            "                better understanding of the user's expectations. With that information, we can\n" +
+            '                build better features that meet their needs and it helps avoid failure and\n' +
+            '                substantial capital loss.'
           }
           img={
             <StaticImage src={'./../../assets/images/service/card/iconos-Startup-MVP.svg'} alt="" />
