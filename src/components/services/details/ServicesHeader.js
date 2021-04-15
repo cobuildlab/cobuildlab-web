@@ -6,14 +6,16 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const Paragraph = styled.p`
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   text-align: justify;
   color: #264a60;
+  line-height: 26px;
 `;
 
 const Paragraph2 = styled.p`
-  font-size: 22px;
+  font-size: 20px !important;
+  line-height: 26px !important;
   text-align: justify;
   color: #264a60;
 `;

@@ -13,6 +13,7 @@ const Title = styled(TextOrange)`
 
 const Paragraph = styled.p`
   font-size: 20px;
+  line-height: 26px;
   font-weight: 600;
   text-align: justify;
   color: #264a60;
@@ -20,6 +21,7 @@ const Paragraph = styled.p`
 
 const Paragraph2 = styled.p`
   font-size: 20px;
+  line-height: 26px;
   font-weight: 300;
   text-align: justify;
   color: #264a60;

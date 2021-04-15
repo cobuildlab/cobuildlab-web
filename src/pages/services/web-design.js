@@ -1,5 +1,5 @@
 import React from 'react';
-import { Columns, Container, Hero, HeroHeader, Section, Title } from 'bloomer';
+import { Columns, Container, Hero, HeroHeader, Section } from 'bloomer';
 import 'bulma/css/bulma.css';
 
 // COMPONENTS
@@ -38,13 +38,6 @@ const StyledContainer = styled(Container)`
   padding-bottom: 75px;
 `;
 
-const Paragraph = styled(Title)`
-  font-size: 17px;
-  font-weight: 500;
-  text-align: justify;
-  color: #264a60;
-`;
-
 const WebDesign = () => (
   <Layout>
     <SeoMetaTags title="Services" description="Privacy Policy for the Cobuild Lab" />
@@ -62,13 +55,9 @@ const WebDesign = () => (
             'Aligning a brand, your ideas, and our knowledge will give life to a website that caters to your service and operations. With a professional website, you can increase your revenue flows, and establish business credibility and thrusters with brand consistency.'
           }
           paragraph2={
-            <>
-              <Paragraph>
-                Web design includes many processes regarding the production and maintenance of a
-                website. Encompassing web graphic design, user interface design, user experience
-                design, and search engine optimization.
-              </Paragraph>
-            </>
+            'Web design includes many processes regarding the production and maintenance of a\n' +
+            '                website. Encompassing web graphic design, user interface design, user experience\n' +
+            '                design, and search engine optimization.'
           }
           img={
             <StaticImage
