@@ -86,11 +86,5 @@ To have the possibility as an entrepreneur to monitor the process performed by t
 
 <Br>
 
-<Br>
-
-<youtube-video id="kLMVih5DXdM&t=2s"></youtube-video>
-
-<Br>
-
 Cloud computing has become a new norm in all industries. Combined with machine learning, IoT, and connected technologies, it can bring even more opportunities to supply chains. Limited resources and increased customer demand can be catalysts for cloud adoption. In this way, we can improve the productivity of our companies and decrease the operational cost significantly.  So don't waste any more time and invest in this technology and boost your company to another level. 
 
