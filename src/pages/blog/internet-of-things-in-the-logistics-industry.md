@@ -1,6 +1,6 @@
 ---
 title: "Internet of Things in logistics: revolutionizing an industry"
-date: "2020-04-15T16:24:04.000Z"
+date: "2021-04-15T16:24:04.000Z"
 template: blog
 tags: Tools
 image: "./media/iot-0.png"
