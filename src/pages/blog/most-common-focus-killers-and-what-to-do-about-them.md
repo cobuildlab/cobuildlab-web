@@ -16,7 +16,7 @@ The day is here when unless you can, in layman’s terms, “get stuff done fast
 
 The number one problem we have today is focus. Talk to older people, and they’ll tell you stories of workplaces “back in the day” when the biggest distractions were water cooler talk and perhaps a too-long cigarette break.
 
-Today, whether you are a graphic artist, lawyer, or even a <a target="_blank" href="https://www.wolcott-consulting.com/"> part-time cfo </a> working from your home office or seated in an old-fashioned cubicle, it's digital distractions that are eating up our days. Plenty of surveys find that workers take hours to “settle in” each workday before getting down to actual work, and some estimates claim perhaps half an entire day is wasted on distractions.
+<p>Today, whether you are a graphic artist, lawyer, or even a <a target="_blank" href="https://www.wolcott-consulting.com/"> part-time cfo </a> working from your home office or seated in an old-fashioned cubicle, it's digital distractions that are eating up our days. Plenty of surveys find that workers take hours to “settle in” each workday before getting down to actual work, and some estimates claim perhaps half an entire day is wasted on distractions.</p>
 
 There are, of course, other things that hinder productivity, but of the five we are discussing today the most serious and without a challenger that even comes close are digital distractions. A recent trend has been helpful and walking back our wandering minds. Many blogs and websites are now touting the effectiveness of so-called “productivity apps” that put the blinders on for you by removing temptations during work hours.
 
@@ -62,7 +62,7 @@ You won’t be tempted to switch tasks because you’ve set up – via a blockin
 
 <Br>
   
-Our third productivity killer is general noise and nonsense. Some offices and some coworkers are loud. (it's hard to imagine, but some offices allow people to bring their dog to work!) For those sensitive to noise, these audible intrusions can be hard to overcome.
+<p>Our third productivity killer is general noise and nonsense. Some offices and some coworkers are loud. (it's hard to imagine, but some offices allow people to bring their dog to work!) For those sensitive to noise, these audible intrusions can be hard to overcome.</p>
 
 A good pair of noise-canceling headphones that can be used to play lo-fi music – or simply block out sound – is a good investment and some of the better models are very affordable and incredibly effective at blocking sound.
 
@@ -72,7 +72,7 @@ A good pair of noise-canceling headphones that can be used to play lo-fi music �
 
 <Br>
   
-Fourth on the list: the lack of recognition many employees feel. This problem, however, is a two-way street. As mentioned in the opening anecdote, if a supervisor feels the employee is somewhat, but not-quite productive enough, they could be loath to praise them for fear the employee will think they can slack off more.
+<p>Fourth on the list: the lack of recognition many employees feel. This problem, however, is a two-way street. As mentioned in the opening anecdote, if a supervisor feels the employee is somewhat, but not-quite productive enough, they could be loath to praise them for fear the employee will think they can slack off more.</p>
 
 Concurrently, the employee – not receiving recognition or praise, feels their work is invalidated. By having a metric for productivity it's easier for both employees and management to gauge productivity and by extension, note how valuable the employee is.
 
@@ -82,6 +82,6 @@ Concurrently, the employee – not receiving recognition or praise, feels their 
 
 <Br>
   
-Finally, we arrive at number five; something called ‘disengagement.’ Some feels this as a sense of boredom or a desire to zone out because they may not be interested in or excited about what they do.
+<p>Finally, we arrive at number five; something called ‘disengagement.’ Some feels this as a sense of boredom or a desire to zone out because they may not be interested in or excited about what they do.</p>
 
 If the root cause is a person is a poor fit for a job then perhaps nothing can be done to alleviate the situation except the individual finding a new job, but by better scheduling a workday and accomplishing more tasks to the finish line – perhaps again with the help of a digital blocking app – many employees will feel more job satisfaction, leading to lower rates of disengagement.

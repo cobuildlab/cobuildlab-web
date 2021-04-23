@@ -6,9 +6,9 @@ tags: Small Business
 image: "./media/communications-and-roductivity-100-blog.png"
 ---
 
-Communication is the foundation of successful human relationships, and productivity relationships at work are no exception to this rule. 
+<p>Communication is the foundation of successful human relationships, and productivity relationships at work are no exception to this rule.</p>
 
-In this post, we're going to take a journey through the most common productivity pain points our clients have had, but we go deeper into the importance of communication in this improvement process. Let’s start with reasons to improve communications to increase team productivity, specifically by developing custom software. 
+<p>In this post, we're going to take a journey through the most common productivity pain points our clients have had, but we go deeper into the importance of communication in this improvement process. Let’s start with reasons to improve communications to increase team productivity, specifically by developing custom software.</p>
 
 <Br>
 
@@ -78,7 +78,7 @@ Here, another matter comes into play... Hire commercial software or develop a cu
 
 <Br>
 
-* You can manage your processes, individual activities, collaborative activities, and customize them as much as you want because it is a system where you will be the architect. 
+* <p>You can manage your processes, individual activities, collaborative activities, and customize them as much as you want because it is a system where you will be the architect.</p>
 
 * Compatibility is not a problem because they are tools developed for you, and they will be compatible if you want them to be. 
 
