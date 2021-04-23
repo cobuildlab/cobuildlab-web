@@ -64,4 +64,4 @@ In the same way, machine learning can help us in accurately estimating the raw m
 
 <Br>
   
-New technologies such as machine learning, big data analytics, and AI can help companies make a positive change, ensuring their supply chains run as efficiently and sustainably as possible. The use of these can have a dramatic effect on supply chains, helping organizations to benefit from faster, cheaper, more sustainable routes for shipping, maintaining or even improving the productivity of the company, thus contributing to the environment and making our processes more sustainable and friendly.
+New technologies such as **machine learning**, big data analytics, and AI can help companies make a positive change, ensuring their supply chains run as efficiently and sustainably as possible. The use of these can have a dramatic effect on supply chains, helping organizations to benefit from faster, cheaper, more sustainable routes for shipping, maintaining or even improving the productivity of the company, thus contributing to the environment and making our processes more sustainable and friendly.
