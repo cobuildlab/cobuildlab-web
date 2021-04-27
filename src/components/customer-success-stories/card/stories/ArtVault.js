@@ -12,7 +12,7 @@ const ArtVault = () => {
         description={
           <>
             <p>
-              is an Art Management System that helps artists keep track of their inventory and the
+              Is an Art Management System that helps artists keep track of their inventory and the
               purchasing of their pieces.
             </p>
             <span>
