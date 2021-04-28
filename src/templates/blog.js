@@ -35,6 +35,22 @@ const StyledTitle = Styled(Title)`
 const SectionPost = Styled.section`
   color: #264A60;
   font-family: 'Lato-bold',sans-serif;
+  line-height: 1.125;
+  color: #264A60;
+  letter-spacing: 0;
+  opacity: 1;
+  font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 22px;
+  text-align: justify;
+  & ul > li {
+    list-style: disc;
+    margin-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
 `;
 
 const StyledContainer = Styled(Container)`

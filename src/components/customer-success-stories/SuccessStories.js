@@ -18,10 +18,12 @@ import LeadVolt from './card/stories/LeadVolt';
 import Okroo from './card/stories/Okroo';
 import Avsee from './card/stories/Avsee';
 import StoryRocket from './card/stories/StoryRocket';
+import ArtVault from './card/stories/ArtVault';
 
 const SuccessStories = () => {
   return (
     <Columns isDisplay="flex" isMultiline>
+      <ArtVault />
       <StoryRocket />
       <Avsee />
       <Okroo />
