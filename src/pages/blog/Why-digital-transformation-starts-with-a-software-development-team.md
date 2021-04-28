@@ -1,6 +1,6 @@
 ---
 title: "Why digital transformation starts with a software development team at your disposal"
-date: "2021-04-28T16:24:04.000Z"
+date: "2021-04-26T16:24:04.000Z"
 template: blog
 tags: Small Business
 image: "./media/digital-transformation-starts-with-software-development.jpg"
