@@ -1,6 +1,6 @@
 ---
 title: "5 real benefits of using a cloud logistics solution in your company"
-date: "2021-04-27T16:24:04.000Z"
+date: "2021-04-25T16:24:04.000Z"
 template: blog
 tags: Small Business
 image: "./media/cloud-logistics-solution.jpg"
