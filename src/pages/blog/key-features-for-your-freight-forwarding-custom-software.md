@@ -44,7 +44,7 @@ It also handles quotations, reservations, and pick-up orders. As well as determi
 
 <br />
 
-<p>Invoicing is one of the most important aspects to consider in shipping activities, as it can help you save considerable paperwork time and get paid faster, not to mention the facility it provides for multi-currency payments. It also helps with the necessary documentation where you can detail your company details and shipping partners. </p>
+Invoicing is one of the most important aspects to consider in shipping activities, as it can help you save considerable paperwork time and get paid faster, not to mention the facility it provides for multi-currency payments. It also helps with the necessary documentation where you can detail your company details and shipping partners.
 
 <br />
   
@@ -52,14 +52,14 @@ It also handles quotations, reservations, and pick-up orders. As well as determi
 
 <br />
   
-<p>Streamline the generation and transport of quotations by any means of transport, always with continuous monitoring to convert them into orders that later become revenue for the company. Include ad hoc quotes, one-click shipment generation, email templates, shipping rate generation, and much more.</p>
+Streamline the generation and transport of quotations by any means of transport, always with continuous monitoring to convert them into orders that later become revenue for the company. Include ad hoc quotes, one-click shipment generation, email templates, shipping rate generation, and much more.
 <br />
   
 <title-3>Order management:</title-3>
 
 <br />
   
-<p>Capture, track, and fulfill orders across multiple sales channels. Track the status of orders, manage to invoice, manage recurring orders, integrate with shipping carriers, clone orders, detect errors, handle back orders, manage returns, and reconcile with purchase orders.</p>
+Capture, track, and fulfill orders across multiple sales channels. Track the status of orders, manage to invoice, manage recurring orders, integrate with shipping carriers, clone orders, detect errors, handle back orders, manage returns, and reconcile with purchase orders.
 
 <br />
   
@@ -67,7 +67,7 @@ It also handles quotations, reservations, and pick-up orders. As well as determi
 
 <br />
   
-<p>Manage and coordinate inventory and actions throughout a warehouse or distribution center. Optimize picking and shipping. Ensure a higher accuracy of order fulfillment, faster delivery times, efficient labor management, increased visibility of an order’s status, optimizes storage space, minimized inventory movement, and improves the yard and dock productivity.</p>
+Manage and coordinate inventory and actions throughout a warehouse or distribution center. Optimize picking and shipping. Ensure a higher accuracy of order fulfillment, faster delivery times, efficient labor management, increased visibility of an order’s status, optimizes storage space, minimized inventory movement, and improves the yard and dock productivity.
 
 <br/>
   
@@ -75,7 +75,7 @@ It also handles quotations, reservations, and pick-up orders. As well as determi
 
 <br/>
   
-<p>This is more consumer-driven as consumers can see in real-time the status of their package or product and creates greater reliability with the customer.</p>
+This is more consumer-driven as consumers can see in real-time the status of their package or product and creates greater reliability with the customer.
 
 <br/>
 
@@ -83,7 +83,7 @@ It also handles quotations, reservations, and pick-up orders. As well as determi
 
 <br/>
   
-<p>Make a predictive analysis (with artificial intelligence) of the possible fluctuations that will have the US dollar or the currency you use to pay your international freight rates (freight) as we understand that these variations are a problem for you as a customer and for external providers of this service because it directly affects the cost of the goods. If we analyze the historical, risks, etc, we can establish a parameter to cover these fluctuations.</p>
+Make a predictive analysis (with artificial intelligence) of the possible fluctuations that will have the US dollar or the currency you use to pay your international freight rates (freight) as we understand that these variations are a problem for you as a customer and for external providers of this service because it directly affects the cost of the goods. If we analyze the historical, risks, etc, we can establish a parameter to cover these fluctuations.
 
 This can also be done with the change of seasons, oil and fuel prices, and even the weather. 
 
