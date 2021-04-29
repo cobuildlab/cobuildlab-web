@@ -1,6 +1,6 @@
 ---
 title: "Predictive Logistics: the future is now"
-date: "2020-04-06T16:20:04.000Z"
+date: "2021-04-06T16:20:04.000Z"
 template: blog
 tags: Tools
 image: "./media/predictive-logistics.png"
