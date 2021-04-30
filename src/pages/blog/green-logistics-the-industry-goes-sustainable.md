@@ -1,5 +1,5 @@
 ---
-title: "Art Vault, a platform created to empower artists"
+title: "Green Logistics: the industry goes sustainable"
 date: "2021-04-26T16:24:04.000Z"
 template: blog
 tags: News
@@ -40,7 +40,6 @@ As we mentioned before, companies go green for the competitive advantage of beco
 * Increased logistical and operational efficiency  <br> </br>
 * Improved corporate image and reputation  <br> </br>
 * Improved brand perception and market value. <br> </br>
-
 
 <title-3 align="left"> Some green examples </title-3> <br> </br>
 
