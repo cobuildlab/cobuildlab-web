@@ -1,6 +1,6 @@
 ---
 title: "Cloud computing for the logistics industry"
-date: "2020-04-26T16:24:04.000Z"
+date: "2021-04-26T16:24:04.000Z"
 template: blog
 tags: Tools
 image: "./media/cloud-computing-cover.png"
