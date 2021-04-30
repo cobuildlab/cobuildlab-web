@@ -1,5 +1,5 @@
 ---
-title: "Art Vault, a platform created to empower artists"
+title: "Green Logistics: the industry goes sustainable"
 date: "2021-04-26T16:24:04.000Z"
 template: blog
 tags: News
