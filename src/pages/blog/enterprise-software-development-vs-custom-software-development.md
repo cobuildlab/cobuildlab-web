@@ -163,8 +163,4 @@ A custom system specifically tailored for your company will give you many advant
 
 Let's compare them!
 
-<center>
-
 <img src="./media/enterprise-software-chart.png">
-
-</center>
