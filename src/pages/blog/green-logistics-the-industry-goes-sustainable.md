@@ -41,7 +41,6 @@ As we mentioned before, companies go green for the competitive advantage of beco
 * Improved corporate image and reputation  <br> </br>
 * Improved brand perception and market value. <br> </br>
 
-
 <title-3 align="left"> Some green examples </title-3> <br> </br>
 
 * **IKEA** has eliminated wooden pallets from its entire supply chain and replaced them with paper/cardboard pallets. <br> </br>
