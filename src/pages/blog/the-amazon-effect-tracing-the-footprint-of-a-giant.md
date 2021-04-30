@@ -1,9 +1,9 @@
 ---
-title: "The Amazon Effect"
+title: "The Amazon Effect: tracing the footprint of a giant"
 date: "2021-04-21T16:24:04.000Z"
 template: blog
 tags: News
-image: "./media/the-amazon-effect.png"
+image: "./media/predictive-logistics-1.png"
 ---
 
 In the current economic landscape where every day more customers turn to online shopping, the growth of e-commerce has come traditionally with a cost to brick and mortar retailers. But, in the last couple of decades, the unparalleled expansion of the giant that is Amazon has created an effect whose influence goes well beyond traditional retailers and touches upon buyers, technology, and the supply chain on an equal level.  <br> </br>
