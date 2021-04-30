@@ -12,6 +12,7 @@ Since it went live in 1995, Amazon has had a huge impact on the behavior of the 
 
 On the **technology** front, Amazon truly changed the game. From their unmanned drones to fulfillment center robotics to their great investments in AI technology, Amazon leads the way in technology throughout their supply and distribution chain. Their employees work in technology-enabled environments where the tech is used to improve processes and assist them in doing their daily role, going from the random stow and pick through to box-sizing algorithms or software that determines the shortest, most efficient walking route from one place to another. The reach of their investment has single-handedly forced other major organizations to commit to new technologies in order to stay competitive. <br> </br>
 
+
 In 2013, the giant filed a patent for **"Anticipatory Package Shipping"** to significantly reduce delivery times for its products. Amazon uses a powerful data mining system by closely studying user behavior, looking at search history, purchases made, wish list, products in and out of the shopping cart, even the time the mouse pointer stays on certain offers with one goal in mind: to predict demand. In this way, merchandise is distributed to delivery warehouses that customers in those regions have not yet ordered, but are very likely to do so; it is then possible to get those products to the customer quickly at the time of order, saving time and money as well as improving customer service immeasurably. <br> </br>
 
 Finally, on the **supply chain** level, Amazon has made it crucial for every company to be able to handle big volumes and focus on the end-to-end traceability of every shipment. The increased demand and satisfaction level requested by buyers accustomed to Amazon’s standard has pushed other companies to develop and adapt in order to survive and thrive in this very competitive market. The use of 3 and 4PL’s is growing as their networks and resources are able to rival those of Amazon and remain competitive. If you want to compete, you have to put all your efforts into increased efficiency and reduced costs.  <br> </br>
@@ -20,7 +21,7 @@ Now, we can start to understand the major influence of **“The Amazon Effect”
 
 
 
-<title-5 align="left"> About Cobuild Lab </title-5>
+<title-3 align="left"> About Cobuild Lab </title-3>
 
 We partner with Industry Experts to solve Logistical and Productivity problems with Custom Software Solutions, Artificial Intelligence, and IoT.  Since 2012 we've focused on developing and combining cutting-edge techniques, tools, and technologies to increase development speed to deliver faster results<br> </br>
 
