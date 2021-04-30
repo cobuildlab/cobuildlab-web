@@ -165,6 +165,6 @@ Let's compare them!
 
 <center>
 
-<img src="blog/media/enterprise-software-chart.png">
+<img src="./media/enterprise-software-chart.png">
 
 </center>
