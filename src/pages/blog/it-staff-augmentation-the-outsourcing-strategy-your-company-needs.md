@@ -6,7 +6,6 @@ tags: Small Business
 image: "./media/staff-0.png"
 ---
 
-
 The term Staff Augmentation is currently in vogue, probably due to the IT industry trend of trying to reduce costs and improve the operational efficiency of projects, which is why they resort to this type of strategy.  However, the real benefits of this form of augmenting a team of collaborators in an agile and flexible way are not always measured, which is why we are going to dive into this topic in a clear, simple, and concise approach.  <br> </br>
 
 <title-3 align="centered"> First things first, what is Staff Augmentation? </title-3> <br> </br>
@@ -36,7 +35,6 @@ When a company decides to acquire an IT Staff Augmentation service, it incorpora
 <img src="./media/staff-1.png"> 
 
 <title-6 align="centered"> 📍 <a target="_blank" href="https://www.statista.com/statistics/189788/global-outsourcing-market-size/"> Statista on IT Staff Augmentation </a> </title-6> <br> </br>
-
 
 <title-3 align="centered"> How to know if you are in need of IT Staff Augmentation  </title-3> <br> </br>
 
