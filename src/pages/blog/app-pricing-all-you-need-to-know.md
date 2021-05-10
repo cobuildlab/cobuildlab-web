@@ -69,7 +69,7 @@ This is an important point that will affect your budget, an app for example a ca
 
 
 
-**1. Simple Apps**
+<title-3 align="centered"> 1. Simple Apps </title-3>
 
 These applications generate limited amounts of analytical data, connect to an API to retrieve data, and have a fairly simple design. 
 
@@ -77,7 +77,7 @@ These applications generate limited amounts of analytical data, connect to an AP
 <title-6 align="centered">News Mobile App developed by Cobuild Lab  <br> </br>
 
 
-**2. Complex Apps**
+<title-3 align="centered"> 2. Complex Apps </title-3>
 
 These types of apps need a lot of development and design work, usually requiring a whole team to build them. They connect to at least one API, usually use location data, can offer shopping or have a shopping cart within the app as well as have the function of providing their users with a profile to navigate the app. Requires many more hours of development and costs are higher.
 
@@ -85,7 +85,7 @@ These types of apps need a lot of development and design work, usually requiring
 <title-6 align="centered"> Art Management System developed by Cobuild Lab <br> </br>
 
 
-**3.  Large Enterprise apps**
+<title-3 align="centered"> 3. Large Enterprise Apps </title-3>
 
 They usually require a large team of experienced developers and designers. Enterprise applications are usually quite expensive. They require a long list of features such as creating a profile for each user, with more than 10 screens with characteristic layouts and various functions, must collect massive amounts of analytical data, and connect to various APIs. They usually require a robust web-based user management console for administrators and their price range can climb above $500,000.
 
@@ -93,7 +93,7 @@ They usually require a large team of experienced developers and designers. Enter
 <title-6 align="centered"> Massone Mechanicals Web and Mobile app developed by Cobuild Lab <br> </br>
 
 
-**4. Gaming apps**
+<title-3 align="centered"> 4. Gamming Apps </title-3>
 
 They need a project manager and more than one development team, multiple designers, specialized and experienced programmers. They can connect to multiple APIs, create user profiles, synchronize with the web platform, allow in-app purchases, many other additional features, and an important infrastructure that makes this type of app the most expensive with prices that can rise above $700,000.
 
