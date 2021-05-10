@@ -63,6 +63,8 @@ For example, the [US Agency for International Development](https://www.grants.go
 
 In this case, you need to fulfill some legal requirements that will be specificated for the same government, and eventually, you will have a compromise with the government and the country. 
 
+You may do a little research and look for a country that would support your initiative. For example, Canada is known to be welcoming for entrepreneurs. You may play with <a target="_blank" href="https://canada2036.com/immigration/express-entry/pr-points-calculator/">   Canada pr points calculator </a> to see if you are eligible for immigration there.
+
 <title-3>4. Lending Companies</title-3>
 
 These are companies that bring lending, but they are more dynamic and modern than a bank, and the main feature of this method is the fact that they don’t ask too many requirements, and usually provide online registration forms to check availability for loans.
