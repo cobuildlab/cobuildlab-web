@@ -41,16 +41,22 @@ What happens with no-code options is that they are very difficult to customize b
 <title-3>Advantages of low code and the no code software solutions</title-3>
 
 <Br>
-  
+
 **Low code advantages:**
 
+<Br>
+ 
 * You can build apps for multiple platforms simultaneously. 
 * Faster deployment 
 * Less errors and <a target="_blank" href="https://cobuildlab.com/blog/software-testing-in-software-development/">  tests</a>
 * Agile development
 * <a target="_blank" href="https://cobuildlab.com/blog/cybersecurity/">  Robust security</a>
 
-**No code advantages:** 
+<Br>
+ 
+**No-code advantages:** 
+
+<Br> 
 
 * You can develop an app yourself
 * No need for software knowledge
@@ -59,17 +65,23 @@ What happens with no-code options is that they are very difficult to customize b
 
 <Br>
  
-<title-3>Disadvantages of low code and no code development:</title-3>
+<title-3>Disadvantages of low code and no-code development:</title-3>
 
 <Br>
 
 **For low code tools:** 
 
+<Br>
+
 * Lack of customization. Low code development is a little more complete than no code technology but is also limited.  They don’t work very well  for complex processes or multiple solutions. 
 * You are trapped on the low code platform. With low code development, you only have components in the same framework, outside of it, you can have integration problems. 
 * It is not possible to create an API suitable for each of your processes. Fewer opportunities to mass your app in the future. If you want to know how? <a target="_blank" href="https://cobuildlab.com/blog/How-can-a-B2B-Software-Company-help-your-business-to-become-a-Saas-Company/">  Read our post about SaaS products </a>.   
 
-**No code tools disadvantages:**
+<Br>
+ 
+**No-code tools disadvantages:**
+
+<Br>
 
 * They're generic solutions. Commonly they solve a single problem (very specific and limited). 
 * They have very low scalability and generally cannot be modified.
@@ -83,5 +95,5 @@ What happens with no-code options is that they are very difficult to customize b
 
 <Br>
   
-Cobuild lab is ready to help you with **low code and no-code software development for your business**. Share with us your needs and problems that we’ll gladly analyze to decide which of these tools is the best option for you.  Contact us now and receive a **free consultation** or calculate the cost of your app in our <a target="_blank" href="https://cobuildlab.com/price-calculator/"> price calculator </a>.
+Cobuild lab is ready to help you with **low code and no-code software development for your business.** Share with us your needs and problems that we’ll gladly analyze to decide which of these tools is the best option for you.  Contact us now and receive a free consultation or calculate the cost of your app in our <a target="_blank" href="https://cobuildlab.com/price-calculator/"> price calculator </a>.
 
