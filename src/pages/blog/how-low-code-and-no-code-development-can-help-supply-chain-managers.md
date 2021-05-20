@@ -1,9 +1,9 @@
 ---
 title: "How low-code and no-code development can help Supply Chain Managers"
-date: "2021-05-17T16:00:00.000Z"
+date: "2021-05-21T18:00:00.000Z"
 template: blog
-tags: Small business
-image: "./media/low-code-no-code-supply-chains"
+tags: Small Business
+image: "./media/low-code-no-code-supply-chains.png"
 ---
 It’s well known that Supply Chain and Logistics are going through dramatic transformations and evolutions into the digital age. These industries are able to overcome challenges with the appliance of IoT, Machine Learning, Artificial Intelligence (AI), process automation, data analysis, software development, etc.
 
