@@ -81,8 +81,9 @@ const ProcessAutomation = () => (
           }
           otherText2={
             'Get rid of monotonous manual data entry with integrated systems and databases. Automatically support all mobile devices and accelerate approval processes with 24/7 access from anywhere.'
-          }
-        />
+          }>
+          <StaticImage src={'./../../assets/images/service/process-automation.png'} />
+        </ServicesSection3>
       </Container>
     </Section>
     <Section>
