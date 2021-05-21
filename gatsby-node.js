@@ -50,6 +50,7 @@ exports.createPages = ({ graphql, actions }) => {
         _.each(posts, (post, index) => {
           const previous = index === posts.length - 1 ? null : posts[index + 1].node;
           const next = index === 0 ? null : posts[index - 1].node;
+          console.log(String(post.node.frontmatter.template), 'STRING');
 
           createPage({
             path: post.node.fields.slug,
@@ -68,6 +69,51 @@ exports.createPages = ({ graphql, actions }) => {
             ),
             context: {
               slug: post.node.fields.slug,
+              previous,
+              next,
+            },
+          });
+        });
+      }),
+    );
+  });
+};
+
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions;
+
+  return new Promise((resolve, reject) => {
+    resolve(
+      graphql(
+        `
+          query BasePost {
+            allPost8Base {
+              post: edges {
+                post: node {
+                  id
+                  title
+                  slug
+                  content
+                }
+              }
+            }
+          }
+        `,
+      ).then((result) => {
+        if (result.errors) {
+          return reject(result.errors);
+        }
+        // Create blog posts pages AI.
+        console.log(result);
+        const posts = result.data.allPost8Base.post;
+        _.each(posts, (post, index) => {
+          const previous = index === posts.length - 1 ? null : posts[index + 1].node;
+          const next = index === 0 ? null : posts[index - 1].node;
+          createPage({
+            path: post.slug,
+            component: path.resolve(`src/templates/${String(post.node.frontmatter.template)}.js`),
+            context: {
+              slug: post.slug,
               previous,
               next,
             },

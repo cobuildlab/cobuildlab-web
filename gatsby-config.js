@@ -140,5 +140,31 @@ module.exports = {
     },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `@cobuildlab/gatsby-source-8base`,
+      options: {
+        url: 'https://api.8base.com',
+        apiToken: '1e85c432-e517-4f2f-b76f-e41137581bd2',
+        workspaceId: 'cjnp8j12b000i01qm9zu7dug3',
+        graphqlQuery: `
+          query{
+            postsList {
+              items{
+                id
+                title
+                content
+                slug
+                imageUrl {
+                  id
+                  filename
+                  downloadUrl
+                }
+              }
+              count
+            }
+          }
+        `,
+      },
+    },
   ],
 };
