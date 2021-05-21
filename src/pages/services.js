@@ -161,7 +161,9 @@ const Services = () => (
           to={'process-automation'}
           image={
             <StaticImage
-              src={'./../assets/images/service/card/iconos-Logistic-Process-Automation.svg'}
+              src={
+                './../assets/images/service/card/iconos_Process-Automation_Main-Services-Web-Design_Logistic-Process-Automation_Logistic-Process-Automation.svg'
+              }
               alt="process automation"
             />
           }
@@ -174,7 +176,9 @@ const Services = () => (
           to={'digital-transformation'}
           image={
             <StaticImage
-              src={'./../assets/images/service/card/iconos-Logistic-Digital-Transformation.svg'}
+              src={
+                './../assets/images/service/card/iconos_Logistic-Digital-Transformation_Logistic-Digital-Transformation.svg'
+              }
               alt="digital transformation"
             />
           }
@@ -234,7 +238,9 @@ const Services = () => (
           to={'web-design'}
           image={
             <StaticImage
-              src={'./../assets/images/service/card/iconos-Main-Services-Web-Design.svg'}
+              src={
+                './../assets/images/service/card/iconos-web-design_Main-Services-Web-Design_Main Services-Web-Design.svg'
+              }
               alt="Web Design"
             />
           }

@@ -31,7 +31,8 @@ const StyleSubtitle = styled.div`
   text-align: center;
 `;
 
-const ServicesSection3 = ({ title, textList, otherText, otherText2 }) => {
+const ServicesSection3 = ({ children, title, textList, otherText, otherText2 }) => {
+  console.log(children);
   return (
     <>
       <StyleSubtitle>
@@ -41,10 +42,14 @@ const ServicesSection3 = ({ title, textList, otherText, otherText2 }) => {
       </StyleSubtitle>
       <Columns isVCentered>
         <Column isVCentered isHidden="mobile" isSize={5}>
-          <StaticImage
-            src={'../../../assets/images/service/details/services-details.png'}
-            alt={'Service Section 3'}
-          />
+          {children && children.props.src ? (
+            children
+          ) : (
+            <StaticImage
+              src={'../../../assets/images/service/details/services-details.png'}
+              alt={'Service Section 3'}
+            />
+          )}
         </Column>
         <Column isSize={{ mobile: 12, desktop: 7 }}>
           <ServicesContent>
@@ -63,6 +68,7 @@ const ServicesSection3 = ({ title, textList, otherText, otherText2 }) => {
 };
 
 ServicesSection3.defaultProps = {
+  children: null,
   title: '',
   otherText: '',
   otherText2: '',
@@ -70,6 +76,7 @@ ServicesSection3.defaultProps = {
 };
 
 ServicesSection3.propTypes = {
+  children: PropTypes.element,
   title: PropTypes.string,
   otherText: PropTypes.string,
   otherText2: PropTypes.string,

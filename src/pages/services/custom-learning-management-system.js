@@ -87,8 +87,13 @@ const CustomLearningManagmentSystem = () => (
             'Flexible, scalable, and futureproof.',
             'Unlimited learners.',
             'High level of automation of e-Learning management, which increases the productivity of trainers and trainees.',
-          ]}
-        />
+          ]}>
+          <StaticImage
+            src={
+              './../../assets/images/service/card/iconos-custom-learning-management-system-Ilustration-02.svg'
+            }
+          />
+        </ServicesSection3>
       </Container>
     </Section>
     <Section>
