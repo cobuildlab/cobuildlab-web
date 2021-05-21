@@ -53,17 +53,31 @@ Our current reality shows that few people in the Supply Chain or Logistics indus
 
 <b>Agility and visibility increases.</b> Eliminating manual processes and Excel spreadsheets can reduce costs and risks.
 
+<br>
+
 <b>Decision-making communication improvement.</b> Supply chain professionals can gain transparency.
+
+<br>
 
 <b>Data centralization.</b> With information that is locked in core systems and being centralized, supply chain managers can improve the delivery time of materials and instill better communication amongst vendors, teams, and suppliers.
 
+<br>
+
 <b>Real-time insights to identify risks automatically.<b>
+  
+<br>
 
-<b>Increase the automation of unique enterprise’s processes.<b>
+<b>Increase the automation of unique enterprise’s processes.</b>
+  
+<br>
 
-<b>More ways to communicate with customers and providers, for example, chatbots or even WhatsApp.<b>
+<b>More ways to communicate with customers and providers, for example, chatbots or even WhatsApp.</b>
+  
+<br>
 
-<b>Meet the demands of customers' answers, questions, and expectatives.<b>
+<b>Meet the demands of customers' answers, questions, and expectatives.</b>
+  
+<br>
 
 <b>If you are an online supply chain company this means that you no longer rely on the traditional supply chain model.</b> These companies need and rely on technology, because they depend on it to visualize stock, plan delivery routes, fleets, and manage returns. With low-code and no-code processes, such as response to complex features and developments, managers can actually give solutions to these even faster and in a more user-friendly way.
 
@@ -74,6 +88,8 @@ Our current reality shows that few people in the Supply Chain or Logistics indus
 <br>
 
 <title-2>Advantages of these solutions for Supply Chain Management</title-2>
+
+<br>  
 
 Developers put supply chain customers in control of their own applications and software.
 
@@ -90,16 +106,21 @@ Specific configurations can be designed and developed to meet the certain and un
 <br>
 
 <title-3>Reason 1:</title-3>
+
 Saves money. Supply chain companies don’t have to bring external development companies or teams to develop software solutions.
 
 <title-3>Reason 2:</title-3>
+
 Low-code and no-code development platforms can help companies link the skills gap by enabling existing IT staff and non-developers to build mobile apps quickly and easily. - SCTimes
 
 <title-3>Reason 3:</title-3>
+
 Faster development. It takes up to 6 months to develop a traditional app or software solution. In the case of low-code and no-code, staff can update features along with the development process.
 
-<title-3>Reason 4:</title-3> The amount of coding needed is reduced. Existing employees and staff can be able to develop sophisticated and functional apps.
+<title-3>Reason 4:</title-3>
+  
+The amount of coding needed is reduced. Existing employees and staff can be able to develop sophisticated and functional apps.
 
 Cobuild Lab makes this possible for you!
 
-Contact us for more information: <b><a target="_blank" href="mailto:contact@cobuildlab.com">  contact@cobuildlab.com</a>b>
+Contact us for more information: <b><a target="_blank" href="mailto:contact@cobuildlab.com">  contact@cobuildlab.com</a></b>
