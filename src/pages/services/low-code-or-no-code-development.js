@@ -50,7 +50,12 @@ const AppDevelopment = () => (
       <Container>
         <ServicesHeader
           title={'Low Code or \n' + 'No Code Development'}
-          paragraph={''}
+          paragraph={
+            "Time is the most valuable asset to make your company more productive and meet your customers' current demands.\n"
+          }
+          paragraph2={
+            'Low code and no-code development is not only a trend, they also allow you to develop an accessible solution, with fewer resources, in shorter times, and easier management.\n'
+          }
           img={
             <StaticImage
               src={'./../../assets/images/service/card/iconos-robotic-process-automation.png'}
@@ -63,10 +68,13 @@ const AppDevelopment = () => (
     <StyledSection2>
       <Container>
         <ServicesSection2
-          title={'Develop full software solutions \n'}
-          titleOrange={'with less code, in less time, and with fewer errors'}
-          text={
-            'Robotic Process Automation (RPA) is a type of technological automation that is transforming the way businesses operate.RPA software robots manipulate and communicate with your business systems and applications to speed up processes and reduce human resources workload.'
+          title={'Low code and no-code tools'}
+          titleOrange={'for your company’s improvement'}
+          text={'Low code and no-code tools for your company’s improvement\n'}
+          otherText={
+            "When your customer's demands change, competition increases. \n" +
+            '\n' +
+            "The development of agile and low code or no-code software solutions is the best option to capitalize on the market with simple and functional tools that allow you to improve your company's processes and bring better service and more value.  \n"
           }
         />
       </Container>
@@ -74,9 +82,9 @@ const AppDevelopment = () => (
     <Section>
       <Container>
         <ServicesSection3
-          title={'Why RPA software?'}
+          title={'How do we develop it?'}
           otherText={
-            'It differs from other automation solutions by its flexibility and ability to integrate workflows efficiently across the enterprise. It is a mainly transactional process automation method based on specific rules. It’s software that learns from a business user and helps him with relatively simple tasks using predefined logical rules to deliver results.'
+            "The first step is to determine if your problem allows a low code or no-code solution. Then we'll select the best-finished components to start the development. In a short time, the tool will be ready and you'll be able to strengthen your company. Support is included.\n"
           }
         />
       </Container>
@@ -84,9 +92,16 @@ const AppDevelopment = () => (
     <Section>
       <Container>
         <ServicesSection4
-          title={'Benefits of RPA software'}
-          text={
-            "This solution increases productivity, improves accuracy, and helps your business expand by delegating manual and repetitive tasks to robots. \nRPA integrates well with your existing IT infrastructure and requires no additional installation; companies don't have to invest heavily in automating essential processes. It works in different applications, platforms, and departments."
+          title={'Benefits of low code or no-code development'}
+          text={'Get advantages like:'}
+          leftText={[
+            'Robust security processes\n',
+            'One-click deployment',
+            'You can build multi-platform apps at the same time',
+          ]}
+          rightTextList={['Time-saving and less-code', 'Reduced testing, and developers involved']}
+          otherText={
+            "The decision to implement this software solution depends on your needs. Tell us your story, and we'll help you decide if it applies and how we'll successfully develop it for your business.\n"
           }
         />
       </Container>
