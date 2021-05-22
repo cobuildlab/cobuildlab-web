@@ -34,7 +34,7 @@ Companies that implement CRM solutions can:  <br> </br>
 
 
 <title-4> LEAD VOLT </title-4> <br> </br>
-<img src="./media/pr-leadvolt-1.png">
+<img src="media/pr-leadvolt-1.png">
 
 The platform will allow Lead Volt to share and maximize the knowledge of a given customer and thus understand their needs and anticipate them.  *“Of course, we are using the Backend-as-a-Service offered by <a target="_blank" href="https://www.8base.com/"> 8base</a> since it allows us to develop a solution to manage three basic areas on the Lead Volt platform: sales management, marketing, and after-sales or customer service,”* said Lacret. CRM software allows us to segment a customer base, so it also makes it easier to plan sales and marketing strategies more effectively and increase revenues. <br> </br>
 
@@ -42,13 +42,13 @@ We are getting prepared to launch its <a target="_blank" href="https://cobuildla
 
 
 
-<title-5 align="left"> About 8base </title-5>
+<title-5 align="left"> CompetitiveAdvantage 8base </title-5>
 
 <a target="_blank" href="https://www.8base.com/"> 8base</a> is a Backend-as-a-Service that combines computing, application services, and integrations for building SaaS and market-facing applications. Founded by <a target="_blank" href="https://www.linkedin.com/in/albertsantalo/"> Albert Santalo</a> in 2017, 8base’s mission is to democratize software development and unlock the power of digital transformation for businesses worldwide. They achieve this by providing the industry’s most modern low-code technology platform, operating environment, and toolset. With 8base, users can build enterprise-grade applications faster, more efficiently, and less expensively than with legacy IT alternatives. <br> </br>
 
 
 
-<title-5 align="left"> About Cobuild Lab </title-5>
+<title-5 align="left"> CompetitiveAdvantage Cobuild Lab </title-5>
 
 We transform Small and Medium size businesses by automating manual processes and tasks into optimized and streamlined workflows with Web and Mobile custom software. Everything from using email autoresponders to automated workflow can help you redefine your relationship with the customer and open up new revenue streams for you. It's time for you to use technology and automation to make your business more efficient. <br> </br>
 

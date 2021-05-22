@@ -3,7 +3,7 @@ import LayoutPost from '../components/layoutPost';
 import { Link, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import { DiscussionEmbed } from 'disqus-react';
-import SeoMetaTags from '../components/SeoMetaTags';
+import { SeoMetaTags } from '../components/2021/SeoMetaTags';
 
 import BlogPostContactUs from '../components/blog-post/BlogPostContactUs';
 import Share from '../components/Share';
@@ -20,7 +20,7 @@ import Credits from '../components/Credits';
 import get from 'lodash/get';
 import defaultImg from '../resources/default-post.jpg';
 import rehypeReact from 'rehype-react';
-import 'bulma';
+import 'bulma/css/bulma.css';
 
 import { Hero, Container, Title, Columns, Column, Card, CardContent, Content } from 'bloomer';
 import TTSVoice from '../components/TTSVoice';
@@ -35,6 +35,22 @@ const StyledTitle = Styled(Title)`
 const SectionPost = Styled.section`
   color: #264A60;
   font-family: 'Lato-bold',sans-serif;
+  line-height: 1.125;
+  color: #264A60;
+  letter-spacing: 0;
+  opacity: 1;
+  font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 22px;
+  text-align: justify;
+  & ul > li {
+    list-style: disc;
+    margin-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
 `;
 
 const StyledContainer = Styled(Container)`
@@ -62,6 +78,7 @@ const renderAst = new rehypeReact({
 class BlogPostTemplate extends Component {
   render() {
     const post = this.props.data.markdownRemark;
+    console.log('DEBUG', post.frontmatter.title, post.frontmatter);
     const twitterHandle = get(this.props, 'data.site.siteMetadata.twitterHandle');
     const disqusShortname = 'cobuildlab';
     const disqusConfig = { identifier: post.id, title: post.frontmatter.title };

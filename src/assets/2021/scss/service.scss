@@ -1,0 +1,174 @@
+@import "../../scss/variable";
+
+/* service section css start */
+.service-wrapper {
+  margin-top: 100px;
+  padding-bottom: 3rem;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 0;
+  }
+  .row {
+    align-items: center;
+  }
+}
+.service-content-1 {
+  .service-title {
+    color: $color-default;
+    font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (1920 - 320)));
+    font-weight: 400;
+    position: relative;
+    padding-bottom: calc(12px + (18 - 12) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: calc(14px + (22 - 14) * ((100vw - 320px) / (1920 - 320)));
+    text-transform: capitalize;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: url(../../images/service/left-line.png) no-repeat left;
+      height: 6px;
+      width: 56px;
+    }
+  }
+}
+.service-content-1 {
+  &.main-title-wrapper {
+    margin-bottom: 0;
+    padding-right: 50px;
+    text-align: left;
+  }
+}
+.service-dec {
+  line-height: 1.5;
+}
+.service-block2 {
+  margin-top: -115px;
+}
+.service-block-content {
+  padding-top: calc(25px + (68 - 25) * ((100vw - 320px) / (1920 - 320)));
+}
+.service-content {
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  padding: 15px;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  .service-content-dec {
+    .service-title {
+      color: $color-dark;
+      font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+      font-weight: 600;
+      position: relative;
+      margin-bottom: 5px;
+      transition: all 0.5s ease-in-out;
+    }
+    .service-dec-content {
+      line-height: 1.5;
+    }
+  }
+}
+
+.service-icon {
+  text-align: center;
+  position: relative;
+  padding: 14px 0;
+  span {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: all 0.5s ease-in-out;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url(../../images/service/img5.png) no-repeat center;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      transform: scale(0.4);
+      filter: opacity(0);
+      transition: all 0.5s ease-in-out;
+    }
+    svg {
+      width: 31px;
+      height: 32px;
+      line-height: 32px;
+      position: relative;
+      z-index: 1;
+      color: $color-dark;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}
+.service-content {
+  &:hover {
+    box-shadow: rgba(39, 79, 117, 0.2) 0 40px 90px -30px;
+    transform: translateY(-10px);
+    .service-icon {
+      span {
+        &:after {
+          transform: scale(1);
+        }
+        i {
+          -webkit-background-clip: text;
+          color: transparent;
+        }
+      }
+    }
+  }
+}
+.service-content:hover {
+  .service-icon {
+    img {
+      box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.35);
+    }
+  }
+}
+.service-block1,
+.service-block2 {
+  .service-content {
+    &.service-0 {
+      margin-bottom: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
+    }
+  }
+}
+/* responsive css */
+@media (max-width: 1199px) {
+  .service-maintitle {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .service-content-1 {
+    &.main-title-wrapper {
+      padding: 0;
+    }
+  }
+  .slider-outer {
+    padding-top: 25px;
+  }
+
+  .service-title {
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 767px) {
+  .service-block2 {
+    margin: 0;
+  }
+}
+@media (max-width: 575px) {
+  .service-block1 .service-content {
+    &.service-1 {
+      margin-bottom: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
+    }
+  }
+}
+/* service section css end */

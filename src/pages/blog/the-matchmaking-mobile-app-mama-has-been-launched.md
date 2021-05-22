@@ -38,7 +38,7 @@ It was pretty clear for the MAMA project to be successful it had to be a mobile 
 
 We are now launching its <a target="_blank" href="https://cobuildlab.com/blog/minimum-viable-product/amp/"> MVP (Minimum Viable Product)</a> to start building a user base and it’s already available on the <a target="_blank" href="https://apps.apple.com/us/app/id1516922160"> Apple Store</a>and <a target="_blank" href="https://play.google.com/store/apps/details?id=com.cobuildlab.mama"> Play Store</a> as well. Stay tuned for more updates on MAMA's Project, thank you so much for reading! <br> </br>
 
-<title-5 align="left"> About Cobuild Lab </title-5>
+<title-5 align="left"> CompetitiveAdvantage Cobuild Lab </title-5>
 
 At <a target="_blank" href="https://cobuildlab.com/">  Cobuild Lab</a> we’re firm believers that every single time we’re writing a line of code we’re writing our future. We build software products such as web or mobile apps that run our lives and are changing the world we live in. Since 2012 we've focused on developing and combining agile techniques, tools, and technologies to increase development speed to deliver faster results. <br> </br>
 

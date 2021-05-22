@@ -3,7 +3,7 @@ title: "GROWTH THERAPY, A PLATFORM FOR ENTREPRENEURS IN TECH"
 date: "2020-11-30T16:24:04.000Z"
 template: blog
 tags: News
-image: "./media/pr-gt-1.NEF"
+image: "./media/pr-gt-5.png"
 ---
 
 Miami, FL. November 30, 2020 - To become the owner and master of one's own time is the greatest thing. Deciding which projects to work on, how many hours a day you want to dedicate to your activities, not having to ask anyone's permission to take a break or to make any important decision. This is probably the most attractive thing when deciding to undertake, to start your own business. <br> </br>
@@ -12,7 +12,7 @@ But the entrepreneurial route is not for everyone. Many may simply not be able t
 
 Growth Therapy is a communication tool for entrepreneurs in the tech industry. In a video format, this program is intended to serve as a guide to all those visionaries who want to be masters of their own time and want to see their ground-breaking idea materialized. So, we talked to <a target="_blank" href="https://www.linkedin.com/in/alacret/"> Angel Lacret</a>, founder and CEO of <a target="_blank" href="https://cobuildlab.com/"> Cobuild Lab</a> about this new journey. <br> </br> 
 
-<img src="./media/pr-gt-2.png"> <br> </br> 
+<img src="media/pr-gt-2.png"> <br> </br> 
 
 
 <title-5 align="left">What is Growth Therapy? </title-5>
@@ -22,9 +22,9 @@ Growth Therapy is a communication tool for entrepreneurs in the tech industry. I
 *Alongside <a target="_blank" href="https://www.linkedin.com/in/psostre/">Pedro Sostre</a>, a consultant and author with 20 years of experience in building companies, founder of <a target="_blank" href="https://www.navigate.capital/"> Navigate</a>, we will share our experience and other industry professionals experience so we can communicate success stories that not only inspire others but help them understand better and learn how you can bring your idea to the real world.*  <br> </br> 
 
 
-<img src="./media/pr-gt-3.jpeg"> <br> </br> 
+<img src="media/pr-gt-3.jpeg"> <br> </br> 
 
-<title-5 align="left">What motivated you to create a space for entrepreneurs in the early stages?</title-5>
+<title-5 align="left">What motivated you to create a space wwwwfor entrepreneurs in the early stages?</title-5>
 
 *The motivation is exactly the same that made me decide to start Cobuild Lab, I have surrounded myself with incredibly passionate and visionary people to help other technology entrepreneurs to take their first steps, to walk with them on their journey, and to provide them with all the tools they need to achieve their goals. We want to support the entrepreneurial community so that we can grow even more in the city.* <br> </br> 
 
@@ -32,7 +32,7 @@ Growth Therapy is a communication tool for entrepreneurs in the tech industry. I
 
 *We realized that just like us, there are many visionaries who want to undertake, looking to succeed but don't have a guide to help them move forward, there is no manual with step-by-step instructions. That doesn't exist. Miami is one of the most entrepreneurial cities in the United States today, and tech is taking off in such an incredible way that it could be the next Silicon Valley. We decided to be helpful to other entrepreneurs, to become that guide and that support that we had at the very beginning, and to be able to share our experience with them.* <br> </br> 
 
-<img src="./media/pr-gt-4.png"> <br> </br> 
+<img src="media/pr-gt-4.png"> <br> </br> 
 
 
 <title-5 align="left">Why Growth Therapy?</title-5>
@@ -45,7 +45,7 @@ Growth Therapy is a communication tool for entrepreneurs in the tech industry. I
 
 *Honesty and transparency. We want to share real cases of real companies with real problems and tangible solutions.*  <br> </br> 
 
-<img src="./media/pr-gt-5.NEF"> <br> </br> 
+<img src="media/pr-gt-5.png"> <br> </br> 
 
 
 

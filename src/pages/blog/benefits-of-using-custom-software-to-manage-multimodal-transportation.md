@@ -80,7 +80,7 @@ Managing information with technology becomes much easier.
 
 <Br>
 
-Geolocation is a topic where software hasn't advanced infinitely. <a target="_blank" href="https://www.google.com/">  Google </a> gave us a hand with this topic, and other technologies such as artificial intelligence complement it. 
+Geolocation is a topic where software hasn't advanced infinitely. <a target="_blank" href="https://www.google.com/">  Google </a> gave us a hand with this topic, and other technologies such as artificial intelligence complement it.
 
 Predictive routing, real-time geolocation, live images of the load, the possibility of improving times, and predictive analysis of productivity in terms of multimodal routes of our packages. Not even the sky's the limit when it comes to all that customized software can achieve to manage the transportation of our inputs or products. 
 

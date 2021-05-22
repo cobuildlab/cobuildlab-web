@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/css/index.css';
-import HeaderPost from './headerPost';
+import HeaderPost from './HeaderPost';
 import Layout from './2020/Layout';
 import PropTypes from 'prop-types';
 

@@ -1,22 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
-import SeoMetaTags from '../../components/SeoMetaTags';
+import { SeoMetaTags } from '../../components/2021/SeoMetaTags';
 
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 
-import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
-import DetailSection from '../../components/customer-success-stories/DetailSection';
+import DetailSection from '../../components/customer-success-stories/new/DetailSection';
 import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 import { List, ListItem } from '../../components/Typography/List';
 
-import { TextOrange } from '../../components/Typography/TextHelpers';
+import { TextOrange } from '../../components/2021/text/TextHelpers';
+import { StaticImage } from 'gatsby-plugin-image';
+import SlidersMyVoice from '../../components/customer-success-stories/new/sliders/my-voyce/Sliders';
 
 const MyVoice = ({ data }) => (
   <DetailLayout>
@@ -49,14 +49,19 @@ const MyVoice = ({ data }) => (
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroImagesContent>
-              <Img fluid={data.logo.childImageSharp.fluid} alt="" />
+              <StaticImage
+                src={'./../../assets/images/customers/my-voice/logo.png'}
+                alt="My-Voice Logo"
+              />
             </DetailHeroImagesContent>
           </Column>
         </Columns>
       </Container>
     </Section>
 
-    <DetailSection src={data.textImagesOne.childImageSharp.fluid}>
+    <DetailSection
+      image={<StaticImage src={'./../../assets/images/customers/my-voice/2.png'} alt="" />}
+      right>
       <DetailSubTitle>
         The <TextOrange>Challenges</TextOrange>
       </DetailSubTitle>
@@ -95,7 +100,9 @@ const MyVoice = ({ data }) => (
       </List>
     </DetailSection>
 
-    <DetailSection src={data.textImagesTwo.childImageSharp.fluid} left>
+    <DetailSection
+      image={<StaticImage src={'./../../assets/images/customers/my-voice/1.png'} alt="" />}
+      left>
       <DetailSubTitle>
         The <TextOrange>Solution</TextOrange>
       </DetailSubTitle>
@@ -149,7 +156,7 @@ const MyVoice = ({ data }) => (
     </DetailSection>
 
     <Section isPaddingless>
-      <DetailCarousel data={data.slider.edges} />
+      <SlidersMyVoice />
     </Section>
 
     <Section isPaddingless>
@@ -170,40 +177,6 @@ export const pageQuery = graphql`
           width
           height
           src
-        }
-      }
-    }
-    slider: allFile(filter: { relativeDirectory: { eq: "customers/my-voice/slider" } }) {
-      edges {
-        node {
-          id
-          name
-          childImageSharp {
-            fluid(quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-      }
-    }
-    textImagesTwo: file(relativePath: { eq: "customers/my-voice/1.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    textImagesOne: file(relativePath: { eq: "customers/my-voice/2.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    logo: file(relativePath: { eq: "customers/my-voice/logo.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

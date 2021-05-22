@@ -82,7 +82,7 @@ The Collabtogrow™ Succeed solution will automate the governance elements of an
 
 
 
-<title-5 align="left"> About Collabtogrow </title-5> <br> </br>
+<title-5 align="left"> CompetitiveAdvantage Collabtogrow </title-5> <br> </br>
 
 Founded by senior consulting executives with diverse industry backgrounds, Collabtogrow’s mission is to help their clients succeed by avoiding mistakes, improving overall performance, and succeeding with strategic alliances and partnerships. <br> </br>
 
@@ -92,7 +92,7 @@ For more information, visit www.collabtogrow.com or follow them at @collabtogrow
 
 
 
-<title-5 align="left"> About 8base </title-5> <br> </br>
+<title-5 align="left"> CompetitiveAdvantage 8base </title-5> <br> </br>
 
 8base’s mission is to democratize software development and unlock the power of digital transformation for businesses worldwide. It does this by providing the industry’s most modern low-code technology platform, operating environment, and toolset. With 8base, users can build enterprise-grade applications faster, more easily, and less expensively than with legacy IT alternatives. For more information, visit www.8base.com or follow them at <a target="_blank" href="https://twitter.com/8base/"> @8base</a>. <br> </br>
 
@@ -100,7 +100,7 @@ For more information, visit www.collabtogrow.com or follow them at @collabtogrow
 
 
 
-<title-5 align="left"> About Cobuild Lab </title-5> <br> </br>
+<title-5 align="left"> CompetitiveAdvantage Cobuild Lab </title-5> <br> </br>
 Cobuild Lab’s collaborative approach is something that sets us apart, we are not simply a software development company that produces mass-produced projects. We take the time and effort to really understand the problems that need to be solved in a user and business-centric approach. <br> </br>
 
 <title-6 align="centered"> *“We help entrepreneurs and industry experts to transform ideas into Web and Mobile Software Products. Since day one, our technique is focused on early results and transparent communication.”* <a target="_blank" href="https://www.linkedin.com/in/alacret/"> Angel Lacret</a>, CEO of Cobuild Lab. </title-6>   <br> </br>

@@ -12,7 +12,7 @@ You should know that nowadays, the management of a warehouse and its inventory c
 
 <center>
 
-<img src="./media/RFID-Page-16.png">
+<img src="media/RFID-Page-16.png">
 
 </center>
 
@@ -34,7 +34,7 @@ The RFID or radio frequency identification is just a technology used to transfer
 
 <center>
 
-<img src="./media/RFID Chip.jpg">
+<img src="media/RFID Chip.jpg">
 
 </center>
 
@@ -80,7 +80,7 @@ The scope of RFID technology will depend on its frequency, as shown below:
 
 <center>
 
-<img src="./media/RFID_Technology.jpg">
+<img src="media/RFID_Technology.jpg">
 
 </center>
 

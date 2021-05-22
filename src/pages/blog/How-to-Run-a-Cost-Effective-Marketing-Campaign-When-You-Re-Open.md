@@ -1,6 +1,6 @@
 ---
 title: "How to Run a Cost-Effective Marketing Campaign When You Re-Open"
-date: "2020-11-9T16:24:04.000Z"
+date: "2020-11-09T16:24:04.000Z"
 template: blog
 tags: Small Business
 image: "./media/pexels-artem-beliaikin-1051747.jpg"

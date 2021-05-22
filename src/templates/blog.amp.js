@@ -3,7 +3,7 @@ import LayoutPost from '../components/layoutPost';
 import { Link, graphql } from 'gatsby';
 import { DiscussionEmbed } from 'disqus-react';
 import styled from 'styled-components';
-import SeoMetaTags from '../components/SeoMetaTags';
+import { SeoMetaTags } from '../components/2021/SeoMetaTags';
 import BlogPostContactUs from '../components/blog-post/BlogPostContactUs';
 import Share from '../components/Share';
 import Carousel from '../components/Carousel';
@@ -19,7 +19,7 @@ import Credits from '../components/Credits';
 import get from 'lodash/get';
 import defaultImg from '../resources/default-post.jpg';
 import rehypeReact from 'rehype-react';
-import 'bulma';
+import 'bulma/css/bulma.css';
 import '../assets/fonts/Lato-Black.ttf';
 import '../assets/fonts/Lato-BlackItalic.ttf';
 import '../assets/fonts/Lato-Bold.ttf';
@@ -63,6 +63,7 @@ class BlogPostTemplate extends React.Component {
     const twitterHandle = get(this.props, 'data.site.siteMetadata.twitterHandle');
     const disqusShortname = 'cobuildlab';
     const disqusConfig = { identifier: post.id, title: post.frontmatter.title };
+    const keywords = post.frontmatter.keywords || [];
     const slug = post.fields.slug;
     const url = get(this.props, 'data.site.siteMetadata.siteUrl');
     const siteTitle = 'Cobuild Lab';
@@ -80,6 +81,7 @@ class BlogPostTemplate extends React.Component {
           description={siteDescription}
           image={seoImages}
           canonical={origanlPath}
+          keywords={keywords}
         />
         <Hero isColor="white" isSize="large">
           <Container hasTextAlign="centered">

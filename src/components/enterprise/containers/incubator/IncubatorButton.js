@@ -44,13 +44,13 @@ const Text = styled.span`
 
 const IncubatorButton = () => (
   <Container>
-    <Redirect to="/2020">
+    <Redirect to="/startups">
       <ImageContainer>
         <img src={img} alt="" />
       </ImageContainer>
       <Text>
-        Start Up
-        <strong>Services</strong>
+        Ask us
+        <strong>How</strong>
       </Text>
     </Redirect>
   </Container>

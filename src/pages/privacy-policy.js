@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { graphql } from 'gatsby';
 import { Columns, Column } from 'bloomer';
-import 'bulma';
+import 'bulma/css/bulma.css';
 
 // COMPONENTS
 import LandingPageLayout from '../components/2020/LandingPageLayout';

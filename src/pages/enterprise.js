@@ -1,10 +1,10 @@
 import React from 'react';
-import SeoMetaTags from '../components/SeoMetaTags';
+import { SeoMetaTags } from '../components/2021/SeoMetaTags';
 import Navbar from '../components/enterprise/containers/navbar';
 import Banner from '../components/enterprise/containers/banner';
 import IncubatorLink from '../components/enterprise/containers/incubator/Incubator';
 import Service from '../components/enterprise/containers/service';
-import About from '../components/enterprise/containers/about';
+import { CompetitiveAdvantage } from '../components/2021/containers/CompetitiveAdvantage';
 import UniqueValueProps from '../components/enterprise/containers/unique-value-props';
 import Video from '../components/enterprise/containers/video';
 import Skills from '../components/enterprise/containers/skills';
@@ -17,7 +17,7 @@ import Brand from '../components/enterprise/containers/brands';
 import Footer from '../components/enterprise/containers/footer/Footer';
 import EnterpriseRecentPost from '../components/enterprise/containers/EnterpriseRecentPost';
 
-import 'bulma';
+import 'bulma/css/bulma.css';
 import 'slick-carousel/slick/slick.scss';
 import 'slick-carousel/slick/slick-theme.scss';
 import 'react-toastify/dist/ReactToastify.min.css';
@@ -31,7 +31,7 @@ const IndexPage = () => (
       <Banner />
       <Service />
       <IncubatorLink />
-      <About />
+      <CompetitiveAdvantage />
       <UniqueValueProps />
       <Video />
       <Skills />

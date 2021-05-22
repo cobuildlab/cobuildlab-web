@@ -9,7 +9,7 @@
   position: relative;
 }
 
-.enterprise{ 
+.enterprise{
   &-text-orange{
     color: $cobuild-orange;
   }
@@ -786,4 +786,15 @@ th, td {
 
 strong {
 color: $cobuild-orange
+}
+
+
+.subtitle-new {
+  text-align: center;
+  color: $color-dark;
+  margin-bottom: calc(20px + (50 - 20) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: 600;
+  font-size: calc(24px + (42 - 24) * ((100vw - 320px) / (1920 - 320)));
+  margin-bottom: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
+  text-transform: capitalize;
 }

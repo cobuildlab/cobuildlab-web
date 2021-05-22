@@ -1,9 +1,8 @@
 import styled from 'styled-components';
-import colors from './colors.json';
+import colors from '../2021/colors.json';
 import commonStyles from './common-styles';
 
-
-const CardTitlte  = styled.span`
+const CardTitlte = styled.span`
   ${commonStyles}
   display: block;
   font-weight: normal;

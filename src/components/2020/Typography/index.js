@@ -5,7 +5,7 @@ import styles from './css/index.module.scss';
 
 const keys = ['lg', 'md', 'sm', 'default'];
 
-const Typography = ({ children, size, hasTextAlign, className, tag }) => {
+const _Typography = ({ children, size, hasTextAlign, className, tag }) => {
   let classNameSelect = '';
   let fontWeightSelect = '';
 
@@ -32,7 +32,7 @@ const Typography = ({ children, size, hasTextAlign, className, tag }) => {
   return React.createElement(tag, { className: result }, children);
 };
 
-Typography.defaultProps = {
+_Typography.defaultProps = {
   size: {
     default: {
       // not config for default props
@@ -43,7 +43,7 @@ Typography.defaultProps = {
   hasTextAlign: '',
 };
 
-Typography.propTypes = {
+_Typography.propTypes = {
   hasTextAlign: PropTypes.string,
   size: PropTypes.object,
   className: PropTypes.string,
@@ -51,4 +51,6 @@ Typography.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
 
-export default React.memo(Typography);
+const Typography = React.memo(_Typography);
+export default Typography;
+export { Typography };

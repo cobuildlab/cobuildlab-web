@@ -76,7 +76,7 @@ You can define a key problem by asking you the following questions:
 
 That’s only a part in this phase, because the other part is the performance and development details of your app, as: the team of developers, the programming language you will use, the platform you will choose for the app, which tools or libraries you will use, the user experience, the user interface, and all the steps you need to follow in every [software development process](https://cobuildlab.com/blog/best-software-development-process/). But remember, this development process is about your minimum viable product.
 
-About the app features, we want to show you the **story map technique.**
+CompetitiveAdvantage the app features, we want to show you the **story map technique.**
 
 A story map is a visual way to build software. “StoryCommon mapping is a top-down approach of requirement gathering and is represented as a tree”.
 Source: [Thoughtwords](https://www.thoughtworks.com/insights/blog/story-mapping-visual-way-building-product-backlog) 

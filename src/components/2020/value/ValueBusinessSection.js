@@ -6,7 +6,7 @@ import ValueCardTitle from './ValueCardTitle';
 import ValueCardContent from './ValueCardContent';
 import { ValueList, ValueListItem } from './ValueList';
 import ValueCardFooter from './ValueCardFooter';
-import { TextOrange } from '../../Typography/TextHelpers';
+import { TextOrange } from '../../2021/text/TextHelpers';
 
 const ValueBusinessSection = () => (
   <Columns>

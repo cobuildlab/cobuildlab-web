@@ -1,23 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
 import { Section, Container, Columns, Column } from 'bloomer';
-import SeoMetaTags from '../../components/SeoMetaTags';
+import { SeoMetaTags } from '../../components/2021/SeoMetaTags';
 
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 
-import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
-import DetailSection from '../../components/customer-success-stories/DetailSection';
+import DetailSection from '../../components/customer-success-stories/new/DetailSection';
 import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 import { List, ListItem } from '../../components/Typography/List';
 
-import { TextOrange } from '../../components/Typography/TextHelpers';
+import { TextOrange } from '../../components/2021/text/TextHelpers';
+import { StaticImage } from 'gatsby-plugin-image';
+import SlidersPayklever from '../../components/customer-success-stories/new/sliders/payklever/Sliders';
 
 const PaykleverCampaignManager = ({ data }) => (
   <DetailLayout>
@@ -61,7 +61,7 @@ const PaykleverCampaignManager = ({ data }) => (
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroImagesContent>
-              <Img fluid={data.logo.childImageSharp.fluid} alt="" />
+              <StaticImage src={'./../../assets/images/customers/payklever/logo.png'} alt="" />
             </DetailHeroImagesContent>
             <DetailHeroImagesContent>
               <DetailVideo id="QAEOiEdZOUM" images={data.videoImages.childImageSharp.fluid} />
@@ -71,7 +71,9 @@ const PaykleverCampaignManager = ({ data }) => (
       </Container>
     </Section>
 
-    <DetailSection src={data.textImagesOne.childImageSharp.fluid}>
+    <DetailSection
+      image={<StaticImage src={'./../../assets/images/customers/payklever/1.png'} alt="" />}
+      right>
       <DetailSubTitle>
         What is the <TextOrange> Payklever Campaign </TextOrange> platform?
       </DetailSubTitle>
@@ -100,7 +102,9 @@ const PaykleverCampaignManager = ({ data }) => (
       </DetailParagraph>
     </DetailSection>
 
-    <DetailSection src={data.textImagesTwo.childImageSharp.fluid} left>
+    <DetailSection
+      image={<StaticImage src={'./../../assets/images/customers/payklever/2.png'} alt="" />}
+      left>
       <DetailParagraph>
         Starting working on the project was very exciting, after all it was a new client, new
         challenges in a great idea.
@@ -170,7 +174,7 @@ const PaykleverCampaignManager = ({ data }) => (
     </DetailSection>
 
     <Section isPaddingless>
-      <DetailCarousel data={data.slider.edges} />
+      <SlidersPayklever />
     </Section>
 
     <Section isPaddingless>
@@ -185,7 +189,7 @@ PaykleverCampaignManager.propTypes = {
 
 export const pageQuery = graphql`
   query {
-    seoImages: file(relativePath: { eq: "customers/Payklever.jpg" }) {
+    seoImages: file(relativePath: { eq: "customers/Payklever.png" }) {
       childImageSharp {
         resize(width: 1200, height: 1200) {
           width
@@ -194,44 +198,10 @@ export const pageQuery = graphql`
         }
       }
     }
-    logo: file(relativePath: { eq: "customers/payklever/logo.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
     videoImages: file(relativePath: { eq: "customers/payklever/cover-video.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    textImagesOne: file(relativePath: { eq: "customers/payklever/1.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    textImagesTwo: file(relativePath: { eq: "customers/payklever/2.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    slider: allFile(filter: { relativeDirectory: { eq: "customers/payklever/slider" } }) {
-      edges {
-        node {
-          id
-          name
-          childImageSharp {
-            fluid(quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
         }
       }
     }

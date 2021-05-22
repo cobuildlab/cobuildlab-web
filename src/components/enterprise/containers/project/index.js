@@ -7,22 +7,22 @@ import './project.scss';
 const COUNTER_DATA = [
   {
     id: 1,
-    number: 55,
+    number: 75,
     title: 'Clients',
   },
   {
     id: 2,
-    number: 70,
+    number: 90,
     title: 'Projects',
   },
   {
     id: 3,
-    number: 36,
+    number: 56,
     title: 'Team Experts',
   },
   {
     id: 4,
-    number: 100,
+    number: 300,
     title: 'Repositories',
   },
 ];

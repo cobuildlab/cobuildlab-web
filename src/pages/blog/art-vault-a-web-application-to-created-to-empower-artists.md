@@ -15,7 +15,7 @@ She is the founder of 305 Creative Group, working and consulting with companies 
 
 <title-4 align="centered"> WE INTRODUCE YOU ART VAULT </title-4>
 
-<img src="./media/pr-art-vaul-1.png"> <br> </br>
+<img src="media/pr-art-vaul-1.png"> <br> </br>
 
 <a target="_blank" href="https://artvault.app/"> Art Vault</a> is a web platform that helps artists keep track of the purchasing of their pieces. Artists can create their profile and use the app as an online inventory of their pieces, display them, and keep track of sales, either weekly, monthly, or year-round. We talked to <a target="_blank" href="https://cobuildlab.com/blog/congratulations-to-jacqueline-popovich-cobuild-lab-new-product-manager/"> Jacqueline Popovich</a>, our Product Manager, who told us more about the challenges faced by the development team during the construction of this <a target="_blank" href="https://cobuildlab.com/blog/software-development-for-new-products/"> Software Product</a>.   <br> </br>
 
@@ -33,7 +33,7 @@ She is the founder of 305 Creative Group, working and consulting with companies 
  *We then decided going for a much more minimalist design, black and white backgrounds with enough free space to avoid creating visual clutter by using subtle line elements, instead using good size texts with a typography that breathes elegance, simplicity and modernism”.* <br> </br>
  
  
- <img src="./media/pr.NEF">
+ <img src="media/pr.png">
  <title-6 align="centered"> Photo: <a target="_blank" href="https://www.linkedin.com/in/alacret/"> Angel Lacret</a>, Chief of Product Development and <a target="_blank" href="https://www.linkedin.com/in/jacqueline-popovich/"> Jacqueline Popovich</a>, Product Manager </title-6> <br> </br>
  
  
@@ -45,7 +45,7 @@ She is the founder of 305 Creative Group, working and consulting with companies 
 Once again we can appreciate how the <a target="_blank" href="https://cobuildlab.com/blog/what-is-digital-transformation-and-how-can-small-businesses-take-advantage-of-it-this-2020/amp//"> Digital Transformation</a> is reaching all areas changing the way we live and operate. During pandemic times when most art galleries are closed, Art Vault is stepping up to take advantage of technology to keep empowering talented artists and creators. Thank you so much for reading and stay safe!  <br> </br>
 
 
-<title-5 align="left"> About Cobuild Lab </title-5>
+<title-5 align="left"> CompetitiveAdvantage Cobuild Lab </title-5>
 
 At <a target="_blank" href="https://cobuildlab.com/">  Cobuild Lab</a>, we’ve been helping business owners, CEO's, COO’s and IT leaders get past the techno-speak and help them take a business process and turn it into a custom software solution, whether they need design and build services, technical assistance, or are looking to augment their existing team with experienced agile developers. Since 2012 we've focused on developing and combining cutting-edge techniques, tools, and technologies to increase development speed to deliver faster results. <br> </br>
 

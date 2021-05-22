@@ -1,0 +1,30 @@
+//Here You can write your customize scss
+//dark light panel //
+.theme-pannel-main {
+    background-color: $white;
+    position: fixed;
+    top: 30%;
+    right: 0;
+    z-index: 9;
+    padding: 0 5px;
+    box-shadow: 0 0 7px 1px rgba(158, 158, 158, 0.2);
+    ul {
+      li {
+        span{
+          padding: 0;
+          text-transform: uppercase;
+          color: #949494;
+          font-weight: 700;
+        }
+        a{
+          padding: 0;
+        }
+        display: flex;
+        padding: 10px 12px;
+        border-bottom: 1px solid #dadada;
+        &:last-child{
+          border-bottom: 0;
+        }
+      }
+    }
+  }//Here You can write your customize scss

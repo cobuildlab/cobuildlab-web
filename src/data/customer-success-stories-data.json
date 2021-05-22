@@ -1,44 +1,92 @@
 [
   {
+    "image": "../assets/images/customers/art-vault-logo.jpg",
+    "title": "Art Vault",
+    "description": "Art Vault is an Art Management System that helps artists keep track of their inventory and the purchasing of their pieces.",
+    "slug": "/customer-success-stories/art-vault"
+  },
+  {
+    "image": "../assets/images/customers/story-rocket-logo.jpg",
+    "title": "Story Rocket",
+    "description": "A Web platform that connects great writers with the global production community to make film, television, theater, or web.",
+    "slug": "/customer-success-stories/story-rocket"
+  },
+  {
+    "image": "../assets/images/customers/avsee-logo.jpg",
+    "title": "Avsee",
+    "description": "A Web platform that helps physicians and patients by facilitating the follow-up of their medical plan.",
+    "slug": "/customer-success-stories/avsee"
+  },
+  {
+    "image": "../assets/images/customers/okroo.jpg",
+    "title": "Okroo",
+    "description": "A Mobile App that works like a news feed or a social network to connect customers with the promotions of restaurants near them.",
+    "slug": "/customer-success-stories/okroo"
+  },
+  {
+    "image": "../assets/images/customers/leadvolt-logo.jpg",
+    "title": "LeadVolt",
+    "description": "It's a high-touch Lead Management System that closes leads faster, provides full transparency, and empowers any company to focus only on the customer.",
+    "slug": "/customer-success-stories/leadvolt"
+  },
+  {
+    "image": "../assets/images/customers/collab-logo.jpg",
+    "title": "Collab To Grow",
+    "description": "One-of-a-kind SaaS Project Management System that incorporates industry-leading practices, workflows, and tools to help executives unlock the growth potential of their strategic alliances.",
+    "slug": "/customer-success-stories/collab-to-grow"
+  },
+  {
+    "image": "../assets/images/customers/mama-logo.jpg",
+    "title": "Mama",
+    "description": "A Mobile App that works as a connectivity tool that gives its users the opportunity to create new business connections, friendships, romantic relationships, and grow their contact network.",
+    "slug": "/customer-success-stories/mama"
+  },
+  {
+    "image": "../assets/images/customers/pitazo-1.jpg",
+    "title": "El Pitazo",
+    "description": "Venezuela's main independent news website with a powerful Mobile App that provides a channel of information for all the users in and out of the country.",
+    "slug": "/customer-success-stories/el-pitazo"
+  },
+  {
     "image": "../assets/images/customers/jobcore.jpg",
     "title": "Jobcore",
-    "description": "Get work fast and get paid the same day with Jobcore. This is a web platform that allows employers to post job applications for candidates…  ",
+    "description": "America’s first distributed talent pool for the hospitality industry that allows employers to post job openings for candidates using the Web and Mobile App.",
     "slug": "/customer-success-stories/jobcore"
   },
   {
     "image": "../assets/images/customers/Massone.jpg",
     "title": "Massone",
-    "description": "Massone Mechanical Massone Mechanical offers maintenance and installation services to commercial refrigeration companies. Offering high…",
+    "description": "A Fleet Management System that allows the tracking of their products, staff, and services.",
     "slug": "/customer-success-stories/massone"
   },
   {
     "image": "../assets/images/customers/Weedmatch.jpg",
     "title": "Weedmatch",
-    "description":"Weedmatch Weedmatch  is the  first free cannabis social network  made by a group of Venezuelans led by its founder Oscar Lopez in Chile…",
+    "description":"World's first free cannabis social network to connect the community through a Mobile App.",
     "slug": "/customer-success-stories/weedmatch"
   },
   {
-    "image": "../assets/images/customers/4geeks.jpg",
+    "image": "../assets/images/customers/4geeks.png",
     "title": "4Geeks Academy",
-    "description": "4Geeks Academy Contact Person:  Marcelo Ricigliano Location:  Miami, US, Caracas and Maracaibo, Venezuela Industry:  Education Web Site…",
+    "description": "A Learning Management System that train and turn their students around the globe into software developers with an innovative study program.",
     "slug": "/customer-success-stories/4geeks-academy"
   },
   {
-    "image": "../assets/images/customers/Payklever.jpg",
+    "image": "../assets/images/customers/Payklever.png",
     "title": "Payklever Campaign Manager",
-    "description": "Payklever Campaign Manager With Payklever you can turn your car into a payment method. You can drive quietly and never handle your cash or…",
+    "description": "An innovative hands-free payment method that uses RFID technology to allow users to pay at parking lots, drive-thrus, and gas stations while driving.",
     "slug": "/customer-success-stories/payklever-campaign-manager"
   },
   {
     "image": "../assets/images/customers/Propagad.jpg",
     "title": "Propagad",
-    "description": "Propagad Contact Person:  Cesar Lang Location:  Miami, US Industry:  Marketing and Advertising Web Site:  www.propagad.com Introducing Cesar…",
+    "description": "A marketplace to buy and sell ad spaces on any media, anywhere. Their AdMach algorithm give a relevance score between audiences and ad offers.",
     "slug": "/customer-success-stories/propagad"
   },
   {
     "image": "../assets/images/customers/my-voice.jpg",
     "title": "MyVoice",
-    "description": "Cobuild Lab partnered up with Kadem Education to raise teacher’s voices by building a software solution.",
+    "description": "A Survey Management System designed to raise teachers' voices to accomplish improvements in the educational system from within.",
     "slug": "/customer-success-stories/my-voice"
   }
 ]

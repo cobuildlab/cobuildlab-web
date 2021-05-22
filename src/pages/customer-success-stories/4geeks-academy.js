@@ -1,23 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
-import SeoMetaTags from '../../components/SeoMetaTags';
+import { SeoMetaTags } from '../../components/2021/SeoMetaTags';
 
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
 import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 
-import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
-import DetailSection from '../../components/customer-success-stories/DetailSection';
+import DetailSection from '../../components/customer-success-stories/new/DetailSection';
 import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 import { List, ListItem } from '../../components/Typography/List';
 
-import { TextOrange } from '../../components/Typography/TextHelpers';
+import { TextOrange } from '../../components/2021/text/TextHelpers';
+import SlidersAcadedmy from '../../components/customer-success-stories/new/sliders/geeks-academy/Sliders';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const GeeksAcademy = ({ data }) => (
   <DetailLayout>
@@ -73,7 +73,10 @@ const GeeksAcademy = ({ data }) => (
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroImagesContent>
-              <Img fluid={data.logo.childImageSharp.fluid} alt="" />
+              <StaticImage
+                src={'./../../assets/images/customers/4geek/logo.png'}
+                alt={'4Geeks Academy 2'}
+              />
             </DetailHeroImagesContent>
             <DetailHeroImagesContent>
               <DetailVideo id="sJrH4f7Df8g" images={data.videoImages.childImageSharp.fluid} />
@@ -83,7 +86,9 @@ const GeeksAcademy = ({ data }) => (
       </Container>
     </Section>
 
-    <DetailSection src={data.textImagesOne.childImageSharp.fluid}>
+    <DetailSection
+      image={<StaticImage src={'./../../assets/images/customers/4geek/2.png'} alt="" />}
+      right>
       <DetailSubTitle>
         The Academy in <TextOrange>Venezuela</TextOrange>
       </DetailSubTitle>
@@ -95,7 +100,9 @@ const GeeksAcademy = ({ data }) => (
       </DetailParagraph>
     </DetailSection>
 
-    <DetailSection src={data.textImagesTwo.childImageSharp.fluid} left>
+    <DetailSection
+      image={<StaticImage src={'./../../assets/images/customers/4geek/1.png'} alt="" />}
+      left>
       <DetailSubTitle>
         4Geeks Academy: <TextOrange> Maturity and experience</TextOrange>
       </DetailSubTitle>
@@ -126,7 +133,7 @@ const GeeksAcademy = ({ data }) => (
     </DetailSection>
 
     <Section isPaddingless>
-      <DetailCarousel data={data.slider.edges} />
+      <SlidersAcadedmy />
     </Section>
 
     <Section isPaddingless>
@@ -141,7 +148,7 @@ GeeksAcademy.propTypes = {
 
 export const pageQuery = graphql`
   query {
-    seoImages: file(relativePath: { eq: "customers/Weedmatch.jpg" }) {
+    seoImages: file(relativePath: { eq: "customers/4geeks.png" }) {
       childImageSharp {
         resize(width: 1200, height: 1200) {
           width
@@ -150,41 +157,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    slider: allFile(filter: { relativeDirectory: { eq: "customers/4geek/slider" } }) {
-      edges {
-        node {
-          id
-          name
-          childImageSharp {
-            fluid(quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-      }
-    }
-    textImagesTwo: file(relativePath: { eq: "customers/4geek/1.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    textImagesOne: file(relativePath: { eq: "customers/4geek/2.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
     videoImages: file(relativePath: { eq: "customers/4geek/video-cover.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    logo: file(relativePath: { eq: "customers/4geek/logo.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_withWebp

@@ -1,5 +1,5 @@
 import React from 'react';
-import SeoMetaTags from '../components/SeoMetaTags';
+import { SeoMetaTags } from '../components/2021/SeoMetaTags';
 import LayoutPost from '../components/layoutPost';
 import Share from '../components/Share';
 import Title2 from '../components/Title2';
@@ -14,7 +14,7 @@ import get from 'lodash/get';
 import defaultImg from '../resources/default-post.jpg';
 import rehypeReact from 'rehype-react';
 import { Hero, HeroBody, Container, Title, Columns, Column } from 'bloomer';
-import 'bulma';
+import 'bulma/css/bulma.css';
 import '../assets/fonts/Lato-Black.ttf';
 import '../assets/fonts/Lato-BlackItalic.ttf';
 import '../assets/fonts/Lato-Bold.ttf';

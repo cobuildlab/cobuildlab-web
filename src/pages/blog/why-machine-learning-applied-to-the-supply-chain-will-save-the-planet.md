@@ -3,7 +3,7 @@ title: "5 Reasons why machine learning applied to the supply chain will save the
 date: "2021-04-21T16:24:04.000Z"
 template: blog
 tags: Small Business
-image: "./media/machine-learning-save-the-world"
+image: "./media/machine-learning-save-the-world.jpg"
 ---
 
 As we already know, the supply chain plays a very important role in today's economy. Without it, companies would not be what they are today and the globalized market wouldn’t exist. 
@@ -13,6 +13,8 @@ But not everything is as perfect as they say, most supply chains are not very su
 <Br>
 
 <title-2>Let's see some specific reasons for using machine learning in the supply chain to save the world</title-2>
+
+<Br>
 
 <Br>
 

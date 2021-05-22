@@ -69,7 +69,7 @@ Most common risks faced by a startup and you as an investor behind it:
 <Br>
 
 <center>
-<img src="./media/Sin título-1.jpg">
+<img src="./media/sin-titulo-1.jpg">
 </center>
 
 <Br>

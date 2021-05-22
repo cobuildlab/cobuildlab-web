@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import '../assets/css/index.css';
 import HeaderLanding from './headerLanding';
-import 'bulma';
+import 'bulma/css/bulma.css';
 import '../assets/fonts/Lato-Black.ttf';
 import '../assets/fonts/Lato-BlackItalic.ttf';
 import '../assets/fonts/Lato-Bold.ttf';

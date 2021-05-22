@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { Container, Columns, Column, Section } from 'bloomer';
 import { objectGroup, areaChart, cogs, users } from 'react-icons-kit/fa';
 import PreviewIcon from '../../components/icon';
-import Typrography from '../../../2020/Typography';
-import ButtonSmoothScrolling from '../../../2020/Button/ButtonSmoothScrolling';
+import Typography from '../../../2020/Typography';
+import { SmoothScrollingButton } from '../../../2021/button/SmoothScrollingButton';
 import './service.scss';
 
 const ConentContainer = ({ children }) => (
@@ -23,9 +23,9 @@ const Card = ({ index, icon, title, children }) => (
       </span>
     </div>
     <div className="service-content-dec">
-      <Typrography tag="h5" className="service-title">
+      <Typography tag="h5" className="service-title">
         {title}
-      </Typrography>
+      </Typography>
       {children}
     </div>
   </div>
@@ -52,45 +52,45 @@ const Service = () => {
             <Column isMarginless isPaddingless isSize={{ mobile: 12, tablet: 4, desktop: 4 }}>
               <ConentContainer>
                 <div className="service-content-1 main-title-wrapper">
-                  <Typrography tag="h2" className="sitemain-subtitle">
+                  <Typography tag="h2" className="sitemain-subtitle">
                     Business Solutions
-                  </Typrography>
+                  </Typography>
                   {/*<div className="sub-title-wrapper">*/}
-                  {/*  <Typrography tag="h3" className="site-subtitle2">*/}
+                  {/*  <Typography tag="h3" className="site-subtitle2">*/}
                   {/*    From Web and Mobile Apps to Cloud Solutions and Staff Augmentation.*/}
-                  {/*  </Typrography>*/}
+                  {/*  </Typography>*/}
                   {/*</div>*/}
-                  <Typrography tag="h3" className="service-title">
+                  <Typography tag="h3" className="service-title">
                     From Web and Mobile Apps to Cloud Solutions and Staff Augmentation.
-                  </Typrography>
-                  {/*<Typrography tag="p" className="service-dec">*/}
+                  </Typography>
+                  {/*<Typography tag="p" className="service-dec">*/}
                   {/*  Technology and Business are more intertwined than ever, in fact, Technology has*/}
                   {/*  impacted every business process you can imagine - and with razor-thin margins*/}
                   {/*  the norm, the only way to increase revenue is to revolutionize those processes*/}
                   {/*  used to conduct business.*/}
-                  {/*</Typrography>*/}
-                  <Typrography tag="h3" className="about-two sub-title">
+                  {/*</Typography>*/}
+                  <Typography tag="h3" className="about-two sub-title">
                     <span className="enterprise-text-orange">Custom Software solutions can:</span>
-                  </Typrography>
-                  <Typrography tag="p" className="service-dec-content">
+                  </Typography>
+                  <Typography tag="p" className="service-dec-content">
                     - Reduce Costs
-                  </Typrography>
-                  <Typrography tag="p" className="service-dec-content">
+                  </Typography>
+                  <Typography tag="p" className="service-dec-content">
                     - Scale the business operations
-                  </Typrography>
-                  <Typrography tag="p" className="service-dec-content">
+                  </Typography>
+                  <Typography tag="p" className="service-dec-content">
                     - Avoid the high risks and costs of development
-                  </Typrography>
-                  <Typrography tag="p" className="service-dec-content">
+                  </Typography>
+                  <Typography tag="p" className="service-dec-content">
                     - Promote employee development
-                  </Typrography>
-                  <Typrography tag="p" className="service-dec-content">
+                  </Typography>
+                  <Typography tag="p" className="service-dec-content">
                     - Provide you with the necessary expertise
-                  </Typrography>
+                  </Typography>
                   <br />
-                  <ButtonSmoothScrolling href="#contact" isCapitalize={false}>
+                  <SmoothScrollingButton href="#contact" isCapitalize={false}>
                     Get a Free Consultation
-                  </ButtonSmoothScrolling>
+                  </SmoothScrollingButton>
                 </div>
               </ConentContainer>
             </Column>
@@ -100,36 +100,36 @@ const Service = () => {
                   <Column isMarginless isPaddingless isSize={{ mobile: 12, tablet: 6 }}>
                     <div className="service-block1">
                       <Card index={2} key={2} icon={objectGroup} title={'Software Projects'}>
-                        <Typrography tag="p" className="service-dec-content">
+                        <Typography tag="p" className="service-dec-content">
                           {
                             'Cobuild Lab puts together managed teams to develop your most challenging projects.'
                           }
-                        </Typrography>
+                        </Typography>
                       </Card>
                       <Card index={1} key={1} icon={cogs} title={'Process and Workflow Automation'}>
-                        <Typrography tag="p" className="service-dec-content">
+                        <Typography tag="p" className="service-dec-content">
                           {
                             'Custom software development can be the solution that revolutionizes your processes and become an additional revenue stream itself by selling it to others businesses.'
                           }
-                        </Typrography>
+                        </Typography>
                       </Card>
                     </div>
                   </Column>
                   <Column isSize={{ mobile: 12, tablet: 6 }}>
                     <div className="service-block2">
                       <Card index={3} key={3} icon={areaChart} title={'Product Development'}>
-                        <Typrography tag="p" className="service-dec-content">
+                        <Typography tag="p" className="service-dec-content">
                           {
                             'We team up with our clients to explore new and early-stage ideas and transform them into Web and Mobile Software Products.'
                           }
-                        </Typrography>
+                        </Typography>
                       </Card>
                       <Card index={4} key={4} icon={users} title={'Staff augmentation'}>
-                        <Typrography tag="p" className="service-dec-content">
+                        <Typography tag="p" className="service-dec-content">
                           {
                             'Web Developers, Mobile Developers, QA Analysts and Product Managers ready to drive success to your existing needs. '
                           }
-                        </Typrography>
+                        </Typography>
                       </Card>
                     </div>
                   </Column>

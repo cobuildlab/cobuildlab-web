@@ -5,8 +5,8 @@ import Footer from '../enterprise/containers/footer/Footer';
 import NewsletterModal from '../NewsletterModal';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import Header from './header/Header';
-import SeoMetaTags from '../SeoMetaTags';
+import Header from '../header/Header';
+import { SeoMetaTags } from '../2021/SeoMetaTags';
 
 const Wrapper = styled.div`
   background-color: #f4f6fb !important;

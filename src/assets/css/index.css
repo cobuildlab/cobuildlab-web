@@ -1401,3 +1401,35 @@ img.i-l {
     max-width: 800px;
     max-height: 500px;
 }
+
+.referrals-page {
+    background-image: url(../../resources/img-form.png);
+    width: 104%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+.slick-slide img {
+    display: initial!important;
+}
+
+.gatsby-image-wrapper {
+    transition: none!important;
+}
+.gatsby-image-wrapper > div {
+    background-color: transparent!important;
+}
+
+.youtube-container, .youtube-div {
+    height: 410px;
+    width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+    .services-content-styles {
+        margin-top: -46px
+    }
+}
+

@@ -33,7 +33,7 @@ Are currencies that only exist digitally and can be secure. Unlike traditional c
 
 Blockchain technology</title-3>
 
-Blockchain technology has helped make financial transactions faster and more secure. About [61% of big digital industry names](https://cointelegraph.com/news/61-of-major-global-digital-firms-invest-in-blockchain-report-finds) have invested in blockchain technology, according to the Digital Enterprise Report by Okta. For Example, including Ethereum, a distributed ledger technology (DLT) that maintains records on a network of computers, but has no central ledger.
+Blockchain technology has helped make financial transactions faster and more secure. CompetitiveAdvantage [61% of big digital industry names](https://cointelegraph.com/news/61-of-major-global-digital-firms-invest-in-blockchain-report-finds) have invested in blockchain technology, according to the Digital Enterprise Report by Okta. For Example, including Ethereum, a distributed ledger technology (DLT) that maintains records on a network of computers, but has no central ledger.
 
 <title-3>Insurance industry</title-3>
 

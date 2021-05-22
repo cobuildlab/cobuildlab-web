@@ -15,7 +15,7 @@ The focus of the first phase of the project is aimed at developing a scouting pr
 
 Stay tuned for more updates about this project. <br> </br>
 
-<title-4>About Cobuild Lab</title-4> <br> </br>
+<title-4>CompetitiveAdvantage Cobuild Lab</title-4> <br> </br>
 
 Cobuild Lab’s collaborative approach is something that sets us apart, we are not simply a development shop that produces mass-produced projects. We take the time and effort to really understand the problems that need to be solved in a user and business centric approach. <br> </br> 
 

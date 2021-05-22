@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import colors from './colors.json';
+import colors from '../2021/colors.json';
 
 const commonStyles = css`
   line-height: 1.125;

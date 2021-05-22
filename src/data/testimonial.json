@@ -15,12 +15,36 @@
     "title": "Robert Mitchell",
     "subtitle": "Fieldworker Management for the HVAC Industry",
     "image": "../assets/images/testimonial/robert-mitchell-75.png",
-    "content":    "Coubild Labs software development process has delivered for our organization. Our proprietary software through developments allows our mobile workforce to Invoice Customers within a day or service. Cobuild Labs process gave our organizations an opportunity to transform our workflow and find productivity. We are justified in our decision to work with them after trying several out of the box software solutions. We view Cobuild Labs as an integral part of our technology strategy going forward."
+    "content": "Coubild Labs software development process has delivered for our organization. Our proprietary software through developments allows our mobile workforce to Invoice Customers within a day or service. Cobuild Labs process gave our organizations an opportunity to transform our workflow and find productivity. We are justified in our decision to work with them after trying several out of the box software solutions. We view Cobuild Labs as an integral part of our technology strategy going forward."
   },
   {
     "title": "Anna Keeler",
     "subtitle": "Mobile Platform for Introductions",
     "image": "../assets/images/testimonial/anna-120.png",
     "content": "Mama Matchmaking is incredibly impressed with Cobuild Lab`s work on our application. The team is providing a complete scope of work and clear solutions for the launch of our project. We are excited about the results, timeline, and budget so far achieved, and look forward to continuing our partnership."
+  },
+  {
+    "title": "Kerry McLaney",
+    "subtitle": "Web Dev for Art Sales Web App",
+    "image": "../assets/images/testimonial/kerry-100.png",
+    "content": "Attentive to project requirements, the team delivered a minimalistic platform design that allows features artwork to stand out. Additionally, they've been praised for their transparent handling of the project and willingness to provide honest advice that furthers the potential of the product."
+  },
+  {
+    "title": "Doug Bullard",
+    "subtitle": "Web Dev for Education Management Startup",
+    "content": "Though the product is still in its early stages, internal stakeholders are impressed with Cobuild’s contributions, noting their ability to convert functionality into great designs. Throughout the engagement, the team was exceptionally well-managed, communicative, and professional.",
+    "image": "../assets/images/testimonial/doug-100.png"
+  },
+  {
+    "title": "Oscar Perez",
+    "subtitle": "SaaS Platform Dev for Alliance Management Technology",
+    "content": "Cobuild Lab has become an invaluable partner for the client, who has taken them on for various projects after the initial build. The team is exceptionally communicative and has deep technical knowledge. For all that they’ve done to supplement the client’s team, they’ve also come reasonably priced.",
+    "image": "../assets/images/testimonial/oscar-perez-100.png"
+  },
+  {
+    "title": "Ron Karasz",
+    "subtitle": "Software Dev & UX/UI for Networking App",
+    "content": "Though not launched yet, the app is of great quality and easy to use. The client is happy with Cobuild Lab Inc’s work and their eager approach to the engagement. They are solutions-oriented and excel in managing the workflow.",
+    "image": "../assets/images/testimonial/ron-100.png"
   }
 ]

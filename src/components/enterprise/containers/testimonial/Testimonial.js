@@ -3,7 +3,7 @@ import { Container, Section } from 'bloomer';
 import styled from 'styled-components';
 import H2 from '../../../Typography/H2';
 import H4 from '../../../Typography/H4';
-import { TextOrange, AlignCenter } from '../../../Typography/TextHelpers';
+import { TextOrange, AlignCenter } from '../../../2021/text/TextHelpers';
 import Carousel from './Carousel';
 
 const Title = styled(H2)`
@@ -29,7 +29,7 @@ const Testimonial = () => {
   return (
     <Section isPaddingless id={'testimonials'}>
       <div className="testimonial-wrapper gradient-color" id="testimonial">
-        <div className="enterprise-section" style={{ 'padding-bottom': '1rem' }}>
+        <div className="enterprise-section" style={{ paddingBottom: '4rem' }}>
           <Container isFluid>
             <Wrapper>
               <Title>Testimonials</Title>

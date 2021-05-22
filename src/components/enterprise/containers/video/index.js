@@ -7,8 +7,8 @@ import { caretRight } from 'react-icons-kit/fa/caretRight';
 import H3 from '../../../Typography/H3';
 import H6 from '../../../Typography/H6';
 import Paragraph from '../../../Typography/Paragraph';
-import { TextOrange } from '../../../Typography/TextHelpers';
-import VideoPlay from '../../../2020/VideoPlay';
+import { TextOrange } from '../../../2021/text/TextHelpers';
+import { VideoPlay } from '../../../2020/VideoPlay';
 
 const animation = keyframes`
   from {
