@@ -63,7 +63,9 @@ const DigitalTransformation = () => (
           }
           img={
             <StaticImage
-              src={'./../../assets/images/service/card/iconos-Logistic-Digital-Transformation.svg'}
+              src={
+                './../../assets/images/service/card/iconos_Logistic-Digital-Transformation_Logistic-Digital-Transformation.svg'
+              }
               alt=""
             />
           }

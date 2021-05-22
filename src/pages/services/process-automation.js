@@ -56,7 +56,9 @@ const ProcessAutomation = () => (
           }
           img={
             <StaticImage
-              src={'./../../assets/images/service/card/iconos-Logistic-Process-Automation.svg'}
+              src={
+                './../../assets/images/service/card/iconos_Process-Automation_Main-Services-Web-Design_Logistic-Process-Automation_Logistic-Process-Automation.svg'
+              }
               alt=""
             />
           }
