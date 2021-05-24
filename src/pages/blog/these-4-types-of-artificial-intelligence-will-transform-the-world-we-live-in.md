@@ -46,9 +46,9 @@ How do they work? This type of machine uses a large amount of training data in i
 The future goal is to provide these machines with the ability to form not only complete representations about the world but also about other agents, to remember their experiences, and to learn how to handle new situations.  <br> </br>
 
 
-<title-4 align="centered"> 3. Machines with a Theory of Mind </title-4> 
+<title-4 align="centered"> 3. Machines with a Theory of Mind </title-4>  
 
-<img src="./media/4typesai-2.png">
+<img src="./media/4typesai-2.png"> <br> </br>
 
 The origin of the " theory of mind " concept can be found in the pioneering work of David Premack and Guy Woodruff, when they asked themselves, <a target="_blank" href="https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/does-the-chimpanzee-have-a-theory-of-mind/1E96B02CD9850016B7C93BC6D2FEF1D0">  Does the chimpanzee have a theory of mind?</a> This refers to the ability to understand and predict other people's behavior, knowledge, intentions, emotions, and beliefs. 
 
