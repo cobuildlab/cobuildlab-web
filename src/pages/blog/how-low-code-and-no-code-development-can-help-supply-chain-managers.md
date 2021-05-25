@@ -47,7 +47,7 @@ Our current reality shows that few people in the Supply Chain or Logistics indus
 
 <br>
 
-<title-2>Benefits of low-code and no-code for Supply Chain Enterprises</title-4>
+<title-2>Benefits of low-code and no-code for Supply Chain Enterprises</title-2>
 
 <br>
 
@@ -63,7 +63,7 @@ Our current reality shows that few people in the Supply Chain or Logistics indus
 
 <br>
 
-<b>Real-time insights to identify risks automatically.<b>
+<b>Real-time insights to identify risks automatically.</b>
   
 <br>
 
@@ -81,7 +81,11 @@ Our current reality shows that few people in the Supply Chain or Logistics indus
 
 <b>If you are an online supply chain company this means that you no longer rely on the traditional supply chain model.</b> These companies need and rely on technology, because they depend on it to visualize stock, plan delivery routes, fleets, and manage returns. With low-code and no-code processes, such as response to complex features and developments, managers can actually give solutions to these even faster and in a more user-friendly way.
 
+<br>
+  
 <b>When traditional supply chain providers need to find a way to digital transformation,</b> low-code and no-code automation is a great alternative for them, because these solutions provide IoT, Machine Learning (ML), and blockchain to deliver new values and competitive advantages to a business. 
+  
+<br>
 
 <b>Supply Chain Managers need dynamic solutions</b> that can be updated easily to make them more flexible for the upcoming changes and digital evolutions in the industries.
 
