@@ -1,6 +1,6 @@
 ---
-title: "Must-Have Resources for Starting Your Own Local Business"
-date: "2020-09-22T19:24:04.000Z"
+title: "7 Ways Technology is Changing Logistics"
+date: "2021-05-30T19:24:04.000Z"
 template: blog
 tags: Small Business
 image: "./media/chuttersnap-fN603qcEA7g-unsplash.jpg"
