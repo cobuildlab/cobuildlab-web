@@ -2,11 +2,14 @@ const _ = require('lodash');
 const Promise = require('bluebird');
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
+const unified = require('unified');
+const markdown = require('remark-parse');
+const html = require('remark-html');
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  return new Promise((resolve, reject) => {
+  let promise1 = new Promise((resolve, reject) => {
     resolve(
       graphql(
         `
@@ -50,7 +53,6 @@ exports.createPages = ({ graphql, actions }) => {
         _.each(posts, (post, index) => {
           const previous = index === posts.length - 1 ? null : posts[index + 1].node;
           const next = index === 0 ? null : posts[index - 1].node;
-          console.log(String(post.node.frontmatter.template), 'STRING');
 
           createPage({
             path: post.node.fields.slug,
@@ -77,24 +79,18 @@ exports.createPages = ({ graphql, actions }) => {
       }),
     );
   });
-};
 
-exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions;
-
-  return new Promise((resolve, reject) => {
+  let promise2 = new Promise((resolve, reject) => {
     resolve(
       graphql(
         `
           query BasePost {
             allPost8Base {
-              post: edges {
-                post: node {
-                  id
-                  title
-                  slug
-                  content
-                }
+              post: nodes {
+                id
+                title
+                slug
+                content
               }
             }
           }
@@ -104,24 +100,28 @@ exports.createPages = ({ graphql, actions }) => {
           return reject(result.errors);
         }
         // Create blog posts pages AI.
-        console.log(result);
         const posts = result.data.allPost8Base.post;
         _.each(posts, (post, index) => {
-          const previous = index === posts.length - 1 ? null : posts[index + 1].node;
-          const next = index === 0 ? null : posts[index - 1].node;
-          createPage({
-            path: post.slug,
-            component: path.resolve(`src/templates/${String(post.node.frontmatter.template)}.js`),
-            context: {
-              slug: post.slug,
-              previous,
-              next,
-            },
-          });
+          //Convert Markdown to html
+          unified()
+            .use(markdown)
+            .use(html)
+            .process(post.content, function (err, file) {
+              if (err) throw err;
+              post.content = String(file);
+              createPage({
+                path: `/blog/ai/${post.slug}`,
+                component: path.resolve(`./src/templates/blog-ai.js`),
+                context: {
+                  post,
+                },
+              });
+            });
         });
       }),
     );
   });
+  return Promise.all([promise1, promise2]);
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

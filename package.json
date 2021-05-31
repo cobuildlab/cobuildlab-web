@@ -59,6 +59,7 @@
     "react-toastify": "^4.4.0",
     "react-youtube": "^7.9.0",
     "rehype-react": "^3.0.3",
+    "remark-html": "^13.0.1",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.0.1",
     "typeface-merriweather": "0.0.43",
