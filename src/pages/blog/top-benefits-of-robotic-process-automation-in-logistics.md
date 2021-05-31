@@ -1,5 +1,5 @@
 ---
-title: "Must-Have Resources for Starting Your Own Local Business"
+title: "Top Benefits of Robotic Process Automation in Logistics"
 date: "2021-05-31T16:24:04.000Z"
 template: blog
 tags: Small Business
