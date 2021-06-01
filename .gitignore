@@ -7,5 +7,3 @@ public
 .cache/
 yarn.lock
 .env
-#.env.development
-#.env.production
