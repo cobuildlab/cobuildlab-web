@@ -30,13 +30,11 @@ const SectionPost = Styled.section`
   }
   & h1 {
     color: #264A60;
-    font-family: 'Lato-bold',sans-serif;
     margin-bottom: 25px!important;
     font-size: 2.5rem;
   }
   & h2 {
     color: #264A60;
-    font-family: 'Lato-bold',sans-serif;
     margin-bottom: 15px!important;
     font-size: 2rem;
   }

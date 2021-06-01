@@ -143,9 +143,9 @@ module.exports = {
     {
       resolve: `@cobuildlab/gatsby-source-8base`,
       options: {
-        url: 'https://api.8base.com',
-        apiToken: '1e85c432-e517-4f2f-b76f-e41137581bd2',
-        workspaceId: 'cjnp8j12b000i01qm9zu7dug3',
+        url: process.env.URL_8BASE,
+        apiToken: process.env.TOKEN_8BASE_API,
+        workspaceId: process.env.WORKSPACE_ID_8BASE,
         graphqlQuery: `
           query{
             postsList {
