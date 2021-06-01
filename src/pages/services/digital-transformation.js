@@ -63,7 +63,9 @@ const DigitalTransformation = () => (
           }
           img={
             <StaticImage
-              src={'./../../assets/images/service/card/iconos-Logistic-Digital-Transformation.svg'}
+              src={
+                './../../assets/images/service/card/iconos_Logistic-Digital-Transformation_Logistic-Digital-Transformation.svg'
+              }
               alt=""
             />
           }
@@ -87,8 +89,9 @@ const DigitalTransformation = () => (
           title={'How does it work?'}
           otherText={
             'Our own Digital Transformation Assessment tool helps you determine through a simple questionnaire what’s the level of digital maturity of your business and what are your priorities and opportunities.'
-          }
-        />
+          }>
+          <StaticImage src={'./../../assets/images/service/digital-transformation.png'} />
+        </ServicesSection3>
       </Container>
     </Section>
     <Section>

@@ -119,6 +119,7 @@ const Services = () => (
               alt="It support"
             />
           }
+          three={true}
         />
         <ServicesCard
           title={'Custom Project'}
@@ -131,6 +132,22 @@ const Services = () => (
               alt="custom project"
             />
           }
+          three={true}
+        />
+        <ServicesCard
+          title={'IT Staff'}
+          subtitle={'Augmentation'}
+          cover={
+            "Recruit the technological talent you're looking for right where you need it & exactly when you need it"
+          }
+          to={'it-staff-augmentation'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos_Staff-Augmentation.svg'}
+              alt="it staff augmentation"
+            />
+          }
+          three={true}
         />
       </Columns>
     </Section>
@@ -161,7 +178,9 @@ const Services = () => (
           to={'process-automation'}
           image={
             <StaticImage
-              src={'./../assets/images/service/card/iconos-Logistic-Process-Automation.svg'}
+              src={
+                './../assets/images/service/card/iconos_Process-Automation_Main-Services-Web-Design_Logistic-Process-Automation_Logistic-Process-Automation.svg'
+              }
               alt="process automation"
             />
           }
@@ -174,7 +193,9 @@ const Services = () => (
           to={'digital-transformation'}
           image={
             <StaticImage
-              src={'./../assets/images/service/card/iconos-Logistic-Digital-Transformation.svg'}
+              src={
+                './../assets/images/service/card/iconos_Logistic-Digital-Transformation_Logistic-Digital-Transformation.svg'
+              }
               alt="digital transformation"
             />
           }
@@ -234,7 +255,37 @@ const Services = () => (
           to={'web-design'}
           image={
             <StaticImage
-              src={'./../assets/images/service/card/iconos-Main-Services-Web-Design.svg'}
+              src={
+                './../assets/images/service/card/iconos-web-design_Main-Services-Web-Design_Main Services-Web-Design.svg'
+              }
+              alt="Web Design"
+            />
+          }
+        />
+      </Columns>
+      <Columns isCentered>
+        <ServicesCard
+          title={'Low code or \n'}
+          subtitle={'no code development'}
+          cover={
+            'Develop full software solutions with less code, in less time, and with fewer errors\n'
+          }
+          to={'low-code-or-no-code-development'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos_Low Code-No-Code.svg'}
+              alt="Web Design"
+            />
+          }
+        />
+        <ServicesCard
+          title={'Robotic'}
+          subtitle={'Process Automation\n'}
+          cover={'Accelerate and optimize tasks and processes with a scalable digital workforce'}
+          to={'robotic-process-automation'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos_Robotic-Process-Automation.svg'}
               alt="Web Design"
             />
           }

@@ -56,7 +56,9 @@ const ProcessAutomation = () => (
           }
           img={
             <StaticImage
-              src={'./../../assets/images/service/card/iconos-Logistic-Process-Automation.svg'}
+              src={
+                './../../assets/images/service/card/iconos_Process-Automation_Main-Services-Web-Design_Logistic-Process-Automation_Logistic-Process-Automation.svg'
+              }
               alt=""
             />
           }
@@ -81,8 +83,9 @@ const ProcessAutomation = () => (
           }
           otherText2={
             'Get rid of monotonous manual data entry with integrated systems and databases. Automatically support all mobile devices and accelerate approval processes with 24/7 access from anywhere.'
-          }
-        />
+          }>
+          <StaticImage src={'./../../assets/images/service/process-automation.png'} />
+        </ServicesSection3>
       </Container>
     </Section>
     <Section>
