@@ -78,7 +78,7 @@ Unlike <a target="_blank" href="https://www.hp.com/us-en/shop/cat/desktops">  de
 
 CobuildLab’s solutions can provide your business with the supply chain management tools you’ve been looking for. Our software is based on advanced artificial intelligence and machine learning. It assists our clients in preventing inadequate inventory, overstocking, and unanticipated outputs. 
 
-It also automates time-consuming and error-prone manual tasks to save manpower hours and divert them to where they’re needed the most. We integrate systems and databases to reduce repetitive data entry, and develop custom software for our clients that improves their decision-making processes, minimizes bottlenecks and delays, and much more.
+It also automates time-consuming and error-prone manual tasks to save manpower hours and divert them to where they’re needed the most. We integrate systems and databases to reduce repetitive data entry, and develop **custom software** for our clients that improves their decision-making processes, minimizes bottlenecks and delays, and much more.
 
 
 
