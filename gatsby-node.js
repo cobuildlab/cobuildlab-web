@@ -91,6 +91,10 @@ exports.createPages = ({ graphql, actions }) => {
                 title
                 slug
                 content
+                description
+                tag
+                readingTime
+                createdAt
               }
             }
           }

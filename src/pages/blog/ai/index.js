@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Layout from '../../../components/2020/Layout';
-import { Section, Container } from 'bloomer';
+import { Section, Container, Columns } from 'bloomer';
 import BlogMetaTags from '../../../components/blog-ai/BlogMetaTags';
 import BlogHero from '../../../components/blog-ai/BlogHero';
 import BlogList from '../../../components/blog-ai/BlogList';
-import BlogPostContainer from '../../../components/blog-post/BlogPostContainer';
 import Contact from '../../../components/2020/HomePageContact';
 
 const Blog = ({ data }) => {
+  console.log(data);
   const { post } = data.allPost8Base;
   return (
     <Layout>
@@ -17,9 +17,9 @@ const Blog = ({ data }) => {
       <BlogHero />
       <Section isPaddingless>
         <Container>
-          <BlogPostContainer>
+          <Columns isMultiline>
             <BlogList data={post} />
-          </BlogPostContainer>
+          </Columns>
         </Container>
       </Section>
       <Section>
@@ -43,6 +43,10 @@ export const pageQuery = graphql`
         title
         slug
         content
+        description
+        tag
+        readingTime
+        createdAt
       }
     }
   }

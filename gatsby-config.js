@@ -154,6 +154,10 @@ module.exports = {
                 title
                 content
                 slug
+                tag
+                description
+                createdAt
+                readingTime
                 imageUrl {
                   id
                   filename
