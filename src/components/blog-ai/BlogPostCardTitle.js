@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  color: #fff;
+  color: #264a60;
   font-weight: bold;
   font-size: 18px;
+  height: 100px;
   @media screen and (max-width: 768px) {
     font-size: 14px;
   }
