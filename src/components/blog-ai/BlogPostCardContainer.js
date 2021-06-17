@@ -9,7 +9,7 @@ const Overlay = styled.div`
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: #fff;
   z-index: 10;
   transition: all 0.2s ease-out;
 `;
@@ -17,13 +17,19 @@ const Overlay = styled.div`
 const Container = styled(Link)`
   position: relative;
   display: block;
-  width: 400px;
-  height: 290px;
+  width: 380px;
+  height: 340px;
   border-radius: 5px;
   overflow: hidden;
   margin: auto;
+  background-color: #fff;
+  box-shadow: 0px 10px 20px #0000001a;
   &:hover ${Overlay} {
     background-color: rgba(0, 0, 0, 0.5);
+  }
+  @media screen and (max-width: 1024px) {
+    width: 318px;
+    height: 286px;
   }
   @media screen and (max-width: 768px) {
     width: 90%;
@@ -44,15 +50,9 @@ const ChildrenContainer = styled.div`
   justify-content: space-between;
 `;
 
-const Images = styled.img`
-  width: 100%;
-  height: 100%;
-`;
-
 const BlogPostCardContainer = ({ children, src, alt, to }) => (
   <Container to={to}>
     <Overlay />
-    <Images src={src} alt={alt} />
     <ChildrenContainer>{children}</ChildrenContainer>
   </Container>
 );

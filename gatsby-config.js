@@ -154,10 +154,16 @@ module.exports = {
                 title
                 content
                 slug
-                imageUrl {
-                  id
-                  filename
-                  downloadUrl
+                tag
+                description
+                createdAt
+                readingTime
+                imageUrl{
+                  items{
+                    filename
+                    downloadUrl
+                    createdAt
+                  }
                 }
               }
               count

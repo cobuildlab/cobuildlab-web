@@ -54,7 +54,18 @@ const StyledContainer = Styled(Container)`
  */
 function BlogAI({ pageContext }) {
   const { post } = pageContext;
-  const { title, content } = post;
+
+  const { title, fields } = post;
+  let { content } = post;
+  const { images } = fields !== null ? fields : [];
+
+  if (images === undefined) {
+    content = content.replace('/<img>/g', '');
+  } else {
+    images.forEach((value) => {
+      content = content.replace('<img>', `<img src="${value.remoteImage.publicURL}" />`);
+    });
+  }
 
   return (
     <LayoutPost>
