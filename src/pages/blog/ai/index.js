@@ -9,7 +9,6 @@ import BlogList from '../../../components/blog-ai/BlogList';
 import Contact from '../../../components/2020/HomePageContact';
 
 const Blog = ({ data }) => {
-  console.log(data);
   const { post } = data.allPost8Base;
   return (
     <Layout>
@@ -47,6 +46,20 @@ export const pageQuery = graphql`
         tag
         readingTime
         createdAt
+        imageUrl {
+          items {
+            downloadUrl
+            createdAt
+          }
+        }
+        fields {
+          images {
+            remoteImage {
+              publicURL
+              url
+            }
+          }
+        }
       }
     }
   }

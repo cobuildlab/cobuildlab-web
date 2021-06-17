@@ -95,6 +95,21 @@ exports.createPages = ({ graphql, actions }) => {
                 tag
                 readingTime
                 createdAt
+                imageUrl {
+                  items {
+                    filename
+                    downloadUrl
+                    createdAt
+                  }
+                }
+                fields {
+                  images {
+                    remoteImage {
+                      publicURL
+                      url
+                    }
+                  }
+                }
               }
             }
           }

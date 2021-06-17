@@ -32,7 +32,6 @@ const StyleSubtitle = styled.div`
 `;
 
 const ServicesSection3 = ({ children, title, textList, otherText, otherText2 }) => {
-  console.log(children);
   return (
     <>
       <StyleSubtitle>

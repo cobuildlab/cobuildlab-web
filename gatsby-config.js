@@ -158,10 +158,12 @@ module.exports = {
                 description
                 createdAt
                 readingTime
-                imageUrl {
-                  id
-                  filename
-                  downloadUrl
+                imageUrl{
+                  items{
+                    filename
+                    downloadUrl
+                    createdAt
+                  }
                 }
               }
               count
