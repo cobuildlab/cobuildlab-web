@@ -9,7 +9,7 @@ image: "./media/digital-transformation-for-small-business-corregida.png"
 
 We've heard about the **digital transformation** for a long time, and how important it is in 2020, and we couldn't stay silent about this process that is revolutionizing small businesses and large companies.
 
-Digital transformation is a process of using new technology to improve a business or industry.
+Digital transformation is a process of using new technology to [improve a business](https://moneybrighter.com/how-to-start-an-llc) or industry.
 
 Among the most important areas covered by the digital transformation this 2020 we have:  
 

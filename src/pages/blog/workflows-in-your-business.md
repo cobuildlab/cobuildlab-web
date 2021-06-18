@@ -50,7 +50,7 @@ There are really nice tools as Google Calendar, Trello, Evernote, etc, that can 
 
 <title-3>5. Be as transparent you can</title-3>
 
-You can make public all assignments you make using a workflow tool. In that way, everyone in your team would work as a network. 
+You can make public all assignments you make using a [workflow tool](https://moneybrighter.com/). In that way, everyone in your team would work as a network. 
 
 Another good reason to do it is that all people in your team will know in what is working his or her partners. That is transparency.
 

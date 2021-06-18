@@ -17,7 +17,7 @@ An image has more value than a word, especially in video marketing. For that rea
 
 <youtube-video id="gtp_dLizo7E"></youtube-video>
 
-Video marketing is a strategy where you make a group of videos with an objective: show your brand. 
+[Video marketing](https://webinarcare.com/best-webinar-software/) is a strategy where you make a group of videos with an objective: show your brand. 
 
 These videos have the essence and the value proposal you offer, and they have images, sounds, and information to achieve a goal: keep the attention of customers, convert them and get their loyalty. 
 
