@@ -90,8 +90,9 @@ const ProductDevelopment = () => (
           }
           otherText2={
             'Once we understand your vision, we assemble an A-team of engineers, designers, and developers to bring your product to life.'
-          }
-        />
+          }>
+          <StaticImage src={'./../../assets/images/service/product-development-ilustration.png'} />
+        </ServicesSection3>
       </Container>
     </Section>
     <Section>
