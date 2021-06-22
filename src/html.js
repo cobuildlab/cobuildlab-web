@@ -13,7 +13,7 @@ export default function HTML(props) {
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-        {process.env.BRANCH === 'dev' ? <meta name="robots" content="noindex" /> : ''}
+        {process.env.BRANCH === 'main' ? <meta name="robots" content="noindex" /> : ''}
         {/*}<!-- Replacement viewport meta tag (for AMP validity) -->*/}
         <meta
           name="viewport"
