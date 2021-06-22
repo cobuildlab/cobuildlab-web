@@ -58,6 +58,11 @@ const Banner = () => {
               </Typography>
               <br />
               <Typography size={title} tag="h2">
+                We partner with <span className="enterprise-text-orange">Industry Experts</span> and{' '}
+                to solve Logistical and Productivity problems with
+                <span className="enterprise-text-orange">
+                  Custom Software Solutions, Artificial Intelligence and IOT.
+                </span>
                 We solve <span className="enterprise-text-orange">Logistics</span> and{' '}
                 <span className="enterprise-text-orange">Productivity</span> problems with custom
                 software solutions.
