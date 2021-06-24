@@ -119,7 +119,6 @@ const Services = () => (
               alt="It support"
             />
           }
-          three={true}
         />
         <ServicesCard
           title={'Custom Project'}
@@ -132,8 +131,9 @@ const Services = () => (
               alt="custom project"
             />
           }
-          three={true}
         />
+      </Columns>
+      <Columns isCentered>
         <ServicesCard
           title={'IT Staff'}
           subtitle={'Augmentation'}
@@ -147,7 +147,20 @@ const Services = () => (
               alt="it staff augmentation"
             />
           }
-          three={true}
+        />
+        <ServicesCard
+          title={'Custom Inventory'}
+          subtitle={'Management System'}
+          cover={
+            'Develop full software solutions with less code, in less time, and with fewer errors'
+          }
+          to={'custom-inventory-management-system'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos-custom-management-inventory-system.png'}
+              alt="Custom Inventory"
+            />
+          }
         />
       </Columns>
     </Section>
@@ -319,8 +332,8 @@ const Services = () => (
           to={'mvp-software-development'}
           image={
             <StaticImage
-              src={'./../assets/images/service/card/iconos-Startup-MVP.svg'}
-              alt="Mvp softwre"
+              src={'./../assets/images/service/card/iconos-MVP-Software-Development.png'}
+              alt="Mvp software"
             />
           }
           three={true}

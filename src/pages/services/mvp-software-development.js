@@ -61,7 +61,10 @@ const MvpSoftwareDevelopment = () => (
             '                substantial capital loss.'
           }
           img={
-            <StaticImage src={'./../../assets/images/service/card/iconos-Startup-MVP.svg'} alt="" />
+            <StaticImage
+              src={'./../../assets/images/service/card/iconos-MVP-Software-Development.png'}
+              alt=""
+            />
           }
         />
       </Container>
