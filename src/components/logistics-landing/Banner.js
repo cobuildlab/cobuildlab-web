@@ -62,11 +62,8 @@ const Banner = () => {
                 to solve Logistical and Productivity problems with
                 <span className="enterprise-text-orange">
                   {' '}
-                  Custom Software Solutions, Artificial Intelligence and IOT.
+                  Custom Software Solutions, Artificial Intelligence and IoT.
                 </span>{' '}
-                We solve <span className="enterprise-text-orange">Logistics</span> and{' '}
-                <span className="enterprise-text-orange">Productivity</span> problems with custom
-                software solutions.
               </Typography>
               <br />
               <Typography size={subTitle} tag="h1">
