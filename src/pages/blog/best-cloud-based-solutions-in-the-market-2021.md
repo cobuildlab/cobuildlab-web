@@ -12,7 +12,7 @@ The use of cloud-based solutions is changing the way we share and store a lot of
 
 <center>
 
-<img src="./media/Cloud-Based-Solutions.jpg">
+<img src="./media/Cloud-Based-Solutions.jpeg">
 
 </center>
 
