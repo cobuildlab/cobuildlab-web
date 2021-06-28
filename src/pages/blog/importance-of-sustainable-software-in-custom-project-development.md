@@ -104,6 +104,12 @@ We make this feature possible in our agile software developments (using framewor
 
 <br>
 
+<youtube-video id="8yV_hf59mio"></youtube-video>
+
+<br>
+
+<br>
+
 <title-2>Some benefits of sustainable development</title-2>
 
 <br>
@@ -126,11 +132,6 @@ We make this feature possible in our agile software developments (using framewor
 
 * Product managers and product owners are responsible for making you happy by ensuring that development work is aligned with your needs. This kind of development makes this alignment easier by providing frequent opportunities to reprioritize work to ensure maximum value delivery.
 
-<br>
-
-<youtube-video id="8yV_hf59mio"></youtube-video>
-
-<br>
 
 Our **sustainable software** business solutions have a myriad of advantages in supply chains and logistics thanks to efficiency they provide. They will ensure that your business runs efficiently and effectively for growth even when you are developing and updating your software system. The list of benefits continues so far. We invite you to communicate with us to know them or just to start now and make them a reality for your company. 
 
