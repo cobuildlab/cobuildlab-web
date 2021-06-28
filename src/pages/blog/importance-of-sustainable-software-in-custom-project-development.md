@@ -1,6 +1,6 @@
 ---
 title: "Importance of sustainable software in custom project development"
-date: "2021-06-18T16:24:04.000Z"
+date: "2021-06-17T16:24:04.000Z"
 template: blog
 tags: Small Business
 image: "./media/sustainable-software-custom-projects.jpg"
