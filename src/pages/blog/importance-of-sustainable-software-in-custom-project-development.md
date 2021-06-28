@@ -108,8 +108,6 @@ We make this feature possible in our agile software developments (using framewor
 
 <br>
 
-<br>
-
 <title-2>Some benefits of sustainable development</title-2>
 
 <br>
