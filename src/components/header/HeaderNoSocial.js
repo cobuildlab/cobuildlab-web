@@ -27,7 +27,7 @@ const HeaderNoSocial = ({ isFluid }) => {
             <NavbarItem isHidden="desktop">
               <NavItem>
                 <Icon icon={phone} alt="facebook-icon" size={22} />
-                <a href="tel:+1 7869913467">+1 786 (991) 3467</a>
+                <a href="tel:+1 7869913467">+1 (786) 991 3467</a>
               </NavItem>
             </NavbarItem>
           </NavbarBrand>
@@ -36,7 +36,7 @@ const HeaderNoSocial = ({ isFluid }) => {
               <NavbarItem isHidden="mobile">
                 <NavItem>
                   <Icon icon={phone} alt="facebook-icon" size={22} />
-                  <a href="tel:+1 7869913467">+1 786 (991) 3467</a>
+                  <a href="tel:+1 7869913467">+1 (786) 991 3467</a>
                 </NavItem>
               </NavbarItem>
               <NavbarItem>
