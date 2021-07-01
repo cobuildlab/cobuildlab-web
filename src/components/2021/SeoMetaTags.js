@@ -29,7 +29,7 @@ const SeoMetaTags = ({
   const metaDescription = description || site.siteMetadata.description;
   const metaImageUrl = image && image.src ? `${site.siteMetadata.siteUrl}${image.src}` : null;
   const canonicalRef = canonical ? `${site.siteMetadata.siteUrl}${canonical}` : null;
-  // basic defailt metas
+  // basic default metas
   const defaultMetas = [
     {
       name: `description`,
@@ -67,8 +67,19 @@ const SeoMetaTags = ({
       name: `twitter:description`,
       content: metaDescription,
     },
+    {
+      name: `robots`,
+      content: process.env.BRANCH === 'main' ? 'nofolow' : 'all',
+    },
   ];
-
+  console.log('DEBUG', process.env);
+  console.log('DEBUG', process.env);
+  console.log('DEBUG', process.env);
+  console.log('DEBUG', process.env.BRANCH);
+  console.log('DEBUG', process.env.BRANCH);
+  console.log('DEBUG', process.env.BRANCH);
+  console.log('DEBUG', process.env.BRANCH);
+  console.log('DEBUG', process.env.BRANCH);
   const imagesMetaTags = [
     {
       property: 'og:image',
