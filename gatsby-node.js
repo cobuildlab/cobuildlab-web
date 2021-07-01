@@ -41,13 +41,7 @@ exports.createPages = ({ graphql, actions }) => {
                     image {
                       publicURL
                       childImageSharp {
-                        fluid(maxWidth: 480) {
-                          aspectRatio
-                          base64
-                          sizes
-                          src
-                          srcSet
-                        }
+                        gatsbyImageData(layout: FIXED)
                       }
                     }
                   }

@@ -22,7 +22,7 @@ const Okroo = ({ data }) => (
     <SeoMetaTags
       title="Okroo"
       description="Mobile app that would let you know the best promotions of the restaurants and bars closest to you"
-      image={data.seoImages.childImageSharp.resize}
+      image={data.seoImages.childImageSharp.gatsbyImageData}
     />
     <Section>
       <Container>
@@ -242,11 +242,7 @@ export const pageQuery = graphql`
   query {
     seoImages: file(relativePath: { eq: "customers/okroo/logo.jpg" }) {
       childImageSharp {
-        resize(width: 1200, height: 1200) {
-          width
-          height
-          src
-        }
+        gatsbyImageData(layout: FIXED)
       }
     }
   }

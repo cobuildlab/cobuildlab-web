@@ -23,7 +23,7 @@ const MyVoice = ({ data }) => (
     <SeoMetaTags
       title="My Voice"
       description="Cobuild Lab partnered up with Kadem Education to raise teacher’s voices by building a software solution."
-      image={data.seoImages.childImageSharp.resize}
+      image={data.seoImages.childImageSharp.gatsbyImageData}
     />
     <Section>
       <Container>
@@ -173,11 +173,7 @@ export const pageQuery = graphql`
   query {
     seoImages: file(relativePath: { eq: "customers/my-voice/logo.png" }) {
       childImageSharp {
-        resize(width: 1200, height: 1200) {
-          width
-          height
-          src
-        }
+        gatsbyImageData(layout: FIXED)
       }
     }
   }

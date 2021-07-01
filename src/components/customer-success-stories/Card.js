@@ -4,6 +4,7 @@ import { navigate } from 'gatsby';
 import styled, { css } from 'styled-components';
 import Img from 'gatsby-image';
 import ButtonDefault from '../2020/Button/ButtonDefault';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 // max-width: 510px;
 // max-height: 468px;
@@ -75,7 +76,7 @@ const CardContainer = styled.div`
   }
 `;
 
-const CardImage = styled(Img)`
+const CardImage = styled(GatsbyImage)`
   width: 100%;
 `;
 
@@ -95,7 +96,7 @@ const CustomerSuccessStoriesCard = ({ title, description, image, to }) => {
   }, [to]);
   return (
     <CardContainer onClick={handleClick}>
-      <CardImage fluid={image} alt="" />
+      <CardImage image={image.gatsbyImageData} alt="" />
       <CardHoverContainer>
         <CardTitle>{title}</CardTitle>
         <CardDescription>{description}</CardDescription>

@@ -18,7 +18,7 @@ const UniqueValueProps = () => {
   const items = data.allOurMainMissionJson.edges.map((data, index) => (
     <Column key={data.node.id} isSize={{ mobile: 12, desktop: 4 }}>
       <ValuePropsCard
-        image={data.node.images.childImageSharp.fluid}
+        image={data.node.images.childImageSharp.gatsbyImageData}
         title={data.node.title}
         icon={icons[data.node.icon]}
         content={data.node.content}
@@ -67,9 +67,7 @@ const query = graphql`
           icon
           images {
             childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid_withWebp
-              }
+              gatsbyImageData(layout: FIXED)
             }
           }
         }

@@ -72,35 +72,27 @@ const SeoMetaTags = ({
       content: process.env.BRANCH === 'main' ? 'nofolow' : 'all',
     },
   ];
-  console.log('DEBUG', process.env);
-  console.log('DEBUG', process.env);
-  console.log('DEBUG', process.env);
-  console.log('DEBUG', process.env.BRANCH);
-  console.log('DEBUG', process.env.BRANCH);
-  console.log('DEBUG', process.env.BRANCH);
-  console.log('DEBUG', process.env.BRANCH);
-  console.log('DEBUG', process.env.BRANCH);
   const imagesMetaTags = [
     {
       property: 'og:image',
       content:
         metaImageUrl && metaImageUrl.length
           ? metaImageUrl
-          : `${site.siteMetadata.siteUrl}${seoImages.childImageSharp.original.src}`,
+          : `${site.siteMetadata.siteUrl}${seoImages.childImageSharp.gatsbyImageData.src}`,
     },
     {
       property: 'og:image:width',
       content:
         metaImageUrl && metaImageUrl.length
           ? image.width
-          : seoImages.childImageSharp.original.width,
+          : seoImages.childImageSharp.gatsbyImageData.width,
     },
     {
       property: 'og:image:height',
       content:
         metaImageUrl && metaImageUrl.length
           ? image.height
-          : seoImages.childImageSharp.original.height,
+          : seoImages.childImageSharp.gatsbyImageData.height,
     },
     {
       name: 'twitter:card',
@@ -152,11 +144,7 @@ const query = graphql`
     }
     seoImages: file(relativePath: { eq: "default-images-seo.png" }) {
       childImageSharp {
-        original {
-          width
-          src
-          height
-        }
+        gatsbyImageData(layout: FIXED)
       }
     }
   }

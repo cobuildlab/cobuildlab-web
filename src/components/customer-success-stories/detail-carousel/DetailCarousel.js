@@ -8,6 +8,7 @@ import NextArrow from './NextArrow';
 import PrevArrow from './PrevArrow';
 
 import img from '../../../assets/images/customers/carousel-laptop.png';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 const Container = styled.div`
   position: relative;
@@ -89,7 +90,7 @@ const settings = {
 const DetailCarousel = ({ data }) => {
   const items = data.map(({ node }) => (
     <div key={node.id}>
-      <Img fluid={node.childImageSharp.fluid} alt="" />
+      <GatsbyImage image={node.childImageSharp.gatsbyImageData} alt="" />
     </div>
   ));
 

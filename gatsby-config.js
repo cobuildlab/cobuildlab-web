@@ -65,8 +65,9 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -98,7 +99,6 @@ module.exports = {
     },
     `gatsby-remark-copy-linked-files`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
@@ -138,8 +138,6 @@ module.exports = {
         path: `./src/data/`,
       },
     },
-    `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `@cobuildlab/gatsby-source-8base`,
       options: {

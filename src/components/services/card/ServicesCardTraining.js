@@ -60,7 +60,7 @@ const ServicesCardTraining = () => {
       <Column isSize={{ mobile: 12, desktop: 5 }}>
         <CardStyled>
           <>
-            <Image fluid={data.file.childImageSharp.fluid} alt="" />
+            <Image fluid={data.file.childImageSharp.gatsbyImageData} alt="" />
           </>
           <Container>
             <TitleStyled>
@@ -83,9 +83,7 @@ const query = graphql`
   query {
     file(relativePath: { eq: "service/training.png" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
+        gatsbyImageData(layout: FIXED)
       }
     }
   }
