@@ -63,3 +63,4 @@ class YouTubeVideo extends React.Component {
 }
 
 export default YouTubeVideo;
+export { YouTubeVideo };

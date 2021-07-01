@@ -24,6 +24,7 @@ export default function HTML(props) {
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
         <link rel="preconnect" href="https://www.facebook.com"></link>
         <link rel="preconnect" href="https://www.google-analytics.com"></link>
+        <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}

@@ -10,15 +10,15 @@ const data = [
     id: 1,
     name: 'custom-ui',
     icon: thLarge,
-    min: 2000,
-    max: 2500,
+    min: 2800,
+    max: 3500,
   },
   {
     id: 2,
     name: 'template',
     icon: colIcon,
-    min: 1000,
-    max: 1500,
+    min: 1400,
+    max: 2100,
   },
 ];
 

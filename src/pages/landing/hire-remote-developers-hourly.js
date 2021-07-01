@@ -14,8 +14,8 @@ import {
   CustomH2 as H2,
   CustomParagraph as Paragraph,
 } from '../../components/2020/LandingTypography';
-import ButtonSmoothScrolling from '../../components/2020/Button/ButtonSmoothScrolling';
-import { TextOrange } from '../../components/Typography/TextHelpers';
+import { SmoothScrollingButton } from '../../components/2021/button/SmoothScrollingButton';
+import { TextOrange } from '../../components/2021/text/TextHelpers';
 import H3 from '../../components/Typography/H3';
 import { H4Blue } from '../../components/text/H4Blue';
 import { SkillsDevelopers } from '../../components/2020/skills/SkillsDevelopers';
@@ -55,9 +55,9 @@ export default class AppsDevStudy extends Component {
                 <Paragraph>- FREE Deployment and Hosting tools</Paragraph>
               </li>
             </ul>
-            <ButtonSmoothScrolling href="#landing-contact-form">
+            <SmoothScrollingButton href="#landing-contact-form">
               Book a FREE 1 hour Consultation
-            </ButtonSmoothScrolling>
+            </SmoothScrollingButton>
           </Column>
 
           <Column>

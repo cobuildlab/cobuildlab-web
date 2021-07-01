@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
 import { List, ListItem } from '../../components/Typography/List';
@@ -12,10 +11,11 @@ import DetailParagraph from '../../components/customer-success-stories/DetailPar
 
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
-import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 
-import { TextOrange } from '../../components/Typography/TextHelpers';
+import { TextOrange } from '../../components/2021/text/TextHelpers';
+import { StaticImage } from 'gatsby-plugin-image';
+import SlidersPropagad from '../../components/customer-success-stories/new/sliders/propagad/Sliders';
 
 const Propagad = ({ data }) => (
   <DetailLayout>
@@ -75,7 +75,7 @@ const Propagad = ({ data }) => (
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroImagesContent>
-              <Img fluid={data.logo.childImageSharp.fluid} alt="" />
+              <StaticImage src={'./../../assets/images/customers/propagad/logo.png'} alt="" />
             </DetailHeroImagesContent>
             <DetailHeroImagesContent>
               <DetailVideo id="zG_UIMOHgBI" images={data.videoImages.childImageSharp.fluid} />
@@ -86,7 +86,7 @@ const Propagad = ({ data }) => (
     </Section>
 
     <Section isPaddingless>
-      <DetailCarousel data={data.slider.edges} />
+      <SlidersPropagad />
     </Section>
 
     <Section isPaddingless>
@@ -101,10 +101,12 @@ Propagad.propTypes = {
 
 export const pageQuery = graphql`
   query {
-    logo: file(relativePath: { eq: "customers/propagad/logo.png" }) {
+    seoImages: file(relativePath: { eq: "customers/Propagad.jpg" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
+        resize(width: 1200, height: 1200) {
+          width
+          height
+          src
         }
       }
     }
@@ -112,19 +114,6 @@ export const pageQuery = graphql`
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    slider: allFile(filter: { relativeDirectory: { eq: "customers/propagad/slider" } }) {
-      edges {
-        node {
-          id
-          name
-          childImageSharp {
-            fluid(quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
         }
       }
     }

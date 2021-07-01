@@ -3,7 +3,7 @@ import { Container } from 'bloomer';
 import styled from 'styled-components';
 import H1 from '../Typography/H1';
 import Paragraph from '../Typography/Paragraph';
-import { TextOrange } from '../Typography/TextHelpers';
+import { TextOrange } from '../2021/text/TextHelpers';
 
 const Title = styled(H1)`
   text-align: center;

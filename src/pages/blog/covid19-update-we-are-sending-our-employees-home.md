@@ -24,6 +24,6 @@ Thank you so much for reading and stay home to keep yourself and your loved ones
 
 We also recommend you to read the following CDC guides:<br> </br>
 
-* <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/downloads/2019-ncov-factsheet.pdf"> What You Need to Know About COVID-19 </a>
+* <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/downloads/2019-ncov-factsheet.pdf"> What You Need to Know CompetitiveAdvantage COVID-19 </a>
 
 * <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/downloads/sick-with-2019-nCoV-fact-sheet.pdf"> What to Do If You Are Sick With COVID-19 </a>

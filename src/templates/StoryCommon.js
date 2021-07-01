@@ -1,5 +1,5 @@
 import React from 'react';
-import SeoMetaTags from '../components/SeoMetaTags';
+import { SeoMetaTags } from '../components/2021/SeoMetaTags';
 import LayoutPost from '../components/layoutPost';
 import Share from '../components/Share';
 import Title2 from '../components/Title2';

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Icon } from 'react-icons-kit';
 import { play } from 'react-icons-kit/fa/play';
-import VideoPlay from './VideoPlay';
+import { VideoPlay } from './VideoPlay';
 import styled, { keyframes } from 'styled-components';
 
 const PlayIconContainer = styled.div`
@@ -73,3 +73,4 @@ VideoPlayIcon.propTypes = {
 };
 
 export default VideoPlayIcon;
+export { VideoPlayIcon };

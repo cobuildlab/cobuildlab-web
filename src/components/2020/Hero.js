@@ -7,7 +7,7 @@ import VideoPlayIcon from './VideoPlayIcon';
 import Hero from '../Typography/H1';
 import H6 from '../Typography/H6';
 import Paragraph from '../Typography/Paragraph';
-import { TextOrange } from '../Typography/TextHelpers';
+import { TextOrange } from '../2021/text/TextHelpers';
 import BannerBackground from './BannerBackground';
 import comic from '../../resources/2020/home/cobuildlab-home.svg';
 

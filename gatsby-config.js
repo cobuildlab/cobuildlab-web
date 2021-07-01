@@ -16,6 +16,9 @@ module.exports = {
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-styled-components`,
     {
+      resolve: 'gatsby-plugin-zopfli',
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
@@ -26,6 +29,13 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/assets/images`,
+        name: 'images',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/assets/2021/images`,
         name: 'images',
       },
     },
@@ -58,9 +68,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: 'UA-105326682-1',
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          'UA-105326682-1', // Google Analytics / GA
+        ],
       },
     },
     {
@@ -123,6 +136,40 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `./src/data/`,
+      },
+    },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `@cobuildlab/gatsby-source-8base`,
+      options: {
+        url: process.env.URL_8BASE,
+        apiToken: process.env.TOKEN_8BASE_API,
+        workspaceId: process.env.WORKSPACE_ID_8BASE,
+        graphqlQuery: `
+          query{
+            postsList {
+              items{
+                id
+                title
+                content
+                slug
+                tag
+                description
+                createdAt
+                readingTime
+                imageUrl{
+                  items{
+                    filename
+                    downloadUrl
+                    createdAt
+                  }
+                }
+              }
+              count
+            }
+          }
+        `,
       },
     },
   ],

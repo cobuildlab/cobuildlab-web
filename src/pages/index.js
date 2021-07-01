@@ -1,9 +1,6 @@
 import React from 'react';
-import SeoMetaTags from '../components/SeoMetaTags';
-import Banner from '../components/enterprise-logistics/containers/banner';
-import IncubatorLink from '../components/enterprise/containers/incubator/Incubator';
-import Service from '../components/enterprise-logistics/containers/service';
-import About from '../components/enterprise/containers/about';
+import { Service2 } from '../components/2021/containers/Service2';
+import { CompetitiveAdvantage } from '../components/2021/containers/CompetitiveAdvantage';
 import Project from '../components/enterprise/containers/project';
 import Testimonial from '../components/enterprise/containers/testimonial/Testimonial';
 import Contact from '../components/enterprise/containers/contact/ContactEnterprise';
@@ -15,21 +12,63 @@ import 'slick-carousel/slick/slick.scss';
 import 'slick-carousel/slick/slick-theme.scss';
 import 'react-toastify/dist/ReactToastify.min.css';
 import '../assets/scss/index.scss';
+import '../assets/2021/scss/2021.scss';
+import '../assets/2021/scss/styles-text.scss';
 import Header from '../components/header/Header';
+import Typography from '../components/2020/Typography';
+import { Video } from '../components/2021/containers/Video';
+import { Banner } from '../components/2021/containers/Banner';
+import { SeoMetaTags } from '../components/2021/SeoMetaTags';
+import IncubatorLink from '../components/enterprise/containers/incubator/Incubator';
+import { About } from '../components/2021/containers/About';
+
+const title = {
+  default: {
+    level: 8,
+    fontWeight: 'bold',
+  },
+  lg: {
+    level: 6,
+    fontWeight: 'bold',
+  },
+};
 
 const IndexPage = () => (
   <div className="main-wrapper">
     <SeoMetaTags />
     <Header />
     <div id="main-content">
-      <Banner />
-      <IncubatorLink />
+      <Banner
+        title1={
+          <Typography tag="h2" className="sitemain-subtitle">
+            A SOFTWARE DEVELOPMENT COMPANY
+          </Typography>
+        }
+        title2={
+          <Typography size={title} tag="h2">
+            We partner with <span className="enterprise-text-orange">Industry Experts</span> to
+            solve Logistical and Productivity problems with{' '}
+            <span className="enterprise-text-orange">
+              Custom Software Solutions, Artificial Intelligence and IOT.
+            </span>
+          </Typography>
+        }
+      />
+      <Video
+        videoId={'5fbYxQNgJ7s'}
+        text1={'For Small and Medium Sized Businesses'}
+        text2={
+          'At Cobuild Lab, we’ve been helping Business Owners, Managers, CTO’s, COO’s and IT leaders automate business processes with custom software solutions, artificial Intelligence models and IOT hardware.'
+        }
+      />
+      <Service2 />
+      <CompetitiveAdvantage />
       <About />
-      <Service />
       <Project />
       <Testimonial />
       <Contact />
       <Brand />
+      <IncubatorLink />
       <Footer />
     </div>
   </div>

@@ -26,6 +26,9 @@ const FooterNavigation = () => (
         <LinkItem to="/blog">Blog</LinkItem>
       </FooterListItem>
       <FooterListItem>
+        <LinkItem to="/blog/ai">Blog AI</LinkItem>
+      </FooterListItem>
+      <FooterListItem>
         <LinkItem to="/price-calculator">Price Calculator</LinkItem>
       </FooterListItem>
       <FooterListItem>

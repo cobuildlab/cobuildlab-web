@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Columns, Column, Section } from 'bloomer';
-import Skills_img from '../../../assets/images/skills/cobuild-lab-customers.png';
+import Skills_img from '../../../assets/2021/images/cobuild-lab-customers.png';
 import { Progressbar } from './ProgressBar';
 import Typography from '../../2020/Typography';
 import './skills.scss';

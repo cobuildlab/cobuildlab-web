@@ -45,7 +45,7 @@ She is the founder of 305 Creative Group, working and consulting with companies 
 Once again we can appreciate how the <a target="_blank" href="https://cobuildlab.com/blog/what-is-digital-transformation-and-how-can-small-businesses-take-advantage-of-it-this-2020/amp//"> Digital Transformation</a> is reaching all areas changing the way we live and operate. During pandemic times when most art galleries are closed, Art Vault is stepping up to take advantage of technology to keep empowering talented artists and creators. Thank you so much for reading and stay safe!  <br> </br>
 
 
-<title-5 align="left"> About Cobuild Lab </title-5>
+<title-5 align="left"> CompetitiveAdvantage Cobuild Lab </title-5>
 
 At <a target="_blank" href="https://cobuildlab.com/">  Cobuild Lab</a>, we’ve been helping business owners, CEO's, COO’s and IT leaders get past the techno-speak and help them take a business process and turn it into a custom software solution, whether they need design and build services, technical assistance, or are looking to augment their existing team with experienced agile developers. Since 2012 we've focused on developing and combining cutting-edge techniques, tools, and technologies to increase development speed to deliver faster results. <br> </br>
 

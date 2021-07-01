@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
-import SeoMetaTags from '../../components/SeoMetaTags';
+import { SeoMetaTags } from '../../components/2021/SeoMetaTags';
 
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
@@ -11,14 +10,15 @@ import DetailSubTitle from '../../components/customer-success-stories/DetailSubT
 import DetailParagraphTitle from '../../components/customer-success-stories/DetailParagraphTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 
-import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailVideo from '../../components/customer-success-stories/DetailVideo';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
 import { List, ListItem } from '../../components/Typography/List';
-import DetailSection from '../../components/customer-success-stories/DetailSection';
+import DetailSection from '../../components/customer-success-stories/new/DetailSection';
 import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 
-import { TextOrange } from '../../components/Typography/TextHelpers';
+import { TextOrange } from '../../components/2021/text/TextHelpers';
+import { StaticImage } from 'gatsby-plugin-image';
+import SlidersWeedmatch from '../../components/customer-success-stories/new/sliders/weedmatch/Sliders';
 
 const Weedmatch = ({ data }) => (
   <DetailLayout>
@@ -56,7 +56,7 @@ const Weedmatch = ({ data }) => (
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroImagesContent>
-              <Img fluid={data.logo.childImageSharp.fluid} alt="" />
+              <StaticImage src={'./../../assets/images/customers/weedmatch/logo.png'} alt="" />
             </DetailHeroImagesContent>
             <DetailHeroImagesContent>
               <DetailVideo id="5iLg-xUIlvo" images={data.videoImages.childImageSharp.fluid} />
@@ -66,7 +66,9 @@ const Weedmatch = ({ data }) => (
       </Container>
     </Section>
 
-    <DetailSection src={data.textImagesOne.childImageSharp.fluid} left>
+    <DetailSection
+      image={<StaticImage src={'./../../assets/images/customers/weedmatch/1.png'} alt="" />}
+      left>
       <DetailSubTitle>
         Biography of <TextOrange> weedmatch</TextOrange>
       </DetailSubTitle>
@@ -89,7 +91,9 @@ const Weedmatch = ({ data }) => (
         the lifestyle world was in debt of tools for this community.
       </DetailParagraph>
     </DetailSection>
-    <DetailSection src={data.textImagesTwo.childImageSharp.fluid}>
+    <DetailSection
+      image={<StaticImage src={'./../../assets/images/customers/weedmatch/2.png'} alt="" />}
+      right>
       <DetailParagraph>
         lifestyle world was in debt of tools for this community. After a couple of meeting Oscar
         develop the concept of the brand with several of its partners and the shape of the Weedmatch
@@ -130,7 +134,7 @@ const Weedmatch = ({ data }) => (
     </DetailSection>
 
     <Section isPaddingless>
-      <DetailCarousel data={data.slider.edges} />
+      <SlidersWeedmatch />
     </Section>
 
     <Section isPaddingless>
@@ -154,44 +158,10 @@ export const pageQuery = graphql`
         }
       }
     }
-    logo: file(relativePath: { eq: "customers/weedmatch/logo.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    textImagesOne: file(relativePath: { eq: "customers/weedmatch/1.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    textImagesTwo: file(relativePath: { eq: "customers/weedmatch/2.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
     videoImages: file(relativePath: { eq: "customers/weedmatch/video-cover.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    slider: allFile(filter: { relativeDirectory: { eq: "customers/weedmatch/slider" } }) {
-      edges {
-        node {
-          id
-          name
-          childImageSharp {
-            fluid(quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
         }
       }
     }

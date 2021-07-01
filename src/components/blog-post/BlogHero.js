@@ -27,10 +27,11 @@ const BlogHero = () => (
       <Container hasTextAlign="centered">
         <Columns isCentered>
           <Column>
-            <Title>The Blog for Software Entrepreneurs</Title>
+            <Title>The Blog for Software Solutions</Title>
             <Text>
-              Ideas, advice, value and above all, entrepreneurship. <br /> Unique content made as a
-              guide for entrepreneurs that intend to offer new opportunities in the Startup World.
+              Tips, news, tools for owners and TI managers. <br /> Unique content designed for
+              businesses that are ready to overcome all productivity, logistics, and supply chain
+              challenges.
             </Text>
           </Column>
         </Columns>

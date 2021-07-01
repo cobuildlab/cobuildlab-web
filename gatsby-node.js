@@ -2,11 +2,27 @@ const _ = require('lodash');
 const Promise = require('bluebird');
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
+const unified = require('unified');
+const markdown = require('remark-parse');
+const html = require('remark-html');
+
+exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
+  if (stage === 'build-javascript') {
+    const config = getConfig();
+    const miniCssExtractPlugin = config.plugins.find(
+      (plugin) => plugin.constructor.name === 'MiniCssExtractPlugin',
+    );
+    if (miniCssExtractPlugin) {
+      miniCssExtractPlugin.options.ignoreOrder = true;
+    }
+    actions.replaceWebpackConfig(config);
+  }
+};
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  return new Promise((resolve, reject) => {
+  let promise1 = new Promise((resolve, reject) => {
     resolve(
       graphql(
         `
@@ -76,6 +92,68 @@ exports.createPages = ({ graphql, actions }) => {
       }),
     );
   });
+
+  let promise2 = new Promise((resolve, reject) => {
+    resolve(
+      graphql(
+        `
+          query BasePost {
+            allPost8Base {
+              post: nodes {
+                id
+                title
+                slug
+                content
+                description
+                tag
+                readingTime
+                createdAt
+                imageUrl {
+                  items {
+                    filename
+                    downloadUrl
+                    createdAt
+                  }
+                }
+                fields {
+                  images {
+                    remoteImage {
+                      publicURL
+                      url
+                    }
+                  }
+                }
+              }
+            }
+          }
+        `,
+      ).then((result) => {
+        if (result.errors) {
+          return reject(result.errors);
+        }
+        // Create blog posts pages AI.
+        const posts = result.data.allPost8Base.post;
+        _.each(posts, (post, index) => {
+          //Convert Markdown to html
+          unified()
+            .use(markdown)
+            .use(html)
+            .process(post.content, function (err, file) {
+              if (err) throw err;
+              post.content = String(file);
+              createPage({
+                path: `/blog/ai/${post.slug}`,
+                component: path.resolve(`./src/templates/blog-ai.js`),
+                context: {
+                  post,
+                },
+              });
+            });
+        });
+      }),
+    );
+  });
+  return Promise.all([promise1, promise2]);
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

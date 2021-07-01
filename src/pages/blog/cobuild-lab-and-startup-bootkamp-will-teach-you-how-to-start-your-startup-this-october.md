@@ -30,7 +30,7 @@ You can now use our code "SPEAKER" for 20% on all tickets! <br> </br>
 <img src="./media/sb-3.png">
 <title-6 align="centered">Photo: <a target="_blank" href="https://www.linkedin.com/in/alanthinks/">  Alan Guevara</a>, Chief of Product Management at Cobuild Lab giving a lecture about mobile and web development processes, best practices, and UI/UX trends at the Startup Bootkamp Event in 2019 </a></title-6> <br> </br>
 
-<title-5 align="left"> About Cobuild Lab </title-5>
+<title-5 align="left"> CompetitiveAdvantage Cobuild Lab </title-5>
 
 At <a target="_blank" href="https://cobuildlab.com/">  Cobuild Lab</a>, we’ve been helping business owners, CEO's, COO’s and IT leaders get past the techno-speak and help them take a business process and turn it into a custom software solution, whether they need design and build services, technical assistance, or are looking to augment their existing team with experienced agile developers. Since 2012 we've focused on developing and combining cutting-edge techniques, tools, and technologies to increase development speed to deliver faster results. <br> </br>
 

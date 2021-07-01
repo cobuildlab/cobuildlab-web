@@ -1,9 +1,8 @@
 import React from 'react';
-import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
-import SeoMetaTags from '../../components/SeoMetaTags';
+import { SeoMetaTags } from '../../components/2021/SeoMetaTags';
 
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
@@ -11,11 +10,12 @@ import DetailSubTitle from '../../components/customer-success-stories/DetailSubT
 import DetailParagraphTitle from '../../components/customer-success-stories/DetailParagraphTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 
-import DetailCarousel from '../../components/customer-success-stories/detail-carousel/DetailCarousel';
 import DetailsOtherStories from '../../components/customer-success-stories/DetailsOtherStories';
-import DetailSection from '../../components/customer-success-stories/DetailSection';
+import DetailSection from '../../components/customer-success-stories/new/DetailSection';
 import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
-import { TextOrange } from '../../components/Typography/TextHelpers';
+import { TextOrange } from '../../components/2021/text/TextHelpers';
+import { StaticImage } from 'gatsby-plugin-image';
+import SlidersJobcore from '../../components/customer-success-stories/new/sliders/jobcore/Sliders';
 
 const Jobcore = ({ data }) => (
   <DetailLayout>
@@ -78,17 +78,25 @@ const Jobcore = ({ data }) => (
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailHeroImagesContent>
-              <Img fluid={data.logo.childImageSharp.fluid} alt="" />
+              <StaticImage
+                src={'./../../assets/images/customers/jobcore/job-logo.jpeg'}
+                alt={'Collabtogrow logo'}
+              />
             </DetailHeroImagesContent>
             <DetailHeroImagesContent>
-              <Img fluid={data.text.childImageSharp.fluid} alt="" />
+              <StaticImage
+                src={'./../../assets/images/customers/jobcore/Texto-corto.jpg'}
+                alt={'Text JobCore'}
+              />
             </DetailHeroImagesContent>
           </Column>
         </Columns>
       </Container>
     </Section>
 
-    <DetailSection src={data.textImagesOne.childImageSharp.fluid}>
+    <DetailSection
+      image={<StaticImage src={'./../../assets/images/customers/jobcore/text-img-1.png'} alt="" />}
+      right>
       <DetailSubTitle>
         What is the <TextOrange>Jobcore</TextOrange> platform?
       </DetailSubTitle>
@@ -109,7 +117,9 @@ const Jobcore = ({ data }) => (
       </DetailParagraph>
     </DetailSection>
 
-    <DetailSection src={data.textImagesTwo.childImageSharp.fluid} left>
+    <DetailSection
+      image={<StaticImage src={'./../../assets/images/customers/jobcore/text-img-2.jpg'} alt="" />}
+      left>
       <DetailSubTitle>
         How everything <TextOrange>started:</TextOrange>
       </DetailSubTitle>
@@ -132,7 +142,7 @@ const Jobcore = ({ data }) => (
     </DetailSection>
 
     <Section isPaddingless>
-      <DetailCarousel data={data.slider.edges} />
+      <SlidersJobcore />
     </Section>
     <Section isPaddingless>
       <DetailsOtherStories />
@@ -152,47 +162,6 @@ export const pageQuery = graphql`
           width
           height
           src
-        }
-      }
-    }
-    logo: file(relativePath: { eq: "customers/jobcore/job-logo.jpeg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    text: file(relativePath: { eq: "customers/jobcore/Texto-corto.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    textImagesOne: file(relativePath: { eq: "customers/jobcore/text-img-1.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    textImagesTwo: file(relativePath: { eq: "customers/jobcore/text-img-2.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    slider: allFile(filter: { relativeDirectory: { eq: "customers/jobcore/slider" } }) {
-      edges {
-        node {
-          id
-          name
-          childImageSharp {
-            fluid(quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
         }
       }
     }

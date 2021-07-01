@@ -7,7 +7,7 @@ image: "./media/goodfirms.png"
 ---
 With exceptional services and commitment towards their work, <a target="_blank" href="https://www.goodfirms.co/company/cobuild-lab-inc"> Cobuild Lab </a> is helping business owners to get past the techno-speak and helping them turn into a profitable company. <br> </br>
 
-<title-4 align="centered"> About the Company </title-4> <br> </br>
+<title-4 align="centered"> CompetitiveAdvantage the Company </title-4> <br> </br>
 
 Cobuild Lab is a  software development company located in the United States and founded in 2017. Since then, it is building great ideas to develop and transform small and medium-sized businesses by automating manual processes and tasks into optimized and streamlined workflows. Not only companies, but they also aim to help CTO's, COO's and even IT leaders to help them flourish their business. <br> </br>
 
@@ -35,10 +35,10 @@ Working as a software company, Cobuild Lab has always proved itself as one of th
  
 With growing demands for various tools and technicalities in the tech-savvy world, a company with expertise in cloud computing gives them a successful turn. The team is always enthusiastic to take even the most challenging projects, the ones that often revolutionize the process. The services they provide have allowed Cobuild Lab to emerge as a company that is technically focused on leading from the front. With such profound knowledge and skill, the company can be envisaged to rank as a top cloud computing service provider at GoodFirms. <br> </br>
 
-<title-3 align="left"> About GoodFirms </title-3>
+<title-3 align="left"> CompetitiveAdvantage GoodFirms </title-3>
 Washington, D.C. based GoodFirms is a maverick B2B Research and Reviews Company that helps in finding Software Development, Mobile App Development, and Cloud Computing firms rendering the best services to its customers. GoodFirms' extensive research process ranks the companies, boosts their online reputation and helps service seekers pick the right technology partner that meets their business needs. <br> </br>
 
-<title-3 align="left"> About the Author </title-3>  
+<title-3 align="left"> CompetitiveAdvantage the Author </title-3>  
 Anna Stark is presently working as a Content Writer with GoodFirms – Washington D.C. based B2B Research Company, which bridges the gap between service seekers and service providers. Anna's current role lingers to shape every company's performance and key attributes into words. She firmly believes in the magic of words and equips new strategies that work, always in with ideas, something new to carve, and something original to decorate the firm's identity.  <br> </br>
 
 
