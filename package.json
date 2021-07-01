@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-starter-blog",
-  "description": "Starter Gatsby Blog",
+  "name": "@cobuildlab/cobuildlab-web",
+  "description": "Cobuild Lab website",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Angel Lacret <alacret@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
+    "url": "https://github.com/cobuildlab/cobuildlab-web/issues"
   },
   "dependencies": {
     "@babel/core": "7.12.10",
