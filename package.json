@@ -57,9 +57,11 @@
     "rehype-react": "^3.0.3",
     "remark-html": "^13.0.1",
     "slick-carousel": "^1.8.1",
+    "stream": "^0.0.2",
     "styled-components": "^5.0.1",
     "typeface-merriweather": "0.0.43",
-    "typeface-montserrat": "0.0.43"
+    "typeface-montserrat": "0.0.43",
+    "zlib": "^1.0.5"
   },
   "devDependencies": {
     "@babel/core": "7.14.6",
