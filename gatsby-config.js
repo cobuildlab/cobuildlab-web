@@ -57,10 +57,6 @@ module.exports = {
             },
           },
           'gatsby-remark-component',
-          {
-            resolve: `gatsby-remark-autolink-headers`,
-            options: { isIconAfterHeader: true, maintainCase: true },
-          },
           'gatsby-remark-copy-linked-files',
         ],
       },
@@ -103,32 +99,6 @@ module.exports = {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
         id: 'GTM-PFDRR5V',
-      },
-    },
-    {
-      resolve: `gatsby-plugin-amp`,
-      options: {
-        analytics: {
-          type: 'gtag',
-          dataCredentials: 'include',
-          config: {
-            vars: {
-              gtag_id: 'GTM-PFDRR5V',
-              config: {
-                'GTM-PFDRR5V': {
-                  page_location: '{{pathname}}',
-                },
-              },
-            },
-          },
-        },
-        canonicalBaseUrl: 'https://cobuildlab.com/',
-        components: ['amp-form'],
-        excludedPaths: ['/404*', '/'],
-        pathIdentifier: '/amp/',
-        relAmpHtmlPattern: '{{canonicalBaseUrl}}{{pathname}}{{pathIdentifier}}',
-        relCanonicalPattern: '{{canonicalBaseUrl}}{{pathname}}',
-        useAmpClientIdApi: true,
       },
     },
     `gatsby-transformer-json`,
