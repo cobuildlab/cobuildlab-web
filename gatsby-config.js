@@ -57,10 +57,6 @@ module.exports = {
             },
           },
           'gatsby-remark-component',
-          {
-            resolve: `gatsby-remark-autolink-headers`,
-            options: { isIconAfterHeader: true, maintainCase: true },
-          },
           'gatsby-remark-copy-linked-files',
         ],
       },
