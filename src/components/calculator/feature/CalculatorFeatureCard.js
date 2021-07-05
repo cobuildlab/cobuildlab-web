@@ -29,7 +29,7 @@ const Container = styled.div`
 const CalculatorFeatureCard = ({ children, onSelect, data, isActive }) => {
   const handleClick = useCallback(() => {
     onSelect(data);
-  }, []);
+  }, [data, onSelect]);
 
   return (
     <Container onClick={handleClick} isActive={isActive}>

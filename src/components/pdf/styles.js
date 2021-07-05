@@ -1,8 +1,8 @@
 // import { StyleSheet, Font } from '@react-pdf/renderer';
-import font from '../../assets/fonts/Lato-Regular.ttf';
-
-const indigoColor = '#264A60';
-const orangeColor = '#E76C29';
+// import font from '../../assets/fonts/Lato-Regular.ttf';
+//
+// const indigoColor = '#264A60';
+// const orangeColor = '#E76C29';
 
 // Font.register({
 //   family: 'Lato',

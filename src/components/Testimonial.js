@@ -2,7 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Slider from 'react-slick';
 import styled from 'styled-components';
-import Img from 'gatsby-image';
+// import Img from 'gatsby-image';
 
 // RESOURCES
 import QuoteLeft from '../assets/images/testimonial/left-box-blue.png';

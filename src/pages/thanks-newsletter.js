@@ -18,7 +18,6 @@ class ThanksNewLetters extends Component {
     super(props);
     this.state = {
       landingName: 'Cobuild Lab',
-      location: props.location,
     };
   }
 

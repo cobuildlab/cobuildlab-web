@@ -14,15 +14,15 @@ import {
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const Avsee = () => {
-  const handleClick = useCallback(() => {
+  const handleClick = () => {
     navigate('/customer-success-stories/avsee');
-  });
+  };
 
   return (
-    <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} key="Avsee">
+    <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} key='Avsee'>
       <CardStyled>
         <Image>
-          <StaticImage src={'./../../../../assets/images/customers/avsee-logo.jpg'} alt="" />
+          <StaticImage src={'./../../../../assets/images/customers/avsee-logo.jpg'} alt='' />
         </Image>
         <ParagraphDivStyled>
           <DivTagStyled>
@@ -40,7 +40,7 @@ const Avsee = () => {
         <ReadmoreDivStyled>
           <Title
             isSize={6}
-            className="readmore-card-customer-success"
+            className='readmore-card-customer-success'
             onClick={() => handleClick()}>
             Read More
           </Title>

@@ -49,8 +49,13 @@ const StyledContainer = Styled(Container)`
   margin-bottom: 5rem;
 `;
 
-/**
+/**.
+ * The Blog Ai component
  *
+ * @param pageContext.pageContext
+ * @param {Object} pageContext - The context
+ * @returns {JSX.Element} - the resulting react component
+ * @constructor
  */
 function BlogAI({ pageContext }) {
   const { post } = pageContext;

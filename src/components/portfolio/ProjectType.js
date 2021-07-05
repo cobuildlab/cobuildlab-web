@@ -29,11 +29,14 @@ const IconContainer = styled(Icon)`
   color: inherit;
 `;
 
-/**
+/**.
+ *  Project Type component
  *
- * @property {Array} - Type enum -> web | app.
+ * @param type.type
+ * @param {Array} type - The type of project
+ * @returns {JSX.Element} - The component
+ * @constructor
  */
-
 const ProjectType = ({ type }) => {
   const isWeb = type.includes('web');
   const isApp = type.includes('app');

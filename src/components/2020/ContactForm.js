@@ -162,13 +162,11 @@ const Label = styled(BloomerLabel)`
 export default class Contact extends PureComponent {
   static defaultProps = {
     btnText: 'submit',
-    location: null,
   };
 
   static propTypes = {
     btnText: PropTypes.string,
     landingName: PropTypes.string.isRequired,
-    location: PropTypes.object,
   };
 
   constructor(props) {

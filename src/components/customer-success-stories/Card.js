@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { navigate } from 'gatsby';
 import styled, { css } from 'styled-components';
-import Img from 'gatsby-image';
+// import Img from 'gatsby-image';
 import ButtonDefault from '../2020/Button/ButtonDefault';
 import { GatsbyImage } from 'gatsby-plugin-image';
 

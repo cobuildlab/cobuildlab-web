@@ -21,7 +21,7 @@ const Testimonial = () => {
     // eslint-disable-next-line react/display-name
     customPaging: function (i) {
       return (
-        <a>
+        <a href={"#left"}>
           <img
             width={50}
             height={50}

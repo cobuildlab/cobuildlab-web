@@ -26,11 +26,14 @@ const Container = styled.ul`
   margin-bottom: 2.5em;
 `;
 
-/**
+/**.
+ * Category
  *
- * @property {string} - Type enum -> web | web/app | app.
+ * @param type.type
+ * @param {Array}type - The type
+ * @returns {JSX.Element} - The components
+ * @constructor
  */
-
 const PortfolioCategory = ({ type }) => (
   <Container>
     <Tag isActive={type === 'web'}>Web</Tag>

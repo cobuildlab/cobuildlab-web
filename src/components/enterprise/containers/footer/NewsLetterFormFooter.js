@@ -22,7 +22,7 @@ const NewsLetterFormFooter = () => {
     (event) => {
       setEmail(event.target.value);
     },
-    [email],
+    [setEmail],
   );
 
   const onSubmit = useCallback(

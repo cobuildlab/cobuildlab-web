@@ -28,7 +28,7 @@ const CalculatorSingleSelectionFeature = ({ featureCost, data, featureId, title,
         min: platform.min,
       });
     },
-    [currentPlatform],
+    [featureCost, featureId],
   );
 
   const items = data.map((item) => (

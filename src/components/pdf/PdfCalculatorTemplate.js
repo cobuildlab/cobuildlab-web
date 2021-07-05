@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // import { Page, Text, View, Document, Image } from '@react-pdf/renderer';
-import styles from './styles';
-import logo from '../../resources/cobuildlab.png';
-import bg from '../../resources/2020/home/background.svg';
+// import styles from './styles';
+// import logo from '../../resources/cobuildlab.png';
+// import bg from '../../resources/2020/home/background.svg';
 
 const PdfCalculatorTemplate = ({ data, total }) => {
   // const items = data.map((e) => {
