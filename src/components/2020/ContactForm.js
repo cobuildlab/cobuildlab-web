@@ -162,7 +162,7 @@ const Label = styled(BloomerLabel)`
 export default class Contact extends PureComponent {
   static defaultProps = {
     btnText: 'submit',
-    location: {},
+    location: null,
   };
 
   static propTypes = {
@@ -173,7 +173,7 @@ export default class Contact extends PureComponent {
 
   constructor(props) {
     super(props);
-    const { landingName, location } = this.props;
+    const { landingName } = this.props;
     this.state = {
       data: {
         name: '',
@@ -186,8 +186,8 @@ export default class Contact extends PureComponent {
       isLoading: false,
     };
     this.url = '';
-    this.locationJSON = JSON.stringify(location);
-    this.urlState = queryString.parse(location.hash);
+    this.locationJSON = null;
+    this.urlState = null;
     this.handleChange = this.handleChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
@@ -197,6 +197,11 @@ export default class Contact extends PureComponent {
       if (this.urlState[property] !== undefined) {
         localStorage.setItem('utm_source', this.urlState[property]);
       }
+    }
+    if (typeof window !== 'undefined') {
+      this.setState({ location: window.location });
+      this.locationJSON = JSON.stringify(window.location);
+      this.urlState = queryString.parse(window.location.hash);
     }
   }
 

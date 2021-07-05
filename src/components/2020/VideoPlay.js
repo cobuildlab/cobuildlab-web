@@ -1,28 +1,28 @@
 import React, { useCallback, useState, cloneElement, Fragment } from 'react';
 import PropTypes from 'prop-types';
-import ModalVideo from 'react-modal-video';
+// import ModalVideo from 'react-modal-video';
 
 const VideoPlay = ({ videoId, children, ...rest }) => {
-  const [visible, setVisible] = useState(false);
-  const handleClick = useCallback(() => {
-    setVisible((state) => !state);
-  }, []);
+  // const [visible, setVisible] = useState(false);
+  // const handleClick = useCallback(() => {
+  //   setVisible((state) => !state);
+  // }, []);
 
   const clone = cloneElement(children, {
-    onClick: handleClick,
+    // onClick: handleClick,
     ...rest,
   });
 
   return (
     <Fragment>
       {clone}
-      <ModalVideo
-        channel="youtube"
-        autoplay={visible}
-        isOpen={visible}
-        videoId={videoId}
-        onClose={handleClick}
-      />
+      {/*<ModalVideo*/}
+      {/*  channel="youtube"*/}
+      {/*  autoplay={visible}*/}
+      {/*  isOpen={visible}*/}
+      {/*  videoId={videoId}*/}
+      {/*  onClose={handleClick}*/}
+      {/*/>*/}
     </Fragment>
   );
 };
