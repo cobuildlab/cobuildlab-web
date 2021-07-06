@@ -131,7 +131,7 @@ const Item = ({ description, title, subtitle, image }) => (
       <Columns isCentered>
         <Column />
         <Column isCentered>
-          <img src={image.childImageSharp.fluid.src} alt={'Item images'} />
+          <img src={image.childImageSharp.gatsbyImageData.src} alt={'Item images'} />
         </Column>
         <Column />
       </Columns>

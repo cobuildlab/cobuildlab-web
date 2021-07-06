@@ -76,7 +76,7 @@ export default class PortfolioMansory extends PureComponent {
     const { data } = this.state;
     return data.map((e, i) => (
       <MansoryItem key={e.node.id} onClick={() => this.checkImagesLoad(i)}>
-        <MansoryImage src={e.node.childImageSharp.sizes.src} alt="" />
+        <MansoryImage src={e.node.childImageSharp.gatsbyImageData.src} alt="" />
       </MansoryItem>
     ));
   }
@@ -88,9 +88,9 @@ export default class PortfolioMansory extends PureComponent {
         <MansorySliderItem>
           <MansorySliderImagesWrapper>
             <img
-              width={e.node.childImageSharp.sizes.presentationWidth}
-              height={e.node.childImageSharp.sizes.presentationHeight}
-              src={e.node.childImageSharp.sizes.src}
+              width={e.node.childImageSharp.gatsbyImageData.presentationWidth}
+              height={e.node.childImageSharp.gatsbyImageData.presentationHeight}
+              src={e.node.childImageSharp.gatsbyImageData.src}
               alt=""
             />
           </MansorySliderImagesWrapper>

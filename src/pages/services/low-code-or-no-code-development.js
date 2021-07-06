@@ -49,7 +49,7 @@ const AppDevelopment = () => (
       <ServicesBannerBackgroundBottom />
       <Container>
         <ServicesHeader
-          title={'Low Code or \n' + 'No Code Development'}
+          title={`Low Code or <br/>No Code Development`}
           paragraph={
             "Time is the most valuable asset to make your company more productive and meet your customers' current demands.\n"
           }

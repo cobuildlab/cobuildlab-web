@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import Img from 'gatsby-image';
+// import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 const Overlay = styled.div`
   position: absolute;
@@ -45,7 +46,7 @@ const ChildrenContainer = styled.div`
   justify-content: space-between;
 `;
 
-const Images = styled(Img)`
+const Image = styled(GatsbyImage)`
   width: 100%;
   height: 100%;
 `;
@@ -53,7 +54,7 @@ const Images = styled(Img)`
 const BlogPostCardContainer = ({ children, src, alt, to }) => (
   <Container to={to}>
     <Overlay />
-    <Images fixed={src} alt={alt} />
+    <Image image={src} alt={alt} />
     <ChildrenContainer>{children}</ChildrenContainer>
   </Container>
 );

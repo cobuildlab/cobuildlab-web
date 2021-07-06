@@ -57,16 +57,13 @@ module.exports = {
             },
           },
           'gatsby-remark-component',
-          {
-            resolve: `gatsby-remark-autolink-headers`,
-            options: { isIconAfterHeader: true, maintainCase: true },
-          },
           'gatsby-remark-copy-linked-files',
         ],
       },
     },
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -95,32 +92,6 @@ module.exports = {
         id: 'GTM-PFDRR5V',
       },
     },
-    {
-      resolve: `gatsby-plugin-amp`,
-      options: {
-        analytics: {
-          type: 'gtag',
-          dataCredentials: 'include',
-          config: {
-            vars: {
-              gtag_id: 'GTM-PFDRR5V',
-              config: {
-                'GTM-PFDRR5V': {
-                  page_location: '{{pathname}}',
-                },
-              },
-            },
-          },
-        },
-        canonicalBaseUrl: 'https://cobuildlab.com/',
-        components: ['amp-form'],
-        excludedPaths: ['/404*', '/'],
-        pathIdentifier: '/amp/',
-        relAmpHtmlPattern: '{{canonicalBaseUrl}}{{pathname}}{{pathIdentifier}}',
-        relCanonicalPattern: '{{canonicalBaseUrl}}{{pathname}}',
-        useAmpClientIdApi: true,
-      },
-    },
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -128,8 +99,6 @@ module.exports = {
         path: `./src/data/`,
       },
     },
-    `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `@cobuildlab/gatsby-source-8base`,
       options: {

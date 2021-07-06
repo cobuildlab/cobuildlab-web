@@ -99,7 +99,7 @@ const Video = () => {
   const data = useStaticQuery(query);
   return (
     <Section isPaddingless id="video">
-      <Wrapper images={data.background.childImageSharp.fluid.src}>
+      <Wrapper images={data.background.childImageSharp.gatsbyImageData.src}>
         <Overlay />
         <Container>
           <VideoContent>
@@ -108,9 +108,9 @@ const Video = () => {
             </H3>
             <H6>You Should Know More About Us</H6>
             <Paragraph>Let us help us the way we know how.</Paragraph>
-            <VideoBtn images={data.videoBtn.childImageSharp.fluid.src}>
+            <VideoBtn images={data.videoBtn.childImageSharp.gatsbyImageData.src}>
               <VideoPlay>
-                <ButtonContainer images={data.btnContainer.childImageSharp.fluid.src}>
+                <ButtonContainer images={data.btnContainer.childImageSharp.gatsbyImageData.src}>
                   <PlayIcon icon={caretRight} size={24} />
                 </ButtonContainer>
               </VideoPlay>
@@ -127,23 +127,17 @@ const query = graphql`
   query {
     background: file(relativePath: { eq: "video/video-back.jpg" }) {
       childImageSharp {
-        fluid {
-          src
-        }
+        gatsbyImageData(layout: FIXED)
       }
     }
     videoBtn: file(relativePath: { eq: "video/video-border.png" }) {
       childImageSharp {
-        fluid(pngQuality: 50) {
-          src
-        }
+        gatsbyImageData(layout: FIXED)
       }
     }
     btnContainer: file(relativePath: { eq: "video/video-btn.png" }) {
       childImageSharp {
-        fluid(pngQuality: 10) {
-          src
-        }
+        gatsbyImageData(layout: FIXED)
       }
     }
   }

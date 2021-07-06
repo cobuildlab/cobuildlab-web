@@ -19,7 +19,7 @@ const IncubatorImage = () => {
 
   return (
     <Container>
-      <Images fluid={data.file.childImageSharp.fluid} atl="" />
+      <Images fluid={data.file.childImageSharp.gatsbyImageData} atl="" />
     </Container>
   );
 };
@@ -28,9 +28,7 @@ const query = graphql`
   query {
     file(relativePath: { eq: "incubator/1.png" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
+        gatsbyImageData(layout: FIXED)
       }
     }
   }

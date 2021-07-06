@@ -25,7 +25,7 @@ const Weedmatch = ({ data }) => (
     <SeoMetaTags
       title="Weedmatch"
       description="First free cannabis social network"
-      image={data.seoImages.childImageSharp.resize}
+      image={data.seoImages.childImageSharp.gatsbyImageData}
     />
     <Section>
       <Container>
@@ -59,7 +59,10 @@ const Weedmatch = ({ data }) => (
               <StaticImage src={'./../../assets/images/customers/weedmatch/logo.png'} alt="" />
             </DetailHeroImagesContent>
             <DetailHeroImagesContent>
-              <DetailVideo id="5iLg-xUIlvo" images={data.videoImages.childImageSharp.fluid} />
+              <DetailVideo
+                id="5iLg-xUIlvo"
+                images={data.videoImages.childImageSharp.gatsbyImageData}
+              />
             </DetailHeroImagesContent>
           </Column>
         </Columns>
@@ -151,11 +154,7 @@ export const pageQuery = graphql`
   query {
     seoImages: file(relativePath: { eq: "customers/Weedmatch.jpg" }) {
       childImageSharp {
-        resize(width: 1200, height: 1200) {
-          width
-          height
-          src
-        }
+        gatsbyImageData(layout: FIXED)
       }
     }
     videoImages: file(relativePath: { eq: "customers/weedmatch/video-cover.jpg" }) {

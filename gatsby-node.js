@@ -41,13 +41,7 @@ exports.createPages = ({ graphql, actions }) => {
                     image {
                       publicURL
                       childImageSharp {
-                        fluid(maxWidth: 480) {
-                          aspectRatio
-                          base64
-                          sizes
-                          src
-                          srcSet
-                        }
+                        gatsbyImageData(layout: FIXED)
                       }
                     }
                   }
@@ -77,17 +71,17 @@ exports.createPages = ({ graphql, actions }) => {
             },
           });
           // AMP
-          createPage({
-            path: `${post.node.fields.slug}amp/`,
-            component: path.resolve(
-              `src/templates/${String(post.node.frontmatter.template)}.amp.js`,
-            ),
-            context: {
-              slug: post.node.fields.slug,
-              previous,
-              next,
-            },
-          });
+          // createPage({
+          //   path: `${post.node.fields.slug}amp/`,
+          //   component: path.resolve(
+          //     `src/templates/${String(post.node.frontmatter.template)}.amp.js`,
+          //   ),
+          //   context: {
+          //     slug: post.node.fields.slug,
+          //     previous,
+          //     next,
+          //   },
+          // });
         });
       }),
     );

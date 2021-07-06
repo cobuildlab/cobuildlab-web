@@ -89,7 +89,10 @@ class BlogPostTemplate extends Component {
     const { previous, next } = this.props.pageContext;
     const previousImage = get(previous, 'frontmatter.image.publicURL') || defaultImg;
     const nextImage = get(next, 'frontmatter.image.publicURL') || defaultImg;
-    const seoImages = get(this, 'props.data.seoImages.frontmatter.image.childImageSharp.resize');
+    const seoImages = get(
+      this,
+      'props.data.seoImages.frontmatter.image.childImageSharp.gatsbyImageData',
+    );
     return (
       <LayoutPost>
         <SeoMetaTags
@@ -117,7 +120,7 @@ class BlogPostTemplate extends Component {
           /> */}
           <Img
             className="bg-post"
-            fluid={post.frontmatter.image.childImageSharp.fluid}
+            fluid={post.frontmatter.image.childImageSharp.gatsbyImageData}
             alt={post.frontmatter.title}
           />
         </Hero>
@@ -213,7 +216,7 @@ BlogPostTemplate.propTypes = {
 export default BlogPostTemplate;
 
 export const pageQuery = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     site {
       siteMetadata {
         title
@@ -227,11 +230,7 @@ export const pageQuery = graphql`
         image {
           publicURL
           childImageSharp {
-            resize(width: 1200, height: 1200) {
-              width
-              height
-              src
-            }
+            gatsbyImageData(layout: FIXED)
           }
         }
       }
@@ -248,13 +247,7 @@ export const pageQuery = graphql`
         image {
           publicURL
           childImageSharp {
-            fluid(maxWidth: 1920) {
-              aspectRatio
-              base64
-              sizes
-              src
-              srcSet
-            }
+            gatsbyImageData(layout: FIXED)
           }
         }
       }

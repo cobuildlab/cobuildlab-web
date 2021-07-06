@@ -24,7 +24,7 @@ const GeeksAcademy = ({ data }) => (
     <SeoMetaTags
       title="4Geeks Academy"
       description="Beginning of 4Geeks"
-      image={data.seoImages.childImageSharp.resize}
+      image={data.seoImages.childImageSharp.gatsbyImageData}
     />
     <Section>
       <Container>
@@ -79,7 +79,10 @@ const GeeksAcademy = ({ data }) => (
               />
             </DetailHeroImagesContent>
             <DetailHeroImagesContent>
-              <DetailVideo id="sJrH4f7Df8g" images={data.videoImages.childImageSharp.fluid} />
+              <DetailVideo
+                id="sJrH4f7Df8g"
+                images={data.videoImages.childImageSharp.gatsbyImageData}
+              />
             </DetailHeroImagesContent>
           </Column>
         </Columns>
@@ -150,18 +153,12 @@ export const pageQuery = graphql`
   query {
     seoImages: file(relativePath: { eq: "customers/4geeks.png" }) {
       childImageSharp {
-        resize(width: 1200, height: 1200) {
-          width
-          height
-          src
-        }
+        gatsbyImageData(layout: FIXED)
       }
     }
     videoImages: file(relativePath: { eq: "customers/4geek/video-cover.jpg" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
+        gatsbyImageData(layout: FIXED)
       }
     }
   }

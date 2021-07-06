@@ -61,7 +61,7 @@ const ServicesCardSoftware = () => {
         <CardStyled>
           <>
             <Image
-              fluid={data.file.childImageSharp.fluid}
+              fluid={data.file.childImageSharp.gatsbyImageData}
               alt=""
               style={{ objectFit: 'contain' }}
             />
@@ -87,9 +87,7 @@ const query = graphql`
   query {
     file(relativePath: { eq: "service/software-development-new.png" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
+        gatsbyImageData(layout: FIXED)
       }
     }
   }

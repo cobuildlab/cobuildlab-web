@@ -10,7 +10,7 @@ const BlogList = ({ data }) => {
         date={node.frontmatter.date}
         category={node.frontmatter.tags || 'Blog Post'}
         to={node.fields.slug}
-        src={node.frontmatter.image.childImageSharp.fixed}
+        src={node.frontmatter.image.childImageSharp.gatsbyImageData}
         title={node.frontmatter.title}
       />
     </Column>

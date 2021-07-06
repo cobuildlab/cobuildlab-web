@@ -54,9 +54,7 @@ const query = graphql`
             image {
               publicURL
               childImageSharp {
-                fixed(width: 400, height: 290) {
-                  ...GatsbyImageSharpFixed_withWebp
-                }
+                gatsbyImageData(layout: FIXED)
               }
             }
           }
