@@ -29,8 +29,8 @@ const Container = styled.ul`
 /**.
  * Category
  *
- * @param type.type
- * @param {Array}type - The type
+ * @param {Object} props - The props.
+ * @param {String} props.type - The type of component.
  * @returns {JSX.Element} - The components
  * @constructor
  */

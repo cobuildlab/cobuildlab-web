@@ -33,7 +33,7 @@ const PdfCalculatorTemplate = ({ data, total }) => {
   //     </View>
   //   );
   // });
-  return null;
+  return React.createElement('span', {}, '');
   // return (
   //   <Document>
   //     <Page wrap={false} style={styles.body}>

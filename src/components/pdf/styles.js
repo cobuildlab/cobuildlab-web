@@ -158,6 +158,5 @@
 //     paddingRight: 5,
 //   },
 // });
-
-// export default styles;
-export default null;
+const styles = null;
+export default styles;

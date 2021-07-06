@@ -32,8 +32,7 @@ const IconContainer = styled(Icon)`
 /**.
  *  Project Type component
  *
- * @param type.type
- * @param {Array} type - The type of project
+ * @param {Array<String>} type - The types of project.
  * @returns {JSX.Element} - The component
  * @constructor
  */

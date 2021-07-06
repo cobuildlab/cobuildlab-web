@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 
 import { StaticImage } from 'gatsby-plugin-image';
 import { Column, Title, Subtitle } from 'bloomer';
