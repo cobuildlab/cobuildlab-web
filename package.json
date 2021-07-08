@@ -58,7 +58,7 @@
     "stream": "0.0.2",
     "styled-components": "5.3.0",
     "typeface-merriweather": "0.0.43",
-    "typeface-montserrat": "0.0.43",
+    "typeface-montserrat": "0.0.75",
     "util": "^0.12.4"
   },
   "devDependencies": {
