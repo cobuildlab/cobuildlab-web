@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 // import Img from 'gatsby-image';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const Overlay = styled.div`
   position: absolute;
@@ -51,13 +51,17 @@ const Image = styled(GatsbyImage)`
   height: 100%;
 `;
 
-const BlogPostCardContainer = ({ children, src, alt, to }) => (
-  <Container to={to}>
-    <Overlay />
-    <Image image={src} alt={alt} />
-    <ChildrenContainer>{children}</ChildrenContainer>
-  </Container>
-);
+const BlogPostCardContainer = ({ children, src, alt, to }) => {
+  const images = getImage(src);
+
+  return (
+    <Container to={to}>
+      <Overlay />
+      <Image image={images} alt={alt} />
+      <ChildrenContainer>{children}</ChildrenContainer>
+    </Container>
+  );
+};
 
 BlogPostCardContainer.propTypes = {
   to: PropTypes.string.isRequired,

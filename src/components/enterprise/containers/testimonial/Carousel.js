@@ -21,11 +21,11 @@ const Testimonial = () => {
     // eslint-disable-next-line react/display-name
     customPaging: function (i) {
       return (
-        <a href={"#left"}>
+        <a href={'#left'}>
           <img
             width={50}
             height={50}
-            src={data.allTestimonialJson.nodes[i].image.childImageSharp.gatsbyImageData.src}
+            src={data.allTestimonialJson.nodes[i].image.childImageSharp.fixed.src}
             alt={'Testimonials images'}
           />
         </a>
@@ -49,7 +49,9 @@ const query = graphql`
         image {
           id
           childImageSharp {
-            gatsbyImageData(layout: FIXED)
+            fixed {
+              src
+            }
           }
         }
         content
