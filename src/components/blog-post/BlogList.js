@@ -5,7 +5,6 @@ import BlogPostCard from './BlogPostCard';
 
 const BlogList = ({ data }) => {
   const items = data.map(({ node }) => {
-    console.log(node);
     return (
       <Column isSize={{ desktop: 4, tablet: 6, mobile: 12 }} key={node.frontmatter.title}>
         <BlogPostCard

@@ -52,12 +52,12 @@ const Image = styled(GatsbyImage)`
 `;
 
 const BlogPostCardContainer = ({ children, src, alt, to }) => {
-  const images = getImage(src);
+  const img = getImage(src);
 
   return (
     <Container to={to}>
       <Overlay />
-      <Image image={images} alt={alt} />
+      <Image image={img} alt={alt} />
       <ChildrenContainer>{children}</ChildrenContainer>
     </Container>
   );
