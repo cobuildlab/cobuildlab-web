@@ -65,7 +65,7 @@ const DetailsOtherStories = () => {
         <Card
           title={node.title}
           description={node.description}
-          image={node.image.childImageSharp}
+          image={node.image.childImageSharp.gatsbyImageData}
           to={node.slug}
         />
       </CardWrapper>
@@ -89,7 +89,7 @@ const query = graphql`
         node {
           image {
             childImageSharp {
-              gatsbyImageData(layout: FIXED)
+              gatsbyImageData
             }
           }
           slug

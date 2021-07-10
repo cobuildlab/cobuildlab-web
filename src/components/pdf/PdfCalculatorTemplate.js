@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 // import { Page, Text, View, Document, Image } from '@react-pdf/renderer';
 // import styles from './styles';

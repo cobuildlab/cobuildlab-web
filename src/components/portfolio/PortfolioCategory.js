@@ -26,14 +26,13 @@ const Container = styled.ul`
   margin-bottom: 2.5em;
 `;
 
-/**.
- * Category
+/**
+ * Portfolio Category.
  *
- * @param type.type
- * @param {Array}type - The type
- * @returns {JSX.Element} - The components
- * @constructor
+ * @param {type} type - The Type.
+ * @returns {Function} Return component.
  */
+
 const PortfolioCategory = ({ type }) => (
   <Container>
     <Tag isActive={type === 'web'}>Web</Tag>
