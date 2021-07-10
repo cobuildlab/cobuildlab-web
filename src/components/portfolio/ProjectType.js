@@ -29,13 +29,14 @@ const IconContainer = styled(Icon)`
   color: inherit;
 `;
 
-/**.
- *  Project Type component
+/**
+ * Project Type.
  *
- * @param {Array<String>} type - The types of project.
- * @returns {JSX.Element} - The component
- * @constructor
+ * @param {Array<string>} type - The types of project.
+ * @returns {object} - The component.
+ * @class
  */
+
 const ProjectType = ({ type }) => {
   const isWeb = type.includes('web');
   const isApp = type.includes('app');
