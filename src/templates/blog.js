@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import LayoutPost from '../components/layoutPost';
 import { Link, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { DiscussionEmbed } from 'disqus-react';
 import { SeoMetaTags } from '../components/2021/SeoMetaTags';
 
@@ -93,6 +93,8 @@ class BlogPostTemplate extends Component {
       this,
       'props.data.seoImages.frontmatter.image.childImageSharp.gatsbyImageData',
     );
+    const img = getImage(post.frontmatter.image.childImageSharp.gatsbyImageData);
+
     return (
       <LayoutPost>
         <SeoMetaTags
@@ -118,11 +120,7 @@ class BlogPostTemplate extends Component {
               backgroundImage: `url(${image})`
             }}
           /> */}
-          <Img
-            className="bg-post"
-            fluid={post.frontmatter.image.childImageSharp.gatsbyImageData}
-            alt={post.frontmatter.title}
-          />
+          <GatsbyImage image={img} className="bg-post" alt={post.frontmatter.title} />
         </Hero>
 
         <SectionPost id="section-post" className="section">
@@ -247,7 +245,7 @@ export const pageQuery = graphql`
         image {
           publicURL
           childImageSharp {
-            gatsbyImageData(layout: FIXED)
+            gatsbyImageData
           }
         }
       }
