@@ -1,7 +1,16 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { navigate } from 'gatsby';
-import { Column, Columns, Container, Control, Field, Input, Label as BloomerLabel, TextArea } from 'bloomer';
+import {
+  Column,
+  Columns,
+  Container,
+  Control,
+  Field,
+  Input,
+  Label as BloomerLabel,
+  TextArea,
+} from 'bloomer';
 import { toast, ToastContainer } from 'react-toastify';
 // import { pdf } from '@react-pdf/renderer';
 import styled from 'styled-components';
@@ -41,7 +50,7 @@ class PricingContact extends PureComponent {
       try {
         const reader = new FileReader();
         reader.readAsDataURL(blob);
-        reader.onloadend = function() {
+        reader.onloadend = function () {
           resolve(reader.result.split(',')[1]);
         };
         reader.onerror = reject;

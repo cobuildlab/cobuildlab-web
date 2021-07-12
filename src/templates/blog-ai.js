@@ -52,8 +52,10 @@ const StyledContainer = Styled(Container)`
 /**.
  * The Blog Ai component
  *
- * @param {pageContext} pageContext - The context.
- * @returns {Function} Return Page.
+ * @param {Object} pageContext - The context.
+ * @param {Object} pageContext.pageContext - The context.
+ * @returns {JSX.Element} - the resulting react component
+ * @constructor
  */
 function BlogAI({ pageContext }) {
   const { post } = pageContext;

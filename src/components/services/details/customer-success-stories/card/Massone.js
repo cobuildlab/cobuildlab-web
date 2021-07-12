@@ -14,9 +14,7 @@ import {
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const Massone = () => {
-  const handleClick = () => {
-    navigate('/customer-success-stories/massone');
-  };
+  const handleClick = () => navigate('/customer-success-stories/massone');
 
   return (
     <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} key="Massone">

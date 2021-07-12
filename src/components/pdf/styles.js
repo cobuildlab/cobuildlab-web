@@ -158,7 +158,5 @@
 //     paddingRight: 5,
 //   },
 // });
-
-// export default styles;
-// eslint-disable-next-line import/no-anonymous-default-export
-export default null;
+const styles = null;
+export default styles;

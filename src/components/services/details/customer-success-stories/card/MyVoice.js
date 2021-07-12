@@ -14,9 +14,7 @@ import {
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const MyVoice = () => {
-  const handleClick = () => {
-    navigate('/customer-success-stories/my-voice');
-  };
+  const handleClick = () => navigate('/customer-success-stories/my-voice');
 
   return (
     <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} key="MyVoice">

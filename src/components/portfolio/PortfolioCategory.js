@@ -29,8 +29,10 @@ const Container = styled.ul`
 /**
  * Portfolio Category.
  *
- * @param {type} type - The Type.
- * @returns {Function} Return component.
+ * @param {object} props - The props.
+ * @param {string} props.type - The type of component.
+ * @returns {object} - The components.
+ * @class
  */
 
 const PortfolioCategory = ({ type }) => (

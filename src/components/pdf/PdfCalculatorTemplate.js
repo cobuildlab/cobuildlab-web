@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 // import { Page, Text, View, Document, Image } from '@react-pdf/renderer';
 // import styles from './styles';
@@ -32,7 +33,7 @@ const PdfCalculatorTemplate = ({ data, total }) => {
   //     </View>
   //   );
   // });
-  return null;
+  return React.createElement('span', {}, '');
   // return (
   //   <Document>
   //     <Page wrap={false} style={styles.body}>

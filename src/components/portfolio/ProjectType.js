@@ -32,8 +32,9 @@ const IconContainer = styled(Icon)`
 /**
  * Project Type.
  *
- * @param {type} type - The Type.
- * @returns {Function} Return component.
+ * @param {Array<string>} type - The types of project.
+ * @returns {object} - The component.
+ * @class
  */
 
 const ProjectType = ({ type }) => {

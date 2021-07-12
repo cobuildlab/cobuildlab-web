@@ -14,9 +14,7 @@ import {
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const GeeksAcademy = () => {
-  const handleClick = () => {
-    navigate('/customer-success-stories/4geeks-academy');
-  };
+  const handleClick = () => navigate('/customer-success-stories/4geeks-academy');
 
   return (
     <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} key="4Geeks Academy">

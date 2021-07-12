@@ -14,9 +14,8 @@ import {
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const LeadVolt = () => {
-  const handleClick = () => {
-    navigate('/customer-success-stories/leadvolt');
-  };
+  const handleClick = () => navigate('/customer-success-stories/leadvolt');
+
   return (
     <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} key="LeadVolt">
       <CardStyled>

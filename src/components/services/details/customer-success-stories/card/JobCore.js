@@ -14,9 +14,8 @@ import {
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const JobCore = () => {
-  const handleClick = () => {
-    navigate('/customer-success-stories/jobcore');
-  };
+  const handleClick = () => navigate('/customer-success-stories/jobcore');
+
   return (
     <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} key="MyVoice">
       <CardStyled>
