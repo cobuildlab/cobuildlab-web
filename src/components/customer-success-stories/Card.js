@@ -91,7 +91,6 @@ const CardTitle = styled.div`
 `;
 
 const CustomerSuccessStoriesCard = ({ title, description, image, to }) => {
-  console.log(image);
   const img = getImage(image);
 
   const handleClick = useCallback(() => {

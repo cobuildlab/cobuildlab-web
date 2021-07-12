@@ -27,7 +27,10 @@ const SeoMetaTags = ({
 
   const siteTitle = title || site.siteMetadata.seoTitle;
   const metaDescription = description || site.siteMetadata.description;
-  const metaImageUrl = image && image.src ? `${site.siteMetadata.siteUrl}${image.src}` : null;
+  const metaImageUrl =
+    image && image.images.fallback.src
+      ? `${site.siteMetadata.siteUrl}${image.images.fallback.src}`
+      : null;
   const canonicalRef = canonical ? `${site.siteMetadata.siteUrl}${canonical}` : null;
   // basic default metas
   const defaultMetas = [
