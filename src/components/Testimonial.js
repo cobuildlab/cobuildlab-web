@@ -2,7 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Slider from 'react-slick';
 import styled from 'styled-components';
-import Img from 'gatsby-image';
+// import Img from 'gatsby-image';
 
 // RESOURCES
 import QuoteLeft from '../assets/images/testimonial/left-box-blue.png';
@@ -12,6 +12,7 @@ import QueteRight from '../assets/images/testimonial/right-box-blue.png';
 import H6 from './Typography/H6';
 import Paragraph from './Typography/Paragraph';
 import { TextOrange } from './2021/text/TextHelpers';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 const Card = styled.div`
   background-color: #ffff;
@@ -100,7 +101,7 @@ const StyledSlider = styled(Slider)`
   }
 `;
 
-const Images = styled(Img)`
+const Image = styled(GatsbyImage)`
   height: 100%;
   width: 100%;
 `;
@@ -134,7 +135,7 @@ const Testimonial = () => {
       {...settings}
       customPaging={(id) => (
         <button>
-          <Images fluid={list[id].image.childImageSharp.fluid} alt="" />
+          <Image image={list[id].image.childImageSharp.gatsbyImageData} alt="" />
         </button>
       )}>
       {items}
@@ -149,13 +150,7 @@ const query = graphql`
         image {
           id
           childImageSharp {
-            fluid {
-              srcWebp
-              srcSetWebp
-              sizes
-              base64
-              aspectRatio
-            }
+            gatsbyImageData(layout: FIXED)
           }
         }
         content

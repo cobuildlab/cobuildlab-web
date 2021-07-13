@@ -38,7 +38,7 @@ const Portfolio = ({ data }) => (
     <SeoMetaTags
       title="Portfolio"
       description="Portfolio"
-      image={data.seoImages.childImageSharp.resize}
+      image={data.seoImages.childImageSharp.gatsbyImageData}
     />
     <Sider>
       <PortfolioMenu />
@@ -142,11 +142,7 @@ export const pageQuery = graphql`
   query {
     seoImages: file(relativePath: { eq: "customers/jobcore.jpg" }) {
       childImageSharp {
-        resize(width: 1200, height: 1200) {
-          width
-          height
-          src
-        }
+        gatsbyImageData(layout: FIXED)
       }
     }
   }

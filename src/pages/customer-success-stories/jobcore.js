@@ -22,7 +22,7 @@ const Jobcore = ({ data }) => (
     <SeoMetaTags
       title="Jobcore"
       description="Get work fast and get paid the same day with Jobcore"
-      image={data.seoImages.childImageSharp.resize}
+      image={data.seoImages.childImageSharp.gatsbyImageData}
     />
     <Section>
       <Container>
@@ -158,11 +158,7 @@ export const pageQuery = graphql`
   query {
     seoImages: file(relativePath: { eq: "customers/jobcore.jpg" }) {
       childImageSharp {
-        resize(width: 1200, height: 1200) {
-          width
-          height
-          src
-        }
+        gatsbyImageData(layout: FIXED)
       }
     }
   }

@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 
 import { StaticImage } from 'gatsby-plugin-image';
 import { Column, Title, Subtitle } from 'bloomer';
@@ -14,9 +14,7 @@ import {
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const Weedmatch = () => {
-  const handleClick = useCallback(() => {
-    navigate('/customer-success-stories/weedmatch');
-  });
+  const handleClick = () => navigate('/customer-success-stories/weedmatch');
 
   return (
     <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} key="Weedmatch">

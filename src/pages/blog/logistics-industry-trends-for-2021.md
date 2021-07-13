@@ -15,7 +15,7 @@ Logistics are an indispensable tool for any business organization that wants to 
 
 The pressure to build more agile businesses it’s fully on, and AI is set to play a major role in the logistics sector opening new possibilities with its wide range of uses. With its complex data networks and information channels, the logistics sector is an ideal fit for AI regarding demand forecasting, supply planning, route optimization, and dynamic pricing. Artificial Intelligence can aid decisions related to capacity planning, forecasting, and network optimization, thereby streamlining operations and enhancing overall supply chain performance. AI is finding extensive use in dynamic route optimization, managing delivery time windows, optimize fuel consumption, and load capacity utilization, among many other activities in last-mile deliveries thereby propelling the digitization of supply chains. On the other hand, next-generation logistics entail fully-automated warehousing, which will come in hand with major breakthroughs in AI development. <br> </br>
 
-<title-6 align="centered"> 👉 Check out: <a target="_blank" href="https://cobuildlab.com/blog/How-artificial-intelligence-impacts-your-business-supply-chain/amp/"> How Artificial Intelligence Impacts your Supply Chain Business </a> </title-6>  <br> </br>
+<title-6 align="centered"> 👉 Check out: <a target="_blank" href="https://cobuildlab.com/blog/How-artificial-intelligence-impacts-your-business-supply-chain/"> How Artificial Intelligence Impacts your Supply Chain Business </a> </title-6>  <br> </br>
 
 
 

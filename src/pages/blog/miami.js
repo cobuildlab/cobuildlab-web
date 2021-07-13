@@ -64,12 +64,7 @@ export const pageQuery = graphql`
             image {
               publicURL
               childImageSharp {
-                fixed(width: 400, height: 290) {
-                  srcWebp
-                  srcSetWebp
-                  aspectRatio
-                  base64
-                }
+                gatsbyImageData(layout: FIXED)
               }
             }
           }

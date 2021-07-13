@@ -73,9 +73,7 @@ const query = graphql`
         node {
           id
           childImageSharp {
-            fluid(quality: 30) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(layout: FIXED)
           }
         }
       }

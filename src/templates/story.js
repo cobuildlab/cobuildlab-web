@@ -27,13 +27,7 @@ export const pageQuery = graphql`
         image {
           publicURL
           childImageSharp {
-            fluid(maxWidth: 1920) {
-              aspectRatio
-              base64
-              sizes
-              src
-              srcSet
-            }
+            gatsbyImageData(layout: FIXED)
           }
         }
       }

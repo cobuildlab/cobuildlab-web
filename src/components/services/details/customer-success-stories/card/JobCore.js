@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 
 import { StaticImage } from 'gatsby-plugin-image';
 import { Column, Subtitle, Title } from 'bloomer';
@@ -14,9 +14,7 @@ import {
 } from '../../../../2021/services/customer-success-stories/styled';
 
 const JobCore = () => {
-  const handleClick = useCallback(() => {
-    navigate('/customer-success-stories/jobcore');
-  });
+  const handleClick = () => navigate('/customer-success-stories/jobcore');
 
   return (
     <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} key="MyVoice">

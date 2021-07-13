@@ -24,7 +24,7 @@ const PaykleverCampaignManager = ({ data }) => (
     <SeoMetaTags
       title="Payklever Campaign Manager"
       description="With Payklever you can turn your car into a payment method."
-      image={data.seoImages.childImageSharp.resize}
+      image={data.seoImages.childImageSharp.gatsbyImageData}
     />
     <Section>
       <Container>
@@ -64,7 +64,10 @@ const PaykleverCampaignManager = ({ data }) => (
               <StaticImage src={'./../../assets/images/customers/payklever/logo.png'} alt="" />
             </DetailHeroImagesContent>
             <DetailHeroImagesContent>
-              <DetailVideo id="QAEOiEdZOUM" images={data.videoImages.childImageSharp.fluid} />
+              <DetailVideo
+                id="QAEOiEdZOUM"
+                images={data.videoImages.childImageSharp.gatsbyImageData}
+              />
             </DetailHeroImagesContent>
           </Column>
         </Columns>
@@ -191,18 +194,12 @@ export const pageQuery = graphql`
   query {
     seoImages: file(relativePath: { eq: "customers/Payklever.png" }) {
       childImageSharp {
-        resize(width: 1200, height: 1200) {
-          width
-          height
-          src
-        }
+        gatsbyImageData(layout: FIXED)
       }
     }
     videoImages: file(relativePath: { eq: "customers/payklever/cover-video.jpg" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
+        gatsbyImageData(layout: FIXED)
       }
     }
   }

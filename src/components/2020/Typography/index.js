@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import componse from '../../../utils/styles-componse';
-import styles from './css/index.module.scss';
+import * as styles from './css/index.module.scss';
 
 const keys = ['lg', 'md', 'sm', 'default'];
 
@@ -22,7 +22,7 @@ const _Typography = ({ children, size, hasTextAlign, className, tag }) => {
   });
 
   const result = componse(
-    styles.font,
+    styles.font || {},
     classNameSelect,
     fontWeightSelect,
     className,
@@ -30,6 +30,7 @@ const _Typography = ({ children, size, hasTextAlign, className, tag }) => {
   );
 
   return React.createElement(tag, { className: result }, children);
+  // return React.createElement(tag, children);
 };
 
 _Typography.defaultProps = {

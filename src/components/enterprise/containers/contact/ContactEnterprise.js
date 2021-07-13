@@ -1,5 +1,4 @@
 import React from 'react';
-import { useLocation } from '@reach/router';
 import { Container, Columns, Column, Section } from 'bloomer';
 
 // import Img from "gatsby-image"
@@ -9,7 +8,6 @@ import { StaticImage } from 'gatsby-plugin-image';
 // background animation required this
 
 const ContactEnterprise = () => {
-  const location = useLocation();
   return (
     <Section id={'contact'}>
       <Container>
@@ -24,7 +22,7 @@ const ContactEnterprise = () => {
                 FREE 1 hour Consultation
               </span>{' '}
             </H4>
-            <ContactForm btnText="Submit" landingName="enterprise" location={location} />
+            <ContactForm btnText="Submit" landingName="enterprise" />
           </Column>
         </Columns>
       </Container>

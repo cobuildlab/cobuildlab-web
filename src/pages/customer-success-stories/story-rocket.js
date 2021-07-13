@@ -24,7 +24,7 @@ const StoryRocket = ({ data }) => (
     <SeoMetaTags
       title="Story Rocket"
       description=" is the ideal place to connect story writers with producers in the entertainment world"
-      image={data.seoImages.childImageSharp.resize}
+      image={data.seoImages.childImageSharp.gatsbyImageData}
     />
     <Section>
       <Container>
