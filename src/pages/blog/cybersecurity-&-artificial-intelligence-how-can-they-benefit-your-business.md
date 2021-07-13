@@ -1,7 +1,7 @@
 ---
 title: "CYBERSECURITY & ARTIFICIAL INTELLIGENCE: HOW CAN THEY BENEFIT YOUR BUSINESS"
 date: "2021-06-23T16:24:04.000Z"
-template: tools
+template: blog
 tags: News
 image: "./media/cybersecurity.png"
 ---
