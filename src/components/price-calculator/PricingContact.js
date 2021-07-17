@@ -71,7 +71,6 @@ class PricingContact extends PureComponent {
   }
 
   handleError(error) {
-    console.error(error);
     this.setState((state) => ({
       isLoading: !state.isLoading,
     }));
@@ -139,16 +138,12 @@ class PricingContact extends PureComponent {
       return;
     }
 
-    console.log(blob);
-
     try {
       base64 = await this.transformToBase64(blob);
     } catch (err) {
       this.handleError(err);
       return;
     }
-
-    console.log(base64);
 
     const postData = {
       form: {
