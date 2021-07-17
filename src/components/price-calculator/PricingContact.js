@@ -12,12 +12,12 @@ import {
   TextArea,
 } from 'bloomer';
 import { toast, ToastContainer } from 'react-toastify';
-// import { pdf } from '@react-pdf/renderer';
+import { pdf } from '@react-pdf/renderer';
 import styled from 'styled-components';
 import H4 from '../Typography/H4';
 import ButtonDefault from '../2020/Button/ButtonDefault';
 import PricingContactImages from './PricingContactImages';
-// import template from '../pdf/PdfCalculatorTemplate';
+import template from '../pdf/PdfCalculatorTemplate';
 import Error from '../Toast/Error';
 
 const Form = styled.form`
@@ -130,14 +130,16 @@ class PricingContact extends PureComponent {
       isLoading: !state.isLoading,
     }));
 
-    // const documentData = template({ data, total });
+    const documentData = template({ data, total });
 
-    // try {
-    //   blob = await pdf(documentData).toBlob();
-    // } catch (err) {
-    //   this.handleError(err);
-    //   return;
-    // }
+    try {
+      blob = await pdf(documentData).toBlob();
+    } catch (err) {
+      this.handleError(err);
+      return;
+    }
+
+    console.log(blob);
 
     try {
       base64 = await this.transformToBase64(blob);
@@ -145,6 +147,8 @@ class PricingContact extends PureComponent {
       this.handleError(err);
       return;
     }
+
+    console.log(base64);
 
     const postData = {
       form: {
