@@ -4,6 +4,7 @@ import { Page, Text, View, Document, Image } from '@react-pdf/renderer';
 import styles from './styles';
 import logo from '../../resources/cobuildlab.png';
 import bg from '../../resources/2020/home/background.svg';
+import { Currency } from '../../utils/Currency';
 
 const PdfCalculatorTemplate = ({ data, total }) => {
   const items = data.map((e) => {
@@ -27,7 +28,7 @@ const PdfCalculatorTemplate = ({ data, total }) => {
         <View style={styles.featureMidCol}>{selectItems}</View>
         <View style={styles.featureRightCol}>
           <Text>
-            $ {e.min} - {e.max}
+            {Currency(e.min)} - {Currency(e.max)}
           </Text>
         </View>
       </View>
@@ -56,7 +57,7 @@ const PdfCalculatorTemplate = ({ data, total }) => {
         <View style={styles.tableFooter}>
           <Text style={styles.tableFooterText}>Total Amount</Text>
           <Text style={styles.tableFooterText}>
-            $ {total.min} - {total.max}
+            $ {total.min} - $ {total.max}
           </Text>
         </View>
         <View style={styles.description}>
