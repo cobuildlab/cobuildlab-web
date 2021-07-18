@@ -57,7 +57,7 @@ const PdfCalculatorTemplate = ({ data, total }) => {
         <View style={styles.tableFooter}>
           <Text style={styles.tableFooterText}>Total Amount</Text>
           <Text style={styles.tableFooterText}>
-            $ {total.min} - $ {total.max}
+            {Currency(total.min)} - {Currency(total.max)}
           </Text>
         </View>
         <View style={styles.description}>
