@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-// import Img from 'gatsby-image';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const Overlay = styled.div`
@@ -19,7 +18,7 @@ const Overlay = styled.div`
 const Container = styled(Link)`
   position: relative;
   display: block;
-  width: 400px;
+  width: 380px;
   height: 290px;
   border-radius: 5px;
   overflow: hidden;

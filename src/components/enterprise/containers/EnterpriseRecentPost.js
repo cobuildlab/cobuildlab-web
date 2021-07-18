@@ -23,7 +23,7 @@ const TitleContainer = styled.div`
 const EnterpriseRecentPost = () => {
   const data = useStaticQuery(query);
   return (
-    <Section>
+    <Section isPaddingless>
       <Container id="blog">
         <Wrapper>
           <TitleContainer>
@@ -54,7 +54,7 @@ const query = graphql`
             image {
               publicURL
               childImageSharp {
-                gatsbyImageData(layout: FIXED)
+                gatsbyImageData
               }
             }
           }
