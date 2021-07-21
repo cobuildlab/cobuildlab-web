@@ -3,7 +3,7 @@ import { SeoMetaTags } from '../2021/SeoMetaTags';
 
 const BlogMetaTags = () => (
   <SeoMetaTags
-    title="The Blog for AI Solutions"
+    title="The Blog for Solutions"
     description="The Blog for Software Solutions in Miami"
   />
 );
