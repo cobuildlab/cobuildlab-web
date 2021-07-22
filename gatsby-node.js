@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const _ = require('lodash');
 const Promise = require('bluebird');
 const path = require('path');
@@ -6,7 +7,23 @@ const unified = require('unified');
 const markdown = require('remark-parse');
 const html = require('remark-html');
 
-exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
+exports.onCreateWebpackConfig = ({ stage, actions, rules, getConfig }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        process: 'process/browser',
+        stream: 'stream-browserify',
+        zlib: 'browserify-zlib',
+      },
+    },
+    plugins: [
+      new webpack.ProvidePlugin({
+        process: 'process/browser',
+        Buffer: ['buffer', 'Buffer'],
+      }),
+    ],
+  });
+
   if (stage === 'build-javascript') {
     const config = getConfig();
     const miniCssExtractPlugin = config.plugins.find(
