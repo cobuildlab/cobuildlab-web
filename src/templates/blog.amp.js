@@ -71,7 +71,7 @@ class BlogPostTemplate extends React.Component {
     const { previous, next, slug: origanlPath } = this.props.pageContext;
     const previousImage = get(previous, 'frontmatter.image.publicURL') || defaultImg;
     const nextImage = get(next, 'frontmatter.image.publicURL') || defaultImg;
-    const imageAmp = post.frontmatter.image.childImageSharp.gatsbyImageData;
+    const imageAmp = post.frontmatter.image.childImageSharp.gatsbyImageData.images.fallback;
     const seoImages = get(
       this,
       'props.data.seoImages.frontmatter.image.childImageSharp.gatsbyImageData',

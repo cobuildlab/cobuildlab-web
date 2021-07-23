@@ -19,6 +19,7 @@
     "dotenv": "10.0.0",
     "gatsby": "3.8.1",
     "gatsby-image": "3.8.0",
+    "gatsby-plugin-amp": "^0.2.2",
     "gatsby-plugin-google-gtag": "3.8.0",
     "gatsby-plugin-google-tagmanager": "3.8.0",
     "gatsby-plugin-image": "1.8.0",
