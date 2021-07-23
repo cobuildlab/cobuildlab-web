@@ -271,7 +271,7 @@ const Services = () => (
               src={
                 './../assets/images/service/card/iconos-web-design_Main-Services-Web-Design_Main Services-Web-Design.svg'
               }
-              alt="Web Design"
+              alt="Website Development"
             />
           }
         />
