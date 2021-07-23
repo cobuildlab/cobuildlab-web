@@ -262,16 +262,16 @@ const Services = () => (
           }
         />
         <ServicesCard
-          title={'Web'}
-          subtitle={'Design'}
+          title={'Website'}
+          subtitle={'Development'}
           cover={'We create appealing and beautiful content for your web'}
-          to={'web-design'}
+          to={'website-development'}
           image={
             <StaticImage
               src={
                 './../assets/images/service/card/iconos-web-design_Main-Services-Web-Design_Main Services-Web-Design.svg'
               }
-              alt="Web Design"
+              alt="Website Development"
             />
           }
         />
@@ -287,7 +287,7 @@ const Services = () => (
           image={
             <StaticImage
               src={'./../assets/images/service/card/iconos_Low Code-No-Code.svg'}
-              alt="Web Design"
+              alt="Low code or no code development"
             />
           }
         />
@@ -299,7 +299,7 @@ const Services = () => (
           image={
             <StaticImage
               src={'./../assets/images/service/card/iconos_Robotic-Process-Automation.svg'}
-              alt="Web Design"
+              alt="Robotic Process Automation"
             />
           }
         />

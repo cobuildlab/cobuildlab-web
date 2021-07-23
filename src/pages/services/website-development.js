@@ -50,7 +50,7 @@ const WebDesign = () => (
       <ServicesBannerBackgroundBottom />
       <Container>
         <ServicesHeader
-          title={'Web Design'}
+          title={'Website Development'}
           paragraph={
             'Aligning a brand, your ideas, and our knowledge will give life to a website that caters to your service and operations. With a professional website, you can increase your revenue flows, and establish business credibility and thrusters with brand consistency.'
           }
