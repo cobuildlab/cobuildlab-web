@@ -29,7 +29,7 @@ const BlogHero = () => (
           <Column>
             <Title>The Blog for Software Solutions</Title>
             <Text>
-              Tips, news, tools for owners and TI managers. <br /> Unique content designed for
+              Tips, news, tools for owners and IT managers. <br /> Unique content designed for
               businesses that are ready to overcome all productivity, logistics, and supply chain
               challenges.
             </Text>

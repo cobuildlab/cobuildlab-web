@@ -5,11 +5,19 @@ import Layout from '../../../components/2020/Layout';
 import { Section, Container, Columns } from 'bloomer';
 import BlogMetaTags from '../../../components/blog-ai/BlogMetaTags';
 import BlogHero from '../../../components/blog-ai/BlogHero';
-import BlogList from '../../../components/blog-ai/BlogList';
 import Contact from '../../../components/2020/HomePageContact';
+import ClientSearch from '../../../components/blog-ai/search/client-search';
 
 const Blog = ({ data }) => {
   const { post } = data.allPost8Base;
+
+  const options = {
+    indexStrategy: `Prefix match`,
+    searchSanitizer: `Lower Case`,
+    TitleIndex: true,
+    SearchByTerm: true,
+  };
+
   return (
     <Layout>
       <BlogMetaTags />
@@ -17,7 +25,7 @@ const Blog = ({ data }) => {
       <Section isPaddingless>
         <Container>
           <Columns isMultiline>
-            <BlogList data={post} />
+            <ClientSearch post={post} engine={options} />
           </Columns>
         </Container>
       </Section>
