@@ -11,7 +11,6 @@ import { Section, Columns } from 'bloomer';
 
 const StyledContainer = styled.div`
   position: relative;
-  width: 100%;
 `;
 
 const StyledForm = styled.form`
@@ -133,7 +132,13 @@ class ClientSearch extends Component {
         </StyledForm>
         <Section isPaddingless>
           <Columns isMultiline>
-            <BlogList data={queryResults} />
+            {queryResults.length === 0 ? (
+              <>
+                <h1>No article found ....</h1>
+              </>
+            ) : (
+              <BlogList data={queryResults} />
+            )}
           </Columns>
         </Section>
       </>
