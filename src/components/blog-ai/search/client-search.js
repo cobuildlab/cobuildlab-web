@@ -1,14 +1,52 @@
 import React, { Component } from 'react';
 import * as JsSearch from 'js-search';
+
+import { Icon } from 'react-icons-kit';
+import { search as searchIcon } from 'react-icons-kit/fa/search';
+
 import BlogList from '../BlogList';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { Section, Columns } from 'bloomer';
+
+const StyledContainer = styled.div`
+  position: relative;
+  width: 100%;
+`;
+
+const StyledForm = styled.form`
+  padding-bottom: 35px;
+`;
+
+const StyledInput = styled.input`
+  color: #264a60;
+  border: 1px solid #264a60;
+  margin: 0 auto;
+  width: 50vw;
+  background-color: #fff;
+  text-indent: 35px;
+`;
+
+const StyledIcon = styled(Icon)`
+  display: inline-block;
+  margin-left: 24%;
+  position: absolute;
+  margin-top: 10px;
+  color: #264a60;
+  @media (min-width: 1380px) {
+    margin-left: 15%;
+  }
+`;
+
+const StyledDiv = styled.div`
+  width: 100%;
+`;
 
 class ClientSearch extends Component {
   state = {
-    bookList: [],
+    postList: [],
     search: [],
     searchResults: [],
-    isLoading: true,
     isError: false,
     searchQuery: ``,
   };
@@ -18,7 +56,7 @@ class ClientSearch extends Component {
   async componentDidMount() {
     const { post } = this.props;
     if (post !== null) {
-      this.setState({ bookList: post });
+      this.setState({ postList: post });
       this.rebuildIndex(post);
     }
   }
@@ -28,7 +66,7 @@ class ClientSearch extends Component {
    *
    * @param post
    */
-  rebuildIndex: ClientSearch.rebuildIndex = (post) => {
+  rebuildIndex = (post) => {
     const dataToSearch = new JsSearch.Search(`slug`);
 
     /**
@@ -53,7 +91,7 @@ class ClientSearch extends Component {
     dataToSearch.addIndex(`title`); // sets the index attribute for the data
 
     dataToSearch.addDocuments(post); // adds the data to be searched
-    this.setState({ search: dataToSearch, isLoading: false });
+    this.setState({ search: dataToSearch });
   };
 
   /**
@@ -68,43 +106,37 @@ class ClientSearch extends Component {
 
     this.setState({ searchQuery: e.target.value, searchResults: queryResult });
   };
+
   handleSubmit = (e) => {
     e.preventDefault();
   };
 
   render() {
-    const { isLoading, bookList, searchResults, searchQuery } = this.state;
-    const queryResults = searchQuery === `` ? bookList : searchResults;
+    const { postList, searchResults, searchQuery } = this.state;
+    const queryResults = searchQuery === `` ? postList : searchResults;
 
-    if (isLoading) {
-      return (
-        <div style={{ margin: `1.2rem 1rem 1.2rem 1rem` }}>
-          <h1 style={{ marginTop: `3em`, textAlign: `center` }}>Getting the search all setup</h1>
-        </div>
-      );
-    }
     return (
-      <div>
-        <form onSubmit={this.handleSubmit} style={{ paddingBottom: '10px' }}>
-          <div style={{ width: '90vw' }}>
-            <input
-              id="Search"
-              value={searchQuery}
-              onChange={this.searchData}
-              placeholder="Enter your search here"
-              style={{
-                color: '#264a60',
-                borderBottom: '1px solid #264a60',
-                margin: '0 auto',
-                width: '50vw',
-              }}
-            />
-          </div>
-        </form>
-        <div>
-          <BlogList data={queryResults} />
-        </div>
-      </div>
+      <>
+        <StyledForm onSubmit={this.handleSubmit}>
+          <StyledContainer>
+            <StyledDiv>
+              {searchQuery === '' ? <StyledIcon icon={searchIcon} /> : null}
+              <StyledInput
+                id="Search"
+                value={searchQuery}
+                onChange={this.searchData}
+                placeholder="Discover news articles and more..."
+                autoComplete={'off'}
+              />
+            </StyledDiv>
+          </StyledContainer>
+        </StyledForm>
+        <Section isPaddingless>
+          <Columns isMultiline>
+            <BlogList data={queryResults} />
+          </Columns>
+        </Section>
+      </>
     );
   }
 }

@@ -40,7 +40,6 @@ const Services = () => (
     </Section>
 
     <Section>
-      <StyledTitle></StyledTitle>
       <Columns isCentered>
         <ServicesCard
           title={'Custom Software'}

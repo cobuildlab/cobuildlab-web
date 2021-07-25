@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Layout from '../../../components/2020/Layout';
-import { Section, Container, Columns } from 'bloomer';
+import { Section, Container } from 'bloomer';
 import BlogMetaTags from '../../../components/blog-ai/BlogMetaTags';
 import BlogHero from '../../../components/blog-ai/BlogHero';
 import Contact from '../../../components/2020/HomePageContact';
@@ -22,11 +22,9 @@ const Blog = ({ data }) => {
     <Layout>
       <BlogMetaTags />
       <BlogHero />
-      <Section isPaddingless>
+      <Section>
         <Container>
-          <Columns isMultiline>
-            <ClientSearch post={post} engine={options} />
-          </Columns>
+          <ClientSearch post={post} engine={options} />
         </Container>
       </Section>
       <Section>
