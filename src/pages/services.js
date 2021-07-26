@@ -303,6 +303,35 @@ const Services = () => (
           }
         />
       </Columns>
+      <Columns isCentered>
+        <ServicesCard
+          title={'IoT \n'}
+          subtitle={'Development'}
+          cover={
+            'We help your company to harness the full potential of Internet of Things\n' +
+            'and offer IoT development services for boosting your business'
+          }
+          to={'iot-development'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos_Internet-of-the-thing-IoT.png'}
+              alt="IoT Development"
+            />
+          }
+        />
+        <ServicesCard
+          title={'Artificial Intelligence'}
+          subtitle={'Development'}
+          cover={'We turn your AI Vision into reality by applying our intelligence and experience'}
+          to={'artificial-intelligence-development'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos_artificial-inteligence.png'}
+              alt="Artificial Intelligence"
+            />
+          }
+        />
+      </Columns>
     </Section>
     <Section>
       <StyledTitle>

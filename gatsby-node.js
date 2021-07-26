@@ -131,6 +131,17 @@ exports.createPages = ({ graphql, actions }) => {
                     remoteImage {
                       publicURL
                       url
+                      childrenImageSharp {
+                        id
+                        fixed {
+                          src
+                          srcSet
+                          srcSetWebp
+                          srcWebp
+                          width
+                          height
+                        }
+                      }
                     }
                   }
                 }
@@ -165,6 +176,14 @@ exports.createPages = ({ graphql, actions }) => {
                 },
               });
             });
+          // AMP
+          createPage({
+            path: `/blog/ai/${post.slug}amp/`,
+            component: path.resolve(`./src/templates/blog-ai.amp.js`),
+            context: {
+              post,
+            },
+          });
         });
       }),
     );

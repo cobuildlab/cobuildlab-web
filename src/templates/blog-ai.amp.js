@@ -59,17 +59,31 @@ const StyledContainer = Styled(Container)`
  * @constructor
  */
 function BlogAI({ pageContext }) {
-  const { post } = pageContext;
+  const { post, description } = pageContext;
 
   const { title, fields } = post;
-  let { content, description } = post;
+  let { content } = post;
   const { images } = fields !== null ? fields : [];
 
   if (images === undefined) {
     content = content.replace('/<img>/g', '');
   } else {
     images.forEach((value) => {
-      content = content.replace('<img>', `<img src="${value.remoteImage.publicURL}" />`);
+      content = content.replace(
+        '<img>',
+        `
+        <ImagesAmpContainer>
+          <amp-img
+            src-set="${value.remoteImage.childrenImageSharp[0].fixed.srcSetWebp}"
+            src="${value.remoteImage.childrenImageSharp[0].fixed.srcWebp}"
+            width="${value.remoteImage.childrenImageSharp[0].fixed.width}"
+            height="${value.remoteImage.childrenImageSharp[0].fixed.height}"
+            alt="${title.title}"
+            layout="responsive"
+           />
+        </ImagesAmpContainer>
+        `,
+      );
     });
   }
 

@@ -11,6 +11,7 @@ const Title = styled(H4)`
   text-align: right;
   font-weight: 100;
   font-family: 'Lato-Light' !important;
+  font-size: calc(38px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
 `;
 
 const CardStyled = styled(Card)`
