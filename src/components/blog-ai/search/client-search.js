@@ -63,7 +63,7 @@ class ClientSearch extends Component {
   /**.
    * Rebuilds the overall index based on the options
    *
-   * @param post
+   * @param {Array} post - List post.
    */
   rebuildIndex = (post) => {
     const dataToSearch = new JsSearch.Search(`slug`);
@@ -97,8 +97,9 @@ class ClientSearch extends Component {
    * Handles the input change and perform a search with js-search
    * in which the results will be added to the state.
    *
-   * @param e
+   * @param {HTMLElement} e - Element html.
    */
+
   searchData = (e) => {
     const { search } = this.state;
     const queryResult = search.search(e.target.value);
