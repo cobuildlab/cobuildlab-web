@@ -117,6 +117,7 @@ exports.createPages = ({ graphql, actions }) => {
                 content
                 description
                 tag
+                category
                 readingTime
                 createdAt
                 imageUrl {

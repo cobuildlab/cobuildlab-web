@@ -38,20 +38,23 @@ const Redirect = styled(Link)`
   }
 `;
 
-const BlogTag = ({ activeTag }) => (
+const BlogTagAI = ({ activeTag }) => (
   <Container>
     <Tabs isBoxed isFullWidth>
       <TabList>
         <Tab isActive={activeTag === 'all'}>
           <Redirect to="/blog/ai">All</Redirect>
         </Tab>
+        <Tab isActive={activeTag === 'financing'}>
+          <Redirect to="/blog/ai/financing">Financing</Redirect>
+        </Tab>
       </TabList>
     </Tabs>
   </Container>
 );
 
-BlogTag.propTypes = {
+BlogTagAI.propTypes = {
   activeTag: PropTypes.string.isRequired,
 };
 
-export default BlogTag;
+export default BlogTagAI;

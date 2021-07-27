@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import Layout from '../../../components/2020/Layout';
 import { Section, Container } from 'bloomer';
-import BlogMetaTags from '../../../components/blog-ai/BlogMetaTags';
-import BlogHero from '../../../components/blog-ai/BlogHero';
-import Contact from '../../../components/2020/HomePageContact';
-import ClientSearch from '../../../components/blog-ai/search/client-search';
+import Layout from './../../../components/2020/Layout';
+import BlogMetaTags from './../../../components/blog-post/BlogMetaTags';
+import BlogHero from './../../../components/blog-post/BlogHero';
+import Contact from './../../../components/2020/HomePageContact';
 import BlogTagAI from '../../../components/blog-ai/BlogTagAI';
+import ClientSearch from '../../../components/blog-ai/search/client-search';
 
-const Blog = ({ data }) => {
+const Financing = ({ data }) => {
   const { post } = data.allPost8Base;
 
   const options = {
@@ -25,7 +25,7 @@ const Blog = ({ data }) => {
       <BlogHero />
       <Section>
         <Container>
-          <BlogTagAI activeTag="all" />
+          <BlogTagAI activeTag="financing" />
           <ClientSearch post={post} engine={options} />
         </Container>
       </Section>
@@ -38,13 +38,17 @@ const Blog = ({ data }) => {
   );
 };
 
-Blog.propTypes = {
+Financing.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
 export const pageQuery = graphql`
-  query BasePost {
-    allPost8Base(limit: 1000, sort: { fields: createdAt, order: DESC }) {
+  query {
+    allPost8Base(
+      limit: 20
+      filter: { category: { regex: "/financing/" } }
+      sort: { fields: createdAt, order: DESC }
+    ) {
       post: nodes {
         id
         title
@@ -59,4 +63,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default Blog;
+export default Financing;
