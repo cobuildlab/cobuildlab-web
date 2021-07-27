@@ -26,7 +26,7 @@ Project management software is a type of software used in the planning and execu
 
 **Task management:**  In this function, there must be the ability to create and assign tasks, deadlines, and status reports. This is so that the entire development team is in the same phase and that each person knows what they have to do.
 
-**Time management:   Software must have the ability to track time for all tasks and maintain records for third-party consultants.
+**Time management:**   Software must have the ability to track time for all tasks and maintain records for third-party consultants.
 
 **Calendar and contact sharing:** Project timelines include scheduled meetings, activity dates, and contacts that should automatically update across all PM and stakeholder calendars.
 
