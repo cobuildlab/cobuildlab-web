@@ -115,6 +115,7 @@ module.exports = {
                 slug
                 tag
                 description
+                category
                 createdAt
                 readingTime
                 imageUrl{
