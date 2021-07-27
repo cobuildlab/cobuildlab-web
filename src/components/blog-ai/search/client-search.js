@@ -4,7 +4,8 @@ import * as JsSearch from 'js-search';
 import { Icon } from 'react-icons-kit';
 import { search as searchIcon } from 'react-icons-kit/fa/search';
 
-import BlogList from '../BlogList';
+import BlogList from './../../blog-post/BlogList';
+import BlogListAI from '../BlogListAI';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Section, Columns } from 'bloomer';
@@ -47,15 +48,25 @@ class ClientSearch extends Component {
     search: [],
     searchResults: [],
     isError: false,
+    blogAi: false,
     searchQuery: ``,
   };
   /**
    * React lifecycle method to fetch the data.
    */
   async componentDidMount() {
-    const { post } = this.props;
+    let { post } = this.props;
+    let active = true;
     if (post !== null) {
-      this.setState({ postList: post });
+      if (post[0].node) {
+        post.forEach((value) => {
+          value.slug = value.node.fields.slug;
+          value.title = value.node.frontmatter.title;
+        });
+        active = false;
+      }
+
+      this.setState({ postList: post, blogAi: active });
       this.rebuildIndex(post);
     }
   }
@@ -87,6 +98,7 @@ class ClientSearch extends Component {
      */
     dataToSearch.searchIndex = new JsSearch.TfIdfSearchIndex(`slug`);
 
+    dataToSearch.addIndex(`slug`); // sets the index attribute for the data
     dataToSearch.addIndex(`title`); // sets the index attribute for the data
 
     dataToSearch.addDocuments(post); // adds the data to be searched
@@ -103,7 +115,6 @@ class ClientSearch extends Component {
   searchData = (e) => {
     const { search } = this.state;
     const queryResult = search.search(e.target.value);
-
     this.setState({ searchQuery: e.target.value, searchResults: queryResult });
   };
 
@@ -112,9 +123,9 @@ class ClientSearch extends Component {
   };
 
   render() {
-    const { postList, searchResults, searchQuery } = this.state;
+    const { postList, searchResults, searchQuery, blogAi } = this.state;
     const queryResults = searchQuery === `` ? postList : searchResults;
-
+    const { activeTag } = this.props;
     return (
       <>
         <StyledForm onSubmit={this.handleSubmit}>
@@ -137,8 +148,10 @@ class ClientSearch extends Component {
               <>
                 <h1>No article found ....</h1>
               </>
+            ) : blogAi ? (
+              <BlogListAI data={queryResults} />
             ) : (
-              <BlogList data={queryResults} />
+              <BlogList data={queryResults} activeTag={activeTag} />
             )}
           </Columns>
         </Section>
@@ -149,6 +162,7 @@ class ClientSearch extends Component {
 
 ClientSearch.propTypes = {
   post: PropTypes.array.isRequired,
+  activeTag: PropTypes.string.isRequired,
 };
 
 export default ClientSearch;

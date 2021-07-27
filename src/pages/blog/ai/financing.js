@@ -6,7 +6,6 @@ import Layout from './../../../components/2020/Layout';
 import BlogMetaTags from './../../../components/blog-post/BlogMetaTags';
 import BlogHero from './../../../components/blog-post/BlogHero';
 import Contact from './../../../components/2020/HomePageContact';
-import BlogTagAI from '../../../components/blog-ai/BlogTagAI';
 import ClientSearch from '../../../components/blog-ai/search/client-search';
 
 const Financing = ({ data }) => {
@@ -25,7 +24,6 @@ const Financing = ({ data }) => {
       <BlogHero />
       <Section>
         <Container>
-          <BlogTagAI activeTag="financing" />
           <ClientSearch post={post} engine={options} />
         </Container>
       </Section>
