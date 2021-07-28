@@ -19,7 +19,7 @@ It is a tool that makes the processes and activities in your company works in a 
 
 Some years ago workflows were controlled by a physical person and all teams used tools like blackboards, notes, messages, and lists to maintain the efficiency. 
 
-But now, thanks to technology everyone forgot those tools and now we have digital workflows where we have management tools that allow setting business rules to dictate when one step can be taken as successfully completed and the next step can be triggered. In that form, the workflow is automated and that translates on more efficiency.
+But now, thanks to technology everyone forgot those tools and now we have [digital workflows](https://www.process.st/workflow-software) where we have management tools that allow setting business rules to dictate when one step can be taken as successfully completed and the next step can be triggered. In that form, the workflow is automated and that translates on more efficiency.
 
 <title-2>How to improve an efficient workflow</title-2>
 
