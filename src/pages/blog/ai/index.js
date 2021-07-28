@@ -7,7 +7,6 @@ import BlogMetaTags from '../../../components/blog-ai/BlogMetaTags';
 import BlogHero from '../../../components/blog-ai/BlogHero';
 import Contact from '../../../components/2020/HomePageContact';
 import ClientSearch from '../../../components/blog-ai/search/client-search';
-import BlogTagAI from '../../../components/blog-ai/BlogTagAI';
 
 const Blog = ({ data }) => {
   const { post } = data.allPost8Base;
@@ -25,7 +24,6 @@ const Blog = ({ data }) => {
       <BlogHero />
       <Section>
         <Container>
-          <BlogTagAI activeTag="all" />
           <ClientSearch post={post} engine={options} />
         </Container>
       </Section>

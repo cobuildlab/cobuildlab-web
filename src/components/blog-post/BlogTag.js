@@ -5,6 +5,7 @@ import { Tabs as BloomerTabs, TabList, Tab } from 'bloomer';
 import styled from 'styled-components';
 
 const Container = styled.div`
+  width: 100%;
   padding: 2rem 1rem;
   @media screen and (max-width: 768px) {
     padding: 1rem;
