@@ -51,7 +51,7 @@ const ChildrenContainer = styled.div`
 `;
 
 const BlogPostCardContainer = ({ children, src, alt, to }) => (
-  <Container to={to}>
+  <Container to={'/blog/ai/' + to}>
     <Overlay />
     <ChildrenContainer>{children}</ChildrenContainer>
   </Container>

@@ -22,7 +22,7 @@ const BlogHero = () => (
       <Container hasTextAlign="centered">
         <Columns isCentered>
           <Column>
-            <Title>The Blog for AI</Title>
+            <Title>AI{"'"}s Blog </Title>
           </Column>
         </Columns>
       </Container>

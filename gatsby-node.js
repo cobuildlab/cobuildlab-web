@@ -117,6 +117,7 @@ exports.createPages = ({ graphql, actions }) => {
                 content
                 description
                 tag
+                category
                 readingTime
                 createdAt
                 imageUrl {
@@ -168,6 +169,11 @@ exports.createPages = ({ graphql, actions }) => {
                 component: path.resolve(`./src/templates/blog-ai.js`),
                 context: {
                   post,
+                  options: {
+                    indexStrategy: `Prefix match`,
+                    searchSanitizer: `Lower Case`,
+                    SearchByTerm: true,
+                  },
                 },
               });
             });
