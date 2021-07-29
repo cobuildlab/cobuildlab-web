@@ -7,11 +7,11 @@ image: "./media/digital-transformation-for-small-business-corregida.png"
 ---
 
 
-We've heard about the **digital transformation** for a long time, and how important it is in 2020, and we couldn't stay silent about this process that is revolutionizing small businesses and large companies.
+We've heard about the **[digital transformation](https://www.vistaprojects.com/blog/digital-transformation-in-oil-gas/)** for a long time, and how important it is in 2020, and we couldn't stay silent about this process that is revolutionizing small businesses and large companies.
 
-Digital transformation is a process of using new technology to [improve a business](https://moneybrighter.com/how-to-start-an-llc) or industry.
+[Digital transformation](https://www.vistaprojects.com/blog/digital-transformation-in-oil-gas/) is a process of using new technology to [improve a business](https://moneybrighter.com/how-to-start-an-llc) or industry.
 
-Among the most important areas covered by the digital transformation this 2020 we have:  
+Among the most important areas covered by the [digital transformation](https://www.vistaprojects.com/blog/digital-transformation-in-oil-gas/) this 2020 we have:  
 
 </br>
 
@@ -37,7 +37,7 @@ Among the most important areas covered by the digital transformation this 2020 w
 
 </br>
 
-|<img src="./media/cloud.gif" class="i-s">| The digital transformation is also linked to the storage of information, web services, IT infrastructure in cloud servers (public, private, and mixed).|
+|<img src="./media/cloud.gif" class="i-s">| The [digital transformation](https://www.vistaprojects.com/blog/digital-transformation-in-oil-gas/) is also linked to the storage of information, web services, IT infrastructure in cloud servers (public, private, and mixed).|
 |---|---|
 
 </br>
@@ -46,7 +46,7 @@ Among the most important areas covered by the digital transformation this 2020 w
 
 </br>
 
-|<img src="./media/ai.gif" class="i-s">| [Artificial intelligence](https://cobuildlab.com/blog/artificial-intelligence-for-enterprise-software/) is another area of technology which if we apply it in our small businesses, we will be on the road to digital transformation.|
+|<img src="./media/ai.gif" class="i-s">| [Artificial intelligence](https://cobuildlab.com/blog/artificial-intelligence-for-enterprise-software/) is another area of technology which if we apply it in our small businesses, we will be on the road to [digital transformation](https://www.vistaprojects.com/blog/digital-transformation-in-oil-gas/).|
 |---|---|
 
 </br>
@@ -55,7 +55,7 @@ Among the most important areas covered by the digital transformation this 2020 w
 
 </br>
 
-|<img src="./media/iot.gif" class="i-s">| When we mix software and hardware development and link the operation of the device to the Internet, not only will we be developing a project of the [Internet of things](https://magazine.wharton.upenn.edu/digital/internet-of-things-the-key-to-digital-transformation/) (IoT), but we will also be directing our small business towards the complete digital transformation.|
+|<img src="./media/iot.gif" class="i-s">| When we mix software and hardware development and link the operation of the device to the Internet, not only will we be developing a project of the [Internet of things](https://magazine.wharton.upenn.edu/digital/internet-of-things-the-key-to-digital-transformation/) (IoT), but we will also be directing our small business towards the complete [digital transformation](https://www.vistaprojects.com/blog/digital-transformation-in-oil-gas/).|
 |---|---|
 
 </br>
@@ -64,9 +64,9 @@ Among the most important areas covered by the digital transformation this 2020 w
 
 </br>
 
-We can say that digital transformation brings together a series of technologies to reinvent the processes of different industries, cultures, and customer experiences, in order to increase the production of companies, improving the product’s characteristics and making consumers happier using software and technology.  
+We can say that [digital transformation](https://www.vistaprojects.com/blog/digital-transformation-in-oil-gas/) brings together a series of technologies to reinvent the processes of different industries, cultures, and customer experiences, in order to increase the production of companies, improving the product’s characteristics and making consumers happier using software and technology.  
 
-Today, digital transformation is very important for businesses since it is the only way that companies can keep up to date, improving their performance. That is why if you want to position your company in the market and be one of the most competitive, you should bet on this type of process without a doubt. 
+Today, [digital transformation](https://www.vistaprojects.com/blog/digital-transformation-in-oil-gas/) is very important for businesses since it is the only way that companies can keep up to date, improving their performance. That is why if you want to position your company in the market and be one of the most competitive, you should bet on this type of process without a doubt. 
 
 [It is also important to know that global spending on technologies and services is expected to reach $2.3 trillion by 2023.](https://www.idc.com/getdoc.jsp?containerId=prUS45612419)
 
@@ -84,7 +84,7 @@ Today, digital transformation is very important for businesses since it is the o
 
 **Phase 1:** 
 
-To carry out a digital transformation process, you must first take into account the cost savings and investment necessary to carry out all the digitalization and try as much as possible to optimize the work within the company. 
+To carry out a [digital transformation](https://www.vistaprojects.com/blog/digital-transformation-in-oil-gas/) process, you must first take into account the cost savings and investment necessary to carry out all the digitalization and try as much as possible to optimize the work within the company. 
 
 </br>
 
@@ -112,24 +112,24 @@ Build a network and reliable business ecosystem to provide complete solutions th
 
 <title-3>Pros of Digital Transformation</title-3>
   
-* One of the most positive aspects of the digital transformation is that it makes your business more competitive, making all your competitors have to join this trend in the same way. 
-* The digital transformation allows more flexibility within the company, improving the performance of your employees, and accelerating the return on investment.   
+* One of the most positive aspects of the [digital transformation](https://www.vistaprojects.com/blog/digital-transformation-in-oil-gas/) is that it makes your business more competitive, making all your competitors have to join this trend in the same way. 
+* The [digital transformation](https://www.vistaprojects.com/blog/digital-transformation-in-oil-gas/) allows more flexibility within the company, improving the performance of your employees, and accelerating the return on investment.   
 * Improve the performance of your workers, as their workload is reduced. Thanks to these technologies, workers can spend more time with them and socialize with their environment. This allows them to feel better and increase their performance within the company, which will accelerate its growth. Whether automation in production lines or CRM software to streamline administrative work, at any level of the chain the digital transformation is felt.
-* The digital transformation allows you to offer a better experience to your customers, which makes it more interactive and makes the consumer return. You should always invest to make your customers feel satisfied, so you can make your business better over time.
+* The [digital transformation](https://www.vistaprojects.com/blog/digital-transformation-in-oil-gas/) allows you to offer a better experience to your customers, which makes it more interactive and makes the consumer return. You should always invest to make your customers feel satisfied, so you can make your business better over time.
 
   
 <title-3>Cons of Digital Transformation</title-3>
   
-- One of the negative aspects of the digital transformation is that its evolution is very fast so you must be attentive every day ensuring that your technologies are up to date with the needs of consumers, and be aware of any sudden change.  This is the only way you can stay in the competition in the global market.
+- One of the negative aspects of the [digital transformation](https://www.vistaprojects.com/blog/digital-transformation-in-oil-gas/) is that its evolution is very fast so you must be attentive every day ensuring that your technologies are up to date with the needs of consumers, and be aware of any sudden change.  This is the only way you can stay in the competition in the global market.
 <br>
-- Another negative aspect of the digital transformation is that adopting these technologies in your company and to your consumers is not always easy since they are not used to this trend. Sometimes these changes are not effective, simply because consumers and employees within the company are not used to them, so you must be very careful when starting a transformation process like this.
+- Another negative aspect of the [digital transformation](https://www.vistaprojects.com/blog/digital-transformation-in-oil-gas/) is that adopting these technologies in your company and to your consumers is not always easy since they are not used to this trend. Sometimes these changes are not effective, simply because consumers and employees within the company are not used to them, so you must be very careful when starting a transformation process like this.
 <br>
 - Similarly, these kinds of changes tend to generate some uncertainty among your company's employees since many jobs are done by the digital sector, and sometimes the workforce is reduced.
 
  
 <title-3>History of Digital Transformation</title-3>
 
-The digital transformation dates back to 1950 with the invention of the microchip and the semiconductor transistor that is still most commonly used in computers today. 
+The [digital transformation](https://www.vistaprojects.com/blog/digital-transformation-in-oil-gas/) dates back to 1950 with the invention of the microchip and the semiconductor transistor that is still most commonly used in computers today. 
 
 It started when digital channels and web pages began to exist, where customers had the possibility of knowing the products that companies offered.
 
@@ -163,17 +163,17 @@ It is a streaming platform that blends interactivity, social networking, and E-c
   
 <title-3>The Future of Digital transformation</title-3>
 
-Today the technologies that are part of the digital transformation, play a great role in the business world and in the life of each one of us. With the passing of time, companies have been betting on these technologies, with the simple fact of minimizing their workload and improving their productivity.  
+Today the technologies that are part of the [digital transformation](https://www.vistaprojects.com/blog/digital-transformation-in-oil-gas/), play a great role in the business world and in the life of each one of us. With the passing of time, companies have been betting on these technologies, with the simple fact of minimizing their workload and improving their productivity.  
 
 </br>
 
 1. The development of applications will be faster since nowadays, companies need to get their products to market faster to have a quick return. Low-code applications allow for faster delivery with a minimum of hand-coding, fast configuration, and deployment.
 
-2. Another advance in the digital transformation that is expected is face detection, text and hypertext categorization, image classification, and handwriting recognition. This section of supporting vector machines focuses on taking data from any process and classifying it depending on how you need it.
+2. Another advance in the [digital transformation](https://www.vistaprojects.com/blog/digital-transformation-in-oil-gas/) that is expected is face detection, text and hypertext categorization, image classification, and handwriting recognition. This section of supporting vector machines focuses on taking data from any process and classifying it depending on how you need it.
  
-3. Another projection for the future is a significant increase of the big data, this given by all the technologies that include the digital transformation, this increase represents a great problem since the amount of data to be stored doubles every six months, and the great variety of data makes it difficult to integrate them. 
+3. Another projection for the future is a significant increase of the big data, this given by all the technologies that include the [digital transformation](https://www.vistaprojects.com/blog/digital-transformation-in-oil-gas/), this increase represents a great problem since the amount of data to be stored doubles every six months, and the great variety of data makes it difficult to integrate them. 
 
 4. It will significantly increase the use of technologies such as 5G, machine learning, automation and control, IT, Big Data, Blockchain, Natural Language Processing, AR and VR, AI, and others.  
 
-So you know if you want to transform within your company and keep in the competition of the world market, you must invest without any doubt in the **digital transformation**, so you will improve your productivity gradually. More and more companies are recognizing the importance of digital transformation and the benefits it brings, so don't be left behind and sign up for this global stream of digital evolution.  
+So you know if you want to transform within your company and keep in the competition of the world market, you must invest without any doubt in the **[digital transformation](https://www.vistaprojects.com/blog/digital-transformation-in-oil-gas/)**, so you will improve your productivity gradually. More and more companies are recognizing the importance of digital transformation and the benefits it brings, so don't be left behind and sign up for this global stream of digital evolution.  
 
