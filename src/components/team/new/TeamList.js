@@ -37,7 +37,7 @@ const TeamList = () => {
             <StaticImage
               className={'team-member-img'}
               src={'./../../../assets/images/team/team-pictures/jacqueline-popovich.png'}
-              alt="Jackeline Popovich"
+              alt="Jacqueline Popovich"
             />
           </Card>
         </Column>
