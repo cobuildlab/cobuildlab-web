@@ -5,12 +5,8 @@ import BlogPostCard from './BlogPostCard';
 import image from './../../pages/blog/media/ai/pexels-george-morina-4960464.jpg';
 
 const BlogListAI = ({ data }) => {
-  let size = 4;
-  if (data.length === 2) {
-    size = 6;
-  }
   const items = data.map((node) => (
-    <Column isSize={{ desktop: size, tablet: 6, mobile: 12 }} key={node.title}>
+    <Column isSize={{ desktop: 4, tablet: 6, mobile: 12 }} key={node.title}>
       <BlogPostCard
         to={node.slug}
         src={image}
