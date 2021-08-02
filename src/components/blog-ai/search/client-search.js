@@ -4,11 +4,10 @@ import * as JsSearch from 'js-search';
 import { Icon } from 'react-icons-kit';
 import { search as searchIcon } from 'react-icons-kit/fa/search';
 
-import BlogList from './../../blog-post/BlogList';
-import BlogListAI from '../BlogListAI';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Section, Columns } from 'bloomer';
+import Paginator from '../../Pagination';
 
 const StyledContainer = styled.div`
   position: relative;
@@ -148,10 +147,10 @@ class ClientSearch extends Component {
               <>
                 <h1>No article found ....</h1>
               </>
-            ) : blogAi ? (
-              <BlogListAI data={queryResults} />
             ) : (
-              <BlogList data={queryResults} activeTag={activeTag} />
+              <>
+                <Paginator data={queryResults} blogAi={blogAi} activeTag={activeTag} />
+              </>
             )}
           </Columns>
         </Section>
