@@ -1433,3 +1433,55 @@ img.i-l {
     }
 }
 
+/* Pagination Blog styles */
+
+.pagination {
+    background-color: #2e5166;
+    padding: 9px;
+    border-radius: 6px;
+}
+
+.previousBttn {
+    color: #fff;
+    font-weight: 700;
+}
+
+.nextBttn {
+    color: #fff;
+    font-weight: 700;
+}
+
+.pagination a{
+    background-color: #2e5166;
+    padding: 9px;
+    border-radius: 6px;
+}
+
+.previousBttn a{
+    color: #e76c29;
+    font-weight: 700;
+}
+.nextBttn a{
+    color: #e76c29;
+    font-weight: 700;
+}
+.previousBttn a:hover{
+    color: #e76c29!important;
+    font-weight: 700;
+}
+.nextBttn a:hover{
+    color: #e76c29!important;
+    font-weight: 700;
+}
+.page-item a{
+    color: #fff;
+}
+.page-item a:hover {
+    color: #e76c29;
+    font-weight: bold;
+    opacity: 0.7;
+}
+.paginationActive a {
+    color: #e76c29;
+    font-weight: bold;
+}

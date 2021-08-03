@@ -33,11 +33,13 @@ const TeamList = () => {
           </Card>
         </Column>
         <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
-          <Card first={'Jacqeline'} last={'Popovich'} description={'Product Manager'}>
+          
+                    <Card first={'Jacqueline'} last={'Popovich'} description={'Product Manager'}>
+                      
             <StaticImage
               className={'team-member-img'}
               src={'./../../../assets/images/team/team-pictures/jacqueline-popovich.png'}
-              alt="Jacqeline Popovich"
+              alt="Jacqueline Popovich"
             />
           </Card>
         </Column>
