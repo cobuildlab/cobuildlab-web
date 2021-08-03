@@ -91,7 +91,7 @@ These methods are newer than the traditional, but they are really popular in the
 
 <title-3>1. Friends and family</title-3>
 
-Some entrepreneurs think that everything should stay in the family. Maybe you are one of them. 
+Some entrepreneurs think that everything [should stay in the family](https://capbase.com/how-to-invest-your-own-money-into-your-startup/). Maybe you are one of them. 
 
 That's why the first alternative method that we consider to get the funding it is the lending by family or friends. 
 

@@ -129,7 +129,7 @@ This blockchain network has been used for several purposes, but one of the most 
 
 [Ethereum](https://ethereum.org/) is a public (permissionless) blockchain platform that contains an entire environment called Ethereum Virtual Machine (EVM) used for many companies, startups, and so on. 
 
-The [Ethereum Enterprise Alliance (EEA)](https://entethalliance.org/) is a non-profit organization with more than 250 members, and it has the goal of connecting companies, academics, startups, and blockchain companies with Ethereum subject matter experts. Some members of the EEA are Microsoft, J.P. Morgan Chase, and Intel, who are embracing the use of Ethereum as a web platform.
+The [Ethereum Enterprise Alliance (EEA)](https://entethalliance.org/) is a non-profit organization with more than 250 members, and it has the goal of connecting companies, academics, startups, and blockchain companies with [Ethereum](https://coinstats.app/blog/litecoin-vs-ethereum/) subject matter experts. Some members of the EEA are Microsoft, J.P. Morgan Chase, and Intel, who are embracing the use of Ethereum as a web platform.
 
 <title-3>* Welwaze Medical</title-3>
 
