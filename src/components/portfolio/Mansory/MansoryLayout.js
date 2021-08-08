@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 export const MansoryContainer = styled.div`
   column-count: 5;
@@ -15,7 +16,7 @@ export const MansoryItem = styled.figure`
   padding: 0.5em;
 `;
 
-export const MansoryImage = styled.img`
+export const MansoryImage = styled(GatsbyImage)`
   max-width: 100%;
   height: auto;
   display: block;
