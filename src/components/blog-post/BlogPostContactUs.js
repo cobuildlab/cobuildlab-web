@@ -91,7 +91,7 @@ const BlogPostContactUs = () => {
             <TextContainer>
               <Text>
                 Keep receiving our weekly news and content by subscribing to our newsletter. We
-                promise too only send relevant information.
+                promise to only send relevant information.
               </Text>
             </TextContainer>
           </Column>
