@@ -9,7 +9,7 @@ const query = graphql`
         node {
           id
           childImageSharp {
-            gatsbyImageData(layout: FIXED)
+            gatsbyImageData
           }
         }
       }
