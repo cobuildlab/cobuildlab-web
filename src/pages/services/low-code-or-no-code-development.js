@@ -83,10 +83,14 @@ const AppDevelopment = () => (
       <Container>
         <ServicesSection3
           title={'How do we develop it?'}
-          otherText={
-            "The first step is to determine if your problem allows a low code or no-code solution. Then we'll select the best-finished components to start the development. In a short time, the tool will be ready and you'll be able to strengthen your company. Support is included.\n"
-          }
-        />
+          textList={[
+            'Robust security processes.',
+            'One-click deployment.',
+            'Build multi-platform apps at the same time.',
+          ]}
+          textList2={['Time-saving and less-code.', 'Reduced testing, and developers involved.']}>
+          <StaticImage src={'./../../assets/images/service/services-details3.png'} />
+        </ServicesSection3>
       </Container>
     </Section>
     <Section>

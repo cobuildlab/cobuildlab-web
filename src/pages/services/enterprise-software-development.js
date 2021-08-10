@@ -88,27 +88,28 @@ const EnterpriseSoftwareDevelopment = () => (
     <Section>
       <Container>
         <ServicesSection3
-          title={'Reduce risks'}
-          otherText={
-            'With Software Development, it is possible to modernize and simplify the flow of logistical operations. This will help your business array with operations with tools for transactions, processes, and suppliers.'
-          }
-        />
+          title={'Enterprise Software Development Benefits'}
+          textList={[
+            'Access to customer information.',
+            'Enhanced business reporting tools.',
+            'Uplifted cash flow.',
+          ]}
+          textList2={[
+            'Improved data and cloud security.',
+            'Effective demand forecasting and lean inventory.',
+            'Transparency through the business.',
+          ]}>
+          <StaticImage src={'./../../assets/images/service/services-details3.png'} />
+        </ServicesSection3>
       </Container>
     </Section>
     <Section>
       <Container>
         <ServicesSection4
-          title={'Enterprise Software Development Benefits\n'}
-          leftText={[
-            'Access to customer information.',
-            'Enhanced business reporting tools.',
-            'Uplifted cash flow.',
-          ]}
-          rightTextList={[
-            'Improved data and cloud security.',
-            'Effective demand forecasting and lean inventory.',
-            'Transparency through the business.',
-          ]}
+          title={'Reduce risks\n'}
+          text={
+            'With Software Development, it is possible to modernize and simplify the flow of logistical operations. This will help your business array with operations with tools for transactions, processes, and suppliers.'
+          }
         />
       </Container>
     </Section>

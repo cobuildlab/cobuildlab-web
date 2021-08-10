@@ -82,10 +82,19 @@ const FieldServicesManagementSystem = () => (
       <Container>
         <ServicesSection3
           title={'Improve your field operations to the next step.'}
-          otherText={
-            'You can incorporate technology (such as artificial intelligence) to make improvement estimates, detect weaknesses in processes, activity analysis, statistical reports, and many more functionalities that would help you make strategic decisions and improve performance.'
-          }
-        />
+          textList={[
+            'Logistics & Supply Chain Process automation.',
+            'Simplified fields activities and operations.',
+            'Records and data BACKUP.',
+          ]}
+          textList2={[
+            'Improve your operations.',
+            'Access to data and activities.',
+            'team coordination.',
+            'Full scalability.',
+          ]}>
+          <StaticImage src={'./../../assets/images/service/services-details3.png'} />
+        </ServicesSection3>
       </Container>
     </Section>
     <Section>

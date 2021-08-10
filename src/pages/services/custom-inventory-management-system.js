@@ -84,16 +84,22 @@ const WebDevelopment = () => (
       <Container>
         <ServicesSection3
           title={'Why should you get a custom inventory management system?'}
-          otherText={
-            'Because you can reduce inventory costs with collected historical data that’ll help you know when and what to replenish and optimize inventory levels and locations, collect demand data, and improve overall customer service.\n' +
-            '\n' +
-            '\n' +
-            ' On the other hand, it provides companies with a competitive advantage, such as forecasting future trends and plans.  Inventory management software helps predict future demand and supply to help adjust shipments and deliveries and reduce costs and potential troubles related to overstocking and out-of-stock.\n'
-          }
-          otherText2={
-            "In addition, a customized system allows your company's clients to access and view inventory levels, notifications, and forecasts in real-time."
-          }
-        />
+          textList={[
+            'Single workflow automation.',
+            'Inventories track & view of available stocks.',
+            'Control costs and delivery improvement.',
+            'Automatic and easy reordering.',
+            'Software integration.',
+          ]}
+          textList2={[
+            'Inventory visibility with system-generated reports.',
+            'Forecast future demand.',
+            'Custom report on specific criteria.',
+            'Ongoing 24/7 technical support.',
+            'High-speed private cloud solution.',
+          ]}>
+          <StaticImage src={'./../../assets/images/service/management-system.png'} />
+        </ServicesSection3>
       </Container>
     </Section>
     <Section>
