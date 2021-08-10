@@ -78,10 +78,17 @@ const WebDevelopment = () => (
       <Container>
         <ServicesSection3
           title={'Dedicated Support'}
-          otherText={
-            'Our business IT services provide flexible access to a team of highly motivated and dedicated professionals with in-depth knowledge of a wide range of infrastructure, security, mail systems, and applications. We offer a  100% autonomous and automated IT Infrastructure Support service that is truly tailored to your requirements, providing comprehensive backup and support in the event of an IT disaster.'
-          }
-        />
+          textList={[
+            'Reduce business interruptions.',
+            'Faster IT support.',
+            'Backed up systems & data.',
+          ]}
+          textList2={[
+            'Cloud infrastructure and applications.',
+            'Save time avoiding multiple vendors.',
+          ]}>
+          <StaticImage src={'./../../assets/images/service/services-details3.png'} />
+        </ServicesSection3>
       </Container>
     </Section>
     <Section>

@@ -92,13 +92,20 @@ const MvpSoftwareDevelopment = () => (
       <Container>
         <ServicesSection3
           title={'Start from Minimal to Success'}
-          otherText={
-            'Starting MVP development is, initially, adding the essential functions for the project.'
-          }
-          otherText2={
-            'Additional required functionality can present itself during the testing process and from user feedback. With those new changes/functionality, you can make sure that the product will match what users want or expect.'
-          }
-        />
+          textList={[
+            'Potential client database.',
+            'Check whether the project is appealing to potential users.',
+            'Attract investors earlier.',
+            'Save time and money on product development.',
+          ]}
+          textList2={[
+            'Avoid expensive market research.',
+            'Open testing opportunity.',
+            "Gather user's feedback.",
+            'Keep things budget-friendly.\n',
+          ]}>
+          <StaticImage src={'./../../assets/images/service/services-details3.png'} />
+        </ServicesSection3>
       </Container>
     </Section>
     <Section>

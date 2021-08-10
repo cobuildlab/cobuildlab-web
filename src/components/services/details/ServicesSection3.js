@@ -15,7 +15,6 @@ const Paragraph = styled.p`
   font-size: 20px;
   line-height: 26px;
   font-weight: 600;
-  text-align: justify;
   color: #264a60;
 `;
 
@@ -31,7 +30,7 @@ const StyleSubtitle = styled.div`
   text-align: center;
 `;
 
-const ServicesSection3 = ({ children, title, textList, otherText, otherText2 }) => {
+const ServicesSection3 = ({ children, title, textList, textList2, otherText, otherText2 }) => {
   return (
     <>
       <StyleSubtitle>
@@ -40,7 +39,19 @@ const ServicesSection3 = ({ children, title, textList, otherText, otherText2 }) 
         </ServicesSubTitle>
       </StyleSubtitle>
       <Columns isVCentered>
-        <Column isVCentered isHidden="mobile" isSize={5}>
+        {textList && textList.length > 0 && (
+          <Column isSize={{ mobile: 12, desktop: 4 }}>
+            <ServicesContent>
+              {textList.map((t, i) => (
+                <React.Fragment key={i}>
+                  <Paragraph>• {t}</Paragraph>
+                </React.Fragment>
+              ))}
+            </ServicesContent>
+          </Column>
+        )}
+
+        <Column isVCentered isHidden="mobile" isSize={textList.length === 0 ? 6 : 4}>
           {children && children.props.src ? (
             children
           ) : (
@@ -50,13 +61,13 @@ const ServicesSection3 = ({ children, title, textList, otherText, otherText2 }) 
             />
           )}
         </Column>
-        <Column isSize={{ mobile: 12, desktop: 7 }}>
+        <Column isSize={{ mobile: 12, desktop: textList.length === 0 ? 6 : 4 }}>
           <ServicesContent>
             {otherText !== '' ? <Paragraph2>{otherText}</Paragraph2> : null}
             {otherText2 !== '' ? <Paragraph2>{otherText2}</Paragraph2> : null}
-            {textList.map((t, i) => (
+            {textList2.map((t, i) => (
               <React.Fragment key={i}>
-                <Paragraph>☛ {t}</Paragraph>
+                <Paragraph>• {t}</Paragraph>
               </React.Fragment>
             ))}
           </ServicesContent>
@@ -72,6 +83,7 @@ ServicesSection3.defaultProps = {
   otherText: '',
   otherText2: '',
   textList: [],
+  textList2: [],
 };
 
 ServicesSection3.propTypes = {
@@ -80,6 +92,7 @@ ServicesSection3.propTypes = {
   otherText: PropTypes.string,
   otherText2: PropTypes.string,
   textList: PropTypes.array,
+  textList2: PropTypes.array,
 };
 
 export default ServicesSection3;
