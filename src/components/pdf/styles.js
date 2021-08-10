@@ -158,5 +158,4 @@ const styles = StyleSheet.create({
     paddingRight: 5,
   },
 });
-
 export default styles;

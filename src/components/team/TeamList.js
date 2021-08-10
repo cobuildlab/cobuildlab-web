@@ -13,7 +13,7 @@ const TeamList = ({ data }) => {
   const items = data.map(({ id, first, last, social_networks, picture, description }) => (
     <Column key={id} isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
       <TeamCard
-        src={picture.childImageSharp.fluid}
+        src={picture.childImageSharp.gatsbyImageData}
         first={first}
         last={last}
         description={description}

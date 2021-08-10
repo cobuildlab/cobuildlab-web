@@ -61,8 +61,9 @@ const Banner = () => {
                 We partner with <span className="enterprise-text-orange">Industry Experts</span> and{' '}
                 to solve Logistical and Productivity problems with
                 <span className="enterprise-text-orange">
-                  Custom Software Solutions, Artificial Intelligence and IOT.
-                </span>
+                  {' '}
+                  Custom Software Solutions, Artificial Intelligence and IoT.
+                </span>{' '}
               </Typography>
               <br />
               <Typography size={subTitle} tag="h1">

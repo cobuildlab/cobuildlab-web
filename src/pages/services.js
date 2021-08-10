@@ -40,7 +40,6 @@ const Services = () => (
     </Section>
 
     <Section>
-      <StyledTitle></StyledTitle>
       <Columns isCentered>
         <ServicesCard
           title={'Custom Software'}
@@ -119,7 +118,6 @@ const Services = () => (
               alt="It support"
             />
           }
-          three={true}
         />
         <ServicesCard
           title={'Custom Project'}
@@ -132,8 +130,9 @@ const Services = () => (
               alt="custom project"
             />
           }
-          three={true}
         />
+      </Columns>
+      <Columns isCentered>
         <ServicesCard
           title={'IT Staff'}
           subtitle={'Augmentation'}
@@ -147,7 +146,20 @@ const Services = () => (
               alt="it staff augmentation"
             />
           }
-          three={true}
+        />
+        <ServicesCard
+          title={'Custom Inventory'}
+          subtitle={'Management System'}
+          cover={
+            'Develop full software solutions with less code, in less time, and with fewer errors'
+          }
+          to={'custom-inventory-management-system'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos-custom-management-inventory-system.png'}
+              alt="Custom Inventory"
+            />
+          }
         />
       </Columns>
     </Section>
@@ -249,16 +261,16 @@ const Services = () => (
           }
         />
         <ServicesCard
-          title={'Web'}
-          subtitle={'Design'}
+          title={'Website'}
+          subtitle={'Development'}
           cover={'We create appealing and beautiful content for your web'}
-          to={'web-design'}
+          to={'website-development'}
           image={
             <StaticImage
               src={
                 './../assets/images/service/card/iconos-web-design_Main-Services-Web-Design_Main Services-Web-Design.svg'
               }
-              alt="Web Design"
+              alt="Website Development"
             />
           }
         />
@@ -274,7 +286,7 @@ const Services = () => (
           image={
             <StaticImage
               src={'./../assets/images/service/card/iconos_Low Code-No-Code.svg'}
-              alt="Web Design"
+              alt="Low code or no code development"
             />
           }
         />
@@ -286,7 +298,36 @@ const Services = () => (
           image={
             <StaticImage
               src={'./../assets/images/service/card/iconos_Robotic-Process-Automation.svg'}
-              alt="Web Design"
+              alt="Robotic Process Automation"
+            />
+          }
+        />
+      </Columns>
+      <Columns isCentered>
+        <ServicesCard
+          title={'IoT \n'}
+          subtitle={'Development'}
+          cover={
+            'We help your company to harness the full potential of Internet of Things\n' +
+            'and offer IoT development services for boosting your business'
+          }
+          to={'iot-development'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos_Internet-of-the-thing-IoT.png'}
+              alt="IoT Development"
+            />
+          }
+        />
+        <ServicesCard
+          title={'Artificial Intelligence'}
+          subtitle={'Development'}
+          cover={'We turn your AI Vision into reality by applying our intelligence and experience'}
+          to={'artificial-intelligence-development'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos_artificial-inteligence.png'}
+              alt="Artificial Intelligence"
             />
           }
         />
@@ -319,8 +360,8 @@ const Services = () => (
           to={'mvp-software-development'}
           image={
             <StaticImage
-              src={'./../assets/images/service/card/iconos-Startup-MVP.svg'}
-              alt="Mvp softwre"
+              src={'./../assets/images/service/card/iconos-MVP-Software-Development.png'}
+              alt="Mvp software"
             />
           }
           three={true}

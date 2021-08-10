@@ -57,25 +57,13 @@ module.exports = {
             },
           },
           'gatsby-remark-component',
-          {
-            resolve: `gatsby-remark-autolink-headers`,
-            options: { isIconAfterHeader: true, maintainCase: true },
-          },
           'gatsby-remark-copy-linked-files',
         ],
       },
     },
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: [
-          'UA-105326682-1', // Google Analytics / GA
-        ],
-      },
-    },
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -98,37 +86,10 @@ module.exports = {
     },
     `gatsby-remark-copy-linked-files`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
         id: 'GTM-PFDRR5V',
-      },
-    },
-    {
-      resolve: `gatsby-plugin-amp`,
-      options: {
-        analytics: {
-          type: 'gtag',
-          dataCredentials: 'include',
-          config: {
-            vars: {
-              gtag_id: 'GTM-PFDRR5V',
-              config: {
-                'GTM-PFDRR5V': {
-                  page_location: '{{pathname}}',
-                },
-              },
-            },
-          },
-        },
-        canonicalBaseUrl: 'https://cobuildlab.com/',
-        components: ['amp-form'],
-        excludedPaths: ['/404*', '/'],
-        pathIdentifier: '/amp/',
-        relAmpHtmlPattern: '{{canonicalBaseUrl}}{{pathname}}{{pathIdentifier}}',
-        relCanonicalPattern: '{{canonicalBaseUrl}}{{pathname}}',
-        useAmpClientIdApi: true,
       },
     },
     `gatsby-transformer-json`,
@@ -138,8 +99,6 @@ module.exports = {
         path: `./src/data/`,
       },
     },
-    `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `@cobuildlab/gatsby-source-8base`,
       options: {
@@ -156,6 +115,7 @@ module.exports = {
                 slug
                 tag
                 description
+                category
                 createdAt
                 readingTime
                 imageUrl{

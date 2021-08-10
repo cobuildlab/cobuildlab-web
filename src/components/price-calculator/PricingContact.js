@@ -2,16 +2,16 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { navigate } from 'gatsby';
 import {
-  Container,
-  Columns,
   Column,
-  Field,
-  Label as BloomerLabel,
+  Columns,
+  Container,
   Control,
+  Field,
   Input,
+  Label as BloomerLabel,
   TextArea,
 } from 'bloomer';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import { pdf } from '@react-pdf/renderer';
 import styled from 'styled-components';
 import H4 from '../Typography/H4';
@@ -46,11 +46,11 @@ class PricingContact extends PureComponent {
   }
 
   transformToBase64(blob) {
-    const promise = new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
       try {
         const reader = new FileReader();
         reader.readAsDataURL(blob);
-        reader.onloadend = function() {
+        reader.onloadend = function () {
           resolve(reader.result.split(',')[1]);
         };
         reader.onerror = reject;
@@ -58,8 +58,6 @@ class PricingContact extends PureComponent {
         reject(error);
       }
     });
-
-    return promise;
   }
 
   handleChange(e) {
@@ -73,7 +71,6 @@ class PricingContact extends PureComponent {
   }
 
   handleError(error) {
-    console.error(error);
     this.setState((state) => ({
       isLoading: !state.isLoading,
     }));

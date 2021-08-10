@@ -19,13 +19,13 @@ const Testimonial = () => {
     slidesToScroll: 1,
     arrows: true,
     // eslint-disable-next-line react/display-name
-    customPaging: function(i) {
+    customPaging: function (i) {
       return (
-        <a>
+        <a href={'#left'}>
           <img
             width={50}
             height={50}
-            src={data.allTestimonialJson.nodes[i].image.childImageSharp.fluid.src}
+            src={data.allTestimonialJson.nodes[i].image.childImageSharp.fixed.src}
             alt={'Testimonials images'}
           />
         </a>
@@ -49,7 +49,7 @@ const query = graphql`
         image {
           id
           childImageSharp {
-            fluid {
+            fixed {
               src
             }
           }

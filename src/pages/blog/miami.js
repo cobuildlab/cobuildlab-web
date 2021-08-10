@@ -6,22 +6,28 @@ import get from 'lodash/get';
 import Layout from '../../components/2020/Layout';
 import BlogMetaTags from '../../components/blog-post/BlogMetaTags';
 import BlogHero from '../../components/blog-post/BlogHero';
-import BlogTag from '../../components/blog-post/BlogTag';
-import BlogList from '../../components/blog-post/BlogList';
 import BlogPostContainer from '../../components/blog-post/BlogPostContainer';
 import Contact from '../../components/2020/HomePageContact';
+import ClientSearch from '../../components/blog-ai/search/client-search';
 
 const Miami = ({ data }) => {
   const posts = get(data, 'allMarkdownRemark.edges');
+
+  const options = {
+    indexStrategy: `Prefix match`,
+    searchSanitizer: `Lower Case`,
+    TitleIndex: true,
+    SearchByTerm: true,
+  };
+
   return (
     <Layout>
       <BlogMetaTags />
       <BlogHero />
       <Section isPaddingless>
         <Container>
-          <BlogTag activeTag="miami" />
           <BlogPostContainer>
-            <BlogList data={posts} />
+            <ClientSearch post={posts} engine={options} activeTag="miami" />
           </BlogPostContainer>
         </Container>
       </Section>
@@ -64,12 +70,7 @@ export const pageQuery = graphql`
             image {
               publicURL
               childImageSharp {
-                fixed(width: 400, height: 290) {
-                  srcWebp
-                  srcSetWebp
-                  aspectRatio
-                  base64
-                }
+                gatsbyImageData(layout: FIXED)
               }
             }
           }

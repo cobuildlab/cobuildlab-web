@@ -7,10 +7,11 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const Title = styled(H4)`
-  margin-top: 30px;
+  margin-top: 60px;
   text-align: right;
   font-weight: 100;
   font-family: 'Lato-Light' !important;
+  font-size: calc(38px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
 `;
 
 const CardStyled = styled(Card)`

@@ -7,7 +7,7 @@ const StoryTemplate = (props) => <StoryCommon {...props} />;
 export default StoryTemplate;
 
 export const pageQuery = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     site {
       siteMetadata {
         title
@@ -27,13 +27,7 @@ export const pageQuery = graphql`
         image {
           publicURL
           childImageSharp {
-            fluid(maxWidth: 1920) {
-              aspectRatio
-              base64
-              sizes
-              src
-              srcSet
-            }
+            gatsbyImageData(layout: FIXED)
           }
         }
       }

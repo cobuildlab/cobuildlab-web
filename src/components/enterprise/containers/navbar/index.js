@@ -5,7 +5,7 @@ import { Container, Columns, Column } from 'bloomer';
 import Menu from '../Menu';
 import logo from '../../../../assets/images/cobuild-logo.png';
 import componse from '../../../../utils/styles-componse';
-import styles from './css/index.module.scss';
+import * as styles from './css/index.module.scss';
 
 const Header = ({ children }) => {
   const [activeClass, setactiveClass] = useState(false);

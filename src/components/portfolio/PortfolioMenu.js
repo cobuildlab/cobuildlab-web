@@ -79,7 +79,7 @@ const PortfolioMenu = () => {
     return () => {
       document.removeEventListener('scroll', onScroll);
     };
-  }, []);
+  }, [isFixed]);
 
   const handleOpen = useCallback(() => {
     setVisible((state) => !state);
@@ -117,7 +117,7 @@ export default PortfolioMenu;
 
 // <Drawer visible={isVisible} onClose={handleOpen}>
 
-/* 
+/*
   <ToggleContainer type="button" onClick={handleOpen}>
         <BurgerIcon />
         <MenuTitle>Other Projects</MenuTitle>

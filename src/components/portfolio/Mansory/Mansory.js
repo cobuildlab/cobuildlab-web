@@ -1,6 +1,8 @@
 import React, { PureComponent, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Slider from 'react-slick';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+
 import ModalContainer from './MansoryModal';
 import {
   MansoryContainer,
@@ -76,7 +78,7 @@ export default class PortfolioMansory extends PureComponent {
     const { data } = this.state;
     return data.map((e, i) => (
       <MansoryItem key={e.node.id} onClick={() => this.checkImagesLoad(i)}>
-        <MansoryImage src={e.node.childImageSharp.sizes.src} alt="" />
+        <MansoryImage image={getImage(e.node.childImageSharp.gatsbyImageData)} alt={e.node.id} />
       </MansoryItem>
     ));
   }
@@ -87,12 +89,7 @@ export default class PortfolioMansory extends PureComponent {
       <div key={e.node.id}>
         <MansorySliderItem>
           <MansorySliderImagesWrapper>
-            <img
-              width={e.node.childImageSharp.sizes.presentationWidth}
-              height={e.node.childImageSharp.sizes.presentationHeight}
-              src={e.node.childImageSharp.sizes.src}
-              alt=""
-            />
+            <GatsbyImage image={getImage(e.node.childImageSharp.gatsbyImageData)} alt={e.node.id} />
           </MansorySliderImagesWrapper>
         </MansorySliderItem>
       </div>

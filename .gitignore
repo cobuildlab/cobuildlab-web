@@ -9,3 +9,5 @@ yarn.lock
 .env
 src/pages/blog/media/Sin t\303\255tulo-1.jpg
 src/pages/blog/media/Sin título-1.jpg
+.env.development
+.env.production

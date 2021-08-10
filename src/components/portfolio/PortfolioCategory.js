@@ -27,8 +27,12 @@ const Container = styled.ul`
 `;
 
 /**
+ * Portfolio Category.
  *
- * @property {string} - Type enum -> web | web/app | app.
+ * @param {object} props - The props.
+ * @param {string} props.type - The type of component.
+ * @returns {object} - The components.
+ * @class
  */
 
 const PortfolioCategory = ({ type }) => (

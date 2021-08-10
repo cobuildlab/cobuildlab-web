@@ -35,7 +35,7 @@ Your idea is groundbreaking, but does anyone actually want or need it? Validatin
 
 <Br>
 
-<a target="_blank" href="https://blog.hootsuite.com/social-media-tips-for-small-business-owners/">  Social media marketing </a> is cheap, easy, and effective — what's not to love? But while social media can be a great tool for building brand awareness, it's not the be-all and end-all of digital marketing. In fact, relying too heavily on social media marketing could cost you: Social media's <a target="_blank" href="https://www.viralnation.com/blog/how-to-measure-your-social-media-conversion-rate-in-2020/">  conversion rate </a> is a lousy 0.71%. Compare that to 2.5% for paid ads, 3.75% for Google ads, and 16% for organic search and it's clear you need more than social media in your digital marketing strategy.
+<a target="_blank" href="https://blog.hootsuite.com/social-media-tips-for-small-business-owners/">  Social media marketing </a> is cheap, easy, and effective — what's not to love? But while social media can be a great tool for building brand awareness, it's not the be-all and end-all of digital marketing. In fact, relying too heavily on social media marketing could cost you: Social media's <a target="_blank" href="https://www.viralnation.com/blog/how-to-measure-your-social-media-conversion-rate-in-2020/">  conversion rate </a> is a lousy 0.71%. Compare that to 2.5% for paid ads, 3.75% for Google ads, and 16% for organic search and it's clear you need more than social media in [your digital marketing strategy](https://diggitymarketing.com/digital-marketing-funnel/).
 
 <Br>
 

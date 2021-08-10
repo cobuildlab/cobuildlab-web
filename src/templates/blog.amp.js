@@ -71,8 +71,11 @@ class BlogPostTemplate extends React.Component {
     const { previous, next, slug: origanlPath } = this.props.pageContext;
     const previousImage = get(previous, 'frontmatter.image.publicURL') || defaultImg;
     const nextImage = get(next, 'frontmatter.image.publicURL') || defaultImg;
-    const imageAmp = post.frontmatter.image.childImageSharp.resolutions;
-    const seoImages = get(this, 'props.data.seoImages.frontmatter.image.childImageSharp.resize');
+    const imageAmp = post.frontmatter.image.childImageSharp.gatsbyImageData.images.fallback;
+    const seoImages = get(
+      this,
+      'props.data.seoImages.frontmatter.image.childImageSharp.gatsbyImageData',
+    );
 
     return (
       <LayoutPost>
@@ -193,7 +196,7 @@ BlogPostTemplate.propTypes = {
 export default BlogPostTemplate;
 
 export const pageQuery = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     site {
       siteMetadata {
         title
@@ -207,11 +210,7 @@ export const pageQuery = graphql`
         image {
           publicURL
           childImageSharp {
-            resize(width: 1200, height: 1200) {
-              width
-              height
-              src
-            }
+            gatsbyImageData(layout: FIXED)
           }
         }
       }
@@ -228,19 +227,7 @@ export const pageQuery = graphql`
         image {
           publicURL
           childImageSharp {
-            fluid(maxWidth: 1920) {
-              aspectRatio
-              base64
-              sizes
-              src
-              srcSet
-            }
-            resolutions {
-              srcWebp
-              srcSetWebp
-              width
-              height
-            }
+            gatsbyImageData(layout: FIXED)
           }
         }
       }

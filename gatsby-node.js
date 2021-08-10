@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const _ = require('lodash');
 const Promise = require('bluebird');
 const path = require('path');
@@ -5,6 +6,35 @@ const { createFilePath } = require('gatsby-source-filesystem');
 const unified = require('unified');
 const markdown = require('remark-parse');
 const html = require('remark-html');
+
+exports.onCreateWebpackConfig = ({ stage, actions, rules, getConfig }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        process: 'process/browser',
+        stream: 'stream-browserify',
+        zlib: 'browserify-zlib',
+      },
+    },
+    plugins: [
+      new webpack.ProvidePlugin({
+        process: 'process/browser',
+        Buffer: ['buffer', 'Buffer'],
+      }),
+    ],
+  });
+
+  if (stage === 'build-javascript') {
+    const config = getConfig();
+    const miniCssExtractPlugin = config.plugins.find(
+      (plugin) => plugin.constructor.name === 'MiniCssExtractPlugin',
+    );
+    if (miniCssExtractPlugin) {
+      miniCssExtractPlugin.options.ignoreOrder = true;
+    }
+    actions.replaceWebpackConfig(config);
+  }
+};
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -28,13 +58,7 @@ exports.createPages = ({ graphql, actions }) => {
                     image {
                       publicURL
                       childImageSharp {
-                        fluid(maxWidth: 480) {
-                          aspectRatio
-                          base64
-                          sizes
-                          src
-                          srcSet
-                        }
+                        gatsbyImageData(layout: FIXED)
                       }
                     }
                   }
@@ -64,17 +88,17 @@ exports.createPages = ({ graphql, actions }) => {
             },
           });
           // AMP
-          createPage({
-            path: `${post.node.fields.slug}amp/`,
-            component: path.resolve(
-              `src/templates/${String(post.node.frontmatter.template)}.amp.js`,
-            ),
-            context: {
-              slug: post.node.fields.slug,
-              previous,
-              next,
-            },
-          });
+          // createPage({
+          //   path: `${post.node.fields.slug}amp/`,
+          //   component: path.resolve(
+          //     `src/templates/${String(post.node.frontmatter.template)}.amp.js`,
+          //   ),
+          //   context: {
+          //     slug: post.node.fields.slug,
+          //     previous,
+          //     next,
+          //   },
+          // });
         });
       }),
     );
@@ -93,6 +117,7 @@ exports.createPages = ({ graphql, actions }) => {
                 content
                 description
                 tag
+                category
                 readingTime
                 createdAt
                 imageUrl {
@@ -107,6 +132,17 @@ exports.createPages = ({ graphql, actions }) => {
                     remoteImage {
                       publicURL
                       url
+                      childrenImageSharp {
+                        id
+                        fixed {
+                          src
+                          srcSet
+                          srcSetWebp
+                          srcWebp
+                          width
+                          height
+                        }
+                      }
                     }
                   }
                 }
@@ -133,9 +169,22 @@ exports.createPages = ({ graphql, actions }) => {
                 component: path.resolve(`./src/templates/blog-ai.js`),
                 context: {
                   post,
+                  options: {
+                    indexStrategy: `Prefix match`,
+                    searchSanitizer: `Lower Case`,
+                    SearchByTerm: true,
+                  },
                 },
               });
             });
+          // AMP
+          createPage({
+            path: `/blog/ai/${post.slug}amp/`,
+            component: path.resolve(`./src/templates/blog-ai.amp.js`),
+            context: {
+              post,
+            },
+          });
         });
       }),
     );

@@ -30,8 +30,11 @@ const IconContainer = styled(Icon)`
 `;
 
 /**
+ * Project Type.
  *
- * @property {Array} - Type enum -> web | app.
+ * @param {Array<string>} type - The types of project.
+ * @returns {object} - The component.
+ * @class
  */
 
 const ProjectType = ({ type }) => {

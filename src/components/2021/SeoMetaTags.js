@@ -28,8 +28,9 @@ const SeoMetaTags = ({
   const siteTitle = title || site.siteMetadata.seoTitle;
   const metaDescription = description || site.siteMetadata.description;
   const metaImageUrl = image && image.src ? `${site.siteMetadata.siteUrl}${image.src}` : null;
+
   const canonicalRef = canonical ? `${site.siteMetadata.siteUrl}${canonical}` : null;
-  // basic defailt metas
+  // basic default metas
   const defaultMetas = [
     {
       name: `description`,
@@ -67,29 +68,32 @@ const SeoMetaTags = ({
       name: `twitter:description`,
       content: metaDescription,
     },
+    {
+      name: `robots`,
+      content: process.env.BRANCH === 'main' ? 'nofolow' : 'all',
+    },
   ];
-
   const imagesMetaTags = [
     {
       property: 'og:image',
       content:
         metaImageUrl && metaImageUrl.length
           ? metaImageUrl
-          : `${site.siteMetadata.siteUrl}${seoImages.childImageSharp.original.src}`,
+          : `${site.siteMetadata.siteUrl}${seoImages.childImageSharp.gatsbyImageData.src}`,
     },
     {
       property: 'og:image:width',
       content:
         metaImageUrl && metaImageUrl.length
           ? image.width
-          : seoImages.childImageSharp.original.width,
+          : seoImages.childImageSharp.gatsbyImageData.width,
     },
     {
       property: 'og:image:height',
       content:
         metaImageUrl && metaImageUrl.length
           ? image.height
-          : seoImages.childImageSharp.original.height,
+          : seoImages.childImageSharp.gatsbyImageData.height,
     },
     {
       name: 'twitter:card',
@@ -141,11 +145,7 @@ const query = graphql`
     }
     seoImages: file(relativePath: { eq: "default-images-seo.png" }) {
       childImageSharp {
-        original {
-          width
-          src
-          height
-        }
+        gatsbyImageData(layout: FIXED)
       }
     }
   }

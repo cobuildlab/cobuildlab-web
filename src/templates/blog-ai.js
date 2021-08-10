@@ -4,6 +4,7 @@ import LayoutPost from '../components/layoutPost';
 import Styled from 'styled-components';
 
 import PropTypes from 'prop-types';
+import { SeoMetaTags } from '../components/2021/SeoMetaTags';
 
 const StyledTitle = Styled(Title)`
   color: #264A60;
@@ -49,14 +50,19 @@ const StyledContainer = Styled(Container)`
   margin-bottom: 5rem;
 `;
 
-/**
+/**.
+ * The Blog Ai component
  *
+ * @param {Object} pageContext - The context.
+ * @param {Object} pageContext.pageContext - The context.
+ * @returns {JSX.Element} - the resulting react component
+ * @constructor
  */
 function BlogAI({ pageContext }) {
   const { post } = pageContext;
 
   const { title, fields } = post;
-  let { content } = post;
+  let { content, description } = post;
   const { images } = fields !== null ? fields : [];
 
   if (images === undefined) {
@@ -69,6 +75,7 @@ function BlogAI({ pageContext }) {
 
   return (
     <LayoutPost>
+      <SeoMetaTags title={title} titleTemplate="" description={description} />
       <StyledContainer hasTextAlign="centered">
         <StyledTitle tag="h1" isSize={1} hasTextColor="Black">
           {title}
