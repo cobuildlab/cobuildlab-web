@@ -87,9 +87,12 @@ const DigitalTransformation = () => (
       <Container>
         <ServicesSection3
           title={'How does it work?'}
-          otherText={
-            'Our own Digital Transformation Assessment tool helps you determine through a simple questionnaire what’s the level of digital maturity of your business and what are your priorities and opportunities.'
-          }>
+          textList={[
+            'What your clients want.',
+            'What competitors doing.',
+            'Your existing technologies.',
+          ]}
+          textList2={['Skills for the future.', 'Processes you need to improve.']}>
           <StaticImage src={'./../../assets/images/service/digital-transformation.png'} />
         </ServicesSection3>
       </Container>

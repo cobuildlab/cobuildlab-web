@@ -86,20 +86,13 @@ const CustomSoftwareDevelopment = () => (
       <Container>
         <ServicesSection3
           title={'Benefits: Optimize your processes'}
-          textList={[
-            'A customized software tool optimizes processes, making them more\n' +
-              'effective and efficient because every function is designed based on your\n' +
-              'business activities, so there is no need to modify or adjust anything (as is\n' +
-              'the case of a commercial tool).',
-            'It’s also possible to improve and adapt it as your business processes\n' +
-              'grow or change.',
-            'It gives you advantages over your competitors such as control over the\n' +
-              'tool and savings in time, personnel, and resources involved.',
-            'Customers perceive that. The overall service results are better: delivery\n' +
-              'efficiency, the quality of the product, etc. All of that without mentioning the\n' +
-              'tranquility and the perfect coupling of all the team with its software tools.',
-          ]}
-        />
+          textList={['Optimizes Processes.', 'Upgradeable & Adaptable.']}
+          textList2={[
+            'Advantages over Your Competitors.',
+            'Improve Customer Perception & Attention.',
+          ]}>
+          <StaticImage src={'./../../assets/images/service/services-details3.png'} />
+        </ServicesSection3>
       </Container>
     </Section>
     <Section>

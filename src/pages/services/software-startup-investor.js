@@ -78,14 +78,16 @@ const AppDevelopment = () => (
       <Container>
         <ServicesSection3
           title={'How I benefit from a Technical Analysis for Software Startups Investors?\n'}
-          otherText={
-            'Comprehensive knowledge about risks, legal aspects, burning rate, probabilities, industry, and market information. \n' +
-            'Access to the timeline. Estimates, essential data, business goals, development strategies, among other data that you should know. \n'
-          }
-          otherText2={
-            'Check on the status of certificates, backups, encryptions, everything necessary to ensure cybersecurity at a medium level.'
-          }
-        />
+          textList={[
+            'Comprehensive knowledge about risks, legal aspects, burning rate. Access to the timeline.',
+            'Estimates, essential data, business goals, development strategies.',
+          ]}
+          textList2={[
+            'Check on the status of certificates, backups, encryptions.',
+            'Ensure cybersecurity at a medium level.',
+          ]}>
+          <StaticImage src={'./../../assets/images/service/services-details3.png'} />
+        </ServicesSection3>
       </Container>
     </Section>
     <Section>

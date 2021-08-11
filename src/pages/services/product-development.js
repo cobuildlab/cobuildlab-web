@@ -85,12 +85,16 @@ const ProductDevelopment = () => (
       <Container>
         <ServicesSection3
           title={'Best Product Development process ever!\n'}
-          otherText={
-            'We’re focused on understanding your users’ needs, validating supposition quickly, reducing risks, and improving our processes to ensure an efficient and fluid product development life cycle, getting into an end-to-end experience.'
-          }
-          otherText2={
-            'Once we understand your vision, we assemble an A-team of engineers, designers, and developers to bring your product to life.'
-          }>
+          textList={[
+            'Culture of innovation.',
+            'Higher value proposition.',
+            'Professional network growin-up.',
+          ]}
+          textList2={[
+            'Expanding the market for the products.',
+            'Facing competition successfully and effectively.',
+            'Goodwill and profit earning possibilities.',
+          ]}>
           <StaticImage src={'./../../assets/images/service/product-development-ilustration.png'} />
         </ServicesSection3>
       </Container>
