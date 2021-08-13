@@ -54,6 +54,7 @@ const Services = () => (
               alt="Custom Software"
             />
           }
+          three={true}
         />
         <ServicesCard
           title={'Customer Relationship'}
@@ -70,9 +71,8 @@ const Services = () => (
               alt="Customer relationship"
             />
           }
+          three={true}
         />
-      </Columns>
-      <Columns isCentered>
         <ServicesCard
           title={'Field Service'}
           subtitle={'Management System'}
@@ -86,7 +86,10 @@ const Services = () => (
               alt="Field service"
             />
           }
+          three={true}
         />
+      </Columns>
+      <Columns isCentered>
         <ServicesCard
           title={'Custom Learning'}
           subtitle={'Management System'}
@@ -102,9 +105,8 @@ const Services = () => (
               alt="Custom learning"
             />
           }
+          three={true}
         />
-      </Columns>
-      <Columns isCentered>
         <ServicesCard
           title={'IT Support'}
           subtitle={'Services'}
@@ -118,6 +120,7 @@ const Services = () => (
               alt="It support"
             />
           }
+          three={true}
         />
         <ServicesCard
           title={'Custom Project'}
@@ -130,6 +133,7 @@ const Services = () => (
               alt="custom project"
             />
           }
+          three={true}
         />
       </Columns>
       <Columns isCentered>
@@ -146,6 +150,7 @@ const Services = () => (
               alt="it staff augmentation"
             />
           }
+          three={true}
         />
         <ServicesCard
           title={'Custom Inventory'}
@@ -160,6 +165,22 @@ const Services = () => (
               alt="Custom Inventory"
             />
           }
+          three={true}
+        />
+        <ServicesCard
+          title={'Security and '}
+          subtitle={'Compliance Audits'}
+          cover={
+            'Develop full software solutions with less code, in less time, and with fewer errors'
+          }
+          to={'security-and-compliance-audits'}
+          image={
+            <StaticImage
+              src={'./../assets/images/service/card/iconos-security.png'}
+              alt="Custom Inventory"
+            />
+          }
+          three={true}
         />
       </Columns>
     </Section>
