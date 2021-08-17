@@ -189,7 +189,53 @@ exports.createPages = ({ graphql, actions }) => {
       }),
     );
   });
-  return Promise.all([promise1, promise2]);
+
+  let promise3 = new Promise((resolve, reject) => {
+    resolve(
+      graphql(
+        `
+          query BasePost {
+            allCareers8Base {
+              careers: nodes {
+                title
+                description
+                profits
+                jobProfile
+                jobDescription
+                active
+                createdAt
+              }
+            }
+          }
+        `,
+      ).then((result) => {
+        if (result.errors) {
+          return reject(result.errors);
+        }
+        // Create blog posts pages AI.
+        const careers = result.data.allCareers8Base.careers;
+        _.each(careers, (career, index) => {
+          createPage({
+            path: `/careers/${index + 1}`,
+            component: path.resolve(`./src/templates/careers.js`),
+            context: {
+              career,
+            },
+          });
+          // AMP
+          /*createPage({
+            path: `/blog/ai/${post.slug}amp/`,
+            component: path.resolve(`./src/templates/blog-ai.amp.js`),
+            context: {
+              career,
+            },
+          });*/
+        });
+      }),
+    );
+  });
+
+  return Promise.all([promise1, promise2, promise3]);
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

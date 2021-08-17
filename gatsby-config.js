@@ -100,11 +100,12 @@ module.exports = {
       },
     },
     {
-      resolve: `@cobuildlab/gatsby-source-8base`,
+      resolve: require.resolve(`./../gatsby-source-8base`),
       options: {
         url: process.env.URL_8BASE,
         apiToken: process.env.TOKEN_8BASE_API,
         workspaceId: process.env.WORKSPACE_ID_8BASE,
+        nodeType: ['Post8Base', 'Careers8Base'],
         graphqlQuery: `
           query{
             postsList {
@@ -127,6 +128,18 @@ module.exports = {
                 }
               }
               count
+            }
+            careersList {
+              items {
+                id
+                title
+                description
+                profits
+                jobProfile
+                jobDescription
+                active
+                createdAt
+              }
             }
           }
         `,
