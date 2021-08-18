@@ -20,7 +20,7 @@ const Okroo = () => {
     <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} key="Okroo">
       <CardStyled>
         <Image>
-          <StaticImage src={'./../../../../assets/images/customers/okroo.jpg'} alt="" />
+          <StaticImage src={'./../../../../../assets/images/customers/okroo.jpg'} alt="" />
         </Image>
         <ParagraphDivStyled>
           <DivTagStyled>
