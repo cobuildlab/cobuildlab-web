@@ -17,10 +17,10 @@ const Pitazo = () => {
   const handleClick = () => navigate('/customer-success-stories/el-pitazo');
 
   return (
-    <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} key="Weedmatch">
+    <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} key="pitazo">
       <CardStyled>
         <Image>
-          <StaticImage src={'./../../../../assets/images/customers/pitazo-1.jpg'} alt="" />
+          <StaticImage src={'./../../../../../assets/images/customers/pitazo-1.jpg'} alt="" />
         </Image>
         <ParagraphDivStyled>
           <DivTagStyled>
