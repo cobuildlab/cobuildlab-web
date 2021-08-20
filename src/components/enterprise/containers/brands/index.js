@@ -45,7 +45,7 @@ const Brand = () => {
   const items = data.allFile.edges.map(({ node }) => (
     <div className="brand-item" key={node.id}>
       <div className="brand-content">
-        <GatsbyImage image={getImage(node.childImageSharp.gatsbyImageData)} alt="" />
+        <GatsbyImage image={getImage(node.childImageSharp.gatsbyImageData)} alt={node.name} />
       </div>
     </div>
   ));
@@ -72,6 +72,7 @@ const query = graphql`
       edges {
         node {
           id
+          name
           childImageSharp {
             gatsbyImageData
           }
