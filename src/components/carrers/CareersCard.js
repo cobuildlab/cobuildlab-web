@@ -1,51 +1,54 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import * as moment from 'moment';
-import CareersCardContainer from './CareersCardContainer';
-import CarrerCardTitle from './CareersCardTitle';
+import { Link } from 'gatsby';
+import { clockO } from 'react-icons-kit/fa/clockO';
+import { mapPin } from 'react-icons-kit/fa/mapPin';
+import { Icon } from 'react-icons-kit';
 
-const CarrerContent = styled.p`
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-align: justify;
-`;
+import CareersCardContainer from './CareersCardContainer';
+import CareerCardTitle from './CareersCardTitle';
 
 const BlogPosition = styled.div`
   float: ${(props) => props.position};
   color: #264a60;
+  & a {
+    color: #e76c29;
+    font-weight: bold;
+  }
 `;
 
-const CareersCard = ({ title, src, to, description, readingTime, createdAt, tag }) => (
-  <CareersCardContainer alt={title} src={src} to={to}>
-    <CarrerCardTitle>{title}</CarrerCardTitle>
+const CareersCard = ({ title, to, modality, time }) => (
+  <CareersCardContainer alt={title}>
+    <CareerCardTitle>{title}</CareerCardTitle>
     <div>
-      <CarrerContent>{description}</CarrerContent>
+      <BlogPosition position={'left'}>
+        <Icon icon={mapPin} alt="facebook-icon" size={22} />
+        <span> {modality}</span>
+      </BlogPosition>
+      <BlogPosition position={'right'}>
+        <Icon icon={clockO} alt="facebook-icon" size={22} />
+        <span> {time}</span>
+      </BlogPosition>
     </div>
     <div>
-      <BlogPosition position={'left'}>{moment(createdAt).format('MM/DD/YYYY')}</BlogPosition>
-      <BlogPosition position={'right'}>{readingTime}</BlogPosition>
+      <BlogPosition position={'right'}>
+        <Link to={'/careers/' + to}>Read More</Link>
+      </BlogPosition>
     </div>
   </CareersCardContainer>
 );
 
 CareersCard.defaultProps = {
-  readingTime: '3m',
-  src: {},
-  tag: [],
+  modality: 'Remote',
+  time: 'Full Time',
 };
 
 CareersCard.propTypes = {
-  to: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  readingTime: PropTypes.string,
-  createdAt: PropTypes.string.isRequired,
+  to: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
-  src: PropTypes.object,
-  tag: PropTypes.array,
+  modality: PropTypes.string,
+  time: PropTypes.string,
 };
 
 export default CareersCard;

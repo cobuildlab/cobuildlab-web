@@ -3,6 +3,7 @@ import Header from '../header/Header';
 import { Hero, HeroHeader, HeroBody, Container, Columns, Column } from 'bloomer';
 import styled from 'styled-components';
 import H1 from '../Typography/H1';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Title = styled(H1)`
   font-size: 70px;
@@ -22,7 +23,10 @@ const CareersHero = () => (
       <Container hasTextAlign="centered">
         <Columns isCentered>
           <Column>
-            <Title>Careers Page </Title>
+            <Title>Join Our Team </Title>
+          </Column>
+          <Column>
+            <StaticImage src={'./../../assets/images/portfolio/title.png'} alt="Portfolio" />
           </Column>
         </Columns>
       </Container>

@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 const Overlay = styled.div`
@@ -14,19 +13,16 @@ const Overlay = styled.div`
   transition: all 0.2s ease-out;
 `;
 
-const Container = styled(Link)`
+const Container = styled.div`
   position: relative;
   display: block;
   width: 380px;
-  height: 340px;
+  height: 180px;
   border-radius: 5px;
   overflow: hidden;
   margin: auto;
   background-color: #fff;
   box-shadow: 0px 10px 20px #0000001a;
-  &:hover ${Overlay} {
-    background-color: rgba(0, 0, 0, 0.5);
-  }
   @media screen and (max-width: 1024px) {
     width: 318px;
     height: 286px;
@@ -50,17 +46,14 @@ const ChildrenContainer = styled.div`
   justify-content: space-between;
 `;
 
-const CareersCardContainer = ({ children, src, alt, to }) => (
-  <Container to={'/careers/' + to}>
+const CareersCardContainer = ({ children }) => (
+  <Container>
     <Overlay />
     <ChildrenContainer>{children}</ChildrenContainer>
   </Container>
 );
 
 CareersCardContainer.propTypes = {
-  to: PropTypes.string.isRequired,
-  src: PropTypes.object.isRequired,
-  alt: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
 

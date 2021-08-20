@@ -9,7 +9,7 @@ import Contact from '../../../components/2020/HomePageContact';
 import ClientSearch from '../../../components/blog-ai/search/client-search';
 
 const Blog = ({ data }) => {
-  const { post } = data.allPost8Base;
+  const { post } = data['allPostsList8Base'];
 
   const options = {
     indexStrategy: `Prefix match`,
@@ -42,7 +42,7 @@ Blog.propTypes = {
 
 export const pageQuery = graphql`
   query BasePost {
-    allPost8Base(limit: 1000, sort: { fields: createdAt, order: DESC }) {
+    allPostsList8Base(limit: 1000, sort: { fields: createdAt, order: DESC }) {
       post: nodes {
         id
         title

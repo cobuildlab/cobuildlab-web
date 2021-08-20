@@ -88,17 +88,17 @@ exports.createPages = ({ graphql, actions }) => {
             },
           });
           // AMP
-          // createPage({
-          //   path: `${post.node.fields.slug}amp/`,
-          //   component: path.resolve(
-          //     `src/templates/${String(post.node.frontmatter.template)}.amp.js`,
-          //   ),
-          //   context: {
-          //     slug: post.node.fields.slug,
-          //     previous,
-          //     next,
-          //   },
-          // });
+          createPage({
+            path: `${post.node.fields.slug}amp/`,
+            component: path.resolve(
+              `src/templates/${String(post.node.frontmatter.template)}.amp.js`,
+            ),
+            context: {
+              slug: post.node.fields.slug,
+              previous,
+              next,
+            },
+          });
         });
       }),
     );
@@ -109,7 +109,7 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           query BasePost {
-            allPost8Base {
+            allPostsList8Base {
               post: nodes {
                 id
                 title
@@ -155,7 +155,7 @@ exports.createPages = ({ graphql, actions }) => {
           return reject(result.errors);
         }
         // Create blog posts pages AI.
-        const posts = result.data.allPost8Base.post;
+        const posts = result.data.allPostsList8Base.post;
         _.each(posts, (post, index) => {
           //Convert Markdown to html
           unified()
@@ -195,7 +195,7 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           query BasePost {
-            allCareers8Base {
+            allCareersList8Base {
               careers: nodes {
                 title
                 description
@@ -203,6 +203,8 @@ exports.createPages = ({ graphql, actions }) => {
                 jobProfile
                 jobDescription
                 active
+                modality
+                time
                 createdAt
               }
             }
@@ -213,7 +215,7 @@ exports.createPages = ({ graphql, actions }) => {
           return reject(result.errors);
         }
         // Create blog posts pages AI.
-        const careers = result.data.allCareers8Base.careers;
+        const careers = result.data.allCareersList8Base.careers;
         _.each(careers, (career, index) => {
           createPage({
             path: `/careers/${index + 1}`,
