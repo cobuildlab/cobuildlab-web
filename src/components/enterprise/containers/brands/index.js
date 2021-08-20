@@ -1,10 +1,10 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { Container, Section } from 'bloomer';
-import Img from 'gatsby-image';
 import Slider from 'react-slick';
 import './brands.scss';
 import H4 from '../../../Typography/H4';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const settings = {
   autoplaySpeed: 3000,
@@ -45,7 +45,7 @@ const Brand = () => {
   const items = data.allFile.edges.map(({ node }) => (
     <div className="brand-item" key={node.id}>
       <div className="brand-content">
-        <Img fluid={node.childImageSharp.fluid} alt="" />
+        <GatsbyImage image={getImage(node.childImageSharp.gatsbyImageData)} alt="" />
       </div>
     </div>
   ));
@@ -73,7 +73,7 @@ const query = graphql`
         node {
           id
           childImageSharp {
-            gatsbyImageData(layout: FIXED)
+            gatsbyImageData
           }
         }
       }
