@@ -21,6 +21,7 @@ import { Banner } from '../components/2021/containers/Banner';
 import { SeoMetaTags } from '../components/2021/SeoMetaTags';
 import IncubatorLink from '../components/enterprise/containers/incubator/Incubator';
 import { About } from '../components/2021/containers/About';
+import TextLink from '../components/Typography/TextLink';
 
 const title = {
   default: {
@@ -46,11 +47,16 @@ const IndexPage = () => (
         }
         title2={
           <Typography size={title} tag="h2">
-            We partner with <span className="enterprise-text-orange">Industry Experts</span> to
-            solve Logistical and Productivity problems with{' '}
-            <span className="enterprise-text-orange">
-              Custom Software Solutions, Artificial Intelligence and IOT.
-            </span>
+            We partner with Industry Experts to solve Logistical and Productivity problems with{' '}
+            <TextLink to="https://www.cobuildlab.com/services/custom-software-development">
+              Custom Software Solutions
+            </TextLink>
+            ,{' '}
+            <TextLink to="https://www.cobuildlab.com/services/artificial-intelligence-development">
+              {' '}
+              Artificial Intelligence
+            </TextLink>{' '}
+            and <TextLink to="https://www.cobuildlab.com/services/iot-development">IOT</TextLink>.
           </Typography>
         }
       />

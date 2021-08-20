@@ -150,7 +150,6 @@ const Services = () => (
               alt="it staff augmentation"
             />
           }
-          three={true}
         />
         <ServicesCard
           title={'Custom Inventory'}
@@ -165,9 +164,8 @@ const Services = () => (
               alt="Custom Inventory"
             />
           }
-          three={true}
         />
-        <ServicesCard
+        {/*<ServicesCard
           title={'Security and '}
           subtitle={'Compliance Audits'}
           cover={
@@ -181,7 +179,7 @@ const Services = () => (
             />
           }
           three={true}
-        />
+        />*/}
       </Columns>
     </Section>
     <Section>
