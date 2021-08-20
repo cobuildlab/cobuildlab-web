@@ -16,7 +16,7 @@ const Overlay = styled.div`
 const Container = styled.div`
   position: relative;
   display: block;
-  width: 380px;
+  width: 308px;
   height: 180px;
   border-radius: 5px;
   overflow: hidden;
@@ -24,11 +24,11 @@ const Container = styled.div`
   background-color: #fff;
   box-shadow: 0px 10px 20px #0000001a;
   @media screen and (max-width: 1024px) {
-    width: 318px;
-    height: 286px;
+    width: 244px;
+    height: 280px;
   }
-  @media screen and (max-width: 768px) {
-    width: 90%;
+  @media screen and (max-width: 925px) {
+    width: 210px;
     height: 200px;
   }
 `;
