@@ -53,8 +53,7 @@ const Banner = ({ title1, title2 }) => {
                       {title2}
                       <br />
                       <Typography size={subTitle} tag="h1">
-                        Let’s <span className="enterprise-text-orange">Build</span> a Great
-                        <span className="enterprise-text-orange"> Idea.</span>
+                        Let’s Build a Great Idea.
                       </Typography>
                       <br />
                       <div className="banner-btn-wrapper">
