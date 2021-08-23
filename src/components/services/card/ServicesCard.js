@@ -50,7 +50,7 @@ const Container = styled.div`
 `;
 
 const Readmore = styled.p`
-  font-size: 17px;
+  font-size: 15px;
   text-align: right;
   padding-left: 10px;
   color: rgb(231, 108, 41);
@@ -58,7 +58,6 @@ const Readmore = styled.p`
   position: absolute;
   right: 0px;
   cursor: pointer;
-  font-family: Lato-bold !important;
   bottom: -5px;
 `;
 
