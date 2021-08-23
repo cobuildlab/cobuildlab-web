@@ -32,7 +32,7 @@ const ColumnStyle2 = styled(Column)`
 `;
 
 const Services = () => {
-  const [tag, setTag] = useState('onDemand');
+  const [tag, setTag] = useState('customSoftware');
 
   const activeTag = (value) => {
     setTag(value);
@@ -61,7 +61,7 @@ const Services = () => {
           </ColumnStyle>
           <ColumnStyle2 isSize={{ mobile: 12, tablet: 8, desktop: 10 }}>
             <Columns isDisplay="flex" isMultiline>
-              {tag === 'onDemand' ? (
+              {tag === 'customSoftware' ? (
                 <ContentStyle>
                   <ServicesCard
                     title={'Custom Software'}
@@ -198,7 +198,7 @@ const Services = () => {
                 </ContentStyle>
               ) : null}
 
-              {tag === 'logistics' ? (
+              {tag === 'enterprisesDevelopment' ? (
                 <ContentStyle>
                   <ServicesCard
                     title={'Enterprise Software'}
@@ -244,7 +244,7 @@ const Services = () => {
                   />
                 </ContentStyle>
               ) : null}
-              {tag === 'mainServices' ? (
+              {tag === 'softwareDevelopment' ? (
                 <ContentStyle>
                   <ServicesCard
                     title={'Web'}

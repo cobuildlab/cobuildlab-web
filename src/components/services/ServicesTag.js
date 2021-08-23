@@ -23,17 +23,19 @@ const ServicesTag = ({ tag, activeTag }) => {
     <>
       <H6>Services</H6>
       <div>
-        <TagStyle active={tag === 'onDemand'} onClick={() => activeTag('onDemand')}>
-          <span>On Demand</span>
+        <TagStyle active={tag === 'customSoftware'} onClick={() => activeTag('customSoftware')}>
+          <span>Custom Software</span>
         </TagStyle>
         <TagStyle
           multipleLine={true}
-          active={tag === 'logistics'}
-          onClick={() => activeTag('logistics')}>
-          <span>Logistics and Supply Chain</span>
+          active={tag === 'enterprisesDevelopment'}
+          onClick={() => activeTag('enterprisesDevelopment')}>
+          <span>Enterprises Development</span>
         </TagStyle>
-        <TagStyle active={tag === 'mainServices'} onClick={() => activeTag('mainServices')}>
-          <span>Main Services</span>
+        <TagStyle
+          active={tag === 'softwareDevelopment'}
+          onClick={() => activeTag('softwareDevelopment')}>
+          <span>Software Development</span>
         </TagStyle>
         <TagStyle active={tag === 'startup'} onClick={() => activeTag('startup')}>
           <span>Startup</span>
