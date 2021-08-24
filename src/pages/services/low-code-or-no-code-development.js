@@ -49,7 +49,7 @@ const AppDevelopment = () => (
       <ServicesBannerBackgroundBottom />
       <Container>
         <ServicesHeader
-          title={`Low Code or <br/>No Code Development`}
+          title={`Low Code or No Code Development`}
           paragraph={
             "Time is the most valuable asset to make your company more productive and meet your customers' current demands.\n"
           }
@@ -70,7 +70,7 @@ const AppDevelopment = () => (
         <ServicesSection2
           title={'Low code and no-code tools'}
           titleOrange={'for your company’s improvement'}
-          text={'Low code and no-code tools for your company’s improvement\n'}
+          text={'Low code and no-code tools for your company’s improvement.\n'}
           otherText={
             "When your customer's demands change, competition increases. \n" +
             '\n' +
