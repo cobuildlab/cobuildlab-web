@@ -11,7 +11,7 @@ import ReferralsProgram from '../components/referrals/ReferralsProgram';
 
 const Referrals = () => (
   <Layout>
-    <SeoMetaTags title="Services" description="Privacy Policy for the Cobuild Lab" />
+    <SeoMetaTags title="Referrals" description="Privacy Policy for the Cobuild Lab" />
     <Hero>
       <HeroHeader>
         <Header />
