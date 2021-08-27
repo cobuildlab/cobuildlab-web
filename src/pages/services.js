@@ -181,20 +181,6 @@ const Services = () => {
                       />
                     }
                   />
-                  <ServicesCard
-                    title={'Security and '}
-                    subtitle={'Compliance Audits'}
-                    cover={
-                      'Develop full software solutions with less code, in less time, and with fewer errors'
-                    }
-                    to={'security-and-compliance-audits'}
-                    image={
-                      <StaticImage
-                        src={'./../assets/images/service/card/iconos-security.png'}
-                        alt="Custom Inventory"
-                      />
-                    }
-                  />
                 </ContentStyle>
               ) : null}
 
@@ -239,6 +225,34 @@ const Services = () => {
                           './../assets/images/service/card/iconos_Logistic-Digital-Transformation_Logistic-Digital-Transformation.svg'
                         }
                         alt="digital transformation"
+                      />
+                    }
+                  />
+                  <ServicesCard
+                    title={'Security '}
+                    subtitle={'Compliance'}
+                    cover={
+                      'Take advantage of these tools to comply with relevant internal laws, regulations, and procedures'
+                    }
+                    to={'security-compliance'}
+                    image={
+                      <StaticImage
+                        src={'./../assets/images/service/card/iconos-security.png'}
+                        alt="Custom Inventory"
+                      />
+                    }
+                  />
+                  <ServicesCard
+                    title={'Web Accessibility '}
+                    subtitle={'Compliance'}
+                    cover={'Ensure Your Website Compliance With Accessibility Standards'}
+                    to={'web-acessibility-compliance'}
+                    image={
+                      <StaticImage
+                        src={
+                          './../assets/images/service/card/icono-web-accessibility-compliance.png'
+                        }
+                        alt="Web Accessibility Compliance"
                       />
                     }
                   />
