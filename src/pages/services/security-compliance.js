@@ -78,7 +78,7 @@ const IotDevelopment = () => (
             'We are committed to maintaining the highest level of industry compliance and government mandates. As information security regulations are evolving more quickly than ever, leverage our experienced teams to design the solution specific to your business needs. Our service is customizable and can be related to any aspect of information security such as technology, policy and procedures, compliance network design, disaster recovery, compliance standards, incident response, and more.'
           }>
           <StaticImage
-            src={'./../../assets/images/service/ilustracion-web-accessibility-compliance.png'}
+            src={'./../../assets/images/service/ilustracion-security-and-compliance.png'}
           />
         </ServicesSection3>
       </Container>
