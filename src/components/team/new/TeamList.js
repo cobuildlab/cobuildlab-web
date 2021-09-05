@@ -36,8 +36,32 @@ const TeamList = () => {
           <Card first={'Jacqueline'} last={'Popovich'} description={'Product Manager'}>
             <StaticImage
               className={'team-member-img'}
-              src={'./../../../assets/images/team/team-pictures/jacqueline-popovich.png'}
+              src={'./../../../assets/images/team/team-pictures/jacqueline-popovich.jpg'}
               alt="Jacqueline Popovich"
+            />
+          </Card>
+        </Column>
+        <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
+          <Card
+            first={'Ryan'}
+            last={'Seron'}
+            description={'Director, Business Development - Software'}>
+            <StaticImage
+              className={'team-member-img'}
+              src={'./../../../assets/images/team/team-pictures/Ryan-Seron.jpg'}
+              alt="Ryan Seron"
+            />
+          </Card>
+        </Column>
+        <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
+          <Card
+            first={'Miguel'}
+            last={'Muir'}
+            description={'Enterprise Business Development Manage'}>
+            <StaticImage
+              className={'team-member-img'}
+              src={'./../../../assets/images/team/team-pictures/Miguel-Muir.jpg'}
+              alt="Miguel Muir"
             />
           </Card>
         </Column>
