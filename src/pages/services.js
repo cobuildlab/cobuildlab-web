@@ -181,6 +181,18 @@ const Services = () => {
                       />
                     }
                   />
+                  <ServicesCard
+                    title={'Human Resources '}
+                    subtitle={'Management System'}
+                    cover={"Get your employee's information management to the next level"}
+                    to={'human-resources-management-services'}
+                    image={
+                      <StaticImage
+                        src={'./../assets/images/service/card/iconos-human-resources.svg'}
+                        alt="Human Resources"
+                      />
+                    }
+                  />
                 </ContentStyle>
               ) : null}
 
