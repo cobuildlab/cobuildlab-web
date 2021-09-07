@@ -193,6 +193,22 @@ const Services = () => {
                       />
                     }
                   />
+                  <ServicesCard
+                    title={'Custom Warehouse '}
+                    subtitle={'Management System'}
+                    cover={
+                      'Get Custom Warehouse Solutions that give real-time insights into each aspect of your business operations'
+                    }
+                    to={'custom-warehouse-management-system'}
+                    image={
+                      <StaticImage
+                        src={
+                          './../assets/images/service/card/icono-custom-warehouse-management-system-02.svg'
+                        }
+                        alt="Human Resources"
+                      />
+                    }
+                  />
                 </ContentStyle>
               ) : null}
 
