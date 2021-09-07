@@ -181,6 +181,34 @@ const Services = () => {
                       />
                     }
                   />
+                  <ServicesCard
+                    title={'Human Resources '}
+                    subtitle={'Management System'}
+                    cover={"Get your employee's information management to the next level"}
+                    to={'human-resources-management-services'}
+                    image={
+                      <StaticImage
+                        src={'./../assets/images/service/card/iconos-human-resources.svg'}
+                        alt="Human Resources"
+                      />
+                    }
+                  />
+                  <ServicesCard
+                    title={'Custom Warehouse '}
+                    subtitle={'Management System'}
+                    cover={
+                      'Get Custom Warehouse Solutions that give real-time insights into each aspect of your business operations'
+                    }
+                    to={'custom-warehouse-management-system'}
+                    image={
+                      <StaticImage
+                        src={
+                          './../assets/images/service/card/icono-custom-warehouse-management-system-02.svg'
+                        }
+                        alt="Human Resources"
+                      />
+                    }
+                  />
                 </ContentStyle>
               ) : null}
 
