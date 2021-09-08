@@ -64,7 +64,7 @@ const WebDesign = () => (
               src={
                 './../../assets/images/service/card/iconos-web-design_Main-Services-Web-Design_Main Services-Web-Design.svg'
               }
-              alt=""
+              alt="Website Development"
             />
           }
         />
@@ -100,7 +100,10 @@ const WebDesign = () => (
           otherText2={
             'Well-structured web design strengthens your competitive advantages by providing value to the users, with a visually appealing website, a fast load time, and more.'
           }>
-          <StaticImage src={'./../../assets/images/service/web-design-Ilustration-01.svg'} />
+          <StaticImage
+            src={'./../../assets/images/service/web-design-Ilustration-01.svg'}
+            alt={'Illustration Website Development'}
+          />
         </ServicesSection3>
       </Container>
     </Section>

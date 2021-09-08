@@ -57,7 +57,7 @@ const WebDesign = () => (
           img={
             <StaticImage
               src={'./../../assets/images/service/card/icon-web-accessibility-compliance.svg'}
-              alt=""
+              alt="Web Accessibility Compliance"
             />
           }
         />
@@ -98,6 +98,7 @@ const WebDesign = () => (
             src={
               './../../assets/images/service/ilustracion-ilustracion-web-accessibility-compliance.svg'
             }
+            alt={'Illustration Web Accessibility Compliance'}
           />
         </ServicesSection3>
       </Container>

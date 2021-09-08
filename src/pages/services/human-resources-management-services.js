@@ -57,7 +57,7 @@ const WebDevelopment = () => (
           img={
             <StaticImage
               src={'./../../assets/images/service/card/iconos-human-resources.svg'}
-              alt=""
+              alt="Human Resources Management System"
             />
           }
         />
@@ -85,7 +85,10 @@ const WebDevelopment = () => (
           otherText2={
             'With deep knowledge and experience in custom software development, our team provides the dedicated support that organizations like yours can rely on to achieve more together and increase visibility, maximize resources, and unify their workforce behind one mission.'
           }>
-          <StaticImage src={'./../../assets/images/service/ilustracion-human-resources-01.png'} />
+          <StaticImage
+            src={'./../../assets/images/service/ilustracion-human-resources-01.png'}
+            alt={'Illustration Human Resources Management System'}
+          />
         </ServicesSection3>
       </Container>
     </Section>

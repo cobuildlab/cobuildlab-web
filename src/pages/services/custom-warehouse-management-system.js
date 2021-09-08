@@ -59,7 +59,7 @@ const WebDevelopment = () => (
               src={
                 './../../assets/images/service/card/icono-custom-warehouse-management-system-02.svg'
               }
-              alt=""
+              alt="Custom Warehouse Management System"
             />
           }
         />
@@ -87,9 +87,8 @@ const WebDevelopment = () => (
             "Since warehouse operations can differ based on the market and the particular business needs of each customer, it's relevant to fulfill each one of them. Such situations always demand customized supply chain solutions. As a software development company, we develop comprehensive WMSs designed to make it easy for providers, wholesalers, manufacturers, and retailers to manage their inventory, automate routine tasks, and obtain complete visibility of their warehouse operations."
           }>
           <StaticImage
-            src={
-              './../../assets/images/service/ilustracion-custom warehouse-management-system-01.svg'
-            }
+            src={'./../../assets/images/service/Custom Warehouse Management System-01.svg'}
+            alt={'Illustration Custom Warehouse Management System'}
           />
         </ServicesSection3>
       </Container>

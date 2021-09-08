@@ -56,7 +56,7 @@ const IotDevelopment = () => (
           img={
             <StaticImage
               src={'./../../assets/images/service/card/icono-web-accessibility-compliance.png'}
-              alt=""
+              alt="Web Accessibility Compliance"
             />
           }
         />
@@ -88,6 +88,7 @@ const IotDevelopment = () => (
           }>
           <StaticImage
             src={'./../../assets/images/service/ilustracion-web-accessibility-compliance.png'}
+            alt={'Illustration Web Accessibility Compliance'}
           />
         </ServicesSection3>
       </Container>

@@ -58,7 +58,7 @@ const WebDevelopment = () => (
               src={
                 './../../assets/images/service/card/iconos-material-requirements-planning-system-02.svg'
               }
-              alt=""
+              alt="Material Requirements Planning System"
             />
           }
         />
@@ -95,6 +95,7 @@ const WebDevelopment = () => (
             src={
               './../../assets/images/service/ilustracion-material-requirements-planning-system.svg'
             }
+            alt="Illustration Material Requirements Planning System"
           />
         </ServicesSection3>
       </Container>

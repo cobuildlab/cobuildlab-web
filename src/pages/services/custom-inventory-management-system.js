@@ -60,7 +60,7 @@ const WebDevelopment = () => (
               src={
                 './../../assets/images/service/card/iconos-custom-management-inventory-system.png'
               }
-              alt="iconos-custom-management-inventory-system"
+              alt="Custom Inventory Management System"
             />
           }
         />
@@ -98,7 +98,10 @@ const WebDevelopment = () => (
             'Ongoing 24/7 technical support.',
             'High-speed private cloud solution.',
           ]}>
-          <StaticImage src={'./../../assets/images/service/management-system.png'} />
+          <StaticImage
+            src={'./../../assets/images/service/management-system.png'}
+            alt={'Illustration Custom Inventory Management System'}
+          />
         </ServicesSection3>
       </Container>
     </Section>
@@ -113,15 +116,15 @@ const WebDevelopment = () => (
             'The ability to automate a single workflow. The custom solution provides an industry-specific solution that easily incorporates new features that make your back-end operations easier.',
             'Keeps track of all your inventories and provides a consolidated view of available stocks.',
             'Control costs and improve delivery by setting the right customer expectations.',
-            'Automatic and easy reordering',
-            'It can be integrated with various other software systems, including enterprise resource planning (ERP) and accounting systems',
+            'Automatic and easy reordering.',
+            'It can be integrated with various other software systems, including enterprise resource planning (ERP) and accounting systems.',
           ]}
           rightTextList={[
-            'Provides inventory visibility at each location at any time and date through system-generated reports',
-            'Forecast future demand by analyzing trends in inventory data and inventory according to the demand',
-            'Custom reports, a much-needed business intelligence tool for a wide variety of business verticals, as data is filtered based on specific criteria',
-            'Ongoing 24/7 technical support with proper analysis of business requirements',
-            'High-speed private cloud solution. If your solution is hosted on a private cloud, it offers better control, expandable bandwidth, security, and superior performance in terms of speed and connectivity',
+            'Provides inventory visibility at each location at any time and date through system-generated reports.',
+            'Forecast future demand by analyzing trends in inventory data and inventory according to the demand.',
+            'Custom reports, a much-needed business intelligence tool for a wide variety of business verticals, as data is filtered based on specific criteria.',
+            'Ongoing 24/7 technical support with proper analysis of business requirements.',
+            'High-speed private cloud solution. If your solution is hosted on a private cloud, it offers better control, expandable bandwidth, security, and superior performance in terms of speed and connectivity.',
           ]}
         />
       </Container>

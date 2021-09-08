@@ -59,7 +59,7 @@ const WebDevelopment = () => (
               src={
                 './../../assets/images/service/card/icon-enterprise-resource-planning-system-02.svg'
               }
-              alt=""
+              alt="Enterprise Resource Planning System"
             />
           }
         />
@@ -93,6 +93,7 @@ const WebDevelopment = () => (
             src={
               './../../assets/images/service/ilustracion-enterprise-resource-planning-system-01.svg'
             }
+            alt={'Illustration enterprise resource planning system'}
           />
         </ServicesSection3>
       </Container>

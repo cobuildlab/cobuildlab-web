@@ -59,7 +59,7 @@ const WebDevelopment = () => (
               src={
                 './../../assets/images/service/card/icon-custom-transportation-management-system-02.svg'
               }
-              alt=""
+              alt="Custom Transportation Management System"
             />
           }
         />
@@ -90,6 +90,7 @@ const WebDevelopment = () => (
             src={
               './../../assets/images/service/ilustracion-custom-transportation-management-system-01.svg'
             }
+            alt={'Illustration custom transportation management system'}
           />
         </ServicesSection3>
       </Container>

@@ -66,7 +66,7 @@ const DigitalTransformation = () => (
               src={
                 './../../assets/images/service/card/iconos_Logistic-Digital-Transformation_Logistic-Digital-Transformation.svg'
               }
-              alt=""
+              alt="Digital Transformation"
             />
           }
         />
@@ -93,7 +93,10 @@ const DigitalTransformation = () => (
             'Your existing technologies.',
           ]}
           textList2={['Skills for the future.', 'Processes you need to improve.']}>
-          <StaticImage src={'./../../assets/images/service/digital-transformation.png'} />
+          <StaticImage
+            src={'./../../assets/images/service/digital-transformation.png'}
+            alt={'Illustration Digital Transformation'}
+          />
         </ServicesSection3>
       </Container>
     </Section>

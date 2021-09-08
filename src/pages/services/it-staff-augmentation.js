@@ -56,7 +56,7 @@ const AppDevelopment = () => (
           img={
             <StaticImage
               src={'./../../assets/images/service/card/iconos_Staff-Augmentation.svg'}
-              alt=""
+              alt="IT Staff Augmentation"
             />
           }
         />
@@ -83,7 +83,10 @@ const AppDevelopment = () => (
             'Focused and unbiased workforce.',
           ]}
           textList2={['Flexibility.', 'Attain assistance with Zero administrative complications.']}>
-          <StaticImage src={'./../../assets/images/service/services-details3.png'} />
+          <StaticImage
+            src={'./../../assets/images/service/services-details3.png'}
+            alt={'Illustration Services'}
+          />
         </ServicesSection3>
       </Container>
     </Section>

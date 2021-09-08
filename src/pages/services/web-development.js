@@ -56,7 +56,7 @@ const WebDevelopment = () => (
           img={
             <StaticImage
               src={'./../../assets/images/service/card/iconos-Main-Services-Web-Development.svg'}
-              alt=""
+              alt="Web Development"
             />
           }
         />

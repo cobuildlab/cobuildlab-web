@@ -58,7 +58,7 @@ const FieldServicesManagementSystem = () => (
               src={
                 './../../assets/images/service/card/iconos-Small-Business-Field-Service-Management-System.svg'
               }
-              alt=""
+              alt="Field Services Management System"
             />
           }
         />
@@ -93,7 +93,10 @@ const FieldServicesManagementSystem = () => (
             'team coordination.',
             'Full scalability.',
           ]}>
-          <StaticImage src={'./../../assets/images/service/services-details3.png'} />
+          <StaticImage
+            src={'./../../assets/images/service/services-details3.png'}
+            alt={'Illustration Services'}
+          />
         </ServicesSection3>
       </Container>
     </Section>
