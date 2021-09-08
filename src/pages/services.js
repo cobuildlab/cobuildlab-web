@@ -203,7 +203,69 @@ const Services = () => {
                     image={
                       <StaticImage
                         src={
-                          './../assets/images/service/card/icono-custom-warehouse-management-system-02.svg'
+                          './../assets/images/service/card/icon-custom-warehouse-management-system-02.svg'
+                        }
+                        alt="Human Resources"
+                      />
+                    }
+                  />
+                  <ServicesCard
+                    title={'Material Requirements '}
+                    subtitle={'Planning System'}
+                    cover={
+                      'Tailor-made software that guarantees that your products are delivered to the final customer on time and at the lowest cost possible'
+                    }
+                    to={'material-requirements-planning-system'}
+                    image={
+                      <StaticImage
+                        src={
+                          './../assets/images/service/card/iconos-material-requirements-planning-system-02.svg'
+                        }
+                        alt="Human Resources"
+                      />
+                    }
+                  />
+                  <ServicesCard
+                    title={'Custom Transportation '}
+                    subtitle={'Management System'}
+                    cover={
+                      'Tailor-made software that guarantees that your products are delivered to the final customer on time and at the lowest cost possible'
+                    }
+                    to={'custom-transportation-management-system'}
+                    image={
+                      <StaticImage
+                        src={
+                          './../assets/images/service/card/icon-custom-transportation-management-system-02.svg'
+                        }
+                        alt="Human Resources"
+                      />
+                    }
+                  />
+                  <ServicesCard
+                    title={'Enterprise Resource '}
+                    subtitle={'Planning System'}
+                    cover={
+                      'Let’s manage and integrate the most important processes of your business with a unique custom system'
+                    }
+                    to={'enterprise-resource-planning-system'}
+                    image={
+                      <StaticImage
+                        src={
+                          './../assets/images/service/card/icon-enterprise-resource-planning-system-02.svg'
+                        }
+                        alt="Human Resources"
+                      />
+                    }
+                  />
+                  <ServicesCard
+                    title={'Web Accessibility '}
+                    subtitle={'Compliance'}
+                    cover={'Ensure Your Website Compliance With Accessibility Standards'}
+                    to={'web-accessibility-compliance'}
+                    image={
+                      <StaticImage
+                        src={
+                          './../assets/images/service/card/icon-web-accessibility-compliance.svg'
                         }
                         alt="Human Resources"
                       />
