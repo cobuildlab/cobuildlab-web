@@ -26,7 +26,7 @@ const StyleSubtitle = styled.div`
 `;
 
 const StyledServicesContent = styled(ServicesContent)`
-  display: inline-table;
+  display: initial !important;
 `;
 
 const ServicesSection4 = ({ title, leftText, rightTextList, text, otherText }) => {

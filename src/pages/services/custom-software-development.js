@@ -62,7 +62,7 @@ const CustomSoftwareDevelopment = () => (
               src={
                 './../../assets/images/service/card/iconos-Small-Business-Custom-Software-Development.svg'
               }
-              alt=""
+              alt="Custom Software Development"
             />
           }
         />
@@ -91,7 +91,10 @@ const CustomSoftwareDevelopment = () => (
             'Advantages over Your Competitors.',
             'Improve Customer Perception & Attention.',
           ]}>
-          <StaticImage src={'./../../assets/images/service/services-details3.png'} />
+          <StaticImage
+            src={'./../../assets/images/service/services-details3.png'}
+            alt={'Illustration Services'}
+          />
         </ServicesSection3>
       </Container>
     </Section>

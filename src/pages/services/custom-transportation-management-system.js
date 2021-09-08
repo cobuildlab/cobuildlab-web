@@ -14,7 +14,6 @@ import ServicesBannerBackgroundBottom from '../../components/services/ServicesBa
 import styled from 'styled-components';
 
 import ServicesSection3 from '../../components/services/details/ServicesSection3';
-import ServicesSection4 from '../../components/services/details/ServicesSection4';
 
 import Title2 from '../../components/Title2';
 import ServicesSection2 from '../../components/services/details/ServicesSection2';
@@ -23,6 +22,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import Avsee from '../../components/services/details/customer-success-stories/card/Avsee';
 import Pitazo from '../../components/services/details/customer-success-stories/card/Pitazo';
 import Weedmatch from '../../components/services/details/customer-success-stories/card/Weedmatch';
+import ServicesSection4 from '../../components/services/details/ServicesSection4';
 
 const StyledSubTitle = styled.div`
   text-align: center;
@@ -50,14 +50,16 @@ const WebDevelopment = () => (
       <ServicesBannerBackgroundBottom />
       <Container>
         <ServicesHeader
-          title={'Human Resources Management System'}
+          title={'Custom Transportation Management System'}
           paragraph={
-            "The automation of repetitive and time-consuming tasks associated with human resources management frees up some of the company's most valuable employees, allowing their focus to shift to culture, retention, and other highly impactful areas."
+            'A Customized Transportation Management system is software that solves and optimizes the challenges of transportation processes. It provides 24/7 tracking of the movement of goods and their transport to guarantee optimal delivery times.'
           }
           img={
             <StaticImage
-              src={'./../../assets/images/service/card/iconos-human-resources.svg'}
-              alt="Human Resources Management System"
+              src={
+                './../../assets/images/service/card/icon-custom-transportation-management-system-02.svg'
+              }
+              alt="Custom Transportation Management System"
             />
           }
         />
@@ -66,11 +68,10 @@ const WebDevelopment = () => (
     <StyledSection2>
       <Container>
         <ServicesSection2
-          title={'What is a Human Resources '}
-          titleOrange={'Management System (HRMS)'}
+          title={'Optimize your '}
+          titleOrange={'Shipping Process'}
           text={
-            'A Human Resources Management System (HRMS) is an information and reporting system that helps businesses automate and manage human resource processes.\n' +
-            ' It is used to perform business processes and HR functions, combining systems and processes that connect human resource management and information technology through Human Resource software. It can be used in candidate recruiting, payroll management, leave approval, succession planning, attendance tracking, career progression, performance reviews, and the overall maintenance of employee information within your organization.\n'
+            'We will support your transportation process by developing a custom software system that automates the process and receives valuable information and data that can help you improve for each shipment in the future.'
           }
         />
       </Container>
@@ -78,16 +79,18 @@ const WebDevelopment = () => (
     <Section>
       <Container>
         <ServicesSection3
-          title={'Why Choose Us for your custom HRMS?'}
+          title={'Would you like to optimize spending and evolve in your process?'}
           otherText={
-            'If your organization is thinking of switching to a new HRMS or considering an HRMS for the first time, Cobuild Lab is here to help. We offer a custom solution designed for the unique needs of your organization.'
+            'With a custom transportation management system, all transportation challenges can be easy to handle.'
           }
           otherText2={
-            'With deep knowledge and experience in custom software development, our team provides the dedicated support that organizations like yours can rely on to achieve more together and increase visibility, maximize resources, and unify their workforce behind one mission.'
+            'If you own or work for a freight organization, this is the right software system for you. With this system, you will never waste time contacting carriers or operators, requesting quotes, collecting data, etc.'
           }>
           <StaticImage
-            src={'./../../assets/images/service/ilustracion-human-resources-01.png'}
-            alt={'Illustration Human Resources Management System'}
+            src={
+              './../../assets/images/service/ilustracion-custom-transportation-management-system-01.svg'
+            }
+            alt={'Illustration custom transportation management system'}
           />
         </ServicesSection3>
       </Container>
@@ -95,28 +98,19 @@ const WebDevelopment = () => (
     <Section>
       <Container>
         <ServicesSection4
-          title={'What does an HRMS do?'}
+          title={'You need an Enterprise Resource Planning System'}
           text={
-            'The function of an HRMS is to automate HR processes and put information and HR task management at the fingertips of HR professionals, managers, and employees.\n' +
-            '\n' +
-            'Features of a comprehensive HRMS include:'
+            "To successfully coordinate the planning and performance of your company's activities. We offer you our zero waste methodology and a tech stack according to the current market requirements."
           }
           leftText={[
-            'Storing employee data.',
-            'Payroll administration and export.',
-            'Benefits management.',
-            'Expenses management.',
-            'Document management.',
-            'Attendance tracking (absenteeism, sickness, and holidays).',
+            'Managing Your Business with 1 System: Financials, Human resources, Manufacturing management, Inventory management, Purchasing management, Quality management, Sales management.',
+            'A newer ERP Systems Are Upgrade-Friendly. It is designed to offer flexibility, adaptability, and scalability for growth more.',
+            'Increase your organization’s productivity while reducing time and labor costs.',
           ]}
           rightTextList={[
-            'Time logging.',
-            'Performance evaluation.',
-            'Recruitment and applicant tracking.',
-            'Onboarding.',
-            'API functionality.',
-            'Data importing.',
-            'Reporting.',
+            'Helps you meet the demands of your business partners and external stakeholders, and that it can keep your employees happy and productive.',
+            'Help You Better Analyze Your Business’ Data.',
+            'Meeting Customer Expectations, what Customers Expect from Businesses.',
           ]}
         />
       </Container>

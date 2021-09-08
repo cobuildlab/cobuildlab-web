@@ -58,7 +58,7 @@ const EnterpriseSoftwareDevelopment = () => (
               src={
                 './../../assets/images/service/card/iconos-Logistic-Enterprise-Software-Development.svg'
               }
-              alt=""
+              alt="Enterprise Software Development"
             />
           }
         />
@@ -99,7 +99,10 @@ const EnterpriseSoftwareDevelopment = () => (
             'Effective demand forecasting and lean inventory.',
             'Transparency through the business.',
           ]}>
-          <StaticImage src={'./../../assets/images/service/services-details3.png'} />
+          <StaticImage
+            src={'./../../assets/images/service/services-details3.png'}
+            alt={'Illustration Services'}
+          />
         </ServicesSection3>
       </Container>
     </Section>

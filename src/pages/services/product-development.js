@@ -57,7 +57,7 @@ const ProductDevelopment = () => (
           img={
             <StaticImage
               src={'./../../assets/images/service/card/iconos-Startup-Product-Development.svg'}
-              alt=""
+              alt="Product Development"
             />
           }
         />
@@ -95,7 +95,10 @@ const ProductDevelopment = () => (
             'Facing competition successfully and effectively.',
             'Goodwill and profit earning possibilities.',
           ]}>
-          <StaticImage src={'./../../assets/images/service/product-development-ilustration.png'} />
+          <StaticImage
+            src={'./../../assets/images/service/product-development-ilustration.png'}
+            alt={'Illustration Product Development'}
+          />
         </ServicesSection3>
       </Container>
     </Section>

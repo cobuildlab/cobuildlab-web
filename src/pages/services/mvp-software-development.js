@@ -63,7 +63,7 @@ const MvpSoftwareDevelopment = () => (
           img={
             <StaticImage
               src={'./../../assets/images/service/card/iconos-MVP-Software-Development.png'}
-              alt=""
+              alt="MVP Software Development"
             />
           }
         />
@@ -104,7 +104,10 @@ const MvpSoftwareDevelopment = () => (
             "Gather user's feedback.",
             'Keep things budget-friendly.\n',
           ]}>
-          <StaticImage src={'./../../assets/images/service/services-details3.png'} />
+          <StaticImage
+            src={'./../../assets/images/service/services-details3.png'}
+            alt={'Illustration Services'}
+          />
         </ServicesSection3>
       </Container>
     </Section>

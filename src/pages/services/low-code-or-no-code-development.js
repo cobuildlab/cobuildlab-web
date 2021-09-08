@@ -59,7 +59,7 @@ const AppDevelopment = () => (
           img={
             <StaticImage
               src={'./../../assets/images/service/card/iconos-robotic-process-automation.png'}
-              alt=""
+              alt="Low Code or No Code Development"
             />
           }
         />
@@ -89,7 +89,10 @@ const AppDevelopment = () => (
             'Build multi-platform apps at the same time.',
           ]}
           textList2={['Time-saving and less-code.', 'Reduced testing, and developers involved.']}>
-          <StaticImage src={'./../../assets/images/service/services-details3.png'} />
+          <StaticImage
+            src={'./../../assets/images/service/services-details3.png'}
+            alt={'Illustration Services'}
+          />
         </ServicesSection3>
       </Container>
     </Section>

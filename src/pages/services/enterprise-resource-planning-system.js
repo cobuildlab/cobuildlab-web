@@ -14,7 +14,6 @@ import ServicesBannerBackgroundBottom from '../../components/services/ServicesBa
 import styled from 'styled-components';
 
 import ServicesSection3 from '../../components/services/details/ServicesSection3';
-import ServicesSection4 from '../../components/services/details/ServicesSection4';
 
 import Title2 from '../../components/Title2';
 import ServicesSection2 from '../../components/services/details/ServicesSection2';
@@ -23,6 +22,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import Avsee from '../../components/services/details/customer-success-stories/card/Avsee';
 import Pitazo from '../../components/services/details/customer-success-stories/card/Pitazo';
 import Weedmatch from '../../components/services/details/customer-success-stories/card/Weedmatch';
+import ServicesSection4 from '../../components/services/details/ServicesSection4';
 
 const StyledSubTitle = styled.div`
   text-align: center;
@@ -50,16 +50,16 @@ const WebDevelopment = () => (
       <ServicesBannerBackgroundBottom />
       <Container>
         <ServicesHeader
-          title={'Custom Warehouse Management System'}
+          title={'Enterprise Resource Planning System'}
           paragraph={
-            'The Warehouse Management System (WMS) is a solution that handles the warehouse or distribution center of inventory and activities. We develop customizable standalone WMSs and cloud-based WMSs with supply chain modules and integrated ERP systems to streamline all business processes across various departments in an all-in-one, unified solution.'
+            'When you need to plan and manage all the resources and specific activities of your business in the same system, an Enterprise Resource Planning system (ERP) is the tool to develop.'
           }
           img={
             <StaticImage
               src={
-                './../../assets/images/service/card/icono-custom-warehouse-management-system-02.svg'
+                './../../assets/images/service/card/icon-enterprise-resource-planning-system-02.svg'
               }
-              alt="Custom Warehouse Management System"
+              alt="Enterprise Resource Planning System"
             />
           }
         />
@@ -68,13 +68,10 @@ const WebDevelopment = () => (
     <StyledSection2>
       <Container>
         <ServicesSection2
-          title={'What is a Warehouse '}
-          titleOrange={'Management System?'}
+          title={'Get an Enterprise '}
+          titleOrange={'Resource Planning System'}
           text={
-            'A Warehouse Management System is a monitoring application and handles the day-to-day tasks of a warehouse. WMS systems allow companies to control and oversee third-party logistics processes.'
-          }
-          otherText={
-            'We integrate your custom WMS with marketplaces, e-commerce platforms, shipment carriers, and accounting/ERP systems to promote interoperability, flexibility, and scalability.'
+            "You'll achieve perfect coordination between production, finances, communications, supplies, and the distribution of economic and human resources. With ERP software, each department and you can access all systems through one application with a single interface."
           }
         />
       </Container>
@@ -82,13 +79,21 @@ const WebDevelopment = () => (
     <Section>
       <Container>
         <ServicesSection3
-          title={'Why should you  get your own Custom Warehouse Management System?'}
-          otherText={
-            "Since warehouse operations can differ based on the market and the particular business needs of each customer, it's relevant to fulfill each one of them. Such situations always demand customized supply chain solutions. As a software development company, we develop comprehensive WMSs designed to make it easy for providers, wholesalers, manufacturers, and retailers to manage their inventory, automate routine tasks, and obtain complete visibility of their warehouse operations."
-          }>
+          title={'The benefits that an ERP offers you:'}
+          textList={[
+            'It simplifies activity planning and resource allocation.',
+            'Get a better integration of activities, such as accounts payable, inventory control systems, order tracking, and customer databases into a single system.',
+          ]}
+          textList2={[
+            'Support internal communication (horizontal and vertical).',
+            'Reduce the number of tools used and incompatibility problems.',
+            'Facilitate access to information and process management.',
+          ]}>
           <StaticImage
-            src={'./../../assets/images/service/Custom Warehouse Management System-01.svg'}
-            alt={'Illustration Custom Warehouse Management System'}
+            src={
+              './../../assets/images/service/ilustracion-enterprise-resource-planning-system-01.svg'
+            }
+            alt={'Illustration enterprise resource planning system'}
           />
         </ServicesSection3>
       </Container>
@@ -96,27 +101,15 @@ const WebDevelopment = () => (
     <Section>
       <Container>
         <ServicesSection4
-          title={'Features of a WMS'}
-          text={'Here are just a few of the many capabilities included in our custom WMS:'}
+          title={'What are the benefits of a custom transportation management system?'}
           leftText={[
-            'Custom Reports & Dashboards.',
-            'Barcoding / RFID Reader.',
-            'Multi-Locational Tracking.',
-            'Forecasting.',
-            'Inventory Management.',
-            'Order Management.',
-            'Shipping & Logistics Management.',
-            'Purchasing & Receiving.',
+            "Technology will be by your side when making routing decisions regarding quotes, transit time, and carrier's selection.",
+            'Real-time routes monitoring and truck tracking.',
+            'It makes it easy to assign the correct carrier for the merchandise and information based on previous deliveries.',
           ]}
           rightTextList={[
-            'Returns Management.',
-            'Real-Time Synchronization.',
-            'Quality Management.',
-            'Receiving / Putaway Management.',
-            'Alerts/Notifications.',
-            'Activity Tracking.',
-            'Billing & Contract Management.',
-            'Plug-n Play Store/Carrier Integration.',
+            'Generate detailed information with custom reports is perfect for analyzing things and determining discrepancies.',
+            'Growth of your business and improvement of tracking, monitoring, and routing operations.',
           ]}
         />
       </Container>

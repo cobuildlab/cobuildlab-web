@@ -14,15 +14,14 @@ import ServicesBannerBackgroundBottom from '../../components/services/ServicesBa
 import styled from 'styled-components';
 
 import ServicesSection3 from '../../components/services/details/ServicesSection3';
-import ServicesSection4 from '../../components/services/details/ServicesSection4';
 
 import Title2 from '../../components/Title2';
 import ServicesSection2 from '../../components/services/details/ServicesSection2';
 import { StaticImage } from 'gatsby-plugin-image';
 
-import MyVoice from '../../components/services/details/customer-success-stories/card/MyVoice';
-import GeeksAcademy from '../../components/services/details/customer-success-stories/card/GeeksAcademy';
+import Avsee from '../../components/services/details/customer-success-stories/card/Avsee';
 import Pitazo from '../../components/services/details/customer-success-stories/card/Pitazo';
+import Weedmatch from '../../components/services/details/customer-success-stories/card/Weedmatch';
 
 const StyledSubTitle = styled.div`
   text-align: center;
@@ -38,7 +37,7 @@ const StyledContainer = styled(Container)`
   padding-bottom: 75px;
 `;
 
-const CustomLearningManagmentSystem = () => (
+const WebDevelopment = () => (
   <Layout>
     <SeoMetaTags title="Services" description="Privacy Policy for the Cobuild Lab" />
     <Hero>
@@ -50,16 +49,16 @@ const CustomLearningManagmentSystem = () => (
       <ServicesBannerBackgroundBottom />
       <Container>
         <ServicesHeader
-          title={'Custom Learning Management System'}
+          title={'Material Requirements Planning System'}
           paragraph={
-            'When you need to create interactive e-learning content that you can integrate with other company systems (such as CRMs), with customized reports or gamification, a Custom Learning Management system is the way to go.'
+            'A Material Requirement Planning System allows you to plan and schedule tasks related to your production more efficiently and effectively. Custom software lets you automate manufacturing activities as well as the issuing of delivery and purchase orders.'
           }
           img={
             <StaticImage
               src={
-                './../../assets/images/service/card/iconos-Small-Business-Custom-Learning-Management-System.svg'
+                './../../assets/images/service/card/iconos-material-requirements-planning-system-02.svg'
               }
-              alt="Custom Learning Management System"
+              alt="Material Requirements Planning System"
             />
           }
         />
@@ -68,10 +67,13 @@ const CustomLearningManagmentSystem = () => (
     <StyledSection2>
       <Container>
         <ServicesSection2
-          title={'Get a Custom Learning '}
-          titleOrange={'Management System\n'}
+          title={'It’s time for you to '}
+          titleOrange={'automate your processes'}
           text={
-            'With a CLMS, you can gather all your learning materials in one place and make them available to all learners in just one click. You can even create different groups of learners according to their functions or job positions.'
+            "Controlling inventories, elaborating bills of materials, administrative tasks, calculating the time in which purchase orders should be issued, will become much easier and faster once you start using a software product tailored to your company's needs."
+          }
+          otherText={
+            'We will build for you a top-notch Custom Material Requirement Planning System that allows you to reduce production costs, save money, avoid surplus inventory and optimize processes.'
           }
         />
       </Container>
@@ -79,30 +81,23 @@ const CustomLearningManagmentSystem = () => (
     <Section>
       <Container>
         <ServicesSection3
-          title={'Benefits of a Custom Learning Management System'}
+          title={'What are the benefits of a Material Requirement Planning System?'}
           textList={[
-            'Business performance improvement.',
-            'Features tailored.',
-            'Flexible, scalable, and futureproof.',
+            "Have up-to-date information on your company's production at all times to carry out all work orders.",
+            'Reduce or even eliminate overtime as well as  temporary hires for production tasks.',
           ]}
-          textList2={['Unlimited learners.', 'e-Learning management automation.']}>
+          textList2={[
+            'Improve the relationship with your customers and suppliers, by complying with them in a timely manner.',
+            'Keep inventory at optimal levels and decrease inventory costs.',
+            'Better manage supplier deliveries and Increase your company’s overall productivity.',
+          ]}>
           <StaticImage
             src={
-              './../../assets/images/service/card/iconos-custom-learning-management-system-Ilustration-02.svg'
+              './../../assets/images/service/ilustracion-material-requirements-planning-system.svg'
             }
-            alt={'Illustration Custom Learning Management System'}
+            alt="Illustration Material Requirements Planning System"
           />
         </ServicesSection3>
-      </Container>
-    </Section>
-    <Section>
-      <Container>
-        <ServicesSection4
-          title={'You need your own Custom Learning Management System'}
-          text={
-            'In the case of online teaching platforms and employee training systems, a custom LMS might be the only option for your business for security concerns, copyright protection and the need for compliance.'
-          }
-        />
       </Container>
     </Section>
     <StyledSection2>
@@ -111,9 +106,9 @@ const CustomLearningManagmentSystem = () => (
           <Title2>Customer Success Stories</Title2>
         </StyledSubTitle>
         <Columns isCentered>
-          <GeeksAcademy />
+          <Avsee />
           <Pitazo />
-          <MyVoice />
+          <Weedmatch />
         </Columns>
       </StyledContainer>
     </StyledSection2>
@@ -125,4 +120,4 @@ const CustomLearningManagmentSystem = () => (
   </Layout>
 );
 
-export default CustomLearningManagmentSystem;
+export default WebDevelopment;

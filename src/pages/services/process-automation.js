@@ -59,7 +59,7 @@ const ProcessAutomation = () => (
               src={
                 './../../assets/images/service/card/iconos_Process-Automation_Main-Services-Web-Design_Logistic-Process-Automation_Logistic-Process-Automation.svg'
               }
-              alt=""
+              alt="Process Automation"
             />
           }
         />
@@ -87,7 +87,10 @@ const ProcessAutomation = () => (
             'Maximum visibility improving decision-making.',
             'Solutions for critical needs of the industry.',
           ]}>
-          <StaticImage src={'./../../assets/images/service/process-automation.png'} />
+          <StaticImage
+            src={'./../../assets/images/service/process-automation.png'}
+            alt={'Illustration Process Automation'}
+          />
         </ServicesSection3>
       </Container>
     </Section>

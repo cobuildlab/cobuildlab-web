@@ -54,7 +54,10 @@ const IotDevelopment = () => (
             'We help your business identify vulnerabilities and assess business risk by meeting HIPAA compliance, GDPR compliance, and other security compliance mandates more efficiently and effectively.'
           }
           img={
-            <StaticImage src={'./../../assets/images/service/card/iconos-security.png'} alt="" />
+            <StaticImage
+              src={'./../../assets/images/service/card/iconos-security.png'}
+              alt="Security Compliance"
+            />
           }
         />
       </Container>
@@ -79,6 +82,7 @@ const IotDevelopment = () => (
           }>
           <StaticImage
             src={'./../../assets/images/service/ilustracion-security-and-compliance.png'}
+            alt={'Illustration Security Compliance'}
           />
         </ServicesSection3>
       </Container>
