@@ -62,15 +62,9 @@ By implementing this technology your company improves and increases its efficien
 
 <br>
 
-<youtube-video id="Hbsq2FAlXU"></youtube-video>
+<youtube-video id="tUSNJQkjM-Y"></youtube-video>
 
 <br>
 
 **Blockchain** is undoubtedly important to our society. It has had an impact on today's industries never seen before. Each of these benefits is a grain of sand to make your company or business bigger every day, it will make life simpler and safer, changing the way personal information is stored and how goods and services are transacted. And as we have already mentioned, it can be applied to any business model in the world, such as manufacturing, retail, forwarding, healthcare, real estate, and so on. So start today in the growing <a target="_blank" href="https://www.cobuildlab.com/blog/blockchain-revolution-in-business-world/"> world of blockchain. </a>
-
-<br>
-
-<youtube-video id="tUSNJQkjM-Y"></youtube-video>
-
-<br>
 
