@@ -205,7 +205,7 @@ const Services = () => {
                         src={
                           './../assets/images/service/card/icon-custom-warehouse-management-system-02.svg'
                         }
-                        alt="Human Resources"
+                        alt="Custom Warehouse"
                       />
                     }
                   />
@@ -221,7 +221,7 @@ const Services = () => {
                         src={
                           './../assets/images/service/card/iconos-material-requirements-planning-system-02.svg'
                         }
-                        alt="Human Resources"
+                        alt="Material Requirements"
                       />
                     }
                   />
@@ -237,7 +237,7 @@ const Services = () => {
                         src={
                           './../assets/images/service/card/icon-custom-transportation-management-system-02.svg'
                         }
-                        alt="Human Resources"
+                        alt="Custom Transportation"
                       />
                     }
                   />
@@ -253,7 +253,7 @@ const Services = () => {
                         src={
                           './../assets/images/service/card/icon-enterprise-resource-planning-system-02.svg'
                         }
-                        alt="Human Resources"
+                        alt="Enterprise Resource"
                       />
                     }
                   />
@@ -267,7 +267,7 @@ const Services = () => {
                         src={
                           './../assets/images/service/card/icon-web-accessibility-compliance.svg'
                         }
-                        alt="Human Resources"
+                        alt="Web Accessibility"
                       />
                     }
                   />
