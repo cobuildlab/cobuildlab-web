@@ -56,7 +56,7 @@ const AppDevelopment = () => (
           img={
             <StaticImage
               src={'./../../assets/images/service/card/iconos_Robotic-Process-Automation.svg'}
-              alt=""
+              alt="Robotic Process Automation"
             />
           }
         />
@@ -88,7 +88,10 @@ const AppDevelopment = () => (
             'Can be updated.',
             'Eliminate paper buildup.',
           ]}>
-          <StaticImage src={'./../../assets/images/service/services-details3.png'} />
+          <StaticImage
+            src={'./../../assets/images/service/services-details3.png'}
+            alt={'Illustration Services'}
+          />
         </ServicesSection3>
       </Container>
     </Section>

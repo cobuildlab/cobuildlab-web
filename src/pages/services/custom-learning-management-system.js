@@ -59,7 +59,7 @@ const CustomLearningManagmentSystem = () => (
               src={
                 './../../assets/images/service/card/iconos-Small-Business-Custom-Learning-Management-System.svg'
               }
-              alt=""
+              alt="Custom Learning Management System"
             />
           }
         />
@@ -90,6 +90,7 @@ const CustomLearningManagmentSystem = () => (
             src={
               './../../assets/images/service/card/iconos-custom-learning-management-system-Ilustration-02.svg'
             }
+            alt={'Illustration Custom Learning Management System'}
           />
         </ServicesSection3>
       </Container>

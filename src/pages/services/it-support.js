@@ -57,7 +57,7 @@ const WebDevelopment = () => (
           img={
             <StaticImage
               src={'./../../assets/images/service/card/iconos-Main-Services-It-Support.svg'}
-              alt=""
+              alt="It Support"
             />
           }
         />
@@ -87,7 +87,10 @@ const WebDevelopment = () => (
             'Cloud infrastructure and applications.',
             'Save time avoiding multiple vendors.',
           ]}>
-          <StaticImage src={'./../../assets/images/service/services-details3.png'} />
+          <StaticImage
+            src={'./../../assets/images/service/services-details3.png'}
+            alt={'Illustration Services'}
+          />
         </ServicesSection3>
       </Container>
     </Section>

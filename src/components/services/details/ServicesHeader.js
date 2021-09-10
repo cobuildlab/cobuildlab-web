@@ -24,18 +24,24 @@ const StyledImage = styled.div`
   margin-left: 40px;
 `;
 
-const ServicesHeader = ({ title, paragraph, paragraph2, img }) => {
+const ServicesHeader = ({ title, paragraph, paragraph2, img, careers }) => {
   return (
     <Columns>
       <Column isSize={{ mobile: 12, desktop: 7 }}>
         <ServicesContent>
           <ServiceTitle>{title}</ServiceTitle>
-          <Paragraph>
-            {paragraph}
-            <br />
-            <br />
-          </Paragraph>
-          <Paragraph2>{paragraph2}</Paragraph2>
+          {!careers ? (
+            <>
+              <Paragraph>
+                {paragraph}
+                <br />
+                <br />
+              </Paragraph>
+              <Paragraph2>{paragraph2}</Paragraph2>
+            </>
+          ) : (
+            <Paragraph dangerouslySetInnerHTML={{ __html: paragraph }}></Paragraph>
+          )}
         </ServicesContent>
       </Column>
       <Column isHidden="mobile" isSize={5}>
@@ -49,6 +55,7 @@ ServicesHeader.defaultProps = {
   title: '',
   paragraph: '',
   paragraph2: '',
+  careers: false,
 };
 
 ServicesHeader.propTypes = {
@@ -56,6 +63,7 @@ ServicesHeader.propTypes = {
   paragraph: PropTypes.string,
   paragraph2: PropTypes.string,
   img: PropTypes.element.isRequired,
+  careers: PropTypes.bool,
 };
 
 export default ServicesHeader;

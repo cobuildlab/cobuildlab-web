@@ -56,7 +56,7 @@ const WebDevelopment = () => (
           img={
             <StaticImage
               src={'./../../assets/images/service/card/iconos-Main-Services-Agile.svg'}
-              alt=""
+              alt="Custom Project Management System"
             />
           }
         />
@@ -87,7 +87,10 @@ const WebDevelopment = () => (
             'Multi Communication with clients and the team.',
             'Productivity reports, team time reports.',
           ]}>
-          <StaticImage src={'./../../assets/images/service/services-details3.png'} />
+          <StaticImage
+            src={'./../../assets/images/service/services-details3.png'}
+            alt={'Illustration Custom Project Management System'}
+          />
         </ServicesSection3>
       </Container>
     </Section>

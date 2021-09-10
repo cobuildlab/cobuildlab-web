@@ -56,7 +56,7 @@ const AppDevelopment = () => (
           img={
             <StaticImage
               src={'./../../assets/images/service/card/iconos-Main-Services-APP-Development.svg'}
-              alt=""
+              alt="App Development"
             />
           }
         />

@@ -9,7 +9,7 @@ import Contact from './../../../components/2020/HomePageContact';
 import ClientSearch from '../../../components/blog-ai/search/client-search';
 
 const Financing = ({ data }) => {
-  const { post } = data.allPost8Base;
+  const { post } = data['allPostsList8Base'];
 
   const options = {
     indexStrategy: `Prefix match`,
@@ -42,7 +42,7 @@ Financing.propTypes = {
 
 export const pageQuery = graphql`
   query {
-    allPost8Base(
+    allPostsList8Base(
       limit: 20
       filter: { category: { regex: "/financing/" } }
       sort: { fields: createdAt, order: DESC }
