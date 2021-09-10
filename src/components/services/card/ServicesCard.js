@@ -7,107 +7,78 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const Title = styled(H4)`
-  margin-top: 60px;
+  margin-top: -5px;
   text-align: right;
   font-weight: 100;
   font-family: 'Lato-Light' !important;
-  font-size: calc(38px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
-`;
-
-const CardStyled = styled(Card)`
-  max-height: 530px;
-  min-height: 530px;
-  max-width: 600px;
-  box-shadow: 0px 10px 20px #0000001a;
-  background: rgba(255, 255, 255, 0.5);
+  font-size: calc(16px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
+  width: 65%;
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+  font-weight: bold;
+  @media screen and (max-width: 768px) {
+    width: 64%;
+  }
 `;
 
 const CardStyledThree = styled(Card)`
-  max-height: 611px;
-  min-height: 611px;
-  max-width: 600px;
+  max-height: 155px;
+  min-height: 155px;
   box-shadow: 0px 10px 20px #0000001a;
   background: rgba(255, 255, 255, 0.5);
 `;
 
 const Image = styled.div`
-  width: 287px !important;
-  height: 276px !important;
+  width: 124px !important;
+  height: 182px !important;
   margin-top: 12px;
   margin-left: 21px;
   & img {
     padding-top: 14px !important;
   }
+  @media screen and (max-width: 800px) {
+    width: 100px !important;
+    margin-top: 5px;
+    margin-left: 12px;
+  }
 `;
 
 const Container = styled.div`
-  margin-top: -50px;
-  padding-right: 36px;
-`;
-
-const Paragraph = styled.p`
-  font-size: 17px;
-  font-family: 'Lato-bold' !important;
-  text-align: left;
-  padding-left: 28px;
-  color: #264a60;
-  padding-right: 24px;
-  margin-top: 20px;
+  margin-top: -160px;
+  padding-right: 10px;
 `;
 
 const Readmore = styled.p`
-  font-size: 17px;
+  font-size: 15px;
   text-align: right;
   padding-left: 10px;
   color: rgb(231, 108, 41);
   padding-right: 10px;
   position: absolute;
-  right: 29px;
+  right: 0px;
   cursor: pointer;
-  font-family: Lato-bold !important;
-  bottom: 18px;
+  bottom: -5px;
 `;
 
-const ServicesCard = ({ title, subtitle, cover, to, image, three }) => {
+const ServicesCard = ({ title, subtitle, to, image }) => {
   const handleClick = useCallback(() => {
     navigate(to);
   }, [to]);
   return (
     <>
-      <Column isSize={{ mobile: 12, desktop: three ? 4 : 5 }}>
-        {three ? (
-          <CardStyledThree>
-            <Image>{image}</Image>
-            <Container>
-              <Title>
-                {title}
-                <br />
-                {subtitle}
-              </Title>
-            </Container>
-            <Paragraph>
-              {cover}
-              {'.'}
-            </Paragraph>
-            <Readmore onClick={handleClick}>Read More</Readmore>
-          </CardStyledThree>
-        ) : (
-          <CardStyled>
-            <Image>{image}</Image>
-            <Container>
-              <Title>
-                {title}
-                <br />
-                {subtitle}
-              </Title>
-            </Container>
-            <Paragraph>
-              {cover}
-              {'.'}
-            </Paragraph>
-            <Readmore onClick={handleClick}>Read More</Readmore>
-          </CardStyled>
-        )}
+      <Column isSize={{ mobile: 12, tablet: 6, desktop: 4 }}>
+        <CardStyledThree>
+          <Image>{image}</Image>
+          <Container>
+            <Title>
+              {title}
+              <br />
+              {subtitle}
+            </Title>
+          </Container>
+          <Readmore onClick={handleClick}>Read More</Readmore>
+        </CardStyledThree>
       </Column>
     </>
   );
@@ -116,10 +87,8 @@ const ServicesCard = ({ title, subtitle, cover, to, image, three }) => {
 ServicesCard.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
-  cover: PropTypes.string.isRequired,
   to: PropTypes.string.isRequired,
   image: PropTypes.element.isRequired,
-  three: PropTypes.bool.isRequired,
 };
 
 export default ServicesCard;

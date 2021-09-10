@@ -49,7 +49,7 @@ const AppDevelopment = () => (
       <ServicesBannerBackgroundBottom />
       <Container>
         <ServicesHeader
-          title={`Low Code or <br/>No Code Development`}
+          title={`Low Code or No Code Development`}
           paragraph={
             "Time is the most valuable asset to make your company more productive and meet your customers' current demands.\n"
           }
@@ -59,7 +59,7 @@ const AppDevelopment = () => (
           img={
             <StaticImage
               src={'./../../assets/images/service/card/iconos-robotic-process-automation.png'}
-              alt=""
+              alt="Low Code or No Code Development"
             />
           }
         />
@@ -70,7 +70,7 @@ const AppDevelopment = () => (
         <ServicesSection2
           title={'Low code and no-code tools'}
           titleOrange={'for your company’s improvement'}
-          text={'Low code and no-code tools for your company’s improvement\n'}
+          text={'Low code and no-code tools for your company’s improvement.\n'}
           otherText={
             "When your customer's demands change, competition increases. \n" +
             '\n' +
@@ -89,7 +89,10 @@ const AppDevelopment = () => (
             'Build multi-platform apps at the same time.',
           ]}
           textList2={['Time-saving and less-code.', 'Reduced testing, and developers involved.']}>
-          <StaticImage src={'./../../assets/images/service/services-details3.png'} />
+          <StaticImage
+            src={'./../../assets/images/service/services-details3.png'}
+            alt={'Illustration Services'}
+          />
         </ServicesSection3>
       </Container>
     </Section>

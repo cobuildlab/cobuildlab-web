@@ -248,7 +248,7 @@ ElPitazo.propTypes = {
 
 export const pageQuery = graphql`
   query {
-    seoImages: file(relativePath: { eq: "customers/pitazo.jpg" }) {
+    seoImages: file(relativePath: { eq: "customers/pitazo-1.jpg" }) {
       childImageSharp {
         resize(width: 1200, height: 1200) {
           width

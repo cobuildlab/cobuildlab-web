@@ -76,7 +76,7 @@ const ServicesSection2 = ({
             </Column>
           ) : null}
 
-          {Array.isArray(listLeft) ? (
+          {Array.isArray(listLeft) && listLeft.length > 0 ? (
             <>
               <Columns>
                 <Column isSize={{ mobile: 12, desktop: 4 }} isOffset={2}>

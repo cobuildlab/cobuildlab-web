@@ -58,7 +58,7 @@ const IotDevelopment = () => (
           img={
             <StaticImage
               src={'./../../assets/images/service/card/iconos_Internet-of-the-thing-IoT.png'}
-              alt=""
+              alt="IoT Development"
             />
           }
         />
@@ -89,7 +89,10 @@ const IotDevelopment = () => (
             'strategies to seamlessly manage your business processes at reduced overhead\n' +
             'costs.'
           }>
-          <StaticImage src={'./../../assets/images/service/IoT-ilustracion.png'} />
+          <StaticImage
+            src={'./../../assets/images/service/IoT-ilustracion.png'}
+            alt={'Illustration IoT'}
+          />
         </ServicesSection3>
       </Container>
     </Section>

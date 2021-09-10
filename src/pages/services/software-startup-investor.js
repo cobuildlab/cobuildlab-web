@@ -57,7 +57,7 @@ const AppDevelopment = () => (
           img={
             <StaticImage
               src={'./../../assets/images/service/card/iconos-Technical-Analysis.svg'}
-              alt=""
+              alt="Technical Analysis For Software Startup Investors"
             />
           }
         />
@@ -86,7 +86,10 @@ const AppDevelopment = () => (
             'Check on the status of certificates, backups, encryptions.',
             'Ensure cybersecurity at a medium level.',
           ]}>
-          <StaticImage src={'./../../assets/images/service/services-details3.png'} />
+          <StaticImage
+            src={'./../../assets/images/service/services-details3.png'}
+            alt={'Illustration Services'}
+          />
         </ServicesSection3>
       </Container>
     </Section>

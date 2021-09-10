@@ -20,7 +20,7 @@ const LeadVolt = () => {
     <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} key="LeadVolt">
       <CardStyled>
         <Image>
-          <StaticImage src={'./../../../../assets/images/customers/leadvolt-logo.jpg'} alt="" />
+          <StaticImage src={'./../../../../../assets/images/customers/leadvolt-logo.jpg'} alt="" />
         </Image>
         <ParagraphDivStyled>
           <DivTagStyled>

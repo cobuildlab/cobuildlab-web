@@ -59,7 +59,7 @@ const IotDevelopment = () => (
           img={
             <StaticImage
               src={'./../../assets/images/service/card/iconos_artificial-inteligence.png'}
-              alt=""
+              alt="Artificial Intelligence Development"
             />
           }
         />
@@ -93,7 +93,7 @@ const IotDevelopment = () => (
             'machine learning algorithms that solve business problems in areas including\n' +
             'customer experience and supply chain.'
           }>
-          <StaticImage src={'./../../assets/images/service/AI.png'} />
+          <StaticImage src={'./../../assets/images/service/AI.png'} alt={'Illustration AI'} />
         </ServicesSection3>
       </Container>
     </Section>

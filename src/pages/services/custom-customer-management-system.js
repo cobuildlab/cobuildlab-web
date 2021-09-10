@@ -58,7 +58,7 @@ const CustomCustomerManagementSystem = () => (
               src={
                 './../../assets/images/service/card/iconos-Small-Business-Custom-Customer-Management-System.svg'
               }
-              alt=""
+              alt="Customer Relationship Management System"
             />
           }
         />
@@ -95,7 +95,10 @@ const CustomCustomerManagementSystem = () => (
             'Process Report & Analysis.',
             'Real-Time Multi-Channel Communication.',
           ]}>
-          <StaticImage src={'./../../assets/images/service/services-details3.png'} />
+          <StaticImage
+            src={'./../../assets/images/service/services-details3.png'}
+            alt={'Illustration Services'}
+          />
         </ServicesSection3>
       </Container>
     </Section>

@@ -21,6 +21,9 @@ export const Image = styled.div`
     height: 240px !important;
     margin-top: 30px !important;
   }
+  .gatsby-image-wrapper {
+    position: initial !important;
+  }
 `;
 
 export const Container = styled.div`
