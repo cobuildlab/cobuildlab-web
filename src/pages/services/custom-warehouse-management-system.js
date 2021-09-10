@@ -57,7 +57,7 @@ const WebDevelopment = () => (
           img={
             <StaticImage
               src={
-                './../../assets/images/service/card/icono-custom-warehouse-management-system-02.svg'
+                './../../assets/images/service/card/icon-custom-warehouse-management-system-02.svg'
               }
               alt="Custom Warehouse Management System"
             />
