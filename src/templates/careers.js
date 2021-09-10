@@ -29,11 +29,6 @@ const StyledSection2 = styled(Section)`
  * @returns {JSX.Element} - the resulting react component
  * @constructor
  */
-
-/**
- * @param object
- * @param object.pageContext
- */
 function CareersTemplate({ pageContext }) {
   const { career } = pageContext;
   const { title, description, jobProfile, jobDescription } = career;
