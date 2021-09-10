@@ -31,8 +31,9 @@ const Careers = ({ data }) => {
       <>
         <Column isSize={{ desktop: 4, tablet: 4, mobile: 12 }} key={i}>
           <CareersCard
-            to={i + 1}
+            to={node.slug}
             title={node.title}
+            time={node.time}
             readingTime={'3 min'}
             modality={node.modality}
             createdAt={node.createdAt}
@@ -113,6 +114,7 @@ export const pageQuery = graphql`
         description
         modality
         time
+        slug
         createdAt
       }
     }

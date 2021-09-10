@@ -139,6 +139,7 @@ module.exports = {
                 modality
                 time
                 active
+                slug
                 createdAt
               }
             }
