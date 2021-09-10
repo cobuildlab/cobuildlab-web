@@ -58,6 +58,7 @@ const ServicesSection2 = ({
   listLeft,
   listRight,
   otherText,
+  careers,
 }) => {
   return (
     <>
@@ -68,7 +69,13 @@ const ServicesSection2 = ({
               {title} <TextOrange>{titleOrange}</TextOrange>
             </Typography>
           </StyledSubTitle>
-          {text !== '' ? <ParagraphText>{text}</ParagraphText> : null}
+          {text !== '' ? (
+            !careers ? (
+              <ParagraphText>{text}</ParagraphText>
+            ) : (
+              <ParagraphText dangerouslySetInnerHTML={{ __html: text }}></ParagraphText>
+            )
+          ) : null}
 
           {textList !== '' ? (
             <Column isSize={{ mobile: 12, desktop: 10 }} isOffset={2}>
@@ -115,6 +122,7 @@ ServicesSection2.defaultProps = {
   listLeft: [],
   listRight: [],
   otherText: '',
+  careers: false,
 };
 
 ServicesSection2.propTypes = {
@@ -125,6 +133,7 @@ ServicesSection2.propTypes = {
   listLeft: PropTypes.array,
   listRight: PropTypes.array,
   otherText: PropTypes.string,
+  careers: PropTypes.bool,
 };
 
 export default ServicesSection2;

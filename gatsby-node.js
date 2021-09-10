@@ -88,17 +88,17 @@ exports.createPages = ({ graphql, actions }) => {
             },
           });
           // AMP
-          // createPage({
-          //   path: `${post.node.fields.slug}amp/`,
-          //   component: path.resolve(
-          //     `src/templates/${String(post.node.frontmatter.template)}.amp.js`,
-          //   ),
-          //   context: {
-          //     slug: post.node.fields.slug,
-          //     previous,
-          //     next,
-          //   },
-          // });
+          createPage({
+            path: `${post.node.fields.slug}amp/`,
+            component: path.resolve(
+              `src/templates/${String(post.node.frontmatter.template)}.amp.js`,
+            ),
+            context: {
+              slug: post.node.fields.slug,
+              previous,
+              next,
+            },
+          });
         });
       }),
     );
@@ -109,7 +109,7 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           query BasePost {
-            allPost8Base {
+            allPostsList8Base {
               post: nodes {
                 id
                 title
@@ -155,7 +155,7 @@ exports.createPages = ({ graphql, actions }) => {
           return reject(result.errors);
         }
         // Create blog posts pages AI.
-        const posts = result.data.allPost8Base.post;
+        const posts = result.data.allPostsList8Base.post;
         _.each(posts, (post, index) => {
           //Convert Markdown to html
           unified()
@@ -189,7 +189,55 @@ exports.createPages = ({ graphql, actions }) => {
       }),
     );
   });
-  return Promise.all([promise1, promise2]);
+
+  let promise3 = new Promise((resolve, reject) => {
+    resolve(
+      graphql(
+        `
+          query BasePost {
+            allCareersList8Base {
+              careers: nodes {
+                title
+                description
+                profits
+                jobProfile
+                jobDescription
+                active
+                modality
+                time
+                createdAt
+              }
+            }
+          }
+        `,
+      ).then((result) => {
+        if (result.errors) {
+          return reject(result.errors);
+        }
+        // Create blog posts pages AI.
+        const careers = result.data.allCareersList8Base.careers;
+        _.each(careers, (career, index) => {
+          createPage({
+            path: `/careers/${index + 1}`,
+            component: path.resolve(`./src/templates/careers.js`),
+            context: {
+              career,
+            },
+          });
+          // AMP
+          /*createPage({
+            path: `/blog/ai/${post.slug}amp/`,
+            component: path.resolve(`./src/templates/blog-ai.amp.js`),
+            context: {
+              career,
+            },
+          });*/
+        });
+      }),
+    );
+  });
+
+  return Promise.all([promise1, promise2, promise3]);
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

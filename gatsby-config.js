@@ -128,6 +128,20 @@ module.exports = {
               }
               count
             }
+            careersList {
+              items {
+                id
+                title
+                description
+                profits
+                jobProfile
+                jobDescription
+                modality
+                time
+                active
+                createdAt
+              }
+            }
           }
         `,
       },
