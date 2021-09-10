@@ -34,22 +34,7 @@ const Careers = ({ data }) => {
             to={i + 1}
             title={node.title}
             readingTime={'3 min'}
-            createdAt={node.createdAt}
-          />
-        </Column>
-        <Column isSize={{ desktop: 4, tablet: 4, mobile: 12 }} key={i}>
-          <CareersCard
-            to={i + 1}
-            title={node.title}
-            readingTime={'3 min'}
-            createdAt={node.createdAt}
-          />
-        </Column>
-        <Column isSize={{ desktop: 4, tablet: 4, mobile: 12 }} key={i}>
-          <CareersCard
-            to={i + 1}
-            title={node.title}
-            readingTime={'3 min'}
+            modality={node.modality}
             createdAt={node.createdAt}
           />
         </Column>
@@ -63,6 +48,24 @@ const Careers = ({ data }) => {
       <CareersHero />
       <Section>
         <Container>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+          </p>
+          <br />
+          <br />
           <Columns isMultiline>
             <Column isSize={{ desktop: 2, tablet: 2 }} isHidden={'mobile'}>
               <H6>Teams</H6>

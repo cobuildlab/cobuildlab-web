@@ -7,7 +7,7 @@
     "url": "https://github.com/cobuildlab/cobuildlab-web/issues"
   },
   "dependencies": {
-    "@cobuildlab/gatsby-source-8base": "^1.0.5",
+    "@cobuildlab/gatsby-source-8base": "^1.0.6",
     "@react-pdf/renderer": "1.6.9",
     "assert": "^2.0.0",
     "bloomer": "0.6.5",

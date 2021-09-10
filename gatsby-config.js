@@ -100,7 +100,7 @@ module.exports = {
       },
     },
     {
-      resolve: require.resolve(`./../gatsby-source-8base`),
+      resolve: `@cobuildlab/gatsby-source-8base`,
       options: {
         url: process.env.URL_8BASE,
         apiToken: process.env.TOKEN_8BASE_API,

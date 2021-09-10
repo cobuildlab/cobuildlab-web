@@ -31,12 +31,12 @@ const StyledSection2 = styled(Section)`
  */
 
 /**
- * @param root0
- * @param root0.pageContext
+ * @param object
+ * @param object.pageContext
  */
 function CareersTemplate({ pageContext }) {
   const { career } = pageContext;
-  const { title, description, profits, jobProfile, jobDescription } = career;
+  const { title, description, jobProfile, jobDescription } = career;
 
   return (
     <Layout>
@@ -53,24 +53,20 @@ function CareersTemplate({ pageContext }) {
             title={title}
             paragraph={description}
             img={<StaticImage src={'./../resources/2020/home/coubuild-v.svg'} alt="" />}
+            careers={true}
           />
         </Container>
       </Section>
       <StyledSection2>
         <Container>
-          <ServicesSection2 title={'Descripcion del Cargo'} text={jobDescription} />
+          <ServicesSection2 title={'Job description'} text={jobDescription} careers={true} />
         </Container>
       </StyledSection2>
       <Section>
         <Container>
-          <CareersSection title={'Perfil del Puesto'} otherText={jobProfile} />
+          <CareersSection title={'Why work at Cobuild Lab?'} otherText={jobProfile} />
         </Container>
       </Section>
-      <StyledSection2>
-        <Container>
-          <ServicesSection2 title={'Beneficios'} text={profits} />
-        </Container>
-      </StyledSection2>
       <Section>
         <Container>
           <CareersSection2 />
