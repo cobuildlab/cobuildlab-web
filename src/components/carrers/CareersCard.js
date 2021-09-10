@@ -45,7 +45,7 @@ CareersCard.defaultProps = {
 };
 
 CareersCard.propTypes = {
-  to: PropTypes.number.isRequired,
+  to: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   modality: PropTypes.string,
   time: PropTypes.string,

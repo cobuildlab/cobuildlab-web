@@ -205,6 +205,7 @@ exports.createPages = ({ graphql, actions }) => {
                 active
                 modality
                 time
+                slug
                 createdAt
               }
             }
@@ -218,20 +219,20 @@ exports.createPages = ({ graphql, actions }) => {
         const careers = result.data.allCareersList8Base.careers;
         _.each(careers, (career, index) => {
           createPage({
-            path: `/careers/${index + 1}`,
+            path: `/careers/${career.slug}`,
             component: path.resolve(`./src/templates/careers.js`),
             context: {
               career,
             },
           });
           // AMP
-          /*createPage({
-            path: `/blog/ai/${post.slug}amp/`,
-            component: path.resolve(`./src/templates/blog-ai.amp.js`),
+          createPage({
+            path: `/careers/${career.slug}amp/`,
+            component: path.resolve(`./src/templates/careers.amp.js`),
             context: {
               career,
             },
-          });*/
+          });
         });
       }),
     );
