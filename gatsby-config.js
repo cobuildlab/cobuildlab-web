@@ -115,6 +115,7 @@ module.exports = {
                 slug
                 tag
                 description
+                category
                 createdAt
                 readingTime
                 imageUrl{
@@ -126,6 +127,21 @@ module.exports = {
                 }
               }
               count
+            }
+            careersList {
+              items {
+                id
+                title
+                description
+                profits
+                jobProfile
+                jobDescription
+                modality
+                time
+                active
+                slug
+                createdAt
+              }
             }
           }
         `,

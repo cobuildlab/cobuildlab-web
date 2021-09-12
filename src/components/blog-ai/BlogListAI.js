@@ -4,7 +4,7 @@ import { Columns, Column } from 'bloomer';
 import BlogPostCard from './BlogPostCard';
 import image from './../../pages/blog/media/ai/pexels-george-morina-4960464.jpg';
 
-const BlogList = ({ data }) => {
+const BlogListAI = ({ data }) => {
   const items = data.map((node) => (
     <Column isSize={{ desktop: 4, tablet: 6, mobile: 12 }} key={node.title}>
       <BlogPostCard
@@ -22,8 +22,8 @@ const BlogList = ({ data }) => {
   return <Columns isMultiline>{items}</Columns>;
 };
 
-BlogList.propTypes = {
+BlogListAI.propTypes = {
   data: PropTypes.array.isRequired,
 };
 
-export default BlogList;
+export default BlogListAI;

@@ -56,7 +56,7 @@ const WebDevelopment = () => (
           img={
             <StaticImage
               src={'./../../assets/images/service/card/iconos-Main-Services-Agile.svg'}
-              alt=""
+              alt="Custom Project Management System"
             />
           }
         />
@@ -77,10 +77,21 @@ const WebDevelopment = () => (
       <Container>
         <ServicesSection3
           title={'Manage everything!'}
-          otherText={
-            "Tasks, reminders, calendars, to-do lists for you and your teams, all in one place! It's not often that a task jumps directly from open to close. Add custom workflows for your spaces and projects to track the progress of tasks."
-          }
-        />
+          textList={[
+            'Full control and access to software.',
+            'Customizable data.',
+            'Manage customers, suppliers, prospects & teamworks (people).',
+          ]}
+          textList2={[
+            'Manage tasks and task groups (execution).',
+            'Multi Communication with clients and the team.',
+            'Productivity reports, team time reports.',
+          ]}>
+          <StaticImage
+            src={'./../../assets/images/service/services-details3.png'}
+            alt={'Illustration Custom Project Management System'}
+          />
+        </ServicesSection3>
       </Container>
     </Section>
     <Section>

@@ -20,7 +20,7 @@ const Mama = () => {
     <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} key="Mama">
       <CardStyled>
         <Image>
-          <StaticImage src={'./../../../../assets/images/customers/mama-logo.jpg'} alt="" />
+          <StaticImage src={'./../../../../../assets/images/customers/mama-logo.jpg'} alt="" />
         </Image>
         <ParagraphDivStyled>
           <DivTagStyled>

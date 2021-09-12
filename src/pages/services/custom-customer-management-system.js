@@ -58,7 +58,7 @@ const CustomCustomerManagementSystem = () => (
               src={
                 './../../assets/images/service/card/iconos-Small-Business-Custom-Customer-Management-System.svg'
               }
-              alt=""
+              alt="Customer Relationship Management System"
             />
           }
         />
@@ -89,10 +89,17 @@ const CustomCustomerManagementSystem = () => (
       <Container>
         <ServicesSection3
           title={'Ensuring your key customer-centric strategies\n'}
-          otherText={
-            'Improve your teamwork communication with your consumers. It’s more critical than ever for marketing and sales teams to function as a cohesive unit, and CRM systems are the perfect solution to help scaling organizations achieve that goal.'
-          }
-        />
+          textList={['Productivity Improving.', 'Increase Sales.', 'Saving Time.']}
+          textList2={[
+            'Tasks Automation.',
+            'Process Report & Analysis.',
+            'Real-Time Multi-Channel Communication.',
+          ]}>
+          <StaticImage
+            src={'./../../assets/images/service/services-details3.png'}
+            alt={'Illustration Services'}
+          />
+        </ServicesSection3>
       </Container>
     </Section>
     <Section>

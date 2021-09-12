@@ -66,7 +66,7 @@ const DigitalTransformation = () => (
               src={
                 './../../assets/images/service/card/iconos_Logistic-Digital-Transformation_Logistic-Digital-Transformation.svg'
               }
-              alt=""
+              alt="Digital Transformation"
             />
           }
         />
@@ -87,10 +87,16 @@ const DigitalTransformation = () => (
       <Container>
         <ServicesSection3
           title={'How does it work?'}
-          otherText={
-            'Our own Digital Transformation Assessment tool helps you determine through a simple questionnaire what’s the level of digital maturity of your business and what are your priorities and opportunities.'
-          }>
-          <StaticImage src={'./../../assets/images/service/digital-transformation.png'} />
+          textList={[
+            'What your clients want.',
+            'What competitors doing.',
+            'Your existing technologies.',
+          ]}
+          textList2={['Skills for the future.', 'Processes you need to improve.']}>
+          <StaticImage
+            src={'./../../assets/images/service/digital-transformation.png'}
+            alt={'Illustration Digital Transformation'}
+          />
         </ServicesSection3>
       </Container>
     </Section>

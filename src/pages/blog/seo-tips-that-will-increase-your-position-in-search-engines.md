@@ -16,7 +16,7 @@ There are many ways to do It, but one of the more common is SEO techniques.
 
 <title-2>What is SEO?</title-2>
 
-Search Engine Optimization. This is the literal meaning of this acronym. In more understandable words, SEO are some techniques of information engineering that optimize the content you share on the internet, specifically for search engines. 
+[Search Engine Optimization](https://www.mindspun.com/blog/beginners-guide-to-seo/). This is the literal meaning of this acronym. In more understandable words, SEO are some techniques of information engineering that optimize the content you share on the internet, specifically for search engines. 
 
 This is an online marketing discipline that will help you to grow your visibility in organic search engine results. And all of this result without any payment. 
 

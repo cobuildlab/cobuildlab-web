@@ -59,7 +59,7 @@ const ProcessAutomation = () => (
               src={
                 './../../assets/images/service/card/iconos_Process-Automation_Main-Services-Web-Design_Logistic-Process-Automation_Logistic-Process-Automation.svg'
               }
-              alt=""
+              alt="Process Automation"
             />
           }
         />
@@ -78,13 +78,19 @@ const ProcessAutomation = () => (
       <Container>
         <ServicesSection3
           title={'Increase your Revenue Streams'}
-          otherText={
-            'Over-delivering on customer service is the key to increasing your revenue streams. With automation, they’ll enjoy a smooth experience accessing information at any given time. Avoid printing, sign and scan with automated forms and workflows.'
-          }
-          otherText2={
-            'Get rid of monotonous manual data entry with integrated systems and databases. Automatically support all mobile devices and accelerate approval processes with 24/7 access from anywhere.'
-          }>
-          <StaticImage src={'./../../assets/images/service/process-automation.png'} />
+          textList={[
+            'Optimization driven by Machine Learning and Artificial Intelligence.',
+            'Wide range challenges solutions.',
+            'Hyper-connectivity with Internet of Things.',
+          ]}
+          textList2={[
+            'Maximum visibility improving decision-making.',
+            'Solutions for critical needs of the industry.',
+          ]}>
+          <StaticImage
+            src={'./../../assets/images/service/process-automation.png'}
+            alt={'Illustration Process Automation'}
+          />
         </ServicesSection3>
       </Container>
     </Section>

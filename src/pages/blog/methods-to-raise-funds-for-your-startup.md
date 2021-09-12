@@ -91,7 +91,7 @@ These methods are newer than the traditional, but they are really popular in the
 
 <title-3>1. Friends and family</title-3>
 
-Some entrepreneurs think that everything should stay in the family. Maybe you are one of them. 
+Some entrepreneurs think that everything [should stay in the family](https://capbase.com/how-to-invest-your-own-money-into-your-startup/). Maybe you are one of them. 
 
 That's why the first alternative method that we consider to get the funding it is the lending by family or friends. 
 
@@ -174,6 +174,11 @@ You offer new technology or crypto and you get very much money to invest in your
 
 Ripple, Mastercoin, even Ethereum was created behind this method. 
 
-Once you saw these possible **financing methods** choose the one that best suits you and put it in practice. When you collect all the finance you need and your project is ongoing tell us your experience. 
+Once you saw these possible **financing methods** choose the one that best suits you and put it in practice. When you collect all the finance you need and your project is ongoing tell us your experience.
+
+<br>
+## Update: 02/01/2020
+
+We've partnered with Navigate to help early stage founders launch, grow, or get funding ready. To learn more about what Navigate is doing and to schedule a call with them, visit [https://www.navigate.capital](https://www.navigate.capital))
 
 

@@ -2,23 +2,29 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Layout from '../../../components/2020/Layout';
-import { Section, Container, Columns } from 'bloomer';
+import { Section, Container } from 'bloomer';
 import BlogMetaTags from '../../../components/blog-ai/BlogMetaTags';
 import BlogHero from '../../../components/blog-ai/BlogHero';
-import BlogList from '../../../components/blog-ai/BlogList';
 import Contact from '../../../components/2020/HomePageContact';
+import ClientSearch from '../../../components/blog-ai/search/client-search';
 
 const Blog = ({ data }) => {
-  const { post } = data.allPost8Base;
+  const { post } = data['allPostsList8Base'];
+
+  const options = {
+    indexStrategy: `Prefix match`,
+    searchSanitizer: `Lower Case`,
+    TitleIndex: true,
+    SearchByTerm: true,
+  };
+
   return (
     <Layout>
       <BlogMetaTags />
       <BlogHero />
-      <Section isPaddingless>
+      <Section>
         <Container>
-          <Columns isMultiline>
-            <BlogList data={post} />
-          </Columns>
+          <ClientSearch post={post} engine={options} />
         </Container>
       </Section>
       <Section>
@@ -36,7 +42,7 @@ Blog.propTypes = {
 
 export const pageQuery = graphql`
   query BasePost {
-    allPost8Base {
+    allPostsList8Base(limit: 1000, sort: { fields: createdAt, order: DESC }) {
       post: nodes {
         id
         title
@@ -46,20 +52,6 @@ export const pageQuery = graphql`
         tag
         readingTime
         createdAt
-        imageUrl {
-          items {
-            downloadUrl
-            createdAt
-          }
-        }
-        fields {
-          images {
-            remoteImage {
-              publicURL
-              url
-            }
-          }
-        }
       }
     }
   }

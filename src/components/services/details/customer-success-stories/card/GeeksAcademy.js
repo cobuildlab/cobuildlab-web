@@ -20,7 +20,7 @@ const GeeksAcademy = () => {
     <Column isSize={{ mobile: 12, desktop: 4, tablet: 6 }} key="4Geeks Academy">
       <CardStyled>
         <Image>
-          <StaticImage src={'./../../../../assets/images/customers/4geeks.png'} alt="" />
+          <StaticImage src={'./../../../../../assets/images/customers/4geeks.png'} alt="" />
         </Image>
         <ParagraphDivStyled>
           <DivTagStyled>

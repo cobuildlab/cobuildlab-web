@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const _ = require('lodash');
 const Promise = require('bluebird');
 const path = require('path');
@@ -6,7 +7,23 @@ const unified = require('unified');
 const markdown = require('remark-parse');
 const html = require('remark-html');
 
-exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
+exports.onCreateWebpackConfig = ({ stage, actions, rules, getConfig }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        process: 'process/browser',
+        stream: 'stream-browserify',
+        zlib: 'browserify-zlib',
+      },
+    },
+    plugins: [
+      new webpack.ProvidePlugin({
+        process: 'process/browser',
+        Buffer: ['buffer', 'Buffer'],
+      }),
+    ],
+  });
+
   if (stage === 'build-javascript') {
     const config = getConfig();
     const miniCssExtractPlugin = config.plugins.find(
@@ -71,17 +88,17 @@ exports.createPages = ({ graphql, actions }) => {
             },
           });
           // AMP
-          // createPage({
-          //   path: `${post.node.fields.slug}amp/`,
-          //   component: path.resolve(
-          //     `src/templates/${String(post.node.frontmatter.template)}.amp.js`,
-          //   ),
-          //   context: {
-          //     slug: post.node.fields.slug,
-          //     previous,
-          //     next,
-          //   },
-          // });
+          createPage({
+            path: `${post.node.fields.slug}amp/`,
+            component: path.resolve(
+              `src/templates/${String(post.node.frontmatter.template)}.amp.js`,
+            ),
+            context: {
+              slug: post.node.fields.slug,
+              previous,
+              next,
+            },
+          });
         });
       }),
     );
@@ -92,7 +109,7 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           query BasePost {
-            allPost8Base {
+            allPostsList8Base {
               post: nodes {
                 id
                 title
@@ -100,6 +117,7 @@ exports.createPages = ({ graphql, actions }) => {
                 content
                 description
                 tag
+                category
                 readingTime
                 createdAt
                 imageUrl {
@@ -114,6 +132,17 @@ exports.createPages = ({ graphql, actions }) => {
                     remoteImage {
                       publicURL
                       url
+                      childrenImageSharp {
+                        id
+                        fixed {
+                          src
+                          srcSet
+                          srcSetWebp
+                          srcWebp
+                          width
+                          height
+                        }
+                      }
                     }
                   }
                 }
@@ -126,7 +155,7 @@ exports.createPages = ({ graphql, actions }) => {
           return reject(result.errors);
         }
         // Create blog posts pages AI.
-        const posts = result.data.allPost8Base.post;
+        const posts = result.data.allPostsList8Base.post;
         _.each(posts, (post, index) => {
           //Convert Markdown to html
           unified()
@@ -140,14 +169,76 @@ exports.createPages = ({ graphql, actions }) => {
                 component: path.resolve(`./src/templates/blog-ai.js`),
                 context: {
                   post,
+                  options: {
+                    indexStrategy: `Prefix match`,
+                    searchSanitizer: `Lower Case`,
+                    SearchByTerm: true,
+                  },
                 },
               });
             });
+          // AMP
+          createPage({
+            path: `/blog/ai/${post.slug}amp/`,
+            component: path.resolve(`./src/templates/blog-ai.amp.js`),
+            context: {
+              post,
+            },
+          });
         });
       }),
     );
   });
-  return Promise.all([promise1, promise2]);
+
+  let promise3 = new Promise((resolve, reject) => {
+    resolve(
+      graphql(
+        `
+          query BasePost {
+            allCareersList8Base {
+              careers: nodes {
+                title
+                description
+                profits
+                jobProfile
+                jobDescription
+                active
+                modality
+                time
+                slug
+                createdAt
+              }
+            }
+          }
+        `,
+      ).then((result) => {
+        if (result.errors) {
+          return reject(result.errors);
+        }
+        // Create blog posts pages AI.
+        const careers = result.data.allCareersList8Base.careers;
+        _.each(careers, (career, index) => {
+          createPage({
+            path: `/careers/${career.slug}`,
+            component: path.resolve(`./src/templates/careers.js`),
+            context: {
+              career,
+            },
+          });
+          // AMP
+          createPage({
+            path: `/careers/${career.slug}amp/`,
+            component: path.resolve(`./src/templates/careers.amp.js`),
+            context: {
+              career,
+            },
+          });
+        });
+      }),
+    );
+  });
+
+  return Promise.all([promise1, promise2, promise3]);
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

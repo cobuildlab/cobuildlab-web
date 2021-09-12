@@ -58,7 +58,7 @@ const CrossPlatformDevelopment = () => (
               src={
                 './../../assets/images/service/card/iconos-Main-Services-Cross-Platform-Development.svg'
               }
-              alt=""
+              alt="Cross-Platform Development"
             />
           }
         />

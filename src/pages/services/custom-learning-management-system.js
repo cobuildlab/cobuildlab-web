@@ -59,7 +59,7 @@ const CustomLearningManagmentSystem = () => (
               src={
                 './../../assets/images/service/card/iconos-Small-Business-Custom-Learning-Management-System.svg'
               }
-              alt=""
+              alt="Custom Learning Management System"
             />
           }
         />
@@ -81,17 +81,16 @@ const CustomLearningManagmentSystem = () => (
         <ServicesSection3
           title={'Benefits of a Custom Learning Management System'}
           textList={[
-            'Improve the performance of your business/learners.',
-            'Features tailored to your vision.',
-            'Allows you to leave the premises of a traditional office.',
+            'Business performance improvement.',
+            'Features tailored.',
             'Flexible, scalable, and futureproof.',
-            'Unlimited learners.',
-            'High level of automation of e-Learning management, which increases the productivity of trainers and trainees.',
-          ]}>
+          ]}
+          textList2={['Unlimited learners.', 'e-Learning management automation.']}>
           <StaticImage
             src={
               './../../assets/images/service/card/iconos-custom-learning-management-system-Ilustration-02.svg'
             }
+            alt={'Illustration Custom Learning Management System'}
           />
         </ServicesSection3>
       </Container>

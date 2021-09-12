@@ -56,7 +56,7 @@ const AppDevelopment = () => (
           img={
             <StaticImage
               src={'./../../assets/images/service/card/iconos_Robotic-Process-Automation.svg'}
-              alt=""
+              alt="Robotic Process Automation"
             />
           }
         />
@@ -77,10 +77,22 @@ const AppDevelopment = () => (
       <Container>
         <ServicesSection3
           title={'Benefits of RPA software'}
-          otherText={
-            "This solution increases productivity, improves accuracy, and helps your business expand by delegating manual and repetitive tasks to robots. RPA integrates well with your existing IT infrastructure and requires no additional installation; companies don't have to invest heavily in automating essential processes. It works in different applications, platforms, and departments."
-          }
-        />
+          textList={[
+            'Minimize costs.',
+            'Increase the speed of execution.',
+            'Quick reports when required.',
+            'Tracking the process at all times.',
+          ]}
+          textList2={[
+            'Control of results in real-time.',
+            'Can be updated.',
+            'Eliminate paper buildup.',
+          ]}>
+          <StaticImage
+            src={'./../../assets/images/service/services-details3.png'}
+            alt={'Illustration Services'}
+          />
+        </ServicesSection3>
       </Container>
     </Section>
     <Section>

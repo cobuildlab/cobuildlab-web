@@ -60,7 +60,7 @@ const WebDevelopment = () => (
               src={
                 './../../assets/images/service/card/iconos-custom-management-inventory-system.png'
               }
-              alt="iconos-custom-management-inventory-system"
+              alt="Custom Inventory Management System"
             />
           }
         />
@@ -84,16 +84,25 @@ const WebDevelopment = () => (
       <Container>
         <ServicesSection3
           title={'Why should you get a custom inventory management system?'}
-          otherText={
-            'Because you can reduce inventory costs with collected historical data that’ll help you know when and what to replenish and optimize inventory levels and locations, collect demand data, and improve overall customer service.\n' +
-            '\n' +
-            '\n' +
-            ' On the other hand, it provides companies with a competitive advantage, such as forecasting future trends and plans.  Inventory management software helps predict future demand and supply to help adjust shipments and deliveries and reduce costs and potential troubles related to overstocking and out-of-stock.\n'
-          }
-          otherText2={
-            "In addition, a customized system allows your company's clients to access and view inventory levels, notifications, and forecasts in real-time."
-          }
-        />
+          textList={[
+            'Single workflow automation.',
+            'Inventories track & view of available stocks.',
+            'Control costs and delivery improvement.',
+            'Automatic and easy reordering.',
+            'Software integration.',
+          ]}
+          textList2={[
+            'Inventory visibility with system-generated reports.',
+            'Forecast future demand.',
+            'Custom report on specific criteria.',
+            'Ongoing 24/7 technical support.',
+            'High-speed private cloud solution.',
+          ]}>
+          <StaticImage
+            src={'./../../assets/images/service/management-system.png'}
+            alt={'Illustration Custom Inventory Management System'}
+          />
+        </ServicesSection3>
       </Container>
     </Section>
     <Section>
@@ -107,15 +116,15 @@ const WebDevelopment = () => (
             'The ability to automate a single workflow. The custom solution provides an industry-specific solution that easily incorporates new features that make your back-end operations easier.',
             'Keeps track of all your inventories and provides a consolidated view of available stocks.',
             'Control costs and improve delivery by setting the right customer expectations.',
-            'Automatic and easy reordering',
-            'It can be integrated with various other software systems, including enterprise resource planning (ERP) and accounting systems',
+            'Automatic and easy reordering.',
+            'It can be integrated with various other software systems, including enterprise resource planning (ERP) and accounting systems.',
           ]}
           rightTextList={[
-            'Provides inventory visibility at each location at any time and date through system-generated reports',
-            'Forecast future demand by analyzing trends in inventory data and inventory according to the demand',
-            'Custom reports, a much-needed business intelligence tool for a wide variety of business verticals, as data is filtered based on specific criteria',
-            'Ongoing 24/7 technical support with proper analysis of business requirements',
-            'High-speed private cloud solution. If your solution is hosted on a private cloud, it offers better control, expandable bandwidth, security, and superior performance in terms of speed and connectivity',
+            'Provides inventory visibility at each location at any time and date through system-generated reports.',
+            'Forecast future demand by analyzing trends in inventory data and inventory according to the demand.',
+            'Custom reports, a much-needed business intelligence tool for a wide variety of business verticals, as data is filtered based on specific criteria.',
+            'Ongoing 24/7 technical support with proper analysis of business requirements.',
+            'High-speed private cloud solution. If your solution is hosted on a private cloud, it offers better control, expandable bandwidth, security, and superior performance in terms of speed and connectivity.',
           ]}
         />
       </Container>

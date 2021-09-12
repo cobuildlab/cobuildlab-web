@@ -56,7 +56,7 @@ const AppDevelopment = () => (
           img={
             <StaticImage
               src={'./../../assets/images/service/card/iconos_Staff-Augmentation.svg'}
-              alt=""
+              alt="IT Staff Augmentation"
             />
           }
         />
@@ -77,16 +77,17 @@ const AppDevelopment = () => (
       <Container>
         <ServicesSection3
           title={"It's an excellent way to save resources!"}
-          otherText={
-            "It's a high-control strategy, as the recruited staff is employed directly by the supplier who in effect acts as a strategic partner, and that's why:"
-          }
           textList={[
-            'using Staff Augmentation strategies avoids both the cost and the responsibility of new full-time hires.',
-            "Staff Augmentation is based on a very favorable principle for the hiring company and is that the employer should only pay the professional for the time worked, a fact that would definitely have a positive impact on the company's salary statements.",
-            'By hiring developers remotely, the cost of office space, facilities, workstations, transportation, among other things, is saved.',
-            "On the other hand, the IT partner is responsible for both recruiting and training staff, so the company that hires a Staff Augmentation service only has to simply pay the established fee and that's it!.",
+            'Access to distinct skill sets.',
+            'Cost-savings.',
+            'Focused and unbiased workforce.',
           ]}
-        />
+          textList2={['Flexibility.', 'Attain assistance with Zero administrative complications.']}>
+          <StaticImage
+            src={'./../../assets/images/service/services-details3.png'}
+            alt={'Illustration Services'}
+          />
+        </ServicesSection3>
       </Container>
     </Section>
     <Section>
