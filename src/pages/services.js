@@ -181,6 +181,81 @@ const Services = () => {
                       />
                     }
                   />
+                </ContentStyle>
+              ) : null}
+
+              {tag === 'enterprisesDevelopment' ? (
+                <ContentStyle>
+                  <ServicesCard
+                    title={'Enterprise Software'}
+                    subtitle={'Development'}
+                    cover={'The best solution for a Logistics and Supply Chain Issues'}
+                    to={'enterprise-software-development'}
+                    image={
+                      <StaticImage
+                        src={
+                          './../assets/images/service/card/iconos-Logistic-Enterprise-Software-Development.svg'
+                        }
+                        alt="Enterprise Software"
+                      />
+                    }
+                  />
+                  <ServicesCard
+                    title={'Process'}
+                    subtitle={'Automation'}
+                    cover={'Save time and money transforming your processes'}
+                    to={'process-automation'}
+                    image={
+                      <StaticImage
+                        src={
+                          './../assets/images/service/card/iconos_Process-Automation_Main-Services-Web-Design_Logistic-Process-Automation_Logistic-Process-Automation.svg'
+                        }
+                        alt="process automation"
+                      />
+                    }
+                  />
+                  <ServicesCard
+                    title={'Digital'}
+                    subtitle={'Transformation'}
+                    cover={'We’ll help you find out exactly where you are and what you need'}
+                    to={'digital-transformation'}
+                    image={
+                      <StaticImage
+                        src={
+                          './../assets/images/service/card/iconos_Logistic-Digital-Transformation_Logistic-Digital-Transformation.svg'
+                        }
+                        alt="digital transformation"
+                      />
+                    }
+                  />
+                  <ServicesCard
+                    title={'Security '}
+                    subtitle={'Compliance'}
+                    cover={
+                      'Take advantage of these tools to comply with relevant internal laws, regulations, and procedures'
+                    }
+                    to={'security-compliance'}
+                    image={
+                      <StaticImage
+                        src={'./../assets/images/service/card/iconos-security.png'}
+                        alt="Custom Inventory"
+                      />
+                    }
+                  />
+                  <ServicesCard
+                    title={'Web Accessibility '}
+                    subtitle={'Compliance'}
+                    cover={'Ensure Your Website Compliance With Accessibility Standards'}
+                    to={'web-acessibility-compliance'}
+                    image={
+                      <StaticImage
+                        src={
+                          './../assets/images/service/card/icono-web-accessibility-compliance.png'
+                        }
+                        alt="Web Accessibility Compliance"
+                      />
+                    }
+                  />
                   <ServicesCard
                     title={'Human Resources '}
                     subtitle={'Management System'}
@@ -268,81 +343,6 @@ const Services = () => {
                           './../assets/images/service/card/icon-web-accessibility-compliance.svg'
                         }
                         alt="Web Accessibility"
-                      />
-                    }
-                  />
-                </ContentStyle>
-              ) : null}
-
-              {tag === 'enterprisesDevelopment' ? (
-                <ContentStyle>
-                  <ServicesCard
-                    title={'Enterprise Software'}
-                    subtitle={'Development'}
-                    cover={'The best solution for a Logistics and Supply Chain Issues'}
-                    to={'enterprise-software-development'}
-                    image={
-                      <StaticImage
-                        src={
-                          './../assets/images/service/card/iconos-Logistic-Enterprise-Software-Development.svg'
-                        }
-                        alt="Enterprise Software"
-                      />
-                    }
-                  />
-                  <ServicesCard
-                    title={'Process'}
-                    subtitle={'Automation'}
-                    cover={'Save time and money transforming your processes'}
-                    to={'process-automation'}
-                    image={
-                      <StaticImage
-                        src={
-                          './../assets/images/service/card/iconos_Process-Automation_Main-Services-Web-Design_Logistic-Process-Automation_Logistic-Process-Automation.svg'
-                        }
-                        alt="process automation"
-                      />
-                    }
-                  />
-                  <ServicesCard
-                    title={'Digital'}
-                    subtitle={'Transformation'}
-                    cover={'We’ll help you find out exactly where you are and what you need'}
-                    to={'digital-transformation'}
-                    image={
-                      <StaticImage
-                        src={
-                          './../assets/images/service/card/iconos_Logistic-Digital-Transformation_Logistic-Digital-Transformation.svg'
-                        }
-                        alt="digital transformation"
-                      />
-                    }
-                  />
-                  <ServicesCard
-                    title={'Security '}
-                    subtitle={'Compliance'}
-                    cover={
-                      'Take advantage of these tools to comply with relevant internal laws, regulations, and procedures'
-                    }
-                    to={'security-compliance'}
-                    image={
-                      <StaticImage
-                        src={'./../assets/images/service/card/iconos-security.png'}
-                        alt="Custom Inventory"
-                      />
-                    }
-                  />
-                  <ServicesCard
-                    title={'Web Accessibility '}
-                    subtitle={'Compliance'}
-                    cover={'Ensure Your Website Compliance With Accessibility Standards'}
-                    to={'web-acessibility-compliance'}
-                    image={
-                      <StaticImage
-                        src={
-                          './../assets/images/service/card/icono-web-accessibility-compliance.png'
-                        }
-                        alt="Web Accessibility Compliance"
                       />
                     }
                   />
