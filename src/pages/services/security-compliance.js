@@ -65,10 +65,10 @@ const IotDevelopment = () => (
     <StyledSection2>
       <Container>
         <ServicesSection2
-          title={'What is '}
-          titleOrange={'a Compliance?'}
+          title={'What is a '}
+          titleOrange={'Security Compliance?'}
           text={
-            'Compliance is just one section of a whole scheme of ensuring an organization is compliant with industry, government, or other regulations. Maintaining compliance with mandatory information security standards and regulations with the best practices for your industry can be challenging, and we are ready for it.'
+            'Security compliance drives businesses to practice due diligence to protect digital assets and maintain a trusting relationship with consumers. When a company chooses to do business in a country with strict security laws or in a heavily regulated market like finance or healthcare, they must ensure that their business meets privacy laws to prevent hefty penalties. Like standard security protocols, compliance focuses on both technical and business needs.'
           }
         />
       </Container>
@@ -76,9 +76,9 @@ const IotDevelopment = () => (
     <Section>
       <Container>
         <ServicesSection3
-          title={'Managing Risk and Regulatory Compliance'}
+          title={'Compliance Expertise Tailored to Your Needs'}
           otherText={
-            'We are committed to maintaining the highest level of industry compliance and government mandates. As information security regulations are evolving more quickly than ever, leverage our experienced teams to design the solution specific to your business needs. Our service is customizable and can be related to any aspect of information security such as technology, policy and procedures, compliance network design, disaster recovery, compliance standards, incident response, and more.'
+            'We help you navigate the dizzying list of security compliance standards and frameworks, assess your current controls against requirements and guide subsequent changes that can be required to meet these global requirements. Go beyond traditional compliance solutions with services that reduce your risk by addressing your organization’s unique opportunities and challenges.'
           }>
           <StaticImage
             src={'./../../assets/images/service/ilustracion-security-and-compliance.png'}
@@ -106,7 +106,7 @@ const IotDevelopment = () => (
               <p>
                 <b>GDPR Compliance</b>
                 <p>
-                  The EU’s General Data Protection Regulation (GDPR) is one of the most
+                  The EU{"'"}s General Data Protection Regulation (GDPR) is one of the most
                   comprehensive government-imposed data privacy frameworks implemented to date. It
                   went into effect in May 2018 and is meant to protect the data privacy of EU
                   citizens. However, this compliance regulation doesn{"'"}t just apply to European
