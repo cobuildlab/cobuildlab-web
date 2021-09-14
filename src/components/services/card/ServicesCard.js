@@ -9,8 +9,7 @@ import PropTypes from 'prop-types';
 const Title = styled(H4)`
   margin-top: -5px;
   text-align: right;
-  font-weight: 100;
-  font-family: 'Lato-Light' !important;
+  font-family: 'Lato-Light', serif !important;
   font-size: calc(16px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
   width: 65%;
   position: absolute;
