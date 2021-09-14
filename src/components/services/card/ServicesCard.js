@@ -1,25 +1,9 @@
 import React, { useCallback } from 'react';
 import { navigate } from 'gatsby';
 import { Column, Card } from 'bloomer';
-import H4 from '../../Typography/H4';
 
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-
-const Title = styled(H4)`
-  margin-top: -5px;
-  text-align: right;
-  font-family: 'Lato-Light', serif !important;
-  font-size: calc(16px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
-  width: 65%;
-  position: absolute;
-  right: 0;
-  padding-right: 10px;
-  font-weight: bold;
-  @media screen and (max-width: 768px) {
-    width: 64%;
-  }
-`;
 
 const CardStyledThree = styled(Card)`
   max-height: 155px;
@@ -70,11 +54,11 @@ const ServicesCard = ({ title, subtitle, to, image }) => {
         <CardStyledThree>
           <Image>{image}</Image>
           <Container>
-            <Title>
+            <h4 className={'title-service'}>
               {title}
               <br />
               {subtitle}
-            </Title>
+            </h4>
           </Container>
           <Readmore onClick={handleClick}>Read More</Readmore>
         </CardStyledThree>
