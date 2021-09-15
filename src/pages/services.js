@@ -332,20 +332,6 @@ const Services = () => {
                       />
                     }
                   />
-                  <ServicesCard
-                    title={'Web Accessibility '}
-                    subtitle={'Compliance'}
-                    cover={'Ensure Your Website Compliance With Accessibility Standards'}
-                    to={'web-accessibility-compliance'}
-                    image={
-                      <StaticImage
-                        src={
-                          './../assets/images/service/card/icon-web-accessibility-compliance.svg'
-                        }
-                        alt="Web Accessibility"
-                      />
-                    }
-                  />
                 </ContentStyle>
               ) : null}
               {tag === 'softwareDevelopment' ? (
