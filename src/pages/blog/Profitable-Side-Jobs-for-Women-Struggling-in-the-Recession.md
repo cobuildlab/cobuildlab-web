@@ -28,7 +28,7 @@ In addition to making a profit off your skills or services, you can also earn mo
 
 <br>
 
-Working from home is a dream for many women and stay-at-home moms because of the flexibility. However, that doesn’t mean it’s always easy. Dealing with distractions from your family and maintaining a work-life balance is often a huge hurdle to get over.  
+Working from home is a dream for many women and stay-at-home moms because of the flexibility. However, that doesn’t mean it’s always easy. Dealing with distractions from your family and [maintaining a work-life balance](https://mominformed.com/a-moms-guide-to-getting-a-great-work-life-balance/) is often a huge hurdle to get over.  
 
 Not only that, you may face logistical challenges if you plan on running a business from your home. Most types of online, home-based businesses don’t present an issue. However, if your business requires a fair amount of behind-the-scenes, mundane tasks, or if you’re struggling to keep up, it might be time to consider automation to help you along. [Cobuild Lab](https://cobuildlab.com/) can help you with a software solution that takes your small business to the next level, improving your productivity and efficiency simply and smartly. It’s an ideal way to enhance both your and your home life.
 
