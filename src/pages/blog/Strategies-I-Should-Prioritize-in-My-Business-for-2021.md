@@ -14,7 +14,7 @@ If you feel that your company wasn't so bad this 2020 despite the pandemic, but 
 
 <Br>
 
-Look at those key areas and how they can prepare the way for your business' success this next year.
+Look at those key areas and how they can prepare [the way for your business' success](https://bizfundinghub.com/a-guide-to-running-your-business-successfully/) this next year.
 
 <Br>
 
