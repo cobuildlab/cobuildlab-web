@@ -105,6 +105,15 @@ const TeamList = () => {
           </Card>
         </Column>
         <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
+          <Card first={'Carlos'} last={'Febres'} description={'Full Stack Javascript Developer'}>
+            <StaticImage
+              className={'team-member-img'}
+              src={'./../../../assets/images/team/team-pictures/Carlos-Febres.jpg'}
+              alt="Carlos Febres"
+            />
+          </Card>
+        </Column>
+        <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
           <Card first={'Carlos'} last={'Hurtado'} description={'Full Stack Javascript Developer'}>
             <StaticImage
               className={'team-member-img'}
@@ -150,6 +159,15 @@ const TeamList = () => {
           </Card>
         </Column>
         <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
+          <Card first={'Eduardo'} last={'Marquez'} description={'Full Stack Javascript'}>
+            <StaticImage
+              className={'team-member-img'}
+              src={'./../../../assets/images/team/team-pictures/Eduardo-Marquez.jpg'}
+              alt="Eduardo Marquez"
+            />
+          </Card>
+        </Column>
+        <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
           <Card first={'Ernesto'} last={'Morales'} description={'UI/UX Designer'}>
             <StaticImage
               className={'team-member-img'}
@@ -173,6 +191,33 @@ const TeamList = () => {
               className={'team-member-img'}
               src={'./../../../assets/images/team/team-pictures/Jesus-Rodriguez.jpg'}
               alt="Jesus Rodriguez"
+            />
+          </Card>
+        </Column>
+        <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
+          <Card first={'Jorge'} last={'Soto'} description={'Full Stack Javascript Developer'}>
+            <StaticImage
+              className={'team-member-img'}
+              src={'./../../../assets/images/team/team-pictures/Jorge-Soto.jpg'}
+              alt="Jorge Soto"
+            />
+          </Card>
+        </Column>
+        <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
+          <Card first={'Jose'} last={'Villalobos'} description={'Full Stack Javascript Developer'}>
+            <StaticImage
+              className={'team-member-img'}
+              src={'./../../../assets/images/team/team-pictures/Jose-Agustín-Villalobos.jpg'}
+              alt="Jose Villalobos"
+            />
+          </Card>
+        </Column>
+        <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
+          <Card first={'Julmer'} last={'Olivero'} description={'Full Stack Javascript Developer'}>
+            <StaticImage
+              className={'team-member-img'}
+              src={'./../../../assets/images/team/team-pictures/Julmer-Olivero.jpg'}
+              alt="Julmer Olivero"
             />
           </Card>
         </Column>
@@ -204,6 +249,24 @@ const TeamList = () => {
           </Card>
         </Column>
         <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
+          <Card first={'Manuel'} last={'Briceno'} description={'UI/UX Designer'}>
+            <StaticImage
+              className={'team-member-img'}
+              src={'./../../../assets/images/team/team-pictures/Manuel-Briceno.jpg'}
+              alt="Manuel Briceno"
+            />
+          </Card>
+        </Column>
+        <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
+          <Card first={'Marco'} last={'Maldonado'} description={'UI/UX Designer'}>
+            <StaticImage
+              className={'team-member-img'}
+              src={'./../../../assets/images/team/team-pictures/MarcoMaldonado.jpg'}
+              alt="Marco Maldonado"
+            />
+          </Card>
+        </Column>
+        <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
           <Card first={'Maria Gabriela'} last={'Moya'} description={'Marketing Coordinator'}>
             <StaticImage
               className={'team-member-img'}
@@ -227,6 +290,42 @@ const TeamList = () => {
               className={'team-member-img'}
               src={'./../../../assets/images/team/team-pictures/Mayela-Marin.jpg'}
               alt="Mayela Marin"
+            />
+          </Card>
+        </Column>
+        <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
+          <Card first={'Moises'} last={'Marquina'} description={'Full Stack Javascript Developer'}>
+            <StaticImage
+              className={'team-member-img'}
+              src={'./../../../assets/images/team/team-pictures/Moises-Marquina.jpg'}
+              alt="Moises Marquina"
+            />
+          </Card>
+        </Column>
+        <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
+          <Card first={'Ricardo'} last={'Moreno'} description={'Full Stack Javascript Developer'}>
+            <StaticImage
+              className={'team-member-img'}
+              src={'./../../../assets/images/team/team-pictures/Ricardo-Moreno.jpg'}
+              alt="Ricardo Moreno"
+            />
+          </Card>
+        </Column>
+        <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
+          <Card first={'Salomon'} last={'Martinez'} description={'Full Stack Javascript Developer'}>
+            <StaticImage
+              className={'team-member-img'}
+              src={'./../../../assets/images/team/team-pictures/Salomon-Martinez.jpg'}
+              alt="Salomon Martinez"
+            />
+          </Card>
+        </Column>
+        <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
+          <Card first={'Willian'} last={'Mata'} description={'Full Stack Javascript Developer'}>
+            <StaticImage
+              className={'team-member-img'}
+              src={'./../../../assets/images/team/team-pictures/Willian-Mata.jpg'}
+              alt="Willian Mata"
             />
           </Card>
         </Column>
