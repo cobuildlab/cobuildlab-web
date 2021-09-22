@@ -36,8 +36,32 @@ const TeamList = () => {
           <Card first={'Jacqueline'} last={'Popovich'} description={'Product Manager'}>
             <StaticImage
               className={'team-member-img'}
-              src={'./../../../assets/images/team/team-pictures/jacqueline-popovich.png'}
+              src={'./../../../assets/images/team/team-pictures/jacqueline-popovich.jpg'}
               alt="Jacqueline Popovich"
+            />
+          </Card>
+        </Column>
+        <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
+          <Card
+            first={'Ryan'}
+            last={'Seron'}
+            description={'Director, Business Development - Software'}>
+            <StaticImage
+              className={'team-member-img'}
+              src={'./../../../assets/images/team/team-pictures/Ryan-Seron.jpg'}
+              alt="Ryan Seron"
+            />
+          </Card>
+        </Column>
+        <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
+          <Card
+            first={'Miguel'}
+            last={'Muir'}
+            description={'Enterprise Business Development Manage'}>
+            <StaticImage
+              className={'team-member-img'}
+              src={'./../../../assets/images/team/team-pictures/Miguel-Muir.jpg'}
+              alt="Miguel Muir"
             />
           </Card>
         </Column>
@@ -126,7 +150,7 @@ const TeamList = () => {
           </Card>
         </Column>
         <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
-          <Card first={'Edgar'} last={'Espinetti'} description={'Full Stack Javascript'}>
+          <Card first={'Edgar'} last={'Espinetti'} description={'Full Stack Javascript Developer'}>
             <StaticImage
               className={'team-member-img'}
               src={'./../../../assets/images/team/team-pictures/Edgar-Espinetti.jpg'}
@@ -153,7 +177,7 @@ const TeamList = () => {
           </Card>
         </Column>
         <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
-          <Card first={'Gerardo'} last={'Garcia'} description={'Full Stack Javascript'}>
+          <Card first={'Gerardo'} last={'Garcia'} description={'Full Stack Javascript Developer'}>
             <StaticImage
               className={'team-member-img'}
               src={'./../../../assets/images/team/team-pictures/Gerardo-Garcia.jpg'}
@@ -162,7 +186,7 @@ const TeamList = () => {
           </Card>
         </Column>
         <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
-          <Card first={'Jesus'} last={'Rodriguez'} description={'Full Stack Javascript'}>
+          <Card first={'Jesus'} last={'Rodriguez'} description={'Full Stack Javascript Developer'}>
             <StaticImage
               className={'team-member-img'}
               src={'./../../../assets/images/team/team-pictures/Jesus-Rodriguez.jpg'}
@@ -171,7 +195,7 @@ const TeamList = () => {
           </Card>
         </Column>
         <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
-          <Card first={'Jorge'} last={'Soto'} description={'Full Stack Javascript'}>
+          <Card first={'Jorge'} last={'Soto'} description={'Full Stack Javascript Developer'}>
             <StaticImage
               className={'team-member-img'}
               src={'./../../../assets/images/team/team-pictures/Jorge-Soto.jpg'}
@@ -180,7 +204,7 @@ const TeamList = () => {
           </Card>
         </Column>
         <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
-          <Card first={'Jose'} last={'Villalobos'} description={'Full Stack Javascript'}>
+          <Card first={'Jose'} last={'Villalobos'} description={'Full Stack Javascript Developer'}>
             <StaticImage
               className={'team-member-img'}
               src={'./../../../assets/images/team/team-pictures/Jose-Agustín-Villalobos.jpg'}
@@ -189,7 +213,7 @@ const TeamList = () => {
           </Card>
         </Column>
         <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
-          <Card first={'Julmer'} last={'Olivero'} description={'Full Stack Javascript'}>
+          <Card first={'Julmer'} last={'Olivero'} description={'Full Stack Javascript Developer'}>
             <StaticImage
               className={'team-member-img'}
               src={'./../../../assets/images/team/team-pictures/Julmer-Olivero.jpg'}
