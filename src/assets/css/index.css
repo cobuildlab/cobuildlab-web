@@ -1485,3 +1485,30 @@ img.i-l {
     color: #e76c29;
     font-weight: bold;
 }
+
+.title-service {
+    margin-top: -5px;
+    text-align: right;
+    font-family: 'Lato-Light', serif !important;
+    font-size: calc(16px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
+    width: 65%;
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+    font-weight: bold;
+    line-height: 1.125;
+    letter-spacing: 0;
+    color: rgb(38, 74, 96);
+}
+
+@media screen and (max-width: 768px) {
+    .title-service {
+        width: 64%;
+    }
+}
+
+
+.style-list-careers {
+    margin-left: 50px;
+    list-style: disc;
+}
