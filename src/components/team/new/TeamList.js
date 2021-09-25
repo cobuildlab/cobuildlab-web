@@ -249,7 +249,7 @@ const TeamList = () => {
           </Card>
         </Column>
         <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
-          <Card first={'Leonardo'} last={'Sciretta'} description={'Full Stack Javascript Develope'}>
+          <Card first={'Leonardo'} last={'Sciretta'} description={'Full Stack Javascript Developer'}>
             <StaticImage
               className={'team-member-img'}
               src={'./../../../assets/images/team/new-pictures/leonardo-sciretta.jpg'}
