@@ -135,7 +135,7 @@ const TeamList = () => {
           <Card first={'Cesar'} last={'Morales'} description={'QA Analyst'}>
             <StaticImage
               className={'team-member-img'}
-              src={'./../../../assets/images/team/new-pictures/Cesar-Morales.jpg'}
+              src={'./../../../assets/images/team/new-pictures/cesar-morales.jpg'}
               alt="Cesar Morales"
             />
           </Card>
@@ -249,7 +249,10 @@ const TeamList = () => {
           </Card>
         </Column>
         <Column isSize={{ mobile: 12, desktop: 3 }} isPaddingless>
-          <Card first={'Leonardo'} last={'Sciretta'} description={'Full Stack Javascript Developer'}>
+          <Card
+            first={'Leonardo'}
+            last={'Sciretta'}
+            description={'Full Stack Javascript Developer'}>
             <StaticImage
               className={'team-member-img'}
               src={'./../../../assets/images/team/new-pictures/leonardo-sciretta.jpg'}
