@@ -6,7 +6,7 @@ import BlogPostCardTitle from './BlogPostCardTitle';
 
 const PostCard = ({ src, title, to, date, category }) => (
   <BlogPostCardContainer alt={title} src={src} to={to}>
-    <BlogPostCardHeader date={date} category={category} />
+    <BlogPostCardHeader category={category} />
     <BlogPostCardTitle>{title}</BlogPostCardTitle>
   </BlogPostCardContainer>
 );
