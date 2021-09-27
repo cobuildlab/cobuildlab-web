@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import logoB2B from '../../../../assets/images/logos/B2B_Companies_Florida_2020.png';
+import logoB2B from '../../../../assets/images/logos/IT_Services_Florida_2021.png';
 
 const Images = styled.img`
   height: 200px;
