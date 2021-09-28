@@ -39,7 +39,7 @@ As we mentioned before, companies go green for the competitive advantage of beco
 * Savings in the consumption of resources  <br> </br>
 * Increased logistical and operational efficiency  <br> </br>
 * Improved corporate image and reputation  <br> </br>
-* Improved brand perception and market value. <br> </br>
+* Improved [brand perception](https://www.pickfu.com/blog/brand-perception/) and market value. <br> </br>
 
 <title-3 align="left"> Some green examples </title-3> <br> </br>
 
@@ -63,6 +63,6 @@ We partner with Industry Experts to solve Logistical and Productivity problems w
 
 <youtube-video id="5fbYxQNgJ7s&"></youtube-video>  <br> </br>
 
-Got an idea for a web or mobile app? Let’s build it! Check out our <a target="_blank" href="https://cobuildlab.com/price-calculator/">  price calculator</a> to have an estimate of the cost of your project or email us at contact@cobuildlab.com and get a FREE online consultation. 
+Got an idea for a web or mobile app? Let’s build it! Check out our <a target="_blank" href="https://cobuildlab.com/price-calculator/">  price calculator</a> to have an estimate of the cost of your project or email us at contact@cobuildlab.com and get a FREE online consultation.
 
 
