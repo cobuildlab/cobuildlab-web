@@ -1507,8 +1507,12 @@ img.i-l {
     }
 }
 
-
 .style-list-careers {
     margin-left: 50px;
     list-style: disc;
+}
+
+.navigate {
+    margin: auto;
+    width: 95%;
 }
