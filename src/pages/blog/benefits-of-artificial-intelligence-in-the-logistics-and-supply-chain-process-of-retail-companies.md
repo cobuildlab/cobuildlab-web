@@ -6,6 +6,8 @@ tags: Small Business
 image: "./media/artificial-inteligence-logistics-and-supply-chain.jpg"
 ---
 
+Miami, FL. Sep 20, 2021
+
 In modern supply chains worldwide and at any commercial level, are complicated and very fast due to the interconnected and globalized landscape in which we live.  With this speed in operations, the human error must be reduced and the efficiency of each of these processes must be maximized, which is why <a target="_blank" href="https://www.cobuildlab.com/blog/Why-to-Use-Automatic-Identification-and-Data-Capture-in-Warehouses-and-Distribution-Centers-this-2020/"> AI</a> has been gaining ground in recent years in this sector. Artificial intelligence has several applications in the supply chain, such as information extraction, data analysis, supply and demand planning, autonomous vehicles, and warehouse management. Here are some of the benefits it offers in logistics and supply chains:
 
 <br>
@@ -100,3 +102,4 @@ Logistics requires significant planning that requires the coordination of suppli
 
 With the adoption of <a target="_blank" href="https://www.cobuildlab.com/services/artificial-intelligence-development/"> Artificial Intelligence </a>, the <a target="_blank" href="https://www.cobuildlab.com/services/custom-software-development/">  logistics and supply chain </a> industry will change for the better. If you are new to this technology, now is the time to adapt it for your business.  AI is a relatively new concept in logistics and warehousing, so, naturally, there will be both positive and negative reactions. Thanks to AI, companies can work and manage their warehouses more safely and efficiently, making them grow faster as a company and make their customers more satisfied. 
 
+**Team Cobuild Lab**
