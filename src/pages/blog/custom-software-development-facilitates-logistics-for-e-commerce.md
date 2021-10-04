@@ -6,6 +6,11 @@ tags: Small Business
 image: "./media/custom-software-inlogistics-for-ecommerce.jpg"
 ---
 
+
+Miami, FL. Sep 28, 2021
+
+
+
 **The use of custom software in logistics for e-commerce** can bring a lot of advantages for your business such as control of warehouses, tracking of merchandise, and facilitating the arrival of products to the customers’ doors, among others. 
 
 As you may know, e-commerce logistics is one of the most critical parts of an online store, but costs continue to rise every year. In the last years, these businesses have been evolving and new technologies were applied to satisfy the global demand.  
@@ -152,4 +157,4 @@ Business efficiency at operational levels is critical to the success of e-commer
 
 E-commerce has become a very competitive landscape. You must meet the ever-changing expectations of your customers and remain profitable. It’s here where <a target="_blank" href="https://www.cobuildlab.com/services/custom-software-development/"> custom software  </a> in **logistics for e-commerce** gets in. So, start today and apply it, in order to take your e-commerce to another level. Are you ready to start? Build your budget here.
 
-**Team Cobuild Lab** - 2021/09/28
+**Team Cobuild Lab** 
