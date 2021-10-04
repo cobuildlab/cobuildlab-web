@@ -99,6 +99,6 @@ Achieving different goals at the right time can be difficult, especially when it
 So, maybe it's time to introduce **RPA, workflow automation**, or both within your company so you can get quantifiable results and grow your business. 
 
 
-Team Cobuild Lab - 2021/09/28
+**Team Cobuild Lab**
 
 
