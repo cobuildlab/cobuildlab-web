@@ -37,7 +37,7 @@ This It will give power to your newsletter. When we say give It a name, we are t
 
 <title-3>3. Make a calendar (a schedule if It is possible)</title-3> 
 
-This step will be easier if you define well all characteristics and the behavior of your potential customers. You could choose the better day and hour to send the newsletter, taking in consideration when you think that they Will be free and willing to read. 
+This step will be easier if you define well all characteristics and the behavior of your potential customers. You could choose the better day and hour to [send the newsletter](https://www.onehourprofessor.com/best-email-marketing-software-services/), taking in consideration when you think that they Will be free and willing to read. 
 
 Pd: Weekends or Mondays usually are the best days for this. But remember, everything Will depend on your audience. 
 
@@ -80,13 +80,13 @@ There are many tools for doing easier this work, and we will show you later. Con
 
 <title-3>7. Test it</title-3>
 
-It is high recommendable sending a test of the newsletter first. When you have finished send it first to your email, check that everything is alright, and then send the newsletter to your readers.
+It is high recommendable sending a test of the newsletter first. When you have finished send it first to your email, check that everything is alright, and then [send the newsletter](https://www.onehourprofessor.com/best-email-marketing-software-services/) to your readers.
 
 Some things you need to keep in mind are the subject can see it complete? , if images work with the alternative text, if there are some broken links or images, if there are some grammatical mistake. The last is so so so important.
 
 <title-3>8. Send the newsletter</title-3>
 
-You can send the newsletter to every user who accepts before to be part of your community of readers. 
+You can [send the newsletter](https://www.onehourprofessor.com/best-email-marketing-software-services/) to every user who accepts before to be part of your community of readers. 
 
 They should know that periodically the content you publish on your blog will reach your email.
 
