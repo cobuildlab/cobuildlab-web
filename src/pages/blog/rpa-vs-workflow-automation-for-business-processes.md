@@ -6,6 +6,12 @@ tags: Small Business
 image: "./media/rpa-vs-workflow-automation-for-businesses.jpg"
 ---
 
+
+
+
+Miami, FL. Sep 28, 2021
+
+
 <a target="_blank" href="https://www.cobuildlab.com/blog/workflows-in-your-business/"> Workflow</a> automation and robotic process automation (RPA) are two tools for automating business processes. They’re essential tools in a very dynamic economic landscape such as our own, and you must always be at the forefront of technology, to stay competitive in a tight market. 
 
 Every day that passes, these tools and technologies are climbing in the market, and more companies request them, especially in logistics, a sector that faced massive changes  during the pandemic. 
@@ -93,6 +99,6 @@ Achieving different goals at the right time can be difficult, especially when it
 So, maybe it's time to introduce **RPA, workflow automation**, or both within your company so you can get quantifiable results and grow your business. 
 
 
-Team Cobuild Lab - 2021/09/28
+**Team Cobuild Lab**
 
 

@@ -6,6 +6,7 @@ tags: Small Business
 image: "./media/software-trends-for-inventory-management.jpg"
 ---
 
+Miami, FL. Sep 23, 2021
 
 Inventory management is a fundamental pillar for any company since it allows it to have the right items at the right time to meet the needs of each of its customers. Always taking into account time and costs, minimizing waste and losses. 
 
