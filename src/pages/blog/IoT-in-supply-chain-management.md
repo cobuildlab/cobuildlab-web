@@ -6,6 +6,9 @@ tags: Small Business
 image: "./media/iot-in-sipply-chain-management.jpg"
 ---
 
+Miami, FL. Oct 06, 2021
+
+
 The mix of hardware, software, and the Internet constitutes what we know as IoT. This technology has revolutionized life as we know it, and especially business development when applied to the supply chain. 
 
 IoT is a revolutionary technology for all major industries: retail, forwarding, finance, healthcare, and energy. It has major potential for processes such as the supply chain, management, forecasting, monitoring applications, helping fleet managers improve operational efficiency, communications, and decision-making. 
