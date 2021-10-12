@@ -6,6 +6,9 @@ tags: Small Business
 image: "./media/iot-in-sipply-chain-management.jpg"
 ---
 
+Miami, FL. Oct 06, 2021
+
+
 The mix of hardware, software, and the Internet constitutes what we know as IoT. This technology has revolutionized life as we know it, and especially business development when applied to the supply chain. 
 
 IoT is a revolutionary technology for all major industries: retail, forwarding, finance, healthcare, and energy. It has major potential for processes such as the supply chain, management, forecasting, monitoring applications, helping fleet managers improve operational efficiency, communications, and decision-making. 
@@ -91,12 +94,6 @@ Before the covid-19, the supply chain was not as efficient as it is now. This ma
 * Improving inventory management and reducing bank fees on letters of credit by combining Blockchain and IoT offer the potential for cost savings.
 * Combining IoT's real-time monitoring support with Blockchain's shared distributed ledger strengthens the accuracy and scale of tracking, leading to improvements in supply chains.
 
-<br>
-
-<youtube-video id="00LE-QjVXA"></youtube-video>
-
-<br>
-
 An IoT-based platform is a great investment for small and large companies, as long as you have a clear goal of what you need the technology to accomplish for you. 
 
 By adopting these technologies at an early stage, a company can gain a significant advantage over the competition.
@@ -104,4 +101,4 @@ By adopting these technologies at an early stage, a company can gain a significa
 What do you think about the use of <a target="_blank" href="https://www.cobuildlab.com/services/iot-development/"> IoT in supply chain management </a> today? Do you feel you can apply it within your company? Contact us and we will help you with the process. 
 
 
-**Team CObuild Lab**
+**Team Cobuild Lab**
