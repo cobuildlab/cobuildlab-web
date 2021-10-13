@@ -1,6 +1,5 @@
 import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
-import { navigate } from 'gatsby';
 import styled, { css } from 'styled-components';
 import ButtonDefault from '../../2020/Button/ButtonDefault';
 
@@ -93,9 +92,7 @@ const CardTitle = styled.div`
 `;
 
 const CustomerSuccessStoriesCard = ({ children, title, description, to }) => {
-  const handleClick = useCallback(() => {
-    navigate(to);
-  }, [to]);
+  const handleClick = useCallback(() => {}, [to]);
   return (
     <CardContainer onClick={handleClick}>
       {children}
