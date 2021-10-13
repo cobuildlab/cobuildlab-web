@@ -1,5 +1,5 @@
-import React, { useCallback } from 'react';
-import { navigate } from 'gatsby';
+import React from 'react';
+import { Link } from 'gatsby';
 import { Column, Card } from 'bloomer';
 
 import styled from 'styled-components';
@@ -45,23 +45,22 @@ const Readmore = styled.p`
 `;
 
 const ServicesCard = ({ title, subtitle, to, image }) => {
-  const handleClick = useCallback(() => {
-    navigate(to);
-  }, [to]);
   return (
     <>
       <Column isSize={{ mobile: 12, tablet: 6, desktop: 4 }}>
-        <CardStyledThree>
-          <Image>{image}</Image>
-          <Container>
-            <h4 className={'title-service'}>
-              {title}
-              <br />
-              {subtitle}
-            </h4>
-          </Container>
-          <Readmore onClick={handleClick}>Read More</Readmore>
-        </CardStyledThree>
+        <Link to={to}>
+          <CardStyledThree>
+            <Image>{image}</Image>
+            <Container>
+              <h4 className={'title-service'}>
+                {title}
+                <br />
+                {subtitle}
+              </h4>
+            </Container>
+            <Readmore>Read More</Readmore>
+          </CardStyledThree>
+        </Link>
       </Column>
     </>
   );
