@@ -24,15 +24,15 @@ export const SectionsWrapper = styled.div`
 `;
 
 const images = [
-  <AnimationImages src={img1} key={0} index={0} height={52} width={52} />,
-  <AnimationImages src={img2} index={1} key={1} height={355} width={363} />,
-  <AnimationImages src={img3} index={2} key={2} height={13} width={12} />,
-  <AnimationImages src={img4} index={3} key={3} height={24} width={23} />,
-  <AnimationImages src={img5} index={4} key={4} height={34} width={33} />,
-  <AnimationImages src={img6} index={5} key={5} height={221} width={215} />,
-  <AnimationImages src={img7} index={6} key={6} height={218} width={223} />,
-  <AnimationImages src={img8} index={7} key={7} height={319} width={245} />,
-  <AnimationImages src={img9} index={8} key={8} height={225} width={225} />,
+  <AnimationImages src={img1} key={0} index={0} height={'52'} width={'52'} />,
+  <AnimationImages src={img2} index={1} key={1} height={'355'} width={'363'} />,
+  <AnimationImages src={img3} index={2} key={2} height={'13'} width={'12'} />,
+  <AnimationImages src={img4} index={3} key={3} height={'24'} width={'23'} />,
+  <AnimationImages src={img5} index={4} key={4} height={'34'} width={'33'} />,
+  <AnimationImages src={img6} index={5} key={5} height={'221'} width={'215'} />,
+  <AnimationImages src={img7} index={6} key={6} height={'218'} width={'223'} />,
+  <AnimationImages src={img8} index={7} key={7} height={'319'} width={'245'} />,
+  <AnimationImages src={img9} index={8} key={8} height={'225'} width={'225'} />,
 ];
 
 const subTitle = {

@@ -44,7 +44,7 @@ const HomePageContact = () => (
         <ContactForm landingName="home-page" />
       </LeftColumn>
       <RightColumn isSize={{ mobile: 12, desktop: 6 }}>
-        <Image src={img} alt="contact form" />
+        <Image src={img} alt="contact form" height={'636'} width={'572'} />
       </RightColumn>
     </Columns>
   </Container>
