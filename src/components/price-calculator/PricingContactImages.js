@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 const PricingContactImages = () => {
   const data = useStaticQuery(query);
-  return <img src={data.file.publicURL} alt="" />;
+  return <img src={data.file.publicURL} alt="" height={'643'} width={'780'} />;
 };
 
 const query = graphql`
