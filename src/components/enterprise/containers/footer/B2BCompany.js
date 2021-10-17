@@ -9,7 +9,7 @@ const Images = styled.img`
 
 const B2BCompany = () => (
   <>
-    <Images height="200" width="200" src={logoB2B} alt="B2B Logo" />
+    <Images height={'200'} width={'200'} src={logoB2B} alt="B2B Logo" />
   </>
 );
 

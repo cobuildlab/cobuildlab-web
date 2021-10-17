@@ -22,7 +22,7 @@ const Header = ({ isFluid, showSocialIcons }) => {
           <NavbarBrand>
             <NavbarItem>
               <NavBrand to="/">
-                <NavBrandImages width="400" height="86" src={logo} alt="logo" />
+                <NavBrandImages width={'400'} height={'86'} src={logo} alt="logo" />
               </NavBrand>
             </NavbarItem>
             <NavbarItem isHidden="desktop">

@@ -131,7 +131,12 @@ const Item = ({ description, title, subtitle, image }) => (
       <Columns isCentered>
         <Column />
         <Column isCentered>
-          <img width="120" height="120" src={image.childImageSharp.fixed.src} alt={'Item images'} />
+          <img
+            width={'120'}
+            height={'120'}
+            src={image.childImageSharp.fixed.src}
+            alt={'Item images'}
+          />
         </Column>
         <Column />
       </Columns>
