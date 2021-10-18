@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Columns, Column, Section, Title } from 'bloomer';
 import { SmoothScrollingButton } from '../button/SmoothScrollingButton';
 import '../../../assets/2021/scss/style1.scss';
@@ -16,18 +16,28 @@ export const YOUTUBE_OPTS = {
   },
 };
 
-const Video = ({ videoId, text1, text2 }) => {
+const Video = ({ videoId, text1, text2, facade }) => {
+  const [show, setShow] = useState();
+
+  useEffect(() => {
+    setShow(facade ? true : false);
+  }, [facade]);
+
   return (
     <Section isCentered>
       <Container>
         <Columns isDisplay="flex-mobile" isCentered>
           <Column isSize={{ mobile: 10, desktop: 7 }} isHidden="mobile">
-            <YouTube
-              videoId={videoId}
-              opts={YOUTUBE_OPTS}
-              className="youtube-container"
-              style={{ width: '100%', minHeight: '390px' }}
-            />
+            {show ? (
+              <div onMouseEnter={() => setShow(false)}>{facade}</div>
+            ) : (
+              <YouTube
+                videoId={videoId}
+                opts={YOUTUBE_OPTS}
+                className="youtube-container"
+                style={{ width: '100%', minHeight: '390px' }}
+              />
+            )}
           </Column>
           <Column isSize={{ mobile: 11, desktop: 5 }}>
             <Title>{text1}</Title>
@@ -45,9 +55,12 @@ const Video = ({ videoId, text1, text2 }) => {
   );
 };
 
+Video.defaultProps = { facade: false };
+
 Video.propTypes = {
   videoId: PropTypes.string.isRequired,
   text1: PropTypes.string.isRequired,
   text2: PropTypes.string.isRequired,
+  facade: PropTypes.any,
 };
 export { Video };
