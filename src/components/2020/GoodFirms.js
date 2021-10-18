@@ -17,6 +17,8 @@ const GoodFirms = () => (
       href="https://www.goodfirms.co/company/cobuild-lab-inc"
       rel="noreferrer noopener">
       <Images
+        width={'141'}
+        height={'21'}
         src="https://assets.goodfirms.co/categories/goodfirms-blue.svg"
         alt="GoodFirms Badge"
       />

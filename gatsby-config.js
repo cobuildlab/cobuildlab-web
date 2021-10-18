@@ -15,6 +15,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-preact`,
     {
       resolve: 'gatsby-plugin-zopfli',
     },

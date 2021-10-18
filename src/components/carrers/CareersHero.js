@@ -28,7 +28,7 @@ const CareersHero = () => (
             <Title>Join Our Team </Title>
           </Column>
           <Column isSize={{ desktop: 6 }} isHidden="mobile">
-            <Image src={img} alt="contact form" />
+            <Image src={img} alt="contact form" height={'372'} width={'458'} />
           </Column>
         </Columns>
       </Container>
