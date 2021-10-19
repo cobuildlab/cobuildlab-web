@@ -34,6 +34,8 @@ const TeamHero = () => (
       </Column>
       <Column isSize={{ desktop: 6, mobile: 12 }}>
         <StaticImage
+          width={'660'}
+          height={'440'}
           src={'../../assets/images/team/out_team_header.jpg'}
           style={{ width: '100%' }}
         />
