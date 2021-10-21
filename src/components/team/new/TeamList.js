@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Card from '../card/Card';
 import { Column, Columns } from 'bloomer';
-import { mainStaff, useTeamList } from './TeamListHook';
+import { mainStaff, staff } from './TeamListHook';
 
 const Container = styled.div`
   margin-top: 1.5em;
@@ -10,9 +10,6 @@ const Container = styled.div`
 `;
 
 const TeamList = () => {
-  // Get list already sorted
-  const { data } = useTeamList();
-
   // To determine when to display green and white backgrounds
   let isOdd = true;
 
@@ -25,7 +22,7 @@ const TeamList = () => {
           </Column>
         ))}
 
-        {data.map((item, index) => {
+        {staff.map((item, index) => {
           if ((index + 1) % 4 === 0) {
             isOdd = !isOdd;
           }

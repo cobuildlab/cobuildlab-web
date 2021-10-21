@@ -11,6 +11,7 @@ const mainStaff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/angel.jpg'}
+        alt={'Angel Lacret'}
       />
     ),
   },
@@ -22,6 +23,7 @@ const mainStaff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/alanthinks.jpg'}
+        alt={'Alan R. Guevara'}
       />
     ),
   },
@@ -33,6 +35,7 @@ const mainStaff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/jacqueline-popovich.jpg'}
+        alt={'Jacqueline Popovich'}
       />
     ),
   },
@@ -44,6 +47,7 @@ const mainStaff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/ryan-seron.jpg'}
+        alt={'Ryan Seron'}
       />
     ),
   },
@@ -55,6 +59,7 @@ const mainStaff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/Miguel-Muir.jpg'}
+        alt={'Miguel Muir'}
       />
     ),
   },
@@ -69,18 +74,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/alessandra-brusut.jpg'}
+        alt={'Alessandra Lubertino'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/alessandra-brusut.jpg'}
+        alt={'Alessandra Lubertino'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/alessandra-brusut.jpg'}
+        alt={'Alessandra Lubertino'}
       />
     ),
   },
@@ -92,18 +100,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/Alexander-Romero.jpg'}
+        alt={'Alexander Romero'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/Alexander-Romero.jpg'}
+        alt={'Alexander Romero'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/Alexander-Romero.jpg'}
+        alt={'Alexander Romero'}
       />
     ),
   },
@@ -115,18 +126,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/araceli.jpg'}
+        alt={'Aracelis Acosta'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/araceli.jpg'}
+        alt={'Aracelis Acosta'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/araceli.jpg'}
+        alt={'Aracelis Acosta'}
       />
     ),
   },
@@ -138,18 +152,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/anjelys-leal.jpg'}
+        alt={'Anjelys Leal'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/anjelys-leal.jpg'}
+        alt={'Anjelys Leal'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/anjelys-leal.jpg'}
+        alt={'Anjelys Leal'}
       />
     ),
   },
@@ -161,18 +178,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/carlos-hurtado.jpg'}
+        alt={'Carlos Hurtado'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/carlos-hurtado.jpg'}
+        alt={'Carlos Hurtado'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/carlos-hurtado.jpg'}
+        alt={'Carlos Hurtado'}
       />
     ),
   },
@@ -184,18 +204,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/carlos-magno.jpg'}
+        alt={'Carlos Magno'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/carlos-magno.jpg'}
+        alt={'Carlos Magno'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/carlos-magno.jpg'}
+        alt={'Carlos Magno'}
       />
     ),
   },
@@ -207,18 +230,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/carolina-barcelo.jpg'}
+        alt={'Carolina Barcelo'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/carolina-barcelo.jpg'}
+        alt={'Carolina Barcelo'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/carolina-barcelo.jpg'}
+        alt={'Carolina Barcelo'}
       />
     ),
   },
@@ -230,18 +256,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/cesar-morales.jpg'}
+        alt={'Cesar Morales'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/cesar-morales.jpg'}
+        alt={'Cesar Morales'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/cesar-morales.jpg'}
+        alt={'Cesar Morales'}
       />
     ),
   },
@@ -253,18 +282,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/cristian-caraballo.jpg'}
+        alt={'Cristian Caraballo'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/cristian-caraballo.jpg'}
+        alt={'Cristian Caraballo'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/cristian-caraballo.jpg'}
+        alt={'Cristian Caraballo'}
       />
     ),
   },
@@ -276,18 +308,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/leonel-lima.jpg'}
+        alt={'Dany Lima'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/leonel-lima.jpg'}
+        alt={'Dany Lima'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/leonel-lima.jpg'}
+        alt={'Dany Lima'}
       />
     ),
   },
@@ -299,18 +334,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/Edgar-Espinetti.jpg'}
+        alt={'Edgar Espinetti'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/Edgar-Espinetti.jpg'}
+        alt={'Edgar Espinetti'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/Edgar-Espinetti.jpg'}
+        alt={'Edgar Espinetti'}
       />
     ),
   },
@@ -322,18 +360,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/Eduardo-Marquez.jpg'}
+        alt={'Eduardo Marquez'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/Eduardo-Marquez.jpg'}
+        alt={'Eduardo Marquez'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/Eduardo-Marquez.jpg'}
+        alt={'Eduardo Marquez'}
       />
     ),
   },
@@ -347,6 +388,7 @@ const staff = [
         src={
           './../../../assets/images/team/new-pictures/green/Ernesto-Morales-UX-UI-Designer-v.jpg'
         }
+        alt={'Ernesto Morales'}
       />
     ),
     greenPicture: (
@@ -355,6 +397,7 @@ const staff = [
         src={
           './../../../assets/images/team/new-pictures/green/Ernesto-Morales-UX-UI-Designer-v.jpg'
         }
+        alt={'Ernesto Morales'}
       />
     ),
     picture: (
@@ -363,6 +406,7 @@ const staff = [
         src={
           './../../../assets/images/team/new-pictures/green/Ernesto-Morales-UX-UI-Designer-v.jpg'
         }
+        alt={'Ernesto Morales'}
       />
     ),
   },
@@ -374,18 +418,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/fabricio-rojas.jpg'}
+        alt={'Fabricio Rojas'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/fabricio-rojas.jpg'}
+        alt={'Fabricio Rojas'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/fabricio-rojas.jpg'}
+        alt={'Fabricio Rojas'}
       />
     ),
   },
@@ -397,18 +444,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/gerardo-garcia.jpeg'}
+        alt={'Gerardo Garcia'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/gerardo-garcia.jpg'}
+        alt={'Gerardo Garcia'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/gerardo-garcia.jpeg'}
+        alt={'Gerardo Garcia'}
       />
     ),
   },
@@ -420,18 +470,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/gian-lucas-leguizamo.jpg'}
+        alt={'Gian Leguizamo'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/gian-lucas-leguizamo.jpg'}
+        alt={'Gian Leguizamo'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/gian-lucas-leguizamo.jpg'}
+        alt={'Gian Leguizamo'}
       />
     ),
   },
@@ -443,18 +496,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/hector-vasquez.jpg'}
+        alt={'Hector Vázquez'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/hector-vasquez.jpg'}
+        alt={'Hector Vázquez'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/hector-vasquez.jpg'}
+        alt={'Hector Vázquez'}
       />
     ),
   },
@@ -466,18 +522,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/jesus-lopez.jpg'}
+        alt={'Jesus Lopez'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/jesus-lopez.jpg'}
+        alt={'Jesus Lopez'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/jesus-lopez.jpg'}
+        alt={'Jesus Lopez'}
       />
     ),
   },
@@ -489,18 +548,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/jesus-rodriguez.jpg'}
+        alt={'Jesus Rodriguez'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/jesus-rodriguez.jpg'}
+        alt={'Jesus Rodriguez'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/jesus-rodriguez.jpg'}
+        alt={'Jesus Rodriguez'}
       />
     ),
   },
@@ -512,18 +574,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/jorman-garcia.jpg'}
+        alt={'Jorman Garcia'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/jorman-garcia.jpg'}
+        alt={'Jorman Garcia'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/jorman-garcia.jpg'}
+        alt={'Jorman Garcia'}
       />
     ),
   },
@@ -535,18 +600,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/kevin.jpg'}
+        alt={'Kevin Hernandez'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/kevin.jpg'}
+        alt={'Kevin Hernandez'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/kevin.jpg'}
+        alt={'Kevin Hernandez'}
       />
     ),
   },
@@ -558,18 +626,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/kristal-dorta.jpg'}
+        alt={'Kristal Dorta'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/kristal-dorta.jpg'}
+        alt={'Kristal Dorta'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/kristal-dorta.jpg'}
+        alt={'Kristal Dorta'}
       />
     ),
   },
@@ -581,18 +652,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/leonardo-sciretta.jpg'}
+        alt={'Leonardo Sciretta'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/leonardo-sciretta.jpg'}
+        alt={'Leonardo Sciretta'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/leonardo-sciretta.jpg'}
+        alt={'Leonardo Sciretta'}
       />
     ),
   },
@@ -604,18 +678,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/Luis-Eulacio.jpg'}
+        alt={'Luis Eulacio'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/Luis-Eulacio.jpg'}
+        alt={'Luis Eulacio'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/Luis-Eulacio.jpg'}
+        alt={'Luis Eulacio'}
       />
     ),
   },
@@ -627,18 +704,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/luis-leopardi.jpg'}
+        alt={'Luis Leopardi'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/luis-leopardi.jpg'}
+        alt={'Luis Leopardi'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/luis-leopardi.jpg'}
+        alt={'Luis Leopardi'}
       />
     ),
   },
@@ -650,18 +730,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/luis-olivares.jpg'}
+        alt={'Luis Olivares'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/luis-olivares.jpg'}
+        alt={'Luis Olivares'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/luis-olivares.jpg'}
+        alt={'Luis Olivares'}
       />
     ),
   },
@@ -673,18 +756,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/maite-quijada.jpg'}
+        alt={'Maite Quijada'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/maite-quijada.jpg'}
+        alt={'Maite Quijada'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/maite-quijada.jpg'}
+        alt={'Maite Quijada'}
       />
     ),
   },
@@ -696,18 +782,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/MariaGabrielaMoya.jpg'}
+        alt={'Maria Moya'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/MariaGabrielaMoya.jpg'}
+        alt={'Maria Moya'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/MariaGabrielaMoya.jpg'}
+        alt={'Maria Moya'}
       />
     ),
   },
@@ -719,18 +808,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/MarianaBalzan.jpg'}
+        alt={'Mariana Balzan'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/MarianaBalzan.jpg'}
+        alt={'Mariana Balzan'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/MarianaBalzan.jpg'}
+        alt={'Mariana Balzan'}
       />
     ),
   },
@@ -742,18 +834,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/mayela-marin.jpg'}
+        alt={'Mayela Marin'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/mayela-marin.jpg'}
+        alt={'Mayela Marin'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/mayela-marin.jpg'}
+        alt={'Mayela Marin'}
       />
     ),
   },
@@ -765,18 +860,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/paul-salazar.jpg'}
+        alt={'Paul Salazar'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/paul-salazar.jpg'}
+        alt={'Paul Salazar'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/paul-salazar.jpg'}
+        alt={'Paul Salazar'}
       />
     ),
   },
@@ -788,18 +886,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/rossileydys-silva.jpg'}
+        alt={'Rossileydys Silva'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/rossileydys-silva.jpg'}
+        alt={'Rossileydys Silva'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/rossileydys-silva.jpg'}
+        alt={'Rossileydys Silva'}
       />
     ),
   },
@@ -811,18 +912,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/sebastian-muchut.jpg'}
+        alt={'Sebastian Muchut'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/sebastian-muchut.jpg'}
+        alt={'Sebastian Muchut'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/sebastian-muchut.jpg'}
+        alt={'Sebastian Muchut'}
       />
     ),
   },
@@ -834,18 +938,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/thiago.jpg'}
+        alt={'Thiago Gallo'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/thiago.jpg'}
+        alt={'Thiago Gallo'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/thiago.jpg'}
+        alt={'Thiago Gallo'}
       />
     ),
   },
@@ -857,18 +964,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/Yanisel-Barreto.jpg'}
+        alt={'Yanisel Barreto'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/Yanisel-Barreto.jpg'}
+        alt={'Yanisel Barreto'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/team-pictures/Yanisel-Barreto.jpg'}
+        alt={'Yanisel Barreto'}
       />
     ),
   },
@@ -880,18 +990,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/Diana-Sandoval----Developer-b.jpg'}
+        alt={'Diana Sandoval'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/Diana-Sandoval----Developer-v.jpg'}
+        alt={'Diana Sandoval'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/Diana-Sandoval----Developer-b.jpg'}
+        alt={'Diana Sandoval'}
       />
     ),
   },
@@ -903,18 +1016,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/Enzo-Nadales---Developer-b.jpg'}
+        alt={'Enzo Nadales'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/Enzo-Nadales---Developer-v.jpg'}
+        alt={'Enzo Nadales'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/Enzo-Nadales---Developer-b.jpg'}
+        alt={'Enzo Nadales'}
       />
     ),
   },
@@ -926,18 +1042,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/Francisco-Maneiro--Developer-b.jpg'}
+        alt={'Francisco Maneiro'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/Francisco-Maneiro--Developer-v.jpg'}
+        alt={'Francisco Maneiro'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/Francisco-Maneiro--Developer-b.jpg'}
+        alt={'Francisco Maneiro'}
       />
     ),
   },
@@ -949,18 +1068,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/Manuel-Cortina--Developer-b.jpg'}
+        alt={'Manuel Cortina'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/Manuel-Cortina--Developer-v.jpg'}
+        alt={'Manuel Cortina'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/Manuel-Cortina--Developer-b.jpg'}
+        alt={'Manuel Cortina'}
       />
     ),
   },
@@ -972,18 +1094,21 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/Manuel-Puente---Developer-b.jpg'}
+        alt={'Manuel Puente'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/Manuel-Puente---Developer-v.jpg'}
+        alt={'Manuel Puente'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/Manuel-Puente---Developer-b.jpg'}
+        alt={'Manuel Puente'}
       />
     ),
   },
@@ -995,22 +1120,24 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/Richar-Pupo---Developer-b.jpg'}
+        alt={'Richar Pupo'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/Richar-Pupo---Developer-v.jpg'}
+        alt={'Richar Pupo'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/Richar-Pupo---Developer-b.jpg'}
+        alt={'Richar Pupo'}
       />
     ),
   },
-
   {
     first: 'Xavier',
     last: 'Romero',
@@ -1019,34 +1146,30 @@ const staff = [
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/Xavier-Romero-Developer-b.jpg'}
+        alt={'Xavier Romero'}
       />
     ),
     greenPicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/green/Xavier-Romero-Developer-v.jpg'}
+        alt={'Xavier Romero'}
       />
     ),
     picture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../../assets/images/team/new-pictures/white/Xavier-Romero-Developer-b.jpg'}
+        alt={'Xavier Romero'}
       />
     ),
   },
 ];
 
-const useTeamList = () => {
-  // Alphabetical order
-  const data = _.sortBy(
-    staff,
-    [(value) => `${value.first.toLowerCase()} ${value.last.toLowerCase()}`],
-    ['desc'],
-  );
+const data = _.sortBy(
+  staff,
+  [(value) => `${value.first.toLowerCase()} ${value.last.toLowerCase()}`],
+  ['desc'],
+);
 
-  return {
-    data,
-  };
-};
-
-export { mainStaff, staff, useTeamList };
+export { mainStaff, data as staff };
