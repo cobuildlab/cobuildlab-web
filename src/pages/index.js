@@ -22,6 +22,7 @@ import { SeoMetaTags } from '../components/2021/SeoMetaTags';
 import IncubatorLink from '../components/enterprise/containers/incubator/Incubator';
 import { About } from '../components/2021/containers/About';
 import TextLink from '../components/Typography/TextLink';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const title = {
   default: {
@@ -65,6 +66,12 @@ const IndexPage = () => (
         text1={'For Small and Medium Sized Businesses'}
         text2={
           'At Cobuild Lab, we’ve been helping Business Owners, Managers, CTO’s, COO’s and IT leaders automate business processes with custom software solutions, artificial Intelligence models and IOT hardware.'
+        }
+        facade={
+          <StaticImage
+            src={'../assets/images/video/thumbnail_home_video.png'}
+            style={{ width: '100%', minHeight: '390px' }}
+          />
         }
       />
       <Service2 />

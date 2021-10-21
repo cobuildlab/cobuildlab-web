@@ -1,8 +1,8 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { navigate } from 'gatsby';
 import styled, { css } from 'styled-components';
 import ButtonDefault from '../../2020/Button/ButtonDefault';
+import { Link } from 'gatsby';
 
 const textCSS = css`
   color: #fff;
@@ -93,20 +93,19 @@ const CardTitle = styled.div`
 `;
 
 const CustomerSuccessStoriesCard = ({ children, title, description, to }) => {
-  const handleClick = useCallback(() => {
-    navigate(to);
-  }, [to]);
   return (
-    <CardContainer onClick={handleClick}>
-      {children}
-      <CardHoverContainer>
-        <CardTitle>{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
-        <ButtonWrapper>
-          <ButtonDefault>READ MORE</ButtonDefault>
-        </ButtonWrapper>
-      </CardHoverContainer>
-    </CardContainer>
+    <Link to={to}>
+      <CardContainer>
+        {children}
+        <CardHoverContainer>
+          <CardTitle>{title}</CardTitle>
+          <CardDescription>{description}</CardDescription>
+          <ButtonWrapper>
+            <ButtonDefault>READ MORE</ButtonDefault>
+          </ButtonWrapper>
+        </CardHoverContainer>
+      </CardContainer>
+    </Link>
   );
 };
 
