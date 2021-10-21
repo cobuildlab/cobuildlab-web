@@ -18,7 +18,17 @@ import { TextOrange } from '../../components/2021/text/TextHelpers';
 import TextLink from '../../components/Typography/TextLink';
 import { StaticImage } from 'gatsby-plugin-image';
 import SlidersCollabToGrow from '../../components/customer-success-stories/new/sliders/collabToGrow/Sliders';
+import BannerBackground from '../../components/2020/BannerBackground';
+import styled from 'styled-components';
 
+const OverviewSection = styled.div`
+  position: relative;
+`;
+
+const ProblemSection = styled.div`
+  background-color: #ffffff;
+  box-shadow: 0px 13px 15px 5px #0000002e;
+`;
 const CollabToGrow = ({ data }) => (
   <DetailLayout>
     <SeoMetaTags
@@ -26,49 +36,74 @@ const CollabToGrow = ({ data }) => (
       description="Is a technology-enabled managed services and advisory firm that specializes in improving the performance of strategic alliances."
       image={data.seoImages.childImageSharp.resize}
     />
-    <Section>
-      <Container>
-        <Columns isMultiline>
-          <Column isSize={{ mobile: 12, desktop: 6 }}>
-            <DetailTitle>Collab To Grow</DetailTitle>
-            <DetailParagraph>
-              <TextLink to="https://collabtogrow.com/">Collabtogrow™</TextLink> Inc. is a
-              technology-enabled managed services and advisory firm that specializes in improving
-              the performance of strategic alliances.
-            </DetailParagraph>
-            <br />
-            <DetailParagraph>
-              <TextLink to="https://www.linkedin.com/in/ken-coppins-432b70183">
-                Ken Coppins
-              </TextLink>{' '}
-              and <TextLink to="https://www.linkedin.com/in/bob-jones-1147834/">Bob Jones</TextLink>{' '}
-              , both highly experienced corporate executives, management consultants, and
-              co-founders of <TextLink to="https://collabtogrow.com/">Collabtogrow™</TextLink>,
-              believe that repeatable frameworks, workflows, and tools are fundamental for growing
-              potential collaborative relationships. In Collabtogrow™ they leverage their proven
-              framework of industry-leading practices, standards, and tools to help their clients
-              greatly increase their chances of their alliances being successful.
-            </DetailParagraph>
-            <DetailSubTitle>
-              The <TextOrange> Problem </TextOrange>
-            </DetailSubTitle>
-            <DetailParagraph>
-              Already investing a significant amount of time dedicated to structure and organizing
-              corporate strategic alliances, they needed a solution that would not only give them
-              more insight but give them back their time.
-            </DetailParagraph>
-          </Column>
-          <Column isSize={{ mobile: 12, desktop: 6 }}>
-            <DetailHeroImagesContent>
-              <StaticImage
-                src={'./../../assets/images/customers/collabtogrow/collab-logo.jpg'}
-                alt=""
-              />
-            </DetailHeroImagesContent>
-          </Column>
-        </Columns>
-      </Container>
-    </Section>
+    <OverviewSection>
+      <Section>
+        <BannerBackground />
+        <Container>
+          <Columns isMultiline>
+            <Column isSize={{ mobile: 12, desktop: 6 }}>
+              <DetailTitle>Collab to grow</DetailTitle>
+              <DetailParagraph isBold={true}>
+                <TextLink to="https://collabtogrow.com/">Collabtogrow™</TextLink> Inc. is a
+                technology-enabled managed services and advisory firm that specializes in improving
+                the performance of strategic alliances.
+              </DetailParagraph>
+              <br />
+              <DetailParagraph isBold={true}>
+                <TextLink to="https://www.linkedin.com/in/ken-coppins-432b70183">
+                  Ken Coppins
+                </TextLink>{' '}
+                and{' '}
+                <TextLink to="https://www.linkedin.com/in/bob-jones-1147834/">Bob Jones</TextLink> ,
+                both highly experienced corporate executives, management consultants, and
+                co-founders of <TextLink to="https://collabtogrow.com/">Collabtogrow™</TextLink>,
+                believe that repeatable frameworks, workflows, and tools are fundamental for growing
+                potential collaborative relationships. In Collabtogrow™ they leverage their proven
+                framework of industry-leading practices, standards, and tools to help their clients
+                greatly increase their chances of their alliances being successful.
+              </DetailParagraph>
+            </Column>
+            <Column isSize={{ mobile: 12, desktop: 6 }}>
+              <DetailHeroImagesContent>
+                <StaticImage
+                  src={'./../../assets/images/customers/collabtogrow/collab-logo.jpg'}
+                  alt=""
+                />
+              </DetailHeroImagesContent>
+            </Column>
+          </Columns>
+        </Container>
+      </Section>
+    </OverviewSection>
+
+    <ProblemSection>
+      <Section>
+        <Container>
+          <Columns isMultiline>
+            <Column isSize={{ mobile: 12, desktop: 6 }}>
+              <DetailSubTitle>
+                The <TextOrange> Problem </TextOrange>
+              </DetailSubTitle>
+              <DetailParagraph>
+                Already investing a significant amount of time dedicated to structure and organizing
+                corporate strategic alliances, they needed a solution that would not only give them
+                more insight but give them back their time.
+              </DetailParagraph>
+            </Column>
+            <Column isSize={{ mobile: 12, desktop: 6 }}>
+              <DetailSubTitle>
+                The <TextOrange> Problem </TextOrange>
+              </DetailSubTitle>
+              <DetailParagraph>
+                Already investing a significant amount of time dedicated to structure and organizing
+                corporate strategic alliances, they needed a solution that would not only give them
+                more insight but give them back their time.
+              </DetailParagraph>
+            </Column>
+          </Columns>
+        </Container>
+      </Section>
+    </ProblemSection>
 
     <DetailSection
       image={
