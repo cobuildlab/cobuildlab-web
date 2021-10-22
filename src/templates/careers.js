@@ -35,7 +35,7 @@ function CareersTemplate({ pageContext }) {
 
   return (
     <Layout>
-      <SeoMetaTags title="Careers" description="Careers for the Cobuild Lab" />
+      <SeoMetaTags title={'Careers: ' + title} description="Careers for the Cobuild Lab" />
       <Hero>
         <HeroHeader>
           <Header />

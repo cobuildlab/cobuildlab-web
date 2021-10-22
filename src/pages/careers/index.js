@@ -6,9 +6,9 @@ import Layout from '../../components/2020/Layout';
 import { Column, Columns, Container, Section } from 'bloomer';
 import Contact from '../../components/2020/HomePageContact';
 import CareersCard from '../../components/carrers/CareersCard';
-import CareersMetaTags from '../../components/carrers/CareersMetaTags';
 import CareersHero from '../../components/carrers/CareersHero';
 import H6 from '../../components/Typography/H6';
+import { SeoMetaTags } from '../../components/2021/SeoMetaTags';
 
 const TagStyle = styled.div`
   height: 35px;
@@ -45,7 +45,10 @@ const Careers = ({ data }) => {
 
   return (
     <Layout>
-      <CareersMetaTags />
+      <SeoMetaTags
+        title="Careers in Tech with Cobuild Lab"
+        description="Careers in Tech with Cobuild Lab"
+      />
       <CareersHero />
       <Section>
         <Container>
