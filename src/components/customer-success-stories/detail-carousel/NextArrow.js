@@ -6,7 +6,7 @@ import { Icon, IconContainer } from './Icon';
 import rightIcon from '../../../assets/images/icons/arrow-right.png';
 
 const Right = styled(IconContainer)`
-  right: -25%;
+  right: -15%;
 `;
 
 const NextArrow = ({ className, style, onClick }) => (

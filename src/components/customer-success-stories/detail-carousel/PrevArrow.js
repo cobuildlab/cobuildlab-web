@@ -6,7 +6,7 @@ import { Icon, IconContainer } from './Icon';
 import leftIcon from '../../../assets/images/icons/arrow-left.png';
 
 const Left = styled(IconContainer)`
-  left: -25%;
+  left: -15%;
 `;
 
 const PrevArrow = ({ className, style, onClick }) => (
