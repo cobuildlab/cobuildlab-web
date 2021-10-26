@@ -13,7 +13,7 @@ import DetailSection from '../../components/customer-success-stories/new/DetailS
 import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 import { List, ListItem } from '../../components/Typography/List';
 
-import { TextOrange } from '../../components/2021/text/TextHelpers';
+import { TextIndigo, TextOrange } from '../../components/2021/text/TextHelpers';
 import { StaticImage } from 'gatsby-plugin-image';
 import TextLink from '../../components/Typography/TextLink';
 import SlidersCollabToGrow from '../../components/customer-success-stories/new/sliders/collabToGrow/Sliders';
@@ -21,6 +21,7 @@ import styled from 'styled-components';
 import BannerBackgroundStories from '../../components/customer-success-stories/BannerBackgroundStories';
 import Card from '../../components/team/card/Card';
 import Item from '../../components/enterprise/containers/testimonial/Item';
+import GoalChart from '../../components/customer-success-stories/chart/GoalChart';
 
 const OverviewSection = styled.div`
   margin-bottom: 5rem;
@@ -30,7 +31,7 @@ const BrandLogosContainer = styled.div`
   display: flex;
   align-items: center;
   margin-top: 3.8rem;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     justify-content: center;
   }
 `;
@@ -66,8 +67,15 @@ const WrappResult = styled.div`
 `;
 
 const EpilogueSection = styled.div`
-  max-width: 800px;
-  text-align: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+`;
+
+const FlexCenter = styled.div`
+  justify-content: center;
+  display: flex;
+  width: 100%;
 `;
 
 const CollabToGrow = ({ data }) => (
@@ -113,7 +121,7 @@ const CollabToGrow = ({ data }) => (
                   height={'68'}
                   style={{ marginRight: '4rem' }}
                   objectFit={'contain'}
-                  src={'../../assets/images/logos/brands/google.png'}
+                  src={'../../assets/images/logos/brands-stories/google.png'}
                   alt={'google'}
                 />
                 <StaticImage
@@ -121,14 +129,14 @@ const CollabToGrow = ({ data }) => (
                   height={'80'}
                   style={{ marginRight: '4rem' }}
                   objectFit={'contain'}
-                  src={'../../assets/images/logos/brands/react.png'}
+                  src={'../../assets/images/logos/brands-stories/react.png'}
                   alt={'react'}
                 />
                 <StaticImage
                   width={'91'}
                   height={'91'}
                   objectFit={'contain'}
-                  src={'../../assets/images/logos/brands/aws.png'}
+                  src={'../../assets/images/logos/brands-stories/aws.png'}
                   alt={'aws'}
                 />
               </BrandLogosContainer>
@@ -159,7 +167,7 @@ const CollabToGrow = ({ data }) => (
       <Section>
         <Container>
           <Columns isMultiline>
-            <Column isSize={{ mobile: 12, desktop: 6 }}>
+            <Column isSize={{ tablet: 12, desktop: 6 }}>
               <ImageProblemSection>
                 <StaticImage
                   width={'1770'}
@@ -169,39 +177,14 @@ const CollabToGrow = ({ data }) => (
                 />
               </ImageProblemSection>
             </Column>
-            <Column isSize={{ mobile: 12, desktop: 6 }}>
+            <Column isSize={{ tablet: 12, desktop: 6 }}>
               <DetailSubTitle>
                 The <TextOrange> Problem </TextOrange>
               </DetailSubTitle>
               <DetailParagraph>
-                <List>
-                  <ListItem>
-                    Already investing a significant amount of time dedicated to structure and
-                    organizing corporate strategic alliances, they needed a solution that would not.
-                  </ListItem>
-                  <ListItem>Only give them more insight but give them back their time.</ListItem>
-                  <ListItem>
-                    Already investing a significant amount of time dedicated to structure and
-                    organizing corporate strategic alliance.
-                  </ListItem>
-                  <ListItem>
-                    They needed a solution that would not only give them more insight but give them
-                    back their time.
-                  </ListItem>
-                  <ListItem>
-                    Already investing a significant amount of time dedicated to structure and
-                    organizing corporate strategic alliances, they needed a soluction that would not
-                    only give them more insight but give them back their time. Already investing a.
-                  </ListItem>
-                  <ListItem>Already investing a significant amount.</ListItem>
-                  <ListItem>
-                    Of time dedicated to structure and organizing corporate strategic alliances.
-                  </ListItem>
-                  <ListItem>
-                    They needed a solution that would not only give them more insight but give them
-                    back their time.
-                  </ListItem>
-                </List>
+                Already investing a significant amount of time dedicated to structure and organizing
+                corporate strategic alliances, they needed a solution that would not only give them
+                more insight but give them back their time.
               </DetailParagraph>
             </Column>
           </Columns>
@@ -273,7 +256,7 @@ const CollabToGrow = ({ data }) => (
                 height={'68'}
                 style={{ marginRight: '4rem' }}
                 objectFit={'contain'}
-                src={'../../assets/images/logos/brands/google.png'}
+                src={'../../assets/images/logos/brands-stories/google.png'}
                 alt={'google'}
               />
               <StaticImage
@@ -281,7 +264,7 @@ const CollabToGrow = ({ data }) => (
                 height={'80'}
                 style={{ marginRight: '4rem' }}
                 objectFit={'contain'}
-                src={'../../assets/images/logos/brands/react.png'}
+                src={'../../assets/images/logos/brands-stories/react.png'}
                 alt={'react'}
               />
               <StaticImage
@@ -289,7 +272,7 @@ const CollabToGrow = ({ data }) => (
                 height={'91'}
                 style={{ marginRight: '4rem' }}
                 objectFit={'contain'}
-                src={'../../assets/images/logos/brands/aws.png'}
+                src={'../../assets/images/logos/brands-stories/aws.png'}
                 alt={'aws'}
               />
               <StaticImage
@@ -297,14 +280,14 @@ const CollabToGrow = ({ data }) => (
                 height={'91'}
                 style={{ marginRight: '4rem' }}
                 objectFit={'contain'}
-                src={'../../assets/images/logos/brands/aws.png'}
+                src={'../../assets/images/logos/brands-stories/aws.png'}
                 alt={'aws'}
               />
               <StaticImage
                 width={'67'}
                 height={'68'}
                 objectFit={'contain'}
-                src={'../../assets/images/logos/brands/google.png'}
+                src={'../../assets/images/logos/brands-stories/google.png'}
                 alt={'google'}
               />
             </Column>
@@ -448,30 +431,92 @@ const CollabToGrow = ({ data }) => (
     </Section>
 
     {
+      // Our goal
+    }
+    <LightSection>
+      <Section>
+        <center>
+          <DetailSubTitle>
+            <TextOrange>Our goals</TextOrange> for this project
+          </DetailSubTitle>
+        </center>
+        <Container>
+          <Columns isMultiline isCentered>
+            <Column isSize={{ mobile: 12, tablet: 6, desktop: 3 }}>
+              <GoalChart
+                goal={10}
+                subTitle={'It is a long established fact that a reader will be distracted'}
+                description={
+                  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+                }
+              />
+            </Column>
+            <Column isSize={{ mobile: 12, tablet: 6, desktop: 3 }}>
+              <GoalChart
+                goal={30}
+                subTitle={'It is a long established fact that a reader will be distracted'}
+                description={
+                  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+                }
+              />
+            </Column>
+            <Column isSize={{ mobile: 12, tablet: 6, desktop: 3 }}>
+              <GoalChart
+                goal={50}
+                subTitle={'It is a long established fact that a reader will be distracted'}
+                description={
+                  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+                }
+              />
+            </Column>
+            <Column isSize={{ mobile: 12, tablet: 6, desktop: 3 }}>
+              <GoalChart
+                goal={80}
+                subTitle={'It is a long established fact that a reader will be distracted'}
+                description={
+                  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+                }
+              />
+            </Column>
+          </Columns>
+        </Container>
+      </Section>
+    </LightSection>
+
+    {
       // Epilogue section
     }
     <EpilogueSection>
       <Section>
-        <DetailSubTitle isBold={false}>About cobuild lab’s benefits</DetailSubTitle>
-        <DetailParagraph>
-          The next logical step was the development of an application that could help Collabtogrow™
-          accelerate the process in which, through their framework and workflows, increase the
-          collaborative relationship potential of their clients. They needed a new system that would
-          be cost-effective and improve the performance of the strategic alliance. After researching
-          different development alternatives, including existing “no-code” vendors, they concluded
-          that 8base was the only company whose platform provided the tools needed to build the
-          application, such as:
-        </DetailParagraph>
-        <DetailSubTitle isBold={false}>Long-term partnership</DetailSubTitle>
-        <DetailParagraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at nulla metus. Nullam
-          feugiat aliquet velit a gravida. Pellentesque quam justo, placerat in odio in, laoreet
-          cursus elit. Curabitur metus metus, facilisis nec ligula quis, iaculis faucibus odio.
-          Vivamus ut mi rhoncus nisi vulputate convallis sed eu tellus. Aenean eu magna id massa
-          euismod laoreet vel sed felis. Sed efficitur arcu sit amet dolor suscipit ultrices. Etiam
-          nec risus ultricies, mattis erat et, rutrum orci. Quisque a ipsum semper, vestibulum risus
-          in, sollicitudin elit. Fusce efficitur congue ullamcorper.
-        </DetailParagraph>
+        <div style={{ maxWidth: '1000px' }}>
+          <FlexCenter>
+            <TextIndigo>{"Let's"}</TextIndigo>
+            Build <TextIndigo>a Great</TextIndigo> Idea
+          </FlexCenter>
+          <DetailSubTitle isBold={false}>About cobuild lab’s benefits</DetailSubTitle>
+          <DetailParagraph>
+            The next logical step was the development of an application that could help
+            Collabtogrow™ accelerate the process in which, through their framework and workflows,
+            increase the collaborative relationship potential of their clients. They needed a new
+            system that would be cost-effective and improve the performance of the strategic
+            alliance.
+            <br />
+            <br />
+            After researching different development alternatives, including existing “no-code”
+            vendors, they concluded that 8base was the only company whose platform provided the
+            tools needed to build the application, such as:
+          </DetailParagraph>
+          <DetailSubTitle isBold={false}>Long-term partnership</DetailSubTitle>
+          <DetailParagraph>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at nulla metus. Nullam
+            feugiat aliquet velit a gravida. Pellentesque quam justo, placerat in odio in, laoreet
+            cursus elit. Curabitur metus metus, facilisis nec ligula quis, iaculis faucibus odio.
+            Vivamus ut mi rhoncus nisi vulputate convallis sed eu tellus. Aenean eu magna id massa
+            euismod laoreet vel sed felis. Sed efficitur arcu sit amet dolor suscipit ultrices.
+            Etiam nec risus ultricies, mattis erat et, rutrum orci. Quisque a ipsum semper,
+            vestibulum risus in, sollicitudin elit. Fusce efficitur congue ullamcorper.
+          </DetailParagraph>
+        </div>
       </Section>
     </EpilogueSection>
   </DetailLayout>
