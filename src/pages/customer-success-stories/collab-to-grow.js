@@ -12,7 +12,6 @@ import DetailParagraph from '../../components/customer-success-stories/DetailPar
 import DetailSection from '../../components/customer-success-stories/new/DetailSection';
 import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 import { List, ListItem } from '../../components/Typography/List';
-
 import { TextIndigo, TextOrange } from '../../components/2021/text/TextHelpers';
 import { StaticImage } from 'gatsby-plugin-image';
 import TextLink from '../../components/Typography/TextLink';
@@ -67,15 +66,21 @@ const WrappResult = styled.div`
 `;
 
 const EpilogueSection = styled.div`
+  overflow: hidden;
   justify-content: center;
   display: flex;
   width: 100%;
+  position: relative;
 `;
 
 const FlexCenter = styled.div`
   justify-content: center;
   display: flex;
   width: 100%;
+`;
+
+const OurGoalSection = styled.div`
+  margin-top: 3.5rem;
 `;
 
 const CollabToGrow = ({ data }) => (
@@ -90,7 +95,14 @@ const CollabToGrow = ({ data }) => (
       // Overview
     }
     <OverviewSection>
-      <BannerBackgroundStories />
+      <BannerBackgroundStories
+        style={{
+          top: '4%',
+          left: '-16%',
+          width: '70%',
+          height: '70%',
+        }}
+      />
       <Section>
         <Container>
           <Columns isMultiline>
@@ -433,55 +445,57 @@ const CollabToGrow = ({ data }) => (
     {
       // Our goal
     }
-    <LightSection>
-      <Section>
-        <center>
-          <DetailSubTitle>
-            <TextOrange>Our goals</TextOrange> for this project
-          </DetailSubTitle>
-        </center>
-        <Container>
-          <Columns isMultiline isCentered>
-            <Column isSize={{ mobile: 12, tablet: 6, desktop: 3 }}>
-              <GoalChart
-                goal={10}
-                subTitle={'It is a long established fact that a reader will be distracted'}
-                description={
-                  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
-                }
-              />
-            </Column>
-            <Column isSize={{ mobile: 12, tablet: 6, desktop: 3 }}>
-              <GoalChart
-                goal={30}
-                subTitle={'It is a long established fact that a reader will be distracted'}
-                description={
-                  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
-                }
-              />
-            </Column>
-            <Column isSize={{ mobile: 12, tablet: 6, desktop: 3 }}>
-              <GoalChart
-                goal={50}
-                subTitle={'It is a long established fact that a reader will be distracted'}
-                description={
-                  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
-                }
-              />
-            </Column>
-            <Column isSize={{ mobile: 12, tablet: 6, desktop: 3 }}>
-              <GoalChart
-                goal={80}
-                subTitle={'It is a long established fact that a reader will be distracted'}
-                description={
-                  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
-                }
-              />
-            </Column>
-          </Columns>
-        </Container>
-      </Section>
-    </LightSection>
+    <OurGoalSection>
+      <LightSection>
+        <Section>
+          <center>
+            <DetailSubTitle>
+              <TextOrange>Our goals</TextOrange> for this project
+            </DetailSubTitle>
+          </center>
+          <Container>
+            <Columns isMultiline isCentered>
+              <Column isSize={{ mobile: 12, tablet: 6, desktop: 3 }}>
+                <GoalChart
+                  goal={10}
+                  subTitle={'It is a long established fact that a reader will be distracted'}
+                  description={
+                    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+                  }
+                />
+              </Column>
+              <Column isSize={{ mobile: 12, tablet: 6, desktop: 3 }}>
+                <GoalChart
+                  goal={30}
+                  subTitle={'It is a long established fact that a reader will be distracted'}
+                  description={
+                    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+                  }
+                />
+              </Column>
+              <Column isSize={{ mobile: 12, tablet: 6, desktop: 3 }}>
+                <GoalChart
+                  goal={50}
+                  subTitle={'It is a long established fact that a reader will be distracted'}
+                  description={
+                    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+                  }
+                />
+              </Column>
+              <Column isSize={{ mobile: 12, tablet: 6, desktop: 3 }}>
+                <GoalChart
+                  goal={80}
+                  subTitle={'It is a long established fact that a reader will be distracted'}
+                  description={
+                    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
+                  }
+                />
+              </Column>
+            </Columns>
+          </Container>
+        </Section>
+      </LightSection>
+    </OurGoalSection>
 
     {
       // Epilogue section
@@ -489,9 +503,24 @@ const CollabToGrow = ({ data }) => (
     <EpilogueSection>
       <Section>
         <div style={{ maxWidth: '1000px' }}>
+          <BannerBackgroundStories
+            style={{
+              top: '-40%',
+              right: '-80%',
+              width: '130%',
+              height: '130%',
+            }}
+          />
           <FlexCenter>
-            <TextIndigo>{"Let's"}</TextIndigo>
-            Build <TextIndigo>a Great</TextIndigo> Idea
+            <DetailTitle>
+              <TextIndigo>{"Let's"} </TextIndigo>
+              Build{' '}
+              <TextIndigo>
+                a<br />
+                Great
+              </TextIndigo>{' '}
+              Idea
+            </DetailTitle>
           </FlexCenter>
           <DetailSubTitle isBold={false}>About cobuild lab’s benefits</DetailSubTitle>
           <DetailParagraph>

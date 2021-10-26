@@ -4,6 +4,12 @@ import colors from '../../2021/colors.json';
 
 import PropTypes from 'prop-types';
 import { TextIndigo } from '../../2021/text/TextHelpers';
+import styled from 'styled-components';
+
+const TextContainer = styled.div`
+  width: 100%;
+  text-align: center;
+`;
 
 const GoalChart = ({ goal, subTitle, description }) => {
   return (
@@ -69,10 +75,10 @@ const GoalChart = ({ goal, subTitle, description }) => {
         }}
         style={{ width: '100%' }}
       />
-      <div>
-        <TextIndigo style={{ fontWeight: 'bold', textAlign: 'center' }}>{subTitle} </TextIndigo>
-        <TextIndigo style={{ textAlign: 'center' }}>{description}</TextIndigo>
-      </div>
+      <TextContainer>
+        <TextIndigo style={{ fontWeight: 'bold' }}>{subTitle} </TextIndigo>
+        <TextIndigo>{description}</TextIndigo>
+      </TextContainer>
     </div>
   );
 };
