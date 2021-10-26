@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Layout from '../../../components/2020/Layout';
 import { Section, Container } from 'bloomer';
-import BlogMetaTags from '../../../components/blog-ai/BlogMetaTags';
 import BlogHero from '../../../components/blog-ai/BlogHero';
 import Contact from '../../../components/2020/HomePageContact';
 import ClientSearch from '../../../components/blog-ai/search/client-search';
+import { SeoMetaTags } from '../../../components/2021/SeoMetaTags';
 
 const Blog = ({ data }) => {
   const { post } = data['allPostsList8Base'];
@@ -20,7 +20,10 @@ const Blog = ({ data }) => {
 
   return (
     <Layout>
-      <BlogMetaTags />
+      <SeoMetaTags
+        title="The AI Blog for Software Solutions"
+        description="The AI Blog for Software Solutions"
+      />
       <BlogHero />
       <Section>
         <Container>

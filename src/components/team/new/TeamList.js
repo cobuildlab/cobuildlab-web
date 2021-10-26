@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Card from '../card/Card';
 import { Column, Columns } from 'bloomer';
-import { mainStaff, staff } from './TeamListHook';
+import { mainStaff, staff } from '../staff';
 
 const Container = styled.div`
   margin-top: 1.5em;

@@ -6,6 +6,7 @@ tags: Small Business
 image: "./media/global-transportation-and-logistics-software-market-2020-2028.jpg"
 ---
 
+Miami, Fl. October 20, 2021
 
 The report on the global transportation and <a target="_blank" href="https://www.cobuildlab.com/blog/custom-software-development-process-in-2021-step-by-step-towards-digital-transformation-in-logistics/">  logistics software </a> market came out to illustrate the trends in the market from 2021 to 2028. 
 
