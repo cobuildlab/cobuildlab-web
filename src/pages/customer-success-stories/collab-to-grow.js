@@ -21,6 +21,7 @@ import BannerBackgroundStories from '../../components/customer-success-stories/B
 import Card from '../../components/team/card/Card';
 import Item from '../../components/enterprise/containers/testimonial/Item';
 import GoalChart from '../../components/customer-success-stories/chart/GoalChart';
+import StickySection from '../../components/customer-success-stories/StickySection';
 
 const OverviewSection = styled.div`
   margin-bottom: 5rem;
@@ -33,13 +34,6 @@ const BrandLogosContainer = styled.div`
   @media screen and (max-width: 1024px) {
     justify-content: center;
   }
-`;
-
-const ImageProblemSection = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: left;
-  margin-top: -140px;
 `;
 
 const LightSection = styled.div`
@@ -180,14 +174,7 @@ const CollabToGrow = ({ data }) => (
         <Container>
           <Columns isMultiline>
             <Column isSize={{ tablet: 12, desktop: 6 }}>
-              <ImageProblemSection>
-                <StaticImage
-                  width={'1770'}
-                  height={'1180'}
-                  src={'./../../assets/images/customers/collabtogrow/problem.png'}
-                  alt={'problem'}
-                />
-              </ImageProblemSection>
+              <StickySection />
             </Column>
             <Column isSize={{ tablet: 12, desktop: 6 }}>
               <DetailSubTitle>
