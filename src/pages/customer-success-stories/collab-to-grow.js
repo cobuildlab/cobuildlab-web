@@ -128,7 +128,7 @@ const CollabToGrow = ({ data }) => (
                   style={{ marginRight: '4rem' }}
                   objectFit={'contain'}
                   src={'../../assets/images/logos/brands-stories/google.png'}
-                  alt={'google'}
+                  alt={'Google'}
                 />
                 <StaticImage
                   width={'90'}
@@ -136,14 +136,14 @@ const CollabToGrow = ({ data }) => (
                   style={{ marginRight: '4rem' }}
                   objectFit={'contain'}
                   src={'../../assets/images/logos/brands-stories/react.png'}
-                  alt={'react'}
+                  alt={'React'}
                 />
                 <StaticImage
                   width={'91'}
                   height={'91'}
                   objectFit={'contain'}
                   src={'../../assets/images/logos/brands-stories/aws.png'}
-                  alt={'aws'}
+                  alt={'AWS'}
                 />
               </BrandLogosContainer>
             </Column>
@@ -156,7 +156,7 @@ const CollabToGrow = ({ data }) => (
                     width={'1580'}
                     height={'1084'}
                     src={'./../../assets/images/customers/collabtogrow/overview-collage.png'}
-                    alt={'overview-collab'}
+                    alt={'Overview Collab'}
                   />
                 </DetailHeroImagesContent>
               </div>
@@ -198,8 +198,10 @@ const CollabToGrow = ({ data }) => (
       <DetailSection
         image={
           <StaticImage
+            width={'1792'}
+            height={'1192'}
             src={'./../../assets/images/customers/collabtogrow/solution.png'}
-            alt={'collab-1'}
+            alt={'Solution'}
           />
         }
         caption={
@@ -256,7 +258,7 @@ const CollabToGrow = ({ data }) => (
                 style={{ marginRight: '4rem' }}
                 objectFit={'contain'}
                 src={'../../assets/images/logos/brands-stories/google.png'}
-                alt={'google'}
+                alt={'Google'}
               />
               <StaticImage
                 width={'90'}
@@ -264,7 +266,7 @@ const CollabToGrow = ({ data }) => (
                 style={{ marginRight: '4rem' }}
                 objectFit={'contain'}
                 src={'../../assets/images/logos/brands-stories/react.png'}
-                alt={'react'}
+                alt={'React'}
               />
               <StaticImage
                 width={'91'}
@@ -272,7 +274,7 @@ const CollabToGrow = ({ data }) => (
                 style={{ marginRight: '4rem' }}
                 objectFit={'contain'}
                 src={'../../assets/images/logos/brands-stories/aws.png'}
-                alt={'aws'}
+                alt={'AWS'}
               />
               <StaticImage
                 width={'91'}
@@ -280,14 +282,14 @@ const CollabToGrow = ({ data }) => (
                 style={{ marginRight: '4rem' }}
                 objectFit={'contain'}
                 src={'../../assets/images/logos/brands-stories/aws.png'}
-                alt={'aws'}
+                alt={'AWS'}
               />
               <StaticImage
                 width={'67'}
                 height={'68'}
                 objectFit={'contain'}
                 src={'../../assets/images/logos/brands-stories/google.png'}
-                alt={'google'}
+                alt={'Google'}
               />
             </Column>
           </Columns>
@@ -312,7 +314,10 @@ const CollabToGrow = ({ data }) => (
         <DetailSection
           image={
             <StaticImage
+              width={'1800'}
+              height={'1064'}
               src={'./../../assets/images/customers/collabtogrow/logical-architecture.png'}
+              alt={'Logical Architecture'}
             />
           }>
           <DetailSubTitle isBold={false}>Logical Architecture</DetailSubTitle>
@@ -334,7 +339,10 @@ const CollabToGrow = ({ data }) => (
         <DetailSection
           image={
             <StaticImage
+              width={'1802'}
+              height={'1066'}
               src={'./../../assets/images/customers/collabtogrow/physical-architecture.png'}
+              alt={'Physical Architecture'}
             />
           }
           left>
@@ -359,9 +367,11 @@ const CollabToGrow = ({ data }) => (
             <DetailSubTitle isBold={false}>Roadmap</DetailSubTitle>
             <StaticImage
               style={{ width: '100%', maxWidth: '1000px' }}
+              width={'2720'}
+              height={'1412'}
               objectFit={'contain'}
               src={'./../../assets/images/customers/collabtogrow/roadmap.png'}
-              alt={'roadmap'}
+              alt={'Roadmap'}
             />
           </div>
         </div>
