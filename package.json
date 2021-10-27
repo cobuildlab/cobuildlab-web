@@ -17,6 +17,8 @@
     "core-js": "3.15.2",
     "disqus-react": "1.1.1",
     "dotenv": "10.0.0",
+    "echarts": "^5.2.1",
+    "echarts-for-react": "^3.0.1",
     "gatsby": "3.8.1",
     "gatsby-image": "3.8.0",
     "gatsby-plugin-amp": "^0.2.2",
