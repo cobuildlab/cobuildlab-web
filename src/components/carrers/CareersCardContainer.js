@@ -16,7 +16,6 @@ const Overlay = styled.div`
 const Container = styled.div`
   position: relative;
   display: block;
-  width: 308px;
   height: 180px;
   border-radius: 5px;
   overflow: hidden;

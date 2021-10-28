@@ -14,7 +14,6 @@ const BlogPosition = styled.div`
   color: #264a60;
   & a {
     color: #e76c29;
-    font-weight: bold;
   }
 `;
 
@@ -27,7 +26,7 @@ const CareersCard = ({ title, to, modality, time }) => (
         <span> {modality}</span>
       </BlogPosition>
       <BlogPosition position={'right'}>
-        <Icon icon={clockO} alt="facebook-icon" size={22} />
+        <Icon icon={clockO} alt={'facebook-icon'} size={22} style={{ fontWeight: 'normal' }} />
         <span> {time}</span>
       </BlogPosition>
     </div>

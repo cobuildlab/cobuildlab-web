@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   color: #264a60;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   height: 40px;
   @media screen and (max-width: 768px) {
