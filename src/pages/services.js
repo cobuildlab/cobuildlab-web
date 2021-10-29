@@ -40,7 +40,7 @@ const Services = () => {
 
   return (
     <Layout>
-      <SeoMetaTags title="Services" description="Services offered by CobuildLab" />
+      <SeoMetaTags title="Services" description="Services offered by Cobuild Lab" />
       <Hero>
         <HeroHeader>
           <Header />
