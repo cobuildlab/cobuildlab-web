@@ -54,7 +54,6 @@ const GroupFilterButtons = ({ onOptionSelected }) => {
 
   const handleOptionSelected = (option) => {
     const value = option.toLowerCase() === optionSelected ? '' : option.toLowerCase();
-    console.log(value);
     setOptionSelected(value);
     onOptionSelected(value);
   };
