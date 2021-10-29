@@ -2,13 +2,15 @@ import React, { useCallback, useState } from 'react';
 import { Column, Columns, Container } from 'bloomer';
 import { SeoMetaTags } from '../../components/2021/SeoMetaTags';
 import { TextIndigo } from '../../components/2021/text/TextHelpers';
+import { graphql } from 'gatsby';
 import H5 from '../../components/Typography/H5';
 import styled from 'styled-components';
 import Layout from '../../components/2020/Layout';
 import CareersCard from '../../components/carrers/CareersCard';
 import CareersHero from '../../components/carrers/CareersHero';
 import CustomBannerBackground from '../../components/2020/CustomBannerBackground';
-import data from './data.json';
+import PropTypes from 'prop-types';
+
 import './style.scss';
 
 const TeamTitle = styled.h5`
@@ -83,7 +85,7 @@ const AsideOptions = () => {
   );
 };
 
-const Careers = () => {
+const Careers = ({ data }) => {
   const [careers, setCareers] = useState(data);
 
   // Render cards
@@ -108,13 +110,16 @@ const Careers = () => {
    * @description Filter the careers cards.
    * @param {string} option - The option selected contain 'developers', 'sales', 'marketing'.
    */
-  const filterByType = useCallback((option) => {
-    if (option !== '') {
-      setCareers(data.filter((career) => career.type === option));
-    } else {
-      setCareers([...data]);
-    }
-  });
+  const filterByType = useCallback(
+    (option) => {
+      if (option !== '') {
+        setCareers(data.filter((career) => career.type === option));
+      } else {
+        setCareers([...data]);
+      }
+    },
+    [data],
+  );
 
   return (
     <Layout>
@@ -166,5 +171,29 @@ const Careers = () => {
     </Layout>
   );
 };
+
+Careers.propTypes = {
+  data: PropTypes.object.isRequired,
+};
+
+export const pageQuery = graphql`
+  query BaseCareer {
+    allCareersList8Base(
+      limit: 1000
+      sort: { fields: createdAt, order: DESC }
+      filter: { active: { eq: "true" } }
+    ) {
+      careers: nodes {
+        id
+        title
+        description
+        modality
+        time
+        slug
+        createdAt
+      }
+    }
+  }
+`;
 
 export default Careers;
