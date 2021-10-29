@@ -1,7 +1,7 @@
 @import '../../assets/scss/variable';
 
 %button-active-shared {
-  box-shadow: -1px 4px 13px 8px #e1d1d1 !important;
+  box-shadow: -1px 4px 20px 2px $cobuild-dark-slate !important;
   background-color: $cobuild-orange;
   border: 1px solid $cobuild-orange;
   color: $color-white;

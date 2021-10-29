@@ -10,47 +10,57 @@ import Layout from '../../components/2020/Layout';
 import CareersCard from '../../components/carrers/CareersCard';
 import CareersHero from '../../components/carrers/CareersHero';
 import './style.scss';
+import CustomBannerBackground from '../../components/2020/CustomBannerBackground';
 
 const TeamTitle = styled.h5`
-  margin-bottom: 10px;
-  font-size: 1.8rem;
-  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+`;
+
+const CareersTitle = styled(H5)`
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+`;
+
+const AsideContainer = styled.aside`
+  padding: 0rem 2.25rem 1.5rem 2.25rem;
 `;
 
 const LastPositionsContainer = styled.div``;
 
 const LastPositionsTitle = styled.p`
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+`;
+
+const PositionContainer = styled.li`
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 `;
 
 const GroupFilterButtons = () => {
   const options = ['Developers', 'Sales', 'Marketing'];
 
-  return (
-    <>
-      {options.map((option, index) => (
-        <button key={index} className={'button'}>
-          {option}
-        </button>
-      ))}
-    </>
-  );
+  return options.map((option, index) => (
+    <button key={index} className={'button'}>
+      {option}
+    </button>
+  ));
 };
 
 const AsideOptions = () => {
   const options = ['React Dev Junior', 'Sales Manager', 'Project Manager', 'Swift Dev Senior'];
+
   return (
-    <>
-      <LastPositionsContainer>
-        <LastPositionsTitle>Last positions</LastPositionsTitle>
-        <ul>
-          {options.map((option, index) => (
-            <li key={index}>{option}</li>
-          ))}
-        </ul>
-      </LastPositionsContainer>
-    </>
+    <LastPositionsContainer>
+      <LastPositionsTitle className={'font-semi-bold'}>Last positions</LastPositionsTitle>
+      <ul className={'text-indigo'}>
+        {options.map((option, index) => (
+          <PositionContainer key={index}>{option}</PositionContainer>
+        ))}
+      </ul>
+    </LastPositionsContainer>
   );
 };
 
@@ -60,7 +70,7 @@ const Careers = ({ data }) => {
   const items = careers.map((node, i) => {
     return (
       <>
-        <Column isSize={{ desktop: 4, tablet: 4, mobile: 12 }} key={i}>
+        <Column isSize={{ desktop: 4, tablet: 6, mobile: 12 }} key={i}>
           <CareersCard
             to={node.slug}
             title={node.title}
@@ -82,28 +92,38 @@ const Careers = ({ data }) => {
       />
       <CareersHero />
       <Container>
+        <CustomBannerBackground
+          style={{
+            width: '100%',
+            height: '100%',
+            top: '-10%',
+            left: '-30%',
+          }}
+        />
         <Columns isMultiline>
-          <Column isSize={{ desktop: 2 }} isPaddingless>
-            <aside>
-              <TeamTitle>Teams</TeamTitle>
+          <Column isSize={{ mobile: 12, tablet: 4, desktop: 2 }} isPaddingless>
+            <AsideContainer>
+              <TeamTitle className={'text-indigo font-bold'}>Teams</TeamTitle>
               <GroupFilterButtons />
               <AsideOptions />
-            </aside>
+            </AsideContainer>
           </Column>
-          <Column isSize={{ desktop: 10 }} style={{ padding: '0', paddingLeft: '2rem' }}>
-            <p>Whatever path you take, you are choosing a career in a truly innovative company.</p>
-            <p>
+          <Column isSize={{ mobile: 12, tablet: 8, desktop: 10 }} isPaddingless>
+            <p className={'font-semi-bold'}>
+              Whatever path you take, you are choosing a career in a truly innovative company.
+            </p>
+            <p className={'font-semi-bold'}>
               We pride ourselves on offering a competitive salary and benefits wherever you work in
               our global company. {"You'll"} experience a fast-paced collaborative environment where
               you can truly shape your future with like-minded colleagues.
             </p>
-            <p>
+            <p className={'font-semi-bold'}>
               Check our job vacancies and if you think you can be part of our dream team, Apply!
             </p>
             <div>
-              <H5 style={{ marginBottom: '1rem' }}>
-                <TextIndigo style={{ fontFamily: "'Lato-light'!important" }}>Careers</TextIndigo>
-              </H5>
+              <CareersTitle style={{ marginBottom: '1rem' }}>
+                <TextIndigo className={'font-light'}>Careers</TextIndigo>
+              </CareersTitle>
               <Columns isMultiline>{items}</Columns>
             </div>
           </Column>

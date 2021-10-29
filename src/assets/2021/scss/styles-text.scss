@@ -1,7 +1,46 @@
+@import '../../scss/variable';
+
+// Define font family
+$font-family-regular: 'Lato-regular', sans-serif !important;
+$font-family-light: 'Lato-Light', sans-serif !important;
+$font-family-bold: 'Lato-bold', sans-serif !important;
+$font-family-semi-bold: 'Lato SemiBold', sans-serif !important;
+
+// Font family
+
+.font-regular {
+  font-family: $font-family-regular;
+}
+
+.font-light {
+  font-family: $font-family-light;
+}
+
+.font-bold {
+  font-family: $font-family-bold;
+}
+
+.font-semi-bold {
+  font-family: $font-family-semi-bold;
+}
+
+// Text color
+
+.text-orange {
+  color: $cobuild-orange !important;
+}
+
+.text-indigo {
+  color: $cobuild-indigo !important;
+}
+
+.text-dark-slate {
+  color: $cobuild-dark-slate !important;
+}
 
 .title-card-customer-success {
   text-align: left;
-  font-weight: 100!important;
+  font-weight: 100 !important;
   font-family: 'Lato-Light', serif !important;
   white-space: nowrap;
   overflow: hidden;
@@ -11,7 +50,7 @@
 .readmore-card-customer-success {
   font-family: 'Lato-bold', serif !important;
   text-align: right;
-  color: #e76c29!important;
+  color: #e76c29 !important;
   cursor: pointer;
 }
 
