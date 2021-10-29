@@ -7,12 +7,14 @@ import Image from '../2020/Image';
 import img from './../../assets/images/sentado_con_laptop.svg';
 
 const Title = styled(H3)`
+  width: 100%;
   position: relative;
   text-transform: uppercase;
   font-weight: bold;
   @media screen and (max-width: 768px) {
     font-size: 35px;
     padding-top: 1rem;
+    text-align: center;
   }
 `;
 
@@ -24,7 +26,7 @@ const CareersHero = () => (
     <HeroBody>
       <Container hasTextAlign="left">
         <Columns isCentered style={{ alignItems: 'center' }}>
-          <Column isSize={{ mobile: 6, desktop: 8 }}>
+          <Column isSize={{ mobile: 12, desktop: 8 }}>
             <Title>we have many opportunities for you!</Title>
           </Column>
           <Column isSize={{ mobile: 6, desktop: 4 }} isHidden="mobile">

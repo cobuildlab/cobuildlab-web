@@ -2,9 +2,9 @@
 
 %button-active-shared {
   box-shadow: -1px 4px 20px 2px $cobuild-dark-slate !important;
-  background-color: $cobuild-orange;
-  border: 1px solid $cobuild-orange;
-  color: $color-white;
+  background-color: $cobuild-orange !important;
+  border: 1px solid $cobuild-orange !important;
+  color: $color-white !important;
   font-weight: bold;
 }
 
@@ -21,8 +21,11 @@
   margin-bottom: 10px;
   color: $cobuild-indigo;
 
-  &:hover,
-  &:focus {
+  &:hover {
     @extend %button-active-shared;
   }
+}
+
+.button-active {
+  @extend %button-active-shared;
 }

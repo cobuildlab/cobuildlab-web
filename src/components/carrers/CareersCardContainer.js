@@ -17,18 +17,12 @@ const Container = styled.div`
   position: relative;
   display: block;
   width: 100%;
-  height: 180px;
+  height: 150px;
   border-radius: 5px;
   overflow: hidden;
   margin: auto;
   background-color: #fff;
   box-shadow: 0px 10px 20px #0000001a;
-  @media screen and (max-width: 1024px) {
-    height: 280px;
-  }
-  @media screen and (max-width: 925px) {
-    height: 200px;
-  }
 `;
 
 const ChildrenContainer = styled.div`
