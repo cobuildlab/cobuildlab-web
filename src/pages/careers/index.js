@@ -86,7 +86,7 @@ const AsideOptions = () => {
 };
 
 const Careers = ({ data }) => {
-  const [careers, setCareers] = useState(data);
+  const [careers, setCareers] = useState(data['allCareersList8Base'].careers);
 
   // Render cards
   const items = careers.map((career, i) => {
