@@ -141,6 +141,7 @@ module.exports = {
                 time
                 active
                 slug
+                type
                 createdAt
               }
             }

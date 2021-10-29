@@ -113,9 +113,9 @@ const Careers = ({ data }) => {
   const filterByType = useCallback(
     (option) => {
       if (option !== '') {
-        setCareers(data.filter((career) => career.type === option));
+        setCareers(data['allCareersList8Base'].careers.filter((career) => career.type === option));
       } else {
-        setCareers([...data]);
+        setCareers([...data['allCareersList8Base'].careers]);
       }
     },
     [data],
@@ -191,6 +191,7 @@ export const pageQuery = graphql`
         time
         slug
         createdAt
+        type
       }
     }
   }
