@@ -10,12 +10,16 @@ import CareersCard from '../../components/carrers/CareersCard';
 import CareersHero from '../../components/carrers/CareersHero';
 import CustomBannerBackground from '../../components/2020/CustomBannerBackground';
 import PropTypes from 'prop-types';
-
-import './style.scss';
+import ButtonOutline from '../../components/2020/Button/ButtonOutline';
 
 const TeamTitle = styled.h5`
   margin-bottom: 5px;
   font-size: 1.5rem;
+`;
+
+const WrappButtonOutline = styled.div`
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 `;
 
 const CareersTitle = styled(H5)`
@@ -61,12 +65,14 @@ const GroupFilterButtons = ({ onOptionSelected }) => {
   };
 
   return options.map((option, index) => (
-    <button
-      key={index}
-      className={`button ${optionSelected === option.toLowerCase() ? 'button-active' : ''}`}
-      onClick={() => handleOptionSelected(option)}>
-      {option}
-    </button>
+    <WrappButtonOutline key={index}>
+      <ButtonOutline
+        isBlock={true}
+        className={`button ${optionSelected === option.toLowerCase() ? 'button-active' : ''}`}
+        onClick={() => handleOptionSelected(option)}>
+        {option}
+      </ButtonOutline>
+    </WrappButtonOutline>
   ));
 };
 
