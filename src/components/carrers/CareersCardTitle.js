@@ -4,7 +4,6 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   color: #264a60;
-  font-weight: bold;
   font-size: 20px;
   height: 40px;
   @media screen and (max-width: 768px) {
@@ -12,7 +11,9 @@ const Container = styled.div`
   }
 `;
 
-const BlogPostCardTitle = ({ children }) => <Container>{children}</Container>;
+const BlogPostCardTitle = ({ children }) => (
+  <Container className={'font-semi-bold'}>{children}</Container>
+);
 
 BlogPostCardTitle.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
