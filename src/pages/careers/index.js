@@ -17,7 +17,7 @@ const TeamTitle = styled.h5`
   font-size: 1.5rem;
 `;
 
-const WrappButtonOutline = styled.div`
+const WrapButtonOutline = styled.div`
   margin-top: 1rem;
   margin-bottom: 1rem;
 `;
@@ -65,14 +65,14 @@ const GroupFilterButtons = ({ onOptionSelected }) => {
   };
 
   return options.map((option, index) => (
-    <WrappButtonOutline key={index}>
+    <WrapButtonOutline key={index}>
       <ButtonOutline
         isBlock={true}
-        className={`button ${optionSelected === option.toLowerCase() ? 'button-active' : ''}`}
+        isActive={optionSelected === option.toLowerCase() ? true : false}
         onClick={() => handleOptionSelected(option)}>
         {option}
       </ButtonOutline>
-    </WrappButtonOutline>
+    </WrapButtonOutline>
   ));
 };
 

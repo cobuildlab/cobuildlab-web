@@ -12,6 +12,7 @@ const StyledSection = styled.div`
 
 const StyledSubTitle = styled.div`
   text-align: center;
+  margin-bottom: 3rem;
 `;
 
 const ParagraphTextList = styled.p`
@@ -65,7 +66,7 @@ const ServicesSection2 = ({
       <Column isSize={{ mobile: 12, desktop: 12 }}>
         <StyledSection>
           <StyledSubTitle>
-            <Typography tag="h2" className="subtitle-new">
+            <Typography tag="h2" className={'subtitle-new'}>
               {title} <TextOrange>{titleOrange}</TextOrange>
             </Typography>
           </StyledSubTitle>

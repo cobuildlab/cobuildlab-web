@@ -3,11 +3,11 @@ import { Column, Columns } from 'bloomer';
 import ServicesSubTitle from './../services/ServicesSubTitle';
 import ServicesContent from './../services/ServicesContent';
 import styled from 'styled-components';
-import { TextOrange } from './../2021/text/TextHelpers';
+import { TextIndigo } from './../2021/text/TextHelpers';
 import PropTypes from 'prop-types';
 import { StaticImage } from 'gatsby-plugin-image';
 
-const Title = styled(TextOrange)`
+const Title = styled(TextIndigo)`
   font-size: calc(24px + (42 - 24) * ((100vw - 320px) / (1920 - 320)));
 `;
 
@@ -43,7 +43,7 @@ const CareersSection = ({ title, textList, otherText, otherText2 }) => {
 
         <Column isSize={{ mobile: 12, desktop: 6 }}>
           <StyleSubtitle>
-            <ServicesSubTitle isCentered>
+            <ServicesSubTitle>
               <Title>{title}</Title>{' '}
             </ServicesSubTitle>
           </StyleSubtitle>

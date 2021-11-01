@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const Paragraph = styled.p`
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   text-align: justify;
   color: #264a60;
@@ -21,15 +21,23 @@ const Paragraph2 = styled.p`
 `;
 
 const StyledImage = styled.div`
-  margin-left: 40px;
+  display: flex;
+  justify-content: center;
+`;
+
+const WrappServiceTitle = styled.div`
+  margin-bottom: 3rem;
 `;
 
 const ServicesHeader = ({ title, paragraph, paragraph2, img, careers }) => {
   return (
     <Columns>
-      <Column isSize={{ mobile: 12, desktop: 7 }}>
+      <Column isSize={{ mobile: 12, desktop: 6 }}>
         <ServicesContent>
-          <ServiceTitle>{title}</ServiceTitle>
+          <WrappServiceTitle>
+            <ServiceTitle>{title}</ServiceTitle>
+          </WrappServiceTitle>
+
           {!careers ? (
             <>
               <Paragraph>
@@ -44,7 +52,7 @@ const ServicesHeader = ({ title, paragraph, paragraph2, img, careers }) => {
           )}
         </ServicesContent>
       </Column>
-      <Column isHidden="mobile" isSize={5}>
+      <Column isHidden="mobile" isSize={6}>
         <StyledImage>{img}</StyledImage>
       </Column>
     </Columns>

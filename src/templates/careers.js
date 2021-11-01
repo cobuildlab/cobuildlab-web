@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, Hero, HeroHeader, Section } from 'bloomer';
 
 import PropTypes from 'prop-types';
-
 import { StaticImage } from 'gatsby-plugin-image';
 import Layout from '../components/2020/Layout';
 import { SeoMetaTags } from '../components/2021/SeoMetaTags';
@@ -11,8 +10,6 @@ import ServicesBannerBackgroundBottom from '../components/services/ServicesBanne
 import ServicesHeader from '../components/services/details/ServicesHeader';
 import ServicesSection2 from '../components/services/details/ServicesSection2';
 import CareersSection from '../components/carrers/CareersSection';
-import CareersSection2 from '../components/carrers/CareersSection2';
-import Contact from './../components/2020/HomePageContact';
 
 import styled from 'styled-components';
 
@@ -31,16 +28,24 @@ const StyledSection2 = styled(Section)`
  */
 function CareersTemplate({ pageContext }) {
   const { career } = pageContext;
-  const { title, description, jobProfile, jobDescription } = career;
+  const { title, description, jobProfile } = career;
 
   return (
     <Layout>
       <SeoMetaTags title={'Careers: ' + title} description="Careers for the Cobuild Lab" />
+
+      {
+        // Header
+      }
       <Hero>
         <HeroHeader>
           <Header />
         </HeroHeader>
       </Hero>
+
+      {
+        // Hero section
+      }
       <Section>
         <ServicesBannerBackgroundBottom />
         <Container>
@@ -52,11 +57,33 @@ function CareersTemplate({ pageContext }) {
           />
         </Container>
       </Section>
+
+      {
+        // Profile
+      }
       <StyledSection2>
+        <Container>
+          <ServicesSection2 title={'Profile'} text={jobProfile} careers={true} />
+        </Container>
+      </StyledSection2>
+
+      {
+        // Duties and responsibilities
+      }
+
+      <Section>
+        <Container>
+          <CareersSection title={'Duties and responsabilities'} otherText={jobProfile} />
+        </Container>
+      </Section>
+
+      {/* <StyledSection2>
         <Container>
           <ServicesSection2 title={'Job description'} text={jobDescription} careers={true} />
         </Container>
-      </StyledSection2>
+      </StyledSection2> */}
+
+      {/*
       <Section>
         <Container>
           <CareersSection title={'Why work at Cobuild Lab?'} otherText={jobProfile} />
@@ -71,7 +98,7 @@ function CareersTemplate({ pageContext }) {
         <Container>
           <Contact />
         </Container>
-      </Section>
+      </Section> */}
     </Layout>
   );
 }
