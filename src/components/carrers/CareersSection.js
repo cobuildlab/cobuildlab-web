@@ -32,6 +32,7 @@ const StyleSubtitle = styled.div`
 `;
 
 const OtherTextContainer = styled(List)`
+  font-size: 20px;
   li {
     ${ListItemCss}
   }
@@ -40,11 +41,13 @@ const OtherTextContainer = styled(List)`
 const CareersSection = ({ title, textList, otherText, otherText2 }) => {
   return (
     <>
-      <Columns isVCentered>
+      <Columns>
         <Column isSize={{ mobile: 12, desktop: 5 }}>
           <StaticImage
-            src={'../../../assets/images/service/details/services-details.png'}
-            alt={'Service Section 3'}
+            width={473}
+            height={467}
+            src={'../../assets/images/careers/duties_and_responsabilities.png'}
+            alt={'Duties and responsabilities'}
           />
         </Column>
 

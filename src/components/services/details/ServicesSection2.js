@@ -66,6 +66,7 @@ const OtherText = styled(List)`
 
   li {
     ${ListItemCss}
+    font-size: 20px;
   }
 `;
 
