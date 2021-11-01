@@ -50,7 +50,6 @@ const CareersSection = ({ title, textList, otherText, otherText2 }) => {
             alt={'Duties and responsabilities'}
           />
         </Column>
-
         <Column isSize={{ mobile: 12, desktop: 6 }}>
           <StyleSubtitle style={{ textAlign: 'left' }}>
             <ServicesSubTitle>

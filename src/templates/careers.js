@@ -13,9 +13,15 @@ import styled from 'styled-components';
 import CareersVacancyForm from '../components/carrers/CareersVacancyForm';
 import BannerBackgroundStories from '../components/customer-success-stories/BannerBackgroundStories';
 
+const ContainerProfileSection = styled.div`
+  position: releative;
+`;
+
 const StyledSection2 = styled(Section)`
   background: #fff;
   box-shadow: 0px 10px 20px #0000001a;
+  position: relative;
+  z-index: 99999;
 `;
 
 const FormContainer = styled.div`
@@ -81,16 +87,25 @@ function CareersTemplate({ pageContext }) {
       {
         // Profile
       }
-      <StyledSection2>
-        <Container>
-          <ServicesSection2 title={'Profile'} text={jobProfile} careers={true} />
-        </Container>
-      </StyledSection2>
+      <ContainerProfileSection>
+        <BannerBackgroundStories
+          style={{
+            width: '90%',
+            height: '90%',
+            top: '2%',
+            left: '-30%',
+          }}
+        />
+        <StyledSection2>
+          <Container>
+            <ServicesSection2 title={'Profile'} text={jobProfile} careers={true} />
+          </Container>
+        </StyledSection2>
+      </ContainerProfileSection>
 
       {
         // Duties and responsibilities
       }
-
       <Section>
         <Container>
           <CareersSection title={'Duties and responsabilities'} otherText={responsibilities} />
