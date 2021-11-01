@@ -116,7 +116,7 @@ function CareersTemplate({ pageContext }) {
               width: '100%',
               height: '100%',
               top: '-400%',
-              right: -'60%',
+              right: '-60%',
             }}
           />
           <CareersVacancyForm />
