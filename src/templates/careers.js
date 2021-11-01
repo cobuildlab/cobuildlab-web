@@ -106,7 +106,7 @@ function CareersTemplate({ pageContext }) {
       {
         // Duties and responsibilities
       }
-      <Section>
+      <Section style={{ paddingTop: '6rem', paddingBottom: '6rem' }}>
         <Container>
           <CareersSection title={'Duties and responsabilities'} otherText={responsibilities} />
         </Container>
