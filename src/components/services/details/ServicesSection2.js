@@ -1,9 +1,10 @@
 import React from 'react';
 import { Column, Columns } from 'bloomer';
+import { TextOrange } from '../../2021/text/TextHelpers';
+import { List, ListItemCss } from '../../Typography/List';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Typography from '../../2020/Typography';
-import { TextOrange } from '../../2021/text/TextHelpers';
 
 const StyledSection = styled.div`
   margin-top: 50px;
@@ -48,6 +49,22 @@ const ParagraphText = styled.p`
   padding-bottom: 20px;
   @media screen and (max-width: 768px) {
     padding: 0px;
+  }
+`;
+
+const OtherTextContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+const OtherText = styled(List)`
+  width: 800px;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+
+  li {
+    ${ListItemCss}
   }
 `;
 
@@ -108,7 +125,11 @@ const ServicesSection2 = ({
               </Columns>
             </>
           ) : null}
-          {otherText !== '' ? <ParagraphText>{otherText}</ParagraphText> : null}
+          {otherText !== '' ? (
+            <OtherTextContainer>
+              <OtherText dangerouslySetInnerHTML={{ __html: otherText }} />
+            </OtherTextContainer>
+          ) : null}
         </StyledSection>
       </Column>
     </>

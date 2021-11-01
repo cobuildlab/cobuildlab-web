@@ -6,7 +6,6 @@ import { StaticImage } from 'gatsby-plugin-image';
 import Layout from '../components/2020/Layout';
 import { SeoMetaTags } from '../components/2021/SeoMetaTags';
 import Header from '../components/header/Header';
-import ServicesBannerBackgroundBottom from '../components/services/ServicesBannerBackgroundBottom';
 import ServicesHeader from '../components/services/details/ServicesHeader';
 import ServicesSection2 from '../components/services/details/ServicesSection2';
 import CareersSection from '../components/carrers/CareersSection';
@@ -28,7 +27,7 @@ const StyledSection2 = styled(Section)`
  */
 function CareersTemplate({ pageContext }) {
   const { career } = pageContext;
-  const { title, description, jobProfile, responsibilities } = career;
+  const { title, description, jobProfile, responsibilities, requirements } = career;
 
   return (
     <Layout>
@@ -47,7 +46,6 @@ function CareersTemplate({ pageContext }) {
         // Hero section
       }
       <Section>
-        <ServicesBannerBackgroundBottom />
         <Container>
           <ServicesHeader
             title={title}
@@ -82,28 +80,14 @@ function CareersTemplate({ pageContext }) {
         </Container>
       </Section>
 
-      {/* <StyledSection2>
+      {
+        // Requirements
+      }
+      <StyledSection2>
         <Container>
-          <ServicesSection2 title={'Job description'} text={jobDescription} careers={true} />
+          <ServicesSection2 title={'Requirements'} otherText={requirements} />
         </Container>
-      </StyledSection2> */}
-
-      {/*
-      <Section>
-        <Container>
-          <CareersSection title={'Why work at Cobuild Lab?'} otherText={jobProfile} />
-        </Container>
-      </Section>
-      <Section>
-        <Container>
-          <CareersSection2 />
-        </Container>
-      </Section>
-      <Section>
-        <Container>
-          <Contact />
-        </Container>
-      </Section> */}
+      </StyledSection2>
     </Layout>
   );
 }
