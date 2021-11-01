@@ -28,7 +28,7 @@ const StyledSection2 = styled(Section)`
  */
 function CareersTemplate({ pageContext }) {
   const { career } = pageContext;
-  const { title, description, jobProfile } = career;
+  const { title, description, jobProfile, responsibilities } = career;
 
   return (
     <Layout>
@@ -52,7 +52,12 @@ function CareersTemplate({ pageContext }) {
           <ServicesHeader
             title={title}
             paragraph={description}
-            img={<StaticImage src={'./../resources/2020/home/coubuild-v.svg'} alt="" />}
+            img={
+              <StaticImage
+                src={'../assets/images/sentado_con_laptop.svg'}
+                alt={'sit down with laptop'}
+              />
+            }
             careers={true}
           />
         </Container>
@@ -73,7 +78,7 @@ function CareersTemplate({ pageContext }) {
 
       <Section>
         <Container>
-          <CareersSection title={'Duties and responsabilities'} otherText={jobProfile} />
+          <CareersSection title={'Duties and responsabilities'} otherText={responsibilities} />
         </Container>
       </Section>
 

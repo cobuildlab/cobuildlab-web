@@ -193,6 +193,8 @@ export const pageQuery = graphql`
         id
         title
         description
+        requirements
+        responsibilities
         modality
         time
         slug

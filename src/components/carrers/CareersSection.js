@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import { TextIndigo } from './../2021/text/TextHelpers';
 import PropTypes from 'prop-types';
 import { StaticImage } from 'gatsby-plugin-image';
+import { List, ListItemCss } from '../Typography/List';
 
 const Title = styled(TextIndigo)`
   font-size: calc(24px + (42 - 24) * ((100vw - 320px) / (1920 - 320)));
@@ -30,6 +31,12 @@ const StyleSubtitle = styled.div`
   text-align: center;
 `;
 
+const OtherTextContainer = styled(List)`
+  li {
+    ${ListItemCss}
+  }
+`;
+
 const CareersSection = ({ title, textList, otherText, otherText2 }) => {
   return (
     <>
@@ -42,13 +49,16 @@ const CareersSection = ({ title, textList, otherText, otherText2 }) => {
         </Column>
 
         <Column isSize={{ mobile: 12, desktop: 6 }}>
-          <StyleSubtitle>
+          <StyleSubtitle style={{ textAlign: 'left' }}>
             <ServicesSubTitle>
               <Title>{title}</Title>{' '}
             </ServicesSubTitle>
           </StyleSubtitle>
           <ServicesContent>
-            {otherText !== '' ? <Paragraph2>{otherText}</Paragraph2> : null}
+            {otherText !== '' ? (
+              <OtherTextContainer
+                dangerouslySetInnerHTML={{ __html: otherText }}></OtherTextContainer>
+            ) : null}
             {otherText2 !== '' ? <Paragraph2>{otherText2}</Paragraph2> : null}
             {textList.map((t, i) => (
               <React.Fragment key={i}>
