@@ -48,6 +48,7 @@ const ParagraphText = styled.p`
   margin: auto;
   padding-bottom: 20px;
   @media screen and (max-width: 768px) {
+    width: 100%;
     padding: 0px;
   }
 `;
@@ -58,7 +59,7 @@ const OtherTextContainer = styled.div`
 `;
 
 const OtherText = styled(List)`
-  width: 800px;
+  width: 1000px;
   @media screen and (max-width: 1024px) {
     width: 100%;
   }

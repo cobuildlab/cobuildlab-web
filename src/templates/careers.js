@@ -1,20 +1,37 @@
 import React from 'react';
 import { Container, Hero, HeroHeader, Section } from 'bloomer';
+import { StaticImage } from 'gatsby-plugin-image';
+import { SeoMetaTags } from '../components/2021/SeoMetaTags';
 
 import PropTypes from 'prop-types';
-import { StaticImage } from 'gatsby-plugin-image';
 import Layout from '../components/2020/Layout';
-import { SeoMetaTags } from '../components/2021/SeoMetaTags';
 import Header from '../components/header/Header';
 import ServicesHeader from '../components/services/details/ServicesHeader';
 import ServicesSection2 from '../components/services/details/ServicesSection2';
 import CareersSection from '../components/carrers/CareersSection';
-
 import styled from 'styled-components';
+import CareersVacancyForm from '../components/carrers/CareersVacancyForm';
+import BannerBackgroundStories from '../components/customer-success-stories/BannerBackgroundStories';
 
 const StyledSection2 = styled(Section)`
   background: #fff;
   box-shadow: 0px 10px 20px #0000001a;
+`;
+
+const FormContainer = styled.div`
+  overflow: hidden;
+  position: relative;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  display: flex;
+  justify-content: center;
+`;
+
+const FormContainerSection = styled.div`
+  width: 1000px;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 /**.
@@ -88,6 +105,23 @@ function CareersTemplate({ pageContext }) {
           <ServicesSection2 title={'Requirements'} otherText={requirements} />
         </Container>
       </StyledSection2>
+
+      {
+        // Form
+      }
+      <FormContainer>
+        <FormContainerSection>
+          <BannerBackgroundStories
+            style={{
+              width: '100%',
+              height: '100%',
+              top: '-400%',
+              right: -'60%',
+            }}
+          />
+          <CareersVacancyForm />
+        </FormContainerSection>
+      </FormContainer>
     </Layout>
   );
 }
