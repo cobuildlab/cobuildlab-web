@@ -1,7 +1,8 @@
-import { Column, Columns, Control, Field, Input } from 'bloomer';
-import { Container } from 'bloomer/lib/layout/Container';
+import { Container, Column, Columns, Control, Field } from 'bloomer';
 import React from 'react';
 import ButtonDefault from '../2020/Button/ButtonDefault';
+import CbInput from '../input/CbInput';
+import CbInputFile from '../input/CbInputFile';
 
 const CareersVacancyForm = () => {
   return (
@@ -11,29 +12,29 @@ const CareersVacancyForm = () => {
           <Column isSize={{ mobile: 12 }}>
             <Field>
               <Control>
-                <Input type={'text'} name={'name'} placeholder={'Name'} />
+                <CbInput type={'text'} name={'name'} placeholder={'Name'} />
               </Control>
             </Field>
           </Column>
           <Column isSize={{ mobile: 12 }}>
             <Field>
               <Control>
-                <Input type={'email'} name={'email'} placeholder={'Email'} />
+                <CbInput type={'email'} name={'email'} placeholder={'Email'} />
               </Control>
             </Field>
           </Column>
           <Column isSize={{ mobile: 12 }}>
             <Field>
               <Control>
-                <Input type={'text'} name={'cv'} placeholder={'Drop your CV'} />
+                <CbInputFile placeholder={'Drop your CV'} />
               </Control>
             </Field>
           </Column>
           <Column isSize={{ mobile: 12 }}>
             <Field>
               <Control>
-                <ButtonDefault isLoading={false} type="submit" isBlock>
-                  Submit
+                <ButtonDefault isLoading={false} type={'submit'} isBlock>
+                  SUBMIT
                 </ButtonDefault>
               </Control>
             </Field>

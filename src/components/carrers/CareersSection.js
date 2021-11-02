@@ -1,12 +1,12 @@
 import React from 'react';
-import { Column, Columns } from 'bloomer';
 import ServicesSubTitle from './../services/ServicesSubTitle';
 import ServicesContent from './../services/ServicesContent';
 import styled from 'styled-components';
-import { TextIndigo } from './../2021/text/TextHelpers';
 import PropTypes from 'prop-types';
 import { StaticImage } from 'gatsby-plugin-image';
 import { List, ListItemCss } from '../Typography/List';
+import { TextIndigo } from './../2021/text/TextHelpers';
+import { Column, Columns } from 'bloomer';
 
 const Title = styled(TextIndigo)`
   font-size: calc(24px + (42 - 24) * ((100vw - 320px) / (1920 - 320)));

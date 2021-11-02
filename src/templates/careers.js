@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, Hero, HeroHeader, Section } from 'bloomer';
 import { StaticImage } from 'gatsby-plugin-image';
 import { SeoMetaTags } from '../components/2021/SeoMetaTags';
-
 import PropTypes from 'prop-types';
 import Layout from '../components/2020/Layout';
 import Header from '../components/header/Header';
