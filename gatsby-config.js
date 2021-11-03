@@ -134,9 +134,9 @@ module.exports = {
                 id
                 title
                 description
-                profits
+                requirements
                 jobProfile
-                jobDescription
+                responsibilities
                 modality
                 time
                 active

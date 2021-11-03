@@ -1,13 +1,14 @@
 import React from 'react';
-import { Column, Columns } from 'bloomer';
 import ServicesSubTitle from './../services/ServicesSubTitle';
 import ServicesContent from './../services/ServicesContent';
 import styled from 'styled-components';
-import { TextOrange } from './../2021/text/TextHelpers';
 import PropTypes from 'prop-types';
 import { StaticImage } from 'gatsby-plugin-image';
+import { List, ListItemCss } from '../Typography/List';
+import { TextIndigo } from './../2021/text/TextHelpers';
+import { Column, Columns } from 'bloomer';
 
-const Title = styled(TextOrange)`
+const Title = styled(TextIndigo)`
   font-size: calc(24px + (42 - 24) * ((100vw - 320px) / (1920 - 320)));
 `;
 
@@ -30,25 +31,36 @@ const StyleSubtitle = styled.div`
   text-align: center;
 `;
 
+const OtherTextContainer = styled(List)`
+  font-size: 20px;
+  li {
+    ${ListItemCss}
+  }
+`;
+
 const CareersSection = ({ title, textList, otherText, otherText2 }) => {
   return (
     <>
-      <Columns isVCentered>
+      <Columns>
         <Column isSize={{ mobile: 12, desktop: 5 }}>
           <StaticImage
-            src={'../../../assets/images/service/details/services-details.png'}
-            alt={'Service Section 3'}
+            width={473}
+            height={467}
+            src={'../../assets/images/careers/duties_and_responsabilities.png'}
+            alt={'Duties and responsabilities'}
           />
         </Column>
-
         <Column isSize={{ mobile: 12, desktop: 6 }}>
-          <StyleSubtitle>
-            <ServicesSubTitle isCentered>
+          <StyleSubtitle style={{ textAlign: 'left' }}>
+            <ServicesSubTitle>
               <Title>{title}</Title>{' '}
             </ServicesSubTitle>
           </StyleSubtitle>
           <ServicesContent>
-            {otherText !== '' ? <Paragraph2>{otherText}</Paragraph2> : null}
+            {otherText !== '' ? (
+              <OtherTextContainer
+                dangerouslySetInnerHTML={{ __html: otherText }}></OtherTextContainer>
+            ) : null}
             {otherText2 !== '' ? <Paragraph2>{otherText2}</Paragraph2> : null}
             {textList.map((t, i) => (
               <React.Fragment key={i}>

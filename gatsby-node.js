@@ -199,9 +199,9 @@ exports.createPages = ({ graphql, actions }) => {
               careers: nodes {
                 title
                 description
-                profits
+                requirements
                 jobProfile
-                jobDescription
+                responsibilities
                 active
                 modality
                 time
