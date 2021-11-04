@@ -55,8 +55,8 @@ const AppDevelopment = () => (
           }
           img={
             <StaticImage
-              src={'./../../assets/images/service/card/iconos-Main-Services-APP-Development.svg'}
-              alt="Dashboard Development"
+              src={'../../assets/images/service/card/icon-dashboard-development.svg'}
+              alt={'Dashboard Development'}
             />
           }
         />
@@ -65,10 +65,10 @@ const AppDevelopment = () => (
     <StyledSection2>
       <Container>
         <ServicesSection2
-          title={'Essential '}
-          titleOrange={'for your businesses'}
+          title={'What is'}
+          titleOrange={'Dashboard Software?'}
           text={
-            'A mobile app is a most-have for most businesses. We can transform your idea into a powerful app for in-house communications, real-time employee contact, workflow and operations support.'
+            'Dashboard software is an information management tool that tracks, gathers, displays business data in interactive and customizable visualizations that enable you to monitor your business, analyze processes, and provide them with actionable insights.'
           }
         />
       </Container>
@@ -76,24 +76,38 @@ const AppDevelopment = () => (
     <Section>
       <Container>
         <ServicesSection3
-          title={'Every business needs an App'}
-          otherText={
-            'App and cross-platform development is adapted to any industries, among those are the following:'
+          title={'Benefits You Get with your Dashboard Software'}
+          otherText2={
+            'We explain to you the dashboard benefits to your business that implements these modern solutions into its workflow:'
           }
-          textList={['Healthcare.', 'Financial.', 'Entertainment.', 'Fashion and eCommerce.']}
-        />
+          textList={[
+            'Gain a consistent view of KPIs: All your key performance indicators (KPIs) become visible from a centralized location, formed on a single screen, no matter the data source(s) you need to utilize.',
+            'Empower everyone to explore data: Modern solutions cut the middleman and provide you with a drag-and-drop interface that enables you to explore the data yourself.',
+            'Real-time updates: A real-time dashboard allows you to monitor activity as it happens throughout your business processes.',
+            'Access everywhere: Dashboard software is a scalable SaaS solution that offers access from everywhere and at any time. The only requirement is an Internet connection, and the software is immediately available.',
+          ]}
+          textList2={[
+            'Data-driven Culture: By establishing data-driven workflows, you will minimize risks and improve your decision-making processes and overall business efficiency.',
+            'Reap the benefits of Smart features: The dashboarding software augments the traditional means of monitoring, analyzing, and generating actionable insights using Artificial Intelligence, and takes you to the next level of data management.',
+            'Begin to trust your data: By utilizing modern business dashboard software, you can completely trust your data since the software becomes the single point of truth, no matter the amount of data sources.',
+          ]}>
+          <StaticImage
+            src={'../../assets/images/service/dashboard-development-section.svg'}
+            alt={'Dashboard Develpment Section'}
+          />
+        </ServicesSection3>
       </Container>
     </Section>
     <Section>
       <Container>
         <ServicesSection4
-          title={'Benefits and Advantages of App Development'}
-          leftText={[
-            'Increased user interaction.',
-            'Increased customer loyalty.',
-            'Employee productivity improvement',
-          ]}
-          rightTextList={['Cost reduction', 'Competitive advantage']}
+          title={'Why Choose Us?'}
+          text={
+            'In Cobuild Lab, we offer all the dashboard development services you need, from planning and design to maintenance, providing an intuitive, automated, smart, and affordable solution that meets your business needs.'
+          }
+          otherText={
+            'We have an efficient team of experienced developers who strive to provide you with the best dashboard development services. We have all your control panel requirements and needs covered.'
+          }
         />
       </Container>
     </Section>
