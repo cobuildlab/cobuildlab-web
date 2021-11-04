@@ -19,9 +19,9 @@ import Title2 from '../../components/Title2';
 import ServicesSection2 from '../../components/services/details/ServicesSection2';
 import { StaticImage } from 'gatsby-plugin-image';
 
-import Okroo from '../../components/services/details/customer-success-stories/card/Okroo';
-import Mama from '../../components/services/details/customer-success-stories/card/Mama';
-import Payklever from '../../components/services/details/customer-success-stories/card/Payklever';
+import CollabToGrow from '../../components/services/details/customer-success-stories/card/CollabToGrow';
+import LeadVolt from '../../components/services/details/customer-success-stories/card/LeadVolt';
+import MyVoice from '../../components/services/details/customer-success-stories/card/MyVoice';
 
 const StyledSubTitle = styled.div`
   text-align: center;
@@ -135,9 +135,9 @@ const AppDevelopment = () => (
           <Title2>Customer Success Stories</Title2>
         </StyledSubTitle>
         <Columns isCentered>
-          <Okroo />
-          <Mama />
-          <Payklever />
+          <CollabToGrow />
+          <LeadVolt />
+          <MyVoice />
         </Columns>
       </StyledContainer>
     </StyledSection2>
