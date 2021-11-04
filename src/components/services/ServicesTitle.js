@@ -9,9 +9,7 @@ const Container = styled.div`
 
 const ServicesTitle = ({ children }) => (
   <Container>
-    <H2>
-      <h1>{children}</h1>
-    </H2>
+    <H2>{children}</H2>
   </Container>
 );
 
