@@ -201,6 +201,21 @@ const Services = () => {
                     }
                   />
                   <ServicesCard
+                    title={'Dashboard'}
+                    subtitle={'Development'}
+                    cover={
+                      'Connect with your day-by-day data sources all in one place, in seconds.'
+                    }
+                    to={'dashboard-development'}
+                    image={
+                      <StaticImage
+                        src={'./../assets/images/service/card/icon-dashboard-development.svg'}
+                        alt={'Dashboard Development'}
+                      />
+                    }
+                  />
+
+                  <ServicesCard
                     title={'Process'}
                     subtitle={'Automation'}
                     cover={'Save time and money transforming your processes'}
