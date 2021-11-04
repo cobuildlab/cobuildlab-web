@@ -5,8 +5,10 @@ import ServicesContent from './../ServicesContent';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
+// add a option like small medium large
+
 const Paragraph = styled.p`
-  font-size: 18px;
+  font-size: ${({ size }) => (size === 'md' ? '20px' : '18px')};
   font-weight: 600;
   text-align: justify;
   color: #264a60;
@@ -29,7 +31,7 @@ const WrappServiceTitle = styled.div`
   margin-bottom: 3rem;
 `;
 
-const ServicesHeader = ({ title, paragraph, paragraph2, img, careers }) => {
+const ServicesHeader = ({ title, paragraph, paragraph2, img, careers, size }) => {
   return (
     <Columns>
       <Column isSize={{ mobile: 12, desktop: 6 }}>
@@ -64,6 +66,7 @@ ServicesHeader.defaultProps = {
   paragraph: '',
   paragraph2: '',
   careers: false,
+  size: 'md',
 };
 
 ServicesHeader.propTypes = {
@@ -72,6 +75,7 @@ ServicesHeader.propTypes = {
   paragraph2: PropTypes.string,
   img: PropTypes.element.isRequired,
   careers: PropTypes.bool,
+  size: PropTypes.string,
 };
 
 export default ServicesHeader;
