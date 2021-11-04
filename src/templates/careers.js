@@ -78,6 +78,7 @@ function CareersTemplate({ pageContext }) {
                 alt={'sit down with laptop'}
               />
             }
+            size={'sm'}
             careers={true}
           />
         </Container>
