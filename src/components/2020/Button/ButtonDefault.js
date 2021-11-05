@@ -6,7 +6,8 @@ import { defaultStyle } from './common-css';
 
 const Container = styled.button`
   ${defaultStyle}
-  width: ${({ isBlock }) => (isBlock ? '100%' : 'auto')}
+  width: ${({ isBlock }) => (isBlock ? '100%' : 'auto')};
+  height: ${({ isFullHeight }) => (isFullHeight ? '100%' : 'auto')};
 `;
 
 /**
@@ -19,8 +20,16 @@ const Container = styled.button`
  *                         https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type.
  */
 
-const ButtonDefault = ({ children, isLoading, isBlock, type, onClick, isCapitalize }) => (
-  <Container onClick={onClick} type={type} isBlock={isBlock}>
+const ButtonDefault = ({
+  children,
+  isLoading,
+  isBlock,
+  type,
+  onClick,
+  isCapitalize,
+  isFullHeight,
+}) => (
+  <Container onClick={onClick} type={type} isBlock={isBlock} isFullHeight={isFullHeight}>
     <ButtonLoading isLoading={isLoading} isCapitalize={isCapitalize}>
       {children}
     </ButtonLoading>
@@ -33,6 +42,7 @@ ButtonDefault.defaultProps = {
   isBlock: false,
   onClick: () => null,
   isCapitalize: true,
+  isFullHeight: false,
 };
 
 ButtonDefault.propTypes = {
@@ -42,6 +52,7 @@ ButtonDefault.propTypes = {
   isLoading: PropTypes.bool,
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
   isCapitalize: PropTypes.bool,
+  isFullHeight: PropTypes.bool,
 };
 
 export default memo(ButtonDefault);
