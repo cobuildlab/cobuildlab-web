@@ -5,11 +5,15 @@ const StickySection = () => {
   const [imagePosition, setImagePosition] = useState(-100);
 
   useEffect(() => {
-    window.addEventListener('scroll', (e) => {
-      if (document.scrollingElement.scrollTop > 300 && imagePosition !== 0) {
-        setImagePosition(0);
-      }
-    });
+    window.addEventListener(
+      'scroll',
+      (e) => {
+        if (document.scrollingElement.scrollTop > 300 && imagePosition !== 0) {
+          setImagePosition(0);
+        }
+      },
+      { passive: true },
+    );
   });
 
   return (
