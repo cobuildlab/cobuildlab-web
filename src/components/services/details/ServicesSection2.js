@@ -1,9 +1,10 @@
 import React from 'react';
 import { Column, Columns } from 'bloomer';
+import { TextOrange } from '../../2021/text/TextHelpers';
+import { List, ListItemCss } from '../../Typography/List';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Typography from '../../2020/Typography';
-import { TextOrange } from '../../2021/text/TextHelpers';
 
 const StyledSection = styled.div`
   margin-top: 50px;
@@ -12,6 +13,7 @@ const StyledSection = styled.div`
 
 const StyledSubTitle = styled.div`
   text-align: center;
+  margin-bottom: 3rem;
 `;
 
 const ParagraphTextList = styled.p`
@@ -46,7 +48,25 @@ const ParagraphText = styled.p`
   margin: auto;
   padding-bottom: 20px;
   @media screen and (max-width: 768px) {
+    width: 100%;
     padding: 0px;
+  }
+`;
+
+const OtherTextContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+const OtherText = styled(List)`
+  width: 1000px;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+
+  li {
+    ${ListItemCss}
+    font-size: 20px;
   }
 `;
 
@@ -65,7 +85,7 @@ const ServicesSection2 = ({
       <Column isSize={{ mobile: 12, desktop: 12 }}>
         <StyledSection>
           <StyledSubTitle>
-            <Typography tag="h2" className="subtitle-new">
+            <Typography tag="h2" className={'subtitle-new'}>
               {title} <TextOrange>{titleOrange}</TextOrange>
             </Typography>
           </StyledSubTitle>
@@ -107,7 +127,11 @@ const ServicesSection2 = ({
               </Columns>
             </>
           ) : null}
-          {otherText !== '' ? <ParagraphText>{otherText}</ParagraphText> : null}
+          {otherText !== '' ? (
+            <OtherTextContainer>
+              <OtherText dangerouslySetInnerHTML={{ __html: otherText }} />
+            </OtherTextContainer>
+          ) : null}
         </StyledSection>
       </Column>
     </>

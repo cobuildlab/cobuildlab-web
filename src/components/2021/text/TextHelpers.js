@@ -9,6 +9,10 @@ export const TextIndigo = styled.span`
   color: ${colors.indigo};
 `;
 
+export const TextDarkSlate = styled.span`
+  color: ${colors.darkSlate};
+`;
+
 export const AlignRight = styled.span`
   text-align: right;
 `;

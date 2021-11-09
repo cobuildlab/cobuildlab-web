@@ -19,10 +19,12 @@ import Okroo from './card/stories/Okroo';
 import Avsee from './card/stories/Avsee';
 import StoryRocket from './card/stories/StoryRocket';
 import ArtVault from './card/stories/ArtVault';
+// import Navigate from './card/stories/Navigate';
 
 const SuccessStories = () => {
   return (
     <Columns isDisplay="flex" isMultiline>
+      {/*<Navigate />*/}
       <ArtVault />
       <StoryRocket />
       <Avsee />

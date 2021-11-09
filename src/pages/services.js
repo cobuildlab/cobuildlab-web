@@ -40,7 +40,7 @@ const Services = () => {
 
   return (
     <Layout>
-      <SeoMetaTags title="Services" description="Privacy Policy for the Cobuild Lab" />
+      <SeoMetaTags title="Services" description="Services offered by Cobuild Lab" />
       <Hero>
         <HeroHeader>
           <Header />
@@ -200,6 +200,21 @@ const Services = () => {
                       />
                     }
                   />
+                  <ServicesCard
+                    title={'Dashboard'}
+                    subtitle={'Development'}
+                    cover={
+                      'Connect with your day-by-day data sources all in one place, in seconds.'
+                    }
+                    to={'dashboard-development'}
+                    image={
+                      <StaticImage
+                        src={'./../assets/images/service/card/icon-dashboard-development.svg'}
+                        alt={'Dashboard Development'}
+                      />
+                    }
+                  />
+
                   <ServicesCard
                     title={'Process'}
                     subtitle={'Automation'}

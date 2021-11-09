@@ -15,6 +15,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-preact`,
     {
       resolve: 'gatsby-plugin-zopfli',
     },
@@ -133,13 +134,14 @@ module.exports = {
                 id
                 title
                 description
-                profits
+                requirements
                 jobProfile
-                jobDescription
+                responsibilities
                 modality
                 time
                 active
                 slug
+                type
                 createdAt
               }
             }

@@ -93,7 +93,7 @@ And if, when we refer to maintaining or increasing the market for the software p
  
 This is the overview of the whole process, but as we said, each one of these phases generally has many specifics steps or tasks on detail. 
 
-These phases are an overview. But they are more specific and complex depending on the framework of Product Development used. Below there are several emphasized in Software Product Development.
+These phases are an overview. But they are more specific and complex depending on the framework of Product Development used. Below there are several emphasized in [Software Product Development](https://www.a3logics.com/software-product-development).
 
 
 <title-2>Frameworks of Software Product Development</title-2>
