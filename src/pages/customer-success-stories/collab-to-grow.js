@@ -174,7 +174,14 @@ const CollabToGrow = ({ data }) => (
         <Container>
           <Columns isMultiline>
             <Column isSize={{ tablet: 12, desktop: 6 }}>
-              <StickySection />
+              <StickySection>
+                <StaticImage
+                  width={'1770'}
+                  height={'1180'}
+                  src={'../../assets/images/customers/collabtogrow/problem.png'}
+                  alt={'problem'}
+                />
+              </StickySection>
             </Column>
             <Column isSize={{ tablet: 12, desktop: 6 }}>
               <DetailSubTitle>
