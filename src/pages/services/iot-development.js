@@ -39,7 +39,7 @@ const StyledContainer = styled(Container)`
 
 const IotDevelopment = () => (
   <Layout>
-    <SeoMetaTags title="Services" description="Privacy Policy for the Cobuild Lab" />
+    <SeoMetaTags title="IoT Development" description="Iot Development" />
     <Hero>
       <HeroHeader>
         <Header />

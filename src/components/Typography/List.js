@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const List = styled.ul`
   padding-left: 1em;
   padding-top: 1em;
 `;
 
-const Container = styled.li`
+export const ListItemCss = css`
   margin: 1em 0;
   color: #264a60;
   &::before {
@@ -18,6 +18,10 @@ const Container = styled.li`
     width: 1em;
     margin-left: -1em;
   }
+`;
+
+const Container = styled.li`
+  ${ListItemCss}
 `;
 
 const Link = styled.a`

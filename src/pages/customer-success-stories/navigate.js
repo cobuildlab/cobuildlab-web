@@ -79,7 +79,7 @@ const Navigate = ({ data }) => (
                 Founded by{' '}
                 <TextLink to={'https://www.linkedin.com/in/psostre/'}>Pedro Sostre</TextLink>, a
                 consultant and author with 20 years of experience in building companies,{' '}
-                <TextLink to={'https://www.navigate.capital/'}>Navigate</TextLink>
+                <TextLink to={'https://www.navigate.capital/'}>Navigate </TextLink>
                 helps innovative Startup founders navigate the business world and get their start-up
                 companies launched, growing, or prepared for financing through practical business
                 advice. Navigate aims to support the rise of new businesses, collaborating in every
@@ -127,7 +127,7 @@ const Navigate = ({ data }) => (
                   <StaticImage
                     width={'1580'}
                     height={'1084'}
-                    src={'./../../assets/images/customers/collabtogrow/overview-collage.png'}
+                    src={'./../../assets/images/customers/navigate/overview-collage.png'}
                     alt={'Overview Collab'}
                   />
                 </DetailHeroImagesContent>

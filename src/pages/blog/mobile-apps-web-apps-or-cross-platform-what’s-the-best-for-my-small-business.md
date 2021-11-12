@@ -32,7 +32,7 @@ Web apps, on the other hand, are accessed by browser and will adapt to any devic
 <br/> 
 <br/> 
 <br/>
-A mobile application or “app” -as it’s most commonly known- is a type of application software that’s been designed and built to run on a particular piece of hardware, such as a tablet computer or a smartphone. These apps are frequently used to supply its users with services akin to the ones they usually access on their desktops. The widespread use and popularity of this type of software can be traced back to Apple and its App Store, which helped carry the concept to the mainstream with the ever-increasing number of apps available for their devices. 
+A mobile application or “app” -as it’s most commonly known- is a type of <a target="_blank" href="https://www.teammobot.com/blog/quality-assurance">application software</a> that’s been designed and built to run on a particular piece of hardware, such as a tablet computer or a smartphone. These apps are frequently used to supply its users with services akin to the ones they usually access on their desktops. The widespread use and popularity of this type of software can be traced back to Apple and its App Store, which helped carry the concept to the mainstream with the ever-increasing number of apps available for their devices. 
 
 <Br>
 

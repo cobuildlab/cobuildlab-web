@@ -66,6 +66,13 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
+      resolve: `gatsby-plugin-brotli`,
+      options: {
+        extensions: ['css', 'html', 'js', 'svg'],
+        level: 4,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Cobuild Lab`,
@@ -134,13 +141,14 @@ module.exports = {
                 id
                 title
                 description
-                profits
+                requirements
                 jobProfile
-                jobDescription
+                responsibilities
                 modality
                 time
                 active
                 slug
+                type
                 createdAt
               }
             }

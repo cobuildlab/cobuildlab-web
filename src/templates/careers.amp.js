@@ -31,7 +31,7 @@ const StyledSection2 = styled(Section)`
  */
 function CareersTemplate({ pageContext }) {
   const { career } = pageContext;
-  const { title, description, jobProfile, jobDescription } = career;
+  const { title, description, jobProfile, responsabilities } = career;
 
   return (
     <Layout>
@@ -54,7 +54,7 @@ function CareersTemplate({ pageContext }) {
       </Section>
       <StyledSection2>
         <Container>
-          <ServicesSection2 title={'Job description'} text={jobDescription} careers={true} />
+          <ServicesSection2 title={'Job description'} text={responsabilities} careers={true} />
         </Container>
       </StyledSection2>
       <Section>

@@ -16,21 +16,13 @@ const Overlay = styled.div`
 const Container = styled.div`
   position: relative;
   display: block;
-  width: 308px;
-  height: 180px;
+  width: 100%;
+  height: 150px;
   border-radius: 5px;
   overflow: hidden;
   margin: auto;
   background-color: #fff;
   box-shadow: 0px 10px 20px #0000001a;
-  @media screen and (max-width: 1024px) {
-    width: 244px;
-    height: 280px;
-  }
-  @media screen and (max-width: 925px) {
-    width: 210px;
-    height: 200px;
-  }
 `;
 
 const ChildrenContainer = styled.div`

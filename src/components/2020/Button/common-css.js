@@ -1,5 +1,7 @@
 import { css } from 'styled-components';
 
+// Fill
+
 export const baseCss = css`
   padding: 9px 20px;
   border: none;
@@ -52,5 +54,37 @@ export const secondaryStyle = css`
     background: #264A60 0% 0% no-repeat padding-box;
     box-shadow: 0px 5px 15px #2749606C !important;
     color: #fff !important;
+  }
+`;
+
+// Outline
+
+export const baseOutlineCss = css`
+  padding: 9px 20px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-weight: 300;
+`;
+
+export const primaryOutlineStyle = css`
+  box-shadow: -1px 4px 20px 2px #90a2ad !important;
+  background-color: #e76c29 !important;
+  border: 1px solid #e76c29 !important;
+  box-shadow: -1px 4px 20px 2px #90a2ad !important;
+  font-weight: bold;
+  color: #ffffff !important;
+`;
+
+export const defaultOutlineStyle = css`
+  ${baseOutlineCss}
+  border: 1px solid #264a60;
+  color: #264a60;
+  background-color: transparent;
+  &:hover {
+    ${primaryOutlineStyle}
   }
 `;
