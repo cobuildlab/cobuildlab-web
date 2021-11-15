@@ -3,7 +3,7 @@ title: 'How Artificial Intelligence Will Transform Your Business'
 date: '2021-11-12T20:00:26.060Z'
 template: blog
 tags: News
-image: './media/rpa-vs-workflow-automation-for-businesses.jpg'
+image: './media/how-artificial-intelligence-will-transform-your-business.jpg'
 ---
 
 Miami, FL. Nov 12, 2021.
