@@ -3,7 +3,7 @@ title: 'SD-WAN: The Foundation of a Successful IoT Deployment'
 date: '2021-11-12T19:16:11.583Z'
 template: blog
 tags: News
-image: './media/rpa-vs-workflow-automation-for-businesses.jpg'
+image: './media/sd-wan-the-foundation-of-a-successful-iot-deployment.jpg'
 ---
 
 Miami, FL. Nov 10, 2021.
