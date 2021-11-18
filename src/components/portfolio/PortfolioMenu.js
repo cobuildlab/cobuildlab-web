@@ -74,10 +74,10 @@ const PortfolioMenu = () => {
       }
     };
 
-    document.addEventListener('scroll', onScroll);
+    document.addEventListener('scroll', onScroll, { passive: true });
 
     return () => {
-      document.removeEventListener('scroll', onScroll);
+      document.removeEventListener('scroll', onScroll, { passive: true });
     };
   }, [isFixed]);
 

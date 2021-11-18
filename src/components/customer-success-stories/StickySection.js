@@ -1,15 +1,19 @@
-import { StaticImage } from 'gatsby-plugin-image';
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
-const StickySection = () => {
+const StickySection = ({ children }) => {
   const [imagePosition, setImagePosition] = useState(-100);
 
   useEffect(() => {
-    window.addEventListener('scroll', (e) => {
-      if (document.scrollingElement.scrollTop > 300 && imagePosition !== 0) {
-        setImagePosition(0);
-      }
-    });
+    window.addEventListener(
+      'scroll',
+      (e) => {
+        if (document.scrollingElement.scrollTop > 300 && imagePosition !== 0) {
+          setImagePosition(0);
+        }
+      },
+      { passive: true },
+    );
   });
 
   return (
@@ -18,14 +22,13 @@ const StickySection = () => {
         transition: 'ease margin 700ms',
         marginTop: `${imagePosition}px`,
       }}>
-      <StaticImage
-        width={'1770'}
-        height={'1180'}
-        src={'../../assets/images/customers/collabtogrow/problem.png'}
-        alt={'problem'}
-      />
+      {children}
     </div>
   );
+};
+
+StickySection.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
 
 export default StickySection;
