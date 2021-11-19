@@ -50,6 +50,92 @@ const CardContainer = styled.div`
   }
 `;
 
+const TeamImagesContainer = styled.div`
+  display: flex;
+  flexwrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+`;
+
+const team = [
+  {
+    first: 'Angel',
+    last: 'Lacret',
+    description: 'Chief of Product Development',
+    picture: (
+      <StaticImage
+        className={'team-member-img'}
+        src={'../../assets/images/team/team-pictures/angel.jpg'}
+        alt={'Angel Lacret'}
+      />
+    ),
+  },
+  {
+    first: 'Alan',
+    last: 'R. Guevara',
+    description: 'Chief of Product Management',
+    picture: (
+      <StaticImage
+        className={'team-member-img'}
+        src={'./../../assets/images/team/team-pictures/alanthinks.jpg'}
+        alt={'Alan R. Guevara'}
+      />
+    ),
+  },
+  {
+    first: 'Carlos',
+    last: 'Magno',
+    description: 'Project Manager',
+    whitePicture: (
+      <StaticImage
+        className={'team-member-img'}
+        src={'./../../assets/images/team/new-pictures/white/carlos-magno.jpg'}
+        alt={'Carlos Magno'}
+      />
+    ),
+    greenPicture: (
+      <StaticImage
+        className={'team-member-img'}
+        src={'./../../assets/images/team/new-pictures/green/carlos-magno.jpg'}
+        alt={'Carlos Magno'}
+      />
+    ),
+    picture: (
+      <StaticImage
+        className={'team-member-img'}
+        src={'./../../assets/images/team/new-pictures/green/carlos-magno.jpg'}
+        alt={'Carlos Magno'}
+      />
+    ),
+  },
+  {
+    first: 'Luis',
+    last: 'Eulacio',
+    description: 'Full Stack Javascript Developer',
+    whitePicture: (
+      <StaticImage
+        className={'team-member-img'}
+        src={'./../../assets/images/team/team-pictures/Luis-Eulacio.jpg'}
+        alt={'Luis Eulacio'}
+      />
+    ),
+    greenPicture: (
+      <StaticImage
+        className={'team-member-img'}
+        src={'./../../assets/images/team/team-pictures/Luis-Eulacio.jpg'}
+        alt={'Luis Eulacio'}
+      />
+    ),
+    picture: (
+      <StaticImage
+        className={'team-member-img'}
+        src={'./../../assets/images/team/team-pictures/Luis-Eulacio.jpg'}
+        alt={'Luis Eulacio'}
+      />
+    ),
+  },
+];
+
 const Navigate = ({ data }) => (
   <DetailLayout>
     <SeoMetaTags
@@ -369,22 +455,15 @@ const Navigate = ({ data }) => (
             <center>
               <DetailSubTitle isBold={false}>Our team</DetailSubTitle>
             </center>
-            <div style={{ display: 'flex', flexWrap: 'wrap', width: '100%' }}>
-              {new Array(10).fill('').map((item, index) => (
+            <TeamImagesContainer>
+              {team.map((item, index) => (
                 <CardContainer key={index}>
-                  <Card
-                    first={'Alessandra'}
-                    last={'Lubertino'}
-                    description={'Growth and Strategic Partnerships Executive'}>
-                    <StaticImage
-                      class={'team-member-img'}
-                      src={'../../assets/images/team/new-pictures/white/alessandra-brusut.jpg'}
-                      alt={'Alessandra Lubertino'}
-                    />
+                  <Card first={item.first} last={item.last} description={item.description}>
+                    {item.picture}
                   </Card>
                 </CardContainer>
               ))}
-            </div>
+            </TeamImagesContainer>
           </div>
         </Container>
       </Section>
