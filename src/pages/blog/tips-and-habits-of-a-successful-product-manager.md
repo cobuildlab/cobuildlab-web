@@ -3,7 +3,7 @@ title: "Tips and habits of a successful product manager"
 date: "2021-11-22T16:24:04.000Z"
 template: blog
 tags: Small Business
-image: "./media/metrics-of-logistics-management.jpg"
+image: "./media/Tips-and-habits-of-a-successful-product-manager.jpg"
 ---
 
 
