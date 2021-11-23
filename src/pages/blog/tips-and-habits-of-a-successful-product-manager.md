@@ -7,7 +7,7 @@ image: "./media/Tips-and-habits-of-a-successful-product-manager.jpg"
 ---
 
 
-Miami, FL. Nov 22, 2021.
+Miami, FL. Nov 22, 2021
 
 The task of the product managers is one of the most important within the development team during the execution and development of a <a target="_blank" href="https://www.cobuildlab.com/services/custom-software-development/"> software development project </a>, as it ensures that nothing is missing at the time of development and makes sure that each of the activities is fulfilled to the letter. 
 
