@@ -6,7 +6,7 @@ tags: Small Business
 image: "./media/metrics-of-logistics-management.jpg"
 ---
 
-Miami, FL. Nov 22, 2021.
+Miami, FL. Nov 22, 2021
 
 Companies spend millions on equipping themselves with logistics software and systems so that their supply chain never fails and is always on the move. 
 
