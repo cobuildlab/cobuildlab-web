@@ -481,20 +481,20 @@ const Navigate = ({ data }) => (
     </LightSection>
 
     {
-      // The result
+      // The testimonials
     }
     <Section>
       <center>
         <DetailSubTitle>
-          The <TextOrange>Result</TextOrange>
+          The <TextOrange>Testimonial</TextOrange>
         </DetailSubTitle>
         <WrappResult>
           <Item
-            title={'Andres Aguerrevere'}
+            title={'Pedro Sostre'}
             description={
-              'Cobuild Lab Inc performed admirably in every aspect of the engagement, delivering a high-quality final product. Communicative and dedicated, the team developed a good understanding of the project and exceeded expectations in terms of quality and work ethic.'
+              'Their commitment to their word, and their strategic advice, when approached with a project, is impressive.'
             }
-            subtitle={'Internal Dashboard Dev for Digital Marketing Agency'}
+            subtitle={'Pedro Sostre Founder, Navigate.capital'}
             image={{
               childImageSharp: {
                 fixed: {
