@@ -393,14 +393,13 @@ const Navigate = ({ data }) => (
           }>
           <DetailSubTitle isBold={false}>Logical Architecture</DetailSubTitle>
           <DetailParagraph>
-            Already investing a significant amount of time dedicated to structure and organizing
-            corporate strategic alliances, they needed a solution that would not only give them more
-            insight but give them back their time. Already investing a significant amount of time
-            dedicated to structure and organizing corporate strategic alliances, they needed a
-            solution that would not only give them more insight but give them back their time.
-            Already investing a significant amount of time dedicated to structure and organizing
-            corporate strategic alliances, they needed a solution that would not only give them more
-            insight but give them back their time.Already investing a
+            The app has 2 views, one for the users to take the lessons, watch the videos and answer
+            the questions, and another one for the administrator to see the answers of each user,
+            and see what progress he has, also he can answer questions or comments.
+          </DetailParagraph>
+          <DetailParagraph>
+            Both interfaces communicate with a web API, which in turn interacts with a database
+            where both the information of the lessons and the answers and comments are stored.
           </DetailParagraph>
         </DetailSection>
 
@@ -419,14 +418,13 @@ const Navigate = ({ data }) => (
           left>
           <DetailSubTitle isBold={false}>Physical Architecture</DetailSubTitle>
           <DetailParagraph>
-            Already investing a significant amount of time dedicated to structure and organizing
-            corporate strategic alliances, they needed a solution that would not only give them more
-            insight but give them back their time. Already investing a significant amount of time
-            dedicated to structure and organizing corporate strategic alliances, they needed a
-            solution that would not only give them more insight but give them back their time.
-            Already investing a significant amount of time dedicated to structure and organizing
-            corporate strategic alliances, they needed a solution that would not only give them more
-            insight but give them back their time.Already investing a
+            The interface communicates with each of these services for each particular task.
+            Calendly for booking, Youtube for bringing videos, Sendgrid for sending email
+            notifications, and so on.
+          </DetailParagraph>
+          <DetailParagraph>
+            The interface communicates via HTTP with the web services that are hosted on 8base, and
+            these services are built on top of the AWS infrastructure.
           </DetailParagraph>
         </DetailSection>
 
