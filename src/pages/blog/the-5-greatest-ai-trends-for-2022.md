@@ -3,7 +3,7 @@ title: "The 5 greatest Artificial Intelligence (AI) trends for 2022"
 date: "2021-11-12T16:24:04.000Z"
 template: blog
 tags: News
-image: "./media/5-trends-ai-2022"
+image: "./media/5-trends-ai-2022.png"
 ---
 It doesn’t matter if we are still in a pandemic or not, Artificial Intelligence keeps growing at a very fast pace and it has impacted every industry with its applications. AI is considered an intriguing domain because it assures transformational changes in every industry across the Earth.
 

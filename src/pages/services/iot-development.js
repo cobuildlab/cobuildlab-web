@@ -88,8 +88,7 @@ const IotDevelopment = () => (
             'data it collects. Our development team formulates effective IoT implementation\n' +
             'strategies to seamlessly manage your business processes at reduced overhead\n' +
             'costs.'
-          }
-        >
+          }>
           <StaticImage
             src={'./../../assets/images/service/IoT-ilustracion.png'}
             alt={'Illustration IoT'}

@@ -2,7 +2,7 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import DetailCarousel from '../../../detail-carousel/new/DetailCarousel';
 
-const SlidersArtVault = () => (
+const SlidersNavigate = () => (
   <DetailCarousel>
     <div style={{ height: '500px', width: '900px' }}>
       <StaticImage
@@ -32,4 +32,4 @@ const SlidersArtVault = () => (
   </DetailCarousel>
 );
 
-export default SlidersArtVault;
+export default SlidersNavigate;
