@@ -402,7 +402,7 @@ const Navigate = ({ data }) => (
             <StaticImage
               width={'1800'}
               height={'1064'}
-              src={'./../../assets/images/customers/collabtogrow/logical-architecture.png'}
+              src={'./../../assets/images/customers/navigate/logical-architecture.jpg'}
               alt={'Logical Architecture'}
             />
           }>
