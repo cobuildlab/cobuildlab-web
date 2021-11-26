@@ -76,8 +76,8 @@ const GoalChart = ({ goal, subTitle, description }) => {
         style={{ width: '100%' }}
       />
       <TextContainer>
-        <TextIndigo style={{ fontWeight: 'bold' }}>{subTitle} </TextIndigo>
-        <TextIndigo>{description}</TextIndigo>
+        {subTitle ? <TextIndigo style={{ fontWeight: 'bold' }}>{subTitle} </TextIndigo> : null}
+        {description ? <TextIndigo>{description}</TextIndigo> : null}
       </TextContainer>
     </div>
   );
