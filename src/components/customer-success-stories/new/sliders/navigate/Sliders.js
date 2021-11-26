@@ -8,12 +8,17 @@ const SlidersNavigate = () => (
       style={{
         height: '500px',
         width: '900px',
-        backgroundColor: 'red',
       }}>
       <StaticImage
         src={'./../../../../../assets/images/customers/navigate/slider/1.png'}
         alt={'Navigate 1'}
         height={'400px'}
+        style={{
+          backgroundColor: 'red',
+        }}
+        imgStyle={{
+          backgroundColor: 'green',
+        }}
       />
     </div>
     <div style={{ height: '500px', width: '900px' }}>

@@ -468,7 +468,15 @@ const Navigate = ({ data }) => (
     <Section>
       <Container>
         <Columns isMultiline>
-          <Column isSize={{ mobile: 12, desktop: 6 }}></Column>
+          <Column isSize={{ mobile: 12, desktop: 6 }}>
+            <StaticImage
+              style={{ marginTop: '106.469px' }}
+              width={'1267'}
+              height={'745'}
+              src={'./../../assets/images/customers/navigate/result.png'}
+              alt={'The Result'}
+            />
+          </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailSubTitle>
               The <TextOrange> Results </TextOrange>
