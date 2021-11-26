@@ -1,12 +1,12 @@
 ---
 title: "Logistical strategies and tricks to take advantage in an extremely competitive marketplace"
-date: "2020-11-22T16:24:04.000Z"
+date: "2021-11-26T16:24:04.000Z"
 template: blog
 tags: Tools
 image: "./media/logistical-strategies-and-tricks-cover.png"
 ---
 
-Miami, FL. Nov 22, 2021
+Miami, FL. Nov 26, 2021
 
 <a target="_blank" href="https://www.cobuildlab.com/services/enterprise-software-development">   Businesses</a>, whatever their nature, will always be in search of competitive advantages that will enable them to stand out from the rest. Adopting new strategies and adapting to the new era is indispensable when it comes to highlighting and climbing up the list of the best. 
 
@@ -20,7 +20,7 @@ Many factors are conducive to change in the logistics industry, such as oil pric
 
 A competitive and correctly operated company is distinguished by having excellent supply chain management, for which it is sometimes necessary to make some structural changes that, although they may be small, will allow the company's processes to be more efficient. <Br> </Br>
 
-<title-3 align="centered"> Check these 4 basic solutions to make your logistics company competitive </title-3> <Br> </Br>
+<title-3 align="centered"> Check these 4 basic solutions to make your logistics company competitive </title-3>
 
 <b><title-4>1. Shipper partnerships:</title-4></b> You can take advantage of lower transportation rates due to competitive negotiations and economies of scale. <Br> </Br>
 
@@ -36,7 +36,7 @@ This function produces a great operational and economic advantage, since it allo
 
 It is mandatory to offer customers advanced tracking capabilities to follow their goods in real-time, regardless of their nature or size. <Br> </Br>
 
-<b>These 4 essential components in a logistics company ensure 2 things:</b> cost reduction and increased productivity, which, in turn, generates the following benefits:
+<b>These 4 essential components in a logistics company ensure 2 things:</b> Cost reduction and increased productivity, which, in turn, generates the following benefits:
 
 - Offering a better quality service
 - Attract new customers
@@ -50,7 +50,7 @@ We already talked about the basic elements that your logistics company must have
 <img src="./media/logistical-strategies-and-tricks-1.png">
 </center> <Br> </Br>
 
- <title-3 align="centered"> Take a look at these 4 tricks to not only be competitive but to stand out in the marketplace </title-3> <Br> </Br>
+ <title-3 align="centered"> Take a look at these 4 tricks to not only be competitive but to stand out in the marketplace </title-3>
  
  <title-4>1. <a target="_blank" href="https://www.cobuildlab.com/blog/IoT-in-supply-chain-management/">   Technology is the perfect partner for the supply chain</a>:</title-4>
  
