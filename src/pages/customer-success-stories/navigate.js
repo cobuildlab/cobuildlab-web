@@ -22,6 +22,7 @@ import StickySection from '../../components/customer-success-stories/StickySecti
 import Item from '../../components/enterprise/containers/testimonial/Item';
 import SlidersNavigate from '../../components/customer-success-stories/new/sliders/navigate/Sliders';
 import GoalChart from '../../components/customer-success-stories/chart/GoalChart';
+import testimonialImage from './../../assets/images/customers/navigate/testimonial.jpg';
 
 const OverviewSection = styled.div`
   margin-bottom: 5rem;
@@ -382,7 +383,7 @@ const Navigate = ({ data }) => (
     </SolutionSection>
 
     {
-      // Light section - Nested
+      // Light section - What we did
     }
     <LightSection>
       <Section>
@@ -422,9 +423,9 @@ const Navigate = ({ data }) => (
         <DetailSection
           image={
             <StaticImage
-              width={'1802'}
-              height={'1066'}
-              src={'./../../assets/images/customers/collabtogrow/physical-architecture.png'}
+              width={'960'}
+              height={'540'}
+              src={'./../../assets/images/customers/navigate/physical-architecture.jpg'}
               alt={'Physical Architecture'}
             />
           }
@@ -457,37 +458,34 @@ const Navigate = ({ data }) => (
             />
           </div>
         </div>
-
-        {
-          // Out team
-        }
-        <Container>
-          <div>
-            <center>
-              <DetailSubTitle isBold={false}>Our team</DetailSubTitle>
-            </center>
-            <TeamImagesContainer>
-              {team.map((item, index) => (
-                <CardContainer key={index}>
-                  <Card first={item.first} last={item.last} description={item.description}>
-                    {item.picture}
-                  </Card>
-                </CardContainer>
-              ))}
-            </TeamImagesContainer>
-          </div>
-        </Container>
       </Section>
     </LightSection>
 
     {
-      // The testimonials
+      // Out team
+    }
+    <Container>
+      <div>
+        <center>
+          <DetailSubTitle isBold={false}>Our team</DetailSubTitle>
+        </center>
+        <TeamImagesContainer>
+          {team.map((item, index) => (
+            <CardContainer key={index}>
+              <Card first={item.first} last={item.last} description={item.description}>
+                {item.picture}
+              </Card>
+            </CardContainer>
+          ))}
+        </TeamImagesContainer>
+      </div>
+    </Container>
+
+    {
+      // The testimonial
     }
     <Section>
       <center>
-        <DetailSubTitle>
-          The <TextOrange>Testimonial</TextOrange>
-        </DetailSubTitle>
         <WrappResult>
           <Item
             title={'Pedro Sostre'}
@@ -498,7 +496,7 @@ const Navigate = ({ data }) => (
             image={{
               childImageSharp: {
                 fixed: {
-                  src: 'https://main.cobuildlab.com/static/2984dc5a01c3ba4119169414fcceeb81/16c7d/andres-wegacha-120.png',
+                  src: testimonialImage,
                 },
               },
             }}
