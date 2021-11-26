@@ -4,7 +4,12 @@ import DetailCarousel from '../../../detail-carousel/new/DetailCarousel';
 
 const SlidersNavigate = () => (
   <DetailCarousel>
-    <div style={{ height: '500px', width: '900px' }}>
+    <div
+      style={{
+        height: '500px',
+        width: '900px',
+        backgroundColor: 'red',
+      }}>
       <StaticImage
         src={'./../../../../../assets/images/customers/navigate/slider/1.png'}
         alt={'Navigate 1'}

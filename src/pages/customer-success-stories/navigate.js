@@ -454,7 +454,7 @@ const Navigate = ({ data }) => (
               width={'2720'}
               height={'1412'}
               objectFit={'contain'}
-              src={'./../../assets/images/customers/collabtogrow/roadmap.png'}
+              src={'./../../assets/images/customers/navigate/roadmap.jpg'}
               alt={'Roadmap'}
             />
           </div>
