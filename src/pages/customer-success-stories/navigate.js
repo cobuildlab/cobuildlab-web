@@ -12,7 +12,7 @@ import DetailParagraph from '../../components/customer-success-stories/DetailPar
 import DetailSection from '../../components/customer-success-stories/new/DetailSection';
 import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 
-import { TextOrange } from '../../components/2021/text/TextHelpers';
+import { TextIndigo, TextOrange } from '../../components/2021/text/TextHelpers';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import Card from '../../components/team/card/Card';
@@ -23,6 +23,7 @@ import Item from '../../components/enterprise/containers/testimonial/Item';
 import SlidersNavigate from '../../components/customer-success-stories/new/sliders/navigate/Sliders';
 import GoalChart from '../../components/customer-success-stories/chart/GoalChart';
 import testimonialImage from './../../assets/images/customers/navigate/testimonial.jpg';
+import { List, ListItem } from '../../components/Typography/List';
 
 const OverviewSection = styled.div`
   margin-bottom: 5rem;
@@ -462,54 +463,66 @@ const Navigate = ({ data }) => (
     </LightSection>
 
     {
-      // Out team
-    }
-    <Container>
-      <div>
-        <center>
-          <DetailSubTitle isBold={false}>Our team</DetailSubTitle>
-        </center>
-        <TeamImagesContainer>
-          {team.map((item, index) => (
-            <CardContainer key={index}>
-              <Card first={item.first} last={item.last} description={item.description}>
-                {item.picture}
-              </Card>
-            </CardContainer>
-          ))}
-        </TeamImagesContainer>
-      </div>
-    </Container>
-
-    {
-      // The testimonial
+      // The result
     }
     <Section>
-      <center>
-        <WrappResult>
-          <Item
-            title={'Pedro Sostre'}
-            description={
-              'Their commitment to their word, and their strategic advice, when approached with a project, is impressive.'
-            }
-            subtitle={'Pedro Sostre Founder, Navigate.capital'}
-            image={{
-              childImageSharp: {
-                fixed: {
-                  src: testimonialImage,
-                },
-              },
-            }}
-          />
-        </WrappResult>
-      </center>
-    </Section>
-
-    {
-      // Carousel
-    }
-    <Section isPaddingless>
-      <SlidersNavigate />
+      <Container>
+        <Columns isMultiline>
+          <Column isSize={{ mobile: 12, desktop: 6 }}></Column>
+          <Column isSize={{ mobile: 12, desktop: 6 }}>
+            <DetailSubTitle>
+              The <TextOrange> Results </TextOrange>
+            </DetailSubTitle>
+            <DetailParagraph>
+              The project was divided into three phases that we built according to the Navigate
+              {"team's"} needs. Along with each phase, we explored the opportunity of improving and
+              optimizing specific aspects of the process and adding new features and tools. These
+              were the most important features added in the process:
+            </DetailParagraph>
+            <List>
+              <ListItem>
+                <TextIndigo style={{ fontWeight: 'bold' }}>Onboarding: </TextIndigo>
+                {'  '}Every new user can register by creating an account, filling in their details,
+                and verifying their email address.
+              </ListItem>
+              <ListItem>
+                <TextIndigo style={{ fontWeight: 'bold' }}>Goal setting:</TextIndigo>
+                {'  '}Once registered, the user answers a questionnaire about their project and what
+                their goals are so that the Navigate team can offer personalized guidance focusing
+                on their needs.
+              </ListItem>
+              <ListItem>
+                <TextIndigo style={{ fontWeight: 'bold' }}>Gamification:</TextIndigo>
+                {'  '}During the consulting program, the Navigate platform visually displays the
+                progress of each user and how much is left to do. {"It's"} a reward system so the
+                users can see how far they have come.
+              </ListItem>
+              <ListItem>
+                <TextIndigo style={{ fontWeight: 'bold' }}>Learning System:</TextIndigo>
+                {'  '}Users will be able to access interactive video lessons as part of their growth
+                program.
+              </ListItem>
+              <ListItem>
+                <TextIndigo style={{ fontWeight: 'bold' }}>
+                  Guidance and mentor comments:{' '}
+                </TextIndigo>
+                {'  '} Throughout the course, mentors will be able to closely monitor {"users'"}
+                progress, as well as leave comments on the text input that a user has filled in.
+                Users will also be able to see their {"mentor's"} most recent comments on the home
+                screen, mark them as read, and hide them. This represents constant feedback between
+                the Startup founders and their mentors.
+              </ListItem>
+              <ListItem>
+                <TextIndigo style={{ fontWeight: 'bold' }}>Subscribe {'&'} Billing:</TextIndigo>
+                {'  '} Now users are able to subscribe to Navigate, choose a plan for them, and pay
+                for it directly through the platform. The user can update payment details, download
+                invoices, and more. If any user cancels their subscription they have the option to
+                re-subscribe again whenever suits them best.
+              </ListItem>
+            </List>
+          </Column>
+        </Columns>
+      </Container>
     </Section>
 
     {
@@ -545,6 +558,61 @@ const Navigate = ({ data }) => (
         </Section>
       </LightSection>
     </OurGoalSection>
+
+    {
+      // Carousel
+    }
+    <Section isPaddingless>
+      <SlidersNavigate />
+    </Section>
+
+    {
+      // The testimonial
+    }
+    <Section>
+      <center>
+        <WrappResult>
+          <Item
+            title={'Pedro Sostre'}
+            description={
+              'Their commitment to their word, and their strategic advice, when approached with a project, is impressive.'
+            }
+            subtitle={'Pedro Sostre Founder, Navigate.capital'}
+            image={{
+              childImageSharp: {
+                fixed: {
+                  src: testimonialImage,
+                },
+              },
+            }}
+          />
+        </WrappResult>
+      </center>
+    </Section>
+
+    {
+      // Out team
+    }
+    <LightSection>
+      <Section>
+        <Container>
+          <div>
+            <center>
+              <DetailSubTitle isBold={false}>Our team</DetailSubTitle>
+            </center>
+            <TeamImagesContainer>
+              {team.map((item, index) => (
+                <CardContainer key={index}>
+                  <Card first={item.first} last={item.last} description={item.description}>
+                    {item.picture}
+                  </Card>
+                </CardContainer>
+              ))}
+            </TeamImagesContainer>
+          </div>
+        </Container>
+      </Section>
+    </LightSection>
   </DetailLayout>
 );
 
