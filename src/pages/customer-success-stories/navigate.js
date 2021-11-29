@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
 import { SeoMetaTags } from '../../components/2021/SeoMetaTags';
 
@@ -55,10 +55,12 @@ const CardContainer = styled.div`
   }
 `;
 
-const WrappResult = styled.div`
+const TestimonialContainer = styled.div`
   background-color: #ffffff;
   box-shadow: 0px 13px 15px 5px #00000024;
   max-width: 800px;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 `;
 
 const TeamImagesContainer = styled.div`
@@ -595,13 +597,20 @@ const Navigate = ({ data }) => (
     }
     <Section>
       <center>
-        <WrappResult>
+        <TestimonialContainer>
           <Item
             title={'Pedro Sostre'}
             description={
               'Their commitment to their word, and their strategic advice, when approached with a project, is impressive.'
             }
-            subtitle={'Pedro Sostre Founder, Navigate.capital'}
+            subtitle={
+              <div>
+                Pedro Sostre Founder, Navigate.capital{' '}
+                <Link target={'_blank'}>
+                  https://github.com/cobuildlab/cobuildlab-web/issues/url
+                </Link>
+              </div>
+            }
             image={{
               childImageSharp: {
                 fixed: {
@@ -610,7 +619,7 @@ const Navigate = ({ data }) => (
               },
             }}
           />
-        </WrappResult>
+        </TestimonialContainer>
       </center>
     </Section>
 
