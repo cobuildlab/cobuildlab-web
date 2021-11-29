@@ -4,12 +4,20 @@ import DetailCarousel from '../../../detail-carousel/new/DetailCarousel';
 
 const SlidersNavigate = () => (
   <DetailCarousel>
-    <div style={{ height: '500px', width: '900px' }}>
-      <StaticImage
-        src={'./../../../../../assets/images/customers/navigate/slider/1.png'}
-        alt={'Navigate 1'}
-        height={'400px'}
-      />
+    <div
+      style={{
+        height: '500px',
+        width: '900px',
+      }}>
+      <div style={{ textAlign: 'center' }}>
+        <StaticImage
+          src={'./../../../../../assets/images/customers/navigate/slider/1.png'}
+          alt={'Navigate 1'}
+          height={'400px'}
+          style={{ textAlign: 'center' }}
+          imgStyle={{ textAlign: 'center' }}
+        />
+      </div>
     </div>
     <div style={{ height: '500px', width: '900px' }}>
       <StaticImage

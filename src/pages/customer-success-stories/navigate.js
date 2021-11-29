@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import { Section, Container, Columns, Column } from 'bloomer';
 import { SeoMetaTags } from '../../components/2021/SeoMetaTags';
 
@@ -12,7 +12,7 @@ import DetailParagraph from '../../components/customer-success-stories/DetailPar
 import DetailSection from '../../components/customer-success-stories/new/DetailSection';
 import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 
-import { TextOrange } from '../../components/2021/text/TextHelpers';
+import { TextIndigo, TextOrange } from '../../components/2021/text/TextHelpers';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import Card from '../../components/team/card/Card';
@@ -22,6 +22,8 @@ import StickySection from '../../components/customer-success-stories/StickySecti
 import Item from '../../components/enterprise/containers/testimonial/Item';
 import SlidersNavigate from '../../components/customer-success-stories/new/sliders/navigate/Sliders';
 import GoalChart from '../../components/customer-success-stories/chart/GoalChart';
+import testimonialImage from './../../assets/images/customers/navigate/testimonial.jpg';
+import { List, ListItem } from '../../components/Typography/List';
 
 const OverviewSection = styled.div`
   margin-bottom: 5rem;
@@ -53,10 +55,12 @@ const CardContainer = styled.div`
   }
 `;
 
-const WrappResult = styled.div`
+const TestimonialContainer = styled.div`
   background-color: #ffffff;
   box-shadow: 0px 13px 15px 5px #00000024;
   max-width: 800px;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 `;
 
 const TeamImagesContainer = styled.div`
@@ -68,6 +72,22 @@ const TeamImagesContainer = styled.div`
 
 const OurGoalSection = styled.div`
   margin-top: 3.5rem;
+`;
+
+const FlexCenter = styled.div`
+  justify-content: center;
+  display: flex;
+  width: 100%;
+`;
+
+const EpilogueSection = styled.div`
+  overflow: hidden;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 `;
 
 const team = [
@@ -382,7 +402,7 @@ const Navigate = ({ data }) => (
     </SolutionSection>
 
     {
-      // Light section - Nested
+      // Light section - What we did
     }
     <LightSection>
       <Section>
@@ -400,7 +420,7 @@ const Navigate = ({ data }) => (
             <StaticImage
               width={'1800'}
               height={'1064'}
-              src={'./../../assets/images/customers/collabtogrow/logical-architecture.png'}
+              src={'./../../assets/images/customers/navigate/logical-architecture.jpg'}
               alt={'Logical Architecture'}
             />
           }>
@@ -422,9 +442,9 @@ const Navigate = ({ data }) => (
         <DetailSection
           image={
             <StaticImage
-              width={'1802'}
-              height={'1066'}
-              src={'./../../assets/images/customers/collabtogrow/physical-architecture.png'}
+              width={'960'}
+              height={'540'}
+              src={'./../../assets/images/customers/navigate/physical-architecture.jpg'}
               alt={'Physical Architecture'}
             />
           }
@@ -452,66 +472,83 @@ const Navigate = ({ data }) => (
               width={'2720'}
               height={'1412'}
               objectFit={'contain'}
-              src={'./../../assets/images/customers/collabtogrow/roadmap.png'}
+              src={'./../../assets/images/customers/navigate/roadmap.jpg'}
               alt={'Roadmap'}
             />
           </div>
         </div>
-
-        {
-          // Out team
-        }
-        <Container>
-          <div>
-            <center>
-              <DetailSubTitle isBold={false}>Our team</DetailSubTitle>
-            </center>
-            <TeamImagesContainer>
-              {team.map((item, index) => (
-                <CardContainer key={index}>
-                  <Card first={item.first} last={item.last} description={item.description}>
-                    {item.picture}
-                  </Card>
-                </CardContainer>
-              ))}
-            </TeamImagesContainer>
-          </div>
-        </Container>
       </Section>
     </LightSection>
 
     {
-      // The testimonials
+      // The result
     }
     <Section>
-      <center>
-        <DetailSubTitle>
-          The <TextOrange>Testimonial</TextOrange>
-        </DetailSubTitle>
-        <WrappResult>
-          <Item
-            title={'Pedro Sostre'}
-            description={
-              'Their commitment to their word, and their strategic advice, when approached with a project, is impressive.'
-            }
-            subtitle={'Pedro Sostre Founder, Navigate.capital'}
-            image={{
-              childImageSharp: {
-                fixed: {
-                  src: 'https://main.cobuildlab.com/static/2984dc5a01c3ba4119169414fcceeb81/16c7d/andres-wegacha-120.png',
-                },
-              },
-            }}
-          />
-        </WrappResult>
-      </center>
-    </Section>
-
-    {
-      // Carousel
-    }
-    <Section isPaddingless>
-      <SlidersNavigate />
+      <Container>
+        <Columns isMultiline>
+          <Column isSize={{ mobile: 12, desktop: 6 }}>
+            <StaticImage
+              style={{ marginTop: '106.469px' }}
+              width={'1267'}
+              height={'745'}
+              src={'./../../assets/images/customers/navigate/result.png'}
+              alt={'The Result'}
+            />
+          </Column>
+          <Column isSize={{ mobile: 12, desktop: 6 }}>
+            <DetailSubTitle>
+              The <TextOrange> Results </TextOrange>
+            </DetailSubTitle>
+            <DetailParagraph>
+              The project was divided into three phases that we built according to the Navigate
+              {"team's"} needs. Along with each phase, we explored the opportunity of improving and
+              optimizing specific aspects of the process and adding new features and tools. These
+              were the most important features added in the process:
+            </DetailParagraph>
+            <List>
+              <ListItem>
+                <TextIndigo style={{ fontWeight: 'bold' }}>Onboarding: </TextIndigo>
+                {'  '}Every new user can register by creating an account, filling in their details,
+                and verifying their email address.
+              </ListItem>
+              <ListItem>
+                <TextIndigo style={{ fontWeight: 'bold' }}>Goal setting:</TextIndigo>
+                {'  '}Once registered, the user answers a questionnaire about their project and what
+                their goals are so that the Navigate team can offer personalized guidance focusing
+                on their needs.
+              </ListItem>
+              <ListItem>
+                <TextIndigo style={{ fontWeight: 'bold' }}>Gamification:</TextIndigo>
+                {'  '}During the consulting program, the Navigate platform visually displays the
+                progress of each user and how much is left to do. {"It's"} a reward system so the
+                users can see how far they have come.
+              </ListItem>
+              <ListItem>
+                <TextIndigo style={{ fontWeight: 'bold' }}>Learning System:</TextIndigo>
+                {'  '}Users will be able to access interactive video lessons as part of their growth
+                program.
+              </ListItem>
+              <ListItem>
+                <TextIndigo style={{ fontWeight: 'bold' }}>
+                  Guidance and mentor comments:{' '}
+                </TextIndigo>
+                {'  '} Throughout the course, mentors will be able to closely monitor {"users'"}
+                progress, as well as leave comments on the text input that a user has filled in.
+                Users will also be able to see their {"mentor's"} most recent comments on the home
+                screen, mark them as read, and hide them. This represents constant feedback between
+                the Startup founders and their mentors.
+              </ListItem>
+              <ListItem>
+                <TextIndigo style={{ fontWeight: 'bold' }}>Subscribe {'&'} Billing:</TextIndigo>
+                {'  '} Now users are able to subscribe to Navigate, choose a plan for them, and pay
+                for it directly through the platform. The user can update payment details, download
+                invoices, and more. If any user cancels their subscription they have the option to
+                re-subscribe again whenever suits them best.
+              </ListItem>
+            </List>
+          </Column>
+        </Columns>
+      </Container>
     </Section>
 
     {
@@ -547,6 +584,155 @@ const Navigate = ({ data }) => (
         </Section>
       </LightSection>
     </OurGoalSection>
+
+    {
+      // Carousel
+    }
+    <Section isPaddingless>
+      <SlidersNavigate />
+    </Section>
+
+    {
+      // The testimonial
+    }
+    <Section>
+      <center>
+        <TestimonialContainer>
+          <Item
+            title={'Pedro Sostre'}
+            description={
+              'Their commitment to their word, and their strategic advice, when approached with a project, is impressive.'
+            }
+            subtitle={
+              <div>
+                Pedro Sostre Founder, Navigate.capital{' '}
+                <Link target={'_blank'}>
+                  https://github.com/cobuildlab/cobuildlab-web/issues/url
+                </Link>
+              </div>
+            }
+            image={{
+              childImageSharp: {
+                fixed: {
+                  src: testimonialImage,
+                },
+              },
+            }}
+          />
+        </TestimonialContainer>
+      </center>
+    </Section>
+
+    {
+      // Out team
+    }
+    <LightSection>
+      <Section>
+        <Container>
+          <div>
+            <center>
+              <DetailSubTitle isBold={false}>Our team</DetailSubTitle>
+            </center>
+            <TeamImagesContainer>
+              {team.map((item, index) => (
+                <CardContainer key={index}>
+                  <Card first={item.first} last={item.last} description={item.description}>
+                    {item.picture}
+                  </Card>
+                </CardContainer>
+              ))}
+            </TeamImagesContainer>
+          </div>
+        </Container>
+      </Section>
+    </LightSection>
+
+    {
+      // Epilogue section
+    }
+    <EpilogueSection>
+      <Section>
+        <Container>
+          <BannerBackgroundStories
+            style={{
+              top: '-40%',
+              right: '-80%',
+              width: '130%',
+              height: '130%',
+            }}
+          />
+          <FlexCenter>
+            <DetailTitle>
+              <TextIndigo>{"Let's"} </TextIndigo>
+              Build{' '}
+              <TextIndigo>
+                a<br />
+                Great
+              </TextIndigo>{' '}
+              Idea
+            </DetailTitle>
+          </FlexCenter>
+          <Columns isMultiline>
+            <Column
+              isSize={{ mobile: 12, desktop: 8 }}
+              style={{ display: 'flex', alignItems: 'center' }}>
+              <div>
+                <DetailSubTitle isBold={false}>Cobuild {"lab's"} benefits</DetailSubTitle>
+                <DetailParagraph>
+                  We define methodologies and tools that allow an analysis of the sustainability of
+                  the different options for designing and implementing software. It is about the
+                  management of software development and its engineering processes in the medium and
+                  long term.
+                  <br />
+                  <br />
+                  We use agile, low code or no-code, and cloud-based software solutions to help you
+                  capitalize on the market with simple and functional tools that improve your
+                  {"company's"} processes bringing better service and more value.
+                </DetailParagraph>
+              </div>
+            </Column>
+            <Column isSize={{ mobile: 12, desktop: 4 }}>
+              <StaticImage
+                width={'403'}
+                height={'414'}
+                src={'./../../assets/images/service/product-development-new.png'}
+                alt={'Cobuildlab benefits'}
+              />
+            </Column>
+          </Columns>
+
+          <Columns isMultiline>
+            <Column isSize={{ mobile: 12, desktop: 4 }}>
+              <StaticImage
+                width={'403'}
+                height={'414'}
+                src={'./../../assets/images/2020-value/coubuild-t.svg'}
+                alt={'Long-term partnership'}
+              />
+            </Column>
+            <Column
+              isSize={{ mobile: 12, desktop: 8 }}
+              style={{ display: 'flex', alignItems: 'center' }}>
+              <div>
+                <DetailSubTitle isBold={false}>Long-term partnership</DetailSubTitle>
+                <DetailParagraph>
+                  We believe in long-term partnerships, not long-term projects based on promises.
+                  <br />
+                  <br />
+                  We stand for collaboration, mutual respect, and trust, which makes us the right
+                  Software Development company to choose for game-changing opportunities long-term.
+                  <br />
+                  <br />
+                  We are consistently delivering projects that exceed our clients’ expectations. By
+                  creating shared goals, we set up a productive and efficient rhythm with ongoing
+                  feedback opportunities for desired changes and improvements.
+                </DetailParagraph>
+              </div>
+            </Column>
+          </Columns>
+        </Container>
+      </Section>
+    </EpilogueSection>
   </DetailLayout>
 );
 

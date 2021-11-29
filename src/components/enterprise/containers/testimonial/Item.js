@@ -152,7 +152,7 @@ const Item = ({ description, title, subtitle, image }) => (
 Item.propTypes = {
   description: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
+  subtitle: PropTypes.node.isRequired,
   image: PropTypes.object.isRequired,
 };
 
