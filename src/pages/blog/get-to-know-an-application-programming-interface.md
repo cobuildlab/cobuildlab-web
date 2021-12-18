@@ -12,7 +12,7 @@ This word is universal and it has been used in different areas. But here, we wil
 
 <title-2>First of all: what is the meaning of API?</title-2>
 
-API is an acronym for [Application Programming Interface](https://zenscrape.com/java-web-scraping-comprehensive-tutorial/). And basically, it is a mechanism used to connect two pieces of software to each other so that they can exchange data or messages in a standard format. Like XML or JSON.
+API is an acronym for <a href="https://zenscrape.com/java-web-scraping-comprehensive-tutorial/" target="_blank">Application Programming Interface</a>. And basically, it is a mechanism used to connect two pieces of software to each other so that they can exchange data or messages in a standard format. Like XML or JSON.
 It is composed of a set of methods of communication that are defined in many components. And they would be used for the web, network, hardware, operating system, database system, and software libraries.
 This is an instrument that allows you to expand, make alliances, open up to talent, innovate, automate processes, and even to look for more income.
 
