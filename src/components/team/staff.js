@@ -873,14 +873,14 @@ const staff = [
     ),
   },
   {
-    first: 'Rossileydys',
+    first: 'Rossileidys',
     last: 'Silva',
     description: 'QA Analyst',
     whitePicture: (
       <StaticImage
         className={'team-member-img'}
         src={'./../../assets/images/team/new-pictures/white/rossileydys-silva.jpg'}
-        alt={'Rossileydys Silva'}
+        alt={'Rossileidys Silva'}
       />
     ),
     greenPicture: (
