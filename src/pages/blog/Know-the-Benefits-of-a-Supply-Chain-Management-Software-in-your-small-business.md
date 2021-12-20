@@ -89,7 +89,7 @@ It certainly helps to prevent errors, reduce losses.
 
 <Br>
 
-E2open, LLC is a business-to-business provider of cloud-based, on-demand software for supply chains for computer, telecom, and electronics systems, components, and services. E2open offers its products across a variety of industries, including high technology industrial manufacturing, telecommunications, life sciences, oil and gas, consumer electronics, aerospace and defense, and consumer goods. 
+E2open, LLC is a business-to-business provider of <a href="https://currentscm.com/intro-to-cloud-procurement" target="_blank">cloud-based</a>, on-demand software for supply chains for computer, telecom, and electronics systems, components, and services. E2open offers its products across a variety of industries, including high technology industrial manufacturing, telecommunications, life sciences, oil and gas, consumer electronics, aerospace and defense, and consumer goods. 
 
 <Br>
 
