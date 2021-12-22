@@ -128,9 +128,9 @@ const ArtPlay = ({ data }) => (
             <Column isSize={{ tablet: 12, desktop: 6 }}>
               <StickySection>
                 <StaticImage
-                  width={'1163'}
-                  height={'665'}
-                  src={'../../assets/images/customers/navigate/problem.png'}
+                  width={'1920'}
+                  height={'901'}
+                  src={'../../assets/images/customers/art-play/problem.png'}
                   alt={'problem'}
                 />
               </StickySection>
@@ -171,9 +171,9 @@ const ArtPlay = ({ data }) => (
       <DetailSection
         image={
           <StaticImage
-            width={'1267'}
-            height={'745'}
-            src={'./../../assets/images/customers/navigate/solution.png'}
+            width={'1899'}
+            height={'900'}
+            src={'./../../assets/images/customers/art-play/solution.png'}
             alt={'Solution'}
           />
         }
