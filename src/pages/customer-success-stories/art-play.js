@@ -4,15 +4,24 @@ import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import { SeoMetaTags } from '../../components/2021/SeoMetaTags';
 import { Column, Columns, Container, Section } from 'bloomer';
+import { StaticImage } from 'gatsby-plugin-image';
+import { TextOrange } from '../../components/2021/text/TextHelpers';
 import BannerBackgroundStories from '../../components/customer-success-stories/BannerBackgroundStories';
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
+import DetailSubTitle from '../../components/customer-success-stories/DetailSubTitle';
 import DetailParagraph from '../../components/customer-success-stories/DetailParagraph';
 import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
-import { StaticImage } from 'gatsby-plugin-image';
+import StickySection from '../../components/customer-success-stories/StickySection';
+import DetailSection from '../../components/customer-success-stories/new/DetailSection';
+import { List, ListItem } from '../../components/Typography/List';
 
 const OverviewSection = styled.div`
   margin-bottom: 5rem;
+`;
+
+const SolutionSection = styled.div`
+  display: block;
 `;
 
 const BrandLogosContainer = styled.div`
@@ -22,6 +31,11 @@ const BrandLogosContainer = styled.div`
   @media screen and (max-width: 1024px) {
     justify-content: center;
   }
+`;
+
+const LightSection = styled.div`
+  background-color: #ffffff;
+  box-shadow: 0px 13px 15px 5px #00000024;
 `;
 
 const ArtPlay = ({ data }) => (
@@ -103,6 +117,247 @@ const ArtPlay = ({ data }) => (
         </Container>
       </Section>
     </OverviewSection>
+
+    {
+      // Problem
+    }
+    <LightSection>
+      <Section>
+        <Container>
+          <Columns isMultiline>
+            <Column isSize={{ tablet: 12, desktop: 6 }}>
+              <StickySection>
+                <StaticImage
+                  width={'1163'}
+                  height={'665'}
+                  src={'../../assets/images/customers/navigate/problem.png'}
+                  alt={'problem'}
+                />
+              </StickySection>
+            </Column>
+            <Column isSize={{ tablet: 12, desktop: 6 }}>
+              <DetailSubTitle>
+                The <TextOrange> Problem </TextOrange>
+              </DetailSubTitle>
+              <DetailParagraph>
+                Patricia tried to use a couple of commercial solutions for providing this service.
+                Both solutions fell short in providing all the set of features that she wanted to
+                provide to their customers.
+              </DetailParagraph>
+              <DetailParagraph>
+                Also, the limitations on customization for an impactful UI were too big. The
+                solutions that she tried {'wouldn’t'} allow to provide the experience that her brand
+                was trying to communicate.
+              </DetailParagraph>
+              <DetailParagraph>
+                {'Patricia’s'} goal is to provide an objective view of the art market, an analysis
+                of an {"artist's"} oeuvre, and to build important art collections for clients and
+                collectors over the long term.
+              </DetailParagraph>
+              <DetailParagraph>
+                The idea of centralizing digital art gave birth to the design and development of a
+                platform for clients/collectors to host and display their art pieces.
+              </DetailParagraph>
+            </Column>
+          </Columns>
+        </Container>
+      </Section>
+    </LightSection>
+
+    {
+      // The solution
+    }
+    <SolutionSection>
+      <DetailSection
+        image={
+          <StaticImage
+            width={'1267'}
+            height={'745'}
+            src={'./../../assets/images/customers/navigate/solution.png'}
+            alt={'Solution'}
+          />
+        }
+        caption={
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        }
+        left>
+        <DetailSubTitle>
+          The <TextOrange>Solution</TextOrange>
+        </DetailSubTitle>
+
+        <DetailParagraph>
+          Patricia and Cobuild Lab teamed up to bring to life an ingenious idea to preview,
+          purchase, display and preserve digital art.
+        </DetailParagraph>
+        <DetailParagraph>
+          The project was basically building a web application that can be used on mobile devices as
+          well, allowing the user to preview, edit, and display its collections, as well as import
+          and upload digital art, and showcase this art on any screen using the platform itself.
+        </DetailParagraph>
+        <DetailParagraph>
+          The application uses a Shopify login and username for users to authenticate and import the
+          purchases that they have done on the main art play website, and it also allows users to
+          explore new collections and different providers for digital art.
+        </DetailParagraph>
+        <DetailParagraph>
+          This system falls under the category of a Custom CRM. A responsive web application that
+          serves as a hub for serving Art Plays customers and provides additional services.
+        </DetailParagraph>
+        <Container>
+          <Columns>
+            <Column
+              style={{ display: 'flex', alignItems: 'center', marginTop: '2.5rem' }}
+              isSize={{ desktop: 12 }}>
+              <StaticImage
+                width={'67'}
+                height={'68'}
+                style={{ marginRight: '4rem' }}
+                objectFit={'contain'}
+                src={'../../assets/images/logos/brands-stories/google.png'}
+                alt={'Google'}
+              />
+              <StaticImage
+                width={'90'}
+                height={'80'}
+                style={{ marginRight: '4rem' }}
+                objectFit={'contain'}
+                src={'../../assets/images/logos/brands-stories/react.png'}
+                alt={'React'}
+              />
+              <StaticImage
+                width={'91'}
+                height={'91'}
+                style={{ marginRight: '4rem' }}
+                objectFit={'contain'}
+                src={'../../assets/images/logos/brands-stories/aws.png'}
+                alt={'AWS'}
+              />
+              <StaticImage
+                width={'91'}
+                height={'91'}
+                style={{ marginRight: '4rem' }}
+                objectFit={'contain'}
+                src={'../../assets/images/logos/brands-stories/aws.png'}
+                alt={'AWS'}
+              />
+              <StaticImage
+                width={'67'}
+                height={'68'}
+                objectFit={'contain'}
+                src={'../../assets/images/logos/brands-stories/google.png'}
+                alt={'Google'}
+              />
+            </Column>
+          </Columns>
+        </Container>
+      </DetailSection>
+    </SolutionSection>
+
+    {
+      // Light section - What we did
+    }
+    <LightSection>
+      <Section>
+        <div style={{ textAlign: 'center' }}>
+          <DetailSubTitle>
+            What <TextOrange> We Did </TextOrange>
+          </DetailSubTitle>
+        </div>
+
+        {
+          // Logical architecture section
+        }
+        <DetailSection
+          image={
+            <StaticImage
+              width={'960'}
+              height={'540'}
+              src={'./../../assets/images/customers/art-play/logical-architecture.jpg'}
+              alt={'Logical Architecture'}
+            />
+          }>
+          <DetailSubTitle isBold={false}>Logical Architecture</DetailSubTitle>
+          <DetailParagraph>
+            The app has 2 web interfaces, one for users to view and reproduce their art pieces; and
+            a web console through which admin users can configure the platform.
+          </DetailParagraph>
+          <DetailParagraph>
+            Both interfaces communicate with a web API, which in turn interacts with a database
+            where both the information of the art pieces and the content is stored.
+          </DetailParagraph>
+          <DetailParagraph>
+            At the same time, the app connects to the Shopify API to bring product information that
+            is relevant to the {"platform's"} users.
+          </DetailParagraph>
+        </DetailSection>
+
+        {
+          // Physical architecture section
+        }
+        <DetailSection
+          image={
+            <StaticImage
+              width={'960'}
+              height={'540'}
+              src={'./../../assets/images/customers/art-play/physical-architecture.jpg'}
+              alt={'Physical Architecture'}
+            />
+          }
+          left>
+          <DetailSubTitle isBold={false}>Physical Architecture</DetailSubTitle>
+          <DetailParagraph>
+            The web interface built with NextJS, ReactJS, and Material UI communicates the different
+            web services of the platform through an API built with Graphql.
+          </DetailParagraph>
+          <DetailParagraph>
+            The interface communicates over HTTPs with the web services that are hosted on
+            8base.com, and these services are built on top of the AWS infrastructure.
+          </DetailParagraph>
+        </DetailSection>
+
+        {
+          // Roadmap
+        }
+        <div>
+          <div style={{ textAlign: 'center' }}>
+            <DetailSubTitle isBold={false}>Roadmap</DetailSubTitle>
+          </div>
+          <Columns
+            isMultiline
+            style={{
+              justifyContent: 'center',
+            }}>
+            <Column isSize={{ mobile: 5, desktop: 6 }}>
+              <List>
+                <ListItem>
+                  Media Management APP v1: Content Management on the database: Integration with the
+                  Shopify API, authenticating users against the Customer Database to sync the data
+                  from their account to the web platform.
+                </ListItem>
+                <ListItem>
+                  Media Management APP v2: Allow the platforma to list Shopify products to users on
+                  the platform.
+                </ListItem>
+                <ListItem>
+                  Media Management APP v3: Art Channels, a custom form of displaying information
+                  about institutions and their pieces on the platform.
+                </ListItem>
+              </List>
+            </Column>
+          </Columns>
+          <div style={{ textAlign: 'center' }}>
+            <StaticImage
+              style={{ width: '100%', maxWidth: '1000px' }}
+              width={'1262'}
+              height={'1394'}
+              objectFit={'contain'}
+              src={'./../../assets/images/customers/art-play/roadmap.png'}
+              alt={'Roadmap'}
+            />
+          </div>
+        </div>
+      </Section>
+    </LightSection>
   </DetailLayout>
 );
 
