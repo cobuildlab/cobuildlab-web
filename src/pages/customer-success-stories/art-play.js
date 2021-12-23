@@ -1,11 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { graphql } from 'gatsby';
-import { SeoMetaTags } from '../../components/2021/SeoMetaTags';
-import { Column, Columns, Container, Section } from 'bloomer';
-import { StaticImage } from 'gatsby-plugin-image';
-import { TextOrange } from '../../components/2021/text/TextHelpers';
+import Card from '../../components/team/card/Card';
+import GoalChart from '../../components/customer-success-stories/chart/GoalChart';
 import BannerBackgroundStories from '../../components/customer-success-stories/BannerBackgroundStories';
 import DetailLayout from '../../components/customer-success-stories/DetailLayout';
 import DetailTitle from '../../components/customer-success-stories/DetailTitle';
@@ -14,6 +11,11 @@ import DetailParagraph from '../../components/customer-success-stories/DetailPar
 import DetailHeroImagesContent from '../../components/customer-success-stories/DetailHeroImagesContent';
 import StickySection from '../../components/customer-success-stories/StickySection';
 import DetailSection from '../../components/customer-success-stories/new/DetailSection';
+import { graphql } from 'gatsby';
+import { SeoMetaTags } from '../../components/2021/SeoMetaTags';
+import { Column, Columns, Container, Section } from 'bloomer';
+import { StaticImage } from 'gatsby-plugin-image';
+import { TextIndigo, TextOrange } from '../../components/2021/text/TextHelpers';
 import { List, ListItem } from '../../components/Typography/List';
 
 const OverviewSection = styled.div`
@@ -37,6 +39,78 @@ const LightSection = styled.div`
   background-color: #ffffff;
   box-shadow: 0px 13px 15px 5px #00000024;
 `;
+
+const OurGoalSection = styled.div`
+  margin-top: 3.5rem;
+`;
+
+const TeamImagesContainer = styled.div`
+  display: flex;
+  flexwrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+`;
+
+const CardContainer = styled.div`
+  padding: 1.5rem;
+  width: 20%;
+  @media screen and (max-width: 768px) {
+    width: 50%;
+  }
+`;
+
+const team = [
+  {
+    first: 'Alan',
+    last: 'R. Guevara',
+    description: 'Chief of Product Management',
+    picture: (
+      <StaticImage
+        className={'team-member-img'}
+        src={'../../assets/images/team/team-pictures/alanthinks.jpg'}
+        alt={'Alan R. Guevara'}
+      />
+    ),
+  },
+  {
+    first: 'Jacqueline',
+    last: 'Popovich',
+    description: 'Product Manager',
+    picture: (
+      <StaticImage
+        className={'team-member-img'}
+        src={'../../assets/images/team/team-pictures/jacqueline-popovich.jpg'}
+        alt={'Jacqueline Popovich'}
+      />
+    ),
+  },
+  {
+    first: 'Xavier',
+    last: 'Romero',
+    description: 'Full Stack Javascript Developer',
+    whitePicture: (
+      <StaticImage
+        className={'team-member-img'}
+        src={'../../assets/images/team/new-pictures/white/Xavier-Romero-Developer-b.jpg'}
+        alt={'Xavier Romero'}
+      />
+    ),
+    greenPicture: (
+      <StaticImage
+        className={'team-member-img'}
+        src={'../../assets/images/team/new-pictures/green/Xavier-Romero-Developer-v.jpg'}
+        alt={'Xavier Romero'}
+      />
+    ),
+    picture: (
+      <StaticImage
+        className={'team-member-img'}
+        src={'../../assets/images/team/new-pictures/white/Xavier-Romero-Developer-b.jpg'}
+        alt={'Xavier Romero'}
+      />
+    ),
+  },
+];
 
 const ArtPlay = ({ data }) => (
   <DetailLayout>
@@ -356,6 +430,104 @@ const ArtPlay = ({ data }) => (
             />
           </div>
         </div>
+      </Section>
+    </LightSection>
+
+    {
+      // The result
+    }
+    <Section>
+      <Container>
+        <Columns isMultiline>
+          <Column isSize={{ mobile: 12, desktop: 6 }}>Lorem</Column>
+          <Column isSize={{ mobile: 12, desktop: 6 }}>
+            <DetailSubTitle>
+              The <TextOrange> Results </TextOrange>
+            </DetailSubTitle>
+            <DetailParagraph>
+              An easy-to-use platform to educate, present, distribute, collect, and preserve
+              media-based art as part of a community of collectors, artists, and art professionals
+              that are committed to creating and showing these works.
+            </DetailParagraph>
+            <DetailParagraph>
+              Art Play was created using a low code strategy to speed the development of the
+              platform, and it focuses on delivering value to its customers by an amazing feature
+              full user interface.
+            </DetailParagraph>
+            <DetailParagraph>
+              With {"ArtPlay's"} comprehensive service and secure, plug-and-play app on Apple TV and
+              iPad, it is envisioned as a robust future for art and technology-based artwork where
+              the collection, display, and preservation of media-based art have never been this
+              accessible or user-friendly.
+            </DetailParagraph>
+            <List>
+              <ListItem>
+                <TextIndigo style={{ fontWeight: 'bold' }}>Location: </TextIndigo>
+                {'  '}Miami, FL
+              </ListItem>
+              <ListItem>
+                <TextIndigo style={{ fontWeight: 'bold' }}>Industry: </TextIndigo> Arts,
+                Entertainment and Lifestyle
+              </ListItem>
+              <ListItem>
+                <TextIndigo style={{ fontWeight: 'bold' }}>Product: </TextIndigo> Web/mobile
+                application
+              </ListItem>
+            </List>
+          </Column>
+        </Columns>
+      </Container>
+    </Section>
+
+    {
+      // Our goal
+    }
+    <OurGoalSection>
+      <LightSection>
+        <Section>
+          <center>
+            <DetailSubTitle>
+              <TextOrange> Our goals </TextOrange> for this project
+            </DetailSubTitle>
+          </center>
+          <Container>
+            <Columns isMultiline isCentered>
+              <Column isSize={{ mobile: 12, tablet: 6, desktop: 3 }}>
+                <GoalChart goal={30} subTitle={'+30% Increase in customer satisfaction.'} />
+              </Column>
+              <Column isSize={{ mobile: 12, tablet: 6, desktop: 3 }}>
+                <GoalChart goal={50} subTitle={'+50% Reduction of manual tasks.'} />
+              </Column>
+              <Column isSize={{ mobile: 12, tablet: 6, desktop: 3 }}>
+                <GoalChart goal={30} subTitle={'+30% Increase in process efficiency'} />
+              </Column>
+            </Columns>
+          </Container>
+        </Section>
+      </LightSection>
+    </OurGoalSection>
+
+    {
+      // Out team
+    }
+    <LightSection>
+      <Section>
+        <Container>
+          <div>
+            <center>
+              <DetailSubTitle isBold={false}>Our team</DetailSubTitle>
+            </center>
+            <TeamImagesContainer>
+              {team.map((item, index) => (
+                <CardContainer key={index}>
+                  <Card first={item.first} last={item.last} description={item.description}>
+                    {item.picture}
+                  </Card>
+                </CardContainer>
+              ))}
+            </TeamImagesContainer>
+          </div>
+        </Container>
       </Section>
     </LightSection>
   </DetailLayout>
