@@ -396,36 +396,14 @@ const ArtPlay = ({ data }) => (
           <div style={{ textAlign: 'center' }}>
             <DetailSubTitle isBold={false}>Roadmap</DetailSubTitle>
           </div>
-          <Columns
-            isMultiline
-            style={{
-              justifyContent: 'center',
-            }}>
-            <Column isSize={{ mobile: 5, desktop: 6 }}>
-              <List>
-                <ListItem>
-                  Media Management APP v1: Content Management on the database: Integration with the
-                  Shopify API, authenticating users against the Customer Database to sync the data
-                  from their account to the web platform.
-                </ListItem>
-                <ListItem>
-                  Media Management APP v2: Allow the platforma to list Shopify products to users on
-                  the platform.
-                </ListItem>
-                <ListItem>
-                  Media Management APP v3: Art Channels, a custom form of displaying information
-                  about institutions and their pieces on the platform.
-                </ListItem>
-              </List>
-            </Column>
-          </Columns>
+
           <div style={{ textAlign: 'center' }}>
             <StaticImage
               style={{ width: '100%', maxWidth: '1000px' }}
-              width={'1262'}
-              height={'1394'}
+              width={'960'}
+              height={'540'}
               objectFit={'contain'}
-              src={'./../../assets/images/customers/art-play/roadmap.png'}
+              src={'./../../assets/images/customers/art-play/roadmap.jpg'}
               alt={'Roadmap'}
             />
           </div>
