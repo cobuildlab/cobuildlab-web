@@ -6,7 +6,7 @@ const SlidersNavigate = () => (
   <DetailCarousel>
     <div
       style={{
-        height: '500px',
+        height: '400px',
         width: '900px',
       }}>
       <div style={{ textAlign: 'center' }}>

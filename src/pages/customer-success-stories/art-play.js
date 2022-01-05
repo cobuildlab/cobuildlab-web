@@ -17,6 +17,7 @@ import { Column, Columns, Container, Section } from 'bloomer';
 import { StaticImage } from 'gatsby-plugin-image';
 import { TextIndigo, TextOrange } from '../../components/2021/text/TextHelpers';
 import { List, ListItem } from '../../components/Typography/List';
+import SlidersArtPlay from '../../components/customer-success-stories/new/sliders/art-play/Sliders';
 
 const OverviewSection = styled.div`
   margin-bottom: 5rem;
@@ -417,7 +418,15 @@ const ArtPlay = ({ data }) => (
     <Section>
       <Container>
         <Columns isMultiline>
-          <Column isSize={{ mobile: 12, desktop: 6 }}>Lorem</Column>
+          <Column isSize={{ mobile: 12, desktop: 6 }}>
+            <StaticImage
+              style={{ marginTop: '106.469px' }}
+              width={'1899'}
+              height={'900'}
+              src={'./../../assets/images/customers/art-play/result.png'}
+              alt={'The Result'}
+            />
+          </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <DetailSubTitle>
               The <TextOrange> Results </TextOrange>
@@ -485,6 +494,12 @@ const ArtPlay = ({ data }) => (
       </LightSection>
     </OurGoalSection>
 
+    {
+      // Carousel
+    }
+    <Section isPaddingless>
+      <SlidersArtPlay />
+    </Section>
     {
       // Out team
     }
