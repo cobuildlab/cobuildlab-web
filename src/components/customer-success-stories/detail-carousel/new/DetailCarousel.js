@@ -50,6 +50,14 @@ const SliderWrapper = styled.div`
   }
 `;
 
+const SliderUltimate = styled(Slider)`
+  .slick-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`;
+
 const settings = {
   infinite: true,
   speed: 500,
@@ -80,7 +88,7 @@ const DetailCarousel = ({ children }) => {
       <Wrapper>
         <SliderContainer>
           <SliderWrapper>
-            <Slider {...settings}>{children}</Slider>
+            <SliderUltimate {...settings}>{children}</SliderUltimate>
           </SliderWrapper>
         </SliderContainer>
       </Wrapper>
