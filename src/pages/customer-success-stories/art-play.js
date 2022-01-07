@@ -513,9 +513,10 @@ const ArtPlay = ({ data }) => (
     {
       // Carousel
     }
-    <Section isPaddingless>
+    <Section isPaddingless style={{ marginBottom: '6rem' }}>
       <SlidersArtPlay />
     </Section>
+
     {
       // Out team
     }

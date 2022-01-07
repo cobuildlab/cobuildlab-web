@@ -7,8 +7,8 @@ const ImageContainer = styled.div`
   text-align: center;
   align-items: center;
   img {
-    width: ${({ customWidth }) => (customWidth ? customWidth : '400px')};
-    height: auto;
+    width: ${({ customWidth }) => (customWidth ? customWidth : '400px')} !important;
+    height: auto !important;
     object-fit: contain !important;
   }
 `;
