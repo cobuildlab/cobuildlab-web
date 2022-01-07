@@ -1,5 +1,5 @@
 ---
-title: "Robots, AI, and machine learning for your SMB: your 2022 will be more relaxed once you start using them"
+title: "Robots, AI, and machine learning for your SME: your 2022 will be more relaxed once you start using them"
 date: "2022-01-04T16:24:04.000Z"
 template: blog
 tags: Small Business
@@ -13,11 +13,11 @@ In the business world, staying ahead of the curve is one of the most successful 
 
 This way your customers will get better service and you can be more efficient and competitive. At the beginning of 2022, employees tend to perform less because of the fatigue of the whole year-past and incredibly this is one of the busiest times of the year for companies, that is why this would be a good opportunity to improve the performance of your organization. 
 
-Next, we’ll show you what these tools are about and how you can implement **robots, AI, and machine learning for your SMB**:
+Next, we’ll show you what these tools are about and how you can implement **robots, AI, and machine learning for your SME**:
 
 <br>
 
-<title-2>Since when have robots, machine learning, and AI been used for <a target="_blank" href="https://www.cobuildlab.com/services/process-automation/"> SMB processes </a>?</title-2>
+<title-2>Since when have robots, machine learning, and AI been used for <a target="_blank" href="https://www.cobuildlab.com/services/process-automation/"> SME processes </a>?</title-2>
 
 <br>
 
@@ -131,7 +131,7 @@ Organizations around the world are coming up with groundbreaking innovations in 
 
 <br>
 
-Therefore, there are immense opportunities for skilled professionals to further exploit these areas and help companies take this knowledge and drive their business to another level, and be one of the best in the world.  Just is needed **AI and machine learning for your SMB**. <a target="_blank" href="https://www.cobuildlab.com/"> Contact us </a> in case you are interested on apply this inside your company. 
+Therefore, there are immense opportunities for skilled professionals to further exploit these areas and help companies take this knowledge and drive their business to another level, and be one of the best in the world.  Just is needed **AI and machine learning for your SME**. <a target="_blank" href="https://www.cobuildlab.com/"> Contact us </a> in case you are interested on apply this inside your company. 
 
 **Team Cobuild Lab**
 
