@@ -50,10 +50,12 @@ const FormContainerSection = styled.div`
 function CareersTemplate({ pageContext }) {
   const { career } = pageContext;
   const { title, description, jobProfile, responsibilities, requirements } = career;
-
   return (
     <Layout>
-      <SeoMetaTags title={'Careers: ' + title} description="Careers for the Cobuild Lab" />
+      <SeoMetaTags
+        title={'Careers: ' + title}
+        description={`Careers for the Cobuild Lab - ${description}`}
+      />
 
       {
         // Header
