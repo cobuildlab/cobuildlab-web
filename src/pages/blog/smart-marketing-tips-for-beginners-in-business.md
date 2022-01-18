@@ -1,6 +1,6 @@
 ---
 title: 'Smart Marketing Tips For Beginners In Business'
-date: '2020-03-12T16:24:04.000Z'
+date: '2022-01-18T11:49:24.539Z'
 template: blog
 tags: Education
 image: './media/small-businesses-tech-necessities.jpg'
