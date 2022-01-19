@@ -42,7 +42,7 @@ A good inventory management software should:
 * Optimize precious employee time and warehouse organization.
 * Be easily accessible from your retail point of sale.
 * Easily set up alerts to track your stock levels, warranty ends, and expiration dates.
-
+</br>
 <title-3>Tips for Managing Your <a target="_blank" href="https://www.cobuildlab.com/blog/software-trends-for-inventory-management/">Small Business Inventory<a></title-3>
 
 Once you have efficient <a target="_blank" href="https://www.cobuildlab.com/blog/Warehouse-and-Inventory-Management/">inventory management software</a>, these techniques will help you manage your inventory:
@@ -56,6 +56,7 @@ Forecasting accurately is imperative. It's the process of predicting what your c
 * Market trends
 * Economy
 * Promotions and marketing efforts.
+</br>
 
 <title-4>Apply the FIFO Approach<title-4>
 

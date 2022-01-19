@@ -43,7 +43,7 @@ Other ways to get your name out include:
 - Focus on customer service. When your customers <a target="_blank" href="https://talkroute.com/11-sure-ways-to-keep-your-customers-coming-back/">feel valued</a>, like they're part of a community, and like they've had the best possible experience, they'll come back and, just as importantly, tell their friends.
 
 - Increase your business acumen by taking some classes. Choose a <a target="_blank" href="https://www.phoenix.edu/degrees/business/mba.html">flexible and inexpensive</a> that allows you to focus on other responsibilities.
-<br></br>
+</br>
 
 Marketing used to involve vast teams of "publicists," whose job was to create billboards and magazine layouts. Today, many marketing tactics are done autonomously. You don't have to have a big budget either, and by going back to basics, by focusing on modern tools like social media and free graphic design programs, you can be online and in the face of those who matter in a matter of days.
 <br></br>

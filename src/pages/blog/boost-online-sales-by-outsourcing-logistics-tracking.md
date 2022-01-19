@@ -2,7 +2,7 @@
 title: "Boost Online Sales by Outsourcing Logistics Tracking"
 date: "2022-01-18T14:12:10.350Z"
 template: blog
-tags: Education
+tags: Small Business
 image: "./media/boost-online-sales-by-outsourcing-logistics-tracking.png"
 ---
 
@@ -47,7 +47,7 @@ Outsourcing logistics tracking services bring your e-commerce business numerous 
 * Identifying and fixing errors in your logistics instantly.
 * Route optimization.
 * Tracking and improving loading and unloading time. 
-
+</br>
 <title-3>Other Advantages of Logistics Tracking</title-3>
 
 Other tangible and intangible advantages of outsourcing logistics tracking for your online business include:
@@ -56,7 +56,7 @@ Other tangible and intangible advantages of outsourcing logistics tracking for y
 * It helps you get a more profound and detailed insight into your logistics 
 * You can learn when something goes wrong in your logistics department, especially when delivering goods to your customers, subsequently avoiding risks.
 * You can increase your customers' satisfaction by addressing queries regarding your routes, shipping time, and delivery time. This way, you can provide customized services to each of them.
-
+</br>
 <title-3>Final Word</title-3>
 
 The e-commerce industry is getting competitive with each passing day. Therefore, you have to do everything almost perfectly to remain competitive. Logistics, one of the most critical departments in an online business, requires extra attention. It's where logistics tracking comes in.
