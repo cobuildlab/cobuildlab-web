@@ -28,18 +28,6 @@ const mainStaff = [
     ),
   },
   {
-    first: 'Jacqueline',
-    last: 'Popovich',
-    description: 'Product Manager',
-    picture: (
-      <StaticImage
-        className={'team-member-img'}
-        src={'./../../assets/images/team/team-pictures/jacqueline-popovich.jpg'}
-        alt={'Jacqueline Popovich'}
-      />
-    ),
-  },
-  {
     first: 'Ryan',
     last: 'Seron',
     description: 'Director, Business Development - Software',
@@ -271,32 +259,6 @@ const staff = [
         className={'team-member-img'}
         src={'./../../assets/images/team/new-pictures/white/cesar-morales.jpg'}
         alt={'Cesar Morales'}
-      />
-    ),
-  },
-  {
-    first: 'Cristian',
-    last: 'Caraballo',
-    description: 'Full Stack Javascript Developer',
-    whitePicture: (
-      <StaticImage
-        className={'team-member-img'}
-        src={'./../../assets/images/team/new-pictures/white/cristian-caraballo.jpg'}
-        alt={'Cristian Caraballo'}
-      />
-    ),
-    greenPicture: (
-      <StaticImage
-        className={'team-member-img'}
-        src={'./../../assets/images/team/new-pictures/white/cristian-caraballo.jpg'}
-        alt={'Cristian Caraballo'}
-      />
-    ),
-    picture: (
-      <StaticImage
-        className={'team-member-img'}
-        src={'./../../assets/images/team/new-pictures/white/cristian-caraballo.jpg'}
-        alt={'Cristian Caraballo'}
       />
     ),
   },
@@ -895,32 +857,6 @@ const staff = [
         className={'team-member-img'}
         src={'./../../assets/images/team/new-pictures/white/rossileydys-silva.jpg'}
         alt={'Rossileydys Silva'}
-      />
-    ),
-  },
-  {
-    first: 'Sebastian',
-    last: 'Muchut',
-    description: 'Full Stack Javascript Developer',
-    whitePicture: (
-      <StaticImage
-        className={'team-member-img'}
-        src={'./../../assets/images/team/new-pictures/white/sebastian-muchut.jpg'}
-        alt={'Sebastian Muchut'}
-      />
-    ),
-    greenPicture: (
-      <StaticImage
-        className={'team-member-img'}
-        src={'./../../assets/images/team/new-pictures/green/sebastian-muchut.jpg'}
-        alt={'Sebastian Muchut'}
-      />
-    ),
-    picture: (
-      <StaticImage
-        className={'team-member-img'}
-        src={'./../../assets/images/team/new-pictures/white/sebastian-muchut.jpg'}
-        alt={'Sebastian Muchut'}
       />
     ),
   },
