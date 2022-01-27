@@ -1,5 +1,5 @@
 ---
-title: "Top 10 trends in forwarding for this year"
+title: "Top 10 trends in forwarding technology for this year"
 date: "2022-01-26T16:24:04.000Z"
 template: blog
 tags: Small Business
