@@ -705,32 +705,6 @@ const staff = [
     ),
   },
   {
-    first: 'Maite',
-    last: 'Quijada',
-    description: 'Content Writer',
-    whitePicture: (
-      <StaticImage
-        className={'team-member-img'}
-        src={'./../../assets/images/team/new-pictures/white/maite-quijada.jpg'}
-        alt={'Maite Quijada'}
-      />
-    ),
-    greenPicture: (
-      <StaticImage
-        className={'team-member-img'}
-        src={'./../../assets/images/team/new-pictures/green/maite-quijada.jpg'}
-        alt={'Maite Quijada'}
-      />
-    ),
-    picture: (
-      <StaticImage
-        className={'team-member-img'}
-        src={'./../../assets/images/team/new-pictures/white/maite-quijada.jpg'}
-        alt={'Maite Quijada'}
-      />
-    ),
-  },
-  {
     first: 'Maria',
     last: 'Moya',
     description: 'Marketing Coordinator',
@@ -753,32 +727,6 @@ const staff = [
         className={'team-member-img'}
         src={'./../../assets/images/team/team-pictures/MariaGabrielaMoya.jpg'}
         alt={'Maria Moya'}
-      />
-    ),
-  },
-  {
-    first: 'Mariana',
-    last: 'Balzan',
-    description: 'Community Manager',
-    whitePicture: (
-      <StaticImage
-        className={'team-member-img'}
-        src={'./../../assets/images/team/team-pictures/MarianaBalzan.jpg'}
-        alt={'Mariana Balzan'}
-      />
-    ),
-    greenPicture: (
-      <StaticImage
-        className={'team-member-img'}
-        src={'./../../assets/images/team/team-pictures/MarianaBalzan.jpg'}
-        alt={'Mariana Balzan'}
-      />
-    ),
-    picture: (
-      <StaticImage
-        className={'team-member-img'}
-        src={'./../../assets/images/team/team-pictures/MarianaBalzan.jpg'}
-        alt={'Mariana Balzan'}
       />
     ),
   },
