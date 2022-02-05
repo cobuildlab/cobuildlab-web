@@ -1,6 +1,6 @@
 ---
 title: "AI and machine learning trends to watch in 2022"
-date: "2020-09-22T16:24:04.000Z"
+date: "2022-02-01T16:24:04.000Z"
 template: blog
 tags: Small Business
 image: "./media/AI-and-machine-learning-trends-to-watch-in-2022.jpg"
