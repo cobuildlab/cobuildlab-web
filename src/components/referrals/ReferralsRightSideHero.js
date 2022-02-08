@@ -7,6 +7,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 const WhiteParagraph = styled(Paragraph)`
   color: #ffffff;
+  font-size: x-large;
 `;
 
 const Wrapper = styled.div`
@@ -44,7 +45,8 @@ export const ReferralsRightSideHero = () => (
     }
     <Wrapper>
       <StaticImage
-        src="./../assets/images/referrals/the-best-male-friends-spending-time-together-with-laptop.jpg"
+        objectFit="contain"
+        src="../../assets/images/referrals/the-best-male-friends-spending-time-together-with-laptop.jpg"
         alt="The best male friends spending time together with laptop"
       />
       <TransparentOverlay>
