@@ -53,15 +53,6 @@ export const ReferralsLeftSideHero = () => (
     <Overlay>
       <TextContainer>
         <Typography tag="h1">
-          {/* <TextOrange>
-            Refer a<br /> friend
-          </TextOrange>{' '}
-          <TextIndigo style={{ fontWeight: 'bold' }}>
-            and
-            <br /> Earn up to
-            <br />
-          </TextIndigo>{' '}
-          <TextOrange>$5,000</TextOrange>* */}
           <TextOrange>Refer a friend</TextOrange>{' '}
           <TextIndigo style={{ fontWeight: 'bold' }}>and Earn up to</TextIndigo>{' '}
           <TextOrange>$5,000</TextOrange>*

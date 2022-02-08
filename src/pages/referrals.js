@@ -9,7 +9,7 @@ import Layout from '../components/2020/Layout';
 
 import { SeoMetaTags } from '../components/2021/SeoMetaTags';
 import { ReferralsHero } from '../components/referrals/ReferralsHero';
-// import { ReferralBenefits } from '../components/referrals/ReferralBenefits';
+import { ReferralBenefits } from '../components/referrals/ReferralBenefits';
 // import ReferralsProgram from '../components/referrals/ReferralsProgram';
 // import { StaticImage } from 'gatsby-plugin-image';
 // import Title5 from '../components/Title5';
@@ -27,7 +27,8 @@ const Referrals = () => (
       </HeroHeader>
     </Hero> */}
     <ReferralsHero />
-    {/* <ReferralBenefits />
+    <ReferralBenefits />
+    {/*
     <ReferralsProgram /> */}
   </Layout>
 );
