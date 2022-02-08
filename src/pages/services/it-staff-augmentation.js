@@ -39,7 +39,10 @@ const StyledContainer = styled(Container)`
 
 const AppDevelopment = () => (
   <Layout>
-    <SeoMetaTags title="Services" description="Privacy Policy for the Cobuild Lab" />
+    <SeoMetaTags
+      title="IT Staff Augmentation"
+      description="Staff Augmentation is an outsourcing strategy that allows your organization to recruit technical talent from around the world, choosing the candidates that best fit its requirements and placing them on their own teams when they are needed to perform specific functions on a temporary basis, thus allowing companies to meet their set goals."
+    />
     <Hero>
       <HeroHeader>
         <Header />

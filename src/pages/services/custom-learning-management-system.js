@@ -40,7 +40,10 @@ const StyledContainer = styled(Container)`
 
 const CustomLearningManagmentSystem = () => (
   <Layout>
-    <SeoMetaTags title="Services" description="Privacy Policy for the Cobuild Lab" />
+    <SeoMetaTags
+      title="Custom Learning Management System"
+      description="When you need to create interactive e-learning content that you can integrate with other company systems (such as CRMs), with customized reports or gamification, a Custom Learning Management system is the way to go."
+    />
     <Hero>
       <HeroHeader>
         <Header />
