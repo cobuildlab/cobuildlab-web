@@ -1,6 +1,6 @@
+import React from 'react';
 import { Container, Section, Subtitle, Title } from 'bloomer';
 import { StaticImage } from 'gatsby-plugin-image';
-import React from 'react';
 import { List, ListItem } from '../Typography/List';
 import Paragraph from '../Typography/Paragraph';
 
