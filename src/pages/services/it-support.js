@@ -40,7 +40,10 @@ const StyledContainer = styled(Container)`
 
 const WebDevelopment = () => (
   <Layout>
-    <SeoMetaTags title="Services" description="Privacy Policy for the Cobuild Lab" />
+    <SeoMetaTags
+      title="It Support"
+      description="From business technology support to strategic consulting, we have IT solutions for your organizational needs."
+    />
     <Hero>
       <HeroHeader>
         <Header />

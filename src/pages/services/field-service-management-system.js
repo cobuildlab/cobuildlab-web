@@ -39,7 +39,10 @@ const StyledContainer = styled(Container)`
 
 const FieldServicesManagementSystem = () => (
   <Layout>
-    <SeoMetaTags title="Services" description="Privacy Policy for the Cobuild Lab" />
+    <SeoMetaTags
+      title="Field Services Management System"
+      description="Track and manage field operations more accurately with a field service management system customized for your activities. In this new era, real-time tracking and communications are the keys to maximize earnings and customer satisfaction."
+    />
     <Hero>
       <HeroHeader>
         <Header />

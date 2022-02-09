@@ -39,7 +39,10 @@ const StyledContainer = styled(Container)`
 
 const WebDevelopment = () => (
   <Layout>
-    <SeoMetaTags title="Services" description="Privacy Policy for the Cobuild Lab" />
+    <SeoMetaTags
+      title="Custom Inventory Management System"
+      description="Time is the most valuable asset to make your company more productive and meet your customers' current demands. Low code and no-code development is not only a trend, they also allow you to develop an accessible solution, with fewer resources, in shorter times, and easier management."
+    />
     <Hero>
       <HeroHeader>
         <Header />
