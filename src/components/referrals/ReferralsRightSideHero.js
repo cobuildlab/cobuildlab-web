@@ -10,13 +10,17 @@ const WhiteParagraph = styled(Paragraph)`
   font-size: x-large;
 `;
 
-const Wrapper = styled.div`
+const Boundarie = styled.div`
   position: relative;
   overflow: hidden;
 `;
 
-const IndigoBackground = styled.div`
+const Wrapper = styled.div(Boundarie)`
+  height: 100%;
   background-color: ${colors.indigo};
+`;
+
+const BottomSection = styled.div`
   padding: 2rem 2.5rem 4rem 2.5rem;
 `;
 
@@ -40,10 +44,7 @@ const Title = styled(H6)`
 
 export const ReferralsRightSideHero = () => (
   <Wrapper>
-    {
-      // Top image
-    }
-    <Wrapper>
+    <Boundarie>
       <StaticImage
         objectFit="contain"
         src="../../assets/images/referrals/the-best-male-friends-spending-time-together-with-laptop.jpg"
@@ -55,12 +56,8 @@ export const ReferralsRightSideHero = () => (
           <br /> benefits of custom software?
         </Title>
       </TransparentOverlay>
-    </Wrapper>
-
-    {
-      // Caption text.
-    }
-    <IndigoBackground>
+    </Boundarie>
+    <BottomSection>
       <WhiteParagraph>So, we have good news for you and your friend!</WhiteParagraph>
       <WhiteParagraph>
         Now when you refer your friend to Cobuild
@@ -68,6 +65,6 @@ export const ReferralsRightSideHero = () => (
         <br />
         receive some cash for it.
       </WhiteParagraph>
-    </IndigoBackground>
+    </BottomSection>
   </Wrapper>
 );
