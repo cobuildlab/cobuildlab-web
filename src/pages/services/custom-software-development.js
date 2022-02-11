@@ -41,7 +41,10 @@ const StyledContainer = styled(Container)`
 
 const CustomSoftwareDevelopment = () => (
   <Layout>
-    <SeoMetaTags title="Services" description="Custom Software Development" />
+    <SeoMetaTags
+      title="Custom Software Development"
+      description="A customized software tool optimizes processes, making them more effective and efficient because every function is designed based on your business activities, so there is no need to modify or adjust anything (as is the case of a commercial tool)."
+    />
     <Hero>
       <HeroHeader>
         <Header />
