@@ -5,12 +5,12 @@ import 'bulma/css/bulma.css';
 // COMPONENTS
 import Layout from '../components/2020/Layout';
 // import Header from '../components/header/Header';
-// import ReferralsProgram from '../components/referrals/ReferralsProgram';
 
 import { SeoMetaTags } from '../components/2021/SeoMetaTags';
 import { ReferralsHero } from '../components/referrals/ReferralsHero';
 import { ReferralBenefits } from '../components/referrals/ReferralBenefits';
-// import ReferralsProgram from '../components/referrals/ReferralsProgram';
+import ReferralsProgram from '../components/referrals/ReferralsProgram';
+
 // import { StaticImage } from 'gatsby-plugin-image';
 // import Title5 from '../components/Title5';
 // import Paragraph from '../components/Typography/Paragraph';
@@ -26,10 +26,10 @@ const Referrals = () => (
         <Header />
       </HeroHeader>
     </Hero> */}
+
     <ReferralsHero />
     <ReferralBenefits />
-    {/*
-    <ReferralsProgram /> */}
+    <ReferralsProgram />
   </Layout>
 );
 

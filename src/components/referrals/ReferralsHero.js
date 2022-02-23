@@ -1,6 +1,6 @@
 import React from 'react';
-import { Column, Columns, Container } from 'bloomer';
 import { ReferralsLeftSideHero } from './ReferralsLeftSideHero';
+import { Column, Columns, Container } from 'bloomer';
 import { ReferralsRightSideHero } from './ReferralsRightSideHero';
 
 export const ReferralsHero = () => (
