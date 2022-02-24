@@ -7,29 +7,25 @@ export const ReferralsTermsAndConditions = () => (
     <Title tag="h5">Terms and Conditions</Title>
     <List style={{ paddingTop: 0 }}>
       <ListItem>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        Referrals must be new customers, without any previous contracts with Cobuild Lab.
       </ListItem>
       <ListItem>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        Referral bonuses are earned only in projects already signed, and in which the first invoice
+        has been collected.
       </ListItem>
       <ListItem>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        Bonus will be paid to the referring partner in 2 parts: 50% with the first invoice, and the
+        remaining 50% will be paid once the project is finished.
       </ListItem>
       <ListItem>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        The maximum cash earned by the project will be the equivalent of 15% of the total cost of
+        the project.
       </ListItem>
       <ListItem>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        In case of any inconvenience, the client may send their doubts and queries through the
+        designated communication channels.
       </ListItem>
-      <ListItem>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </ListItem>
+      <ListItem>There is no maximum number of referrals.</ListItem>
     </List>
   </>
 );

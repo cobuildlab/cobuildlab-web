@@ -6,19 +6,19 @@ export const ReferralsDisclaimer = () => (
   <>
     <Title tag="h5">Disclaimer</Title>
     <Paragraph>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat.
+      Cobuild Lab cannot assume any guarantee on the data offered on the website. Therefore, it
+      excludes all liability for any direct or indirect damage that may occur in connection with the
+      use of this website.
     </Paragraph>
     <Paragraph>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat.
+      Cobuild Lab reserves itself the right to terminate this program when it considers appropriate
+      or modify the amounts at any time without prior notice.
     </Paragraph>
     <Paragraph>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat.
+      Cobuild Lab reserves the right to cancel payments to client or referral accounts who attempt
+      to use this Referral Program questionably in contravention of these Terms and Conditions or
+      violation of any law, statute, or government regulation, and will request payment
+      corresponding to the client or referral.
     </Paragraph>
   </>
 );

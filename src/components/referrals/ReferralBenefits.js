@@ -2,7 +2,7 @@ import React from 'react';
 import { Section, Subtitle, Title } from 'bloomer';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
-import { TextIndigo } from '../2021/text/TextHelpers';
+import { TextIndigo, TextOrange } from '../2021/text/TextHelpers';
 
 const List = styled.ul`
   padding: 0em 1em;
@@ -10,10 +10,6 @@ const List = styled.ul`
 
 const ListItem = styled.li`
   margin: 1.5em 0;
-`;
-
-const Paragraph = styled(Title)`
-  font-weight: normal;
 `;
 
 const Main = styled.main`
@@ -37,13 +33,13 @@ const Container = styled.div`
 export const ReferralBenefits = () => (
   <Main>
     <Container>
-      <Title isSize={2} tag={'h2'}>
-        Benefits from your network of contacts
-      </Title>
-      <Paragraph isSize={4} tag={'h4'}>
-        Every time you refer a friend to cobuild lab, we will deduct up to $5,000* from the bill, or
-        receive up to $5,000* cash.
-      </Paragraph>
+      <Title isSize={2}>Benefits from your network of contacts</Title>
+      <Subtitle isSize={4}>
+        <TextIndigo>
+          Every time you refer a friend to cobuild lab, we will deduct up to $5,000* from the bill,
+          or receive up to $5,000* cash.
+        </TextIndigo>
+      </Subtitle>
       <StaticImage
         style={{ width: '100%' }}
         src="../../assets/images/referrals/friends-group.png"
@@ -53,6 +49,7 @@ export const ReferralBenefits = () => (
         <Title isSize={3} tag={'h3'} style={{ paddingLeft: '16px' }}>
           How does it work
         </Title>
+
         <List>
           <ListItem>
             <Title isSize={5} tag={'div'}>
@@ -91,9 +88,11 @@ export const ReferralBenefits = () => (
             </Title>
             <Subtitle>
               <TextIndigo>
-                We will reach out and send you all the information to complete the process. If{' '}
-                {"you've"} been referred by a friend, click here to complete the referral process.
-              </TextIndigo>
+                We will reach out and send you all the information to complete the process.<br></br>
+                <br></br> If {"you've"} been referred by a friend,
+              </TextIndigo>{' '}
+              <TextOrange>click here</TextOrange>{' '}
+              <TextIndigo>to complete the referral process.</TextIndigo>
             </Subtitle>
           </ListItem>
         </List>
