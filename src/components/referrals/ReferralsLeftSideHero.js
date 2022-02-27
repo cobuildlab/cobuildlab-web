@@ -23,11 +23,17 @@ const Overlay = styled.div`
   align-content: center;
 `;
 
+// font-size: 4rem;
 const TextContainer = styled.div`
-  text-align: justify;
-  font-size: 4rem;
+  font-size: 3rem;
   padding-left: 5rem;
   padding-right: 5rem;
+  width: 100%;
+  @media screen and (min-width: 992px) {
+    font-size: 4rem;
+    width: 100%;
+    max-width: 28rem;
+  }
 `;
 
 export const ReferralsLeftSideHero = () => (
@@ -42,18 +48,13 @@ export const ReferralsLeftSideHero = () => (
       }}
       objectFit="contain"
       src="../../assets/images/referrals/referrals-background-hero.png"
+      alt="Referrals background hero"
     />
     <Overlay>
       <TextContainer>
         <Typography tag="h1">
-          <TextOrange>
-            Refer a<br /> friend
-          </TextOrange>{' '}
-          <TextIndigo style={{ fontWeight: 'bold' }}>
-            and
-            <br /> Earn up to
-            <br />
-          </TextIndigo>{' '}
+          <TextOrange>Refer a friend</TextOrange>{' '}
+          <TextIndigo style={{ fontWeight: 'bold' }}>and Earn up to</TextIndigo>{' '}
           <TextOrange>$5,000</TextOrange>*
         </Typography>
       </TextContainer>

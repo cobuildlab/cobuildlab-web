@@ -1,43 +1,102 @@
 import React from 'react';
-import { Container, Section, Subtitle, Title } from 'bloomer';
+import { Section, Subtitle, Title } from 'bloomer';
 import { StaticImage } from 'gatsby-plugin-image';
-import { List, ListItem } from '../Typography/List';
-import Paragraph from '../Typography/Paragraph';
+import styled from 'styled-components';
+import { TextIndigo, TextOrange } from '../2021/text/TextHelpers';
+
+const List = styled.ul`
+  padding: 0em 1em;
+`;
+
+const ListItem = styled.li`
+  margin: 1.5em 0;
+`;
+
+const Main = styled.main`
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 13px 15px 5px #00000024;
+  padding: 3rem;
+`;
+
+const Container = styled.div`
+  flex-grow: 1;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+
+  @media screen and (min-width: 1024px) {
+    max-width: 800px;
+  }
+`;
 
 export const ReferralBenefits = () => (
-  <Container>
-    <Title isSize={1} tag={'h1'}>
-      Benefits from your network of contacts
-    </Title>
-    <Paragraph>
-      Every time you refer a friend to cobuild lab, we will deduct up to $5,000* from the bill, or
-      receive up to $5,000* cash.
-    </Paragraph>
-    <StaticImage style={{ width: '100%' }} src="../../assets/images/referrals/friends-group.png" />
-    <Section>
-      <Title isSize={1} tag={'h1'}>
-        How does it work
-      </Title>
-      <List>
-        <ListItem>
-          <Subtitle>Reach out to your network:</Subtitle>
-          Scrappe your contacts and friends for possible opportinities for projects developing
-          custom software. Web applications, mobile apps, or any other kind of Custom Software.
-        </ListItem>
-        <ListItem>
-          Recommend your friend
-          {"It's"} very simple! Send them this link:
-        </ListItem>
-        <ListItem>
-          Give us a Review Once you submit the information, you will receive an invitation email to
-          five your opinion about the company.
-        </ListItem>
-        <ListItem>
-          Earn your referral cash: We will reach out and send you all the information to complete
-          the process. If {"you've"} been referred by a friend, click here to complete the referral
-          process.
-        </ListItem>
-      </List>
-    </Section>
-  </Container>
+  <Main>
+    <Container>
+      <Title isSize={2}>Benefits from your network of contacts</Title>
+      <Subtitle isSize={4}>
+        <TextIndigo>
+          Every time you refer a friend to cobuild lab, we will deduct up to $5,000* from the bill,
+          or receive up to $5,000* cash.
+        </TextIndigo>
+      </Subtitle>
+      <StaticImage
+        style={{ width: '100%' }}
+        src="../../assets/images/referrals/friends-group.png"
+        alt="Friends group"
+      />
+      <Section>
+        <Title isSize={3} tag={'h3'} style={{ paddingLeft: '16px' }}>
+          How does it work
+        </Title>
+
+        <List>
+          <ListItem>
+            <Title isSize={5} tag={'div'}>
+              1. Reach out to your network:
+            </Title>
+            <Subtitle>
+              <TextIndigo>
+                Scrappe your contacts and friends for possible opportinities for projects developing
+                custom software. Web applications, mobile apps, or any other kind of Custom
+                Software.
+              </TextIndigo>
+            </Subtitle>
+          </ListItem>
+          <ListItem>
+            <Title isSize={5} tag={'div'}>
+              2. Recommend your friend
+            </Title>
+            <Subtitle>
+              <TextIndigo>{"It's"} very simple! Send them this link:</TextIndigo>
+            </Subtitle>
+          </ListItem>
+          <ListItem>
+            <Title isSize={5} tag={'div'}>
+              3. Give us a Review
+            </Title>
+            <Subtitle>
+              <TextIndigo>
+                Once you submit the information, you will receive an invitation email to five your
+                opinion about the company.
+              </TextIndigo>
+            </Subtitle>
+          </ListItem>
+          <ListItem>
+            <Title isSize={5} tag={'div'}>
+              4. Earn your referral cash:
+            </Title>
+            <Subtitle>
+              <TextIndigo>
+                We will reach out and send you all the information to complete the process.<br></br>
+                <br></br> If {"you've"} been referred by a friend,
+              </TextIndigo>{' '}
+              <TextOrange>click here</TextOrange>{' '}
+              <TextIndigo>to complete the referral process.</TextIndigo>
+            </Subtitle>
+          </ListItem>
+        </List>
+      </Section>
+    </Container>
+  </Main>
 );
