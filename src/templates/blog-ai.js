@@ -42,7 +42,16 @@ const SectionPost = Styled.section`
   & p {
     text-align: justify;
   }
-  
+  & blockquote {
+    max-width: 1000px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    color: #264A60;
+    border-left:5px solid #264A60;
+    background-color: #ededed;
+  }
 `;
 
 const StyledContainer = Styled(Container)`
