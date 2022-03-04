@@ -46,6 +46,9 @@ const FooterNavigation = () => (
       <FooterListItem>
         <LinkItem to="/careers">Careers</LinkItem>
       </FooterListItem>
+      <FooterListItem>
+        <LinkItem to="/referrals">Referrals</LinkItem>
+      </FooterListItem>
     </ul>
   </FooterColumnContent>
 );
