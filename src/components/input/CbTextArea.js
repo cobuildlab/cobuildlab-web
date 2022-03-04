@@ -5,6 +5,8 @@ import { primaryStyle } from './common-input-css';
 
 const Mold = styled(TextArea)`
   ${primaryStyle}
+  height: 100% !important;
+  width: 100% !important;
 `;
 
 export default class CbTextArea extends React.Component {
@@ -15,7 +17,6 @@ export default class CbTextArea extends React.Component {
       ...TextArea.defaultProps,
     };
   }
-
   render() {
     return <Mold {...this.props} />;
   }

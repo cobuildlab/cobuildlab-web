@@ -1,8 +1,8 @@
 import React from 'react';
-import { Section, Subtitle, Title } from 'bloomer';
+import { Subtitle, Title } from 'bloomer';
 import { StaticImage } from 'gatsby-plugin-image';
+import { TextIndigo } from '../2021/text/TextHelpers';
 import styled from 'styled-components';
-import { TextIndigo, TextOrange } from '../2021/text/TextHelpers';
 
 const List = styled.ul`
   padding: 0em 1em;
@@ -27,6 +27,13 @@ const Container = styled.div`
 
   @media screen and (min-width: 1024px) {
     max-width: 800px;
+  }
+`;
+
+const Section = styled.div`
+  padding: 2.5rem 0rem;
+  @media screen and (min-width: 1024px) {
+    padding: 3rem 1.5rem;
   }
 `;
 
@@ -88,11 +95,8 @@ export const ReferralBenefits = () => (
             </Title>
             <Subtitle>
               <TextIndigo>
-                We will reach out and send you all the information to complete the process.<br></br>
-                <br></br> If {"you've"} been referred by a friend,
-              </TextIndigo>{' '}
-              <TextOrange>click here</TextOrange>{' '}
-              <TextIndigo>to complete the referral process.</TextIndigo>
+                We will reach out and send you all the information to complete the process.
+              </TextIndigo>
             </Subtitle>
           </ListItem>
         </List>

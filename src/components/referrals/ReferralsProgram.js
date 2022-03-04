@@ -1,57 +1,50 @@
 import React, { useState } from 'react';
-// import { useStaticQuery, graphql, navigate } from 'gatsby';
-import {
-  Column,
-  Columns,
-  Container,
-  Control,
-  Field,
-  // Input,
-  // Label as BloomerLabel,
-  // TextArea,
-} from 'bloomer';
-// import Img from 'gatsby-image';
-// import Paragraph from '../Typography/Paragraph';
-
-import //toast,
-
-//  ToastContainer
-'react-toastify';
-
+import { navigate } from 'gatsby';
+import Error from '../Toast/Error';
+import CbCheckbox from '../input/CbCheckbox';
 import ButtonDefault from '../2020/Button/ButtonDefault';
-
-// import styled from 'styled-components';
-// import Error from '../Toast/Error';
-import { ReferralsDisclaimer } from './ReferralsDisclaimer';
-import { ReferralsTermsAndConditions } from './ReferralsTermsAndConditions';
 import CbInput from '../input/CbInput';
 import CbTextArea from '../input/CbTextArea';
-// import { List, ListItem } from '../Typography/List';
+import BannerBackground from '../2020/BannerBackground';
+import styled from 'styled-components';
+import { Column, Columns, Container, Control, Field } from 'bloomer';
 import { TextIndigo, TextOrange } from '../2021/text/TextHelpers';
+import { ReferralsDisclaimer } from './ReferralsDisclaimer';
+import { ReferralsTermsAndConditions } from './ReferralsTermsAndConditions';
+import { toast, ToastContainer } from 'react-toastify';
 
-// const Label = styled(BloomerLabel)`
-//   color: #264a60;
-// `;
+const LabelTextWrapped = styled.div`
+  padding: 0rem 0.5rem;
+  cursor: pointer;
+`;
 
-// const ColumnsStyled = styled(Columns)`
-//   margin: 0px !important;
-// `;
+const Banner = styled(BannerBackground)`
+  width: 40%;
+  height: 40%;
+  top: -20px;
+  left: auto;
+  right: -400px;
+  transform: rotate(30deg);
+`;
 
-// const InputStyled = styled(Input)`
-//   border-radius: 7px !important;
-//   box-shadow: 4px 4px 4px -4px rgba(0,0,0,0.75)!important;
-// }
-// `;
+const ColumnsSection = styled(Columns)`
+  padding: 0rem 1.5rem;
+  @media screen and (min-width: 1024px) {
+    padding: 0rem 0rem;
+  }
+`;
 
-// const TextAreaStyled = styled(TextArea)`
-//   border-radius: 7px !important;
-//   box-shadow: 4px 4px 4px -4px rgba(0, 0, 0, 0.75) !important;
-// `;
-
-// const DivButtonStyled = styled.div`
-//   float: right;
-//   margin-bottom: 20px;
-// `;
+/**
+ * @returns {React.Component} - Label Checkbox.
+ */
+function LabelCheckbox() {
+  return (
+    <LabelTextWrapped>
+      <TextIndigo>I read</TextIndigo> <TextOrange>Disclaimer</TextOrange>{' '}
+      <TextIndigo>and</TextIndigo> <TextOrange>TaC</TextOrange>
+    </LabelTextWrapped>
+  );
+}
 
 const ReferralsProgram = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -61,9 +54,9 @@ const ReferralsProgram = () => {
     email: '',
     bussines: '',
     bussinessDescription: '',
+    referredFriend: '',
   });
-
-  // const data = useStaticQuery(query);
+  const [isAgree, setIsAgree] = useState(false);
 
   const handleChange = (event) => {
     setValues({
@@ -72,172 +65,98 @@ const ReferralsProgram = () => {
     });
   };
 
-  // const onSubmit = async (event) => {
-  //   event.preventDefault();
-  //   const { name, email, bussines, bussinessDescription } = values;
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const { name, email, bussines, bussinessDescription, referredFriend } = values;
 
-  //   if (!name.length) {
-  //     toast.dismiss();
-  //     toast(<Error message="name can't be empty" />, {
-  //       position: 'bottom-right',
-  //       hideProgressBar: true,
-  //     });
-  //     return;
-  //   }
+    if (!isAgree) {
+      toast.dismiss();
+      toast(<Error message="You must read and agree to the disclaimer and TaC" />, {
+        position: 'bottom-right',
+        hideProgressBar: true,
+      });
+      return;
+    }
 
-  //   if (!email.length) {
-  //     toast.dismiss();
-  //     toast(<Error message="Email can't be empty" />, {
-  //       position: 'bottom-right',
-  //       hideProgressBar: true,
-  //     });
-  //     return;
-  //   }
+    if (!name.length) {
+      toast.dismiss();
+      toast(<Error message="name can't be empty" />, {
+        position: 'bottom-right',
+        hideProgressBar: true,
+      });
+      return;
+    }
 
-  //   if (!bussines.length) {
-  //     toast.dismiss();
-  //     toast(<Error message="Bussine's name can't be empty" />, {
-  //       position: 'bottom-right',
-  //       hideProgressBar: true,
-  //     });
-  //     return;
-  //   }
+    if (!email.length) {
+      toast.dismiss();
+      toast(<Error message="Email can't be empty" />, {
+        position: 'bottom-right',
+        hideProgressBar: true,
+      });
+      return;
+    }
 
-  //   if (!bussinessDescription.length) {
-  //     toast.dismiss();
-  //     toast(<Error message="Bussine's descriptio can't be empty" />, {
-  //       position: 'bottom-right',
-  //       hideProgressBar: true,
-  //     });
-  //     return;
-  //   }
+    if (!bussines.length) {
+      toast.dismiss();
+      toast(<Error message="Bussine's name can't be empty" />, {
+        position: 'bottom-right',
+        hideProgressBar: true,
+      });
+      return;
+    }
 
-  //   setIsLoading(true);
+    if (!bussinessDescription.length) {
+      toast.dismiss();
+      toast(<Error message="Bussine's descriptio can't be empty" />, {
+        position: 'bottom-right',
+        hideProgressBar: true,
+      });
+      return;
+    }
 
-  //   const data = {
-  //     name,
-  //     email,
-  //     bussines,
-  //     bussinessDescription,
-  //   };
+    setIsLoading(true);
 
-  //   const settings = {
-  //     method: 'POST',
-  //     body: JSON.stringify(data),
-  //     headers: {
-  //       Accept: 'application/json',
-  //       'Content-Type': 'application/json',
-  //     },
-  //   };
-  //   try {
-  //     await fetch(process.env.CONTACT_FORM_API, settings);
-  //     navigate('/thanks-contact');
-  //   } catch (error) {
-  //     console.log(error);
-  //     setIsLoading(false);
+    const data = {
+      name,
+      email,
+      bussines,
+      bussinessDescription,
+      referredFriend,
+      landing: 'From the referrals form test.', // <= Dumb hack to avoid error
+    };
 
-  //     toast(<Error message="An error has occurred" />, {
-  //       position: 'bottom-right',
-  //       hideProgressBar: true,
-  //     });
-  //   }
-  // };
+    const settings = {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+    };
+    try {
+      await fetch(process.env.CONTACT_FORM_API, settings);
+      navigate('/thanks-contact');
+    } catch (error) {
+      console.log(error);
+      setIsLoading(false);
+
+      toast(<Error message="An error has occurred" />, {
+        position: 'bottom-right',
+        hideProgressBar: true,
+      });
+    }
+  };
 
   return (
-    <>
-      {/* <Columns className="referrals-page">
-        <Column isSize={{ mobile: 12, desktop: 6 }}>
-          <Img fluid={data.file.childImageSharp.fluid} alt="" />
-        </Column>
-        <Column isSize={{ mobile: 12, desktop: 6 }}>
-          <Column isSize={{ mobile: 12, desktop: 10 }}>
-            <Paragraph>
-              Share with your contacts the opportunity to develop a professional, agile, and
-              cost-effective software tool that improves their company and personal life. And you,
-              earn $5000 by bringing them as customers of our software company. It’s simple- refer
-              qualified customers, and as a thank you, you’ll receive a bonus! Payment will send to
-              your account after the first invoice payment has effective.
-            </Paragraph>
-          </Column>
-          <>
-            <form onSubmit={onSubmit}>
-              <ToastContainer />
-              <ColumnsStyled>
-                <Column isSize={{ mobile: 10, desktop: 5 }}>
-                  <Field>
-                    <Control>
-                      <Label htmlFor="contanctFormName">Name</Label>
-                      <InputStyled
-                        id="contanctFormName"
-                        type="text"
-                        name="name"
-                        placeholder="Name"
-                        onChange={handleChange}
-                      />
-                    </Control>
-                  </Field>
-                </Column>
-                <Column isSize={{ mobile: 10, desktop: 5 }}>
-                  <Field>
-                    <Control>
-                      <Label htmlFor="contanctFormName">E-mail</Label>
-                      <InputStyled
-                        id="contanctFormEmail"
-                        type="email"
-                        name="email"
-                        placeholder="Email"
-                        onChange={handleChange}
-                      />
-                    </Control>
-                  </Field>
-                </Column>
-              </ColumnsStyled>
-              <Column isSize={{ mobile: 10, desktop: 10 }}>
-                <Field>
-                  <Control>
-                    <Label htmlFor="contanctFormPhone">Bussine&apos;s name</Label>
-                    <InputStyled
-                      id="contanctFormBussines"
-                      type="text"
-                      name="bussines"
-                      placeholder="Bussine's name"
-                      onChange={handleChange}
-                    />
-                  </Control>
-                </Field>
-              </Column>
-              <Column isSize={{ mobile: 10, desktop: 10 }}>
-                <Field>
-                  <Control>
-                    <Label htmlFor="contanctFormEmail">Bussine&apos;s description</Label>
-                    <TextAreaStyled
-                      id="contanctFormEmail"
-                      type="email"
-                      name="bussinessDescription"
-                      placeholder="Bussine's description"
-                      onChange={handleChange}
-                    />
-                  </Control>
-                </Field>
-              </Column>
-              <Column isSize={{ mobile: 10, desktop: 10 }}>
-                <Field>
-                  <Control>
-                    <DivButtonStyled>
-                      <ButtonDefault type="submit" isLoading={isLoading}>
-                        {'Send'}
-                      </ButtonDefault>
-                    </DivButtonStyled>
-                  </Control>
-                </Field>
-              </Column>
-            </form>
-          </>
-        </Column>
-      </Columns> */}
-      <Container>
-        <Columns style={{ marginTop: '4rem', marginBottom: '4rem' }}>
-          <Column isSize={{ desktop: 6 }}>
+    <Container>
+      <form onSubmit={onSubmit}>
+        <ToastContainer />
+        <Banner />
+        <ColumnsSection cellPadding={'2'} style={{ marginTop: '4rem', marginBottom: '4rem' }}>
+          {
+            // Form
+          }
+          <Column isSize={{ mobile: 12, desktop: 6 }}>
             <Columns style={{ flexWrap: 'wrap' }}>
               {
                 // Name
@@ -272,7 +191,7 @@ const ReferralsProgram = () => {
               {
                 // Bussine's name
               }
-              <Column isSize={{ desktop: 12 }}>
+              <Column isSize={{ default: 12 }}>
                 <Field>
                   <Control>
                     <CbInput
@@ -284,24 +203,42 @@ const ReferralsProgram = () => {
                   </Control>
                 </Field>
               </Column>
+
+              {
+                // Referred Friend
+              }
+              <Column isSize={{ default: 12 }}>
+                <Field>
+                  <Control>
+                    <CbInput
+                      type={'text'}
+                      name={'referredFriend'}
+                      placeholder={'Name of referred friend'}
+                      onChange={handleChange}
+                    />
+                  </Control>
+                </Field>
+              </Column>
             </Columns>
           </Column>
+
           {
             // Bussine's description
           }
-          <Column isSize={{ desktop: 6 }}>
-            <Field>
-              <Control>
+          <Column isSize={{ mobile: 12, desktop: 6 }}>
+            <Field style={{ height: '100%' }}>
+              <Control style={{ height: '100%' }}>
                 <CbTextArea
                   name="bussinessDescription"
                   placeholder="Bussine's description"
                   onChange={handleChange}
+                  height={100}
                 />
               </Control>
             </Field>
           </Column>
-        </Columns>
-        <Columns>
+        </ColumnsSection>
+        <ColumnsSection>
           {
             // Disclaimer
           }
@@ -315,17 +252,19 @@ const ReferralsProgram = () => {
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <ReferralsTermsAndConditions />
           </Column>
-        </Columns>
+        </ColumnsSection>
 
         {
           // Latest text.
         }
-        <Columns style={{ marginBottom: '4rem' }}>
+        <ColumnsSection style={{ marginBottom: '4rem' }}>
           <Column isSize={{ desktop: 9 }}>
-            * Referral bonuses are earned only in projects that are signed, and in which the first
-            invoice has been collected.
-            <br></br>* The maximum cash earned by the project will be the equivalent of 10% of the
-            total cost of the project.
+            <TextIndigo>
+              * Referral bonuses are earned only in projects that are signed, and in which the first
+              invoice has been collected.
+              <br></br>* The maximum cash earned by the project will be the equivalent of 10% of the
+              total cost of the project.
+            </TextIndigo>
           </Column>
 
           {
@@ -333,29 +272,33 @@ const ReferralsProgram = () => {
           }
           <Column isSize={{ desktop: 3 }} hasTextAlign="centered">
             <div style={{ marginBottom: '0.5rem' }}>
-              <TextIndigo>I read</TextIndigo> <TextOrange>Disclaimer</TextOrange> and{' '}
-              <TextOrange>TaC</TextOrange>
+              <Field
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                }}>
+                <Control
+                  onClick={() => {
+                    setIsAgree(!isAgree);
+                  }}
+                  style={{
+                    display: 'inherit',
+                    alignItems: 'center',
+                  }}>
+                  <LabelCheckbox />
+                  <CbCheckbox checked={isAgree} />
+                </Control>
+              </Field>
             </div>
+
             <ButtonDefault isBlock type="submit" isLoading={isLoading}>
               SUBMIT
             </ButtonDefault>
           </Column>
-        </Columns>
-      </Container>
-    </>
+        </ColumnsSection>
+      </form>
+    </Container>
   );
 };
-
-// const query = graphql`
-//   query {
-//     file(relativePath: { eq: "referrals.png" }) {
-//       childImageSharp {
-//         fluid {
-//           ...GatsbyImageSharpFluid_withWebp
-//         }
-//       }
-//     }
-//   }
-// `;
 
 export default ReferralsProgram;
