@@ -27,6 +27,13 @@ const Banner = styled(BannerBackground)`
   transform: rotate(30deg);
 `;
 
+const ColumnsSection = styled(Columns)`
+  padding: 0rem 1.5rem;
+  @media screen and (min-width: 1024px) {
+    padding: 0rem 0rem;
+  }
+`;
+
 /**
  * @returns {React.Component} - Label Checkbox.
  */
@@ -115,6 +122,7 @@ const ReferralsProgram = () => {
       bussines,
       bussinessDescription,
       referredFriend,
+      landing: 'From the referrals form test.', // <= Dumb hack to avoid error
     };
 
     const settings = {
@@ -144,7 +152,7 @@ const ReferralsProgram = () => {
       <form onSubmit={onSubmit}>
         <ToastContainer />
         <Banner />
-        <Columns style={{ marginTop: '4rem', marginBottom: '4rem' }}>
+        <ColumnsSection cellPadding={'2'} style={{ marginTop: '4rem', marginBottom: '4rem' }}>
           {
             // Form
           }
@@ -229,8 +237,8 @@ const ReferralsProgram = () => {
               </Control>
             </Field>
           </Column>
-        </Columns>
-        <Columns>
+        </ColumnsSection>
+        <ColumnsSection>
           {
             // Disclaimer
           }
@@ -244,12 +252,12 @@ const ReferralsProgram = () => {
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <ReferralsTermsAndConditions />
           </Column>
-        </Columns>
+        </ColumnsSection>
 
         {
           // Latest text.
         }
-        <Columns style={{ marginBottom: '4rem' }}>
+        <ColumnsSection style={{ marginBottom: '4rem' }}>
           <Column isSize={{ desktop: 9 }}>
             <TextIndigo>
               * Referral bonuses are earned only in projects that are signed, and in which the first
@@ -287,7 +295,7 @@ const ReferralsProgram = () => {
               SUBMIT
             </ButtonDefault>
           </Column>
-        </Columns>
+        </ColumnsSection>
       </form>
     </Container>
   );
