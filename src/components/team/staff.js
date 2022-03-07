@@ -731,32 +731,6 @@ const staff = [
     ),
   },
   {
-    first: 'Mayela',
-    last: 'Marin',
-    description: 'Project Manager',
-    whitePicture: (
-      <StaticImage
-        className={'team-member-img'}
-        src={'./../../assets/images/team/new-pictures/white/mayela-marin.jpg'}
-        alt={'Mayela Marin'}
-      />
-    ),
-    greenPicture: (
-      <StaticImage
-        className={'team-member-img'}
-        src={'./../../assets/images/team/new-pictures/green/mayela-marin.jpg'}
-        alt={'Mayela Marin'}
-      />
-    ),
-    picture: (
-      <StaticImage
-        className={'team-member-img'}
-        src={'./../../assets/images/team/new-pictures/green/mayela-marin.jpg'}
-        alt={'Mayela Marin'}
-      />
-    ),
-  },
-  {
     first: 'Paul',
     last: 'Salazar',
     description: 'Business Development',
