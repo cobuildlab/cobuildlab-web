@@ -80,4 +80,4 @@ SolutionSection.defaultProps = {
   caption: '',
 };
 
-export { SolutionSection };
+export default SolutionSection;
