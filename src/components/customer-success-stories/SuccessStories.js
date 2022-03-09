@@ -21,10 +21,12 @@ import StoryRocket from './card/stories/StoryRocket';
 import ArtVault from './card/stories/ArtVault';
 import Navigate from './card/stories/Navigate';
 import ArtPlay from './card/stories/ArtPlay';
+import Fisherman from './card/stories/Fisherman';
 
 const SuccessStories = () => {
   return (
     <Columns isDisplay="flex" isMultiline>
+      <Fisherman />
       <Navigate />
       <ArtVault />
       <ArtPlay />
