@@ -1,6 +1,7 @@
 import { Column } from 'bloomer';
 import Card from '../Card';
 import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Fisherman = () => {
   return (
@@ -17,7 +18,10 @@ const Fisherman = () => {
           </>
         }
         to={'/customer-success-stories/fisherman'}>
-        Lorem ipsum dolor.
+        <StaticImage
+          src={'./../../../../assets/images/customers/fisherman/fisherman-logo.png'}
+          alt="Fisherman Logo"
+        />
       </Card>
     </Column>
   );
