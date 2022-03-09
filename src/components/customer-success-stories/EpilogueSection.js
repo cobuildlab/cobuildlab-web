@@ -22,12 +22,10 @@ const FlexCenter = styled.div`
   justify-content: center;
   display: flex;
   width: 100%;
+  position: relative;
 `;
 
-/**
- *
- */
-export function EpilogueSection() {
+export const EpilogueSection = () => {
   return (
     <Wrapped>
       <Section>
@@ -60,6 +58,7 @@ export function EpilogueSection() {
               style={{
                 display: 'flex',
                 alignItems: 'center',
+                position: 'relative',
               }}>
               <div>
                 <DetailSubTitle isBold={false}>Cobuild {"lab's"} benefits</DetailSubTitle>
@@ -89,7 +88,6 @@ export function EpilogueSection() {
               />
             </Column>
           </Columns>
-
           <Columns isMultiline>
             <Column
               isSize={{
@@ -133,4 +131,4 @@ export function EpilogueSection() {
       </Section>
     </Wrapped>
   );
-}
+};
