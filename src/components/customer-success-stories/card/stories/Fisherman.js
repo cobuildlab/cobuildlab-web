@@ -20,6 +20,7 @@ const Fisherman = () => {
         to={'/customer-success-stories/fisherman'}>
         <StaticImage
           src={'./../../../../assets/images/customers/fisherman/fisherman-logo.png'}
+          objectFit={'contain'}
           alt="Fisherman Logo"
         />
       </Card>
