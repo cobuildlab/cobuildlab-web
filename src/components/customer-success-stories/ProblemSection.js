@@ -34,7 +34,11 @@ const ProblemSection = ({ children, image }) => (
 
 ProblemSection.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
-  image: PropTypes.node.isRequired,
+  image: PropTypes.node,
+};
+
+ProblemSection.defaultProps = {
+  image: null,
 };
 
 export default ProblemSection;
