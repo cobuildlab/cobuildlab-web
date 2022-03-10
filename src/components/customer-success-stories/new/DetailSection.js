@@ -55,7 +55,11 @@ DetailSection.defaultProps = {
 DetailSection.propTypes = {
   left: PropTypes.bool,
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
-  image: PropTypes.object.isRequired,
+  image: PropTypes.object,
+};
+
+DetailSection.defaultProps = {
+  image: null,
 };
 
 export default DetailSection;
