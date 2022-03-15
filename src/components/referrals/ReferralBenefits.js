@@ -3,6 +3,7 @@ import { Subtitle, Title } from 'bloomer';
 import { StaticImage } from 'gatsby-plugin-image';
 import { TextIndigo } from '../2021/text/TextHelpers';
 import styled from 'styled-components';
+import TextLink from '../Typography/TextLink';
 
 const List = styled.ul`
   padding: 0em 1em;
@@ -40,21 +41,21 @@ const Section = styled.div`
 export const ReferralBenefits = () => (
   <Main>
     <Container>
-      <Title isSize={2}>Benefits from your network of contacts</Title>
+      <Title isSize={2}>Benefit from your network of contacts.</Title>
       <Subtitle isSize={4}>
         <TextIndigo>
-          Every time you refer a friend to cobuild lab, we will deduct up to $5,000* from the bill,
-          or receive up to $5,000* cash.
+          Every time you refer a friend to Cobuild Lab, we will deduct up to $5,000* from the bill,
+          or you receive up to $5,000* cash.
         </TextIndigo>
       </Subtitle>
       <StaticImage
         style={{ width: '100%' }}
-        src="../../assets/images/referrals/friends-group.png"
+        src="../../assets/images/referrals/referrals-partner.jpg"
         alt="Friends group"
       />
       <Section>
         <Title isSize={3} tag={'h3'} style={{ paddingLeft: '16px' }}>
-          How does it work
+          How does it work?
         </Title>
 
         <List>
@@ -64,27 +65,30 @@ export const ReferralBenefits = () => (
             </Title>
             <Subtitle>
               <TextIndigo>
-                Scrappe your contacts and friends for possible opportinities for projects developing
-                custom software. Web applications, mobile apps, or any other kind of Custom
-                Software.
+                Think of your contacts and friends for possible needs for custom software. Web
+                applications, mobile apps, software tools to manage their business, or any other
+                Custom Software.
               </TextIndigo>
             </Subtitle>
           </ListItem>
           <ListItem>
             <Title isSize={5} tag={'div'}>
-              2. Recommend your friend
+              2. Recommend your friends to Cobuild Lab:
             </Title>
             <Subtitle>
-              <TextIndigo>{"It's"} very simple! Send them this link:</TextIndigo>
+              <TextIndigo>Simple! Just send them this link </TextIndigo>
+              <TextLink to="https://g.page/r/CbpG-G-5eK_uEAg/review">
+                https://g.page/r/CbpG-G-5eK_uEAg/review
+              </TextLink>
             </Subtitle>
           </ListItem>
           <ListItem>
             <Title isSize={5} tag={'div'}>
-              3. Give us a Review
+              3. Give us a quick review online:
             </Title>
             <Subtitle>
               <TextIndigo>
-                Once you submit the information, you will receive an invitation email to five your
+                Once you submit the information, you will receive an invitation email to give your
                 opinion about the company.
               </TextIndigo>
             </Subtitle>
@@ -94,13 +98,19 @@ export const ReferralBenefits = () => (
               4. Earn your referral cash:
             </Title>
             <Subtitle>
-              <TextIndigo>
-                We will reach out and send you all the information to complete the process.
-              </TextIndigo>
+              <TextIndigo>We will reach out and send you details to receive your money.</TextIndigo>
             </Subtitle>
           </ListItem>
         </List>
       </Section>
+
+      <center>
+        <Subtitle>
+          <TextIndigo>
+            If a friend has referred you, please complete the referral process below:
+          </TextIndigo>
+        </Subtitle>
+      </center>
     </Container>
   </Main>
 );
