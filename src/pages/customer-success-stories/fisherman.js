@@ -7,7 +7,6 @@ import ProblemSection from '../../components/customer-success-stories/ProblemSec
 import SolutionSection from '../../components/customer-success-stories/SolutionSection';
 import WhatWeDidSection from '../../components/customer-success-stories/WhatWeDidSection';
 import LogicalArchitectureSection from '../../components/customer-success-stories/LogicalArchitectureSection';
-import PhysicalArchitectureSection from '../../components/customer-success-stories/PhysicalArchitectureSection';
 import RoadmapSection from '../../components/customer-success-stories/RoadmapSection';
 import ResultSection from '../../components/customer-success-stories/ResultSection';
 import SlidersFisherman from '../../components/customer-success-stories/new/sliders/fisherman/Sliders';
@@ -114,7 +113,15 @@ const Fisherman = ({ data }) => {
           metrics, emails, tasks, and more.
         </DetailParagraph>
       </OverviewSection>
-      <ProblemSection>
+      <ProblemSection
+        image={
+          <StaticImage
+            width={'1920'}
+            height={'1080'}
+            src={'../../assets/images/customers/fisherman/slider/1.jpg'}
+            alt={'problem'}
+          />
+        }>
         <DetailParagraph>
           The opportunity stems from the need to help streamline processes and tasks related to the
           daily work of software development agencies.
@@ -125,7 +132,15 @@ const Fisherman = ({ data }) => {
         </DetailParagraph>
       </ProblemSection>
 
-      <SolutionSection>
+      <SolutionSection
+        image={
+          <StaticImage
+            width={'1920'}
+            height={'1080'}
+            src={'../../assets/images/customers/fisherman/slider/2.jpg'}
+            alt={'Solution'}
+          />
+        }>
         <>
           <DetailParagraph>
             We used a low code platform to rapidly prototype and develop features as we moved into
@@ -156,11 +171,6 @@ const Fisherman = ({ data }) => {
             <DetailParagraph>Lorem ipsum dolor.</DetailParagraph>
           </LogicalArchitectureSection>
         }
-        physicalArchitecture={
-          <PhysicalArchitectureSection>
-            <DetailParagraph>Lorem ipsum dolor.</DetailParagraph>
-          </PhysicalArchitectureSection>
-        }
         roadmap={
           <RoadmapSection>
             <StaticImage
@@ -174,7 +184,16 @@ const Fisherman = ({ data }) => {
           </RoadmapSection>
         }
       />
-      <ResultSection>
+      <ResultSection
+        image={
+          <StaticImage
+            style={{ marginTop: '106.469px' }}
+            width={'1920'}
+            height={'1080'}
+            src={'../../assets/images/customers/fisherman/slider/3.jpg'}
+            alt={'The Result'}
+          />
+        }>
         <DetailParagraph>
           A web application for company managers to create projects on the platform, and be able to
           associate these projects with the Github repository and Slack workspaces to track,
