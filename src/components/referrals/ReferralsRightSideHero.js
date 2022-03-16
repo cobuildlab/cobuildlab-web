@@ -60,10 +60,10 @@ export const ReferralsRightSideHero = () => (
       </TransparentOverlay>
     </Boundaries>
     <Section>
-      <P>If so, we have great news for you!</P>
+      <P>So, we have good news for you and your friend!</P>
       <P>
-        Now when you refer your friend to Cobuild Lab, you can take $5,000 in cash for all referrals
-        that sign with us, or use the money to discount your bill!
+        Now when you refer your friend to Cobuild Lab, you can make some money off your bill or
+        receive some cash for it.
       </P>
     </Section>
   </Wrapper>

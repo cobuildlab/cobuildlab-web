@@ -23,16 +23,13 @@ const Overlay = styled.div`
   align-content: center;
 `;
 
-// font-size: 4rem;
 const TextContainer = styled.div`
   font-size: 3rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
   width: 100%;
   @media screen and (min-width: 992px) {
     font-size: 4rem;
     width: 100%;
-    max-width: 28rem;
+    max-width: 30rem;
   }
 `;
 
@@ -53,9 +50,10 @@ export const ReferralsLeftSideHero = () => (
     <Overlay>
       <TextContainer>
         <Typography tag="h1">
-          <TextOrange>Refer a friend</TextOrange>{' '}
-          <TextIndigo style={{ fontWeight: 'bold' }}>and Earn up to</TextIndigo>{' '}
-          <TextOrange>$5,000</TextOrange>*
+          <TextOrange>Refer a Friend to </TextOrange>
+          <TextIndigo style={{ fontWeight: 'bold' }}>Cobuild Lab Earn up to </TextIndigo>
+          <TextOrange>$ 5,000! </TextOrange>
+          <TextIndigo>*</TextIndigo>
         </Typography>
       </TextContainer>
     </Overlay>

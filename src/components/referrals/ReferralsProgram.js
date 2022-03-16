@@ -189,7 +189,7 @@ const ReferralsProgram = () => {
                 </Field>
               </Column>
               {
-                // Bussine's name
+                // Business name
               }
               <Column isSize={{ default: 12 }}>
                 <Field>
@@ -197,7 +197,7 @@ const ReferralsProgram = () => {
                     <CbInput
                       type={'text'}
                       name={'bussines'}
-                      placeholder={"Bussine's name"}
+                      placeholder={'Business name'}
                       onChange={handleChange}
                     />
                   </Control>
@@ -205,7 +205,7 @@ const ReferralsProgram = () => {
               </Column>
 
               {
-                // Referred Friend
+                // Name of the referred friend
               }
               <Column isSize={{ default: 12 }}>
                 <Field>
@@ -213,7 +213,7 @@ const ReferralsProgram = () => {
                     <CbInput
                       type={'text'}
                       name={'referredFriend'}
-                      placeholder={'Name of referred friend'}
+                      placeholder={'Name of the referred friend'}
                       onChange={handleChange}
                     />
                   </Control>
@@ -223,14 +223,14 @@ const ReferralsProgram = () => {
           </Column>
 
           {
-            // Bussine's description
+            // Business description
           }
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <Field style={{ height: '100%' }}>
               <Control style={{ height: '100%' }}>
                 <CbTextArea
                   name="bussinessDescription"
-                  placeholder="Bussine's description"
+                  placeholder="Business description"
                   onChange={handleChange}
                   height={100}
                 />
