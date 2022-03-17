@@ -8,7 +8,13 @@ const ArtPlay = () => {
     <Column isSize={{ mobile: 12, tablet: 4 }} isPaddingless>
       <Card
         title={'Art Play'}
-        description={<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>}
+        description={
+          <p>
+            Founded by Patricia Shea, gallery owner, appraiser, and art advisor with offices in New
+            York and Los Angeles who serves to prominent public and private collectors as well as
+            new ones seeking guidance in the complex world of collecting contemporary art...
+          </p>
+        }
         to={'/customer-success-stories/art-play'}>
         <StaticImage
           src={'./../../../../assets/images/customers/art-play/art-play-logo-black.png'}
