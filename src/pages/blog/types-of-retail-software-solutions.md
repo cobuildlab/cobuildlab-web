@@ -146,6 +146,10 @@ Can now use CRM tools to manage customer relationships across the entire custome
 
 <br>
 
+<youtube-video id="o11BXi9zQG4"></youtube-video>
+
+<br>
+
 <title-2><a target="_blank" href="https://www.cobuildlab.com/services/"> Develop it customized </a></title-2>
 
 <br>
@@ -168,5 +172,3 @@ That’s why implementing different **types of retail software solutions** will 
 
 
 **Cobuild Lab Team**
-
-
