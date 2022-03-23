@@ -78,7 +78,7 @@ export const ReferralBenefits = () => (
             <Subtitle>
               <TextIndigo>Simple! Just send them this link </TextIndigo>
               <TextLink to="https://g.page/r/CbpG-G-5eK_uEAg/review">
-                Review fo Referral Bonus Program
+                Review for Referral Bonus Program
               </TextLink>
             </Subtitle>
           </ListItem>
@@ -99,8 +99,8 @@ export const ReferralBenefits = () => (
             </Title>
             <Subtitle>
               <TextIndigo>
-                We only want to pay them if the referral actually signs a project deal with us/
-                signs a service agreement and pays a downpayment.
+                We will pay you if your referral signs a project/service agreement with us and makes
+                the initial payment.
               </TextIndigo>
             </Subtitle>
           </ListItem>
