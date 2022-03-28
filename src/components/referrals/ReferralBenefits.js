@@ -3,15 +3,15 @@ import { Subtitle, Title } from 'bloomer';
 import { StaticImage } from 'gatsby-plugin-image';
 import { TextIndigo } from '../2021/text/TextHelpers';
 import styled from 'styled-components';
-import TextLink from '../Typography/TextLink';
+// import TextLink from '../Typography/TextLink';
 
-const List = styled.ul`
-  padding: 0em 1em;
-`;
+// const List = styled.ul`
+//   padding: 0em 1em;
+// `;
 
-const ListItem = styled.li`
-  margin: 1.5em 0;
-`;
+// const ListItem = styled.li`
+//   margin: 1.5em 0;
+// `;
 
 const Main = styled.main`
   width: 100%;
@@ -31,12 +31,12 @@ const Container = styled.div`
   }
 `;
 
-const Section = styled.div`
-  padding: 2.5rem 0rem;
-  @media screen and (min-width: 1024px) {
-    padding: 3rem 1.5rem;
-  }
-`;
+// const Section = styled.div`
+//   padding: 2.5rem 0rem;
+//   @media screen and (min-width: 1024px) {
+//     padding: 3rem 1.5rem;
+//   }
+// `;
 
 export const ReferralBenefits = () => (
   <Main>
