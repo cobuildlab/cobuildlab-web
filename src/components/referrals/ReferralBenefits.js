@@ -53,7 +53,7 @@ export const ReferralBenefits = () => (
         src="../../assets/images/referrals/referrals-partner.jpg"
         alt="Friends group"
       />
-      <Section>
+      {/* <Section>
         <Title isSize={3} tag={'h3'} style={{ paddingLeft: '16px' }}>
           How does it work?
         </Title>
@@ -105,12 +105,12 @@ export const ReferralBenefits = () => (
             </Subtitle>
           </ListItem>
         </List>
-      </Section>
+      </Section> */}
 
       <center>
         <Subtitle>
           <TextIndigo>
-            If a friend has referred you, please complete the referral process below:
+            Would you like to refer a friend? please complete the referral process below:
           </TextIndigo>
         </Subtitle>
       </center>

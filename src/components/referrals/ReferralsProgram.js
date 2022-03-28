@@ -41,7 +41,7 @@ function LabelCheckbox() {
   return (
     <LabelTextWrapped>
       <TextIndigo>I read</TextIndigo> <TextOrange>Disclaimer</TextOrange>{' '}
-      <TextIndigo>and</TextIndigo> <TextOrange>TaC</TextOrange>
+      <TextIndigo>and</TextIndigo> <TextOrange>Terms and Conditions</TextOrange>
     </LabelTextWrapped>
   );
 }
@@ -71,7 +71,7 @@ const ReferralsProgram = () => {
 
     if (!isAgree) {
       toast.dismiss();
-      toast(<Error message="You must read and agree to the disclaimer and TaC" />, {
+      toast(<Error message="You must read and agree to the disclaimer and terms and conditions" />, {
         position: 'bottom-right',
         hideProgressBar: true,
       });
@@ -98,7 +98,7 @@ const ReferralsProgram = () => {
 
     if (!bussines.length) {
       toast.dismiss();
-      toast(<Error message="Bussine's name can't be empty" />, {
+      toast(<Error message="Business name can't be empty" />, {
         position: 'bottom-right',
         hideProgressBar: true,
       });
@@ -107,7 +107,7 @@ const ReferralsProgram = () => {
 
     if (!bussinessDescription.length) {
       toast.dismiss();
-      toast(<Error message="Bussine's descriptio can't be empty" />, {
+      toast(<Error message="Businesss description can't be empty" />, {
         position: 'bottom-right',
         hideProgressBar: true,
       });
@@ -167,7 +167,7 @@ const ReferralsProgram = () => {
                     <CbInput
                       type={'text'}
                       name={'name'}
-                      placeholder={'Name'}
+                      placeholder={'Your name / referral partner'}
                       onChange={handleChange}
                     />
                   </Control>
@@ -262,8 +262,8 @@ const ReferralsProgram = () => {
             <TextIndigo>
               * Referral bonuses are earned only in projects that are signed, and in which the first
               invoice has been collected.
-              <br></br>* The maximum cash earned by the project will be the equivalent of 10% of the
-              total cost of the project.
+              <br></br>* The maximum cash earned by the project will be $5,000 or the equivalent of 10% of the
+              total cost of the project, whichever number is lower.
             </TextIndigo>
           </Column>
 
