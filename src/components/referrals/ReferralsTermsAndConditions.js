@@ -18,8 +18,8 @@ export const ReferralsTermsAndConditions = () => (
         remaining 50% will be paid once the project is finished.
       </ListItem>
       <ListItem>
-        The maximum cash earned by the project will be the equivalent of 15% of the total cost of
-        the project.
+        The maximum cash earned by the project will be $5,000 USD or 10% of the total cost of
+        the project, whichever figure is lower.
       </ListItem>
       <ListItem>
         In case of any inconvenience, the client may send their doubts and queries through the
