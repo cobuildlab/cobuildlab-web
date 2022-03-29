@@ -167,9 +167,7 @@ const Fisherman = ({ data }) => {
                 src={'./../../assets/images/customers/fisherman/logical-architecture.jpg'}
                 alt={'Logical Architecture'}
               />
-            }>
-            <DetailParagraph>Lorem ipsum dolor.</DetailParagraph>
-          </LogicalArchitectureSection>
+            }></LogicalArchitectureSection>
         }
         roadmap={
           <RoadmapSection>
