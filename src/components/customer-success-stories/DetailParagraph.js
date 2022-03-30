@@ -12,10 +12,15 @@ const Text = styled(Paragraph)`
   }
 `;
 
-const DetailParagraph = ({ children }) => <Text>{children}</Text>;
+const DetailParagraph = ({ children, isBold }) => (
+  <Text style={{ fontWeight: isBold ? 'bold' : 'normal' }}>{children}</Text>
+);
 
 DetailParagraph.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+  isBold: PropTypes.bool,
 };
+
+DetailParagraph.defaultProps = { isBold: false };
 
 export default DetailParagraph;

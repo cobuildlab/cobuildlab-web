@@ -3,18 +3,18 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import { clockO } from 'react-icons-kit/fa/clockO';
-import { mapPin } from 'react-icons-kit/fa/mapPin';
 import { Icon } from 'react-icons-kit';
 
 import CareersCardContainer from './CareersCardContainer';
 import CareerCardTitle from './CareersCardTitle';
+import { mapMarker } from 'react-icons-kit/fa';
+import { TextDarkSlate } from '../2021/text/TextHelpers';
 
 const BlogPosition = styled.div`
   float: ${(props) => props.position};
   color: #264a60;
   & a {
     color: #e76c29;
-    font-weight: bold;
   }
 `;
 
@@ -23,12 +23,12 @@ const CareersCard = ({ title, to, modality, time }) => (
     <CareerCardTitle>{title}</CareerCardTitle>
     <div>
       <BlogPosition position={'left'}>
-        <Icon icon={mapPin} alt="facebook-icon" size={22} />
-        <span> {modality}</span>
+        <Icon icon={mapMarker} alt={'facebook-icon'} size={21} className={'text-dark-slate'} />
+        <TextDarkSlate>{modality}</TextDarkSlate>
       </BlogPosition>
       <BlogPosition position={'right'}>
-        <Icon icon={clockO} alt="facebook-icon" size={22} />
-        <span> {time}</span>
+        <Icon icon={clockO} alt={'facebook-icon'} size={21} className={'text-dark-slate'} />
+        <TextDarkSlate>{time}</TextDarkSlate>
       </BlogPosition>
     </div>
     <div>

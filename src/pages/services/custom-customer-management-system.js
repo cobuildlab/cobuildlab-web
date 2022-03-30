@@ -39,7 +39,10 @@ const StyledContainer = styled(Container)`
 
 const CustomCustomerManagementSystem = () => (
   <Layout>
-    <SeoMetaTags title="Services" description="Privacy Policy for the Cobuild Lab" />
+    <SeoMetaTags
+      title="Customer Relationship Management System"
+      description="A CRM system is a software that helps you organize the details related to your customers across all departments at your company. Anyone with access to the CRM system can track and manage the journey of every lead and customer that interacts with your brand, website, or products."
+    />
     <Hero>
       <HeroHeader>
         <Header />

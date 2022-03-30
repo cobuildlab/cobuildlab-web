@@ -18,7 +18,7 @@ Read on to learn about some of the most important steps entrepreneurs must make 
 
 <br/>
 
-The first thing you should do before expanding is to see if you have any unaddressed legal to-dos. For example, you might have been putting off forming an LLC, unsure if it was the right move for you. As you expand, however, this designation may become more important and advantageous. 
+The first thing you should do before expanding is to see if you have any unaddressed legal to-dos. For example, you might have been putting off <a target="_blank" href="https://www.howtostartanllc.org/">forming an LLC</a>, unsure if it was the right move for you. As you expand, however, this designation may become more important and advantageous. 
 
 The bigger your business, the greater your risk. When you have the <a target="_blank" href="https://www.zenbusiness.com/llc/">   LLC designation</a>, you protect your personal assets from any litigation you may experience down the road. Plus, it makes <a target="_blank" href="https://www.irs.gov/businesses/small-businesses-self-employed/understanding-employment-taxes">  filing taxes </a> substantially simpler, which will be valuable when you have more employees. Save yourself time and energy by using an online service to knock this task out. 
 <BR><BR/>

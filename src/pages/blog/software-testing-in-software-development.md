@@ -12,7 +12,7 @@ Testing is a phase in the software development process. But how necessary is to 
 
 <title-2>It´s time to know what is software testing?</title-2>
 
-Software testing is more than a probe. It is taking in consideration every part in a software product to find every imperfection, defect or deficiency it has as fast as possible.
+<a target="_blank" href="https://prodperfect.com/blog/end-to-end-testing/what-is-end-to-end-testing/">Software testing</a> is more than a probe. It is taking in consideration every part in a software product to find every imperfection, defect or deficiency it has as fast as possible.
 
 It’s a methodology that helps you to find deficiencies. Testing is inside of [software development process](https://cobuildlab.com/blog/best-software-development-process/) and here you will discover its real importance. 
 

@@ -1,9 +1,8 @@
 import React from 'react';
-import { Container, Title, Columns, Column } from 'bloomer';
 import LayoutPost from '../components/layoutPost';
 import Styled from 'styled-components';
-
 import PropTypes from 'prop-types';
+import { Container, Title, Columns, Column } from 'bloomer';
 import { SeoMetaTags } from '../components/2021/SeoMetaTags';
 
 const StyledTitle = Styled(Title)`
@@ -42,7 +41,30 @@ const SectionPost = Styled.section`
   & p {
     text-align: justify;
   }
-  
+  & blockquote {
+    max-width: 1000px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    color: #264A60;
+    border-left:5px solid #264A60;
+    background-color: #ededed;
+  }
+  & img {
+    margin-bottom: 2rem !important;
+  }
+  & pre {
+    counter-reset: line-numbering;
+    line-height: 100%;
+    margin-bottom: 2rem !important;
+    white-space: pre;
+    word-wrap: break-word;
+    overflow: auto;
+  }
+  & pre > code {
+    position: relative;
+  }
 `;
 
 const StyledContainer = Styled(Container)`

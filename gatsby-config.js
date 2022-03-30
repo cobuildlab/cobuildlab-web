@@ -15,6 +15,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-preact`,
     {
       resolve: 'gatsby-plugin-zopfli',
     },
@@ -64,6 +65,13 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-brotli`,
+      options: {
+        extensions: ['css', 'html', 'js', 'svg'],
+        level: 4,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -133,13 +141,14 @@ module.exports = {
                 id
                 title
                 description
-                profits
+                requirements
                 jobProfile
-                jobDescription
+                responsibilities
                 modality
                 time
                 active
                 slug
+                type
                 createdAt
               }
             }

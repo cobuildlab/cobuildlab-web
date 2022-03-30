@@ -60,7 +60,7 @@ Companies are adopting more and more of these tools every day, but here we will 
 
 **Increased customer revenue. By managing and recognizing customer needs, you can increase revenue per customer and reduce customer churn.**
 
-**Scale more easily, integrated business management system software helps you identify roles and responsibilities, manage employee onboarding processes, and visualize risks and opportunities. This provides growing companies with an essential tool to scale.**
+**Scale more easily, integrated business management system software helps you identify roles and responsibilities, manage <a target="_blank" href="https://www.waybook.com/blog/10-step-employee-onboarding-process">employee onboarding</a> processes, and visualize risks and opportunities. This provides growing companies with an essential tool to scale.**
 
 **Strategy, an integrated business management system also improves organizational strategy planning by bringing risk, vulnerability, and opportunity data together in a centralized view.**
 

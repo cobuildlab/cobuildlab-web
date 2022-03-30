@@ -21,10 +21,10 @@ export default function Scroll() {
       }
       setshowClass(scoll);
     };
-    window.addEventListener('scroll', scrollHandle);
+    window.addEventListener('scroll', scrollHandle, { passive: true });
 
     return () => {
-      window.removeEventListener('scroll', scrollHandle);
+      window.removeEventListener('scroll', scrollHandle, { passive: true });
     };
   }, []);
 

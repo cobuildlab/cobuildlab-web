@@ -26,6 +26,21 @@ const Paragraph2 = styled.p`
   color: #264a60;
 `;
 
+const SubtitleContainer = styled.div`
+  font-size: 20px;
+  color: #264a60;
+  text-align: justify;
+  line-height: 26px;
+  margin-bottom: 22px;
+  span {
+    font-weight: bold;
+  }
+  p {
+    display: contents;
+    font-size: 20px;
+  }
+`;
+
 const StyleSubtitle = styled.div`
   text-align: center;
 `;
@@ -44,7 +59,14 @@ const ServicesSection3 = ({ children, title, textList, textList2, otherText, oth
             <ServicesContent>
               {textList.map((t, i) => (
                 <React.Fragment key={i}>
-                  <Paragraph>• {t}</Paragraph>
+                  {typeof t === 'string' ? (
+                    <Paragraph>• {t}</Paragraph>
+                  ) : (
+                    <SubtitleContainer>
+                      <span>{t.subTitle}</span>
+                      <p>{t.text}</p>
+                    </SubtitleContainer>
+                  )}
                 </React.Fragment>
               ))}
             </ServicesContent>
@@ -67,7 +89,14 @@ const ServicesSection3 = ({ children, title, textList, textList2, otherText, oth
             {otherText2 !== '' ? <Paragraph2>{otherText2}</Paragraph2> : null}
             {textList2.map((t, i) => (
               <React.Fragment key={i}>
-                <Paragraph>• {t}</Paragraph>
+                {typeof t === 'string' ? (
+                  <Paragraph>• {t}</Paragraph>
+                ) : (
+                  <SubtitleContainer>
+                    <span>{t.subTitle}</span>
+                    <p>{t.text}</p>
+                  </SubtitleContainer>
+                )}
               </React.Fragment>
             ))}
           </ServicesContent>

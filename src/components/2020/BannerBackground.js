@@ -8,16 +8,35 @@ const Overlay = styled.div`
   left: -35%;
   width: 100%;
   height: 100%;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
 
-const BannerBackground = () => (
-  <Overlay>
-    <img src={background} alt="" />
-  </Overlay>
-);
+class BannerBackground extends React.Component {
+  constructor(props) {
+    super(props);
+    this.props = {
+      ...this.props,
+      ...Overlay.defaultProps,
+    };
+  }
 
+  render() {
+    return (
+      <Overlay {...this.props}>
+        <img src={background} alt="" />
+      </Overlay>
+    );
+  }
+}
+
+BannerBackground.propTypes = {
+  ...Overlay.propTypes,
+};
+
+BannerBackground.defaultProps = {
+  ...Overlay.defaultProps,
+};
 
 export default BannerBackground;

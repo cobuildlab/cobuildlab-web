@@ -5,8 +5,8 @@ import H6 from '../Typography/H6';
 
 const TagStyle = styled.div`
   background-color: ${({ active }) => (active ? '#e76c29' : 'transparent')};
-  height: 50px;
-  line-height: ${({ multipleLine }) => (multipleLine ? '23px' : '50px')};
+  padding-top: 13px;
+  padding-bottom: 13px;
   text-align: center;
   border: 1px solid ${({ active }) => (active ? '#e76c29' : '#264a60')};
   margin-top: 10px;
@@ -27,7 +27,6 @@ const ServicesTag = ({ tag, activeTag }) => {
           <span>Custom Software</span>
         </TagStyle>
         <TagStyle
-          multipleLine={true}
           active={tag === 'enterprisesDevelopment'}
           onClick={() => activeTag('enterprisesDevelopment')}>
           <span>Enterprises Development</span>

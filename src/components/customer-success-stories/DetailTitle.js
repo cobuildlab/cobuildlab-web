@@ -15,7 +15,7 @@ const Title = styled(H1)`
   }
 `;
 
-const DetailsTitle = ({ children }) => (
+const DetailTitle = ({ children }) => (
   <Container>
     <Title>
       <TextOrange>{children}</TextOrange>
@@ -23,8 +23,8 @@ const DetailsTitle = ({ children }) => (
   </Container>
 );
 
-DetailsTitle.propTypes = {
+DetailTitle.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
 
-export default DetailsTitle;
+export default DetailTitle;

@@ -1,48 +1,62 @@
 import React, { useState } from 'react';
-import { useStaticQuery, graphql, navigate } from 'gatsby';
-import { Column, Columns, Control, Field, Input, Label as BloomerLabel, TextArea } from 'bloomer';
-import Img from 'gatsby-image';
-import Paragraph from '../Typography/Paragraph';
-import { toast, ToastContainer } from 'react-toastify';
-import ButtonDefault from '../2020/Button/ButtonDefault';
-import styled from 'styled-components';
+import { navigate } from 'gatsby';
 import Error from '../Toast/Error';
+import CbCheckbox from '../input/CbCheckbox';
+import ButtonDefault from '../2020/Button/ButtonDefault';
+import CbInput from '../input/CbInput';
+import CbTextArea from '../input/CbTextArea';
+import BannerBackground from '../2020/BannerBackground';
+import styled from 'styled-components';
+import { Column, Columns, Container, Control, Field } from 'bloomer';
+import { TextIndigo, TextOrange } from '../2021/text/TextHelpers';
+import { ReferralsDisclaimer } from './ReferralsDisclaimer';
+import { ReferralsTermsAndConditions } from './ReferralsTermsAndConditions';
+import { toast, ToastContainer } from 'react-toastify';
 
-const Label = styled(BloomerLabel)`
-  color: #264a60;
+const LabelTextWrapped = styled.div`
+  padding: 0rem 0.5rem;
+  cursor: pointer;
 `;
 
-const ColumnsStyled = styled(Columns)`
-  margin: 0px !important;
+const Banner = styled(BannerBackground)`
+  width: 40%;
+  height: 40%;
+  top: -20px;
+  left: auto;
+  right: -400px;
+  transform: rotate(30deg);
 `;
 
-const InputStyled = styled(Input)`
-  border-radius: 7px !important;
-  box-shadow: 4px 4px 4px -4px rgba(0,0,0,0.75)!important;
+const ColumnsSection = styled(Columns)`
+  padding: 0rem 1.5rem;
+  @media screen and (min-width: 1024px) {
+    padding: 0rem 0rem;
+  }
+`;
+
+/**
+ * @returns {React.Component} - Label Checkbox.
+ */
+function LabelCheckbox() {
+  return (
+    <LabelTextWrapped>
+      <TextIndigo>I read</TextIndigo> <TextOrange>Disclaimer</TextOrange>{' '}
+      <TextIndigo>and</TextIndigo> <TextOrange>Terms and Conditions</TextOrange>
+    </LabelTextWrapped>
+  );
 }
-`;
-
-const TextAreaStyled = styled(TextArea)`
-  border-radius: 7px !important;
-  box-shadow: 4px 4px 4px -4px rgba(0, 0, 0, 0.75) !important;
-`;
-
-const DivButtonStyled = styled.div`
-  float: right;
-  margin-bottom: 20px;
-`;
 
 const ReferralsProgram = () => {
   const [isLoading, setIsLoading] = useState(false);
-
+  setIsLoading(false);
   const [values, setValues] = useState({
     name: '',
     email: '',
     bussines: '',
     bussinessDescription: '',
+    referredFriend: '',
   });
-
-  const data = useStaticQuery(query);
+  const [isAgree, setIsAgree] = useState(false);
 
   const handleChange = (event) => {
     setValues({
@@ -53,7 +67,16 @@ const ReferralsProgram = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    const { name, email, bussines, bussinessDescription } = values;
+    const { name, email, bussines, bussinessDescription, referredFriend } = values;
+
+    if (!isAgree) {
+      toast.dismiss();
+      toast(<Error message="You must read and agree to the disclaimer and terms and conditions" />, {
+        position: 'bottom-right',
+        hideProgressBar: true,
+      });
+      return;
+    }
 
     if (!name.length) {
       toast.dismiss();
@@ -75,7 +98,7 @@ const ReferralsProgram = () => {
 
     if (!bussines.length) {
       toast.dismiss();
-      toast(<Error message="Bussine's name can't be empty" />, {
+      toast(<Error message="Business name can't be empty" />, {
         position: 'bottom-right',
         hideProgressBar: true,
       });
@@ -84,7 +107,7 @@ const ReferralsProgram = () => {
 
     if (!bussinessDescription.length) {
       toast.dismiss();
-      toast(<Error message="Bussine's descriptio can't be empty" />, {
+      toast(<Error message="Businesss description can't be empty" />, {
         position: 'bottom-right',
         hideProgressBar: true,
       });
@@ -98,6 +121,8 @@ const ReferralsProgram = () => {
       email,
       bussines,
       bussinessDescription,
+      referredFriend,
+      landing: 'From the referrals form test.', // <= Dumb hack to avoid error
     };
 
     const settings = {
@@ -123,109 +148,157 @@ const ReferralsProgram = () => {
   };
 
   return (
-    <Columns className="referrals-page">
-      <Column isSize={{ mobile: 12, desktop: 6 }}>
-        <Img fluid={data.file.childImageSharp.fluid} alt="" />
-      </Column>
-      <Column isSize={{ mobile: 12, desktop: 6 }}>
-        <Column isSize={{ mobile: 12, desktop: 10 }}>
-          <Paragraph>
-            Share with your contacts the opportunity to develop a professional, agile, and
-            cost-effective software tool that improves their company and personal life. And you,
-            earn $5000 by bringing them as customers of our software company. It’s simple- refer
-            qualified customers, and as a thank you, you’ll receive a bonus! Payment will send to
-            your account after the first invoice payment has effective.
-          </Paragraph>
-        </Column>
-        <>
-          <form onSubmit={onSubmit}>
-            <ToastContainer />
-            <ColumnsStyled>
-              <Column isSize={{ mobile: 10, desktop: 5 }}>
+    <Container>
+      <form onSubmit={onSubmit}>
+        <ToastContainer />
+        <Banner />
+        <ColumnsSection cellPadding={'2'} style={{ marginTop: '4rem', marginBottom: '4rem' }}>
+          {
+            // Form
+          }
+          <Column isSize={{ mobile: 12, desktop: 6 }}>
+            <Columns style={{ flexWrap: 'wrap' }}>
+              {
+                // Name
+              }
+              <Column isSize={{ desktop: 6 }}>
                 <Field>
                   <Control>
-                    <Label htmlFor="contanctFormName">Name</Label>
-                    <InputStyled
-                      id="contanctFormName"
-                      type="text"
-                      name="name"
-                      placeholder="Name"
+                    <CbInput
+                      type={'text'}
+                      name={'name'}
+                      placeholder={'Your name / referral partner'}
                       onChange={handleChange}
                     />
                   </Control>
                 </Field>
               </Column>
-              <Column isSize={{ mobile: 10, desktop: 5 }}>
+              {
+                // Email
+              }
+              <Column isSize={{ desktop: 6 }}>
                 <Field>
                   <Control>
-                    <Label htmlFor="contanctFormName">E-mail</Label>
-                    <InputStyled
-                      id="contanctFormEmail"
-                      type="email"
-                      name="email"
-                      placeholder="Email"
+                    <CbInput
+                      type={'email'}
+                      name={'email'}
+                      placeholder={'Email'}
                       onChange={handleChange}
                     />
                   </Control>
                 </Field>
               </Column>
-            </ColumnsStyled>
-            <Column isSize={{ mobile: 10, desktop: 10 }}>
-              <Field>
-                <Control>
-                  <Label htmlFor="contanctFormPhone">Bussine&apos;s name</Label>
-                  <InputStyled
-                    id="contanctFormBussines"
-                    type="text"
-                    name="bussines"
-                    placeholder="Bussine's name"
-                    onChange={handleChange}
-                  />
+              {
+                // Business name
+              }
+              <Column isSize={{ default: 12 }}>
+                <Field>
+                  <Control>
+                    <CbInput
+                      type={'text'}
+                      name={'bussines'}
+                      placeholder={'Business name'}
+                      onChange={handleChange}
+                    />
+                  </Control>
+                </Field>
+              </Column>
+
+              {
+                // Name of the referred friend
+              }
+              <Column isSize={{ default: 12 }}>
+                <Field>
+                  <Control>
+                    <CbInput
+                      type={'text'}
+                      name={'referredFriend'}
+                      placeholder={'Name of the referred friend'}
+                      onChange={handleChange}
+                    />
+                  </Control>
+                </Field>
+              </Column>
+            </Columns>
+          </Column>
+
+          {
+            // Business description
+          }
+          <Column isSize={{ mobile: 12, desktop: 6 }}>
+            <Field style={{ height: '100%' }}>
+              <Control style={{ height: '100%' }}>
+                <CbTextArea
+                  name="bussinessDescription"
+                  placeholder="Business description"
+                  onChange={handleChange}
+                  height={100}
+                />
+              </Control>
+            </Field>
+          </Column>
+        </ColumnsSection>
+        <ColumnsSection>
+          {
+            // Disclaimer
+          }
+          <Column isSize={{ mobile: 12, desktop: 6 }}>
+            <ReferralsDisclaimer />
+          </Column>
+
+          {
+            /// Terms and conditions
+          }
+          <Column isSize={{ mobile: 12, desktop: 6 }}>
+            <ReferralsTermsAndConditions />
+          </Column>
+        </ColumnsSection>
+
+        {
+          // Latest text.
+        }
+        <ColumnsSection style={{ marginBottom: '4rem' }}>
+          <Column isSize={{ desktop: 9 }}>
+            <TextIndigo>
+              * Referral bonuses are earned only in projects that are signed, and in which the first
+              invoice has been collected.
+              <br></br>* The maximum cash earned by the project will be $5,000 or the equivalent of 10% of the
+              total cost of the project, whichever number is lower.
+            </TextIndigo>
+          </Column>
+
+          {
+            // Submit button.
+          }
+          <Column isSize={{ desktop: 3 }} hasTextAlign="centered">
+            <div style={{ marginBottom: '0.5rem' }}>
+              <Field
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                }}>
+                <Control
+                  onClick={() => {
+                    setIsAgree(!isAgree);
+                  }}
+                  style={{
+                    display: 'inherit',
+                    alignItems: 'center',
+                  }}>
+                  <LabelCheckbox />
+                  <CbCheckbox checked={isAgree} />
                 </Control>
               </Field>
-            </Column>
-            <Column isSize={{ mobile: 10, desktop: 10 }}>
-              <Field>
-                <Control>
-                  <Label htmlFor="contanctFormEmail">Bussine&apos;s description</Label>
-                  <TextAreaStyled
-                    id="contanctFormEmail"
-                    type="email"
-                    name="bussinessDescription"
-                    placeholder="Bussine's description"
-                    onChange={handleChange}
-                  />
-                </Control>
-              </Field>
-            </Column>
-            <Column isSize={{ mobile: 10, desktop: 10 }}>
-              <Field>
-                <Control>
-                  <DivButtonStyled>
-                    <ButtonDefault type="submit" isLoading={isLoading}>
-                      {'Send'}
-                    </ButtonDefault>
-                  </DivButtonStyled>
-                </Control>
-              </Field>
-            </Column>
-          </form>
-        </>
-      </Column>
-    </Columns>
+            </div>
+
+            <ButtonDefault isBlock type="submit" isLoading={isLoading}>
+              SUBMIT
+            </ButtonDefault>
+          </Column>
+        </ColumnsSection>
+      </form>
+    </Container>
   );
 };
-
-const query = graphql`
-  query {
-    file(relativePath: { eq: "referrals.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`;
 
 export default ReferralsProgram;

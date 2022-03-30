@@ -131,7 +131,12 @@ const Item = ({ description, title, subtitle, image }) => (
       <Columns isCentered>
         <Column />
         <Column isCentered>
-          <img src={image.childImageSharp.fixed.src} alt={'Item images'} />
+          <img
+            width={'120'}
+            height={'120'}
+            src={image.childImageSharp.fixed.src}
+            alt={'Item images'}
+          />
         </Column>
         <Column />
       </Columns>
@@ -147,7 +152,7 @@ const Item = ({ description, title, subtitle, image }) => (
 Item.propTypes = {
   description: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
+  subtitle: PropTypes.node.isRequired,
   image: PropTypes.object.isRequired,
 };
 

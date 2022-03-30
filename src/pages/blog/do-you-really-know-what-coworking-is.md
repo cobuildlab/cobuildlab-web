@@ -10,7 +10,7 @@ Coworking (capital C) – It's not a place, it's a movement! That is why it cann
 
 **Coworking**, with a capital “C”, is way more than just a group of people working in the same place; it represents a whole new way of thinking about how we work and how we share with one another. Meanwhile_,_ _"coworking"_ or "_co-working_," with a lower-case “c”, is used to describe any situation in which two or more people are working in the same place together, but not for the same company; it is a generic word. 
 
-We know this can be very confusing for sure; So, if you think about the word in general, it can take abode in places like an office, rental facilities and incubators, but they are very different from dedicated _coworking_ spaces. 
+We know this can be very confusing for sure; So, if you think about the word in general, it can take abode in places like an office, rental facilities and incubators, but they are very different from dedicated <a href="https://www.corporatesuites.com/benefits-of-coworking-space/" target="_blank">coworking spaces</a>. 
 
 **_Benefits of Coworking._** 
 

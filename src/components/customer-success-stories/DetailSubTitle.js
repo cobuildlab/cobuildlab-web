@@ -13,14 +13,25 @@ const Title = styled(H4)`
   line-height: 1.2;
 `;
 
-const DetailsTitle = ({ children }) => (
+const DetailsTitle = ({ children, isBold }) => (
   <Container>
-    <Title>{children}</Title>
+    <Title
+      style={{
+        fontFamily: isBold ? '' : "'Lato-light', sans-serif !important",
+        fontWeight: isBold ? 'bold' : '100',
+      }}>
+      {children}
+    </Title>
   </Container>
 );
 
+DetailsTitle.defaultProps = {
+  isBold: true,
+};
+
 DetailsTitle.propTypes = {
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
+  isBold: PropTypes.bool,
 };
 
 export default DetailsTitle;
