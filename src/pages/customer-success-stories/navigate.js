@@ -742,7 +742,7 @@ Navigate.propTypes = {
 
 export const pageQuery = graphql`
   query {
-    seoImages: file(relativePath: { eq: "customers/art-vault/art-vault-logo.jpg" }) {
+    seoImages: file(relativePath: { eq: "customers/navigate/navigate-logo.png" }) {
       childImageSharp {
         resize(width: 1200, height: 1200) {
           width
