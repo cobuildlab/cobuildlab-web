@@ -130,6 +130,12 @@ A dedicated cloud solution for disaster recovery and backup is a solid contingen
 
 By understanding the different services, models, benefits, and risks offered by the cloud, users can make informed decisions on how to take advantage of its offerings best. 
 
+<br>
+
+<youtube-video id="cu4rJJbjIVA"></youtube-video>
+
+<br>
+
 That’s already a reality, and you must continue to adapt to this new digital age. If you need help implementing some **cloud technologies trends of 2022** in your project, company, do not hesitate to <a target="_blank" href="https://www.cobuildlab.com/">  contact us </a>. We’ll help you.
 
 **Cobuild Lab Team**
