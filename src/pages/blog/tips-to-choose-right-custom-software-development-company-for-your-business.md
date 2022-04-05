@@ -134,6 +134,12 @@ All the apps that happen to be crowd favorites have emphasized customization, an
 
 Companies are getting more on <a target="_blank" href="https://www.cobuildlab.com/services/"> custom software companies </a> to solve the problems and needs they have within the company. 
 
+<br>
+
+<youtube-video id="Q-fgNXAEIE0"></youtube-video>
+
+<br>
+
 As you can see, to achieve total success, you must partner with a capable, efficient, and experienced software development company. So, follow these **tips to choose the right software company for your business**. 
 
 **Cobuild Lab Team**
