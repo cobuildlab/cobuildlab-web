@@ -2,7 +2,7 @@
 title: 'WHY IS LOW-CODE EVERYTHING IN SOFTWARE DEVELOPMENT?'
 date: '2022-03-30T15:26:52.558Z'
 template: blog
-tags: Small Business
+tags: Education
 image: './media/why-is-low-code-everything-in-software-development.png'
 ---
 

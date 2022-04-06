@@ -2,7 +2,7 @@
 title: 'The Relationship Between Machine'
 date: '2022-03-29T20:18:31.533Z'
 template: blog
-tags: News
+tags: Small Business
 image: './media/the-relationship-between-machine-learning-tools-and-data-annotation.jpg'
 ---
 
