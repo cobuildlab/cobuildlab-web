@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import { navigate } from 'gatsby';
+import { Column, Columns, Container, Control, Field } from 'bloomer';
+import { TextIndigo, TextOrange } from '../2021/text/TextHelpers';
+import { ReferralsDisclaimer } from './ReferralsDisclaimer';
+import { ReferralsTermsAndConditions } from './ReferralsTermsAndConditions';
+import { toast, ToastContainer } from 'react-toastify';
 import Error from '../Toast/Error';
 import CbCheckbox from '../input/CbCheckbox';
 import ButtonDefault from '../2020/Button/ButtonDefault';
@@ -7,11 +12,6 @@ import CbInput from '../input/CbInput';
 import CbTextArea from '../input/CbTextArea';
 import BannerBackground from '../2020/BannerBackground';
 import styled from 'styled-components';
-import { Column, Columns, Container, Control, Field } from 'bloomer';
-import { TextIndigo, TextOrange } from '../2021/text/TextHelpers';
-import { ReferralsDisclaimer } from './ReferralsDisclaimer';
-import { ReferralsTermsAndConditions } from './ReferralsTermsAndConditions';
-import { toast, ToastContainer } from 'react-toastify';
 
 const LabelTextWrapped = styled.div`
   padding: 0rem 0.5rem;
@@ -52,6 +52,7 @@ const ReferralsProgram = () => {
   const [values, setValues] = useState({
     name: '',
     email: '',
+    phone: '',
     bussines: '',
     bussinessDescription: '',
     referredFriend: '',
@@ -67,14 +68,17 @@ const ReferralsProgram = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    const { name, email, bussines, bussinessDescription, referredFriend } = values;
+    const { name, email, phone, bussines, bussinessDescription, referredFriend } = values;
 
     if (!isAgree) {
       toast.dismiss();
-      toast(<Error message="You must read and agree to the disclaimer and terms and conditions" />, {
-        position: 'bottom-right',
-        hideProgressBar: true,
-      });
+      toast(
+        <Error message="You must read and agree to the disclaimer and terms and conditions" />,
+        {
+          position: 'bottom-right',
+          hideProgressBar: true,
+        },
+      );
       return;
     }
 
@@ -90,6 +94,15 @@ const ReferralsProgram = () => {
     if (!email.length) {
       toast.dismiss();
       toast(<Error message="Email can't be empty" />, {
+        position: 'bottom-right',
+        hideProgressBar: true,
+      });
+      return;
+    }
+
+    if (!phone.length) {
+      toast.dismiss();
+      toast(<Error message="Phone can't be empty" />, {
         position: 'bottom-right',
         hideProgressBar: true,
       });
@@ -119,9 +132,8 @@ const ReferralsProgram = () => {
     const data = {
       name,
       email,
-      bussines,
-      bussinessDescription,
-      referredFriend,
+      phone,
+      message: `Bussines: ${bussines} \n Bussiness Description: ${bussinessDescription} \n Referred Friend: ${referredFriend}`,
       landing: 'From the referrals form test.', // <= Dumb hack to avoid error
     };
 
@@ -158,9 +170,6 @@ const ReferralsProgram = () => {
           }
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <Columns style={{ flexWrap: 'wrap' }}>
-              {
-                // Name
-              }
               <Column isSize={{ desktop: 6 }}>
                 <Field>
                   <Control>
@@ -173,9 +182,6 @@ const ReferralsProgram = () => {
                   </Control>
                 </Field>
               </Column>
-              {
-                // Email
-              }
               <Column isSize={{ desktop: 6 }}>
                 <Field>
                   <Control>
@@ -188,9 +194,18 @@ const ReferralsProgram = () => {
                   </Control>
                 </Field>
               </Column>
-              {
-                // Business name
-              }
+              <Column isSize={{ default: 12 }}>
+                <Field>
+                  <Control>
+                    <CbInput
+                      type={'phone'}
+                      name={'phone'}
+                      placeholder={'Phone contact'}
+                      onChange={handleChange}
+                    />
+                  </Control>
+                </Field>
+              </Column>
               <Column isSize={{ default: 12 }}>
                 <Field>
                   <Control>
@@ -203,10 +218,6 @@ const ReferralsProgram = () => {
                   </Control>
                 </Field>
               </Column>
-
-              {
-                // Name of the referred friend
-              }
               <Column isSize={{ default: 12 }}>
                 <Field>
                   <Control>
@@ -221,10 +232,6 @@ const ReferralsProgram = () => {
               </Column>
             </Columns>
           </Column>
-
-          {
-            // Business description
-          }
           <Column isSize={{ mobile: 12, desktop: 6 }}>
             <Field style={{ height: '100%' }}>
               <Control style={{ height: '100%' }}>
@@ -262,8 +269,8 @@ const ReferralsProgram = () => {
             <TextIndigo>
               * Referral bonuses are earned only in projects that are signed, and in which the first
               invoice has been collected.
-              <br></br>* The maximum cash earned by the project will be $5,000 or the equivalent of 10% of the
-              total cost of the project, whichever number is lower.
+              <br></br>* The maximum cash earned by the project will be $5,000 or the equivalent of
+              10% of the total cost of the project, whichever number is lower.
             </TextIndigo>
           </Column>
 
