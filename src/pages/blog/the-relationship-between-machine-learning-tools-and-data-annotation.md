@@ -1,12 +1,10 @@
 ---
-title: 'The Relationship Between Machine'
+title: 'The Relationship Between Machine Learning Tools and Data Annotation'
 date: '2022-03-29T20:18:31.533Z'
 template: blog
 tags: Small Business
 image: './media/the-relationship-between-machine-learning-tools-and-data-annotation.jpg'
 ---
-
-<title-1>Learning Tools and Data Annotation</title-1>
 
 To say we live in exciting times would underscore where we are when it comes to technology. A few years ago, you may have never heard of things like “<a href="https://sigma.ai/data-annotation-platform/" target="_blank">machine learning tools</a>” or “data annotation.” These days, those two terms alone are helping create a world where technology can aid us in answering the big questions.
 
