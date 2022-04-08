@@ -16,7 +16,7 @@ Managing cash is a thing of the past. Modern advances have drastically changed h
 
 This article will talk about the challenges that companies must undertake in terms of <a target="_blank" href="https://www.cobuildlab.com/blog/blockchain-world/">   financial technology or Fintech</a>, as it is also known. But we cannot speak about these technologies without first defining them properly.
 
-<title-2 align="centered">Finance + Technology = FINTECH</title-2 align="centered">
+<title-2 align="centered">Finance + Technology = FINTECH</title-2>
 
 At the outset, there is not much to explain. FinTech is a nascent industry in which companies use technology to efficiently, conveniently, and reliable financial services.
 
