@@ -46,7 +46,7 @@
     "gatsby-transformer-sharp": "^3.8.0",
     "js-search": "^1.4.3",
     "lodash": "^4.17.13",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "node-sass": "6.0.1",
     "preact": "^10.5.15",
     "preact-render-to-string": "^5.1.19",
