@@ -35,6 +35,7 @@
     "gatsby-plugin-sitemap": "4.4.0",
     "gatsby-plugin-smoothscroll": "1.2.0",
     "gatsby-plugin-styled-components": "4.8.0",
+    "gatsby-plugin-whatshelp": "^1.0.0",
     "gatsby-plugin-zopfli": "2.0.0",
     "gatsby-remark-component": "^1.1.3",
     "gatsby-remark-copy-linked-files": "4.5.0",
