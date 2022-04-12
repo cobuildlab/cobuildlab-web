@@ -23,6 +23,7 @@ import { About } from '../components/2021/containers/About';
 import TextLink from '../components/Typography/TextLink';
 import { StaticImage } from 'gatsby-plugin-image';
 import { WhatsappButton } from '../components/WhatsappButton';
+
 const title = {
   default: {
     level: 8,

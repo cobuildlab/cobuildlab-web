@@ -10,6 +10,7 @@ import CopyRightFooter from './CopyRightFooter';
 import ClutchWidget from './ClutchWidget';
 import B2BCompany from './B2BCompany';
 import logo from '../../../../assets/images/logos/cobuild-lab-white-logo.svg';
+import AribaDiscovery from '../../../2020/AribaDiscovery';
 
 const Footer = ({ isFluid }) => (
   <Fragment>
@@ -23,6 +24,7 @@ const Footer = ({ isFluid }) => (
                 <GoodFirms />
                 <ClutchWidget />
                 <B2BCompany />
+                <AribaDiscovery />
               </FooterLogoContainer>
             </Column>
             <Column isSize={{ mobile: 12, desktop: 3 }}>
