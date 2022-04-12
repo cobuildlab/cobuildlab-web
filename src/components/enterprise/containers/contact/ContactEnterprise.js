@@ -13,7 +13,7 @@ const ContactEnterprise = () => {
       <Container>
         <Columns>
           <Column isHidden="mobile" isSize={5}>
-            <StaticImage src={'../../../../assets/2021/images/1.png'} />
+            <StaticImage alt={'Contact Enterprise'} src={'../../../../assets/2021/images/1.png'} />
           </Column>
           <Column isSize={{ mobile: 12, desktop: 6 }} isOffset={{ mobile: 0, desktop: 1 }}>
             <H4>

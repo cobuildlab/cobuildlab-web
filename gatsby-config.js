@@ -17,30 +17,6 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-preact`,
     {
-      resolve: 'gatsby-plugin-whatshelp',
-      options: {
-        // facebook: 'xxx', // Facebook page ID
-        whatsapp: '+17869913467', // WhatsApp number
-        email: 'contact@cbuildlab.com', // Email
-        call: '+17869913467', // Call phone number
-        company_logo_url: 'https://www.cobuildlab.com/favicon-32x32.png', // URL of company logo (png, jpg, gif)
-        greeting_message: 'Hello, how can we help?', // Text of greeting message
-        call_to_action: 'Chat with Us', // Call to action
-        button_color: '#b02030', // Color of button
-        position: 'right', // Position may be 'right' or 'left'
-        order: 'whatsapp,call,email', // Order of buttons
-        ga: true, // Google Analytics enabled
-        branding: false, // Show branding string
-        mobile: true, // Mobile version enabled
-        desktop: true, // Desktop version enabled
-        greeting: true, // Greeting message enabled
-        shift_vertical: 0, // Vertical position, px
-        shift_horizontal: 0, // Horizontal position, px
-        domain: 'cobuildlab.com', // site domain
-        key: 'xxx', // pro-widget key
-      },
-    },
-    {
       resolve: 'gatsby-plugin-zopfli',
     },
     {
