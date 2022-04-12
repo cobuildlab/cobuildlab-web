@@ -26,6 +26,7 @@ import { Hero, Container, Title, Columns, Column, Card, CardContent, Content } f
 import TTSVoice from '../components/TTSVoice';
 import PropTypes from 'prop-types';
 import Styled from 'styled-components';
+import colors from '../components/2021/colors.json';
 
 const StyledTitle = Styled(Title)`
   color: #264A60;
@@ -50,7 +51,9 @@ const SectionPost = Styled.section`
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  
+  & strong {
+    color: ${colors.indigo};
+  }
 `;
 
 const StyledContainer = Styled(Container)`
