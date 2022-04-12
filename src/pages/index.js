@@ -6,7 +6,7 @@ import Testimonial from '../components/enterprise/containers/testimonial/Testimo
 import Contact from '../components/enterprise/containers/contact/ContactEnterprise';
 import Brand from '../components/enterprise/containers/brands';
 import Footer from '../components/enterprise/containers/footer/Footer';
-
+import ReactWhatsapp from 'react-whatsapp';
 import 'bulma/css/bulma.css';
 import 'slick-carousel/slick/slick.scss';
 import 'slick-carousel/slick/slick-theme.scss';
@@ -69,6 +69,7 @@ const IndexPage = () => (
         }
         facade={
           <StaticImage
+            alt={'Video'}
             src={'../assets/images/video/thumbnail_home_video.png'}
             style={{ width: '100%', minHeight: '390px' }}
           />
@@ -83,6 +84,11 @@ const IndexPage = () => (
       <Brand />
       <IncubatorLink />
       <Footer />
+      <ReactWhatsapp
+        number="1-212-736-5000"
+        message="Hello World!!!"
+        element={<StaticImage alt={'Whatsapp'} src={'../../../assets/2022/whatsapp.png'} />}
+      />
     </div>
   </div>
 );
