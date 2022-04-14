@@ -20,7 +20,7 @@ BlockChain, it is a chain made of blocks of information that cannot be changed w
 
 This technology is based on math operations so complex that an expert would take years to try to decode it.
 
-This technology was used by Satoshi to create the Bitcoin Network, and it has been used for many purposes.
+This technology was used by Satoshi to create the [Bitcoin Network](https://cryptoradar.co/guide/bitcoin), and it has been used for many purposes.
 
 It works like magic. And that explains the success it has had. For that reason, big companies like Amazon, Walmart, HTC, Google, and others are investing in technologies in this market. 
 

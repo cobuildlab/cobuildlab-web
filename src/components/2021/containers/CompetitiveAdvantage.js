@@ -41,7 +41,10 @@ const CompetitiveAdvantage = () => {
             </SmoothScrollingButton>
           </Column>
           <Column isSize={{ mobile: 10, desktop: 5 }} isHidden="mobile">
-            <StaticImage src={'../../../assets/2021/images/group-banner.png'} />
+            <StaticImage
+              alt={'Competitive Advantage'}
+              src={'../../../assets/2021/images/group-banner.png'}
+            />
           </Column>
         </Columns>
       </Container>
@@ -49,7 +52,10 @@ const CompetitiveAdvantage = () => {
       <Container>
         <Columns isDisplay="flex-mobile" isCentered>
           <Column isSize={{ mobile: 10, desktop: 5 }} isHidden="mobile">
-            <StaticImage src={'../../../assets/2021/images/cobuild-lab-customers.png'} />
+            <StaticImage
+              alt={'Competitive Advantage'}
+              src={'../../../assets/2021/images/cobuild-lab-customers.png'}
+            />
           </Column>
           <Column isSize={{ mobile: 11, desktop: 6 }}>
             <SubTitle isSize={4}>Industry Experience:</SubTitle>

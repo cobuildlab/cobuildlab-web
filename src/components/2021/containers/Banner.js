@@ -71,7 +71,10 @@ const Banner = ({ title1, title2 }) => {
                   </div>
                 </Column>
                 <Column isHidden="mobile" isSize={5}>
-                  <StaticImage src={'../../../assets/2021/images/group-banner-2.png'} />
+                  <StaticImage
+                    alt={'Banner'}
+                    src={'../../../assets/2021/images/group-banner-2.png'}
+                  />
                 </Column>
               </Columns>
             </Container>
@@ -83,8 +86,8 @@ const Banner = ({ title1, title2 }) => {
 };
 
 Banner.propTypes = {
-  title1: PropTypes.string.isRequired,
-  title2: PropTypes.string.isRequired,
+  title1: PropTypes.element.isRequired,
+  title2: PropTypes.element.isRequired,
 };
 
 export { Banner };
