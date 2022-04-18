@@ -1,5 +1,5 @@
 ---
-title: "5-amazing-advances-in-financial-technology-not-to-be-missed"
+title: "5 amazing advances in financial technology not to be missed"
 date: "2022-04-04T16:24:04.000Z"
 template: blog
 tags: Tools
