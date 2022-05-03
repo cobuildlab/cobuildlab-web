@@ -71,7 +71,7 @@ Self-driving trucks enter the scenario to complement this high-risk job position
 
 If we can do something to make this activity less complicated for companies and people, why don’t we try it? 
 
-For now, people are testing and teaching truck machines to self-drive better every day. Do you think is it possible? We’ll see. 
+For now, people are testing and teaching <a href="https://www.profitableventure.com/start-box-truck-business/" target="_blank">truck machines</a> to self-drive better every day. Do you think is it possible? We’ll see. 
 
 <Br>
 
