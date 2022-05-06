@@ -54,7 +54,7 @@ AI/ML algorithms can analyze more network traffic and recognize patterns of nefa
 
 <br>
 
-Undoubtedly, <a target="_blank" href="https://www.cobuildlab.com/blog/robots-AI-and-machine-learning-for-your-SMB/"> AI and ML </a> will be at the core of the metaverse. These technologies will enable companies to create a virtual world where their users will feel at home with AI virtual bots. 
+Undoubtedly, <a target="_blank" href="https://www.cobuildlab.com/blog/robots-AI-and-machine-learning-for-your-SMB/"> AI and ML </a> will be at the core of the metaverse. These technologies will enable companies to create a <a href="https://apps.apple.com/us/app/superworld-ar/id1281770665" target="_blank">virtual world</a> where their users will feel at home with AI virtual bots. 
 
 AI virtual beings will help users choose the right products and services or relax and unwind by playing with them. It's one of the most exciting projects for the next ten years and is a good business opportunity for those who want to invest in it in any form.
 
