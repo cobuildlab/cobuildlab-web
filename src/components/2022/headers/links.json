@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Blog",
+    "link": "/blog"
+  },
+  {
+    "name": "Blog AI",
+    "link": "/blog/ai"
+  },
+  {
+    "name": "Price Calculator",
+    "link": "/price-calculator"
+  },
+  {
+    "name": "Customer Success Stories",
+    "link": "/customer-success-stories"
+  },
+  {
+    "name": "Our Team",
+    "link": "/our-team"
+  },
+  {
+    "name": "Portfolio",
+    "link": "/portfolio"
+  },
+  {
+    "name": "Services",
+    "link": "/service"
+  }
+]
