@@ -131,7 +131,7 @@ Legacy software can also be a barrier to attracting potential employees and cust
 
 <br>
 
-The principle of agile software development is to have minor updates. Sometimes, it cannot finish an idea in a two-week sprint. That's when a significant upgrade occurs. The problem is that customers get important updates every two to three years, so software vendors should refresh the user interface with a redesign.![image](https://user-images.githubusercontent.com/43820462/167637760-1cac2a69-cf87-46d5-8cd0-7c613186a021.png)
+The principle of agile software development is to have minor updates. Sometimes, it cannot finish an idea in a two-week sprint. That's when a significant upgrade occurs. The problem is that customers get important updates every two to three years, so software vendors should refresh the user interface with a redesign.
 
 <br>
 
