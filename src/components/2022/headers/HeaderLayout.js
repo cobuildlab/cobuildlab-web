@@ -2,7 +2,7 @@ import { HeroHeader as BloomerHeroHeader } from 'bloomer';
 import styled from 'styled-components';
 
 export const HeroHeader = styled(BloomerHeroHeader)`
-  background-color: ${({ theme }) => theme.colors.darkBlue};
+  background-color: ${({ theme }) => theme.colors.primary};
   padding-top: 10px;
   padding-bottom: 10px;
 
@@ -34,7 +34,7 @@ export const HeroHeader = styled(BloomerHeroHeader)`
       }
 
       svg {
-        color: ${({ theme }) => theme.colors.orange};
+        color: ${({ theme }) => theme.colors.main};
         margin-right: 10px;
       }
 
