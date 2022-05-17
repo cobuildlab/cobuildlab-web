@@ -19,14 +19,14 @@ import RoadmapSection from '../../components/customer-success-stories/RoadmapSec
 import OurTeamSection from '../../components/customer-success-stories/OurTeamSection';
 import { EpilogueSection } from '../../components/customer-success-stories/EpilogueSection';
 import { Section } from 'bloomer';
-import SlidersEnvieStore from '../../components/customer-success-stories/new/sliders/enview-store/Sliders';
+import SlidersCsfLabeler from '../../components/customer-success-stories/new/sliders/csf-labeler/Sliders';
 
-const EnviewStore = ({ data }) => {
+const CsfLabeler = ({ data }) => {
   const team = [
     {
       first: 'Alan',
       last: 'R. Guevara',
-      description: 'Chief of Product Management',
+      description: 'Business representative',
       picture: (
         <StaticImage
           className={'team-member-img'}
@@ -38,7 +38,7 @@ const EnviewStore = ({ data }) => {
     {
       first: 'Angel',
       last: 'Lacret',
-      description: 'Chief of Product Development',
+      description: 'Teach Lead',
       picture: (
         <StaticImage
           className={'team-member-img'}
@@ -48,62 +48,14 @@ const EnviewStore = ({ data }) => {
       ),
     },
     {
-      first: 'Carlos',
-      last: 'Magno',
-      description: 'Project Manager',
+      first: 'Francisco',
+      last: 'Silverio',
+      description: 'Developer',
       picture: (
         <StaticImage
           className={'team-member-img'}
-          src={'../../assets/images/team/new-pictures/green/carlos-magno.jpg'}
-          alt={'Carlos Magno'}
-        />
-      ),
-    },
-    {
-      first: 'Kristal',
-      last: 'Dorta',
-      description: 'UX Designer',
-      picture: (
-        <StaticImage
-          className={'team-member-img'}
-          src={'../../assets/images/team/new-pictures/green/kristal-dorta.jpg'}
-          alt={'Mayela Marin'}
-        />
-      ),
-    },
-    {
-      first: 'Anjelys',
-      last: 'Leal',
-      description: 'QA',
-      picture: (
-        <StaticImage
-          className={'team-member-img'}
-          src={'./../../assets/images/team/new-pictures/green/anjelys-leal.jpg'}
-          alt={'Carlos Hurtado'}
-        />
-      ),
-    },
-    {
-      first: 'Manuel',
-      last: 'Cortina',
-      description: 'Javascript Developer',
-      picture: (
-        <StaticImage
-          className={'team-member-img'}
-          src={'./../../assets/images/team/new-pictures/green/Manuel-Cortina--Developer-v.jpg'}
-          alt={'Manuel Cortina'}
-        />
-      ),
-    },
-    {
-      first: 'Jesus',
-      last: 'Rodriguez',
-      description: 'Javascript Developer',
-      picture: (
-        <StaticImage
-          className={'team-member-img'}
-          src={'./../../assets/images/team/new-pictures/white/jesus-rodriguez.jpg'}
-          alt={'Jesus Rodriguez'}
+          src={'../../assets/images/team/new-pictures/green/avatar22.jpg'}
+          alt={'Francisco Silverio'}
         />
       ),
     },
@@ -111,31 +63,37 @@ const EnviewStore = ({ data }) => {
 
   const goals = [
     {
-      goal: 100,
-      subTitle: '100% increase in the acquisition of customers and subscribers to the platform',
+      goal: 20,
+      subTitle: '+20% Increase efficiency.',
+    },
+    {
+      goal: 30,
+      subTitle: '+30% Save execution time.',
     },
   ];
 
   return (
     <DetailLayout>
       <SeoMetaTags
-        title="Enview Store"
-        description="eNView is responsible for measuring noise, vibration, and dust levels at construction sites, workspaces, and other sites where required."
+        title="CSF LABELER"
+        description="CSF LABELER is a company that works in the courier freight forwarding business that, in the face of technological advances and the presence of avant-garde competition, decided to take the next step and evolve hand in hand with automated processes in order to optimize response times and reduce operating costs."
         image={data.seoImages.childImageSharp.resize}
       />
       <OverviewSection
-        title="Enview Store"
+        title="CSF LABELER"
         image={
           <StaticImage
             width={'1580'}
             height={'1084'}
-            src={'./../../assets/images/customers/enview-store/Overview.png'}
+            src={'./../../assets/images/customers/csf-labeler/Overview.png'}
             alt={'Overview collage'}
           />
         }>
         <DetailParagraph isBold={true}>
-          eNView is responsible for measuring noise, vibration, and dust levels at construction
-          sites, workspaces, and other sites where required.
+          CSF LABELER is a company that works in the courier freight forwarding business that, in
+          the face of technological advances and the presence of avant-garde competition, decided to
+          take the next step and evolve hand in hand with automated processes in order to optimize
+          response times and reduce operating costs.
         </DetailParagraph>
       </OverviewSection>
       <ProblemSection
@@ -143,14 +101,14 @@ const EnviewStore = ({ data }) => {
           <StaticImage
             width={'1920'}
             height={'1080'}
-            src={'../../assets/images/customers/enview-store/3.png'}
+            src={'../../assets/images/customers/csf-labeler/CSF_0000_IMG_0690.jpg'}
             alt={'problem'}
           />
         }>
         <>
           <DetailParagraph>
-            The client is required to create a web portal and e-commerce to commercialize their
-            hardware products as well as the subscription to the cloud platform: Enview Cloud.
+            CSF LABELER{"'"}s need was focused on optimizing its weighing processes for each package
+            received in the warehouse.
           </DetailParagraph>
         </>
       </ProblemSection>
@@ -159,21 +117,21 @@ const EnviewStore = ({ data }) => {
           <StaticImage
             width={'1920'}
             height={'1080'}
-            src={'./../../assets/images/customers/enview-store/1.png'}
+            src={'./../../assets/images/customers/csf-labeler/CSF_0001_IMG_0685.jpg'}
             alt={'Solution'}
           />
         }>
         <>
           <DetailParagraph>
-            An e-commerce site to manage product purchases, orders, shopping carts, etc. Before we
-            decided to go with a Custom Solution, we took a look at several e-commerce products, and
-            none had the capabilities that we were looking for: Multi-currency, Stripe connected,
-            and Unleashed ERP.
+            Build a workstation for weighing packages, integrating a digital scale, a raspberry pi
+            module, action buttons, digital display, QR scanner and a custom control software for
+            the integration of all input and output devices.
           </DetailParagraph>
           <DetailParagraph>
-            We used a common code approach by connecting the site directly with Stripe to have our
-            Products Database manage Customers and connected to Unleashed ERP to manage Order
-            Records.
+            We opted for the development of a customized software due to the number of sub-processes
+            that were carried out in the manual weighing process. In this way, the integration of
+            all processes within the platform was achieved in order to reach the objectives of the
+            project.
           </DetailParagraph>
         </>
       </SolutionSection>
@@ -184,7 +142,7 @@ const EnviewStore = ({ data }) => {
               <StaticImage
                 width={'960'}
                 height={'540'}
-                src={'./../../assets/images/customers/enview-store/logical_architecture.jpg'}
+                src={'./../../assets/images/customers/csf-labeler/Logical.jpg'}
                 alt={'Logical Architecture'}
               />
             }
@@ -196,7 +154,7 @@ const EnviewStore = ({ data }) => {
               <StaticImage
                 width={'960'}
                 height={'540'}
-                src={'./../../assets/images/customers/enview-store/physical-architecture.jpg'}
+                src={'./../../assets/images/customers/csf-labeler/Physical.jpg'}
                 alt={'Physical Architecture'}
               />
             }
@@ -209,7 +167,7 @@ const EnviewStore = ({ data }) => {
               width={'960'}
               height={'540'}
               objectFit={'contain'}
-              src={'./../../assets/images/customers/enview-store/Roadmap.jpg'}
+              src={'./../../assets/images/customers/csf-labeler/roadmap.jpg'}
               alt={'Roadmap'}
             />
           </RoadmapSection>
@@ -221,36 +179,37 @@ const EnviewStore = ({ data }) => {
             style={{ marginTop: '106.469px' }}
             width={'1921'}
             height={'1080'}
-            src={'./../../assets/images/customers/enview-store/3.png'}
+            src={'./../../assets/images/customers/csf-labeler/CSF_0002_Layer2.jpg'}
             alt={'The Result'}
           />
         }>
         <>
           <DetailParagraph>
-            We designed and developed an e-commerce website using NextJS as the primary technology.
-            This website is a multi-currency e-commerce platform connected to Stripe to manage
-            products, customers, and payments and Unleashed ERP system to manage Orders.
+            A stand-alone, programmable device able to automate the process by reducing labor time
+            and minimizing human error when transcribing the weight of the package in the manual
+            process. Also, capable of integrating other I/O devices, and integrable with existing
+            software via web services.
           </DetailParagraph>
 
           <List>
             <ListItem>
               <TextIndigo style={{ fontWeight: 'bold' }}>Location: </TextIndigo>
-              {'  '}London
+              {'  '}8606 NW 66th St, Miami, FL 33166
             </ListItem>
             <ListItem>
               <TextIndigo style={{ fontWeight: 'bold' }}>Industry: </TextIndigo>
-              {'  '}Acoustics and IoT
+              {'  '}Logistic Freight Forwarding
             </ListItem>
             <ListItem>
               <TextIndigo style={{ fontWeight: 'bold' }}>Product: </TextIndigo>
-              {'  '}E-commerce platform
+              {'  '}Courier services
             </ListItem>
           </List>
         </>
       </ResultSection>
       <OurGoalSection data={goals} />
       <Section isPaddingless style={{ marginBottom: '6rem' }}>
-        <SlidersEnvieStore />
+        <SlidersCsfLabeler />
       </Section>
       <OurTeamSection data={team} />
       <EpilogueSection />
@@ -258,13 +217,13 @@ const EnviewStore = ({ data }) => {
   );
 };
 
-EnviewStore.propTypes = {
+CsfLabeler.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
 export const pageQuery = graphql`
   query {
-    seoImages: file(relativePath: { eq: "customers/enview-store/enviewlogo_black-min.png" }) {
+    seoImages: file(relativePath: { eq: "customers/csf-labeler/G8KL4dne_4x1.png" }) {
       childImageSharp {
         resize(width: 1200, height: 1200) {
           width
@@ -276,4 +235,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default EnviewStore;
+export default CsfLabeler;
