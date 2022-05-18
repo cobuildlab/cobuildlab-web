@@ -10,26 +10,26 @@ const Box = styled.div`
   justify-content: center;
 `;
 
-const EnviewCloud = () => {
+const CsfLabeler = () => {
   return (
     <Column isSize={{ mobile: 12, tablet: 4 }} isPaddingless>
       <Card
-        title={'Enview Cloud'}
+        title={'Csf Labeler'}
         description={
           <>
             <p>
-              eNView is responsible for measuring noise, vibration, and dust levels at construction
-              sites, workspaces, and other sites where required.
+              CSF LABELER is a company that works in the courier freight forwarding business that,
+              in the face of technological advances and the presence of avant-garde competition.
             </p>
           </>
         }
-        to={'/customer-success-stories/enview-cloud'}>
+        to={'/customer-success-stories/csf-labeler'}>
         <Box>
           <StaticImage
-            src={'./../../../../assets/images/customers/enview-cloud/enview-cloud.png'}
+            src={'./../../../../assets/images/customers/csf-labeler/G8KL4dne_4x1.png'}
             objectFit={'contain'}
             width={'80%'}
-            alt="Enview cloud Logo"
+            alt="Csf Labelel Logo"
           />
         </Box>
       </Card>
@@ -37,4 +37,4 @@ const EnviewCloud = () => {
   );
 };
 
-export default EnviewCloud;
+export default CsfLabeler;
