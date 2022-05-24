@@ -23,10 +23,16 @@ import Navigate from './card/stories/Navigate';
 import ArtPlay from './card/stories/ArtPlay';
 import Fisherman from './card/stories/Fisherman';
 import Camron from './card/stories/Camron';
+import EnviewStore from './card/stories/EnviewStore';
+import EnviewCloud from './card/stories/EnviewCloud';
+import CsfLabeler from './card/stories/CsfLabeler';
 
 const SuccessStories = () => {
   return (
     <Columns isDisplay="flex" isMultiline>
+      <CsfLabeler />
+      <EnviewCloud />
+      <EnviewStore />
       <Camron />
       <Fisherman />
       <Navigate />
