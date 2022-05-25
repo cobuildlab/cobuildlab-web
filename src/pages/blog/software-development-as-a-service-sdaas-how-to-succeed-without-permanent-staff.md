@@ -1,6 +1,6 @@
 ---
 title: "Software development as a service (SDaaS): How to succeed without permanent staff"
-date: "2022-5-18T16:24:04.000Z"
+date: "2022-05-18T16:24:04.000Z"
 template: blog
 tags: Small Business
 image: "./media/SDaaS-How-to-succeed-without-permanent-staff.png"
