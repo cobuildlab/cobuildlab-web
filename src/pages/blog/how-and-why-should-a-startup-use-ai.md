@@ -3,7 +3,7 @@ title: "How and why should a startup use ai?"
 date: "2022-06-06T16:24:04.000Z"
 template: blog
 tags: Small Business
-image: "./media/how-and-why-should-a-startup-use-ai"
+image: "./media/how-and-why-should-a-startup-use-ai.jpg"
 ---
 
 Miami, FL. Jun 06, 2022
