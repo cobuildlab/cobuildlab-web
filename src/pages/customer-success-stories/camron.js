@@ -83,6 +83,30 @@ const Camron = ({ data }) => {
         />
       ),
     },
+    {
+      first: 'Edward',
+      last: 'Zabala',
+      description: 'Project Manager/QA Analyst',
+      picture: (
+        <StaticImage
+          className={'team-member-img'}
+          src={'../../assets/images/team/new-pictures/green/avatar22.jpg'}
+          alt={'Edward Zabala'}
+        />
+      ),
+    },
+    {
+      first: 'Raúl',
+      last: 'Gómez',
+      description: 'Javascript Developer',
+      picture: (
+        <StaticImage
+          className={'team-member-img'}
+          src={'../../assets/images/team/new-pictures/green/avatar22.jpg'}
+          alt={'Raúl Gómez'}
+        />
+      ),
+    },
   ];
 
   const goals = [
