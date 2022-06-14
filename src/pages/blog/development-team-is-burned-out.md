@@ -1,4 +1,3 @@
-
 ---
 title: "Recognize if your development team is burned out"
 date: "2022-06-13T16:24:04.000Z"
