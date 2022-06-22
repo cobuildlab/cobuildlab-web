@@ -26,10 +26,12 @@ import Camron from './card/stories/Camron';
 import EnviewStore from './card/stories/EnviewStore';
 import EnviewCloud from './card/stories/EnviewCloud';
 import CsfLabeler from './card/stories/CsfLabeler';
+import AwakenFlow from './card/stories/AwakenFlow';
 
 const SuccessStories = () => {
   return (
     <Columns isDisplay="flex" isMultiline>
+      <AwakenFlow />
       <CsfLabeler />
       <EnviewCloud />
       <EnviewStore />
