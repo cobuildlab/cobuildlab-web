@@ -41,7 +41,7 @@ Supply chain management is very important for a company because usually, compani
 
 <Br>
 
-Today all companies worldwide look to reduce their operating costs to the maximum to make a big profit, now the big question is how supply chain management software can help your company reduce its costs.  We can tell you that an SCM software analyzes each of the aspects and procedures of your company in-depth, which allows you to see from above each of the processes detecting and eliminating waste and costs, without really changing the way your company operates.
+Today all companies worldwide look to reduce their operating costs to the maximum to make a big profit, now the big question is how supply chain management software can help your company reduce its costs.  We can tell you that an [SCM software](https://www.magaya.com/magaya-supply-chain/) analyzes each of the aspects and procedures of your company in-depth, which allows you to see from above each of the processes detecting and eliminating waste and costs, without really changing the way your company operates.
 
 With this monitoring of each one of the processes, and detecting the errors you will be able to make the necessary corrections or changes throughout your supply chain with the main purpose of reducing costs, and eliminating errors, improving productivity.
 
