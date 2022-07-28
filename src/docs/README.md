@@ -1,3 +1,7 @@
 # How to create a post in the Blog Page
 
-Install `pandoc` to convert the file .docx to .md.
+Video here
+
+# How to create a post in the AI Blog Page
+
+Video here
