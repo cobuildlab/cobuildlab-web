@@ -17,7 +17,7 @@ Social Ads are a diminutive for advertising on social networking platforms.
 
 If you have a social media marketing campaign, you must surely have two sections within: I) the content you publish to receive visits and organic positioning ([SEO](https://cobuildlab.com/blog/seo-tips-that-will-increase-your-position-in-search-engines/)), and II) the ads. 
 
-When it comes to Social Ads, we would be in the presence of the paid content that you want to publish on social media ads platforms. 
+When it comes to [Social Ads](https://www.adobe.com/express/create/advertisement), we would be in the presence of the paid content that you want to publish on social media ads platforms. 
 
 A good thing about this kind of advertisement is that you would have broad objectives for a low investment cost, and also almost perfectly segmented ads, taking into account the information and profile that the same social media platform has built by the users search patterns, followers, preferences, ages, etc.. 
 
