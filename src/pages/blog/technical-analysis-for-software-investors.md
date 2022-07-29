@@ -182,4 +182,4 @@ A <a target="_blank" href="https://cobuildlab.com/blog/sustainable-software-proj
 
 Taking the time to conduct due diligence when researching a startup investment is something investors cannot afford to skip. It is the only way to ensure the complete success of your investment and a quick return on your investment. Get your <a target="_blank" href="https://cobuildlab.com/services/">   technical analysis for software investors </a> here.
 
-**Cobuild Lab Team**
+Cobuild Lab Team
