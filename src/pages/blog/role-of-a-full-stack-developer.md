@@ -3,7 +3,7 @@ title: "What is the role of a full-stack developer in a software development tea
 date: "2022-08-04T16:24:04.000Z"
 template: blog
 tags: Small Business
-image: "./media/role-of-a full-stack-developer.jpg"
+image: "./media/role-of-a-full-stack-developer.jpg"
 ---
 
 Miami, FL. August 04, 2022
