@@ -3,8 +3,7 @@ title: "From Desk to Dawn: How the Remote Work Lifestyle Affects Productivity"
 date: "2022-07-31T16:24:04.000Z"
 template: blog
 tags: Small Business
-image: "./media/remote-work-lifestyle-affects-productivity.jpg
-"
+image: "./media/remote-work-lifestyle-affects-productivity.jpg"
 ---
 
 Miami, FL. Jul 31, 2022.

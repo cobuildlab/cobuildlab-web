@@ -2,8 +2,8 @@
 title: 'Cobuild Lab Inc Recognized by Clutch as a Top 2022 AI Company in Florida'
 date: '2022-08-04T12:25:12.452Z'
 template: blog
-tags: News
-image: './media/cobuild-lab-inc-recognized-by-clutch-as-a-top-2022-ai-company-in-florida.png'
+tags: Miami
+image: "./media/cobuild-lab-inc-recognized-by-clutch-as-a-top-2022-ai-company-in-florida.png"
 ---
 
 _Miami, FL. Aug 3, 2022_
