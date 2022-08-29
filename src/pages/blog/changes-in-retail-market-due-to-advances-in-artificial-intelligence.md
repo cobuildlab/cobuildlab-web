@@ -60,7 +60,7 @@ Through simple questions, the robot determines what the customer is looking for 
 
 Surely you know QR codes; you're going to love Color IQ. This is a technology applied by <a target="_blank" href="https://www.sephora.com/">   Sephora</a> stores where you can scan your skin color to see the makeup color that best suits your skin tone.
 
-Artificial intelligence is about improving the user experience in-store and across online platforms. <Br></Br>
+Artificial intelligence is about improving the [user experience](https://www.encora.com/services/user-interface-user-experience-ui-ux-) in-store and across online platforms. <Br></Br>
 
 <youtube-video id="https://www.youtube.com/watch?v=jEHDtlbb-f0"></youtube-video> <Br></Br>
 

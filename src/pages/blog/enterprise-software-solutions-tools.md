@@ -98,7 +98,7 @@ As enterprises grow and recognize the need for their information and application
 
 [![Enterprise-Content-Management](media/enterprise-content-management.jpg)](#)
 
-Enterprise Content Management (ECM) is the document management term that describes the technologies used by organizations to capture, manage, store, and control enterprise-wide content, including documents, images, email messages, instant messages, social media messages, video, and more. ECM software is used to assist in content control associated with the business process and can be used to assure compliance (Sarbanes-Oxley, HIPPA, etc.). ECM has emerged from the convergence of many related technologies such as document management, Web content management, and collaboration.
+Enterprise [Content Management](https://www.dynamicweb.com/products/content-management) (ECM) is the document management term that describes the technologies used by organizations to capture, manage, store, and control enterprise-wide content, including documents, images, email messages, instant messages, social media messages, video, and more. ECM software is used to assist in content control associated with the business process and can be used to assure compliance (Sarbanes-Oxley, HIPPA, etc.). ECM has emerged from the convergence of many related technologies such as document management, Web content management, and collaboration.
 
 <title-3>9. Enterprise Search</title-3>
 
