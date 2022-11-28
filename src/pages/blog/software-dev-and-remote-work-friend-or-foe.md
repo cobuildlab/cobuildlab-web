@@ -1,5 +1,5 @@
 ---
-title: "Must-Have Resources for Starting Your Own Local Business"
+title: "Software dev and remote work: friend or foe?"
 date: "2022-11-11T16:24:04.000Z"
 template: blog
 tags: Small Business
