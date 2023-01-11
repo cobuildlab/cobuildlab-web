@@ -42,7 +42,7 @@
     "gatsby-remark-responsive-iframe": "4.5.0",
     "gatsby-source-filesystem": "3.8.0",
     "gatsby-transformer-json": "3.8.0",
-    "gatsby-transformer-remark": "^4.5.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^3.8.0",
     "js-search": "^1.4.3",
     "lodash": "^4.17.13",
